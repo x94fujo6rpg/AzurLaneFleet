@@ -82,7 +82,7 @@ function creatallships() {
 
         var shipicon = ship_data[index].painting;
         console.log(shipicon)
-        var icon = 'icon/' + shipicon.toLowerCase() + '.png';
+        var icon = 'shipicon/' + shipicon.toLowerCase() + '.png';
         var newicon = document.createElement('img');
         newicon.setAttribute('src', icon);
         newicon.setAttribute('class', 'rounded img-fluid');
