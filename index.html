@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <title>Azur Lane Fleet Formation</title>
+    <style>
+        body {
+            background-color: white;
+        }
+        
+        h1 {
+            color: black;
+        }
+        
+        h2 {
+            color: deepskyblue;
+        }
+        
+        .ship {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+        }
+        
+        .shiplist {
+            padding: 0%;
+        }
+        
+        .fleet {
+            width: 1100px;
+            height: 280px;
+            display: grid;
+            grid-template-areas: 'f-back f-front';
+            margin: auto;
+            padding: 0px;
+            border-radius: 5px;
+        }
+        
+        .fleet-front {
+            display: grid;
+            grid-area: f-front;
+            margin: auto;
+        }
+        
+        .fleet-back {
+            display: grid;
+            grid-area: f-back;
+            margin: auto;
+        }
+        
+        .selectship {
+            position: relative;
+            text-align: center;
+            top: 80%;
+        }
+        
+        .shipicon {
+            width: 80px;
+            height: 80px;
+            background: gray;
+            border-style: hidden;
+            padding: 2px;
+            margin: 1px;
+            border-radius: 5px;
+        }
+        
+        .equip {
+            width: 80px;
+            height: 80px;
+            background: rgb(30.8%, 30.8%, 30.8%);
+            border: 1px black;
+            border-style: solid;
+            margin: 1px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div align="center">
+            <h1>Azur Lane Fleet</h1>
+        </div>
+        <br>
+        <br>
+        <div align="center" id="fleet1">
+            <h2>Fleet1</h2>
+            <div class="fleet">
+                <div class="fleet-front">
+                    <div class="ship">
+                        <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect" onclick="setcurrent(1131)" id="1131"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1132)" id="1132"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1133)" id="1133"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1134)" id="1134"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1135)" id="1135"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1136)" id="1136"></button>
+                    </div>
+                    <div class="ship">
+                        <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect" onclick="setcurrent(1121)" id="1121"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1122)" id="1122"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1123)" id="1123"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1124)" id="1124"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1125)" id="1125"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1126)" id="1126"></button>
+                    </div>
+                    <div class="ship">
+                        <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect" onclick="setcurrent(1111)" id="1111"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1112)" id="1112"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1113)" id="1113"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1114)" id="1114"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1115)" id="1115"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1116)" id="1116"></button>
+                    </div>
+                </div>
+                <div class="fleet-back">
+                    <div class="ship">
+                        <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect" onclick="setcurrent(1251)" id="1251"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1252)" id="1252"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1253)" id="1253"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1254)" id="1254"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1255)" id="1255"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1256)" id="1256"></button>
+                    </div>
+                    <div class="ship">
+                        <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect" onclick="setcurrent(1241)" id="1241"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1242)" id="1242"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1243)" id="1243"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1244)" id="1244"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1245)" id="1245"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1246)" id="1246"></button>
+                    </div>
+                    <div class="ship">
+                        <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect" onclick="setcurrent(1261)" id="1261"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1262)" id="1262"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1263)" id="1263"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1264)" id="1264"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1265)" id="1265"></button>
+                        <button type="button" class="equip" onclick="setcurrent(1266)" id="1266"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div align="center" id="fleet2" style="display: none;">
+            <h2>Fleet2</h2>
+            <div class="fleet">
+                <div class="fleet-front">
+                    <div class="ship" id="213">
+                        <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect">
+                            </button>
+                        <div class="equip"></div>
+                        <div class="equip"></div>
+                        <div class="equip"></div>
+                        <div class="equip"></div>
+                        <div class="equip"></div>
+                    </div>
+                    <div class="ship" id="212">
+                        <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect">
+                            </button>
+                        <div class="equip"></div>
+                        <div class="equip"></div>
+                        <div class="equip"></div>
+                        <div class="equip"></div>
+                        <div class="equip"></div>
+                    </div>
+                    <div class="ship" id="211">
+                        <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect">
+                            </button>
+                        <div class="equip"></div>
+                        <div class="equip"></div>
+                        <div class="equip"></div>
+                        <div class="equip"></div>
+                        <div class="equip"></div>
+                    </div>
+                </div>
+                <div class="fleet-back">
+                    <div class="ship" id="225">
+                        <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect">
+                            </button>
+                        <div class="equip"></div>
+                        <div class="equip"></div>
+                        <div class="equip"></div>
+                        <div class="equip"></div>
+                        <div class="equip"></div>
+                    </div>
+                    <div class="ship" id="224">
+                        <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect">
+                            </button>
+                        <div class="equip"></div>
+                        <div class="equip"></div>
+                        <div class="equip"></div>
+                        <div class="equip"></div>
+                        <div class="equip"></div>
+                    </div>
+                    <div class="ship" id="226">
+                        <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect">
+                            </button>
+                        <div class="equip"></div>
+                        <div class="equip"></div>
+                        <div class="equip"></div>
+                        <div class="equip"></div>
+                        <div class="equip"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="shipselect">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Ship Select</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="container">Nation</div>
+                            <div class="container" id='shipnation'>
+                                <button type="button" class="btn btn-outline-primary btn-sm" value="3">IJN_SakuraEmpire</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm" value="1">USS_EagleUnion</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm" value="2">HMS_RoyalNavy</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm" value="4">KMS_Ironblood</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm" value="5">PRAN/ROC_EasternRadiance</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm" value="7">SN_NorthernParliament</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm" value="8">FFNF_IrisLibre</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm" value="9">MNF_VichyaDominion</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm" value="6">RN_SardegnaEmpire</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm" value="0">Others</button>
+                            </div>
+                        </div>
+                        <div class="container" id="shiptype">
+                            <div class="container">Front</div>
+                            <div class="container">
+                                <button type="button" class="btn btn-outline-primary btn-sm" value="1">DD_Destroyer</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm" value="2">CL_LightCruiser</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm" value="3">CA_HeavyCruiser</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm" value="18">CB_LargeCruiser</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm" value="8">SS_Submarine</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm" value="17">SSV_SubmarineCarrier</button>
+                            </div>
+                            <div class="container">Back</div>
+                            <div class="container">
+                                <button type="button" class="btn btn-outline-primary btn-sm" value="4">BC_BattleCruiser</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm" value="5">BB_BattleShip</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm" value="6">CVL_LightCarrier</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm" value="7">CV_Carrier</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm" value="13">BM_Monitor</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm" value="12">AR_RepairShip</button>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="container">Rarity</div>
+                            <div class="container" id='shiprarity'>
+                                <button type="button" class="btn btn-outline-primary btn-sm" id='sr2' value="2">N</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm" id='sr3' value="3">R</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm" id='sr4' value="4">SR</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm" id='sr5' value="5">SSR</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm" id='sr6' value="6">UR</button>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="container">ExcludeUnRetrofit</div>
+                            <div class="container" id='shipretro'>
+                                <button type="button" class="btn btn-outline-primary btn-sm active" aria-pressed="true" value="1">Yes</button>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="container">Ships</div>
+                            <div class="container" id="shiplist">
+                                <button type="button" class="shipicon" id="0" style="display: inline;" data-dismiss="modal" onclick="updateship(0)"><img class="rounded"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src='js/ship_data.js'></script>
+    <script src='js/main.js'></script>
+    <script>
+    </script>
+</body>
+
+</html>
