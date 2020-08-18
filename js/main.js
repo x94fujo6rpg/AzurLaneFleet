@@ -87,6 +87,7 @@ function creatallships() {
 
         newship.appendChild(newicon);
         shiplist.appendChild(newship);
+        setTimeout(50);
     };
 }
 
