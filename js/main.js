@@ -80,7 +80,9 @@ function creatallships() {
         var color = getcolor(ship.rarity);
         newship.setAttribute('style', 'background-color:' + color + ';');
 
-        var icon = 'squareicon/' + ship_data[index].painting.toLowerCase + '.png';
+        var shipicon = ship_data[index].painting;
+        console.log(shipicon)
+        var icon = 'squareicon/' + shipicon.toLowerCase() + '.png';
         var newicon = document.createElement('img');
         newicon.setAttribute('src', icon);
         newicon.setAttribute('class', 'rounded img-fluid');
