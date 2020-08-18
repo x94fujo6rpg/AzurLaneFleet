@@ -81,7 +81,6 @@ function creatallships() {
         newship.setAttribute('style', 'background-color:' + color + ';');
 
         var shipicon = ship_data[index].painting;
-        console.log(shipicon)
         var icon = 'shipicon/' + shipicon.toLowerCase() + '.png';
         var newicon = document.createElement('img');
         newicon.setAttribute('src', icon);
