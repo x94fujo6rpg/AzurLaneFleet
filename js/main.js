@@ -12,12 +12,10 @@ var current_equipid = '';
 $(document).ready(
     function() {
         creatallships();
-        shipsetting = getsetting();
         shipdisplay();
         $(".btn-outline-primary").click(
             function() {
                 $(this).button('toggle');
-                shipsetting = getsetting();
                 shipdisplay();
             }
         );
@@ -133,6 +131,7 @@ function creatallships() {
 };
 
 function shipdisplay() {
+    shipsetting = getsetting();
     for (var index in ship_data) {
         var ship = ship_data[index];
         var select = isshipselect(ship);
@@ -224,9 +223,21 @@ function getsetting() {
         newsetting.nationality = [];
     };
 
+    var front = [1, 2, 3, 8, 17, 18];
+    var back = [4, 5, 6, 7, 12, 13];
+
     if (shiptype.length > 0) {
         newlist = [];
-        shiptype.forEach(element => newlist.push(element.value));
+        shiptype.forEach(element => {
+            var x = parseInt(element.value, 10);
+            if (fleetpos === "front" && front.includes(x)) {
+                newlist.push(element.value);
+            };
+            if (fleetpos === "back" && back.includes(x)) {
+                newlist.push(element.value);
+            };
+        });
+        console.log(newlist);
         newsetting.type = newlist;
     } else {
         newsetting.type = [];
