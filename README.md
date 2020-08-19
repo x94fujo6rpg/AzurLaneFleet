@@ -1,1 +1,2 @@
-# AzurLaneFleet
+﻿# AzurLaneFleet
+main part completed
