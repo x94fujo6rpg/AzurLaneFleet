@@ -1,9 +1,14 @@
 var shipsetting = {};
 var showshiplist = {};
 var hidelist = [];
+
 var current_shipid = '';
 var current_shiprar = '';
 var newshipid = '';
+var fleetpos = '';
+
+var current_equipid = '';
+
 $(document).ready(
     function() {
         creatallships();
@@ -19,8 +24,25 @@ $(document).ready(
     }
 );
 
-function setcurrent(id) {
-    current_shipid = String(id);
+function setshipbutton() {
+    if (fleetpos === "front") {
+        document.getElementById('ffs').style.display = 'inline';
+        document.getElementById('fbs').style.display = 'none';
+    } else {
+        document.getElementById('ffs').style.display = 'none';
+        document.getElementById('fbs').style.display = 'inline';
+    };
+};
+
+function setcurrent(item) {
+    if (item.className === "shipicon") {
+        current_shipid = String(item.id);
+        fleetpos = item.getAttribute("limit");
+        shipdisplay();
+        setshipbutton();
+    } else {
+        current_equipid = String(item.id);
+    };
 };
 
 function setnewship(id) {
@@ -63,9 +85,28 @@ function getcolor(rarity) {
             break;
     };
     return color;
-}
+};
+
+function createmptyship() {
+    var shiplist = document.getElementById('shiplist');
+    var newship = document.createElement('button');
+    newship.setAttribute('type', 'button');
+    newship.setAttribute('class', 'shipicon');
+    newship.setAttribute('id', '0');
+    newship.setAttribute('style', 'display:inline;');
+    newship.setAttribute('data-dismiss', 'modal');
+    newship.setAttribute('onclick', 'updateship(0)')
+
+    var newicon = document.createElement('img');
+    var icon = 'shipicon/empty.jpg';
+    newicon.setAttribute('src', icon);
+    newicon.setAttribute('class', 'rounded img-fluid');
+    newship.appendChild(newicon);
+    shiplist.appendChild(newship);
+};
 
 function creatallships() {
+    createmptyship();
     for (var index in ship_data) {
         var ship = ship_data[index];
         var shiplist = document.getElementById('shiplist');
@@ -75,7 +116,7 @@ function creatallships() {
         newship.setAttribute('id', index);
         newship.setAttribute('style', 'display:inline;');
         newship.setAttribute('data-dismiss', 'modal');
-        newship.setAttribute('onclick', 'updateship(' + index + ')')
+        newship.setAttribute('onclick', 'updateship(' + index + ')');
 
         var color = getcolor(ship.rarity);
         newship.setAttribute('style', 'background-color:' + color + ';');
@@ -88,9 +129,8 @@ function creatallships() {
 
         newship.appendChild(newicon);
         shiplist.appendChild(newship);
-        setTimeout(50);
     };
-}
+};
 
 function shipdisplay() {
     for (var index in ship_data) {
@@ -105,47 +145,37 @@ function shipdisplay() {
 };
 
 function isshipselect(ship) {
+    var front = [1, 2, 3, 8, 17, 18];
+    var back = [4, 5, 6, 7, 12, 13];
+    if (fleetpos === "front") {
+        if (!front.includes(ship.type)) {
+            return false;
+        };
+    };
+
+    if (fleetpos === "back") {
+        if (!back.includes(ship.type)) {
+            return false;
+        };
+    };
+
     var indicator_nation = false;
     var indicator_type = false;
     var indicator_rarity = false;
     var indicator_retro = false;
 
     var key = 'nationality';
-    if (shipsetting[key].length > 0) {
-        if (shipsetting[key].some(item => {
-                if (item === String(ship[key])) {
-                    return true;
-                };
-            })) {
-            indicator_nation = true;
-        };
-    } else {
+    if (testship(shipsetting[key], String(ship[key]))) {
         indicator_nation = true;
     };
 
     key = 'type';
-    if (shipsetting[key].length > 0) {
-        if (shipsetting[key].some(item => {
-                if (item === String(ship[key])) {
-                    return true;
-                };
-            })) {
-            indicator_type = true;
-        };
-    } else {
+    if (testship(shipsetting[key], String(ship[key]))) {
         indicator_type = true;
     };
 
     key = 'rarity';
-    if (shipsetting[key].length > 0) {
-        if (shipsetting[key].some(item => {
-                if (item === String(ship[key])) {
-                    return true;
-                };
-            })) {
-            indicator_rarity = true;
-        };
-    } else {
+    if (testship(shipsetting[key], String(ship[key]))) {
         indicator_rarity = true;
     };
 
@@ -158,6 +188,18 @@ function isshipselect(ship) {
         };
     } else {
         return false;
+    };
+};
+
+function testship(setting, shipvalue) {
+    if (setting.length > 0) {
+        if (setting.includes(shipvalue)) {
+            return true;
+        } else {
+            return false;
+        };
+    } else {
+        return true;
     };
 };
 
@@ -204,7 +246,7 @@ function getsetting() {
         newsetting.retro = retro.value;
     } else {
         newsetting.retro = '0';
-    }
+    };
 
     return newsetting;
 };
