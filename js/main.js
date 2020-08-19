@@ -8,10 +8,14 @@ var newshipid = '';
 var fleetpos = '';
 
 var current_equipid = '';
+var current_equiptype = '';
+
+var fordebug = '';
 
 $(document).ready(
     function() {
         creatallships();
+        creatallequips();
         shipdisplay();
         $(".btn-outline-primary").click(
             function() {
@@ -40,6 +44,8 @@ function setcurrent(item) {
         setshipbutton();
     } else {
         current_equipid = String(item.id);
+        current_equiptype = item.getAttribute('eqtype');
+        equipdisplay(item);
     };
 };
 
@@ -47,23 +53,62 @@ function setnewship(id) {
     newshipid = String(id);
 };
 
+function sEquipButton(item, status) {
+    var allbutton = item.querySelectorAll('.equip');
+    allbutton.forEach(item => {
+        item.textContent = '';
+        item.style = '';
+    });
+
+    if (status) {
+        allbutton.forEach(item => {
+            item.disabled = false;
+            var pos = 'equip_' + item.getAttribute('pos');
+            var ship = ship_data[newshipid];
+            item.setAttribute('eqtype', ship[pos]);
+        });
+    } else {
+        allbutton.forEach(item => item.disabled = true);
+    };
+};
+
 function updateship(id) {
     var button = document.getElementById(current_shipid);
+    var shipdiv = document.getElementById(current_shipid.slice(0, 3));
     button.textContent = '';
+    setnewship(id);
     if (id === 0) {
         button.setAttribute('style', 'background-color:gray;');
+        sEquipButton(shipdiv, false);
         return;
+    } else {
+        sEquipButton(shipdiv, true);
     };
-    setnewship(id);
     var copyimg = document.getElementById(newshipid).firstChild.cloneNode(true);
     button.appendChild(copyimg);
     var color = document.getElementById(newshipid).style.backgroundColor;
     button.setAttribute('style', 'background-color:' + color + ';');
 };
 
+function updateEquip(item) {
+    var button = document.getElementById(current_equipid);
+    button.textContent = '';
+    if (item.id === 0) {
+        button.setAttribute('style', 'background-color:rgb(30.8%, 30.8%, 30.8%);');
+        return;
+    };
+    var copyeq = item.firstChild.cloneNode(true);
+    button.appendChild(copyeq);
+    var color = item.style.backgroundColor;
+    button.setAttribute('style', 'background-color:' + color + ';');
+};
+
 function getcolor(rarity) {
     var color = '';
     switch (rarity) {
+        case 1:
+            color = 'lightgray';
+            break;
         case 2:
             color = 'lightgray';
             break;
@@ -119,14 +164,39 @@ function creatallships() {
         var color = getcolor(ship.rarity);
         newship.setAttribute('style', 'background-color:' + color + ';');
 
-        var shipicon = ship_data[index].painting;
-        var icon = 'shipicon/' + shipicon.toLowerCase() + '.png';
+        var icon = 'shipicon/' + ship.painting.toLowerCase() + '.png';
         var newicon = document.createElement('img');
         newicon.setAttribute('src', icon);
-        newicon.setAttribute('class', 'rounded img-fluid');
+        newicon.setAttribute('class', 'img-rounded img-fluid');
 
         newship.appendChild(newicon);
         shiplist.appendChild(newship);
+    };
+};
+
+
+function creatallequips() {
+    for (var index in equip_data) {
+        var equip = equip_data[index];
+        var equiplist = document.getElementById('equiplist');
+        var newequip = document.createElement('button');
+        newequip.setAttribute('type', 'button');
+        newequip.setAttribute('class', 'equip');
+        newequip.setAttribute('id', index);
+        newequip.setAttribute('style', 'display:inline;');
+        newequip.setAttribute('data-dismiss', 'modal');
+        newequip.setAttribute('onclick', 'updateEquip(this)');
+
+        var color = getcolor(equip.rarity);
+        newequip.setAttribute('style', 'background-color:' + color + ';');
+
+        var icon = 'equips/' + String(equip.icon) + '.png';
+        var newicon = document.createElement('img');
+        newicon.setAttribute('src', icon);
+        newicon.setAttribute('class', 'img-rounded img-fluid h-100');
+
+        newequip.appendChild(newicon);
+        equiplist.appendChild(newequip);
     };
 };
 
@@ -136,6 +206,19 @@ function shipdisplay() {
         var ship = ship_data[index];
         var select = isshipselect(ship);
         if (select) {
+            document.getElementById(index).style.display = 'inline';
+        } else {
+            document.getElementById(index).style.display = 'none';
+        };
+    };
+};
+
+function equipdisplay(item) {
+    equiptype = item.getAttribute('eqtype');
+    equiptype = equiptype.split(',');
+    for (var index in equip_data) {
+        var equip = equip_data[index];
+        if (equiptype.includes(String(equip.type))) {
             document.getElementById(index).style.display = 'inline';
         } else {
             document.getElementById(index).style.display = 'none';
@@ -237,7 +320,6 @@ function getsetting() {
                 newlist.push(element.value);
             };
         });
-        console.log(newlist);
         newsetting.type = newlist;
     } else {
         newsetting.type = [];

@@ -25,6 +25,10 @@
             grid-template-columns: auto auto auto auto auto auto;
         }
         
+        .img-fluid {
+            object-fit: scale-down;
+        }
+        
         .shiplist {
             padding: 0%;
         }
@@ -71,8 +75,8 @@
             width: 80px;
             height: 80px;
             background: rgb(30.8%, 30.8%, 30.8%);
-            border: 1px black;
-            border-style: solid;
+            border-style: hidden;
+            padding: 2px;
             margin: 1px;
             border-radius: 5px;
         }
@@ -90,55 +94,55 @@
             <h2>Fleet1</h2>
             <div class="fleet">
                 <div class="fleet-front">
-                    <div class="ship">
+                    <div class="ship" id="113">
                         <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect" onclick="setcurrent(this)" id="1131" limit="front"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1132)" id="1132"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1133)" id="1133"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1134)" id="1134"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1135)" id="1135"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1136)" id="1136"></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1132" data-toggle="modal" data-target="#equipselect" pos="1" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1133" data-toggle="modal" data-target="#equipselect" pos="2" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1134" data-toggle="modal" data-target="#equipselect" pos="3" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1135" data-toggle="modal" data-target="#equipselect" pos="4" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1136" data-toggle="modal" data-target="#equipselect" pos="5" eqtype="" disabled></button>
                     </div>
-                    <div class="ship">
+                    <div class="ship" id="112">
                         <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect" onclick="setcurrent(this)" id="1121" limit="front"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1122)" id="1122"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1123)" id="1123"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1124)" id="1124"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1125)" id="1125"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1126)" id="1126"></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1122" data-toggle="modal" data-target="#equipselect" pos="1" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1123" data-toggle="modal" data-target="#equipselect" pos="2" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1124" data-toggle="modal" data-target="#equipselect" pos="3" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1125" data-toggle="modal" data-target="#equipselect" pos="4" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1126" data-toggle="modal" data-target="#equipselect" pos="5" eqtype="" disabled></button>
                     </div>
-                    <div class="ship">
+                    <div class="ship" id="111">
                         <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect" onclick="setcurrent(this)" id="1111" limit="front"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1112)" id="1112"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1113)" id="1113"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1114)" id="1114"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1115)" id="1115"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1116)" id="1116"></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1112" data-toggle="modal" data-target="#equipselect" pos="1" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1113" data-toggle="modal" data-target="#equipselect" pos="2" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1114" data-toggle="modal" data-target="#equipselect" pos="3" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1115" data-toggle="modal" data-target="#equipselect" pos="4" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1116" data-toggle="modal" data-target="#equipselect" pos="5" eqtype="" disabled></button>
                     </div>
                 </div>
                 <div class="fleet-back">
-                    <div class="ship">
+                    <div class="ship" id="125">
                         <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect" onclick="setcurrent(this)" id="1251" limit="back"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1252)" id="1252"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1253)" id="1253"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1254)" id="1254"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1255)" id="1255"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1256)" id="1256"></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1252" data-toggle="modal" data-target="#equipselect" pos="1" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1253" data-toggle="modal" data-target="#equipselect" pos="2" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1254" data-toggle="modal" data-target="#equipselect" pos="3" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1255" data-toggle="modal" data-target="#equipselect" pos="4" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1256" data-toggle="modal" data-target="#equipselect" pos="5" eqtype="" disabled></button>
                     </div>
-                    <div class="ship">
+                    <div class="ship" id="124">
                         <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect" onclick="setcurrent(this)" id="1241" limit="back"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1242)" id="1242"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1243)" id="1243"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1244)" id="1244"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1245)" id="1245"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1246)" id="1246"></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1242" data-toggle="modal" data-target="#equipselect" pos="1" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1243" data-toggle="modal" data-target="#equipselect" pos="2" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1244" data-toggle="modal" data-target="#equipselect" pos="3" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1245" data-toggle="modal" data-target="#equipselect" pos="4" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1246" data-toggle="modal" data-target="#equipselect" pos="5" eqtype="" disabled></button>
                     </div>
-                    <div class="ship">
+                    <div class="ship" id="126">
                         <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect" onclick="setcurrent(this)" id="1261" limit="back"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1262)" id="1262"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1263)" id="1263"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1264)" id="1264"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1265)" id="1265"></button>
-                        <button type="button" class="equip" onclick="setcurrent(1266)" id="1266"></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1262" data-toggle="modal" data-target="#equipselect" pos="1" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1263" data-toggle="modal" data-target="#equipselect" pos="2" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1264" data-toggle="modal" data-target="#equipselect" pos="3" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1265" data-toggle="modal" data-target="#equipselect" pos="4" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="1266" data-toggle="modal" data-target="#equipselect" pos="5" eqtype="" disabled></button>
                     </div>
                 </div>
             </div>
@@ -149,65 +153,81 @@
             <div class="fleet">
                 <div class="fleet-front">
                     <div class="ship" id="213">
-                        <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect">
-                            </button>
-                        <div class="equip"></div>
-                        <div class="equip"></div>
-                        <div class="equip"></div>
-                        <div class="equip"></div>
-                        <div class="equip"></div>
+                        <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect" onclick="setcurrent(this)" id="2131" limit="front"></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2132" data-toggle="modal" data-target="#equipselect" pos="1" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2133" data-toggle="modal" data-target="#equipselect" pos="2" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2134" data-toggle="modal" data-target="#equipselect" pos="3" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2135" data-toggle="modal" data-target="#equipselect" pos="4" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2136" data-toggle="modal" data-target="#equipselect" pos="5" eqtype="" disabled></button>
                     </div>
                     <div class="ship" id="212">
-                        <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect">
-                            </button>
-                        <div class="equip"></div>
-                        <div class="equip"></div>
-                        <div class="equip"></div>
-                        <div class="equip"></div>
-                        <div class="equip"></div>
+                        <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect" onclick="setcurrent(this)" id="2121" limit="front"></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2122" data-toggle="modal" data-target="#equipselect" pos="1" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2123" data-toggle="modal" data-target="#equipselect" pos="2" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2124" data-toggle="modal" data-target="#equipselect" pos="3" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2125" data-toggle="modal" data-target="#equipselect" pos="4" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2126" data-toggle="modal" data-target="#equipselect" pos="5" eqtype="" disabled></button>
                     </div>
                     <div class="ship" id="211">
-                        <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect">
-                            </button>
-                        <div class="equip"></div>
-                        <div class="equip"></div>
-                        <div class="equip"></div>
-                        <div class="equip"></div>
-                        <div class="equip"></div>
+                        <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect" onclick="setcurrent(this)" id="2111" limit="front"></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2112" data-toggle="modal" data-target="#equipselect" pos="1" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2113" data-toggle="modal" data-target="#equipselect" pos="2" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2114" data-toggle="modal" data-target="#equipselect" pos="3" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2115" data-toggle="modal" data-target="#equipselect" pos="4" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2116" data-toggle="modal" data-target="#equipselect" pos="5" eqtype="" disabled></button>
                     </div>
                 </div>
                 <div class="fleet-back">
                     <div class="ship" id="225">
-                        <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect">
-                            </button>
-                        <div class="equip"></div>
-                        <div class="equip"></div>
-                        <div class="equip"></div>
-                        <div class="equip"></div>
-                        <div class="equip"></div>
+                        <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect" onclick="setcurrent(this)" id="2251" limit="back"></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2252" data-toggle="modal" data-target="#equipselect" pos="1" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2253" data-toggle="modal" data-target="#equipselect" pos="2" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2254" data-toggle="modal" data-target="#equipselect" pos="3" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2255" data-toggle="modal" data-target="#equipselect" pos="4" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2256" data-toggle="modal" data-target="#equipselect" pos="5" eqtype="" disabled></button>
                     </div>
                     <div class="ship" id="224">
-                        <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect">
-                            </button>
-                        <div class="equip"></div>
-                        <div class="equip"></div>
-                        <div class="equip"></div>
-                        <div class="equip"></div>
-                        <div class="equip"></div>
+                        <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect" onclick="setcurrent(this)" id="2241" limit="back"></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2242" data-toggle="modal" data-target="#equipselect" pos="1" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2243" data-toggle="modal" data-target="#equipselect" pos="2" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2244" data-toggle="modal" data-target="#equipselect" pos="3" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2245" data-toggle="modal" data-target="#equipselect" pos="4" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2246" data-toggle="modal" data-target="#equipselect" pos="5" eqtype="" disabled></button>
                     </div>
                     <div class="ship" id="226">
-                        <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect">
-                            </button>
-                        <div class="equip"></div>
-                        <div class="equip"></div>
-                        <div class="equip"></div>
-                        <div class="equip"></div>
-                        <div class="equip"></div>
+                        <button type="button" class="shipicon" data-toggle="modal" data-target="#shipselect" onclick="setcurrent(this)" id="2261" limit="back"></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2262" data-toggle="modal" data-target="#equipselect" pos="1" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2263" data-toggle="modal" data-target="#equipselect" pos="2" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2264" data-toggle="modal" data-target="#equipselect" pos="3" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2265" data-toggle="modal" data-target="#equipselect" pos="4" eqtype="" disabled></button>
+                        <button type="button" class="equip" onclick="setcurrent(this)" id="2266" data-toggle="modal" data-target="#equipselect" pos="5" eqtype="" disabled></button>
                     </div>
                 </div>
             </div>
         </div>
 
+
+        <div class="modal fade" id="equipselect">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Equip Select</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="container">Equips</div>
+                            <div class="container" id="equiplist"></div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="modal fade" id="shipselect">
             <div class="modal-dialog modal-lg">
@@ -285,6 +305,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script src='js/ship_data.js'></script>
+    <script src='js/equip_data.js'></script>
     <script src="js/main.js"></script>
 </body>
 
