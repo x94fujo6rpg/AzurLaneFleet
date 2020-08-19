@@ -10,8 +10,6 @@ var fleetpos = '';
 var current_equipid = '';
 var current_equiptype = '';
 
-var fordebug = '';
-
 $(document).ready(
     function() {
         creatallships();
@@ -66,6 +64,7 @@ function sEquipButton(item, status) {
             var pos = 'equip_' + item.getAttribute('pos');
             var ship = ship_data[newshipid];
             item.setAttribute('eqtype', ship[pos]);
+            item.setAttribute('stype', ship.type);
         });
     } else {
         allbutton.forEach(item => item.disabled = true);
@@ -214,12 +213,17 @@ function shipdisplay() {
 };
 
 function equipdisplay(item) {
-    equiptype = item.getAttribute('eqtype');
-    equiptype = equiptype.split(',');
+    shiptype = parseInt(item.getAttribute('stype'), 10);
+    equiptype = item.getAttribute('eqtype').split(',');
     for (var index in equip_data) {
         var equip = equip_data[index];
+        var forbidden = equip_data[index].ship_type_forbidden;
         if (equiptype.includes(String(equip.type))) {
-            document.getElementById(index).style.display = 'inline';
+            if (forbidden.includes(shiptype)) {
+                document.getElementById(index).style.display = 'none';
+            } else {
+                document.getElementById(index).style.display = 'inline';
+            };
         } else {
             document.getElementById(index).style.display = 'none';
         };
