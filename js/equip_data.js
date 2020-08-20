@@ -5333,7 +5333,7 @@
         "tech": 0,
         "ammo": "徹甲弾",
         "ammo_icon": [
-            3
+            2
         ],
         "id": 91000,
         "icon": "51000",
@@ -6466,7 +6466,7 @@
         "tech": 0,
         "ammo": "通常弾",
         "ammo_icon": [
-            3
+            1
         ],
         "id": 23100,
         "icon": "23100",
@@ -6484,7 +6484,7 @@
         "tech": 0,
         "ammo": "通常弾",
         "ammo_icon": [
-            3
+            1
         ],
         "id": 23120,
         "icon": "23120",
@@ -6879,6 +6879,21 @@
         "id": 7100,
         "icon": "7100",
         "name": "150mm主砲",
+        "ship_type_forbidden": []
+    },
+    "42300": {
+        "nationality": 4,
+        "type": 2,
+        "attribute_2": "cannon",
+        "rarity": 2,
+        "tech": 1,
+        "ammo": "徹甲弾",
+        "ammo_icon": [
+            2
+        ],
+        "id": 42300,
+        "icon": "42300",
+        "name": "150mmTbtsKC36単装砲",
         "ship_type_forbidden": []
     },
     "42240": {

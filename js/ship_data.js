@@ -2761,6 +2761,42 @@
             14
         ]
     },
+    "408090": {
+        "nationality": 4,
+        "type": 8,
+        "base_list": [
+            2,
+            2,
+            1
+        ],
+        "id": 408094,
+        "skin_id": 408090,
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "408090",
+        "painting": "U96",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "U-96",
+        "en_name": "KMS U-96",
+        "cn_name": "U-96",
+        "equip_1": [
+            13
+        ],
+        "equip_2": [
+            13
+        ],
+        "equip_3": [
+            1
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
     "408080": {
         "nationality": 4,
         "type": 8,
@@ -3964,6 +4000,45 @@
         "cn_name": "Z35",
         "equip_1": [
             1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "401260": {
+        "nationality": 4,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 401264,
+        "skin_id": 401260,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "401260",
+        "painting": "Z26",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "Z26",
+        "en_name": "KMS Z26",
+        "cn_name": "Z26",
+        "equip_1": [
+            1,
+            2
         ],
         "equip_2": [
             5
