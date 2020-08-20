@@ -9,15 +9,23 @@
     <title>Azur Lane Fleet Formation</title>
     <style>
         body {
-            background-color: white;
+            background-color: black;
         }
         
         h1 {
-            color: black;
+            color: white;
         }
         
         h2 {
             color: deepskyblue;
+        }
+        
+        .modal-dialog {
+            background-color: rgb(25%, 25%, 25%);
+        }
+        
+        .modal-content {
+            background-color: rgb(25%, 25%, 25%);
         }
         
         .ship {
@@ -34,13 +42,12 @@
         }
         
         .fleet {
-            width: 1100px;
-            height: 280px;
+            width: 1000px;
+            height: 250px;
             display: grid;
             grid-template-areas: 'f-back f-front';
             margin: auto;
             padding: 0px;
-            border-radius: 5px;
         }
         
         .fleet-front {
@@ -69,6 +76,31 @@
             padding: 2px;
             margin: 1px;
             border-radius: 5px;
+            position: relative;
+        }
+        
+        .main {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 2;
+            width: 100%;
+        }
+        
+        .frame {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 3;
+            width: 100%;
+        }
+        
+        .bg {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+            width: 100%;
         }
         
         .equip {
@@ -79,6 +111,7 @@
             padding: 2px;
             margin: 1px;
             border-radius: 5px;
+            position: relative;
         }
     </style>
 </head>
@@ -88,8 +121,6 @@
         <div align="center">
             <h1>Azur Lane Fleet</h1>
         </div>
-        <br>
-        <br>
         <div align="center" id="fleet1">
             <h2>Fleet1</h2>
             <div class="fleet">
@@ -210,87 +241,81 @@
         <div class="container" align="center">
             <a href="https://github.com/x94fujo6rpg/AzurLaneFleet">Github</a>
         </div>
-
-
         <div class="modal fade" id="equipselect">
             <div class="modal-dialog modal-lg">
-                <div class="modal-content">
+                <div class="modal-content text-light">
                     <div class="modal-header">
                         <h4 class="modal-title">Equip Select</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <button type="button" class="close text-light" data-dismiss="modal">&times;</button>
                     </div>
-
                     <div class="modal-body">
                         <div class="container">
                             <div class="container">Equips</div>
                             <div class="container" id="equiplist"></div>
                         </div>
                     </div>
-
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="modal fade" id="shipselect">
             <div class="modal-dialog modal-lg">
-                <div class="modal-content">
+                <div class="modal-content text-light">
                     <div class="modal-header">
                         <h4 class="modal-title">Ship Select</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <button type="button" class="close text-light" data-dismiss="modal">&times;</button>
                     </div>
-
                     <div class="modal-body">
                         <div class="container">
                             <div class="container">Nation</div>
                             <div class="container" id='shipnation'>
-                                <button type="button" class="btn btn-outline-primary btn-sm" value="3">IJN_SakuraEmpire</button>
-                                <button type="button" class="btn btn-outline-primary btn-sm" value="1">USS_EagleUnion</button>
-                                <button type="button" class="btn btn-outline-primary btn-sm" value="2">HMS_RoyalNavy</button>
-                                <button type="button" class="btn btn-outline-primary btn-sm" value="4">KMS_Ironblood</button>
-                                <button type="button" class="btn btn-outline-primary btn-sm" value="5">PRAN/ROC_EasternRadiance</button>
-                                <button type="button" class="btn btn-outline-primary btn-sm" value="7">SN_NorthernParliament</button>
-                                <button type="button" class="btn btn-outline-primary btn-sm" value="8">FFNF_IrisLibre</button>
-                                <button type="button" class="btn btn-outline-primary btn-sm" value="9">MNF_VichyaDominion</button>
-                                <button type="button" class="btn btn-outline-primary btn-sm" value="6">RN_SardegnaEmpire</button>
-                                <button type="button" class="btn btn-outline-primary btn-sm" value="0">Others</button>
+                                <button type="button" class="btn btn-outline-light btn-sm" value="3">IJN_SakuraEmpire</button>
+                                <button type="button" class="btn btn-outline-light btn-sm" value="1">USS_EagleUnion</button>
+                                <button type="button" class="btn btn-outline-light btn-sm" value="2">HMS_RoyalNavy</button>
+                                <button type="button" class="btn btn-outline-light btn-sm" value="4">KMS_Ironblood</button>
+                                <button type="button" class="btn btn-outline-light btn-sm" value="5">PRAN/ROC_EasternRadiance</button>
+                                <button type="button" class="btn btn-outline-light btn-sm" value="7">SN_NorthernParliament</button>
+                                <button type="button" class="btn btn-outline-light btn-sm" value="8">FFNF_IrisLibre</button>
+                                <button type="button" class="btn btn-outline-light btn-sm" value="9">MNF_VichyaDominion</button>
+                                <button type="button" class="btn btn-outline-light btn-sm" value="6">RN_SardegnaEmpire</button>
+                                <button type="button" class="btn btn-outline-light btn-sm" value="0">Others</button>
                             </div>
                         </div>
                         <div class="container" id="shiptype">
                             <div class="container">Type</div>
                             <div class="container" id="ffs" style="display: inline;">
-                                <button type="button" class="btn btn-outline-primary btn-sm" value="1">DD_Destroyer</button>
-                                <button type="button" class="btn btn-outline-primary btn-sm" value="2">CL_LightCruiser</button>
-                                <button type="button" class="btn btn-outline-primary btn-sm" value="3">CA_HeavyCruiser</button>
-                                <button type="button" class="btn btn-outline-primary btn-sm" value="18">CB_LargeCruiser</button>
-                                <button type="button" class="btn btn-outline-primary btn-sm" value="8">SS_Submarine</button>
-                                <button type="button" class="btn btn-outline-primary btn-sm" value="17">SSV_SubmarineCarrier</button>
+                                <button type="button" class="btn btn-outline-light btn-sm" value="1">DD_Destroyer</button>
+                                <button type="button" class="btn btn-outline-light btn-sm" value="2">CL_LightCruiser</button>
+                                <button type="button" class="btn btn-outline-light btn-sm" value="3">CA_HeavyCruiser</button>
+                                <button type="button" class="btn btn-outline-light btn-sm" value="18">CB_LargeCruiser</button>
+                                <button type="button" class="btn btn-outline-light btn-sm" value="8">SS_Submarine</button>
+                                <button type="button" class="btn btn-outline-light btn-sm" value="17">SSV_SubmarineCarrier</button>
                             </div>
                             <div class="container" id="fbs" style="display: inline;">
-                                <button type="button" class="btn btn-outline-primary btn-sm" value="4">BC_BattleCruiser</button>
-                                <button type="button" class="btn btn-outline-primary btn-sm" value="5">BB_BattleShip</button>
-                                <button type="button" class="btn btn-outline-primary btn-sm" value="6">CVL_LightCarrier</button>
-                                <button type="button" class="btn btn-outline-primary btn-sm" value="7">CV_Carrier</button>
-                                <button type="button" class="btn btn-outline-primary btn-sm" value="13">BM_Monitor</button>
-                                <button type="button" class="btn btn-outline-primary btn-sm" value="12">AR_RepairShip</button>
+                                <button type="button" class="btn btn-outline-light btn-sm" value="4">BC_BattleCruiser</button>
+                                <button type="button" class="btn btn-outline-light btn-sm" value="5">BB_BattleShip</button>
+                                <button type="button" class="btn btn-outline-light btn-sm" value="6">CVL_LightCarrier</button>
+                                <button type="button" class="btn btn-outline-light btn-sm" value="7">CV_Carrier</button>
+                                <button type="button" class="btn btn-outline-light btn-sm" value="13">BM_Monitor</button>
+                                <button type="button" class="btn btn-outline-light btn-sm" value="12">AR_RepairShip</button>
                             </div>
                         </div>
                         <div class="container">
                             <div class="container">Rarity</div>
                             <div class="container" id='shiprarity'>
-                                <button type="button" class="btn btn-outline-primary btn-sm" id='sr2' value="2">N</button>
-                                <button type="button" class="btn btn-outline-primary btn-sm" id='sr3' value="3">R</button>
-                                <button type="button" class="btn btn-outline-primary btn-sm" id='sr4' value="4">SR</button>
-                                <button type="button" class="btn btn-outline-primary btn-sm" id='sr5' value="5">SSR</button>
-                                <button type="button" class="btn btn-outline-primary btn-sm" id='sr6' value="6">UR</button>
+                                <button type="button" class="btn btn-outline-light btn-sm" id='sr2' value="2">N</button>
+                                <button type="button" class="btn btn-outline-light btn-sm" id='sr3' value="3">R</button>
+                                <button type="button" class="btn btn-outline-light btn-sm" id='sr4' value="4">SR</button>
+                                <button type="button" class="btn btn-outline-light btn-sm" id='sr5' value="5">SSR</button>
+                                <button type="button" class="btn btn-outline-light btn-sm" id='sr6' value="6">UR</button>
                             </div>
                         </div>
                         <div class="container">
                             <div class="container">ExcludeUnRetrofit</div>
                             <div class="container" id='shipretro'>
-                                <button type="button" class="btn btn-outline-primary btn-sm active" aria-pressed="true" value="1">Yes</button>
+                                <button type="button" class="btn btn-outline-light btn-sm active" aria-pressed="true" value="1">Yes</button>
                             </div>
                         </div>
                         <div class="container">
@@ -298,7 +323,6 @@
                             <div class="container" id="shiplist"></div>
                         </div>
                     </div>
-
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                     </div>

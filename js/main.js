@@ -15,7 +15,7 @@ $(document).ready(
         creatallships();
         creatallequips();
         shipdisplay();
-        $(".btn-outline-primary").click(
+        $(".btn-outline-light").click(
             function() {
                 $(this).button('toggle');
                 shipdisplay();
@@ -57,7 +57,6 @@ function sEquipButton(item, status) {
         item.textContent = '';
         item.style = '';
     });
-
     if (status) {
         allbutton.forEach(item => {
             item.disabled = false;
@@ -83,10 +82,8 @@ function updateship(id) {
     } else {
         sEquipButton(shipdiv, true);
     };
-    var copyimg = document.getElementById(newshipid).firstChild.cloneNode(true);
-    button.appendChild(copyimg);
-    var color = document.getElementById(newshipid).style.backgroundColor;
-    button.setAttribute('style', 'background-color:' + color + ';');
+    var item = document.getElementById(newshipid).querySelectorAll('img');
+    item.forEach(x => button.appendChild(x.cloneNode(true)));
 };
 
 function updateEquip(item) {
@@ -96,10 +93,8 @@ function updateEquip(item) {
         button.setAttribute('style', 'background-color:rgb(30.8%, 30.8%, 30.8%);');
         return;
     };
-    var copyeq = item.firstChild.cloneNode(true);
-    button.appendChild(copyeq);
-    var color = item.style.backgroundColor;
-    button.setAttribute('style', 'background-color:' + color + ';');
+    var neweq = document.getElementById(item.id).querySelectorAll('img');
+    neweq.forEach(x => button.appendChild(x.cloneNode(true)));
 };
 
 function getcolor(rarity) {
@@ -132,17 +127,19 @@ function getcolor(rarity) {
 function createmptyship() {
     var shiplist = document.getElementById('shiplist');
     var newship = document.createElement('button');
-    newship.setAttribute('type', 'button');
-    newship.setAttribute('class', 'shipicon');
-    newship.setAttribute('id', '0');
-    newship.setAttribute('style', 'display:inline;');
-    newship.setAttribute('data-dismiss', 'modal');
-    newship.setAttribute('onclick', 'updateship(0)')
-
+    $(newship).attr({
+        'type': 'button',
+        'class': 'shipicon',
+        'id': '0',
+        'style': 'display:inline;',
+        'data-dismiss': 'modal',
+        'onclick': 'updateship(0)'
+    });
     var newicon = document.createElement('img');
-    var icon = 'shipicon/empty.jpg';
-    newicon.setAttribute('src', icon);
-    newicon.setAttribute('class', 'rounded img-fluid');
+    $(newicon).attr({
+        'src': 'shipicon/empty.jpg',
+        'class': 'main'
+    });
     newship.appendChild(newicon);
     shiplist.appendChild(newship);
 };
@@ -153,22 +150,33 @@ function creatallships() {
         var ship = ship_data[index];
         var shiplist = document.getElementById('shiplist');
         var newship = document.createElement('button');
-        newship.setAttribute('type', 'button');
-        newship.setAttribute('class', 'shipicon');
-        newship.setAttribute('id', index);
-        newship.setAttribute('style', 'display:inline;');
-        newship.setAttribute('data-dismiss', 'modal');
-        newship.setAttribute('onclick', 'updateship(' + index + ')');
-
-        var color = getcolor(ship.rarity);
-        newship.setAttribute('style', 'background-color:' + color + ';');
-
-        var icon = 'shipicon/' + ship.painting.toLowerCase() + '.png';
+        var rarity = ship.rarity - 1;
+        $(newship).attr({
+            'type': 'button',
+            'class': 'shipicon',
+            'id': index,
+            'style': 'display:inline; background-color:' + getcolor(ship.rarity) + ';',
+            'data-dismiss': 'modal',
+            'onclick': 'updateship(' + index + ')'
+        });
         var newicon = document.createElement('img');
-        newicon.setAttribute('src', icon);
-        newicon.setAttribute('class', 'img-rounded img-fluid');
-
+        $(newicon).attr({
+            'src': 'shipicon/' + ship.painting.toLowerCase() + '.png',
+            'class': 'main'
+        });
+        var newbg = document.createElement('img');
+        $(newbg).attr({
+            'src': 'ui/bg' + rarity + '.png',
+            'class': 'bg'
+        });
+        var newframe = document.createElement('img');
+        $(newframe).attr({
+            'src': 'ui/frame_' + rarity + 'b.png',
+            'class': 'frame'
+        });
         newship.appendChild(newicon);
+        newship.appendChild(newbg);
+        newship.appendChild(newframe);
         shiplist.appendChild(newship);
     };
 };
@@ -179,22 +187,36 @@ function creatallequips() {
         var equip = equip_data[index];
         var equiplist = document.getElementById('equiplist');
         var newequip = document.createElement('button');
-        newequip.setAttribute('type', 'button');
-        newequip.setAttribute('class', 'equip');
-        newequip.setAttribute('id', index);
-        newequip.setAttribute('style', 'display:inline;');
-        newequip.setAttribute('data-dismiss', 'modal');
-        newequip.setAttribute('onclick', 'updateEquip(this)');
-
-        var color = getcolor(equip.rarity);
-        newequip.setAttribute('style', 'background-color:' + color + ';');
-
-        var icon = 'equips/' + String(equip.icon) + '.png';
+        var rarity = equip.rarity;
+        if (rarity > 1) {
+            rarity--;
+        };
+        $(newequip).attr({
+            'type': 'button',
+            'class': 'equip',
+            'id': index,
+            'style': 'display:inline; background-color:' + getcolor(equip.rarity) + ';',
+            'data-dismiss': 'modal',
+            'onclick': 'updateEquip(this)'
+        });
         var newicon = document.createElement('img');
-        newicon.setAttribute('src', icon);
-        newicon.setAttribute('class', 'img-rounded img-fluid h-100');
-
+        $(newicon).attr({
+            'src': 'equips/' + String(equip.icon) + '.png',
+            'class': 'img-rounded img-fluid h-100 main'
+        });
+        var newbg = document.createElement('img');
+        $(newbg).attr({
+            'src': 'ui/bg' + rarity + '.png',
+            'class': 'bg'
+        });
+        var newframe = document.createElement('img');
+        $(newframe).attr({
+            'src': 'ui/frame_' + rarity + 'b.png',
+            'class': 'frame'
+        });
         newequip.appendChild(newicon);
+        newequip.appendChild(newbg);
+        newequip.appendChild(newframe);
         equiplist.appendChild(newequip);
     };
 };
@@ -238,33 +260,27 @@ function isshipselect(ship) {
             return false;
         };
     };
-
     if (fleetpos === "back") {
         if (!back.includes(ship.type)) {
             return false;
         };
     };
-
     var indicator_nation = false;
     var indicator_type = false;
     var indicator_rarity = false;
     var indicator_retro = false;
-
     var key = 'nationality';
     if (testship(shipsetting[key], String(ship[key]))) {
         indicator_nation = true;
     };
-
     key = 'type';
     if (testship(shipsetting[key], String(ship[key]))) {
         indicator_type = true;
     };
-
     key = 'rarity';
     if (testship(shipsetting[key], String(ship[key]))) {
         indicator_rarity = true;
     };
-
     if (indicator_nation && indicator_type && indicator_rarity) {
         key = 'retro';
         if (shipsetting[key] === '1' && (shipsetting[key] === String(ship[key]))) {
@@ -309,10 +325,8 @@ function getsetting() {
     } else {
         newsetting.nationality = [];
     };
-
     var front = [1, 2, 3, 8, 17, 18];
     var back = [4, 5, 6, 7, 12, 13];
-
     if (shiptype.length > 0) {
         newlist = [];
         shiptype.forEach(element => {
@@ -328,7 +342,6 @@ function getsetting() {
     } else {
         newsetting.type = [];
     };
-
     if (shiprarity.length > 0) {
         newlist = [];
         shiprarity.forEach(element => newlist.push(element.value));
@@ -336,14 +349,11 @@ function getsetting() {
     } else {
         newsetting.rarity = [];
     };
-
     var retro = document.getElementById('shipretro').querySelector('button[aria-pressed=true]');
-
     if (retro) {
         newsetting.retro = retro.value;
     } else {
         newsetting.retro = '0';
     };
-
     return newsetting;
 };
