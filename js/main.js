@@ -138,7 +138,8 @@ function createmptyship() {
     var newicon = document.createElement('img');
     $(newicon).attr({
         'src': 'shipicon/empty.jpg',
-        'class': 'main'
+        'class': 'main',
+        'loading': 'lazy'
     });
     newship.appendChild(newicon);
     shiplist.appendChild(newship);
@@ -162,17 +163,20 @@ function creatallships() {
         var newicon = document.createElement('img');
         $(newicon).attr({
             'src': 'shipicon/' + ship.painting.toLowerCase() + '.png',
-            'class': 'main'
+            'class': 'main',
+            'loading': 'lazy'
         });
         var newbg = document.createElement('img');
         $(newbg).attr({
             'src': 'ui/bg' + rarity + '.png',
-            'class': 'bg'
+            'class': 'bg',
+            'loading': 'lazy'
         });
         var newframe = document.createElement('img');
         $(newframe).attr({
             'src': 'ui/frame_' + rarity + 'b.png',
-            'class': 'frame'
+            'class': 'frame',
+            'loading': 'lazy'
         });
         newship.appendChild(newicon);
         newship.appendChild(newbg);
@@ -202,17 +206,20 @@ function creatallequips() {
         var newicon = document.createElement('img');
         $(newicon).attr({
             'src': 'equips/' + String(equip.icon) + '.png',
-            'class': 'img-rounded img-fluid h-100 main'
+            'class': 'img-rounded img-fluid h-100 main',
+            'loading': 'lazy'
         });
         var newbg = document.createElement('img');
         $(newbg).attr({
             'src': 'ui/bg' + rarity + '.png',
-            'class': 'bg'
+            'class': 'bg',
+            'loading': 'lazy'
         });
         var newframe = document.createElement('img');
         $(newframe).attr({
             'src': 'ui/frame_' + rarity + 'b.png',
-            'class': 'frame'
+            'class': 'frame',
+            'loading': 'lazy'
         });
         newequip.appendChild(newicon);
         newequip.appendChild(newbg);
