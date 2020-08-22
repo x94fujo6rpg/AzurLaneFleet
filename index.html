@@ -11,7 +11,6 @@
     <link rel="prefetch" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" as="script" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
     <link rel="prefetch" href="js/ship_data.js" as="script">
     <link rel="prefetch" href="js/equip_data.js" as="script">
-    <link rel="prefetch" href="js/main.js">
     <title>Azur Lane Fleet</title>
     <style>
         body {
@@ -22,8 +21,8 @@
             color: white;
         }
         
-        h2 {
-            color: deepskyblue;
+        h4 {
+            color: white;
         }
         
         .modal-dialog {
@@ -49,7 +48,7 @@
         
         .fleet {
             width: 1000px;
-            height: 250px;
+            height: 320px;
             display: grid;
             grid-template-areas: 'f-back f-front';
             margin: auto;
@@ -59,13 +58,25 @@
         .fleet-front {
             display: grid;
             grid-area: f-front;
-            margin: auto;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px;
+            border-color: rgba(255, 255, 255, 0.5);
+            ;
+            border-style: ridge;
+            border-radius: 2px;
         }
         
         .fleet-back {
             display: grid;
             grid-area: f-back;
-            margin: auto;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px;
+            border-color: rgba(255, 255, 255, 0.5);
+            ;
+            border-style: ridge;
+            border-radius: 2px;
         }
         
         .selectship {
@@ -81,7 +92,7 @@
             border-style: hidden;
             padding: 2px;
             margin: 1px;
-            border-radius: 5px;
+            border-radius: 2px;
             position: relative;
         }
         
@@ -97,8 +108,56 @@
             position: absolute;
             top: 0px;
             left: 0px;
-            z-index: 3;
+            z-index: 2;
             width: 100%;
+        }
+        
+        .itembox {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .textbox {
+            position: relative;
+            border: 2px;
+            border-color: #cacaca;
+            border-style: ridge;
+            border-radius: 2px;
+            width: 100%;
+            height: 23px;
+            z-index: 2;
+            top: 1px;
+            overflow: hidden;
+        }
+        
+        .boxtext {
+            position: relative;
+            top: -1px;
+            width: max-content;
+            color: white;
+            margin: auto;
+            font-size: 10px;
+        }
+        
+        @keyframes runtext {
+            0% {
+                transform: translateX(50%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        
+        .star {
+            position: absolute;
+            width: 90%;
+            height: 15px;
+            bottom: 1px;
+            z-index: 3;
+            background-repeat: no-repeat;
         }
         
         .bg {
@@ -116,7 +175,7 @@
             border-style: hidden;
             padding: 2px;
             margin: 1px;
-            border-radius: 5px;
+            border-radius: 2px;
             position: relative;
         }
     </style>
@@ -127,8 +186,23 @@
         <div align="center">
             <h1>Azur Lane Fleet</h1>
         </div>
+        <div align="center">
+            <h4>Select language</h4>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active" id="cn" onclick="setlang(this)">
+                  <input type="radio" name="lang" autocomplete="off" checked>CN
+                </label>
+                <label class="btn btn-secondary" id="jp" onclick="setlang(this)">
+                  <input type="radio" name="lang" autocomplete="off">JP
+                </label>
+                <label class="btn btn-secondary" id="en" onclick="setlang(this)">
+                  <input type="radio" name="lang" autocomplete="off">EN
+                </label>
+            </div>
+        </div>
+        <br>
+        <br>
         <div align="center" id="fleet1">
-            <h2>Fleet1</h2>
             <div class="fleet">
                 <div class="fleet-front">
                     <div class="ship" id="113">
@@ -185,8 +259,8 @@
             </div>
         </div>
         <br>
+        <br>
         <div align="center" id="fleet2">
-            <h2>Fleet2</h2>
             <div class="fleet">
                 <div class="fleet-front">
                     <div class="ship" id="213">

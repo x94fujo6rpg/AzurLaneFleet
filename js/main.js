@@ -1,12 +1,14 @@
-var shipsetting = {};
-var showshiplist = {};
-var hidelist = [];
-var current_shipid = "";
-var current_shiprar = "";
-var newshipid = "";
-var fleetpos = "";
-var current_equipid = "";
-var current_equiptype = "";
+let shipsetting = {};
+let showshiplist = {};
+let hidelist = [];
+let current_shipid = "";
+let current_shiprar = "";
+let newshipid = "";
+let fleetpos = "";
+let current_equipid = "";
+let current_equiptype = "";
+let ani = "animation: runtext 3s linear alternate infinite;";
+ani = "";
 
 $(document).ready(
     function() {
@@ -19,6 +21,29 @@ $(document).ready(
         );
     }
 );
+
+function setlang(obj) {
+    let lang = obj.id;
+    let allname = document.querySelectorAll(".boxtext[cn]");
+    let de = 0;
+
+    let strmax = 0;
+    if (lang === "cn") {
+        strmax = 11;
+    }
+    allname.forEach((item) => {
+        setTimeout(() => {
+            let newname = item.getAttribute(lang);
+            if (newname.len() >= 11) {
+                item.setAttribute("style", ani);
+            } else {
+                item.removeAttribute("style");
+            }
+            item.textContent = newname;
+        }, de);
+        de++;
+    });
+}
 
 function sorting(arr, key, descen) {
     if (descen) {
@@ -62,7 +87,7 @@ function setnewship(id) {
 }
 
 function sEquipButton(item, status) {
-    var allbutton = item.querySelectorAll(".equip");
+    let allbutton = item.querySelectorAll(".equip");
     allbutton.forEach(item => {
         item.textContent = "";
         item.style = "";
@@ -70,8 +95,8 @@ function sEquipButton(item, status) {
     if (status) {
         allbutton.forEach(item => {
             item.disabled = false;
-            var pos = "equip_" + item.getAttribute("pos");
-            var ship = ship_data[newshipid];
+            let pos = "equip_" + item.getAttribute("pos");
+            let ship = ship_data[newshipid];
             item.setAttribute("eqtype", ship[pos]);
             item.setAttribute("stype", ship.type);
         });
@@ -81,34 +106,37 @@ function sEquipButton(item, status) {
 }
 
 function updateship(id) {
-    var button = document.getElementById(current_shipid);
-    var shipdiv = document.getElementById(current_shipid.slice(0, 3));
+    let button = document.getElementById(current_shipid);
+    let shipdiv = document.getElementById(current_shipid.slice(0, 3));
     button.textContent = "";
     setnewship(id);
     if (id === 0) {
-        button.setAttribute("style", "background-color:gray;");
+        button.setAttribute("style", "background:gray;");
         sEquipButton(shipdiv, false);
         return;
     } else {
+        button.setAttribute("style", "background:none;");
         sEquipButton(shipdiv, true);
     }
-    var item = document.getElementById(newshipid).querySelectorAll("img");
+    let item = document.getElementById(newshipid).querySelectorAll(".container,.textbox");
     item.forEach(x => button.appendChild(x.cloneNode(true)));
 }
 
 function updateEquip(item) {
-    var button = document.getElementById(current_equipid);
+    let button = document.getElementById(current_equipid);
     button.textContent = "";
     if (item.id === 0) {
         button.setAttribute("style", "background-color:rgb(30.8%, 30.8%, 30.8%);");
         return;
+    } else {
+        button.setAttribute("style", "background:none;");
     }
-    var neweq = document.getElementById(item.id).querySelectorAll("img");
+    let neweq = document.getElementById(item.id).querySelectorAll(".container,.textbox");
     neweq.forEach(x => button.appendChild(x.cloneNode(true)));
 }
 
 function getcolor(rarity) {
-    var color = "";
+    let color = "";
     switch (rarity) {
         case 1:
             color = "lightgray";
@@ -135,8 +163,8 @@ function getcolor(rarity) {
 }
 
 function createmptyship() {
-    var shiplist = document.getElementById("shiplist");
-    var newship = document.createElement("button");
+    let shiplist = document.getElementById("shiplist");
+    let newship = document.createElement("button");
     $(newship).attr({
         "type": "button",
         "class": "shipicon",
@@ -145,61 +173,130 @@ function createmptyship() {
         "data-dismiss": "modal",
         "onclick": "updateship(0)"
     });
-    var newicon = document.createElement("img");
+    let newicon = document.createElement("img");
     $(newicon).attr({
         "src": "shipicon/empty.jpg",
         "class": "main",
         "loading": "lazy"
     });
-    newship.appendChild(newicon);
+
+    let top = document.createElement("div");
+    $(top).attr({
+        "class": "container itembox"
+    });
+
+    top.appendChild(newicon);
+
+    let newname = document.createElement("div");
+    $(newname).attr({
+        "class": "textbox"
+    });
+
+    let name = document.createElement("div");
+    $(name).attr({
+        "class": "boxtext text-nowrap small"
+    });
+    name.textContent = "remove";
+    newname.appendChild(name);
+
+    newship.appendChild(top);
+    newship.appendChild(newname);
     shiplist.appendChild(newship);
     creatallships();
 }
 
 function creatallships() {
-    var newlist = [];
+    let newlist = [];
+    let de = 0;
     for (let index in ship_data) {
         newlist.push(ship_data[index]);
     }
     newlist = sorting(newlist, 'type', true);
     newlist = sorting(newlist, 'nationality', true);
     newlist = sorting(newlist, 'rarity', true);
-    var de = 0;
     newlist.forEach((item) => {
         setTimeout(function() {
-            var ship = item;
-            var shiplist = document.getElementById("shiplist");
-            var newship = document.createElement("button");
-            var rarity = ship.rarity - 1;
+            let ship = item;
+            let shiplist = document.getElementById("shiplist");
+            let newship = document.createElement("button");
+            let rarity = ship.rarity - 1;
             $(newship).attr({
                 "type": "button",
                 "class": "shipicon",
                 "id": ship.skin_id,
-                "style": "display:inline; background-color:" + getcolor(ship.rarity) + ";",
+                "style": "display:inline; background:none;",
                 "data-dismiss": "modal",
                 "onclick": "updateship(" + ship.skin_id + ")"
             });
-            var newicon = document.createElement("img");
+            let newicon = document.createElement("img");
             $(newicon).attr({
                 "src": "shipicon/" + ship.painting.toLowerCase() + ".png",
                 "class": "main",
                 "loading": "lazy"
             });
-            var newbg = document.createElement("img");
+            let newbg = document.createElement("img");
             $(newbg).attr({
                 "src": "ui/bg" + rarity + ".png",
                 "class": "bg",
                 "loading": "lazy"
             });
-            var newframe = document.createElement("img");
+            let newframe = document.createElement("img");
             $(newframe).attr({
                 "src": "ui/frame_" + rarity + "b.png",
                 "class": "frame",
                 "loading": "lazy"
             });
-            newship.appendChild(newicon);
-            newship.appendChild(newbg);
-            newship.appendChild(newframe);
+            let newstar = document.createElement("div");
+            let star = "";
+            let pos = "";
+            for (let x = 0; x < ship.star + 1; x++) {
+                if (x > 0 && x != ship.star) {
+                    star += ",";
+                    pos += ",";
+                } else if (x === ship.star) {
+                    star += ";";
+                    pos += ";";
+                    break;
+                }
+                star += "url(ui/star.png)";
+                pos += (x * 10) + "px";
+            }
+            $(newstar).attr({
+                "class": "star",
+                "style": "background-image:" + star + "background-position:" + pos
+            });
+
+            let top = document.createElement("div");
+            $(top).attr({
+                "class": "container itembox"
+            });
+
+            top.appendChild(newicon);
+            top.appendChild(newbg);
+            top.appendChild(newframe);
+            top.appendChild(newstar);
+
+            let newname = document.createElement("div");
+            $(newname).attr({
+                "class": "textbox"
+            });
+
+            let name = document.createElement("div");
+            $(name).attr({
+                "class": "boxtext text-nowrap small",
+                "cn": ship.cn_name,
+                "en": ship.en_name,
+                "jp": ship.jp_name
+            });
+            name.textContent = ship.cn_name;
+
+            if (ship.cn_name.len() >= 11) {
+                name.setAttribute("style", ani);
+            }
+            newname.appendChild(name);
+
+            newship.appendChild(top);
+            newship.appendChild(newname);
             shiplist.appendChild(newship);
         }, de);
         de++;
@@ -207,20 +304,28 @@ function creatallships() {
     creatallequips(de);
 }
 
+String.prototype.len = function() {
+    return this.replace(/[^\x00-\xff]/g, "rr").length;
+};
+
+function runasync(x, de = 0) {
+    return setTimeout(x, de);
+}
+
 function creatallequips(de) {
-    var newlist = [];
+    let newlist = [];
     for (let index in equip_data) {
         newlist.push(equip_data[index]);
     }
-    newlist = sorting(newlist, 'type', true);
     newlist = sorting(newlist, 'nationality', true);
+    newlist = sorting(newlist, 'type', false);
     newlist = sorting(newlist, 'rarity', true);
     newlist.forEach((item) => {
         setTimeout(function() {
-            var equip = item;
-            var equiplist = document.getElementById("equiplist");
-            var newequip = document.createElement("button");
-            var rarity = equip.rarity;
+            let equip = item;
+            let equiplist = document.getElementById("equiplist");
+            let newequip = document.createElement("button");
+            let rarity = equip.rarity;
             if (rarity > 1) {
                 rarity--;
             }
@@ -228,31 +333,78 @@ function creatallequips(de) {
                 "type": "button",
                 "class": "equip",
                 "id": equip.id,
-                "style": "display:inline; background-color:" + getcolor(equip.rarity) + ";",
+                "style": "display:inline; background-color:none;",
                 "data-dismiss": "modal",
                 "onclick": "updateEquip(this)"
             });
-            var newicon = document.createElement("img");
+            let newicon = document.createElement("img");
             $(newicon).attr({
                 "src": "equips/" + String(equip.icon) + ".png",
                 "class": "img-rounded img-fluid h-100 main",
                 "loading": "lazy"
             });
-            var newbg = document.createElement("img");
+            let newbg = document.createElement("img");
             $(newbg).attr({
                 "src": "ui/bg" + rarity + ".png",
                 "class": "bg",
                 "loading": "lazy"
             });
-            var newframe = document.createElement("img");
+            let newframe = document.createElement("img");
             $(newframe).attr({
                 "src": "ui/frame_" + rarity + "b.png",
                 "class": "frame",
                 "loading": "lazy"
             });
-            newequip.appendChild(newicon);
-            newequip.appendChild(newbg);
-            newequip.appendChild(newframe);
+            let newstar = document.createElement("div");
+            let star = "";
+            let pos = "";
+            for (let x = 0; x < equip.rarity + 1; x++) {
+                if (x > 0 && x != equip.rarity) {
+                    star += ",";
+                    pos += ",";
+                } else if (x === equip.rarity) {
+                    star += ";";
+                    pos += ";";
+                    break;
+                }
+                star += "url(ui/star.png)";
+                pos += (x * 10) + "px";
+            }
+            $(newstar).attr({
+                "class": "star",
+                "style": "background-image:" + star + "background-position:" + pos
+            });
+
+            let top = document.createElement("div");
+            $(top).attr({
+                "class": "container itembox"
+            });
+            top.appendChild(newicon);
+            top.appendChild(newbg);
+            top.appendChild(newframe);
+            top.appendChild(newstar);
+
+            let newname = document.createElement("div");
+            $(newname).attr({
+                "class": "textbox"
+            });
+
+            let name = document.createElement("div");
+            $(name).attr({
+                "class": "boxtext text-nowrap small",
+                "cn": equip.cn_name,
+                "en": equip.en_name,
+                "jp": equip.jp_name
+            });
+            name.textContent = equip.cn_name;
+
+            if (equip.cn_name.len() >= 11) {
+                name.setAttribute("style", ani);
+            }
+            newname.appendChild(name);
+
+            newequip.appendChild(top);
+            newequip.appendChild(newname);
             equiplist.appendChild(newequip);
         }, de);
         de++;
@@ -297,8 +449,8 @@ function equipdisplay(item) {
 }
 
 function isshipselect(ship) {
-    var front = [1, 2, 3, 8, 17, 18];
-    var back = [4, 5, 6, 7, 12, 13];
+    let front = [1, 2, 3, 8, 17, 18];
+    let back = [4, 5, 6, 7, 12, 13];
     if (fleetpos === "front") {
         if (!front.includes(ship.type)) {
             return false;
@@ -309,10 +461,10 @@ function isshipselect(ship) {
             return false;
         }
     }
-    var indicator_nation = false;
-    var indicator_type = false;
-    var indicator_rarity = false;
-    var key = "nationality";
+    let indicator_nation = false;
+    let indicator_type = false;
+    let indicator_rarity = false;
+    let key = "nationality";
     if (testship(shipsetting[key], String(ship[key]))) {
         indicator_nation = true;
     }
@@ -349,12 +501,12 @@ function testship(setting, shipvalue) {
 }
 
 function getsetting() {
-    var newsetting = {};
-    var newlist = [];
-    var shipnation = document.getElementById("shipnation").querySelectorAll("button[aria-pressed=true]");
-    var shiptype = document.getElementById("shiptype").querySelectorAll("button[aria-pressed=true]");
-    var shiprarity = document.getElementById("shiprarity").querySelectorAll("button[aria-pressed=true]");
-    var other = ["98", "101", "103", "104", "105"];
+    let newsetting = {};
+    let newlist = [];
+    let shipnation = document.getElementById("shipnation").querySelectorAll("button[aria-pressed=true]");
+    let shiptype = document.getElementById("shiptype").querySelectorAll("button[aria-pressed=true]");
+    let shiprarity = document.getElementById("shiprarity").querySelectorAll("button[aria-pressed=true]");
+    let other = ["98", "101", "103", "104", "105"];
     if (shipnation.length > 0) {
         newlist = [];
         shipnation.forEach(element => {
@@ -368,12 +520,12 @@ function getsetting() {
     } else {
         newsetting.nationality = [];
     }
-    var front = [1, 2, 3, 8, 17, 18];
-    var back = [4, 5, 6, 7, 12, 13];
+    let front = [1, 2, 3, 8, 17, 18];
+    let back = [4, 5, 6, 7, 12, 13];
     if (shiptype.length > 0) {
         newlist = [];
         shiptype.forEach(element => {
-            var x = parseInt(element.value, 10);
+            let x = parseInt(element.value, 10);
             if (fleetpos === "front" && front.includes(x)) {
                 newlist.push(element.value);
             } else if (fleetpos === "back" && back.includes(x)) {
@@ -391,7 +543,7 @@ function getsetting() {
     } else {
         newsetting.rarity = [];
     }
-    var retro = document.getElementById("shipretro").querySelector("button[aria-pressed=true]");
+    let retro = document.getElementById("shipretro").querySelector("button[aria-pressed=true]");
     if (retro) {
         newsetting.retro = retro.value;
     } else {

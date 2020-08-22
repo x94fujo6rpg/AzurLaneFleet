@@ -9,7 +9,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 740,
         "icon": "740",
-        "name": "Fl 282",
         "ship_type_forbidden": [
             1,
             3,
@@ -25,7 +24,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "Fl 282",
+        "cn_name": "Fl-282直升机",
+        "en_name": "Fl 282 Helicopter"
     },
     "4240": {
         "nationality": 2,
@@ -37,7 +39,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 4240,
         "icon": "4200",
-        "name": "ソードフィッシュMarkⅡ-ASV（対潜）",
         "ship_type_forbidden": [
             1,
             2,
@@ -52,7 +53,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "ソードフィッシュMarkⅡ-ASV（対潜）",
+        "cn_name": "剑鱼Mark II-ASV(反潜)",
+        "en_name": "Swordfish Mark II-ASV (Anti-Sub)"
     },
     "4220": {
         "nationality": 2,
@@ -64,7 +68,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 4220,
         "icon": "4200",
-        "name": "ソードフィッシュMarkⅡ-ASV（対潜）",
         "ship_type_forbidden": [
             1,
             2,
@@ -79,7 +82,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "ソードフィッシュMarkⅡ-ASV（対潜）",
+        "cn_name": "剑鱼Mark II-ASV(反潜)",
+        "en_name": "Swordfish Mark II-ASV (Anti-Sub)"
     },
     "4200": {
         "nationality": 2,
@@ -91,7 +97,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 4200,
         "icon": "4200",
-        "name": "ソードフィッシュMarkⅡ-ASV（対潜）",
         "ship_type_forbidden": [
             1,
             2,
@@ -106,7 +111,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "ソードフィッシュMarkⅡ-ASV（対潜）",
+        "cn_name": "剑鱼Mark II-ASV(反潜)",
+        "en_name": "Swordfish Mark II-ASV (Anti-Sub)"
     },
     "4340": {
         "nationality": 1,
@@ -118,7 +126,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 4340,
         "icon": "4300",
-        "name": "TBM-3アベンジャー（対潜）",
         "ship_type_forbidden": [
             1,
             2,
@@ -133,7 +140,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "TBM-3アベンジャー（対潜）",
+        "cn_name": "TBM-3复仇者(反潜)",
+        "en_name": "TBM-3 Avenger (Anti-Sub)"
     },
     "4320": {
         "nationality": 1,
@@ -145,7 +155,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 4320,
         "icon": "4300",
-        "name": "TBM-3アベンジャー（対潜）",
         "ship_type_forbidden": [
             1,
             2,
@@ -160,7 +169,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "TBM-3アベンジャー（対潜）",
+        "cn_name": "TBM-3复仇者(反潜)",
+        "en_name": "TBM-3 Avenger (Anti-Sub)"
     },
     "4300": {
         "nationality": 1,
@@ -172,7 +184,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 4300,
         "icon": "4300",
-        "name": "TBM-3アベンジャー（対潜）",
         "ship_type_forbidden": [
             1,
             2,
@@ -187,7 +198,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "TBM-3アベンジャー（対潜）",
+        "cn_name": "TBM-3复仇者(反潜)",
+        "en_name": "TBM-3 Avenger (Anti-Sub)"
     },
     "4040": {
         "nationality": 2,
@@ -199,7 +213,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 4040,
         "icon": "4000",
-        "name": "従来型爆雷投射機",
         "ship_type_forbidden": [
             3,
             4,
@@ -214,7 +227,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "従来型爆雷投射機",
+        "cn_name": "基础深弹投射器",
+        "en_name": "Basic Depth Charge Projector"
     },
     "4020": {
         "nationality": 2,
@@ -226,7 +242,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 4020,
         "icon": "4000",
-        "name": "従来型爆雷投射機",
         "ship_type_forbidden": [
             3,
             4,
@@ -241,7 +256,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "従来型爆雷投射機",
+        "cn_name": "基础深弹投射器",
+        "en_name": "Basic Depth Charge Projector"
     },
     "4000": {
         "nationality": 2,
@@ -253,7 +271,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 4000,
         "icon": "4000",
-        "name": "従来型爆雷投射機",
         "ship_type_forbidden": [
             3,
             4,
@@ -268,7 +285,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "従来型爆雷投射機",
+        "cn_name": "基础深弹投射器",
+        "en_name": "Basic Depth Charge Projector"
     },
     "4140": {
         "nationality": 1,
@@ -280,7 +300,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 4140,
         "icon": "4100",
-        "name": "改良型爆雷投射機",
         "ship_type_forbidden": [
             3,
             4,
@@ -295,7 +314,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "改良型爆雷投射機",
+        "cn_name": "改良深弹投射器",
+        "en_name": "Improved Depth Charge Projector"
     },
     "4120": {
         "nationality": 1,
@@ -307,7 +329,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 4120,
         "icon": "4100",
-        "name": "改良型爆雷投射機",
         "ship_type_forbidden": [
             3,
             4,
@@ -322,7 +343,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "改良型爆雷投射機",
+        "cn_name": "改良深弹投射器",
+        "en_name": "Improved Depth Charge Projector"
     },
     "4100": {
         "nationality": 1,
@@ -334,7 +358,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 4100,
         "icon": "4100",
-        "name": "改良型爆雷投射機",
         "ship_type_forbidden": [
             3,
             4,
@@ -349,7 +372,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "改良型爆雷投射機",
+        "cn_name": "改良深弹投射器",
+        "en_name": "Improved Depth Charge Projector"
     },
     "5540": {
         "nationality": 8,
@@ -361,8 +387,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 5540,
         "icon": "5500",
-        "name": "潜水艦用550mm24V魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用550mm24V魚雷",
+        "cn_name": "潜艇用550mm24V鱼雷",
+        "en_name": "Submarine-only 550mm 24V"
     },
     "5520": {
         "nationality": 8,
@@ -374,8 +402,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 5520,
         "icon": "5500",
-        "name": "潜水艦用550mm24V魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用550mm24V魚雷",
+        "cn_name": "潜艇用550mm24V鱼雷",
+        "en_name": "Submarine-only 550mm 24V"
     },
     "5500": {
         "nationality": 8,
@@ -387,8 +417,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 5500,
         "icon": "5500",
-        "name": "潜水艦用550mm24V魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用550mm24V魚雷",
+        "cn_name": "潜艇用550mm24V鱼雷",
+        "en_name": "Submarine-only 550mm 24V"
     },
     "45440": {
         "nationality": 4,
@@ -400,8 +432,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 45440,
         "icon": "45400",
-        "name": "潜水艦用G7e音響追跡魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用G7e音響追跡魚雷",
+        "cn_name": "潜艇用G7e声导鱼雷",
+        "en_name": "G7e Acoustic Guided Torpedo"
     },
     "45420": {
         "nationality": 4,
@@ -413,8 +447,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 45420,
         "icon": "45400",
-        "name": "潜水艦用G7e音響追跡魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用G7e音響追跡魚雷",
+        "cn_name": "潜艇用G7e声导鱼雷",
+        "en_name": "G7e Acoustic Guided Torpedo"
     },
     "45400": {
         "nationality": 4,
@@ -426,8 +462,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 45400,
         "icon": "45400",
-        "name": "潜水艦用G7e音響追跡魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用G7e音響追跡魚雷",
+        "cn_name": "潜艇用G7e声导鱼雷",
+        "en_name": "G7e Acoustic Guided Torpedo"
     },
     "45340": {
         "nationality": 4,
@@ -439,8 +477,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 45340,
         "icon": "45300",
-        "name": "潜水艦用G7a魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用G7a魚雷",
+        "cn_name": "潜艇用G7a鱼雷",
+        "en_name": "G7a Submarine Torpedo"
     },
     "45320": {
         "nationality": 4,
@@ -452,8 +492,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 45320,
         "icon": "45300",
-        "name": "潜水艦用G7a魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用G7a魚雷",
+        "cn_name": "潜艇用G7a鱼雷",
+        "en_name": "G7a Submarine Torpedo"
     },
     "45300": {
         "nationality": 4,
@@ -465,8 +507,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 45300,
         "icon": "45300",
-        "name": "潜水艦用G7a魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用G7a魚雷",
+        "cn_name": "潜艇用G7a鱼雷",
+        "en_name": "G7a Submarine Torpedo"
     },
     "35540": {
         "nationality": 3,
@@ -478,8 +522,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 35540,
         "icon": "35500",
-        "name": "潜水艦用九五式酸素魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用九五式酸素魚雷",
+        "cn_name": "潜艇用95式纯氧鱼雷",
+        "en_name": "Type 95 Submarine Torpedo"
     },
     "35520": {
         "nationality": 3,
@@ -491,8 +537,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 35520,
         "icon": "35500",
-        "name": "潜水艦用九五式酸素魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用九五式酸素魚雷",
+        "cn_name": "潜艇用95式纯氧鱼雷",
+        "en_name": "Type 95 Submarine Torpedo"
     },
     "35500": {
         "nationality": 3,
@@ -504,8 +552,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 35500,
         "icon": "35500",
-        "name": "潜水艦用九五式酸素魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用九五式酸素魚雷",
+        "cn_name": "潜艇用95式纯氧鱼雷",
+        "en_name": "Type 95 Submarine Torpedo"
     },
     "35440": {
         "nationality": 3,
@@ -517,8 +567,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 35440,
         "icon": "35400",
-        "name": "潜水艦用九二式電動魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用九二式電動魚雷",
+        "cn_name": "潜艇用92式潜射鱼雷",
+        "en_name": "Type 92 Submarine Torpedo"
     },
     "35420": {
         "nationality": 3,
@@ -530,8 +582,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 35420,
         "icon": "35400",
-        "name": "潜水艦用九二式電動魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用九二式電動魚雷",
+        "cn_name": "潜艇用92式潜射鱼雷",
+        "en_name": "Type 92 Submarine Torpedo"
     },
     "35400": {
         "nationality": 3,
@@ -543,8 +597,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 35400,
         "icon": "35400",
-        "name": "潜水艦用九二式電動魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用九二式電動魚雷",
+        "cn_name": "潜艇用92式潜射鱼雷",
+        "en_name": "Type 92 Submarine Torpedo"
     },
     "15140": {
         "nationality": 1,
@@ -556,8 +612,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 15140,
         "icon": "15100",
-        "name": "潜水艦用Mark16魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用Mark16魚雷",
+        "cn_name": "潜艇用Mark16鱼雷",
+        "en_name": "Mark 16 Submarine Torpedo"
     },
     "15120": {
         "nationality": 1,
@@ -569,8 +627,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 15120,
         "icon": "15100",
-        "name": "潜水艦用Mark16魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用Mark16魚雷",
+        "cn_name": "潜艇用Mark16鱼雷",
+        "en_name": "Mark 16 Submarine Torpedo"
     },
     "15100": {
         "nationality": 1,
@@ -582,8 +642,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 15100,
         "icon": "15100",
-        "name": "潜水艦用Mark16魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用Mark16魚雷",
+        "cn_name": "潜艇用Mark16鱼雷",
+        "en_name": "Mark 16 Submarine Torpedo"
     },
     "15040": {
         "nationality": 1,
@@ -595,8 +657,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 15040,
         "icon": "15000",
-        "name": "潜水艦用Mark14魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用Mark14魚雷",
+        "cn_name": "潜艇用Mark14鱼雷",
+        "en_name": "Mark 14 Submarine Torpedo"
     },
     "15020": {
         "nationality": 1,
@@ -608,8 +672,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 15020,
         "icon": "15000",
-        "name": "潜水艦用Mark14魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用Mark14魚雷",
+        "cn_name": "潜艇用Mark14鱼雷",
+        "en_name": "Mark 14 Submarine Torpedo"
     },
     "15000": {
         "nationality": 1,
@@ -621,8 +687,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 15000,
         "icon": "15000",
-        "name": "潜水艦用Mark14魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用Mark14魚雷",
+        "cn_name": "潜艇用Mark14鱼雷",
+        "en_name": "Mark 14 Submarine Torpedo"
     },
     "39240": {
         "nationality": 3,
@@ -634,8 +702,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 39240,
         "icon": "39200",
-        "name": "瑞雲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "瑞雲",
+        "cn_name": "瑞云",
+        "en_name": "Aichi E16A Zuiun"
     },
     "39220": {
         "nationality": 3,
@@ -647,8 +717,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 39220,
         "icon": "39200",
-        "name": "瑞雲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "瑞雲",
+        "cn_name": "瑞云",
+        "en_name": "Aichi E16A Zuiun"
     },
     "39200": {
         "nationality": 3,
@@ -660,8 +732,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 39200,
         "icon": "39200",
-        "name": "瑞雲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "瑞雲",
+        "cn_name": "瑞云",
+        "en_name": "Aichi E16A Zuiun"
     },
     "39300": {
         "nationality": 3,
@@ -673,8 +747,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 39300,
         "icon": "39300",
-        "name": "晴嵐",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "晴嵐",
+        "cn_name": "晴岚",
+        "en_name": "Seiran"
     },
     "43140": {
         "nationality": 4,
@@ -688,8 +764,10 @@ var equip_data = {
         ],
         "id": 43140,
         "icon": "43100",
-        "name": "283mmSKC28三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "283mmSKC28三連装砲",
+        "cn_name": "三联283mmSKC28主炮",
+        "en_name": "Triple 283mm Main Gun (SK C/28)"
     },
     "43120": {
         "nationality": 4,
@@ -703,8 +781,10 @@ var equip_data = {
         ],
         "id": 43120,
         "icon": "43100",
-        "name": "283mmSKC28三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "283mmSKC28三連装砲",
+        "cn_name": "三联283mmSKC28主炮",
+        "en_name": "Triple 283mm Main Gun (SK C/28)"
     },
     "43100": {
         "nationality": 4,
@@ -718,8 +798,10 @@ var equip_data = {
         ],
         "id": 43100,
         "icon": "43100",
-        "name": "283mmSKC28三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "283mmSKC28三連装砲",
+        "cn_name": "三联283mmSKC28主炮",
+        "en_name": "Triple 283mm Main Gun (SK C/28)"
     },
     "33100": {
         "nationality": 3,
@@ -733,10 +815,12 @@ var equip_data = {
         ],
         "id": 33100,
         "icon": "33100",
-        "name": "試作型三連装310mm砲",
         "ship_type_forbidden": [
             3
-        ]
+        ],
+        "jp_name": "試作型三連装310mm砲",
+        "cn_name": "试作型三联装310mm主炮",
+        "en_name": "Prototype Triple 310mm Main Gun (Type 0)"
     },
     "89100": {
         "nationality": 105,
@@ -748,8 +832,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 89100,
         "icon": "89100",
-        "name": "トウモロコシの灯籠",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "トウモロコシの灯籠",
+        "cn_name": "玉米灯笼",
+        "en_name": "Corn Lantern"
     },
     "89060": {
         "nationality": 105,
@@ -761,8 +847,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 89060,
         "icon": "89060",
-        "name": "チームエンブレム",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "チームエンブレム",
+        "cn_name": "组徽",
+        "en_name": "Team Emblem"
     },
     "89080": {
         "nationality": 105,
@@ -774,8 +862,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 89080,
         "icon": "89080",
-        "name": "ゲーマーズの証",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "ゲーマーズの証",
+        "cn_name": "Gamers的证明",
+        "en_name": "Gamers Mark"
     },
     "89120": {
         "nationality": 105,
@@ -787,8 +877,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 89120,
         "icon": "89120",
-        "name": "あん肝",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "あん肝",
+        "cn_name": "鮟鱇肝",
+        "en_name": "Ankimo"
     },
     "89000": {
         "nationality": 104,
@@ -800,8 +892,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 89000,
         "icon": "89000",
-        "name": "ランダムワード生成器",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "ランダムワード生成器",
+        "cn_name": "随机单词生成器",
+        "en_name": "Random Word Generator"
     },
     "89040": {
         "nationality": 104,
@@ -813,8 +907,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 89040,
         "icon": "89040",
-        "name": "インテリジェントチップ",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "インテリジェントチップ",
+        "cn_name": "智慧模块",
+        "en_name": "Intelligence Chip"
     },
     "89020": {
         "nationality": 104,
@@ -826,8 +922,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 89020,
         "icon": "89020",
-        "name": "ぴょこぴょこ",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "ぴょこぴょこ",
+        "cn_name": "晃悠悠",
+        "en_name": "Pyoko-Pyoko"
     },
     "1960": {
         "nationality": 7,
@@ -839,8 +937,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1960,
         "icon": "1960",
-        "name": "マリニエール魂（迷彩）",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "マリニエール魂（迷彩）",
+        "cn_name": "海魂迷彩",
+        "en_name": "Marinière Camouflage"
     },
     "3300": {
         "nationality": 5,
@@ -852,7 +952,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 3300,
         "icon": "3300",
-        "name": "四神の印",
         "ship_type_forbidden": [
             2,
             3,
@@ -868,7 +967,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "四神の印",
+        "cn_name": "四神之印",
+        "en_name": "Seal of the Four Gods"
     },
     "720": {
         "nationality": 4,
@@ -880,7 +982,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 720,
         "icon": "720",
-        "name": "約束の証明",
         "ship_type_forbidden": [
             1,
             2,
@@ -893,7 +994,10 @@ var equip_data = {
             12,
             13,
             18
-        ]
+        ],
+        "jp_name": "約束の証明",
+        "cn_name": "约定的证明",
+        "en_name": "Certificate of Sponsorship"
     },
     "3140": {
         "nationality": 4,
@@ -905,7 +1009,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 3140,
         "icon": "3140",
-        "name": "改良型蓄電池群",
         "ship_type_forbidden": [
             1,
             2,
@@ -920,7 +1023,10 @@ var equip_data = {
             12,
             13,
             18
-        ]
+        ],
+        "jp_name": "改良型蓄電池群",
+        "cn_name": "改良蓄电池阵列",
+        "en_name": "Improved Storage Battery"
     },
     "3120": {
         "nationality": 4,
@@ -932,7 +1038,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 3120,
         "icon": "3120",
-        "name": "改良型シュノーケル",
         "ship_type_forbidden": [
             1,
             2,
@@ -947,7 +1052,10 @@ var equip_data = {
             12,
             13,
             18
-        ]
+        ],
+        "jp_name": "改良型シュノーケル",
+        "cn_name": "改良型水下进气管",
+        "en_name": "Improved Snorkel"
     },
     "800": {
         "nationality": 4,
@@ -959,7 +1067,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 800,
         "icon": "800",
-        "name": "強化耐圧殻設計案",
         "ship_type_forbidden": [
             1,
             2,
@@ -974,7 +1081,10 @@ var equip_data = {
             12,
             13,
             18
-        ]
+        ],
+        "jp_name": "強化耐圧殻設計案",
+        "cn_name": "艇壳改良设计案",
+        "en_name": "Pressure-Resistant Hull Design "
     },
     "2740": {
         "nationality": 4,
@@ -986,7 +1096,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 2740,
         "icon": "2700",
-        "name": "533mm磁気魚雷（水上艦用）",
         "ship_type_forbidden": [
             4,
             5,
@@ -997,7 +1106,10 @@ var equip_data = {
             12,
             13,
             17
-        ]
+        ],
+        "jp_name": "533mm磁気魚雷（水上艦用）",
+        "cn_name": "533mm磁性鱼雷（水面舰艇用）",
+        "en_name": "533mm Acoustic Torpedo "
     },
     "540": {
         "nationality": 3,
@@ -1009,8 +1121,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 540,
         "icon": "540",
-        "name": "猫パンチ",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "猫パンチ",
+        "cn_name": "治愈系猫爪",
+        "en_name": "Healing Cat's Paw"
     },
     "700": {
         "nationality": 3,
@@ -1022,7 +1136,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 700,
         "icon": "700",
-        "name": "九八式発砲遅延装置",
         "ship_type_forbidden": [
             1,
             2,
@@ -1035,7 +1148,10 @@ var equip_data = {
             12,
             17,
             18
-        ]
+        ],
+        "jp_name": "九八式発砲遅延装置",
+        "cn_name": "九八式射击延迟装置",
+        "en_name": "Type 98 Delayed Firing Device"
     },
     "2640": {
         "nationality": 3,
@@ -1047,7 +1163,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 2640,
         "icon": "2600",
-        "name": "九三式酸素魚雷",
         "ship_type_forbidden": [
             4,
             5,
@@ -1056,7 +1171,10 @@ var equip_data = {
             10,
             12,
             13
-        ]
+        ],
+        "jp_name": "九三式酸素魚雷",
+        "cn_name": "九三式纯氧鱼雷",
+        "en_name": "Type 93 Pure Oxygen Torpedo"
     },
     "580": {
         "nationality": 3,
@@ -1068,7 +1186,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 580,
         "icon": "580",
-        "name": "九一式徹甲弾",
         "ship_type_forbidden": [
             1,
             2,
@@ -1081,7 +1198,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "九一式徹甲弾",
+        "cn_name": "九一式穿甲弹",
+        "en_name": "Type 91 Piercing Shell"
     },
     "600": {
         "nationality": 3,
@@ -1093,7 +1213,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 600,
         "icon": "600",
-        "name": "一式徹甲弾",
         "ship_type_forbidden": [
             1,
             2,
@@ -1106,7 +1225,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "一式徹甲弾",
+        "cn_name": "一式穿甲弹",
+        "en_name": "Type 1 Piercing Shell"
     },
     "640": {
         "nationality": 3,
@@ -1118,7 +1240,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 640,
         "icon": "640",
-        "name": "Z旗",
         "ship_type_forbidden": [
             1,
             2,
@@ -1131,7 +1252,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "Z旗",
+        "cn_name": "Z旗",
+        "en_name": "Z Flag"
     },
     "3200": {
         "nationality": 3,
@@ -1143,7 +1267,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 3200,
         "icon": "3200",
-        "name": "VH装甲鋼板",
         "ship_type_forbidden": [
             1,
             2,
@@ -1155,7 +1278,10 @@ var equip_data = {
             12,
             13,
             17
-        ]
+        ],
+        "jp_name": "VH装甲鋼板",
+        "cn_name": "VH装甲钢板",
+        "en_name": "VH Armor Plating"
     },
     "3220": {
         "nationality": 3,
@@ -1167,7 +1293,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 3220,
         "icon": "3220",
-        "name": "VC装甲鋼板",
         "ship_type_forbidden": [
             1,
             2,
@@ -1179,7 +1304,10 @@ var equip_data = {
             12,
             13,
             17
-        ]
+        ],
+        "jp_name": "VC装甲鋼板",
+        "cn_name": "VC装甲钢板",
+        "en_name": "VC Armor Plating"
     },
     "2800": {
         "nationality": 3,
@@ -1191,8 +1319,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 2800,
         "icon": "2800",
-        "name": "94式高射装置",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "94式高射装置",
+        "cn_name": "94式高射装置",
+        "en_name": "Type 94 AA Device"
     },
     "1160": {
         "nationality": 2,
@@ -1204,8 +1334,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1160,
         "icon": "1160",
-        "name": "高性能対空レーダー",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "高性能対空レーダー",
+        "cn_name": "高性能对空雷达",
+        "en_name": "High Performance Air Radar"
     },
     "680": {
         "nationality": 2,
@@ -1217,7 +1349,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 680,
         "icon": "680",
-        "name": "ホーミングビーコン",
         "ship_type_forbidden": [
             1,
             2,
@@ -1230,7 +1361,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "ホーミングビーコン",
+        "cn_name": "归航信标",
+        "en_name": "Homing Beacon"
     },
     "1260": {
         "nationality": 1,
@@ -1242,7 +1376,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1260,
         "icon": "1260",
-        "name": "高性能火器管制レーダー",
         "ship_type_forbidden": [
             1,
             2,
@@ -1255,7 +1388,10 @@ var equip_data = {
             12,
             17,
             18
-        ]
+        ],
+        "jp_name": "高性能火器管制レーダー",
+        "cn_name": "高性能火控雷达",
+        "en_name": "High Standard Fire-Control Radar"
     },
     "520": {
         "nationality": 1,
@@ -1267,8 +1403,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 520,
         "icon": "520",
-        "name": "真珠の涙",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "真珠の涙",
+        "cn_name": "珍珠之泪",
+        "en_name": "Pearl's Tears"
     },
     "1240": {
         "nationality": 1,
@@ -1280,7 +1418,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1240,
         "icon": "1200",
-        "name": "火器管制レーダー",
         "ship_type_forbidden": [
             1,
             2,
@@ -1290,7 +1427,10 @@ var equip_data = {
             11,
             12,
             17
-        ]
+        ],
+        "jp_name": "火器管制レーダー",
+        "cn_name": "火控雷达",
+        "en_name": "Fire Control Radar"
     },
     "1220": {
         "nationality": 1,
@@ -1302,7 +1442,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1220,
         "icon": "1200",
-        "name": "火器管制レーダー",
         "ship_type_forbidden": [
             1,
             2,
@@ -1312,7 +1451,10 @@ var equip_data = {
             11,
             12,
             17
-        ]
+        ],
+        "jp_name": "火器管制レーダー",
+        "cn_name": "火控雷达",
+        "en_name": "Fire Control Radar"
     },
     "1200": {
         "nationality": 1,
@@ -1324,7 +1466,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1200,
         "icon": "1200",
-        "name": "火器管制レーダー",
         "ship_type_forbidden": [
             1,
             2,
@@ -1334,7 +1475,10 @@ var equip_data = {
             11,
             12,
             17
-        ]
+        ],
+        "jp_name": "火器管制レーダー",
+        "cn_name": "火控雷达",
+        "en_name": "Fire Control Radar"
     },
     "1760": {
         "nationality": 1,
@@ -1346,8 +1490,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1760,
         "icon": "1760",
-        "name": "強化油圧舵",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "強化油圧舵",
+        "cn_name": "高性能舵机",
+        "en_name": "High Performance Hydraulic Steering Gear"
     },
     "1140": {
         "nationality": 1,
@@ -1359,8 +1505,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1140,
         "icon": "1100",
-        "name": "対空レーダー",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "対空レーダー",
+        "cn_name": "对空雷达",
+        "en_name": "Air Radar"
     },
     "1120": {
         "nationality": 1,
@@ -1372,8 +1520,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1120,
         "icon": "1100",
-        "name": "対空レーダー",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "対空レーダー",
+        "cn_name": "对空雷达",
+        "en_name": "Air Radar"
     },
     "1100": {
         "nationality": 1,
@@ -1385,8 +1535,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1100,
         "icon": "1100",
-        "name": "対空レーダー",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "対空レーダー",
+        "cn_name": "对空雷达",
+        "en_name": "Air Radar"
     },
     "500": {
         "nationality": 1,
@@ -1398,8 +1550,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 500,
         "icon": "500",
-        "name": "ビーバーズエムブレム",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "ビーバーズエムブレム",
+        "cn_name": "小海狸中队队徽",
+        "en_name": "Beaver Squad Tag"
     },
     "620": {
         "nationality": 1,
@@ -1411,7 +1565,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 620,
         "icon": "620",
-        "name": "SHS",
         "ship_type_forbidden": [
             1,
             2,
@@ -1424,7 +1577,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "SHS",
+        "cn_name": "超重弹",
+        "en_name": "Super Heavy Shell"
     },
     "1540": {
         "nationality": 1,
@@ -1436,11 +1592,13 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1540,
         "icon": "1500",
-        "name": "SGレーダー",
         "ship_type_forbidden": [
             6,
             7
-        ]
+        ],
+        "jp_name": "SGレーダー",
+        "cn_name": "SG雷达",
+        "en_name": "SG Radar"
     },
     "1520": {
         "nationality": 1,
@@ -1452,11 +1610,13 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1520,
         "icon": "1500",
-        "name": "SGレーダー",
         "ship_type_forbidden": [
             6,
             7
-        ]
+        ],
+        "jp_name": "SGレーダー",
+        "cn_name": "SG雷达",
+        "en_name": "SG Radar"
     },
     "1500": {
         "nationality": 1,
@@ -1468,11 +1628,13 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1500,
         "icon": "1500",
-        "name": "SGレーダー",
         "ship_type_forbidden": [
             6,
             7
-        ]
+        ],
+        "jp_name": "SGレーダー",
+        "cn_name": "SG雷达",
+        "en_name": "SG Radar"
     },
     "15500": {
         "nationality": 1,
@@ -1484,7 +1646,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 15500,
         "icon": "15500",
-        "name": "PBY-5Aカタリナ",
         "ship_type_forbidden": [
             4,
             5,
@@ -1495,7 +1656,10 @@ var equip_data = {
             12,
             13,
             17
-        ]
+        ],
+        "jp_name": "PBY-5Aカタリナ",
+        "cn_name": "PBY-5A卡特琳娜水上机",
+        "en_name": "PBY-5A Catalina"
     },
     "660": {
         "nationality": 1,
@@ -1507,7 +1671,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 660,
         "icon": "660",
-        "name": "100/150航空燃料",
         "ship_type_forbidden": [
             1,
             2,
@@ -1520,7 +1683,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "100/150航空燃料",
+        "cn_name": "100/150号航空燃油",
+        "en_name": "100/150 Aviation Fuel"
     },
     "1640": {
         "nationality": 0,
@@ -1532,11 +1698,13 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1640,
         "icon": "1600",
-        "name": "電気式揚弾機",
         "ship_type_forbidden": [
             6,
             7
-        ]
+        ],
+        "jp_name": "電気式揚弾機",
+        "cn_name": "电动扬弹机",
+        "en_name": "Rammer"
     },
     "1620": {
         "nationality": 0,
@@ -1548,11 +1716,13 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1620,
         "icon": "1600",
-        "name": "電気式揚弾機",
         "ship_type_forbidden": [
             6,
             7
-        ]
+        ],
+        "jp_name": "電気式揚弾機",
+        "cn_name": "电动扬弹机",
+        "en_name": "Rammer"
     },
     "1600": {
         "nationality": 0,
@@ -1564,11 +1734,13 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1600,
         "icon": "1600",
-        "name": "電気式揚弾機",
         "ship_type_forbidden": [
             6,
             7
-        ]
+        ],
+        "jp_name": "電気式揚弾機",
+        "cn_name": "电动扬弹机",
+        "en_name": "Rammer"
     },
     "1940": {
         "nationality": 0,
@@ -1580,8 +1752,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1940,
         "icon": "1900",
-        "name": "迷彩塗装",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "迷彩塗装",
+        "cn_name": "海军迷彩",
+        "en_name": "Navy Camouflage"
     },
     "1920": {
         "nationality": 0,
@@ -1593,8 +1767,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1920,
         "icon": "1900",
-        "name": "迷彩塗装",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "迷彩塗装",
+        "cn_name": "海军迷彩",
+        "en_name": "Navy Camouflage"
     },
     "1900": {
         "nationality": 0,
@@ -1606,8 +1782,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1900,
         "icon": "1900",
-        "name": "迷彩塗装",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "迷彩塗装",
+        "cn_name": "海军迷彩",
+        "en_name": "Navy Camouflage"
     },
     "1040": {
         "nationality": 0,
@@ -1619,7 +1797,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1040,
         "icon": "1000",
-        "name": "艦艇修理施設",
         "ship_type_forbidden": [
             1,
             2,
@@ -1635,7 +1812,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "艦艇修理施設",
+        "cn_name": "舰艇维修设备",
+        "en_name": "Repair Toolkit"
     },
     "1020": {
         "nationality": 0,
@@ -1647,7 +1827,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1020,
         "icon": "1000",
-        "name": "艦艇修理施設",
         "ship_type_forbidden": [
             1,
             2,
@@ -1663,7 +1842,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "艦艇修理施設",
+        "cn_name": "舰艇维修设备",
+        "en_name": "Repair Toolkit"
     },
     "1000": {
         "nationality": 0,
@@ -1675,7 +1857,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1000,
         "icon": "1000",
-        "name": "艦艇修理施設",
         "ship_type_forbidden": [
             1,
             2,
@@ -1691,7 +1872,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "艦艇修理施設",
+        "cn_name": "舰艇维修设备",
+        "en_name": "Repair Toolkit"
     },
     "2240": {
         "nationality": 0,
@@ -1703,11 +1887,13 @@ var equip_data = {
         "ammo_icon": [],
         "id": 2240,
         "icon": "2200",
-        "name": "自動装填機構",
         "ship_type_forbidden": [
             6,
             7
-        ]
+        ],
+        "jp_name": "自動装填機構",
+        "cn_name": "链式装弹机",
+        "en_name": "Autoloader"
     },
     "2220": {
         "nationality": 0,
@@ -1719,11 +1905,13 @@ var equip_data = {
         "ammo_icon": [],
         "id": 2220,
         "icon": "2200",
-        "name": "自動装填機構",
         "ship_type_forbidden": [
             6,
             7
-        ]
+        ],
+        "jp_name": "自動装填機構",
+        "cn_name": "链式装弹机",
+        "en_name": "Autoloader"
     },
     "2200": {
         "nationality": 0,
@@ -1735,11 +1923,13 @@ var equip_data = {
         "ammo_icon": [],
         "id": 2200,
         "icon": "2200",
-        "name": "自動装填機構",
         "ship_type_forbidden": [
             6,
             7
-        ]
+        ],
+        "jp_name": "自動装填機構",
+        "cn_name": "链式装弹机",
+        "en_name": "Autoloader"
     },
     "2140": {
         "nationality": 0,
@@ -1751,7 +1941,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 2140,
         "icon": "2100",
-        "name": "空母燃料タンク",
         "ship_type_forbidden": [
             1,
             2,
@@ -1764,7 +1953,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "空母燃料タンク",
+        "cn_name": "航空副油箱",
+        "en_name": "Aviation Oil Tank"
     },
     "2120": {
         "nationality": 0,
@@ -1776,7 +1968,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 2120,
         "icon": "2100",
-        "name": "空母燃料タンク",
         "ship_type_forbidden": [
             1,
             2,
@@ -1789,7 +1980,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "空母燃料タンク",
+        "cn_name": "航空副油箱",
+        "en_name": "Aviation Oil Tank"
     },
     "2100": {
         "nationality": 0,
@@ -1801,7 +1995,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 2100,
         "icon": "2100",
-        "name": "空母燃料タンク",
         "ship_type_forbidden": [
             1,
             2,
@@ -1814,7 +2007,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "空母燃料タンク",
+        "cn_name": "航空副油箱",
+        "en_name": "Aviation Oil Tank"
     },
     "2040": {
         "nationality": 0,
@@ -1826,8 +2022,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 2040,
         "icon": "2000",
-        "name": "燃料フィルター",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "燃料フィルター",
+        "cn_name": "燃油滤清器",
+        "en_name": "Fuel Filter"
     },
     "2020": {
         "nationality": 0,
@@ -1839,8 +2037,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 2020,
         "icon": "2000",
-        "name": "燃料フィルター",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "燃料フィルター",
+        "cn_name": "燃油滤清器",
+        "en_name": "Fuel Filter"
     },
     "2000": {
         "nationality": 0,
@@ -1852,8 +2052,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 2000,
         "icon": "2000",
-        "name": "燃料フィルター",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "燃料フィルター",
+        "cn_name": "燃油滤清器",
+        "en_name": "Fuel Filter"
     },
     "2540": {
         "nationality": 0,
@@ -1865,8 +2067,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 2540,
         "icon": "2500",
-        "name": "消火装置",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "消火装置",
+        "cn_name": "灭火器",
+        "en_name": "Fire Suppressor"
     },
     "2520": {
         "nationality": 0,
@@ -1878,8 +2082,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 2520,
         "icon": "2500",
-        "name": "消火装置",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "消火装置",
+        "cn_name": "灭火器",
+        "en_name": "Fire Suppressor"
     },
     "2500": {
         "nationality": 0,
@@ -1891,8 +2097,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 2500,
         "icon": "2500",
-        "name": "消火装置",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "消火装置",
+        "cn_name": "灭火器",
+        "en_name": "Fire Suppressor"
     },
     "1740": {
         "nationality": 0,
@@ -1904,8 +2112,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1740,
         "icon": "1700",
-        "name": "油圧舵",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "油圧舵",
+        "cn_name": "液压舵机",
+        "en_name": "Hydraulic Steering Gear"
     },
     "1720": {
         "nationality": 0,
@@ -1917,8 +2127,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1720,
         "icon": "1700",
-        "name": "油圧舵",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "油圧舵",
+        "cn_name": "液压舵机",
+        "en_name": "Hydraulic Steering Gear"
     },
     "1700": {
         "nationality": 0,
@@ -1930,8 +2142,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1700,
         "icon": "1700",
-        "name": "油圧舵",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "油圧舵",
+        "cn_name": "液压舵机",
+        "en_name": "Hydraulic Steering Gear"
     },
     "1440": {
         "nationality": 0,
@@ -1943,7 +2157,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1440,
         "icon": "1400",
-        "name": "油圧カタパルト",
         "ship_type_forbidden": [
             1,
             2,
@@ -1956,7 +2169,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "油圧カタパルト",
+        "cn_name": "液压弹射装置",
+        "en_name": "Steam Catapult"
     },
     "1420": {
         "nationality": 0,
@@ -1968,7 +2184,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1420,
         "icon": "1400",
-        "name": "油圧カタパルト",
         "ship_type_forbidden": [
             1,
             2,
@@ -1981,7 +2196,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "油圧カタパルト",
+        "cn_name": "液压弹射装置",
+        "en_name": "Steam Catapult"
     },
     "1400": {
         "nationality": 0,
@@ -1993,7 +2211,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1400,
         "icon": "1400",
-        "name": "油圧カタパルト",
         "ship_type_forbidden": [
             1,
             2,
@@ -2006,7 +2223,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "油圧カタパルト",
+        "cn_name": "液压弹射装置",
+        "en_name": "Steam Catapult"
     },
     "1840": {
         "nationality": 0,
@@ -2018,8 +2238,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1840,
         "icon": "1800",
-        "name": "改良型缶",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "改良型缶",
+        "cn_name": "改良锅炉",
+        "en_name": "Advanced Boiler"
     },
     "1820": {
         "nationality": 0,
@@ -2031,8 +2253,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1820,
         "icon": "1800",
-        "name": "改良型缶",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "改良型缶",
+        "cn_name": "改良锅炉",
+        "en_name": "Advanced Boiler"
     },
     "1800": {
         "nationality": 0,
@@ -2044,8 +2268,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1800,
         "icon": "1800",
-        "name": "改良型缶",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "改良型缶",
+        "cn_name": "改良锅炉",
+        "en_name": "Advanced Boiler"
     },
     "3040": {
         "nationality": 0,
@@ -2057,7 +2283,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 3040,
         "icon": "3000",
-        "name": "改良型ソナー",
         "ship_type_forbidden": [
             3,
             4,
@@ -2072,7 +2297,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "改良型ソナー",
+        "cn_name": "改良声呐",
+        "en_name": "Advanced Sonar"
     },
     "3020": {
         "nationality": 0,
@@ -2084,7 +2312,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 3020,
         "icon": "3000",
-        "name": "改良型ソナー",
         "ship_type_forbidden": [
             3,
             4,
@@ -2099,7 +2326,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "改良型ソナー",
+        "cn_name": "改良声呐",
+        "en_name": "Advanced Sonar"
     },
     "3000": {
         "nationality": 0,
@@ -2111,7 +2341,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 3000,
         "icon": "3000",
-        "name": "改良型ソナー",
         "ship_type_forbidden": [
             3,
             4,
@@ -2126,7 +2355,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "改良型ソナー",
+        "cn_name": "改良声呐",
+        "en_name": "Advanced Sonar"
     },
     "780": {
         "nationality": 0,
@@ -2138,8 +2370,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 780,
         "icon": "780",
-        "name": "情報レポート・北極要塞",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "情報レポート・北極要塞",
+        "cn_name": "机密文件·极地海峡",
+        "en_name": "Intel Report - Arctic Stronghold"
     },
     "2440": {
         "nationality": 0,
@@ -2151,8 +2385,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 2440,
         "icon": "2400",
-        "name": "応急修理装置",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "応急修理装置",
+        "cn_name": "维修工具",
+        "en_name": "Repair Tools"
     },
     "2420": {
         "nationality": 0,
@@ -2164,8 +2400,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 2420,
         "icon": "2400",
-        "name": "応急修理装置",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "応急修理装置",
+        "cn_name": "维修工具",
+        "en_name": "Repair Tools"
     },
     "2400": {
         "nationality": 0,
@@ -2177,8 +2415,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 2400,
         "icon": "2400",
-        "name": "応急修理装置",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "応急修理装置",
+        "cn_name": "维修工具",
+        "en_name": "Repair Tools"
     },
     "2940": {
         "nationality": 0,
@@ -2190,7 +2430,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 2940,
         "icon": "2900",
-        "name": "従来型ソナー",
         "ship_type_forbidden": [
             3,
             4,
@@ -2205,7 +2444,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "従来型ソナー",
+        "cn_name": "基础声呐",
+        "en_name": "Basic Sonar"
     },
     "2920": {
         "nationality": 0,
@@ -2217,7 +2459,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 2920,
         "icon": "2900",
-        "name": "従来型ソナー",
         "ship_type_forbidden": [
             3,
             4,
@@ -2232,7 +2473,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "従来型ソナー",
+        "cn_name": "基础声呐",
+        "en_name": "Basic Sonar"
     },
     "2900": {
         "nationality": 0,
@@ -2244,7 +2488,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 2900,
         "icon": "2900",
-        "name": "従来型ソナー",
         "ship_type_forbidden": [
             3,
             4,
@@ -2259,7 +2502,10 @@ var equip_data = {
             13,
             17,
             18
-        ]
+        ],
+        "jp_name": "従来型ソナー",
+        "cn_name": "基础声呐",
+        "en_name": "Basic Sonar"
     },
     "3100": {
         "nationality": 0,
@@ -2271,7 +2517,6 @@ var equip_data = {
         "ammo_icon": [],
         "id": 3100,
         "icon": "3100",
-        "name": "圧縮酸素ボンベ",
         "ship_type_forbidden": [
             1,
             2,
@@ -2286,7 +2531,10 @@ var equip_data = {
             12,
             13,
             18
-        ]
+        ],
+        "jp_name": "圧縮酸素ボンベ",
+        "cn_name": "高压氧气瓶",
+        "en_name": "Compressed Oxygen Cylinder"
     },
     "760": {
         "nationality": 0,
@@ -2298,8 +2546,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 760,
         "icon": "760",
-        "name": "偵察レポート・NY周辺海域",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "偵察レポート・NY周辺海域",
+        "cn_name": "侦察报告·纽约近海",
+        "en_name": "NY City Coast Recon Report"
     },
     "1340": {
         "nationality": 0,
@@ -2311,12 +2561,14 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1340,
         "icon": "1300",
-        "name": "バルジ",
         "ship_type_forbidden": [
             1,
             8,
             17
-        ]
+        ],
+        "jp_name": "バルジ",
+        "cn_name": "防鱼雷隔舱",
+        "en_name": "Anti-Torpedo Bulge"
     },
     "1320": {
         "nationality": 0,
@@ -2328,12 +2580,14 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1320,
         "icon": "1300",
-        "name": "バルジ",
         "ship_type_forbidden": [
             1,
             8,
             17
-        ]
+        ],
+        "jp_name": "バルジ",
+        "cn_name": "防鱼雷隔舱",
+        "en_name": "Anti-Torpedo Bulge"
     },
     "1300": {
         "nationality": 0,
@@ -2345,12 +2599,14 @@ var equip_data = {
         "ammo_icon": [],
         "id": 1300,
         "icon": "1300",
-        "name": "バルジ",
         "ship_type_forbidden": [
             1,
             8,
             17
-        ]
+        ],
+        "jp_name": "バルジ",
+        "cn_name": "防鱼雷隔舱",
+        "en_name": "Anti-Torpedo Bulge"
     },
     "2340": {
         "nationality": 0,
@@ -2362,11 +2618,13 @@ var equip_data = {
         "ammo_icon": [],
         "id": 2340,
         "icon": "2300",
-        "name": "ジャイロスコープ",
         "ship_type_forbidden": [
             6,
             7
-        ]
+        ],
+        "jp_name": "ジャイロスコープ",
+        "cn_name": "陀螺仪",
+        "en_name": "Gyroscope"
     },
     "2320": {
         "nationality": 0,
@@ -2378,11 +2636,13 @@ var equip_data = {
         "ammo_icon": [],
         "id": 2320,
         "icon": "2300",
-        "name": "ジャイロスコープ",
         "ship_type_forbidden": [
             6,
             7
-        ]
+        ],
+        "jp_name": "ジャイロスコープ",
+        "cn_name": "陀螺仪",
+        "en_name": "Gyroscope"
     },
     "2300": {
         "nationality": 0,
@@ -2394,11 +2654,13 @@ var equip_data = {
         "ammo_icon": [],
         "id": 2300,
         "icon": "2300",
-        "name": "ジャイロスコープ",
         "ship_type_forbidden": [
             6,
             7
-        ]
+        ],
+        "jp_name": "ジャイロスコープ",
+        "cn_name": "陀螺仪",
+        "en_name": "Gyroscope"
     },
     "49040": {
         "nationality": 4,
@@ -2410,8 +2672,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 49040,
         "icon": "49000",
-        "name": "Ju-87C急降下爆撃機",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "Ju-87C急降下爆撃機",
+        "cn_name": "Ju-87C俯冲轰炸机",
+        "en_name": "Ju-87C Dive Bomber"
     },
     "49020": {
         "nationality": 4,
@@ -2423,8 +2687,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 49020,
         "icon": "49000",
-        "name": "Ju-87C急降下爆撃機",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "Ju-87C急降下爆撃機",
+        "cn_name": "Ju-87C俯冲轰炸机",
+        "en_name": "Ju-87C Dive Bomber"
     },
     "49000": {
         "nationality": 4,
@@ -2436,8 +2702,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 49000,
         "icon": "49000",
-        "name": "Ju-87C急降下爆撃機",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "Ju-87C急降下爆撃機",
+        "cn_name": "Ju-87C俯冲轰炸机",
+        "en_name": "Ju-87C Dive Bomber"
     },
     "39140": {
         "nationality": 3,
@@ -2449,8 +2717,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 39140,
         "icon": "39100",
-        "name": "彗星",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "彗星",
+        "cn_name": "彗星",
+        "en_name": "Comet"
     },
     "39120": {
         "nationality": 3,
@@ -2462,8 +2732,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 39120,
         "icon": "39100",
-        "name": "彗星",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "彗星",
+        "cn_name": "彗星",
+        "en_name": "Comet"
     },
     "39100": {
         "nationality": 3,
@@ -2475,8 +2747,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 39100,
         "icon": "39100",
-        "name": "彗星",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "彗星",
+        "cn_name": "彗星",
+        "en_name": "Comet"
     },
     "39040": {
         "nationality": 3,
@@ -2488,8 +2762,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 39040,
         "icon": "39000",
-        "name": "九九式艦爆",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "九九式艦爆",
+        "cn_name": "九九式舰爆",
+        "en_name": "Aichi D3A Type 99"
     },
     "39020": {
         "nationality": 3,
@@ -2501,8 +2777,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 39020,
         "icon": "39000",
-        "name": "九九式艦爆",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "九九式艦爆",
+        "cn_name": "九九式舰爆",
+        "en_name": "Aichi D3A Type 99"
     },
     "39000": {
         "nationality": 3,
@@ -2514,8 +2792,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 39000,
         "icon": "39000",
-        "name": "九九式艦爆",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "九九式艦爆",
+        "cn_name": "九九式舰爆",
+        "en_name": "Aichi D3A Type 99"
     },
     "29140": {
         "nationality": 2,
@@ -2527,8 +2807,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 29140,
         "icon": "29100",
-        "name": "フルマー",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "フルマー",
+        "cn_name": "海燕",
+        "en_name": "Fairey Fulmar"
     },
     "29120": {
         "nationality": 2,
@@ -2540,8 +2822,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 29120,
         "icon": "29100",
-        "name": "フルマー",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "フルマー",
+        "cn_name": "海燕",
+        "en_name": "Fairey Fulmar"
     },
     "29100": {
         "nationality": 2,
@@ -2553,8 +2837,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 29100,
         "icon": "29100",
-        "name": "フルマー",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "フルマー",
+        "cn_name": "海燕",
+        "en_name": "Fairey Fulmar"
     },
     "29200": {
         "nationality": 2,
@@ -2566,8 +2852,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 29200,
         "icon": "29200",
-        "name": "ファイアフライ",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "ファイアフライ",
+        "cn_name": "萤火虫",
+        "en_name": "Fairey Firefly"
     },
     "29300": {
         "nationality": 2,
@@ -2579,8 +2867,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 29300,
         "icon": "29300",
-        "name": "バラクーダ（831中隊）",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "バラクーダ（831中隊）",
+        "cn_name": "梭鱼(831中队)",
+        "en_name": "Fairey Barracuda (831 Squadron)"
     },
     "29040": {
         "nationality": 2,
@@ -2592,8 +2882,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 29040,
         "icon": "29000",
-        "name": "スクア",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "スクア",
+        "cn_name": "贼鸥",
+        "en_name": "Blackburn Skua"
     },
     "29020": {
         "nationality": 2,
@@ -2605,8 +2897,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 29020,
         "icon": "29000",
-        "name": "スクア",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "スクア",
+        "cn_name": "贼鸥",
+        "en_name": "Blackburn Skua"
     },
     "29000": {
         "nationality": 2,
@@ -2618,8 +2912,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 29000,
         "icon": "29000",
-        "name": "スクア",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "スクア",
+        "cn_name": "贼鸥",
+        "en_name": "Blackburn Skua"
     },
     "19060": {
         "nationality": 1,
@@ -2631,8 +2927,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 19060,
         "icon": "19060",
-        "name": "SBD（マクラスキー隊）",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "SBD（マクラスキー隊）",
+        "cn_name": "SBD无畏(麦克拉斯基队)",
+        "en_name": "SBD Dauntless (McClusky Division)"
     },
     "19040": {
         "nationality": 1,
@@ -2644,8 +2942,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 19040,
         "icon": "19000",
-        "name": "SBDドーントレス",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "SBDドーントレス",
+        "cn_name": "SBD无畏",
+        "en_name": "SBD Dauntless"
     },
     "19020": {
         "nationality": 1,
@@ -2657,8 +2957,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 19020,
         "icon": "19000",
-        "name": "SBDドーントレス",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "SBDドーントレス",
+        "cn_name": "SBD无畏",
+        "en_name": "SBD Dauntless"
     },
     "19000": {
         "nationality": 1,
@@ -2670,8 +2972,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 19000,
         "icon": "19000",
-        "name": "SBDドーントレス",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "SBDドーントレス",
+        "cn_name": "SBD无畏",
+        "en_name": "SBD Dauntless"
     },
     "19140": {
         "nationality": 1,
@@ -2683,8 +2987,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 19140,
         "icon": "19100",
-        "name": "SB2Cヘルダイバー",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "SB2Cヘルダイバー",
+        "cn_name": "SB2C地狱俯冲者",
+        "en_name": "SB2C Helldiver"
     },
     "19120": {
         "nationality": 1,
@@ -2696,8 +3002,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 19120,
         "icon": "19100",
-        "name": "SB2Cヘルダイバー",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "SB2Cヘルダイバー",
+        "cn_name": "SB2C地狱俯冲者",
+        "en_name": "SB2C Helldiver"
     },
     "19100": {
         "nationality": 1,
@@ -2709,8 +3017,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 19100,
         "icon": "19100",
-        "name": "SB2Cヘルダイバー",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "SB2Cヘルダイバー",
+        "cn_name": "SB2C地狱俯冲者",
+        "en_name": "SB2C Helldiver"
     },
     "19240": {
         "nationality": 1,
@@ -2722,8 +3032,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 19240,
         "icon": "19200",
-        "name": "BTD-1デストロイヤー",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "BTD-1デストロイヤー",
+        "cn_name": "BTD-1毁灭者",
+        "en_name": "BTD-1 Destroyer"
     },
     "19220": {
         "nationality": 1,
@@ -2735,8 +3047,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 19220,
         "icon": "19200",
-        "name": "BTD-1デストロイヤー",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "BTD-1デストロイヤー",
+        "cn_name": "BTD-1毁灭者",
+        "en_name": "BTD-1 Destroyer"
     },
     "19200": {
         "nationality": 1,
@@ -2748,8 +3062,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 19200,
         "icon": "19200",
-        "name": "BTD-1デストロイヤー",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "BTD-1デストロイヤー",
+        "cn_name": "BTD-1毁灭者",
+        "en_name": "BTD-1 Destroyer"
     },
     "90840": {
         "nationality": 8,
@@ -2761,8 +3077,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 90840,
         "icon": "50840",
-        "name": "ピエール・ルヴァッスールPL.7攻撃機",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "ピエール・ルヴァッスールPL.7攻撃機",
+        "cn_name": "PL.7舰载鱼雷机",
+        "en_name": "Pierre Levasseur PL.7 Torpedo Bomber"
     },
     "38240": {
         "nationality": 3,
@@ -2774,8 +3092,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 38240,
         "icon": "38200",
-        "name": "流星",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "流星",
+        "cn_name": "流星",
+        "en_name": "Aichi B7A Ryusei"
     },
     "38220": {
         "nationality": 3,
@@ -2787,8 +3107,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 38220,
         "icon": "38200",
-        "name": "流星",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "流星",
+        "cn_name": "流星",
+        "en_name": "Aichi B7A Ryusei"
     },
     "38200": {
         "nationality": 3,
@@ -2800,8 +3122,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 38200,
         "icon": "38200",
-        "name": "流星",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "流星",
+        "cn_name": "流星",
+        "en_name": "Aichi B7A Ryusei"
     },
     "38140": {
         "nationality": 3,
@@ -2813,8 +3137,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 38140,
         "icon": "38100",
-        "name": "天山",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "天山",
+        "cn_name": "天山",
+        "en_name": "Nakajima B6N Tenzan"
     },
     "38120": {
         "nationality": 3,
@@ -2826,8 +3152,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 38120,
         "icon": "38100",
-        "name": "天山",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "天山",
+        "cn_name": "天山",
+        "en_name": "Nakajima B6N Tenzan"
     },
     "38100": {
         "nationality": 3,
@@ -2839,8 +3167,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 38100,
         "icon": "38100",
-        "name": "天山",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "天山",
+        "cn_name": "天山",
+        "en_name": "Nakajima B6N Tenzan"
     },
     "38040": {
         "nationality": 3,
@@ -2852,8 +3182,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 38040,
         "icon": "38000",
-        "name": "九七式艦攻",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "九七式艦攻",
+        "cn_name": "九七式舰攻",
+        "en_name": "Nakajima B5N"
     },
     "38020": {
         "nationality": 3,
@@ -2865,8 +3197,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 38020,
         "icon": "38000",
-        "name": "九七式艦攻",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "九七式艦攻",
+        "cn_name": "九七式舰攻",
+        "en_name": "Nakajima B5N"
     },
     "38000": {
         "nationality": 3,
@@ -2878,8 +3212,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 38000,
         "icon": "38000",
-        "name": "九七式艦攻",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "九七式艦攻",
+        "cn_name": "九七式舰攻",
+        "en_name": "Nakajima B5N"
     },
     "28340": {
         "nationality": 2,
@@ -2891,8 +3227,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 28340,
         "icon": "28300",
-        "name": "フェアリーアルバコア",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "フェアリーアルバコア",
+        "cn_name": "青花鱼",
+        "en_name": "Fairey Albacore"
     },
     "28320": {
         "nationality": 2,
@@ -2904,8 +3242,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 28320,
         "icon": "28300",
-        "name": "フェアリーアルバコア",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "フェアリーアルバコア",
+        "cn_name": "青花鱼",
+        "en_name": "Fairey Albacore"
     },
     "28300": {
         "nationality": 2,
@@ -2917,8 +3257,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 28300,
         "icon": "28300",
-        "name": "フェアリーアルバコア",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "フェアリーアルバコア",
+        "cn_name": "青花鱼",
+        "en_name": "Fairey Albacore"
     },
     "28200": {
         "nationality": 2,
@@ -2930,8 +3272,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 28200,
         "icon": "28200",
-        "name": "ファイアブランド",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "ファイアブランド",
+        "cn_name": "火把",
+        "en_name": "Blackburn Firebrand"
     },
     "28140": {
         "nationality": 2,
@@ -2943,8 +3287,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 28140,
         "icon": "28100",
-        "name": "バラクーダ",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "バラクーダ",
+        "cn_name": "梭鱼",
+        "en_name": "Barracuda"
     },
     "28120": {
         "nationality": 2,
@@ -2956,8 +3302,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 28120,
         "icon": "28100",
-        "name": "バラクーダ",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "バラクーダ",
+        "cn_name": "梭鱼",
+        "en_name": "Barracuda"
     },
     "28100": {
         "nationality": 2,
@@ -2969,8 +3317,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 28100,
         "icon": "28100",
-        "name": "バラクーダ",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "バラクーダ",
+        "cn_name": "梭鱼",
+        "en_name": "Barracuda"
     },
     "28060": {
         "nationality": 2,
@@ -2982,8 +3332,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 28060,
         "icon": "28060",
-        "name": "ソードフィッシュ（818中隊）",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "ソードフィッシュ（818中隊）",
+        "cn_name": "剑鱼(818中队)",
+        "en_name": "Swordfish (818 Squad)"
     },
     "28040": {
         "nationality": 2,
@@ -2995,8 +3347,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 28040,
         "icon": "28000",
-        "name": "ソードフィッシュ",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "ソードフィッシュ",
+        "cn_name": "剑鱼",
+        "en_name": "Swordfish"
     },
     "28020": {
         "nationality": 2,
@@ -3008,8 +3362,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 28020,
         "icon": "28000",
-        "name": "ソードフィッシュ",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "ソードフィッシュ",
+        "cn_name": "剑鱼",
+        "en_name": "Swordfish"
     },
     "28000": {
         "nationality": 2,
@@ -3021,8 +3377,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 28000,
         "icon": "28000",
-        "name": "ソードフィッシュ",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "ソードフィッシュ",
+        "cn_name": "剑鱼",
+        "en_name": "Swordfish"
     },
     "18180": {
         "nationality": 1,
@@ -3034,8 +3392,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 18180,
         "icon": "18180",
-        "name": "TBMアベンジャー(VT-18中隊)",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "TBMアベンジャー(VT-18中隊)",
+        "cn_name": "TBM复仇者(VT-18中队)",
+        "en_name": "TBM Avenger (VT-18 Squadron)"
     },
     "18140": {
         "nationality": 1,
@@ -3047,8 +3407,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 18140,
         "icon": "18100",
-        "name": "TBFアベンジャー",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "TBFアベンジャー",
+        "cn_name": "TBF复仇者",
+        "en_name": "TBF Avenger"
     },
     "18120": {
         "nationality": 1,
@@ -3060,8 +3422,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 18120,
         "icon": "18100",
-        "name": "TBFアベンジャー",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "TBFアベンジャー",
+        "cn_name": "TBF复仇者",
+        "en_name": "TBF Avenger"
     },
     "18100": {
         "nationality": 1,
@@ -3073,8 +3437,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 18100,
         "icon": "18100",
-        "name": "TBFアベンジャー",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "TBFアベンジャー",
+        "cn_name": "TBF复仇者",
+        "en_name": "TBF Avenger"
     },
     "18060": {
         "nationality": 1,
@@ -3086,8 +3452,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 18060,
         "icon": "18060",
-        "name": "TBDデバステイター（VT-8中隊）",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "TBDデバステイター（VT-8中隊）",
+        "cn_name": "TBD蹂躏者(VT-8中队)",
+        "en_name": "TBD Devastator (VT-8 Squadron) "
     },
     "18040": {
         "nationality": 1,
@@ -3099,8 +3467,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 18040,
         "icon": "18000",
-        "name": "TBDデバステイター",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "TBDデバステイター",
+        "cn_name": "TBD蹂躏者",
+        "en_name": "TBD Devastator"
     },
     "18020": {
         "nationality": 1,
@@ -3112,8 +3482,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 18020,
         "icon": "18000",
-        "name": "TBDデバステイター",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "TBDデバステイター",
+        "cn_name": "TBD蹂躏者",
+        "en_name": "TBD Devastator"
     },
     "18000": {
         "nationality": 1,
@@ -3125,8 +3497,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 18000,
         "icon": "18000",
-        "name": "TBDデバステイター",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "TBDデバステイター",
+        "cn_name": "TBD蹂躏者",
+        "en_name": "TBD Devastator"
     },
     "90820": {
         "nationality": 8,
@@ -3138,8 +3512,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 90820,
         "icon": "50820",
-        "name": "グールドゥ・ルスールGL.2戦闘機",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "グールドゥ・ルスールGL.2戦闘機",
+        "cn_name": "GL.2舰载战斗机",
+        "en_name": "Gourdou-Leseurre GL.2 Fighter"
     },
     "47140": {
         "nationality": 4,
@@ -3151,8 +3527,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 47140,
         "icon": "47100",
-        "name": "Me-155A艦上戦闘機",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "Me-155A艦上戦闘機",
+        "cn_name": "Me-155A舰载战斗机",
+        "en_name": "Messerschmitt Me-155A"
     },
     "47120": {
         "nationality": 4,
@@ -3164,8 +3542,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 47120,
         "icon": "47100",
-        "name": "Me-155A艦上戦闘機",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "Me-155A艦上戦闘機",
+        "cn_name": "Me-155A舰载战斗机",
+        "en_name": "Messerschmitt Me-155A"
     },
     "47100": {
         "nationality": 4,
@@ -3177,8 +3557,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 47100,
         "icon": "47100",
-        "name": "Me-155A艦上戦闘機",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "Me-155A艦上戦闘機",
+        "cn_name": "Me-155A舰载战斗机",
+        "en_name": "Messerschmitt Me-155A"
     },
     "47040": {
         "nationality": 4,
@@ -3190,8 +3572,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 47040,
         "icon": "47000",
-        "name": "BF-109T艦上戦闘機",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "BF-109T艦上戦闘機",
+        "cn_name": "BF-109T舰载战斗机",
+        "en_name": "BF-109T Fighter"
     },
     "47020": {
         "nationality": 4,
@@ -3203,8 +3587,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 47020,
         "icon": "47000",
-        "name": "BF-109T艦上戦闘機",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "BF-109T艦上戦闘機",
+        "cn_name": "BF-109T舰载战斗机",
+        "en_name": "BF-109T Fighter"
     },
     "47000": {
         "nationality": 4,
@@ -3216,8 +3602,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 47000,
         "icon": "47000",
-        "name": "BF-109T艦上戦闘機",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "BF-109T艦上戦闘機",
+        "cn_name": "BF-109T舰载战斗机",
+        "en_name": "BF-109T Fighter"
     },
     "37240": {
         "nationality": 3,
@@ -3229,8 +3617,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 37240,
         "icon": "37200",
-        "name": "零戦52型",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "零戦52型",
+        "cn_name": "零战五二型",
+        "en_name": "A6M5 Zero"
     },
     "37220": {
         "nationality": 3,
@@ -3242,8 +3632,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 37220,
         "icon": "37200",
-        "name": "零戦52型",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "零戦52型",
+        "cn_name": "零战五二型",
+        "en_name": "A6M5 Zero"
     },
     "37200": {
         "nationality": 3,
@@ -3255,8 +3647,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 37200,
         "icon": "37200",
-        "name": "零戦52型",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "零戦52型",
+        "cn_name": "零战五二型",
+        "en_name": "A6M5 Zero"
     },
     "37140": {
         "nationality": 3,
@@ -3268,8 +3662,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 37140,
         "icon": "37100",
-        "name": "零戦21型",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "零戦21型",
+        "cn_name": "零战二一型",
+        "en_name": "A6M2 Zero"
     },
     "37120": {
         "nationality": 3,
@@ -3281,8 +3677,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 37120,
         "icon": "37100",
-        "name": "零戦21型",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "零戦21型",
+        "cn_name": "零战二一型",
+        "en_name": "A6M2 Zero"
     },
     "37100": {
         "nationality": 3,
@@ -3294,8 +3692,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 37100,
         "icon": "37100",
-        "name": "零戦21型",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "零戦21型",
+        "cn_name": "零战二一型",
+        "en_name": "A6M2 Zero"
     },
     "37340": {
         "nationality": 3,
@@ -3307,8 +3707,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 37340,
         "icon": "37300",
-        "name": "烈風",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "烈風",
+        "cn_name": "烈风",
+        "en_name": "A7M Reppuu"
     },
     "37320": {
         "nationality": 3,
@@ -3320,8 +3722,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 37320,
         "icon": "37300",
-        "name": "烈風",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "烈風",
+        "cn_name": "烈风",
+        "en_name": "A7M Reppuu"
     },
     "37300": {
         "nationality": 3,
@@ -3333,8 +3737,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 37300,
         "icon": "37300",
-        "name": "烈風",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "烈風",
+        "cn_name": "烈风",
+        "en_name": "A7M Reppuu"
     },
     "37040": {
         "nationality": 3,
@@ -3346,8 +3752,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 37040,
         "icon": "37000",
-        "name": "九六式艦戦",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "九六式艦戦",
+        "cn_name": "九六式舰战",
+        "en_name": "A5M Claude"
     },
     "37020": {
         "nationality": 3,
@@ -3359,8 +3767,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 37020,
         "icon": "37000",
-        "name": "九六式艦戦",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "九六式艦戦",
+        "cn_name": "九六式舰战",
+        "en_name": "A5M Claude"
     },
     "37000": {
         "nationality": 3,
@@ -3372,8 +3782,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 37000,
         "icon": "37000",
-        "name": "九六式艦戦",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "九六式艦戦",
+        "cn_name": "九六式舰战",
+        "en_name": "A5M Claude"
     },
     "27320": {
         "nationality": 2,
@@ -3385,8 +3797,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 27320,
         "icon": "27320",
-        "name": "シーホーネット",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "シーホーネット",
+        "cn_name": "海大黄蜂",
+        "en_name": "Sea Hornet "
     },
     "27300": {
         "nationality": 2,
@@ -3398,8 +3812,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 27300,
         "icon": "27300",
-        "name": "シーフューリー",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "シーフューリー",
+        "cn_name": "海怒",
+        "en_name": "Sea Fury"
     },
     "27140": {
         "nationality": 2,
@@ -3411,8 +3827,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 27140,
         "icon": "27100",
-        "name": "シーファング",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "シーファング",
+        "cn_name": "海毒牙",
+        "en_name": "Seafang"
     },
     "27120": {
         "nationality": 2,
@@ -3424,8 +3842,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 27120,
         "icon": "27100",
-        "name": "シーファング",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "シーファング",
+        "cn_name": "海毒牙",
+        "en_name": "Seafang"
     },
     "27100": {
         "nationality": 2,
@@ -3437,8 +3857,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 27100,
         "icon": "27100",
-        "name": "シーファング",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "シーファング",
+        "cn_name": "海毒牙",
+        "en_name": "Seafang"
     },
     "27040": {
         "nationality": 2,
@@ -3450,8 +3872,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 27040,
         "icon": "27000",
-        "name": "シーファイア",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "シーファイア",
+        "cn_name": "海喷火",
+        "en_name": "Spitfire"
     },
     "27020": {
         "nationality": 2,
@@ -3463,8 +3887,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 27020,
         "icon": "27000",
-        "name": "シーファイア",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "シーファイア",
+        "cn_name": "海喷火",
+        "en_name": "Spitfire"
     },
     "27000": {
         "nationality": 2,
@@ -3476,8 +3902,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 27000,
         "icon": "27000",
-        "name": "シーファイア",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "シーファイア",
+        "cn_name": "海喷火",
+        "en_name": "Spitfire"
     },
     "27240": {
         "nationality": 2,
@@ -3489,8 +3917,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 27240,
         "icon": "27200",
-        "name": "シーグラディエーター",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "シーグラディエーター",
+        "cn_name": "海斗士",
+        "en_name": "Sea Gladiator"
     },
     "27220": {
         "nationality": 2,
@@ -3502,8 +3932,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 27220,
         "icon": "27200",
-        "name": "シーグラディエーター",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "シーグラディエーター",
+        "cn_name": "海斗士",
+        "en_name": "Sea Gladiator"
     },
     "27200": {
         "nationality": 2,
@@ -3515,8 +3947,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 27200,
         "icon": "27200",
-        "name": "シーグラディエーター",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "シーグラディエーター",
+        "cn_name": "海斗士",
+        "en_name": "Sea Gladiator"
     },
     "17400": {
         "nationality": 1,
@@ -3528,8 +3962,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 17400,
         "icon": "17400",
-        "name": "スカイロケット",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "スカイロケット",
+        "cn_name": "XF5F天箭",
+        "en_name": "XF5F Skyrocket"
     },
     "17340": {
         "nationality": 1,
@@ -3541,8 +3977,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 17340,
         "icon": "17300",
-        "name": "F6Fヘルキャット",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "F6Fヘルキャット",
+        "cn_name": "F6F地狱猫",
+        "en_name": "F6F Hellcat"
     },
     "17320": {
         "nationality": 1,
@@ -3554,8 +3992,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 17320,
         "icon": "17300",
-        "name": "F6Fヘルキャット",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "F6Fヘルキャット",
+        "cn_name": "F6F地狱猫",
+        "en_name": "F6F Hellcat"
     },
     "17300": {
         "nationality": 1,
@@ -3567,8 +4007,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 17300,
         "icon": "17300",
-        "name": "F6Fヘルキャット",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "F6Fヘルキャット",
+        "cn_name": "F6F地狱猫",
+        "en_name": "F6F Hellcat"
     },
     "17260": {
         "nationality": 1,
@@ -3580,8 +4022,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 17260,
         "icon": "17260",
-        "name": "F4U（VF-17中隊）",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "F4U（VF-17中隊）",
+        "cn_name": "F4U（VF-17“海盗”中队）",
+        "en_name": "F4U（VF-17 “Pirate” Squad）"
     },
     "17240": {
         "nationality": 1,
@@ -3593,8 +4037,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 17240,
         "icon": "17200",
-        "name": "F4Uコルセア",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "F4Uコルセア",
+        "cn_name": "F4U海盗",
+        "en_name": "F4U Corsair"
     },
     "17220": {
         "nationality": 1,
@@ -3606,8 +4052,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 17220,
         "icon": "17200",
-        "name": "F4Uコルセア",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "F4Uコルセア",
+        "cn_name": "F4U海盗",
+        "en_name": "F4U Corsair"
     },
     "17200": {
         "nationality": 1,
@@ -3619,8 +4067,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 17200,
         "icon": "17200",
-        "name": "F4Uコルセア",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "F4Uコルセア",
+        "cn_name": "F4U海盗",
+        "en_name": "F4U Corsair"
     },
     "17140": {
         "nationality": 1,
@@ -3632,8 +4082,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 17140,
         "icon": "17100",
-        "name": "F4Fワイルドキャット",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "F4Fワイルドキャット",
+        "cn_name": "F4F野猫",
+        "en_name": "F4F Wildcat"
     },
     "17120": {
         "nationality": 1,
@@ -3645,8 +4097,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 17120,
         "icon": "17100",
-        "name": "F4Fワイルドキャット",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "F4Fワイルドキャット",
+        "cn_name": "F4F野猫",
+        "en_name": "F4F Wildcat"
     },
     "17100": {
         "nationality": 1,
@@ -3658,8 +4112,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 17100,
         "icon": "17100",
-        "name": "F4Fワイルドキャット",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "F4Fワイルドキャット",
+        "cn_name": "F4F野猫",
+        "en_name": "F4F Wildcat"
     },
     "17060": {
         "nationality": 1,
@@ -3671,8 +4127,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 17060,
         "icon": "17060",
-        "name": "F2Aバッファロー（サッチ隊）",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "F2Aバッファロー（サッチ隊）",
+        "cn_name": "F2A水牛(萨奇队)",
+        "en_name": "Brewster F2A Buffalo (Thach Squadron)"
     },
     "17040": {
         "nationality": 1,
@@ -3684,8 +4142,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 17040,
         "icon": "17000",
-        "name": "F2Aバッファロー",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "F2Aバッファロー",
+        "cn_name": "F2A水牛",
+        "en_name": "F2A Buffalo"
     },
     "17020": {
         "nationality": 1,
@@ -3697,8 +4157,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 17020,
         "icon": "17000",
-        "name": "F2Aバッファロー",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "F2Aバッファロー",
+        "cn_name": "F2A水牛",
+        "en_name": "F2A Buffalo"
     },
     "17000": {
         "nationality": 1,
@@ -3710,8 +4172,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 17000,
         "icon": "17000",
-        "name": "F2Aバッファロー",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "F2Aバッファロー",
+        "cn_name": "F2A水牛",
+        "en_name": "F2A Buffalo"
     },
     "90600": {
         "nationality": 8,
@@ -3723,8 +4187,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 90600,
         "icon": "50600",
-        "name": "二連装37mm高射砲Mle1936",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "二連装37mm高射砲Mle1936",
+        "cn_name": "双联37mm高射炮Mle1936",
+        "en_name": "Twin 37mm AA Gun (Mle 1936)"
     },
     "6140": {
         "nationality": 8,
@@ -3736,8 +4202,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 6140,
         "icon": "6100",
-        "name": "100mm連装高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "100mm連装高角砲",
+        "cn_name": "双联装100mm高炮",
+        "en_name": "Twin 100mm AA Gun"
     },
     "6120": {
         "nationality": 8,
@@ -3749,8 +4217,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 6120,
         "icon": "6100",
-        "name": "100mm連装高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "100mm連装高角砲",
+        "cn_name": "双联装100mm高炮",
+        "en_name": "Twin 100mm AA Gun"
     },
     "6100": {
         "nationality": 8,
@@ -3762,8 +4232,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 6100,
         "icon": "6100",
-        "name": "100mm連装高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "100mm連装高角砲",
+        "cn_name": "双联装100mm高炮",
+        "en_name": "Twin 100mm AA Gun"
     },
     "85220": {
         "nationality": 7,
@@ -3775,8 +4247,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 85220,
         "icon": "85180",
-        "name": "37mm対空機関砲70-K",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "37mm対空機関砲70-K",
+        "cn_name": "37mm防空炮70-K",
+        "en_name": "Single 37mm AA Gun (70-K)"
     },
     "85200": {
         "nationality": 7,
@@ -3788,8 +4262,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 85200,
         "icon": "85180",
-        "name": "37mm対空機関砲70-K",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "37mm対空機関砲70-K",
+        "cn_name": "37mm防空炮70-K",
+        "en_name": "Single 37mm AA Gun (70-K)"
     },
     "85180": {
         "nationality": 7,
@@ -3801,8 +4277,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 85180,
         "icon": "85180",
-        "name": "37mm対空機関砲70-K",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "37mm対空機関砲70-K",
+        "cn_name": "37mm防空炮70-K",
+        "en_name": "Single 37mm AA Gun (70-K)"
     },
     "85280": {
         "nationality": 7,
@@ -3814,8 +4292,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 85280,
         "icon": "85240",
-        "name": "100mm連装高角砲B-54",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "100mm連装高角砲B-54",
+        "cn_name": "B-54 100mm双联装防空炮",
+        "en_name": "Twin 100mm AA Gun (B-54)"
     },
     "85260": {
         "nationality": 7,
@@ -3827,8 +4307,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 85260,
         "icon": "85240",
-        "name": "100mm連装高角砲B-54",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "100mm連装高角砲B-54",
+        "cn_name": "B-54 100mm双联装防空炮",
+        "en_name": "Twin 100mm AA Gun (B-54)"
     },
     "85060": {
         "nationality": 7,
@@ -3840,8 +4322,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 85060,
         "icon": "85060",
-        "name": "100mm連装対空砲SM-5-1s",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "100mm連装対空砲SM-5-1s",
+        "cn_name": "100mm双联装防空炮SM-5-1s",
+        "en_name": "Twin 100mm AA Gun (SM-5-1s)"
     },
     "85400": {
         "nationality": 7,
@@ -3853,8 +4337,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 85400,
         "icon": "85360",
-        "name": "100mm連装両用砲B-34 MZ-14",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "100mm連装両用砲B-34 MZ-14",
+        "cn_name": "B-34 100mm双联装防空炮MZ-14",
+        "en_name": "Twin 100mm DP AA Gun (B-34 MZ-14)"
     },
     "85380": {
         "nationality": 7,
@@ -3866,8 +4352,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 85380,
         "icon": "85360",
-        "name": "100mm連装両用砲B-34 MZ-14",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "100mm連装両用砲B-34 MZ-14",
+        "cn_name": "B-34 100mm双联装防空炮MZ-14",
+        "en_name": "Twin 100mm DP AA Gun (B-34 MZ-14)"
     },
     "85360": {
         "nationality": 7,
@@ -3879,8 +4367,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 85360,
         "icon": "85360",
-        "name": "100mm連装両用砲B-34 MZ-14",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "100mm連装両用砲B-34 MZ-14",
+        "cn_name": "B-34 100mm双联装防空炮MZ-14",
+        "en_name": "Twin 100mm DP AA Gun (B-34 MZ-14)"
     },
     "95140": {
         "nationality": 6,
@@ -3892,8 +4382,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 95140,
         "icon": "55100",
-        "name": "90mm単装高角砲Model1939",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "90mm単装高角砲Model1939",
+        "cn_name": "90mm单装高角炮Model1939",
+        "en_name": "Single 90mm High-Angle Gun (M1939)"
     },
     "95120": {
         "nationality": 6,
@@ -3905,8 +4397,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 95120,
         "icon": "55100",
-        "name": "90mm単装高角砲Model1939",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "90mm単装高角砲Model1939",
+        "cn_name": "90mm单装高角炮Model1939",
+        "en_name": "Single 90mm High-Angle Gun (M1939)"
     },
     "95100": {
         "nationality": 6,
@@ -3918,8 +4412,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 95100,
         "icon": "55100",
-        "name": "90mm単装高角砲Model1939",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "90mm単装高角砲Model1939",
+        "cn_name": "90mm单装高角炮Model1939",
+        "en_name": "Single 90mm High-Angle Gun (M1939)"
     },
     "95540": {
         "nationality": 6,
@@ -3931,8 +4427,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 95540,
         "icon": "55500",
-        "name": "37mm連装機銃Model1932",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "37mm連装機銃Model1932",
+        "cn_name": "双联37mm机枪Model1932",
+        "en_name": "Twin 37mm AA Gun (M1932)"
     },
     "95520": {
         "nationality": 6,
@@ -3944,8 +4442,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 95520,
         "icon": "55500",
-        "name": "37mm連装機銃Model1932",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "37mm連装機銃Model1932",
+        "cn_name": "双联37mm机枪Model1932",
+        "en_name": "Twin 37mm AA Gun (M1932)"
     },
     "95500": {
         "nationality": 6,
@@ -3957,8 +4457,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 95500,
         "icon": "55500",
-        "name": "37mm連装機銃Model1932",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "37mm連装機銃Model1932",
+        "cn_name": "双联37mm机枪Model1932",
+        "en_name": "Twin 37mm AA Gun (M1932)"
     },
     "46240": {
         "nationality": 4,
@@ -3970,8 +4472,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 46240,
         "icon": "46200",
-        "name": "37mm連装機銃",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "37mm連装機銃",
+        "cn_name": "双联37mm手拉机枪",
+        "en_name": "Twin 37mm AA 70K"
     },
     "46220": {
         "nationality": 4,
@@ -3983,8 +4487,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 46220,
         "icon": "46200",
-        "name": "37mm連装機銃",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "37mm連装機銃",
+        "cn_name": "双联37mm手拉机枪",
+        "en_name": "Twin 37mm AA 70K"
     },
     "46200": {
         "nationality": 4,
@@ -3996,8 +4502,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 46200,
         "icon": "46200",
-        "name": "37mm連装機銃",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "37mm連装機銃",
+        "cn_name": "双联37mm手拉机枪",
+        "en_name": "Twin 37mm AA 70K"
     },
     "46140": {
         "nationality": 4,
@@ -4009,8 +4517,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 46140,
         "icon": "46100",
-        "name": "37mm機銃",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "37mm機銃",
+        "cn_name": "37mm机枪",
+        "en_name": "37mm Machine Gun"
     },
     "46120": {
         "nationality": 4,
@@ -4022,8 +4532,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 46120,
         "icon": "46100",
-        "name": "37mm機銃",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "37mm機銃",
+        "cn_name": "37mm机枪",
+        "en_name": "37mm Machine Gun"
     },
     "46100": {
         "nationality": 4,
@@ -4035,8 +4547,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 46100,
         "icon": "46100",
-        "name": "37mm機銃",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "37mm機銃",
+        "cn_name": "37mm机枪",
+        "en_name": "37mm Machine Gun"
     },
     "46040": {
         "nationality": 4,
@@ -4048,8 +4562,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 46040,
         "icon": "46000",
-        "name": "20mm四連装MG機銃",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "20mm四連装MG機銃",
+        "cn_name": "四联装20mm MG机枪",
+        "en_name": "Quadruple 20mm Machine Gun"
     },
     "46020": {
         "nationality": 4,
@@ -4061,8 +4577,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 46020,
         "icon": "46000",
-        "name": "20mm四連装MG機銃",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "20mm四連装MG機銃",
+        "cn_name": "四联装20mm MG机枪",
+        "en_name": "Quadruple 20mm Machine Gun"
     },
     "46000": {
         "nationality": 4,
@@ -4074,8 +4592,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 46000,
         "icon": "46000",
-        "name": "20mm四連装MG機銃",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "20mm四連装MG機銃",
+        "cn_name": "四联装20mm MG机枪",
+        "en_name": "Quadruple 20mm Machine Gun"
     },
     "46340": {
         "nationality": 4,
@@ -4087,8 +4607,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 46340,
         "icon": "46300",
-        "name": "105mmSKC連装高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "105mmSKC連装高角砲",
+        "cn_name": "双联105mmSKC高炮",
+        "en_name": "Twin 105mm AA Gun (SK C)"
     },
     "46320": {
         "nationality": 4,
@@ -4100,8 +4622,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 46320,
         "icon": "46300",
-        "name": "105mmSKC連装高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "105mmSKC連装高角砲",
+        "cn_name": "双联105mmSKC高炮",
+        "en_name": "Twin 105mm AA Gun (SK C)"
     },
     "46300": {
         "nationality": 4,
@@ -4113,8 +4637,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 46300,
         "icon": "46300",
-        "name": "105mmSKC連装高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "105mmSKC連装高角砲",
+        "cn_name": "双联105mmSKC高炮",
+        "en_name": "Twin 105mm AA Gun (SK C)"
     },
     "36700": {
         "nationality": 3,
@@ -4126,8 +4652,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 36700,
         "icon": "36700",
-        "name": "試作型五式40mm高射機関砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "試作型五式40mm高射機関砲",
+        "cn_name": "试作型五式40mm高射机关炮",
+        "en_name": "Prototype 40mm AA Gun (Type 5)"
     },
     "36440": {
         "nationality": 3,
@@ -4139,8 +4667,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 36440,
         "icon": "36400",
-        "name": "毘式40mm連装機銃",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "毘式40mm連装機銃",
+        "cn_name": "毘式40mm连装机枪",
+        "en_name": "40mm AA Vickers Gun"
     },
     "36420": {
         "nationality": 3,
@@ -4152,8 +4682,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 36420,
         "icon": "36400",
-        "name": "毘式40mm連装機銃",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "毘式40mm連装機銃",
+        "cn_name": "毘式40mm连装机枪",
+        "en_name": "40mm AA Vickers Gun"
     },
     "36400": {
         "nationality": 3,
@@ -4165,8 +4697,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 36400,
         "icon": "36400",
-        "name": "毘式40mm連装機銃",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "毘式40mm連装機銃",
+        "cn_name": "毘式40mm连装机枪",
+        "en_name": "40mm AA Vickers Gun"
     },
     "36540": {
         "nationality": 3,
@@ -4178,8 +4712,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 36540,
         "icon": "36500",
-        "name": "76mm高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "76mm高角砲",
+        "cn_name": "76mm高射炮",
+        "en_name": "76mm AA Gun"
     },
     "36520": {
         "nationality": 3,
@@ -4191,8 +4727,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 36520,
         "icon": "36500",
-        "name": "76mm高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "76mm高角砲",
+        "cn_name": "76mm高射炮",
+        "en_name": "76mm AA Gun"
     },
     "36500": {
         "nationality": 3,
@@ -4204,8 +4742,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 36500,
         "icon": "36500",
-        "name": "76mm高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "76mm高角砲",
+        "cn_name": "76mm高射炮",
+        "en_name": "76mm AA Gun"
     },
     "36240": {
         "nationality": 3,
@@ -4217,8 +4757,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 36240,
         "icon": "36200",
-        "name": "25mm連装対空機銃",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "25mm連装対空機銃",
+        "cn_name": "25mm连装高射机枪",
+        "en_name": "25mm Mounted AA Gun"
     },
     "36220": {
         "nationality": 3,
@@ -4230,8 +4772,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 36220,
         "icon": "36200",
-        "name": "25mm連装対空機銃",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "25mm連装対空機銃",
+        "cn_name": "25mm连装高射机枪",
+        "en_name": "25mm Mounted AA Gun"
     },
     "36200": {
         "nationality": 3,
@@ -4243,8 +4787,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 36200,
         "icon": "36200",
-        "name": "25mm連装対空機銃",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "25mm連装対空機銃",
+        "cn_name": "25mm连装高射机枪",
+        "en_name": "25mm Mounted AA Gun"
     },
     "36140": {
         "nationality": 3,
@@ -4256,8 +4802,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 36140,
         "icon": "36100",
-        "name": "25mm対空機銃",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "25mm対空機銃",
+        "cn_name": "25mm高射机枪",
+        "en_name": "25mm AA Gun"
     },
     "36120": {
         "nationality": 3,
@@ -4269,8 +4817,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 36120,
         "icon": "36100",
-        "name": "25mm対空機銃",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "25mm対空機銃",
+        "cn_name": "25mm高射机枪",
+        "en_name": "25mm AA Gun"
     },
     "36100": {
         "nationality": 3,
@@ -4282,8 +4832,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 36100,
         "icon": "36100",
-        "name": "25mm対空機銃",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "25mm対空機銃",
+        "cn_name": "25mm高射机枪",
+        "en_name": "25mm AA Gun"
     },
     "36340": {
         "nationality": 3,
@@ -4295,8 +4847,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 36340,
         "icon": "36300",
-        "name": "25mm三連装対空機銃",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "25mm三連装対空機銃",
+        "cn_name": "25mm三连装高射机枪",
+        "en_name": "Triple 25mm Mounted AA Gun"
     },
     "36320": {
         "nationality": 3,
@@ -4308,8 +4862,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 36320,
         "icon": "36300",
-        "name": "25mm三連装対空機銃",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "25mm三連装対空機銃",
+        "cn_name": "25mm三连装高射机枪",
+        "en_name": "Triple 25mm Mounted AA Gun"
     },
     "36300": {
         "nationality": 3,
@@ -4321,8 +4877,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 36300,
         "icon": "36300",
-        "name": "25mm三連装対空機銃",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "25mm三連装対空機銃",
+        "cn_name": "25mm三连装高射机枪",
+        "en_name": "Triple 25mm Mounted AA Gun"
     },
     "36640": {
         "nationality": 3,
@@ -4334,8 +4892,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 36640,
         "icon": "36600",
-        "name": "127mm連装高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "127mm連装高角砲",
+        "cn_name": "127mm连装高射炮",
+        "en_name": "127mm Mounted AA Gun"
     },
     "36620": {
         "nationality": 3,
@@ -4347,8 +4907,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 36620,
         "icon": "36600",
-        "name": "127mm連装高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "127mm連装高角砲",
+        "cn_name": "127mm连装高射炮",
+        "en_name": "127mm Mounted AA Gun"
     },
     "36600": {
         "nationality": 3,
@@ -4360,8 +4922,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 36600,
         "icon": "36600",
-        "name": "127mm連装高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "127mm連装高角砲",
+        "cn_name": "127mm连装高射炮",
+        "en_name": "127mm Mounted AA Gun"
     },
     "36560": {
         "nationality": 3,
@@ -4373,8 +4937,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 36560,
         "icon": "36560",
-        "name": "100mm連装高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "100mm連装高角砲",
+        "cn_name": "100mm连装高炮",
+        "en_name": "100mm Mounted AA Gun"
     },
     "26620": {
         "nationality": 2,
@@ -4386,8 +4952,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 26620,
         "icon": "26620",
-        "name": "連装ボフォース40mm機関砲「Hazemeyer」",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "連装ボフォース40mm機関砲「Hazemeyer」",
+        "cn_name": "双联装40mm博福斯海兹梅耶",
+        "en_name": "Twin 40mm Bofors \"Hazemeyer\" AA Gun"
     },
     "26600": {
         "nationality": 2,
@@ -4399,8 +4967,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 26600,
         "icon": "26600",
-        "name": "連装ボフォース40mm機関砲STAAG",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "連装ボフォース40mm機関砲STAAG",
+        "cn_name": "双联装40mm博福斯STAAG",
+        "en_name": "Twin 40mm Bofors STAAG"
     },
     "26660": {
         "nationality": 2,
@@ -4412,8 +4982,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 26660,
         "icon": "26660",
-        "name": "六連装ボフォース40mm対空砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "六連装ボフォース40mm対空砲",
+        "cn_name": "六联装40mm博福斯对空机炮",
+        "en_name": "Sextuple Bofors 40mm AA Gun "
     },
     "26140": {
         "nationality": 2,
@@ -4425,8 +4997,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 26140,
         "icon": "26100",
-        "name": "QF 2ポンド四連装ポンポン砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "QF 2ポンド四連装ポンポン砲",
+        "cn_name": "四联装40mm“砰砰”炮",
+        "en_name": "Quadruple 40mm Pom Pom Gun"
     },
     "26120": {
         "nationality": 2,
@@ -4438,8 +5012,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 26120,
         "icon": "26100",
-        "name": "QF 2ポンド四連装ポンポン砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "QF 2ポンド四連装ポンポン砲",
+        "cn_name": "四联装40mm“砰砰”炮",
+        "en_name": "Quadruple 40mm Pom Pom Gun"
     },
     "26100": {
         "nationality": 2,
@@ -4451,8 +5027,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 26100,
         "icon": "26100",
-        "name": "QF 2ポンド四連装ポンポン砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "QF 2ポンド四連装ポンポン砲",
+        "cn_name": "四联装40mm“砰砰”炮",
+        "en_name": "Quadruple 40mm Pom Pom Gun"
     },
     "26240": {
         "nationality": 2,
@@ -4464,8 +5042,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 26240,
         "icon": "26200",
-        "name": "QF 2ポンド八連装ポンポン砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "QF 2ポンド八連装ポンポン砲",
+        "cn_name": "八联装40mm“砰砰”炮",
+        "en_name": "Octuple 40mm Pom Pom Gun"
     },
     "26220": {
         "nationality": 2,
@@ -4477,8 +5057,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 26220,
         "icon": "26200",
-        "name": "QF 2ポンド八連装ポンポン砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "QF 2ポンド八連装ポンポン砲",
+        "cn_name": "八联装40mm“砰砰”炮",
+        "en_name": "Octuple 40mm Pom Pom Gun"
     },
     "26200": {
         "nationality": 2,
@@ -4490,8 +5072,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 26200,
         "icon": "26200",
-        "name": "QF 2ポンド八連装ポンポン砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "QF 2ポンド八連装ポンポン砲",
+        "cn_name": "八联装40mm“砰砰”炮",
+        "en_name": "Octuple 40mm Pom Pom Gun"
     },
     "26040": {
         "nationality": 2,
@@ -4503,8 +5087,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 26040,
         "icon": "26000",
-        "name": "QF 2ポンド二連装ポンポン砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "QF 2ポンド二連装ポンポン砲",
+        "cn_name": "双联装40mm“砰砰”炮",
+        "en_name": "Twin 40mm Pom Pom Gun"
     },
     "26020": {
         "nationality": 2,
@@ -4516,8 +5102,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 26020,
         "icon": "26000",
-        "name": "QF 2ポンド二連装ポンポン砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "QF 2ポンド二連装ポンポン砲",
+        "cn_name": "双联装40mm“砰砰”炮",
+        "en_name": "Twin 40mm Pom Pom Gun"
     },
     "26000": {
         "nationality": 2,
@@ -4529,8 +5117,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 26000,
         "icon": "26000",
-        "name": "QF 2ポンド二連装ポンポン砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "QF 2ポンド二連装ポンポン砲",
+        "cn_name": "双联装40mm“砰砰”炮",
+        "en_name": "Twin 40mm Pom Pom Gun"
     },
     "26340": {
         "nationality": 2,
@@ -4542,8 +5132,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 26340,
         "icon": "26300",
-        "name": "76mm高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "76mm高角砲",
+        "cn_name": "76mm高射炮",
+        "en_name": "76mm AA Gun"
     },
     "26320": {
         "nationality": 2,
@@ -4555,8 +5147,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 26320,
         "icon": "26300",
-        "name": "76mm高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "76mm高角砲",
+        "cn_name": "76mm高射炮",
+        "en_name": "76mm AA Gun"
     },
     "26300": {
         "nationality": 2,
@@ -4568,8 +5162,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 26300,
         "icon": "26300",
-        "name": "76mm高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "76mm高角砲",
+        "cn_name": "76mm高射炮",
+        "en_name": "76mm AA Gun"
     },
     "26640": {
         "nationality": 2,
@@ -4581,8 +5177,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 26640,
         "icon": "21500",
-        "name": "134mm連装高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "134mm連装高角砲",
+        "cn_name": "双联装134mm高炮",
+        "en_name": "134mm Twin High-Angle Gun"
     },
     "26540": {
         "nationality": 2,
@@ -4594,8 +5192,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 26540,
         "icon": "26500",
-        "name": "113mm連装高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "113mm連装高角砲",
+        "cn_name": "双联装113mm高射炮",
+        "en_name": "Twin 113mm AA Gun"
     },
     "26520": {
         "nationality": 2,
@@ -4607,8 +5207,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 26520,
         "icon": "26500",
-        "name": "113mm連装高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "113mm連装高角砲",
+        "cn_name": "双联装113mm高射炮",
+        "en_name": "Twin 113mm AA Gun"
     },
     "26500": {
         "nationality": 2,
@@ -4620,8 +5222,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 26500,
         "icon": "26500",
-        "name": "113mm連装高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "113mm連装高角砲",
+        "cn_name": "双联装113mm高射炮",
+        "en_name": "Twin 113mm AA Gun"
     },
     "26440": {
         "nationality": 2,
@@ -4633,8 +5237,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 26440,
         "icon": "26400",
-        "name": "102mm高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "102mm高角砲",
+        "cn_name": "102mm高射炮",
+        "en_name": "102mm AA Gun"
     },
     "26420": {
         "nationality": 2,
@@ -4646,8 +5252,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 26420,
         "icon": "26400",
-        "name": "102mm高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "102mm高角砲",
+        "cn_name": "102mm高射炮",
+        "en_name": "102mm AA Gun"
     },
     "26400": {
         "nationality": 2,
@@ -4659,8 +5267,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 26400,
         "icon": "26400",
-        "name": "102mm高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "102mm高角砲",
+        "cn_name": "102mm高射炮",
+        "en_name": "102mm AA Gun"
     },
     "16440": {
         "nationality": 1,
@@ -4672,8 +5282,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 16440,
         "icon": "16400",
-        "name": "四連装ボフォース40mm機関砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "四連装ボフォース40mm機関砲",
+        "cn_name": "四联40mm博福斯对空机炮",
+        "en_name": "Quadruple 40mm Bofors Gun"
     },
     "16420": {
         "nationality": 1,
@@ -4685,8 +5297,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 16420,
         "icon": "16400",
-        "name": "四連装ボフォース40mm機関砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "四連装ボフォース40mm機関砲",
+        "cn_name": "四联40mm博福斯对空机炮",
+        "en_name": "Quadruple 40mm Bofors Gun"
     },
     "16400": {
         "nationality": 1,
@@ -4698,8 +5312,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 16400,
         "icon": "16400",
-        "name": "四連装ボフォース40mm機関砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "四連装ボフォース40mm機関砲",
+        "cn_name": "四联40mm博福斯对空机炮",
+        "en_name": "Quadruple 40mm Bofors Gun"
     },
     "16240": {
         "nationality": 1,
@@ -4711,8 +5327,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 16240,
         "icon": "16200",
-        "name": "四連装28mm対空機銃「シカゴピアノ」",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "四連装28mm対空機銃「シカゴピアノ」",
+        "cn_name": "四联装28mm“芝加哥钢琴”",
+        "en_name": "Quadruple 28mm Chicago Piano"
     },
     "16220": {
         "nationality": 1,
@@ -4724,8 +5342,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 16220,
         "icon": "16200",
-        "name": "四連装28mm対空機銃「シカゴピアノ」",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "四連装28mm対空機銃「シカゴピアノ」",
+        "cn_name": "四联装28mm“芝加哥钢琴”",
+        "en_name": "Quadruple 28mm Chicago Piano"
     },
     "16200": {
         "nationality": 1,
@@ -4737,8 +5357,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 16200,
         "icon": "16200",
-        "name": "四連装28mm対空機銃「シカゴピアノ」",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "四連装28mm対空機銃「シカゴピアノ」",
+        "cn_name": "四联装28mm“芝加哥钢琴”",
+        "en_name": "Quadruple 28mm Chicago Piano"
     },
     "16340": {
         "nationality": 1,
@@ -4750,8 +5372,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 16340,
         "icon": "16300",
-        "name": "二連装ボフォース40mm機関砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "二連装ボフォース40mm機関砲",
+        "cn_name": "双联40mm博福斯对空机炮",
+        "en_name": "Twin 40mm Bofors Gun"
     },
     "16320": {
         "nationality": 1,
@@ -4763,8 +5387,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 16320,
         "icon": "16300",
-        "name": "二連装ボフォース40mm機関砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "二連装ボフォース40mm機関砲",
+        "cn_name": "双联40mm博福斯对空机炮",
+        "en_name": "Twin 40mm Bofors Gun"
     },
     "16300": {
         "nationality": 1,
@@ -4776,8 +5402,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 16300,
         "icon": "16300",
-        "name": "二連装ボフォース40mm機関砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "二連装ボフォース40mm機関砲",
+        "cn_name": "双联40mm博福斯对空机炮",
+        "en_name": "Twin 40mm Bofors Gun"
     },
     "16140": {
         "nationality": 1,
@@ -4789,8 +5417,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 16140,
         "icon": "16100",
-        "name": "20mm二連装エリコン機関砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "20mm二連装エリコン機関砲",
+        "cn_name": "双管20mm厄利空高射炮",
+        "en_name": "Twin 20mm AA Oerlikon Design"
     },
     "16120": {
         "nationality": 1,
@@ -4802,8 +5432,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 16120,
         "icon": "16100",
-        "name": "20mm二連装エリコン機関砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "20mm二連装エリコン機関砲",
+        "cn_name": "双管20mm厄利空高射炮",
+        "en_name": "Twin 20mm AA Oerlikon Design"
     },
     "16100": {
         "nationality": 1,
@@ -4815,8 +5447,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 16100,
         "icon": "16100",
-        "name": "20mm二連装エリコン機関砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "20mm二連装エリコン機関砲",
+        "cn_name": "双管20mm厄利空高射炮",
+        "en_name": "Twin 20mm AA Oerlikon Design"
     },
     "16040": {
         "nationality": 1,
@@ -4828,8 +5462,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 16040,
         "icon": "16000",
-        "name": "20mmエリコン機関砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "20mmエリコン機関砲",
+        "cn_name": "20mm厄利空高射炮",
+        "en_name": "20mm AA Oerlikon"
     },
     "16020": {
         "nationality": 1,
@@ -4841,8 +5477,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 16020,
         "icon": "16000",
-        "name": "20mmエリコン機関砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "20mmエリコン機関砲",
+        "cn_name": "20mm厄利空高射炮",
+        "en_name": "20mm AA Oerlikon"
     },
     "16000": {
         "nationality": 1,
@@ -4854,8 +5492,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 16000,
         "icon": "16000",
-        "name": "20mmエリコン機関砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "20mmエリコン機関砲",
+        "cn_name": "20mm厄利空高射炮",
+        "en_name": "20mm AA Oerlikon"
     },
     "6040": {
         "nationality": 0,
@@ -4867,8 +5507,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 6040,
         "icon": "6000",
-        "name": "12.7mm対空機銃",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "12.7mm対空機銃",
+        "cn_name": "12.7mm防空机枪",
+        "en_name": "12.7mm AA Gun"
     },
     "6020": {
         "nationality": 0,
@@ -4880,8 +5522,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 6020,
         "icon": "6000",
-        "name": "12.7mm対空機銃",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "12.7mm対空機銃",
+        "cn_name": "12.7mm防空机枪",
+        "en_name": "12.7mm AA Gun"
     },
     "6000": {
         "nationality": 0,
@@ -4893,8 +5537,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 6000,
         "icon": "6000",
-        "name": "12.7mm対空機銃",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "12.7mm対空機銃",
+        "cn_name": "12.7mm防空机枪",
+        "en_name": "12.7mm AA Gun"
     },
     "5340": {
         "nationality": 8,
@@ -4906,8 +5552,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 5340,
         "icon": "5300",
-        "name": "550mm連装魚雷発射管",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "550mm連装魚雷発射管",
+        "cn_name": "双联装550mm鱼雷",
+        "en_name": "Twin 550mm Torpedo"
     },
     "5320": {
         "nationality": 8,
@@ -4919,8 +5567,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 5320,
         "icon": "5300",
-        "name": "550mm連装魚雷発射管",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "550mm連装魚雷発射管",
+        "cn_name": "双联装550mm鱼雷",
+        "en_name": "Twin 550mm Torpedo"
     },
     "5300": {
         "nationality": 8,
@@ -4932,8 +5582,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 5300,
         "icon": "5300",
-        "name": "550mm連装魚雷発射管",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "550mm連装魚雷発射管",
+        "cn_name": "双联装550mm鱼雷",
+        "en_name": "Twin 550mm Torpedo"
     },
     "5440": {
         "nationality": 8,
@@ -4945,8 +5597,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 5440,
         "icon": "5400",
-        "name": "550mm三連装魚雷発射管",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "550mm三連装魚雷発射管",
+        "cn_name": "三联装550mm鱼雷",
+        "en_name": "Triple 550mm Torpedo"
     },
     "5420": {
         "nationality": 8,
@@ -4958,8 +5612,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 5420,
         "icon": "5400",
-        "name": "550mm三連装魚雷発射管",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "550mm三連装魚雷発射管",
+        "cn_name": "三联装550mm鱼雷",
+        "en_name": "Triple 550mm Torpedo"
     },
     "5400": {
         "nationality": 8,
@@ -4971,8 +5627,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 5400,
         "icon": "5400",
-        "name": "550mm三連装魚雷発射管",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "550mm三連装魚雷発射管",
+        "cn_name": "三联装550mm鱼雷",
+        "en_name": "Triple 550mm Torpedo"
     },
     "45140": {
         "nationality": 4,
@@ -4984,8 +5642,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 45140,
         "icon": "45100",
-        "name": "533mm四連装磁気魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "533mm四連装磁気魚雷",
+        "cn_name": "四联装533mm磁性鱼雷",
+        "en_name": "Quadruple 533mm Magnetic Torpedo"
     },
     "45120": {
         "nationality": 4,
@@ -4997,8 +5657,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 45120,
         "icon": "45100",
-        "name": "533mm四連装磁気魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "533mm四連装磁気魚雷",
+        "cn_name": "四联装533mm磁性鱼雷",
+        "en_name": "Quadruple 533mm Magnetic Torpedo"
     },
     "45100": {
         "nationality": 4,
@@ -5010,8 +5672,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 45100,
         "icon": "45100",
-        "name": "533mm四連装磁気魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "533mm四連装磁気魚雷",
+        "cn_name": "四联装533mm磁性鱼雷",
+        "en_name": "Quadruple 533mm Magnetic Torpedo"
     },
     "45240": {
         "nationality": 4,
@@ -5023,8 +5687,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 45240,
         "icon": "45200",
-        "name": "533mm五連装磁気魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "533mm五連装磁気魚雷",
+        "cn_name": "五联装533mm磁性鱼雷",
+        "en_name": "Quintuple 533mm Magnetic Torpedo"
     },
     "45220": {
         "nationality": 4,
@@ -5036,8 +5702,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 45220,
         "icon": "45200",
-        "name": "533mm五連装磁気魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "533mm五連装磁気魚雷",
+        "cn_name": "五联装533mm磁性鱼雷",
+        "en_name": "Quintuple 533mm Magnetic Torpedo"
     },
     "45200": {
         "nationality": 4,
@@ -5049,8 +5717,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 45200,
         "icon": "45200",
-        "name": "533mm五連装磁気魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "533mm五連装磁気魚雷",
+        "cn_name": "五联装533mm磁性鱼雷",
+        "en_name": "Quintuple 533mm Magnetic Torpedo"
     },
     "45040": {
         "nationality": 4,
@@ -5062,8 +5732,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 45040,
         "icon": "45000",
-        "name": "533mm三連装磁気魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "533mm三連装磁気魚雷",
+        "cn_name": "三联装533mm磁性鱼雷",
+        "en_name": "Triple 533mm Magnetic Torpedo"
     },
     "45020": {
         "nationality": 4,
@@ -5075,8 +5747,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 45020,
         "icon": "45000",
-        "name": "533mm三連装磁気魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "533mm三連装磁気魚雷",
+        "cn_name": "三联装533mm磁性鱼雷",
+        "en_name": "Triple 533mm Magnetic Torpedo"
     },
     "45000": {
         "nationality": 4,
@@ -5088,8 +5762,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 45000,
         "icon": "45000",
-        "name": "533mm三連装磁気魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "533mm三連装磁気魚雷",
+        "cn_name": "三联装533mm磁性鱼雷",
+        "en_name": "Triple 533mm Magnetic Torpedo"
     },
     "35040": {
         "nationality": 3,
@@ -5101,8 +5777,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 35040,
         "icon": "35000",
-        "name": "610mm連装魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "610mm連装魚雷",
+        "cn_name": "双联装610mm鱼雷",
+        "en_name": "Twin 610mm Torpedo"
     },
     "35020": {
         "nationality": 3,
@@ -5114,8 +5792,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 35020,
         "icon": "35000",
-        "name": "610mm連装魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "610mm連装魚雷",
+        "cn_name": "双联装610mm鱼雷",
+        "en_name": "Twin 610mm Torpedo"
     },
     "35000": {
         "nationality": 3,
@@ -5127,8 +5807,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 35000,
         "icon": "35000",
-        "name": "610mm連装魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "610mm連装魚雷",
+        "cn_name": "双联装610mm鱼雷",
+        "en_name": "Twin 610mm Torpedo"
     },
     "35240": {
         "nationality": 3,
@@ -5140,8 +5822,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 35240,
         "icon": "35200",
-        "name": "610mm四連装魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "610mm四連装魚雷",
+        "cn_name": "四联装610mm鱼雷",
+        "en_name": "Quadruple 610mm Torpedo"
     },
     "35220": {
         "nationality": 3,
@@ -5153,8 +5837,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 35220,
         "icon": "35200",
-        "name": "610mm四連装魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "610mm四連装魚雷",
+        "cn_name": "四联装610mm鱼雷",
+        "en_name": "Quadruple 610mm Torpedo"
     },
     "35200": {
         "nationality": 3,
@@ -5166,8 +5852,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 35200,
         "icon": "35200",
-        "name": "610mm四連装魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "610mm四連装魚雷",
+        "cn_name": "四联装610mm鱼雷",
+        "en_name": "Quadruple 610mm Torpedo"
     },
     "35140": {
         "nationality": 3,
@@ -5179,8 +5867,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 35140,
         "icon": "35100",
-        "name": "610mm三連装魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "610mm三連装魚雷",
+        "cn_name": "三联装610mm鱼雷",
+        "en_name": "Triple 610mm Torpedo"
     },
     "35120": {
         "nationality": 3,
@@ -5192,8 +5882,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 35120,
         "icon": "35100",
-        "name": "610mm三連装魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "610mm三連装魚雷",
+        "cn_name": "三联装610mm鱼雷",
+        "en_name": "Triple 610mm Torpedo"
     },
     "35100": {
         "nationality": 3,
@@ -5205,8 +5897,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 35100,
         "icon": "35100",
-        "name": "610mm三連装魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "610mm三連装魚雷",
+        "cn_name": "三联装610mm鱼雷",
+        "en_name": "Triple 610mm Torpedo"
     },
     "5140": {
         "nationality": 0,
@@ -5218,8 +5912,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 5140,
         "icon": "5100",
-        "name": "533mm四連装魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "533mm四連装魚雷",
+        "cn_name": "四联装533mm鱼雷",
+        "en_name": "Quadruple 533mm Torpedo"
     },
     "5120": {
         "nationality": 0,
@@ -5231,8 +5927,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 5120,
         "icon": "5100",
-        "name": "533mm四連装魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "533mm四連装魚雷",
+        "cn_name": "四联装533mm鱼雷",
+        "en_name": "Quadruple 533mm Torpedo"
     },
     "5100": {
         "nationality": 0,
@@ -5244,8 +5942,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 5100,
         "icon": "5100",
-        "name": "533mm四連装魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "533mm四連装魚雷",
+        "cn_name": "四联装533mm鱼雷",
+        "en_name": "Quadruple 533mm Torpedo"
     },
     "5240": {
         "nationality": 0,
@@ -5257,8 +5957,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 5240,
         "icon": "5200",
-        "name": "533mm五連装魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "533mm五連装魚雷",
+        "cn_name": "五联装533mm鱼雷",
+        "en_name": "Quintuple 533mm Torpedo"
     },
     "5220": {
         "nationality": 0,
@@ -5270,8 +5972,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 5220,
         "icon": "5200",
-        "name": "533mm五連装魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "533mm五連装魚雷",
+        "cn_name": "五联装533mm鱼雷",
+        "en_name": "Quintuple 533mm Torpedo"
     },
     "5200": {
         "nationality": 0,
@@ -5283,8 +5987,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 5200,
         "icon": "5200",
-        "name": "533mm五連装魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "533mm五連装魚雷",
+        "cn_name": "五联装533mm鱼雷",
+        "en_name": "Quintuple 533mm Torpedo"
     },
     "5040": {
         "nationality": 0,
@@ -5296,8 +6002,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 5040,
         "icon": "5000",
-        "name": "533mm三連装魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "533mm三連装魚雷",
+        "cn_name": "三联装533mm鱼雷",
+        "en_name": "Triple 533mm Torpedo"
     },
     "5020": {
         "nationality": 0,
@@ -5309,8 +6017,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 5020,
         "icon": "5000",
-        "name": "533mm三連装魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "533mm三連装魚雷",
+        "cn_name": "三联装533mm鱼雷",
+        "en_name": "Triple 533mm Torpedo"
     },
     "5000": {
         "nationality": 0,
@@ -5322,8 +6032,10 @@ var equip_data = {
         "ammo_icon": [],
         "id": 5000,
         "icon": "5000",
-        "name": "533mm三連装魚雷",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "533mm三連装魚雷",
+        "cn_name": "三联装533mm鱼雷",
+        "en_name": "Triple 533mm Torpedo"
     },
     "91000": {
         "nationality": 8,
@@ -5337,8 +6049,10 @@ var equip_data = {
         ],
         "id": 91000,
         "icon": "51000",
-        "name": "試作型406mm/50三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "試作型406mm/50三連装砲",
+        "cn_name": "试作型三联装406mm/50主炮",
+        "en_name": "Prototype Triple 406mm/50 Main Gun "
     },
     "90440": {
         "nationality": 8,
@@ -5352,8 +6066,10 @@ var equip_data = {
         ],
         "id": 90440,
         "icon": "50400",
-        "name": "380mm四連装砲Mle1935",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "380mm四連装砲Mle1935",
+        "cn_name": "四联装380mm主炮Mle1935",
+        "en_name": "Quadruple 380mm Main Gun (Mle 1935)"
     },
     "90420": {
         "nationality": 8,
@@ -5367,8 +6083,10 @@ var equip_data = {
         ],
         "id": 90420,
         "icon": "50400",
-        "name": "380mm四連装砲Mle1935",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "380mm四連装砲Mle1935",
+        "cn_name": "四联装380mm主炮Mle1935",
+        "en_name": "Quadruple 380mm Main Gun (Mle 1935)"
     },
     "90400": {
         "nationality": 8,
@@ -5382,8 +6100,10 @@ var equip_data = {
         ],
         "id": 90400,
         "icon": "50400",
-        "name": "380mm四連装砲Mle1935",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "380mm四連装砲Mle1935",
+        "cn_name": "四联装380mm主炮Mle1935",
+        "en_name": "Quadruple 380mm Main Gun (Mle 1935)"
     },
     "90340": {
         "nationality": 8,
@@ -5397,8 +6117,10 @@ var equip_data = {
         ],
         "id": 90340,
         "icon": "50300",
-        "name": "330mm四連装砲Mle1931",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "330mm四連装砲Mle1931",
+        "cn_name": "四联装330mm主炮Mle1931",
+        "en_name": "Quadruple 330mm Main Gun (Mle 1931)"
     },
     "90320": {
         "nationality": 8,
@@ -5412,8 +6134,10 @@ var equip_data = {
         ],
         "id": 90320,
         "icon": "50300",
-        "name": "330mm四連装砲Mle1931",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "330mm四連装砲Mle1931",
+        "cn_name": "四联装330mm主炮Mle1931",
+        "en_name": "Quadruple 330mm Main Gun (Mle 1931)"
     },
     "90300": {
         "nationality": 8,
@@ -5427,8 +6151,10 @@ var equip_data = {
         ],
         "id": 90300,
         "icon": "50300",
-        "name": "330mm四連装砲Mle1931",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "330mm四連装砲Mle1931",
+        "cn_name": "四联装330mm主炮Mle1931",
+        "en_name": "Quadruple 330mm Main Gun (Mle 1931)"
     },
     "85320": {
         "nationality": 7,
@@ -5442,8 +6168,10 @@ var equip_data = {
         ],
         "id": 85320,
         "icon": "85300",
-        "name": "406mm三連装砲B-37 MK-1",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "406mm三連装砲B-37 MK-1",
+        "cn_name": "B-37 三联装406mm主炮MK-1",
+        "en_name": "Triple 406mm Main Gun (B-37 MK1)"
     },
     "85300": {
         "nationality": 7,
@@ -5457,8 +6185,10 @@ var equip_data = {
         ],
         "id": 85300,
         "icon": "85300",
-        "name": "406mm三連装砲B-37 MK-1",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "406mm三連装砲B-37 MK-1",
+        "cn_name": "B-37 三联装406mm主炮MK-1",
+        "en_name": "Triple 406mm Main Gun (B-37 MK1)"
     },
     "85420": {
         "nationality": 7,
@@ -5472,8 +6202,10 @@ var equip_data = {
         ],
         "id": 85420,
         "icon": "85420",
-        "name": "305mm三連装砲Model1907",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "305mm三連装砲Model1907",
+        "cn_name": "三联装305mm主炮Model1907",
+        "en_name": "Triple 305mm Main Gun (M1907)"
     },
     "95040": {
         "nationality": 6,
@@ -5487,8 +6219,10 @@ var equip_data = {
         ],
         "id": 95040,
         "icon": "55000",
-        "name": "381mm三連装砲Model1934",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "381mm三連装砲Model1934",
+        "cn_name": "三联装381mm主炮Model1934",
+        "en_name": "Triple 381mm Main Gun (M1934)"
     },
     "95020": {
         "nationality": 6,
@@ -5502,8 +6236,10 @@ var equip_data = {
         ],
         "id": 95020,
         "icon": "55000",
-        "name": "381mm三連装砲Model1934",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "381mm三連装砲Model1934",
+        "cn_name": "三联装381mm主炮Model1934",
+        "en_name": "Triple 381mm Main Gun (M1934)"
     },
     "95000": {
         "nationality": 6,
@@ -5517,8 +6253,10 @@ var equip_data = {
         ],
         "id": 95000,
         "icon": "55000",
-        "name": "381mm三連装砲Model1934",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "381mm三連装砲Model1934",
+        "cn_name": "三联装381mm主炮Model1934",
+        "en_name": "Triple 381mm Main Gun (M1934)"
     },
     "95480": {
         "nationality": 6,
@@ -5532,8 +6270,10 @@ var equip_data = {
         ],
         "id": 95480,
         "icon": "55480",
-        "name": "320mm三連装砲Model1934",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "320mm三連装砲Model1934",
+        "cn_name": "三联装320mm主炮Model1934",
+        "en_name": "Triple 320mm Main Gun (M1934)"
     },
     "44200": {
         "nationality": 4,
@@ -5547,8 +6287,10 @@ var equip_data = {
         ],
         "id": 44200,
         "icon": "44200",
-        "name": "試作型406mmSKC連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "試作型406mmSKC連装砲",
+        "cn_name": "试作型双联装406mmSKC主炮",
+        "en_name": "Prototype Twin 406mm Main Gun (SK C/34)"
     },
     "44300": {
         "nationality": 4,
@@ -5562,8 +6304,10 @@ var equip_data = {
         ],
         "id": 44300,
         "icon": "44300",
-        "name": "試作型305mmSKC39三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "試作型305mmSKC39三連装砲",
+        "cn_name": "试作型三联装305mmSKC39主炮",
+        "en_name": "Prototype Triple 305mm Main Gun (SK C/39) "
     },
     "44140": {
         "nationality": 4,
@@ -5577,8 +6321,10 @@ var equip_data = {
         ],
         "id": 44140,
         "icon": "44100",
-        "name": "380mmSKC連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "380mmSKC連装砲",
+        "cn_name": "双联380mmSKC主炮",
+        "en_name": "Twin 380mm Main Gun (SK C)"
     },
     "44120": {
         "nationality": 4,
@@ -5592,8 +6338,10 @@ var equip_data = {
         ],
         "id": 44120,
         "icon": "44100",
-        "name": "380mmSKC連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "380mmSKC連装砲",
+        "cn_name": "双联380mmSKC主炮",
+        "en_name": "Twin 380mm Main Gun (SK C)"
     },
     "44100": {
         "nationality": 4,
@@ -5607,8 +6355,10 @@ var equip_data = {
         ],
         "id": 44100,
         "icon": "44100",
-        "name": "380mmSKC連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "380mmSKC連装砲",
+        "cn_name": "双联380mmSKC主炮",
+        "en_name": "Twin 380mm Main Gun (SK C)"
     },
     "44040": {
         "nationality": 4,
@@ -5622,8 +6372,10 @@ var equip_data = {
         ],
         "id": 44040,
         "icon": "44000",
-        "name": "283mmSKC34三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "283mmSKC34三連装砲",
+        "cn_name": "三联283mmSKC34主炮",
+        "en_name": "Triple 283mm Main Gun (SK C/34)"
     },
     "44020": {
         "nationality": 4,
@@ -5637,8 +6389,10 @@ var equip_data = {
         ],
         "id": 44020,
         "icon": "44000",
-        "name": "283mmSKC34三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "283mmSKC34三連装砲",
+        "cn_name": "三联283mmSKC34主炮",
+        "en_name": "Triple 283mm Main Gun (SK C/34)"
     },
     "44000": {
         "nationality": 4,
@@ -5652,8 +6406,10 @@ var equip_data = {
         ],
         "id": 44000,
         "icon": "44000",
-        "name": "283mmSKC34三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "283mmSKC34三連装砲",
+        "cn_name": "三联283mmSKC34主炮",
+        "en_name": "Triple 283mm Main Gun (SK C/34)"
     },
     "34180": {
         "nationality": 3,
@@ -5667,8 +6423,10 @@ var equip_data = {
         ],
         "id": 34180,
         "icon": "34180",
-        "name": "試製410mm三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "試製410mm三連装砲",
+        "cn_name": "试作型410mm三连装炮",
+        "en_name": "Prototype Triple 410mm Mounted Gun"
     },
     "34160": {
         "nationality": 3,
@@ -5682,8 +6440,10 @@ var equip_data = {
         ],
         "id": 34160,
         "icon": "34100",
-        "name": "410mm連装砲(三式弾)",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "410mm連装砲(三式弾)",
+        "cn_name": "410mm连装炮(三式弹)",
+        "en_name": "410mm Mounted Gun (Type 3 Shell)"
     },
     "34140": {
         "nationality": 3,
@@ -5697,8 +6457,10 @@ var equip_data = {
         ],
         "id": 34140,
         "icon": "34100",
-        "name": "410mm連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "410mm連装砲",
+        "cn_name": "410mm连装炮",
+        "en_name": "410mm Mounted Gun"
     },
     "34120": {
         "nationality": 3,
@@ -5712,8 +6474,10 @@ var equip_data = {
         ],
         "id": 34120,
         "icon": "34100",
-        "name": "410mm連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "410mm連装砲",
+        "cn_name": "410mm连装炮",
+        "en_name": "410mm Mounted Gun"
     },
     "34100": {
         "nationality": 3,
@@ -5727,8 +6491,10 @@ var equip_data = {
         ],
         "id": 34100,
         "icon": "34100",
-        "name": "410mm連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "410mm連装砲",
+        "cn_name": "410mm连装炮",
+        "en_name": "410mm Mounted Gun"
     },
     "34040": {
         "nationality": 3,
@@ -5742,8 +6508,10 @@ var equip_data = {
         ],
         "id": 34040,
         "icon": "34000",
-        "name": "356mm連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "356mm連装砲",
+        "cn_name": "356mm连装炮",
+        "en_name": "356mm Mounted Gun"
     },
     "34020": {
         "nationality": 3,
@@ -5757,8 +6525,10 @@ var equip_data = {
         ],
         "id": 34020,
         "icon": "34000",
-        "name": "356mm連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "356mm連装砲",
+        "cn_name": "356mm连装炮",
+        "en_name": "356mm Mounted Gun"
     },
     "34000": {
         "nationality": 3,
@@ -5772,8 +6542,10 @@ var equip_data = {
         ],
         "id": 34000,
         "icon": "34000",
-        "name": "356mm連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "356mm連装砲",
+        "cn_name": "356mm连装炮",
+        "en_name": "356mm Mounted Gun"
     },
     "30000": {
         "nationality": 3,
@@ -5787,8 +6559,10 @@ var equip_data = {
         ],
         "id": 30000,
         "icon": "30000",
-        "name": "305mm連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "305mm連装砲",
+        "cn_name": "305mm连装炮",
+        "en_name": "305mm Mounted Gun"
     },
     "24160": {
         "nationality": 2,
@@ -5802,8 +6576,10 @@ var equip_data = {
         ],
         "id": 24160,
         "icon": "24160",
-        "name": "試製381mm三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "試製381mm三連装砲",
+        "cn_name": "试作型三联装381mm主炮",
+        "en_name": "Prototype Triple 381mm AA Gun"
     },
     "24240": {
         "nationality": 2,
@@ -5817,8 +6593,10 @@ var equip_data = {
         ],
         "id": 24240,
         "icon": "24200",
-        "name": "406mm三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "406mm三連装砲",
+        "cn_name": "三联装406mm主炮",
+        "en_name": "Triple 406mm Main Gun"
     },
     "24220": {
         "nationality": 2,
@@ -5832,8 +6610,10 @@ var equip_data = {
         ],
         "id": 24220,
         "icon": "24200",
-        "name": "406mm三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "406mm三連装砲",
+        "cn_name": "三联装406mm主炮",
+        "en_name": "Triple 406mm Main Gun"
     },
     "24200": {
         "nationality": 2,
@@ -5847,8 +6627,10 @@ var equip_data = {
         ],
         "id": 24200,
         "icon": "24200",
-        "name": "406mm三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "406mm三連装砲",
+        "cn_name": "三联装406mm主炮",
+        "en_name": "Triple 406mm Main Gun"
     },
     "24340": {
         "nationality": 2,
@@ -5862,8 +6644,10 @@ var equip_data = {
         ],
         "id": 24340,
         "icon": "24300",
-        "name": "381mm連装砲改",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "381mm連装砲改",
+        "cn_name": "双联装381mm主炮.改",
+        "en_name": "Twin 381mm Advanced Main Gun"
     },
     "24140": {
         "nationality": 2,
@@ -5877,8 +6661,10 @@ var equip_data = {
         ],
         "id": 24140,
         "icon": "24100",
-        "name": "381mm連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "381mm連装砲",
+        "cn_name": "双联装381mm主炮",
+        "en_name": "Twin 381mm Main Gun"
     },
     "24120": {
         "nationality": 2,
@@ -5892,8 +6678,10 @@ var equip_data = {
         ],
         "id": 24120,
         "icon": "24100",
-        "name": "381mm連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "381mm連装砲",
+        "cn_name": "双联装381mm主炮",
+        "en_name": "Twin 381mm Main Gun"
     },
     "24100": {
         "nationality": 2,
@@ -5907,8 +6695,10 @@ var equip_data = {
         ],
         "id": 24100,
         "icon": "24100",
-        "name": "381mm連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "381mm連装砲",
+        "cn_name": "双联装381mm主炮",
+        "en_name": "Twin 381mm Main Gun"
     },
     "24040": {
         "nationality": 2,
@@ -5922,8 +6712,10 @@ var equip_data = {
         ],
         "id": 24040,
         "icon": "24000",
-        "name": "356mm四連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "356mm四連装砲",
+        "cn_name": "四联装356mm主炮",
+        "en_name": "Quadruple 356mm Main Gun"
     },
     "24020": {
         "nationality": 2,
@@ -5937,8 +6729,10 @@ var equip_data = {
         ],
         "id": 24020,
         "icon": "24000",
-        "name": "356mm四連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "356mm四連装砲",
+        "cn_name": "四联装356mm主炮",
+        "en_name": "Quadruple 356mm Main Gun"
     },
     "24000": {
         "nationality": 2,
@@ -5952,8 +6746,10 @@ var equip_data = {
         ],
         "id": 24000,
         "icon": "24000",
-        "name": "356mm四連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "356mm四連装砲",
+        "cn_name": "四联装356mm主炮",
+        "en_name": "Quadruple 356mm Main Gun"
     },
     "14500": {
         "nationality": 1,
@@ -5967,8 +6763,10 @@ var equip_data = {
         ],
         "id": 14500,
         "icon": "14500",
-        "name": "試作型457mm連装砲MKA",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "試作型457mm連装砲MKA",
+        "cn_name": "试作型双联装457mm主炮MKA",
+        "en_name": "Prototype Twin 457mm Main Gun (18\" MKA)"
     },
     "14240": {
         "nationality": 1,
@@ -5982,8 +6780,10 @@ var equip_data = {
         ],
         "id": 14240,
         "icon": "14200",
-        "name": "406mm連装砲MK5",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "406mm連装砲MK5",
+        "cn_name": "双联装406mm主炮MK5",
+        "en_name": "Twin 406mm MK5 Main Gun"
     },
     "14220": {
         "nationality": 1,
@@ -5997,8 +6797,10 @@ var equip_data = {
         ],
         "id": 14220,
         "icon": "14200",
-        "name": "406mm連装砲MK5",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "406mm連装砲MK5",
+        "cn_name": "双联装406mm主炮MK5",
+        "en_name": "Twin 406mm MK5 Main Gun"
     },
     "14200": {
         "nationality": 1,
@@ -6012,8 +6814,10 @@ var equip_data = {
         ],
         "id": 14200,
         "icon": "14200",
-        "name": "406mm連装砲MK5",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "406mm連装砲MK5",
+        "cn_name": "双联装406mm主炮MK5",
+        "en_name": "Twin 406mm MK5 Main Gun"
     },
     "14340": {
         "nationality": 1,
@@ -6027,8 +6831,10 @@ var equip_data = {
         ],
         "id": 14340,
         "icon": "14300",
-        "name": "406mm三連装砲MK6",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "406mm三連装砲MK6",
+        "cn_name": "三联装406mm主炮MK6",
+        "en_name": "Triple 406mm MK6 Main Gun"
     },
     "14320": {
         "nationality": 1,
@@ -6042,8 +6848,10 @@ var equip_data = {
         ],
         "id": 14320,
         "icon": "14300",
-        "name": "406mm三連装砲MK6",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "406mm三連装砲MK6",
+        "cn_name": "三联装406mm主炮MK6",
+        "en_name": "Triple 406mm MK6 Main Gun"
     },
     "14300": {
         "nationality": 1,
@@ -6057,8 +6865,10 @@ var equip_data = {
         ],
         "id": 14300,
         "icon": "14300",
-        "name": "406mm三連装砲MK6",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "406mm三連装砲MK6",
+        "cn_name": "三联装406mm主炮MK6",
+        "en_name": "Triple 406mm MK6 Main Gun"
     },
     "14140": {
         "nationality": 1,
@@ -6072,8 +6882,10 @@ var equip_data = {
         ],
         "id": 14140,
         "icon": "14100",
-        "name": "356mm三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "356mm三連装砲",
+        "cn_name": "三联装356mm主炮",
+        "en_name": "Triple 356mm Main Gun"
     },
     "14120": {
         "nationality": 1,
@@ -6087,8 +6899,10 @@ var equip_data = {
         ],
         "id": 14120,
         "icon": "14100",
-        "name": "356mm三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "356mm三連装砲",
+        "cn_name": "三联装356mm主炮",
+        "en_name": "Triple 356mm Main Gun"
     },
     "14100": {
         "nationality": 1,
@@ -6102,8 +6916,10 @@ var equip_data = {
         ],
         "id": 14100,
         "icon": "14100",
-        "name": "356mm三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "356mm三連装砲",
+        "cn_name": "三联装356mm主炮",
+        "en_name": "Triple 356mm Main Gun"
     },
     "7300": {
         "nationality": 8,
@@ -6117,11 +6933,13 @@ var equip_data = {
         ],
         "id": 7300,
         "icon": "7300",
-        "name": "試製203mm三連装砲",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "試製203mm三連装砲",
+        "cn_name": "试作型三联装203mm舰炮",
+        "en_name": "Prototype Triple 203mm AA Gun"
     },
     "7340": {
         "nationality": 8,
@@ -6135,7 +6953,6 @@ var equip_data = {
         ],
         "id": 7340,
         "icon": "7340",
-        "name": "潜水艦用203mm連装砲Mle1924",
         "ship_type_forbidden": [
             1,
             2,
@@ -6150,7 +6967,10 @@ var equip_data = {
             12,
             13,
             18
-        ]
+        ],
+        "jp_name": "潜水艦用203mm連装砲Mle1924",
+        "cn_name": "双联装203mm主炮Mle1924(潜艇用)",
+        "en_name": "Submarine-mounted Twin 203mm Cannon (Mle 1924)"
     },
     "90900": {
         "nationality": 8,
@@ -6164,11 +6984,13 @@ var equip_data = {
         ],
         "id": 90900,
         "icon": "50860",
-        "name": "203mm連装砲Mle1924",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "203mm連装砲Mle1924",
+        "cn_name": "双联装203mm主炮Mle1924",
+        "en_name": "Twin 203mm Main Gun (Mle 1924)"
     },
     "90880": {
         "nationality": 8,
@@ -6182,11 +7004,13 @@ var equip_data = {
         ],
         "id": 90880,
         "icon": "50860",
-        "name": "203mm連装砲Mle1924",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "203mm連装砲Mle1924",
+        "cn_name": "双联装203mm主炮Mle1924",
+        "en_name": "Twin 203mm Main Gun (Mle 1924)"
     },
     "90860": {
         "nationality": 8,
@@ -6200,11 +7024,13 @@ var equip_data = {
         ],
         "id": 90860,
         "icon": "50860",
-        "name": "203mm連装砲Mle1924",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "203mm連装砲Mle1924",
+        "cn_name": "双联装203mm主炮Mle1924",
+        "en_name": "Twin 203mm Main Gun (Mle 1924)"
     },
     "95240": {
         "nationality": 6,
@@ -6218,11 +7044,13 @@ var equip_data = {
         ],
         "id": 95240,
         "icon": "55200",
-        "name": "203mm連装砲Model1927",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "203mm連装砲Model1927",
+        "cn_name": "双联203mm主炮Model1927",
+        "en_name": "Twin 203mm Main Gun (M1927)"
     },
     "95220": {
         "nationality": 6,
@@ -6236,11 +7064,13 @@ var equip_data = {
         ],
         "id": 95220,
         "icon": "55200",
-        "name": "203mm連装砲Model1927",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "203mm連装砲Model1927",
+        "cn_name": "双联203mm主炮Model1927",
+        "en_name": "Twin 203mm Main Gun (M1927)"
     },
     "95200": {
         "nationality": 6,
@@ -6254,11 +7084,13 @@ var equip_data = {
         ],
         "id": 95200,
         "icon": "55200",
-        "name": "203mm連装砲Model1927",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "203mm連装砲Model1927",
+        "cn_name": "双联203mm主炮Model1927",
+        "en_name": "Twin 203mm Main Gun (M1927)"
     },
     "95340": {
         "nationality": 6,
@@ -6272,11 +7104,13 @@ var equip_data = {
         ],
         "id": 95340,
         "icon": "55300",
-        "name": "203mm連装砲Model1924",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "203mm連装砲Model1924",
+        "cn_name": "双联203mm主炮Model1924",
+        "en_name": "Twin 203mm Main Gun (M1924)"
     },
     "95320": {
         "nationality": 6,
@@ -6290,11 +7124,13 @@ var equip_data = {
         ],
         "id": 95320,
         "icon": "55300",
-        "name": "203mm連装砲Model1924",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "203mm連装砲Model1924",
+        "cn_name": "双联203mm主炮Model1924",
+        "en_name": "Twin 203mm Main Gun (M1924)"
     },
     "95300": {
         "nationality": 6,
@@ -6308,11 +7144,13 @@ var equip_data = {
         ],
         "id": 95300,
         "icon": "55300",
-        "name": "203mm連装砲Model1924",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "203mm連装砲Model1924",
+        "cn_name": "双联203mm主炮Model1924",
+        "en_name": "Twin 203mm Main Gun (M1924)"
     },
     "43060": {
         "nationality": 4,
@@ -6326,11 +7164,13 @@ var equip_data = {
         ],
         "id": 43060,
         "icon": "43060",
-        "name": "試作203mmSKC三連装砲",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "試作203mmSKC三連装砲",
+        "cn_name": "试作型三联装203mmSKC主炮",
+        "en_name": "Prototype Triple 203mm Main Gun (SK C)"
     },
     "43040": {
         "nationality": 4,
@@ -6344,11 +7184,13 @@ var equip_data = {
         ],
         "id": 43040,
         "icon": "43000",
-        "name": "203mmSKC連装砲",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "203mmSKC連装砲",
+        "cn_name": "双联装203mmSKC主炮",
+        "en_name": "Twin 203mm Main Gun (SK C)"
     },
     "43020": {
         "nationality": 4,
@@ -6362,11 +7204,13 @@ var equip_data = {
         ],
         "id": 43020,
         "icon": "43000",
-        "name": "203mmSKC連装砲",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "203mmSKC連装砲",
+        "cn_name": "双联装203mmSKC主炮",
+        "en_name": "Twin 203mm Main Gun (SK C)"
     },
     "43000": {
         "nationality": 4,
@@ -6380,11 +7224,13 @@ var equip_data = {
         ],
         "id": 43000,
         "icon": "43000",
-        "name": "203mmSKC連装砲",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "203mmSKC連装砲",
+        "cn_name": "双联装203mmSKC主炮",
+        "en_name": "Twin 203mm Main Gun (SK C)"
     },
     "33060": {
         "nationality": 3,
@@ -6398,11 +7244,13 @@ var equip_data = {
         ],
         "id": 33060,
         "icon": "33060",
-        "name": "試製203mm連装砲（3号）",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "試製203mm連装砲（3号）",
+        "cn_name": "试作型203mm(3号)连装炮",
+        "en_name": "Prototype 203mm (Type 3) Mounted Gun"
     },
     "33040": {
         "nationality": 3,
@@ -6416,11 +7264,13 @@ var equip_data = {
         ],
         "id": 33040,
         "icon": "33000",
-        "name": "203mm連装砲",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "203mm連装砲",
+        "cn_name": "203mm连装炮",
+        "en_name": "203mm Mounted Gun"
     },
     "33020": {
         "nationality": 3,
@@ -6434,11 +7284,13 @@ var equip_data = {
         ],
         "id": 33020,
         "icon": "33000",
-        "name": "203mm連装砲",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "203mm連装砲",
+        "cn_name": "203mm连装炮",
+        "en_name": "203mm Mounted Gun"
     },
     "33000": {
         "nationality": 3,
@@ -6452,11 +7304,13 @@ var equip_data = {
         ],
         "id": 33000,
         "icon": "33000",
-        "name": "203mm連装砲",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "203mm連装砲",
+        "cn_name": "203mm连装炮",
+        "en_name": "203mm Mounted Gun"
     },
     "23100": {
         "nationality": 2,
@@ -6470,11 +7324,13 @@ var equip_data = {
         ],
         "id": 23100,
         "icon": "23100",
-        "name": "試作型234mm連装砲",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "試作型234mm連装砲",
+        "cn_name": "试作型双联装234mm主炮",
+        "en_name": "Prototype Twin 234mm Main Gun (9.2\" MK XII) "
     },
     "23120": {
         "nationality": 2,
@@ -6488,11 +7344,13 @@ var equip_data = {
         ],
         "id": 23120,
         "icon": "23120",
-        "name": "試作型234mm三連装砲",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "試作型234mm三連装砲",
+        "cn_name": "试作型三联装234mm主炮",
+        "en_name": "Prototype Twin 234mm Main Gun (9.2\" MK XII) "
     },
     "23040": {
         "nationality": 2,
@@ -6506,11 +7364,13 @@ var equip_data = {
         ],
         "id": 23040,
         "icon": "23000",
-        "name": "203mm連装砲",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "203mm連装砲",
+        "cn_name": "双联装203mm主炮",
+        "en_name": "Twin 203mm Main Gun"
     },
     "23020": {
         "nationality": 2,
@@ -6524,11 +7384,13 @@ var equip_data = {
         ],
         "id": 23020,
         "icon": "23000",
-        "name": "203mm連装砲",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "203mm連装砲",
+        "cn_name": "双联装203mm主炮",
+        "en_name": "Twin 203mm Main Gun"
     },
     "23000": {
         "nationality": 2,
@@ -6542,11 +7404,13 @@ var equip_data = {
         ],
         "id": 23000,
         "icon": "23000",
-        "name": "203mm連装砲",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "203mm連装砲",
+        "cn_name": "双联装203mm主炮",
+        "en_name": "Twin 203mm Main Gun"
     },
     "13140": {
         "nationality": 1,
@@ -6560,11 +7424,13 @@ var equip_data = {
         ],
         "id": 13140,
         "icon": "13100",
-        "name": "203mm三連装砲改",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "203mm三連装砲改",
+        "cn_name": "三联装203mm主炮改进型",
+        "en_name": "Triple 203mm Advanced Main Gun"
     },
     "13120": {
         "nationality": 1,
@@ -6578,11 +7444,13 @@ var equip_data = {
         ],
         "id": 13120,
         "icon": "13100",
-        "name": "203mm三連装砲改",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "203mm三連装砲改",
+        "cn_name": "三联装203mm主炮改进型",
+        "en_name": "Triple 203mm Advanced Main Gun"
     },
     "13100": {
         "nationality": 1,
@@ -6596,11 +7464,13 @@ var equip_data = {
         ],
         "id": 13100,
         "icon": "13100",
-        "name": "203mm三連装砲改",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "203mm三連装砲改",
+        "cn_name": "三联装203mm主炮改进型",
+        "en_name": "Triple 203mm Advanced Main Gun"
     },
     "13040": {
         "nationality": 1,
@@ -6614,11 +7484,13 @@ var equip_data = {
         ],
         "id": 13040,
         "icon": "13000",
-        "name": "203mm三連装砲",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "203mm三連装砲",
+        "cn_name": "三联装203mm主炮",
+        "en_name": "Triple 203mm Main Gun"
     },
     "13020": {
         "nationality": 1,
@@ -6632,11 +7504,13 @@ var equip_data = {
         ],
         "id": 13020,
         "icon": "13000",
-        "name": "203mm三連装砲",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "203mm三連装砲",
+        "cn_name": "三联装203mm主炮",
+        "en_name": "Triple 203mm Main Gun"
     },
     "13000": {
         "nationality": 1,
@@ -6650,11 +7524,13 @@ var equip_data = {
         ],
         "id": 13000,
         "icon": "13000",
-        "name": "203mm三連装砲",
         "ship_type_forbidden": [
             8,
             17
-        ]
+        ],
+        "jp_name": "203mm三連装砲",
+        "cn_name": "三联装203mm主炮",
+        "en_name": "Triple 203mm Main Gun"
     },
     "90780": {
         "nationality": 8,
@@ -6668,8 +7544,10 @@ var equip_data = {
         ],
         "id": 90780,
         "icon": "50780",
-        "name": "155mm連装砲Mle1920",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "155mm連装砲Mle1920",
+        "cn_name": "双联装155mm主炮Mle1920",
+        "en_name": "Twin 155mm Main Gun (Mle 1920)"
     },
     "90800": {
         "nationality": 8,
@@ -6683,8 +7561,10 @@ var equip_data = {
         ],
         "id": 90800,
         "icon": "50800",
-        "name": "155mm単装副砲Mle1920",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "155mm単装副砲Mle1920",
+        "cn_name": "单装155mm副炮Mle1920",
+        "en_name": "Single 155mm Secondary Gun (Mle 1920)"
     },
     "90240": {
         "nationality": 8,
@@ -6698,8 +7578,10 @@ var equip_data = {
         ],
         "id": 90240,
         "icon": "50200",
-        "name": "152mm三連装砲Mle1930",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "152mm三連装砲Mle1930",
+        "cn_name": "三联装152mm主炮Mle1930",
+        "en_name": "Triple 152mm Main Gun (Mle 1930)"
     },
     "90220": {
         "nationality": 8,
@@ -6713,8 +7595,10 @@ var equip_data = {
         ],
         "id": 90220,
         "icon": "50200",
-        "name": "152mm三連装砲Mle1930",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "152mm三連装砲Mle1930",
+        "cn_name": "三联装152mm主炮Mle1930",
+        "en_name": "Triple 152mm Main Gun (Mle 1930)"
     },
     "90200": {
         "nationality": 8,
@@ -6728,8 +7612,10 @@ var equip_data = {
         ],
         "id": 90200,
         "icon": "50200",
-        "name": "152mm三連装砲Mle1930",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "152mm三連装砲Mle1930",
+        "cn_name": "三联装152mm主炮Mle1930",
+        "en_name": "Triple 152mm Main Gun (Mle 1930)"
     },
     "85440": {
         "nationality": 7,
@@ -6743,8 +7629,10 @@ var equip_data = {
         ],
         "id": 85440,
         "icon": "85440",
-        "name": "152mm連装砲Model1892",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "152mm連装砲Model1892",
+        "cn_name": "双联装152mm主炮Model1892",
+        "en_name": "Twin 152mm Main Gun (M1892)"
     },
     "7040": {
         "nationality": 7,
@@ -6758,8 +7646,10 @@ var equip_data = {
         ],
         "id": 7040,
         "icon": "7000",
-        "name": "152mm単装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "152mm単装砲",
+        "cn_name": "单装152mm主炮",
+        "en_name": "Single 152mm Main Gun"
     },
     "7020": {
         "nationality": 7,
@@ -6773,8 +7663,10 @@ var equip_data = {
         ],
         "id": 7020,
         "icon": "7000",
-        "name": "152mm単装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "152mm単装砲",
+        "cn_name": "单装152mm主炮",
+        "en_name": "Single 152mm Main Gun"
     },
     "7000": {
         "nationality": 7,
@@ -6788,8 +7680,10 @@ var equip_data = {
         ],
         "id": 7000,
         "icon": "7000",
-        "name": "152mm単装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "152mm単装砲",
+        "cn_name": "单装152mm主炮",
+        "en_name": "Single 152mm Main Gun"
     },
     "85160": {
         "nationality": 7,
@@ -6803,8 +7697,10 @@ var equip_data = {
         ],
         "id": 85160,
         "icon": "85120",
-        "name": "152mm三連装砲B-38 MK5",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "152mm三連装砲B-38 MK5",
+        "cn_name": "B-38 三联装152mm主炮MK5",
+        "en_name": "Triple 152mm Main Gun (B-38 MK5)"
     },
     "85140": {
         "nationality": 7,
@@ -6818,8 +7714,10 @@ var equip_data = {
         ],
         "id": 85140,
         "icon": "85120",
-        "name": "152mm三連装砲B-38 MK5",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "152mm三連装砲B-38 MK5",
+        "cn_name": "B-38 三联装152mm主炮MK5",
+        "en_name": "Triple 152mm Main Gun (B-38 MK5)"
     },
     "85120": {
         "nationality": 7,
@@ -6833,8 +7731,10 @@ var equip_data = {
         ],
         "id": 85120,
         "icon": "85120",
-        "name": "152mm三連装砲B-38 MK5",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "152mm三連装砲B-38 MK5",
+        "cn_name": "B-38 三联装152mm主炮MK5",
+        "en_name": "Triple 152mm Main Gun (B-38 MK5)"
     },
     "7140": {
         "nationality": 5,
@@ -6848,8 +7748,10 @@ var equip_data = {
         ],
         "id": 7140,
         "icon": "7100",
-        "name": "150mm主砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "150mm主砲",
+        "cn_name": "单装150mm主炮",
+        "en_name": "Single 150mm Main Gun"
     },
     "7120": {
         "nationality": 5,
@@ -6863,8 +7765,10 @@ var equip_data = {
         ],
         "id": 7120,
         "icon": "7100",
-        "name": "150mm主砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "150mm主砲",
+        "cn_name": "单装150mm主炮",
+        "en_name": "Single 150mm Main Gun"
     },
     "7100": {
         "nationality": 5,
@@ -6878,8 +7782,10 @@ var equip_data = {
         ],
         "id": 7100,
         "icon": "7100",
-        "name": "150mm主砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "150mm主砲",
+        "cn_name": "单装150mm主炮",
+        "en_name": "Single 150mm Main Gun"
     },
     "42300": {
         "nationality": 4,
@@ -6893,8 +7799,10 @@ var equip_data = {
         ],
         "id": 42300,
         "icon": "42300",
-        "name": "150mmTbtsKC36単装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "150mmTbtsKC36単装砲",
+        "cn_name": "单装TbtsKC36式150mm主炮",
+        "en_name": "Single 150mm Main Gun (TbtsK C/36) "
     },
     "42240": {
         "nationality": 4,
@@ -6908,8 +7816,10 @@ var equip_data = {
         ],
         "id": 42240,
         "icon": "42200",
-        "name": "150mmTbtsKC/36連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "150mmTbtsKC/36連装砲",
+        "cn_name": "双联装TbtsKC36式150mm主炮",
+        "en_name": "Twin 150mm Main Gun (TbtsK C/36)"
     },
     "42220": {
         "nationality": 4,
@@ -6923,8 +7833,10 @@ var equip_data = {
         ],
         "id": 42220,
         "icon": "42200",
-        "name": "150mmTbtsKC/36連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "150mmTbtsKC/36連装砲",
+        "cn_name": "双联装TbtsKC36式150mm主炮",
+        "en_name": "Twin 150mm Main Gun (TbtsK C/36)"
     },
     "42200": {
         "nationality": 4,
@@ -6938,8 +7850,10 @@ var equip_data = {
         ],
         "id": 42200,
         "icon": "42200",
-        "name": "150mmTbtsKC/36連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "150mmTbtsKC/36連装砲",
+        "cn_name": "双联装TbtsKC36式150mm主炮",
+        "en_name": "Twin 150mm Main Gun (TbtsK C/36)"
     },
     "42040": {
         "nationality": 4,
@@ -6953,8 +7867,10 @@ var equip_data = {
         ],
         "id": 42040,
         "icon": "42000",
-        "name": "150mmSKC/28単装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "150mmSKC/28単装砲",
+        "cn_name": "单装SKC28式150mm主炮",
+        "en_name": "Single 150mm Main Gun (SK C/28)"
     },
     "42020": {
         "nationality": 4,
@@ -6968,8 +7884,10 @@ var equip_data = {
         ],
         "id": 42020,
         "icon": "42000",
-        "name": "150mmSKC/28単装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "150mmSKC/28単装砲",
+        "cn_name": "单装SKC28式150mm主炮",
+        "en_name": "Single 150mm Main Gun (SK C/28)"
     },
     "42000": {
         "nationality": 4,
@@ -6983,8 +7901,10 @@ var equip_data = {
         ],
         "id": 42000,
         "icon": "42000",
-        "name": "150mmSKC/28単装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "150mmSKC/28単装砲",
+        "cn_name": "单装SKC28式150mm主炮",
+        "en_name": "Single 150mm Main Gun (SK C/28)"
     },
     "42140": {
         "nationality": 4,
@@ -6998,8 +7918,10 @@ var equip_data = {
         ],
         "id": 42140,
         "icon": "42100",
-        "name": "150mmSKC/25三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "150mmSKC/25三連装砲",
+        "cn_name": "三联装SKC25式150mm主炮",
+        "en_name": "Triple 150mm Main Gun (SK C/25)"
     },
     "42120": {
         "nationality": 4,
@@ -7013,8 +7935,10 @@ var equip_data = {
         ],
         "id": 42120,
         "icon": "42100",
-        "name": "150mmSKC/25三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "150mmSKC/25三連装砲",
+        "cn_name": "三联装SKC25式150mm主炮",
+        "en_name": "Triple 150mm Main Gun (SK C/25)"
     },
     "42100": {
         "nationality": 4,
@@ -7028,8 +7952,10 @@ var equip_data = {
         ],
         "id": 42100,
         "icon": "42100",
-        "name": "150mmSKC/25三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "150mmSKC/25三連装砲",
+        "cn_name": "三联装SKC25式150mm主炮",
+        "en_name": "Triple 150mm Main Gun (SK C/25)"
     },
     "32240": {
         "nationality": 3,
@@ -7043,8 +7969,10 @@ var equip_data = {
         ],
         "id": 32240,
         "icon": "32200",
-        "name": "155mm三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "155mm三連装砲",
+        "cn_name": "155mm三连装炮",
+        "en_name": "Triple 155mm Mounted Gun"
     },
     "32220": {
         "nationality": 3,
@@ -7058,8 +7986,10 @@ var equip_data = {
         ],
         "id": 32220,
         "icon": "32200",
-        "name": "155mm三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "155mm三連装砲",
+        "cn_name": "155mm三连装炮",
+        "en_name": "Triple 155mm Mounted Gun"
     },
     "32200": {
         "nationality": 3,
@@ -7073,8 +8003,10 @@ var equip_data = {
         ],
         "id": 32200,
         "icon": "32200",
-        "name": "155mm三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "155mm三連装砲",
+        "cn_name": "155mm三连装炮",
+        "en_name": "Triple 155mm Mounted Gun"
     },
     "32340": {
         "nationality": 3,
@@ -7088,8 +8020,10 @@ var equip_data = {
         ],
         "id": 32340,
         "icon": "32300",
-        "name": "152mm連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "152mm連装砲",
+        "cn_name": "152mm连装炮",
+        "en_name": "152mm Mounted Gun"
     },
     "32320": {
         "nationality": 3,
@@ -7103,8 +8037,10 @@ var equip_data = {
         ],
         "id": 32320,
         "icon": "32300",
-        "name": "152mm連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "152mm連装砲",
+        "cn_name": "152mm连装炮",
+        "en_name": "152mm Mounted Gun"
     },
     "32300": {
         "nationality": 3,
@@ -7118,8 +8054,10 @@ var equip_data = {
         ],
         "id": 32300,
         "icon": "32300",
-        "name": "152mm連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "152mm連装砲",
+        "cn_name": "152mm连装炮",
+        "en_name": "152mm Mounted Gun"
     },
     "32140": {
         "nationality": 3,
@@ -7133,8 +8071,10 @@ var equip_data = {
         ],
         "id": 32140,
         "icon": "32100",
-        "name": "140mm連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "140mm連装砲",
+        "cn_name": "140mm连装炮",
+        "en_name": "140mm Mounted Gun"
     },
     "32120": {
         "nationality": 3,
@@ -7148,8 +8088,10 @@ var equip_data = {
         ],
         "id": 32120,
         "icon": "32100",
-        "name": "140mm連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "140mm連装砲",
+        "cn_name": "140mm连装炮",
+        "en_name": "140mm Mounted Gun"
     },
     "32100": {
         "nationality": 3,
@@ -7163,8 +8105,10 @@ var equip_data = {
         ],
         "id": 32100,
         "icon": "32100",
-        "name": "140mm連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "140mm連装砲",
+        "cn_name": "140mm连装炮",
+        "en_name": "140mm Mounted Gun"
     },
     "32040": {
         "nationality": 3,
@@ -7178,8 +8122,10 @@ var equip_data = {
         ],
         "id": 32040,
         "icon": "32000",
-        "name": "140mm単装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "140mm単装砲",
+        "cn_name": "140mm单装炮",
+        "en_name": "Single 140mm Main Gun"
     },
     "32020": {
         "nationality": 3,
@@ -7193,8 +8139,10 @@ var equip_data = {
         ],
         "id": 32020,
         "icon": "32000",
-        "name": "140mm単装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "140mm単装砲",
+        "cn_name": "140mm单装炮",
+        "en_name": "Single 140mm Main Gun"
     },
     "32000": {
         "nationality": 3,
@@ -7208,8 +8156,10 @@ var equip_data = {
         ],
         "id": 32000,
         "icon": "32000",
-        "name": "140mm単装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "140mm単装砲",
+        "cn_name": "140mm单装炮",
+        "en_name": "Single 140mm Main Gun"
     },
     "22260": {
         "nationality": 2,
@@ -7223,8 +8173,10 @@ var equip_data = {
         ],
         "id": 22260,
         "icon": "22260",
-        "name": "試製152mm三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "試製152mm三連装砲",
+        "cn_name": "试作型三联装152mm主炮",
+        "en_name": "Prototype Triple 152mm Main Gun"
     },
     "22140": {
         "nationality": 2,
@@ -7238,8 +8190,10 @@ var equip_data = {
         ],
         "id": 22140,
         "icon": "22100",
-        "name": "152mm連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "152mm連装砲",
+        "cn_name": "双联装152mm主炮",
+        "en_name": "Twin 152mm Main Gun"
     },
     "22120": {
         "nationality": 2,
@@ -7253,8 +8207,10 @@ var equip_data = {
         ],
         "id": 22120,
         "icon": "22100",
-        "name": "152mm連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "152mm連装砲",
+        "cn_name": "双联装152mm主炮",
+        "en_name": "Twin 152mm Main Gun"
     },
     "22100": {
         "nationality": 2,
@@ -7268,8 +8224,10 @@ var equip_data = {
         ],
         "id": 22100,
         "icon": "22100",
-        "name": "152mm連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "152mm連装砲",
+        "cn_name": "双联装152mm主炮",
+        "en_name": "Twin 152mm Main Gun"
     },
     "22040": {
         "nationality": 2,
@@ -7283,8 +8241,10 @@ var equip_data = {
         ],
         "id": 22040,
         "icon": "22000",
-        "name": "152mm単装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "152mm単装砲",
+        "cn_name": "单装152mm副炮",
+        "en_name": "Single 152mm Secondary Gun"
     },
     "22020": {
         "nationality": 2,
@@ -7298,8 +8258,10 @@ var equip_data = {
         ],
         "id": 22020,
         "icon": "22000",
-        "name": "152mm単装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "152mm単装砲",
+        "cn_name": "单装152mm副炮",
+        "en_name": "Single 152mm Secondary Gun"
     },
     "22000": {
         "nationality": 2,
@@ -7313,8 +8275,10 @@ var equip_data = {
         ],
         "id": 22000,
         "icon": "22000",
-        "name": "152mm単装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "152mm単装砲",
+        "cn_name": "单装152mm副炮",
+        "en_name": "Single 152mm Secondary Gun"
     },
     "22240": {
         "nationality": 2,
@@ -7328,8 +8292,10 @@ var equip_data = {
         ],
         "id": 22240,
         "icon": "22200",
-        "name": "152mm三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "152mm三連装砲",
+        "cn_name": "三联装152mm主炮",
+        "en_name": "Triple 152mm Main Gun"
     },
     "22220": {
         "nationality": 2,
@@ -7343,8 +8309,10 @@ var equip_data = {
         ],
         "id": 22220,
         "icon": "22200",
-        "name": "152mm三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "152mm三連装砲",
+        "cn_name": "三联装152mm主炮",
+        "en_name": "Triple 152mm Main Gun"
     },
     "22200": {
         "nationality": 2,
@@ -7358,8 +8326,10 @@ var equip_data = {
         ],
         "id": 22200,
         "icon": "22200",
-        "name": "152mm三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "152mm三連装砲",
+        "cn_name": "三联装152mm主炮",
+        "en_name": "Triple 152mm Main Gun"
     },
     "12200": {
         "nationality": 1,
@@ -7373,8 +8343,10 @@ var equip_data = {
         ],
         "id": 12200,
         "icon": "12200",
-        "name": "試作型三連装152mm両用砲Mk17",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "試作型三連装152mm両用砲Mk17",
+        "cn_name": "试作型三联装152mm高平两用炮Mk17",
+        "en_name": "Prototype Triple 152mm Main Gun (DP MK17)"
     },
     "12040": {
         "nationality": 1,
@@ -7388,8 +8360,10 @@ var equip_data = {
         ],
         "id": 12040,
         "icon": "12000",
-        "name": "152mm連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "152mm連装砲",
+        "cn_name": "双联152mm主炮",
+        "en_name": "Twin 152mm Main Gun"
     },
     "12020": {
         "nationality": 1,
@@ -7403,8 +8377,10 @@ var equip_data = {
         ],
         "id": 12020,
         "icon": "12000",
-        "name": "152mm連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "152mm連装砲",
+        "cn_name": "双联152mm主炮",
+        "en_name": "Twin 152mm Main Gun"
     },
     "12000": {
         "nationality": 1,
@@ -7418,8 +8394,10 @@ var equip_data = {
         ],
         "id": 12000,
         "icon": "12000",
-        "name": "152mm連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "152mm連装砲",
+        "cn_name": "双联152mm主炮",
+        "en_name": "Twin 152mm Main Gun"
     },
     "12140": {
         "nationality": 1,
@@ -7433,8 +8411,10 @@ var equip_data = {
         ],
         "id": 12140,
         "icon": "12100",
-        "name": "152mm三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "152mm三連装砲",
+        "cn_name": "三联装152mm主炮",
+        "en_name": "Triple 152mm Main Gun"
     },
     "12120": {
         "nationality": 1,
@@ -7448,8 +8428,10 @@ var equip_data = {
         ],
         "id": 12120,
         "icon": "12100",
-        "name": "152mm三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "152mm三連装砲",
+        "cn_name": "三联装152mm主炮",
+        "en_name": "Triple 152mm Main Gun"
     },
     "12100": {
         "nationality": 1,
@@ -7463,8 +8445,10 @@ var equip_data = {
         ],
         "id": 12100,
         "icon": "12100",
-        "name": "152mm三連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "152mm三連装砲",
+        "cn_name": "三联装152mm主炮",
+        "en_name": "Triple 152mm Main Gun"
     },
     "90140": {
         "nationality": 8,
@@ -7478,8 +8462,10 @@ var equip_data = {
         ],
         "id": 90140,
         "icon": "50100",
-        "name": "138.6mm単装砲Mle1929",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "138.6mm単装砲Mle1929",
+        "cn_name": "138.6mm单装炮Mle1929",
+        "en_name": "Single 138.6mm Main Gun (Mle 1929)"
     },
     "90120": {
         "nationality": 8,
@@ -7493,8 +8479,10 @@ var equip_data = {
         ],
         "id": 90120,
         "icon": "50100",
-        "name": "138.6mm単装砲Mle1929",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "138.6mm単装砲Mle1929",
+        "cn_name": "138.6mm单装炮Mle1929",
+        "en_name": "Single 138.6mm Main Gun (Mle 1929)"
     },
     "90100": {
         "nationality": 8,
@@ -7508,8 +8496,10 @@ var equip_data = {
         ],
         "id": 90100,
         "icon": "50100",
-        "name": "138.6mm単装砲Mle1929",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "138.6mm単装砲Mle1929",
+        "cn_name": "138.6mm单装炮Mle1929",
+        "en_name": "Single 138.6mm Main Gun (Mle 1929)"
     },
     "90740": {
         "nationality": 8,
@@ -7523,8 +8513,10 @@ var equip_data = {
         ],
         "id": 90740,
         "icon": "50700",
-        "name": "138.6mm単装砲Mle1927",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "138.6mm単装砲Mle1927",
+        "cn_name": "138.6mm单装炮Mle1927",
+        "en_name": "Single 138.6mm Main Gun (Mle 1927)"
     },
     "90720": {
         "nationality": 8,
@@ -7538,8 +8530,10 @@ var equip_data = {
         ],
         "id": 90720,
         "icon": "50700",
-        "name": "138.6mm単装砲Mle1927",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "138.6mm単装砲Mle1927",
+        "cn_name": "138.6mm单装炮Mle1927",
+        "en_name": "Single 138.6mm Main Gun (Mle 1927)"
     },
     "90700": {
         "nationality": 8,
@@ -7553,8 +8547,10 @@ var equip_data = {
         ],
         "id": 90700,
         "icon": "50700",
-        "name": "138.6mm単装砲Mle1927",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "138.6mm単装砲Mle1927",
+        "cn_name": "138.6mm单装炮Mle1927",
+        "en_name": "Single 138.6mm Main Gun (Mle 1927)"
     },
     "90500": {
         "nationality": 8,
@@ -7568,8 +8564,10 @@ var equip_data = {
         ],
         "id": 90500,
         "icon": "50500",
-        "name": "130mm連装砲Mle1935",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "130mm連装砲Mle1935",
+        "cn_name": "双联装130mm主炮Mle1935",
+        "en_name": "Twin 130mm Main Gun Mle1935"
     },
     "90040": {
         "nationality": 8,
@@ -7583,8 +8581,10 @@ var equip_data = {
         ],
         "id": 90040,
         "icon": "50000",
-        "name": "130mm単装砲Mle1924",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "130mm単装砲Mle1924",
+        "cn_name": "130mm单装炮Mle1924",
+        "en_name": "Single 130mm Main Gun (Mle 1924)"
     },
     "90020": {
         "nationality": 8,
@@ -7598,8 +8598,10 @@ var equip_data = {
         ],
         "id": 90020,
         "icon": "50000",
-        "name": "130mm単装砲Mle1924",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "130mm単装砲Mle1924",
+        "cn_name": "130mm单装炮Mle1924",
+        "en_name": "Single 130mm Main Gun (Mle 1924)"
     },
     "90000": {
         "nationality": 8,
@@ -7613,8 +8615,10 @@ var equip_data = {
         ],
         "id": 90000,
         "icon": "50000",
-        "name": "130mm単装砲Mle1924",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "130mm単装砲Mle1924",
+        "cn_name": "130mm单装炮Mle1924",
+        "en_name": "Single 130mm Main Gun (Mle 1924)"
     },
     "7320": {
         "nationality": 8,
@@ -7628,8 +8632,10 @@ var equip_data = {
         ],
         "id": 7320,
         "icon": "7320",
-        "name": "130mm副砲Mle1932",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "130mm副砲Mle1932",
+        "cn_name": "四联装130mm副炮Mle1932",
+        "en_name": "四联装130mm副炮Mle1932"
     },
     "85040": {
         "nationality": 7,
@@ -7643,8 +8649,10 @@ var equip_data = {
         ],
         "id": 85040,
         "icon": "85000",
-        "name": "130mm連装砲B-2LM",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "130mm連装砲B-2LM",
+        "cn_name": "B-13 双联装130mm主炮B-2LM",
+        "en_name": "Twin 130mm Main Gun (B-2LM)"
     },
     "85000": {
         "nationality": 7,
@@ -7658,8 +8666,10 @@ var equip_data = {
         ],
         "id": 85000,
         "icon": "85000",
-        "name": "130mm連装砲B-2LM",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "130mm連装砲B-2LM",
+        "cn_name": "B-13 双联装130mm主炮B-2LM",
+        "en_name": "Twin 130mm Main Gun (B-2LM)"
     },
     "7240": {
         "nationality": 7,
@@ -7673,8 +8683,10 @@ var equip_data = {
         ],
         "id": 7240,
         "icon": "7200",
-        "name": "130mm単装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "130mm単装砲",
+        "cn_name": "130mm单装炮",
+        "en_name": "Single 130mm Main Gun"
     },
     "7220": {
         "nationality": 7,
@@ -7688,8 +8700,10 @@ var equip_data = {
         ],
         "id": 7220,
         "icon": "7200",
-        "name": "130mm単装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "130mm単装砲",
+        "cn_name": "130mm单装炮",
+        "en_name": "Single 130mm Main Gun"
     },
     "7200": {
         "nationality": 7,
@@ -7703,8 +8717,10 @@ var equip_data = {
         ],
         "id": 7200,
         "icon": "7200",
-        "name": "130mm単装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "130mm単装砲",
+        "cn_name": "130mm单装炮",
+        "en_name": "Single 130mm Main Gun"
     },
     "95440": {
         "nationality": 6,
@@ -7718,8 +8734,10 @@ var equip_data = {
         ],
         "id": 95440,
         "icon": "55400",
-        "name": "120mm連装砲Model1936",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "120mm連装砲Model1936",
+        "cn_name": "双联装120mm炮Model1936",
+        "en_name": "Twin 120mm Main Gun (M1936)"
     },
     "95420": {
         "nationality": 6,
@@ -7733,8 +8751,10 @@ var equip_data = {
         ],
         "id": 95420,
         "icon": "55400",
-        "name": "120mm連装砲Model1936",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "120mm連装砲Model1936",
+        "cn_name": "双联装120mm炮Model1936",
+        "en_name": "Twin 120mm Main Gun (M1936)"
     },
     "95400": {
         "nationality": 6,
@@ -7748,8 +8768,10 @@ var equip_data = {
         ],
         "id": 95400,
         "icon": "55400",
-        "name": "120mm連装砲Model1936",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "120mm連装砲Model1936",
+        "cn_name": "双联装120mm炮Model1936",
+        "en_name": "Twin 120mm Main Gun (M1936)"
     },
     "95460": {
         "nationality": 6,
@@ -7763,8 +8785,10 @@ var equip_data = {
         ],
         "id": 95460,
         "icon": "55460",
-        "name": "120mm連装砲Model1933",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "120mm連装砲Model1933",
+        "cn_name": "双联装120mm炮Model1933",
+        "en_name": "Twin 120mm Main Gun (M1933)"
     },
     "41140": {
         "nationality": 4,
@@ -7778,8 +8802,10 @@ var equip_data = {
         ],
         "id": 41140,
         "icon": "41100",
-        "name": "128mmSKC41連装両用砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "128mmSKC41連装両用砲",
+        "cn_name": "双联装128mmSKC41高平两用炮",
+        "en_name": "Twin 128mm Dual Gun (SK C/41)"
     },
     "41120": {
         "nationality": 4,
@@ -7793,8 +8819,10 @@ var equip_data = {
         ],
         "id": 41120,
         "icon": "41100",
-        "name": "128mmSKC41連装両用砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "128mmSKC41連装両用砲",
+        "cn_name": "双联装128mmSKC41高平两用炮",
+        "en_name": "Twin 128mm Dual Gun (SK C/41)"
     },
     "41100": {
         "nationality": 4,
@@ -7808,8 +8836,10 @@ var equip_data = {
         ],
         "id": 41100,
         "icon": "41100",
-        "name": "128mmSKC41連装両用砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "128mmSKC41連装両用砲",
+        "cn_name": "双联装128mmSKC41高平两用炮",
+        "en_name": "Twin 128mm Dual Gun (SK C/41)"
     },
     "41040": {
         "nationality": 4,
@@ -7823,8 +8853,10 @@ var equip_data = {
         ],
         "id": 41040,
         "icon": "41000",
-        "name": "127mm単装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "127mm単装砲",
+        "cn_name": "单装127mm主炮",
+        "en_name": "Single 127mm Main Gun"
     },
     "41020": {
         "nationality": 4,
@@ -7838,8 +8870,10 @@ var equip_data = {
         ],
         "id": 41020,
         "icon": "41000",
-        "name": "127mm単装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "127mm単装砲",
+        "cn_name": "单装127mm主炮",
+        "en_name": "Single 127mm Main Gun"
     },
     "41000": {
         "nationality": 4,
@@ -7853,8 +8887,10 @@ var equip_data = {
         ],
         "id": 41000,
         "icon": "41000",
-        "name": "127mm単装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "127mm単装砲",
+        "cn_name": "单装127mm主炮",
+        "en_name": "Single 127mm Main Gun"
     },
     "31240": {
         "nationality": 3,
@@ -7868,8 +8904,10 @@ var equip_data = {
         ],
         "id": 31240,
         "icon": "31200",
-        "name": "127mm連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "127mm連装砲",
+        "cn_name": "127mm连装炮",
+        "en_name": "127mm Mounted Gun"
     },
     "31220": {
         "nationality": 3,
@@ -7883,8 +8921,10 @@ var equip_data = {
         ],
         "id": 31220,
         "icon": "31200",
-        "name": "127mm連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "127mm連装砲",
+        "cn_name": "127mm连装炮",
+        "en_name": "127mm Mounted Gun"
     },
     "31200": {
         "nationality": 3,
@@ -7898,8 +8938,10 @@ var equip_data = {
         ],
         "id": 31200,
         "icon": "31200",
-        "name": "127mm連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "127mm連装砲",
+        "cn_name": "127mm连装炮",
+        "en_name": "127mm Mounted Gun"
     },
     "31140": {
         "nationality": 3,
@@ -7913,8 +8955,10 @@ var equip_data = {
         ],
         "id": 31140,
         "icon": "31100",
-        "name": "120mm単装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "120mm単装砲",
+        "cn_name": "120mm单装炮",
+        "en_name": "Single 120mm Main Gun"
     },
     "31120": {
         "nationality": 3,
@@ -7928,8 +8972,10 @@ var equip_data = {
         ],
         "id": 31120,
         "icon": "31100",
-        "name": "120mm単装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "120mm単装砲",
+        "cn_name": "120mm单装炮",
+        "en_name": "Single 120mm Main Gun"
     },
     "31100": {
         "nationality": 3,
@@ -7943,8 +8989,10 @@ var equip_data = {
         ],
         "id": 31100,
         "icon": "31100",
-        "name": "120mm単装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "120mm単装砲",
+        "cn_name": "120mm单装炮",
+        "en_name": "Single 120mm Main Gun"
     },
     "31040": {
         "nationality": 3,
@@ -7958,8 +9006,10 @@ var equip_data = {
         ],
         "id": 31040,
         "icon": "31000",
-        "name": "100mm二連装九八式高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "100mm二連装九八式高角砲",
+        "cn_name": "双联100mm98式高射炮",
+        "en_name": "Twin 100mm (Type 98) AA Gun"
     },
     "31020": {
         "nationality": 3,
@@ -7973,8 +9023,10 @@ var equip_data = {
         ],
         "id": 31020,
         "icon": "31000",
-        "name": "100mm二連装九八式高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "100mm二連装九八式高角砲",
+        "cn_name": "双联100mm98式高射炮",
+        "en_name": "Twin 100mm (Type 98) AA Gun"
     },
     "31000": {
         "nationality": 3,
@@ -7988,8 +9040,10 @@ var equip_data = {
         ],
         "id": 31000,
         "icon": "31000",
-        "name": "100mm二連装九八式高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "100mm二連装九八式高角砲",
+        "cn_name": "双联100mm98式高射炮",
+        "en_name": "Twin 100mm (Type 98) AA Gun"
     },
     "21540": {
         "nationality": 2,
@@ -8003,8 +9057,10 @@ var equip_data = {
         ],
         "id": 21540,
         "icon": "21500",
-        "name": "134mm連装高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "134mm連装高角砲",
+        "cn_name": "双联装134mm高炮",
+        "en_name": "Twin 134mm AA Gun"
     },
     "21520": {
         "nationality": 2,
@@ -8018,8 +9074,10 @@ var equip_data = {
         ],
         "id": 21520,
         "icon": "21500",
-        "name": "134mm連装高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "134mm連装高角砲",
+        "cn_name": "双联装134mm高炮",
+        "en_name": "Twin 134mm AA Gun"
     },
     "21500": {
         "nationality": 2,
@@ -8033,8 +9091,10 @@ var equip_data = {
         ],
         "id": 21500,
         "icon": "21500",
-        "name": "134mm連装高角砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "134mm連装高角砲",
+        "cn_name": "双联装134mm高炮",
+        "en_name": "Twin 134mm AA Gun"
     },
     "21440": {
         "nationality": 2,
@@ -8048,8 +9108,10 @@ var equip_data = {
         ],
         "id": 21440,
         "icon": "21400",
-        "name": "120mm連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "120mm連装砲",
+        "cn_name": "双联装120mm主炮",
+        "en_name": "Twin 120mm Main Gun"
     },
     "21420": {
         "nationality": 2,
@@ -8063,8 +9125,10 @@ var equip_data = {
         ],
         "id": 21420,
         "icon": "21400",
-        "name": "120mm連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "120mm連装砲",
+        "cn_name": "双联装120mm主炮",
+        "en_name": "Twin 120mm Main Gun"
     },
     "21400": {
         "nationality": 2,
@@ -8078,8 +9142,10 @@ var equip_data = {
         ],
         "id": 21400,
         "icon": "21400",
-        "name": "120mm連装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "120mm連装砲",
+        "cn_name": "双联装120mm主炮",
+        "en_name": "Twin 120mm Main Gun"
     },
     "21340": {
         "nationality": 2,
@@ -8093,8 +9159,10 @@ var equip_data = {
         ],
         "id": 21340,
         "icon": "21300",
-        "name": "120mm単装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "120mm単装砲",
+        "cn_name": "120mm单装炮",
+        "en_name": "Single 120mm Main Gun"
     },
     "21320": {
         "nationality": 2,
@@ -8108,8 +9176,10 @@ var equip_data = {
         ],
         "id": 21320,
         "icon": "21300",
-        "name": "120mm単装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "120mm単装砲",
+        "cn_name": "120mm单装炮",
+        "en_name": "Single 120mm Main Gun"
     },
     "21300": {
         "nationality": 2,
@@ -8123,8 +9193,10 @@ var equip_data = {
         ],
         "id": 21300,
         "icon": "21300",
-        "name": "120mm単装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "120mm単装砲",
+        "cn_name": "120mm单装炮",
+        "en_name": "Single 120mm Main Gun"
     },
     "21600": {
         "nationality": 2,
@@ -8138,8 +9210,10 @@ var equip_data = {
         ],
         "id": 21600,
         "icon": "21600",
-        "name": "114mm連装両用砲MarkIV",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "114mm連装両用砲MarkIV",
+        "cn_name": "双联装114mm高平两用炮MarkIV",
+        "en_name": "Twin 114mm DP (4.5\" MK IV) "
     },
     "21140": {
         "nationality": 2,
@@ -8153,8 +9227,10 @@ var equip_data = {
         ],
         "id": 21140,
         "icon": "21100",
-        "name": "102mm連装砲(副砲)",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "102mm連装砲(副砲)",
+        "cn_name": "双联装102mm副炮",
+        "en_name": "Twin 102mm Secondary Gun"
     },
     "21120": {
         "nationality": 2,
@@ -8168,8 +9244,10 @@ var equip_data = {
         ],
         "id": 21120,
         "icon": "21100",
-        "name": "102mm連装砲(副砲)",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "102mm連装砲(副砲)",
+        "cn_name": "双联装102mm副炮",
+        "en_name": "Twin 102mm Secondary Gun"
     },
     "21100": {
         "nationality": 2,
@@ -8183,8 +9261,10 @@ var equip_data = {
         ],
         "id": 21100,
         "icon": "21100",
-        "name": "102mm連装砲(副砲)",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "102mm連装砲(副砲)",
+        "cn_name": "双联装102mm副炮",
+        "en_name": "Twin 102mm Secondary Gun"
     },
     "21040": {
         "nationality": 2,
@@ -8198,8 +9278,10 @@ var equip_data = {
         ],
         "id": 21040,
         "icon": "21000",
-        "name": "102mm単装砲(副砲)",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "102mm単装砲(副砲)",
+        "cn_name": "单装102mm副炮",
+        "en_name": "Single 102mm Secondary Gun"
     },
     "21020": {
         "nationality": 2,
@@ -8213,8 +9295,10 @@ var equip_data = {
         ],
         "id": 21020,
         "icon": "21000",
-        "name": "102mm単装砲(副砲)",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "102mm単装砲(副砲)",
+        "cn_name": "单装102mm副炮",
+        "en_name": "Single 102mm Secondary Gun"
     },
     "21000": {
         "nationality": 2,
@@ -8228,8 +9312,10 @@ var equip_data = {
         ],
         "id": 21000,
         "icon": "21000",
-        "name": "102mm単装砲(副砲)",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "102mm単装砲(副砲)",
+        "cn_name": "单装102mm副炮",
+        "en_name": "Single 102mm Secondary Gun"
     },
     "21240": {
         "nationality": 2,
@@ -8243,8 +9329,10 @@ var equip_data = {
         ],
         "id": 21240,
         "icon": "21200",
-        "name": "102mm三連装砲(副砲)",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "102mm三連装砲(副砲)",
+        "cn_name": "三联装102mm副炮",
+        "en_name": "Triple 102mm Secondary Gun"
     },
     "21220": {
         "nationality": 2,
@@ -8258,8 +9346,10 @@ var equip_data = {
         ],
         "id": 21220,
         "icon": "21200",
-        "name": "102mm三連装砲(副砲)",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "102mm三連装砲(副砲)",
+        "cn_name": "三联装102mm副炮",
+        "en_name": "Triple 102mm Secondary Gun"
     },
     "21200": {
         "nationality": 2,
@@ -8273,8 +9363,10 @@ var equip_data = {
         ],
         "id": 21200,
         "icon": "21200",
-        "name": "102mm三連装砲(副砲)",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "102mm三連装砲(副砲)",
+        "cn_name": "三联装102mm副炮",
+        "en_name": "Triple 102mm Secondary Gun"
     },
     "11040": {
         "nationality": 1,
@@ -8288,8 +9380,10 @@ var equip_data = {
         ],
         "id": 11040,
         "icon": "11000",
-        "name": "76mm砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "76mm砲",
+        "cn_name": "76mm火炮",
+        "en_name": "76mm AA Gun"
     },
     "11020": {
         "nationality": 1,
@@ -8303,8 +9397,10 @@ var equip_data = {
         ],
         "id": 11020,
         "icon": "11000",
-        "name": "76mm砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "76mm砲",
+        "cn_name": "76mm火炮",
+        "en_name": "76mm AA Gun"
     },
     "11000": {
         "nationality": 1,
@@ -8318,8 +9414,10 @@ var equip_data = {
         ],
         "id": 11000,
         "icon": "11000",
-        "name": "76mm砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "76mm砲",
+        "cn_name": "76mm火炮",
+        "en_name": "76mm AA Gun"
     },
     "11240": {
         "nationality": 1,
@@ -8333,8 +9431,10 @@ var equip_data = {
         ],
         "id": 11240,
         "icon": "11200",
-        "name": "127mm連装両用砲MK12",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "127mm連装両用砲MK12",
+        "cn_name": "双联装127mm高平两用炮MK12",
+        "en_name": "Twin 127mm MK12 Dual Gun"
     },
     "11220": {
         "nationality": 1,
@@ -8348,8 +9448,10 @@ var equip_data = {
         ],
         "id": 11220,
         "icon": "11200",
-        "name": "127mm連装両用砲MK12",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "127mm連装両用砲MK12",
+        "cn_name": "双联装127mm高平两用炮MK12",
+        "en_name": "Twin 127mm MK12 Dual Gun"
     },
     "11200": {
         "nationality": 1,
@@ -8363,8 +9465,10 @@ var equip_data = {
         ],
         "id": 11200,
         "icon": "11200",
-        "name": "127mm連装両用砲MK12",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "127mm連装両用砲MK12",
+        "cn_name": "双联装127mm高平两用炮MK12",
+        "en_name": "Twin 127mm MK12 Dual Gun"
     },
     "11140": {
         "nationality": 1,
@@ -8378,8 +9482,10 @@ var equip_data = {
         ],
         "id": 11140,
         "icon": "11100",
-        "name": "127mm単装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "127mm単装砲",
+        "cn_name": "127mm单装炮",
+        "en_name": "Single 127mm Main Gun"
     },
     "11120": {
         "nationality": 1,
@@ -8393,8 +9499,10 @@ var equip_data = {
         ],
         "id": 11120,
         "icon": "11100",
-        "name": "127mm単装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "127mm単装砲",
+        "cn_name": "127mm单装炮",
+        "en_name": "Single 127mm Main Gun"
     },
     "11100": {
         "nationality": 1,
@@ -8408,7 +9516,9 @@ var equip_data = {
         ],
         "id": 11100,
         "icon": "11100",
-        "name": "127mm単装砲",
-        "ship_type_forbidden": []
+        "ship_type_forbidden": [],
+        "jp_name": "127mm単装砲",
+        "cn_name": "127mm单装炮",
+        "en_name": "Single 127mm Main Gun"
     }
 }
