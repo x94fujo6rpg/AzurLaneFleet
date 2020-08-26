@@ -6,3 +6,5 @@
 `add sub fleet`  
 `check duplicate ship/equip`  
 `add import/export setting`  
+  
+### Rewriting site via Vue
