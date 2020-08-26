@@ -1,0 +1,256 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+    <title>Azur Lane Fleet 2.0(dev)</title>
+    <style>
+        .fleet_container {
+            position: initial;
+            display: flex;
+            flex-wrap: wrap;
+            width: 1300px;
+            height: calc( ( 150px * 3) - 30px);
+            background-color: rgb(58, 58, 58);
+            margin: auto;
+            margin-top: 20px;
+        }
+        
+        .fleet_front {
+            display: flex;
+            flex-wrap: wrap;
+            width: 50%;
+        }
+        
+        .fleet_back {
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .ship_container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: blue;
+            margin: auto;
+            border: 2px;
+            border-style: ridge;
+            border-color: black;
+            padding: 0px;
+        }
+        
+        .item_button {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0%;
+            margin: 0%;
+        }
+        
+        .item_container {
+            position: relative;
+            width: 100px;
+            /*120x150*/
+            height: 130px;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgba(0, 0, 148, 0.5);
+            box-sizing: border-box;
+            padding: 0px;
+        }
+        
+        .icon_box {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: 2px;
+            border-style: ridge;
+            border-color: white;
+            box-sizing: border-box;
+            margin: auto;
+        }
+        
+        .item_name {
+            /*width: 100%;*/
+            text-align: center;
+            margin: auto;
+            padding: 0px;
+            width: 100px;
+            height: 25px;
+            font-size: 16px;
+            border: 2px;
+            border-style: ridge;
+            border-color: white;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <!------------------------------------------------------------------------------------------------>
+    <div id="AzurLaneFleetApp">
+        <fleet-container v-for="fleet in fleets" v-bind:key="fleet.id" v-bind:fleet="fleet" v-bind:name="fleet.id">
+        </fleet-container>
+    </div>
+    <!------------------------------------------------------------------------------------------------>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!------------------------------------------------------------------------------------------------>
+    <script>
+        // build main frame
+        Vue.component('item-container', {
+            props: ['item'],
+            template: `
+                <button class="item_button" v-bind:name="item.id">
+                    <div class="item_container">
+                        <img class="icon_box" v-bind:src='item.property["link"]'></img>
+                        <span class="item_name">{{item.property["_name"]}}</span>
+                    </div>
+                </button>
+            `
+        })
+
+        // <span class="item_name">{{item.property["_name"]}}</span>
+        Vue.component('ship-container', {
+            props: ['ship'],
+            template: `
+                <div class="ship_container">
+                    <item-container
+                        v-for="item in ship.item"
+                        v-bind:key="item.id"
+                        v-bind:item="item"
+                    ></item-container>
+                </div>
+            `
+        })
+
+        Vue.component('fleet-container', {
+            props: ['fleet'],
+            template: `
+                <div class="fleet_container">
+                    <div class="fleet_back">
+                        <ship-container 
+                            v-for="back_ship in fleet.back_ship" 
+                            v-bind:key="back_ship.id" 
+                            v-bind:ship="back_ship"
+                            v-bind:name="back_ship.id" 
+                        ></ship-container>
+                    </div>
+                    <div class="fleet_front">
+                        <ship-container 
+                            v-for="front_ship in fleet.front_ship" 
+                            v-bind:key="front_ship.id" 
+                            v-bind:ship="front_ship"
+                            v-bind:name="front_ship.id" 
+                        ></ship-container>
+                    </div>
+                </div>
+            `
+        })
+
+        let fleet_data = buildFleet();
+
+        let ALF = new Vue({
+            el: '#AzurLaneFleetApp',
+            data: {
+                fleets: fleet_data
+            }
+        });
+
+        function buildFleet() {
+            let ship_data = [];
+            for (let i = 0; i < 6; i++) {
+                let item = [];
+                if (i === 0) {
+                    let ship = {
+                        _name: "SelectShip",
+                        link: "ui/empty.png",
+                        icon: "",
+                        id: "",
+                        type: "",
+                        star: "",
+                        rarity: "",
+                        en_name: "",
+                        cn_name: "",
+                        jp_name: "",
+                        render_name: ""
+                    };
+                    item = ship;
+                } else {
+                    let eq = {
+                        _name: "equip",
+                        link: "ui/icon_back.png",
+                        icon: "",
+                        id: "",
+                        type: "",
+                        rarity: "",
+                        star: "",
+                        en_name: "",
+                        cn_name: "",
+                        jp_name: "",
+                        render_name: ""
+                    };
+                    item = eq;
+                }
+                ship_data.push({
+                    id: i,
+                    property: []
+                });
+                ship_data[i].property = Object.assign({}, item);
+            }
+
+            let newfleet = [];
+            for (let i = 0; i < 2; i++) {
+                let new_ship_data = [];
+                let front = [];
+                let back = [];
+                for (let x = 0; x < 6; x++) {
+                    let new_data = [];
+                    //new_data = Object.assign({}, ship_data);
+                    if (x < 3) {
+                        for (let index in ship_data) {
+                            let new_value = `fleet_${i}_front_ship${x}_item${index}`;
+                            let new_prop = Object.assign({}, ship_data[index].property);
+                            new_data.push({
+                                id: new_value,
+                                property: new_prop
+                            });
+                        }
+                        new_ship_data = {
+                            id: `fleet_${i}_front_ship${x}`,
+                            item: new_data
+                        };
+                        front.push(new_ship_data);
+                    } else {
+                        for (let index in ship_data) {
+                            let new_value = `fleet_${i}_back_ship${x}_item${index}`;
+                            let new_prop = Object.assign({}, ship_data[index].property);
+                            new_data.push({
+                                id: new_value,
+                                property: new_prop
+                            });
+                        }
+                        new_ship_data = {
+                            id: `fleet_${i}_back_ship${x}`,
+                            item: new_data
+                        };
+                        back.push(new_ship_data);
+                    }
+                }
+                newfleet.push({
+                    id: `fleet_${i}`,
+                    front_ship: front,
+                    back_ship: back
+                });
+            }
+            return newfleet
+        }
+    </script>
+</body>
+
+</html>
+
+<!--
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+-->
