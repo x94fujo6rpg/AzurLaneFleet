@@ -5,106 +5,47 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" as="style" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="prefetch" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" as="script" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
     <title>Azur Lane Fleet 2.0(dev)</title>
     <style>
         .fleet_container {
-            position: initial;
-            display: flex;
-            flex-wrap: wrap;
-            width: 1300px;
-            height: calc( ( 150px * 3) - 30px);
             background-color: rgb(58, 58, 58);
-            margin: auto;
-            margin-top: 20px;
-        }
-        
-        .fleet_front {
-            display: flex;
-            flex-wrap: wrap;
-            width: 50%;
-        }
-        
-        .fleet_back {
-            width: 50%;
-            display: flex;
-            flex-wrap: wrap;
         }
         
         .ship_container {
-            display: flex;
-            flex-wrap: wrap;
             background-color: blue;
-            margin: auto;
-            border: 2px;
-            border-style: ridge;
-            border-color: black;
-            padding: 0px;
-        }
-        
-        .item_button {
-            display: flex;
-            flex-wrap: wrap;
-            padding: 0%;
-            margin: 0%;
         }
         
         .item_container {
-            position: relative;
-            width: 100px;
-            /*120x150*/
-            height: 130px;
-            display: flex;
-            flex-wrap: wrap;
             background-color: rgba(0, 0, 148, 0.5);
-            box-sizing: border-box;
-            padding: 0px;
-        }
-        
-        .icon_box {
-            position: relative;
-            width: 100px;
-            height: 100px;
-            border: 2px;
-            border-style: ridge;
-            border-color: white;
-            box-sizing: border-box;
-            margin: auto;
-        }
-        
-        .item_name {
-            /*width: 100%;*/
-            text-align: center;
-            margin: auto;
-            padding: 0px;
-            width: 100px;
-            height: 25px;
-            font-size: 16px;
-            border: 2px;
-            border-style: ridge;
-            border-color: white;
-            box-sizing: border-box;
         }
     </style>
 </head>
 
 <body>
+    <br>
+    <div class="container text-center font-weight-bold text-monospace">
+        <h1>Azur Lane Fleet</h1>
+    </div>
+    <br>
     <!------------------------------------------------------------------------------------------------>
-    <div id="AzurLaneFleetApp">
+    <div id="AzurLaneFleetApp" class="container m-auto p-0">
         <fleet-container v-for="fleet in fleets" v-bind:key="fleet.id" v-bind:fleet="fleet" v-bind:name="fleet.id">
         </fleet-container>
     </div>
     <!------------------------------------------------------------------------------------------------>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <!------------------------------------------------------------------------------------------------>
     <script>
-        // build main frame
         Vue.component('item-container', {
             props: ['item'],
             template: `
-                <button class="item_button" v-bind:name="item.id">
-                    <div class="item_container">
-                        <img class="icon_box" v-bind:src='item.property["link"]'></img>
-                        <span class="item_name">{{item.property["_name"]}}</span>
+                <button class="container-fluid p-1 bg-dark" v-bind:name="item.id">
+                    <div class="container-fluid p-0">
+                        <img class="img-fluid bg-info" v-bind:src='item.property["link"]'></img>
+                        <div class="d-flex justify-content-center text-nowrap bg-secondary">{{item.property["_name"]}}</div>
                     </div>
                 </button>
             `
@@ -113,7 +54,7 @@
         Vue.component('ship-container', {
             props: ['ship'],
             template: `
-                <div class="ship_container">
+                <div class="d-flex flex-row">
                     <item-container
                         v-for="item in ship.item"
                         v-bind:key="item.id"
@@ -126,8 +67,8 @@
         Vue.component('fleet-container', {
             props: ['fleet'],
             template: `
-                <div class="fleet_container">
-                    <div class="fleet_back">
+                <div class="container-fluid row m-0 p-3">
+                    <div class="col">
                         <ship-container 
                             v-for="back_ship in fleet.back_ship" 
                             v-bind:key="back_ship.id" 
@@ -135,7 +76,7 @@
                             v-bind:name="back_ship.id" 
                         ></ship-container>
                     </div>
-                    <div class="fleet_front">
+                    <div class="col">
                         <ship-container 
                             v-for="front_ship in fleet.front_ship" 
                             v-bind:key="front_ship.id" 
