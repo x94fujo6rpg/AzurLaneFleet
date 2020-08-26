@@ -110,7 +110,6 @@
             `
         })
 
-        // <span class="item_name">{{item.property["_name"]}}</span>
         Vue.component('ship-container', {
             props: ['ship'],
             template: `
@@ -206,7 +205,6 @@
                 let back = [];
                 for (let x = 0; x < 6; x++) {
                     let new_data = [];
-                    //new_data = Object.assign({}, ship_data);
                     if (x < 3) {
                         for (let index in ship_data) {
                             let new_value = `fleet_${i}_front_ship${x}_item${index}`;
@@ -249,8 +247,3 @@
 </body>
 
 </html>
-
-<!--
-    <script src="https://unpkg.com/vue"></script>
-    <script src="https://unpkg.com/http-vue-loader"></script>
--->

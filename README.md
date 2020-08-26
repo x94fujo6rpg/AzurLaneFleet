@@ -7,4 +7,4 @@
 `check duplicate ship/equip`  
 `add import/export setting`  
   
-### Rewriting site via Vue
+### Rewriting site via Vue [preview](https://x94fujo6rpg.github.io/AzurLaneFleet/dev)
