@@ -12,6 +12,10 @@
     <link rel="prefetch" href="https://cdn.jsdelivr.net/npm/vue" as="script" crossorigin="anonymous">
     <title>Azur Lane Fleet 2.0(dev)</title>
     <style>
+        body {
+            background-color: rgb(58, 58, 58);
+        }
+
         .fleet_container {
             background-color: rgb(58, 58, 58);
         }
@@ -21,21 +25,145 @@
         }
         
         .item_container {
-            background-color: rgba(0, 0, 148, 0.5);
+            background-color: transparent;
+            border-style: none;
+            /*background-color: rgba(0, 0, 148, 0.5);*/
         }
+
+        .modal-dialog {
+            max-width: 71%;
+        }
+
+        .modal-body {
+            max-width: 100%;
+        }
+
+        .bg {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 100;
+            width: 100%;
+        }
+
+        .icon {
+          position: relative;
+          z-index: 101;
+          padding: 2px;
+        }
+
+        .frame {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          z-index: 102;
+          width: 100%;
+        }
+
+        .icon_box{
+          position: relative;
+        }
+
+        .item_name {
+          font-size: small;
+          color: white;
+        }
+
+        .app {
+          max-width: 70%;
+        }
+
     </style>
 </head>
 
 <body>
     <br>
-    <div class="container text-center font-weight-bold text-monospace">
+    <div class="container text-center text-light font-weight-bold text-monospace">
         <h1>Azur Lane Fleet</h1>
     </div>
+    <div align="center">
+      <h4 class="text-light">Select language</h4>
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary active" id="cn" onclick="setlang(this.id)">
+            <input type="radio" name="lang" autocomplete="off" checked>CN
+          </label>
+          <label class="btn btn-secondary" id="jp" onclick="setlang(this.id)">
+            <input type="radio" name="lang" autocomplete="off">JP
+          </label>
+          <label class="btn btn-secondary" id="en" onclick="setlang(this.id)">
+            <input type="radio" name="lang" autocomplete="off">EN
+          </label>
+      </div>
+  </div>
     <br>
+    <div class="modal fade" id="shipselect">
+        <div class="modal-dialog">
+            <div class="modal-content text-light bg-dark">
+                <div class="modal-header">
+                    <h4 class="modal-title">Ship Select</h4>
+                    <button type="button" class="close text-light" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="container">Nation</div>
+                        <div class="container" id='shipnation'>
+                            <ship-nation-button
+                            v-for="item in nation"
+                            v-bind:key="item.id"
+                            v-bind:name="item.name"
+                            v-show="item.display"
+                            v-text="item.show"
+                            ></ship-nation-button>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="container">Type</div>
+                        <div class="container" id="shiptype">
+                            <ship-type-button
+                            v-for="item in type"
+                            v-bind:key="item.id"
+                            v-bind:name="item.id"
+                            v-text="item.show"
+                            ></ship-type-button>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="container">Rarity</div>
+                        <div class="container" id='shiprarity'>
+                            <ship-rarity-button
+                            v-for="item in rarity"
+                            v-bind:key="item.id"
+                            v-bind:name="item.id"
+                            v-text="item.show"
+                            ></ship-rarity-button>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="container">ExcludeUnRetrofit</div>
+                        <div class="container" id='shipretro'>
+                            <button type="button" class="btn btn-outline-light btn-sm active" aria-pressed="true" value="1">Yes</button>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                      <div class="container">Ships</div>
+                    </div>
+                    <div class="container-fluid row m-0 p-0" id="shiplist">
+                      <ship-list-button
+                      v-for="item in shiplist"
+                      v-bind:key="item.id"
+                      v-bind:item="item"
+                      ></ship-list-button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!------------------------------------------------------------------------------------------------>
-    <div id="AzurLaneFleetApp" class="container m-auto p-0">
-        <fleet-container v-for="fleet in fleets" v-bind:key="fleet.id" v-bind:fleet="fleet" v-bind:name="fleet.id">
-        </fleet-container>
+    <div id="AzurLaneFleetApp" class="container m-auto p-0 app">
+        <fleet-container v-for="fleet in fleets" v-bind:key="fleet.id" v-bind:fleet="fleet" v-bind:name="fleet.id"></fleet-container>
     </div>
     <!------------------------------------------------------------------------------------------------>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -43,153 +171,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <!------------------------------------------------------------------------------------------------>
-    <script>
-        Vue.component('item-container', {
-            props: ['item'],
-            template: `
-                <button class="container-fluid p-1 bg-dark" v-bind:name="item.id">
-                    <div class="container-fluid p-0">
-                        <img class="img-fluid bg-info" v-bind:src='item.property["link"]'></img>
-                        <div class="d-flex justify-content-center text-nowrap bg-secondary">{{item.property["_name"]}}</div>
-                    </div>
-                </button>
-            `
-        })
-
-        Vue.component('ship-container', {
-            props: ['ship'],
-            template: `
-                <div class="d-flex flex-row">
-                    <item-container
-                        v-for="item in ship.item"
-                        v-bind:key="item.id"
-                        v-bind:item="item"
-                    ></item-container>
-                </div>
-            `
-        })
-
-        Vue.component('fleet-container', {
-            props: ['fleet'],
-            template: `
-                <div class="container-fluid row m-0 p-3">
-                    <div class="col">
-                        <ship-container 
-                            v-for="back_ship in fleet.back_ship" 
-                            v-bind:key="back_ship.id" 
-                            v-bind:ship="back_ship"
-                            v-bind:name="back_ship.id" 
-                        ></ship-container>
-                    </div>
-                    <div class="col">
-                        <ship-container 
-                            v-for="front_ship in fleet.front_ship" 
-                            v-bind:key="front_ship.id" 
-                            v-bind:ship="front_ship"
-                            v-bind:name="front_ship.id" 
-                        ></ship-container>
-                    </div>
-                </div>
-            `
-        })
-
-        let fleet_data = buildFleet();
-
-        let ALF = new Vue({
-            el: '#AzurLaneFleetApp',
-            data: {
-                fleets: fleet_data
-            }
-        });
-
-        function buildFleet() {
-            let ship_data = [];
-            for (let i = 0; i < 6; i++) {
-                let item = [];
-                if (i === 0) {
-                    let ship = {
-                        _name: "SelectShip",
-                        link: "ui/empty.png",
-                        icon: "",
-                        id: "",
-                        type: "",
-                        star: "",
-                        rarity: "",
-                        en_name: "",
-                        cn_name: "",
-                        jp_name: "",
-                        render_name: ""
-                    };
-                    item = ship;
-                } else {
-                    let eq = {
-                        _name: "equip",
-                        link: "ui/icon_back.png",
-                        icon: "",
-                        id: "",
-                        type: "",
-                        rarity: "",
-                        star: "",
-                        en_name: "",
-                        cn_name: "",
-                        jp_name: "",
-                        render_name: ""
-                    };
-                    item = eq;
-                }
-                ship_data.push({
-                    id: i,
-                    property: []
-                });
-                ship_data[i].property = Object.assign({}, item);
-            }
-
-            let newfleet = [];
-            for (let i = 0; i < 2; i++) {
-                let new_ship_data = [];
-                let front = [];
-                let back = [];
-                for (let x = 0; x < 6; x++) {
-                    let new_data = [];
-                    if (x < 3) {
-                        for (let index in ship_data) {
-                            let new_value = `fleet_${i}_front_ship${x}_item${index}`;
-                            let new_prop = Object.assign({}, ship_data[index].property);
-                            new_data.push({
-                                id: new_value,
-                                property: new_prop
-                            });
-                        }
-                        new_ship_data = {
-                            id: `fleet_${i}_front_ship${x}`,
-                            item: new_data
-                        };
-                        front.push(new_ship_data);
-                    } else {
-                        for (let index in ship_data) {
-                            let new_value = `fleet_${i}_back_ship${x}_item${index}`;
-                            let new_prop = Object.assign({}, ship_data[index].property);
-                            new_data.push({
-                                id: new_value,
-                                property: new_prop
-                            });
-                        }
-                        new_ship_data = {
-                            id: `fleet_${i}_back_ship${x}`,
-                            item: new_data
-                        };
-                        back.push(new_ship_data);
-                    }
-                }
-                newfleet.push({
-                    id: `fleet_${i}`,
-                    front_ship: front,
-                    back_ship: back
-                });
-            }
-            return newfleet
-        }
-    </script>
+    <script src='js/ship_data.js'></script>
+    <script src='js/equip_data.js'></script>
+    <script src="js/main-v.js"></script>
 </body>
 
 </html>
