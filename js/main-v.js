@@ -88,7 +88,7 @@ Vue.component("item-container", {
   })
   
   Vue.component("ship-list-button", {
-    props: ["shiplist","item"],
+    props: ["shiplist", "item"],
     template: `
     <button
       class="p-1 item_container" 
@@ -150,20 +150,19 @@ Vue.component("item-container", {
     ship_nation.forEach(x => x.show = x[lan]);
     ship_type.forEach(x => x.show = x[lan]);
     ship_rarity.forEach(x => x.show = x[lan]);
-  
     let newlist = [];
     for (let index in ship_data) {
-      let newitem = Object.assign({},ship_data[index]);
-      newitem.link = `shipicon/${newitem.painting}.png`;
+      let newitem = Object.assign({}, ship_data[index]);
+      newitem.link = `shipicon/${newitem.painting.toLowerCase()}.png`;
       newitem.show = newitem[`${lan}_name`];
-      newitem.bg = `ui/bg${newitem.rarity-1}.png`;
-      newitem.frame = `ui/frame_${newitem.rarity-1}.png`;
+      newitem.bg = `ui/bg${newitem.rarity - 1}.png`;
+      newitem.frame = `ui/frame_${newitem.rarity - 1}.png`;
       newlist.push(newitem);
     }
     newlist = sorting(newlist, 'type', true);
     newlist = sorting(newlist, 'nationality', true);
     newlist = sorting(newlist, 'rarity', true);
-    sorted_ship_data = Object.assign([],newlist);
+    sorted_ship_data = Object.assign([], newlist);
   }
   
   function setlang(itemid) {
@@ -172,7 +171,7 @@ Vue.component("item-container", {
     ship_nation.forEach(x => x.show = x[lan]);
     ship_type.forEach(x => x.show = x[lan]);
     ship_rarity.forEach(x => x.show = x[lan]);
-    sorted_ship_data.forEach(x=>x.show = x[`${lan}_name`]);
+    sorted_ship_data.forEach(x => x.show = x[`${lan}_name`]);
   }
   
   function setShipAndEquip() {
