@@ -108,9 +108,9 @@ Vue.component("ship-list-button", {
   >
     <div class="container-fluid p-0">
         <div class="icon_box">
-          <img class="img-fluid icon" v-bind:src="item.icon">
-          <img class="img-fluid bg" v-bind:src="item.bg">
-          <img class="img-fluid frame" v-bind:src="item.frame">
+          <img class="img-fluid icon" v-bind:src="item.icon" loading="lazy">
+          <img class="img-fluid bg" v-bind:src="item.bg" loading="lazy">
+          <img class="img-fluid frame" v-bind:src="item.frame" loading="lazy">
         </div>
         <span class="d-flex justify-content-center text-truncate item_name"
           v-text="item[lang]"
