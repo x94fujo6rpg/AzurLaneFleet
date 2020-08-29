@@ -133,7 +133,9 @@ let fleet_data = buildFleet();
 let sorted_ship_data = [];
 let lan = "";
 
+console.time("initial");
 initial();
+console.timeEnd("initial");
 
 let ALF = new Vue({
   el: "#AzurLaneFleetApp",
@@ -193,7 +195,7 @@ function initial() {
   newlist = sorting(newlist, 'type', true);
   newlist = sorting(newlist, 'nationality', true);
   newlist = sorting(newlist, 'rarity', true);
-  console.log(emptyship);
+
   newlist.unshift(emptyship);
   sorted_ship_data = Object.assign([], newlist);
 }

@@ -3078,9 +3078,9 @@ var equip_data = {
         "id": 90840,
         "icon": "50840",
         "ship_type_forbidden": [],
-        "jp_name": "ピエール・ルヴァッスールPL7攻撃機",
-        "cn_name": "PL7舰载鱼雷机",
-        "en_name": "PierreLevasseurPL7TorpedoBomber"
+        "jp_name": "ピエール・ルヴァッスールPL.7攻撃機",
+        "cn_name": "PL.7舰载鱼雷机",
+        "en_name": "PierreLevasseurPL.7TorpedoBomber"
     },
     "38240": {
         "nationality": 3,
@@ -3513,9 +3513,9 @@ var equip_data = {
         "id": 90820,
         "icon": "50820",
         "ship_type_forbidden": [],
-        "jp_name": "グールドゥ・ルスールGL2戦闘機",
-        "cn_name": "GL2舰载战斗机",
-        "en_name": "Gourdou-LeseurreGL2Fighter"
+        "jp_name": "グールドゥ・ルスールGL.2戦闘機",
+        "cn_name": "GL.2舰载战斗机",
+        "en_name": "Gourdou-LeseurreGL.2Fighter"
     },
     "47140": {
         "nationality": 4,
@@ -5508,9 +5508,9 @@ var equip_data = {
         "id": 6040,
         "icon": "6000",
         "ship_type_forbidden": [],
-        "jp_name": "127mm対空機銃",
-        "cn_name": "127mm防空机枪",
-        "en_name": "127mmAAGun"
+        "jp_name": "12.7mm対空機銃",
+        "cn_name": "12.7mm防空机枪",
+        "en_name": "12.7mmAAGun"
     },
     "6020": {
         "nationality": 0,
@@ -5523,9 +5523,9 @@ var equip_data = {
         "id": 6020,
         "icon": "6000",
         "ship_type_forbidden": [],
-        "jp_name": "127mm対空機銃",
-        "cn_name": "127mm防空机枪",
-        "en_name": "127mmAAGun"
+        "jp_name": "12.7mm対空機銃",
+        "cn_name": "12.7mm防空机枪",
+        "en_name": "12.7mmAAGun"
     },
     "6000": {
         "nationality": 0,
@@ -5538,9 +5538,9 @@ var equip_data = {
         "id": 6000,
         "icon": "6000",
         "ship_type_forbidden": [],
-        "jp_name": "127mm対空機銃",
-        "cn_name": "127mm防空机枪",
-        "en_name": "127mmAAGun"
+        "jp_name": "12.7mm対空機銃",
+        "cn_name": "12.7mm防空机枪",
+        "en_name": "12.7mmAAGun"
     },
     "5340": {
         "nationality": 8,
@@ -6646,7 +6646,7 @@ var equip_data = {
         "icon": "24300",
         "ship_type_forbidden": [],
         "jp_name": "381mm連装砲改",
-        "cn_name": "双联装381mm主炮改",
+        "cn_name": "双联装381mm主炮.改",
         "en_name": "Twin381mmAdvancedMainGun"
     },
     "24140": {
@@ -7330,7 +7330,7 @@ var equip_data = {
         ],
         "jp_name": "試作型234mm連装砲",
         "cn_name": "试作型双联装234mm主炮",
-        "en_name": "PrototypeTwin234mmMainGun(92\"MKXII)"
+        "en_name": "PrototypeTwin234mmMainGun(9.2\"MKXII)"
     },
     "23120": {
         "nationality": 2,
@@ -7350,7 +7350,7 @@ var equip_data = {
         ],
         "jp_name": "試作型234mm三連装砲",
         "cn_name": "试作型三联装234mm主炮",
-        "en_name": "PrototypeTwin234mmMainGun(92\"MKXII)"
+        "en_name": "PrototypeTwin234mmMainGun(9.2\"MKXII)"
     },
     "23040": {
         "nationality": 2,
@@ -8463,9 +8463,9 @@ var equip_data = {
         "id": 90140,
         "icon": "50100",
         "ship_type_forbidden": [],
-        "jp_name": "1386mm単装砲Mle1929",
-        "cn_name": "1386mm单装炮Mle1929",
-        "en_name": "Single1386mmMainGun(Mle1929)"
+        "jp_name": "138.6mm単装砲Mle1929",
+        "cn_name": "138.6mm单装炮Mle1929",
+        "en_name": "Single138.6mmMainGun(Mle1929)"
     },
     "90120": {
         "nationality": 8,
@@ -8480,9 +8480,9 @@ var equip_data = {
         "id": 90120,
         "icon": "50100",
         "ship_type_forbidden": [],
-        "jp_name": "1386mm単装砲Mle1929",
-        "cn_name": "1386mm单装炮Mle1929",
-        "en_name": "Single1386mmMainGun(Mle1929)"
+        "jp_name": "138.6mm単装砲Mle1929",
+        "cn_name": "138.6mm单装炮Mle1929",
+        "en_name": "Single138.6mmMainGun(Mle1929)"
     },
     "90100": {
         "nationality": 8,
@@ -8497,9 +8497,9 @@ var equip_data = {
         "id": 90100,
         "icon": "50100",
         "ship_type_forbidden": [],
-        "jp_name": "1386mm単装砲Mle1929",
-        "cn_name": "1386mm单装炮Mle1929",
-        "en_name": "Single1386mmMainGun(Mle1929)"
+        "jp_name": "138.6mm単装砲Mle1929",
+        "cn_name": "138.6mm单装炮Mle1929",
+        "en_name": "Single138.6mmMainGun(Mle1929)"
     },
     "90740": {
         "nationality": 8,
@@ -8514,9 +8514,9 @@ var equip_data = {
         "id": 90740,
         "icon": "50700",
         "ship_type_forbidden": [],
-        "jp_name": "1386mm単装砲Mle1927",
-        "cn_name": "1386mm单装炮Mle1927",
-        "en_name": "Single1386mmMainGun(Mle1927)"
+        "jp_name": "138.6mm単装砲Mle1927",
+        "cn_name": "138.6mm单装炮Mle1927",
+        "en_name": "Single138.6mmMainGun(Mle1927)"
     },
     "90720": {
         "nationality": 8,
@@ -8531,9 +8531,9 @@ var equip_data = {
         "id": 90720,
         "icon": "50700",
         "ship_type_forbidden": [],
-        "jp_name": "1386mm単装砲Mle1927",
-        "cn_name": "1386mm单装炮Mle1927",
-        "en_name": "Single1386mmMainGun(Mle1927)"
+        "jp_name": "138.6mm単装砲Mle1927",
+        "cn_name": "138.6mm单装炮Mle1927",
+        "en_name": "Single138.6mmMainGun(Mle1927)"
     },
     "90700": {
         "nationality": 8,
@@ -8548,9 +8548,9 @@ var equip_data = {
         "id": 90700,
         "icon": "50700",
         "ship_type_forbidden": [],
-        "jp_name": "1386mm単装砲Mle1927",
-        "cn_name": "1386mm单装炮Mle1927",
-        "en_name": "Single1386mmMainGun(Mle1927)"
+        "jp_name": "138.6mm単装砲Mle1927",
+        "cn_name": "138.6mm单装炮Mle1927",
+        "en_name": "Single138.6mmMainGun(Mle1927)"
     },
     "90500": {
         "nationality": 8,
@@ -9213,7 +9213,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "114mm連装両用砲MarkIV",
         "cn_name": "双联装114mm高平两用炮MarkIV",
-        "en_name": "Twin114mmDP(45\"MKIV)"
+        "en_name": "Twin114mmDP(4.5\"MKIV)"
     },
     "21140": {
         "nationality": 2,
