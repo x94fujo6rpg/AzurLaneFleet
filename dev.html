@@ -10,9 +10,9 @@
     <link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" as="script" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
     <link rel="prefetch" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" as="script" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
     <link rel="prefetch" href="https://cdn.jsdelivr.net/npm/vue" as="script" crossorigin="anonymous">
-    <link rel="prefetch" href="js/ship_data.js" as="script" crossorigin="anonymous">
-    <link rel="prefetch" href="js/equip_data.js" as="script" crossorigin="anonymous">
-    <link rel="prefetch" href="js/main-v.js" as="script" crossorigin="anonymous">
+    <link rel="prefetch" href="js/ship_data.js" as="script">
+    <link rel="prefetch" href="js/equip_data.js" as="script">
+    <link rel="prefetch" href="js/main-v.js" as="script">
     <title>Azur Lane Fleet 2.0(dev)</title>
     <style>
         body {
@@ -30,7 +30,6 @@
         .item_container {
             background-color: transparent;
             border-style: none;
-            /*background-color: rgba(0, 0, 148, 0.5);*/
         }
         
         .modal-dialog {
@@ -86,21 +85,21 @@
     <div align="center">
         <h4 class="text-light">Select language</h4>
         <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-secondary active" id="cn" onclick="setlang(this.id)">
-        <input type="radio" name="lang" autocomplete="off" checked>CN
-      </label>
-            <label class="btn btn-secondary" id="jp" onclick="setlang(this.id)">
-        <input type="radio" name="lang" autocomplete="off">JP
-      </label>
-            <label class="btn btn-secondary" id="en" onclick="setlang(this.id)">
-        <input type="radio" name="lang" autocomplete="off">EN
-      </label>
+            <label class="btn btn-secondary active" id="cn" onclick="setlang(this)">
+                <input type="radio" name="lang" autocomplete="off" checked>CN
+            </label>
+            <label class="btn btn-secondary" id="jp" onclick="setlang(this)">
+                <input type="radio" name="lang" autocomplete="off">JP
+            </label>
+            <label class="btn btn-secondary" id="en" onclick="setlang(this)">
+                <input type="radio" name="lang" autocomplete="off">EN
+            </label>
         </div>
     </div>
     <br>
     <!------------------------------------------------------------------------------------------------>
     <div id="AzurLaneFleetApp" class="container m-auto p-0 app">
-        <fleet-container v-for="fleet in fleets" v-bind:key="fleet.id" v-bind:fleet="fleet" v-bind:name="fleet.id">
+        <fleet-container v-for="fleet in fleets" v-bind:key="fleet.id" v-bind:fleet="fleet" v-bind:name="fleet.id" v-bind:lang="lang">
         </fleet-container>
     </div>
     <div class="modal fade" id="shipselect">
@@ -114,19 +113,19 @@
                     <div class="container">
                         <div class="container">Nation</div>
                         <div class="container" id='shipnation'>
-                            <ship-nation-button v-for="item in nation" v-bind:key="item.id" v-bind:name="item.name" v-show="item.display" v-text="item.show"></ship-nation-button>
+                            <ship-nation-button v-for="item in nation" v-bind:key="item.id" v-bind:name="item.name" v-show="item.display" v-text="item[lang]"></ship-nation-button>
                         </div>
                     </div>
                     <div class="container">
                         <div class="container">Type</div>
                         <div class="container" id="shiptype">
-                            <ship-type-button v-for="item in type" v-bind:key="item.id" v-bind:name="item.id" v-text="item.show"></ship-type-button>
+                            <ship-type-button v-for="item in type" v-bind:key="item.id" v-bind:name="item.id" v-text="item[lang]"></ship-type-button>
                         </div>
                     </div>
                     <div class="container">
                         <div class="container">Rarity</div>
                         <div class="container" id='shiprarity'>
-                            <ship-rarity-button v-for="item in rarity" v-bind:key="item.id" v-bind:name="item.id" v-text="item.show"></ship-rarity-button>
+                            <ship-rarity-button v-for="item in rarity" v-bind:key="item.id" v-bind:name="item.id" v-text="item[lang]"></ship-rarity-button>
                         </div>
                     </div>
                     <div class="container">
@@ -139,7 +138,7 @@
                         <div class="container">Ships</div>
                     </div>
                     <div class="container-fluid row m-0 p-0" id="shiplist">
-                        <ship-list-button v-for="item in shiplist" v-bind:key="item.id" v-bind:item="item"></ship-list-button>
+                        <ship-list-button v-for="item in shiplist" v-bind:key="item.id" v-bind:item="item" v-bind:lang="lang"></ship-list-button>
                     </div>
                 </div>
                 <div class="modal-footer">
