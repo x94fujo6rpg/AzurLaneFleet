@@ -558,12 +558,12 @@ function setShipAndEquip(item) {
                 app_item.base = [];
             } else {
                 //equip
-                shipCopyList.forEach(key => app_item[key] = "");
+                for(let key in app_item){
+                    app_item[key] = "";
+                }
                 app_item.icon = "ui/icon_back.png";
                 app_item.fb = [];
                 app_item.type = [];
-                app_item.target = "";
-                app_item.quantity = "";
             }
         } else {
             //copy ship data & equip setting
@@ -572,6 +572,10 @@ function setShipAndEquip(item) {
                 shipCopyList.forEach(key => app_item[key] = shipInList[key]);
             } else {
                 //equip
+                for(let key in app_item){
+                    app_item[key] = "";
+                }
+
                 let typelist = shipInList[`e${index}`];
                 app_item.type = typelist;
                 app_item.icon = "ui/empty.png";
@@ -598,7 +602,6 @@ function setShipAndEquip(item) {
                         typestr_jp += "/";
                     }
                 });
-
                 app_item.cn = app_item.type_cn = typestr_cn;
                 app_item.en = app_item.type_en = typestr_en;
                 app_item.jp = app_item.type_jp = typestr_jp;
