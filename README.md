@@ -4,9 +4,9 @@
 
 **Update:**
 ***2020-09-02:***
-`new version`
-`check duplicate ship/equip`
-`add import/export setting` 
+`new version`  
+`check duplicate ship/equip`  
+`add import/export setting`  
 
 **TBD:**  
 `ass star`  
