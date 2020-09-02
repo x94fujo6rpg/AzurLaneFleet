@@ -3,7 +3,7 @@
 **Is just for easily share fleet configuration in one shot**  
 
 **Update:**
-***2020-09-02:***
+***2020-09-02:***  
 `new version`  
 `check duplicate ship/equip`  
 `add import/export setting`  
