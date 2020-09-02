@@ -741,6 +741,7 @@ function creatAllShip() {
             let icon = document.createElement("img");
             $(icon).attr({
                 class: "img-fluid icon",
+                loading: "lazy",
                 src: ship.icon,
             });
             let bg = document.createElement("img");
@@ -792,7 +793,6 @@ function creatAllShip() {
 
 function creatAllEquip() {
     console.time("creatAllEquip");
-    let de = 0;
     sorted_equip_data.forEach((equip, index, arr) => {
         setTimeout(() => {
             let pos = document.getElementById("equiplist");
@@ -813,6 +813,7 @@ function creatAllEquip() {
             let eqicon = document.createElement("img");
             $(eqicon).attr({
                 class: "img-fluid icon",
+                loading: "lazy",
                 src: equip.icon,
             });
             icon_box.append(bg, frame, eqicon);
@@ -845,8 +846,7 @@ function creatAllEquip() {
             if (index === arr.length - 1) {
                 console.timeEnd("creatAllEquip");
             }
-        }, de);
-        de++;
+        }, 0);
     });
 }
 
