@@ -832,7 +832,7 @@ function creatAllEquip() {
                 cn: equip.cn,
                 en: equip.en,
                 jp: equip.jp,
-                class: "d-flex justify-content-center text-truncate item_name",
+                class: "d-flex justify-content-start text-truncate item_name",
             });
             name.textContent = equip[lan];
 
