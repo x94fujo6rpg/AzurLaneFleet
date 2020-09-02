@@ -121,7 +121,7 @@ let shipsetting = {
 let front = [1, 2, 3, 18];
 let back = [4, 5, 6, 7, 12, 13];
 let c_ships = [];
-let version = 0.01;
+let version = 0.02;
 
 initial();
 //---------------------------------------------
@@ -377,9 +377,9 @@ function isShipSelect(nation, type, rarity, retro) {
         indicator_rarity = true;
     }
     if (indicator_nation && indicator_type && indicator_rarity) {
-        if(retrofit && retro === 1){
+        if (retrofit && retro === 1) {
             return false;
-        }else{
+        } else {
             return true;
         }
     } else {
@@ -558,7 +558,7 @@ function setShipAndEquip(item) {
                 app_item.base = [];
             } else {
                 //equip
-                for(let key in app_item){
+                for (let key in app_item) {
                     app_item[key] = "";
                 }
                 app_item.icon = "ui/icon_back.png";
@@ -572,7 +572,7 @@ function setShipAndEquip(item) {
                 shipCopyList.forEach(key => app_item[key] = shipInList[key]);
             } else {
                 //equip
-                for(let key in app_item){
+                for (let key in app_item) {
                     app_item[key] = "";
                 }
 
