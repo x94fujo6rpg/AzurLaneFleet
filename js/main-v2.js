@@ -502,7 +502,8 @@ function setEquip(item) {
         itemInApp.cn = itemInApp.type_cn;
         itemInApp.en = itemInApp.type_en;
         itemInApp.jp = itemInApp.type_jp;
-        itemInApp.frame = itemInApp.bg = "";
+        itemInApp.frame = "";
+        itemInApp.bg = "";
         itemInApp.icon = "ui/empty.png";
         itemInApp.id = "";
     } else {
