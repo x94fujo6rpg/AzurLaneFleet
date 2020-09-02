@@ -214,7 +214,7 @@ function loadData() {
     data = data.substring(0, end);
     let checkhash = CryptoJS.SHA3(data, { outputLength: 256 }).toString();
     if (datahash != checkhash) {
-        textbox.value = "Error: Data corrupted (Incorrect verify info)";
+        textbox.value = "Error: Data corrupted (Incorrect verify info/Old version)";
         return;
     }
     if (dataversion != version) {
@@ -372,6 +372,12 @@ function isShipSelect(nation, type, rarity, retro) {
     }
     if (shipsetting.nation.indexOf(nation) != -1 || shipsetting.nation.length === 0) {
         indicator_nation = true;
+    }
+    if (shipsetting.nation.indexOf(0) != -1) {
+        let other = [98, 101, 103, 104, 105];
+        if (other.indexOf(nation) != -1) {
+            indicator_nation = true;
+        }
     }
     if (shipsetting.rarity.indexOf(rarity) != -1 || shipsetting.rarity.length === 0) {
         indicator_rarity = true;
