@@ -112,12 +112,7 @@ let fleet_data = buildFleet();
 let sorted_ship_data = [];
 let lan = "";
 let sorted_equip_data = [];
-let shipsetting = {
-    nation: [],
-    front: [],
-    back: [],
-    rarity: [],
-};
+let shipsetting = { nation: [], front: [], back: [], rarity: [], };
 let front = [1, 2, 3, 18];
 let back = [4, 5, 6, 7, 12, 13];
 let c_ships = [];
@@ -581,7 +576,6 @@ function setShipAndEquip(item) {
                 for (let key in app_item) {
                     app_item[key] = "";
                 }
-
                 let typelist = shipInList[`e${index}`];
                 app_item.type = typelist;
                 app_item.icon = "ui/empty.png";
@@ -590,13 +584,11 @@ function setShipAndEquip(item) {
                 let typestr_jp = "";
                 let itemindex = parseInt(index, 10) - 1;
                 let quantity = shipInApp.item[0].property.base[itemindex];
-
                 if (typelist.some(eqtype => addquantitylist.indexOf(eqtype) != -1)) {
                     if (quantity != undefined) {
                         app_item.quantity = quantity;
                     }
                 }
-
                 // go through all type in ship's equip type list
                 typelist.forEach((type, index) => {
                     typestr_cn += parsetype[type].cn;
@@ -738,6 +730,7 @@ function initial() {
 
 function creatAllShip() {
     console.time("creatAllShip");
+    let de = 0;
     sorted_ship_data.forEach((ship, index, arr) => {
         setTimeout(() => {
             let pos = document.getElementById("shiplist");
@@ -745,25 +738,21 @@ function creatAllShip() {
             $(icon_box).attr({
                 class: "icon_box row",
             });
-
             let icon = document.createElement("img");
             $(icon).attr({
                 class: "img-fluid icon",
                 src: ship.icon,
             });
-
             let bg = document.createElement("img");
             $(bg).attr({
                 class: "img-fluid bg",
                 src: ship.bg,
             });
-
             let frame = document.createElement("img");
             $(frame).attr({
                 class: "img-fluid frame",
                 src: ship.frame,
             });
-
             icon_box.append(icon, bg, frame);
             //-----------------------------------------------
             let box = document.createElement("div");
@@ -780,7 +769,6 @@ function creatAllShip() {
                 class: "d-flex justify-content-start text-truncate item_name",
             });
             name.textContent = ship[lan];
-
             box.append(icon_box, name);
             //-----------------------------------------------
             let newship = document.createElement("button");
@@ -797,12 +785,14 @@ function creatAllShip() {
                 console.timeEnd("creatAllShip");
                 creatAllEquip();
             }
-        });
+        }, de);
+        de++;
     });
 }
 
 function creatAllEquip() {
     console.time("creatAllEquip");
+    let de = 0;
     sorted_equip_data.forEach((equip, index, arr) => {
         setTimeout(() => {
             let pos = document.getElementById("equiplist");
@@ -810,32 +800,27 @@ function creatAllEquip() {
             $(icon_box).attr({
                 class: "container-fluid icon_box",
             });
-
             let bg = document.createElement("img");
             $(bg).attr({
                 class: "img-fluid bg",
                 src: equip.bg,
             });
-
             let frame = document.createElement("img");
             $(frame).attr({
                 class: "img-fluid frame",
                 src: equip.frame,
             });
-
             let eqicon = document.createElement("img");
             $(eqicon).attr({
                 class: "img-fluid icon",
                 src: equip.icon,
             });
-
             icon_box.append(bg, frame, eqicon);
             //-----------------------------------------------
             let box = document.createElement("div");
             $(box).attr({
                 class: "container-fluid p-0",
             });
-
             let name = document.createElement("span");
             $(name).attr({
                 name: "name",
@@ -845,7 +830,6 @@ function creatAllEquip() {
                 class: "d-flex justify-content-start text-truncate item_name",
             });
             name.textContent = equip[lan];
-
             box.append(icon_box, name);
             //-----------------------------------------------
             let newequip = document.createElement("button");
@@ -861,7 +845,8 @@ function creatAllEquip() {
             if (index === arr.length - 1) {
                 console.timeEnd("creatAllEquip");
             }
-        });
+        }, de);
+        de++;
     });
 }
 
@@ -877,9 +862,7 @@ function buildFleet() {
                 type: "",
                 star: "",
                 rarity: "",
-                en: "",
-                cn: "",
-                jp: "",
+                en: "", cn: "", jp: "",
                 target: "#shipselect",
                 bg: "",
                 frame: "",
