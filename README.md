@@ -9,7 +9,7 @@
 `add import/export setting`  
 
 **TBD:**  
-`ass star`  
+`add star`  
 `add submarine fleet`  
 `auto save setting in cookie`  
     
