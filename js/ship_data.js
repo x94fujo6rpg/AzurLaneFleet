@@ -924,6 +924,44 @@ var ship_data = {
             14
         ]
     },
+    "100020": {
+        "nationality": 98,
+        "type": 1,
+        "base_list": [
+            1,
+            1,
+            1
+        ],
+        "id": 100021,
+        "skin_id": 100020,
+        "star": 6,
+        "rarity": 6,
+        "retro": 0,
+        "uni_id": "100020",
+        "painting": "buli_super",
+        "star_string": "★★★★★★",
+        "rarity_string": "UR",
+        "jp_name": "特装型ブリMKIII",
+        "en_name": "SpecializedBulinCustomMKIII",
+        "cn_name": "特装型布里MKIII",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            6
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
     "100010": {
         "nationality": 98,
         "type": 1,
@@ -4438,6 +4476,45 @@ var ship_data = {
             14
         ]
     },
+    "319010": {
+        "nationality": 3,
+        "type": 19,
+        "base_list": [
+            1,
+            1,
+            1
+        ],
+        "id": 319014,
+        "skin_id": 319010,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "319010",
+        "painting": "jianye",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "樫野",
+        "en_name": "Kashino",
+        "cn_name": "樫野",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            6
+        ],
+        "equip_3": [
+            10,
+            18
+        ],
+        "equip_4": [
+            10,
+            18
+        ],
+        "equip_5": [
+            10,
+            18
+        ]
+    },
     "399040": {
         "nationality": 3,
         "type": 18,
@@ -4835,6 +4912,44 @@ var ship_data = {
             10
         ]
     },
+    "307080": {
+        "nationality": 3,
+        "type": 7,
+        "base_list": [
+            2,
+            3,
+            4
+        ],
+        "id": 307084,
+        "skin_id": 307080,
+        "star": 6,
+        "rarity": 6,
+        "retro": 0,
+        "uni_id": "307080",
+        "painting": "xinnong",
+        "star_string": "★★★★★★",
+        "rarity_string": "UR",
+        "jp_name": "信濃",
+        "en_name": "Shinano",
+        "cn_name": "信浓",
+        "equip_1": [
+            7,
+            8,
+            9
+        ],
+        "equip_2": [
+            9
+        ],
+        "equip_3": [
+            8
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
     "307070": {
         "nationality": 3,
         "type": 7,
@@ -5157,6 +5272,82 @@ var ship_data = {
         ],
         "equip_5": [
             10
+        ]
+    },
+    "306090": {
+        "nationality": 3,
+        "type": 6,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 306094,
+        "skin_id": 306090,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "306090",
+        "painting": "qiandaitian",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "千代田",
+        "en_name": "Chiyoda",
+        "cn_name": "千代田",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            8
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            15
+        ],
+        "equip_5": [
+            10,
+            15
+        ]
+    },
+    "306080": {
+        "nationality": 3,
+        "type": 6,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 306084,
+        "skin_id": 306080,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "306080",
+        "painting": "qiansui",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "千歳",
+        "en_name": "Chitose",
+        "cn_name": "千岁",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            8
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            15
+        ],
+        "equip_5": [
+            10,
+            15
         ]
     },
     "306070": {
@@ -5482,6 +5673,43 @@ var ship_data = {
         "jp_name": "駿河",
         "en_name": "Suruga",
         "cn_name": "骏河",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
+    "305120": {
+        "nationality": 3,
+        "type": 5,
+        "base_list": [
+            1,
+            3,
+            1
+        ],
+        "id": 305124,
+        "skin_id": 305120,
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "305120",
+        "painting": "jiyi",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "紀伊",
+        "en_name": "Kii",
+        "cn_name": "纪伊",
         "equip_1": [
             4
         ],
@@ -6219,6 +6447,43 @@ var ship_data = {
         "en_name": "Ibuki",
         "cn_name": "伊吹",
         "equip_1": [
+            3
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
+    "303180": {
+        "nationality": 3,
+        "type": 3,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 303184,
+        "skin_id": 303180,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "303180",
+        "painting": "xiongye",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "熊野",
+        "en_name": "Kumano",
+        "cn_name": "熊野",
+        "equip_1": [
+            2,
             3
         ],
         "equip_2": [
@@ -7481,6 +7746,44 @@ var ship_data = {
         "jp_name": "北風",
         "en_name": "Kitakaze",
         "cn_name": "北风",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "301840": {
+        "nationality": 3,
+        "type": 1,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 301844,
+        "skin_id": 301840,
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "301840",
+        "painting": "liangyue",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "涼月",
+        "en_name": "Suzutsuki",
+        "cn_name": "凉月",
         "equip_1": [
             1
         ],

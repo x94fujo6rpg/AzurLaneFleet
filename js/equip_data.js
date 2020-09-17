@@ -1,4 +1,68 @@
 var equip_data = {
+    "3400": {
+        "nationality": 3,
+        "type": 18,
+        "attribute_2": null,
+        "rarity": 5,
+        "tech": 0,
+        "ammo": "なし",
+        "ammo_icon": [],
+        "id": 3400,
+        "icon": "3400",
+        "ship_type_forbidden": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            17,
+            18
+        ],
+        "jp_name": "九四式四十糎砲(積載)",
+        "cn_name": "“九四式40厘米炮”部件",
+        "en_name": "九四式四十糎砲(積載)_untranslated",
+        "equip_limit": 3400
+    },
+    "3500": {
+        "nationality": 0,
+        "type": 18,
+        "attribute_2": null,
+        "rarity": 4,
+        "tech": 0,
+        "ammo": "なし",
+        "ammo_icon": [],
+        "id": 3500,
+        "icon": "3500",
+        "ship_type_forbidden": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            17,
+            18
+        ],
+        "jp_name": "航空戦資材(積載)",
+        "cn_name": "兵装补给(航空)",
+        "en_name": "航空戦資材(積載)_untranslated",
+        "equip_limit": 3400
+    },
     "740": {
         "nationality": 4,
         "type": 17,
@@ -23,7 +87,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "Fl282",
         "cn_name": "Fl-282直升机",
@@ -53,7 +118,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "ソードフィッシュMarkⅡ-ASV(対潜)",
         "cn_name": "剑鱼MarkII-ASV(反潜)",
@@ -83,7 +149,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "ソードフィッシュMarkⅡ-ASV(対潜)",
         "cn_name": "剑鱼MarkII-ASV(反潜)",
@@ -113,7 +180,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "ソードフィッシュMarkⅡ-ASV(対潜)",
         "cn_name": "剑鱼MarkII-ASV(反潜)",
@@ -143,7 +211,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "TBM-3アベンジャー(対潜)",
         "cn_name": "TBM-3复仇者(反潜)",
@@ -173,7 +242,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "TBM-3アベンジャー(対潜)",
         "cn_name": "TBM-3复仇者(反潜)",
@@ -203,7 +273,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "TBM-3アベンジャー(対潜)",
         "cn_name": "TBM-3复仇者(反潜)",
@@ -216,7 +287,7 @@ var equip_data = {
         "attribute_2": "antisub",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": "水圧式",
         "ammo_icon": [],
         "id": 4040,
         "icon": "4000",
@@ -233,7 +304,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "従来型爆雷投射機",
         "cn_name": "基础深弹投射器",
@@ -246,7 +318,7 @@ var equip_data = {
         "attribute_2": "antisub",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": "水圧式",
         "ammo_icon": [],
         "id": 4020,
         "icon": "4000",
@@ -263,7 +335,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "従来型爆雷投射機",
         "cn_name": "基础深弹投射器",
@@ -276,7 +349,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": "水圧式",
         "ammo_icon": [],
         "id": 4000,
         "icon": "4000",
@@ -293,12 +366,44 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "従来型爆雷投射機",
         "cn_name": "基础深弹投射器",
         "en_name": "BasicDepthChargeProjector",
         "equip_limit": 4000
+    },
+    "25800": {
+        "nationality": 2,
+        "type": 14,
+        "attribute_2": "antisub",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": "瞬発式",
+        "ammo_icon": [],
+        "id": 25800,
+        "icon": "25800",
+        "ship_type_forbidden": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            17,
+            18,
+            19
+        ],
+        "jp_name": "対潜迫撃砲「ヘッジホッグ」",
+        "cn_name": "刺猬弹",
+        "en_name": "対潜迫撃砲「ヘッジホッグ」_untranslated",
+        "equip_limit": 25800
     },
     "4140": {
         "nationality": 1,
@@ -306,7 +411,7 @@ var equip_data = {
         "attribute_2": "antisub",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": "水圧式",
         "ammo_icon": [],
         "id": 4140,
         "icon": "4100",
@@ -323,7 +428,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "改良型爆雷投射機",
         "cn_name": "改良深弹投射器",
@@ -336,7 +442,7 @@ var equip_data = {
         "attribute_2": "antisub",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": "水圧式",
         "ammo_icon": [],
         "id": 4120,
         "icon": "4100",
@@ -353,7 +459,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "改良型爆雷投射機",
         "cn_name": "改良深弹投射器",
@@ -366,7 +473,7 @@ var equip_data = {
         "attribute_2": "antisub",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": "水圧式",
         "ammo_icon": [],
         "id": 4100,
         "icon": "4100",
@@ -383,7 +490,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "改良型爆雷投射機",
         "cn_name": "改良深弹投射器",
@@ -1016,7 +1124,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "四神の印",
         "cn_name": "四神之印",
@@ -1044,7 +1153,8 @@ var equip_data = {
             11,
             12,
             13,
-            18
+            18,
+            19
         ],
         "jp_name": "約束の証明",
         "cn_name": "约定的证明",
@@ -1074,7 +1184,8 @@ var equip_data = {
             11,
             12,
             13,
-            18
+            18,
+            19
         ],
         "jp_name": "改良型蓄電池群",
         "cn_name": "改良蓄电池阵列",
@@ -1104,7 +1215,8 @@ var equip_data = {
             11,
             12,
             13,
-            18
+            18,
+            19
         ],
         "jp_name": "改良型シュノーケル",
         "cn_name": "改良型水下进气管",
@@ -1134,7 +1246,8 @@ var equip_data = {
             11,
             12,
             13,
-            18
+            18,
+            19
         ],
         "jp_name": "強化耐圧殻設計案",
         "cn_name": "艇壳改良设计案",
@@ -1160,7 +1273,8 @@ var equip_data = {
             10,
             12,
             13,
-            17
+            17,
+            19
         ],
         "jp_name": "533mm磁気魚雷(水上艦用)",
         "cn_name": "533mm磁性鱼雷(水面舰艇用)",
@@ -1204,7 +1318,8 @@ var equip_data = {
             11,
             12,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "九八式発砲遅延装置",
         "cn_name": "九八式射击延迟装置",
@@ -1228,7 +1343,8 @@ var equip_data = {
             7,
             10,
             12,
-            13
+            13,
+            19
         ],
         "jp_name": "九三式酸素魚雷",
         "cn_name": "九三式纯氧鱼雷",
@@ -1256,7 +1372,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "九一式徹甲弾",
         "cn_name": "九一式穿甲弹",
@@ -1284,7 +1401,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "一式徹甲弾",
         "cn_name": "一式穿甲弹",
@@ -1312,7 +1430,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "Z旗",
         "cn_name": "Z旗",
@@ -1339,7 +1458,8 @@ var equip_data = {
             11,
             12,
             13,
-            17
+            17,
+            19
         ],
         "jp_name": "VH装甲鋼板",
         "cn_name": "VH装甲钢板",
@@ -1366,7 +1486,8 @@ var equip_data = {
             11,
             12,
             13,
-            17
+            17,
+            19
         ],
         "jp_name": "VC装甲鋼板",
         "cn_name": "VC装甲钢板",
@@ -1426,7 +1547,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "ホーミングビーコン",
         "cn_name": "归航信标",
@@ -1454,7 +1576,8 @@ var equip_data = {
             11,
             12,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "高性能火器管制レーダー",
         "cn_name": "高性能火控雷达",
@@ -1495,7 +1618,8 @@ var equip_data = {
             8,
             11,
             12,
-            17
+            17,
+            19
         ],
         "jp_name": "火器管制レーダー",
         "cn_name": "火控雷达",
@@ -1520,7 +1644,8 @@ var equip_data = {
             8,
             11,
             12,
-            17
+            17,
+            19
         ],
         "jp_name": "火器管制レーダー",
         "cn_name": "火控雷达",
@@ -1545,7 +1670,8 @@ var equip_data = {
             8,
             11,
             12,
-            17
+            17,
+            19
         ],
         "jp_name": "火器管制レーダー",
         "cn_name": "火控雷达",
@@ -1653,7 +1779,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "SHS",
         "cn_name": "超重弹",
@@ -1736,7 +1863,8 @@ var equip_data = {
             10,
             12,
             13,
-            17
+            17,
+            19
         ],
         "jp_name": "PBY-5Aカタリナ",
         "cn_name": "PBY-5A卡特琳娜水上机",
@@ -1764,7 +1892,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "100/150航空燃料",
         "cn_name": "100/150号航空燃油",
@@ -1900,7 +2029,8 @@ var equip_data = {
             11,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "艦艇修理施設",
         "cn_name": "舰艇维修设备",
@@ -1931,7 +2061,8 @@ var equip_data = {
             11,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "艦艇修理施設",
         "cn_name": "舰艇维修设备",
@@ -1962,7 +2093,8 @@ var equip_data = {
             11,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "艦艇修理施設",
         "cn_name": "舰艇维修设备",
@@ -2047,7 +2179,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "空母燃料タンク",
         "cn_name": "航空副油箱",
@@ -2075,7 +2208,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "空母燃料タンク",
         "cn_name": "航空副油箱",
@@ -2103,7 +2237,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "空母燃料タンク",
         "cn_name": "航空副油箱",
@@ -2275,7 +2410,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "油圧カタパルト",
         "cn_name": "液压弹射装置",
@@ -2303,7 +2439,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "油圧カタパルト",
         "cn_name": "液压弹射装置",
@@ -2331,7 +2468,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "油圧カタパルト",
         "cn_name": "液压弹射装置",
@@ -2409,7 +2547,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "改良型ソナー",
         "cn_name": "改良声呐",
@@ -2439,7 +2578,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "改良型ソナー",
         "cn_name": "改良声呐",
@@ -2469,7 +2609,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "改良型ソナー",
         "cn_name": "改良声呐",
@@ -2563,7 +2704,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "従来型ソナー",
         "cn_name": "基础声呐",
@@ -2593,7 +2735,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "従来型ソナー",
         "cn_name": "基础声呐",
@@ -2623,7 +2766,8 @@ var equip_data = {
             12,
             13,
             17,
-            18
+            18,
+            19
         ],
         "jp_name": "従来型ソナー",
         "cn_name": "基础声呐",
@@ -2653,7 +2797,8 @@ var equip_data = {
             11,
             12,
             13,
-            18
+            18,
+            19
         ],
         "jp_name": "圧縮酸素ボンベ",
         "cn_name": "高压氧气瓶",
@@ -3897,6 +4042,22 @@ var equip_data = {
         "en_name": "A6M2Zero",
         "equip_limit": 0
     },
+    "37400": {
+        "nationality": 3,
+        "type": 7,
+        "attribute_2": "air",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": "通常弾",
+        "ammo_icon": [],
+        "id": 37400,
+        "icon": "37400",
+        "ship_type_forbidden": [],
+        "jp_name": "紫電改二",
+        "cn_name": "紫电改二",
+        "en_name": "紫電改二_untranslated",
+        "equip_limit": 0
+    },
     "37340": {
         "nationality": 3,
         "type": 7,
@@ -4246,7 +4407,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "F4U(VF-17中隊)",
         "cn_name": "F4U(VF-17“海盗”中队)",
-        "en_name": "F4U(VF-17“Pirate”Squad)",
+        "en_name": "F4U(VF-17\"Pirate\"Squad)",
         "equip_limit": 0
     },
     "17240": {
@@ -7375,7 +7536,8 @@ var equip_data = {
             11,
             12,
             13,
-            18
+            18,
+            19
         ],
         "jp_name": "潜水艦用203mm連装砲Mle1924",
         "cn_name": "双联装203mm主炮Mle1924(潜艇用)",
@@ -7778,7 +7940,7 @@ var equip_data = {
         ],
         "jp_name": "試作型234mm三連装砲",
         "cn_name": "试作型三联装234mm主炮",
-        "en_name": "PrototypeTwin234mmMainGun(9.2\"MKXII)",
+        "en_name": "PrototypeTriple234mmMainGun(9.2\"MKXII)",
         "equip_limit": 0
     },
     "23040": {

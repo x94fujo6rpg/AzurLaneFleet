@@ -112,11 +112,16 @@ let fleet_data = buildFleet();
 let sorted_ship_data = [];
 let lan = "";
 let sorted_equip_data = [];
-let shipsetting = { nation: [], front: [], back: [], rarity: [], };
-let front = [1, 2, 3, 18];
+let shipsetting = {
+    nation: [],
+    front: [],
+    back: [],
+    rarity: [],
+};
+let front = [1, 2, 3, 8, 17, 18, 19];
 let back = [4, 5, 6, 7, 12, 13];
 let c_ships = [];
-let version = 0.02;
+let version = 0.01;
 
 initial();
 //---------------------------------------------
@@ -209,7 +214,7 @@ function loadData() {
     data = data.substring(0, end);
     let checkhash = CryptoJS.SHA3(data, { outputLength: 256 }).toString();
     if (datahash != checkhash) {
-        textbox.value = "Error: Data corrupted (Incorrect verify info/Old version)";
+        textbox.value = "Error: Data corrupted (Incorrect verify info)";
         return;
     }
     if (dataversion != version) {
@@ -368,19 +373,13 @@ function isShipSelect(nation, type, rarity, retro) {
     if (shipsetting.nation.indexOf(nation) != -1 || shipsetting.nation.length === 0) {
         indicator_nation = true;
     }
-    if (shipsetting.nation.indexOf(0) != -1) {
-        let other = [98, 101, 103, 104, 105];
-        if (other.indexOf(nation) != -1) {
-            indicator_nation = true;
-        }
-    }
     if (shipsetting.rarity.indexOf(rarity) != -1 || shipsetting.rarity.length === 0) {
         indicator_rarity = true;
     }
     if (indicator_nation && indicator_type && indicator_rarity) {
-        if (retrofit && retro === 1) {
+        if(retrofit && retro === 1){
             return false;
-        } else {
+        }else{
             return true;
         }
     } else {
@@ -503,8 +502,7 @@ function setEquip(item) {
         itemInApp.cn = itemInApp.type_cn;
         itemInApp.en = itemInApp.type_en;
         itemInApp.jp = itemInApp.type_jp;
-        itemInApp.frame = "";
-        itemInApp.bg = "";
+        itemInApp.frame = itemInApp.bg = "";
         itemInApp.icon = "ui/empty.png";
         itemInApp.id = "";
     } else {
@@ -547,6 +545,7 @@ function setShipAndEquip(item) {
         14: { cn: "爆雷", en: "Depth Charge", jp: "爆雷" }, //Sonar is not a unique type
         15: { cn: "反潛機", en: "ASW Bomber", jp: "対潜機" },
         17: { cn: "直升機", en: "ASW Helicopter", jp: "ヘリ" },
+        18: { cn: "積載", en:"積載", jp:"積載"}
     };
     for (let index in app_item) {
         app_item = shipInApp.item[index].property;
@@ -559,12 +558,12 @@ function setShipAndEquip(item) {
                 app_item.base = [];
             } else {
                 //equip
-                for (let key in app_item) {
-                    app_item[key] = "";
-                }
+                shipCopyList.forEach(key => app_item[key] = "");
                 app_item.icon = "ui/icon_back.png";
                 app_item.fb = [];
                 app_item.type = [];
+                app_item.target = "";
+                app_item.quantity = "";
             }
         } else {
             //copy ship data & equip setting
@@ -573,9 +572,6 @@ function setShipAndEquip(item) {
                 shipCopyList.forEach(key => app_item[key] = shipInList[key]);
             } else {
                 //equip
-                for (let key in app_item) {
-                    app_item[key] = "";
-                }
                 let typelist = shipInList[`e${index}`];
                 app_item.type = typelist;
                 app_item.icon = "ui/empty.png";
@@ -584,11 +580,13 @@ function setShipAndEquip(item) {
                 let typestr_jp = "";
                 let itemindex = parseInt(index, 10) - 1;
                 let quantity = shipInApp.item[0].property.base[itemindex];
+
                 if (typelist.some(eqtype => addquantitylist.indexOf(eqtype) != -1)) {
                     if (quantity != undefined) {
                         app_item.quantity = quantity;
                     }
                 }
+
                 // go through all type in ship's equip type list
                 typelist.forEach((type, index) => {
                     typestr_cn += parsetype[type].cn;
@@ -600,6 +598,7 @@ function setShipAndEquip(item) {
                         typestr_jp += "/";
                     }
                 });
+
                 app_item.cn = app_item.type_cn = typestr_cn;
                 app_item.en = app_item.type_en = typestr_en;
                 app_item.jp = app_item.type_jp = typestr_jp;
@@ -730,7 +729,6 @@ function initial() {
 
 function creatAllShip() {
     console.time("creatAllShip");
-    let de = 0;
     sorted_ship_data.forEach((ship, index, arr) => {
         setTimeout(() => {
             let pos = document.getElementById("shiplist");
@@ -738,22 +736,25 @@ function creatAllShip() {
             $(icon_box).attr({
                 class: "icon_box row",
             });
+
             let icon = document.createElement("img");
             $(icon).attr({
                 class: "img-fluid icon",
-                loading: "lazy",
                 src: ship.icon,
             });
+
             let bg = document.createElement("img");
             $(bg).attr({
                 class: "img-fluid bg",
                 src: ship.bg,
             });
+
             let frame = document.createElement("img");
             $(frame).attr({
                 class: "img-fluid frame",
                 src: ship.frame,
             });
+
             icon_box.append(icon, bg, frame);
             //-----------------------------------------------
             let box = document.createElement("div");
@@ -770,6 +771,7 @@ function creatAllShip() {
                 class: "d-flex justify-content-start text-truncate item_name",
             });
             name.textContent = ship[lan];
+
             box.append(icon_box, name);
             //-----------------------------------------------
             let newship = document.createElement("button");
@@ -786,8 +788,7 @@ function creatAllShip() {
                 console.timeEnd("creatAllShip");
                 creatAllEquip();
             }
-        }, de);
-        de++;
+        });
     });
 }
 
@@ -800,37 +801,42 @@ function creatAllEquip() {
             $(icon_box).attr({
                 class: "container-fluid icon_box",
             });
+
             let bg = document.createElement("img");
             $(bg).attr({
                 class: "img-fluid bg",
                 src: equip.bg,
             });
+
             let frame = document.createElement("img");
             $(frame).attr({
                 class: "img-fluid frame",
                 src: equip.frame,
             });
+
             let eqicon = document.createElement("img");
             $(eqicon).attr({
                 class: "img-fluid icon",
-                loading: "lazy",
                 src: equip.icon,
             });
+
             icon_box.append(bg, frame, eqicon);
             //-----------------------------------------------
             let box = document.createElement("div");
             $(box).attr({
                 class: "container-fluid p-0",
             });
+
             let name = document.createElement("span");
             $(name).attr({
                 name: "name",
                 cn: equip.cn,
                 en: equip.en,
                 jp: equip.jp,
-                class: "d-flex justify-content-start text-truncate item_name",
+                class: "d-flex justify-content-center text-truncate item_name",
             });
             name.textContent = equip[lan];
+
             box.append(icon_box, name);
             //-----------------------------------------------
             let newequip = document.createElement("button");
@@ -846,7 +852,7 @@ function creatAllEquip() {
             if (index === arr.length - 1) {
                 console.timeEnd("creatAllEquip");
             }
-        }, 0);
+        });
     });
 }
 
@@ -862,7 +868,9 @@ function buildFleet() {
                 type: "",
                 star: "",
                 rarity: "",
-                en: "", cn: "", jp: "",
+                en: "",
+                cn: "",
+                jp: "",
                 target: "#shipselect",
                 bg: "",
                 frame: "",
