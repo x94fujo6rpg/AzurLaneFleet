@@ -118,10 +118,10 @@ let shipsetting = {
     back: [],
     rarity: [],
 };
-let front = [1, 2, 3, 8, 17, 18, 19];
+let front = [1, 2, 3, 8, 17, 18, 19]; // put ss back & new type 19
 let back = [4, 5, 6, 7, 12, 13];
 let c_ships = [];
-let version = 0.01;
+let version = 0.02;
 
 initial();
 //---------------------------------------------
@@ -377,9 +377,9 @@ function isShipSelect(nation, type, rarity, retro) {
         indicator_rarity = true;
     }
     if (indicator_nation && indicator_type && indicator_rarity) {
-        if(retrofit && retro === 1){
+        if (retrofit && retro === 1) {
             return false;
-        }else{
+        } else {
             return true;
         }
     } else {
@@ -545,7 +545,7 @@ function setShipAndEquip(item) {
         14: { cn: "爆雷", en: "Depth Charge", jp: "爆雷" }, //Sonar is not a unique type
         15: { cn: "反潛機", en: "ASW Bomber", jp: "対潜機" },
         17: { cn: "直升機", en: "ASW Helicopter", jp: "ヘリ" },
-        18: { cn: "積載", en:"積載", jp:"積載"}
+        18: { cn: "積載", en: "積載", jp: "積載" } // untranslated
     };
     for (let index in app_item) {
         app_item = shipInApp.item[index].property;
