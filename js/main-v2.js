@@ -373,6 +373,12 @@ function isShipSelect(nation, type, rarity, retro) {
     if (shipsetting.nation.indexOf(nation) != -1 || shipsetting.nation.length === 0) {
         indicator_nation = true;
     }
+    if (shipsetting.nation.indexOf(0) != -1) {
+        let other = [98, 101, 103, 104, 105];
+        if (other.indexOf(nation) != -1) {
+            indicator_nation = true;
+        }
+    }
     if (shipsetting.rarity.indexOf(rarity) != -1 || shipsetting.rarity.length === 0) {
         indicator_rarity = true;
     }
@@ -740,6 +746,7 @@ function creatAllShip() {
             let icon = document.createElement("img");
             $(icon).attr({
                 class: "img-fluid icon",
+                loading: "lazy",
                 src: ship.icon,
             });
 
@@ -788,7 +795,7 @@ function creatAllShip() {
                 console.timeEnd("creatAllShip");
                 creatAllEquip();
             }
-        });
+        },0);
     });
 }
 
@@ -817,6 +824,7 @@ function creatAllEquip() {
             let eqicon = document.createElement("img");
             $(eqicon).attr({
                 class: "img-fluid icon",
+                loading: "lazy",
                 src: equip.icon,
             });
 
@@ -833,7 +841,7 @@ function creatAllEquip() {
                 cn: equip.cn,
                 en: equip.en,
                 jp: equip.jp,
-                class: "d-flex justify-content-center text-truncate item_name",
+                class: "d-flex justify-content-start text-truncate item_name",
             });
             name.textContent = equip[lan];
 
@@ -852,7 +860,7 @@ function creatAllEquip() {
             if (index === arr.length - 1) {
                 console.timeEnd("creatAllEquip");
             }
-        });
+        },0);
     });
 }
 
