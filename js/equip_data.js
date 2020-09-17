@@ -28,7 +28,7 @@ var equip_data = {
         ],
         "jp_name": "九四式四十糎砲(積載)",
         "cn_name": "“九四式40厘米炮”部件",
-        "en_name": "九四式四十糎砲(積載)_untranslated",
+        "en_name": "untranslated",
         "equip_limit": 3400
     },
     "3500": {
@@ -60,7 +60,7 @@ var equip_data = {
         ],
         "jp_name": "航空戦資材(積載)",
         "cn_name": "兵装补给(航空)",
-        "en_name": "航空戦資材(積載)_untranslated",
+        "en_name": "untranslated",
         "equip_limit": 3400
     },
     "740": {
@@ -402,7 +402,7 @@ var equip_data = {
         ],
         "jp_name": "対潜迫撃砲「ヘッジホッグ」",
         "cn_name": "刺猬弹",
-        "en_name": "対潜迫撃砲「ヘッジホッグ」_untranslated",
+        "en_name": "untranslated",
         "equip_limit": 25800
     },
     "4140": {
@@ -4055,7 +4055,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "紫電改二",
         "cn_name": "紫电改二",
-        "en_name": "紫電改二_untranslated",
+        "en_name": "untranslated",
         "equip_limit": 0
     },
     "37340": {
