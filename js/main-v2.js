@@ -551,7 +551,7 @@ function setShipAndEquip(item) {
         14: { cn: "爆雷", en: "Depth Charge", jp: "爆雷" }, //Sonar is not a unique type
         15: { cn: "反潛機", en: "ASW Bomber", jp: "対潜機" },
         17: { cn: "直升機", en: "ASW Helicopter", jp: "ヘリ" },
-        18: { cn: "積載", en: "積載", jp: "積載" } // untranslated
+        18: { cn: "貨物", en: "Cargo", jp: "積載" }
     };
     for (let index in app_item) {
         app_item = shipInApp.item[index].property;
