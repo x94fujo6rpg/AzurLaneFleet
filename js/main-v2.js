@@ -11,14 +11,14 @@ Vue.component("item-container", {
           onclick="setCurrent(this)"
           data-toggle="modal"          
           >
-            <div class="container-fluid p-0">
+            <div class="container-fluid p-0 box">
               <div class="icon_box">
                 <img class="img-fluid bg" v-bind:src="item.property.bg">
                 <img class="img-fluid frame" v-bind:src="item.property.frame">
                 <img class="img-fluid icon" v-bind:src="item.property.icon">
                 <span class="d-flex justify-content-start text-monospace itemq" v-text="item.property.quantity">
               </div>
-              <span class="d-flex justify-content-start text-truncate item_name"
+              <span class="justify-content-center item_name"
                 v-text="item.property[lang]"
               ></span>
             </div>
@@ -350,6 +350,8 @@ function isShipSelect(nation, type, rarity, retro) {
     let indicator_nation = false;
     let indicator_type = false;
     let indicator_rarity = false;
+    let other_nation = [98, 101, 103, 104, 105];
+    let other_type = [19];
     if (c_side === "0" && front.indexOf(type) === -1) {
         return false;
     }
@@ -357,27 +359,22 @@ function isShipSelect(nation, type, rarity, retro) {
         return false;
     }
     if (c_side === "0") {
-        if (shipsetting.front.indexOf(type) != -1) {
+        if (shipsetting.front.indexOf(type) != -1 || shipsetting.front.length === 0) {
             indicator_type = true;
-        } else if (shipsetting.front.length === 0) {
+        } else if (shipsetting.front.indexOf(0) != -1 && other_type.indexOf(type) != -1) {
             indicator_type = true;
         }
     }
     if (c_side === "1") {
-        if (shipsetting.back.indexOf(type) != -1) {
-            indicator_type = true;
-        } else if (shipsetting.back.length === 0) {
+        if (shipsetting.back.indexOf(type) != -1 || shipsetting.back.length === 0) {
             indicator_type = true;
         }
     }
     if (shipsetting.nation.indexOf(nation) != -1 || shipsetting.nation.length === 0) {
         indicator_nation = true;
     }
-    if (shipsetting.nation.indexOf(0) != -1) {
-        let other = [98, 101, 103, 104, 105];
-        if (other.indexOf(nation) != -1) {
-            indicator_nation = true;
-        }
+    if (shipsetting.nation.indexOf(0) != -1 && other_nation.indexOf(nation) != -1) {
+        indicator_nation = true;
     }
     if (shipsetting.rarity.indexOf(rarity) != -1 || shipsetting.rarity.length === 0) {
         indicator_rarity = true;
@@ -404,7 +401,11 @@ function setCurrent(item) {
             // show front type
             ship_type.forEach((item) => {
                 if (front.indexOf(item.id) === -1) {
-                    item.display = false;
+                    if (item.id === 0) {
+                        item.display = true;
+                    } else {
+                        item.display = false;
+                    }
                 } else {
                     item.display = true;
                 }
@@ -644,7 +645,6 @@ function initial() {
         retro: "retro",
         base: "base_list",
         e1: "equip_1", e2: "equip_2", e3: "equip_3", e4: "equip_4", e5: "equip_5",
-
     };
     for (let index in ship_data) {
         let item = Object.assign({}, ship_data[index]);
@@ -766,7 +766,7 @@ function creatAllShip() {
             //-----------------------------------------------
             let box = document.createElement("div");
             $(box).attr({
-                class: "container-fluid p-0",
+                class: "container-fluid p-0 box",
             });
 
             let name = document.createElement("span");
@@ -775,7 +775,7 @@ function creatAllShip() {
                 cn: ship.cn,
                 en: ship.en,
                 jp: ship.jp,
-                class: "d-flex justify-content-start text-truncate item_name",
+                class: "justify-content-center item_name",
             });
             name.textContent = ship[lan];
 
@@ -795,7 +795,7 @@ function creatAllShip() {
                 console.timeEnd("creatAllShip");
                 creatAllEquip();
             }
-        },0);
+        }, 0);
     });
 }
 
@@ -830,9 +830,10 @@ function creatAllEquip() {
 
             icon_box.append(bg, frame, eqicon);
             //-----------------------------------------------
+            // text-truncate justify-content-start
             let box = document.createElement("div");
             $(box).attr({
-                class: "container-fluid p-0",
+                class: "container-fluid p-0 box",
             });
 
             let name = document.createElement("span");
@@ -841,7 +842,7 @@ function creatAllEquip() {
                 cn: equip.cn,
                 en: equip.en,
                 jp: equip.jp,
-                class: "d-flex justify-content-start text-truncate item_name",
+                class: "justify-content-center item_name",
             });
             name.textContent = equip[lan];
 
@@ -860,7 +861,7 @@ function creatAllEquip() {
             if (index === arr.length - 1) {
                 console.timeEnd("creatAllEquip");
             }
-        },0);
+        }, 0);
     });
 }
 
@@ -975,6 +976,7 @@ function buildShipSelectOption() {
         { id: 7, cn: "航母", en: "Carrier", jp: "空母", code: "CV", pos: "back" },
         { id: 13, cn: "重砲", en: "Monitor", jp: "砲艦", code: "BM", pos: "back" },
         { id: 12, cn: "維修", en: "RepairShip", jp: "工作", code: "AR", pos: "back" },
+        { id: 0, cn: "其他", en: "Other", jp: "その他", code: "" },
     ];
     type.forEach((item) => {
         let newid = `ship_type_${item.id}`;
