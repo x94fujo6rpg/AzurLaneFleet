@@ -152,6 +152,14 @@ let equipSelect = new Vue({
     }
 });
 //---------------------------------------------
+uiAdjust();
+
+function uiAdjust(){
+    // insert space between fleet
+    let fleet = document.getElementsByName("fleet_0");
+    let br = document.createElement("br");
+    fleet[0].insertAdjacentElement("afterend", br);
+}
 
 function dumpData() {
     console.log("dumpdata");
