@@ -504,15 +504,18 @@ function limitEquip(display_list) {
             }
         }
     });
+    let current_equip_limit = ship.item[c_item].property.limit;
     display_list.forEach(id => {
         let limit = parseInt(equip_data[id].equip_limit, 10);
-        if (limit_list.indexOf(limit) != -1) {
+        if (limit_list.indexOf(limit) != -1 && limit != current_equip_limit) {
             let item = document.getElementById(id);
             item.style.display = "none";
+            /*
             let cn = equip_data[id].cn_name;
             let en = equip_data[id].en_name;
             let jp = equip_data[id].jp_name;
-            console.log(`limitEquip, hide ${id}: [${cn}], [${en}], [${jp}]`);
+            console.log(`limitEquip, hide [${id}]: [${cn}], [${en}], [${jp}]`);
+            */
         }
     });
 }
