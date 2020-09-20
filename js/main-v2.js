@@ -461,7 +461,7 @@ function equipDisplay() {
     let equips = document.getElementById("equiplist");
     equips = equips.querySelectorAll("button");
     let shiptype = fleet_data[c_fleet][side][c_pos].item[0].property.type;
-
+    let display_list = [];
     equips.forEach((item) => {
         if (item.id != "666666") {
             let id = parseInt(item.id, 10);
@@ -473,16 +473,17 @@ function equipDisplay() {
                     item.style.display = "none";
                 } else {
                     item.style.display = "";
+                    display_list.push(id);
                 }
             } else {
                 item.style.display = "none";
             }
         }
     });
-    limitEquip();
+    limitEquip(display_list);
 }
 
-function limitEquip() {
+function limitEquip(display_list) {
     let equipOnShip = [];
     let side = (c_side === "0") ? "front_ship" : "back_ship";
     let ship = fleet_data[c_fleet][side][c_pos];
@@ -494,17 +495,24 @@ function limitEquip() {
             }
         }
     });
+    let limit_list = [];
     equipOnShip.forEach(id => {
         let limit = parseInt(equip_data[id].equip_limit, 10);
         if (!isNaN(limit)) {
-            if (limit > 0) {
-                let equip = document.getElementById(id);
-                equip.style.display = "none";
-                let cn = equip_data[id].cn_name;
-                let en = equip_data[id].en_name;
-                let jp = equip_data[id].jp_name;
-                console.log(`reache limit, hide ${id}:${cn},${en},${jp}`);
+            if (limit > 0 && limit_list.indexOf(limit) === -1) {
+                limit_list.push(limit);
             }
+        }
+    });
+    display_list.forEach(id => {
+        let limit = parseInt(equip_data[id].equip_limit, 10);
+        if (limit_list.indexOf(limit) != -1) {
+            let item = document.getElementById(id);
+            item.style.display = "none";
+            let cn = equip_data[id].cn_name;
+            let en = equip_data[id].en_name;
+            let jp = equip_data[id].jp_name;
+            console.log(`limitEquip, hide ${id}: [${cn}], [${en}], [${jp}]`);
         }
     });
 }
