@@ -316,10 +316,10 @@ function checksetting(key, value) {
             shipsetting[key].splice(index, 1);
         }
     } else {
-        if (index === -1){
+        if (index === -1) {
             shipsetting.back.push(0);
             shipsetting.front.push(0);
-        }else{
+        } else {
             index = shipsetting.front.indexOf(0);
             shipsetting.front.splice(index, 1);
             index = shipsetting.back.indexOf(0);
@@ -561,7 +561,7 @@ function setShipAndEquip(item) {
     });
     let app_item = shipInApp.item;
     let shipCopyList = ["cn", "en", "jp", "icon", "frame", "bg", "id", "type", "rarity", "star", "base"];
-    let addquantitylist = [1, 2, 3, 5, 6, 7, 8, 9, 11, 12, 13];
+    let addquantitylist = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13,]; // add bb main gun
     let parsetype = {
         1: { cn: "驅逐砲", en: "DD Gun", jp: "駆逐砲" },
         2: { cn: "輕巡砲", en: "CL Gun", jp: "軽巡砲" },
@@ -761,7 +761,6 @@ function initial() {
     newlist.unshift(empty);
     sorted_equip_data = Object.assign([], newlist);
     console.timeEnd("sortequip");
-    console.timeEnd("initial");
     creatAllShip();
 }
 
@@ -862,7 +861,6 @@ function creatAllEquip() {
 
             icon_box.append(bg, frame, eqicon);
             //-----------------------------------------------
-            // text-truncate justify-content-start
             let box = document.createElement("div");
             $(box).attr({
                 class: "container-fluid p-0 box",
@@ -892,6 +890,7 @@ function creatAllEquip() {
             //-----------------------------------------------
             if (index === arr.length - 1) {
                 console.timeEnd("creatAllEquip");
+                console.timeEnd("initial");
             }
         }, 0);
     });

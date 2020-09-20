@@ -297,7 +297,7 @@ var ship_data = {
         "nationality": 104,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -1042,7 +1042,7 @@ var ship_data = {
         "nationality": 9,
         "type": 5,
         "base_list": [
-            2,
+            1,
             3,
             1
         ],
@@ -1116,7 +1116,7 @@ var ship_data = {
         "nationality": 9,
         "type": 5,
         "base_list": [
-            1,
+            2,
             3,
             1
         ],
@@ -1153,7 +1153,7 @@ var ship_data = {
         "nationality": 9,
         "type": 4,
         "base_list": [
-            1,
+            2,
             3,
             1
         ],
@@ -1563,7 +1563,7 @@ var ship_data = {
         "nationality": 8,
         "type": 5,
         "base_list": [
-            1,
+            2,
             3,
             1
         ],
@@ -1940,7 +1940,7 @@ var ship_data = {
         "nationality": 7,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -1977,7 +1977,7 @@ var ship_data = {
         "nationality": 7,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -2242,7 +2242,7 @@ var ship_data = {
         "nationality": 6,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -2278,7 +2278,7 @@ var ship_data = {
         "nationality": 6,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -2314,7 +2314,7 @@ var ship_data = {
         "nationality": 6,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -3200,7 +3200,7 @@ var ship_data = {
         "nationality": 4,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -3237,7 +3237,7 @@ var ship_data = {
         "nationality": 4,
         "type": 5,
         "base_list": [
-            1,
+            3,
             2,
             1
         ],
@@ -3274,7 +3274,7 @@ var ship_data = {
         "nationality": 4,
         "type": 5,
         "base_list": [
-            1,
+            3,
             2,
             1
         ],
@@ -3311,7 +3311,7 @@ var ship_data = {
         "nationality": 4,
         "type": 4,
         "base_list": [
-            1,
+            3,
             1,
             1
         ],
@@ -3347,7 +3347,7 @@ var ship_data = {
         "nationality": 4,
         "type": 4,
         "base_list": [
-            1,
+            3,
             1,
             1
         ],
@@ -3384,7 +3384,7 @@ var ship_data = {
         "nationality": 4,
         "type": 4,
         "base_list": [
-            1,
+            3,
             1,
             1
         ],
@@ -5620,7 +5620,7 @@ var ship_data = {
         "nationality": 3,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -5657,7 +5657,7 @@ var ship_data = {
         "nationality": 3,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -5694,7 +5694,7 @@ var ship_data = {
         "nationality": 3,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -5731,7 +5731,7 @@ var ship_data = {
         "nationality": 3,
         "type": 5,
         "base_list": [
-            1,
+            3,
             2,
             2
         ],
@@ -5768,7 +5768,7 @@ var ship_data = {
         "nationality": 3,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -5805,7 +5805,7 @@ var ship_data = {
         "nationality": 3,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -5842,7 +5842,7 @@ var ship_data = {
         "nationality": 3,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -5879,7 +5879,7 @@ var ship_data = {
         "nationality": 3,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -5916,7 +5916,7 @@ var ship_data = {
         "nationality": 3,
         "type": 10,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -5952,7 +5952,7 @@ var ship_data = {
         "nationality": 3,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -5989,7 +5989,7 @@ var ship_data = {
         "nationality": 3,
         "type": 10,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -6025,7 +6025,7 @@ var ship_data = {
         "nationality": 3,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -6062,7 +6062,7 @@ var ship_data = {
         "nationality": 3,
         "type": 10,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -6098,7 +6098,7 @@ var ship_data = {
         "nationality": 3,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -6135,7 +6135,7 @@ var ship_data = {
         "nationality": 3,
         "type": 10,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -6171,7 +6171,7 @@ var ship_data = {
         "nationality": 3,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -6208,7 +6208,7 @@ var ship_data = {
         "nationality": 3,
         "type": 4,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -6245,7 +6245,7 @@ var ship_data = {
         "nationality": 3,
         "type": 4,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -6282,7 +6282,7 @@ var ship_data = {
         "nationality": 3,
         "type": 4,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -6319,7 +6319,7 @@ var ship_data = {
         "nationality": 3,
         "type": 4,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -6356,7 +6356,7 @@ var ship_data = {
         "nationality": 3,
         "type": 4,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -6393,7 +6393,7 @@ var ship_data = {
         "nationality": 3,
         "type": 4,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -10124,7 +10124,7 @@ var ship_data = {
         "nationality": 2,
         "type": 13,
         "base_list": [
-            1,
+            2,
             3,
             1
         ],
@@ -10160,7 +10160,7 @@ var ship_data = {
         "nationality": 2,
         "type": 13,
         "base_list": [
-            1,
+            2,
             3,
             1
         ],
@@ -10196,7 +10196,7 @@ var ship_data = {
         "nationality": 2,
         "type": 13,
         "base_list": [
-            1,
+            2,
             3,
             1
         ],
@@ -10714,7 +10714,7 @@ var ship_data = {
         "nationality": 2,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -10751,7 +10751,7 @@ var ship_data = {
         "nationality": 2,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -10788,7 +10788,7 @@ var ship_data = {
         "nationality": 2,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -10825,7 +10825,7 @@ var ship_data = {
         "nationality": 2,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -10862,7 +10862,7 @@ var ship_data = {
         "nationality": 2,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -10899,7 +10899,7 @@ var ship_data = {
         "nationality": 2,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -10936,7 +10936,7 @@ var ship_data = {
         "nationality": 2,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -10973,7 +10973,7 @@ var ship_data = {
         "nationality": 2,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -11010,7 +11010,7 @@ var ship_data = {
         "nationality": 2,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -11048,7 +11048,7 @@ var ship_data = {
         "nationality": 2,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -11085,7 +11085,7 @@ var ship_data = {
         "nationality": 2,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -11122,7 +11122,7 @@ var ship_data = {
         "nationality": 2,
         "type": 4,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -11158,7 +11158,7 @@ var ship_data = {
         "nationality": 2,
         "type": 4,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -11194,7 +11194,7 @@ var ship_data = {
         "nationality": 2,
         "type": 4,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -11230,7 +11230,7 @@ var ship_data = {
         "nationality": 2,
         "type": 4,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -15241,7 +15241,7 @@ var ship_data = {
         "nationality": 1,
         "type": 5,
         "base_list": [
-            1,
+            2,
             3,
             1
         ],
@@ -15277,7 +15277,7 @@ var ship_data = {
         "nationality": 1,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -15313,7 +15313,7 @@ var ship_data = {
         "nationality": 1,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -15349,7 +15349,7 @@ var ship_data = {
         "nationality": 1,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -15385,7 +15385,7 @@ var ship_data = {
         "nationality": 1,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -15421,7 +15421,7 @@ var ship_data = {
         "nationality": 1,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -15457,7 +15457,7 @@ var ship_data = {
         "nationality": 1,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -15493,7 +15493,7 @@ var ship_data = {
         "nationality": 1,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -15529,7 +15529,7 @@ var ship_data = {
         "nationality": 1,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -15565,7 +15565,7 @@ var ship_data = {
         "nationality": 1,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -15601,7 +15601,7 @@ var ship_data = {
         "nationality": 1,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -15637,7 +15637,7 @@ var ship_data = {
         "nationality": 1,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -15673,7 +15673,7 @@ var ship_data = {
         "nationality": 1,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -15709,7 +15709,7 @@ var ship_data = {
         "nationality": 1,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -15745,7 +15745,7 @@ var ship_data = {
         "nationality": 1,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -15781,7 +15781,7 @@ var ship_data = {
         "nationality": 1,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
@@ -15817,7 +15817,7 @@ var ship_data = {
         "nationality": 1,
         "type": 5,
         "base_list": [
-            1,
+            3,
             3,
             1
         ],
