@@ -1,16 +1,30 @@
-﻿# AzurLaneFleet #  
+﻿# [AzurLaneFleet](https://x94fujo6rpg.github.io/AzurLaneFleet/) #  
 **The goal of this project**  
 **Is just for easily share fleet configuration in one shot**  
+[Old version (No longer maintained)](https://x94fujo6rpg.github.io/AzurLaneFleet/old)  
 
-**Update:**
+**Update:**  
+***2020-09-20:***  
+`fix BBV not showing`  
+`for the BBV, add [other] type to back too`  
+`now showing BB main gun base`  
+  
+***2020-09-18:***  
+`new ship/equip added`  
+`(I have to wait until EN server updated to get the translation of new equip)`  
+`add [other] type to front filter for new ship`  
+`display full name when cursor on the ship/equip`  
+  
 ***2020-09-02:***  
 `new version`  
 `check duplicate ship/equip`  
 `add import/export setting`  
-
+  
 **TBD:**  
 `add star`  
 `add submarine fleet`  
 `auto save setting in cookie`  
-    
-[Old version](https://x94fujo6rpg.github.io/AzurLaneFleet/old)  
+  
+**data source:**  
+[AzurLaneSourceJson](https://github.com/nobbyfix/AzurLaneSourceJson)  
+[AzurLaneData](https://github.com/Dimbreath/AzurLaneData)  
