@@ -119,7 +119,7 @@ let shipsetting = {
     rarity: [],
 };
 let front = [1, 2, 3, 8, 17, 18, 19]; // put ss back & new type 19
-let back = [4, 5, 6, 7, 12, 13];
+let back = [4, 5, 6, 7, 10, 12, 13];
 let c_ships = [];
 let version = 0.02;
 
@@ -154,7 +154,7 @@ let equipSelect = new Vue({
 //---------------------------------------------
 uiAdjust();
 
-function uiAdjust(){
+function uiAdjust() {
     // insert space between fleet
     let fleet = document.getElementsByName("fleet_0");
     let br = document.createElement("br");
@@ -292,7 +292,7 @@ function updateSetting(item) {
     $(item).button("toggle");
     let strlist = item.name.split("_");
     let type = strlist[1];
-    let value = parseInt(strlist[2], 10);
+    let value = parseInt(strlist[2], 10); //type int
     if (type === "nation") {
         checksetting("nation", value);
     } else if (type === "type") {
@@ -309,10 +309,22 @@ function updateSetting(item) {
 
 function checksetting(key, value) {
     let index = shipsetting[key].indexOf(value);
-    if (index === -1) {
-        shipsetting[key].push(value);
+    if (value != 0) {
+        if (index === -1) {
+            shipsetting[key].push(value);
+        } else {
+            shipsetting[key].splice(index, 1);
+        }
     } else {
-        shipsetting[key].splice(index, 1);
+        if (index === -1){
+            shipsetting.back.push(0);
+            shipsetting.front.push(0);
+        }else{
+            index = shipsetting.front.indexOf(0);
+            shipsetting.front.splice(index, 1);
+            index = shipsetting.back.indexOf(0);
+            shipsetting.back.splice(index, 1);
+        }
     }
 }
 
@@ -359,7 +371,8 @@ function isShipSelect(nation, type, rarity, retro) {
     let indicator_type = false;
     let indicator_rarity = false;
     let other_nation = [98, 101, 103, 104, 105];
-    let other_type = [19];
+    let other_front = [19];
+    let other_back = [10];
     if (c_side === "0" && front.indexOf(type) === -1) {
         return false;
     }
@@ -369,12 +382,14 @@ function isShipSelect(nation, type, rarity, retro) {
     if (c_side === "0") {
         if (shipsetting.front.indexOf(type) != -1 || shipsetting.front.length === 0) {
             indicator_type = true;
-        } else if (shipsetting.front.indexOf(0) != -1 && other_type.indexOf(type) != -1) {
+        } else if (shipsetting.front.indexOf(0) != -1 && other_front.indexOf(type) != -1) {
             indicator_type = true;
         }
     }
     if (c_side === "1") {
         if (shipsetting.back.indexOf(type) != -1 || shipsetting.back.length === 0) {
+            indicator_type = true;
+        } else if (shipsetting.back.indexOf(0) != -1 && other_back.indexOf(type) != -1) {
             indicator_type = true;
         }
     }
@@ -422,7 +437,11 @@ function setCurrent(item) {
             // show back type
             ship_type.forEach((item) => {
                 if (back.indexOf(item.id) === -1) {
-                    item.display = false;
+                    if (item.id === 0) {
+                        item.display = true;
+                    } else {
+                        item.display = false;
+                    }
                 } else {
                     item.display = true;
                 }
