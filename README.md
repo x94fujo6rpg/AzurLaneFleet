@@ -8,6 +8,7 @@
 `fix BBV not showing`  
 `for the BBV, add [other] type to back too`  
 `now showing BB main gun base`  
+`correctly limit equip`  
   
 ***2020-09-18:***  
 `new ship/equip added`  
