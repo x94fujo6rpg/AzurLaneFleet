@@ -10,9 +10,9 @@
     <title>Azur Lane Fleet</title>
     <meta name="description" content="Easily share your AzurLane fleet configuration">
     <meta name="og:title" content="Azur Lane Fleet">
-    <meta name="og:url" content="https://x94fujo6rpg.github.io/AzurLaneFleet/"/>
-    <meta name="og:image" content="https://i.imgur.com/U6y0E4r.jpg"/>
-    <meta name="og:description" content="Easily share your AzurLane fleet configuration"/>
+    <meta name="og:url" content="https://x94fujo6rpg.github.io/AzurLaneFleet/" />
+    <meta name="og:image" content="https://i.imgur.com/U6y0E4r.jpg" />
+    <meta name="og:description" content="Easily share your AzurLane fleet configuration" />
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" as="style" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="prefetch" href="js/jquery-3.3.1.slim.min.js" as="script">
@@ -26,6 +26,7 @@
     <link rel="prefetch" href="js/main-v2.js" as="script">
     <style>
         body {
+            color: white;
             background-color: rgb(58, 58, 58);
         }
         
@@ -44,7 +45,7 @@
             height: 6.8rem;
             position: initial;
         }
-
+        
         .modal-dialog {
             max-width: 71%;
         }
@@ -83,20 +84,20 @@
             margin: 0px;
             padding: 0px;
         }
-
+        
         .box {
             overflow: hidden;
             color: white;
             position: relative;
         }
-
+        
         .box:hover {
             overflow: visible;
             z-index: 105;
             background-color: black;
         }
-
-        .box:hover > span {
+        
+        .box:hover>span {
             color: Tomato;
             background-color: black;
             border-width: 0.2rem 0.2rem 0.2rem 0.2rem;
@@ -164,7 +165,6 @@
     <div class="container text-center text-light font-weight-bold text-monospace">
         <h1>Azur Lane Fleet</h1>
     </div>
-    <!------------------------------------------------------------------------------------------------>
     <div align="center">
         <h4 class="text-light text-monospace">Select language</h4>
         <div class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -180,13 +180,13 @@
         </div>
     </div>
     <br>
-    <!------------------------------------------------------------------------------------------------>
+
     <div id="AzurLaneFleetApp" class="container app">
         <fleet-container v-for="fleet in fleets" v-bind:key="fleet.id" v-bind:fleet="fleet" v-bind:name="fleet.id" v-bind:lang="lang">
         </fleet-container>
     </div>
     <br>
-    <!------------------------------------------------------------------------------------------------>
+
     <div class="container" align="center">
         <h4 class="text-light text-monospace">Fleet data</h4>
         <textarea class="databox text-light" id="fleetdata"></textarea>
@@ -203,7 +203,6 @@
     </div>
     <br>
     <br>
-    <!------------------------------------------------------------------------------------------------>
     <div class="modal fade" id="shipselect">
         <div class="modal-dialog">
             <div class="modal-content text-light bg-dark">
@@ -244,7 +243,6 @@
             </div>
         </div>
     </div>
-    <!------------------------------------------------------------------------------------------------>
     <div class="modal fade" id="equipselect">
         <div class="modal-dialog">
             <div class="modal-content text-light bg-dark">
@@ -262,13 +260,14 @@
             </div>
         </div>
     </div>
-    <!------------------------------------------------------------------------------------------------>
+    <footer id="footer" align="center">
+        The copyright of the data used on this site is owned by the following companies<br> © Manjuu Co.,Ltd. & YongShi Co.,Ltd.<br> © Yostar, Inc.
+    </footer>
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js" integrity="sha512-nOQuvD9nKirvxDdvQ9OMqe2dgapbPB7vYAMrzJihw5m+aNcf0dX53m6YxM4LgA9u8e9eg9QX+/+mPu8kCNpV2A==" crossorigin="anonymous"></script>
-    <!------------------------------------------------------------------------------------------------>
     <script src="js/lz-string.min.js"></script>
     <script src='js/ship_data.js'></script>
     <script src='js/equip_data.js'></script>
