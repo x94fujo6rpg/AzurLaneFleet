@@ -121,7 +121,7 @@ let shipsetting = {
 let front = [1, 2, 3, 8, 17, 18, 19]; // put ss back & new type 19
 let back = [4, 5, 6, 7, 10, 12, 13];
 let c_ships = [];
-let version = 0.02;
+let version = 0.03;
 
 initial();
 //---------------------------------------------
@@ -161,6 +161,89 @@ function uiAdjust() {
     fleet[0].insertAdjacentElement("afterend", br);
 }
 
+function emptyfleet() {
+    let data = '[[[["","","","","",""],["","","","","",""],["","","","","",""]],[["","","","","",""],["","","","","",""],["","","","","",""]]],[[["","","","","",""],["","","","","",""],["","","","","",""]],[["","","","","",""],["","","","","",""],["","","","","",""]]]]';
+    parseIdData(data);
+}
+
+// dump id only
+function dumpDataID() {
+    let data = [];
+    fleet_data.forEach(fleet => {
+        let fleetdata = [];
+        for (let side in fleet) {
+            let sidedata = [];
+            if (side != "id") {
+                fleet[side].forEach(ship => {
+                    let shipdata = [];
+                    ship.item.forEach(item => {
+                        shipdata.push(item.property.id);
+                    });
+                    sidedata.push(shipdata);
+                });
+                fleetdata.push(sidedata);
+            }
+        }
+        data.push(fleetdata);
+    });
+    data = JSON.stringify(data);
+    let hash = CryptoJS.SHA3(data, { outputLength: 256 }).toString();
+    data = `${data}!${version}!${hash}`;
+    let textbox = document.getElementById("fleetdata");
+    textbox.value = data;
+}
+
+function loadDataByID() {
+    let data = document.getElementById("fleetdata").value;
+    let textbox = document.getElementById("fleetdata");
+    textbox.value = "";
+    data = data.split("!");
+    [main_data, ver, hash] = data;
+
+    let ck = CryptoJS.SHA3(main_data, { outputLength: 256 }).toString();
+    if (ck != hash) {
+        message = "Error: Corrupted data";
+        textbox.value = message;
+        console.log(message);
+        return;
+    }
+    parseIdData(main_data);
+}
+
+function parseIdData(data) {
+    data = JSON.parse(data);
+    data.forEach((fleet, fleet_index) => {
+        fleet.forEach((side, side_index) => {
+            side.forEach((ship, ship_index) => {
+                let empty = false;
+                ship.forEach((item, item_index) => {
+                    if (item === "") {
+                        // set as empty ship/equip
+                        if (item_index === 0) {
+                            item = "000000";
+                        } else {
+                            item = 666666;
+                        }
+                    }
+                    if (!empty) {
+                        let item_name = `_${fleet_index}${side_index}${ship_index}${item_index}`;
+                        let ship_item = { name: item_name, id: item };
+                        setCurrent(ship_item);
+                        if (item_index === 0) {
+                            setShipAndEquip(ship_item);
+                        } else {
+                            setEquip(ship_item);
+                        }
+                        if (item === "000000") {
+                            empty = true;
+                        }
+                    }
+                });
+            });
+        });
+    });
+}
+
 function dumpData() {
     console.log("dumpdata");
     let data = [];
@@ -194,8 +277,8 @@ function dumpData() {
 }
 
 function loadData() {
-    let data = document.getElementById("fleetdata").value;
-    let textbox = document.getElementById("fleetdata");
+    let data = document.getElementById("olddata").value;
+    let textbox = document.getElementById("olddata");
     textbox.value = "";
     data = data.split(",");
     if (data.some(str => isNaN(str)) || data.some(str => str === "")) {
@@ -227,7 +310,7 @@ function loadData() {
     }
     if (dataversion != version) {
         textbox.value = "Warning: Data is old/unknow version, may not load correctly";
-        return;
+        parseLoadData(data);
     } else {
         textbox.value = "All check pass, data loaded";
         parseLoadData(data);
@@ -261,7 +344,7 @@ function parseLoadData(data) {
             });
         });
     });
-    let textbox = document.getElementById("fleetdata");
+    let textbox = document.getElementById("olddata");
     textbox.value = "Load complete";
 }
 
@@ -510,12 +593,6 @@ function limitEquip(display_list) {
         if (limit_list.indexOf(limit) != -1 && limit != current_equip_limit) {
             let item = document.getElementById(id);
             item.style.display = "none";
-            /*
-            let cn = equip_data[id].cn_name;
-            let en = equip_data[id].en_name;
-            let jp = equip_data[id].jp_name;
-            console.log(`limitEquip, hide [${id}]: [${cn}], [${en}], [${jp}]`);
-            */
         }
     });
 }

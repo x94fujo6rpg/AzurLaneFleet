@@ -134,7 +134,7 @@
         
         .databox {
             width: 30rem;
-            height: 10rem;
+            height: 5rem;
             background-color: rgb(58, 58, 58);
         }
         
@@ -186,15 +186,26 @@
         </fleet-container>
     </div>
     <br>
-
+    <div class="container" align="center">
+        <button type="button" class="btn" id="emptyfleet" onclick="emptyfleet()">Remove All</button>
+    </div>
+    <br>
     <div class="container" align="center">
         <h4 class="text-light text-monospace">Fleet data</h4>
         <textarea class="databox text-light" id="fleetdata"></textarea>
         <div class="container">
-            <button type="button" class="btn" id="dumpdata" onclick="dumpData()">Dump</button>
-            <button type="button" class="btn" id="dumpdata" onclick="copyData()">Copy</button>
-            <button type="button" class="btn" id="dumpdata" onclick="emptyData()">Clear</button>
-            <button type="button" class="btn btn-danger" id="readdata" onclick="loadData()">Load</button>
+            <button type="button" class="btn" id="dumpdata" onclick="dumpDataID()">Dump</button>
+            <button type="button" class="btn" id="copyData" onclick="copyData()">Copy</button>
+            <button type="button" class="btn" id="emptyData" onclick="emptyData()">Clear</button>
+            <button type="button" class="btn btn-danger" id="loadDataByID" onclick="loadDataByID()">Load</button>
+        </div>
+    </div>
+    <br>
+    <div class="container" align="center">
+        <h4 class="text-light text-monospace">Load Old Data</h4>
+        <textarea class="databox text-light" id="olddata"></textarea>
+        <div class="container">
+            <button type="button" class="btn btn-danger" id="loadolddata" onclick="loadData()">Load</button>
         </div>
     </div>
     <br>
