@@ -5,6 +5,10 @@ Is just for easily share fleet configuration in one shot
 [Old version (No longer maintained)](https://x94fujo6rpg.github.io/AzurLaneFleet/old)  
 
 ## Update  
+**2020-09-24**  
+- improve data export/import  
+- add a button to remove all ship at once  
+  
 **2020-09-20**  
 - fix BBV not showing  
 - for the BBV, add [other] type to back too  
