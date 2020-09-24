@@ -153,6 +153,7 @@ let equipSelect = new Vue({
 });
 //---------------------------------------------
 uiAdjust();
+loadCookie();
 
 function uiAdjust() {
     // insert space between fleet
@@ -248,7 +249,6 @@ function loadCookie() {
 
     let data = document.getElementById("fleetdata").value;
     if (clist.fleet) {
-        let item = document.getElementById("fleetdata");
         data = clist.fleet;
         loadDataByID();
     } else {
@@ -659,6 +659,7 @@ function setlang(item) {
     names.forEach((name) => {
         name.textContent = name.getAttribute(key);
     });
+    saveCookie("lan", key);
 }
 
 function setEquip(item) {
@@ -797,7 +798,6 @@ function emptyData() {
 
 function initial() {
     console.time("initial");
-    loadCookie();
     //creat sortred ship list
     console.time("sortship");
     let newlist = [];
