@@ -1,0 +1,288 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+    <meta name="google-site-verification" content="S5x2K1hv1hI8UD5KVUhN7CidFneOpC4Y2xTAa44CC9c" />
+
+    <title>Azur Lane Fleet</title>
+    <meta name="description" content="Easily share your AzurLane fleet configuration">
+    <meta name="og:title" content="Azur Lane Fleet">
+    <meta name="og:url" content="https://x94fujo6rpg.github.io/AzurLaneFleet/" />
+    <meta name="og:image" content="https://i.imgur.com/U6y0E4r.jpg" />
+    <meta name="og:description" content="Easily share your AzurLane fleet configuration" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" as="style" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="prefetch" href="js/jquery-3.3.1.slim.min.js" as="script">
+    <link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" as="script" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    <link rel="prefetch" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" as="script" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
+    <link rel="prefetch" href="https://cdn.jsdelivr.net/npm/vue" as="script" crossorigin="anonymous">
+    <link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js" as="script" integrity="sha512-nOQuvD9nKirvxDdvQ9OMqe2dgapbPB7vYAMrzJihw5m+aNcf0dX53m6YxM4LgA9u8e9eg9QX+/+mPu8kCNpV2A==" crossorigin="anonymous">
+    <link rel="prefetch" href="js/lz-string.min.js" as="script">
+    <link rel="prefetch" href="js/ship_data.js" as="script">
+    <link rel="prefetch" href="js/equip_data.js" as="script">
+    <link rel="prefetch" href="js/main-v2.js" as="script">
+    <style>
+        body {
+            color: white;
+            background-color: rgb(58, 58, 58);
+        }
+        
+        .fleet_container {
+            background-color: rgb(58, 58, 58);
+        }
+        
+        .ship_container {
+            background-color: blue;
+        }
+        
+        .item_container {
+            background-color: transparent;
+            border-style: none;
+            width: 5.8rem;
+            height: 6.8rem;
+            position: initial;
+        }
+        
+        .modal-dialog {
+            max-width: 71%;
+        }
+        
+        .modal-body {
+            max-width: 100%;
+        }
+        
+        .bg {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 100;
+            width: 100%;
+        }
+        
+        .icon {
+            position: relative;
+            height: 5.3rem;
+            padding: 2px;
+            z-index: 101;
+            object-fit: scale-down;
+        }
+        
+        .frame {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 102;
+            width: 100%;
+        }
+        
+        .icon_box {
+            position: relative;
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .box {
+            overflow: hidden;
+            color: white;
+            position: relative;
+        }
+        
+        .box:hover {
+            overflow: visible;
+            z-index: 105;
+            background-color: black;
+        }
+        
+        .box:hover>span {
+            color: Tomato;
+            background-color: black;
+            border-width: 0.2rem 0.2rem 0.2rem 0.2rem;
+            border-color: black;
+            border-style: solid;
+        }
+        
+        .item_name {
+            font-family: monospace;
+            white-space: nowrap;
+            font-size: 1.1rem;
+            color: white;
+            display: inline;
+            position: relative;
+            top: -0.05rem;
+            text-shadow: 0 0 0.2rem black;
+        }
+        
+        .app {
+            max-width: 70%;
+        }
+        
+        .itemq {
+            font-family: monospace;
+            position: absolute;
+            top: 0.1rem;
+            right: 0.5rem;
+            z-index: 103;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-shadow: 0 0 0.2rem black, 0 0 0.3rem black;
+        }
+        
+        .databox {
+            width: 30rem;
+            height: 5rem;
+            background-color: rgb(58, 58, 58);
+        }
+        
+        a:link,
+        a:visited {
+            background-color: rgba(60, 60, 60, 0.7);
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border: 2px;
+            font-weight: bold;
+            border-color: rgba(255, 255, 255, 0.5);
+            border-style: ridge;
+            border-radius: 2px;
+        }
+        
+        a:hover,
+        a:active {
+            color: black;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container text-center text-light font-weight-bold text-monospace">
+        <h1>Azur Lane Fleet</h1>
+    </div>
+    <div align="center">
+        <h4 class="text-light text-monospace">Select language</h4>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary active" id="cn" onclick="setlang(this)">
+                <input type="radio" name="lang" autocomplete="off" checked>CN
+            </label>
+            <label class="btn btn-secondary" id="jp" onclick="setlang(this)">
+                <input type="radio" name="lang" autocomplete="off">JP
+            </label>
+            <label class="btn btn-secondary" id="en" onclick="setlang(this)">
+                <input type="radio" name="lang" autocomplete="off">EN
+            </label>
+        </div>
+    </div>
+    <br>
+
+    <div id="AzurLaneFleetApp" class="container app">
+        <fleet-container v-for="fleet in fleets" v-bind:key="fleet.id" v-bind:fleet="fleet" v-bind:name="fleet.id" v-bind:lang="lang">
+        </fleet-container>
+    </div>
+    <br>
+    <div class="container" align="center">
+        <button type="button" class="btn" id="emptyfleet" onclick="emptyfleet()">Remove All</button>
+    </div>
+    <br>
+    <div class="container" align="center">
+        <h4 class="text-light text-monospace">Fleet data</h4>
+        <textarea class="databox text-light" id="fleetdata"></textarea>
+        <div class="container">
+            <button type="button" class="btn" id="dumpdata" onclick="dumpDataID()">Dump</button>
+            <button type="button" class="btn" id="copyData" onclick="copyData()">Copy</button>
+            <button type="button" class="btn" id="emptyData" onclick="emptyData()">Clear</button>
+            <button type="button" class="btn btn-danger" id="loadDataByID" onclick="loadDataByID()">Load</button>
+        </div>
+    </div>
+    <br>
+    <div class="container" align="center">
+        <h4 class="text-light text-monospace">Load Old Data</h4>
+        <textarea class="databox text-light" id="olddata"></textarea>
+        <div class="container">
+            <button type="button" class="btn btn-danger" id="loadolddata" onclick="loadData()">Load</button>
+        </div>
+    </div>
+    <br>
+    <div class="container" align="center">
+        <a href="https://github.com/x94fujo6rpg/AzurLaneFleet">Github</a>
+    </div>
+    <br>
+    <br>
+    <div class="modal fade" id="shipselect">
+        <div class="modal-dialog">
+            <div class="modal-content text-light bg-dark">
+                <div class="modal-header">
+                    <h4 class="modal-title">Ship Select</h4>
+                    <button type="button" class="close text-light" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="container">國家 / 陣営 / Affiliation</div>
+                        <div class="container" id='shipnation'>
+                            <ship-nation-button v-for="item in nation" v-bind:key="item.id" v-bind:name="item.name" v-text="item[lang]" v-bind:value="item.id"></ship-nation-button>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="container">艦種 / 艦種 / Type</div>
+                        <div class="container" id="shiptype">
+                            <ship-type-button v-for="item in type" v-bind:key="item.id" v-bind:name="item.name" v-show="item.display" v-text="item[lang]" v-bind:value="item.id"></ship-type-button>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="container">稀有度 / レア度 / Rarity</div>
+                        <div class="container" id='shiprarity'>
+                            <ship-rarity-button v-for="item in rarity" v-bind:key="item.id" v-bind:name="item.name" v-text="item[lang]" v-bind:value="item.id"></ship-rarity-button>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="container">只顯示改造後的船 / 改造完了のみ / Retrofitted Ship Only</div>
+                        <div class="container">
+                            <button id='shipretro' name="shipretro" type="button" class="btn btn-outline-light btn-sm active" aria-pressed="true" value="1" onclick="setRetro(this)">Yes</button>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="container">　　　</div>
+                    </div>
+                    <div class="container-fluid row m-0 p-0" id="shiplist"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="equipselect">
+        <div class="modal-dialog">
+            <div class="modal-content text-light bg-dark">
+                <div class="modal-header">
+                    <h4 class="modal-title">Equip Select</h4>
+                    <button type="button" class="close text-light" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="container">Equips</div>
+                        <div class="container-fluid row m-0 p-0" id="equiplist" style="width: 101%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer" align="center">
+        The copyright of the data used on this site is owned by the following companies<br> © Manjuu Co.,Ltd. & YongShi Co.,Ltd.<br> © Yostar, Inc.
+    </footer>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js" integrity="sha512-nOQuvD9nKirvxDdvQ9OMqe2dgapbPB7vYAMrzJihw5m+aNcf0dX53m6YxM4LgA9u8e9eg9QX+/+mPu8kCNpV2A==" crossorigin="anonymous"></script>
+    <script src="js/lz-string.min.js"></script>
+    <script src='js/ship_data.js'></script>
+    <script src='js/equip_data.js'></script>
+    <script src="js/main-v2-dev.js"></script>
+</body>
+
+</html>
