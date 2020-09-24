@@ -8,6 +8,7 @@ Is just for easily share fleet configuration in one shot
 **2020-09-24**  
 - improve data export/import  
 - add a button to remove all ship at once  
+- auto save&load setting via cookie  
   
 **2020-09-20**  
 - fix BBV not showing  
