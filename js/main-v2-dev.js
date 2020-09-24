@@ -153,7 +153,6 @@ let equipSelect = new Vue({
 });
 //---------------------------------------------
 uiAdjust();
-loadCookie();
 
 function uiAdjust() {
     // insert space between fleet
@@ -207,6 +206,7 @@ function loadDataByID() {
         message = "Error: Corrupted data";
         textbox.value = message;
         console.log(message);
+        console.log(main_data);
         return;
     }
     parseIdData(main_data);
@@ -239,13 +239,13 @@ function loadCookie() {
     } else {
         saveCookie("lan", lan);
     }
-    
+
     let data = document.getElementById("fleetdata").value;
     if (clist.fleet) {
         data = clist.fleet;
         loadDataByID();
     } else {
-        saveCookie("fleet", data);
+        saveCookie("fleet", dumpDataID());
     }
 }
 
@@ -1020,6 +1020,7 @@ function creatAllEquip() {
             if (index === arr.length - 1) {
                 console.timeEnd("creatAllEquip");
                 console.timeEnd("initial");
+                loadCookie();
             }
         });
     });
