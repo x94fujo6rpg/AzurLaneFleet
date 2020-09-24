@@ -240,9 +240,9 @@ function loadCookie() {
         saveCookie("lan", lan);
     }
 
-    let data = document.getElementById("fleetdata").value;
     if (clist.fleet) {
-        data = clist.fleet;
+        let data = document.getElementById("fleetdata");
+        data.value = clist.fleet;
         loadDataByID();
     } else {
         saveCookie("fleet", dumpDataID());
