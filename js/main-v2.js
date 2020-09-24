@@ -110,7 +110,7 @@ let rarity_list = [];
 let retrofit = true;
 let fleet_data = buildFleet();
 let sorted_ship_data = [];
-let lan = "";
+let lan = "cn";
 let sorted_equip_data = [];
 let shipsetting = {
     nation: [],
@@ -191,6 +191,7 @@ function dumpDataID() {
     data = `${data}!${version}!${hash}`;
     let textbox = document.getElementById("fleetdata");
     textbox.value = data;
+    return data;
 }
 
 function loadDataByID() {
@@ -205,9 +206,47 @@ function loadDataByID() {
         message = "Error: Corrupted data";
         textbox.value = message;
         console.log(message);
+        console.log(main_data);
         return;
     }
     parseIdData(main_data);
+}
+
+function saveCookie(ckey, cvalue, expday = 365) {
+    let time = new Date();
+    let exp = expday * 1000 * 60 * 60 * 24;
+    time.setTime(time.getTime() + exp);
+    exp = time.toUTCString();
+    document.cookie = `${ckey}=${cvalue};`;
+}
+
+function getCookie() {
+    let cookie = document.cookie;
+    let new_list = {};
+    cookie = cookie.split("; ");
+    cookie.forEach(data => {
+        let [key, value] = data.split("=");
+        new_list[key] = value;
+    });
+    return new_list;
+}
+
+function loadCookie() {
+    let clist = getCookie();
+    if (clist.lan) {
+        let button = document.getElementById(clist.lan);
+        button.click();
+    } else {
+        saveCookie("lan", lan);
+    }
+
+    if (clist.fleet) {
+        let data = document.getElementById("fleetdata");
+        data.value = clist.fleet;
+        loadDataByID();
+    } else {
+        saveCookie("fleet", dumpDataID());
+    }
 }
 
 function parseIdData(data) {
@@ -613,6 +652,7 @@ function setlang(item) {
     names.forEach((name) => {
         name.textContent = name.getAttribute(key);
     });
+    saveCookie("lan", key);
 }
 
 function setEquip(item) {
@@ -637,6 +677,7 @@ function setEquip(item) {
         });
         copylist.forEach(key => itemInApp[key] = itemInList[key]);
     }
+    saveCookie("fleet", dumpDataID());
 }
 
 function setShipAndEquip(item) {
@@ -733,6 +774,7 @@ function setShipAndEquip(item) {
             }
         }
     }
+    saveCookie("fleet", dumpDataID());
 }
 
 function copyData() {
@@ -749,7 +791,6 @@ function emptyData() {
 
 function initial() {
     console.time("initial");
-    lan = "cn";
     //creat sortred ship list
     console.time("sortship");
     let newlist = [];
@@ -914,7 +955,7 @@ function creatAllShip() {
                 console.timeEnd("creatAllShip");
                 creatAllEquip();
             }
-        }, 0);
+        });
     });
 }
 
@@ -979,8 +1020,9 @@ function creatAllEquip() {
             if (index === arr.length - 1) {
                 console.timeEnd("creatAllEquip");
                 console.timeEnd("initial");
+                loadCookie();
             }
-        }, 0);
+        });
     });
 }
 
