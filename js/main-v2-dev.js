@@ -220,33 +220,26 @@ function saveCookie(ckey, cvalue, expday = 365) {
     document.cookie = `${ckey}=${cvalue};`;
 }
 
-function getCookie(ckey) {
+function getCookie() {
     let cookie = document.cookie;
     let new_list = {};
     cookie = cookie.split("; ");
-    cookie.forEach(data=>{
-        let [key,value] = data.split("=");
+    cookie.forEach(data => {
+        let [key, value] = data.split("=");
         new_list[key] = value;
     });
-    return new_list[ckey];
+    return new_list;
 }
 
 function loadCookie() {
-    let cookie = document.cookie;
-    let clist = {};
-    cookie = cookie.split("; ");
-    cookie.forEach(data=>{
-        let [key,value] = data.split("=");
-        clist[key] = value;
-    });
-
+    let clist = getCookie();
     if (clist.lan) {
         let button = document.getElementById(clist.lan);
         button.click();
     } else {
         saveCookie("lan", lan);
     }
-
+    
     let data = document.getElementById("fleetdata").value;
     if (clist.fleet) {
         data = clist.fleet;
