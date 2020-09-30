@@ -9246,6 +9246,44 @@ var ship_data = {
             14
         ]
     },
+    "301259": {
+        "nationality": 3,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 301254,
+        "skin_id": 301259,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "301259",
+        "painting": "youming_g",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "有明改",
+        "en_name": "Ariake",
+        "cn_name": "有明改",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
     "301250": {
         "nationality": 3,
         "type": 1,
@@ -9258,7 +9296,7 @@ var ship_data = {
         "skin_id": 301250,
         "star": 5,
         "rarity": 3,
-        "retro": 0,
+        "retro": 1,
         "uni_id": "301250",
         "painting": "youming",
         "star_string": "★★★★★",
