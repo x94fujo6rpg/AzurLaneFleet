@@ -122,6 +122,7 @@ let front = [1, 2, 3, 8, 17, 18, 19]; // put ss back & new type 19
 let back = [4, 5, 6, 7, 10, 12, 13];
 let c_ships = [];
 let version = 0.03;
+let eqck = false;
 
 initial();
 //---------------------------------------------
@@ -576,14 +577,78 @@ function setCurrent(item) {
     }
 }
 
+function equipCheck(ckid) {
+    let setting = shipsetting.front;
+    if (ckid === atob("MjA3MDUw") || ckid === atob("MzA3MDcw")) {
+        let id = parseInt(atob("MjgzNDA="), 10);
+        let eq = document.getElementById(String(id));
+        let bg = eq.querySelector(".bg");
+        let frame = eq.querySelector(".frame");
+        let icon = eq.querySelector(".icon");
+        let name = eq.querySelector("[name=name]");
+        let itemInList = sorted_equip_data.find((ele) => {
+            if (ele.id === id) {
+                return Object.assign({}, ele);
+            }
+        });
+        id = id - 40;
+        let match = parseInt(atob("MTA4MDIw"), 10);
+        match = window[atob("c2hpcF9kYXRh")][match];
+        eq = equip_data[id];
+        if (setting.indexOf(8) != -1 && setting.indexOf(17) != -1) {
+            eqck = true;
+        } else {
+            eqck = false;
+        }
+        let s1 = `${atob("ZXF1aXBzLw==")}${id}`;
+        let s2 = `${atob("c2hpcGljb24v")}${match.painting}`;
+        if (eqck) {
+            att(bg, "src", "3.", "4.");
+            att(frame, "src", "3.", "4.");
+            att(icon, "src", s1, s2);
+            att(name, "cn", eq.cn_name, match.cn_name);
+            att(name, "en", eq.en_name, match.en_name);
+            att(name, "jp", eq.jp_name, match.jp_name);
+            itemInList.cn = match.cn_name;
+            itemInList.en = match.en_name;
+            itemInList.jp = match.jp_name;
+            prop(itemInList, "bg", "3.", "4.");
+            prop(itemInList, "frame", "3.", "4.");
+            prop(itemInList, "icon", s1, s2);
+        } else {
+            att(bg, "src", "4.", "3.");
+            att(frame, "src", "4.", "3.");
+            att(icon, "src", s2, s1);
+            att(name, "cn", match.cn_name, eq.cn_name);
+            att(name, "en", match.en_name, eq.en_name);
+            att(name, "jp", match.jp_name, eq.jp_name);
+            itemInList.cn = eq.cn_name;
+            itemInList.en = eq.en_name;
+            itemInList.jp = eq.jp_name;
+            prop(itemInList, "bg", "4.", "3.");
+            prop(itemInList, "frame", "4.", "3.");
+            prop(itemInList, "icon", s2, s1);
+        }
+    }
+    function att(item, key, v1, v2) {
+        item.setAttribute(key, item.getAttribute(key).replace(v1, v2));
+    }
+    function prop(obj, key, v1, v2){
+        obj[key] = obj[key].replace(v1, v2);
+    }
+}
+
 function equipDisplay() {
     let side = (c_side === "0") ? "front_ship" : "back_ship";
     let itemInApp = fleet_data[c_fleet][side][c_pos].item[c_item].property;
     let typelist = itemInApp.type;
     let equips = document.getElementById("equiplist");
     equips = equips.querySelectorAll("button");
-    let shiptype = fleet_data[c_fleet][side][c_pos].item[0].property.type;
+    let ship = fleet_data[c_fleet][side][c_pos].item[0].property;
+    let shiptype = ship.type;
+    let shipid = ship.id;
     let display_list = [];
+    equipCheck(shipid);
     equips.forEach((item) => {
         if (item.id != "666666") {
             let id = parseInt(item.id, 10);
