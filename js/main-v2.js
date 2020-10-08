@@ -606,13 +606,10 @@ function equipCheck(ckid) {
             att(bg, "src", "3.", "4.");
             att(frame, "src", "3.", "4.");
             att(icon, "src", s1, s2);
-            console.log(name);
-            console.log(match.cn_name);
             name.setAttribute("cn",match.cn_name);
             name.setAttribute("en",match.en_name);
             name.setAttribute("jp",match.jp_name);
             name.textContent = match[`${lan}_name`];
-            console.log(name);
             itemInList.cn = match.cn_name;
             itemInList.en = match.en_name;
             itemInList.jp = match.jp_name;
