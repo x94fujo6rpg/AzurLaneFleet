@@ -615,19 +615,12 @@ function equipCheck(ckid) {
             });
             name.textContent = match[`${lan}_name`];
         } else {
-            att(bg, "src", "4.", "3.");
-            att(frame, "src", "4.", "3.");
-            att(icon, "src", s2, s1);
-            prop(itemInList, "bg", "4.", "3.");
-            prop(itemInList, "frame", "4.", "3.");
-            prop(itemInList, "icon", s2, s1);
-            list.forEach(key => {
-                name.setAttribute(key, eq[`${key}_name`]);
-                itemInList[key] = eq[`${key}_name`];
-            });
-            name.textContent = eq[`${lan}_name`];
+            restore();
         }
     } else {
+        restore();
+    }
+    function restore(){
         att(bg, "src", "4.", "3.");
         att(frame, "src", "4.", "3.");
         att(icon, "src", s2, s1);
