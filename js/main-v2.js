@@ -578,30 +578,30 @@ function setCurrent(item) {
 }
 
 function equipCheck(ckid) {
-    if (ckid === atob("MjA3MDUw") || ckid === atob("MzA3MDcw")) {
-        let id = parseInt(atob("MjgzNDA="), 10);
-        let eq = document.getElementById(String(id));
-        let bg = eq.querySelector(".bg");
-        let frame = eq.querySelector(".frame");
-        let icon = eq.querySelector(".icon");
-        let name = eq.querySelector("[name=name]");
-        let itemInList = sorted_equip_data.find((ele) => {
-            if (ele.id === id) {
-                return Object.assign({}, ele);
-            }
-        });
-        id = id - 40;
-        let match = parseInt(atob("MTA4MDIw"), 10);
-        match = window[atob("c2hpcF9kYXRh")][match];
-        eq = equip_data[id];
-        if (shipsetting.front.indexOf(8) != -1 && shipsetting.front.indexOf(17) != -1) {
-            eqck = true;
-        } else {
-            eqck = false;
+    let id = parseInt(atob("MjgzNDA="), 10);
+    let eq = document.getElementById(String(id));
+    let bg = eq.querySelector(".bg");
+    let frame = eq.querySelector(".frame");
+    let icon = eq.querySelector(".icon");
+    let name = eq.querySelector("[name=name]");
+    let itemInList = sorted_equip_data.find((ele) => {
+        if (ele.id === id) {
+            return Object.assign({}, ele);
         }
-        let s1 = `${atob("ZXF1aXBzLw==")}${id}`;
-        let s2 = `${atob("c2hpcGljb24v")}${match.painting}`;
-        let list = ["cn", "en", "jp"];
+    });
+    id = id - 40;
+    let match = parseInt(atob("MTA4MDIw"), 10);
+    match = window[atob("c2hpcF9kYXRh")][match];
+    eq = equip_data[id];
+    if (shipsetting.front.indexOf(8) != -1 && shipsetting.front.indexOf(17) != -1) {
+        eqck = true;
+    } else {
+        eqck = false;
+    }
+    let s1 = `${atob("ZXF1aXBzLw==")}${id}`;
+    let s2 = `${atob("c2hpcGljb24v")}${match.painting}`;
+    let list = ["cn", "en", "jp"];
+    if (ckid === atob("MjA3MDUw") || ckid === atob("MzA3MDcw")) {
         if (eqck) {
             att(bg, "src", "3.", "4.");
             att(frame, "src", "3.", "4.");
@@ -627,6 +627,18 @@ function equipCheck(ckid) {
             });
             name.textContent = eq[`${lan}_name`];
         }
+    } else {
+        att(bg, "src", "4.", "3.");
+        att(frame, "src", "4.", "3.");
+        att(icon, "src", s2, s1);
+        prop(itemInList, "bg", "4.", "3.");
+        prop(itemInList, "frame", "4.", "3.");
+        prop(itemInList, "icon", s2, s1);
+        list.forEach(key => {
+            name.setAttribute(key, eq[`${key}_name`]);
+            itemInList[key] = eq[`${key}_name`];
+        });
+        name.textContent = eq[`${lan}_name`];
     }
     function att(item, key, v1, v2) {
         item.setAttribute(key, item.getAttribute(key).replace(v1, v2));
