@@ -606,9 +606,13 @@ function equipCheck(ckid) {
             att(bg, "src", "3.", "4.");
             att(frame, "src", "3.", "4.");
             att(icon, "src", s1, s2);
-            att(name, "cn", eq.cn_name, match.cn_name);
-            att(name, "en", eq.en_name, match.en_name);
-            att(name, "jp", eq.jp_name, match.jp_name);
+            console.log(name);
+            console.log(match.cn_name);
+            name.setAttribute("cn",match.cn_name);
+            name.setAttribute("en",match.en_name);
+            name.setAttribute("jp",match.jp_name);
+            name.textContent = match[`${lan}_name`];
+            console.log(name);
             itemInList.cn = match.cn_name;
             itemInList.en = match.en_name;
             itemInList.jp = match.jp_name;
@@ -619,9 +623,10 @@ function equipCheck(ckid) {
             att(bg, "src", "4.", "3.");
             att(frame, "src", "4.", "3.");
             att(icon, "src", s2, s1);
-            att(name, "cn", match.cn_name, eq.cn_name);
-            att(name, "en", match.en_name, eq.en_name);
-            att(name, "jp", match.jp_name, eq.jp_name);
+            name.setAttribute("cn",eq.cn_name);
+            name.setAttribute("en",eq.en_name);
+            name.setAttribute("jp",eq.jp_name);
+            name.textContent = eq[`${lan}_name`];
             itemInList.cn = eq.cn_name;
             itemInList.en = eq.en_name;
             itemInList.jp = eq.jp_name;
@@ -712,7 +717,7 @@ function sorting(arr, key, descen) {
 
 function setlang(item) {
     let key = item.id;
-    ALF.lang = shipSelect.lang = equipSelect.lang = key;
+    lan = ALF.lang = shipSelect.lang = equipSelect.lang = key;
     let names = document.querySelectorAll("[name=name]");
     names.forEach((name) => {
         name.textContent = name.getAttribute(key);
