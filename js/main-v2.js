@@ -578,7 +578,6 @@ function setCurrent(item) {
 }
 
 function equipCheck(ckid) {
-    let setting = shipsetting.front;
     if (ckid === atob("MjA3MDUw") || ckid === atob("MzA3MDcw")) {
         let id = parseInt(atob("MjgzNDA="), 10);
         let eq = document.getElementById(String(id));
@@ -595,47 +594,44 @@ function equipCheck(ckid) {
         let match = parseInt(atob("MTA4MDIw"), 10);
         match = window[atob("c2hpcF9kYXRh")][match];
         eq = equip_data[id];
-        if (setting.indexOf(8) != -1 && setting.indexOf(17) != -1) {
+        if (shipsetting.front.indexOf(8) != -1 && shipsetting.front.indexOf(17) != -1) {
             eqck = true;
         } else {
             eqck = false;
         }
         let s1 = `${atob("ZXF1aXBzLw==")}${id}`;
         let s2 = `${atob("c2hpcGljb24v")}${match.painting}`;
+        let list = ["cn", "en", "jp"];
         if (eqck) {
             att(bg, "src", "3.", "4.");
             att(frame, "src", "3.", "4.");
             att(icon, "src", s1, s2);
-            name.setAttribute("cn",match.cn_name);
-            name.setAttribute("en",match.en_name);
-            name.setAttribute("jp",match.jp_name);
-            name.textContent = match[`${lan}_name`];
-            itemInList.cn = match.cn_name;
-            itemInList.en = match.en_name;
-            itemInList.jp = match.jp_name;
             prop(itemInList, "bg", "3.", "4.");
             prop(itemInList, "frame", "3.", "4.");
             prop(itemInList, "icon", s1, s2);
+            list.forEach(key => {
+                name.setAttribute(key, match[`${key}_name`]);
+                itemInList[key] = match[`${key}_name`];
+            });
+            name.textContent = match[`${lan}_name`];
         } else {
             att(bg, "src", "4.", "3.");
             att(frame, "src", "4.", "3.");
             att(icon, "src", s2, s1);
-            name.setAttribute("cn",eq.cn_name);
-            name.setAttribute("en",eq.en_name);
-            name.setAttribute("jp",eq.jp_name);
-            name.textContent = eq[`${lan}_name`];
-            itemInList.cn = eq.cn_name;
-            itemInList.en = eq.en_name;
-            itemInList.jp = eq.jp_name;
             prop(itemInList, "bg", "4.", "3.");
             prop(itemInList, "frame", "4.", "3.");
             prop(itemInList, "icon", s2, s1);
+            list.forEach(key => {
+                name.setAttribute(key, eq[`${key}_name`]);
+                itemInList[key] = eq[`${key}_name`];
+            });
+            name.textContent = eq[`${lan}_name`];
         }
     }
     function att(item, key, v1, v2) {
         item.setAttribute(key, item.getAttribute(key).replace(v1, v2));
     }
-    function prop(obj, key, v1, v2){
+    function prop(obj, key, v1, v2) {
         obj[key] = obj[key].replace(v1, v2);
     }
 }
