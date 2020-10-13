@@ -14895,6 +14895,44 @@ var ship_data = {
             15
         ]
     },
+    "107230": {
+        "nationality": 1,
+        "type": 6,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 107234,
+        "skin_id": 107230,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "107230",
+        "painting": "pulinsidun",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "プリンストン",
+        "en_name": "Princeton",
+        "cn_name": "普林斯顿",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            8
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            15
+        ],
+        "equip_5": [
+            10,
+            15
+        ]
+    },
     "107220": {
         "nationality": 1,
         "type": 6,
