@@ -1259,6 +1259,44 @@ var ship_data = {
             14
         ]
     },
+    "901120": {
+        "nationality": 9,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 901124,
+        "skin_id": 901120,
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "901120",
+        "painting": "edu_idol",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "ル・マラン(μ兵装)",
+        "en_name": "Le Malin",
+        "cn_name": "恶毒(μ兵装)",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
     "901110": {
         "nationality": 9,
         "type": 1,
@@ -2108,6 +2146,44 @@ var ship_data = {
         "cn_name": "阿芙乐尔",
         "equip_1": [
             2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "701050": {
+        "nationality": 7,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 701054,
+        "skin_id": 701050,
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "701050",
+        "painting": "tashigan_idol",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "タシュケント(μ兵装)",
+        "en_name": "Tashkent",
+        "cn_name": "塔什干(μ兵装)",
+        "equip_1": [
+            1
         ],
         "equip_2": [
             5
@@ -3437,6 +3513,42 @@ var ship_data = {
         "jp_name": "ローン",
         "en_name": "Roon",
         "cn_name": "罗恩",
+        "equip_1": [
+            3
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
+    "403080": {
+        "nationality": 4,
+        "type": 3,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 403084,
+        "skin_id": 403080,
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "403080",
+        "painting": "luoen_idol",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "ローン(μ兵装)",
+        "en_name": "Roon",
+        "cn_name": "罗恩(μ兵装)",
         "equip_1": [
             3
         ],
@@ -4832,6 +4944,42 @@ var ship_data = {
         ],
         "equip_3": [
             1
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
+    "307110": {
+        "nationality": 3,
+        "type": 7,
+        "base_list": [
+            2,
+            3,
+            3
+        ],
+        "id": 307114,
+        "skin_id": 307110,
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "307110",
+        "painting": "dafeng_idol",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "大鳳(μ兵装)",
+        "en_name": "Taihō",
+        "cn_name": "大凤",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            9
+        ],
+        "equip_3": [
+            8
         ],
         "equip_4": [
             10
@@ -10266,6 +10414,42 @@ var ship_data = {
             10
         ]
     },
+    "207110": {
+        "nationality": 2,
+        "type": 7,
+        "base_list": [
+            3,
+            3,
+            2
+        ],
+        "id": 207114,
+        "skin_id": 207110,
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "207110",
+        "painting": "guanghui_idol",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "イラストリアス(μ兵装)",
+        "en_name": "Illustrious",
+        "cn_name": "光辉(μ兵装)",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            7
+        ],
+        "equip_3": [
+            8
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
     "207090": {
         "nationality": 2,
         "type": 7,
@@ -11862,6 +12046,45 @@ var ship_data = {
         "en_name": "Neptune",
         "cn_name": "海王星",
         "equip_1": [
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "202280": {
+        "nationality": 2,
+        "type": 2,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 202284,
+        "skin_id": 202280,
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "202280",
+        "painting": "daiduo_idol",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "ダイドー(μ兵装)",
+        "en_name": "Dido",
+        "cn_name": "黛朵(μ兵装)",
+        "equip_1": [
+            1,
             2
         ],
         "equip_2": [
@@ -14317,6 +14540,42 @@ var ship_data = {
             10
         ]
     },
+    "108050": {
+        "nationality": 1,
+        "type": 8,
+        "base_list": [
+            2,
+            2,
+            1
+        ],
+        "id": 108054,
+        "skin_id": 108050,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "108050",
+        "painting": "daqinghuayu_idol",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "アルバコア(μ兵装)",
+        "en_name": "Albacore",
+        "cn_name": "大青花鱼(μ兵装)",
+        "equip_1": [
+            13
+        ],
+        "equip_2": [
+            13
+        ],
+        "equip_3": [
+            1
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
     "108040": {
         "nationality": 1,
         "type": 8,
@@ -15911,6 +16170,42 @@ var ship_data = {
         "cn_name": "内华达",
         "equip_1": [
             4
+        ],
+        "equip_2": [
+            1
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
+    "103250": {
+        "nationality": 1,
+        "type": 3,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 103254,
+        "skin_id": 103250,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "103250",
+        "painting": "baerdimo_idol",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "ボルチモア(μ兵装)",
+        "en_name": "Baltimore",
+        "cn_name": "巴尔的摩(μ兵装)",
+        "equip_1": [
+            3
         ],
         "equip_2": [
             1

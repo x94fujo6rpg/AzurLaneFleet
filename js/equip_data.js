@@ -1682,8 +1682,7 @@ var equip_data = {
             8,
             11,
             12,
-            17,
-            19
+            17
         ],
         "jp_name": "火器管制レーダー",
         "cn_name": "火控雷达",
@@ -1708,8 +1707,7 @@ var equip_data = {
             8,
             11,
             12,
-            17,
-            19
+            17
         ],
         "jp_name": "火器管制レーダー",
         "cn_name": "火控雷达",
@@ -1734,8 +1732,7 @@ var equip_data = {
             8,
             11,
             12,
-            17,
-            19
+            17
         ],
         "jp_name": "火器管制レーダー",
         "cn_name": "火控雷达",
@@ -2069,6 +2066,22 @@ var equip_data = {
         "en_name": "Navy Camouflage",
         "equip_limit": 1900
     },
+    "89180": {
+        "nationality": 0,
+        "type": 10,
+        "attribute_2": "hit",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": "なし",
+        "ammo_icon": [],
+        "id": 89180,
+        "icon": "89180",
+        "ship_type_forbidden": [],
+        "jp_name": "輝けるアストラム",
+        "cn_name": "闪耀之歌",
+        "en_name": "Resplendent Astrum ",
+        "equip_limit": 0
+    },
     "1040": {
         "nationality": 0,
         "type": 10,
@@ -2309,6 +2322,22 @@ var equip_data = {
         "en_name": "Aviation Oil Tank",
         "equip_limit": 0
     },
+    "89160": {
+        "nationality": 0,
+        "type": 10,
+        "attribute_2": "hit",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": "なし",
+        "ammo_icon": [],
+        "id": 89160,
+        "icon": "89160",
+        "ship_type_forbidden": [],
+        "jp_name": "神聖なるリュミエール",
+        "cn_name": "活力之歌",
+        "en_name": "Sacred Lumière ",
+        "equip_limit": 0
+    },
     "2040": {
         "nationality": 0,
         "type": 10,
@@ -2355,6 +2384,22 @@ var equip_data = {
         "jp_name": "燃料フィルター",
         "cn_name": "燃油滤清器",
         "en_name": "Fuel Filter",
+        "equip_limit": 0
+    },
+    "89140": {
+        "nationality": 0,
+        "type": 10,
+        "attribute_2": "hit",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": "なし",
+        "ammo_icon": [],
+        "id": 89140,
+        "icon": "89140",
+        "ship_type_forbidden": [],
+        "jp_name": "熱愛のフィリンエッター",
+        "cn_name": "炽烈之歌",
+        "en_name": "White-Hot Verheerender ",
         "equip_limit": 0
     },
     "2540": {
@@ -2945,6 +2990,22 @@ var equip_data = {
         "en_name": "Anti-Torpedo Bulge",
         "equip_limit": 0
     },
+    "89220": {
+        "nationality": 0,
+        "type": 10,
+        "attribute_2": null,
+        "rarity": 5,
+        "tech": 0,
+        "ammo": "なし",
+        "ammo_icon": [],
+        "id": 89220,
+        "icon": "89220",
+        "ship_type_forbidden": [],
+        "jp_name": "ネビュラドレス",
+        "cn_name": "星云舞裙",
+        "en_name": "Celestial Body ",
+        "equip_limit": 0
+    },
     "2340": {
         "nationality": 0,
         "type": 10,
@@ -3000,6 +3061,22 @@ var equip_data = {
         "jp_name": "ジャイロスコープ",
         "cn_name": "陀螺仪",
         "en_name": "Gyroscope",
+        "equip_limit": 0
+    },
+    "89200": {
+        "nationality": 0,
+        "type": 10,
+        "attribute_2": "speed",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": "なし",
+        "ammo_icon": [],
+        "id": 89200,
+        "icon": "89200",
+        "ship_type_forbidden": [],
+        "jp_name": "グラヴィティシューズ",
+        "cn_name": "引力舞鞋",
+        "en_name": "Cosmic Kicks ",
         "equip_limit": 0
     },
     "49040": {
