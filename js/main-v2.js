@@ -1123,4 +1123,3 @@ function buildShipSelectOption() {
     console.timeEnd("buildShipSelectOption");
     return [nation, type, rarity];
 }
-
