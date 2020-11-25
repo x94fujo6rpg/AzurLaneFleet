@@ -328,7 +328,7 @@ function updateSetting(item) {
 
 function checksetting(key, value) {
     let index = shipsetting[key].indexOf(value);
-    if (value != 0) {
+    if (value > -1) {
         if (index === -1) {
             shipsetting[key].push(value);
         } else {
@@ -516,7 +516,7 @@ function equipCheck(ckid) {
     } else {
         restore();
     }
-    function restore(){
+    function restore() {
         att(bg, "src", "4.", "3.");
         att(frame, "src", "4.", "3.");
         att(icon, "src", s2, s1);
