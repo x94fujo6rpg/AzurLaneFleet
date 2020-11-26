@@ -1,10 +1,10 @@
 ﻿# [AzurLaneFleet](https://x94fujo6rpg.github.io/AzurLaneFleet/) #  
 The goal of this project  
 Is just for easily share fleet configuration in one shot  
-![](https://i.imgur.com/U6y0E4r.jpg)  
+![](https://i.imgur.com/ZDSWNOl.png)  
 
 ## Update  
-**2020-11-27  
+**2020-11-27**  
 - fix filter issue  
 - add ship/equip (event 2020-11-26)  
 
