@@ -28,7 +28,7 @@ var equip_data = {
         ],
         "jp_name": "九四式四十糎砲(積載)",
         "cn_name": "“九四式40厘米炮”部件",
-        "en_name": "40cm Type 94 Naval Gun Parts (Cargo) ",
+        "en_name": "40cm Type 94 Naval Gun Parts (Cargo)",
         "equip_limit": 3400
     },
     "3540": {
@@ -60,7 +60,7 @@ var equip_data = {
         ],
         "jp_name": "雷撃戦資材(積載)",
         "cn_name": "兵装补给(鱼雷)",
-        "en_name": "Torpedo Materials (Cargo) ",
+        "en_name": "Torpedo Materials (Cargo)",
         "equip_limit": 3400
     },
     "3500": {
@@ -92,7 +92,7 @@ var equip_data = {
         ],
         "jp_name": "航空戦資材(積載)",
         "cn_name": "兵装补给(航空)",
-        "en_name": "Aviation Materials (Cargo) ",
+        "en_name": "Aviation Materials (Cargo)",
         "equip_limit": 3400
     },
     "3520": {
@@ -124,7 +124,7 @@ var equip_data = {
         ],
         "jp_name": "小口径主砲砲戦資材(積載)",
         "cn_name": "兵装补给(中小口径武器)",
-        "en_name": "Small-Caliber Naval Gun Parts (Cargo) ",
+        "en_name": "Small-Caliber Naval Gun Parts (Cargo)",
         "equip_limit": 3400
     },
     "740": {
@@ -466,7 +466,7 @@ var equip_data = {
         ],
         "jp_name": "対潜迫撃砲「ヘッジホッグ」",
         "cn_name": "刺猬弹",
-        "en_name": "\"Hedgehog\" Anti-Submarine Mortar ",
+        "en_name": "\"Hedgehog\" Anti-Submarine Mortar",
         "equip_limit": 25800
     },
     "4140": {
@@ -1034,6 +1034,22 @@ var equip_data = {
         "jp_name": "試作型三連装310mm砲",
         "cn_name": "试作型三联装310mm主炮",
         "en_name": "Prototype Triple 310mm Main Gun (Type 0)",
+        "equip_limit": 0
+    },
+    "89240": {
+        "nationality": 106,
+        "type": 10,
+        "attribute_2": "hit",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": "なし",
+        "ammo_icon": [],
+        "id": 89240,
+        "icon": "89240",
+        "ship_type_forbidden": [],
+        "jp_name": "ヴィーナス覚醒ジェム",
+        "cn_name": "觉醒宝珠",
+        "en_name": "Awakening Pearl ",
         "equip_limit": 0
     },
     "89100": {
@@ -1619,6 +1635,36 @@ var equip_data = {
         "en_name": "Homing Beacon",
         "equip_limit": 680
     },
+    "880": {
+        "nationality": 2,
+        "type": 10,
+        "attribute_2": "hit",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": "なし",
+        "ammo_icon": [],
+        "id": 880,
+        "icon": "880",
+        "ship_type_forbidden": [
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13,
+            17,
+            18,
+            19
+        ],
+        "jp_name": "サイン・オブ・ビクトリー",
+        "cn_name": "纳尔逊的旗语",
+        "en_name": "Nelson's Pennant of Victory ",
+        "equip_limit": 0
+    },
     "1260": {
         "nationality": 1,
         "type": 10,
@@ -1646,6 +1692,22 @@ var equip_data = {
         "jp_name": "高性能火器管制レーダー",
         "cn_name": "高性能火控雷达",
         "en_name": "High Standard Fire-Control Radar",
+        "equip_limit": 0
+    },
+    "840": {
+        "nationality": 1,
+        "type": 10,
+        "attribute_2": "antiaircraft",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": "なし",
+        "ammo_icon": [],
+        "id": 840,
+        "icon": "840",
+        "ship_type_forbidden": [],
+        "jp_name": "精鋭ダメコン饅頭(ユニオン)",
+        "cn_name": "白鹰精英损管",
+        "en_name": "Eagle Union Elite Damage Control ",
         "equip_limit": 0
     },
     "520": {
@@ -2450,6 +2512,22 @@ var equip_data = {
         "en_name": "Fire Suppressor",
         "equip_limit": 0
     },
+    "860": {
+        "nationality": 0,
+        "type": 10,
+        "attribute_2": "hit",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": "なし",
+        "ammo_icon": [],
+        "id": 860,
+        "icon": "860",
+        "ship_type_forbidden": [],
+        "jp_name": "海軍条約文書",
+        "cn_name": "华盛顿海军条约",
+        "en_name": "Washington Naval Treaty ",
+        "equip_limit": 820
+    },
     "1740": {
         "nationality": 0,
         "type": 10,
@@ -2930,6 +3008,37 @@ var equip_data = {
         "en_name": "NY City Coast Recon Report",
         "equip_limit": 760
     },
+    "820": {
+        "nationality": 0,
+        "type": 10,
+        "attribute_2": "durability",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": "なし",
+        "ammo_icon": [],
+        "id": 820,
+        "icon": "820",
+        "ship_type_forbidden": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            17,
+            18,
+            19
+        ],
+        "jp_name": "フロンティアメダル",
+        "cn_name": "开拓者奖章",
+        "en_name": "Frontier Medal ",
+        "equip_limit": 820
+    },
     "1340": {
         "nationality": 0,
         "type": 10,
@@ -3061,6 +3170,22 @@ var equip_data = {
         "jp_name": "ジャイロスコープ",
         "cn_name": "陀螺仪",
         "en_name": "Gyroscope",
+        "equip_limit": 0
+    },
+    "89260": {
+        "nationality": 0,
+        "type": 10,
+        "attribute_2": "hit",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": "なし",
+        "ammo_icon": [],
+        "id": 89260,
+        "icon": "89260",
+        "ship_type_forbidden": [],
+        "jp_name": "ココロの鍵",
+        "cn_name": "心之钥匙",
+        "en_name": "Heart Key ",
         "equip_limit": 0
     },
     "89200": {

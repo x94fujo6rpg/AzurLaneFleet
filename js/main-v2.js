@@ -289,7 +289,7 @@ function setRetro(item) {
     let newvalue = (item.value === "1") ? "0" : "1";
     retrofit = (item.value === "1") ? false : true;
     item.value = newvalue;
-    console.log(item.value)
+    console.log(item.value);
     shipDisplay();
 }
 
@@ -389,7 +389,7 @@ function isShipSelect(nation, type, rarity, retro) {
     let indicator_nation = false;
     let indicator_type = false;
     let indicator_rarity = false;
-    let other_nation = [98, 101, 103, 104, 105];
+    let other_nation = [98, 101, 103, 104, 105, 106, 107, 108, 109, 110];
     let other_front = [19];
     let other_back = [10];
     if (c_side === "0" && front.indexOf(type) === -1) {

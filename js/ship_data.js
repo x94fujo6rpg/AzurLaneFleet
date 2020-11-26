@@ -1,4 +1,264 @@
 var ship_data = {
+    "10600060": {
+        "nationality": 106,
+        "type": 7,
+        "base_list": [
+            2,
+            3,
+            3
+        ],
+        "id": 10600064,
+        "skin_id": 10600060,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "10600060",
+        "painting": "nvtiangou_DOA",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "女天狗",
+        "en_name": "Nyotengu",
+        "cn_name": "女天狗",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            9
+        ],
+        "equip_3": [
+            8
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
+    "10600050": {
+        "nationality": 106,
+        "type": 5,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 10600054,
+        "skin_id": 10600050,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "10600050",
+        "painting": "zhixiao_DOA",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "なぎさ",
+        "en_name": "Nagisa",
+        "cn_name": "凪咲",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
+    "10600020": {
+        "nationality": 106,
+        "type": 5,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 10600024,
+        "skin_id": 10600020,
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "10600020",
+        "painting": "suixiang_doa",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "ほのか",
+        "en_name": "Honoka",
+        "cn_name": "穗香",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
+    "10600030": {
+        "nationality": 106,
+        "type": 3,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 10600034,
+        "skin_id": 10600030,
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "10600030",
+        "painting": "xia_DOA",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "かすみ",
+        "en_name": "Kasumi",
+        "cn_name": "霞",
+        "equip_1": [
+            3
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
+    "10600070": {
+        "nationality": 106,
+        "type": 2,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 10600074,
+        "skin_id": 10600070,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "10600070",
+        "painting": "monika_DOA",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "モニカ",
+        "en_name": "Monica",
+        "cn_name": "莫妮卡",
+        "equip_1": [
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "10600040": {
+        "nationality": 106,
+        "type": 2,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 10600044,
+        "skin_id": 10600040,
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "10600040",
+        "painting": "haixiao_DOA",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "みさき",
+        "en_name": "Misaki",
+        "cn_name": "海咲",
+        "equip_1": [
+            2
+        ],
+        "equip_2": [
+            1
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "10600010": {
+        "nationality": 106,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 10600014,
+        "skin_id": 10600010,
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "10600010",
+        "painting": "maliluosi_doa",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "マリー・ローズ",
+        "en_name": "Rose",
+        "cn_name": "玛莉萝丝",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
     "10500030": {
         "nationality": 105,
         "type": 8,
