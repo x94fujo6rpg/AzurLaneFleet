@@ -4,6 +4,10 @@ Is just for easily share fleet configuration in one shot
 ![](https://i.imgur.com/U6y0E4r.jpg)  
 
 ## Update  
+**2020-11-27  
+- fix filter issue  
+- add ship/equip (event 2020-11-26)  
+
 **2020-09-24**  
 - improve data export/import  
 - add a button to remove all ship at once  
