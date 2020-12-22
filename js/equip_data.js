@@ -5,7 +5,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 3400,
         "icon": "3400",
@@ -37,7 +37,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 4,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 3540,
         "icon": "3540",
@@ -69,7 +69,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 4,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 3500,
         "icon": "3500",
@@ -101,7 +101,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 4,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 3520,
         "icon": "3520",
@@ -133,7 +133,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 4,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 740,
         "icon": "740",
@@ -165,7 +165,7 @@ var equip_data = {
         "attribute_2": "antisub",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 4240,
         "icon": "4200",
@@ -196,7 +196,7 @@ var equip_data = {
         "attribute_2": "antisub",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 4220,
         "icon": "4200",
@@ -227,7 +227,7 @@ var equip_data = {
         "attribute_2": "antisub",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 4200,
         "icon": "4200",
@@ -258,7 +258,7 @@ var equip_data = {
         "attribute_2": "antisub",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 4340,
         "icon": "4300",
@@ -289,7 +289,7 @@ var equip_data = {
         "attribute_2": "antisub",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 4320,
         "icon": "4300",
@@ -320,7 +320,7 @@ var equip_data = {
         "attribute_2": "antisub",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 4300,
         "icon": "4300",
@@ -351,7 +351,7 @@ var equip_data = {
         "attribute_2": "antisub",
         "rarity": 3,
         "tech": 3,
-        "ammo": "水圧式",
+        "ammo": 8,
         "ammo_icon": [],
         "id": 4040,
         "icon": "4000",
@@ -382,7 +382,7 @@ var equip_data = {
         "attribute_2": "antisub",
         "rarity": 2,
         "tech": 2,
-        "ammo": "水圧式",
+        "ammo": 8,
         "ammo_icon": [],
         "id": 4020,
         "icon": "4000",
@@ -413,7 +413,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "水圧式",
+        "ammo": 8,
         "ammo_icon": [],
         "id": 4000,
         "icon": "4000",
@@ -444,7 +444,7 @@ var equip_data = {
         "attribute_2": "antisub",
         "rarity": 5,
         "tech": 0,
-        "ammo": "瞬発式",
+        "ammo": 9,
         "ammo_icon": [],
         "id": 25800,
         "icon": "25800",
@@ -475,7 +475,7 @@ var equip_data = {
         "attribute_2": "antisub",
         "rarity": 4,
         "tech": 3,
-        "ammo": "水圧式",
+        "ammo": 8,
         "ammo_icon": [],
         "id": 4140,
         "icon": "4100",
@@ -506,7 +506,7 @@ var equip_data = {
         "attribute_2": "antisub",
         "rarity": 3,
         "tech": 2,
-        "ammo": "水圧式",
+        "ammo": 8,
         "ammo_icon": [],
         "id": 4120,
         "icon": "4100",
@@ -537,7 +537,7 @@ var equip_data = {
         "attribute_2": "antisub",
         "rarity": 2,
         "tech": 1,
-        "ammo": "水圧式",
+        "ammo": 8,
         "ammo_icon": [],
         "id": 4100,
         "icon": "4100",
@@ -568,7 +568,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 5540,
         "icon": "5500",
@@ -584,7 +584,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 5520,
         "icon": "5500",
@@ -600,7 +600,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 5500,
         "icon": "5500",
@@ -616,7 +616,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 5,
         "tech": 3,
-        "ammo": "磁気",
+        "ammo": 4,
         "ammo_icon": [],
         "id": 45440,
         "icon": "45400",
@@ -632,7 +632,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 2,
-        "ammo": "磁気",
+        "ammo": 4,
         "ammo_icon": [],
         "id": 45420,
         "icon": "45400",
@@ -648,7 +648,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 1,
-        "ammo": "磁気",
+        "ammo": 4,
         "ammo_icon": [],
         "id": 45400,
         "icon": "45400",
@@ -664,7 +664,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 45340,
         "icon": "45300",
@@ -680,7 +680,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 45320,
         "icon": "45300",
@@ -696,7 +696,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 45300,
         "icon": "45300",
@@ -706,13 +706,29 @@ var equip_data = {
         "en_name": "G7a Submarine Torpedo",
         "equip_limit": 0
     },
+    "35560": {
+        "nationality": 3,
+        "type": 13,
+        "attribute_2": "torpedo",
+        "rarity": 5,
+        "tech": 3,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 35560,
+        "icon": "35560",
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用九六式酸素魚雷",
+        "cn_name": "潜艇用96式纯氧鱼雷",
+        "en_name": "Type 96 Submarine Torpedo",
+        "equip_limit": 0
+    },
     "35540": {
         "nationality": 3,
         "type": 13,
         "attribute_2": "torpedo",
         "rarity": 5,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 35540,
         "icon": "35500",
@@ -728,7 +744,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 35520,
         "icon": "35500",
@@ -744,7 +760,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 35500,
         "icon": "35500",
@@ -754,13 +770,29 @@ var equip_data = {
         "en_name": "Type 95 Submarine Torpedo",
         "equip_limit": 0
     },
+    "35460": {
+        "nationality": 3,
+        "type": 13,
+        "attribute_2": "torpedo",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 35460,
+        "icon": "35460",
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用九二式電動魚雷改",
+        "cn_name": "潜艇用92式潜射鱼雷改",
+        "en_name": "Submarine Type 92 Torpedo Kai",
+        "equip_limit": 0
+    },
     "35440": {
         "nationality": 3,
         "type": 13,
         "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 35440,
         "icon": "35400",
@@ -776,7 +808,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 35420,
         "icon": "35400",
@@ -792,7 +824,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 35400,
         "icon": "35400",
@@ -802,19 +834,131 @@ var equip_data = {
         "en_name": "Type 92 Submarine Torpedo",
         "equip_limit": 0
     },
+    "25140": {
+        "nationality": 2,
+        "type": 13,
+        "attribute_2": "torpedo",
+        "rarity": 4,
+        "tech": 3,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 25140,
+        "icon": "25100",
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用MarkVIII魚雷",
+        "cn_name": "潜艇用Mark VIII鱼雷",
+        "en_name": "Mark VIII Submarine Torpedo",
+        "equip_limit": 0
+    },
+    "25120": {
+        "nationality": 2,
+        "type": 13,
+        "attribute_2": "torpedo",
+        "rarity": 3,
+        "tech": 2,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 25120,
+        "icon": "25100",
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用MarkVIII魚雷",
+        "cn_name": "潜艇用Mark VIII鱼雷",
+        "en_name": "Mark VIII Submarine Torpedo",
+        "equip_limit": 0
+    },
+    "25100": {
+        "nationality": 2,
+        "type": 13,
+        "attribute_2": "torpedo",
+        "rarity": 2,
+        "tech": 1,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 25100,
+        "icon": "25100",
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用MarkVIII魚雷",
+        "cn_name": "潜艇用Mark VIII鱼雷",
+        "en_name": "Mark VIII Submarine Torpedo",
+        "equip_limit": 0
+    },
+    "25300": {
+        "nationality": 2,
+        "type": 13,
+        "attribute_2": "torpedo",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 4,
+        "ammo_icon": [],
+        "id": 25300,
+        "icon": "25300",
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用Mark20(S)魚雷“Bidder”",
+        "cn_name": "潜艇用Mark 20 S鱼雷-彼得",
+        "en_name": "Mark 20 \"Bidder\" Submarine Torpedo",
+        "equip_limit": 0
+    },
+    "25200": {
+        "nationality": 2,
+        "type": 13,
+        "attribute_2": "torpedo",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 25200,
+        "icon": "25200",
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用Mark12魚雷“Ferry”",
+        "cn_name": "潜艇用Mark 12鱼雷-菲里",
+        "en_name": "Mark 12 \"Ferry\" Submarine Torpedo",
+        "equip_limit": 0
+    },
+    "15160": {
+        "nationality": 1,
+        "type": 13,
+        "attribute_2": "torpedo",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 4,
+        "ammo_icon": [],
+        "id": 15160,
+        "icon": "15160",
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用Mark28魚雷",
+        "cn_name": "潜艇用Mark 28鱼雷",
+        "en_name": "Mark 28 Submarine Torpedo",
+        "equip_limit": 0
+    },
+    "15060": {
+        "nationality": 1,
+        "type": 13,
+        "attribute_2": "torpedo",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 4,
+        "ammo_icon": [],
+        "id": 15060,
+        "icon": "15060",
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用Mark18魚雷",
+        "cn_name": "潜艇用Mark 18鱼雷",
+        "en_name": "Mark 18 Submarine Torpedo",
+        "equip_limit": 0
+    },
     "15140": {
         "nationality": 1,
         "type": 13,
         "attribute_2": "torpedo",
         "rarity": 5,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 15140,
         "icon": "15100",
         "ship_type_forbidden": [],
         "jp_name": "潜水艦用Mark16魚雷",
-        "cn_name": "潜艇用Mark16鱼雷",
+        "cn_name": "潜艇用Mark 16鱼雷",
         "en_name": "Mark 16 Submarine Torpedo",
         "equip_limit": 0
     },
@@ -824,13 +968,13 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 15120,
         "icon": "15100",
         "ship_type_forbidden": [],
         "jp_name": "潜水艦用Mark16魚雷",
-        "cn_name": "潜艇用Mark16鱼雷",
+        "cn_name": "潜艇用Mark 16鱼雷",
         "en_name": "Mark 16 Submarine Torpedo",
         "equip_limit": 0
     },
@@ -840,13 +984,13 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 15100,
         "icon": "15100",
         "ship_type_forbidden": [],
         "jp_name": "潜水艦用Mark16魚雷",
-        "cn_name": "潜艇用Mark16鱼雷",
+        "cn_name": "潜艇用Mark 16鱼雷",
         "en_name": "Mark 16 Submarine Torpedo",
         "equip_limit": 0
     },
@@ -856,13 +1000,13 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 15040,
         "icon": "15000",
         "ship_type_forbidden": [],
         "jp_name": "潜水艦用Mark14魚雷",
-        "cn_name": "潜艇用Mark14鱼雷",
+        "cn_name": "潜艇用Mark 14鱼雷",
         "en_name": "Mark 14 Submarine Torpedo",
         "equip_limit": 0
     },
@@ -872,13 +1016,13 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 15020,
         "icon": "15000",
         "ship_type_forbidden": [],
         "jp_name": "潜水艦用Mark14魚雷",
-        "cn_name": "潜艇用Mark14鱼雷",
+        "cn_name": "潜艇用Mark 14鱼雷",
         "en_name": "Mark 14 Submarine Torpedo",
         "equip_limit": 0
     },
@@ -888,13 +1032,13 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 15000,
         "icon": "15000",
         "ship_type_forbidden": [],
         "jp_name": "潜水艦用Mark14魚雷",
-        "cn_name": "潜艇用Mark14鱼雷",
+        "cn_name": "潜艇用Mark 14鱼雷",
         "en_name": "Mark 14 Submarine Torpedo",
         "equip_limit": 0
     },
@@ -904,7 +1048,7 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 39240,
         "icon": "39200",
@@ -920,7 +1064,7 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 39220,
         "icon": "39200",
@@ -936,7 +1080,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 39200,
         "icon": "39200",
@@ -952,7 +1096,7 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 4,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 39300,
         "icon": "39300",
@@ -962,13 +1106,45 @@ var equip_data = {
         "en_name": "Seiran",
         "equip_limit": 0
     },
+    "37440": {
+        "nationality": 3,
+        "type": 12,
+        "attribute_2": "air",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 37440,
+        "icon": "37440",
+        "ship_type_forbidden": [],
+        "jp_name": "強風",
+        "cn_name": "强风",
+        "en_name": "N1K1 Kyoufuu",
+        "equip_limit": 0
+    },
+    "37420": {
+        "nationality": 3,
+        "type": 12,
+        "attribute_2": "air",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 37420,
+        "icon": "37420",
+        "ship_type_forbidden": [],
+        "jp_name": "二式水戦",
+        "cn_name": "二式水上战斗机",
+        "en_name": "Type 2 Seaplane Fighter",
+        "equip_limit": 0
+    },
     "43140": {
         "nationality": 4,
         "type": 11,
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -986,7 +1162,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -1004,7 +1180,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -1022,7 +1198,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -1042,14 +1218,14 @@ var equip_data = {
         "attribute_2": "hit",
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 89240,
         "icon": "89240",
         "ship_type_forbidden": [],
         "jp_name": "ヴィーナス覚醒ジェム",
         "cn_name": "觉醒宝珠",
-        "en_name": "Awakening Pearl ",
+        "en_name": "Awakening Pearl",
         "equip_limit": 0
     },
     "89100": {
@@ -1058,7 +1234,7 @@ var equip_data = {
         "attribute_2": "durability",
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 89100,
         "icon": "89100",
@@ -1074,7 +1250,7 @@ var equip_data = {
         "attribute_2": "hit",
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 89060,
         "icon": "89060",
@@ -1090,7 +1266,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 89080,
         "icon": "89080",
@@ -1106,7 +1282,7 @@ var equip_data = {
         "attribute_2": "speed",
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 89120,
         "icon": "89120",
@@ -1122,7 +1298,7 @@ var equip_data = {
         "attribute_2": "dodge",
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 89000,
         "icon": "89000",
@@ -1138,7 +1314,7 @@ var equip_data = {
         "attribute_2": "speed",
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 89040,
         "icon": "89040",
@@ -1154,7 +1330,7 @@ var equip_data = {
         "attribute_2": "luck",
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 89020,
         "icon": "89020",
@@ -1170,7 +1346,7 @@ var equip_data = {
         "attribute_2": "durability",
         "rarity": 4,
         "tech": 0,
-        "ammo": "无",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1960,
         "icon": "1960",
@@ -1186,7 +1362,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 3300,
         "icon": "3300",
@@ -1218,7 +1394,7 @@ var equip_data = {
         "attribute_2": "durability",
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 720,
         "icon": "720",
@@ -1247,7 +1423,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 3140,
         "icon": "3140",
@@ -1278,7 +1454,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 3120,
         "icon": "3120",
@@ -1309,7 +1485,7 @@ var equip_data = {
         "attribute_2": "durability",
         "rarity": 4,
         "tech": 2,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 800,
         "icon": "800",
@@ -1331,7 +1507,7 @@ var equip_data = {
         ],
         "jp_name": "強化耐圧殻設計案",
         "cn_name": "艇壳改良设计案",
-        "en_name": "Pressure-Resistant Hull Design ",
+        "en_name": "Pressure-Resistant Hull Design",
         "equip_limit": 800
     },
     "2740": {
@@ -1340,7 +1516,7 @@ var equip_data = {
         "attribute_2": "hit",
         "rarity": 5,
         "tech": 3,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 2740,
         "icon": "2700",
@@ -1366,8 +1542,8 @@ var equip_data = {
         "type": 10,
         "attribute_2": null,
         "rarity": 5,
-        "tech": 1,
-        "ammo": "なし",
+        "tech": 0,
+        "ammo": 10,
         "ammo_icon": [],
         "id": 540,
         "icon": "540",
@@ -1383,7 +1559,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 4,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 700,
         "icon": "700",
@@ -1412,7 +1588,7 @@ var equip_data = {
         "attribute_2": "reload",
         "rarity": 6,
         "tech": 3,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 2640,
         "icon": "2600",
@@ -1437,7 +1613,7 @@ var equip_data = {
         "attribute_2": "hit",
         "rarity": 4,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 580,
         "icon": "580",
@@ -1466,7 +1642,7 @@ var equip_data = {
         "attribute_2": "hit",
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 600,
         "icon": "600",
@@ -1495,7 +1671,7 @@ var equip_data = {
         "attribute_2": "hit",
         "rarity": 6,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 640,
         "icon": "640",
@@ -1524,7 +1700,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 3200,
         "icon": "3200",
@@ -1552,7 +1728,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 4,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 3220,
         "icon": "3220",
@@ -1580,7 +1756,7 @@ var equip_data = {
         "attribute_2": "hit",
         "rarity": 4,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 2800,
         "icon": "2800",
@@ -1596,7 +1772,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1160,
         "icon": "1160",
@@ -1612,7 +1788,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 4,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 680,
         "icon": "680",
@@ -1641,7 +1817,7 @@ var equip_data = {
         "attribute_2": "hit",
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 880,
         "icon": "880",
@@ -1662,7 +1838,7 @@ var equip_data = {
         ],
         "jp_name": "サイン・オブ・ビクトリー",
         "cn_name": "纳尔逊的旗语",
-        "en_name": "Nelson's Pennant of Victory ",
+        "en_name": "Nelson's Pennant of Victory",
         "equip_limit": 0
     },
     "1260": {
@@ -1671,7 +1847,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1260,
         "icon": "1260",
@@ -1700,14 +1876,14 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 840,
         "icon": "840",
         "ship_type_forbidden": [],
         "jp_name": "精鋭ダメコン饅頭(ユニオン)",
         "cn_name": "白鹰精英损管",
-        "en_name": "Eagle Union Elite Damage Control ",
+        "en_name": "Eagle Union Elite Damage Control",
         "equip_limit": 0
     },
     "520": {
@@ -1715,8 +1891,8 @@ var equip_data = {
         "type": 10,
         "attribute_2": null,
         "rarity": 5,
-        "tech": 1,
-        "ammo": "なし",
+        "tech": 0,
+        "ammo": 10,
         "ammo_icon": [],
         "id": 520,
         "icon": "520",
@@ -1732,7 +1908,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1240,
         "icon": "1200",
@@ -1757,7 +1933,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1220,
         "icon": "1200",
@@ -1782,7 +1958,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1200,
         "icon": "1200",
@@ -1807,7 +1983,7 @@ var equip_data = {
         "attribute_2": "durability",
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1760,
         "icon": "1760",
@@ -1823,7 +1999,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 4,
         "tech": 3,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1140,
         "icon": "1100",
@@ -1839,7 +2015,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 3,
         "tech": 2,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1120,
         "icon": "1100",
@@ -1855,7 +2031,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 2,
         "tech": 1,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1100,
         "icon": "1100",
@@ -1870,8 +2046,8 @@ var equip_data = {
         "type": 10,
         "attribute_2": "durability",
         "rarity": 5,
-        "tech": 1,
-        "ammo": "なし",
+        "tech": 0,
+        "ammo": 10,
         "ammo_icon": [],
         "id": 500,
         "icon": "500",
@@ -1887,7 +2063,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 620,
         "icon": "620",
@@ -1916,7 +2092,7 @@ var equip_data = {
         "attribute_2": "dodge",
         "rarity": 5,
         "tech": 3,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1540,
         "icon": "1500",
@@ -1935,7 +2111,7 @@ var equip_data = {
         "attribute_2": "dodge",
         "rarity": 4,
         "tech": 2,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1520,
         "icon": "1500",
@@ -1954,7 +2130,7 @@ var equip_data = {
         "attribute_2": "dodge",
         "rarity": 3,
         "tech": 1,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1500,
         "icon": "1500",
@@ -1973,7 +2149,7 @@ var equip_data = {
         "attribute_2": "antisub",
         "rarity": 4,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 15500,
         "icon": "15500",
@@ -2000,7 +2176,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 4,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 660,
         "icon": "660",
@@ -2029,7 +2205,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1640,
         "icon": "1600",
@@ -2048,7 +2224,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1620,
         "icon": "1600",
@@ -2067,7 +2243,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1600,
         "icon": "1600",
@@ -2086,7 +2262,7 @@ var equip_data = {
         "attribute_2": "durability",
         "rarity": 3,
         "tech": 3,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1940,
         "icon": "1900",
@@ -2102,7 +2278,7 @@ var equip_data = {
         "attribute_2": "durability",
         "rarity": 2,
         "tech": 2,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1920,
         "icon": "1900",
@@ -2118,7 +2294,7 @@ var equip_data = {
         "attribute_2": "durability",
         "rarity": 1,
         "tech": 1,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1900,
         "icon": "1900",
@@ -2134,14 +2310,14 @@ var equip_data = {
         "attribute_2": "hit",
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 89180,
         "icon": "89180",
         "ship_type_forbidden": [],
         "jp_name": "輝けるアストラム",
         "cn_name": "闪耀之歌",
-        "en_name": "Resplendent Astrum ",
+        "en_name": "Resplendent Astrum",
         "equip_limit": 0
     },
     "1040": {
@@ -2150,7 +2326,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 5,
         "tech": 3,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1040,
         "icon": "1000",
@@ -2182,7 +2358,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 4,
         "tech": 2,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1020,
         "icon": "1000",
@@ -2214,7 +2390,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 3,
         "tech": 1,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1000,
         "icon": "1000",
@@ -2246,7 +2422,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 2240,
         "icon": "2200",
@@ -2265,7 +2441,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 2220,
         "icon": "2200",
@@ -2284,7 +2460,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 2200,
         "icon": "2200",
@@ -2303,7 +2479,7 @@ var equip_data = {
         "attribute_2": "durability",
         "rarity": 4,
         "tech": 3,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 2140,
         "icon": "2100",
@@ -2332,7 +2508,7 @@ var equip_data = {
         "attribute_2": "durability",
         "rarity": 3,
         "tech": 2,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 2120,
         "icon": "2100",
@@ -2361,7 +2537,7 @@ var equip_data = {
         "attribute_2": "durability",
         "rarity": 2,
         "tech": 1,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 2100,
         "icon": "2100",
@@ -2390,14 +2566,14 @@ var equip_data = {
         "attribute_2": "hit",
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 89160,
         "icon": "89160",
         "ship_type_forbidden": [],
         "jp_name": "神聖なるリュミエール",
         "cn_name": "活力之歌",
-        "en_name": "Sacred Lumière ",
+        "en_name": "Sacred Lumière",
         "equip_limit": 0
     },
     "2040": {
@@ -2406,7 +2582,7 @@ var equip_data = {
         "attribute_2": "dodge",
         "rarity": 4,
         "tech": 3,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 2040,
         "icon": "2000",
@@ -2422,7 +2598,7 @@ var equip_data = {
         "attribute_2": "dodge",
         "rarity": 3,
         "tech": 2,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 2020,
         "icon": "2000",
@@ -2438,7 +2614,7 @@ var equip_data = {
         "attribute_2": "dodge",
         "rarity": 2,
         "tech": 1,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 2000,
         "icon": "2000",
@@ -2454,14 +2630,14 @@ var equip_data = {
         "attribute_2": "hit",
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 89140,
         "icon": "89140",
         "ship_type_forbidden": [],
         "jp_name": "熱愛のフィリンエッター",
         "cn_name": "炽烈之歌",
-        "en_name": "White-Hot Verheerender ",
+        "en_name": "White-Hot Verheerender",
         "equip_limit": 0
     },
     "2540": {
@@ -2470,7 +2646,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 3,
         "tech": 3,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 2540,
         "icon": "2500",
@@ -2486,7 +2662,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 2,
         "tech": 2,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 2520,
         "icon": "2500",
@@ -2502,7 +2678,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 2500,
         "icon": "2500",
@@ -2518,14 +2694,14 @@ var equip_data = {
         "attribute_2": "hit",
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 860,
         "icon": "860",
         "ship_type_forbidden": [],
         "jp_name": "海軍条約文書",
         "cn_name": "华盛顿海军条约",
-        "en_name": "Washington Naval Treaty ",
+        "en_name": "Washington Naval Treaty",
         "equip_limit": 820
     },
     "1740": {
@@ -2534,7 +2710,7 @@ var equip_data = {
         "attribute_2": "durability",
         "rarity": 3,
         "tech": 3,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1740,
         "icon": "1700",
@@ -2550,7 +2726,7 @@ var equip_data = {
         "attribute_2": "durability",
         "rarity": 2,
         "tech": 2,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1720,
         "icon": "1700",
@@ -2566,7 +2742,7 @@ var equip_data = {
         "attribute_2": "durability",
         "rarity": 1,
         "tech": 1,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1700,
         "icon": "1700",
@@ -2582,7 +2758,7 @@ var equip_data = {
         "attribute_2": "durability",
         "rarity": 5,
         "tech": 3,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1440,
         "icon": "1400",
@@ -2611,7 +2787,7 @@ var equip_data = {
         "attribute_2": "durability",
         "rarity": 4,
         "tech": 2,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1420,
         "icon": "1400",
@@ -2640,7 +2816,7 @@ var equip_data = {
         "attribute_2": "durability",
         "rarity": 3,
         "tech": 1,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1400,
         "icon": "1400",
@@ -2669,7 +2845,7 @@ var equip_data = {
         "attribute_2": "speed",
         "rarity": 4,
         "tech": 3,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1840,
         "icon": "1800",
@@ -2685,7 +2861,7 @@ var equip_data = {
         "attribute_2": "speed",
         "rarity": 3,
         "tech": 2,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1820,
         "icon": "1800",
@@ -2701,7 +2877,7 @@ var equip_data = {
         "attribute_2": "speed",
         "rarity": 2,
         "tech": 1,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1800,
         "icon": "1800",
@@ -2717,7 +2893,7 @@ var equip_data = {
         "attribute_2": "hit",
         "rarity": 5,
         "tech": 3,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 3040,
         "icon": "3000",
@@ -2748,7 +2924,7 @@ var equip_data = {
         "attribute_2": "hit",
         "rarity": 4,
         "tech": 2,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 3020,
         "icon": "3000",
@@ -2779,7 +2955,7 @@ var equip_data = {
         "attribute_2": "hit",
         "rarity": 3,
         "tech": 1,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 3000,
         "icon": "3000",
@@ -2810,7 +2986,7 @@ var equip_data = {
         "attribute_2": "durability",
         "rarity": 4,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 780,
         "icon": "780",
@@ -2826,7 +3002,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 4,
         "tech": 3,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 2440,
         "icon": "2400",
@@ -2842,7 +3018,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 3,
         "tech": 2,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 2420,
         "icon": "2400",
@@ -2858,7 +3034,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 2,
         "tech": 1,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 2400,
         "icon": "2400",
@@ -2874,7 +3050,7 @@ var equip_data = {
         "attribute_2": "hit",
         "rarity": 4,
         "tech": 3,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 2940,
         "icon": "2900",
@@ -2905,7 +3081,7 @@ var equip_data = {
         "attribute_2": "hit",
         "rarity": 3,
         "tech": 2,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 2920,
         "icon": "2900",
@@ -2936,7 +3112,7 @@ var equip_data = {
         "attribute_2": "hit",
         "rarity": 2,
         "tech": 1,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 2900,
         "icon": "2900",
@@ -2967,7 +3143,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 4,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 3100,
         "icon": "3100",
@@ -2998,7 +3174,7 @@ var equip_data = {
         "attribute_2": "durability",
         "rarity": 4,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 760,
         "icon": "760",
@@ -3014,7 +3190,7 @@ var equip_data = {
         "attribute_2": "durability",
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 820,
         "icon": "820",
@@ -3036,7 +3212,7 @@ var equip_data = {
         ],
         "jp_name": "フロンティアメダル",
         "cn_name": "开拓者奖章",
-        "en_name": "Frontier Medal ",
+        "en_name": "Frontier Medal",
         "equip_limit": 820
     },
     "1340": {
@@ -3045,7 +3221,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 4,
         "tech": 3,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1340,
         "icon": "1300",
@@ -3065,7 +3241,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 3,
         "tech": 2,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1320,
         "icon": "1300",
@@ -3085,7 +3261,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 2,
         "tech": 1,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 1300,
         "icon": "1300",
@@ -3105,14 +3281,14 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 89220,
         "icon": "89220",
         "ship_type_forbidden": [],
         "jp_name": "ネビュラドレス",
         "cn_name": "星云舞裙",
-        "en_name": "Celestial Body ",
+        "en_name": "Celestial Body",
         "equip_limit": 0
     },
     "2340": {
@@ -3121,7 +3297,7 @@ var equip_data = {
         "attribute_2": "speed",
         "rarity": 4,
         "tech": 3,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 2340,
         "icon": "2300",
@@ -3140,7 +3316,7 @@ var equip_data = {
         "attribute_2": "speed",
         "rarity": 3,
         "tech": 2,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 2320,
         "icon": "2300",
@@ -3159,7 +3335,7 @@ var equip_data = {
         "attribute_2": "speed",
         "rarity": 2,
         "tech": 1,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 2300,
         "icon": "2300",
@@ -3178,14 +3354,14 @@ var equip_data = {
         "attribute_2": "hit",
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 89260,
         "icon": "89260",
         "ship_type_forbidden": [],
         "jp_name": "ココロの鍵",
         "cn_name": "心之钥匙",
-        "en_name": "Heart Key ",
+        "en_name": "Heart Key",
         "equip_limit": 0
     },
     "89200": {
@@ -3194,14 +3370,14 @@ var equip_data = {
         "attribute_2": "speed",
         "rarity": 5,
         "tech": 0,
-        "ammo": "なし",
+        "ammo": 10,
         "ammo_icon": [],
         "id": 89200,
         "icon": "89200",
         "ship_type_forbidden": [],
         "jp_name": "グラヴィティシューズ",
         "cn_name": "引力舞鞋",
-        "en_name": "Cosmic Kicks ",
+        "en_name": "Cosmic Kicks",
         "equip_limit": 0
     },
     "49040": {
@@ -3210,11 +3386,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 49040,
         "icon": "49000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "Ju-87C急降下爆撃機",
         "cn_name": "Ju-87C俯冲轰炸机",
         "en_name": "Ju-87C Dive Bomber",
@@ -3226,11 +3404,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 49020,
         "icon": "49000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "Ju-87C急降下爆撃機",
         "cn_name": "Ju-87C俯冲轰炸机",
         "en_name": "Ju-87C Dive Bomber",
@@ -3242,14 +3422,87 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 49000,
         "icon": "49000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "Ju-87C急降下爆撃機",
         "cn_name": "Ju-87C俯冲轰炸机",
         "en_name": "Ju-87C Dive Bomber",
+        "equip_limit": 0
+    },
+    "49060": {
+        "nationality": 4,
+        "type": 9,
+        "attribute_2": "air",
+        "rarity": 3,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 49060,
+        "icon": "49060",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "He-50b",
+        "cn_name": "He-50b舰载轰炸机",
+        "en_name": "He-50b",
+        "equip_limit": 0
+    },
+    "39320": {
+        "nationality": 3,
+        "type": 9,
+        "attribute_2": "air",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 39320,
+        "icon": "39320",
+        "ship_type_forbidden": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+        ],
+        "jp_name": "彗星二一型",
+        "cn_name": "彗星二一型",
+        "en_name": "Suisei Model 21",
+        "equip_limit": 0
+    },
+    "39160": {
+        "nationality": 3,
+        "type": 9,
+        "attribute_2": "air",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 39160,
+        "icon": "39160",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "彗星一二型甲",
+        "cn_name": "彗星一二型甲",
+        "en_name": "Suisei Model 12A",
         "equip_limit": 0
     },
     "39140": {
@@ -3258,11 +3511,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 5,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 39140,
         "icon": "39100",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "彗星",
         "cn_name": "彗星",
         "en_name": "Comet",
@@ -3274,11 +3529,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 4,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 39120,
         "icon": "39100",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "彗星",
         "cn_name": "彗星",
         "en_name": "Comet",
@@ -3290,14 +3547,34 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 39100,
         "icon": "39100",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "彗星",
         "cn_name": "彗星",
         "en_name": "Comet",
+        "equip_limit": 0
+    },
+    "39060": {
+        "nationality": 3,
+        "type": 9,
+        "attribute_2": "air",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 39060,
+        "icon": "39060",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "九九式艦爆改",
+        "cn_name": "九九式舰爆改",
+        "en_name": "Type 99 Dive Bomber Kai",
         "equip_limit": 0
     },
     "39040": {
@@ -3306,11 +3583,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 39040,
         "icon": "39000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "九九式艦爆",
         "cn_name": "九九式舰爆",
         "en_name": "Aichi D3A Type 99",
@@ -3322,11 +3601,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 39020,
         "icon": "39000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "九九式艦爆",
         "cn_name": "九九式舰爆",
         "en_name": "Aichi D3A Type 99",
@@ -3338,11 +3619,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 39000,
         "icon": "39000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "九九式艦爆",
         "cn_name": "九九式舰爆",
         "en_name": "Aichi D3A Type 99",
@@ -3354,11 +3637,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 29140,
         "icon": "29100",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "フルマー",
         "cn_name": "海燕",
         "en_name": "Fairey Fulmar",
@@ -3370,11 +3655,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 29120,
         "icon": "29100",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "フルマー",
         "cn_name": "海燕",
         "en_name": "Fairey Fulmar",
@@ -3386,11 +3673,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 29100,
         "icon": "29100",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "フルマー",
         "cn_name": "海燕",
         "en_name": "Fairey Fulmar",
@@ -3402,11 +3691,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 29200,
         "icon": "29200",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "ファイアフライ",
         "cn_name": "萤火虫",
         "en_name": "Fairey Firefly",
@@ -3418,11 +3709,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 29300,
         "icon": "29300",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "バラクーダ(831中隊)",
         "cn_name": "梭鱼(831中队)",
         "en_name": "Fairey Barracuda (831 Squadron)",
@@ -3434,11 +3727,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 29040,
         "icon": "29000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "スクア",
         "cn_name": "贼鸥",
         "en_name": "Blackburn Skua",
@@ -3450,11 +3745,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 29020,
         "icon": "29000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "スクア",
         "cn_name": "贼鸥",
         "en_name": "Blackburn Skua",
@@ -3466,14 +3763,34 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 29000,
         "icon": "29000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "スクア",
         "cn_name": "贼鸥",
         "en_name": "Blackburn Skua",
+        "equip_limit": 0
+    },
+    "19160": {
+        "nationality": 1,
+        "type": 9,
+        "attribute_2": "air",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 19160,
+        "icon": "19160",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "実験型XSB3C-1",
+        "cn_name": "实验型XSB3C-1",
+        "en_name": "Experimental XSB3C-1",
         "equip_limit": 0
     },
     "19060": {
@@ -3482,11 +3799,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 19060,
         "icon": "19060",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "SBD(マクラスキー隊)",
         "cn_name": "SBD无畏(麦克拉斯基队)",
         "en_name": "SBD Dauntless (McClusky Division)",
@@ -3498,11 +3817,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 19040,
         "icon": "19000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "SBDドーントレス",
         "cn_name": "SBD无畏",
         "en_name": "SBD Dauntless",
@@ -3514,11 +3835,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 19020,
         "icon": "19000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "SBDドーントレス",
         "cn_name": "SBD无畏",
         "en_name": "SBD Dauntless",
@@ -3530,11 +3853,13 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 19000,
         "icon": "19000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "SBDドーントレス",
         "cn_name": "SBD无畏",
         "en_name": "SBD Dauntless",
@@ -3546,11 +3871,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 19140,
         "icon": "19100",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "SB2Cヘルダイバー",
         "cn_name": "SB2C地狱俯冲者",
         "en_name": "SB2C Helldiver",
@@ -3562,11 +3889,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 19120,
         "icon": "19100",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "SB2Cヘルダイバー",
         "cn_name": "SB2C地狱俯冲者",
         "en_name": "SB2C Helldiver",
@@ -3578,11 +3907,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 19100,
         "icon": "19100",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "SB2Cヘルダイバー",
         "cn_name": "SB2C地狱俯冲者",
         "en_name": "SB2C Helldiver",
@@ -3594,11 +3925,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 5,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 19240,
         "icon": "19200",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "BTD-1デストロイヤー",
         "cn_name": "BTD-1毁灭者",
         "en_name": "BTD-1 Destroyer",
@@ -3610,11 +3943,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 4,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 19220,
         "icon": "19200",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "BTD-1デストロイヤー",
         "cn_name": "BTD-1毁灭者",
         "en_name": "BTD-1 Destroyer",
@@ -3626,11 +3961,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 19200,
         "icon": "19200",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "BTD-1デストロイヤー",
         "cn_name": "BTD-1毁灭者",
         "en_name": "BTD-1 Destroyer",
@@ -3642,14 +3979,70 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 90840,
         "icon": "50840",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "ピエール・ルヴァッスールPL.7攻撃機",
         "cn_name": "PL.7舰载鱼雷机",
         "en_name": "Pierre Levasseur PL.7 Torpedo Bomber",
+        "equip_limit": 0
+    },
+    "48040": {
+        "nationality": 4,
+        "type": 8,
+        "attribute_2": "air",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 48040,
+        "icon": "48040",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "Ju-87 D-4",
+        "cn_name": "Ju-87 D-4",
+        "en_name": "Ju-87 D-4",
+        "equip_limit": 0
+    },
+    "48020": {
+        "nationality": 4,
+        "type": 8,
+        "attribute_2": "air",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 48020,
+        "icon": "48020",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "Fi-167",
+        "cn_name": "Fi-167舰载鱼雷机",
+        "en_name": "Fi-167",
+        "equip_limit": 0
+    },
+    "48000": {
+        "nationality": 4,
+        "type": 8,
+        "attribute_2": "air",
+        "rarity": 3,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 48000,
+        "icon": "48000",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "Ar-195",
+        "cn_name": "Ar-195舰载鱼雷机",
+        "en_name": "Ar-195",
         "equip_limit": 0
     },
     "38240": {
@@ -3658,11 +4051,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 5,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 38240,
         "icon": "38200",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "流星",
         "cn_name": "流星",
         "en_name": "Aichi B7A Ryusei",
@@ -3674,11 +4069,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 4,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 38220,
         "icon": "38200",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "流星",
         "cn_name": "流星",
         "en_name": "Aichi B7A Ryusei",
@@ -3690,14 +4087,34 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 38200,
         "icon": "38200",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "流星",
         "cn_name": "流星",
         "en_name": "Aichi B7A Ryusei",
+        "equip_limit": 0
+    },
+    "38160": {
+        "nationality": 3,
+        "type": 8,
+        "attribute_2": "air",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 38160,
+        "icon": "38160",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "天山改",
+        "cn_name": "天山改",
+        "en_name": "Tenzan Kai",
         "equip_limit": 0
     },
     "38140": {
@@ -3706,11 +4123,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 38140,
         "icon": "38100",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "天山",
         "cn_name": "天山",
         "en_name": "Nakajima B6N Tenzan",
@@ -3722,11 +4141,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 38120,
         "icon": "38100",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "天山",
         "cn_name": "天山",
         "en_name": "Nakajima B6N Tenzan",
@@ -3738,14 +4159,34 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 38100,
         "icon": "38100",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "天山",
         "cn_name": "天山",
         "en_name": "Nakajima B6N Tenzan",
+        "equip_limit": 0
+    },
+    "38060": {
+        "nationality": 3,
+        "type": 8,
+        "attribute_2": "air",
+        "rarity": 3,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 38060,
+        "icon": "38060",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "九七式艦攻改",
+        "cn_name": "九七式舰攻改",
+        "en_name": "Type 97 Torpedo Bomber Kai",
         "equip_limit": 0
     },
     "38040": {
@@ -3754,11 +4195,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 38040,
         "icon": "38000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "九七式艦攻",
         "cn_name": "九七式舰攻",
         "en_name": "Nakajima B5N",
@@ -3770,11 +4213,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 38020,
         "icon": "38000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "九七式艦攻",
         "cn_name": "九七式舰攻",
         "en_name": "Nakajima B5N",
@@ -3786,14 +4231,34 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 38000,
         "icon": "38000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "九七式艦攻",
         "cn_name": "九七式舰攻",
         "en_name": "Nakajima B5N",
+        "equip_limit": 0
+    },
+    "28400": {
+        "nationality": 2,
+        "type": 8,
+        "attribute_2": "air",
+        "rarity": 6,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 28400,
+        "icon": "28400",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "ワイヴァーン",
+        "cn_name": "飞龙",
+        "en_name": "Wyvern",
         "equip_limit": 0
     },
     "28340": {
@@ -3802,11 +4267,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 28340,
         "icon": "28300",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "フェアリーアルバコア",
         "cn_name": "青花鱼",
         "en_name": "Fairey Albacore",
@@ -3818,11 +4285,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 28320,
         "icon": "28300",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "フェアリーアルバコア",
         "cn_name": "青花鱼",
         "en_name": "Fairey Albacore",
@@ -3834,11 +4303,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 28300,
         "icon": "28300",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "フェアリーアルバコア",
         "cn_name": "青花鱼",
         "en_name": "Fairey Albacore",
@@ -3850,14 +4321,34 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 28200,
         "icon": "28200",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "ファイアブランド",
         "cn_name": "火把",
         "en_name": "Blackburn Firebrand",
+        "equip_limit": 0
+    },
+    "28220": {
+        "nationality": 2,
+        "type": 8,
+        "attribute_2": "air",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 28220,
+        "icon": "28220",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "ファイアクレスト",
+        "cn_name": "火冠",
+        "en_name": "Firecrest",
         "equip_limit": 0
     },
     "28140": {
@@ -3866,11 +4357,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 5,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 28140,
         "icon": "28100",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "バラクーダ",
         "cn_name": "梭鱼",
         "en_name": "Barracuda",
@@ -3882,11 +4375,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 4,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 28120,
         "icon": "28100",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "バラクーダ",
         "cn_name": "梭鱼",
         "en_name": "Barracuda",
@@ -3898,11 +4393,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 28100,
         "icon": "28100",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "バラクーダ",
         "cn_name": "梭鱼",
         "en_name": "Barracuda",
@@ -3914,11 +4411,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 28060,
         "icon": "28060",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "ソードフィッシュ(818中隊)",
         "cn_name": "剑鱼(818中队)",
         "en_name": "Swordfish (818 Squad)",
@@ -3930,11 +4429,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 28040,
         "icon": "28000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "ソードフィッシュ",
         "cn_name": "剑鱼",
         "en_name": "Swordfish",
@@ -3946,11 +4447,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 28020,
         "icon": "28000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "ソードフィッシュ",
         "cn_name": "剑鱼",
         "en_name": "Swordfish",
@@ -3962,14 +4465,34 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 28000,
         "icon": "28000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "ソードフィッシュ",
         "cn_name": "剑鱼",
         "en_name": "Swordfish",
+        "equip_limit": 0
+    },
+    "18220": {
+        "nationality": 1,
+        "type": 8,
+        "attribute_2": "air",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 18220,
+        "icon": "18220",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "XTB2D-1スカイパイレート",
+        "cn_name": "XTB2D-1天空海盗",
+        "en_name": "XBT2D-1 Destroyer II",
         "equip_limit": 0
     },
     "18180": {
@@ -3978,11 +4501,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 18180,
         "icon": "18180",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "TBMアベンジャー(VT-18中隊)",
         "cn_name": "TBM复仇者(VT-18中队)",
         "en_name": "TBM Avenger (VT-18 Squadron)",
@@ -3994,11 +4519,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 18140,
         "icon": "18100",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "TBFアベンジャー",
         "cn_name": "TBF复仇者",
         "en_name": "TBF Avenger",
@@ -4010,11 +4537,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 18120,
         "icon": "18100",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "TBFアベンジャー",
         "cn_name": "TBF复仇者",
         "en_name": "TBF Avenger",
@@ -4026,11 +4555,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 18100,
         "icon": "18100",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "TBFアベンジャー",
         "cn_name": "TBF复仇者",
         "en_name": "TBF Avenger",
@@ -4042,11 +4573,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 18060,
         "icon": "18060",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "TBDデバステイター(VT-8中隊)",
         "cn_name": "TBD蹂躏者(VT-8中队)",
         "en_name": "TBD Devastator (VT-8 Squadron) ",
@@ -4058,11 +4591,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 18040,
         "icon": "18000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "TBDデバステイター",
         "cn_name": "TBD蹂躏者",
         "en_name": "TBD Devastator",
@@ -4074,11 +4609,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 18020,
         "icon": "18000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "TBDデバステイター",
         "cn_name": "TBD蹂躏者",
         "en_name": "TBD Devastator",
@@ -4090,11 +4627,13 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 18000,
         "icon": "18000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "TBDデバステイター",
         "cn_name": "TBD蹂躏者",
         "en_name": "TBD Devastator",
@@ -4106,14 +4645,34 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 90820,
         "icon": "50820",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "グールドゥ・ルスールGL.2戦闘機",
         "cn_name": "GL.2舰载战斗机",
         "en_name": "Gourdou-Leseurre GL.2 Fighter",
+        "equip_limit": 0
+    },
+    "47080": {
+        "nationality": 4,
+        "type": 7,
+        "attribute_2": "air",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 47080,
+        "icon": "47080",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "試作型FW-190 A-5(艦載機型)",
+        "cn_name": "试作型舰载FW-190 A-5",
+        "en_name": "Prototype Carrier-Based Fw 190 A-5",
         "equip_limit": 0
     },
     "47140": {
@@ -4122,11 +4681,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 5,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 47140,
         "icon": "47100",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "Me-155A艦上戦闘機",
         "cn_name": "Me-155A舰载战斗机",
         "en_name": "Messerschmitt Me-155A",
@@ -4138,11 +4699,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 4,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 47120,
         "icon": "47100",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "Me-155A艦上戦闘機",
         "cn_name": "Me-155A舰载战斗机",
         "en_name": "Messerschmitt Me-155A",
@@ -4154,11 +4717,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 47100,
         "icon": "47100",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "Me-155A艦上戦闘機",
         "cn_name": "Me-155A舰载战斗机",
         "en_name": "Messerschmitt Me-155A",
@@ -4170,11 +4735,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 47040,
         "icon": "47000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "BF-109T艦上戦闘機",
         "cn_name": "BF-109T舰载战斗机",
         "en_name": "BF-109T Fighter",
@@ -4186,11 +4753,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 47020,
         "icon": "47000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "BF-109T艦上戦闘機",
         "cn_name": "BF-109T舰载战斗机",
         "en_name": "BF-109T Fighter",
@@ -4202,14 +4771,34 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 47000,
         "icon": "47000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "BF-109T艦上戦闘機",
         "cn_name": "BF-109T舰载战斗机",
         "en_name": "BF-109T Fighter",
+        "equip_limit": 0
+    },
+    "47060": {
+        "nationality": 4,
+        "type": 7,
+        "attribute_2": "air",
+        "rarity": 3,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 47060,
+        "icon": "47060",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "Ar-197",
+        "cn_name": "Ar-197舰载战斗机",
+        "en_name": "Ar-197",
         "equip_limit": 0
     },
     "37240": {
@@ -4218,12 +4807,14 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 5,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 37240,
         "icon": "37200",
-        "ship_type_forbidden": [],
-        "jp_name": "零戦52型",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "零戦五二型",
         "cn_name": "零战五二型",
         "en_name": "A6M5 Zero",
         "equip_limit": 0
@@ -4234,12 +4825,14 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 4,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 37220,
         "icon": "37200",
-        "ship_type_forbidden": [],
-        "jp_name": "零戦52型",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "零戦五二型",
         "cn_name": "零战五二型",
         "en_name": "A6M5 Zero",
         "equip_limit": 0
@@ -4250,12 +4843,14 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 37200,
         "icon": "37200",
-        "ship_type_forbidden": [],
-        "jp_name": "零戦52型",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "零戦五二型",
         "cn_name": "零战五二型",
         "en_name": "A6M5 Zero",
         "equip_limit": 0
@@ -4266,12 +4861,14 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 37140,
         "icon": "37100",
-        "ship_type_forbidden": [],
-        "jp_name": "零戦21型",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "零戦二一型",
         "cn_name": "零战二一型",
         "en_name": "A6M2 Zero",
         "equip_limit": 0
@@ -4282,12 +4879,14 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 37120,
         "icon": "37100",
-        "ship_type_forbidden": [],
-        "jp_name": "零戦21型",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "零戦二一型",
         "cn_name": "零战二一型",
         "en_name": "A6M2 Zero",
         "equip_limit": 0
@@ -4298,14 +4897,34 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 37100,
         "icon": "37100",
-        "ship_type_forbidden": [],
-        "jp_name": "零戦21型",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "零戦二一型",
         "cn_name": "零战二一型",
         "en_name": "A6M2 Zero",
+        "equip_limit": 0
+    },
+    "37160": {
+        "nationality": 3,
+        "type": 7,
+        "attribute_2": "air",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 37160,
+        "icon": "37160",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "零戦三二型",
+        "cn_name": "零战三二型",
+        "en_name": "Type 0 Model 32",
         "equip_limit": 0
     },
     "37400": {
@@ -4314,11 +4933,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 37400,
         "icon": "37400",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "紫電改二",
         "cn_name": "紫电改二",
         "en_name": "Kawanishi N1K3-A Shiden Kai 2 ",
@@ -4330,11 +4951,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 5,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 37340,
         "icon": "37300",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "烈風",
         "cn_name": "烈风",
         "en_name": "A7M Reppuu",
@@ -4346,11 +4969,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 4,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 37320,
         "icon": "37300",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "烈風",
         "cn_name": "烈风",
         "en_name": "A7M Reppuu",
@@ -4362,11 +4987,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 37300,
         "icon": "37300",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "烈風",
         "cn_name": "烈风",
         "en_name": "A7M Reppuu",
@@ -4378,11 +5005,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 37040,
         "icon": "37000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "九六式艦戦",
         "cn_name": "九六式舰战",
         "en_name": "A5M Claude",
@@ -4394,11 +5023,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 37020,
         "icon": "37000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "九六式艦戦",
         "cn_name": "九六式舰战",
         "en_name": "A5M Claude",
@@ -4410,11 +5041,13 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 37000,
         "icon": "37000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "九六式艦戦",
         "cn_name": "九六式舰战",
         "en_name": "A5M Claude",
@@ -4426,11 +5059,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 27320,
         "icon": "27320",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "シーホーネット",
         "cn_name": "海大黄蜂",
         "en_name": "Sea Hornet ",
@@ -4442,11 +5077,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 27300,
         "icon": "27300",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "シーフューリー",
         "cn_name": "海怒",
         "en_name": "Sea Fury",
@@ -4458,11 +5095,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 5,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 27140,
         "icon": "27100",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "シーファング",
         "cn_name": "海毒牙",
         "en_name": "Seafang",
@@ -4474,11 +5113,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 4,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 27120,
         "icon": "27100",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "シーファング",
         "cn_name": "海毒牙",
         "en_name": "Seafang",
@@ -4490,14 +5131,34 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 27100,
         "icon": "27100",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "シーファング",
         "cn_name": "海毒牙",
         "en_name": "Seafang",
+        "equip_limit": 0
+    },
+    "27060": {
+        "nationality": 2,
+        "type": 7,
+        "attribute_2": "air",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 27060,
+        "icon": "27060",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "シーファイアFR.47",
+        "cn_name": "海喷火FR.47",
+        "en_name": "Seafire FR.47",
         "equip_limit": 0
     },
     "27040": {
@@ -4506,11 +5167,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 27040,
         "icon": "27000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "シーファイア",
         "cn_name": "海喷火",
         "en_name": "Spitfire",
@@ -4522,11 +5185,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 27020,
         "icon": "27000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "シーファイア",
         "cn_name": "海喷火",
         "en_name": "Spitfire",
@@ -4538,14 +5203,34 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 27000,
         "icon": "27000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "シーファイア",
         "cn_name": "海喷火",
         "en_name": "Spitfire",
+        "equip_limit": 0
+    },
+    "27260": {
+        "nationality": 2,
+        "type": 7,
+        "attribute_2": "air",
+        "rarity": 3,
+        "tech": 3,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 27260,
+        "icon": "27260",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "シーハリケーン",
+        "cn_name": "海飓风",
+        "en_name": "Sea Hurricane",
         "equip_limit": 0
     },
     "27240": {
@@ -4554,11 +5239,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 27240,
         "icon": "27200",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "シーグラディエーター",
         "cn_name": "海斗士",
         "en_name": "Sea Gladiator",
@@ -4570,11 +5257,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 27220,
         "icon": "27200",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "シーグラディエーター",
         "cn_name": "海斗士",
         "en_name": "Sea Gladiator",
@@ -4586,14 +5275,34 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 27200,
         "icon": "27200",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "シーグラディエーター",
         "cn_name": "海斗士",
         "en_name": "Sea Gladiator",
+        "equip_limit": 0
+    },
+    "17080": {
+        "nationality": 1,
+        "type": 7,
+        "attribute_2": "air",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 17080,
+        "icon": "17080",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "試作型XF2A-4バッファロー",
+        "cn_name": "试作型XF2A-4水牛",
+        "en_name": "Prototype XF2A-4 Buffalo",
         "equip_limit": 0
     },
     "17400": {
@@ -4602,14 +5311,52 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 4,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 17400,
         "icon": "17400",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "スカイロケット",
         "cn_name": "XF5F天箭",
         "en_name": "XF5F Skyrocket",
+        "equip_limit": 0
+    },
+    "17380": {
+        "nationality": 1,
+        "type": 7,
+        "attribute_2": "air",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 17380,
+        "icon": "17380",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "F8Fベアキャット",
+        "cn_name": "F8F熊猫",
+        "en_name": "F8F Bearcat",
+        "equip_limit": 0
+    },
+    "17360": {
+        "nationality": 1,
+        "type": 7,
+        "attribute_2": "air",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 17360,
+        "icon": "17360",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "F7Fタイガーキャット",
+        "cn_name": "F7F虎猫",
+        "en_name": "F7F Tigercat",
         "equip_limit": 0
     },
     "17340": {
@@ -4618,11 +5365,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 5,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 17340,
         "icon": "17300",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "F6Fヘルキャット",
         "cn_name": "F6F地狱猫",
         "en_name": "F6F Hellcat",
@@ -4634,11 +5383,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 4,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 17320,
         "icon": "17300",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "F6Fヘルキャット",
         "cn_name": "F6F地狱猫",
         "en_name": "F6F Hellcat",
@@ -4650,11 +5401,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 17300,
         "icon": "17300",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "F6Fヘルキャット",
         "cn_name": "F6F地狱猫",
         "en_name": "F6F Hellcat",
@@ -4666,11 +5419,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 17260,
         "icon": "17260",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "F4U(VF-17中隊)",
         "cn_name": "F4U(VF-17“海盗”中队)",
         "en_name": "F4U (VF-17 \"Pirate\" Squad)",
@@ -4682,11 +5437,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 17240,
         "icon": "17200",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "F4Uコルセア",
         "cn_name": "F4U海盗",
         "en_name": "F4U Corsair",
@@ -4698,11 +5455,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 17220,
         "icon": "17200",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "F4Uコルセア",
         "cn_name": "F4U海盗",
         "en_name": "F4U Corsair",
@@ -4714,11 +5473,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 17200,
         "icon": "17200",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "F4Uコルセア",
         "cn_name": "F4U海盗",
         "en_name": "F4U Corsair",
@@ -4730,11 +5491,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 17140,
         "icon": "17100",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "F4Fワイルドキャット",
         "cn_name": "F4F野猫",
         "en_name": "F4F Wildcat",
@@ -4746,11 +5509,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 17120,
         "icon": "17100",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "F4Fワイルドキャット",
         "cn_name": "F4F野猫",
         "en_name": "F4F Wildcat",
@@ -4762,11 +5527,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 17100,
         "icon": "17100",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "F4Fワイルドキャット",
         "cn_name": "F4F野猫",
         "en_name": "F4F Wildcat",
@@ -4778,11 +5545,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 17060,
         "icon": "17060",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "F2Aバッファロー(サッチ隊)",
         "cn_name": "F2A水牛(萨奇队)",
         "en_name": "Brewster F2A Buffalo (Thach Squadron)",
@@ -4794,11 +5563,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 17040,
         "icon": "17000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "F2Aバッファロー",
         "cn_name": "F2A水牛",
         "en_name": "F2A Buffalo",
@@ -4810,11 +5581,13 @@ var equip_data = {
         "attribute_2": "air",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 17020,
         "icon": "17000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "F2Aバッファロー",
         "cn_name": "F2A水牛",
         "en_name": "F2A Buffalo",
@@ -4826,11 +5599,13 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 17000,
         "icon": "17000",
-        "ship_type_forbidden": [],
+        "ship_type_forbidden": [
+            10
+        ],
         "jp_name": "F2Aバッファロー",
         "cn_name": "F2A水牛",
         "en_name": "F2A Buffalo",
@@ -4842,7 +5617,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 90600,
         "icon": "50600",
@@ -4858,7 +5633,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 6140,
         "icon": "6100",
@@ -4874,7 +5649,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 6120,
         "icon": "6100",
@@ -4890,7 +5665,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 6100,
         "icon": "6100",
@@ -4906,7 +5681,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 85220,
         "icon": "85180",
@@ -4922,7 +5697,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 85200,
         "icon": "85180",
@@ -4938,7 +5713,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 85180,
         "icon": "85180",
@@ -4954,7 +5729,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 85280,
         "icon": "85240",
@@ -4970,7 +5745,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 85260,
         "icon": "85240",
@@ -4986,7 +5761,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 85060,
         "icon": "85060",
@@ -5002,7 +5777,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 85400,
         "icon": "85360",
@@ -5018,7 +5793,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 85380,
         "icon": "85360",
@@ -5034,7 +5809,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 85360,
         "icon": "85360",
@@ -5050,7 +5825,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 3,
-        "ammo": "通常",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 95140,
         "icon": "55100",
@@ -5066,7 +5841,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 2,
-        "ammo": "通常",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 95120,
         "icon": "55100",
@@ -5082,7 +5857,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 95100,
         "icon": "55100",
@@ -5098,7 +5873,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 95540,
         "icon": "55500",
@@ -5114,7 +5889,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 95520,
         "icon": "55500",
@@ -5130,7 +5905,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 95500,
         "icon": "55500",
@@ -5140,13 +5915,29 @@ var equip_data = {
         "en_name": "Twin 37mm AA Gun (M1932)",
         "equip_limit": 0
     },
+    "46060": {
+        "nationality": 4,
+        "type": 6,
+        "attribute_2": "antiaircraft",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 46060,
+        "icon": "46060",
+        "ship_type_forbidden": [],
+        "jp_name": "88mmSKC32高角砲",
+        "cn_name": "双联装88mmSKC32高炮",
+        "en_name": "Twin 88mm SK C/32 Anti-Air Gun Mount",
+        "equip_limit": 0
+    },
     "46240": {
         "nationality": 4,
         "type": 6,
         "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 46240,
         "icon": "46200",
@@ -5162,7 +5953,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 46220,
         "icon": "46200",
@@ -5178,7 +5969,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 46200,
         "icon": "46200",
@@ -5194,7 +5985,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 46140,
         "icon": "46100",
@@ -5210,7 +6001,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 46120,
         "icon": "46100",
@@ -5226,7 +6017,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 46100,
         "icon": "46100",
@@ -5236,13 +6027,29 @@ var equip_data = {
         "en_name": "37mm Machine Gun",
         "equip_limit": 0
     },
+    "46260": {
+        "nationality": 4,
+        "type": 6,
+        "attribute_2": "antiaircraft",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 46260,
+        "icon": "46260",
+        "ship_type_forbidden": [],
+        "jp_name": "37mmFlak M43連装機銃",
+        "cn_name": "双联37mm Flak M43机枪",
+        "en_name": "Twin 37mm Flak M43 Machine Gun Mount",
+        "equip_limit": 0
+    },
     "46040": {
         "nationality": 4,
         "type": 6,
         "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 46040,
         "icon": "46000",
@@ -5258,7 +6065,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 46020,
         "icon": "46000",
@@ -5274,7 +6081,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 46000,
         "icon": "46000",
@@ -5284,13 +6091,29 @@ var equip_data = {
         "en_name": "Quadruple 20mm Machine Gun",
         "equip_limit": 0
     },
+    "46360": {
+        "nationality": 4,
+        "type": 6,
+        "attribute_2": "antiaircraft",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 46360,
+        "icon": "46360",
+        "ship_type_forbidden": [],
+        "jp_name": "105mmSKC高角連装砲改修型",
+        "cn_name": "双联105mmSKC高炮改进型",
+        "en_name": "Twin 105mm SK C/33 na Anti-Air Gun Mount",
+        "equip_limit": 0
+    },
     "46340": {
         "nationality": 4,
         "type": 6,
         "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 46340,
         "icon": "46300",
@@ -5306,7 +6129,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 46320,
         "icon": "46300",
@@ -5322,7 +6145,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 46300,
         "icon": "46300",
@@ -5338,7 +6161,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 36700,
         "icon": "36700",
@@ -5354,7 +6177,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 36440,
         "icon": "36400",
@@ -5370,7 +6193,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 36420,
         "icon": "36400",
@@ -5386,7 +6209,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 36400,
         "icon": "36400",
@@ -5396,13 +6219,29 @@ var equip_data = {
         "en_name": "40mm AA Vickers Gun",
         "equip_limit": 0
     },
+    "36580": {
+        "nationality": 3,
+        "type": 6,
+        "attribute_2": "antiaircraft",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 36580,
+        "icon": "36580",
+        "ship_type_forbidden": [],
+        "jp_name": "80mm高射砲",
+        "cn_name": "80mm高射炮",
+        "en_name": "80mm High-Angle Gun",
+        "equip_limit": 0
+    },
     "36540": {
         "nationality": 3,
         "type": 6,
         "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 36540,
         "icon": "36500",
@@ -5418,7 +6257,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 36520,
         "icon": "36500",
@@ -5434,7 +6273,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 36500,
         "icon": "36500",
@@ -5450,7 +6289,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 36240,
         "icon": "36200",
@@ -5466,7 +6305,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 36220,
         "icon": "36200",
@@ -5482,7 +6321,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 36200,
         "icon": "36200",
@@ -5498,7 +6337,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 36140,
         "icon": "36100",
@@ -5514,7 +6353,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 36120,
         "icon": "36100",
@@ -5530,7 +6369,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 36100,
         "icon": "36100",
@@ -5540,13 +6379,29 @@ var equip_data = {
         "en_name": "25mm AA Gun",
         "equip_limit": 0
     },
+    "36360": {
+        "nationality": 3,
+        "type": 6,
+        "attribute_2": "antiaircraft",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 36360,
+        "icon": "36360",
+        "ship_type_forbidden": [],
+        "jp_name": "25mm九六式三連装機銃(爆風避盾装備)",
+        "cn_name": "九六式25mm三连装暴风避盾机炮",
+        "en_name": "25mm Type 96 Triple AT/AA Gun",
+        "equip_limit": 0
+    },
     "36340": {
         "nationality": 3,
         "type": 6,
         "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 36340,
         "icon": "36300",
@@ -5562,7 +6417,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 36320,
         "icon": "36300",
@@ -5578,7 +6433,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 36300,
         "icon": "36300",
@@ -5588,13 +6443,29 @@ var equip_data = {
         "en_name": "Triple 25mm Mounted AA Gun",
         "equip_limit": 0
     },
+    "36660": {
+        "nationality": 3,
+        "type": 6,
+        "attribute_2": "antiaircraft",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 36660,
+        "icon": "36660",
+        "ship_type_forbidden": [],
+        "jp_name": "127mm連装高角砲改",
+        "cn_name": "127mm连装高角炮改",
+        "en_name": "127mm Type 89 High-Angle Gun",
+        "equip_limit": 0
+    },
     "36640": {
         "nationality": 3,
         "type": 6,
         "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 36640,
         "icon": "36600",
@@ -5610,7 +6481,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 36620,
         "icon": "36600",
@@ -5626,7 +6497,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 36600,
         "icon": "36600",
@@ -5642,7 +6513,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 36560,
         "icon": "36560",
@@ -5658,7 +6529,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 26620,
         "icon": "26620",
@@ -5674,7 +6545,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 26600,
         "icon": "26600",
@@ -5690,7 +6561,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 26660,
         "icon": "26660",
@@ -5706,7 +6577,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 26140,
         "icon": "26100",
@@ -5722,7 +6593,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 26120,
         "icon": "26100",
@@ -5738,7 +6609,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 26100,
         "icon": "26100",
@@ -5754,7 +6625,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 26240,
         "icon": "26200",
@@ -5770,7 +6641,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 26220,
         "icon": "26200",
@@ -5786,7 +6657,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 26200,
         "icon": "26200",
@@ -5802,7 +6673,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 26040,
         "icon": "26000",
@@ -5818,7 +6689,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 26020,
         "icon": "26000",
@@ -5834,7 +6705,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 26000,
         "icon": "26000",
@@ -5844,52 +6715,36 @@ var equip_data = {
         "en_name": "Twin 40mm Pom Pom Gun",
         "equip_limit": 0
     },
-    "26340": {
+    "26060": {
         "nationality": 2,
         "type": 6,
         "attribute_2": "antiaircraft",
         "rarity": 4,
-        "tech": 3,
-        "ammo": "通常弾",
+        "tech": 0,
+        "ammo": 5,
         "ammo_icon": [],
-        "id": 26340,
-        "icon": "26300",
+        "id": 26060,
+        "icon": "26060",
         "ship_type_forbidden": [],
-        "jp_name": "76mm高角砲",
-        "cn_name": "76mm高射炮",
-        "en_name": "76mm AA Gun",
+        "jp_name": "40mmボフォース連装対空機銃MarkI",
+        "cn_name": "双联装40mm博福斯对空机炮Mark I",
+        "en_name": "Twin 40mm Bofors High-Angle Gun MkI",
         "equip_limit": 0
     },
-    "26320": {
+    "26360": {
         "nationality": 2,
         "type": 6,
         "attribute_2": "antiaircraft",
-        "rarity": 3,
-        "tech": 2,
-        "ammo": "通常弾",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 5,
         "ammo_icon": [],
-        "id": 26320,
-        "icon": "26300",
+        "id": 26360,
+        "icon": "26360",
         "ship_type_forbidden": [],
-        "jp_name": "76mm高角砲",
-        "cn_name": "76mm高射炮",
-        "en_name": "76mm AA Gun",
-        "equip_limit": 0
-    },
-    "26300": {
-        "nationality": 2,
-        "type": 6,
-        "attribute_2": "antiaircraft",
-        "rarity": 2,
-        "tech": 1,
-        "ammo": "通常弾",
-        "ammo_icon": [],
-        "id": 26300,
-        "icon": "26300",
-        "ship_type_forbidden": [],
-        "jp_name": "76mm高角砲",
-        "cn_name": "76mm高射炮",
-        "en_name": "76mm AA Gun",
+        "jp_name": "20mmエリコン高角砲MkII",
+        "cn_name": "20mm厄利孔高射炮MkII",
+        "en_name": "20mm Oerlikon High-Angle Gun MkII ",
         "equip_limit": 0
     },
     "26640": {
@@ -5898,7 +6753,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 26640,
         "icon": "21500",
@@ -5908,13 +6763,29 @@ var equip_data = {
         "en_name": "134mm Twin High-Angle Gun",
         "equip_limit": 0
     },
+    "26460": {
+        "nationality": 2,
+        "type": 6,
+        "attribute_2": "antiaircraft",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 26460,
+        "icon": "26460",
+        "ship_type_forbidden": [],
+        "jp_name": "120mm対空砲MarkVIII",
+        "cn_name": "120mm高射炮Mark VIII",
+        "en_name": "120mm High-Angle Gun MkVIII",
+        "equip_limit": 0
+    },
     "26540": {
         "nationality": 2,
         "type": 6,
         "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 26540,
         "icon": "26500",
@@ -5930,7 +6801,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 26520,
         "icon": "26500",
@@ -5946,7 +6817,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 26500,
         "icon": "26500",
@@ -5962,7 +6833,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 26440,
         "icon": "26400",
@@ -5978,7 +6849,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 26420,
         "icon": "26400",
@@ -5994,7 +6865,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 26400,
         "icon": "26400",
@@ -6010,7 +6881,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 16440,
         "icon": "16400",
@@ -6026,7 +6897,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 16420,
         "icon": "16400",
@@ -6042,7 +6913,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 16400,
         "icon": "16400",
@@ -6058,7 +6929,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 16240,
         "icon": "16200",
@@ -6074,7 +6945,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 16220,
         "icon": "16200",
@@ -6090,7 +6961,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 16200,
         "icon": "16200",
@@ -6106,7 +6977,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 16340,
         "icon": "16300",
@@ -6122,7 +6993,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 16320,
         "icon": "16300",
@@ -6138,7 +7009,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 16300,
         "icon": "16300",
@@ -6148,19 +7019,115 @@ var equip_data = {
         "en_name": "Twin 40mm Bofors Gun",
         "equip_limit": 0
     },
+    "16060": {
+        "nationality": 1,
+        "type": 6,
+        "attribute_2": "antiaircraft",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 16060,
+        "icon": "16060",
+        "ship_type_forbidden": [],
+        "jp_name": "76mm高角砲改修型",
+        "cn_name": "76mm高射炮改进型",
+        "en_name": "Improved 76mm High-Angle Gun",
+        "equip_limit": 0
+    },
+    "26340": {
+        "nationality": 1,
+        "type": 6,
+        "attribute_2": "antiaircraft",
+        "rarity": 4,
+        "tech": 3,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 26340,
+        "icon": "26300",
+        "ship_type_forbidden": [],
+        "jp_name": "76mm高角砲",
+        "cn_name": "76mm高射炮",
+        "en_name": "76mm AA Gun",
+        "equip_limit": 0
+    },
+    "26320": {
+        "nationality": 1,
+        "type": 6,
+        "attribute_2": "antiaircraft",
+        "rarity": 3,
+        "tech": 2,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 26320,
+        "icon": "26300",
+        "ship_type_forbidden": [],
+        "jp_name": "76mm高角砲",
+        "cn_name": "76mm高射炮",
+        "en_name": "76mm AA Gun",
+        "equip_limit": 0
+    },
+    "26300": {
+        "nationality": 1,
+        "type": 6,
+        "attribute_2": "antiaircraft",
+        "rarity": 2,
+        "tech": 1,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 26300,
+        "icon": "26300",
+        "ship_type_forbidden": [],
+        "jp_name": "76mm高角砲",
+        "cn_name": "76mm高射炮",
+        "en_name": "76mm AA Gun",
+        "equip_limit": 0
+    },
+    "16080": {
+        "nationality": 1,
+        "type": 6,
+        "attribute_2": "antiaircraft",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 16080,
+        "icon": "16080",
+        "ship_type_forbidden": [],
+        "jp_name": "76mm連装RF砲Mk27",
+        "cn_name": "双联装76mmRF火炮Mk27",
+        "en_name": "Twin 76mm Rapid Fire Gun Mount Mk27",
+        "equip_limit": 0
+    },
+    "16160": {
+        "nationality": 1,
+        "type": 6,
+        "attribute_2": "antiaircraft",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 16160,
+        "icon": "16160",
+        "ship_type_forbidden": [],
+        "jp_name": "20mm四連装エリコン機関砲Mk15",
+        "cn_name": "四联装20mm厄利孔高射炮Mk15",
+        "en_name": "Quadruple 20mm Oerlikon High-Angle Gun Mount Mk15",
+        "equip_limit": 0
+    },
     "16140": {
         "nationality": 1,
         "type": 6,
         "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 16140,
         "icon": "16100",
         "ship_type_forbidden": [],
         "jp_name": "20mm二連装エリコン機関砲",
-        "cn_name": "双管20mm厄利空高射炮",
+        "cn_name": "双管20mm厄利孔高射炮",
         "en_name": "Twin 20mm AA Oerlikon Design",
         "equip_limit": 0
     },
@@ -6170,13 +7137,13 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 16120,
         "icon": "16100",
         "ship_type_forbidden": [],
         "jp_name": "20mm二連装エリコン機関砲",
-        "cn_name": "双管20mm厄利空高射炮",
+        "cn_name": "双管20mm厄利孔高射炮",
         "en_name": "Twin 20mm AA Oerlikon Design",
         "equip_limit": 0
     },
@@ -6186,13 +7153,13 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 16100,
         "icon": "16100",
         "ship_type_forbidden": [],
         "jp_name": "20mm二連装エリコン機関砲",
-        "cn_name": "双管20mm厄利空高射炮",
+        "cn_name": "双管20mm厄利孔高射炮",
         "en_name": "Twin 20mm AA Oerlikon Design",
         "equip_limit": 0
     },
@@ -6202,13 +7169,13 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 16040,
         "icon": "16000",
         "ship_type_forbidden": [],
         "jp_name": "20mmエリコン機関砲",
-        "cn_name": "20mm厄利空高射炮",
+        "cn_name": "20mm厄利孔高射炮",
         "en_name": "20mm AA Oerlikon",
         "equip_limit": 0
     },
@@ -6218,13 +7185,13 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 16020,
         "icon": "16000",
         "ship_type_forbidden": [],
         "jp_name": "20mmエリコン機関砲",
-        "cn_name": "20mm厄利空高射炮",
+        "cn_name": "20mm厄利孔高射炮",
         "en_name": "20mm AA Oerlikon",
         "equip_limit": 0
     },
@@ -6234,13 +7201,13 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 16000,
         "icon": "16000",
         "ship_type_forbidden": [],
         "jp_name": "20mmエリコン機関砲",
-        "cn_name": "20mm厄利空高射炮",
+        "cn_name": "20mm厄利孔高射炮",
         "en_name": "20mm AA Oerlikon",
         "equip_limit": 0
     },
@@ -6250,7 +7217,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 6040,
         "icon": "6000",
@@ -6266,7 +7233,7 @@ var equip_data = {
         "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 6020,
         "icon": "6000",
@@ -6282,7 +7249,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 6000,
         "icon": "6000",
@@ -6298,7 +7265,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 5340,
         "icon": "5300",
@@ -6314,7 +7281,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 5320,
         "icon": "5300",
@@ -6330,7 +7297,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 5300,
         "icon": "5300",
@@ -6346,7 +7313,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 5440,
         "icon": "5400",
@@ -6362,7 +7329,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 5420,
         "icon": "5400",
@@ -6378,7 +7345,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 5400,
         "icon": "5400",
@@ -6394,7 +7361,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 5,
         "tech": 3,
-        "ammo": "磁気",
+        "ammo": 4,
         "ammo_icon": [],
         "id": 45140,
         "icon": "45100",
@@ -6410,7 +7377,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 2,
-        "ammo": "磁気",
+        "ammo": 4,
         "ammo_icon": [],
         "id": 45120,
         "icon": "45100",
@@ -6426,7 +7393,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 1,
-        "ammo": "磁気",
+        "ammo": 4,
         "ammo_icon": [],
         "id": 45100,
         "icon": "45100",
@@ -6442,7 +7409,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 6,
         "tech": 3,
-        "ammo": "磁気",
+        "ammo": 4,
         "ammo_icon": [],
         "id": 45240,
         "icon": "45200",
@@ -6458,7 +7425,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 5,
         "tech": 2,
-        "ammo": "磁気",
+        "ammo": 4,
         "ammo_icon": [],
         "id": 45220,
         "icon": "45200",
@@ -6474,7 +7441,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 1,
-        "ammo": "磁気",
+        "ammo": 4,
         "ammo_icon": [],
         "id": 45200,
         "icon": "45200",
@@ -6490,7 +7457,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 3,
-        "ammo": "磁気",
+        "ammo": 4,
         "ammo_icon": [],
         "id": 45040,
         "icon": "45000",
@@ -6506,7 +7473,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 2,
-        "ammo": "磁気",
+        "ammo": 4,
         "ammo_icon": [],
         "id": 45020,
         "icon": "45000",
@@ -6522,7 +7489,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 2,
         "tech": 1,
-        "ammo": "磁気",
+        "ammo": 4,
         "ammo_icon": [],
         "id": 45000,
         "icon": "45000",
@@ -6538,7 +7505,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 35040,
         "icon": "35000",
@@ -6554,7 +7521,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 35020,
         "icon": "35000",
@@ -6570,7 +7537,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 35000,
         "icon": "35000",
@@ -6580,13 +7547,29 @@ var equip_data = {
         "en_name": "Twin 610mm Torpedo",
         "equip_limit": 0
     },
+    "35260": {
+        "nationality": 3,
+        "type": 5,
+        "attribute_2": "torpedo",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 35260,
+        "icon": "35260",
+        "ship_type_forbidden": [],
+        "jp_name": "610mm四連装魚雷改",
+        "cn_name": "四联装610mm鱼雷改",
+        "en_name": "610mm Quadruple Torpedo Mount Kai",
+        "equip_limit": 0
+    },
     "35240": {
         "nationality": 3,
         "type": 5,
         "attribute_2": "torpedo",
         "rarity": 5,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 35240,
         "icon": "35200",
@@ -6602,7 +7585,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 35220,
         "icon": "35200",
@@ -6618,7 +7601,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 35200,
         "icon": "35200",
@@ -6628,13 +7611,29 @@ var equip_data = {
         "en_name": "Quadruple 610mm Torpedo",
         "equip_limit": 0
     },
+    "35160": {
+        "nationality": 3,
+        "type": 5,
+        "attribute_2": "torpedo",
+        "rarity": 4,
+        "tech": 3,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 35160,
+        "icon": "35160",
+        "ship_type_forbidden": [],
+        "jp_name": "610mm三連装魚雷改",
+        "cn_name": "三联装610mm鱼雷改",
+        "en_name": "610mm Triple Torpedo Mount Kai",
+        "equip_limit": 0
+    },
     "35140": {
         "nationality": 3,
         "type": 5,
         "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 35140,
         "icon": "35100",
@@ -6650,7 +7649,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 35120,
         "icon": "35100",
@@ -6666,7 +7665,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 35100,
         "icon": "35100",
@@ -6676,13 +7675,109 @@ var equip_data = {
         "en_name": "Triple 610mm Torpedo",
         "equip_limit": 0
     },
+    "25020": {
+        "nationality": 2,
+        "type": 5,
+        "attribute_2": "torpedo",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 25020,
+        "icon": "25020",
+        "ship_type_forbidden": [],
+        "jp_name": "533mm四連装魚雷MarkIX",
+        "cn_name": "四联装533mm鱼雷Mark IX",
+        "en_name": "533mm Quadruple Torpedo Mount MkIX",
+        "equip_limit": 0
+    },
+    "25040": {
+        "nationality": 2,
+        "type": 5,
+        "attribute_2": "torpedo",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 25040,
+        "icon": "25040",
+        "ship_type_forbidden": [],
+        "jp_name": "533mm五連装魚雷MarkIX",
+        "cn_name": "五联装533mm鱼雷Mark IX",
+        "en_name": "533mm Quintuple Torpedo Mount MkIX",
+        "equip_limit": 0
+    },
+    "25000": {
+        "nationality": 2,
+        "type": 5,
+        "attribute_2": "torpedo",
+        "rarity": 3,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 25000,
+        "icon": "25000",
+        "ship_type_forbidden": [],
+        "jp_name": "533mm三連装魚雷MarkIX",
+        "cn_name": "三联装533mm鱼雷Mark IX",
+        "en_name": "533mm Triple Torpedo Mount MkIX",
+        "equip_limit": 0
+    },
+    "15220": {
+        "nationality": 1,
+        "type": 5,
+        "attribute_2": "torpedo",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 15220,
+        "icon": "15220",
+        "ship_type_forbidden": [],
+        "jp_name": "533mm四連装魚雷Mk17",
+        "cn_name": "四联装533mm鱼雷Mk17",
+        "en_name": "533mm Quadruple Torpedo Mount Mk17",
+        "equip_limit": 0
+    },
+    "15240": {
+        "nationality": 1,
+        "type": 5,
+        "attribute_2": "torpedo",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 15240,
+        "icon": "15240",
+        "ship_type_forbidden": [],
+        "jp_name": "533mm五連装魚雷Mk17",
+        "cn_name": "五联装533mm鱼雷Mk17",
+        "en_name": "533mm Quintuple Torpedo Mount Mk17",
+        "equip_limit": 0
+    },
+    "15200": {
+        "nationality": 1,
+        "type": 5,
+        "attribute_2": "torpedo",
+        "rarity": 3,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 15200,
+        "icon": "15200",
+        "ship_type_forbidden": [],
+        "jp_name": "533mm三連装魚雷Mk17",
+        "cn_name": "三联装533mm鱼雷Mk17",
+        "en_name": "533mm Triple Torpedo Mount Mk17",
+        "equip_limit": 0
+    },
     "5140": {
         "nationality": 0,
         "type": 5,
         "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 5140,
         "icon": "5100",
@@ -6698,7 +7793,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 5120,
         "icon": "5100",
@@ -6714,7 +7809,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 5100,
         "icon": "5100",
@@ -6730,7 +7825,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 5,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 5240,
         "icon": "5200",
@@ -6746,7 +7841,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 5220,
         "icon": "5200",
@@ -6762,7 +7857,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 5200,
         "icon": "5200",
@@ -6778,7 +7873,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 5040,
         "icon": "5000",
@@ -6794,7 +7889,7 @@ var equip_data = {
         "attribute_2": "torpedo",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 5020,
         "icon": "5000",
@@ -6810,7 +7905,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 5,
         "ammo_icon": [],
         "id": 5000,
         "icon": "5000",
@@ -6826,7 +7921,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -6844,7 +7939,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -6862,7 +7957,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -6880,7 +7975,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -6898,7 +7993,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -6916,7 +8011,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -6934,7 +8029,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -6952,7 +8047,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -6960,7 +8055,7 @@ var equip_data = {
         "icon": "85300",
         "ship_type_forbidden": [],
         "jp_name": "406mm三連装砲B-37 MK-1",
-        "cn_name": "B-37 三联装406mm主炮MK-1",
+        "cn_name": "B-37 三联装406mm主炮Mk-1",
         "en_name": "Triple 406mm Main Gun (B-37 MK1)",
         "equip_limit": 0
     },
@@ -6970,7 +8065,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -6978,7 +8073,7 @@ var equip_data = {
         "icon": "85300",
         "ship_type_forbidden": [],
         "jp_name": "406mm三連装砲B-37 MK-1",
-        "cn_name": "B-37 三联装406mm主炮MK-1",
+        "cn_name": "B-37 三联装406mm主炮Mk-1",
         "en_name": "Triple 406mm Main Gun (B-37 MK1)",
         "equip_limit": 0
     },
@@ -6988,7 +8083,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -7006,7 +8101,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -7024,7 +8119,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -7042,7 +8137,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -7060,7 +8155,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 0,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -7078,7 +8173,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -7096,7 +8191,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -7114,7 +8209,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -7132,7 +8227,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -7150,7 +8245,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -7168,7 +8263,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -7186,7 +8281,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -7204,7 +8299,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -7222,7 +8317,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -7234,13 +8329,49 @@ var equip_data = {
         "en_name": "Prototype Triple 410mm Mounted Gun",
         "equip_limit": 0
     },
+    "34060": {
+        "nationality": 3,
+        "type": 4,
+        "attribute_2": "cannon",
+        "rarity": 3,
+        "tech": 0,
+        "ammo": 2,
+        "ammo_icon": [
+            3
+        ],
+        "id": 34060,
+        "icon": "34060",
+        "ship_type_forbidden": [],
+        "jp_name": "毘式356mm連装砲",
+        "cn_name": "356mm毘式连装炮",
+        "en_name": "356mm 41st-Year Type Naval Gun",
+        "equip_limit": 0
+    },
+    "34300": {
+        "nationality": 3,
+        "type": 4,
+        "attribute_2": "cannon",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 2,
+        "ammo_icon": [
+            3
+        ],
+        "id": 34300,
+        "icon": "34300",
+        "ship_type_forbidden": [],
+        "jp_name": "410mm連装砲改",
+        "cn_name": "410mm连装炮改",
+        "en_name": "410mm Breech-Loading Naval Gun Kai",
+        "equip_limit": 0
+    },
     "34160": {
         "nationality": 3,
         "type": 4,
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": "三式弾",
+        "ammo": 6,
         "ammo_icon": [
             3
         ],
@@ -7258,7 +8389,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -7276,7 +8407,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -7294,7 +8425,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -7312,7 +8443,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -7330,7 +8461,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -7348,7 +8479,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -7366,7 +8497,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -7384,7 +8515,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -7402,7 +8533,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -7420,7 +8551,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -7438,7 +8569,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -7450,13 +8581,49 @@ var equip_data = {
         "en_name": "Triple 406mm Main Gun",
         "equip_limit": 0
     },
+    "24320": {
+        "nationality": 2,
+        "type": 4,
+        "attribute_2": "cannon",
+        "rarity": 4,
+        "tech": 2,
+        "ammo": 2,
+        "ammo_icon": [
+            3
+        ],
+        "id": 24320,
+        "icon": "24300",
+        "ship_type_forbidden": [],
+        "jp_name": "381mm連装砲改",
+        "cn_name": "双联装381mm主炮改",
+        "en_name": "Twin 381mm Advanced Main Gun",
+        "equip_limit": 0
+    },
+    "24300": {
+        "nationality": 2,
+        "type": 4,
+        "attribute_2": "cannon",
+        "rarity": 3,
+        "tech": 1,
+        "ammo": 3,
+        "ammo_icon": [
+            1
+        ],
+        "id": 24300,
+        "icon": "24300",
+        "ship_type_forbidden": [],
+        "jp_name": "381mm連装砲改",
+        "cn_name": "双联装381mm主炮改",
+        "en_name": "Twin 381mm Advanced Main Gun",
+        "equip_limit": 0
+    },
     "24340": {
         "nationality": 2,
         "type": 4,
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -7464,7 +8631,7 @@ var equip_data = {
         "icon": "24300",
         "ship_type_forbidden": [],
         "jp_name": "381mm連装砲改",
-        "cn_name": "双联装381mm主炮.改",
+        "cn_name": "双联装381mm主炮改",
         "en_name": "Twin 381mm Advanced Main Gun",
         "equip_limit": 0
     },
@@ -7474,7 +8641,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -7492,7 +8659,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -7510,7 +8677,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -7522,13 +8689,31 @@ var equip_data = {
         "en_name": "Twin 381mm Main Gun",
         "equip_limit": 0
     },
+    "24060": {
+        "nationality": 2,
+        "type": 4,
+        "attribute_2": "cannon",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 2,
+        "ammo_icon": [
+            3
+        ],
+        "id": 24060,
+        "icon": "24060",
+        "ship_type_forbidden": [],
+        "jp_name": "356mm連装砲MarkVII",
+        "cn_name": "双联装356mm主炮",
+        "en_name": "Twin 356mm Main Gun Mount Mk VII ",
+        "equip_limit": 0
+    },
     "24040": {
         "nationality": 2,
         "type": 4,
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -7546,7 +8731,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -7564,7 +8749,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -7582,7 +8767,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 6,
         "tech": 0,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -7590,8 +8775,80 @@ var equip_data = {
         "icon": "14500",
         "ship_type_forbidden": [],
         "jp_name": "試作型457mm連装砲MKA",
-        "cn_name": "试作型双联装457mm主炮MKA",
+        "cn_name": "试作型双联装457mm主炮Mk A",
         "en_name": "Prototype Twin 457mm Main Gun (18\" MKA)",
+        "equip_limit": 0
+    },
+    "14360": {
+        "nationality": 1,
+        "type": 4,
+        "attribute_2": "cannon",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 1,
+        "ammo_icon": [
+            2
+        ],
+        "id": 14360,
+        "icon": "14360",
+        "ship_type_forbidden": [],
+        "jp_name": "試作型406mm三連装砲MkD",
+        "cn_name": "试作型三联装406mm主炮MkD",
+        "en_name": "Prototype Triple 406mm Main Gun Mount MkD",
+        "equip_limit": 0
+    },
+    "14160": {
+        "nationality": 1,
+        "type": 4,
+        "attribute_2": "cannon",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 2,
+        "ammo_icon": [
+            3
+        ],
+        "id": 14160,
+        "icon": "14160",
+        "ship_type_forbidden": [],
+        "jp_name": "試作型356mm四連装砲MkB",
+        "cn_name": "试作型四联装356mm主炮MkB",
+        "en_name": "Prototype Quadruple 356mm Main Gun Mount MkB",
+        "equip_limit": 0
+    },
+    "14260": {
+        "nationality": 1,
+        "type": 4,
+        "attribute_2": "cannon",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 1,
+        "ammo_icon": [
+            2
+        ],
+        "id": 14260,
+        "icon": "14260",
+        "ship_type_forbidden": [],
+        "jp_name": "406mm連装砲Mk8",
+        "cn_name": "双联装406mm主炮Mk8",
+        "en_name": "Twin 406mm Main Gun Mount Mk8",
+        "equip_limit": 0
+    },
+    "14180": {
+        "nationality": 1,
+        "type": 4,
+        "attribute_2": "cannon",
+        "rarity": 3,
+        "tech": 0,
+        "ammo": 1,
+        "ammo_icon": [
+            2
+        ],
+        "id": 14180,
+        "icon": "14180",
+        "ship_type_forbidden": [],
+        "jp_name": "406mm連装砲Mk1",
+        "cn_name": "双联装406mm主炮Mk1",
+        "en_name": "Twin 406mm Main Gun Mount Mk1",
         "equip_limit": 0
     },
     "14240": {
@@ -7600,7 +8857,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -7608,7 +8865,7 @@ var equip_data = {
         "icon": "14200",
         "ship_type_forbidden": [],
         "jp_name": "406mm連装砲MK5",
-        "cn_name": "双联装406mm主炮MK5",
+        "cn_name": "双联装406mm主炮Mk5",
         "en_name": "Twin 406mm MK5 Main Gun",
         "equip_limit": 0
     },
@@ -7618,7 +8875,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -7626,7 +8883,7 @@ var equip_data = {
         "icon": "14200",
         "ship_type_forbidden": [],
         "jp_name": "406mm連装砲MK5",
-        "cn_name": "双联装406mm主炮MK5",
+        "cn_name": "双联装406mm主炮Mk5",
         "en_name": "Twin 406mm MK5 Main Gun",
         "equip_limit": 0
     },
@@ -7636,7 +8893,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -7644,8 +8901,26 @@ var equip_data = {
         "icon": "14200",
         "ship_type_forbidden": [],
         "jp_name": "406mm連装砲MK5",
-        "cn_name": "双联装406mm主炮MK5",
+        "cn_name": "双联装406mm主炮Mk5",
         "en_name": "Twin 406mm MK5 Main Gun",
+        "equip_limit": 0
+    },
+    "14380": {
+        "nationality": 1,
+        "type": 4,
+        "attribute_2": "cannon",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 3,
+        "ammo_icon": [
+            1
+        ],
+        "id": 14380,
+        "icon": "14380",
+        "ship_type_forbidden": [],
+        "jp_name": "406mm三連装砲Mk2",
+        "cn_name": "三联装406mm主炮Mk2",
+        "en_name": "Triple 406mm Main Gun Mount Mk2",
         "equip_limit": 0
     },
     "14340": {
@@ -7654,7 +8929,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -7662,7 +8937,7 @@ var equip_data = {
         "icon": "14300",
         "ship_type_forbidden": [],
         "jp_name": "406mm三連装砲MK6",
-        "cn_name": "三联装406mm主炮MK6",
+        "cn_name": "三联装406mm主炮Mk6",
         "en_name": "Triple 406mm MK6 Main Gun",
         "equip_limit": 0
     },
@@ -7672,7 +8947,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -7680,7 +8955,7 @@ var equip_data = {
         "icon": "14300",
         "ship_type_forbidden": [],
         "jp_name": "406mm三連装砲MK6",
-        "cn_name": "三联装406mm主炮MK6",
+        "cn_name": "三联装406mm主炮Mk6",
         "en_name": "Triple 406mm MK6 Main Gun",
         "equip_limit": 0
     },
@@ -7690,7 +8965,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -7698,7 +8973,7 @@ var equip_data = {
         "icon": "14300",
         "ship_type_forbidden": [],
         "jp_name": "406mm三連装砲MK6",
-        "cn_name": "三联装406mm主炮MK6",
+        "cn_name": "三联装406mm主炮Mk6",
         "en_name": "Triple 406mm MK6 Main Gun",
         "equip_limit": 0
     },
@@ -7708,7 +8983,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -7726,7 +9001,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -7744,7 +9019,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -7762,7 +9037,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -7783,7 +9058,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -7816,7 +9091,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -7837,7 +9112,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -7858,7 +9133,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -7879,7 +9154,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": "SAP弾",
+        "ammo": 7,
         "ammo_icon": [
             4
         ],
@@ -7900,7 +9175,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -7921,7 +9196,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -7942,7 +9217,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -7963,7 +9238,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -7984,7 +9259,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -8005,7 +9280,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -8026,7 +9301,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -8047,7 +9322,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -8068,7 +9343,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -8089,7 +9364,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -8104,13 +9379,34 @@ var equip_data = {
         "en_name": "Prototype 203mm (Type 3) Mounted Gun",
         "equip_limit": 0
     },
+    "33080": {
+        "nationality": 3,
+        "type": 3,
+        "attribute_2": "cannon",
+        "rarity": 4,
+        "tech": 3,
+        "ammo": 2,
+        "ammo_icon": [
+            3
+        ],
+        "id": 33080,
+        "icon": "33080",
+        "ship_type_forbidden": [
+            8,
+            17
+        ],
+        "jp_name": "203mm連装砲改",
+        "cn_name": "203mm连装炮改",
+        "en_name": "203 mm 3rd-Year Type Naval Gun",
+        "equip_limit": 0
+    },
     "33040": {
         "nationality": 3,
         "type": 3,
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -8131,7 +9427,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -8152,7 +9448,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -8173,7 +9469,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -8194,7 +9490,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 6,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -8209,13 +9505,34 @@ var equip_data = {
         "en_name": "Prototype Triple 234mm Main Gun (9.2\" MK XII) ",
         "equip_limit": 0
     },
+    "23200": {
+        "nationality": 2,
+        "type": 3,
+        "attribute_2": "cannon",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 2,
+        "ammo_icon": [
+            3
+        ],
+        "id": 23200,
+        "icon": "23200",
+        "ship_type_forbidden": [
+            8,
+            17
+        ],
+        "jp_name": "試作型203mm三連装砲MarkIX",
+        "cn_name": "试作型三联装203mm主炮Mark IX",
+        "en_name": "Prototype Triple 203mm Main Gun Mount Mk IX",
+        "equip_limit": 0
+    },
     "23040": {
         "nationality": 2,
         "type": 3,
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -8236,7 +9553,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -8257,7 +9574,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -8278,7 +9595,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -8299,7 +9616,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -8320,7 +9637,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -8335,13 +9652,55 @@ var equip_data = {
         "en_name": "Triple 203mm Advanced Main Gun",
         "equip_limit": 0
     },
+    "13160": {
+        "nationality": 1,
+        "type": 3,
+        "attribute_2": "cannon",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 1,
+        "ammo_icon": [
+            2
+        ],
+        "id": 13160,
+        "icon": "13160",
+        "ship_type_forbidden": [
+            8,
+            17
+        ],
+        "jp_name": "203mm三連装砲Mk15",
+        "cn_name": "三联装203mm主炮Mk15",
+        "en_name": "Triple 203mm Main Gun Mount Mk15",
+        "equip_limit": 0
+    },
+    "13060": {
+        "nationality": 1,
+        "type": 3,
+        "attribute_2": "cannon",
+        "rarity": 3,
+        "tech": 0,
+        "ammo": 2,
+        "ammo_icon": [
+            3
+        ],
+        "id": 13060,
+        "icon": "13060",
+        "ship_type_forbidden": [
+            8,
+            17
+        ],
+        "jp_name": "203mm三連装砲Mk13",
+        "cn_name": "三联装203mm主炮Mk13",
+        "en_name": "Triple 203mm Main Gun Mount Mk13",
+        "equip_limit": 0
+    },
     "13040": {
         "nationality": 1,
         "type": 3,
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -8362,7 +9721,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -8383,7 +9742,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -8404,7 +9763,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 0,
-        "ammo": "通常弹",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -8422,7 +9781,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 0,
-        "ammo": "通常弹",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -8440,7 +9799,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -8458,7 +9817,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -8476,7 +9835,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -8494,7 +9853,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -8512,7 +9871,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -8530,7 +9889,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -8548,7 +9907,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -8566,7 +9925,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -8574,7 +9933,7 @@ var equip_data = {
         "icon": "85120",
         "ship_type_forbidden": [],
         "jp_name": "152mm三連装砲B-38 MK5",
-        "cn_name": "B-38 三联装152mm主炮MK5",
+        "cn_name": "B-38 三联装152mm主炮Mk5",
         "en_name": "Triple 152mm Main Gun (B-38 MK5)",
         "equip_limit": 0
     },
@@ -8584,7 +9943,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -8592,7 +9951,7 @@ var equip_data = {
         "icon": "85120",
         "ship_type_forbidden": [],
         "jp_name": "152mm三連装砲B-38 MK5",
-        "cn_name": "B-38 三联装152mm主炮MK5",
+        "cn_name": "B-38 三联装152mm主炮Mk5",
         "en_name": "Triple 152mm Main Gun (B-38 MK5)",
         "equip_limit": 0
     },
@@ -8602,7 +9961,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -8610,7 +9969,7 @@ var equip_data = {
         "icon": "85120",
         "ship_type_forbidden": [],
         "jp_name": "152mm三連装砲B-38 MK5",
-        "cn_name": "B-38 三联装152mm主炮MK5",
+        "cn_name": "B-38 三联装152mm主炮Mk5",
         "en_name": "Triple 152mm Main Gun (B-38 MK5)",
         "equip_limit": 0
     },
@@ -8620,7 +9979,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -8638,7 +9997,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -8656,7 +10015,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -8668,13 +10027,31 @@ var equip_data = {
         "en_name": "Single 150mm Main Gun",
         "equip_limit": 0
     },
+    "42340": {
+        "nationality": 4,
+        "type": 2,
+        "attribute_2": "cannon",
+        "rarity": 4,
+        "tech": 3,
+        "ammo": 1,
+        "ammo_icon": [
+            2
+        ],
+        "id": 42340,
+        "icon": "42300",
+        "ship_type_forbidden": [],
+        "jp_name": "150mmTbtsKC36単装砲",
+        "cn_name": "单装TbtsKC36式150mm主炮",
+        "en_name": "Single 150mm TbtsK C/36 Main Gun Mount",
+        "equip_limit": 0
+    },
     "42300": {
         "nationality": 4,
         "type": 2,
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -8692,7 +10069,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -8710,7 +10087,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -8728,7 +10105,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -8740,13 +10117,31 @@ var equip_data = {
         "en_name": "Twin 150mm Main Gun (TbtsK C/36)",
         "equip_limit": 0
     },
+    "42060": {
+        "nationality": 4,
+        "type": 2,
+        "attribute_2": "cannon",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 1,
+        "ammo_icon": [
+            2
+        ],
+        "id": 42060,
+        "icon": "42060",
+        "ship_type_forbidden": [],
+        "jp_name": "150mmSKC28連装副砲",
+        "cn_name": "双联装SKC28式150mm副炮",
+        "en_name": "Twin 150mm SK C/28 Secondary Gun Mount",
+        "equip_limit": 0
+    },
     "42040": {
         "nationality": 4,
         "type": 2,
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -8764,7 +10159,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -8782,7 +10177,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -8800,7 +10195,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -8818,7 +10213,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -8836,7 +10231,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -8854,7 +10249,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -8872,7 +10267,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -8890,7 +10285,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -8908,7 +10303,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -8926,7 +10321,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -8944,7 +10339,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -8956,13 +10351,31 @@ var equip_data = {
         "en_name": "152mm Mounted Gun",
         "equip_limit": 0
     },
+    "32060": {
+        "nationality": 3,
+        "type": 2,
+        "attribute_2": "cannon",
+        "rarity": 3,
+        "tech": 3,
+        "ammo": 2,
+        "ammo_icon": [
+            1
+        ],
+        "id": 32060,
+        "icon": "32060",
+        "ship_type_forbidden": [],
+        "jp_name": "152mm単装砲",
+        "cn_name": "152mm单装炮",
+        "en_name": "Single 152mm Naval Gun",
+        "equip_limit": 0
+    },
     "32140": {
         "nationality": 3,
         "type": 2,
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -8980,7 +10393,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 2,
         "ammo_icon": [
             1
         ],
@@ -8998,7 +10411,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9016,7 +10429,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 2,
         "ammo_icon": [
             1
         ],
@@ -9034,7 +10447,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9052,7 +10465,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9070,7 +10483,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -9088,7 +10501,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -9106,7 +10519,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -9124,7 +10537,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -9136,13 +10549,31 @@ var equip_data = {
         "en_name": "Twin 152mm Main Gun",
         "equip_limit": 0
     },
+    "22060": {
+        "nationality": 2,
+        "type": 2,
+        "attribute_2": "cannon",
+        "rarity": 3,
+        "tech": 0,
+        "ammo": 2,
+        "ammo_icon": [
+            3
+        ],
+        "id": 22060,
+        "icon": "22060",
+        "ship_type_forbidden": [],
+        "jp_name": "152mm連装副砲",
+        "cn_name": "双联装152mm副炮",
+        "en_name": "Twin 152mm Secondary Gun Mount",
+        "equip_limit": 0
+    },
     "22040": {
         "nationality": 2,
         "type": 2,
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -9160,7 +10591,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -9178,7 +10609,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -9196,7 +10627,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -9214,7 +10645,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -9232,7 +10663,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -9250,7 +10681,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -9262,13 +10693,31 @@ var equip_data = {
         "en_name": "Prototype Triple 152mm Main Gun (DP MK17)",
         "equip_limit": 0
     },
+    "12060": {
+        "nationality": 1,
+        "type": 2,
+        "attribute_2": "cannon",
+        "rarity": 3,
+        "tech": 0,
+        "ammo": 3,
+        "ammo_icon": [
+            1
+        ],
+        "id": 12060,
+        "icon": "12060",
+        "ship_type_forbidden": [],
+        "jp_name": "152mm連装砲Mk15",
+        "cn_name": "双联152mm主炮Mk15",
+        "en_name": "Twin 152mm Main Gun Mount Mk15",
+        "equip_limit": 0
+    },
     "12040": {
         "nationality": 1,
         "type": 2,
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9286,7 +10735,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9304,7 +10753,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9316,13 +10765,31 @@ var equip_data = {
         "en_name": "Twin 152mm Main Gun",
         "equip_limit": 0
     },
+    "12160": {
+        "nationality": 1,
+        "type": 2,
+        "attribute_2": "cannon",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 2,
+        "ammo_icon": [
+            3
+        ],
+        "id": 12160,
+        "icon": "12160",
+        "ship_type_forbidden": [],
+        "jp_name": "152mm三連装砲Mk16",
+        "cn_name": "三联装152mm主炮Mk16",
+        "en_name": "Triple 152mm Main Gun Mount Mk16",
+        "equip_limit": 0
+    },
     "12140": {
         "nationality": 1,
         "type": 2,
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -9340,7 +10807,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9358,7 +10825,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9376,7 +10843,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -9394,7 +10861,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -9412,7 +10879,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9430,7 +10897,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9448,7 +10915,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9466,7 +10933,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9484,7 +10951,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9502,7 +10969,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9520,7 +10987,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9538,7 +11005,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9556,7 +11023,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9574,7 +11041,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9592,7 +11059,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9610,7 +11077,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -9628,7 +11095,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9646,7 +11113,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9664,7 +11131,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9682,7 +11149,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9700,7 +11167,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9718,7 +11185,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 0,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -9730,13 +11197,31 @@ var equip_data = {
         "en_name": "Twin 120mm Main Gun (M1933)",
         "equip_limit": 0
     },
+    "41160": {
+        "nationality": 4,
+        "type": 1,
+        "attribute_2": "cannon",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 1,
+        "ammo_icon": [
+            2
+        ],
+        "id": 41160,
+        "icon": "41160",
+        "ship_type_forbidden": [],
+        "jp_name": "128mmSKC41連装両用砲改",
+        "cn_name": "双联装128mmSKC41高平两用炮改",
+        "en_name": "Twin 128mm/45 SK C/41 Dual-Purpose Gun Mount",
+        "equip_limit": 0
+    },
     "41140": {
         "nationality": 4,
         "type": 1,
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -9754,7 +11239,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -9772,7 +11257,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -9790,7 +11275,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -9808,7 +11293,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -9826,7 +11311,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -9838,13 +11323,49 @@ var equip_data = {
         "en_name": "Single 127mm Main Gun",
         "equip_limit": 0
     },
+    "41060": {
+        "nationality": 4,
+        "type": 1,
+        "attribute_2": "cannon",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 1,
+        "ammo_icon": [
+            2
+        ],
+        "id": 41060,
+        "icon": "41060",
+        "ship_type_forbidden": [],
+        "jp_name": "127mmKM40連装砲",
+        "cn_name": "双联装127mmKM40主炮",
+        "en_name": "127mm KM40 Twin Gun Mount",
+        "equip_limit": 0
+    },
+    "31280": {
+        "nationality": 3,
+        "type": 1,
+        "attribute_2": "cannon",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 2,
+        "ammo_icon": [
+            3
+        ],
+        "id": 31280,
+        "icon": "31280",
+        "ship_type_forbidden": [],
+        "jp_name": "127mm連装砲改",
+        "cn_name": "127mm连装炮改",
+        "en_name": "127mm Type 3 Naval Gun",
+        "equip_limit": 0
+    },
     "31240": {
         "nationality": 3,
         "type": 1,
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -9862,7 +11383,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9880,7 +11401,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9892,13 +11413,49 @@ var equip_data = {
         "en_name": "127mm Mounted Gun",
         "equip_limit": 0
     },
+    "31260": {
+        "nationality": 3,
+        "type": 1,
+        "attribute_2": "cannon",
+        "rarity": 3,
+        "tech": 0,
+        "ammo": 3,
+        "ammo_icon": [
+            1
+        ],
+        "id": 31260,
+        "icon": "31260",
+        "ship_type_forbidden": [],
+        "jp_name": "127mm両用砲",
+        "cn_name": "127mm单装两用炮",
+        "en_name": "Single 127mm Dual-Purpose Gun",
+        "equip_limit": 0
+    },
+    "31180": {
+        "nationality": 3,
+        "type": 1,
+        "attribute_2": "cannon",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 3,
+        "ammo_icon": [
+            1
+        ],
+        "id": 31180,
+        "icon": "31180",
+        "ship_type_forbidden": [],
+        "jp_name": "120mm高角砲",
+        "cn_name": "120mm单装高角炮",
+        "en_name": "Single 120mm High-Angle Gun",
+        "equip_limit": 0
+    },
     "31140": {
         "nationality": 3,
         "type": 1,
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9916,7 +11473,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9934,7 +11491,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9946,13 +11503,49 @@ var equip_data = {
         "en_name": "Single 120mm Main Gun",
         "equip_limit": 0
     },
+    "31160": {
+        "nationality": 3,
+        "type": 1,
+        "attribute_2": "cannon",
+        "rarity": 3,
+        "tech": 0,
+        "ammo": 3,
+        "ammo_icon": [
+            1
+        ],
+        "id": 31160,
+        "icon": "31160",
+        "ship_type_forbidden": [],
+        "jp_name": "120mm十一年式砲",
+        "cn_name": "十一年式120mm单装炮",
+        "en_name": "Single 120mm Main Gun M",
+        "equip_limit": 0
+    },
+    "31060": {
+        "nationality": 3,
+        "type": 1,
+        "attribute_2": "cannon",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 3,
+        "ammo_icon": [
+            1
+        ],
+        "id": 31060,
+        "icon": "31060",
+        "ship_type_forbidden": [],
+        "jp_name": "100mm八八式砲",
+        "cn_name": "100mm88式火炮",
+        "en_name": "100mm Type 88 Naval Gun",
+        "equip_limit": 0
+    },
     "31040": {
         "nationality": 3,
         "type": 1,
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9970,7 +11563,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -9988,7 +11581,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -10006,7 +11599,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -10024,7 +11617,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "徹甲弾",
+        "ammo": 1,
         "ammo_icon": [
             2
         ],
@@ -10042,7 +11635,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -10060,7 +11653,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -10078,7 +11671,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -10096,7 +11689,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -10108,13 +11701,31 @@ var equip_data = {
         "en_name": "Twin 120mm Main Gun",
         "equip_limit": 0
     },
+    "21460": {
+        "nationality": 2,
+        "type": 1,
+        "attribute_2": "cannon",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 3,
+        "ammo_icon": [
+            1
+        ],
+        "id": 21460,
+        "icon": "21460",
+        "ship_type_forbidden": [],
+        "jp_name": "120mm連装両用砲MarkXI",
+        "cn_name": "双联装120mm高平两用炮Mark XI",
+        "en_name": "Twin 120mm Dual-Purpose Gun Mount MkXI",
+        "equip_limit": 0
+    },
     "21340": {
         "nationality": 2,
         "type": 1,
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -10132,7 +11743,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -10150,7 +11761,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -10168,7 +11779,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -10176,7 +11787,7 @@ var equip_data = {
         "icon": "21600",
         "ship_type_forbidden": [],
         "jp_name": "114mm連装両用砲MarkIV",
-        "cn_name": "双联装114mm高平两用炮MarkIV",
+        "cn_name": "双联装114mm高平两用炮Mark IV",
         "en_name": "Twin 114mm DP (4.5\" MK IV) ",
         "equip_limit": 0
     },
@@ -10186,7 +11797,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -10204,7 +11815,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -10222,7 +11833,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -10234,13 +11845,31 @@ var equip_data = {
         "en_name": "Twin 102mm Secondary Gun",
         "equip_limit": 0
     },
+    "21160": {
+        "nationality": 2,
+        "type": 1,
+        "attribute_2": "cannon",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 3,
+        "ammo_icon": [
+            1
+        ],
+        "id": 21160,
+        "icon": "21160",
+        "ship_type_forbidden": [],
+        "jp_name": "102mm連装副砲MarkXVI",
+        "cn_name": "双联装102mm副炮Mark XVI",
+        "en_name": "Twin 102mm Secondary Gun Mount MkXVI",
+        "equip_limit": 0
+    },
     "21040": {
         "nationality": 2,
         "type": 1,
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -10258,7 +11887,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -10276,7 +11905,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -10294,7 +11923,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -10312,7 +11941,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -10330,7 +11959,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -10348,7 +11977,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -10366,7 +11995,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -10384,7 +12013,7 @@ var equip_data = {
         "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -10396,13 +12025,31 @@ var equip_data = {
         "en_name": "76mm AA Gun",
         "equip_limit": 0
     },
+    "11160": {
+        "nationality": 1,
+        "type": 1,
+        "attribute_2": "cannon",
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 2,
+        "ammo_icon": [
+            3
+        ],
+        "id": 11160,
+        "icon": "11160",
+        "ship_type_forbidden": [],
+        "jp_name": "127mm連装副砲",
+        "cn_name": "双联装127mm副炮",
+        "en_name": "Twin 127mm Secondary Gun Mount",
+        "equip_limit": 0
+    },
     "11240": {
         "nationality": 1,
         "type": 1,
         "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -10410,7 +12057,7 @@ var equip_data = {
         "icon": "11200",
         "ship_type_forbidden": [],
         "jp_name": "127mm連装両用砲MK12",
-        "cn_name": "双联装127mm高平两用炮MK12",
+        "cn_name": "双联装127mm高平两用炮Mk12",
         "en_name": "Twin 127mm MK12 Dual Gun",
         "equip_limit": 0
     },
@@ -10420,7 +12067,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -10428,7 +12075,7 @@ var equip_data = {
         "icon": "11200",
         "ship_type_forbidden": [],
         "jp_name": "127mm連装両用砲MK12",
-        "cn_name": "双联装127mm高平两用炮MK12",
+        "cn_name": "双联装127mm高平两用炮Mk12",
         "en_name": "Twin 127mm MK12 Dual Gun",
         "equip_limit": 0
     },
@@ -10438,7 +12085,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -10446,8 +12093,26 @@ var equip_data = {
         "icon": "11200",
         "ship_type_forbidden": [],
         "jp_name": "127mm連装両用砲MK12",
-        "cn_name": "双联装127mm高平两用炮MK12",
+        "cn_name": "双联装127mm高平两用炮Mk12",
         "en_name": "Twin 127mm MK12 Dual Gun",
+        "equip_limit": 0
+    },
+    "11060": {
+        "nationality": 1,
+        "type": 1,
+        "attribute_2": "cannon",
+        "rarity": 3,
+        "tech": 0,
+        "ammo": 3,
+        "ammo_icon": [
+            1
+        ],
+        "id": 11060,
+        "icon": "11060",
+        "ship_type_forbidden": [],
+        "jp_name": "127mm単装砲初期型",
+        "cn_name": "127mm单装炮早期型",
+        "en_name": "Early Model Single 127mm Gun",
         "equip_limit": 0
     },
     "11140": {
@@ -10456,7 +12121,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": "榴弾",
+        "ammo": 2,
         "ammo_icon": [
             3
         ],
@@ -10474,7 +12139,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],
@@ -10492,7 +12157,7 @@ var equip_data = {
         "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": "通常弾",
+        "ammo": 3,
         "ammo_icon": [
             1
         ],

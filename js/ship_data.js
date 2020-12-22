@@ -1298,6 +1298,42 @@ var ship_data = {
             14
         ]
     },
+    "9707010": {
+        "nationality": 97,
+        "type": 7,
+        "base_list": [
+            3,
+            2,
+            3
+        ],
+        "id": 9707014,
+        "skin_id": 9707010,
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "9707010",
+        "painting": "feilong_alter",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "飛龍(META)",
+        "en_name": "Hiryu.META",
+        "cn_name": "飞龙·META",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            9
+        ],
+        "equip_3": [
+            8
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
     "999010": {
         "nationality": 9,
         "type": 5,
@@ -3523,6 +3559,7 @@ var ship_data = {
             9
         ],
         "equip_3": [
+            8,
             9
         ],
         "equip_4": [
@@ -6344,6 +6381,9 @@ var ship_data = {
             4
         ],
         "equip_2": [
+            7,
+            8,
+            9,
             12
         ],
         "equip_3": [
@@ -6417,6 +6457,9 @@ var ship_data = {
             4
         ],
         "equip_2": [
+            7,
+            8,
+            9,
             12
         ],
         "equip_3": [
@@ -6490,6 +6533,9 @@ var ship_data = {
             4
         ],
         "equip_2": [
+            7,
+            8,
+            9,
             12
         ],
         "equip_3": [
@@ -6563,6 +6609,9 @@ var ship_data = {
             4
         ],
         "equip_2": [
+            7,
+            8,
+            9,
             12
         ],
         "equip_3": [
