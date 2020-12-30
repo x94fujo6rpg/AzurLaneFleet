@@ -1081,10 +1081,7 @@ function buildShipSelectOption() {
         { id: 9, cn: "維希教廷", en: "VichyaDominion", jp: "ヴィシア", code: "MNF" },
         { id: 0, cn: "其他", en: "Other", jp: "その他", code: "" },
     ];
-    nation.forEach((item) => {
-        let newid = `ship_nation_${item.id}`;
-        item.name = newid;
-    });
+    nation.forEach((item) => { item.name = `ship_nation_${item.id}`; });
 
     let type = [
         { id: 1, cn: "驅逐", en: "Destroyer", jp: "駆逐", code: "DD", pos: "front" },
@@ -1104,8 +1101,7 @@ function buildShipSelectOption() {
         { id: 0, cn: "其他", en: "Other", jp: "その他", code: "" },
     ];
     type.forEach((item) => {
-        let newid = `ship_type_${item.id}`;
-        item.name = newid;
+        item.name = `ship_type_${item.id}`;
         item.display = "false";
     });
 
@@ -1117,8 +1113,7 @@ function buildShipSelectOption() {
         { id: 6, cn: "海上傳奇", en: "Decisive", jp: "UR" },
     ];
     rarity.forEach((item) => {
-        let newid = `ship_rarity_${item.id}`;
-        item.name = newid;
+        item.name = `ship_rarity_${item.id}`;
     });
     console.timeEnd("buildShipSelectOption");
     return [nation, type, rarity];

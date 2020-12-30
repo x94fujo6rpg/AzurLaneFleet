@@ -3171,6 +3171,42 @@ var ship_data = {
             14
         ]
     },
+    "408100": {
+        "nationality": 4,
+        "type": 8,
+        "base_list": [
+            2,
+            2,
+            1
+        ],
+        "id": 408104,
+        "skin_id": 408100,
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "408100",
+        "painting": "U37",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "U-37",
+        "en_name": "U-37",
+        "cn_name": "U-37",
+        "equip_1": [
+            13
+        ],
+        "equip_2": [
+            13
+        ],
+        "equip_3": [
+            1
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
     "408090": {
         "nationality": 4,
         "type": 8,
@@ -3495,6 +3531,42 @@ var ship_data = {
             10
         ]
     },
+    "407030": {
+        "nationality": 4,
+        "type": 7,
+        "base_list": [
+            2,
+            3,
+            3
+        ],
+        "id": 407034,
+        "skin_id": 407030,
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "407030",
+        "painting": "shitelasai",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "ペーター・シュトラサッサー",
+        "en_name": "Peter Strasser",
+        "cn_name": "彼得·史特拉塞",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            9
+        ],
+        "equip_3": [
+            8
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
     "407020": {
         "nationality": 4,
         "type": 7,
@@ -3567,6 +3639,44 @@ var ship_data = {
         ],
         "equip_5": [
             10
+        ]
+    },
+    "406010": {
+        "nationality": 4,
+        "type": 6,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 406014,
+        "skin_id": 406010,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "406010",
+        "painting": "weixi",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "ヴェーザー",
+        "en_name": "Weser",
+        "cn_name": "威悉",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            9
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            15
+        ],
+        "equip_5": [
+            10,
+            15
         ]
     },
     "499020": {
@@ -3826,6 +3936,43 @@ var ship_data = {
             10
         ]
     },
+    "403090": {
+        "nationality": 4,
+        "type": 3,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 403094,
+        "skin_id": 403090,
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "403090",
+        "painting": "haiyinlixi",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "プリンツ・ハインリヒ",
+        "en_name": "Prinz Heinrich",
+        "cn_name": "海因里希亲王",
+        "equip_1": [
+            3,
+            11
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
     "403080": {
         "nationality": 4,
         "type": 3,
@@ -4064,6 +4211,44 @@ var ship_data = {
         "jp_name": "マインツ",
         "en_name": "Mainz",
         "cn_name": "美因茨",
+        "equip_1": [
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "402050": {
+        "nationality": 4,
+        "type": 2,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 402054,
+        "skin_id": 402050,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "402050",
+        "painting": "niulunbao",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "ニュルンベルク",
+        "en_name": "Nürnberg",
+        "cn_name": "纽伦堡",
         "equip_1": [
             2
         ],
@@ -4463,6 +4648,45 @@ var ship_data = {
             14
         ]
     },
+    "401280": {
+        "nationality": 4,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 401284,
+        "skin_id": 401280,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "401280",
+        "painting": "Z28",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "Z28",
+        "en_name": "Z28",
+        "cn_name": "Z28",
+        "equip_1": [
+            1,
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
     "401260": {
         "nationality": 4,
         "type": 1,
@@ -4522,6 +4746,45 @@ var ship_data = {
         "jp_name": "Z25",
         "en_name": "Z25",
         "cn_name": "Z25",
+        "equip_1": [
+            1,
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "401240": {
+        "nationality": 4,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 401244,
+        "skin_id": 401240,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "401240",
+        "painting": "Z24",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "Z24",
+        "en_name": "Z24",
+        "cn_name": "Z24",
         "equip_1": [
             1,
             2
