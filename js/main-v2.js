@@ -707,9 +707,6 @@ function setShipAndEquip(item) {
                 let typelist = shipInList[`e${index}`];
                 app_item.type = typelist;
                 app_item.icon = "ui/empty.png";
-                let typestr_cn = "";
-                let typestr_en = "";
-                let typestr_jp = "";
                 let itemindex = parseInt(index, 10) - 1;
                 let quantity = shipInApp.item[0].property.base[itemindex];
 
@@ -720,20 +717,16 @@ function setShipAndEquip(item) {
                 }
 
                 // go through all type in ship's equip type list
-                typelist.forEach((type, index) => {
-                    typestr_cn += parsetype[type].cn;
-                    typestr_en += parsetype[type].en;
-                    typestr_jp += parsetype[type].jp;
-                    if (typelist.length > 1 && index < typelist.length - 1) {
-                        typestr_cn += "/";
-                        typestr_en += "/";
-                        typestr_jp += "/";
-                    }
+                let langs = ["cn", "en", "jp"];
+                let type_str_arr = [[], [], []];
+                typelist.forEach(type => {
+                    langs.forEach((lan_str, index) => {
+                        type_str_arr[index].push(parsetype[type][lan_str]);
+                    });
                 });
-
-                app_item.cn = app_item.type_cn = typestr_cn;
-                app_item.en = app_item.type_en = typestr_en;
-                app_item.jp = app_item.type_jp = typestr_jp;
+                langs.forEach((lan_str, index) => {
+                    app_item[lan_str] = app_item[`type_${lan_str}`] = type_str_arr[index].join("/");
+                });
                 app_item.target = "#equipselect";
             }
         }

@@ -1298,6 +1298,42 @@ var ship_data = {
             14
         ]
     },
+    "9707020": {
+        "nationality": 97,
+        "type": 7,
+        "base_list": [
+            3,
+            3,
+            2
+        ],
+        "id": 9707024,
+        "skin_id": 9707020,
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "9707020",
+        "painting": "huangjiafangzhou_alter",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "アーク・ロイヤル(META)",
+        "en_name": "Royal.META",
+        "cn_name": "皇家方舟·META",
+        "equip_1": [
+            8
+        ],
+        "equip_2": [
+            8
+        ],
+        "equip_3": [
+            9
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
     "9707010": {
         "nationality": 97,
         "type": 7,
@@ -2307,6 +2343,43 @@ var ship_data = {
             10
         ]
     },
+    "705040": {
+        "nationality": 7,
+        "type": 5,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 705044,
+        "skin_id": 705040,
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "705040",
+        "painting": "suweiaibeilaluosi",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "ソビエツカヤ・ベラルーシア",
+        "en_name": "Sovetskaya Belorussiya",
+        "cn_name": "苏维埃贝拉罗斯",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
     "705010": {
         "nationality": 7,
         "type": 5,
@@ -2342,6 +2415,121 @@ var ship_data = {
         ],
         "equip_5": [
             10
+        ]
+    },
+    "703010": {
+        "nationality": 7,
+        "type": 3,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 703014,
+        "skin_id": 703010,
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "703010",
+        "painting": "talin",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "タリン",
+        "en_name": "Tallinn",
+        "cn_name": "塔林",
+        "equip_1": [
+            2,
+            3
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "702060": {
+        "nationality": 7,
+        "type": 2,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 702064,
+        "skin_id": 702060,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "702060",
+        "painting": "moermansike",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "ムルマンスク",
+        "en_name": "Murmansk",
+        "cn_name": "摩尔曼斯克",
+        "equip_1": [
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "702040": {
+        "nationality": 7,
+        "type": 2,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 702044,
+        "skin_id": 702040,
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "702040",
+        "painting": "jiluofu",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "キーロフ",
+        "en_name": "Kirov",
+        "cn_name": "基洛夫",
+        "equip_1": [
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
         ]
     },
     "702030": {
@@ -2382,6 +2570,44 @@ var ship_data = {
             14
         ]
     },
+    "702029": {
+        "nationality": 7,
+        "type": 2,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 702124,
+        "skin_id": 702029,
+        "star": 5,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "702029",
+        "painting": "shuixingjinian_g",
+        "star_string": "★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "パーミャチ・メルクーリヤ改",
+        "en_name": "Pamiat' Merkuria",
+        "cn_name": "水星纪念.改",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
     "702020": {
         "nationality": 7,
         "type": 2,
@@ -2394,7 +2620,7 @@ var ship_data = {
         "skin_id": 702020,
         "star": 5,
         "rarity": 4,
-        "retro": 0,
+        "retro": 1,
         "uni_id": "702020",
         "painting": "shuixingjinian",
         "star_string": "★★★★★",
@@ -2442,6 +2668,120 @@ var ship_data = {
         "cn_name": "阿芙乐尔",
         "equip_1": [
             2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "701080": {
+        "nationality": 7,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 701084,
+        "skin_id": 701080,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "701080",
+        "painting": "hongliang",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "グロームキィ",
+        "en_name": "Gromky",
+        "cn_name": "洪亮",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "701070": {
+        "nationality": 7,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 701074,
+        "skin_id": 701070,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "701070",
+        "painting": "leiming",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "グレミャーシュチ",
+        "en_name": "Gremyashchy",
+        "cn_name": "雷鸣",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "701060": {
+        "nationality": 7,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 701064,
+        "skin_id": 701060,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "701060",
+        "painting": "shensu",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "ストレミテルヌイ",
+        "en_name": "Stremitelny",
+        "cn_name": "神速",
+        "equip_1": [
+            1
         ],
         "equip_2": [
             5
@@ -2610,6 +2950,79 @@ var ship_data = {
             14
         ]
     },
+    "608010": {
+        "nationality": 6,
+        "type": 8,
+        "base_list": [
+            2,
+            2,
+            1
+        ],
+        "id": 608014,
+        "skin_id": 608010,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "608010",
+        "painting": "tuolichaili",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "トリチェリ",
+        "en_name": "Torricelli",
+        "cn_name": "托里拆利",
+        "equip_1": [
+            13
+        ],
+        "equip_2": [
+            13
+        ],
+        "equip_3": [
+            1
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
+    "607010": {
+        "nationality": 6,
+        "type": 7,
+        "base_list": [
+            2,
+            2,
+            4
+        ],
+        "id": 607014,
+        "skin_id": 607010,
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "607010",
+        "painting": "tianying",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "アクィラ",
+        "en_name": "Aquila",
+        "cn_name": "天鹰",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            7,
+            9
+        ],
+        "equip_3": [
+            8
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
     "605060": {
         "nationality": 6,
         "type": 5,
@@ -2719,6 +3132,79 @@ var ship_data = {
             10
         ]
     },
+    "605010": {
+        "nationality": 6,
+        "type": 5,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 605014,
+        "skin_id": 605010,
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "605010",
+        "painting": "weineituo",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "ヴィットリオ・ヴェネト",
+        "en_name": "Vittorio Veneto",
+        "cn_name": "维托里奥·维内托",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
+    "603030": {
+        "nationality": 6,
+        "type": 3,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 603034,
+        "skin_id": 603030,
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "603030",
+        "painting": "bola",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "ポーラ",
+        "en_name": "Pola",
+        "cn_name": "波拉",
+        "equip_1": [
+            3
+        ],
+        "equip_2": [
+            1
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
     "603020": {
         "nationality": 6,
         "type": 3,
@@ -2791,6 +3277,196 @@ var ship_data = {
             10
         ]
     },
+    "602010": {
+        "nationality": 6,
+        "type": 2,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 602014,
+        "skin_id": 602010,
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "602010",
+        "painting": "abuluqi",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "ドゥーカ・デッリ・アブルッツィ",
+        "en_name": "Duca degli Abruzzi",
+        "cn_name": "阿布鲁齐公爵",
+        "equip_1": [
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "601060": {
+        "nationality": 6,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 601064,
+        "skin_id": 601060,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "601060",
+        "painting": "daleike",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "ニコロソ・ダ・レッコ",
+        "en_name": "Nicoloso da Recco",
+        "cn_name": "尼科洛索·达雷科",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "601050": {
+        "nationality": 6,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 601054,
+        "skin_id": 601050,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "601050",
+        "painting": "xinanfeng",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "リベッチオ",
+        "en_name": "Libeccio",
+        "cn_name": "西南风",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "601040": {
+        "nationality": 6,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 601044,
+        "skin_id": 601040,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "601040",
+        "painting": "xibeifeng",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "マエストラーレ",
+        "en_name": "Maestrale",
+        "cn_name": "西北风",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "601030": {
+        "nationality": 6,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 601034,
+        "skin_id": 601030,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "601030",
+        "painting": "wenqinzuojiaobeidi",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "ヴィンチェンツォ・ジョベルティ",
+        "en_name": "Vincenzo Gioberti",
+        "cn_name": "文琴佐·焦贝蒂",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
     "601020": {
         "nationality": 6,
         "type": 1,
@@ -2819,6 +3495,82 @@ var ship_data = {
         ],
         "equip_3": [
             6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "502050": {
+        "nationality": 5,
+        "type": 2,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 502054,
+        "skin_id": 502050,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "502050",
+        "painting": "zhaohe",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "肇和",
+        "en_name": "Chao Ho",
+        "cn_name": "肇和",
+        "equip_1": [
+            2
+        ],
+        "equip_2": [
+            1
+        ],
+        "equip_3": [
+            5
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "502040": {
+        "nationality": 5,
+        "type": 2,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 502044,
+        "skin_id": 502040,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "502040",
+        "painting": "yingrui",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "応瑞",
+        "en_name": "Ying Swei",
+        "cn_name": "应瑞",
+        "equip_1": [
+            2
+        ],
+        "equip_2": [
+            1
+        ],
+        "equip_3": [
+            5
         ],
         "equip_4": [
             10,
@@ -3169,6 +3921,42 @@ var ship_data = {
         "equip_5": [
             10,
             14
+        ]
+    },
+    "408110": {
+        "nationality": 4,
+        "type": 8,
+        "base_list": [
+            2,
+            2,
+            1
+        ],
+        "id": 408114,
+        "skin_id": 408110,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "408110",
+        "painting": "U410",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "U-410",
+        "en_name": "U-410",
+        "cn_name": "U-410",
+        "equip_1": [
+            13
+        ],
+        "equip_2": [
+            13
+        ],
+        "equip_3": [
+            1
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
         ]
     },
     "408100": {
@@ -3548,7 +4336,7 @@ var ship_data = {
         "painting": "shitelasai",
         "star_string": "★★★★★★",
         "rarity_string": "SSR",
-        "jp_name": "ペーター・シュトラサッサー",
+        "jp_name": "ペーター・シュトラッサー",
         "en_name": "Peter Strasser",
         "cn_name": "彼得·史特拉塞",
         "equip_1": [
@@ -6924,6 +7712,43 @@ var ship_data = {
             10
         ]
     },
+    "304070": {
+        "nationality": 3,
+        "type": 4,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 304074,
+        "skin_id": 304070,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "304070",
+        "painting": "tiancheng_younv",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "天城ちゃん",
+        "en_name": "Amagi",
+        "cn_name": "小天城",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
     "304060": {
         "nationality": 3,
         "type": 4,
@@ -8466,6 +9291,44 @@ var ship_data = {
         "jp_name": "北風",
         "en_name": "Kitakaze",
         "cn_name": "北风",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "301850": {
+        "nationality": 3,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 301854,
+        "skin_id": 301850,
+        "star": 5,
+        "rarity": 3,
+        "retro": 0,
+        "uni_id": "301850",
+        "painting": "zhuifeng",
+        "star_string": "★★★★★",
+        "rarity_string": "R",
+        "jp_name": "追風",
+        "en_name": "Oite",
+        "cn_name": "追风",
         "equip_1": [
             1
         ],
@@ -12617,6 +13480,44 @@ var ship_data = {
         "jp_name": "ネプチューン",
         "en_name": "Neptune",
         "cn_name": "海王星",
+        "equip_1": [
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "202290": {
+        "nationality": 2,
+        "type": 2,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 202294,
+        "skin_id": 202290,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "202290",
+        "painting": "peineiluopo",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "ペネロピ",
+        "en_name": "Penelope",
+        "cn_name": "佩内洛珀",
         "equip_1": [
             2
         ],
@@ -18426,6 +19327,82 @@ var ship_data = {
         "cn_name": "奥马哈",
         "equip_1": [
             2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "101460": {
+        "nationality": 1,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 101464,
+        "skin_id": 101460,
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "101460",
+        "painting": "shidifenbote",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "ステフェン・ポッター",
+        "en_name": "Stephen Potter",
+        "cn_name": "史蒂芬·波特",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "101450": {
+        "nationality": 1,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 101454,
+        "skin_id": 101450,
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "101450",
+        "painting": "ailunsamuna",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "アレン・M・サムナー",
+        "en_name": "Allen M. Sumner ",
+        "cn_name": "艾伦·萨姆纳",
+        "equip_1": [
+            1
         ],
         "equip_2": [
             5
