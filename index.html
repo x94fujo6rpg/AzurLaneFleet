@@ -165,9 +165,9 @@
     <div class="container text-center text-light font-weight-bold text-monospace">
         <h1>Azur Lane Fleet</h1>
     </div>
-    <div align="center">
-        <h4 class="text-light text-monospace">Select language</h4>
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+    <div align="center" id="options" clas="container">
+        <h4 class="text-light text-monospace d-inline-flex">Language</h4>
+        <div class="btn-group btn-group-toggle mb-1 pl-1" data-toggle="buttons">
             <label class="btn btn-secondary active" id="cn" onclick="setlang(this)">
                 <input type="radio" name="lang" autocomplete="off" checked>CN
             </label>
@@ -177,6 +177,10 @@
             <label class="btn btn-secondary" id="en" onclick="setlang(this)">
                 <input type="radio" name="lang" autocomplete="off">EN
             </label>
+        </div>
+        <div class="d-inline-flex p-1 bg-secondary rounded">
+            <input type="checkbox" id="allow_dup" class="m-auto">
+            <label class="text-light text-monospace bg-secondary m-auto pl-1" for="allow_dup">Allow Duplicate Ship</label>
         </div>
     </div>
     <br>

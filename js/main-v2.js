@@ -116,11 +116,39 @@ let shipsetting = {
     back: [],
     rarity: [],
 };
-let front = [1, 2, 3, 8, 17, 18, 19]; // put ss back & new type 19
-let back = [4, 5, 6, 7, 10, 12, 13];
 let c_ships = [];
-let version = 0.03;
 let eqck = false;
+
+// ship type
+const front = [1, 2, 3, 8, 17, 18, 19]; // put ss back & new type 19
+const back = [4, 5, 6, 7, 10, 12, 13];
+const other_nation = [98, 101, 103, 104, 105, 106, 107, 108, 109, 110]; // collab and other
+const other_front = [19];
+const other_back = [10];
+
+// equip type
+const addquantitylist = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13,]; // add bb main gun
+const parsetype = {
+    1: { cn: "驅逐砲", en: "DD Gun", jp: "駆逐砲" },
+    2: { cn: "輕巡砲", en: "CL Gun", jp: "軽巡砲" },
+    3: { cn: "重巡砲", en: "CA Gun", jp: "重巡砲" },
+    4: { cn: "戰艦砲", en: "BB Gun", jp: "戦艦砲" },
+    5: { cn: "魚雷", en: "Torpedoe", jp: "魚雷" },
+    6: { cn: "防空砲", en: "Anti-Air Gun", jp: "対空砲" },
+    7: { cn: "戰鬥機", en: "Fighter", jp: "戦闘機" },
+    8: { cn: "攻擊機", en: "Torpedo Bomber", jp: "攻撃機" },
+    9: { cn: "爆擊機", en: "Dive Bomber", jp: "爆撃機" },
+    10: { cn: "設備", en: "Auxiliary", jp: "設備" },
+    11: { cn: "超巡砲", en: "CB Gun", jp: "超巡砲" },
+    12: { cn: "水上機", en: "Seaplane", jp: "水上機" },
+    13: { cn: "潛艇魚雷", en: "Submarine Torpedoe", jp: "潜水艦魚雷" },
+    14: { cn: "爆雷", en: "Depth Charge", jp: "爆雷" }, //Sonar is not a unique type
+    15: { cn: "反潛機", en: "ASW Bomber", jp: "対潜機" },
+    17: { cn: "直升機", en: "ASW Helicopter", jp: "ヘリ" },
+    18: { cn: "貨物", en: "Cargo", jp: "積載" }
+};
+
+let version = 0.03;
 
 initial();
 //---------------------------------------------
@@ -213,10 +241,9 @@ function loadDataByID() {
 
 function saveCookie(ckey, cvalue, expday = 365) {
     let time = new Date();
-    let exp = expday * 1000 * 60 * 60 * 24;
-    time.setTime(time.getTime() + exp);
-    exp = time.toUTCString();
-    document.cookie = `${ckey}=${cvalue};`;
+    let exp = new Date();
+    exp.setTime(time.getTime() + (expday * 1000 * 60 * 60 * 24));
+    document.cookie = `${ckey}=${cvalue};expires=${exp.toUTCString()};`;
 }
 
 function getCookie() {
@@ -225,7 +252,7 @@ function getCookie() {
     cookie = cookie.split("; ");
     cookie.forEach(data => {
         let [key, value] = data.split("=");
-        new_list[key] = value;
+        if (key != "expires") new_list[key] = value;
     });
     return new_list;
 }
@@ -326,13 +353,14 @@ function updateSetting(item) {
 
 function checksetting(key, value) {
     let index = shipsetting[key].indexOf(value);
-    if (value > -1) {
+    if (value != 0) {
         if (index === -1) {
             shipsetting[key].push(value);
         } else {
             shipsetting[key].splice(index, 1);
         }
     } else {
+        // set "other" for front&back 
         if (index === -1) {
             shipsetting.back.push(0);
             shipsetting.front.push(0);
@@ -362,7 +390,7 @@ function shipDisplay() {
             }
         }
     });
-    hideShipInFleet();
+    if (!document.getElementById("allow_dup").checked) hideShipInFleet();
 }
 
 function hideShipInFleet() {
@@ -387,39 +415,42 @@ function isShipSelect(nation, type, rarity, retro) {
     let indicator_nation = false;
     let indicator_type = false;
     let indicator_rarity = false;
-    let other_nation = [98, 101, 103, 104, 105, 106, 107, 108, 109, 110];
-    let other_front = [19];
-    let other_back = [10];
+    // when current select ship is front, hide back ships
     if (c_side === "0" && front.indexOf(type) === -1) {
         return false;
-    }
-    if (c_side === "1" && back.indexOf(type) === -1) {
+    } else if (c_side === "1" && back.indexOf(type) === -1) {
         return false;
     }
+
+    // if ship is front/back and ship type match current selected
     if (c_side === "0") {
         if (shipsetting.front.indexOf(type) != -1 || shipsetting.front.length === 0) {
             indicator_type = true;
         } else if (shipsetting.front.indexOf(0) != -1 && other_front.indexOf(type) != -1) {
             indicator_type = true;
         }
-    }
-    if (c_side === "1") {
+    } else if (c_side === "1") {
         if (shipsetting.back.indexOf(type) != -1 || shipsetting.back.length === 0) {
             indicator_type = true;
         } else if (shipsetting.back.indexOf(0) != -1 && other_back.indexOf(type) != -1) {
             indicator_type = true;
         }
     }
+
+    // if ship nation match current selected
     if (shipsetting.nation.indexOf(nation) != -1 || shipsetting.nation.length === 0) {
         indicator_nation = true;
-    }
-    if (shipsetting.nation.indexOf(0) != -1 && other_nation.indexOf(nation) != -1) {
+    } else if (shipsetting.nation.indexOf(0) != -1 && other_nation.indexOf(nation) != -1) {
         indicator_nation = true;
     }
+
+    // if ship rarity match current selected
     if (shipsetting.rarity.indexOf(rarity) != -1 || shipsetting.rarity.length === 0) {
         indicator_rarity = true;
     }
+
     if (indicator_nation && indicator_type && indicator_rarity) {
+        // hide/show retrofit ship
         if (retrofit && retro === 1) {
             return false;
         } else {
@@ -435,17 +466,11 @@ function setCurrent(item) {
     [c_fleet, c_side, c_pos, c_item] = [pos[1], pos[2], pos[3], pos[4]];
     if (c_item === "0") {
         //ship
-        let shiplist = document.getElementById("shiplist");
-        shiplist = shiplist.querySelectorAll("button");
         if (c_side === "0") {
             // show front type
             ship_type.forEach((item) => {
                 if (front.indexOf(item.id) === -1) {
-                    if (item.id === 0) {
-                        item.display = true;
-                    } else {
-                        item.display = false;
-                    }
+                    item.display = item.id === 0 ? true : false;
                 } else {
                     item.display = true;
                 }
@@ -454,11 +479,7 @@ function setCurrent(item) {
             // show back type
             ship_type.forEach((item) => {
                 if (back.indexOf(item.id) === -1) {
-                    if (item.id === 0) {
-                        item.display = true;
-                    } else {
-                        item.display = false;
-                    }
+                    item.display = item.id === 0 ? true : false;
                 } else {
                     item.display = true;
                 }
@@ -471,7 +492,7 @@ function setCurrent(item) {
     }
 }
 
-function equipCheck(ckid) {
+function equipCheck(ckid) { // after select both submarine type, selcet formidable...somthing happen
     let id = parseInt(atob("MjgzNDA="), 10);
     let eq = document.getElementById(String(id));
     let bg = eq.querySelector(".bg");
@@ -651,27 +672,7 @@ function setShipAndEquip(item) {
         }
     });
     let app_item = shipInApp.item;
-    let shipCopyList = ["cn", "en", "jp", "icon", "frame", "bg", "id", "type", "rarity", "star", "base"];
-    let addquantitylist = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13,]; // add bb main gun
-    let parsetype = {
-        1: { cn: "驅逐砲", en: "DD Gun", jp: "駆逐砲" },
-        2: { cn: "輕巡砲", en: "CL Gun", jp: "軽巡砲" },
-        3: { cn: "重巡砲", en: "CA Gun", jp: "重巡砲" },
-        4: { cn: "戰艦砲", en: "BB Gun", jp: "戦艦砲" },
-        5: { cn: "魚雷", en: "Torpedoe", jp: "魚雷" },
-        6: { cn: "防空砲", en: "Anti-Air Gun", jp: "対空砲" },
-        7: { cn: "戰鬥機", en: "Fighter", jp: "戦闘機" },
-        8: { cn: "攻擊機", en: "Torpedo Bomber", jp: "攻撃機" },
-        9: { cn: "爆擊機", en: "Dive Bomber", jp: "爆撃機" },
-        10: { cn: "設備", en: "Auxiliary", jp: "設備" },
-        11: { cn: "超巡砲", en: "CB Gun", jp: "超巡砲" },
-        12: { cn: "水上機", en: "Seaplane", jp: "水上機" },
-        13: { cn: "潛艇魚雷", en: "Submarine Torpedoe", jp: "潜水艦魚雷" },
-        14: { cn: "爆雷", en: "Depth Charge", jp: "爆雷" }, //Sonar is not a unique type
-        15: { cn: "反潛機", en: "ASW Bomber", jp: "対潜機" },
-        17: { cn: "直升機", en: "ASW Helicopter", jp: "ヘリ" },
-        18: { cn: "貨物", en: "Cargo", jp: "積載" }
-    };
+    const shipCopyList = ["cn", "en", "jp", "icon", "frame", "bg", "id", "type", "rarity", "star", "base"];
     for (let index in app_item) {
         app_item = shipInApp.item[index].property;
         if (item.id === "000000") {
@@ -854,55 +855,42 @@ function creatAllShip() {
         setTimeout(() => {
             let pos = document.getElementById("shiplist");
             let icon_box = document.createElement("div");
-            $(icon_box).attr({
-                class: "icon_box row",
-            });
+            icon_box.className = "icon_box row";
 
             let icon = document.createElement("img");
-            $(icon).attr({
-                class: "img-fluid icon",
-                loading: "lazy",
-                src: ship.icon,
-            });
+            icon.className = "img-fluid icon";
+            icon.loading = "lazy";
+            icon.src = ship.icon;
 
             let bg = document.createElement("img");
-            $(bg).attr({
-                class: "img-fluid bg",
-                src: ship.bg,
-            });
+            bg.className = "img-fluid bg";
+            bg.src = ship.bg;
 
             let frame = document.createElement("img");
-            $(frame).attr({
-                class: "img-fluid frame",
-                src: ship.frame,
-            });
+            frame.className = "img-fluid frame";
+            frame.src = ship.frame;
 
             icon_box.append(icon, bg, frame);
             //-----------------------------------------------
             let box = document.createElement("div");
-            $(box).attr({
-                class: "container-fluid p-0 box",
-            });
+            box.className = "container-fluid p-0 box";
 
             let name = document.createElement("span");
-            $(name).attr({
-                name: "name",
-                cn: ship.cn,
-                en: ship.en,
-                jp: ship.jp,
-                class: "justify-content-center item_name",
-            });
+            name.className = "justify-content-center item_name";
+            name.setAttribute("name", "name");
+            name.setAttribute("cn", ship.cn);
+            name.setAttribute("en", ship.en);
+            name.setAttribute("jp", ship.jp);
             name.textContent = ship[lan];
 
             box.append(icon_box, name);
             //-----------------------------------------------
             let newship = document.createElement("button");
-            $(newship).attr({
-                class: "p-1 item_container",
-                id: ship.id,
-                onclick: "setShipAndEquip(this)",
-                "data-dismiss": "modal",
-            });
+            newship.className = "p-1 item_container";
+            newship.id = ship.id;
+            newship.onclick = function () { setShipAndEquip(this); };
+            newship.setAttribute("data-dismiss", "modal");
+
             newship.append(box);
             pos.append(newship);
             //-----------------------------------------------
@@ -920,55 +908,43 @@ function creatAllEquip() {
         setTimeout(() => {
             let pos = document.getElementById("equiplist");
             let icon_box = document.createElement("div");
-            $(icon_box).attr({
-                class: "container-fluid icon_box",
-            });
+            icon_box.className = "container-fluid icon_box";
 
             let bg = document.createElement("img");
-            $(bg).attr({
-                class: "img-fluid bg",
-                src: equip.bg,
-            });
+            bg.className = "img-fluid bg";
+            bg.src = equip.bg;
 
             let frame = document.createElement("img");
-            $(frame).attr({
-                class: "img-fluid frame",
-                src: equip.frame,
-            });
+            frame.className = "img-fluid frame";
+            frame.src = equip.frame;
 
             let eqicon = document.createElement("img");
-            $(eqicon).attr({
-                class: "img-fluid icon",
-                loading: "lazy",
-                src: equip.icon,
-            });
+            eqicon.className = "img-fluid icon";
+            eqicon.loading = "lazy";
+            eqicon.src = equip.icon;
 
             icon_box.append(bg, frame, eqicon);
             //-----------------------------------------------
             let box = document.createElement("div");
-            $(box).attr({
-                class: "container-fluid p-0 box",
-            });
+            box.className = "container-fluid p-0 box";
 
             let name = document.createElement("span");
-            $(name).attr({
-                name: "name",
-                cn: equip.cn,
-                en: equip.en,
-                jp: equip.jp,
-                class: "justify-content-center item_name",
-            });
+            name.className = "justify-content-center item_name";
+            name.setAttribute("name", "name");
             name.textContent = equip[lan];
+            name.setAttribute("cn", equip.cn);
+            name.setAttribute("en", equip.en);
+            name.setAttribute("jp", equip.jp);
 
             box.append(icon_box, name);
             //-----------------------------------------------
             let newequip = document.createElement("button");
-            $(newequip).attr({
-                class: "p-1 item_container",
-                id: equip.id,
-                onclick: "setEquip(this)",
-                "data-dismiss": "modal",
-            });
+            newequip.className = "p-1 item_container";
+            newequip.id = equip.id;
+            //$(newequip).attr({ onclick: "setEquip(this)" });
+            newequip.onclick = function () { setEquip(this); };
+            newequip.setAttribute("data-dismiss", "modal");
+
             newequip.append(box);
             pos.append(newequip);
             //-----------------------------------------------

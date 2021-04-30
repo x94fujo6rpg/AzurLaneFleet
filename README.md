@@ -4,6 +4,9 @@ Is just for easily share fleet configuration in one shot
 ![](https://i.imgur.com/ZDSWNOl.png)  
 
 ## Update  
+**2021-04-30**
+- add option for duplicate ship
+
 **2020-11-27**  
 - fix filter issue  
 - add ship/equip (event 2020-11-26)  
