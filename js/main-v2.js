@@ -16,11 +16,9 @@ Vue.component("item-container", {
                 <img class="img-fluid bg" v-bind:src="item.property.bg">
                 <img class="img-fluid frame" v-bind:src="item.property.frame">
                 <img class="img-fluid icon" v-bind:src="item.property.icon">
-                <span class="d-flex justify-content-start text-monospace itemq" v-text="item.property.quantity">
+                <span class="d-flex justify-content-start text-monospace itemq" v-text="item.property.quantity"></span>
               </div>
-              <span class="justify-content-center item_name"
-                v-text="item.property[lang]"
-              ></span>
+              <span class="justify-content-center item_name" v-text="item.property[lang]"></span>
             </div>
         </button>
     `
