@@ -4,6 +4,11 @@ Is just for easily share fleet configuration in one shot
 ![](https://i.imgur.com/ZDSWNOl.png)  
 
 ## Update  
+**2021-05-03**
+- add search for ship name, support CN/EN/JP
+- 4 normal + submarine fleet
+- compress data string
+
 **2021-04-30**
 - add option for duplicate ship
 
