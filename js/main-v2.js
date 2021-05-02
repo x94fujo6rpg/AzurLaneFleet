@@ -137,7 +137,7 @@ const type_sub = [8, 17];
 const other_nation = [98, 101, 103, 104, 105, 106, 107, 108, 109, 110]; // collab and other
 const other_front = [19];
 const other_back = [10];
-const other_sub = [];
+const other_sub = [0];
 
 // equip type
 const addquantitylist = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13,]; // add bb main gun
@@ -402,29 +402,29 @@ function updateSetting(item) {
     let type = strlist[1];
     let value = parseInt(strlist[2], 10); //type int
     if (type === "nation") {
-        checksetting("nation", value);
+        checksetting("nation", value, type);
     } else if (type === "type") {
         switch (c_side) {
             case "0": // front
-                checksetting("front", value);
+                checksetting("front", value, type);
                 break;
             case "1": // back
-                checksetting("back", value);
+                checksetting("back", value, type);
                 break;
             case "2": // sub
-                checksetting("sub", value);
+                checksetting("sub", value, type);
                 break;
             default:
                 console.log("unknown type");
                 return;
         }
     } else if (type === "rarity") {
-        checksetting("rarity", value);
+        checksetting("rarity", value, type);
     }
     shipDisplay();
 }
 
-function checksetting(key, value) {
+function checksetting(key, value, type) {
     let index = filter_setting[key].indexOf(value);
     if (value != 0) {
         if (index === -1) {
@@ -433,17 +433,26 @@ function checksetting(key, value) {
             filter_setting[key].splice(index, 1);
         }
     } else {
-        // set "other" for front&back 
-        if (index === -1) {
-            filter_setting.back.push(0);
-            filter_setting.front.push(0);
-            filter_setting.sub.push(0);
+        if (type == "type") {
+            // set "other" for front&back 
+            if (index === -1) {
+                filter_setting.back.push(0);
+                filter_setting.front.push(0);
+                filter_setting.sub.push(0);
+            } else {
+                filter_setting.front.splice(filter_setting.front.indexOf(0), 1);
+                filter_setting.back.splice(filter_setting.back.indexOf(0), 1);
+                filter_setting.sub.splice(filter_setting.sub.indexOf(0), 1);
+            }
         } else {
-            filter_setting.front.splice(filter_setting.front.indexOf(0), 1);
-            filter_setting.back.splice(filter_setting.back.indexOf(0), 1);
-            filter_setting.sub.splice(filter_setting.sub.indexOf(0), 1);
+            if (index === -1) {
+                filter_setting[key].push(0);
+            } else {
+                filter_setting[key].splice(filter_setting[key].indexOf(0), 1);
+            }
         }
     }
+    console.log(key, value, `[${filter_setting[key].join(",")}]`, index);
 }
 
 function shipDisplay() {
@@ -523,19 +532,24 @@ function isShipSelect(nation, type, rarity, retro) {
             break;
         default:
             console.log("unknown type");
-            return false;
+            break;
     }
+    if (!indicator_type) return false;
 
     // if ship nation match current selected
     if (filter_setting.nation.indexOf(nation) != -1 || filter_setting.nation.length === 0) {
         indicator_nation = true;
     } else if (filter_setting.nation.indexOf(0) != -1 && other_nation.indexOf(nation) != -1) {
         indicator_nation = true;
+    } else {
+        return false;
     }
 
     // if ship rarity match current selected
     if (filter_setting.rarity.indexOf(rarity) != -1 || filter_setting.rarity.length === 0) {
         indicator_rarity = true;
+    } else {
+        return false;
     }
 
     if (indicator_nation && indicator_type && indicator_rarity) {
