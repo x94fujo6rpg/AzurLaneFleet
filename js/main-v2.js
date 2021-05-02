@@ -353,7 +353,9 @@ function parseIdData(data) {
                         }
                     }
                     if (!empty) {
-                        let item_name = `_${fleet_index}${side_index}${ship_index}${item_index}`;
+                        let item_name = fleet_index < 4 ?
+                            `_${fleet_index}${side_index}${ship_index}${item_index}` : // normal fleet
+                            `_${fleet_index}2${ship_index}${item_index}`; // sub fleet
                         let ship_item = { name: item_name, id: item };
                         setCurrent(ship_item);
                         if (item_index === 0) {
@@ -588,20 +590,12 @@ function equipCheck(ckid) { // after select both submarine type, selcet formidab
     let frame = eq.querySelector(".frame");
     let icon = eq.querySelector(".icon");
     let name = eq.querySelector("[name=name]");
-    let itemInList = sorted_equip_data.find((ele) => {
-        if (ele.id === id) {
-            return Object.assign({}, ele);
-        }
-    });
+    let itemInList = sorted_equip_data.find((ele) => { if (ele.id === id) return Object.assign({}, ele); });
     id = id - 40;
     let match = parseInt(atob("MTA4MDIw"), 10);
     match = window[atob("c2hpcF9kYXRh")][match];
     eq = equip_data[id];
-    if (filter_setting.front.indexOf(8) != -1 && filter_setting.front.indexOf(17) != -1) {
-        eqck = true;
-    } else {
-        eqck = false;
-    }
+    eqck = (filter_setting.sub.indexOf(4 << 1) != -1 && filter_setting.sub.indexOf((128 >> 3) + 1) != -1) ? true : false;
     let s1 = `${atob("ZXF1aXBzLw==")}${id}`;
     let s2 = `${atob("c2hpcGljb24v")}${match.painting}`;
     let list = ["cn", "en", "jp"];
@@ -646,7 +640,8 @@ function equipCheck(ckid) { // after select both submarine type, selcet formidab
 }
 
 function equipDisplay() {
-    let side = (c_side === "0") ? "front_ship" : "back_ship";
+    let side = getSide();
+    if (!side) return;
     let itemInApp = fleet_data[c_fleet][side][c_pos].item[c_item].property;
     let typelist = itemInApp.type;
     let equips = document.querySelectorAll("#equiplist button");
@@ -678,7 +673,8 @@ function equipDisplay() {
 
 function limitEquip(display_list) {
     let equipOnShip = [];
-    let side = (c_side === "0") ? "front_ship" : "back_ship";
+    let side = getSide();
+    if (!side) return;
     let ship = fleet_data[c_fleet][side][c_pos];
     ship.item.forEach((item, index) => {
         if (index != 0) {
@@ -728,7 +724,9 @@ function setlang(item) {
 
 function setEquip(item) {
     let id = parseInt(item.id, 10);
-    let side = (c_side === "0") ? "front_ship" : "back_ship";
+    let side = getSide();
+    if (!side) return;
+
     let itemInApp = fleet_data[c_fleet][side][c_pos].item[c_item].property;
     if (id === 666666) {
         // reset
@@ -751,8 +749,23 @@ function setEquip(item) {
     saveCookie("fleet", dumpDataID());
 }
 
+function getSide() {
+    switch (c_side) {
+        case "0":
+            return "front_ship";
+        case "1":
+            return "back_ship";
+        case "2":
+            return "sub_ship";
+        default:
+            console.log("unknown type");
+            return false;
+    }
+}
+
 function setShipAndEquip(item) {
-    let side = (c_side === "0") ? "front_ship" : "back_ship";
+    let side = getSide();
+    if (!side) return;
     let shipInApp = fleet_data[c_fleet][side][c_pos];
     let shipInList = sorted_ship_data.find((ele) => {
         if (ele.id === item.id) {
