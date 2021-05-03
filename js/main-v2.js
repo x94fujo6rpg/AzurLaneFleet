@@ -131,10 +131,10 @@ let c_ships = [];
 let eqck = false;
 
 // ship type
-const type_front = [1, 2, 3, 18, 19]; // put ss back & new type 19
+const type_front = [1, 2, 3, 18, 19];
 const type_back = [4, 5, 6, 7, 10, 12, 13];
-const type_sub = [8, 17];
-const other_nation = [98, 101, 103, 104, 105, 106, 107, 108, 109, 110]; // collab and other
+const type_sub = [8, 17]; 
+const other_nation = [97, 98, 101, 103, 104, 105, 106, 107, 108, 109, 110]; // 97:META, 98:Bulin, 100+:collab
 const other_front = [19];
 const other_back = [10];
 const other_sub = [0];
