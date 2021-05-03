@@ -955,8 +955,8 @@ function initial() {
         newlist.push(newitem);
         pos++;
     }
-    newlist = sorting(newlist, "nationality", true);
-    newlist = sorting(newlist, "type", true);
+    newlist = sorting(newlist, "nationality", false);
+    newlist = sorting(newlist, "type", false);
     newlist = sorting(newlist, "rarity", true);
     newlist.unshift(empty);
     sorted_equip_data = Object.assign([], newlist);
