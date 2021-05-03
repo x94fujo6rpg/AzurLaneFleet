@@ -42,8 +42,8 @@ Vue.component("ship-container", {
 Vue.component("fleet-container", {
     props: ["fleet", "lang"],
     template: `
-        <div class="row m-auto">
-            <div class="flex-col m-auto" v-if="fleet.back_ship">
+        <div class="row justify-content-center">
+            <div class="flex-col" v-if="fleet.back_ship">
                 <ship-container 
                     v-for="back_ship in fleet.back_ship" 
                     v-bind:key="back_ship.id" 
@@ -52,7 +52,7 @@ Vue.component("fleet-container", {
                     v-bind:lang="lang"
                 ></ship-container>
             </div>
-            <div class="flex-col m-auto" v-if="fleet.front_ship">
+            <div class="flex-col" v-if="fleet.front_ship">
                 <ship-container 
                     v-for="front_ship in fleet.front_ship" 
                     v-bind:key="front_ship.id" 
@@ -61,7 +61,7 @@ Vue.component("fleet-container", {
                     v-bind:lang="lang"
                 ></ship-container>
             </div>
-            <div class="flex-col m-auto" v-if="fleet.sub_ship">
+            <div class="flex-col" v-if="fleet.sub_ship">
                 <ship-container 
                     v-for="sub_ship in fleet.sub_ship" 
                     v-bind:key="sub_ship.id" 
