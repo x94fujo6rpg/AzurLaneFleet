@@ -1,9 +1,13 @@
 ﻿# [AzurLaneFleet](https://x94fujo6rpg.github.io/AzurLaneFleet/) #  
 The goal of this project  
 Is just for easily share fleet configuration in one shot  
-![](https://i.imgur.com/ZDSWNOl.png)  
+![](https://i.imgur.com/oT6HaV6.png)  
 
 ## Update  
+**2021-05-04**
+- now can save/load/remove fleet in local
+- filter now use set
+
 **2021-05-03**
 - add search for ship name, support CN/EN/JP
 - 4 normal + submarine fleet
