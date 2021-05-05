@@ -43,8 +43,8 @@ Vue.component("fleet-container", {
     props: ["fleet", "lang"],
     template: `
         <div class="d-flex justify-content-center">
-            <span v-text="fleet.id"></span>
-            <div class="d-flex justify-content-center m-2">
+            <span class="text-monospace" v-text="fleet.id"></span>
+            <div class="row m-2">
                 <div class="flex-col" v-if="fleet.back_ship">
                     <ship-container
                         v-for="back_ship in fleet.back_ship"
@@ -211,7 +211,6 @@ let equipSelect = new Vue({
     }
 });
 //---------------------------------------------
-//uiAdjust();
 
 function add_search_event() {
     let search_input = document.querySelector("#search_input");
@@ -245,26 +244,14 @@ function ship_name_search(ele) {
     });
 }
 
-function uiAdjust() {
-    // insert space between fleet
-    for (let i = 0; i < 5; i++) {
-        let fleet = document.querySelector(`[name=fleet_${i}]`);
-        if (!fleet) continue;
-        let span = document.createElement("span");
-        span.textContent = `Fleet_${i + 1}`;
-        fleet.insertAdjacentElement("beforebegin", span);
-    }
-}
-
 function emptyfleet() {
     let data = 'No4IjAaDqn7AXUuObYYs1n0MdjgrrNseWmXtaQSiBSVioxVU9XQzWyz53w64ChIv1KDWlSeKyEpwmUOZjlSLtzUTVU9grn190nfz2z1oo9qsqbFxEA';
     data = LZString.decompressFromEncodedURIComponent(data);
-    parseIdData(data);
+    parseID(data);
 }
 
-// dump id only
-function dumpDataID() {
-    console.time(dumpDataID.name);
+function dumpID() {
+    console.time(dumpID.name);
     let data = [];
     fleet_data.forEach(fleet => {
         let fleetdata = [];
@@ -289,7 +276,7 @@ function dumpDataID() {
     data = LZString.compressToEncodedURIComponent(data);
     let textbox = document.getElementById("fleetdata");
     textbox.value = data;
-    console.timeEnd(dumpDataID.name);
+    console.timeEnd(dumpID.name);
     return data;
 }
 
@@ -315,7 +302,7 @@ function loadDataByID() {
     }
 
     textbox.value = "";
-    parseIdData(main_data);
+    parseID(main_data);
 }
 
 function saveCookie(ckey, cvalue, expday = 365) {
@@ -349,12 +336,12 @@ function loadCookie() {
         data.value = clist.fleet;
         loadDataByID();
     } else {
-        saveCookie("fleet", dumpDataID());
+        saveCookie("fleet", dumpID());
     }
 }
 
-function parseIdData(data) {
-    console.time(parseIdData.name);
+function parseID(data) {
+    console.time(parseID.name);
     data = JSON.parse(data);
     data.forEach((fleet, fleet_index) => {
         fleet.forEach((side, side_index) => {
@@ -388,8 +375,8 @@ function parseIdData(data) {
             });
         });
     });
-    saveCookie("fleet", dumpDataID()); // save data at end
-    console.timeEnd(parseIdData.name);
+    saveCookie("fleet", dumpID()); // save data at end
+    console.timeEnd(parseID.name);
 }
 
 function setRetro(item) {
@@ -759,7 +746,7 @@ function setEquip(item, save = true) {
         });
         copylist.forEach(key => itemInApp[key] = itemInList[key]);
     }
-    if (save) saveCookie("fleet", dumpDataID());
+    if (save) saveCookie("fleet", dumpID());
 }
 
 function getSide() {
@@ -844,7 +831,7 @@ function setShipAndEquip(item, save = true) {
             }
         }
     }
-    if (save) saveCookie("fleet", dumpDataID());
+    if (save) saveCookie("fleet", dumpID());
 }
 
 function copyData() {
@@ -1337,7 +1324,7 @@ function add_fleet() {
         msg.textContent = "error: no fleet name";
         return;
     } else {
-        let data = dumpDataID();
+        let data = dumpID();
         fleet_in_storage.push({ name: name_enc, fleet: data });
         saveStorage();
         msg.className = msg_color.green;
