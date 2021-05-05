@@ -1226,13 +1226,13 @@ function buildShipSelectOption() {
 function fleetManager(mode = "", all_fleet = []) {
     switch (mode) {
         case "storage":
+            let length = all_fleet.length;
             try {
                 if (!(all_fleet instanceof Array)) throw new Error("invalid data");
-                if (all_fleet.length == 0) throw new Error("no fleet data");
+                if (length == 0) throw new Error("no fleet data");
             } catch (e) {
                 console.log(e.message);
             } finally {
-                let length = all_fleet.length;
                 for (let i = 1; i <= length; i++) {
                     storageManager("set", `fleet_index_${i}`, all_fleet[i - 1]);
                 }
@@ -1246,7 +1246,7 @@ function fleetManager(mode = "", all_fleet = []) {
                 storageManager("remove", `fleet_index_${i}`);
             }
             storageManager("remove", "num_of_fleet");
-            console.log(`clear ${cleared} fleet data`);
+            console.log(`remove ${eof_fleet} old fleet data`);
             return true;
         default:
             console.log(`unknown action: ${mode}`);
