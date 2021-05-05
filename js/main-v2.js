@@ -144,6 +144,10 @@ const msg_color = {
     red: "text-danger m-1 text-monospace",
     green: "text-success m-1 text-monospace",
 };
+let _loading_ = {
+    ship: { current: 0, },
+    equip: { current: 0, },
+};
 
 // ship type
 const type_front = new Set([1, 2, 3, 18, 19]);
@@ -260,6 +264,7 @@ function emptyfleet() {
 
 // dump id only
 function dumpDataID() {
+    console.time(dumpDataID.name);
     let data = [];
     fleet_data.forEach(fleet => {
         let fleetdata = [];
@@ -284,6 +289,7 @@ function dumpDataID() {
     data = LZString.compressToEncodedURIComponent(data);
     let textbox = document.getElementById("fleetdata");
     textbox.value = data;
+    console.timeEnd(dumpDataID.name);
     return data;
 }
 
@@ -338,7 +344,6 @@ function loadCookie() {
     } else {
         saveCookie("lan", lan);
     }
-
     if (clist.fleet) {
         let data = document.getElementById("fleetdata");
         data.value = clist.fleet;
@@ -346,24 +351,10 @@ function loadCookie() {
     } else {
         saveCookie("fleet", dumpDataID());
     }
-
-    add_search_event();
-    loadStorage();
-    let msg = fleet_info.msg();
-    msg.className = msg_color.green;
-    msg.textContent = `load ${fleet_in_storage.length} fleet`;
-}
-
-function saveStorage() {
-    let num = fleet_in_storage.length;
-    if (num <= 0) return;
-    let cleared = fleetManager("clear");
-    console.log(`cleared ${cleared} fleet data`);
-    let saved = fleetManager("storage", fleet_in_storage);
-    console.log(`saved ${saved} fleet data`);
 }
 
 function parseIdData(data) {
+    console.time(parseIdData.name);
     data = JSON.parse(data);
     data.forEach((fleet, fleet_index) => {
         fleet.forEach((side, side_index) => {
@@ -385,9 +376,9 @@ function parseIdData(data) {
                         let ship_item = { name: item_name, id: item };
                         setCurrent(ship_item);
                         if (item_index === 0) {
-                            setShipAndEquip(ship_item);
+                            setShipAndEquip(ship_item, false);
                         } else {
-                            setEquip(ship_item);
+                            setEquip(ship_item, false);
                         }
                         if (item === "000000") {
                             empty = true;
@@ -397,6 +388,8 @@ function parseIdData(data) {
             });
         });
     });
+    saveCookie("fleet", dumpDataID()); // save data at end
+    console.timeEnd(parseIdData.name);
 }
 
 function setRetro(item) {
@@ -742,7 +735,7 @@ function setlang(item) {
     saveCookie("lan", key);
 }
 
-function setEquip(item) {
+function setEquip(item, save = true) {
     let id = parseInt(item.id, 10);
     let side = getSide();
     if (!side) return;
@@ -766,7 +759,7 @@ function setEquip(item) {
         });
         copylist.forEach(key => itemInApp[key] = itemInList[key]);
     }
-    saveCookie("fleet", dumpDataID());
+    if (save) saveCookie("fleet", dumpDataID());
 }
 
 function getSide() {
@@ -783,7 +776,7 @@ function getSide() {
     }
 }
 
-function setShipAndEquip(item) {
+function setShipAndEquip(item, save = true) {
     let side = getSide();
     if (!side) return;
     let shipInApp = fleet_data[c_fleet][side][c_pos];
@@ -851,7 +844,7 @@ function setShipAndEquip(item) {
             }
         }
     }
-    saveCookie("fleet", dumpDataID());
+    if (save) saveCookie("fleet", dumpDataID());
 }
 
 function copyData() {
@@ -866,9 +859,9 @@ function emptyData() {
     text.value = "";
 }
 
-function initial() {
-    console.time("initial");
-    //creat sortred ship list
+async function initial() {
+    console.time(initial.name);
+    //create sorted ship list
     console.time("sortship");
     let newlist = [];
     let pos = 0;
@@ -895,7 +888,7 @@ function initial() {
         newitem.icon = `shipicon/${item.painting.toLowerCase()}.png`;
         newitem.bg = `ui/bg${item.rarity - 1}.png`;
         newitem.frame = `ui/frame_${item.rarity - 1}.png`;
-        // creat empty ship
+        // create empty ship
         if (pos === 0) {
             empty = Object.assign({}, newitem);
             for (let key in empty) {
@@ -916,8 +909,9 @@ function initial() {
     // add emptyship to top
     newlist.unshift(empty);
     sorted_ship_data = Object.assign([], newlist);
+    //--------------------------------
     console.timeEnd("sortship");
-    //creat sortred equip list
+    //create sorted equip list
     console.time("sortequip");
     newlist = [];
     pos = 0;
@@ -946,7 +940,7 @@ function initial() {
             newitem.bg = `ui/bg${item.rarity}.png`;
             newitem.frame = `ui/frame_${item.rarity}.png`;
         }
-        // creat empty equip
+        // create empty equip
         if (pos === 0) {
             empty = Object.assign({}, newitem);
             for (let key in empty) {
@@ -967,31 +961,38 @@ function initial() {
     newlist.unshift(empty);
     sorted_equip_data = Object.assign([], newlist);
     console.timeEnd("sortequip");
-    creatAllShip();
+    //--------------------------------------
+    await createAllShip();
+    await createAllEquip();
+    add_search_event();
+    loadCookie();
+    loadStorage();
+    document.querySelector("#loading_box").style.display = "none";
+    document.querySelector("#app_area").style.display = "";
+    console.timeEnd(initial.name);
 }
 
-function creatAllShip() {
-    console.time("creatAllShip");
-    sorted_ship_data.forEach((ship, index, arr) => {
+function createNewItem(data, pos_id, onclick, progress) {
+    return new Promise(resolve => {
         setTimeout(() => {
-            let pos = document.getElementById("shiplist");
+            let pos = document.getElementById(pos_id);
             let icon_box = document.createElement("div");
-            icon_box.className = "icon_box row";
+            icon_box.className = "container-fluid icon_box";
 
             let icon = document.createElement("img");
             icon.className = "img-fluid icon";
             icon.loading = "lazy";
-            icon.src = ship.icon;
+            icon.src = data.icon;
 
             let bg = document.createElement("img");
             bg.className = "img-fluid bg";
-            bg.src = ship.bg;
+            bg.src = data.bg;
 
             let frame = document.createElement("img");
             frame.className = "img-fluid frame";
-            frame.src = ship.frame;
+            frame.src = data.frame;
 
-            icon_box.append(icon, bg, frame);
+            icon_box.append(bg, frame, icon);
             //-----------------------------------------------
             let box = document.createElement("div");
             box.className = "container-fluid p-0 box";
@@ -999,86 +1000,84 @@ function creatAllShip() {
             let name = document.createElement("span");
             name.className = "justify-content-center item_name";
             name.setAttribute("name", "name");
-            name.setAttribute("cn", ship.cn);
-            name.setAttribute("en", ship.en);
-            name.setAttribute("jp", ship.jp);
-            name.textContent = ship[lan];
+            name.setAttribute("cn", data.cn);
+            name.setAttribute("en", data.en);
+            name.setAttribute("jp", data.jp);
+            name.textContent = data[lan];
 
             box.append(icon_box, name);
             //-----------------------------------------------
-            let newship = document.createElement("button");
-            newship.className = "p-1 item_container";
-            newship.id = ship.id;
-            newship.onclick = function () { setShipAndEquip(this); };
-            newship.setAttribute("data-dismiss", "modal");
+            let item = document.createElement("button");
+            item.className = "p-1 item_container";
+            item.id = data.id;
+            item.onclick = function () { onclick(this); };
+            item.setAttribute("data-dismiss", "modal");
 
-            newship.append(box);
-            pos.append(newship);
-            //-----------------------------------------------
-            if (index === arr.length - 1) {
-                console.timeEnd("creatAllShip");
-                creatAllEquip();
-            }
+            item.append(box);
+            pos.append(item);
+            progress.current++;
+            progress.bar.value = progress.current;
+            progress.lable.textContent = `${progress.current}/${progress.bar.max}`;
+            resolve();
         });
     });
 }
 
-function creatAllEquip() {
-    console.time("creatAllEquip");
-    sorted_equip_data.forEach((equip, index, arr) => {
-        setTimeout(() => {
-            let pos = document.getElementById("equiplist");
-            let icon_box = document.createElement("div");
-            icon_box.className = "container-fluid icon_box";
+function addProgressBar(id = "", text = "", max = 100, appendTo = {}) {
+    let bar = document.createElement("progress");
+    bar.id = id;
+    bar.max = max;
+    bar.className = "flex-col my-auto";
 
-            let bg = document.createElement("img");
-            bg.className = "img-fluid bg";
-            bg.src = equip.bg;
+    let lable = document.createElement("label");
+    lable.className = "flex-col text-monospace m-1";
+    lable.textContent = text;
+    lable.for = id;
 
-            let frame = document.createElement("img");
-            frame.className = "img-fluid frame";
-            frame.src = equip.frame;
+    let lable2 = document.createElement("lable");
+    lable2.className = "flex-col text-monospace m-1";
+    lable2.textContent = `0/${max}`;
+    lable2.for = id;
 
-            let eqicon = document.createElement("img");
-            eqicon.className = "img-fluid icon";
-            eqicon.loading = "lazy";
-            eqicon.src = equip.icon;
+    let box = document.createElement("div");
+    box.className = "row justify-content-center";
+    box.appendChild(lable);
+    box.appendChild(lable2);
+    box.appendChild(bar);
 
-            icon_box.append(bg, frame, eqicon);
-            //-----------------------------------------------
-            let box = document.createElement("div");
-            box.className = "container-fluid p-0 box";
+    let pos = document.querySelector("#loading_box");
+    pos.appendChild(box);
 
-            let name = document.createElement("span");
-            name.className = "justify-content-center item_name";
-            name.setAttribute("name", "name");
-            name.textContent = equip[lan];
-            name.setAttribute("cn", equip.cn);
-            name.setAttribute("en", equip.en);
-            name.setAttribute("jp", equip.jp);
+    appendTo.bar = bar;
+    appendTo.lable = lable2;
+}
 
-            box.append(icon_box, name);
-            //-----------------------------------------------
-            let newequip = document.createElement("button");
-            newequip.className = "p-1 item_container";
-            newequip.id = equip.id;
-            newequip.onclick = function () { setEquip(this); };
-            newequip.setAttribute("data-dismiss", "modal");
+async function createAllShip() {
+    console.time(createAllShip.name);
+    let promise_list = [];
+    addProgressBar("create_ship", "Generate Ships", sorted_ship_data.length, _loading_.ship);
+    sorted_ship_data.forEach(ship =>
+        promise_list.push(createNewItem(ship, "shiplist", setShipAndEquip, _loading_.ship))
+    );
+    await Promise.all(promise_list);
+    console.timeEnd(createAllShip.name);
+    return new Promise(resolve => resolve());
+}
 
-            newequip.append(box);
-            pos.append(newequip);
-            //-----------------------------------------------
-            if (index === arr.length - 1) {
-                console.timeEnd("creatAllEquip");
-                console.timeEnd("initial");
-                loadCookie();
-            }
-        });
-    });
+async function createAllEquip() {
+    console.time(createAllEquip.name);
+    let promise_list = [];
+    addProgressBar("create_equip", "Generate Equips", sorted_equip_data.length, _loading_.equip);
+    sorted_equip_data.forEach(equip =>
+        promise_list.push(createNewItem(equip, "equiplist", setEquip, _loading_.equip))
+    );
+    await Promise.all(promise_list);
+    console.timeEnd(createAllEquip.name);
+    return new Promise(resolve => resolve());
 }
 
 function buildFleet() {
-    console.time("buildFleet");
+    console.time(buildFleet.name);
     let empty_ship = [];
     for (let i = 0; i < 6; i++) {
         let item = [];
@@ -1167,13 +1166,13 @@ function buildFleet() {
             newfleet.push({ id: `fleet_${fleet_id}`, sub_ship: sub, });
         }
     }
-    console.timeEnd("buildFleet");
+    console.timeEnd(buildFleet.name);
     //console.log(newfleet);
     return newfleet;
 }
 
 function buildShipSelectOption() {
-    console.time("buildShipSelectOption");
+    console.time(buildShipSelectOption.name);
     let nation = [
         { id: 1, cn: "白鷹", en: "EagleUnion", jp: "ユニオン", code: "USS" },
         { id: 2, cn: "皇家", en: "RoyalNavy", jp: "ロイヤル", code: "HMS" },
@@ -1220,7 +1219,7 @@ function buildShipSelectOption() {
     rarity.forEach((item) => {
         item.name = `ship_rarity_${item.id}`;
     });
-    console.timeEnd("buildShipSelectOption");
+    console.timeEnd(buildShipSelectOption.name);
     return [nation, type, rarity];
 }
 
@@ -1239,14 +1238,16 @@ function fleetManager(mode = "", all_fleet = []) {
                 }
                 storageManager("set", "num_of_fleet", length);
             }
-            return length;
+            console.log(`storage ${length} fleet data`);
+            return true;
         case "clear":
             let eof_fleet = number_of_fleet();
             for (let i = 1; i <= eof_fleet; i++) {
                 storageManager("remove", `fleet_index_${i}`);
             }
             storageManager("remove", "num_of_fleet");
-            return eof_fleet;
+            console.log(`clear ${cleared} fleet data`);
+            return true;
         default:
             console.log(`unknown action: ${mode}`);
             return false;
@@ -1294,18 +1295,22 @@ function loadStorage() {
         fleet_in_storage.push({ name: data.name, fleet: data.fleet, });
         //console.log(data);
     }
-    console.log(`load ${fleet_in_storage.length} fleet`);
+    let msg = fleet_info.msg();
+    msg.className = msg_color.green;
+    msg.textContent = `load ${fleet_in_storage.length} fleet`;
+    console.log(msg.textContent);
 }
 
 function updateStorageList() {
     let pos = fleet_info.list();
-    pos.innerHTML = fleet_in_storage.length > 0 ? "" : `<div class="dropdown-item text-light text-monospace" id="no_fleet">no fleet in storage...</div>`;
+    pos.innerHTML =
+        fleet_in_storage.length > 0 ?
+            "" : `<div class="dropdown-item text-light text-monospace" id="no_fleet">no fleet in storage...</div>`;
 
     fleet_in_storage.forEach((data, index) => {
         let name = decodeURIComponent(data.name);
         let item = document.createElement("div");
         item.className = "dropdown-item text-light text-monospace";
-        //item.href = "#";
         item.textContent = `${index}_[${name}]`;
         item.onclick = function () {
             let select = fleet_info.select();
@@ -1314,6 +1319,13 @@ function updateStorageList() {
         };
         pos.appendChild(item);
     });
+}
+
+function saveStorage() {
+    let num = fleet_in_storage.length;
+    if (num <= 0) return;
+    fleetManager("clear");
+    fleetManager("storage", fleet_in_storage);
 }
 
 function add_fleet() {
