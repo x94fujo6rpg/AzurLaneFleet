@@ -139,6 +139,8 @@ const fleet_info = {
     select: () => document.querySelector("#select_fleet"),
     msg: () => document.querySelector("#error_message"),
     list: () => document.querySelector("#fleet_list"),
+    load: () => document.querySelector("#load_fleet"),
+    remove: () => document.querySelector("#remove_fleet"),
 };
 const msg_color = {
     red: "text-danger m-1 text-monospace",
@@ -1316,6 +1318,8 @@ function updateStorageList() {
             let select = fleet_info.select();
             select.textContent = `${index}_[${name}]`;
             select.setAttribute("sotrge_id", index);
+            fleet_info.load().disabled = false;
+            fleet_info.remove().disabled = false;
         };
         pos.appendChild(item);
     });
@@ -1373,8 +1377,10 @@ function load_fleet() {
 
 function clear_select() {
     let select = fleet_info.select();
-    select.textContent = "none";
+    select.textContent = "Select Fleet";
     select.removeAttribute("sotrge_id");
+    fleet_info.load().disabled = true;
+    fleet_info.remove().disabled = true;
 }
 
 function remove_fleet() {
