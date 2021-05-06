@@ -42,8 +42,8 @@ Vue.component("ship-container", {
 Vue.component("fleet-container", {
     props: ["fleet", "lang"],
     template: `
-        <div class="d-flex justify-content-center fleet_box_o">
-            <span class="text-monospace fleet_name" v-text="fleet.id"></span>
+        <div class="d-grid justify-content-center fleet_box_o">
+            <span class="row ml-1 text-monospace fleet_name" v-text="fleet.id"></span>
             <div class="row m-2 fleet_box_i">
                 <div class="flex-col fleet_side_box" v-if="fleet.back_ship">
                     <ship-container
@@ -1448,7 +1448,7 @@ function switchLayout(ele, same = false) {
     function changeClass(key = "") {
         let class_list = [
             { target: "app_box", h: "container mw-100", v: "row justify-content-center mw-100", v2: "d-table justify-content-center m-auto" },
-            { target: "fleet_box_o", h: "d-flex justify-content-center", v: "row", v2: "row" },
+            { target: "fleet_box_o", h: "d-grid justify-content-center", v: "row", v2: "flex-row" },
             { target: "fleet_box_i", h: "row m-2", v: "col m-2", v2: "col m-2" },
         ];
         class_list.forEach(o => {
