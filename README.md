@@ -4,6 +4,10 @@ Is just for easily share fleet configuration in one shot
 ![](https://i.imgur.com/oT6HaV6.png)  
 
 ## Update  
+**2021-05-06**
+- add layout switch
+- auto save&load option
+
 **2021-05-04**
 - now can save/load/remove fleet in local
 - filter now use set

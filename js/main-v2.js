@@ -42,10 +42,10 @@ Vue.component("ship-container", {
 Vue.component("fleet-container", {
     props: ["fleet", "lang"],
     template: `
-        <div class="d-flex justify-content-center">
-            <span class="text-monospace" v-text="fleet.id"></span>
-            <div class="row m-2">
-                <div class="flex-col" v-if="fleet.back_ship">
+        <div class="d-flex justify-content-center fleet_box_o">
+            <span class="text-monospace fleet_name" v-text="fleet.id"></span>
+            <div class="row m-2 fleet_box_i">
+                <div class="flex-col fleet_side_box" v-if="fleet.back_ship">
                     <ship-container
                         v-for="back_ship in fleet.back_ship"
                         v-bind:key="back_ship.id"
@@ -54,7 +54,7 @@ Vue.component("fleet-container", {
                         v-bind:lang="lang"
                     ></ship-container>
                 </div>
-                <div class="flex-col" v-if="fleet.front_ship">
+                <div class="flex-col fleet_side_box" v-if="fleet.front_ship">
                     <ship-container
                         v-for="front_ship in fleet.front_ship"
                         v-bind:key="front_ship.id"
@@ -63,7 +63,7 @@ Vue.component("fleet-container", {
                         v-bind:lang="lang"
                     ></ship-container>
                 </div>
-                <div class="flex-col" v-if="fleet.sub_ship">
+                <div class="flex-col fleet_side_box" v-if="fleet.sub_ship">
                     <ship-container
                         v-for="sub_ship in fleet.sub_ship"
                         v-bind:key="sub_ship.id"
@@ -217,7 +217,7 @@ function add_search_event() {
     if (!search_input) return console.log("search_input not found");
     search_input.addEventListener("input", ship_name_search);
     $("#shipselect").on("hide.bs.modal", () => search_input.value = ""); // empty text when modal fade
-    console.log("add search event");
+    //console.log("add search event");
 }
 
 function ship_name_search(ele) {
@@ -310,6 +310,7 @@ function saveCookie(ckey, cvalue, expday = 365) {
     let exp = new Date();
     exp.setTime(time.getTime() + (expday * 1000 * 60 * 60 * 24));
     document.cookie = `${ckey}=${cvalue};expires=${exp.toUTCString()};`;
+    //console.log(`${ckey}=${cvalue};`);
 }
 
 function getCookie() {
@@ -331,12 +332,23 @@ function loadCookie() {
     } else {
         saveCookie("lan", lan);
     }
+
     if (clist.fleet) {
         let data = document.getElementById("fleetdata");
         data.value = clist.fleet;
         loadDataByID();
     } else {
         saveCookie("fleet", dumpID());
+    }
+
+    if (clist.allow_dup) {
+        document.getElementById("allow_dup").checked = clist.allow_dup == 1 ? true : false;
+    }
+
+    if (clist.layout) {
+        let layout_switch = document.querySelector("#layout_setting");
+        layout_switch.textContent = clist.layout;
+        switchLayout(layout_switch, true);
     }
 }
 
@@ -952,6 +964,7 @@ async function initial() {
     await createAllShip();
     await createAllEquip();
     add_search_event();
+    allow_dup_event();
     loadCookie();
     loadStorage();
     document.querySelector("#loading_box").style.display = "none";
@@ -1386,5 +1399,63 @@ function remove_fleet() {
     clear_select();
     fleet_in_storage.splice(fleet_id, 1);
     saveStorage();
+}
+
+function switchLayout(ele, same = false) {
+    const layout_list = {
+        h: "Horizontal",
+        v: "Vertical 1",
+        v2: "Vertical 2",
+    };
+    switch (ele.textContent) {
+        case layout_list.h:
+            if (same) {
+                changeClass("h");
+                ele.textContent = layout_list.h;
+            } else {
+                changeClass("v");
+                ele.textContent = layout_list.v;
+            }
+            break;
+        case "Vertical 1":
+            if (same) {
+                changeClass("v");
+                ele.textContent = layout_list.v;
+            } else {
+                changeClass("v2");
+                ele.textContent = layout_list.v2;
+            }
+            break;
+        case "Vertical 2":
+            if (same) {
+                changeClass("v2");
+                ele.textContent = layout_list.v2;
+            } else {
+                changeClass("h");
+                ele.textContent = layout_list.h;
+            }
+            break;
+        default:
+            break;
+    }
+    saveCookie("layout", ele.textContent);
+    function changeClass(key = "") {
+        let class_list = [
+            { target: "app_box", h: "container mw-100", v: "row justify-content-center mw-100", v2: "d-table justify-content-center m-auto" },
+            { target: "fleet_box_o", h: "d-flex justify-content-center", v: "row", v2: "row" },
+            { target: "fleet_box_i", h: "row m-2", v: "col m-2", v2: "col m-2" },
+        ];
+        class_list.forEach(o => {
+            document.querySelectorAll(`.${o.target}`).forEach(e => {
+                e.className = `${o[key]} ${o.target}`;
+            });
+        });
+    }
+}
+
+function allow_dup_event() {
+    document.getElementById("allow_dup").addEventListener("click", function (event) {
+        saveCookie("allow_dup", event.target.checked ? "1" : "0");
+    });
 }
 

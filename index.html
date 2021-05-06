@@ -116,10 +116,6 @@
             text-shadow: 0 0 0.2rem black;
         }
         
-        .app {
-            max-width: 70%;
-        }
-        
         .itemq {
             font-family: monospace;
             position: absolute;
@@ -173,7 +169,7 @@
     <div class="container justify-content-center" id="loading_box"></div>
     <div id="app_area" style="display:none;">
         <div align="center" id="options" clas="container">
-            <h4 class="text-light text-monospace d-inline-flex">Language</h4>
+            <h5 class="text-light text-monospace d-inline-flex">Language</h5>
             <div class="btn-group btn-group-toggle mb-1 pl-1" data-toggle="buttons">
                 <label class="btn btn-secondary active" id="cn" onclick="setlang(this)">
                     <input type="radio" name="lang" autocomplete="off" checked>CN
@@ -185,42 +181,46 @@
                     <input type="radio" name="lang" autocomplete="off">EN
                 </label>
             </div>
+            <br>
             <div class="d-inline-flex mx-1 p-1 bg-secondary rounded">
-                <input type="checkbox" id="allow_dup" class="m-auto">
-                <label class="text-light text-monospace bg-secondary m-auto pl-1" for="allow_dup">Allow Duplicate Ship</label>
+                <input type="checkbox" id="allow_dup" class="my-1">
+                <label class="text-light text-monospace bg-secondary my-0 pl-1" for="allow_dup">Allow Duplicate Ship</label>
             </div>
-            <div class="dropdown m-1">
-                <button class="btn btn-secondary text-monospace" type="button" id="add_fleet" onclick="add_fleet()">Add Current Fleet</button>
-                <button class="btn btn-secondary dropdown-toggle text-monospace" type="button" id="dropdownMenuButton" onclick="updateStorageList()" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="d-inline-flex mx-1 my-2 p-1 bg-secondary rounded">
+                <label class="text-light text-monospace bg-secondary my-0" for="layout_setting">Layout:</label>
+                <button class="btn btn-secondary text-monospace p-0" type="button" id="layout_setting" onclick="switchLayout(this)">Horizontal</button>
+            </div>
+            <div class="dropdown m-1 container">
+                <button class="btn btn-secondary mx-1 px-1 py-1 text-monospace" type="button" id="add_fleet" onclick="add_fleet()">Save Current</button>
+                <button class="btn btn-secondary mx-1 px-1 py-1 dropdown-toggle text-monospace" type="button" id="dropdownMenuButton" onclick="updateStorageList()" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Select Fleet
                     </button>
-                <div class="dropdown-menu dropdown-menu-right bg-secondary p-0" id="fleet_list" aria-labelledby="dropdownMenuButton"></div>
-                <button class="btn btn-secondary text-monospace" type="button" id="load_fleet" onclick="load_fleet()">Load</button>
-                <button class="btn btn-danger text-monospace ml-5" type="button" id="remove_fleet" onclick="remove_fleet()">Remove</button>
+                <div class="dropdown-menu dropdown-menu-right bg-secondary mx-1 px-1 py-1" id="fleet_list" aria-labelledby="dropdownMenuButton"></div>
+                <button class="btn btn-secondary mx-1 px-1 py-1 text-monospace" type="button" id="load_fleet" onclick="load_fleet()">Load</button>
+                <button class="btn btn-danger mx-1 px-1 py-1 text-monospace float-right" type="button" id="remove_fleet" onclick="remove_fleet()">Remove</button>
             </div>
             <span class="m-1 text-monospace">select:</span>
-            <div class="d-inline-flex m-1 px-1 bg-primary rounded text-monospace" id="select_fleet">none</div>
+            <div class="d-inline-flex m-1 px-1 text-warning rounded text-monospace" id="select_fleet">none</div>
             <div class="text-monospace" id="error_message"></div>
-
-            <div class="container">
+            <div class="container mt-2">
                 <label class="text-monospace" for="fleet_name">Fleet Name</label>
                 <input class="text-light bg-secondary text-monospace rounded" id="fleet_name" type="text">
             </div>
         </div>
-        <div id="AzurLaneFleetApp" class="container app">
+        <div id="AzurLaneFleetApp" class="container mw-100 app_box">
             <fleet-container v-for="fleet in fleets" v-bind:key="fleet.id" v-bind:fleet="fleet" v-bind:name="fleet.id" v-bind:lang="lang">
             </fleet-container>
         </div>
         <br>
         <div class="container" align="center">
-            <button type="button" class="btn btn-danger" id="emptyfleet" onclick="emptyfleet()">Remove All</button>
+            <button type="button" class="btn btn-danger" id="emptyfleet" onclick="emptyfleet()">Empty Current Fleet</button>
         </div>
         <br>
         <div class="container" align="center">
             <h4 class="text-light text-monospace">Fleet data</h4>
             <textarea class="databox text-light" id="fleetdata"></textarea>
             <div class="container">
-                <button type="button" class="btn" id="dumpdata" onclick="dumpDataID()">Dump</button>
+                <button type="button" class="btn" id="dumpdata" onclick="dumpID()">Dump</button>
                 <button type="button" class="btn" id="copyData" onclick="copyData()">Copy</button>
                 <button type="button" class="btn" id="emptyData" onclick="emptyData()">Clear</button>
                 <button type="button" class="btn btn-danger" id="loadDataByID" onclick="loadDataByID()">Load</button>
@@ -305,6 +305,7 @@
     <script src='js/equip_data.min.js'></script>
     <script src="js/main-v2.min.js"></script>
 </body>
+
 </html>
 
 
