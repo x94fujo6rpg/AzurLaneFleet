@@ -181,7 +181,7 @@ const parsetype = {
     17: { cn: "直升機", en: "ASW Helicopter", jp: "ヘリ" },
     18: { cn: "貨物", en: "Cargo", jp: "積載" }
 };
-Object.keys(parsetype).forEach(o => o.tw = o.cn);
+Object.keys(parsetype).forEach(key => parsetype[key].tw = parsetype[key].cn);
 
 let version = 0.04;
 
