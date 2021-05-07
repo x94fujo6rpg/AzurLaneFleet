@@ -230,15 +230,15 @@ function ship_name_search(ele) {
     let shiplist = document.querySelectorAll("#shiplist button");
     shiplist.forEach(item => {
         if (item.id != "000000") {
-            let name = item.querySelector("span");
-            let tw = name.getAttribute("tw");
-            let cn = name.getAttribute("cn");
-            let en = name.getAttribute("en").toLowerCase();
-            let jp = name.getAttribute("jp");
-            let ismatch = [tw, cn, en, jp].some(t => t.includes(search_input));
+            let ship = ship_data[item.id];
+            let ismatch = [
+                ship.tw_name,
+                ship.cn_name,
+                ship.en_name.toLowerCase(),
+                ship.jp_name,
+                ship.english_name.toLowerCase(),
+            ].some(t => t.includes(search_input));
             if (ismatch) {
-                let id = parseInt(item.id, 10);
-                let ship = ship_data[id];
                 if (ship) item.style.display = isCorrectShipType(ship.type) ? "" : "none";
             } else {
                 item.style.display = "none";
@@ -476,10 +476,18 @@ function shipDisplay() {
             let type = ship_data[id].type;
             let rarity = ship_data[id].rarity;
             let retro = ship_data[id].retro;
-            item.style.display = isShipSelect(nation, type, rarity, retro) ? "" : "none";
+            let is_select = isShipSelect(nation, type, rarity, retro);
+            item.style.display = is_select ? "" : "none";
+            item.setAttribute("displayed", is_select ? true:false);
         }
     });
     if (!document.getElementById("allow_dup").checked) hideShipInFleet();
+    countShipDisplayed();
+
+    function countShipDisplayed() {
+        let shiplist = document.querySelectorAll("#shiplist button[displayed='true']");
+        document.querySelector("#ship_count").textContent = shiplist.length;
+    }
 }
 
 function hideShipInFleet() {
