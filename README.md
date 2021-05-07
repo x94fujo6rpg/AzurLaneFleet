@@ -7,7 +7,11 @@ Is just for easily share fleet configuration in one shot
 **2021-05-07**
 - add TW (Traditional Chinese)
   - convert from CN cause TW server missing some data
+- add result count for ship
 - use EN as default language
+- use correct EN name instead of convert from this
+  ![](https://i.imgur.com/w0MOsdK.png)
+  now the search support this name too
 
 **2021-05-06**
 - add layout switch
