@@ -121,7 +121,7 @@ let rarity_list = [];
 let retrofit = true;
 let fleet_data = buildFleet();
 let sorted_ship_data = [];
-let lan = "cn";
+let lan = "en";
 let sorted_equip_data = [];
 let filter_setting = {
     nation: new Set(),
@@ -181,6 +181,7 @@ const parsetype = {
     17: { cn: "直升機", en: "ASW Helicopter", jp: "ヘリ" },
     18: { cn: "貨物", en: "Cargo", jp: "積載" }
 };
+Object.keys(parsetype).forEach(o => o.tw = o.cn);
 
 let version = 0.04;
 
@@ -230,14 +231,14 @@ function ship_name_search(ele) {
     shiplist.forEach(item => {
         if (item.id != "000000") {
             let name = item.querySelector("span");
+            let tw = name.getAttribute("tw");
             let cn = name.getAttribute("cn");
             let en = name.getAttribute("en").toLowerCase();
             let jp = name.getAttribute("jp");
-            let ismatch = [cn, en, jp].some(t => t.includes(search_input));
+            let ismatch = [tw, cn, en, jp].some(t => t.includes(search_input));
             if (ismatch) {
                 let id = parseInt(item.id, 10);
                 let ship = ship_data[id];
-                //console.log(cn, en, jp, id);
                 if (ship) item.style.display = isCorrectShipType(ship.type) ? "" : "none";
             } else {
                 item.style.display = "none";
@@ -744,6 +745,7 @@ function setEquip(item, save = true) {
     let itemInApp = fleet_data[c_fleet][side][c_pos].item[c_item].property;
     if (id === 666666) {
         // reset
+        itemInApp.tw = itemInApp.type_tw;
         itemInApp.cn = itemInApp.type_cn;
         itemInApp.en = itemInApp.type_en;
         itemInApp.jp = itemInApp.type_jp;
@@ -752,7 +754,7 @@ function setEquip(item, save = true) {
         itemInApp.id = "";
     } else {
         // copy data
-        let copylist = ["cn", "en", "jp", "icon", "frame", "bg", "id", "limit"];
+        let copylist = ["tw", "cn", "en", "jp", "icon", "frame", "bg", "id", "limit"];
         let itemInList = sorted_equip_data.find((ele) => {
             if (ele.id === id) {
                 return Object.assign({}, ele);
@@ -787,7 +789,7 @@ function setShipAndEquip(item, save = true) {
         }
     });
     let app_item = shipInApp.item;
-    const shipCopyList = ["cn", "en", "jp", "icon", "frame", "bg", "id", "type", "rarity", "star", "base"];
+    const shipCopyList = ["tw", "cn", "en", "jp", "icon", "frame", "bg", "id", "type", "rarity", "star", "base"];
     for (let index in app_item) {
         app_item = shipInApp.item[index].property;
         if (item.id === "000000") {
@@ -831,8 +833,8 @@ function setShipAndEquip(item, save = true) {
                 }
 
                 // go through all type in ship's equip type list
-                let langs = ["cn", "en", "jp"];
-                let type_str_arr = [[], [], []];
+                let langs = ["tw", "cn", "en", "jp"];
+                let type_str_arr = [[], [], [], []];
                 typelist.forEach(type => {
                     langs.forEach((lan_str, index) => {
                         type_str_arr[index].push(parsetype[type][lan_str]);
@@ -869,7 +871,7 @@ async function initial() {
     let empty = {};
     let parseData = {
         id: "uni_id",
-        cn: "cn_name", en: "en_name", jp: "jp_name",
+        tw: "tw_name", cn: "cn_name", en: "en_name", jp: "jp_name",
         type: "type",
         nationality: "nationality",
         rarity: "rarity",
@@ -897,7 +899,7 @@ async function initial() {
             }
             empty.id = "000000";
             empty.en = "remove";
-            empty.cn = "移除";
+            empty.tw = empty.cn = "移除";
             empty.jp = "除隊";
             empty.icon = "ui/empty.png";
         }
@@ -918,7 +920,7 @@ async function initial() {
     pos = 0;
     parseData = {
         id: "id",
-        cn: "cn_name", en: "en_name", jp: "jp_name",
+        tw: "tw_name", cn: "cn_name", en: "en_name", jp: "jp_name",
         type: "type",
         nationality: "nationality",
         rarity: "rarity",
@@ -949,7 +951,7 @@ async function initial() {
             }
             empty.id = "666666";
             empty.en = "remove";
-            empty.cn = "移除";
+            empty.tw = empty.cn = "移除";
             empty.jp = "外す";
             empty.icon = "ui/empty.png";
         }
@@ -1002,6 +1004,7 @@ function createNewItem(data, pos_id, onclick, progress) {
             let name = document.createElement("span");
             name.className = "justify-content-center item_name";
             name.setAttribute("name", "name");
+            name.setAttribute("tw", data.tw);
             name.setAttribute("cn", data.cn);
             name.setAttribute("en", data.en);
             name.setAttribute("jp", data.jp);
@@ -1090,9 +1093,7 @@ function buildFleet() {
                 type: "",
                 star: "",
                 rarity: "",
-                en: "",
-                cn: "",
-                jp: "",
+                tw: "", en: "", cn: "", jp: "",
                 target: "#shipselect",
                 bg: "",
                 frame: "",
@@ -1107,12 +1108,12 @@ function buildFleet() {
                 type: [],
                 star: "",
                 rarity: "",
-                en: "", cn: "", jp: "",
+                tw: "", en: "", cn: "", jp: "",
                 target: "",
                 bg: "",
                 frame: "",
                 fb: [],
-                type_cn: "", type_en: "", type_jp: "",
+                type_tw: "", type_cn: "", type_en: "", type_jp: "",
                 limit: "",
                 quantity: "",
             };
@@ -1187,7 +1188,10 @@ function buildShipSelectOption() {
         { id: 9, cn: "維希教廷", en: "VichyaDominion", jp: "ヴィシア", code: "MNF" },
         { id: 0, cn: "其他", en: "Other", jp: "その他", code: "" },
     ];
-    nation.forEach((item) => { item.name = `ship_nation_${item.id}`; });
+    nation.forEach((item) => {
+        item.name = `ship_nation_${item.id}`;
+        item.tw = item.cn;
+    });
 
     let type = [
         { id: 1, cn: "驅逐", en: "Destroyer", jp: "駆逐", code: "DD", pos: "front" },
@@ -1209,6 +1213,7 @@ function buildShipSelectOption() {
     type.forEach((item) => {
         item.name = `ship_type_${item.id}`;
         item.display = "false";
+        item.tw = item.cn;
     });
 
     let rarity = [
@@ -1220,6 +1225,7 @@ function buildShipSelectOption() {
     ];
     rarity.forEach((item) => {
         item.name = `ship_rarity_${item.id}`;
+        item.tw = item.cn;
     });
     console.timeEnd(buildShipSelectOption.name);
     return [nation, type, rarity];

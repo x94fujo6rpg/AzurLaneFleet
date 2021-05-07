@@ -4,6 +4,11 @@ Is just for easily share fleet configuration in one shot
 ![](https://i.imgur.com/CbWeoj5.png)  
 
 ## Update  
+**2021-05-07**
+- add TW (Traditional Chinese)
+  - convert from CN cause TW server missing some data
+- use EN as default language
+
 **2021-05-06**
 - add layout switch
 - auto save&load option

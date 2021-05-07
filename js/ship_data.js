@@ -19,6 +19,7 @@ var ship_data = {
         "jp_name": "女天狗",
         "en_name": "Nyotengu",
         "cn_name": "女天狗",
+        "tw_name": "女天狗",
         "equip_1": [
             7
         ],
@@ -55,6 +56,7 @@ var ship_data = {
         "jp_name": "なぎさ",
         "en_name": "Nagisa",
         "cn_name": "凪咲",
+        "tw_name": "凪咲",
         "equip_1": [
             4
         ],
@@ -92,6 +94,7 @@ var ship_data = {
         "jp_name": "ほのか",
         "en_name": "Honoka",
         "cn_name": "穗香",
+        "tw_name": "穗香",
         "equip_1": [
             4
         ],
@@ -129,6 +132,7 @@ var ship_data = {
         "jp_name": "かすみ",
         "en_name": "Kasumi",
         "cn_name": "霞",
+        "tw_name": "霞",
         "equip_1": [
             3
         ],
@@ -165,6 +169,7 @@ var ship_data = {
         "jp_name": "モニカ",
         "en_name": "Monica",
         "cn_name": "莫妮卡",
+        "tw_name": "莫妮卡",
         "equip_1": [
             2
         ],
@@ -203,6 +208,7 @@ var ship_data = {
         "jp_name": "みさき",
         "en_name": "Misaki",
         "cn_name": "海咲",
+        "tw_name": "海咲",
         "equip_1": [
             2
         ],
@@ -241,6 +247,7 @@ var ship_data = {
         "jp_name": "マリー・ローズ",
         "en_name": "Rose",
         "cn_name": "玛莉萝丝",
+        "tw_name": "瑪莉蘿絲",
         "equip_1": [
             1
         ],
@@ -279,6 +286,7 @@ var ship_data = {
         "jp_name": "湊あくあ",
         "en_name": "Aqua ",
         "cn_name": "湊阿库娅",
+        "tw_name": "湊阿庫婭",
         "equip_1": [
             13
         ],
@@ -315,6 +323,7 @@ var ship_data = {
         "jp_name": "大神ミオ",
         "en_name": "Mio ",
         "cn_name": "大神澪",
+        "tw_name": "大神澪",
         "equip_1": [
             7
         ],
@@ -351,6 +360,7 @@ var ship_data = {
         "jp_name": "ときのそら",
         "en_name": "Sora ",
         "cn_name": "时乃空",
+        "tw_name": "時乃空",
         "equip_1": [
             7
         ],
@@ -387,6 +397,7 @@ var ship_data = {
         "jp_name": "紫咲シオン",
         "en_name": "Shion ",
         "cn_name": "紫咲诗音",
+        "tw_name": "紫咲詩音",
         "equip_1": [
             7
         ],
@@ -425,6 +436,7 @@ var ship_data = {
         "jp_name": "百鬼あやめ",
         "en_name": "Ayame ",
         "cn_name": "百鬼绫目",
+        "tw_name": "百鬼綾目",
         "equip_1": [
             3
         ],
@@ -461,6 +473,7 @@ var ship_data = {
         "jp_name": "夏色まつり",
         "en_name": "Matsuri ",
         "cn_name": "夏色祭",
+        "tw_name": "夏色祭",
         "equip_1": [
             1
         ],
@@ -499,6 +512,7 @@ var ship_data = {
         "jp_name": "白上フブキ",
         "en_name": "Fubuki ",
         "cn_name": "白上吹雪",
+        "tw_name": "白上吹雪",
         "equip_1": [
             1
         ],
@@ -537,6 +551,7 @@ var ship_data = {
         "jp_name": "キズナアイ・アニバーサリー",
         "en_name": "KizunaAI·Anniversary",
         "cn_name": "绊爱·Anniversary",
+        "tw_name": "絆愛·Anniversary",
         "equip_1": [
             7
         ],
@@ -573,6 +588,7 @@ var ship_data = {
         "jp_name": "キズナアイ・スーパーゲーマー",
         "en_name": "KizunaAI·SuperGamer",
         "cn_name": "绊爱·SuperGamer",
+        "tw_name": "絆愛·SuperGamer",
         "equip_1": [
             4
         ],
@@ -610,6 +626,7 @@ var ship_data = {
         "jp_name": "キズナアイ・エレガント",
         "en_name": "KizunaAI·Elegant",
         "cn_name": "绊爱·Elegant",
+        "tw_name": "絆愛·Elegant",
         "equip_1": [
             3
         ],
@@ -646,6 +663,7 @@ var ship_data = {
         "jp_name": "キズナアイ",
         "en_name": "KizunaAI",
         "cn_name": "绊爱",
+        "tw_name": "絆愛",
         "equip_1": [
             1
         ],
@@ -684,6 +702,7 @@ var ship_data = {
         "jp_name": "フミルィル",
         "en_name": "Fumiruiru",
         "cn_name": "芙米露露",
+        "tw_name": "芙米露露",
         "equip_1": [
             7
         ],
@@ -720,6 +739,7 @@ var ship_data = {
         "jp_name": "サラァナ",
         "en_name": "Saraana",
         "cn_name": "萨拉娜",
+        "tw_name": "薩拉娜",
         "equip_1": [
             7
         ],
@@ -758,6 +778,7 @@ var ship_data = {
         "jp_name": "ウルゥル",
         "en_name": "Uruuru",
         "cn_name": "乌璐露",
+        "tw_name": "烏璐露",
         "equip_1": [
             7
         ],
@@ -796,6 +817,7 @@ var ship_data = {
         "jp_name": "クオン",
         "en_name": "Kuon",
         "cn_name": "久远",
+        "tw_name": "久遠",
         "equip_1": [
             3
         ],
@@ -832,6 +854,7 @@ var ship_data = {
         "jp_name": "ルルティエ",
         "en_name": "Rurutie",
         "cn_name": "露露缇耶",
+        "tw_name": "露露緹耶",
         "equip_1": [
             2
         ],
@@ -870,6 +893,7 @@ var ship_data = {
         "jp_name": "ネコネ",
         "en_name": "Nekone",
         "cn_name": "猫音",
+        "tw_name": "貓音",
         "equip_1": [
             1
         ],
@@ -908,6 +932,7 @@ var ship_data = {
         "jp_name": "グリーンハート",
         "en_name": "Green Heart",
         "cn_name": "翡绿之心",
+        "tw_name": "翡綠之心",
         "equip_1": [
             7
         ],
@@ -944,6 +969,7 @@ var ship_data = {
         "jp_name": "ベール",
         "en_name": "Vert",
         "cn_name": "贝露",
+        "tw_name": "貝露",
         "equip_1": [
             7
         ],
@@ -980,6 +1006,7 @@ var ship_data = {
         "jp_name": "ブラックハート",
         "en_name": "Black Heart",
         "cn_name": "圣黑之心",
+        "tw_name": "聖黑之心",
         "equip_1": [
             3
         ],
@@ -1016,6 +1043,7 @@ var ship_data = {
         "jp_name": "ノワール",
         "en_name": "Noire",
         "cn_name": "诺瓦露",
+        "tw_name": "諾瓦露",
         "equip_1": [
             3
         ],
@@ -1052,6 +1080,7 @@ var ship_data = {
         "jp_name": "パープルハート",
         "en_name": "Purple Heart",
         "cn_name": "绀紫之心",
+        "tw_name": "紺紫之心",
         "equip_1": [
             2
         ],
@@ -1090,6 +1119,7 @@ var ship_data = {
         "jp_name": "ネプテューヌ",
         "en_name": "Neptune",
         "cn_name": "涅普顿",
+        "tw_name": "涅普頓",
         "equip_1": [
             2
         ],
@@ -1128,6 +1158,7 @@ var ship_data = {
         "jp_name": "ホワイトハート",
         "en_name": "White Heart",
         "cn_name": "群白之心",
+        "tw_name": "群白之心",
         "equip_1": [
             1
         ],
@@ -1166,6 +1197,7 @@ var ship_data = {
         "jp_name": "ブラン",
         "en_name": "Blanc",
         "cn_name": "布兰",
+        "tw_name": "布蘭",
         "equip_1": [
             1
         ],
@@ -1204,6 +1236,7 @@ var ship_data = {
         "jp_name": "特装型ブリMKIII",
         "en_name": "Specialized Bulin Custom MKIII",
         "cn_name": "特装型布里MKIII ",
+        "tw_name": "特裝型布里MKIII ",
         "equip_1": [
             1
         ],
@@ -1242,6 +1275,7 @@ var ship_data = {
         "jp_name": "試作型ブリMKII",
         "en_name": "Trial Bulin MKII",
         "cn_name": "试作型布里MKII",
+        "tw_name": "試作型布里MKII",
         "equip_1": [
             1
         ],
@@ -1280,6 +1314,7 @@ var ship_data = {
         "jp_name": "汎用型ブリ",
         "en_name": "Universal Bulin",
         "cn_name": "泛用型布里",
+        "tw_name": "泛用型布里",
         "equip_1": [
             1
         ],
@@ -1318,6 +1353,7 @@ var ship_data = {
         "jp_name": "アーク・ロイヤル(META)",
         "en_name": "Royal.META",
         "cn_name": "皇家方舟·META",
+        "tw_name": "皇家方舟·META",
         "equip_1": [
             8
         ],
@@ -1354,6 +1390,7 @@ var ship_data = {
         "jp_name": "飛龍(META)",
         "en_name": "Hiryu.META",
         "cn_name": "飞龙·META",
+        "tw_name": "飛龍·META",
         "equip_1": [
             7
         ],
@@ -1390,6 +1427,7 @@ var ship_data = {
         "jp_name": "ガスコーニュ",
         "en_name": "Gascogne",
         "cn_name": "加斯科涅",
+        "tw_name": "加斯科涅",
         "equip_1": [
             4
         ],
@@ -1427,6 +1465,7 @@ var ship_data = {
         "jp_name": "ガスコーニュ(μ兵装)",
         "en_name": "Gascogne",
         "cn_name": "加斯科涅(μ兵装)",
+        "tw_name": "加斯科涅(μ兵裝)",
         "equip_1": [
             4
         ],
@@ -1464,6 +1503,7 @@ var ship_data = {
         "jp_name": "ジャン・バール",
         "en_name": "Jean Bart",
         "cn_name": "让·巴尔",
+        "tw_name": "讓·巴爾",
         "equip_1": [
             4
         ],
@@ -1501,6 +1541,7 @@ var ship_data = {
         "jp_name": "ダンケルク",
         "en_name": "Dunkerque",
         "cn_name": "敦刻尔克",
+        "tw_name": "敦刻爾克",
         "equip_1": [
             4
         ],
@@ -1537,6 +1578,7 @@ var ship_data = {
         "jp_name": "アルジェリー",
         "en_name": "Algérie",
         "cn_name": "阿尔及利亚",
+        "tw_name": "阿爾及利亞",
         "equip_1": [
             3
         ],
@@ -1573,6 +1615,7 @@ var ship_data = {
         "jp_name": "ラ・ガリソニエール",
         "en_name": "La Galissonnière",
         "cn_name": "拉·加利索尼埃",
+        "tw_name": "拉·加利索尼埃",
         "equip_1": [
             2
         ],
@@ -1611,6 +1654,7 @@ var ship_data = {
         "jp_name": "ル・マラン(μ兵装)",
         "en_name": "Le Malin",
         "cn_name": "恶毒(μ兵装)",
+        "tw_name": "惡毒(μ兵裝)",
         "equip_1": [
             1
         ],
@@ -1649,6 +1693,7 @@ var ship_data = {
         "jp_name": "ル・マラン",
         "en_name": "Le Malin",
         "cn_name": "恶毒",
+        "tw_name": "惡毒",
         "equip_1": [
             1
         ],
@@ -1687,6 +1732,7 @@ var ship_data = {
         "jp_name": "ヴォークラン",
         "en_name": "Vauquelin",
         "cn_name": "沃克兰",
+        "tw_name": "沃克蘭",
         "equip_1": [
             1
         ],
@@ -1725,6 +1771,7 @@ var ship_data = {
         "jp_name": "タルテュ",
         "en_name": "Tartu",
         "cn_name": "塔尔图",
+        "tw_name": "塔爾圖",
         "equip_1": [
             1
         ],
@@ -1763,6 +1810,7 @@ var ship_data = {
         "jp_name": "ル・マルス改",
         "en_name": "Le Mars",
         "cn_name": "勒马尔.改",
+        "tw_name": "勒馬爾.改",
         "equip_1": [
             1
         ],
@@ -1801,6 +1849,7 @@ var ship_data = {
         "jp_name": "ル・マルス",
         "en_name": "Le Mars",
         "cn_name": "勒马尔",
+        "tw_name": "勒馬爾",
         "equip_1": [
             1
         ],
@@ -1839,6 +1888,7 @@ var ship_data = {
         "jp_name": "シュルクーフ",
         "en_name": "Surcouf",
         "cn_name": "絮库夫",
+        "tw_name": "絮庫夫",
         "equip_1": [
             13
         ],
@@ -1875,6 +1925,7 @@ var ship_data = {
         "jp_name": "ベアルン",
         "en_name": "Béarn",
         "cn_name": "贝亚恩",
+        "tw_name": "貝亞恩",
         "equip_1": [
             7
         ],
@@ -1912,6 +1963,7 @@ var ship_data = {
         "jp_name": "シャンパーニュ",
         "en_name": "Champagne",
         "cn_name": "香槟",
+        "tw_name": "香檳",
         "equip_1": [
             4
         ],
@@ -1949,6 +2001,7 @@ var ship_data = {
         "jp_name": "リシュリュー",
         "en_name": "Richelieu",
         "cn_name": "黎塞留",
+        "tw_name": "黎塞留",
         "equip_1": [
             4
         ],
@@ -1986,6 +2039,7 @@ var ship_data = {
         "jp_name": "サン・ルイ",
         "en_name": "Saint-Louis",
         "cn_name": "路易九世",
+        "tw_name": "路易九世",
         "equip_1": [
             3
         ],
@@ -2022,6 +2076,7 @@ var ship_data = {
         "jp_name": "ジャンヌ・ダルク",
         "en_name": "Jeanne d'Arc",
         "cn_name": "圣女贞德",
+        "tw_name": "聖女貞德",
         "equip_1": [
             2
         ],
@@ -2060,6 +2115,7 @@ var ship_data = {
         "jp_name": "エミール・ベルタン改",
         "en_name": "Émile Bertin",
         "cn_name": "埃米尔·贝尔汀.改",
+        "tw_name": "埃米爾·貝爾汀.改",
         "equip_1": [
             2
         ],
@@ -2098,6 +2154,7 @@ var ship_data = {
         "jp_name": "エミール・ベルタン",
         "en_name": "Émile Bertin",
         "cn_name": "埃米尔·贝尔汀",
+        "tw_name": "埃米爾·貝爾汀",
         "equip_1": [
             2
         ],
@@ -2136,6 +2193,7 @@ var ship_data = {
         "jp_name": "ルピニャート",
         "en_name": "L'Opiniâtre",
         "cn_name": "倔强",
+        "tw_name": "倔強",
         "equip_1": [
             1
         ],
@@ -2174,6 +2232,7 @@ var ship_data = {
         "jp_name": "ル・テメレール",
         "en_name": "Le Téméraire",
         "cn_name": "鲁莽",
+        "tw_name": "魯莽",
         "equip_1": [
             1
         ],
@@ -2212,6 +2271,7 @@ var ship_data = {
         "jp_name": "フォルバン改",
         "en_name": "Forbin",
         "cn_name": "福尔班.改",
+        "tw_name": "福爾班.改",
         "equip_1": [
             1
         ],
@@ -2250,6 +2310,7 @@ var ship_data = {
         "jp_name": "フォルバン",
         "en_name": "Forbin",
         "cn_name": "福尔班",
+        "tw_name": "福爾班",
         "equip_1": [
             1
         ],
@@ -2288,6 +2349,7 @@ var ship_data = {
         "jp_name": "ル・トリオンファン",
         "en_name": "Le Triomphant",
         "cn_name": "凯旋",
+        "tw_name": "凱旋",
         "equip_1": [
             1
         ],
@@ -2326,6 +2388,7 @@ var ship_data = {
         "jp_name": "ソビエツカヤ・ロシア",
         "en_name": "Sovetskaya Rossiya",
         "cn_name": "苏维埃罗西亚",
+        "tw_name": "蘇維埃羅西亞",
         "equip_1": [
             4
         ],
@@ -2363,6 +2426,7 @@ var ship_data = {
         "jp_name": "ソビエツカヤ・ベラルーシア",
         "en_name": "Sovetskaya Belorussiya",
         "cn_name": "苏维埃贝拉罗斯",
+        "tw_name": "蘇維埃貝拉羅斯",
         "equip_1": [
             4
         ],
@@ -2400,6 +2464,7 @@ var ship_data = {
         "jp_name": "ガングート",
         "en_name": "Gangut",
         "cn_name": "甘古特",
+        "tw_name": "甘古特",
         "equip_1": [
             4
         ],
@@ -2437,6 +2502,7 @@ var ship_data = {
         "jp_name": "タリン",
         "en_name": "Tallinn",
         "cn_name": "塔林",
+        "tw_name": "塔林",
         "equip_1": [
             2,
             3
@@ -2476,6 +2542,7 @@ var ship_data = {
         "jp_name": "ムルマンスク",
         "en_name": "Murmansk",
         "cn_name": "摩尔曼斯克",
+        "tw_name": "摩爾曼斯克",
         "equip_1": [
             2
         ],
@@ -2514,6 +2581,7 @@ var ship_data = {
         "jp_name": "キーロフ",
         "en_name": "Kirov",
         "cn_name": "基洛夫",
+        "tw_name": "基洛夫",
         "equip_1": [
             2
         ],
@@ -2552,6 +2620,7 @@ var ship_data = {
         "jp_name": "チャパエフ",
         "en_name": "Chapayev",
         "cn_name": "恰巴耶夫",
+        "tw_name": "恰巴耶夫",
         "equip_1": [
             2
         ],
@@ -2590,6 +2659,7 @@ var ship_data = {
         "jp_name": "パーミャチ・メルクーリヤ改",
         "en_name": "Pamiat' Merkuria",
         "cn_name": "水星纪念.改",
+        "tw_name": "水星紀念.改",
         "equip_1": [
             1
         ],
@@ -2628,6 +2698,7 @@ var ship_data = {
         "jp_name": "パーミャチ・メルクーリヤ",
         "en_name": "Pamiat' Merkuria",
         "cn_name": "水星纪念",
+        "tw_name": "水星紀念",
         "equip_1": [
             2
         ],
@@ -2666,6 +2737,7 @@ var ship_data = {
         "jp_name": "アヴローラ",
         "en_name": "Avrora",
         "cn_name": "阿芙乐尔",
+        "tw_name": "阿芙樂爾",
         "equip_1": [
             2
         ],
@@ -2704,6 +2776,7 @@ var ship_data = {
         "jp_name": "グロームキィ",
         "en_name": "Gromky",
         "cn_name": "洪亮",
+        "tw_name": "洪亮",
         "equip_1": [
             1
         ],
@@ -2742,6 +2815,7 @@ var ship_data = {
         "jp_name": "グレミャーシュチ",
         "en_name": "Gremyashchy",
         "cn_name": "雷鸣",
+        "tw_name": "雷鳴",
         "equip_1": [
             1
         ],
@@ -2780,6 +2854,7 @@ var ship_data = {
         "jp_name": "ストレミテルヌイ",
         "en_name": "Stremitelny",
         "cn_name": "神速",
+        "tw_name": "神速",
         "equip_1": [
             1
         ],
@@ -2818,6 +2893,7 @@ var ship_data = {
         "jp_name": "タシュケント(μ兵装)",
         "en_name": "Tashkent",
         "cn_name": "塔什干(μ兵装)",
+        "tw_name": "塔什干(μ兵裝)",
         "equip_1": [
             1
         ],
@@ -2856,6 +2932,7 @@ var ship_data = {
         "jp_name": "タシュケント",
         "en_name": "Tashkent",
         "cn_name": "塔什干",
+        "tw_name": "塔什干",
         "equip_1": [
             1
         ],
@@ -2894,6 +2971,7 @@ var ship_data = {
         "jp_name": "ミンスク",
         "en_name": "Minsk",
         "cn_name": "明斯克",
+        "tw_name": "明斯克",
         "equip_1": [
             1
         ],
@@ -2932,6 +3010,7 @@ var ship_data = {
         "jp_name": "グロズヌイ",
         "en_name": "Grozny",
         "cn_name": "威严",
+        "tw_name": "威嚴",
         "equip_1": [
             1
         ],
@@ -2970,6 +3049,7 @@ var ship_data = {
         "jp_name": "トリチェリ",
         "en_name": "Torricelli",
         "cn_name": "托里拆利",
+        "tw_name": "託里拆利",
         "equip_1": [
             13
         ],
@@ -3006,6 +3086,7 @@ var ship_data = {
         "jp_name": "アクィラ",
         "en_name": "Aquila",
         "cn_name": "天鹰",
+        "tw_name": "天鷹",
         "equip_1": [
             7
         ],
@@ -3043,6 +3124,7 @@ var ship_data = {
         "jp_name": "ジュリオ・チェザーレ",
         "en_name": "Giulio Cesare",
         "cn_name": "朱利奥·凯撒",
+        "tw_name": "朱利奧·凱撒",
         "equip_1": [
             4
         ],
@@ -3079,6 +3161,7 @@ var ship_data = {
         "jp_name": "コンテ・ディ・カブール",
         "en_name": "Conte di Cavour",
         "cn_name": "加富尔伯爵",
+        "tw_name": "加富爾伯爵",
         "equip_1": [
             4
         ],
@@ -3115,6 +3198,7 @@ var ship_data = {
         "jp_name": "リットリオ",
         "en_name": "Littorio",
         "cn_name": "利托里奥",
+        "tw_name": "利托里奧",
         "equip_1": [
             4
         ],
@@ -3152,6 +3236,7 @@ var ship_data = {
         "jp_name": "ヴィットリオ・ヴェネト",
         "en_name": "Vittorio Veneto",
         "cn_name": "维托里奥·维内托",
+        "tw_name": "維託里奧·維內託",
         "equip_1": [
             4
         ],
@@ -3189,6 +3274,7 @@ var ship_data = {
         "jp_name": "ポーラ",
         "en_name": "Pola",
         "cn_name": "波拉",
+        "tw_name": "波拉",
         "equip_1": [
             3
         ],
@@ -3225,6 +3311,7 @@ var ship_data = {
         "jp_name": "ザラ",
         "en_name": "Zara",
         "cn_name": "扎拉",
+        "tw_name": "扎拉",
         "equip_1": [
             3
         ],
@@ -3261,6 +3348,7 @@ var ship_data = {
         "jp_name": "トレント",
         "en_name": "Trento",
         "cn_name": "特伦托",
+        "tw_name": "特倫託",
         "equip_1": [
             3
         ],
@@ -3297,6 +3385,7 @@ var ship_data = {
         "jp_name": "ドゥーカ・デッリ・アブルッツィ",
         "en_name": "Duca degli Abruzzi",
         "cn_name": "阿布鲁齐公爵",
+        "tw_name": "阿布魯齊公爵",
         "equip_1": [
             2
         ],
@@ -3335,6 +3424,7 @@ var ship_data = {
         "jp_name": "ニコロソ・ダ・レッコ",
         "en_name": "Nicoloso da Recco",
         "cn_name": "尼科洛索·达雷科",
+        "tw_name": "尼科洛索·達雷科",
         "equip_1": [
             1
         ],
@@ -3373,6 +3463,7 @@ var ship_data = {
         "jp_name": "リベッチオ",
         "en_name": "Libeccio",
         "cn_name": "西南风",
+        "tw_name": "西南風",
         "equip_1": [
             1
         ],
@@ -3411,6 +3502,7 @@ var ship_data = {
         "jp_name": "マエストラーレ",
         "en_name": "Maestrale",
         "cn_name": "西北风",
+        "tw_name": "西北風",
         "equip_1": [
             1
         ],
@@ -3449,6 +3541,7 @@ var ship_data = {
         "jp_name": "ヴィンチェンツォ・ジョベルティ",
         "en_name": "Vincenzo Gioberti",
         "cn_name": "文琴佐·焦贝蒂",
+        "tw_name": "文琴佐·焦貝蒂",
         "equip_1": [
             1
         ],
@@ -3487,6 +3580,7 @@ var ship_data = {
         "jp_name": "カラビニエーレ",
         "en_name": "Carabiniere",
         "cn_name": "龙骑兵",
+        "tw_name": "龍騎兵",
         "equip_1": [
             1
         ],
@@ -3525,6 +3619,7 @@ var ship_data = {
         "jp_name": "肇和",
         "en_name": "Chao Ho",
         "cn_name": "肇和",
+        "tw_name": "肇和",
         "equip_1": [
             2
         ],
@@ -3563,6 +3658,7 @@ var ship_data = {
         "jp_name": "応瑞",
         "en_name": "Ying Swei",
         "cn_name": "应瑞",
+        "tw_name": "應瑞",
         "equip_1": [
             2
         ],
@@ -3601,6 +3697,7 @@ var ship_data = {
         "jp_name": "平海改",
         "en_name": "Ping Hai",
         "cn_name": "平海.改",
+        "tw_name": "平海.改",
         "equip_1": [
             2
         ],
@@ -3639,6 +3736,7 @@ var ship_data = {
         "jp_name": "平海",
         "en_name": "Ping Hai",
         "cn_name": "平海",
+        "tw_name": "平海",
         "equip_1": [
             2
         ],
@@ -3677,6 +3775,7 @@ var ship_data = {
         "jp_name": "寧海改",
         "en_name": "Ning Hai",
         "cn_name": "宁海.改",
+        "tw_name": "寧海.改",
         "equip_1": [
             2
         ],
@@ -3715,6 +3814,7 @@ var ship_data = {
         "jp_name": "寧海",
         "en_name": "Ning Hai",
         "cn_name": "宁海",
+        "tw_name": "寧海",
         "equip_1": [
             2
         ],
@@ -3753,6 +3853,7 @@ var ship_data = {
         "jp_name": "逸仙",
         "en_name": "Yat Sen",
         "cn_name": "逸仙",
+        "tw_name": "逸仙",
         "equip_1": [
             2
         ],
@@ -3791,6 +3892,7 @@ var ship_data = {
         "jp_name": "太原",
         "en_name": "Tai Yuan",
         "cn_name": "太原",
+        "tw_name": "太原",
         "equip_1": [
             1
         ],
@@ -3829,6 +3931,7 @@ var ship_data = {
         "jp_name": "長春",
         "en_name": "Chang Chun",
         "cn_name": "长春",
+        "tw_name": "長春",
         "equip_1": [
             1
         ],
@@ -3867,6 +3970,7 @@ var ship_data = {
         "jp_name": "撫順",
         "en_name": "Fu shun",
         "cn_name": "抚顺",
+        "tw_name": "撫順",
         "equip_1": [
             1
         ],
@@ -3905,6 +4009,7 @@ var ship_data = {
         "jp_name": "鞍山",
         "en_name": "An shan",
         "cn_name": "鞍山",
+        "tw_name": "鞍山",
         "equip_1": [
             1
         ],
@@ -3943,6 +4048,7 @@ var ship_data = {
         "jp_name": "U-410",
         "en_name": "U-410",
         "cn_name": "U-410",
+        "tw_name": "U-410",
         "equip_1": [
             13
         ],
@@ -3979,6 +4085,7 @@ var ship_data = {
         "jp_name": "U-37",
         "en_name": "U-37",
         "cn_name": "U-37",
+        "tw_name": "U-37",
         "equip_1": [
             13
         ],
@@ -4015,6 +4122,7 @@ var ship_data = {
         "jp_name": "U-96",
         "en_name": "U-96",
         "cn_name": "U-96",
+        "tw_name": "U-96",
         "equip_1": [
             13
         ],
@@ -4051,6 +4159,7 @@ var ship_data = {
         "jp_name": "U-110",
         "en_name": "U-110",
         "cn_name": "U-110",
+        "tw_name": "U-110",
         "equip_1": [
             13
         ],
@@ -4087,6 +4196,7 @@ var ship_data = {
         "jp_name": "U-522",
         "en_name": "U-522",
         "cn_name": "U-522",
+        "tw_name": "U-522",
         "equip_1": [
             13
         ],
@@ -4123,6 +4233,7 @@ var ship_data = {
         "jp_name": "U-101",
         "en_name": "U-101",
         "cn_name": "U-101",
+        "tw_name": "U-101",
         "equip_1": [
             13
         ],
@@ -4159,6 +4270,7 @@ var ship_data = {
         "jp_name": "U-73",
         "en_name": "U-73",
         "cn_name": "U-73",
+        "tw_name": "U-73",
         "equip_1": [
             13
         ],
@@ -4195,6 +4307,7 @@ var ship_data = {
         "jp_name": "U-556",
         "en_name": "U-556",
         "cn_name": "U-556",
+        "tw_name": "U-556",
         "equip_1": [
             13
         ],
@@ -4231,6 +4344,7 @@ var ship_data = {
         "jp_name": "U557",
         "en_name": "U-557",
         "cn_name": "U-557",
+        "tw_name": "U-557",
         "equip_1": [
             13
         ],
@@ -4267,6 +4381,7 @@ var ship_data = {
         "jp_name": "U-47",
         "en_name": "U-47",
         "cn_name": "U-47",
+        "tw_name": "U-47",
         "equip_1": [
             13
         ],
@@ -4303,6 +4418,7 @@ var ship_data = {
         "jp_name": "U-81",
         "en_name": "U-81",
         "cn_name": "U-81",
+        "tw_name": "U-81",
         "equip_1": [
             13
         ],
@@ -4339,6 +4455,7 @@ var ship_data = {
         "jp_name": "ペーター・シュトラッサー",
         "en_name": "Peter Strasser",
         "cn_name": "彼得·史特拉塞",
+        "tw_name": "彼得·史特拉塞",
         "equip_1": [
             7
         ],
@@ -4375,6 +4492,7 @@ var ship_data = {
         "jp_name": "ツェッペリンちゃん",
         "en_name": "Graf Zeppelin",
         "cn_name": "小齐柏林",
+        "tw_name": "小齊柏林",
         "equip_1": [
             7
         ],
@@ -4412,6 +4530,7 @@ var ship_data = {
         "jp_name": "グラーフ・ツェッペリン",
         "en_name": "Graf Zeppelin",
         "cn_name": "齐柏林伯爵",
+        "tw_name": "齊柏林伯爵",
         "equip_1": [
             7
         ],
@@ -4449,6 +4568,7 @@ var ship_data = {
         "jp_name": "ヴェーザー",
         "en_name": "Weser",
         "cn_name": "威悉",
+        "tw_name": "威悉",
         "equip_1": [
             7
         ],
@@ -4487,6 +4607,7 @@ var ship_data = {
         "jp_name": "フリードリヒ・デア・グローセ",
         "en_name": "Friedrich der Grosse",
         "cn_name": "腓特烈大帝",
+        "tw_name": "腓特烈大帝",
         "equip_1": [
             4
         ],
@@ -4524,6 +4645,7 @@ var ship_data = {
         "jp_name": "ティルピッツ",
         "en_name": "Tirpitz",
         "cn_name": "提尔比茨",
+        "tw_name": "提爾比茨",
         "equip_1": [
             4
         ],
@@ -4561,6 +4683,7 @@ var ship_data = {
         "jp_name": "ビスマルク",
         "en_name": "Bismarck",
         "cn_name": "俾斯麦",
+        "tw_name": "俾斯麥",
         "equip_1": [
             4
         ],
@@ -4598,6 +4721,7 @@ var ship_data = {
         "jp_name": "オーディン",
         "en_name": "Odin",
         "cn_name": "奥丁",
+        "tw_name": "奧丁",
         "equip_1": [
             4
         ],
@@ -4634,6 +4758,7 @@ var ship_data = {
         "jp_name": "グナイゼナウ",
         "en_name": "Gneisenau",
         "cn_name": "格奈森瑙",
+        "tw_name": "格奈森瑙",
         "equip_1": [
             4
         ],
@@ -4671,6 +4796,7 @@ var ship_data = {
         "jp_name": "シャルンホルスト",
         "en_name": "Scharnhorst",
         "cn_name": "沙恩霍斯特",
+        "tw_name": "沙恩霍斯特",
         "equip_1": [
             4
         ],
@@ -4708,6 +4834,7 @@ var ship_data = {
         "jp_name": "ローン",
         "en_name": "Roon",
         "cn_name": "罗恩",
+        "tw_name": "羅恩",
         "equip_1": [
             3
         ],
@@ -4744,6 +4871,7 @@ var ship_data = {
         "jp_name": "プリンツ・ハインリヒ",
         "en_name": "Prinz Heinrich",
         "cn_name": "海因里希亲王",
+        "tw_name": "海因里希親王",
         "equip_1": [
             3,
             11
@@ -4781,6 +4909,7 @@ var ship_data = {
         "jp_name": "ローン(μ兵装)",
         "en_name": "Roon",
         "cn_name": "罗恩(μ兵装)",
+        "tw_name": "羅恩(μ兵裝)",
         "equip_1": [
             3
         ],
@@ -4817,6 +4946,7 @@ var ship_data = {
         "jp_name": "アドミラル・ヒッパー(μ兵装)",
         "en_name": "Admiral Hipper",
         "cn_name": "希佩尔海军上将(μ兵装)",
+        "tw_name": "希佩爾海軍上將(μ兵裝)",
         "equip_1": [
             3
         ],
@@ -4853,6 +4983,7 @@ var ship_data = {
         "jp_name": "アドミラル・グラーフ・シュペー",
         "en_name": "Admiral Graf Spee",
         "cn_name": "斯佩伯爵",
+        "tw_name": "斯佩伯爵",
         "equip_1": [
             3,
             11
@@ -4890,6 +5021,7 @@ var ship_data = {
         "jp_name": "ドイッチュラント",
         "en_name": "Deutschland",
         "cn_name": "德意志",
+        "tw_name": "德意志",
         "equip_1": [
             3,
             11
@@ -4927,6 +5059,7 @@ var ship_data = {
         "jp_name": "プリンツ・オイゲン",
         "en_name": "Prinz Eugen",
         "cn_name": "欧根亲王",
+        "tw_name": "歐根親王",
         "equip_1": [
             3
         ],
@@ -4963,6 +5096,7 @@ var ship_data = {
         "jp_name": "アドミラル・ヒッパー",
         "en_name": "Admiral Hipper",
         "cn_name": "希佩尔海军上将",
+        "tw_name": "希佩爾海軍上將",
         "equip_1": [
             3
         ],
@@ -4999,6 +5133,7 @@ var ship_data = {
         "jp_name": "マインツ",
         "en_name": "Mainz",
         "cn_name": "美因茨",
+        "tw_name": "美因茨",
         "equip_1": [
             2
         ],
@@ -5037,6 +5172,7 @@ var ship_data = {
         "jp_name": "ニュルンベルク",
         "en_name": "Nürnberg",
         "cn_name": "纽伦堡",
+        "tw_name": "紐倫堡",
         "equip_1": [
             2
         ],
@@ -5075,6 +5211,7 @@ var ship_data = {
         "jp_name": "ライプツィヒ改",
         "en_name": "Leipzig",
         "cn_name": "莱比锡.改",
+        "tw_name": "萊比錫.改",
         "equip_1": [
             2
         ],
@@ -5113,6 +5250,7 @@ var ship_data = {
         "jp_name": "ライプツィヒ",
         "en_name": "Leipzig",
         "cn_name": "莱比锡",
+        "tw_name": "萊比錫",
         "equip_1": [
             2
         ],
@@ -5151,6 +5289,7 @@ var ship_data = {
         "jp_name": "ケルン改",
         "en_name": "Köln",
         "cn_name": "科隆.改",
+        "tw_name": "科隆.改",
         "equip_1": [
             2
         ],
@@ -5190,6 +5329,7 @@ var ship_data = {
         "jp_name": "ケルン",
         "en_name": "Köln",
         "cn_name": "科隆",
+        "tw_name": "科隆",
         "equip_1": [
             2
         ],
@@ -5228,6 +5368,7 @@ var ship_data = {
         "jp_name": "カールスルーエ改",
         "en_name": "Karlsruhe",
         "cn_name": "卡尔斯鲁厄.改",
+        "tw_name": "卡爾斯魯厄.改",
         "equip_1": [
             2
         ],
@@ -5266,6 +5407,7 @@ var ship_data = {
         "jp_name": "カールスルーエ",
         "en_name": "Karlsruhe",
         "cn_name": "卡尔斯鲁厄",
+        "tw_name": "卡爾斯魯厄",
         "equip_1": [
             2
         ],
@@ -5304,6 +5446,7 @@ var ship_data = {
         "jp_name": "ケーニヒスベルク",
         "en_name": "Königsberg",
         "cn_name": "柯尼斯堡",
+        "tw_name": "柯尼斯堡",
         "equip_1": [
             2
         ],
@@ -5342,6 +5485,7 @@ var ship_data = {
         "jp_name": "Z46",
         "en_name": "Z46",
         "cn_name": "Z46",
+        "tw_name": "Z46",
         "equip_1": [
             1
         ],
@@ -5380,6 +5524,7 @@ var ship_data = {
         "jp_name": "Z36",
         "en_name": "Z36",
         "cn_name": "Z36",
+        "tw_name": "Z36",
         "equip_1": [
             1
         ],
@@ -5418,6 +5563,7 @@ var ship_data = {
         "jp_name": "Z35",
         "en_name": "Z35",
         "cn_name": "Z35",
+        "tw_name": "Z35",
         "equip_1": [
             1
         ],
@@ -5456,6 +5602,7 @@ var ship_data = {
         "jp_name": "Z28",
         "en_name": "Z28",
         "cn_name": "Z28",
+        "tw_name": "Z28",
         "equip_1": [
             1,
             2
@@ -5495,6 +5642,7 @@ var ship_data = {
         "jp_name": "Z26",
         "en_name": "Z26",
         "cn_name": "Z26",
+        "tw_name": "Z26",
         "equip_1": [
             1,
             2
@@ -5534,6 +5682,7 @@ var ship_data = {
         "jp_name": "Z25",
         "en_name": "Z25",
         "cn_name": "Z25",
+        "tw_name": "Z25",
         "equip_1": [
             1,
             2
@@ -5573,6 +5722,7 @@ var ship_data = {
         "jp_name": "Z24",
         "en_name": "Z24",
         "cn_name": "Z24",
+        "tw_name": "Z24",
         "equip_1": [
             1,
             2
@@ -5612,6 +5762,7 @@ var ship_data = {
         "jp_name": "Z23改",
         "en_name": "Z23",
         "cn_name": "Z23.改",
+        "tw_name": "Z23.改",
         "equip_1": [
             1,
             2
@@ -5651,6 +5802,7 @@ var ship_data = {
         "jp_name": "Z23",
         "en_name": "Z23",
         "cn_name": "Z23",
+        "tw_name": "Z23",
         "equip_1": [
             1,
             2
@@ -5690,6 +5842,7 @@ var ship_data = {
         "jp_name": "Z21",
         "en_name": "Wilhelm Heidkamp",
         "cn_name": "Z21",
+        "tw_name": "Z21",
         "equip_1": [
             1
         ],
@@ -5728,6 +5881,7 @@ var ship_data = {
         "jp_name": "Z20",
         "en_name": "Karl Galster",
         "cn_name": "Z20",
+        "tw_name": "Z20",
         "equip_1": [
             1
         ],
@@ -5766,6 +5920,7 @@ var ship_data = {
         "jp_name": "Z19",
         "en_name": "Hermann Künne",
         "cn_name": "Z19",
+        "tw_name": "Z19",
         "equip_1": [
             1
         ],
@@ -5804,6 +5959,7 @@ var ship_data = {
         "jp_name": "Z18",
         "en_name": "Hans Lüdemann",
         "cn_name": "Z18",
+        "tw_name": "Z18",
         "equip_1": [
             1
         ],
@@ -5842,6 +5998,7 @@ var ship_data = {
         "jp_name": "Z2",
         "en_name": "Georg Thiele",
         "cn_name": "Z2",
+        "tw_name": "Z2",
         "equip_1": [
             1
         ],
@@ -5880,6 +6037,7 @@ var ship_data = {
         "jp_name": "Z1改",
         "en_name": "Leberecht Maass",
         "cn_name": "Z1.改",
+        "tw_name": "Z1.改",
         "equip_1": [
             1
         ],
@@ -5918,6 +6076,7 @@ var ship_data = {
         "jp_name": "Z1",
         "en_name": "Leberecht Maass",
         "cn_name": "Z1",
+        "tw_name": "Z1",
         "equip_1": [
             1
         ],
@@ -5956,6 +6115,7 @@ var ship_data = {
         "jp_name": "樫野",
         "en_name": "Kashino",
         "cn_name": "樫野",
+        "tw_name": "樫野",
         "equip_1": [
             1
         ],
@@ -5995,6 +6155,7 @@ var ship_data = {
         "jp_name": "吾妻",
         "en_name": "Azuma",
         "cn_name": "吾妻",
+        "tw_name": "吾妻",
         "equip_1": [
             3,
             11
@@ -6032,6 +6193,7 @@ var ship_data = {
         "jp_name": "伊13",
         "en_name": "I13",
         "cn_name": "伊13",
+        "tw_name": "伊13",
         "equip_1": [
             13
         ],
@@ -6068,6 +6230,7 @@ var ship_data = {
         "jp_name": "明石",
         "en_name": "Akashi",
         "cn_name": "明石",
+        "tw_name": "明石",
         "equip_1": [
             10
         ],
@@ -6104,6 +6267,7 @@ var ship_data = {
         "jp_name": "伊168",
         "en_name": "I168",
         "cn_name": "伊168",
+        "tw_name": "伊168",
         "equip_1": [
             13
         ],
@@ -6140,6 +6304,7 @@ var ship_data = {
         "jp_name": "伊56",
         "en_name": "I56",
         "cn_name": "伊56",
+        "tw_name": "伊56",
         "equip_1": [
             13
         ],
@@ -6176,6 +6341,7 @@ var ship_data = {
         "jp_name": "伊25",
         "en_name": "I25",
         "cn_name": "伊25",
+        "tw_name": "伊25",
         "equip_1": [
             13
         ],
@@ -6212,6 +6378,7 @@ var ship_data = {
         "jp_name": "伊58",
         "en_name": "I58",
         "cn_name": "伊58",
+        "tw_name": "伊58",
         "equip_1": [
             13
         ],
@@ -6248,6 +6415,7 @@ var ship_data = {
         "jp_name": "伊26",
         "en_name": "I26",
         "cn_name": "伊26",
+        "tw_name": "伊26",
         "equip_1": [
             13
         ],
@@ -6284,6 +6452,7 @@ var ship_data = {
         "jp_name": "伊19",
         "en_name": "I19",
         "cn_name": "伊19",
+        "tw_name": "伊19",
         "equip_1": [
             13
         ],
@@ -6320,6 +6489,7 @@ var ship_data = {
         "jp_name": "大鳳(μ兵装)",
         "en_name": "Taihō",
         "cn_name": "大凤",
+        "tw_name": "大鳳",
         "equip_1": [
             7
         ],
@@ -6356,6 +6526,7 @@ var ship_data = {
         "jp_name": "赤城(μ兵装)",
         "en_name": "Akagi",
         "cn_name": "赤城(μ兵装)",
+        "tw_name": "赤城(μ兵裝)",
         "equip_1": [
             7
         ],
@@ -6392,6 +6563,7 @@ var ship_data = {
         "jp_name": "赤城ちゃん",
         "en_name": "Akagi",
         "cn_name": "小赤城",
+        "tw_name": "小赤城",
         "equip_1": [
             7
         ],
@@ -6428,6 +6600,7 @@ var ship_data = {
         "jp_name": "信濃",
         "en_name": "Shinano",
         "cn_name": "信浓",
+        "tw_name": "信濃",
         "equip_1": [
             7,
             8,
@@ -6466,6 +6639,7 @@ var ship_data = {
         "jp_name": "大鳳",
         "en_name": "Taihō",
         "cn_name": "大凤",
+        "tw_name": "大鳳",
         "equip_1": [
             7
         ],
@@ -6502,6 +6676,7 @@ var ship_data = {
         "jp_name": "瑞鹤",
         "en_name": "Zuikaku",
         "cn_name": "瑞鹤",
+        "tw_name": "瑞鶴",
         "equip_1": [
             7
         ],
@@ -6538,6 +6713,7 @@ var ship_data = {
         "jp_name": "翔鶴",
         "en_name": "Shōkaku",
         "cn_name": "翔鹤",
+        "tw_name": "翔鶴",
         "equip_1": [
             7
         ],
@@ -6574,6 +6750,7 @@ var ship_data = {
         "jp_name": "飛龍改",
         "en_name": "Hiryū",
         "cn_name": "飞龙改",
+        "tw_name": "飛龍改",
         "equip_1": [
             7
         ],
@@ -6610,6 +6787,7 @@ var ship_data = {
         "jp_name": "飛龍",
         "en_name": "Hiryū",
         "cn_name": "飞龙",
+        "tw_name": "飛龍",
         "equip_1": [
             7
         ],
@@ -6646,6 +6824,7 @@ var ship_data = {
         "jp_name": "蒼龍改",
         "en_name": "Sōryū",
         "cn_name": "苍龙改",
+        "tw_name": "蒼龍改",
         "equip_1": [
             7
         ],
@@ -6682,6 +6861,7 @@ var ship_data = {
         "jp_name": "蒼龍",
         "en_name": "Sōryū",
         "cn_name": "苍龙",
+        "tw_name": "蒼龍",
         "equip_1": [
             7
         ],
@@ -6718,6 +6898,7 @@ var ship_data = {
         "jp_name": "加賀",
         "en_name": "Kaga",
         "cn_name": "加贺",
+        "tw_name": "加賀",
         "equip_1": [
             7
         ],
@@ -6754,6 +6935,7 @@ var ship_data = {
         "jp_name": "赤城",
         "en_name": "Akagi",
         "cn_name": "赤城",
+        "tw_name": "赤城",
         "equip_1": [
             7
         ],
@@ -6790,6 +6972,7 @@ var ship_data = {
         "jp_name": "千代田",
         "en_name": "Chiyoda",
         "cn_name": "千代田",
+        "tw_name": "千代田",
         "equip_1": [
             7
         ],
@@ -6828,6 +7011,7 @@ var ship_data = {
         "jp_name": "千歳",
         "en_name": "Chitose",
         "cn_name": "千岁",
+        "tw_name": "千歲",
         "equip_1": [
             7
         ],
@@ -6866,6 +7050,7 @@ var ship_data = {
         "jp_name": "龍鳳",
         "en_name": "Ryūhō",
         "cn_name": "龙凤",
+        "tw_name": "龍鳳",
         "equip_1": [
             7
         ],
@@ -6904,6 +7089,7 @@ var ship_data = {
         "jp_name": "龍驤",
         "en_name": "Ryūjō",
         "cn_name": "龙骧",
+        "tw_name": "龍驤",
         "equip_1": [
             7
         ],
@@ -6942,6 +7128,7 @@ var ship_data = {
         "jp_name": "祥鳳改",
         "en_name": "Shōhō",
         "cn_name": "祥凤改",
+        "tw_name": "祥鳳改",
         "equip_1": [
             9
         ],
@@ -6980,6 +7167,7 @@ var ship_data = {
         "jp_name": "祥鳳",
         "en_name": "Shōhō",
         "cn_name": "祥凤",
+        "tw_name": "祥鳳",
         "equip_1": [
             9
         ],
@@ -7018,6 +7206,7 @@ var ship_data = {
         "jp_name": "鳳翔",
         "en_name": "Hōshō",
         "cn_name": "凤翔",
+        "tw_name": "鳳翔",
         "equip_1": [
             2
         ],
@@ -7056,6 +7245,7 @@ var ship_data = {
         "jp_name": "隼鷹",
         "en_name": "Jun'yō",
         "cn_name": "隼鹰",
+        "tw_name": "隼鷹",
         "equip_1": [
             7
         ],
@@ -7094,6 +7284,7 @@ var ship_data = {
         "jp_name": "飛鷹",
         "en_name": "Hiyō",
         "cn_name": "飞鹰",
+        "tw_name": "飛鷹",
         "equip_1": [
             7
         ],
@@ -7132,6 +7323,7 @@ var ship_data = {
         "jp_name": "出雲",
         "en_name": "Izumo",
         "cn_name": "出云",
+        "tw_name": "出雲",
         "equip_1": [
             4
         ],
@@ -7169,6 +7361,7 @@ var ship_data = {
         "jp_name": "駿河",
         "en_name": "Suruga",
         "cn_name": "骏河",
+        "tw_name": "駿河",
         "equip_1": [
             4
         ],
@@ -7206,6 +7399,7 @@ var ship_data = {
         "jp_name": "紀伊",
         "en_name": "Kii",
         "cn_name": "纪伊",
+        "tw_name": "紀伊",
         "equip_1": [
             4
         ],
@@ -7243,6 +7437,7 @@ var ship_data = {
         "jp_name": "三笠",
         "en_name": "Mikasa",
         "cn_name": "三笠",
+        "tw_name": "三笠",
         "equip_1": [
             4
         ],
@@ -7280,6 +7475,7 @@ var ship_data = {
         "jp_name": "土佐",
         "en_name": "Tosa",
         "cn_name": "土佐",
+        "tw_name": "土佐",
         "equip_1": [
             4
         ],
@@ -7317,6 +7513,7 @@ var ship_data = {
         "jp_name": "加賀",
         "en_name": "Kaga",
         "cn_name": "加贺",
+        "tw_name": "加賀",
         "equip_1": [
             4
         ],
@@ -7354,6 +7551,7 @@ var ship_data = {
         "jp_name": "陸奧",
         "en_name": "Mutsu",
         "cn_name": "陆奥",
+        "tw_name": "陸奧",
         "equip_1": [
             4
         ],
@@ -7391,6 +7589,7 @@ var ship_data = {
         "jp_name": "長門",
         "en_name": "Nagato",
         "cn_name": "长门",
+        "tw_name": "長門",
         "equip_1": [
             4
         ],
@@ -7428,6 +7627,7 @@ var ship_data = {
         "jp_name": "日向改",
         "en_name": "Hyūga",
         "cn_name": "日向改",
+        "tw_name": "日向改",
         "equip_1": [
             4
         ],
@@ -7467,6 +7667,7 @@ var ship_data = {
         "jp_name": "日向",
         "en_name": "Hyūga",
         "cn_name": "日向",
+        "tw_name": "日向",
         "equip_1": [
             4
         ],
@@ -7504,6 +7705,7 @@ var ship_data = {
         "jp_name": "伊勢改",
         "en_name": "Ise",
         "cn_name": "伊势改",
+        "tw_name": "伊勢改",
         "equip_1": [
             4
         ],
@@ -7543,6 +7745,7 @@ var ship_data = {
         "jp_name": "伊勢",
         "en_name": "Ise",
         "cn_name": "伊势",
+        "tw_name": "伊勢",
         "equip_1": [
             4
         ],
@@ -7580,6 +7783,7 @@ var ship_data = {
         "jp_name": "山城改",
         "en_name": "Yamashiro",
         "cn_name": "山城改",
+        "tw_name": "山城改",
         "equip_1": [
             4
         ],
@@ -7619,6 +7823,7 @@ var ship_data = {
         "jp_name": "山城",
         "en_name": "Yamashiro",
         "cn_name": "山城",
+        "tw_name": "山城",
         "equip_1": [
             4
         ],
@@ -7656,6 +7861,7 @@ var ship_data = {
         "jp_name": "扶桑改",
         "en_name": "Fuso",
         "cn_name": "扶桑改",
+        "tw_name": "扶桑改",
         "equip_1": [
             4
         ],
@@ -7695,6 +7901,7 @@ var ship_data = {
         "jp_name": "扶桑",
         "en_name": "Fuso",
         "cn_name": "扶桑",
+        "tw_name": "扶桑",
         "equip_1": [
             4
         ],
@@ -7732,6 +7939,7 @@ var ship_data = {
         "jp_name": "天城ちゃん",
         "en_name": "Amagi",
         "cn_name": "小天城",
+        "tw_name": "小天城",
         "equip_1": [
             4
         ],
@@ -7769,6 +7977,7 @@ var ship_data = {
         "jp_name": "比叡ちゃん",
         "en_name": "Hiei",
         "cn_name": "小比叡",
+        "tw_name": "小比叡",
         "equip_1": [
             4
         ],
@@ -7806,6 +8015,7 @@ var ship_data = {
         "jp_name": "天城",
         "en_name": "Amagi",
         "cn_name": "天城",
+        "tw_name": "天城",
         "equip_1": [
             4
         ],
@@ -7843,6 +8053,7 @@ var ship_data = {
         "jp_name": "霧島",
         "en_name": "Kirishima",
         "cn_name": "雾岛",
+        "tw_name": "霧島",
         "equip_1": [
             4
         ],
@@ -7880,6 +8091,7 @@ var ship_data = {
         "jp_name": "榛名",
         "en_name": "Haruna",
         "cn_name": "榛名",
+        "tw_name": "榛名",
         "equip_1": [
             4
         ],
@@ -7917,6 +8129,7 @@ var ship_data = {
         "jp_name": "比叡",
         "en_name": "Hiei",
         "cn_name": "比叡",
+        "tw_name": "比叡",
         "equip_1": [
             4
         ],
@@ -7954,6 +8167,7 @@ var ship_data = {
         "jp_name": "金剛",
         "en_name": "Kongō",
         "cn_name": "金刚",
+        "tw_name": "金剛",
         "equip_1": [
             4
         ],
@@ -7991,6 +8205,7 @@ var ship_data = {
         "jp_name": "伊吹",
         "en_name": "Ibuki",
         "cn_name": "伊吹",
+        "tw_name": "伊吹",
         "equip_1": [
             3
         ],
@@ -8027,6 +8242,7 @@ var ship_data = {
         "jp_name": "熊野",
         "en_name": "Kumano",
         "cn_name": "熊野",
+        "tw_name": "熊野",
         "equip_1": [
             2,
             3
@@ -8064,6 +8280,7 @@ var ship_data = {
         "jp_name": "鈴谷",
         "en_name": "Suzuya",
         "cn_name": "铃谷",
+        "tw_name": "鈴谷",
         "equip_1": [
             2,
             3
@@ -8101,6 +8318,7 @@ var ship_data = {
         "jp_name": "鳥海",
         "en_name": "Chōkai",
         "cn_name": "鸟海",
+        "tw_name": "鳥海",
         "equip_1": [
             3
         ],
@@ -8137,6 +8355,7 @@ var ship_data = {
         "jp_name": "摩耶",
         "en_name": "Maya",
         "cn_name": "摩耶",
+        "tw_name": "摩耶",
         "equip_1": [
             3
         ],
@@ -8173,6 +8392,7 @@ var ship_data = {
         "jp_name": "愛宕",
         "en_name": "Atago",
         "cn_name": "爱宕",
+        "tw_name": "愛宕",
         "equip_1": [
             3
         ],
@@ -8209,6 +8429,7 @@ var ship_data = {
         "jp_name": "高雄",
         "en_name": "Takao",
         "cn_name": "高雄",
+        "tw_name": "高雄",
         "equip_1": [
             3
         ],
@@ -8245,6 +8466,7 @@ var ship_data = {
         "jp_name": "足柄",
         "en_name": "Ashigara",
         "cn_name": "足柄",
+        "tw_name": "足柄",
         "equip_1": [
             3
         ],
@@ -8281,6 +8503,7 @@ var ship_data = {
         "jp_name": "那智",
         "en_name": "Nachi",
         "cn_name": "那智",
+        "tw_name": "那智",
         "equip_1": [
             3
         ],
@@ -8317,6 +8540,7 @@ var ship_data = {
         "jp_name": "妙高",
         "en_name": "Myōkō",
         "cn_name": "妙高",
+        "tw_name": "妙高",
         "equip_1": [
             3
         ],
@@ -8353,6 +8577,7 @@ var ship_data = {
         "jp_name": "衣笠",
         "en_name": "Kinugasa",
         "cn_name": "衣笠",
+        "tw_name": "衣笠",
         "equip_1": [
             3
         ],
@@ -8389,6 +8614,7 @@ var ship_data = {
         "jp_name": "青葉",
         "en_name": "Aoba",
         "cn_name": "青叶",
+        "tw_name": "青葉",
         "equip_1": [
             3
         ],
@@ -8425,6 +8651,7 @@ var ship_data = {
         "jp_name": "加古改",
         "en_name": "Kako",
         "cn_name": "加古改",
+        "tw_name": "加古改",
         "equip_1": [
             3
         ],
@@ -8461,6 +8688,7 @@ var ship_data = {
         "jp_name": "加古",
         "en_name": "Kako",
         "cn_name": "加古",
+        "tw_name": "加古",
         "equip_1": [
             3
         ],
@@ -8497,6 +8725,7 @@ var ship_data = {
         "jp_name": "古鷹改",
         "en_name": "Furutaka",
         "cn_name": "古鹰改",
+        "tw_name": "古鷹改",
         "equip_1": [
             3
         ],
@@ -8533,6 +8762,7 @@ var ship_data = {
         "jp_name": "古鷹",
         "en_name": "Furutaka",
         "cn_name": "古鹰",
+        "tw_name": "古鷹",
         "equip_1": [
             3
         ],
@@ -8569,6 +8799,7 @@ var ship_data = {
         "jp_name": "能代",
         "en_name": "Noshiro",
         "cn_name": "能代",
+        "tw_name": "能代",
         "equip_1": [
             2
         ],
@@ -8607,6 +8838,7 @@ var ship_data = {
         "jp_name": "阿賀野",
         "en_name": "Agano",
         "cn_name": "阿贺野",
+        "tw_name": "阿賀野",
         "equip_1": [
             2
         ],
@@ -8645,6 +8877,7 @@ var ship_data = {
         "jp_name": "那珂",
         "en_name": "Naka",
         "cn_name": "那珂",
+        "tw_name": "那珂",
         "equip_1": [
             2
         ],
@@ -8683,6 +8916,7 @@ var ship_data = {
         "jp_name": "神通改",
         "en_name": "Jintsū",
         "cn_name": "神通改",
+        "tw_name": "神通改",
         "equip_1": [
             2
         ],
@@ -8721,6 +8955,7 @@ var ship_data = {
         "jp_name": "神通",
         "en_name": "Jintsū",
         "cn_name": "神通",
+        "tw_name": "神通",
         "equip_1": [
             2
         ],
@@ -8759,6 +8994,7 @@ var ship_data = {
         "jp_name": "川内改",
         "en_name": "Sendai",
         "cn_name": "川内改",
+        "tw_name": "川內改",
         "equip_1": [
             2
         ],
@@ -8797,6 +9033,7 @@ var ship_data = {
         "jp_name": "川内",
         "en_name": "Sendai",
         "cn_name": "川内",
+        "tw_name": "川內",
         "equip_1": [
             2
         ],
@@ -8835,6 +9072,7 @@ var ship_data = {
         "jp_name": "三隈",
         "en_name": "Mikuma",
         "cn_name": "三隈",
+        "tw_name": "三隈",
         "equip_1": [
             2
         ],
@@ -8873,6 +9111,7 @@ var ship_data = {
         "jp_name": "最上改",
         "en_name": "Mogami",
         "cn_name": "最上改",
+        "tw_name": "最上改",
         "equip_1": [
             3
         ],
@@ -8909,6 +9148,7 @@ var ship_data = {
         "jp_name": "最上",
         "en_name": "Mogami",
         "cn_name": "最上",
+        "tw_name": "最上",
         "equip_1": [
             2
         ],
@@ -8947,6 +9187,7 @@ var ship_data = {
         "jp_name": "阿武隈改",
         "en_name": "Abukuma",
         "cn_name": "阿武隈改",
+        "tw_name": "阿武隈改",
         "equip_1": [
             2
         ],
@@ -8985,6 +9226,7 @@ var ship_data = {
         "jp_name": "阿武隈",
         "en_name": "Abukuma",
         "cn_name": "阿武隈",
+        "tw_name": "阿武隈",
         "equip_1": [
             2
         ],
@@ -9023,6 +9265,7 @@ var ship_data = {
         "jp_name": "鬼怒改",
         "en_name": "Kinu",
         "cn_name": "鬼怒改",
+        "tw_name": "鬼怒改",
         "equip_1": [
             2
         ],
@@ -9061,6 +9304,7 @@ var ship_data = {
         "jp_name": "鬼怒",
         "en_name": "Kinu",
         "cn_name": "鬼怒",
+        "tw_name": "鬼怒",
         "equip_1": [
             2
         ],
@@ -9099,6 +9343,7 @@ var ship_data = {
         "jp_name": "五十鈴改",
         "en_name": "Isuzu",
         "cn_name": "五十铃改",
+        "tw_name": "五十鈴改",
         "equip_1": [
             1,
             2
@@ -9138,6 +9383,7 @@ var ship_data = {
         "jp_name": "五十鈴",
         "en_name": "Isuzu",
         "cn_name": "五十铃",
+        "tw_name": "五十鈴",
         "equip_1": [
             1,
             2
@@ -9177,6 +9423,7 @@ var ship_data = {
         "jp_name": "長良",
         "en_name": "Nagara",
         "cn_name": "长良",
+        "tw_name": "長良",
         "equip_1": [
             2
         ],
@@ -9215,6 +9462,7 @@ var ship_data = {
         "jp_name": "夕張改",
         "en_name": "Yūbari",
         "cn_name": "夕张改",
+        "tw_name": "夕張改",
         "equip_1": [
             2
         ],
@@ -9253,6 +9501,7 @@ var ship_data = {
         "jp_name": "夕張",
         "en_name": "Yūbari",
         "cn_name": "夕张",
+        "tw_name": "夕張",
         "equip_1": [
             2
         ],
@@ -9291,6 +9540,7 @@ var ship_data = {
         "jp_name": "北風",
         "en_name": "Kitakaze",
         "cn_name": "北风",
+        "tw_name": "北風",
         "equip_1": [
             1
         ],
@@ -9329,6 +9579,7 @@ var ship_data = {
         "jp_name": "追風",
         "en_name": "Oite",
         "cn_name": "追风",
+        "tw_name": "追風",
         "equip_1": [
             1
         ],
@@ -9367,6 +9618,7 @@ var ship_data = {
         "jp_name": "涼月",
         "en_name": "Suzutsuki",
         "cn_name": "凉月",
+        "tw_name": "涼月",
         "equip_1": [
             1
         ],
@@ -9405,6 +9657,7 @@ var ship_data = {
         "jp_name": "長波",
         "en_name": "Naganami",
         "cn_name": "长波",
+        "tw_name": "長波",
         "equip_1": [
             1
         ],
@@ -9443,6 +9696,7 @@ var ship_data = {
         "jp_name": "花月",
         "en_name": "Hanazuki",
         "cn_name": "花月",
+        "tw_name": "花月",
         "equip_1": [
             1
         ],
@@ -9481,6 +9735,7 @@ var ship_data = {
         "jp_name": "霞",
         "en_name": "Kasumi",
         "cn_name": "霞",
+        "tw_name": "霞",
         "equip_1": [
             1
         ],
@@ -9519,6 +9774,7 @@ var ship_data = {
         "jp_name": "巻波",
         "en_name": "Makinami",
         "cn_name": "卷波",
+        "tw_name": "卷波",
         "equip_1": [
             1
         ],
@@ -9557,6 +9813,7 @@ var ship_data = {
         "jp_name": "旗風",
         "en_name": "Hatakaze",
         "cn_name": "旗风",
+        "tw_name": "旗風",
         "equip_1": [
             1
         ],
@@ -9595,6 +9852,7 @@ var ship_data = {
         "jp_name": "浦波",
         "en_name": "Uranami",
         "cn_name": "浦波",
+        "tw_name": "浦波",
         "equip_1": [
             1
         ],
@@ -9633,6 +9891,7 @@ var ship_data = {
         "jp_name": "荒潮",
         "en_name": "Arashio",
         "cn_name": "荒潮",
+        "tw_name": "荒潮",
         "equip_1": [
             1
         ],
@@ -9671,6 +9930,7 @@ var ship_data = {
         "jp_name": "満潮",
         "en_name": "Michishio",
         "cn_name": "满潮",
+        "tw_name": "滿潮",
         "equip_1": [
             1
         ],
@@ -9709,6 +9969,7 @@ var ship_data = {
         "jp_name": "大潮",
         "en_name": "Ōshio",
         "cn_name": "大潮",
+        "tw_name": "大潮",
         "equip_1": [
             1
         ],
@@ -9747,6 +10008,7 @@ var ship_data = {
         "jp_name": "朝潮",
         "en_name": "Asashio",
         "cn_name": "朝潮",
+        "tw_name": "朝潮",
         "equip_1": [
             1
         ],
@@ -9785,6 +10047,7 @@ var ship_data = {
         "jp_name": "谷風改",
         "en_name": "Tanikaze",
         "cn_name": "谷风改",
+        "tw_name": "穀風改",
         "equip_1": [
             1
         ],
@@ -9823,6 +10086,7 @@ var ship_data = {
         "jp_name": "谷風",
         "en_name": "Tanikaze",
         "cn_name": "谷风",
+        "tw_name": "穀風",
         "equip_1": [
             1
         ],
@@ -9861,6 +10125,7 @@ var ship_data = {
         "jp_name": "浜風改",
         "en_name": "Hamakaze",
         "cn_name": "滨风改",
+        "tw_name": "濱風改",
         "equip_1": [
             1
         ],
@@ -9899,6 +10164,7 @@ var ship_data = {
         "jp_name": "浜風",
         "en_name": "Hamakaze",
         "cn_name": "滨风",
+        "tw_name": "濱風",
         "equip_1": [
             1
         ],
@@ -9937,6 +10203,7 @@ var ship_data = {
         "jp_name": "磯風",
         "en_name": "Isokaze",
         "cn_name": "矶风",
+        "tw_name": "磯風",
         "equip_1": [
             1
         ],
@@ -9975,6 +10242,7 @@ var ship_data = {
         "jp_name": "浦風",
         "en_name": "Urakaze",
         "cn_name": "浦风",
+        "tw_name": "浦風",
         "equip_1": [
             1
         ],
@@ -10013,6 +10281,7 @@ var ship_data = {
         "jp_name": "宵月",
         "en_name": "Yoizuki",
         "cn_name": "宵月",
+        "tw_name": "宵月",
         "equip_1": [
             1
         ],
@@ -10051,6 +10320,7 @@ var ship_data = {
         "jp_name": "春月",
         "en_name": "Harutsuki",
         "cn_name": "春月",
+        "tw_name": "春月",
         "equip_1": [
             1
         ],
@@ -10089,6 +10359,7 @@ var ship_data = {
         "jp_name": "新月",
         "en_name": "Niizuki",
         "cn_name": "新月",
+        "tw_name": "新月",
         "equip_1": [
             1
         ],
@@ -10127,6 +10398,7 @@ var ship_data = {
         "jp_name": "清波",
         "en_name": "Kiyonami",
         "cn_name": "清波",
+        "tw_name": "清波",
         "equip_1": [
             1
         ],
@@ -10165,6 +10437,7 @@ var ship_data = {
         "jp_name": "江風",
         "en_name": "Kawakaze",
         "cn_name": "江风",
+        "tw_name": "江風",
         "equip_1": [
             1
         ],
@@ -10203,6 +10476,7 @@ var ship_data = {
         "jp_name": "三日月",
         "en_name": "Mikazuki",
         "cn_name": "三日月",
+        "tw_name": "三日月",
         "equip_1": [
             1
         ],
@@ -10241,6 +10515,7 @@ var ship_data = {
         "jp_name": "長月",
         "en_name": "Nagatsuki",
         "cn_name": "长月",
+        "tw_name": "長月",
         "equip_1": [
             1
         ],
@@ -10279,6 +10554,7 @@ var ship_data = {
         "jp_name": "文月",
         "en_name": "Fumizuki",
         "cn_name": "文月",
+        "tw_name": "文月",
         "equip_1": [
             1
         ],
@@ -10317,6 +10593,7 @@ var ship_data = {
         "jp_name": "水無月",
         "en_name": "Minazuki",
         "cn_name": "水无月",
+        "tw_name": "水無月",
         "equip_1": [
             1
         ],
@@ -10355,6 +10632,7 @@ var ship_data = {
         "jp_name": "卯月",
         "en_name": "Uzuki",
         "cn_name": "卯月",
+        "tw_name": "卯月",
         "equip_1": [
             1
         ],
@@ -10393,6 +10671,7 @@ var ship_data = {
         "jp_name": "如月改",
         "en_name": "Kisaragi",
         "cn_name": "如月改",
+        "tw_name": "如月改",
         "equip_1": [
             1
         ],
@@ -10431,6 +10710,7 @@ var ship_data = {
         "jp_name": "如月",
         "en_name": "Kisaragi",
         "cn_name": "如月",
+        "tw_name": "如月",
         "equip_1": [
             1
         ],
@@ -10469,6 +10749,7 @@ var ship_data = {
         "jp_name": "睦月改",
         "en_name": "Mutsuki",
         "cn_name": "睦月改",
+        "tw_name": "睦月改",
         "equip_1": [
             1
         ],
@@ -10507,6 +10788,7 @@ var ship_data = {
         "jp_name": "睦月",
         "en_name": "Mutsuki",
         "cn_name": "睦月",
+        "tw_name": "睦月",
         "equip_1": [
             1
         ],
@@ -10545,6 +10827,7 @@ var ship_data = {
         "jp_name": "松風改",
         "en_name": "Matsukaze",
         "cn_name": "松风改",
+        "tw_name": "松風改",
         "equip_1": [
             1
         ],
@@ -10583,6 +10866,7 @@ var ship_data = {
         "jp_name": "松風",
         "en_name": "Matsukaze",
         "cn_name": "松风",
+        "tw_name": "松風",
         "equip_1": [
             1
         ],
@@ -10621,6 +10905,7 @@ var ship_data = {
         "jp_name": "神風改",
         "en_name": "Kamikaze",
         "cn_name": "神风改",
+        "tw_name": "神風改",
         "equip_1": [
             1
         ],
@@ -10659,6 +10944,7 @@ var ship_data = {
         "jp_name": "神風",
         "en_name": "Kamikaze",
         "cn_name": "神风",
+        "tw_name": "神風",
         "equip_1": [
             1
         ],
@@ -10697,6 +10983,7 @@ var ship_data = {
         "jp_name": "親潮",
         "en_name": "Oyashio",
         "cn_name": "亲潮",
+        "tw_name": "親潮",
         "equip_1": [
             1
         ],
@@ -10735,6 +11022,7 @@ var ship_data = {
         "jp_name": "黒潮",
         "en_name": "Kuroshio",
         "cn_name": "黑潮",
+        "tw_name": "黑潮",
         "equip_1": [
             1
         ],
@@ -10773,6 +11061,7 @@ var ship_data = {
         "jp_name": "夕暮改",
         "en_name": "Yūgure",
         "cn_name": "夕暮改",
+        "tw_name": "夕暮改",
         "equip_1": [
             1
         ],
@@ -10811,6 +11100,7 @@ var ship_data = {
         "jp_name": "夕暮",
         "en_name": "Yūgure",
         "cn_name": "夕暮",
+        "tw_name": "夕暮",
         "equip_1": [
             1
         ],
@@ -10849,6 +11139,7 @@ var ship_data = {
         "jp_name": "有明改",
         "en_name": "Ariake",
         "cn_name": "有明改",
+        "tw_name": "有明改",
         "equip_1": [
             1
         ],
@@ -10887,6 +11178,7 @@ var ship_data = {
         "jp_name": "有明",
         "en_name": "Ariake",
         "cn_name": "有明",
+        "tw_name": "有明",
         "equip_1": [
             1
         ],
@@ -10925,6 +11217,7 @@ var ship_data = {
         "jp_name": "初霜改",
         "en_name": "Hatsushimo",
         "cn_name": "初霜改",
+        "tw_name": "初霜改",
         "equip_1": [
             1
         ],
@@ -10963,6 +11256,7 @@ var ship_data = {
         "jp_name": "初霜",
         "en_name": "Hatsushimo",
         "cn_name": "初霜",
+        "tw_name": "初霜",
         "equip_1": [
             1
         ],
@@ -11001,6 +11295,7 @@ var ship_data = {
         "jp_name": "若葉",
         "en_name": "Wakaba",
         "cn_name": "若叶",
+        "tw_name": "若葉",
         "equip_1": [
             1
         ],
@@ -11039,6 +11334,7 @@ var ship_data = {
         "jp_name": "初春改",
         "en_name": "Hatsuharu",
         "cn_name": "初春改",
+        "tw_name": "初春改",
         "equip_1": [
             1
         ],
@@ -11077,6 +11373,7 @@ var ship_data = {
         "jp_name": "初春",
         "en_name": "Hatsuharu",
         "cn_name": "初春",
+        "tw_name": "初春",
         "equip_1": [
             1
         ],
@@ -11115,6 +11412,7 @@ var ship_data = {
         "jp_name": "野分",
         "en_name": "Nowaki",
         "cn_name": "野分",
+        "tw_name": "野分",
         "equip_1": [
             1
         ],
@@ -11153,6 +11451,7 @@ var ship_data = {
         "jp_name": "不知火改",
         "en_name": "Shiranui",
         "cn_name": "不知火改",
+        "tw_name": "不知火改",
         "equip_1": [
             1
         ],
@@ -11191,6 +11490,7 @@ var ship_data = {
         "jp_name": "不知火",
         "en_name": "Shiranui",
         "cn_name": "不知火",
+        "tw_name": "不知火",
         "equip_1": [
             1
         ],
@@ -11229,6 +11529,7 @@ var ship_data = {
         "jp_name": "陽炎改",
         "en_name": "Kagerō",
         "cn_name": "阳炎改",
+        "tw_name": "陽炎改",
         "equip_1": [
             1
         ],
@@ -11267,6 +11568,7 @@ var ship_data = {
         "jp_name": "陽炎",
         "en_name": "Kagerō",
         "cn_name": "阳炎",
+        "tw_name": "陽炎",
         "equip_1": [
             1
         ],
@@ -11305,6 +11607,7 @@ var ship_data = {
         "jp_name": "雪風",
         "en_name": "Yukikaze",
         "cn_name": "雪风",
+        "tw_name": "雪風",
         "equip_1": [
             1
         ],
@@ -11343,6 +11646,7 @@ var ship_data = {
         "jp_name": "時雨改",
         "en_name": "Shigure",
         "cn_name": "时雨改",
+        "tw_name": "時雨改",
         "equip_1": [
             1
         ],
@@ -11381,6 +11685,7 @@ var ship_data = {
         "jp_name": "時雨",
         "en_name": "Shigure",
         "cn_name": "时雨",
+        "tw_name": "時雨",
         "equip_1": [
             1
         ],
@@ -11419,6 +11724,7 @@ var ship_data = {
         "jp_name": "夕立",
         "en_name": "Yūdachi",
         "cn_name": "夕立",
+        "tw_name": "夕立",
         "equip_1": [
             1
         ],
@@ -11457,6 +11763,7 @@ var ship_data = {
         "jp_name": "白露",
         "en_name": "Shiratsuyu",
         "cn_name": "白露",
+        "tw_name": "白露",
         "equip_1": [
             1
         ],
@@ -11495,6 +11802,7 @@ var ship_data = {
         "jp_name": "電",
         "en_name": "Inazuma",
         "cn_name": "电",
+        "tw_name": "電",
         "equip_1": [
             1
         ],
@@ -11533,6 +11841,7 @@ var ship_data = {
         "jp_name": "雷",
         "en_name": "Ikazuchi",
         "cn_name": "雷",
+        "tw_name": "雷",
         "equip_1": [
             1
         ],
@@ -11571,6 +11880,7 @@ var ship_data = {
         "jp_name": "響",
         "en_name": "Hibiki",
         "cn_name": "响",
+        "tw_name": "響",
         "equip_1": [
             1
         ],
@@ -11609,6 +11919,7 @@ var ship_data = {
         "jp_name": "暁",
         "en_name": "Akatsuki",
         "cn_name": "晓",
+        "tw_name": "曉",
         "equip_1": [
             1
         ],
@@ -11647,6 +11958,7 @@ var ship_data = {
         "jp_name": "綾波改",
         "en_name": "Ayanami",
         "cn_name": "绫波改",
+        "tw_name": "綾波改",
         "equip_1": [
             1
         ],
@@ -11685,6 +11997,7 @@ var ship_data = {
         "jp_name": "綾波",
         "en_name": "Ayanami",
         "cn_name": "绫波",
+        "tw_name": "綾波",
         "equip_1": [
             1
         ],
@@ -11723,6 +12036,7 @@ var ship_data = {
         "jp_name": "吹雪",
         "en_name": "Fubuki",
         "cn_name": "吹雪",
+        "tw_name": "吹雪",
         "equip_1": [
             1
         ],
@@ -11761,6 +12075,7 @@ var ship_data = {
         "jp_name": "アバークロンビー",
         "en_name": "Abercrombie",
         "cn_name": "阿贝克隆比",
+        "tw_name": "阿貝克隆比",
         "equip_1": [
             4
         ],
@@ -11797,6 +12112,7 @@ var ship_data = {
         "jp_name": "テラー",
         "en_name": "Terror",
         "cn_name": "恐怖",
+        "tw_name": "恐怖",
         "equip_1": [
             4
         ],
@@ -11833,6 +12149,7 @@ var ship_data = {
         "jp_name": "エレバス",
         "en_name": "Erebus",
         "cn_name": "黑暗界",
+        "tw_name": "黑暗界",
         "equip_1": [
             4
         ],
@@ -11869,6 +12186,7 @@ var ship_data = {
         "jp_name": "イラストリアス(μ兵装)",
         "en_name": "Illustrious",
         "cn_name": "光辉(μ兵装)",
+        "tw_name": "光輝(μ兵裝)",
         "equip_1": [
             7
         ],
@@ -11905,6 +12223,7 @@ var ship_data = {
         "jp_name": "リトル・イラストリアス",
         "en_name": "Illustrious",
         "cn_name": "小光辉",
+        "tw_name": "小光輝",
         "equip_1": [
             7
         ],
@@ -11941,6 +12260,7 @@ var ship_data = {
         "jp_name": "グロリアス",
         "en_name": "Glorious",
         "cn_name": "光荣",
+        "tw_name": "光榮",
         "equip_1": [
             7
         ],
@@ -11977,6 +12297,7 @@ var ship_data = {
         "jp_name": "フォーミダブル",
         "en_name": "Formidable",
         "cn_name": "可畏",
+        "tw_name": "可畏",
         "equip_1": [
             7,
             9
@@ -12014,6 +12335,7 @@ var ship_data = {
         "jp_name": "ヴィクトリアス",
         "en_name": "Victorious",
         "cn_name": "胜利",
+        "tw_name": "勝利",
         "equip_1": [
             7
         ],
@@ -12050,6 +12372,7 @@ var ship_data = {
         "jp_name": "イラストリアス",
         "en_name": "Illustrious",
         "cn_name": "光辉",
+        "tw_name": "光輝",
         "equip_1": [
             7
         ],
@@ -12086,6 +12409,7 @@ var ship_data = {
         "jp_name": "アーク・ロイヤル",
         "en_name": "Ark Royal",
         "cn_name": "皇家方舟",
+        "tw_name": "皇家方舟",
         "equip_1": [
             8
         ],
@@ -12122,6 +12446,7 @@ var ship_data = {
         "jp_name": "イーグル",
         "en_name": "Eagle",
         "cn_name": "鹰",
+        "tw_name": "鷹",
         "equip_1": [
             7
         ],
@@ -12159,6 +12484,7 @@ var ship_data = {
         "jp_name": "パーシュース",
         "en_name": "Perseus",
         "cn_name": "英仙座",
+        "tw_name": "英仙座",
         "equip_1": [
             7
         ],
@@ -12197,6 +12523,7 @@ var ship_data = {
         "jp_name": "チェイサー",
         "en_name": "Chaser",
         "cn_name": "追赶者",
+        "tw_name": "追趕者",
         "equip_1": [
             7
         ],
@@ -12235,6 +12562,7 @@ var ship_data = {
         "jp_name": "セントー",
         "en_name": "Centaur",
         "cn_name": "半人马",
+        "tw_name": "半人馬",
         "equip_1": [
             7
         ],
@@ -12273,6 +12601,7 @@ var ship_data = {
         "jp_name": "ユニコーン",
         "en_name": "Unicorn",
         "cn_name": "独角兽",
+        "tw_name": "獨角獸",
         "equip_1": [
             7
         ],
@@ -12311,6 +12640,7 @@ var ship_data = {
         "jp_name": "ハーミーズ改",
         "en_name": "Hermes",
         "cn_name": "竞技神.改",
+        "tw_name": "競技神.改",
         "equip_1": [
             8
         ],
@@ -12349,6 +12679,7 @@ var ship_data = {
         "jp_name": "ハーミーズ",
         "en_name": "Hermes",
         "cn_name": "竞技神",
+        "tw_name": "競技神",
         "equip_1": [
             8
         ],
@@ -12387,6 +12718,7 @@ var ship_data = {
         "jp_name": "モナーク",
         "en_name": "Monarch",
         "cn_name": "君主",
+        "tw_name": "君主",
         "equip_1": [
             4
         ],
@@ -12424,6 +12756,7 @@ var ship_data = {
         "jp_name": "ヴァリアント",
         "en_name": "Valiant",
         "cn_name": "英勇",
+        "tw_name": "英勇",
         "equip_1": [
             4
         ],
@@ -12461,6 +12794,7 @@ var ship_data = {
         "jp_name": "ハウ",
         "en_name": "Howe",
         "cn_name": "豪",
+        "tw_name": "豪",
         "equip_1": [
             4
         ],
@@ -12498,6 +12832,7 @@ var ship_data = {
         "jp_name": "デューク・オブ・ヨーク",
         "en_name": "Duke of York",
         "cn_name": "约克公爵",
+        "tw_name": "約克公爵",
         "equip_1": [
             4
         ],
@@ -12535,6 +12870,7 @@ var ship_data = {
         "jp_name": "プリンス・オブ・ウェールズ",
         "en_name": "Prince of Wales",
         "cn_name": "威尔士亲王",
+        "tw_name": "威爾士親王",
         "equip_1": [
             4
         ],
@@ -12572,6 +12908,7 @@ var ship_data = {
         "jp_name": "キング・ジョージ5世",
         "en_name": "King George V",
         "cn_name": "英王乔治五世",
+        "tw_name": "英王喬治五世",
         "equip_1": [
             4
         ],
@@ -12609,6 +12946,7 @@ var ship_data = {
         "jp_name": "ロドニー",
         "en_name": "Rodney",
         "cn_name": "罗德尼",
+        "tw_name": "羅德尼",
         "equip_1": [
             4
         ],
@@ -12646,6 +12984,7 @@ var ship_data = {
         "jp_name": "ネルソン",
         "en_name": "Nelson",
         "cn_name": "纳尔逊",
+        "tw_name": "納爾遜",
         "equip_1": [
             4
         ],
@@ -12683,6 +13022,7 @@ var ship_data = {
         "jp_name": "ウォースパイト改",
         "en_name": "Warspite",
         "cn_name": "厌战.改",
+        "tw_name": "厭戰.改",
         "equip_1": [
             4
         ],
@@ -12721,6 +13061,7 @@ var ship_data = {
         "jp_name": "ウォースパイト",
         "en_name": "Warspite",
         "cn_name": "厌战",
+        "tw_name": "厭戰",
         "equip_1": [
             4
         ],
@@ -12758,6 +13099,7 @@ var ship_data = {
         "jp_name": "クイーン・エリザベス",
         "en_name": "Queen Elizabeth",
         "cn_name": "伊丽莎白女王",
+        "tw_name": "伊麗莎白女王",
         "equip_1": [
             4
         ],
@@ -12795,6 +13137,7 @@ var ship_data = {
         "jp_name": "リトル・レナウン",
         "en_name": "Renown",
         "cn_name": "小声望",
+        "tw_name": "小聲望",
         "equip_1": [
             4
         ],
@@ -12831,6 +13174,7 @@ var ship_data = {
         "jp_name": "フッド",
         "en_name": "Hood",
         "cn_name": "胡德",
+        "tw_name": "胡德",
         "equip_1": [
             4
         ],
@@ -12867,6 +13211,7 @@ var ship_data = {
         "jp_name": "レパルス",
         "en_name": "Repulse",
         "cn_name": "反击",
+        "tw_name": "反擊",
         "equip_1": [
             4
         ],
@@ -12903,6 +13248,7 @@ var ship_data = {
         "jp_name": "レナウン",
         "en_name": "Renown",
         "cn_name": "声望",
+        "tw_name": "聲望",
         "equip_1": [
             4
         ],
@@ -12939,6 +13285,7 @@ var ship_data = {
         "jp_name": "ドレイク",
         "en_name": "Drake",
         "cn_name": "德雷克",
+        "tw_name": "德雷克",
         "equip_1": [
             3
         ],
@@ -12975,6 +13322,7 @@ var ship_data = {
         "jp_name": "チェシャー",
         "en_name": "Cheshire",
         "cn_name": "柴郡",
+        "tw_name": "柴郡",
         "equip_1": [
             3
         ],
@@ -13011,6 +13359,7 @@ var ship_data = {
         "jp_name": "サセックス",
         "en_name": "Sussex",
         "cn_name": "苏塞克斯",
+        "tw_name": "蘇塞克斯",
         "equip_1": [
             3
         ],
@@ -13047,6 +13396,7 @@ var ship_data = {
         "jp_name": "エクセター改",
         "en_name": "Exeter",
         "cn_name": "埃克塞特.改",
+        "tw_name": "埃克塞特.改",
         "equip_1": [
             3
         ],
@@ -13083,6 +13433,7 @@ var ship_data = {
         "jp_name": "エクセター",
         "en_name": "Exeter",
         "cn_name": "埃克塞特",
+        "tw_name": "埃克塞特",
         "equip_1": [
             3
         ],
@@ -13119,6 +13470,7 @@ var ship_data = {
         "jp_name": "ヨーク改",
         "en_name": "York",
         "cn_name": "约克.改",
+        "tw_name": "約克.改",
         "equip_1": [
             3
         ],
@@ -13155,6 +13507,7 @@ var ship_data = {
         "jp_name": "ヨーク",
         "en_name": "York",
         "cn_name": "约克",
+        "tw_name": "約克",
         "equip_1": [
             3
         ],
@@ -13191,6 +13544,7 @@ var ship_data = {
         "jp_name": "ドーセットシャー",
         "en_name": "Dorsetshire",
         "cn_name": "多塞特郡",
+        "tw_name": "多塞特郡",
         "equip_1": [
             3
         ],
@@ -13227,6 +13581,7 @@ var ship_data = {
         "jp_name": "ノーフォーク",
         "en_name": "Norfolk",
         "cn_name": "诺福克",
+        "tw_name": "諾福克",
         "equip_1": [
             3
         ],
@@ -13263,6 +13618,7 @@ var ship_data = {
         "jp_name": "サフォーク改",
         "en_name": "Suffolk",
         "cn_name": "萨福克.改",
+        "tw_name": "薩福克.改",
         "equip_1": [
             3
         ],
@@ -13299,6 +13655,7 @@ var ship_data = {
         "jp_name": "サフォーク",
         "en_name": "Suffolk",
         "cn_name": "萨福克",
+        "tw_name": "薩福克",
         "equip_1": [
             3
         ],
@@ -13335,6 +13692,7 @@ var ship_data = {
         "jp_name": "ケント",
         "en_name": "Kent",
         "cn_name": "肯特",
+        "tw_name": "肯特",
         "equip_1": [
             3
         ],
@@ -13371,6 +13729,7 @@ var ship_data = {
         "jp_name": "シュロップシャー",
         "en_name": "Shropshire",
         "cn_name": "什罗普郡",
+        "tw_name": "什羅普郡",
         "equip_1": [
             3
         ],
@@ -13407,6 +13766,7 @@ var ship_data = {
         "jp_name": "ロンドン改",
         "en_name": "London",
         "cn_name": "伦敦.改",
+        "tw_name": "倫敦.改",
         "equip_1": [
             3
         ],
@@ -13444,6 +13804,7 @@ var ship_data = {
         "jp_name": "ロンドン",
         "en_name": "London",
         "cn_name": "伦敦",
+        "tw_name": "倫敦",
         "equip_1": [
             3
         ],
@@ -13480,6 +13841,7 @@ var ship_data = {
         "jp_name": "ネプチューン",
         "en_name": "Neptune",
         "cn_name": "海王星",
+        "tw_name": "海王星",
         "equip_1": [
             2
         ],
@@ -13518,6 +13880,7 @@ var ship_data = {
         "jp_name": "ペネロピ",
         "en_name": "Penelope",
         "cn_name": "佩内洛珀",
+        "tw_name": "佩內洛珀",
         "equip_1": [
             2
         ],
@@ -13556,6 +13919,7 @@ var ship_data = {
         "jp_name": "ダイドー(μ兵装)",
         "en_name": "Dido",
         "cn_name": "黛朵(μ兵装)",
+        "tw_name": "黛朵(μ兵裝)",
         "equip_1": [
             1,
             2
@@ -13595,6 +13959,7 @@ var ship_data = {
         "jp_name": "ハーマイオニー",
         "en_name": "Hermione",
         "cn_name": "赫敏",
+        "tw_name": "赫敏",
         "equip_1": [
             1,
             2
@@ -13634,6 +13999,7 @@ var ship_data = {
         "jp_name": "グラスゴー",
         "en_name": "Glasgow",
         "cn_name": "格拉斯哥",
+        "tw_name": "格拉斯哥",
         "equip_1": [
             2
         ],
@@ -13672,6 +14038,7 @@ var ship_data = {
         "jp_name": "シェフィールド(μ兵装)",
         "en_name": "Sheffield",
         "cn_name": "谢菲尔德(μ兵装)",
+        "tw_name": "謝菲爾德(μ兵裝)",
         "equip_1": [
             2
         ],
@@ -13710,6 +14077,7 @@ var ship_data = {
         "jp_name": "ブラック・プリンス",
         "en_name": "Black Prince",
         "cn_name": "黑太子",
+        "tw_name": "黑太子",
         "equip_1": [
             1,
             2
@@ -13749,6 +14117,7 @@ var ship_data = {
         "jp_name": "スウィフトシュア",
         "en_name": "Swiftsure",
         "cn_name": "确捷",
+        "tw_name": "確捷",
         "equip_1": [
             2
         ],
@@ -13787,6 +14156,7 @@ var ship_data = {
         "jp_name": "カーリュー改",
         "en_name": "Curlew",
         "cn_name": "杓鹬.改",
+        "tw_name": "杓鷸.改",
         "equip_1": [
             1,
             2
@@ -13826,6 +14196,7 @@ var ship_data = {
         "jp_name": "カーリュー",
         "en_name": "Curlew",
         "cn_name": "杓鹬",
+        "tw_name": "杓鷸",
         "equip_1": [
             1,
             2
@@ -13865,6 +14236,7 @@ var ship_data = {
         "jp_name": "キュラソー改",
         "en_name": "Curacoa",
         "cn_name": "库拉索.改",
+        "tw_name": "庫拉索.改",
         "equip_1": [
             1,
             2
@@ -13904,6 +14276,7 @@ var ship_data = {
         "jp_name": "キュラソー",
         "en_name": "Curacoa",
         "cn_name": "库拉索",
+        "tw_name": "庫拉索",
         "equip_1": [
             1,
             2
@@ -13943,6 +14316,7 @@ var ship_data = {
         "jp_name": "シリアス",
         "en_name": "Sirius",
         "cn_name": "天狼星",
+        "tw_name": "天狼星",
         "equip_1": [
             1,
             2
@@ -13982,6 +14356,7 @@ var ship_data = {
         "jp_name": "ニューカッスル改",
         "en_name": "Newcastle",
         "cn_name": "纽卡斯尔.改 ",
+        "tw_name": "紐卡斯爾.改 ",
         "equip_1": [
             2
         ],
@@ -14020,6 +14395,7 @@ var ship_data = {
         "jp_name": "ニューカッスル",
         "en_name": "Newcastle",
         "cn_name": "纽卡斯尔 ",
+        "tw_name": "紐卡斯爾 ",
         "equip_1": [
             2
         ],
@@ -14058,6 +14434,7 @@ var ship_data = {
         "jp_name": "ベルファスト",
         "en_name": "Belfast",
         "cn_name": "小贝法",
+        "tw_name": "小貝法",
         "equip_1": [
             2
         ],
@@ -14096,6 +14473,7 @@ var ship_data = {
         "jp_name": "ジャマイカ",
         "en_name": "Jamaica",
         "cn_name": "牙买加",
+        "tw_name": "牙買加",
         "equip_1": [
             2
         ],
@@ -14134,6 +14512,7 @@ var ship_data = {
         "jp_name": "フィジー",
         "en_name": "Fiji",
         "cn_name": "斐济",
+        "tw_name": "斐濟",
         "equip_1": [
             2
         ],
@@ -14172,6 +14551,7 @@ var ship_data = {
         "jp_name": "オーロラ",
         "en_name": "Aurora",
         "cn_name": "欧若拉",
+        "tw_name": "歐若拉",
         "equip_1": [
             2
         ],
@@ -14210,6 +14590,7 @@ var ship_data = {
         "jp_name": "ガラティア",
         "en_name": "Galatea",
         "cn_name": "加拉蒂亚",
+        "tw_name": "加拉蒂亞",
         "equip_1": [
             2
         ],
@@ -14248,6 +14629,7 @@ var ship_data = {
         "jp_name": "アリシューザ",
         "en_name": "Arethusa",
         "cn_name": "阿瑞托莎",
+        "tw_name": "阿瑞託莎",
         "equip_1": [
             2
         ],
@@ -14286,6 +14668,7 @@ var ship_data = {
         "jp_name": "ベルファスト",
         "en_name": "Belfast",
         "cn_name": "贝尔法斯特",
+        "tw_name": "貝爾法斯特",
         "equip_1": [
             2
         ],
@@ -14324,6 +14707,7 @@ var ship_data = {
         "jp_name": "エディンバラ",
         "en_name": "Edinburgh",
         "cn_name": "爱丁堡",
+        "tw_name": "愛丁堡",
         "equip_1": [
             2
         ],
@@ -14362,6 +14746,7 @@ var ship_data = {
         "jp_name": "グロスター",
         "en_name": "Gloucester",
         "cn_name": "格罗斯特",
+        "tw_name": "格羅斯特",
         "equip_1": [
             2
         ],
@@ -14400,6 +14785,7 @@ var ship_data = {
         "jp_name": "シェフィールド",
         "en_name": "Sheffield",
         "cn_name": "谢菲尔德",
+        "tw_name": "謝菲爾德",
         "equip_1": [
             2
         ],
@@ -14438,6 +14824,7 @@ var ship_data = {
         "jp_name": "サウサンプトン",
         "en_name": "Southampton",
         "cn_name": "南安普顿",
+        "tw_name": "南安普頓",
         "equip_1": [
             2
         ],
@@ -14476,6 +14863,7 @@ var ship_data = {
         "jp_name": "ダイドー",
         "en_name": "Dido",
         "cn_name": "黛朵",
+        "tw_name": "黛朵",
         "equip_1": [
             1,
             2
@@ -14515,6 +14903,7 @@ var ship_data = {
         "jp_name": "エイジャックス改",
         "en_name": "Ajax",
         "cn_name": "阿贾克斯.改",
+        "tw_name": "阿賈克斯.改",
         "equip_1": [
             2
         ],
@@ -14553,6 +14942,7 @@ var ship_data = {
         "jp_name": "エイジャックス",
         "en_name": "Ajax",
         "cn_name": "阿贾克斯",
+        "tw_name": "阿賈克斯",
         "equip_1": [
             2
         ],
@@ -14591,6 +14981,7 @@ var ship_data = {
         "jp_name": "アキリーズ改",
         "en_name": "Achilles",
         "cn_name": "阿基里斯.改",
+        "tw_name": "阿基里斯.改",
         "equip_1": [
             2
         ],
@@ -14629,6 +15020,7 @@ var ship_data = {
         "jp_name": "アキリーズ",
         "en_name": "Achilles",
         "cn_name": "阿基里斯",
+        "tw_name": "阿基里斯",
         "equip_1": [
             2
         ],
@@ -14667,6 +15059,7 @@ var ship_data = {
         "jp_name": "リアンダー改",
         "en_name": "Leander",
         "cn_name": "利安得.改",
+        "tw_name": "利安得.改",
         "equip_1": [
             2
         ],
@@ -14705,6 +15098,7 @@ var ship_data = {
         "jp_name": "リアンダー",
         "en_name": "Leander",
         "cn_name": "利安得",
+        "tw_name": "利安得",
         "equip_1": [
             2
         ],
@@ -14743,6 +15137,7 @@ var ship_data = {
         "jp_name": "イカルス",
         "en_name": "Icarus",
         "cn_name": "伊卡洛斯",
+        "tw_name": "伊卡洛斯",
         "equip_1": [
             1
         ],
@@ -14781,6 +15176,7 @@ var ship_data = {
         "jp_name": "エスキモー",
         "en_name": "Eskimo",
         "cn_name": "爱斯基摩人",
+        "tw_name": "愛斯基摩人",
         "equip_1": [
             1
         ],
@@ -14819,6 +15215,7 @@ var ship_data = {
         "jp_name": "エコー",
         "en_name": "Echo",
         "cn_name": "回声",
+        "tw_name": "回聲",
         "equip_1": [
             1
         ],
@@ -14857,6 +15254,7 @@ var ship_data = {
         "jp_name": "マスケティーア",
         "en_name": "Musketeer",
         "cn_name": "火枪手",
+        "tw_name": "火槍手",
         "equip_1": [
             1
         ],
@@ -14895,6 +15293,7 @@ var ship_data = {
         "jp_name": "マッチレス",
         "en_name": "Matchless",
         "cn_name": "无敌",
+        "tw_name": "無敵",
         "equip_1": [
             1
         ],
@@ -14933,6 +15332,7 @@ var ship_data = {
         "jp_name": "ジャージー",
         "en_name": "Jersey",
         "cn_name": "泽西",
+        "tw_name": "澤西",
         "equip_1": [
             1
         ],
@@ -14971,6 +15371,7 @@ var ship_data = {
         "jp_name": "ジュピター",
         "en_name": "Jupiter",
         "cn_name": "丘比特",
+        "tw_name": "丘比特",
         "equip_1": [
             1
         ],
@@ -15009,6 +15410,7 @@ var ship_data = {
         "jp_name": "ヴァンパイア",
         "en_name": "Vampire",
         "cn_name": "吸血鬼",
+        "tw_name": "吸血鬼",
         "equip_1": [
             1
         ],
@@ -15047,6 +15449,7 @@ var ship_data = {
         "jp_name": "ジュノー",
         "en_name": "Juno",
         "cn_name": "天后",
+        "tw_name": "天后",
         "equip_1": [
             1
         ],
@@ -15085,6 +15488,7 @@ var ship_data = {
         "jp_name": "ジャベリン改",
         "en_name": "Javelin",
         "cn_name": "标枪.改",
+        "tw_name": "標槍.改",
         "equip_1": [
             1
         ],
@@ -15123,6 +15527,7 @@ var ship_data = {
         "jp_name": "ジャベリン",
         "en_name": "Javelin",
         "cn_name": "标枪",
+        "tw_name": "標槍",
         "equip_1": [
             1
         ],
@@ -15161,6 +15566,7 @@ var ship_data = {
         "jp_name": "ハンター",
         "en_name": "Hunter",
         "cn_name": "猎人",
+        "tw_name": "獵人",
         "equip_1": [
             1
         ],
@@ -15199,6 +15605,7 @@ var ship_data = {
         "jp_name": "ハーディ",
         "en_name": "Hardy",
         "cn_name": "勇敢",
+        "tw_name": "勇敢",
         "equip_1": [
             1
         ],
@@ -15237,6 +15644,7 @@ var ship_data = {
         "jp_name": "グローウォーム",
         "en_name": "Glowworm",
         "cn_name": "萤火虫",
+        "tw_name": "螢火蟲",
         "equip_1": [
             1
         ],
@@ -15275,6 +15683,7 @@ var ship_data = {
         "jp_name": "グレンヴィル",
         "en_name": "Grenville",
         "cn_name": "格伦维尔",
+        "tw_name": "格倫維爾",
         "equip_1": [
             1
         ],
@@ -15313,6 +15722,7 @@ var ship_data = {
         "jp_name": "フォーチュン改",
         "en_name": "Fortune",
         "cn_name": "命运女神.改",
+        "tw_name": "命運女神.改",
         "equip_1": [
             1
         ],
@@ -15351,6 +15761,7 @@ var ship_data = {
         "jp_name": "フォーチュン",
         "en_name": "Fortune",
         "cn_name": "命运女神",
+        "tw_name": "命運女神",
         "equip_1": [
             1
         ],
@@ -15389,6 +15800,7 @@ var ship_data = {
         "jp_name": "フォックスハウンド改",
         "en_name": "Foxhound",
         "cn_name": "狐提.改",
+        "tw_name": "狐提.改",
         "equip_1": [
             1
         ],
@@ -15427,6 +15839,7 @@ var ship_data = {
         "jp_name": "フォックスハウンド",
         "en_name": "Foxhound",
         "cn_name": "狐提",
+        "tw_name": "狐提",
         "equip_1": [
             1
         ],
@@ -15465,6 +15878,7 @@ var ship_data = {
         "jp_name": "シグニット改",
         "en_name": "Cygnet",
         "cn_name": "小天鹅.改",
+        "tw_name": "小天鵝.改",
         "equip_1": [
             1
         ],
@@ -15503,6 +15917,7 @@ var ship_data = {
         "jp_name": "シグニット",
         "en_name": "Cygnet",
         "cn_name": "小天鹅",
+        "tw_name": "小天鵝",
         "equip_1": [
             1
         ],
@@ -15541,6 +15956,7 @@ var ship_data = {
         "jp_name": "クレセント改",
         "en_name": "Crescent",
         "cn_name": "新月.改",
+        "tw_name": "新月.改",
         "equip_1": [
             1
         ],
@@ -15579,6 +15995,7 @@ var ship_data = {
         "jp_name": "クレセント",
         "en_name": "Crescent",
         "cn_name": "新月",
+        "tw_name": "新月",
         "equip_1": [
             1
         ],
@@ -15617,6 +16034,7 @@ var ship_data = {
         "jp_name": "コメット改",
         "en_name": "Comet",
         "cn_name": "彗星.改",
+        "tw_name": "彗星.改",
         "equip_1": [
             1
         ],
@@ -15655,6 +16073,7 @@ var ship_data = {
         "jp_name": "コメット",
         "en_name": "Comet",
         "cn_name": "彗星",
+        "tw_name": "彗星",
         "equip_1": [
             1
         ],
@@ -15693,6 +16112,7 @@ var ship_data = {
         "jp_name": "ブルドッグ",
         "en_name": "Bulldog",
         "cn_name": "大斗犬",
+        "tw_name": "大斗犬",
         "equip_1": [
             1
         ],
@@ -15731,6 +16151,7 @@ var ship_data = {
         "jp_name": "ビーグル",
         "en_name": "Beagle",
         "cn_name": "小猎兔犬",
+        "tw_name": "小獵兔犬",
         "equip_1": [
             1
         ],
@@ -15769,6 +16190,7 @@ var ship_data = {
         "jp_name": "アーデント改",
         "en_name": "Ardent",
         "cn_name": "热心.改",
+        "tw_name": "熱心.改",
         "equip_1": [
             1
         ],
@@ -15807,6 +16229,7 @@ var ship_data = {
         "jp_name": "アーデント",
         "en_name": "Ardent",
         "cn_name": "热心",
+        "tw_name": "熱心",
         "equip_1": [
             1
         ],
@@ -15845,6 +16268,7 @@ var ship_data = {
         "jp_name": "アカスタ改",
         "en_name": "Acasta",
         "cn_name": "阿卡司塔.改",
+        "tw_name": "阿卡司塔.改",
         "equip_1": [
             1
         ],
@@ -15883,6 +16307,7 @@ var ship_data = {
         "jp_name": "アカスタ",
         "en_name": "Acasta",
         "cn_name": "阿卡司塔",
+        "tw_name": "阿卡司塔",
         "equip_1": [
             1
         ],
@@ -15921,6 +16346,7 @@ var ship_data = {
         "jp_name": "アマゾン改",
         "en_name": "Amazon",
         "cn_name": "女将.改",
+        "tw_name": "女將.改",
         "equip_1": [
             1
         ],
@@ -15959,6 +16385,7 @@ var ship_data = {
         "jp_name": "アマゾン",
         "en_name": "Amazon",
         "cn_name": "女将",
+        "tw_name": "女將",
         "equip_1": [
             1
         ],
@@ -15997,6 +16424,7 @@ var ship_data = {
         "jp_name": "ヴェスタル",
         "en_name": "Vestal",
         "cn_name": "女灶神",
+        "tw_name": "女灶神",
         "equip_1": [
             10
         ],
@@ -16033,6 +16461,7 @@ var ship_data = {
         "jp_name": "アルバコア(μ兵装)",
         "en_name": "Albacore",
         "cn_name": "大青花鱼(μ兵装)",
+        "tw_name": "大青花魚(μ兵裝)",
         "equip_1": [
             13
         ],
@@ -16069,6 +16498,7 @@ var ship_data = {
         "jp_name": "ブルーギル",
         "en_name": "Bluegill",
         "cn_name": "蓝鳃鱼",
+        "tw_name": "藍鰓魚",
         "equip_1": [
             13
         ],
@@ -16105,6 +16535,7 @@ var ship_data = {
         "jp_name": "カヴァラ",
         "en_name": "Cavalla",
         "cn_name": "棘鳍",
+        "tw_name": "棘鰭",
         "equip_1": [
             13
         ],
@@ -16141,6 +16572,7 @@ var ship_data = {
         "jp_name": "アルバコア",
         "en_name": "Albacore",
         "cn_name": "大青花鱼",
+        "tw_name": "大青花魚",
         "equip_1": [
             13
         ],
@@ -16177,6 +16609,7 @@ var ship_data = {
         "jp_name": "デイス",
         "en_name": "Dace",
         "cn_name": "鲦鱼",
+        "tw_name": "鰷魚",
         "equip_1": [
             13
         ],
@@ -16213,6 +16646,7 @@ var ship_data = {
         "jp_name": "シャングリラ",
         "en_name": "Shangri-La",
         "cn_name": "香格里拉",
+        "tw_name": "香格里拉",
         "equip_1": [
             7
         ],
@@ -16249,6 +16683,7 @@ var ship_data = {
         "jp_name": "バンカー・ヒル",
         "en_name": "Bunker Hill",
         "cn_name": "邦克山",
+        "tw_name": "邦克山",
         "equip_1": [
             7
         ],
@@ -16285,6 +16720,7 @@ var ship_data = {
         "jp_name": "イントレピッド",
         "en_name": "Intrepid",
         "cn_name": "无畏",
+        "tw_name": "無畏",
         "equip_1": [
             7
         ],
@@ -16321,6 +16757,7 @@ var ship_data = {
         "jp_name": "エセックス",
         "en_name": "Essex",
         "cn_name": "埃塞克斯",
+        "tw_name": "埃塞克斯",
         "equip_1": [
             7
         ],
@@ -16357,6 +16794,7 @@ var ship_data = {
         "jp_name": "ワスプ",
         "en_name": "Wasp",
         "cn_name": "胡蜂",
+        "tw_name": "胡蜂",
         "equip_1": [
             7
         ],
@@ -16393,6 +16831,7 @@ var ship_data = {
         "jp_name": "ホーネット",
         "en_name": "Hornet",
         "cn_name": "大黄蜂",
+        "tw_name": "大黃蜂",
         "equip_1": [
             7
         ],
@@ -16429,6 +16868,7 @@ var ship_data = {
         "jp_name": "エンタープライズ",
         "en_name": "Enterprise",
         "cn_name": "企业",
+        "tw_name": "企業",
         "equip_1": [
             7
         ],
@@ -16465,6 +16905,7 @@ var ship_data = {
         "jp_name": "ヨークタウン",
         "en_name": "Yorktown",
         "cn_name": "约克城",
+        "tw_name": "約克城",
         "equip_1": [
             7
         ],
@@ -16501,6 +16942,7 @@ var ship_data = {
         "jp_name": "サラトガ改",
         "en_name": "Saratoga",
         "cn_name": "萨拉托加.改",
+        "tw_name": "薩拉託加.改",
         "equip_1": [
             7
         ],
@@ -16537,6 +16979,7 @@ var ship_data = {
         "jp_name": "サラトガ",
         "en_name": "Saratoga",
         "cn_name": "萨拉托加",
+        "tw_name": "薩拉託加",
         "equip_1": [
             7
         ],
@@ -16573,6 +17016,7 @@ var ship_data = {
         "jp_name": "レキシントン",
         "en_name": "Lexington",
         "cn_name": "列克星敦",
+        "tw_name": "列剋星敦",
         "equip_1": [
             7
         ],
@@ -16609,6 +17053,7 @@ var ship_data = {
         "jp_name": "バターン",
         "en_name": "Bataan",
         "cn_name": "巴丹",
+        "tw_name": "巴丹",
         "equip_1": [
             7
         ],
@@ -16647,6 +17092,7 @@ var ship_data = {
         "jp_name": "プリンストン",
         "en_name": "Princeton",
         "cn_name": "普林斯顿",
+        "tw_name": "普林斯頓",
         "equip_1": [
             7
         ],
@@ -16685,6 +17131,7 @@ var ship_data = {
         "jp_name": "インディペンデンス",
         "en_name": "Independence",
         "cn_name": "独立",
+        "tw_name": "獨立",
         "equip_1": [
             7
         ],
@@ -16723,6 +17170,7 @@ var ship_data = {
         "jp_name": "レンジャー改",
         "en_name": "Ranger",
         "cn_name": "突击者.改",
+        "tw_name": "突擊者.改",
         "equip_1": [
             8
         ],
@@ -16761,6 +17209,7 @@ var ship_data = {
         "jp_name": "レンジャー",
         "en_name": "Ranger",
         "cn_name": "突击者",
+        "tw_name": "突擊者",
         "equip_1": [
             8
         ],
@@ -16799,6 +17248,7 @@ var ship_data = {
         "jp_name": "ラングレー改",
         "en_name": "Langley",
         "cn_name": "兰利.改",
+        "tw_name": "蘭利.改",
         "equip_1": [
             7
         ],
@@ -16837,6 +17287,7 @@ var ship_data = {
         "jp_name": "ラングレー",
         "en_name": "Langley",
         "cn_name": "兰利",
+        "tw_name": "蘭利",
         "equip_1": [
             7
         ],
@@ -16875,6 +17326,7 @@ var ship_data = {
         "jp_name": "カサブランカ",
         "en_name": "Casablanca",
         "cn_name": "卡萨布兰卡",
+        "tw_name": "卡薩布蘭卡",
         "equip_1": [
             7
         ],
@@ -16913,6 +17365,7 @@ var ship_data = {
         "jp_name": "ボーグ改",
         "en_name": "Bogue",
         "cn_name": "博格.改",
+        "tw_name": "博格.改",
         "equip_1": [
             7
         ],
@@ -16951,6 +17404,7 @@ var ship_data = {
         "jp_name": "ボーグ",
         "en_name": "Bogue",
         "cn_name": "博格",
+        "tw_name": "博格",
         "equip_1": [
             7
         ],
@@ -16989,6 +17443,7 @@ var ship_data = {
         "jp_name": "ロング・アイランド改",
         "en_name": "Long Island",
         "cn_name": "长岛.改",
+        "tw_name": "長島.改",
         "equip_1": [
             7
         ],
@@ -17027,6 +17482,7 @@ var ship_data = {
         "jp_name": "ロング・アイランド",
         "en_name": "Long Island",
         "cn_name": "长岛",
+        "tw_name": "長島",
         "equip_1": [
             7
         ],
@@ -17065,6 +17521,7 @@ var ship_data = {
         "jp_name": "ジョージア",
         "en_name": "Georgia",
         "cn_name": "佐治亚",
+        "tw_name": "佐治亞",
         "equip_1": [
             4
         ],
@@ -17101,6 +17558,7 @@ var ship_data = {
         "jp_name": "アラバマ",
         "en_name": "Alabama",
         "cn_name": "阿拉巴马",
+        "tw_name": "阿拉巴馬",
         "equip_1": [
             4
         ],
@@ -17137,6 +17595,7 @@ var ship_data = {
         "jp_name": "マサチューセッツ",
         "en_name": "Massachusetts",
         "cn_name": "马萨诸塞",
+        "tw_name": "馬薩諸塞",
         "equip_1": [
             4
         ],
@@ -17173,6 +17632,7 @@ var ship_data = {
         "jp_name": "サウスダコタ",
         "en_name": "South Dakota",
         "cn_name": "南达科他",
+        "tw_name": "南達科他",
         "equip_1": [
             4
         ],
@@ -17209,6 +17669,7 @@ var ship_data = {
         "jp_name": "ワシントン",
         "en_name": "Washington",
         "cn_name": "华盛顿",
+        "tw_name": "華盛頓",
         "equip_1": [
             4
         ],
@@ -17245,6 +17706,7 @@ var ship_data = {
         "jp_name": "ノースカロライナ",
         "en_name": "North Carolina",
         "cn_name": "北卡罗来纳",
+        "tw_name": "北卡羅來納",
         "equip_1": [
             4
         ],
@@ -17281,6 +17743,7 @@ var ship_data = {
         "jp_name": "ウェストバージニア",
         "en_name": "West Virginia",
         "cn_name": "西弗吉尼亚",
+        "tw_name": "西弗吉尼亞",
         "equip_1": [
             4
         ],
@@ -17317,6 +17780,7 @@ var ship_data = {
         "jp_name": "メリーランド",
         "en_name": "Maryland",
         "cn_name": "马里兰",
+        "tw_name": "馬里蘭",
         "equip_1": [
             4
         ],
@@ -17353,6 +17817,7 @@ var ship_data = {
         "jp_name": "コロラド",
         "en_name": "Colorado",
         "cn_name": "科罗拉多",
+        "tw_name": "科羅拉多",
         "equip_1": [
             4
         ],
@@ -17389,6 +17854,7 @@ var ship_data = {
         "jp_name": "カリフォルニア",
         "en_name": "California",
         "cn_name": "加利福尼亚",
+        "tw_name": "加利福尼亞",
         "equip_1": [
             4
         ],
@@ -17425,6 +17891,7 @@ var ship_data = {
         "jp_name": "テネシー",
         "en_name": "Tennessee",
         "cn_name": "田纳西",
+        "tw_name": "田納西",
         "equip_1": [
             4
         ],
@@ -17461,6 +17928,7 @@ var ship_data = {
         "jp_name": "アリゾナ",
         "en_name": "Arizona",
         "cn_name": "亚利桑那",
+        "tw_name": "亞利桑那",
         "equip_1": [
             4
         ],
@@ -17497,6 +17965,7 @@ var ship_data = {
         "jp_name": "ペンシルベニア",
         "en_name": "Pennsylvania",
         "cn_name": "宾夕法尼亚",
+        "tw_name": "賓夕法尼亞",
         "equip_1": [
             4
         ],
@@ -17533,6 +18002,7 @@ var ship_data = {
         "jp_name": "オクラホマ改",
         "en_name": "Oklahoma",
         "cn_name": "俄克拉荷马.改",
+        "tw_name": "俄克拉荷馬.改",
         "equip_1": [
             4
         ],
@@ -17569,6 +18039,7 @@ var ship_data = {
         "jp_name": "オクラホマ",
         "en_name": "Oklahoma",
         "cn_name": "俄克拉荷马",
+        "tw_name": "俄克拉荷馬",
         "equip_1": [
             4
         ],
@@ -17605,6 +18076,7 @@ var ship_data = {
         "jp_name": "ネバダ改",
         "en_name": "Nevada",
         "cn_name": "内华达.改",
+        "tw_name": "內華達.改",
         "equip_1": [
             4
         ],
@@ -17641,6 +18113,7 @@ var ship_data = {
         "jp_name": "ネバダ",
         "en_name": "Nevada",
         "cn_name": "内华达",
+        "tw_name": "內華達",
         "equip_1": [
             4
         ],
@@ -17677,6 +18150,7 @@ var ship_data = {
         "jp_name": "ボルチモア(μ兵装)",
         "en_name": "Baltimore",
         "cn_name": "巴尔的摩(μ兵装)",
+        "tw_name": "巴爾的摩(μ兵裝)",
         "equip_1": [
             3
         ],
@@ -17713,6 +18187,7 @@ var ship_data = {
         "jp_name": "ブレマートン",
         "en_name": "Bremerton",
         "cn_name": "布莱默顿",
+        "tw_name": "布萊默頓",
         "equip_1": [
             3
         ],
@@ -17749,6 +18224,7 @@ var ship_data = {
         "jp_name": "ボルチモア",
         "en_name": "Baltimore",
         "cn_name": "巴尔的摩",
+        "tw_name": "巴爾的摩",
         "equip_1": [
             3
         ],
@@ -17785,6 +18261,7 @@ var ship_data = {
         "jp_name": "ミネアポリス",
         "en_name": "Minneapolis",
         "cn_name": "明尼阿波利斯",
+        "tw_name": "明尼阿波利斯",
         "equip_1": [
             3
         ],
@@ -17821,6 +18298,7 @@ var ship_data = {
         "jp_name": "ウィチタ",
         "en_name": "Wichita",
         "cn_name": "威奇塔",
+        "tw_name": "威奇塔",
         "equip_1": [
             3
         ],
@@ -17857,6 +18335,7 @@ var ship_data = {
         "jp_name": "ヴィンセンス",
         "en_name": "Vincennes",
         "cn_name": "文森斯",
+        "tw_name": "文森斯",
         "equip_1": [
             3
         ],
@@ -17893,6 +18372,7 @@ var ship_data = {
         "jp_name": "クインシー",
         "en_name": "Quincy",
         "cn_name": "昆西",
+        "tw_name": "昆西",
         "equip_1": [
             3
         ],
@@ -17929,6 +18409,7 @@ var ship_data = {
         "jp_name": "アストリア",
         "en_name": "Astoria",
         "cn_name": "阿斯托利亚",
+        "tw_name": "阿斯托利亞",
         "equip_1": [
             3
         ],
@@ -17965,6 +18446,7 @@ var ship_data = {
         "jp_name": "インディアナポリス",
         "en_name": "Indianapolis",
         "cn_name": "印第安纳波利斯",
+        "tw_name": "印第安納波利斯",
         "equip_1": [
             3
         ],
@@ -18001,6 +18483,7 @@ var ship_data = {
         "jp_name": "ポートランド改",
         "en_name": "Portland",
         "cn_name": "波特兰.改",
+        "tw_name": "波特蘭.改",
         "equip_1": [
             3
         ],
@@ -18037,6 +18520,7 @@ var ship_data = {
         "jp_name": "ポートランド",
         "en_name": "Portland",
         "cn_name": "波特兰",
+        "tw_name": "波特蘭",
         "equip_1": [
             3
         ],
@@ -18073,6 +18557,7 @@ var ship_data = {
         "jp_name": "ヒューストン",
         "en_name": "Houston",
         "cn_name": "休斯敦",
+        "tw_name": "休斯敦",
         "equip_1": [
             3
         ],
@@ -18109,6 +18594,7 @@ var ship_data = {
         "jp_name": "シカゴ",
         "en_name": "Chicago",
         "cn_name": "芝加哥",
+        "tw_name": "芝加哥",
         "equip_1": [
             3
         ],
@@ -18145,6 +18631,7 @@ var ship_data = {
         "jp_name": "ノーザンプトン",
         "en_name": "Northampton",
         "cn_name": "北安普敦",
+        "tw_name": "北安普敦",
         "equip_1": [
             3
         ],
@@ -18181,6 +18668,7 @@ var ship_data = {
         "jp_name": "ソルトレイクシティ",
         "en_name": "Salt Lake City",
         "cn_name": "盐湖城",
+        "tw_name": "鹽湖城",
         "equip_1": [
             3
         ],
@@ -18217,6 +18705,7 @@ var ship_data = {
         "jp_name": "ペンサコーラ",
         "en_name": "Pensacola",
         "cn_name": "彭萨科拉",
+        "tw_name": "彭薩科拉",
         "equip_1": [
             3
         ],
@@ -18253,6 +18742,7 @@ var ship_data = {
         "jp_name": "シアトル",
         "en_name": "Seattle",
         "cn_name": "西雅图",
+        "tw_name": "西雅圖",
         "equip_1": [
             2
         ],
@@ -18292,6 +18782,7 @@ var ship_data = {
         "jp_name": "マーブルヘッド",
         "en_name": "Marblehead",
         "cn_name": "马布尔黑德",
+        "tw_name": "馬布爾黑德",
         "equip_1": [
             2
         ],
@@ -18330,6 +18821,7 @@ var ship_data = {
         "jp_name": "リノ",
         "en_name": "Reno",
         "cn_name": "里诺",
+        "tw_name": "里諾",
         "equip_1": [
             1,
             2
@@ -18369,6 +18861,7 @@ var ship_data = {
         "jp_name": "ビロクシ",
         "en_name": "Biloxi",
         "cn_name": "比洛克西",
+        "tw_name": "比洛克西",
         "equip_1": [
             2
         ],
@@ -18407,6 +18900,7 @@ var ship_data = {
         "jp_name": "クリーブランド(μ兵装)",
         "en_name": "Cleveland",
         "cn_name": "克利夫兰(μ兵装)",
+        "tw_name": "克利夫蘭(μ兵裝)",
         "equip_1": [
             2
         ],
@@ -18445,6 +18939,7 @@ var ship_data = {
         "jp_name": "バーミンガム",
         "en_name": "Birmingham",
         "cn_name": "伯明翰",
+        "tw_name": "伯明翰",
         "equip_1": [
             2
         ],
@@ -18483,6 +18978,7 @@ var ship_data = {
         "jp_name": "サンフアン",
         "en_name": "San Juan",
         "cn_name": "圣胡安",
+        "tw_name": "聖胡安",
         "equip_1": [
             1,
             2
@@ -18522,6 +19018,7 @@ var ship_data = {
         "jp_name": "リトル・サンディエゴ",
         "en_name": "San Diego",
         "cn_name": "小圣地亚哥",
+        "tw_name": "小聖地亞哥",
         "equip_1": [
             1,
             2
@@ -18561,6 +19058,7 @@ var ship_data = {
         "jp_name": "リトル・クリーブランド",
         "en_name": "Cleveland",
         "cn_name": "小克利夫兰",
+        "tw_name": "小克利夫蘭",
         "equip_1": [
             2
         ],
@@ -18599,6 +19097,7 @@ var ship_data = {
         "jp_name": "リトル・ヘレナ",
         "en_name": "Helena",
         "cn_name": "小海伦娜",
+        "tw_name": "小海倫娜",
         "equip_1": [
             2
         ],
@@ -18637,6 +19136,7 @@ var ship_data = {
         "jp_name": "コンコード",
         "en_name": "Concord",
         "cn_name": "康克德",
+        "tw_name": "康克德",
         "equip_1": [
             2
         ],
@@ -18675,6 +19175,7 @@ var ship_data = {
         "jp_name": "メンフィス",
         "en_name": "Memphis",
         "cn_name": "孟菲斯",
+        "tw_name": "孟菲斯",
         "equip_1": [
             2
         ],
@@ -18713,6 +19214,7 @@ var ship_data = {
         "jp_name": "デンバー",
         "en_name": "Denver",
         "cn_name": "丹佛",
+        "tw_name": "丹佛",
         "equip_1": [
             2
         ],
@@ -18751,6 +19253,7 @@ var ship_data = {
         "jp_name": "モントピリア",
         "en_name": "Montpelier",
         "cn_name": "蒙彼利埃",
+        "tw_name": "蒙彼利埃",
         "equip_1": [
             2
         ],
@@ -18789,6 +19292,7 @@ var ship_data = {
         "jp_name": "セントルイス",
         "en_name": "St.Louis",
         "cn_name": "圣路易斯",
+        "tw_name": "聖路易斯",
         "equip_1": [
             2
         ],
@@ -18827,6 +19331,7 @@ var ship_data = {
         "jp_name": "ホノルル",
         "en_name": "Honolulu",
         "cn_name": "火奴鲁鲁",
+        "tw_name": "火奴魯魯",
         "equip_1": [
             2
         ],
@@ -18865,6 +19370,7 @@ var ship_data = {
         "jp_name": "リッチモンド",
         "en_name": "Richmond",
         "cn_name": "里士满",
+        "tw_name": "里士滿",
         "equip_1": [
             2
         ],
@@ -18903,6 +19409,7 @@ var ship_data = {
         "jp_name": "コロンビア",
         "en_name": "Columbia",
         "cn_name": "哥伦比亚",
+        "tw_name": "哥倫比亞",
         "equip_1": [
             2
         ],
@@ -18941,6 +19448,7 @@ var ship_data = {
         "jp_name": "クリーブランド",
         "en_name": "Cleveland",
         "cn_name": "克利夫兰",
+        "tw_name": "克利夫蘭",
         "equip_1": [
             2
         ],
@@ -18979,6 +19487,7 @@ var ship_data = {
         "jp_name": "サンディエゴ改",
         "en_name": "San Diego",
         "cn_name": "圣地亚哥.改",
+        "tw_name": "聖地亞哥.改",
         "equip_1": [
             1,
             2
@@ -19018,6 +19527,7 @@ var ship_data = {
         "jp_name": "サンディエゴ",
         "en_name": "San Diego",
         "cn_name": "圣地亚哥",
+        "tw_name": "聖地亞哥",
         "equip_1": [
             1,
             2
@@ -19057,6 +19567,7 @@ var ship_data = {
         "jp_name": "ジュノー",
         "en_name": "Juneau",
         "cn_name": "朱诺",
+        "tw_name": "朱諾",
         "equip_1": [
             1,
             2
@@ -19096,6 +19607,7 @@ var ship_data = {
         "jp_name": "アトランタ",
         "en_name": "Atlanta",
         "cn_name": "亚特兰大",
+        "tw_name": "亞特蘭大",
         "equip_1": [
             1,
             2
@@ -19135,6 +19647,7 @@ var ship_data = {
         "jp_name": "ヘレナ改",
         "en_name": "Helena",
         "cn_name": "海伦娜.改",
+        "tw_name": "海倫娜.改",
         "equip_1": [
             2
         ],
@@ -19173,6 +19686,7 @@ var ship_data = {
         "jp_name": "ヘレナ",
         "en_name": "Helena",
         "cn_name": "海伦娜",
+        "tw_name": "海倫娜",
         "equip_1": [
             2
         ],
@@ -19211,6 +19725,7 @@ var ship_data = {
         "jp_name": "フェニックス",
         "en_name": "Phoenix",
         "cn_name": "菲尼克斯",
+        "tw_name": "菲尼克斯",
         "equip_1": [
             2
         ],
@@ -19249,6 +19764,7 @@ var ship_data = {
         "jp_name": "ブルックリン",
         "en_name": "Brooklyn",
         "cn_name": "布鲁克林",
+        "tw_name": "布魯克林",
         "equip_1": [
             2
         ],
@@ -19287,6 +19803,7 @@ var ship_data = {
         "jp_name": "ローリー",
         "en_name": "Raleigh",
         "cn_name": "罗利",
+        "tw_name": "羅利",
         "equip_1": [
             2
         ],
@@ -19325,6 +19842,7 @@ var ship_data = {
         "jp_name": "オマハ",
         "en_name": "Omaha",
         "cn_name": "奥马哈",
+        "tw_name": "奧馬哈",
         "equip_1": [
             2
         ],
@@ -19363,6 +19881,7 @@ var ship_data = {
         "jp_name": "ステフェン・ポッター",
         "en_name": "Stephen Potter",
         "cn_name": "史蒂芬·波特",
+        "tw_name": "史蒂芬·波特",
         "equip_1": [
             1
         ],
@@ -19401,6 +19920,7 @@ var ship_data = {
         "jp_name": "アレン・M・サムナー",
         "en_name": "Allen M. Sumner ",
         "cn_name": "艾伦·萨姆纳",
+        "tw_name": "艾倫·薩姆納",
         "equip_1": [
             1
         ],
@@ -19439,6 +19959,7 @@ var ship_data = {
         "jp_name": "クーパー",
         "en_name": "Cooper",
         "cn_name": "库珀",
+        "tw_name": "庫珀",
         "equip_1": [
             1
         ],
@@ -19477,6 +19998,7 @@ var ship_data = {
         "jp_name": "ハルゼー・パウエル",
         "en_name": "Halsey Powell",
         "cn_name": "哈尔西鲍威尔",
+        "tw_name": "哈爾西鮑威爾",
         "equip_1": [
             1
         ],
@@ -19515,6 +20037,7 @@ var ship_data = {
         "jp_name": "スモーリー",
         "en_name": "Smalley",
         "cn_name": "斯莫利",
+        "tw_name": "斯莫利",
         "equip_1": [
             1
         ],
@@ -19553,6 +20076,7 @@ var ship_data = {
         "jp_name": "スタンリー",
         "en_name": "Stanly",
         "cn_name": "斯坦利",
+        "tw_name": "斯坦利",
         "equip_1": [
             1
         ],
@@ -19591,6 +20115,7 @@ var ship_data = {
         "jp_name": "エールウィン",
         "en_name": "Aylwin",
         "cn_name": "艾尔温",
+        "tw_name": "艾爾溫",
         "equip_1": [
             1
         ],
@@ -19629,6 +20154,7 @@ var ship_data = {
         "jp_name": "マラニー",
         "en_name": "Mullany",
         "cn_name": "马拉尼",
+        "tw_name": "馬拉尼",
         "equip_1": [
             1
         ],
@@ -19667,6 +20193,7 @@ var ship_data = {
         "jp_name": "キンバリー",
         "en_name": "Kimberly",
         "cn_name": "金伯利",
+        "tw_name": "金伯利",
         "equip_1": [
             1
         ],
@@ -19705,6 +20232,7 @@ var ship_data = {
         "jp_name": "カーク",
         "en_name": "Kalk",
         "cn_name": "科尔克",
+        "tw_name": "科爾克",
         "equip_1": [
             1
         ],
@@ -19743,6 +20271,7 @@ var ship_data = {
         "jp_name": "ホビー",
         "en_name": "Hobby",
         "cn_name": "霍比",
+        "tw_name": "霍比",
         "equip_1": [
             1
         ],
@@ -19781,6 +20310,7 @@ var ship_data = {
         "jp_name": "バッチ",
         "en_name": "Bache",
         "cn_name": "贝奇",
+        "tw_name": "貝奇",
         "equip_1": [
             1
         ],
@@ -19819,6 +20349,7 @@ var ship_data = {
         "jp_name": "ヘイゼルウッド",
         "en_name": "Hazelwood",
         "cn_name": "黑泽伍德",
+        "tw_name": "黑澤伍德",
         "equip_1": [
             1
         ],
@@ -19857,6 +20388,7 @@ var ship_data = {
         "jp_name": "ブッシュ",
         "en_name": "Bush",
         "cn_name": "布什",
+        "tw_name": "布什",
         "equip_1": [
             1
         ],
@@ -19895,6 +20427,7 @@ var ship_data = {
         "jp_name": "ニコラス改",
         "en_name": "Nicholas",
         "cn_name": "尼古拉斯.改",
+        "tw_name": "尼古拉斯.改",
         "equip_1": [
             1
         ],
@@ -19933,6 +20466,7 @@ var ship_data = {
         "jp_name": "ニコラス",
         "en_name": "Nicholas",
         "cn_name": "尼古拉斯",
+        "tw_name": "尼古拉斯",
         "equip_1": [
             1
         ],
@@ -19971,6 +20505,7 @@ var ship_data = {
         "jp_name": "ジェンキンス",
         "en_name": "Jenkins",
         "cn_name": "杰金斯",
+        "tw_name": "傑金斯",
         "equip_1": [
             1
         ],
@@ -20009,6 +20544,7 @@ var ship_data = {
         "jp_name": "ラドフォード",
         "en_name": "Radford",
         "cn_name": "拉德福特",
+        "tw_name": "拉德福特",
         "equip_1": [
             1
         ],
@@ -20047,6 +20583,7 @@ var ship_data = {
         "jp_name": "ベイリー改",
         "en_name": "Bailey",
         "cn_name": "贝利.改",
+        "tw_name": "貝利.改",
         "equip_1": [
             1
         ],
@@ -20085,6 +20622,7 @@ var ship_data = {
         "jp_name": "ベイリー",
         "en_name": "Bailey",
         "cn_name": "贝利",
+        "tw_name": "貝利",
         "equip_1": [
             1
         ],
@@ -20123,6 +20661,7 @@ var ship_data = {
         "jp_name": "エルドリッジ",
         "en_name": "Eldridge",
         "cn_name": "埃尔德里奇",
+        "tw_name": "埃爾德里奇",
         "equip_1": [
             1
         ],
@@ -20161,6 +20700,7 @@ var ship_data = {
         "jp_name": "ハムマン改",
         "en_name": "Hammann",
         "cn_name": "哈曼.改",
+        "tw_name": "哈曼.改",
         "equip_1": [
             1
         ],
@@ -20199,6 +20739,7 @@ var ship_data = {
         "jp_name": "ハムマン",
         "en_name": "Hammann",
         "cn_name": "哈曼",
+        "tw_name": "哈曼",
         "equip_1": [
             1
         ],
@@ -20237,6 +20778,7 @@ var ship_data = {
         "jp_name": "シムス改",
         "en_name": "Sims",
         "cn_name": "西姆斯.改",
+        "tw_name": "西姆斯.改",
         "equip_1": [
             1
         ],
@@ -20275,6 +20817,7 @@ var ship_data = {
         "jp_name": "シムス",
         "en_name": "Sims",
         "cn_name": "西姆斯",
+        "tw_name": "西姆斯",
         "equip_1": [
             1
         ],
@@ -20313,6 +20856,7 @@ var ship_data = {
         "jp_name": "ラフィー改",
         "en_name": "Laffey",
         "cn_name": "拉菲.改",
+        "tw_name": "拉菲.改",
         "equip_1": [
             1
         ],
@@ -20351,6 +20895,7 @@ var ship_data = {
         "jp_name": "ラフィー",
         "en_name": "Laffey",
         "cn_name": "拉菲",
+        "tw_name": "拉菲",
         "equip_1": [
             1
         ],
@@ -20389,6 +20934,7 @@ var ship_data = {
         "jp_name": "ベンソン",
         "en_name": "Benson",
         "cn_name": "本森",
+        "tw_name": "本森",
         "equip_1": [
             1
         ],
@@ -20427,6 +20973,7 @@ var ship_data = {
         "jp_name": "スペンス",
         "en_name": "Spence",
         "cn_name": "斯彭斯",
+        "tw_name": "斯彭斯",
         "equip_1": [
             1
         ],
@@ -20465,6 +21012,7 @@ var ship_data = {
         "jp_name": "フート",
         "en_name": "Foote",
         "cn_name": "富特",
+        "tw_name": "富特",
         "equip_1": [
             1
         ],
@@ -20503,6 +21051,7 @@ var ship_data = {
         "jp_name": "オーリック",
         "en_name": "Aulick",
         "cn_name": "奥利克",
+        "tw_name": "奧利克",
         "equip_1": [
             1
         ],
@@ -20541,6 +21090,7 @@ var ship_data = {
         "jp_name": "サッチャー",
         "en_name": "Thatcher",
         "cn_name": "撒切尔",
+        "tw_name": "撒切爾",
         "equip_1": [
             1
         ],
@@ -20579,6 +21129,7 @@ var ship_data = {
         "jp_name": "チャールズ・オースバーン",
         "en_name": "Charles Ausburne",
         "cn_name": "查尔斯·奥斯本",
+        "tw_name": "查爾斯·奧斯本",
         "equip_1": [
             1
         ],
@@ -20617,6 +21168,7 @@ var ship_data = {
         "jp_name": "フレッチャー",
         "en_name": "Fletcher",
         "cn_name": "弗莱彻",
+        "tw_name": "弗萊徹",
         "equip_1": [
             1
         ],
@@ -20655,6 +21207,7 @@ var ship_data = {
         "jp_name": "モーリー",
         "en_name": "Maury",
         "cn_name": "莫里",
+        "tw_name": "莫里",
         "equip_1": [
             1
         ],
@@ -20693,6 +21246,7 @@ var ship_data = {
         "jp_name": "マッコール",
         "en_name": "McCall",
         "cn_name": "麦考尔",
+        "tw_name": "麥考爾",
         "equip_1": [
             1
         ],
@@ -20731,6 +21285,7 @@ var ship_data = {
         "jp_name": "クレイヴン",
         "en_name": "Craven",
         "cn_name": "克雷文",
+        "tw_name": "克雷文",
         "equip_1": [
             1
         ],
@@ -20769,6 +21324,7 @@ var ship_data = {
         "jp_name": "グリッドレイ",
         "en_name": "Gridley",
         "cn_name": "格里德利",
+        "tw_name": "格里德利",
         "equip_1": [
             1
         ],
@@ -20807,6 +21363,7 @@ var ship_data = {
         "jp_name": "ダウンズ改",
         "en_name": "Downes",
         "cn_name": "唐斯.改",
+        "tw_name": "唐斯.改",
         "equip_1": [
             1
         ],
@@ -20845,6 +21402,7 @@ var ship_data = {
         "jp_name": "ダウンズ",
         "en_name": "Downes",
         "cn_name": "唐斯",
+        "tw_name": "唐斯",
         "equip_1": [
             1
         ],
@@ -20883,6 +21441,7 @@ var ship_data = {
         "jp_name": "カッシン改",
         "en_name": "Cassin",
         "cn_name": "卡辛.改",
+        "tw_name": "卡辛.改",
         "equip_1": [
             1
         ],
@@ -20921,6 +21480,7 @@ var ship_data = {
         "jp_name": "カッシン",
         "en_name": "Cassin",
         "cn_name": "卡辛",
+        "tw_name": "卡辛",
         "equip_1": [
             1
         ],
@@ -20959,6 +21519,7 @@ var ship_data = {
         "jp_name": "デューイ",
         "en_name": "Dewey",
         "cn_name": "杜威",
+        "tw_name": "杜威",
         "equip_1": [
             1
         ],
