@@ -9,9 +9,9 @@ Is just for easily share fleet configuration in one shot
   - convert from CN cause TW server missing some data
 - add result count for ship
 - use EN as default language
-- use correct EN name instead of convert from this
-  ![](https://i.imgur.com/w0MOsdK.png)
-  now the search support this name too
+- use correct EN name instead of convert from this  
+  ![](https://i.imgur.com/w0MOsdK.png)  
+  now the search support this name too  
 
 **2021-05-06**
 - add layout switch
