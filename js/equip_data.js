@@ -61,7 +61,7 @@ var equip_data = {
         ],
         "jp_name": "雷撃戦資材(積載)",
         "cn_name": "兵装补给(鱼雷)",
-        "tw_name": "兵裝補給（魚雷）",
+        "tw_name": "兵裝補給(魚雷)",
         "en_name": "Torpedo Materials (Cargo)",
         "equip_limit": 3400
     },
@@ -94,7 +94,7 @@ var equip_data = {
         ],
         "jp_name": "航空戦資材(積載)",
         "cn_name": "兵装补给(航空)",
-        "tw_name": "兵裝補給（航空）",
+        "tw_name": "兵裝補給(航空)",
         "en_name": "Aviation Materials (Cargo)",
         "equip_limit": 3400
     },
@@ -127,7 +127,7 @@ var equip_data = {
         ],
         "jp_name": "小口径主砲砲戦資材(積載)",
         "cn_name": "兵装补给(中小口径武器)",
-        "tw_name": "兵裝補給（中小口徑武器）",
+        "tw_name": "兵裝補給(中小口徑武器)",
         "en_name": "Small-Caliber Naval Gun Parts (Cargo)",
         "equip_limit": 3400
     },
@@ -1640,7 +1640,7 @@ var equip_data = {
         ],
         "jp_name": "533mm磁気魚雷(水上艦用)",
         "cn_name": "533mm磁性鱼雷(水面舰艇用)",
-        "tw_name": "533mm磁性魚雷（水面艦艇用）",
+        "tw_name": "533mm磁性魚雷(水面艦艇用)",
         "en_name": "533mm Magnetic Torpedo",
         "equip_limit": 0
     },
@@ -4823,7 +4823,7 @@ var equip_data = {
         "jp_name": "TBDデバステイター(VT-8中隊)",
         "cn_name": "TBD蹂躏者(VT-8中队)",
         "tw_name": "TBD蹂躪者(VT-8中隊)",
-        "en_name": "TBD Devastator (VT-8 Squadron) ",
+        "en_name": "TBD Devastator (VT-8 Squadron)",
         "equip_limit": 0
     },
     "18040": {
@@ -5317,7 +5317,7 @@ var equip_data = {
         "jp_name": "紫電改二",
         "cn_name": "紫电改二",
         "tw_name": "紫電改二",
-        "en_name": "Kawanishi N1K3-A Shiden Kai 2 ",
+        "en_name": "Kawanishi N1K3-A Shiden Kai 2",
         "equip_limit": 0
     },
     "37340": {
@@ -5450,7 +5450,7 @@ var equip_data = {
         "jp_name": "シーホーネット",
         "cn_name": "海大黄蜂",
         "tw_name": "海大黃蜂",
-        "en_name": "Sea Hornet ",
+        "en_name": "Sea Hornet",
         "equip_limit": 0
     },
     "27300": {
@@ -5829,7 +5829,7 @@ var equip_data = {
         ],
         "jp_name": "F4U(VF-17中隊)",
         "cn_name": "F4U(VF-17“海盗”中队)",
-        "tw_name": "F4U（VF-17“海盜”中隊）",
+        "tw_name": "F4U(VF-17“海盜”中隊)",
         "en_name": "F4U (VF-17 \"Pirate\" Squad)",
         "equip_limit": 0
     },
@@ -7040,7 +7040,7 @@ var equip_data = {
         "jp_name": "六連装ボフォース40mm対空砲",
         "cn_name": "六联装40mm博福斯对空机炮",
         "tw_name": "六聯裝40mm博福斯對空機炮",
-        "en_name": "Sextuple 40mm Bofors AA Gun Mount ",
+        "en_name": "Sextuple 40mm Bofors AA Gun Mount",
         "equip_limit": 0
     },
     "26140": {
@@ -7227,7 +7227,7 @@ var equip_data = {
         "jp_name": "20mmエリコン高角砲MkII",
         "cn_name": "20mm厄利孔高射炮MkII",
         "tw_name": "20mm厄利孔高射炮MkII",
-        "en_name": "Single 20mm Mk II Oerlikon AA Gun Mount ",
+        "en_name": "Single 20mm Mk II Oerlikon AA Gun Mount",
         "equip_limit": 0
     },
     "26640": {
@@ -7941,7 +7941,7 @@ var equip_data = {
         "jp_name": "533mm五連装磁気魚雷",
         "cn_name": "五联装533mm磁性鱼雷",
         "tw_name": "五聯裝533mm磁性魚雷",
-        "en_name": "533mm Quintuple Magnetic Torpedo Mount ",
+        "en_name": "533mm Quintuple Magnetic Torpedo Mount",
         "equip_limit": 0
     },
     "45220": {
@@ -7958,7 +7958,7 @@ var equip_data = {
         "jp_name": "533mm五連装磁気魚雷",
         "cn_name": "五联装533mm磁性鱼雷",
         "tw_name": "五聯裝533mm磁性魚雷",
-        "en_name": "533mm Quintuple Magnetic Torpedo Mount ",
+        "en_name": "533mm Quintuple Magnetic Torpedo Mount",
         "equip_limit": 0
     },
     "45200": {
@@ -7975,7 +7975,7 @@ var equip_data = {
         "jp_name": "533mm五連装磁気魚雷",
         "cn_name": "五联装533mm磁性鱼雷",
         "tw_name": "五聯裝533mm磁性魚雷",
-        "en_name": "533mm Quintuple Magnetic Torpedo Mount ",
+        "en_name": "533mm Quintuple Magnetic Torpedo Mount",
         "equip_limit": 0
     },
     "45040": {
@@ -8487,7 +8487,7 @@ var equip_data = {
         "jp_name": "試作型406mm/50三連装砲",
         "cn_name": "试作型三联装406mm/50主炮",
         "tw_name": "試作型三聯裝406mm/50主炮",
-        "en_name": "Prototype Triple 406mm /50 Main Gun Mount ",
+        "en_name": "Prototype Triple 406mm /50 Main Gun Mount",
         "equip_limit": 0
     },
     "90440": {
@@ -8924,7 +8924,7 @@ var equip_data = {
         "jp_name": "毘式356mm連装砲",
         "cn_name": "356mm毘式连装炮",
         "tw_name": "356mm毘式連裝炮",
-        "en_name": "Twin 356mm 41st Year Type Naval Gun Mount ",
+        "en_name": "Twin 356mm 41st Year Type Naval Gun Mount",
         "equip_limit": 0
     },
     "34300": {
@@ -9095,7 +9095,7 @@ var equip_data = {
         "jp_name": "305mm連装砲",
         "cn_name": "305mm连装炮",
         "tw_name": "305mm連裝炮",
-        "en_name": "Twin 356mm 41st Year Type Naval Gun Mount ",
+        "en_name": "Twin 356mm 41st Year Type Naval Gun Mount",
         "equip_limit": 0
     },
     "24160": {
@@ -10670,8 +10670,8 @@ var equip_data = {
         "icon": "55600",
         "ship_type_forbidden": [],
         "jp_name": "152mm三連装砲Model1934",
-        "cn_name": "三联装152mm主炮Model1934 ",
-        "tw_name": "三聯裝152mm主炮Model1934 ",
+        "cn_name": "三联装152mm主炮Model1934",
+        "tw_name": "三聯裝152mm主炮Model1934",
         "en_name": "Triple 152mm Model 1934 Main Gun Mount",
         "equip_limit": 0
     },
@@ -10786,7 +10786,7 @@ var equip_data = {
         "jp_name": "150mmTbtsKC36単装砲",
         "cn_name": "单装TbtsKC36式150mm主炮",
         "tw_name": "單裝TbtsKC36式150mm主炮",
-        "en_name": "Single 150mm TbtsK C/36 Main Gun Mount ",
+        "en_name": "Single 150mm TbtsK C/36 Main Gun Mount",
         "equip_limit": 0
     },
     "42240": {
