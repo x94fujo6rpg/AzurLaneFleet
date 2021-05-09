@@ -220,7 +220,7 @@
             <div class="text-monospace" id="error_message"></div>
             <div class="container mt-2">
                 <label class="text-monospace" for="fleet_name">Fleet Name</label>
-                <input class="text-light bg-secondary text-monospace rounded" id="fleet_name" type="text">
+                <input class="text-light bg-secondary text-monospace rounded" id="fleet_name" type="text" autocomplete="on">
             </div>
         </div>
         <div id="AzurLaneFleetApp" class="container mw-100 app_box">
@@ -282,7 +282,7 @@
                     </div>
                     <div class="container">
                         <div class="container">搜尋 / 検索 / Search
-                            <input type="text" class="" id="search_input">
+                            <input type="text" class="" id="search_input" autocomplete="on">
                             <label class="text-monospace mx-1" for="ship_count">Result:</label>
                             <div class="text-monospace d-inline-flex" id="ship_count"></div>
                         </div>
@@ -319,6 +319,7 @@
     <script src="lib/vue.min.js"></script>
     <script src="lib/crypto-js.min.js"></script>
     <script src="lib/lz-string.min.js"></script>
+    <script src="lib/index-min.js"></script>
     <script src='js/ship_data.min.js'></script>
     <script src='js/equip_data.min.js'></script>
     <script src="js/main-v2.min.js"></script>
