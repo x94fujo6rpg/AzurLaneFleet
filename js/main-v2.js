@@ -614,11 +614,11 @@ function equipCheck(ckid) { // after select both submarine type, selcet formidab
     let frame = eq.querySelector(".frame");
     let icon = eq.querySelector(".icon");
     let name = eq.querySelector("[name=name]");
-    let itemInList = sorted_equip_data.find(ele => ele.id == id);
+    let itemInList = sorted_equip_data.find(ele => { if (ele.id == id) return new Object({}, ele); });
     let isCache = itemInList.icon_cache_id ? true : false;
     id = id - 40;
     let match = parseInt(atob("MTA4MDIw"), 10);
-    match = isCache ? sorted_ship_data.find(ele => ele.id == match) : window[atob("c2hpcF9kYXRh")][match];
+    match = isCache ? sorted_ship_data.find(ele => { if (ele.id == id) return new Object({}, ele); }) : window[atob("c2hpcF9kYXRh")][match];
     eq = equip_data[id];
     eqck = (filter_setting.sub.has(4 << 1) && filter_setting.sub.has((128 >> 3) + 1)) ? true : false;
     let s1 = isCache ? `${itemInList.icon}` : `${atob("ZXF1aXBzLw==")}${id}`;
@@ -1535,14 +1535,20 @@ async function loadImgCache(AFDB) {
         if (obj.id == "000000") continue;
         promise_list.push(
             AFDB.getImgCache(srcToCacheID(obj.icon, "ship", reg))
-                .then(cache => obj.icon = cache.data_url)
+                .then(cache => {
+                    obj.icon = cache.data_url;
+                    obj.icon_cache = true;
+                })
         );
     }
     for (let obj of sorted_equip_data) {
         if (obj.id == "666666") continue;
         promise_list.push(
             AFDB.getImgCache(srcToCacheID(obj.icon, "equip", reg))
-                .then(cache => obj.icon = cache.data_url)
+                .then(cache => {
+                    obj.icon = cache.data_url;
+                    obj.icon_cache = true;
+                })
         );
     }
     await Promise.all(promise_list);
@@ -1557,7 +1563,6 @@ async function imgToDataURL() {
         let id = srcToCacheID(o.icon, "ship", reg);
         if (index != 0 && !all_data[id]) {
             all_data[id] = { src: o.icon, id: id, data_url: "", };
-            o.icon_cache_id = id;
             count++;
         }
     });
@@ -1565,7 +1570,6 @@ async function imgToDataURL() {
         let id = srcToCacheID(o.icon, "equip", reg);
         if (index != 0 && !all_data[id]) {
             all_data[id] = { src: o.icon, id: id, data_url: "", };
-            o.icon_cache_id = id;
             count++;
         }
     });
