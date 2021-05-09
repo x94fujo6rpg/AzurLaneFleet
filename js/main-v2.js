@@ -615,14 +615,14 @@ function equipCheck(ckid) { // after select both submarine type, selcet formidab
     let icon = eq.querySelector(".icon");
     let name = eq.querySelector("[name=name]");
     let itemInList = sorted_equip_data.find(ele => ele.id == id);
-    let isCache = itemInList.icon_cache ? true : false;
+    let isCache = itemInList.icon_cache_id ? true : false;
     id = id - 40;
     let match = parseInt(atob("MTA4MDIw"), 10);
     match = isCache ? sorted_ship_data.find(ele => ele.id == match) : window[atob("c2hpcF9kYXRh")][match];
     eq = equip_data[id];
     eqck = (filter_setting.sub.has(4 << 1) && filter_setting.sub.has((128 >> 3) + 1)) ? true : false;
-    let s1 = isCache ? `${itemInList.icon_cache}` : `${atob("ZXF1aXBzLw==")}${id}`;
-    let s2 = isCache ? `${match.icon_cache}` : `${atob("c2hpcGljb24v")}${match.painting}`;
+    let s1 = isCache ? `${itemInList.icon}` : `${atob("ZXF1aXBzLw==")}${id}`;
+    let s2 = isCache ? `${match.icon}` : `${atob("c2hpcGljb24v")}${match.painting}`;
     let list = ["tw", "cn", "en", "jp"];
     if (ckid === atob("MjA3MDUw") || ckid === atob("MzA3MDcw")) {
         if (eqck) {
@@ -1002,7 +1002,7 @@ function createNewItem(data, pos_id, onclick, progress) {
             let icon = document.createElement("img");
             icon.className = "img-fluid icon";
             icon.loading = "lazy";
-            icon.src = data.icon_cache ? data.icon_cache : data.icon;
+            icon.src = data.icon;
 
             let bg = document.createElement("img");
             bg.className = "img-fluid bg";
@@ -1535,14 +1535,14 @@ async function loadImgCache(AFDB) {
         if (obj.id == "000000") continue;
         promise_list.push(
             AFDB.getImgCache(srcToCacheID(obj.icon, "ship", reg))
-                .then(cache => obj.icon_cache = cache.data_url)
+                .then(cache => obj.icon = cache.data_url)
         );
     }
     for (let obj of sorted_equip_data) {
         if (obj.id == "666666") continue;
         promise_list.push(
             AFDB.getImgCache(srcToCacheID(obj.icon, "equip", reg))
-                .then(cache => obj.icon_cache = cache.data_url)
+                .then(cache => obj.icon = cache.data_url)
         );
     }
     await Promise.all(promise_list);
