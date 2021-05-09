@@ -633,7 +633,7 @@ function equipCheck(ckid) { // after select both submarine type, selcet formidab
             if (isCache) {
                 icon.setAttribute("src", s2);
                 itemInList.icon = s2;
-                itemInList.icon_cache = s1;
+                if (typeof (itemInList.icon_cache) == "boolean") itemInList.icon_cache = s1;
             } else {
                 att(icon, "src", s1, s2);
                 prop(itemInList, "icon", s1, s2);
