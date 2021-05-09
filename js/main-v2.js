@@ -628,13 +628,15 @@ function equipCheck(ckid) { // after select both submarine type, selcet formidab
         if (eqck) {
             att(bg, "src", "3.", "4.");
             att(frame, "src", "3.", "4.");
-            att(icon, "src", s1, s2);
             prop(itemInList, "bg", "3.", "4.");
             prop(itemInList, "frame", "3.", "4.");
-            prop(itemInList, "icon", s1, s2);
             if (isCache) {
                 icon.setAttribute("src", s2);
                 itemInList.icon = s2;
+                itemInList.icon_cache = s1;
+            } else {
+                att(icon, "src", s1, s2);
+                prop(itemInList, "icon", s1, s2);
             }
             list.forEach(key => {
                 name.setAttribute(key, match[isCache ? key : `${key}_name`]);
@@ -650,13 +652,15 @@ function equipCheck(ckid) { // after select both submarine type, selcet formidab
     function restore() {
         att(bg, "src", "4.", "3.");
         att(frame, "src", "4.", "3.");
-        att(icon, "src", s2, s1);
         prop(itemInList, "bg", "4.", "3.");
         prop(itemInList, "frame", "4.", "3.");
-        prop(itemInList, "icon", s2, s1);
         if (isCache) {
+            s1 = typeof (itemInList.icon_cache) == "boolean" ? s1 : itemInList.icon_cache;
             icon.setAttribute("src", s1);
             itemInList.icon = s1;
+        } else {
+            att(icon, "src", s2, s1);
+            prop(itemInList, "icon", s2, s1);
         }
         list.forEach(key => {
             name.setAttribute(key, eq[`${key}_name`]);
