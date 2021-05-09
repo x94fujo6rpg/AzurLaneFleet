@@ -4,6 +4,10 @@ Is just for easily share fleet configuration in one shot
 ![](https://i.imgur.com/4n7swTV.jpg)
 
 ## Update  
+**2021-05-10**
+- reduce server traffic (use [idb(indexedDB)](https://github.com/jakearchibald/idb) to cache/load images)
+- enable autocomplete for `ship search` & `fleet name`
+
 **2021-05-07**
 - add TW (Traditional Chinese)
   - convert from CN cause TW server missing some data
