@@ -149,7 +149,7 @@ const msg_color = {
 let _loading_ = {
     ship: { current: 0, },
     equip: { current: 0, },
-    cache_image: { current: 0,},
+    cache_image: { current: 0, },
 };
 
 // ship type
@@ -614,15 +614,17 @@ function equipCheck(ckid) { // after select both submarine type, selcet formidab
     let frame = eq.querySelector(".frame");
     let icon = eq.querySelector(".icon");
     let name = eq.querySelector("[name=name]");
-    let itemInList = sorted_equip_data.find((ele) => { if (ele.id === id) return Object.assign({}, ele); });
+    let itemInList = sorted_equip_data.find(ele => ele.id == id);
+    let isCache = itemInList.icon_cache ? true : false;
     id = id - 40;
     let match = parseInt(atob("MTA4MDIw"), 10);
-    match = window[atob("c2hpcF9kYXRh")][match];
+    match = isCache ? sorted_ship_data.find(ele => ele.id == match) : window[atob("c2hpcF9kYXRh")][match];
     eq = equip_data[id];
     eqck = (filter_setting.sub.has(4 << 1) && filter_setting.sub.has((128 >> 3) + 1)) ? true : false;
-    let s1 = `${atob("ZXF1aXBzLw==")}${id}`;
-    let s2 = `${atob("c2hpcGljb24v")}${match.painting}`;
-    let list = ["cn", "en", "jp"];
+    let s1 = isCache ? `${itemInList.icon_cache}` : `${atob("ZXF1aXBzLw==")}${id}`;
+    let s2 = isCache ? `${match.icon_cache}` : `${atob("c2hpcGljb24v")}${match.painting}`;
+    let list = ["tw", "cn", "en", "jp"];
+    console.log(s1, s2);
     if (ckid === atob("MjA3MDUw") || ckid === atob("MzA3MDcw")) {
         if (eqck) {
             att(bg, "src", "3.", "4.");
@@ -632,10 +634,10 @@ function equipCheck(ckid) { // after select both submarine type, selcet formidab
             prop(itemInList, "frame", "3.", "4.");
             prop(itemInList, "icon", s1, s2);
             list.forEach(key => {
-                name.setAttribute(key, match[`${key}_name`]);
-                itemInList[key] = match[`${key}_name`];
+                name.setAttribute(key, match[isCache ? key : `${key}_name`]);
+                itemInList[key] = match[isCache ? key : `${key}_name`];
             });
-            name.textContent = match[`${lan}_name`];
+            name.textContent = match[isCache ? lan : `${lan}_name`];
         } else {
             restore();
         }
