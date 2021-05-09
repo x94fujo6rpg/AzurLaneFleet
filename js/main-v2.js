@@ -624,7 +624,6 @@ function equipCheck(ckid) { // after select both submarine type, selcet formidab
     let s1 = isCache ? `${itemInList.icon_cache}` : `${atob("ZXF1aXBzLw==")}${id}`;
     let s2 = isCache ? `${match.icon_cache}` : `${atob("c2hpcGljb24v")}${match.painting}`;
     let list = ["tw", "cn", "en", "jp"];
-    console.log(s1, s2);
     if (ckid === atob("MjA3MDUw") || ckid === atob("MzA3MDcw")) {
         if (eqck) {
             att(bg, "src", "3.", "4.");
