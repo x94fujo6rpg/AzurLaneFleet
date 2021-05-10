@@ -132,7 +132,7 @@ let filter_setting = {
 };
 let c_ships = [];
 let eqck = false;
-let AFL_storage = window.localStorage;
+const AFL_storage = window.localStorage;
 let fleet_in_storage = [];
 const fleet_info = {
     name: () => document.querySelector("#fleet_name"),
@@ -146,10 +146,11 @@ const msg_color = {
     red: "text-danger m-1 text-monospace",
     green: "text-success m-1 text-monospace",
 };
-let _loading_ = {
-    ship: { current: 0, },
-    equip: { current: 0, },
-    cache_image: { current: 0, },
+const _loading_ = {
+    ship: {},
+    equip: {},
+    cache_image: {},
+    load_cache: {},
 };
 
 // ship type
@@ -184,7 +185,10 @@ const parsetype = {
 };
 Object.keys(parsetype).forEach(key => parsetype[key].tw = parsetype[key].cn);
 
-let version = 0.04;
+const db_name = "image_cache";
+const db_ver = 1;
+
+const version = 0.04;
 
 initial();
 //---------------------------------------------
@@ -973,10 +977,8 @@ async function initial() {
     sorted_equip_data = Object.assign([], newlist);
     console.timeEnd("sortequip");
     //--------------------------------------
-    const db_name = "image_cache";
-    const db_ver = 1;
     if (indexedDB) {
-        const { db, AFDB } = await initialDB(db_name, db_ver);
+        const [db, AFDB] = await initialDB(db_name, db_ver);
         let all_key = await AFDB.allKeys();
         if (!all_key.length) {
             let cacheData = await imgToDataURL();
@@ -1002,6 +1004,13 @@ async function initial() {
     document.querySelector("#loading_box").style.display = "none";
     document.querySelector("#app_area").style.display = "";
     console.timeEnd(initial.name);
+    setTimeout(windowCleaner);
+}
+
+function windowCleaner() {
+    ("aW5pdGlhbA==#Y3JlYXRlTmV3SXRlbQ==#Y3JlYXRlQWxsRXF1aXA=#Y3JlYXRlQWxsU2hpcA==#YWRkX3NlYX" +
+        "JjaF9ldmVudA==#YWxsb3dfZHVwX2V2ZW50#YnVpbGRGbGVldA==#YnVpbGRTaGlwU2VsZWN0T3B0aW9u")
+        .replace(/[^#]+(?=#)|(?<=#)[^#]+/g, (t) => window[atob(t)] = () => { });
 }
 
 function createNewItem(data, pos_id, onclick, progress) {
@@ -1048,9 +1057,8 @@ function createNewItem(data, pos_id, onclick, progress) {
 
             item.append(box);
             pos.append(item);
-            progress.current++;
-            progress.bar.value = progress.current;
-            progress.lable.textContent = `${progress.current}/${progress.bar.max}`;
+            progress.bar.value++;
+            progress.lable.textContent = `${progress.bar.value}/${progress.bar.max}`;
             resolve();
         });
     });
@@ -1527,7 +1535,7 @@ async function initialDB(db_name, db_ver) {
         }
     };
     //console.log(AFDB);
-    return { db, AFDB };
+    return [db, AFDB];
 }
 
 async function saveCacheData(db, db_name, cacheData) {
@@ -1541,8 +1549,12 @@ function srcToCacheID(src = "", type = "ship", reg = "") {
 }
 
 async function loadImgCache(AFDB) {
+    console.time(loadImgCache.name);
     let reg = /.*(?:equips|shipicon)\/([^\.]+).*/;
     let promise_list = [];
+    let max = sorted_ship_data.length + sorted_equip_data.length - 2;
+    let p = _loading_.load_cache;
+    addProgressBar("load_cache", "Loading Cache", max, p);
     for (let obj of sorted_ship_data) {
         if (obj.id == "000000") continue;
         promise_list.push(
@@ -1550,6 +1562,8 @@ async function loadImgCache(AFDB) {
                 .then(cache => {
                     obj.icon = cache.data_url;
                     obj.icon_cache = true;
+                    p.bar.value++;
+                    p.lable.textContent = `${p.bar.value}/${p.bar.max}`;
                 })
         );
     }
@@ -1560,14 +1574,18 @@ async function loadImgCache(AFDB) {
                 .then(cache => {
                     obj.icon = cache.data_url;
                     obj.icon_cache = true;
+                    p.bar.value++;
+                    p.lable.textContent = `${p.bar.value}/${p.bar.max}`;
                 })
         );
     }
     await Promise.all(promise_list);
+    console.timeEnd(loadImgCache.name);
     return promise_list.length;
 }
 
 async function imgToDataURL() {
+    console.time(imgToDataURL.name);
     let reg = /.*(?:equips|shipicon)\/([^\.]+).*/;
     let count = 0;
     let all_data = {};
@@ -1594,15 +1612,15 @@ async function imgToDataURL() {
         promise_list.push(
             fetchImageToDataURL(obj.src).then(data_url => {
                 obj.data_url = data_url;
-                p.current++;
-                p.bar.value = p.current;
-                p.lable.textContent = `${p.current}/${p.bar.max}`;
+                p.bar.value++;
+                p.lable.textContent = `${p.bar.value}/${p.bar.max}`;
             })
         );
         url_data.push(obj);
     }
     await Promise.all(promise_list);
     console.log(`fetch ${count} images`);
+    console.timeEnd(imgToDataURL.name);
     return url_data;
 }
 
@@ -1626,4 +1644,10 @@ async function fetchImageToDataURL(url = "", test = false) {
             fr.readAsDataURL(blob);
         });
     }
+}
+
+async function emptyCache() {
+    const [db, AFDB] = await initialDB(db_name, db_ver);
+    await AFDB.clear();
+    window.location.reload();
 }

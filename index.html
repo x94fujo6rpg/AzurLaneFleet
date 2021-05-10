@@ -179,7 +179,11 @@
     <div class="container text-center text-light font-weight-bold text-monospace">
         <h1>Azur Lane Fleet</h1>
     </div>
-    <div class="container justify-content-center" id="loading_box"></div>
+    <div class="container justify-content-center" id="loading_box">
+        <div class="container">
+            <div class="d-flex justify-content-center">Loading...</div>          
+        </div>        
+    </div>
     <div id="app_area" style="display:none;">
         <div align="center" id="options" clas="container">
             <h5 class="text-light text-monospace d-inline-flex">Language</h5>
@@ -220,7 +224,7 @@
             <div class="text-monospace" id="error_message"></div>
             <div class="container mt-2">
                 <label class="text-monospace" for="fleet_name">Fleet Name</label>
-                <input class="text-light bg-secondary text-monospace rounded" id="fleet_name" type="text" autocomplete="on">
+                <input class="text-light bg-secondary text-monospace rounded" id="fleet_name" type="text" autocomplete="name" name="mname">
             </div>
         </div>
         <div id="AzurLaneFleetApp" class="container mw-100 app_box">
@@ -244,11 +248,11 @@
         </div>
         <br>
     </div>
-    <div class="container" align="center">
-        <a href="https://github.com/x94fujo6rpg/AzurLaneFleet">Github</a>
+    <div class="container my-5" align="center">
+        <div class="container">
+            <a href="https://github.com/x94fujo6rpg/AzurLaneFleet">Github</a>
+        </div>
     </div>
-    <br>
-    <br>
     <div class="modal fade" id="shipselect">
         <div class="modal-dialog">
             <div class="modal-content text-light bg-dark">
@@ -282,7 +286,7 @@
                     </div>
                     <div class="container">
                         <div class="container">搜尋 / 検索 / Search
-                            <input type="text" class="" id="search_input" autocomplete="on">
+                            <input type="text" class="" id="search_input" autocomplete="on" name="fname">
                             <label class="text-monospace mx-1" for="ship_count">Result:</label>
                             <div class="text-monospace d-inline-flex" id="ship_count"></div>
                         </div>
@@ -309,6 +313,9 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="d-flex justify-content-center my-3">
+        <button type="button" class="btn btn-danger px-1 py-0" onclick="emptyCache()">Rebuild Cache</button>
     </div>
     <footer class="container text-center" id="footer" align="center">
         The copyright of the data used on this site is owned by the following companies<br> © Manjuu Co.,Ltd. & YongShi Co.,Ltd.<br> © Yostar, Inc.
