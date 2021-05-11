@@ -15,7 +15,7 @@ const lan_target_list = [
     { id: "emptyfleet", en: "Empty Current Fleet", jp: "現在の艦隊を空に", tw: "清空目前艦隊", },
 
     { id: "fleetdata_text", en: "Fleet data", jp: "艦隊データ", tw: "艦隊資料", },
-    { id: "dumpdata", en: "Dump", jp: "出力", tw: "匯出", },
+    { id: "dumpdata", en: "Dump", jp: "ダンプ", tw: "匯出", },
     { id: "copyData", en: "Copy", jp: "コピー", tw: "複製", },
     { id: "emptyData", en: "Clear", jp: "クリア", tw: "清空", },
     { id: "loadDataByID", en: "Load", jp: "ロード", tw: "載入", },
