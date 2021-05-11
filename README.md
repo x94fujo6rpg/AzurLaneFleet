@@ -3,6 +3,12 @@ The goal of this project
 Is just for easily share fleet configuration in one shot  
 ![](https://i.imgur.com/4n7swTV.jpg)
 
+# Browser support
+Recommend using `Chrome` for the best experience  
+This site was developed and tested on `Chrome`/`Firefox`  
+`IE`/`Edge(Old)` is unsupported  
+Compatibility with other browsers is unknown  
+
 ## Update  
 **2021-05-11**
 - adjust some UI

@@ -1113,8 +1113,8 @@ async function initial() {
 
 function windowCleaner() {
     ("aW5pdGlhbA==#Y3JlYXRlTmV3SXRlbQ==#Y3JlYXRlQWxsRXF1aXA=#Y3JlYXRlQWxsU2hpcA==#YWRkX3NlYXJjaF9ldmVudA==#YWxsb3dfZHVwX2" +
-        "V2ZW50#YnVpbGRGbGVldA==#YnVpbGRTaGlwU2VsZWN0T3B0aW9u#YWRkTGFuZ3VhZ2VUb0VsZQ==#c3BsaXRCdXR0b25Hcm91cA==")
-        .replace(/[^#]+(?=#)|(?<=#)[^#]+/g, (t) => window[atob(t)] = () => { });
+        "V2ZW50#YnVpbGRGbGVldA==#YnVpbGRTaGlwU2VsZWN0T3B0aW9u#YWRkTGFuZ3VhZ2VUb0VsZQ==#c3BsaXRCdXR0b25Hcm91cA==#")
+        .replace(/[^#]+(?=#)/g, (t) => window[atob(t)] = () => { });
 }
 
 function createNewItem(data, pos_id, onclick, progress) {
