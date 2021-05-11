@@ -75,34 +75,34 @@ Compatibility with other browsers is unknown
 ## Code  
 [Hull classification symbol](https://en.wikipedia.org/wiki/Hull_classification_symbol)  
 
-| TW&CN | JP       | EN                | CODE  |
-| ----- | -------- | ----------------- | ----- |
-| 潛艇  | 潜水艦   | Submarine         | SS    |
-| 潛母  | 潜水空母 | Submarine Carrier | SSV   |
-| 驅逐  | 駆逐     | Destroyer         | DD    |
-| 輕巡  | 軽巡     | Light Cruiser     | CL    |
-| 重巡  | 重巡     | Heavy Cruiser     | CA    |
-| 超巡  | 超甲巡   | Large Cruiser     | CB    |
-| 戰巡  | 巡洋戦艦 | Battle Cruiser    | BC    |
-| 戰列  | 戦艦     | Battle Ship       | BB    |
-| 輕航  | 軽空母   | Light Carrier     | CVL   |
-| 航母  | 空母     | Carrier           | CV    |
-| 重砲  | 砲艦     | Monitor           | BM    |
-| 維修  | 工作     | Repair Ship       | AR    |
-| 其他  | その他   | Other             | Other |
+| TW&CN 	| JP       	| EN                	| CODE  	|
+|-------	|----------	|-------------------	|-------	|
+| 潛艇  	| 潜水艦   	| Submarine         	| SS    	|
+| 潛母  	| 潜水空母 	| Submarine Carrier 	| SSV   	|
+| 驅逐  	| 駆逐     	| Destroyer         	| DD    	|
+| 輕巡  	| 軽巡     	| Light Cruiser     	| CL    	|
+| 重巡  	| 重巡     	| Heavy Cruiser     	| CA    	|
+| 超巡  	| 超甲巡   	| Large Cruiser     	| CB    	|
+| 戰巡  	| 巡洋戦艦 	| Battle Cruiser    	| BC    	|
+| 戰列  	| 戦艦     	| Battle Ship       	| BB    	|
+| 輕航  	| 軽空母   	| Light Carrier     	| CVL   	|
+| 航母  	| 空母     	| Carrier           	| CV    	|
+| 重砲  	| 砲艦     	| Monitor           	| BM    	|
+| 維修  	| 工作     	| Repair Ship       	| AR    	|
+| 其他  	| その他   	| Other             	| Other 	|
 
-| TW&CN    | JP       | EN                  | CODE     |
-| -------- | -------- | ------------------- | -------- |
-| 白鷹     | ユニオン | Eagle Union         | USS      |
-| 皇家     | ロイヤル | Royal Navy          | HMS      |
-| 重櫻     | 重桜     | Sakura Empire       | IJN      |
-| 鐵血     | 鉄血     | Iron Blood          | KMS      |
-| 東煌     | 東煌     | Dragon Empery       | PRAN/ROC |
-| 撒丁帝國 | サディア | Sardegna Empire     | RN       |
-| 北方聯合 | 北連     | Northern Parliament | SN       |
-| 自由鳶尾 | アイリス | Iris Libre          | FFNF     |
-| 維希教廷 | ヴィシア | Vichya Dominion     | MNF      |
-| 其他     | その他   | Other               | Other    |
+| TW&CN    	| JP       	| EN                  	| CODE     	|   	|
+|----------	|----------	|---------------------	|----------	|---	|
+| 白鷹     	| ユニオン 	| Eagle Union         	| USS      	|   	|
+| 皇家     	| ロイヤル 	| Royal Navy          	| HMS      	|   	|
+| 重櫻     	| 重桜     	| Sakura Empire       	| IJN      	|   	|
+| 鐵血     	| 鉄血     	| Iron Blood          	| KMS      	|   	|
+| 東煌     	| 東煌     	| Dragon Empery       	| PRAN/ROC 	|   	|
+| 撒丁帝國 	| サディア 	| Sardegna Empire     	| RN       	|   	|
+| 北方聯合 	| 北連     	| Northern Parliament 	| SN       	|   	|
+| 自由鳶尾 	| アイリス 	| Iris Libre          	| FFNF     	|   	|
+| 維希教廷 	| ヴィシア 	| Vichya Dominion     	| MNF      	|   	|
+| 其他     	| その他   	| Other               	| Other    	|   	|
 
 ## Data source  
 - [AzurLaneSourceJson](https://github.com/nobbyfix/AzurLaneSourceJson)  
