@@ -1610,7 +1610,7 @@ function switchLayout(ele, same = false) {
             },
             {
                 target: "fleet_box_i",
-                h: "row m-2 border border-secondary",
+                h: "row m-2 border border-secondary py-2",
                 v: "col m-2",
                 v2: "col m-2"
             },
