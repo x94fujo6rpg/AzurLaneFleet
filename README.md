@@ -72,6 +72,10 @@ Compatibility with other browsers is unknown
 - check duplicate ship/equip  
 - add import/export setting  
 
+## todo...
+- make re-sort for ship/equip
+- convert redundant buttons to single button
+
 ## Code  
 [Hull classification symbol](https://en.wikipedia.org/wiki/Hull_classification_symbol)  
 

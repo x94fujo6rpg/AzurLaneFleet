@@ -56,12 +56,14 @@
         }
         
         .modal-dialog {
-            max-width: 71%;
+            max-width: 65%;
         }
         
+        /*
         .modal-body {
             max-width: 100%;
         }
+        */
         
         .bg {
             position: absolute;
@@ -257,27 +259,29 @@
         </div>
     </div>
     <div class="modal fade" id="shipselect">
-        <div class="modal-dialog">
+        <div class="modal-dialog mt-1">
             <div class="modal-content text-light bg-dark">
+                <!--
                 <div class="modal-header">
                     <h4 class="modal-title" ui_id="select_ship">Select Ship</h4>
                     <button type="button" class="close text-light" data-dismiss="modal">&times;</button>
                 </div>
-                <div class="modal-body">
-                    <div class="py-1 font-weight-bold">
-                        <div class="my-auto mx-1" ui_id="filter_affiliation" style="display:none">Affiliation</div>
+                -->
+                <div class="modal-body p-2">
+                    <div class="font-weight-bold border-top border-right border-left border-secondary rounded p-1 my-1">
+                        <div class="h5 m-1" ui_id="filter_nation">Nation</div>
                         <div class="btn-group d-flex" id='shipnation'>
                             <ship-nation-button v-for="item in nation" v-bind:key="item.id" v-bind:name="item.name" v-text="item[lang]" v-bind:value="item.id"></ship-nation-button>
                         </div>
                     </div>
-                    <div class="mt-2 py-1 font-weight-bold">
-                        <div class="my-auto mx-1" ui_id="filter_type" style="display:none">Type</div>
+                    <div class="font-weight-bold border-top border-right border-left border-secondary rounded p-1 my-1">
+                        <div class="h5 m-1" ui_id="filter_type">Type</div>
                         <div class="btn-group d-flex " id="shiptype">
                             <ship-type-button v-for="item in type" v-bind:key="item.id" v-bind:name="item.name" v-show="item.display" v-text="item[lang]" v-bind:value="item.id"></ship-type-button>
                         </div>
                     </div>
-                    <div class="mt-2 py-1 font-weight-bold">
-                        <div class="my-auto mx-1" ui_id="filter_rarity" style="display:none">Rarity</div>
+                    <div class="font-weight-bold border-top border-right border-left border-secondary rounded p-1 my-1">
+                        <div class="h5 m-1" ui_id="filter_rarity">Rarity</div>
                         <div class="btn-group d-flex" id='shiprarity'>
                             <ship-rarity-button v-for="item in rarity" v-bind:key="item.id" v-bind:name="item.name" v-text="item[lang]" v-bind:value="item.id"></ship-rarity-button>
                         </div>
@@ -286,7 +290,7 @@
                         <div class="col">
                             <div class="d-flex">
                                 <div class="m-auto" ui_id="filter_search">Search</div>
-                                <input type="text" class="m-auto" id="search_input" autocomplete="on" name="fname">
+                                <input type="text" class="m-auto w-50" id="search_input" autocomplete="on" name="fname">
                                 <label class="m-auto" for="ship_count" ui_id="filter_search_result">Result:</label>
                                 <div class="m-auto" id="ship_count"></div>
                             </div>
@@ -309,12 +313,14 @@
         </div>
     </div>
     <div class="modal fade" id="equipselect">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content text-light bg-dark">
+                <!--
                 <div class="modal-header">
                     <h4 class="modal-title" ui_id="select_equip">Select Equip</h4>
                     <button type="button" class="close text-light" data-dismiss="modal">&times;</button>
                 </div>
+                -->
                 <div class="modal-body">
                     <div class="row justify-content-center m-auto" id="equiplist"></div>
                 </div>

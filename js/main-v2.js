@@ -23,7 +23,7 @@ const lan_target_list = [
     { id: "rebuild_cache_btn", en: "Rebuild Cache", jp: "キャッシュをクリア&再構築", tw: "重建快取", },
 
     { id: "select_ship", en: "Select Ship", jp: "艦船を選択", tw: "選擇艦船", },
-    { id: "filter_affiliation", en: "Affiliation", jp: "陣営", tw: "國家", },
+    { id: "filter_nation", en: "Nation", jp: "陣営", tw: "國家", },
     { id: "filter_type", en: "Type", jp: "艦種", tw: "艦種", },
     { id: "filter_rarity", en: "Rarity", jp: "レア度", tw: "稀有度", },
 
@@ -1358,11 +1358,13 @@ function splitButtonGroup(target_id = "", max_per_line = 5) {
     let buttons = pos.querySelectorAll("button");
     if (buttons.length <= 5) return;
     let new_line = false;
+    let line_count = 0;
     buttons.forEach((btn, index) => {
         if (index % max_per_line == 0) {
             new_line = document.createElement("div");
-            new_line.className = "btn-group d-flex";
+            new_line.className = "btn-group d-flex" + (line_count > 0 ? " mt-1" : "");
             pos.appendChild(new_line);
+            line_count++;
         }
         if (new_line) new_line.appendChild(btn);
     });
