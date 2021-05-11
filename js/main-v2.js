@@ -1575,8 +1575,8 @@ function switchLayout(ele, same = false) {
     saveCookie("layout", ele.textContent);
     function changeClass(key = "") {
         let class_list = [
-            { target: "app_box", h: "container mw-100", v: "row justify-content-center mw-100", v2: "d-table justify-content-center m-auto" },
-            { target: "fleet_box_o", h: "d-grid justify-content-center", v: "row", v2: "flex-row" },
+            { target: "app_box", h: "container mw-100", v: "row justify-content-center py-1 px-5 m-0", v2: "d-table justify-content-center m-auto" },
+            { target: "fleet_box_o", h: "d-grid justify-content-center", v: "d-grid fleet_box_o", v2: "flex-row" },
             { target: "fleet_box_i", h: "row m-2", v: "col m-2", v2: "col m-2" },
         ];
         class_list.forEach(o => {
