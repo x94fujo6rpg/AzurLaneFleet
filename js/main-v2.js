@@ -1411,8 +1411,8 @@ function adjustEle() {
         normal_class: no_effect_class.split(" "),
         small_class: "mw-100 px-5".split(" "),
     });
-     // search box
-     target_list.push({
+    // search box
+    target_list.push({
         ele: document.getElementById("search_box"), mode: "exchange",
         normal_class: "d-flex",
         small_class: "flex-wrap",
@@ -1645,7 +1645,7 @@ function switchLayout(ele, same = false) {
         v: "Vertical 1",
         v2: "Vertical 2",
     };
-    for (let key in layout_list) layout_list[key] = `Layout: ${layout_list[key]}`;
+    //for (let key in layout_list) layout_list[key] = `Layout: ${layout_list[key]}`;
     switch (ele.textContent) {
         case layout_list.h:
             if (same) {
