@@ -10,6 +10,12 @@ This site was developed and tested on `Chrome`/`Firefox`
 Compatibility with other browsers is unknown  
 
 ## Update  
+**2021-05-12**
+- auto adjust some UI to small screen  
+  if window is too small and language is en, force filter enable code mode
+- auto clear name after save fleet
+- convert redundant buttons to single button
+
 **2021-05-11**
 - adjust some UI
 - more UI text will correspond to the settings
@@ -74,7 +80,6 @@ Compatibility with other browsers is unknown
 
 ## todo...
 - make re-sort for ship/equip
-- convert redundant buttons to single button
 
 ## Code  
 [Hull classification symbol](https://en.wikipedia.org/wiki/Hull_classification_symbol)  

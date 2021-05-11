@@ -3,7 +3,7 @@
 // for ui element that have no language.
 // do not change id, unless you know what you are doing.
 const lan_target_list = [
-    { id: "allow_dup_label", en: "Allow Duplicate", jp: "重複を許可する", tw: "允許重複的船", },
+    { id: "allow_dup_btn", en: "Allow Duplicate", jp: "重複を許可する", tw: "允許重複的船", },
     { id: "layout_label", en: "Layout:", jp: "スタイル:", tw: "排版方式:", },
 
     { id: "add_fleet", en: "Save Current", jp: "現在の艦隊をセーブ", tw: "儲存目前艦隊", },
@@ -27,9 +27,9 @@ const lan_target_list = [
     { id: "filter_type", en: "Type", jp: "艦種", tw: "艦種", },
     { id: "filter_rarity", en: "Rarity", jp: "レア度", tw: "稀有度", },
 
+    { id: "search_input", en: "Search", jp: "検索", tw: "搜尋", },
+    { id: "filter_search_result", en: "Result", jp: "結果", tw: "結果", },
     { id: "filter_retro", en: "Retrofitted Ship Only", jp: "改造された艦船だけ", tw: "只顯示改造後的", },
-    { id: "filter_search", en: "Search", jp: "検索", tw: "搜尋", },
-    { id: "filter_search_result", en: "Result:", jp: "検索結果:", tw: "搜尋結果:", },
 
     { id: "select_equip", en: "Select Equip", jp: "装備を選択", tw: "選擇裝備", },
 ];
@@ -220,7 +220,7 @@ let c_ships = [];
 let nation_list = [];
 let type_list = [];
 let rarity_list = [];
-let retrofit = true;
+let retrofit_only = true;
 let fleet_data = buildFleet();
 let sorted_ship_data = [];
 let sorted_equip_data = [];
@@ -439,8 +439,8 @@ function loadCookie() {
         saveCookie("fleet", dumpID());
     }
 
-    if (clist.allow_dup) {
-        document.getElementById("allow_dup").checked = clist.allow_dup == 1 ? true : false;
+    if (clist.allow_dup == 1) {
+        allow_dup();
     }
 
     if (clist.layout) {
@@ -489,12 +489,10 @@ function parseID(data) {
     console.timeEnd(parseID.name);
 }
 
-function setRetro(item) {
-    $(item).button("toggle");
-    let newvalue = (item.value === "1") ? "0" : "1";
-    retrofit = (item.value === "1") ? false : true;
-    item.value = newvalue;
-    console.log(item.value);
+function setRetro() {
+    let btn = $("#filter_retro");
+    btn.button("toggle");
+    retrofit_only = btn.hasClass("active");
     shipDisplay();
 }
 
@@ -590,7 +588,7 @@ function shipDisplay() {
             item.setAttribute("displayed", is_select ? true : false);
         }
     });
-    if (!document.getElementById("allow_dup").checked) hideShipInFleet();
+    if (!document.getElementById("allow_dup_btn").classList.contains("active")) hideShipInFleet();
     countShipDisplayed();
 }
 
@@ -678,7 +676,7 @@ function isShipSelect(nation, type, rarity, retro) {
 
     if (indicator_nation && indicator_type && indicator_rarity) {
         // hide/show retrofit ship
-        return (retrofit && retro === 1) ? false : true;
+        return (retrofit_only && retro === 1) ? false : true;
     } else {
         return false;
     }
@@ -854,8 +852,15 @@ function setlang(item) {
     let key = item.id;
     lan = ALF.lang = shipSelect.lang = equipSelect.lang = key;
     document.querySelectorAll("[name=name]").forEach(name => name.textContent = name.getAttribute(key));
-    document.querySelectorAll("[ui_text='true']").forEach(ui_ele => ui_ele.textContent = ui_ele.getAttribute(`ui_${key}`));
+    document.querySelectorAll("[ui_text='true']").forEach(ui_ele => {
+        if (ui_ele.tagName == "INPUT") {
+            ui_ele.placeholder = ui_ele.getAttribute(`ui_${key}`);
+        } else {
+            ui_ele.textContent = ui_ele.getAttribute(`ui_${key}`);
+        }
+    });
     saveCookie("lan", key);
+    adjustEle();
 }
 
 function setEquip(item, save = true) {
@@ -1103,10 +1108,10 @@ async function initial() {
     await createAllEquip();
     addLanguageToEle();
     add_search_event();
-    allow_dup_event();
     loadCookie();
     loadStorage();
     splitButtonGroup("shipnation");
+    addWindowSizeEvent();
     document.querySelector("#loading_box").style.display = "none";
     document.querySelector("#app_area").style.display = "";
     console.timeEnd(initial.name);
@@ -1114,9 +1119,11 @@ async function initial() {
 }
 
 function windowCleaner() {
-    ("aW5pdGlhbA==#Y3JlYXRlTmV3SXRlbQ==#Y3JlYXRlQWxsRXF1aXA=#Y3JlYXRlQWxsU2hpcA==#YWRkX3NlYXJjaF9ldmVudA==#YWxsb3dfZHVwX2" +
-        "V2ZW50#YnVpbGRGbGVldA==#YnVpbGRTaGlwU2VsZWN0T3B0aW9u#YWRkTGFuZ3VhZ2VUb0VsZQ==#c3BsaXRCdXR0b25Hcm91cA==#")
-        .replace(/[^#]+(?=#)/g, (t) => window[atob(t)] = () => { });
+    [
+        "aW5pdGlhbA==#Y3JlYXRlTmV3SXRlbQ==#Y3JlYXRlQWxsRXF1aXA=#Y3JlYXRlQWxsU2hpcA==#YWRkX3NlYXJjaF9ldmVudA==",
+        "#YnVpbGRGbGVldA==#YnVpbGRTaGlwU2VsZWN0T3B0aW9u#YWRkTGFuZ3VhZ2VUb0VsZQ==#c3BsaXRCdXR0b25Hcm91cA==#YWR",
+        "kV2luZG93U2l6ZUV2ZW50#"
+    ].join("").replace(/[^#]+(?=#)/g, (t) => window[atob(t)] = () => { });
 }
 
 function createNewItem(data, pos_id, onclick, progress) {
@@ -1373,6 +1380,80 @@ function splitButtonGroup(target_id = "", max_per_line = 5) {
     pos.className = "";
 }
 
+function addWindowSizeEvent() {
+    window.addEventListener('resize', adjustEle);
+    if ($(window).width() < 1300) adjustEle();
+}
+
+function adjustEle() {
+    let width = $(window).width();
+    let safe_size = 1300;
+    let target_list = [];
+    let no_effect_class = "adjustEle_placeholder";
+    // code button
+    let btn = document.getElementById("use_code");
+    let btnIsOn = btn.className.includes("active");
+    // dup & layout
+    target_list.push({
+        ele: document.getElementById("option_box_1"), mode: "exchange",
+        normal_class: "w-25",
+        small_class: "w-50",
+    });
+    // fleet storage
+    target_list.push({
+        ele: document.getElementById("fleet_storage"), mode: "exchange",
+        normal_class: "w-50",
+        small_class: "w-100",
+    });
+    // select ship
+    target_list.push({
+        ele: document.getElementById("dialog_shipselect"), mode: "batch_exchange",
+        normal_class: no_effect_class.split(" "),
+        small_class: "mw-100 px-5".split(" "),
+    });
+     // search box
+     target_list.push({
+        ele: document.getElementById("search_box"), mode: "exchange",
+        normal_class: "d-flex",
+        small_class: "flex-wrap",
+    });
+    if (width < safe_size) {
+        // force enable code mode
+        if (lan == "en") {
+            if (!btnIsOn) {
+                btn.click();
+                btn.classList.add("active");
+                btn.setAttribute("aria-pressed", true);
+            }
+            if (!btn.disabled) btn.disabled = true;
+        } else {
+            if (btn.disabled) btn.disabled = false;
+        }
+        target_list.forEach(t => classManager(t.ele, t.mode, t.normal_class, t.small_class));
+    } else {
+        // safe size
+        if (btn.disabled) btn.disabled = false;
+        target_list.forEach(t => classManager(t.ele, t.mode, t.small_class, t.normal_class));
+    }
+
+    function classManager(ele = "", mode = "", class_1 = "", class_2 = "") {
+        switch (mode) {
+            case "exchange":
+                if (ele.classList.contains(class_1)) {
+                    ele.classList.remove(class_1);
+                    ele.classList.add(class_2);
+                }
+                break;
+            case "batch_exchange":
+                if ((class_1 && class_2) instanceof Array && (class_1 && class_2).length > 0) {
+                    class_1.forEach(c => ele.classList.remove(c));
+                    class_2.forEach(c => ele.classList.add(c));
+                }
+                break;
+        }
+    }
+}
+
 //-------------------------------localStorage
 function fleetManager(mode = "", all_fleet = []) {
     switch (mode) {
@@ -1482,7 +1563,8 @@ function saveStorage() {
 }
 
 function add_fleet() {
-    let name = fleet_info.name().value.trim();
+    let ele = fleet_info.name();
+    let name = ele.value.trim();
     let name_enc = encodeURIComponent(name);
     let msg = fleet_info.msg();
     if (!name || name.length == 0) {
@@ -1495,6 +1577,7 @@ function add_fleet() {
         saveStorage();
         msg.className = msg_color.green;
         msg.textContent = `add fleet: ${name}`;
+        ele.value = ""; // clear after save
     }
 }
 
@@ -1562,6 +1645,7 @@ function switchLayout(ele, same = false) {
         v: "Vertical 1",
         v2: "Vertical 2",
     };
+    for (let key in layout_list) layout_list[key] = `Layout: ${layout_list[key]}`;
     switch (ele.textContent) {
         case layout_list.h:
             if (same) {
@@ -1572,7 +1656,7 @@ function switchLayout(ele, same = false) {
                 ele.textContent = layout_list.v;
             }
             break;
-        case "Vertical 1":
+        case layout_list.v:
             if (same) {
                 changeClass("v");
                 ele.textContent = layout_list.v;
@@ -1581,7 +1665,7 @@ function switchLayout(ele, same = false) {
                 ele.textContent = layout_list.v2;
             }
             break;
-        case "Vertical 2":
+        case layout_list.v2:
             if (same) {
                 changeClass("v2");
                 ele.textContent = layout_list.v2;
@@ -1623,10 +1707,10 @@ function switchLayout(ele, same = false) {
     }
 }
 
-function allow_dup_event() {
-    document.getElementById("allow_dup").addEventListener("click", function (event) {
-        saveCookie("allow_dup", event.target.checked ? "1" : "0");
-    });
+function allow_dup() {
+    let btn = $("#allow_dup_btn");
+    btn.button("toggle");
+    saveCookie("allow_dup", btn.hasClass("active") ? "1" : "0");
 }
 
 //-------------------------------indexedDB

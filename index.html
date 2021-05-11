@@ -58,7 +58,6 @@
         .modal-dialog {
             max-width: 65%;
         }
-        
         /*
         .modal-body {
             max-width: 100%;
@@ -192,7 +191,6 @@
     </div>
     <div id="app_area" style="display:none;">
         <div align="center" id="options" clas="container">
-            <!-- <h5 class="text-light d-inline-flex" id="lan_select">Language</h5> -->
             <div class="btn-group btn-group-toggle d-flex w-25 my-2" data-toggle="buttons">
                 <label class="btn btn-outline-secondary font-weight-bold w-100" id="tw" onclick="setlang(this)">
                     <input type="radio" name="lang" autocomplete="off">TW
@@ -207,17 +205,11 @@
                     <input type="radio" name="lang" autocomplete="off" checked>EN
                 </label>
             </div>
-            <div class="d-flex w-25 my-2">
-                <div class="d-inline-flex w-50 mr-1 bg-secondary rounded">
-                    <input type="checkbox" id="allow_dup" class="m-auto">
-                    <label class="text-light bg-secondary w-75 m-auto" for="allow_dup" id="allow_dup_label">Allow Duplicate</label>
-                </div>
-                <div class="d-inline-flex w-50 ml-1 bg-secondary rounded">
-                    <label class="text-light bg-secondary w-50 m-auto" for="layout_setting" id="layout_label">Layout:</label>
-                    <button class="btn btn-secondary w-50 m-auto" type="button" id="layout_setting" onclick="switchLayout(this)">Horizontal</button>
-                </div>
+            <div class="btn-group d-flex w-25 my-2" id="option_box_1">
+                <button class="btn btn-outline-secondary w-100" type="button" id="allow_dup_btn" onclick="allow_dup()">Allow Duplicate</button>
+                <button class="btn btn-secondary w-100" type="button" id="layout_setting" onclick="switchLayout(this)">Layout: Horizontal</button>
             </div>
-            <div class="dropdown my-1 container w-50 d-flex">
+            <div class="dropdown my-1 container w-50 d-flex" id="fleet_storage">
                 <button class="btn btn-secondary w-25 mx-1" type="button" id="add_fleet" onclick="add_fleet()">Save Current</button>
                 <button class="btn btn-secondary w-25 mx-1 dropdown-toggle text-truncate" type="button" id="select_fleet" onclick="updateStorageList()" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Select Fleet
@@ -259,7 +251,7 @@
         </div>
     </div>
     <div class="modal fade" id="shipselect">
-        <div class="modal-dialog mt-1">
+        <div class="modal-dialog mt-1" id="dialog_shipselect">
             <div class="modal-content text-light bg-dark">
                 <!--
                 <div class="modal-header">
@@ -286,25 +278,19 @@
                             <ship-rarity-button v-for="item in rarity" v-bind:key="item.id" v-bind:name="item.name" v-text="item[lang]" v-bind:value="item.id"></ship-rarity-button>
                         </div>
                     </div>
-                    <div class="row my-3 font-weight-bold">
-                        <div class="col">
-                            <div class="d-flex">
-                                <div class="m-auto" ui_id="filter_search">Search</div>
-                                <input type="text" class="m-auto w-50" id="search_input" autocomplete="on" name="fname">
-                                <label class="m-auto" for="ship_count" ui_id="filter_search_result">Result:</label>
+                    <div class="d-inline-flex w-100 font-weight-bold">
+                        <div class="d-flex m-3 w-100" id="search_box">
+                            <input type="text" class="mx-1 w-100" id="search_input" autocomplete="on" name="fname">
+                            <div class="d-flex m-auto w-50">
+                                <label class="m-auto" ui_id="filter_search_result">Result</label>
                                 <div class="m-auto" id="ship_count"></div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="d-flex">
-                                <button id='use_code' name="use_code" type="button" class="m-auto btn btn-outline-light btn-sm font-weight-bold" aria-pressed="true" value="1" onclick="setCode(this)">Use Code</button>
-                            </div>
+                        <div class="d-flex m-3 w-100">
+                            <button id='use_code' name="use_code" type="button" class="m-auto btn btn-outline-light font-weight-bold" aria-pressed="false" onclick="setCode(this)">Code</button>
                         </div>
-                        <div class="col">
-                            <div class="d-flex">
-                                <div class="m-auto" ui_id="filter_retro">Retrofitted Ship Only</div>
-                                <button id='shipretro' name="shipretro" type="button" class="m-auto btn btn-outline-light btn-sm active" aria-pressed="true" value="1" onclick="setRetro(this)">Yes</button>
-                            </div>
+                        <div class="d-flex m-3 w-100">
+                            <button id='filter_retro' name="retro_ship_only" type="button" class="m-auto btn btn-outline-light font-weight-bold active" aria-pressed="true" onclick="setRetro(this)">Retrofitted Ship Only</button>
                         </div>
                     </div>
                     <div class="row justify-content-center m-auto" id="shiplist"></div>
@@ -313,7 +299,7 @@
         </div>
     </div>
     <div class="modal fade" id="equipselect">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered" id="dialog_select_equip">
             <div class="modal-content text-light bg-dark">
                 <!--
                 <div class="modal-header">
@@ -347,7 +333,7 @@
     <script src="lib/index-min.js"></script>
     <script src='js/ship_data.min.js'></script>
     <script src='js/equip_data.min.js'></script>
-    <script src="js/main-v2.min.js"></script>
+    <script src="js/main-v2.js"></script>
 </body>
 
 </html>
