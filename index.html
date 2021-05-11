@@ -283,7 +283,7 @@
                             <ship-rarity-button v-for="item in rarity" v-bind:key="item.id" v-bind:name="item.name" v-text="item[lang]" v-bind:value="item.id"></ship-rarity-button>
                         </div>
                     </div>
-                    <div class="row my-3 font-weight-bold">                        
+                    <div class="row my-3 font-weight-bold">
                         <div class="col">
                             <div class="d-flex">
                                 <div class="m-auto" ui_id="filter_search">Search</div>
@@ -304,7 +304,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container-fluid row m-0 p-0" id="shiplist"></div>
+                    <div class="row justify-content-center m-auto" id="shiplist"></div>
                 </div>
             </div>
         </div>
@@ -317,10 +317,7 @@
                     <button type="button" class="close text-light" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <div class="container">
-                        <div class="container-fluid row m-0 p-0" id="equiplist" style="width: 101%;">
-                        </div>
-                    </div>
+                    <div class="row justify-content-center m-auto" id="equiplist"></div>
                 </div>
             </div>
         </div>
