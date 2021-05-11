@@ -4,6 +4,12 @@ Is just for easily share fleet configuration in one shot
 ![](https://i.imgur.com/4n7swTV.jpg)
 
 ## Update  
+**2021-05-11**
+- adjust some UI
+- more UI text will correspond to the settings
+- filter now can set to [ship & nation code](https://github.com/x94fujo6rpg/AzurLaneFleet#code)
+- fix result count not work when use search
+
 **2021-05-10**
 - reduce server traffic (use [idb(indexedDB)](https://github.com/jakearchibald/idb) to cache/load images)
 
@@ -57,7 +63,39 @@ Is just for easily share fleet configuration in one shot
 - new version  
 - check duplicate ship/equip  
 - add import/export setting  
-  
+
+## Code  
+[Hull classification symbol](https://en.wikipedia.org/wiki/Hull_classification_symbol)  
+
+| TW&CN 	| JP       	| EN               	| CODE  	|
+|-------	|----------	|------------------	|-------	|
+| 驅逐  	| 駆逐     	| Destroyer        	| DD    	|
+| 輕巡  	| 軽巡     	| LightCruiser     	| CL    	|
+| 重巡  	| 重巡     	| HeavyCruiser     	| CA    	|
+| 超巡  	| 超甲巡   	| LargeCruiser     	| CB    	|
+| 潛艇  	| 潜水艦   	| Submarine        	| SS    	|
+| 潛母  	| 潜水空母 	| SubmarineCarrier 	| SSV   	|
+| 戰巡  	| 巡洋戦艦 	| BattleCruiser    	| BC    	|
+| 戰列  	| 戦艦     	| BattleShip       	| BB    	|
+| 輕航  	| 軽空母   	| LightCarrier     	| CVL   	|
+| 航母  	| 空母     	| Carrier          	| CV    	|
+| 重砲  	| 砲艦     	| Monitor          	| BM    	|
+| 維修  	| 工作     	| RepairShip       	| AR    	|
+| 其他  	| その他   	| Other            	| Other 	|
+
+| TW&CN    	| JP       	| EN              	| CODE     	|
+|----------	|----------	|-----------------	|----------	|
+| 白鷹     	| ユニオン 	| EagleUnion      	| USS      	|
+| 皇家     	| ロイヤル 	| RoyalNavy       	| HMS      	|
+| 重櫻     	| 重桜     	| SakuraEmpire    	| IJN      	|
+| 鐵血     	| 鉄血     	| Ironblood       	| KMS      	|
+| 東煌     	| 東煌     	| EasternRadiance 	| PRAN/ROC 	|
+| 撒丁帝國 	| サディア 	| SardegnaEmpire  	| RN       	|
+| 北方聯合 	| 北連     	| NorthUnion      	| SN       	|
+| 自由鳶尾 	| アイリス 	| IrisLibre       	| FFNF     	|
+| 維希教廷 	| ヴィシア 	| VichyaDominion  	| MNF      	|
+| 其他     	| その他   	| Other           	| Other    	|
+
 ## Data source  
 - [AzurLaneSourceJson](https://github.com/nobbyfix/AzurLaneSourceJson)  
 - [AzurLaneData](https://github.com/Dimbreath/AzurLaneData)  

@@ -1,4 +1,103 @@
 /* jshint esversion: 9 */
+//----------------------------------------------------------
+// for ui element that have no language.
+// do not change id, unless you know what you are doing.
+const lan_target_list = [
+    { id: "allow_dup_label", en: "Allow Duplicate Ship", jp: "重複を許可する", tw: "允許重複的船", },
+    { id: "layout_label", en: "Layout:", jp: "スタイル:", tw: "排版方式:", },
+
+    { id: "add_fleet", en: "Save Current", jp: "現在の艦隊をセーブ", tw: "儲存目前艦隊", },
+    { id: "select_fleet", en: "Select Fleet", jp: "艦隊を選択", tw: "選擇艦隊", },
+    { id: "load_fleet", en: "Load Fleet", jp: "ロード", tw: "載入艦隊", },
+    { id: "remove_fleet", en: "Remove", jp: "削除", tw: "刪除", },
+    { id: "fleet_name_label", en: "Fleet Name", jp: "艦隊の名前", tw: "艦隊名稱", },
+
+    { id: "emptyfleet", en: "Empty Current Fleet", jp: "現在の艦隊を空に", tw: "清空目前艦隊", },
+
+    { id: "fleetdata_text", en: "Fleet data", jp: "艦隊データ", tw: "艦隊資料", },
+    { id: "dumpdata", en: "Dump", jp: "出力", tw: "匯出", },
+    { id: "copyData", en: "Copy", jp: "コピー", tw: "複製", },
+    { id: "emptyData", en: "Clear", jp: "クリア", tw: "清空", },
+    { id: "loadDataByID", en: "Load", jp: "ロード", tw: "載入", },
+
+    { id: "rebuild_cache_btn", en: "Rebuild Cache", jp: "キャッシュをクリア&再構築", tw: "重建快取", },
+
+    { id: "select_ship", en: "Select Ship", jp: "艦船を選択", tw: "選擇艦船", },
+    { id: "filter_affiliation", en: "Affiliation", jp: "陣営", tw: "國家", },
+    { id: "filter_type", en: "Type", jp: "艦種", tw: "艦種", },
+    { id: "filter_rarity", en: "Rarity", jp: "レア度", tw: "稀有度", },
+
+    { id: "filter_retro", en: "Retrofitted Ship Only", jp: "改造された艦船だけ", tw: "只顯示改造後的", },
+    { id: "filter_search", en: "Search", jp: "検索", tw: "搜尋", },
+    { id: "filter_search_result", en: "Result:", jp: "検索結果:", tw: "搜尋結果:", },
+
+    { id: "select_equip", en: "Select Equip", jp: "装備を選択", tw: "選擇裝備", },
+];
+
+// equip type
+const parsetype = {
+    1: { cn: "驅逐砲", en: "DD Gun", jp: "駆逐砲" },
+    2: { cn: "輕巡砲", en: "CL Gun", jp: "軽巡砲" },
+    3: { cn: "重巡砲", en: "CA Gun", jp: "重巡砲" },
+    4: { cn: "戰艦砲", en: "BB Gun", jp: "戦艦砲" },
+    5: { cn: "魚雷", en: "Torpedoe", jp: "魚雷" },
+    6: { cn: "防空砲", en: "Anti-Air Gun", jp: "対空砲" },
+    7: { cn: "戰鬥機", en: "Fighter", jp: "戦闘機" },
+    8: { cn: "攻擊機", en: "Torpedo Bomber", jp: "攻撃機" },
+    9: { cn: "爆擊機", en: "Dive Bomber", jp: "爆撃機" },
+    10: { cn: "設備", en: "Auxiliary", jp: "設備" },
+    11: { cn: "超巡砲", en: "CB Gun", jp: "超巡砲" },
+    12: { cn: "水上機", en: "Seaplane", jp: "水上機" },
+    13: { cn: "潛艇魚雷", en: "Submarine Torpedoe", jp: "潜水艦魚雷" },
+    14: { cn: "爆雷", en: "Depth Charge", jp: "爆雷" }, //Sonar is not a unique type
+    15: { cn: "反潛機", en: "ASW Bomber", jp: "対潜機" },
+    17: { cn: "直升機", en: "ASW Helicopter", jp: "ヘリ" },
+    18: { cn: "貨物", en: "Cargo", jp: "積載" }
+};
+
+// filter ship nation
+const lan_nation = [
+    { id: 1, cn: "白鷹", en: "EagleUnion", jp: "ユニオン", code: "USS" },
+    { id: 2, cn: "皇家", en: "RoyalNavy", jp: "ロイヤル", code: "HMS" },
+    { id: 3, cn: "重櫻", en: "SakuraEmpire", jp: "重桜", code: "IJN" },
+    { id: 4, cn: "鐵血", en: "Ironblood", jp: "鉄血", code: "KMS" },
+    { id: 5, cn: "東煌", en: "EasternRadiance", jp: "東煌", code: "PRAN/ROC" },
+    { id: 6, cn: "撒丁帝國", en: "SardegnaEmpire", jp: "サディア", code: "RN" },
+    { id: 7, cn: "北方聯合", en: "NorthUnion", jp: "北連", code: "SN" },
+    { id: 8, cn: "自由鳶尾", en: "IrisLibre", jp: "アイリス", code: "FFNF" },
+    { id: 9, cn: "維希教廷", en: "VichyaDominion", jp: "ヴィシア", code: "MNF" },
+    { id: 0, cn: "其他", en: "Other", jp: "その他", code: "Other" },
+];
+
+// filter ship type
+const lan_type = [
+    { id: 1, cn: "驅逐", en: "Destroyer", jp: "駆逐", code: "DD", pos: "front" },
+    { id: 2, cn: "輕巡", en: "LightCruiser", jp: "軽巡", code: "CL", pos: "front" },
+    { id: 3, cn: "重巡", en: "HeavyCruiser", jp: "重巡", code: "CA", pos: "front" },
+    { id: 18, cn: "超巡", en: "LargeCruiser", jp: "超甲巡", code: "CB", pos: "front" },
+
+    { id: 4, cn: "戰巡", en: "BattleCruiser", jp: "巡洋戦艦", code: "BC", pos: "back" },
+    { id: 5, cn: "戰列", en: "BattleShip", jp: "戦艦", code: "BB", pos: "back" },
+    { id: 6, cn: "輕航", en: "LightCarrier", jp: "軽空母", code: "CVL", pos: "back" },
+    { id: 7, cn: "航母", en: "Carrier", jp: "空母", code: "CV", pos: "back" },
+    { id: 13, cn: "重砲", en: "Monitor", jp: "砲艦", code: "BM", pos: "back" },
+    { id: 12, cn: "維修", en: "RepairShip", jp: "工作", code: "AR", pos: "back" },
+    { id: 0, cn: "其他", en: "Other", jp: "その他", code: "Other" },
+    
+    { id: 8, cn: "潛艇", en: "Submarine", jp: "潜水艦", code: "SS", pos: "sub" },
+    { id: 17, cn: "潛母", en: "SubmarineCarrier", jp: "潜水空母", code: "SSV", pos: "sub" },
+];
+
+// filter ship rarity
+const lan_rarity = [
+    { id: 2, cn: "普通", en: "Normal", jp: "N" },
+    { id: 3, cn: "稀有", en: "Rare", jp: "R" },
+    { id: 4, cn: "精銳", en: "Elite", jp: "SR" },
+    { id: 5, cn: "超稀有", en: "SuperRare", jp: "SSR" },
+    { id: 6, cn: "海上傳奇", en: "Decisive", jp: "UR" },
+];
+
+//----------------------------------------------------------
 Vue.component("item-container", {
     props: ["item", "lang"],
     template: `
@@ -82,7 +181,7 @@ Vue.component("ship-nation-button", {
     template: `
         <button
             type="button"
-            class="btn btn-outline-light btn-sm"
+            class="btn btn-outline-light w-100 py-2 font-weight-bold filter-btn"
             onclick="updateSetting(this)"
         ></button>
     `
@@ -93,7 +192,7 @@ Vue.component("ship-type-button", {
     template: `
         <button
             type="button"
-            class="btn btn-outline-light btn-sm"
+            class="btn btn-outline-light w-100 py-2 font-weight-bold filter-btn"
             onclick="updateSetting(this)"
         ></button>
     `
@@ -104,25 +203,27 @@ Vue.component("ship-rarity-button", {
     template: `
         <button
             type="button"
-            class="btn btn-outline-light btn-sm"
+            class="btn btn-outline-light w-100 py-2 font-weight-bold filter-btn"
             onclick="updateSetting(this)"
         ></button>
     `
 });
 
+//----------------------------------------------------------
 let [ship_nation, ship_type, ship_rarity] = buildShipSelectOption();
 let c_fleet = "";
 let c_side = "";
 let c_pos = "";
 let c_item = "";
+let c_ships = [];
 let nation_list = [];
 let type_list = [];
 let rarity_list = [];
 let retrofit = true;
 let fleet_data = buildFleet();
 let sorted_ship_data = [];
-let lan = "en";
 let sorted_equip_data = [];
+let fleet_in_storage = [];
 let filter_setting = {
     nation: new Set(),
     front: new Set(),
@@ -130,10 +231,10 @@ let filter_setting = {
     sub: new Set(),
     rarity: new Set(),
 };
-let c_ships = [];
 let eqck = false;
+let lan = "en";
+
 const AFL_storage = window.localStorage;
-let fleet_in_storage = [];
 const fleet_info = {
     name: () => document.querySelector("#fleet_name"),
     select: () => document.querySelector("#select_fleet"),
@@ -143,8 +244,8 @@ const fleet_info = {
     remove: () => document.querySelector("#remove_fleet"),
 };
 const msg_color = {
-    red: "text-danger m-1 text-monospace",
-    green: "text-success m-1 text-monospace",
+    red: "text-danger m-1 text-monospace font-weight-bold",
+    green: "text-success m-1 text-monospace font-weight-bold",
 };
 const _loading_ = {
     ship: {},
@@ -161,37 +262,16 @@ const other_nation = new Set([97, 98, 101, 103, 104, 105, 106, 107, 108, 109, 11
 const other_front = new Set([19]);
 const other_back = new Set([10]);
 const other_sub = new Set([0]);
-
-// equip type
 const addQuantityList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13,];
-const parsetype = {
-    1: { cn: "驅逐砲", en: "DD Gun", jp: "駆逐砲" },
-    2: { cn: "輕巡砲", en: "CL Gun", jp: "軽巡砲" },
-    3: { cn: "重巡砲", en: "CA Gun", jp: "重巡砲" },
-    4: { cn: "戰艦砲", en: "BB Gun", jp: "戦艦砲" },
-    5: { cn: "魚雷", en: "Torpedoe", jp: "魚雷" },
-    6: { cn: "防空砲", en: "Anti-Air Gun", jp: "対空砲" },
-    7: { cn: "戰鬥機", en: "Fighter", jp: "戦闘機" },
-    8: { cn: "攻擊機", en: "Torpedo Bomber", jp: "攻撃機" },
-    9: { cn: "爆擊機", en: "Dive Bomber", jp: "爆撃機" },
-    10: { cn: "設備", en: "Auxiliary", jp: "設備" },
-    11: { cn: "超巡砲", en: "CB Gun", jp: "超巡砲" },
-    12: { cn: "水上機", en: "Seaplane", jp: "水上機" },
-    13: { cn: "潛艇魚雷", en: "Submarine Torpedoe", jp: "潜水艦魚雷" },
-    14: { cn: "爆雷", en: "Depth Charge", jp: "爆雷" }, //Sonar is not a unique type
-    15: { cn: "反潛機", en: "ASW Bomber", jp: "対潜機" },
-    17: { cn: "直升機", en: "ASW Helicopter", jp: "ヘリ" },
-    18: { cn: "貨物", en: "Cargo", jp: "積載" }
-};
-Object.keys(parsetype).forEach(key => parsetype[key].tw = parsetype[key].cn);
-
 const db_name = "image_cache";
 const db_ver = 1;
-
 const version = 0.04;
 
+//----------------------------------------------------------
+Object.keys(parsetype).forEach(key => parsetype[key].tw = parsetype[key].cn);
 initial();
-//---------------------------------------------
+
+//----------------------------------------------------------
 let ALF = new Vue({
     el: "#AzurLaneFleetApp",
     data: {
@@ -218,7 +298,8 @@ let equipSelect = new Vue({
         lang: lan,
     }
 });
-//---------------------------------------------
+
+//----------------------------------------------------------
 
 function add_search_event() {
     let search_input = document.querySelector("#search_input");
@@ -244,12 +325,18 @@ function ship_name_search(ele) {
                 ship.english_name.toLowerCase(),
             ].some(t => t.includes(search_input));
             if (ismatch) {
-                if (ship) item.style.display = isCorrectShipType(ship.type) ? "" : "none";
+                if (ship) {
+                    let is_select = isCorrectShipType(ship.type);
+                    item.style.display = is_select ? "" : "none";
+                    item.setAttribute("displayed", is_select ? true : false);
+                }
             } else {
                 item.style.display = "none";
+                item.setAttribute("displayed", false);
             }
         }
     });
+    countShipDisplayed();
 }
 
 function emptyfleet() {
@@ -338,6 +425,7 @@ function loadCookie() {
         let button = document.getElementById(clist.lan);
         button.click();
     } else {
+        setlang({ id: "en" });
         saveCookie("lan", lan);
     }
 
@@ -406,6 +494,20 @@ function setRetro(item) {
     item.value = newvalue;
     console.log(item.value);
     shipDisplay();
+}
+
+function setCode(item) {
+    $(item).button("toggle");
+    let lan_list = ["tw", "cn", "en", "jp"];
+    [lan_nation, lan_type].forEach(list => {
+        list.forEach(o => {
+            lan_list.forEach(language => {
+                let current = o[language];
+                let code = o.code;
+                o[language] = (current == code) ? o[`${language}_code`] : o.code;
+            });
+        });
+    });
 }
 
 function indexInObj(obj, getvalue = false) {
@@ -488,11 +590,11 @@ function shipDisplay() {
     });
     if (!document.getElementById("allow_dup").checked) hideShipInFleet();
     countShipDisplayed();
+}
 
-    function countShipDisplayed() {
-        let shiplist = document.querySelectorAll("#shiplist button[displayed='true']");
-        document.querySelector("#ship_count").textContent = shiplist.length;
-    }
+function countShipDisplayed() {
+    let shiplist = document.querySelectorAll("#shiplist button[displayed='true']");
+    document.querySelector("#ship_count").textContent = shiplist.length;
 }
 
 function hideShipInFleet() {
@@ -749,8 +851,8 @@ function sorting(arr, key, descen) {
 function setlang(item) {
     let key = item.id;
     lan = ALF.lang = shipSelect.lang = equipSelect.lang = key;
-    let names = document.querySelectorAll("[name=name]");
-    names.forEach((name) => name.textContent = name.getAttribute(key));
+    document.querySelectorAll("[name=name]").forEach(name => name.textContent = name.getAttribute(key));
+    document.querySelectorAll("[ui_text='true']").forEach(ui_ele => ui_ele.textContent = ui_ele.getAttribute(`ui_${key}`));
     saveCookie("lan", key);
 }
 
@@ -997,6 +1099,7 @@ async function initial() {
 
     await createAllShip();
     await createAllEquip();
+    addLanguageToEle();
     add_search_event();
     allow_dup_event();
     loadCookie();
@@ -1009,7 +1112,7 @@ async function initial() {
 
 function windowCleaner() {
     ("aW5pdGlhbA==#Y3JlYXRlTmV3SXRlbQ==#Y3JlYXRlQWxsRXF1aXA=#Y3JlYXRlQWxsU2hpcA==#YWRkX3NlYX" +
-        "JjaF9ldmVudA==#YWxsb3dfZHVwX2V2ZW50#YnVpbGRGbGVldA==#YnVpbGRTaGlwU2VsZWN0T3B0aW9u")
+        "JjaF9ldmVudA==#YWxsb3dfZHVwX2V2ZW50#YnVpbGRGbGVldA==#YnVpbGRTaGlwU2VsZWN0T3B0aW9u#YWRkTGFuZ3VhZ2VUb0VsZQ==")
         .replace(/[^#]+(?=#)|(?<=#)[^#]+/g, (t) => window[atob(t)] = () => { });
 }
 
@@ -1212,59 +1315,41 @@ function buildFleet() {
 
 function buildShipSelectOption() {
     console.time(buildShipSelectOption.name);
-    let nation = [
-        { id: 1, cn: "白鷹", en: "EagleUnion", jp: "ユニオン", code: "USS" },
-        { id: 2, cn: "皇家", en: "RoyalNavy", jp: "ロイヤル", code: "HMS" },
-        { id: 3, cn: "重櫻", en: "SakuraEmpire", jp: "重桜", code: "IJN" },
-        { id: 4, cn: "鐵血", en: "Ironblood", jp: "鉄血", code: "KMS" },
-        { id: 5, cn: "東煌", en: "EasternRadiance", jp: "東煌", code: "PRAN/ROC" },
-        { id: 6, cn: "撒丁帝國", en: "SardegnaEmpire", jp: "サディア", code: "RN" },
-        { id: 7, cn: "北方聯合", en: "NorthUnion", jp: "北連", code: "SN" },
-        { id: 8, cn: "自由鳶尾", en: "IrisLibre", jp: "アイリス", code: "FFNF" },
-        { id: 9, cn: "維希教廷", en: "VichyaDominion", jp: "ヴィシア", code: "MNF" },
-        { id: 0, cn: "其他", en: "Other", jp: "その他", code: "" },
-    ];
-    nation.forEach((item) => {
+    let lan_list = ["tw", "cn", "en", "jp"];
+
+    lan_nation.forEach((item) => {
         item.name = `ship_nation_${item.id}`;
         item.tw = item.cn;
+        lan_list.forEach(language => item[`${language}_code`] = item[language]);
     });
 
-    let type = [
-        { id: 1, cn: "驅逐", en: "Destroyer", jp: "駆逐", code: "DD", pos: "front" },
-        { id: 2, cn: "輕巡", en: "LightCruiser", jp: "軽巡", code: "CL", pos: "front" },
-        { id: 3, cn: "重巡", en: "HeavyCruiser", jp: "重巡", code: "CA", pos: "front" },
-        { id: 18, cn: "超巡", en: "LargeCruiser", jp: "超甲巡", code: "CB", pos: "front" },
-
-        { id: 8, cn: "潛艇", en: "Submarine", jp: "潜水艦", code: "SS", pos: "sub" },
-        { id: 17, cn: "潛母", en: "SubmarineCarrier", jp: "潜水空母", code: "SSV", pos: "sub" },
-
-        { id: 4, cn: "戰巡", en: "BattleCruiser", jp: "巡洋戦艦", code: "BC", pos: "back" },
-        { id: 5, cn: "戰列", en: "BattleShip", jp: "戦艦", code: "BB", pos: "back" },
-        { id: 6, cn: "輕航", en: "LightCarrier", jp: "軽空母", code: "CVL", pos: "back" },
-        { id: 7, cn: "航母", en: "Carrier", jp: "空母", code: "CV", pos: "back" },
-        { id: 13, cn: "重砲", en: "Monitor", jp: "砲艦", code: "BM", pos: "back" },
-        { id: 12, cn: "維修", en: "RepairShip", jp: "工作", code: "AR", pos: "back" },
-        { id: 0, cn: "其他", en: "Other", jp: "その他", code: "" },
-    ];
-    type.forEach((item) => {
+    lan_type.forEach((item) => {
         item.name = `ship_type_${item.id}`;
         item.display = "false";
         item.tw = item.cn;
+        lan_list.forEach(language => item[`${language}_code`] = item[language]);
     });
 
-    let rarity = [
-        { id: 2, cn: "普通", en: "Normal", jp: "N" },
-        { id: 3, cn: "稀有", en: "Rare", jp: "R" },
-        { id: 4, cn: "精銳", en: "Elite", jp: "SR" },
-        { id: 5, cn: "超稀有", en: "SuperRare", jp: "SSR" },
-        { id: 6, cn: "海上傳奇", en: "Decisive", jp: "UR" },
-    ];
-    rarity.forEach((item) => {
+    lan_rarity.forEach((item) => {
         item.name = `ship_rarity_${item.id}`;
         item.tw = item.cn;
     });
     console.timeEnd(buildShipSelectOption.name);
-    return [nation, type, rarity];
+    return [lan_nation, lan_type, lan_rarity];
+}
+
+function addLanguageToEle() {
+    let lan_list = ["en", "jp", "tw"];
+    lan_target_list.forEach(o => {
+        let ele = document.getElementById(o.id) || document.querySelector(`[ui_id=${o.id}]`);
+        if (ele) {
+            ele.setAttribute("ui_text", "true");
+            ele.setAttribute("ui_cn", o.tw);
+            lan_list.forEach(key => ele.setAttribute(`ui_${key}`, o[key]));
+        } else {
+            console.log(`id[${o.id}] not found`);
+        }
+    });
 }
 
 //-------------------------------localStorage
