@@ -91,18 +91,18 @@ Compatibility with other browsers is unknown
 | 維修  	| 工作     	| Repair Ship       	| AR    	|
 | 其他  	| その他   	| Other             	| Other 	|
 
-| TW&CN    	| JP       	| EN                  	| CODE     	|   	|
-|----------	|----------	|---------------------	|----------	|---	|
-| 白鷹     	| ユニオン 	| Eagle Union         	| USS      	|   	|
-| 皇家     	| ロイヤル 	| Royal Navy          	| HMS      	|   	|
-| 重櫻     	| 重桜     	| Sakura Empire       	| IJN      	|   	|
-| 鐵血     	| 鉄血     	| Iron Blood          	| KMS      	|   	|
-| 東煌     	| 東煌     	| Dragon Empery       	| PRAN/ROC 	|   	|
-| 撒丁帝國 	| サディア 	| Sardegna Empire     	| RN       	|   	|
-| 北方聯合 	| 北連     	| Northern Parliament 	| SN       	|   	|
-| 自由鳶尾 	| アイリス 	| Iris Libre          	| FFNF     	|   	|
-| 維希教廷 	| ヴィシア 	| Vichya Dominion     	| MNF      	|   	|
-| 其他     	| その他   	| Other               	| Other    	|   	|
+| TW&CN    	| JP       	| EN                  	| CODE     	|
+|----------	|----------	|---------------------	|----------	|
+| 白鷹     	| ユニオン 	| Eagle Union         	| USS      	|
+| 皇家     	| ロイヤル 	| Royal Navy          	| HMS      	|
+| 重櫻     	| 重桜     	| Sakura Empire       	| IJN      	|
+| 鐵血     	| 鉄血     	| Iron Blood          	| KMS      	|
+| 東煌     	| 東煌     	| Dragon Empery       	| PRAN/ROC 	|
+| 撒丁帝國 	| サディア 	| Sardegna Empire     	| RN       	|
+| 北方聯合 	| 北連     	| Northern Parliament 	| SN       	|
+| 自由鳶尾 	| アイリス 	| Iris Libre          	| FFNF     	|
+| 維希教廷 	| ヴィシア 	| Vichya Dominion     	| MNF      	|
+| 其他     	| その他   	| Other               	| Other    	|
 
 ## Data source  
 - [AzurLaneSourceJson](https://github.com/nobbyfix/AzurLaneSourceJson)  
