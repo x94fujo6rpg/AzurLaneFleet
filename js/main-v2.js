@@ -1356,7 +1356,7 @@ function addLanguageToEle() {
 function splitButtonGroup(target_id = "", max_per_line = 5) {
     let pos = document.getElementById(target_id);
     let buttons = pos.querySelectorAll("button");
-    if (buttons <= 5) return;
+    if (buttons.length <= 5) return;
     let new_line = false;
     buttons.forEach((btn, index) => {
         if (index % max_per_line == 0) {
