@@ -3,7 +3,7 @@
 // for ui element that have no language.
 // do not change id, unless you know what you are doing.
 const lan_target_list = [
-    { id: "allow_dup_label", en: "Allow Duplicate Ship", jp: "重複を許可する", tw: "允許重複的船", },
+    { id: "allow_dup_label", en: "Allow Duplicate", jp: "重複を許可する", tw: "允許重複的船", },
     { id: "layout_label", en: "Layout:", jp: "スタイル:", tw: "排版方式:", },
 
     { id: "add_fleet", en: "Save Current", jp: "現在の艦隊をセーブ", tw: "儲存目前艦隊", },
@@ -138,12 +138,13 @@ Vue.component("ship-container", {
     `
 });
 
+// <span class="row ml-1 text-monospace fleet_name" v-text="fleet.id" v-if="fleet.show_name"></span>
+// no use yet & blocking
 Vue.component("fleet-container", {
     props: ["fleet", "lang"],
     template: `
         <div class="d-grid justify-content-center fleet_box_o">
-            <span class="row ml-1 text-monospace fleet_name" v-text="fleet.id"></span>
-            <div class="row m-2 fleet_box_i">
+            <div class="row m-2 fleet_box_i border border-secondary">
                 <div class="flex-col fleet_side_box" v-if="fleet.back_ship">
                     <ship-container
                         v-for="back_ship in fleet.back_ship"
@@ -404,17 +405,18 @@ function saveCookie(ckey, cvalue, expday = 365) {
     let time = new Date();
     let exp = new Date();
     exp.setTime(time.getTime() + (expday * 1000 * 60 * 60 * 24));
-    document.cookie = `${ckey}=${cvalue};expires=${exp.toUTCString()};`;
+    document.cookie = `${ckey}=${cvalue};expires=${exp.toUTCString()};SameSite=Strict;`;
     //console.log(`${ckey}=${cvalue};`);
 }
 
 function getCookie() {
     let cookie = document.cookie;
     let new_list = {};
-    cookie = cookie.split("; ");
+    let ignore = new Set(["expires", "SameSite",]);
+    cookie = cookie.split(";").map(t => t.trim());
     cookie.forEach(data => {
         let [key, value] = data.split("=");
-        if (key != "expires") new_list[key] = value;
+        if (!ignore.has(key)) new_list[key] = value;
     });
     return new_list;
 }
@@ -1594,9 +1596,24 @@ function switchLayout(ele, same = false) {
     saveCookie("layout", ele.textContent);
     function changeClass(key = "") {
         let class_list = [
-            { target: "app_box", h: "container mw-100", v: "row justify-content-center py-1 px-5 m-0", v2: "d-table justify-content-center m-auto" },
-            { target: "fleet_box_o", h: "d-grid justify-content-center", v: "d-grid fleet_box_o", v2: "flex-row" },
-            { target: "fleet_box_i", h: "row m-2", v: "col m-2", v2: "col m-2" },
+            {
+                target: "app_box",
+                h: "container mw-100",
+                v: "row justify-content-center py-1 px-5 m-0",
+                v2: "d-table justify-content-center m-auto"
+            },
+            {
+                target: "fleet_box_o",
+                h: "d-grid justify-content-center",
+                v: "d-grid border border-secondary",
+                v2: "flex-row border border-secondary"
+            },
+            {
+                target: "fleet_box_i",
+                h: "row m-2 border border-secondary",
+                v: "col m-2",
+                v2: "col m-2"
+            },
         ];
         class_list.forEach(o => {
             document.querySelectorAll(`.${o.target}`).forEach(e => {
