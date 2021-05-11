@@ -57,40 +57,40 @@ const parsetype = {
 
 // filter ship nation
 const lan_nation = [
-    { id: 1, cn: "白鷹", en: "EagleUnion", jp: "ユニオン", code: "USS" },
-    { id: 2, cn: "皇家", en: "RoyalNavy", jp: "ロイヤル", code: "HMS" },
-    { id: 3, cn: "重櫻", en: "SakuraEmpire", jp: "重桜", code: "IJN" },
-    { id: 4, cn: "鐵血", en: "Ironblood", jp: "鉄血", code: "KMS" },
-    { id: 5, cn: "東煌", en: "EasternRadiance", jp: "東煌", code: "PRAN/ROC" },
-    { id: 6, cn: "撒丁帝國", en: "SardegnaEmpire", jp: "サディア", code: "RN" },
-    { id: 7, cn: "北方聯合", en: "NorthUnion", jp: "北連", code: "SN" },
-    { id: 8, cn: "自由鳶尾", en: "IrisLibre", jp: "アイリス", code: "FFNF" },
-    { id: 9, cn: "維希教廷", en: "VichyaDominion", jp: "ヴィシア", code: "MNF" },
+    { id: 1, cn: "白鷹", en: "Eagle Union", jp: "ユニオン", code: "USS" },
+    { id: 2, cn: "皇家", en: "Royal Navy", jp: "ロイヤル", code: "HMS" },
+    { id: 3, cn: "重櫻", en: "Sakura Empire", jp: "重桜", code: "IJN" },
+    { id: 4, cn: "鐵血", en: "Iron Blood", jp: "鉄血", code: "KMS" },
+    { id: 5, cn: "東煌", en: "Dragon Empery", jp: "東煌", code: "PRAN/ROC" },
+    { id: 6, cn: "撒丁帝國", en: "Sardegna Empire", jp: "サディア", code: "RN" },
+    { id: 7, cn: "北方聯合", en: "Northern Parliament", jp: "北連", code: "SN" },
+    { id: 8, cn: "自由鳶尾", en: "Iris Libre", jp: "アイリス", code: "FFNF" },
+    { id: 9, cn: "維希教廷", en: "Vichya Dominion", jp: "ヴィシア", code: "MNF" },
     { id: 0, cn: "其他", en: "Other", jp: "その他", code: "Other" },
 ];
 
 // filter ship type
 const lan_type = [
-    { id: 1, cn: "驅逐", en: "Destroyer", jp: "駆逐", code: "DD", pos: "front" },
-    { id: 2, cn: "輕巡", en: "LightCruiser", jp: "軽巡", code: "CL", pos: "front" },
-    { id: 3, cn: "重巡", en: "HeavyCruiser", jp: "重巡", code: "CA", pos: "front" },
-    { id: 18, cn: "超巡", en: "LargeCruiser", jp: "超甲巡", code: "CB", pos: "front" },
+    { id: 8, cn: "潛艇", en: "Submarine", jp: "潜水艦", code: "SS", pos: "sub" },
+    { id: 17, cn: "潛母", en: "Submarine Carrier", jp: "潜水空母", code: "SSV", pos: "sub" },
 
-    { id: 4, cn: "戰巡", en: "BattleCruiser", jp: "巡洋戦艦", code: "BC", pos: "back" },
-    { id: 5, cn: "戰列", en: "BattleShip", jp: "戦艦", code: "BB", pos: "back" },
-    { id: 6, cn: "輕航", en: "LightCarrier", jp: "軽空母", code: "CVL", pos: "back" },
+    { id: 1, cn: "驅逐", en: "Destroyer", jp: "駆逐", code: "DD", pos: "front" },
+    { id: 2, cn: "輕巡", en: "Light Cruiser", jp: "軽巡", code: "CL", pos: "front" },
+    { id: 3, cn: "重巡", en: "Heavy Cruiser", jp: "重巡", code: "CA", pos: "front" },
+    { id: 18, cn: "超巡", en: "Large Cruiser", jp: "超甲巡", code: "CB", pos: "front" },
+
+    { id: 4, cn: "戰巡", en: "Battle Cruiser", jp: "巡洋戦艦", code: "BC", pos: "back" },
+    { id: 5, cn: "戰列", en: "Battle Ship", jp: "戦艦", code: "BB", pos: "back" },
+    { id: 6, cn: "輕航", en: "Light Carrier", jp: "軽空母", code: "CVL", pos: "back" },
     { id: 7, cn: "航母", en: "Carrier", jp: "空母", code: "CV", pos: "back" },
     { id: 13, cn: "重砲", en: "Monitor", jp: "砲艦", code: "BM", pos: "back" },
-    { id: 12, cn: "維修", en: "RepairShip", jp: "工作", code: "AR", pos: "back" },
+    { id: 12, cn: "維修", en: "Repair Ship", jp: "工作", code: "AR", pos: "back" },
     { id: 0, cn: "其他", en: "Other", jp: "その他", code: "Other" },
-    
-    { id: 8, cn: "潛艇", en: "Submarine", jp: "潜水艦", code: "SS", pos: "sub" },
-    { id: 17, cn: "潛母", en: "SubmarineCarrier", jp: "潜水空母", code: "SSV", pos: "sub" },
 ];
 
 // filter ship rarity
 const lan_rarity = [
-    { id: 2, cn: "普通", en: "Normal", jp: "N" },
+    { id: 2, cn: "普通", en: "Normal", jp: "N", },
     { id: 3, cn: "稀有", en: "Rare", jp: "R" },
     { id: 4, cn: "精銳", en: "Elite", jp: "SR" },
     { id: 5, cn: "超稀有", en: "SuperRare", jp: "SSR" },
@@ -1104,6 +1104,7 @@ async function initial() {
     allow_dup_event();
     loadCookie();
     loadStorage();
+    splitButtonGroup("shipnation");
     document.querySelector("#loading_box").style.display = "none";
     document.querySelector("#app_area").style.display = "";
     console.timeEnd(initial.name);
@@ -1111,8 +1112,8 @@ async function initial() {
 }
 
 function windowCleaner() {
-    ("aW5pdGlhbA==#Y3JlYXRlTmV3SXRlbQ==#Y3JlYXRlQWxsRXF1aXA=#Y3JlYXRlQWxsU2hpcA==#YWRkX3NlYX" +
-        "JjaF9ldmVudA==#YWxsb3dfZHVwX2V2ZW50#YnVpbGRGbGVldA==#YnVpbGRTaGlwU2VsZWN0T3B0aW9u#YWRkTGFuZ3VhZ2VUb0VsZQ==")
+    ("aW5pdGlhbA==#Y3JlYXRlTmV3SXRlbQ==#Y3JlYXRlQWxsRXF1aXA=#Y3JlYXRlQWxsU2hpcA==#YWRkX3NlYXJjaF9ldmVudA==#YWxsb3dfZHVwX2" +
+        "V2ZW50#YnVpbGRGbGVldA==#YnVpbGRTaGlwU2VsZWN0T3B0aW9u#YWRkTGFuZ3VhZ2VUb0VsZQ==#c3BsaXRCdXR0b25Hcm91cA==")
         .replace(/[^#]+(?=#)|(?<=#)[^#]+/g, (t) => window[atob(t)] = () => { });
 }
 
@@ -1350,6 +1351,22 @@ function addLanguageToEle() {
             console.log(`id[${o.id}] not found`);
         }
     });
+}
+
+function splitButtonGroup(target_id = "", max_per_line = 5) {
+    let pos = document.getElementById(target_id);
+    let buttons = pos.querySelectorAll("button");
+    if (buttons <= 5) return;
+    let new_line = false;
+    buttons.forEach((btn, index) => {
+        if (index % max_per_line == 0) {
+            new_line = document.createElement("div");
+            new_line.className = "btn-group d-flex";
+            pos.appendChild(new_line);
+        }
+        if (new_line) new_line.appendChild(btn);
+    });
+    pos.className = "";
 }
 
 //-------------------------------localStorage

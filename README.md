@@ -9,6 +9,8 @@ Is just for easily share fleet configuration in one shot
 - more UI text will correspond to the settings
 - filter now can set to [ship & nation code](https://github.com/x94fujo6rpg/AzurLaneFleet#code)
 - fix result count not work when use search
+- split nation to 2 line
+- fix some text to match en wiki
 
 **2021-05-10**
 - reduce server traffic (use [idb(indexedDB)](https://github.com/jakearchibald/idb) to cache/load images)
