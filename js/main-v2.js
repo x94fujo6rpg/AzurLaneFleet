@@ -1,8 +1,8 @@
 /* jshint esversion: 9 */
 //----------------------------------------------------------
-// for ui element that have no language.
-// do not change id, unless you know what you are doing.
 const lan_target_list = [
+    // for ui element that have no language.
+    // do not change id, unless you know what you are doing.
     { id: "allow_dup_btn", en: "Allow Duplicate", jp: "重複を許可する", tw: "允許重複的船", },
     { id: "layout_label", en: "Layout:", jp: "スタイル:", tw: "排版方式:", },
 
@@ -32,31 +32,32 @@ const lan_target_list = [
     { id: "filter_retro", en: "Retrofitted Ship Only", jp: "改造された艦船だけ", tw: "只顯示改造後的", },
 
     { id: "select_equip", en: "Select Equip", jp: "装備を選択", tw: "選擇裝備", },
-];
+],
+    // equip type
+    parsetype = {
+        1: { cn: "驅逐砲", en: "DD Gun", jp: "駆逐砲" },
+        2: { cn: "輕巡砲", en: "CL Gun", jp: "軽巡砲" },
+        3: { cn: "重巡砲", en: "CA Gun", jp: "重巡砲" },
+        4: { cn: "戰艦砲", en: "BB Gun", jp: "戦艦砲" },
+        5: { cn: "魚雷", en: "Torpedoe", jp: "魚雷" },
+        6: { cn: "防空砲", en: "Anti-Air Gun", jp: "対空砲" },
+        7: { cn: "戰鬥機", en: "Fighter", jp: "戦闘機" },
+        8: { cn: "攻擊機", en: "Torpedo Bomber", jp: "攻撃機" },
+        9: { cn: "爆擊機", en: "Dive Bomber", jp: "爆撃機" },
+        10: { cn: "設備", en: "Auxiliary", jp: "設備" },
+        11: { cn: "超巡砲", en: "CB Gun", jp: "超巡砲" },
+        12: { cn: "水上機", en: "Seaplane", jp: "水上機" },
+        13: { cn: "潛艇魚雷", en: "Submarine Torpedoe", jp: "潜水艦魚雷" },
+        14: { cn: "爆雷", en: "Depth Charge", jp: "爆雷" }, //Sonar is not a unique type
+        15: { cn: "反潛機", en: "ASW Bomber", jp: "対潜機" },
+        17: { cn: "直升機", en: "ASW Helicopter", jp: "ヘリ" },
+        18: { cn: "貨物", en: "Cargo", jp: "積載" }
+    };
+Object.keys(parsetype).forEach(key => parsetype[key].tw = parsetype[key].cn);
 
-// equip type
-const parsetype = {
-    1: { cn: "驅逐砲", en: "DD Gun", jp: "駆逐砲" },
-    2: { cn: "輕巡砲", en: "CL Gun", jp: "軽巡砲" },
-    3: { cn: "重巡砲", en: "CA Gun", jp: "重巡砲" },
-    4: { cn: "戰艦砲", en: "BB Gun", jp: "戦艦砲" },
-    5: { cn: "魚雷", en: "Torpedoe", jp: "魚雷" },
-    6: { cn: "防空砲", en: "Anti-Air Gun", jp: "対空砲" },
-    7: { cn: "戰鬥機", en: "Fighter", jp: "戦闘機" },
-    8: { cn: "攻擊機", en: "Torpedo Bomber", jp: "攻撃機" },
-    9: { cn: "爆擊機", en: "Dive Bomber", jp: "爆撃機" },
-    10: { cn: "設備", en: "Auxiliary", jp: "設備" },
-    11: { cn: "超巡砲", en: "CB Gun", jp: "超巡砲" },
-    12: { cn: "水上機", en: "Seaplane", jp: "水上機" },
-    13: { cn: "潛艇魚雷", en: "Submarine Torpedoe", jp: "潜水艦魚雷" },
-    14: { cn: "爆雷", en: "Depth Charge", jp: "爆雷" }, //Sonar is not a unique type
-    15: { cn: "反潛機", en: "ASW Bomber", jp: "対潜機" },
-    17: { cn: "直升機", en: "ASW Helicopter", jp: "ヘリ" },
-    18: { cn: "貨物", en: "Cargo", jp: "積載" }
-};
-
-// filter ship nation
-const lan_nation = [
+//----------------------------------------------------------
+// ship filter
+const lan_ship_nation = [
     { id: 1, cn: "白鷹", en: "Eagle Union", jp: "ユニオン", code: "USS" },
     { id: 2, cn: "皇家", en: "Royal Navy", jp: "ロイヤル", code: "HMS" },
     { id: 3, cn: "重櫻", en: "Sakura Empire", jp: "重桜", code: "IJN" },
@@ -67,36 +68,46 @@ const lan_nation = [
     { id: 8, cn: "自由鳶尾", en: "Iris Libre", jp: "アイリス", code: "FFNF" },
     { id: 9, cn: "維希教廷", en: "Vichya Dominion", jp: "ヴィシア", code: "MNF" },
     { id: 0, cn: "其他", en: "Other", jp: "その他", code: "Other" },
-];
+],
+    lan_ship_type = [
+        { id: 8, cn: "潛艇", en: "Submarine", jp: "潜水艦", code: "SS", pos: "sub" },
+        { id: 17, cn: "潛母", en: "Submarine Carrier", jp: "潜水空母", code: "SSV", pos: "sub" },
 
-// filter ship type
-const lan_type = [
-    { id: 8, cn: "潛艇", en: "Submarine", jp: "潜水艦", code: "SS", pos: "sub" },
-    { id: 17, cn: "潛母", en: "Submarine Carrier", jp: "潜水空母", code: "SSV", pos: "sub" },
+        { id: 1, cn: "驅逐", en: "Destroyer", jp: "駆逐", code: "DD", pos: "front" },
+        { id: 2, cn: "輕巡", en: "Light Cruiser", jp: "軽巡", code: "CL", pos: "front" },
+        { id: 3, cn: "重巡", en: "Heavy Cruiser", jp: "重巡", code: "CA", pos: "front" },
+        { id: 18, cn: "超巡", en: "Large Cruiser", jp: "超甲巡", code: "CB", pos: "front" },
 
-    { id: 1, cn: "驅逐", en: "Destroyer", jp: "駆逐", code: "DD", pos: "front" },
-    { id: 2, cn: "輕巡", en: "Light Cruiser", jp: "軽巡", code: "CL", pos: "front" },
-    { id: 3, cn: "重巡", en: "Heavy Cruiser", jp: "重巡", code: "CA", pos: "front" },
-    { id: 18, cn: "超巡", en: "Large Cruiser", jp: "超甲巡", code: "CB", pos: "front" },
+        { id: 4, cn: "戰巡", en: "Battle Cruiser", jp: "巡洋戦艦", code: "BC", pos: "back" },
+        { id: 5, cn: "戰列", en: "Battle Ship", jp: "戦艦", code: "BB", pos: "back" },
+        { id: 6, cn: "輕航", en: "Light Carrier", jp: "軽空母", code: "CVL", pos: "back" },
+        { id: 7, cn: "航母", en: "Carrier", jp: "空母", code: "CV", pos: "back" },
+        { id: 13, cn: "重砲", en: "Monitor", jp: "砲艦", code: "BM", pos: "back" },
+        { id: 12, cn: "維修", en: "Repair Ship", jp: "工作", code: "AR", pos: "back" },
+        { id: 0, cn: "其他", en: "Other", jp: "その他", code: "Other" },
+    ],
+    lan_ship_rarity = [
+        { id: 6, cn: "海上傳奇", en: "Decisive", jp: "UR", code: "★★★★★★" },
+        { id: 5, cn: "超稀有", en: "SuperRare", jp: "SSR", code: "★★★★★" },
+        { id: 4, cn: "精銳", en: "Elite", jp: "SR", code: "★★★★" },
+        { id: 3, cn: "稀有", en: "Rare", jp: "R", code: "★★★" },
+        { id: 2, cn: "普通", en: "Normal", jp: "N", code: "★★" },
+    ];
+buildShipSelectOption();
 
-    { id: 4, cn: "戰巡", en: "Battle Cruiser", jp: "巡洋戦艦", code: "BC", pos: "back" },
-    { id: 5, cn: "戰列", en: "Battle Ship", jp: "戦艦", code: "BB", pos: "back" },
-    { id: 6, cn: "輕航", en: "Light Carrier", jp: "軽空母", code: "CVL", pos: "back" },
-    { id: 7, cn: "航母", en: "Carrier", jp: "空母", code: "CV", pos: "back" },
-    { id: 13, cn: "重砲", en: "Monitor", jp: "砲艦", code: "BM", pos: "back" },
-    { id: 12, cn: "維修", en: "Repair Ship", jp: "工作", code: "AR", pos: "back" },
-    { id: 0, cn: "其他", en: "Other", jp: "その他", code: "Other" },
-];
-
-// filter ship rarity
-const lan_rarity = [
-    { id: 2, cn: "普通", en: "Normal", jp: "N", },
-    { id: 3, cn: "稀有", en: "Rare", jp: "R" },
-    { id: 4, cn: "精銳", en: "Elite", jp: "SR" },
-    { id: 5, cn: "超稀有", en: "SuperRare", jp: "SSR" },
-    { id: 6, cn: "海上傳奇", en: "Decisive", jp: "UR" },
-];
-
+//----------------------------------------------------------
+// equip filter
+const lan_eq_type = Object.keys(parsetype).map(key => key = Object.assign({ id: key }, parsetype[key])),
+    lan_eq_nation = lan_ship_nation.map(o => Object.assign({}, o)),
+    lan_eq_tier = [{ id: 0, }, { id: 3, }, { id: 2, }, { id: 1, },],
+    lan_eq_rarity = [
+        { id: 6, en: "★★★★★★", },
+        { id: 5, en: "★★★★★", },
+        { id: 4, en: "★★★★", },
+        { id: 3, en: "★★★", },
+        { id: 2, en: "★★", },
+    ];
+buildEquipSelectOption();
 //----------------------------------------------------------
 Vue.component("item-container", {
     props: ["item", "lang"],
@@ -108,7 +119,7 @@ Vue.component("item-container", {
           v-bind:pos="item.property.pos"
           v-bind:data-target="item.property.target"
 
-          onclick="setCurrent(this)"
+          onclick="${setCurrent.name}(this)"
           data-toggle="modal"          
           >
             <div class="container-fluid p-0 box">
@@ -144,7 +155,7 @@ Vue.component("fleet-container", {
     props: ["fleet", "lang"],
     template: `
         <div class="d-grid justify-content-center fleet_box_o">
-            <div class="row m-2 fleet_box_i border border-secondary">
+            <div class="row m-2 border border-secondary py-2 fleet_box_i">
                 <div class="flex-col fleet_side_box" v-if="fleet.back_ship">
                     <ship-container
                         v-for="back_ship in fleet.back_ship"
@@ -177,127 +188,122 @@ Vue.component("fleet-container", {
     `
 });
 
-Vue.component("ship-nation-button", {
-    props: ['nation', "lang"],
-    template: `
-        <button
-            type="button"
-            class="btn btn-outline-light w-100 py-2 font-weight-bold filter-btn"
-            onclick="updateSetting(this)"
-        ></button>
-    `
-});
-
-Vue.component("ship-type-button", {
-    props: ['type', "lang"],
-    template: `
-        <button
-            type="button"
-            class="btn btn-outline-light w-100 py-2 font-weight-bold filter-btn"
-            onclick="updateSetting(this)"
-        ></button>
-    `
-});
-
-Vue.component("ship-rarity-button", {
-    props: ['rarity', "lang"],
-    template: `
-        <button
-            type="button"
-            class="btn btn-outline-light w-100 py-2 font-weight-bold filter-btn"
-            onclick="updateSetting(this)"
-        ></button>
-    `
-});
+//----------------------------------------------------------
+const filter_btn_class = "btn btn-outline-secondary line-5-item py-2 font-weight-bold text-truncate filter-btn",
+    filter_btn_template = `<button type="button" onclick="${updateSetting.name}(this)" class="${filter_btn_class}"></button>`;
+//----------------------------------------------------------
+Vue.component("ship-nation-button", { props: ['nation', "lang"], template: filter_btn_template });
+Vue.component("ship-type-button", { props: ['type', "lang"], template: filter_btn_template });
+Vue.component("ship-rarity-button", { props: ['rarity', "lang"], template: filter_btn_template });
 
 //----------------------------------------------------------
-let [ship_nation, ship_type, ship_rarity] = buildShipSelectOption();
-let c_fleet = "";
-let c_side = "";
-let c_pos = "";
-let c_item = "";
-let c_ships = [];
-let nation_list = [];
-let type_list = [];
-let rarity_list = [];
-let retrofit_only = true;
-let fleet_data = buildFleet();
-let sorted_ship_data = [];
-let sorted_equip_data = [];
-let fleet_in_storage = [];
-let filter_setting = {
-    nation: new Set(),
-    front: new Set(),
-    back: new Set(),
-    sub: new Set(),
-    rarity: new Set(),
-};
-let eqck = false;
-let lan = "en";
-
-const AFL_storage = window.localStorage;
-const fleet_info = {
-    name: () => document.querySelector("#fleet_name"),
-    select: () => document.querySelector("#select_fleet"),
-    msg: () => document.querySelector("#error_message"),
-    list: () => document.querySelector("#fleet_list"),
-    load: () => document.querySelector("#load_fleet"),
-    remove: () => document.querySelector("#remove_fleet"),
-};
-const msg_color = {
-    //red: "text-danger m-1 text-monospace font-weight-bold",
-    //green: "text-success m-1 text-monospace font-weight-bold",
-    red: "text-danger",
-    green: "text-success",
-};
-const _loading_ = {
-    ship: {},
-    equip: {},
-    cache_image: {},
-    load_cache: {},
-};
-
-// ship type
-const type_front = new Set([1, 2, 3, 18, 19]);
-const type_back = new Set([4, 5, 6, 7, 10, 12, 13]);
-const type_sub = new Set([8, 17]);
-const other_nation = new Set([97, 98, 101, 103, 104, 105, 106, 107, 108, 109, 110]); // 97:META, 98:Bulin, 100+:collab
-const other_front = new Set([19]);
-const other_back = new Set([10]);
-const other_sub = new Set([0]);
-const addQuantityList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13,];
-const db_name = "image_cache";
-const db_ver = 1;
-const version = 0.04;
+Vue.component("equip-nation-button", { props: ['nation', "lang"], template: filter_btn_template });
+Vue.component("equip-type-button", { props: ['type', "lang"], template: filter_btn_template });
+Vue.component("equip-rarity-button", { props: ['rarity', "lang"], template: filter_btn_template });
+Vue.component("equip-tier-button", { props: ['tier', "lang"], template: filter_btn_template });
 
 //----------------------------------------------------------
-Object.keys(parsetype).forEach(key => parsetype[key].tw = parsetype[key].cn);
+let c_fleet = "",
+    c_side = "",
+    c_pos = "",
+    c_item = "",
+    c_ships = [],
+    retrofit_only = true,
+    fleet_data = buildFleet(),
+    sorted_ship_data = [],
+    sorted_equip_data = [],
+    fleet_in_storage = [],
+    eqck = false,
+    lan = "en";
+
+const AFL_storage = window.localStorage,
+    filter_setting = {
+        // ship
+        nation: new Set(),
+        front: new Set(),
+        back: new Set(),
+        sub: new Set(),
+        rarity: new Set(),
+        // equip
+        eq_nation: new Set(),
+        eq_rarity: new Set(),
+        eq_type: new Set(),
+        eq_tier: new Set(),
+    },
+    fleet_info = {
+        name: () => document.querySelector("#fleet_name"),
+        select: () => document.querySelector("#select_fleet"),
+        msg: () => document.querySelector("#error_message"),
+        list: () => document.querySelector("#fleet_list"),
+        load: () => document.querySelector("#load_fleet"),
+        remove: () => document.querySelector("#remove_fleet"),
+    },
+    msg_color = {
+        red: "text-danger",
+        green: "text-success",
+    },
+    _loading_ = {
+        ship: {},
+        equip: {},
+        cache_image: {},
+        load_cache: {},
+    };
+
+const
+    // ship
+    type_front = new Set([1, 2, 3, 18, 19]),
+    type_back = new Set([4, 5, 6, 7, 10, 12, 13]),
+    type_sub = new Set([8, 17]),
+    other_nation = new Set([97, 98, 101, 103, 104, 105, 106, 107, 108, 109, 110]), // 97:META, 98:Bulin, 100+:collab
+    other_front = new Set([19]),
+    other_back = new Set([10]),
+    other_sub = new Set([0]),
+    // equip
+    addQuantityList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13,],
+    eq_other_nation = new Set([104, 105, 106]),
+    eq_nation = new Set(lan_eq_nation.map(o => parseInt(o.id, 10))),
+    eq_type = new Set(lan_eq_type.map(o => parseInt(o.id, 10))),
+    eq_rarity = new Set(lan_eq_rarity.map(o => parseInt(o, 10))),
+    eq_tier = new Set(lan_eq_tier.map(o => parseInt(o.id, 10))),
+    // db
+    db_name = "image_cache",
+    db_ver = 1,
+    // dump data
+    version = 0.04;
+
+//----------------------------------------------------------
+Object.defineProperty(Array.prototype, 'isAll', {
+    value: function () { return this.every(v => Boolean(v)); },
+    // function will be enumerable if directly use Array.prototype.custom_function
+    enumerable: false,
+    // then it will show up in every (for...in) and broke the code
+});
 initial();
 
 //----------------------------------------------------------
-let ALF = new Vue({
+const ALF = new Vue({
     el: "#AzurLaneFleetApp",
     data: {
         fleets: fleet_data,
         lang: lan
     },
-});
-
-let shipSelect = new Vue({
+}), shipSelect = new Vue({
     el: "#shipselect",
     data: {
-        nation: ship_nation,
-        type: ship_type,
-        rarity: ship_rarity,
-        shiplist: sorted_ship_data,
+        nation: lan_ship_nation,
+        type: lan_ship_type,
+        rarity: lan_ship_rarity,
+        //shiplist: sorted_ship_data,
         lang: lan
     }
-});
-
-let equipSelect = new Vue({
+}), equipSelect = new Vue({
     el: "#equipselect",
     data: {
-        equips: sorted_equip_data,
+        nation: lan_eq_nation,
+        type: lan_eq_type,
+        rarity: lan_eq_rarity,
+        tier: lan_eq_tier,
+        //equips: sorted_equip_data,
         lang: lan,
     }
 });
@@ -308,7 +314,9 @@ function add_search_event() {
     let search_input = document.querySelector("#search_input");
     if (!search_input) return console.log("search_input not found");
     search_input.addEventListener("input", ship_name_search);
-    $("#shipselect").on("hide.bs.modal", () => search_input.value = ""); // empty text when modal fade
+    let selship = $("#shipselect");
+    selship.on("shown.bs.modal", function () { $(this).find("[autofocus]").focus(); }); // autofocus to input
+    selship.on("hide.bs.modal", () => search_input.value = ""); // empty text when modal fade
     //console.log("add search event");
 }
 
@@ -379,18 +387,15 @@ function dumpID() {
 }
 
 function loadDataByID() {
-    let data = document.getElementById("fleetdata").value;
-    let textbox = document.getElementById("fleetdata");
-
+    let data = document.getElementById("fleetdata").value,
+        textbox = document.getElementById("fleetdata");
     if (data[0] !== "[") {
         data = LZString.decompressFromEncodedURIComponent(data);
         //console.log(data);
     }
-
     data = data.split("!");
-    [main_data, ver, hash] = data;
-
-    let ck = CryptoJS.SHA3(main_data, { outputLength: 256 }).toString();
+    let [main_data, ver, hash] = data,
+        ck = CryptoJS.SHA3(main_data, { outputLength: 256 }).toString();
     if (ck != hash) {
         message = "Error: Corrupted data";
         textbox.value = message;
@@ -398,23 +403,22 @@ function loadDataByID() {
         console.log(main_data);
         return;
     }
-
     textbox.value = "";
     parseID(main_data);
 }
 
 function saveCookie(ckey, cvalue, expday = 365) {
-    let time = new Date();
-    let exp = new Date();
+    let time = new Date(),
+        exp = new Date();
     exp.setTime(time.getTime() + (expday * 1000 * 60 * 60 * 24));
     document.cookie = `${ckey}=${cvalue};expires=${exp.toUTCString()};SameSite=Strict;`;
     //console.log(`${ckey}=${cvalue};`);
 }
 
 function getCookie() {
-    let cookie = document.cookie;
-    let new_list = {};
-    let ignore = new Set(["expires", "SameSite",]);
+    let cookie = document.cookie,
+        new_list = {},
+        ignore = new Set(["expires", "SameSite",]);
     cookie = cookie.split(";").map(t => t.trim());
     cookie.forEach(data => {
         let [key, value] = data.split("=");
@@ -501,9 +505,11 @@ function setRetro() {
 function setCode(item) {
     $(item).button("toggle");
     let lan_list = ["tw", "cn", "en", "jp"];
-    [lan_nation, lan_type].forEach(list => {
+    [lan_ship_nation, lan_ship_type].forEach(list => {
         list.forEach(o => {
             lan_list.forEach(language => {
+                // code: USS
+                // {en:"Eagle Union", en_code:"Eagle Union"} <=> {en:"USS", en_code:"Eagle Union"}
                 let current = o[language];
                 let code = o.code;
                 o[language] = (current == code) ? o[`${language}_code`] : o.code;
@@ -526,39 +532,61 @@ function indexInObj(obj, getvalue = false) {
     return new_list;
 }
 
-function updateSetting(item) {
+async function updateSetting(item) {
     $(item).button("toggle");
-    let strlist = item.name.split("_");
-    let type = strlist[1];
-    let value = parseInt(strlist[2], 10); //type int
-    if (type === "nation") {
-        checksetting("nation", value, type);
-    } else if (type === "type") {
-        switch (c_side) {
-            case "0": // front
-                checksetting("front", value, type);
+    let strlist = item.name.split("_"),
+        type1 = strlist[0], // ship, equip
+        type2 = strlist[1],
+        value = parseInt(strlist[2], 10); //type int
+    if (type1 == "ship") {
+        if (type2 === "nation") {
+            await updateFilter("nation", value, type2);
+        } else if (type2 === "type") {
+            switch (c_side) {
+                case "0":
+                    await updateFilter("front", value, type2);
+                    break;
+                case "1":
+                    await updateFilter("back", value, type2);
+                    break;
+                case "2":
+                    await updateFilter("sub", value, type2);
+                    break;
+                default:
+                    throw Error(`unknown ship type ${type2}`);
+            }
+        } else if (type2 === "rarity") {
+            await updateFilter("rarity", value, type2);
+            item.style.color = item.style.color.length > 0 ? "" : "gold";
+        }
+        shipDisplay();
+    } else if (type1 == "equip") {
+        switch (type2) {
+            case "nation":
+                await updateFilter("eq_nation", value, type2);
                 break;
-            case "1": // back
-                checksetting("back", value, type);
+            case "type":
+                await updateFilter("eq_type", value, type2);
                 break;
-            case "2": // sub
-                checksetting("sub", value, type);
+            case "rarity":
+                await updateFilter("eq_rarity", value, type2);
+                item.style.color = item.style.color.length > 0 ? "" : "gold";
+                break;
+            case "tier":
+                await updateFilter("eq_tier", value, type2);
                 break;
             default:
-                console.log("unknown type");
-                return;
+                throw Error(`unknown equip type ${type2}`);
         }
-    } else if (type === "rarity") {
-        checksetting("rarity", value, type);
+        equipDisplay();
     }
-    shipDisplay();
 }
 
-function checksetting(key, value, type) {
-    let hasvalue = filter_setting[key].has(value);
-    let add_value = (_key, _value) => filter_setting[_key].add(_value);
-    let delete_value = (_key, _value) => filter_setting[_key].delete(_value);
-    let normal_value = (_key, _value) => hasvalue ? delete_value(_key, _value) : add_value(_key, _value);
+async function updateFilter(key, value, type) {
+    let hasvalue = filter_setting[key].has(value),
+        add_value = (_key, _value) => filter_setting[_key].add(_value),
+        delete_value = (_key, _value) => filter_setting[_key].delete(_value),
+        normal_value = (_key, _value) => hasvalue ? delete_value(_key, _value) : add_value(_key, _value);
     if (value != 0) {
         normal_value(key, value);
     } else if (value == 0) {
@@ -573,19 +601,19 @@ function checksetting(key, value, type) {
             normal_value(key, 0);
         }
     }
-    return;
+    return true;
 }
 
 function shipDisplay() {
     let shiplist = document.querySelectorAll("#shiplist button");
     shiplist.forEach((item) => {
         if (item.id != "000000") {
-            let id = parseInt(item.id, 10);
-            let nation = ship_data[id].nationality;
-            let type = ship_data[id].type;
-            let rarity = ship_data[id].rarity;
-            let retro = ship_data[id].retro;
-            let is_select = isShipSelect(nation, type, rarity, retro);
+            let id = parseInt(item.id, 10),
+                nation = ship_data[id].nationality,
+                type = ship_data[id].type,
+                rarity = ship_data[id].rarity,
+                retro = ship_data[id].retro,
+                is_select = isShipSelect(nation, type, rarity, retro);
             item.style.display = is_select ? "" : "none";
             item.setAttribute("displayed", is_select ? true : false);
         }
@@ -595,8 +623,8 @@ function shipDisplay() {
 }
 
 function countShipDisplayed() {
-    let shiplist = document.querySelectorAll("#shiplist button[displayed='true']");
-    document.querySelector("#ship_count").textContent = shiplist.length;
+    document.querySelector("#ship_count").textContent =
+        document.querySelectorAll("#shiplist button[displayed='true']").length;
 }
 
 function hideShipInFleet() {
@@ -626,62 +654,94 @@ function isCorrectShipType(type) {
 function isShipSelect(nation, type, rarity, retro) {
     // when current select ship is front, hide back ships
     if (!isCorrectShipType(type)) return false;
-
-    let indicator_nation = false;
-    let indicator_type = false;
-    let indicator_rarity = false;
-
+    let is_nation = false,
+        is_type = false,
+        is_rarity = false;
     // if ship is front/back/sub and ship type match current selected
     switch (c_side) {
         case "0": // front
             if (filter_setting.front.has(type) || filter_setting.front.size === 0) {
-                indicator_type = true;
+                is_type = true;
             } else if (filter_setting.front.has(0) && other_front.has(type)) {
-                indicator_type = true;
+                is_type = true;
             }
             break;
         case "1": // back
             if (filter_setting.back.has(type) || filter_setting.back.size === 0) {
-                indicator_type = true;
+                is_type = true;
             } else if (filter_setting.back.has(0) && other_back.has(type)) {
-                indicator_type = true;
+                is_type = true;
             }
             break;
         case "2": // sub
             if (filter_setting.sub.has(type) || filter_setting.sub.size === 0) {
-                indicator_type = true;
+                is_type = true;
             } else if (filter_setting.sub.has(0) && other_sub.has(type)) {
-                indicator_type = true;
+                is_type = true;
             }
             break;
         default:
             console.log("unknown type");
             break;
     }
-    if (!indicator_type) return false;
-
+    if (!is_type) return false;
     // if ship nation match current selected
     if (filter_setting.nation.has(nation) || filter_setting.nation.size === 0) {
-        indicator_nation = true;
+        is_nation = true;
     } else if (filter_setting.nation.has(0) && other_nation.has(nation)) {
-        indicator_nation = true;
+        is_nation = true;
     } else {
         return false;
     }
-
     // if ship rarity match current selected
     if (filter_setting.rarity.has(rarity) || filter_setting.rarity.size === 0) {
-        indicator_rarity = true;
+        is_rarity = true;
     } else {
         return false;
     }
-
-    if (indicator_nation && indicator_type && indicator_rarity) {
+    if ([is_nation, is_type, is_rarity].isAll()) {
         // hide/show retrofit ship
         return (retrofit_only && retro === 1) ? false : true;
     } else {
         return false;
     }
+}
+
+function isEquipSelect(nation, type, rarity, tier) {
+    [nation, type, rarity, tier].forEach(num => parseInt(num));
+    let is_nation = false,
+        is_type = false,
+        is_rarity = false,
+        is_tier = false;
+    if (filter_setting.eq_nation.has(nation) || filter_setting.eq_nation.size === 0) {
+        is_nation = true;
+    } else if (filter_setting.eq_nation.has(0) && eq_other_nation.has(nation)) {
+        is_nation = true;
+    } else {
+        return false;
+    }
+    if (filter_setting.eq_type.has(type) || filter_setting.eq_type.size === 0) {
+        is_type = true;
+    } else {
+        return false;
+    }
+    if (filter_setting.eq_rarity.has(rarity) || filter_setting.eq_rarity.size === 0) {
+        is_rarity = true;
+    } else {
+        return false;
+    }
+    if (filter_setting.eq_tier.has(tier) || filter_setting.eq_tier.size === 0) {
+        is_tier = true;
+    } else {
+        return false;
+    }
+    return true;
+    /*
+    if ([is_nation, is_type, is_rarity, is_tier].isAll()) {
+        return true;
+    } else {
+        return false;
+    }*/
 }
 
 function setCurrent(item) {
@@ -701,18 +761,66 @@ function setCurrent(item) {
                 use_set = type_sub;
                 break;
             default:
-                break;
+                throw Error(`${setCurrent.name}: unknown type`);
         }
-        if (!use_set) {
-            console.log("unknown type");
-            return;
-        }
-        ship_type.forEach((item) => item.display = use_set.has(item.id) ? true : ((item.id === 0) ? true : false));
+        // show & hide filter
+        lan_ship_type.forEach((type) => type.display = use_set.has(type.id) ? true : ((type.id == 0) ? true : false));
         shipDisplay();
     } else {
         // equip
+        let side = getSide(),
+            // allowed equip type list
+            equip_type_list = fleet_data[c_fleet][side][c_pos].item[c_item].property.type,
+            // use current ship data
+            use_set = new Set(equip_type_list);
+        // show & hide filter
+        lan_eq_type.forEach((item) => item.display = use_set.has(parseInt(item.id)) ? true : false);
+        // auto set to default
+        if (document.getElementById("always_reset_equip_filter").ariaPressed == "true") resetEquipFilter(true);
         equipDisplay();
     }
+}
+
+function setButtonStats(ele, turn_on = true) {
+    if (turn_on) {
+        if (!ele.classList.contains("active")) active();
+    } else {
+        if (ele.classList.contains("active")) deactiv();
+    }
+    function active() {
+        ele.click();
+        ele.classList.add("active");
+        ele.ariaPressed = true;
+    }
+    function deactiv() {
+        ele.click();
+        ele.classList.remove("active");
+        ele.ariaPressed = false;
+    }
+}
+
+function autoUseDefault(ele) {
+    $(ele).button("toggle");
+    if (ele.classList.contains("active")) {
+        resetEquipFilter(true);
+    } else {
+        resetEquipFilter(false);
+    }
+}
+
+function resetEquipFilter(toDefault = false) {
+    const default_rarity = new Set(toDefault ? [6, 5, 4] : []),
+        default_tier = new Set(toDefault ? [0, 3] : []);
+    document.querySelectorAll("#eq_tier button")
+        .forEach(b => setButtonStats(b, default_tier.has(parseInt(b.value, 10)) ? true : false));
+    document.querySelectorAll("#eq_rarity button")
+        .forEach(b => setButtonStats(b, default_rarity.has(parseInt(b.value, 10)) ? true : false));
+    document.querySelectorAll("#eq_nation button,#eq_type button")
+        .forEach(b => setButtonStats(b, false));
+    filter_setting.eq_type = new Set();
+    filter_setting.eq_nation = new Set();
+    filter_setting.eq_rarity = default_rarity;
+    filter_setting.eq_tier = default_tier;
 }
 
 function equipCheck(ckid) { // after select both submarine type, selcet formidable...somthing happen
@@ -784,41 +892,50 @@ function equipCheck(ckid) { // after select both submarine type, selcet formidab
     }
 }
 
-function equipDisplay() {
-    let side = getSide();
-    if (!side) return;
-    let itemInApp = fleet_data[c_fleet][side][c_pos].item[c_item].property;
-    let typelist = itemInApp.type;
-    let equips = document.querySelectorAll("#equiplist button");
-    let ship = fleet_data[c_fleet][side][c_pos].item[0].property;
-    let shiptype = ship.type;
-    let shipid = ship.id;
-    let display_list = [];
+async function equipDisplay() {
+    let side = getSide(),
+        itemInApp = fleet_data[c_fleet][side][c_pos].item[c_item].property,
+        typelist = itemInApp.type,
+        equips = document.querySelectorAll("#equiplist button"),
+        ship = fleet_data[c_fleet][side][c_pos].item[0].property,
+        shiptype = ship.type,
+        shipid = ship.id,
+        display_list = [];
     equipCheck(shipid);
     equips.forEach((item) => {
         if (item.id != "666666") {
-            let id = parseInt(item.id, 10);
-            let equip = equip_data[id];
-            let type = equip.type;
-            let forbidden = equip.ship_type_forbidden;
+            let id = parseInt(item.id, 10),
+                e = equip_data[id],
+                type = e.type,
+                forbidden = e.ship_type_forbidden;
             if (typelist.includes(type)) {
                 if (forbidden.includes(shiptype)) {
                     item.style.display = "none";
                 } else {
-                    item.style.display = "";
-                    display_list.push(id);
+                    if (isEquipSelect(e.nationality, type, e.rarity, e.tech)) {
+                        item.style.display = "";
+                        display_list.push(id);
+                    } else {
+                        item.style.display = "none";
+                    }
                 }
             } else {
                 item.style.display = "none";
             }
+            item.setAttribute("displayed", item.style.display == "" ? true : false);
         }
     });
-    limitEquip(display_list);
+    await limitEquip(display_list);
+    countEquipDisplayed();
 }
 
-function limitEquip(display_list) {
+function countEquipDisplayed() {
+    document.querySelector("#equip_count").textContent =
+        document.querySelectorAll("#equiplist button[displayed='true']").length;
+}
+
+async function limitEquip(display_list) {
     let side = getSide();
-    if (!side) return;
     let ship = fleet_data[c_fleet][side][c_pos];
     let equipOnShip = [];
     ship.item.forEach((item, index) => {
@@ -837,8 +954,10 @@ function limitEquip(display_list) {
         let limit = parseInt(equip_data[id].equip_limit, 10);
         if (limit != current_equip_limit && limit_list.includes(limit)) {
             document.getElementById(id).style.display = "none";
+            item.setAttribute("displayed", false);
         }
     });
+    return true;
 }
 
 function sorting(arr, key, descen) {
@@ -867,7 +986,6 @@ function setlang(item) {
 
 function setEquip(item, save = true) {
     let side = getSide();
-    if (!side) return;
     let itemInApp = fleet_data[c_fleet][side][c_pos].item[c_item].property;
     let id = parseInt(item.id, 10);
     if (id === 666666) {
@@ -899,14 +1017,12 @@ function getSide() {
         case "2":
             return "sub_ship";
         default:
-            console.log("unknown type");
-            return false;
+            throw Error(`${getSide.name}: unknown side type`);
     }
 }
 
 function setShipAndEquip(item, save = true) {
     let side = getSide();
-    if (!side) return;
     let shipInApp = fleet_data[c_fleet][side][c_pos];
     let shipInList = sorted_ship_data.find((ele) => {
         if (ele.id === item.id) {
@@ -1113,6 +1229,8 @@ async function initial() {
     loadCookie();
     loadStorage();
     splitButtonGroup("shipnation");
+    splitButtonGroup("eq_nation");
+    //splitButtonGroup("eq_type", 6, filter_btn_class.replace("line-5-item", "line-6-item"));
     addWindowSizeEvent();
     document.querySelector("#loading_box").style.display = "none";
     document.querySelector("#app_area").style.display = "";
@@ -1329,25 +1447,52 @@ function buildShipSelectOption() {
     console.time(buildShipSelectOption.name);
     let lan_list = ["tw", "cn", "en", "jp"];
 
-    lan_nation.forEach((item) => {
+    lan_ship_nation.forEach((item) => {
         item.name = `ship_nation_${item.id}`;
         item.tw = item.cn;
         lan_list.forEach(language => item[`${language}_code`] = item[language]);
     });
 
-    lan_type.forEach((item) => {
+    lan_ship_type.forEach((item) => {
         item.name = `ship_type_${item.id}`;
-        item.display = "false";
+        item.display = false;
         item.tw = item.cn;
         lan_list.forEach(language => item[`${language}_code`] = item[language]);
     });
 
-    lan_rarity.forEach((item) => {
+    lan_ship_rarity.forEach((item) => {
         item.name = `ship_rarity_${item.id}`;
-        item.tw = item.cn;
+        //item.tw = item.cn;
+        //lan_list.forEach(language => item[`${language}_code`] = item[language]);
+        lan_list.forEach(language => item[language] = item.code);
     });
     console.timeEnd(buildShipSelectOption.name);
-    return [lan_nation, lan_type, lan_rarity];
+}
+
+function buildEquipSelectOption() {
+    console.time(buildEquipSelectOption.name);
+    let lan_list = ["tw", "cn", "en", "jp"];
+
+    lan_eq_nation.forEach(item => {
+        item.name = `equip_nation_${item.id}`;
+    });
+
+    lan_eq_type.forEach(item => {
+        item.name = `equip_type_${item.id}`;
+        item.display = false;
+    });
+
+    lan_eq_rarity.forEach(item => {
+        item.name = `equip_rarity_${item.id}`;
+        lan_list.forEach(language => item[language] = item.en);
+    });
+
+    lan_eq_tier.forEach(item => {
+        item.name = `equip_tier_${item.id}`;
+        lan_list.forEach(language => item[language] = `${item.id}`);
+    });
+
+    console.timeEnd(buildEquipSelectOption.name);
 }
 
 function addLanguageToEle() {
@@ -1364,7 +1509,8 @@ function addLanguageToEle() {
     });
 }
 
-function splitButtonGroup(target_id = "", max_per_line = 5) {
+function splitButtonGroup(target_id = "", max_per_line = 5, alt_class = "") {
+    if (max_per_line != 5 && alt_class.length == 0) throw Error("max != 5, but no alt_class.");
     let pos = document.getElementById(target_id);
     let buttons = pos.querySelectorAll("button");
     if (buttons.length <= 5) return;
@@ -1373,10 +1519,11 @@ function splitButtonGroup(target_id = "", max_per_line = 5) {
     buttons.forEach((btn, index) => {
         if (index % max_per_line == 0) {
             new_line = document.createElement("div");
-            new_line.className = "btn-group d-flex" + (line_count > 0 ? " mt-1" : "");
+            new_line.className = "btn-group d-flex flex-wrap" + (line_count > 0 ? " mt-1" : "");
             pos.appendChild(new_line);
             line_count++;
         }
+        if (max_per_line != 5) btn.className = alt_class;
         if (new_line) new_line.appendChild(btn);
     });
     pos.className = "";
@@ -1402,7 +1549,11 @@ function adjustEle() {
     }, {
         ele: document.getElementById("dialog_shipselect"), mode: "batch_exchange",
         normal_class: no_effect_class.split(" "),
-        small_class: "mw-100 px-5".split(" "),
+        small_class: "mw-100".split(" "),
+    }, {
+        ele: document.getElementById("dialog_select_equip"), mode: "batch_exchange",
+        normal_class: no_effect_class.split(" "),
+        small_class: "mw-100".split(" "),
     }, {
         ele: document.getElementById("search_box"), mode: "exchange",
         normal_class: "d-flex",
@@ -1410,9 +1561,10 @@ function adjustEle() {
     }];
     // code button
     let btn = document.getElementById("use_code");
-    let btnIsOn = btn.className.includes("active");
+    let btnIsOn = btn.classList.contains("active");
     if (width < safe_size) {
         // force enable code mode
+        /*
         if (lan == "en") {
             if (!btnIsOn) {
                 btn.click();
@@ -1423,10 +1575,11 @@ function adjustEle() {
         } else {
             if (btn.disabled) btn.disabled = false;
         }
+        */
         target_list.forEach(t => classManager(t.ele, t.mode, t.normal_class, t.small_class));
     } else {
         // safe size
-        if (btn.disabled) btn.disabled = false;
+        // if (btn.disabled) btn.disabled = false;
         target_list.forEach(t => classManager(t.ele, t.mode, t.small_class, t.normal_class));
     }
 }
@@ -1434,10 +1587,8 @@ function adjustEle() {
 function classManager(ele = "", mode = "", class_1 = "", class_2 = "") {
     switch (mode) {
         case "exchange":
-            if (ele.classList.contains(class_1)) {
-                ele.classList.remove(class_1);
-                ele.classList.add(class_2);
-            }
+            if (ele.classList.contains(class_1)) ele.classList.remove(class_1);
+            ele.classList.add(class_2);
             break;
         case "batch_exchange":
             if ((class_1 && class_2) instanceof Array && (class_1 && class_2).length > 0) {

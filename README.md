@@ -10,9 +10,18 @@ This site was developed and tested on `Chrome`/`Firefox`
 Compatibility with other browsers is unknown  
 
 ## Update  
+**2021-05-13**
+- better auto adjust UI (no longer force use code)
+- equip filter
+- add button to filter
+  - clear: remove all filter setting
+  - default: filter low rarity/tier equip
+  - always: auto use default
+- auto focus to search input
+
 **2021-05-12**
 - auto adjust some UI to small screen  
-  if window is too small and language is en, force filter enable code mode
+  ~~if window is too small and language is en, force filter enable code mode~~
 - auto clear name after save fleet
 - convert redundant buttons to single button
 - replace old align attr
