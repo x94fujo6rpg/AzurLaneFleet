@@ -1,38 +1,39 @@
 /* jshint esversion: 9 */
 //----------------------------------------------------------
-const lan_target_list = [
-    // for ui element that have no language.
-    // do not change id, unless you know what you are doing.
-    { id: "allow_dup_btn", en: "Allow Duplicate", jp: "重複を許可する", tw: "允許重複的船", },
-    { id: "layout_label", en: "Layout:", jp: "スタイル:", tw: "排版方式:", },
+const
+    lan_target_list = [
+        // for ui element that have no language.
+        // do not change id, unless you know what you are doing.
+        { id: "allow_dup_btn", en: "Allow Duplicate", jp: "重複を許可する", tw: "允許重複的船", },
+        { id: "layout_label", en: "Layout:", jp: "スタイル:", tw: "排版方式:", },
 
-    { id: "add_fleet", en: "Save Current", jp: "現在の艦隊をセーブ", tw: "儲存目前艦隊", },
-    { id: "select_fleet", en: "Select Fleet", jp: "艦隊を選択", tw: "選擇艦隊", },
-    { id: "load_fleet", en: "Load Fleet", jp: "ロード", tw: "載入艦隊", },
-    { id: "remove_fleet", en: "Remove", jp: "削除", tw: "刪除", },
-    { id: "fleet_name_label", en: "Fleet Name", jp: "艦隊の名前", tw: "艦隊名稱", },
+        { id: "add_fleet", en: "Save Current", jp: "現在の艦隊をセーブ", tw: "儲存目前艦隊", },
+        { id: "select_fleet", en: "Select Fleet", jp: "艦隊を選択", tw: "選擇艦隊", },
+        { id: "load_fleet", en: "Load Fleet", jp: "ロード", tw: "載入艦隊", },
+        { id: "remove_fleet", en: "Delete", jp: "削除", tw: "刪除", },
+        { id: "fleet_name_label", en: "Fleet Name", jp: "艦隊の名前", tw: "艦隊名稱", },
 
-    { id: "emptyfleet", en: "Empty Current Fleet", jp: "現在の艦隊を空に", tw: "清空目前艦隊", },
+        { id: "emptyfleet", en: "Empty Current Fleet", jp: "現在の艦隊を空に", tw: "清空目前艦隊", },
 
-    { id: "fleetdata_text", en: "Fleet data", jp: "艦隊データ", tw: "艦隊資料", },
-    { id: "dumpdata", en: "Dump", jp: "ダンプ", tw: "匯出", },
-    { id: "copyData", en: "Copy", jp: "コピー", tw: "複製", },
-    { id: "emptyData", en: "Clear", jp: "クリア", tw: "清空", },
-    { id: "loadDataByID", en: "Load", jp: "ロード", tw: "載入", },
+        { id: "fleetdata_text", en: "Fleet data", jp: "艦隊データ", tw: "艦隊資料", },
+        { id: "dumpdata", en: "Dump", jp: "ダンプ", tw: "匯出", },
+        { id: "copyData", en: "Copy", jp: "コピー", tw: "複製", },
+        { id: "emptyData", en: "Clear", jp: "クリア", tw: "清空", },
+        { id: "loadDataByID", en: "Load", jp: "ロード", tw: "載入", },
 
-    { id: "rebuild_cache_btn", en: "Rebuild Cache", jp: "キャッシュをクリア&再構築", tw: "重建快取", },
+        { id: "rebuild_cache_btn", en: "Rebuild Cache", jp: "キャッシュをクリア&再構築", tw: "重建快取", },
 
-    { id: "select_ship", en: "Select Ship", jp: "艦船を選択", tw: "選擇艦船", },
-    { id: "filter_nation", en: "Nation", jp: "陣営", tw: "國家", },
-    { id: "filter_type", en: "Type", jp: "艦種", tw: "艦種", },
-    { id: "filter_rarity", en: "Rarity", jp: "レア度", tw: "稀有度", },
+        { id: "select_ship", en: "Select Ship", jp: "艦船を選択", tw: "選擇艦船", },
+        { id: "filter_nation", en: "Nation", jp: "陣営", tw: "國家", },
+        { id: "filter_type", en: "Type", jp: "艦種", tw: "艦種", },
+        { id: "filter_rarity", en: "Rarity", jp: "レア度", tw: "稀有度", },
 
-    { id: "search_input", en: "Search", jp: "検索", tw: "搜尋", },
-    { id: "filter_search_result", en: "Result", jp: "結果", tw: "結果", },
-    { id: "filter_retro", en: "Retrofitted Ship Only", jp: "改造された艦船だけ", tw: "只顯示改造後的", },
+        { id: "search_input", en: "Search", jp: "検索", tw: "搜尋", },
+        { id: "filter_search_result", en: "Result", jp: "結果", tw: "結果", },
+        { id: "filter_retro", en: "Retrofitted Ship Only", jp: "改造された艦船だけ", tw: "只顯示改造後的", },
 
-    { id: "select_equip", en: "Select Equip", jp: "装備を選択", tw: "選擇裝備", },
-],
+        { id: "select_equip", en: "Select Equip", jp: "装備を選択", tw: "選擇裝備", },
+    ],
     // equip type
     parsetype = {
         1: { cn: "驅逐砲", en: "DD Gun", jp: "駆逐砲" },
@@ -57,18 +58,19 @@ Object.keys(parsetype).forEach(key => parsetype[key].tw = parsetype[key].cn);
 
 //----------------------------------------------------------
 // ship filter
-const lan_ship_nation = [
-    { id: 1, cn: "白鷹", en: "Eagle Union", jp: "ユニオン", code: "USS" },
-    { id: 2, cn: "皇家", en: "Royal Navy", jp: "ロイヤル", code: "HMS" },
-    { id: 3, cn: "重櫻", en: "Sakura Empire", jp: "重桜", code: "IJN" },
-    { id: 4, cn: "鐵血", en: "Iron Blood", jp: "鉄血", code: "KMS" },
-    { id: 5, cn: "東煌", en: "Dragon Empery", jp: "東煌", code: "PRAN/ROC" },
-    { id: 6, cn: "撒丁帝國", en: "Sardegna Empire", jp: "サディア", code: "RN" },
-    { id: 7, cn: "北方聯合", en: "Northern Parliament", jp: "北連", code: "SN" },
-    { id: 8, cn: "自由鳶尾", en: "Iris Libre", jp: "アイリス", code: "FFNF" },
-    { id: 9, cn: "維希教廷", en: "Vichya Dominion", jp: "ヴィシア", code: "MNF" },
-    { id: 0, cn: "其他", en: "Other", jp: "その他", code: "Other" },
-],
+const
+    lan_ship_nation = [
+        { id: 1, cn: "白鷹", en: "Eagle Union", jp: "ユニオン", code: "USS" },
+        { id: 2, cn: "皇家", en: "Royal Navy", jp: "ロイヤル", code: "HMS" },
+        { id: 3, cn: "重櫻", en: "Sakura Empire", jp: "重桜", code: "IJN" },
+        { id: 4, cn: "鐵血", en: "Iron Blood", jp: "鉄血", code: "KMS" },
+        { id: 5, cn: "東煌", en: "Dragon Empery", jp: "東煌", code: "PRAN/ROC" },
+        { id: 6, cn: "撒丁帝國", en: "Sardegna Empire", jp: "サディア", code: "RN" },
+        { id: 7, cn: "北方聯合", en: "Northern Parliament", jp: "北連", code: "SN" },
+        { id: 8, cn: "自由鳶尾", en: "Iris Libre", jp: "アイリス", code: "FFNF" },
+        { id: 9, cn: "維希教廷", en: "Vichya Dominion", jp: "ヴィシア", code: "MNF" },
+        { id: 0, cn: "其他", en: "Other", jp: "その他", code: "Other" },
+    ],
     lan_ship_type = [
         { id: 8, cn: "潛艇", en: "Submarine", jp: "潜水艦", code: "SS", pos: "sub" },
         { id: 17, cn: "潛母", en: "Submarine Carrier", jp: "潜水空母", code: "SSV", pos: "sub" },
@@ -97,7 +99,8 @@ buildShipSelectOption();
 
 //----------------------------------------------------------
 // equip filter
-const lan_eq_type = Object.keys(parsetype).map(key => key = Object.assign({ id: key }, parsetype[key])),
+const
+    lan_eq_type = Object.keys(parsetype).map(key => key = Object.assign({ id: key }, parsetype[key])),
     lan_eq_nation = lan_ship_nation.map(o => Object.assign({}, o)),
     lan_eq_tier = [{ id: 0, }, { id: 3, }, { id: 2, }, { id: 1, },],
     lan_eq_rarity = [
@@ -189,7 +192,8 @@ Vue.component("fleet-container", {
 });
 
 //----------------------------------------------------------
-const filter_btn_class = "btn btn-outline-secondary line-5-item py-2 font-weight-bold text-truncate filter-btn",
+const
+    filter_btn_class = "btn btn-outline-secondary line-5-item py-2 font-weight-bold text-truncate filter-btn",
     filter_btn_template = `<button type="button" onclick="${updateSetting.name}(this)" class="${filter_btn_class}"></button>`;
 //----------------------------------------------------------
 Vue.component("ship-nation-button", { props: ['nation', "lang"], template: filter_btn_template });
@@ -203,7 +207,8 @@ Vue.component("equip-rarity-button", { props: ['rarity', "lang"], template: filt
 Vue.component("equip-tier-button", { props: ['tier', "lang"], template: filter_btn_template });
 
 //----------------------------------------------------------
-let c_fleet = "",
+let
+    c_fleet = "",
     c_side = "",
     c_pos = "",
     c_item = "",
@@ -216,7 +221,8 @@ let c_fleet = "",
     eqck = false,
     lan = "en";
 
-const AFL_storage = window.localStorage,
+const
+    AFL_storage = window.localStorage,
     filter_setting = {
         // ship
         nation: new Set(),
@@ -281,32 +287,33 @@ Object.defineProperty(Array.prototype, 'isAll', {
 initial();
 
 //----------------------------------------------------------
-const ALF = new Vue({
-    el: "#AzurLaneFleetApp",
-    data: {
-        fleets: fleet_data,
-        lang: lan
-    },
-}), shipSelect = new Vue({
-    el: "#shipselect",
-    data: {
-        nation: lan_ship_nation,
-        type: lan_ship_type,
-        rarity: lan_ship_rarity,
-        //shiplist: sorted_ship_data,
-        lang: lan
-    }
-}), equipSelect = new Vue({
-    el: "#equipselect",
-    data: {
-        nation: lan_eq_nation,
-        type: lan_eq_type,
-        rarity: lan_eq_rarity,
-        tier: lan_eq_tier,
-        //equips: sorted_equip_data,
-        lang: lan,
-    }
-});
+const
+    ALF = new Vue({
+        el: "#AzurLaneFleetApp",
+        data: {
+            fleets: fleet_data,
+            lang: lan
+        },
+    }), shipSelect = new Vue({
+        el: "#shipselect",
+        data: {
+            nation: lan_ship_nation,
+            type: lan_ship_type,
+            rarity: lan_ship_rarity,
+            //shiplist: sorted_ship_data,
+            lang: lan
+        }
+    }), equipSelect = new Vue({
+        el: "#equipselect",
+        data: {
+            nation: lan_eq_nation,
+            type: lan_eq_type,
+            rarity: lan_eq_rarity,
+            tier: lan_eq_tier,
+            //equips: sorted_equip_data,
+            lang: lan,
+        }
+    });
 
 //----------------------------------------------------------
 
@@ -953,7 +960,8 @@ async function limitEquip(display_list) {
     display_list.forEach(id => {
         let limit = parseInt(equip_data[id].equip_limit, 10);
         if (limit != current_equip_limit && limit_list.includes(limit)) {
-            document.getElementById(id).style.display = "none";
+            let item = document.getElementById(id);
+            item.style.display = "none";
             item.setAttribute("displayed", false);
         }
     });
@@ -1561,7 +1569,7 @@ function adjustEle() {
     }];
     // code button
     let btn = document.getElementById("use_code");
-    let btnIsOn = btn.classList.contains("active");
+    //let btnIsOn = btn.classList.contains("active");
     if (width < safe_size) {
         // force enable code mode
         /*
@@ -1626,8 +1634,7 @@ function fleetManager(mode = "", all_fleet = []) {
             console.log(`remove ${eof_fleet} old fleet data`);
             return true;
         default:
-            console.log(`unknown action: ${mode}`);
-            return false;
+            throw Error(`unknown action: ${mode}`);
     }
 }
 
@@ -1645,8 +1652,7 @@ function storageManager(mode = "get", data_key = "", data = "") {
         case "remove":
             return AFL_storage.removeItem(data_key);
         default:
-            console.log(`unknown action: ${mode}`);
-            return false;
+            throw Error(`unknown action: ${mode}`);
     }
 
     function getData(key) {

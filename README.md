@@ -13,7 +13,6 @@ Compatibility with other browsers is unknown
 **2021-05-13**
 - better auto adjust UI (no longer force use code)
 - equip filter
-- add button to filter
   - clear: remove all filter setting
   - default: filter low rarity/tier equip
   - always: auto use default
