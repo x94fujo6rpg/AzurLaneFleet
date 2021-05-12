@@ -289,16 +289,13 @@
                         </div>
                     </div>
                     <div class="d-inline-flex w-100 font-weight-bold">
-
                         <div class="d-flex m-3 line-3-item" id="search_box">
-                            <input type="text" class="mx-1 w-100" id="search_input" autocomplete="on" name="fname" autofocus>
+                            <input class="w-100 rounded" type="text" class="mx-1 w-100" id="search_input" autocomplete="on" name="fname" autofocus>
                         </div>
-
                         <div class="d-flex m-auto line-3-item">
                             <label class="my-auto ml-auto mr-1" ui_id="filter_search_result">Result</label>
                             <div class="my-auto mr-auto ml-1" id="ship_count"></div>
                         </div>
-
                         <div class="d-flex m-3 line-3-item">
                             <button id='use_code' name="use_code" type="button" class="m-auto btn btn-outline-light font-weight-bold" aria-pressed="false" onclick="setCode(this)">Code</button>
                             <button id='filter_retro' name="retro_ship_only" type="button" class="m-auto btn btn-outline-light font-weight-bold active" aria-pressed="true" onclick="setRetro(this)">Retrofitted Ship Only</button>
@@ -341,7 +338,7 @@
                             <equip-tier-button v-for="item in tier" v-bind:key="item.id" v-bind:name="item.name" v-text="item[lang]" v-bind:value="item.id"></equip-tier-button>
                         </div>
                     </div>
-                    <div class="d-inline-flex w-100 font-weight-bold">                        
+                    <div class="d-inline-flex w-100 font-weight-bold">
                         <div class="d-flex m-3 line-3-item">
                             <button id='reset_equip_filter' type="button" class="m-auto btn btn-outline-light font-weight-bold" aria-pressed="false" onclick="resetEquipFilter(true)">Default</button>
                             <button id='always_reset_equip_filter' type="button" class="m-auto btn btn-outline-light font-weight-bold" aria-pressed="false" onclick="autoUseDefault(this)">Always</button>
