@@ -15,6 +15,7 @@ Compatibility with other browsers is unknown
   if window is too small and language is en, force filter enable code mode
 - auto clear name after save fleet
 - convert redundant buttons to single button
+- replace old align attr
 
 **2021-05-11**
 - adjust some UI

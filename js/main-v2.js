@@ -245,8 +245,10 @@ const fleet_info = {
     remove: () => document.querySelector("#remove_fleet"),
 };
 const msg_color = {
-    red: "text-danger m-1 text-monospace font-weight-bold",
-    green: "text-success m-1 text-monospace font-weight-bold",
+    //red: "text-danger m-1 text-monospace font-weight-bold",
+    //green: "text-success m-1 text-monospace font-weight-bold",
+    red: "text-danger",
+    green: "text-success",
 };
 const _loading_ = {
     ship: {},
@@ -1388,35 +1390,27 @@ function addWindowSizeEvent() {
 function adjustEle() {
     let width = $(window).width();
     let safe_size = 1300;
-    let target_list = [];
     let no_effect_class = "adjustEle_placeholder";
-    // code button
-    let btn = document.getElementById("use_code");
-    let btnIsOn = btn.className.includes("active");
-    // dup & layout
-    target_list.push({
+    let target_list = [{
         ele: document.getElementById("option_box_1"), mode: "exchange",
         normal_class: "w-25",
         small_class: "w-50",
-    });
-    // fleet storage
-    target_list.push({
+    }, {
         ele: document.getElementById("fleet_storage"), mode: "exchange",
         normal_class: "w-50",
         small_class: "w-100",
-    });
-    // select ship
-    target_list.push({
+    }, {
         ele: document.getElementById("dialog_shipselect"), mode: "batch_exchange",
         normal_class: no_effect_class.split(" "),
         small_class: "mw-100 px-5".split(" "),
-    });
-    // search box
-    target_list.push({
+    }, {
         ele: document.getElementById("search_box"), mode: "exchange",
         normal_class: "d-flex",
         small_class: "flex-wrap",
-    });
+    }];
+    // code button
+    let btn = document.getElementById("use_code");
+    let btnIsOn = btn.className.includes("active");
     if (width < safe_size) {
         // force enable code mode
         if (lan == "en") {
@@ -1435,22 +1429,22 @@ function adjustEle() {
         if (btn.disabled) btn.disabled = false;
         target_list.forEach(t => classManager(t.ele, t.mode, t.small_class, t.normal_class));
     }
+}
 
-    function classManager(ele = "", mode = "", class_1 = "", class_2 = "") {
-        switch (mode) {
-            case "exchange":
-                if (ele.classList.contains(class_1)) {
-                    ele.classList.remove(class_1);
-                    ele.classList.add(class_2);
-                }
-                break;
-            case "batch_exchange":
-                if ((class_1 && class_2) instanceof Array && (class_1 && class_2).length > 0) {
-                    class_1.forEach(c => ele.classList.remove(c));
-                    class_2.forEach(c => ele.classList.add(c));
-                }
-                break;
-        }
+function classManager(ele = "", mode = "", class_1 = "", class_2 = "") {
+    switch (mode) {
+        case "exchange":
+            if (ele.classList.contains(class_1)) {
+                ele.classList.remove(class_1);
+                ele.classList.add(class_2);
+            }
+            break;
+        case "batch_exchange":
+            if ((class_1 && class_2) instanceof Array && (class_1 && class_2).length > 0) {
+                class_1.forEach(c => ele.classList.remove(c));
+                class_2.forEach(c => ele.classList.add(c));
+            }
+            break;
     }
 }
 
@@ -1528,7 +1522,7 @@ function loadStorage() {
         //console.log(data);
     }
     let msg = fleet_info.msg();
-    msg.className = msg_color.green;
+    classManager(msg, "exchange", msg_color.red, msg_color.green);
     msg.textContent = `load ${fleet_in_storage.length} fleet`;
     console.log(msg.textContent);
 }
@@ -1568,14 +1562,14 @@ function add_fleet() {
     let name_enc = encodeURIComponent(name);
     let msg = fleet_info.msg();
     if (!name || name.length == 0) {
-        msg.className = msg_color.red;
+        classManager(msg, "exchange", msg_color.green, msg_color.red);
         msg.textContent = "error: no fleet name";
         return;
     } else {
         let data = dumpID();
         fleet_in_storage.push({ name: name_enc, fleet: data });
         saveStorage();
-        msg.className = msg_color.green;
+        classManager(msg, "exchange", msg_color.red, msg_color.green);
         msg.textContent = `add fleet: ${name}`;
         ele.value = ""; // clear after save
     }
@@ -1585,20 +1579,20 @@ function load_fleet() {
     let msg = fleet_info.msg();
     let fleet_id = fleet_info.select().getAttribute("sotrge_id");
     if (!fleet_id || isNaN(fleet_id)) {
-        msg.className = msg_color.red;
+        classManager(msg, "exchange", msg_color.green, msg_color.red);
         msg.textContent = "error: invalid fleet id";
         return;
     }
 
     let data = fleet_in_storage[fleet_id];
     if (!data) {
-        msg.className = msg_color.red;
+        classManager(msg, "exchange", msg_color.green, msg_color.red);
         msg.textContent = "error: no fleet data";
         return;
     }
 
     let name = decodeURIComponent(data.name);
-    msg.className = msg_color.green;
+    classManager(msg, "exchange", msg_color.red, msg_color.green);
     msg.textContent = `load fleet:${fleet_id}_[${name}]`;
     fleet_info.name().value = name;
     clear_select();
@@ -1619,20 +1613,20 @@ function remove_fleet() {
     let msg = fleet_info.msg();
     let fleet_id = fleet_info.select().getAttribute("sotrge_id");
     if (!fleet_id || isNaN(fleet_id)) {
-        msg.className = msg_color.red;
+        classManager(msg, "exchange", msg_color.green, msg_color.red);
         msg.textContent = "error: invalid fleet id";
         return;
     }
 
     let data = fleet_in_storage[fleet_id];
     if (!data) {
-        msg.className = msg_color.red;
+        classManager(msg, "exchange", msg_color.green, msg_color.red);
         msg.textContent = "error: no fleet data";
         return;
     }
 
     let name = decodeURIComponent(data.name);
-    msg.className = msg_color.green;
+    classManager(msg, "exchange", msg_color.red, msg_color.green);
     msg.textContent = `remove fleet: ${fleet_id}_[${name}]`;
     clear_select();
     fleet_in_storage.splice(fleet_id, 1);
@@ -1679,26 +1673,22 @@ function switchLayout(ele, same = false) {
     }
     saveCookie("layout", ele.textContent);
     function changeClass(key = "") {
-        let class_list = [
-            {
-                target: "app_box",
-                h: "container mw-100",
-                v: "row justify-content-center py-1 px-5 m-0",
-                v2: "d-table justify-content-center m-auto"
-            },
-            {
-                target: "fleet_box_o",
-                h: "d-grid justify-content-center",
-                v: "d-grid border border-secondary",
-                v2: "flex-row border border-secondary"
-            },
-            {
-                target: "fleet_box_i",
-                h: "row m-2 border border-secondary py-2",
-                v: "col m-2",
-                v2: "col m-2"
-            },
-        ];
+        let class_list = [{
+            target: "app_box",
+            h: "container mw-100",
+            v: "row justify-content-center py-1 px-5 m-0",
+            v2: "d-table justify-content-center m-auto"
+        }, {
+            target: "fleet_box_o",
+            h: "d-grid justify-content-center",
+            v: "d-grid border border-secondary",
+            v2: "flex-row border border-secondary"
+        }, {
+            target: "fleet_box_i",
+            h: "row m-2 border border-secondary py-2",
+            v: "col m-2",
+            v2: "col m-2"
+        },];
         class_list.forEach(o => {
             document.querySelectorAll(`.${o.target}`).forEach(e => {
                 e.className = `${o[key]} ${o.target}`;
@@ -1726,18 +1716,10 @@ async function initialDB(db_name, db_ver) {
     });
     //console.log(db);
     const AFDB = {
-        async getImgCache(id = "") {
-            return (await db).get(db_name, id);
-        },
-        async setImgCache(id = "", data_url = "") {
-            return (await db).put(db_name, data_url, id);
-        },
-        async clear() {
-            return (await db).clear(db_name);
-        },
-        async allKeys() {
-            return (await db).getAllKeys(db_name);
-        }
+        async getImgCache(id = "") { return (await db).get(db_name, id); },
+        async setImgCache(id = "", data_url = "") { return (await db).put(db_name, data_url, id); },
+        async clear() { return (await db).clear(db_name); },
+        async allKeys() { return (await db).getAllKeys(db_name); }
     };
     //console.log(AFDB);
     return [db, AFDB];

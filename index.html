@@ -190,37 +190,37 @@
         </div>
     </div>
     <div id="app_area" style="display:none;">
-        <div align="center" id="options" clas="container">
-            <div class="btn-group btn-group-toggle d-flex w-25 my-2" data-toggle="buttons">
+        <div id="options" class="">
+            <div class="btn-group btn-group-toggle d-flex w-25 my-2 mx-auto" data-toggle="buttons">
                 <label class="btn btn-outline-secondary font-weight-bold w-100" id="tw" onclick="setlang(this)">
-                    <input type="radio" name="lang" autocomplete="off">TW
+                    <input type="radio" name="lang">TW
                 </label>
                 <label class="btn btn-outline-secondary font-weight-bold w-100" id="cn" onclick="setlang(this)">
-                    <input type="radio" name="lang" autocomplete="off">CN
+                    <input type="radio" name="lang">CN
                 </label>
                 <label class="btn btn-outline-secondary font-weight-bold w-100" id="jp" onclick="setlang(this)">
-                    <input type="radio" name="lang" autocomplete="off">JP
+                    <input type="radio" name="lang">JP
                 </label>
                 <label class="btn btn-outline-secondary font-weight-bold w-100 active" id="en" onclick="setlang(this)">
-                    <input type="radio" name="lang" autocomplete="off" checked>EN
+                    <input type="radio" name="lang" checked>EN
                 </label>
             </div>
-            <div class="btn-group d-flex w-25 my-2" id="option_box_1">
+            <div class="btn-group d-flex my-2 mx-auto w-25" id="option_box_1">
                 <button class="btn btn-outline-secondary w-100" type="button" id="allow_dup_btn" onclick="allow_dup()">Allow Duplicate</button>
                 <button class="btn btn-secondary w-100" type="button" id="layout_setting" onclick="switchLayout(this)">Horizontal</button>
             </div>
-            <div class="dropdown my-1 container w-50 d-flex" id="fleet_storage">
+            <div class="dropdown my-1 container d-flex w-50" id="fleet_storage">
                 <button class="btn btn-secondary w-25 mx-1" type="button" id="add_fleet" onclick="add_fleet()">Save Current</button>
                 <button class="btn btn-secondary w-25 mx-1 dropdown-toggle text-truncate" type="button" id="select_fleet" onclick="updateStorageList()" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Select Fleet
                     </button>
-                <div class="dropdown-menu bg-secondary" id="fleet_list" aria-labelledby="dropdownMenuButton"></div>
+                <div class="dropdown-menu bg-secondary" id="fleet_list" aria-labelledby="select_fleet"></div>
                 <button class="btn btn-secondary w-25 mx-1" type="button" id="load_fleet" onclick="load_fleet()" disabled>Load Fleet</button>
                 <button class="btn btn-danger w-25 mx-1" type="button" id="remove_fleet" onclick="remove_fleet()" disabled>Remove</button>
             </div>
-            <div class="" id="error_message"></div>
-            <div class="d-grid my-2 w-25">
-                <label class="h4" for="fleet_name" id="fleet_name_label">Fleet Name</label>
+            <div class="text-success text-center my-2 text-monospace font-weight-bold" id="error_message"></div>
+            <div class="d-grid my-2 mx-auto w-25">
+                <label class="h4 m-auto" for="fleet_name" id="fleet_name_label">Fleet Name</label>
                 <input class="text-light text-center bg-secondary rounded" id="fleet_name" type="text" autocomplete="name" name="mname">
             </div>
         </div>
@@ -228,25 +228,22 @@
             <fleet-container v-for="fleet in fleets" v-bind:key="fleet.id" v-bind:fleet="fleet" v-bind:name="fleet.id" v-bind:lang="lang">
             </fleet-container>
         </div>
-        <br>
-        <div class="container" align="center">
-            <button type="button" class="btn btn-danger" id="emptyfleet" onclick="emptyfleet()">Empty Current Fleet</button>
+        <div class="d-flex mx-auto my-5">
+            <button type="button" class="btn btn-danger m-auto" id="emptyfleet" onclick="emptyfleet()">Empty Current Fleet</button>
         </div>
-        <br>
-        <div class="container" align="center">
-            <h4 class="text-light" id="fleetdata_text">Fleet data</h4>
-            <textarea class="databox text-light" id="fleetdata"></textarea>
-            <div class="container">
-                <button type="button" class="btn" id="dumpdata" onclick="dumpID()">Dump</button>
-                <button type="button" class="btn" id="copyData" onclick="copyData()">Copy</button>
-                <button type="button" class="btn" id="emptyData" onclick="emptyData()">Clear</button>
-                <button type="button" class="btn btn-danger" id="loadDataByID" onclick="loadDataByID()">Load</button>
+        <div class="d-grid mx-auto my-5">
+            <h4 class="d-flex text-light mx-auto my-1" id="fleetdata_text">Fleet data</h4>
+            <textarea class="d-flex databox text-light mx-auto my-1" id="fleetdata"></textarea>
+            <div class="d-flex mx-auto my-1">
+                <button type="button" class="btn mx-1 w-100" id="dumpdata" onclick="dumpID()">Dump</button>
+                <button type="button" class="btn mx-1 w-100" id="copyData" onclick="copyData()">Copy</button>
+                <button type="button" class="btn mx-1 w-100" id="emptyData" onclick="emptyData()">Clear</button>
+                <button type="button" class="btn mx-1 w-100 btn-danger" id="loadDataByID" onclick="loadDataByID()">Load</button>
             </div>
         </div>
-        <br>
     </div>
-    <div class="container my-5" align="center">
-        <div class="container">
+    <div class="d-flex my-5">
+        <div class="d-flex m-auto">
             <a href="https://github.com/x94fujo6rpg/AzurLaneFleet">Github</a>
         </div>
     </div>
@@ -313,15 +310,15 @@
             </div>
         </div>
     </div>
-    <div class="d-flex justify-content-center my-3">
-        <button type="button" class="btn btn-danger px-1 py-0" onclick="emptyCache()" id="rebuild_cache_btn">Rebuild Cache</button>
+    <div class="d-flex my-3 mx-auto">
+        <button type="button" class="btn btn-danger px-1 py-0 mx-auto" onclick="emptyCache()" id="rebuild_cache_btn">Rebuild Cache</button>
     </div>
     <div class="container">
         <div class="text-center text-info mt-5" id="suggestion">
             Recommend using Chrome for the best experience.<br> This site was developed and tested on Chrome/Firefox.<br> IE/Edge(Old) is unsupported.<br> Compatibility with other browsers is unknown.
         </div>
     </div>
-    <footer class="container text-center mt-5" id="footer" align="center">
+    <footer class="container text-center mt-5" id="footer">
         The copyright of the data used on this site is owned by the following companies<br> © Manjuu Co.,Ltd. & YongShi Co.,Ltd.<br> © Yostar, Inc.
     </footer>
     <script src="lib/jquery-3.3.1.slim.min.js"></script>
