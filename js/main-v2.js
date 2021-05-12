@@ -25,7 +25,7 @@ const
 
         { id: "select_ship", en: "Select Ship", jp: "艦船を選択", tw: "選擇艦船", },
         { id: "filter_nation", en: "Nation", jp: "陣営", tw: "國家", },
-        { id: "filter_type", en: "Type", jp: "艦種", tw: "艦種", },
+        { id: "filter_type", en: "Type", jp: "種類", tw: "種類", },
         { id: "filter_rarity", en: "Rarity", jp: "レア度", tw: "稀有度", },
 
         { id: "search_input", en: "Search", jp: "検索", tw: "搜尋", },
@@ -517,6 +517,20 @@ function setCode(item) {
             lan_list.forEach(language => {
                 // code: USS
                 // {en:"Eagle Union", en_code:"Eagle Union"} <=> {en:"USS", en_code:"Eagle Union"}
+                let current = o[language];
+                let code = o.code;
+                o[language] = (current == code) ? o[`${language}_code`] : o.code;
+            });
+        });
+    });
+}
+
+function setEqCode(item) {
+    $(item).button("toggle");
+    let lan_list = ["tw", "cn", "en", "jp"];
+    [lan_eq_nation].forEach(list => {
+        list.forEach(o => {
+            lan_list.forEach(language => {
                 let current = o[language];
                 let code = o.code;
                 o[language] = (current == code) ? o[`${language}_code`] : o.code;
@@ -1506,11 +1520,13 @@ function buildEquipSelectOption() {
 function addLanguageToEle() {
     let lan_list = ["en", "jp", "tw"];
     lan_target_list.forEach(o => {
-        let ele = document.getElementById(o.id) || document.querySelector(`[ui_id=${o.id}]`);
-        if (ele) {
-            ele.setAttribute("ui_text", "true");
-            ele.setAttribute("ui_cn", o.tw);
-            lan_list.forEach(key => ele.setAttribute(`ui_${key}`, o[key]));
+        let eles = document.querySelectorAll(`#${o.id},[ui_id=${o.id}]`);
+        if (eles.length > 0) {
+            eles.forEach(e => {
+                e.setAttribute("ui_text", "true");
+                e.setAttribute("ui_cn", o.tw);
+                lan_list.forEach(key => e.setAttribute(`ui_${key}`, o[key]));
+            });
         } else {
             console.log(`id[${o.id}] not found`);
         }
@@ -1568,7 +1584,7 @@ function adjustEle() {
         small_class: "flex-wrap",
     }];
     // code button
-    let btn = document.getElementById("use_code");
+    //let btn = document.getElementById("use_code");
     //let btnIsOn = btn.classList.contains("active");
     if (width < safe_size) {
         // force enable code mode
