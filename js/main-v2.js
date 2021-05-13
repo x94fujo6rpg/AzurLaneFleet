@@ -457,6 +457,10 @@ function loadCookie() {
         allow_dup();
     }
 
+    if (clist.thick_frame == 1) {
+        document.getElementById("frame_setting").click();
+    }
+
     if (clist.layout) {
         let layout_switch = document.querySelector("#layout_setting");
         layout_switch.textContent = clist.layout;
@@ -1804,6 +1808,32 @@ function remove_fleet() {
     clear_select();
     fleet_in_storage.splice(fleet_id, 1);
     saveStorage();
+}
+
+function frameSize(ele) {
+    $(ele).button("toggle");
+    //ele = document.getElementById("frame_setting");
+    let thicc = ele.ariaPressed ? true : false,
+        location = window.location.href,
+        reg = /b\.png/, done = 0, fail = 0;
+    [sorted_equip_data, sorted_ship_data].forEach(list => {
+        list.forEach(item => {
+            if (item.frame != "") item.frame = replaceSrc(item.frame);
+        });
+    });
+    document.querySelectorAll("img.frame").forEach(item => {
+        if (item.currentSrc != "") item.src = replaceSrc(item.currentSrc);
+    });
+    console.log(`done: ${done}, failed: ${fail}`);
+    saveCookie("thick_frame", thicc ? 1 : 0);
+    function replaceSrc(src = "") {
+        if (src != location) {
+            done++;
+            return src.match(reg) ? src.replace("b.png", ".png") : src.replace(".png", "b.png");
+        } else {
+            fail++;
+        }
+    }
 }
 
 function switchLayout(ele, same = false) {
