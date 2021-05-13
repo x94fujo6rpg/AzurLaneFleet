@@ -459,7 +459,7 @@ function loadCookie() {
 
     if (clist.thick_frame == 1) {
         let ele = document.getElementById("frame_setting");
-        setTimeout(() => frameSize(ele), 1000);
+        setTimeout(() => frameSize(ele), 0);
     }
 
     if (clist.layout) {
@@ -870,9 +870,9 @@ function equipCheck(ckid) { // after select both submarine type, selcet formidab
     if (ckid === atob("MjA3MDUw") || ckid === atob("MzA3MDcw")) {
         if (eqck) {
             att(bg, "src", "3.", "4.");
-            att(frame, "src", "3.", "4.");
+            att(frame, "src", "ame_3", "ame_4");
             prop(itemInList, "bg", "3.", "4.");
-            prop(itemInList, "frame", "3.", "4.");
+            prop(itemInList, "frame", "ame_3", "ame_4");
             if (isCache) {
                 icon.setAttribute("src", s2);
                 itemInList.icon = s2;
@@ -894,9 +894,9 @@ function equipCheck(ckid) { // after select both submarine type, selcet formidab
     }
     function restore() {
         att(bg, "src", "4.", "3.");
-        att(frame, "src", "4.", "3.");
+        att(frame, "src", "ame_4", "ame_3");
         prop(itemInList, "bg", "4.", "3.");
-        prop(itemInList, "frame", "4.", "3.");
+        prop(itemInList, "frame", "ame_4", "ame_3");
         if (isCache) {
             s1 = typeof (itemInList.icon_cache) == "boolean" ? s1 : itemInList.icon_cache;
             icon.setAttribute("src", s1);
@@ -1815,7 +1815,7 @@ function frameSize(ele) {
     $(ele).button("toggle");
     let thicc = ele.ariaPressed ? true : false,
         location = window.location.href,
-        done = 0, fail = 0;
+        reg = /b+\.png/, done = 0, fail = 0;
     [sorted_equip_data, sorted_ship_data].forEach(list => {
         list.forEach(item => {
             if (item.frame != "") item.frame = replaceSrc(item.frame);
@@ -1824,19 +1824,19 @@ function frameSize(ele) {
     document.querySelectorAll("img.frame").forEach(item => {
         if (item.currentSrc != "") item.src = replaceSrc(item.currentSrc);
     });
-    console.log(`done: ${done}, failed: ${fail}`);
+    console.log(`[${frameSize.name}] done: ${done}, failed: ${fail}`);
     saveCookie("thick_frame", thicc ? 1 : 0);
     function replaceSrc(src = "") {
         if (src != location) {
             done++;
             if (thicc) {
-                if (src.match(/b+\.png/)) {
-                    return src.replace(/b+\.png/, ".png");
+                if (src.match(reg)) {
+                    return src.replace(reg, ".png");
                 } else {
                     return src.replace(".png", "b.png");
                 }
             } else {
-                return src.replace(/b+\.png/, ".png");
+                return src.replace(reg, ".png");
             }
         } else {
             fail++;
