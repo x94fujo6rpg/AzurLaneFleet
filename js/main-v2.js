@@ -458,8 +458,8 @@ function loadCookie() {
     }
 
     if (clist.thick_frame == 1) {
-        let ele = document.getElementById("frame_setting");
-        frameSize(ele);
+        //let ele = document.getElementById("frame_setting");
+        //setTimeout(() => frameSize(ele), 1000);
     }
 
     if (clist.layout) {
@@ -1830,9 +1830,9 @@ function frameSize(ele) {
         if (src != location) {
             done++;
             if (thicc) {
-                return src.replace(".png", "b.png");
+                return src.replace("png", "b.png");
             } else {
-                return src.replace("b.png", ".png");
+                return src.replace(/b+\.png/, ".png");
             }
         } else {
             fail++;
