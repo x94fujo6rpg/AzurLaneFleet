@@ -1830,7 +1830,7 @@ function frameSize(ele) {
         if (src != location) {
             done++;
             if (thicc) {
-                return src.replace("png", "b.png");
+                return src.replace(".png", "b.png");
             } else {
                 return src.replace(/b+\.png/, ".png");
             }
