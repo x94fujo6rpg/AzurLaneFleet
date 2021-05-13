@@ -459,7 +459,6 @@ function loadCookie() {
 
     if (clist.thick_frame == 1) {
         let ele = document.getElementById("frame_setting");
-        ele.click();
         frameSize(ele);
     }
 
@@ -1816,7 +1815,7 @@ function frameSize(ele) {
     $(ele).button("toggle");
     let thicc = ele.ariaPressed ? true : false,
         location = window.location.href,
-        reg = /b\.png/, done = 0, fail = 0;
+        done = 0, fail = 0;
     [sorted_equip_data, sorted_ship_data].forEach(list => {
         list.forEach(item => {
             if (item.frame != "") item.frame = replaceSrc(item.frame);
@@ -1830,7 +1829,11 @@ function frameSize(ele) {
     function replaceSrc(src = "") {
         if (src != location) {
             done++;
-            return src.match(reg) ? src.replace("b.png", ".png") : src.replace(".png", "b.png");
+            if (thicc) {
+                return src.replace(".png", "b.png");
+            } else {
+                return src.replace("b.png", ".png");
+            }
         } else {
             fail++;
         }
