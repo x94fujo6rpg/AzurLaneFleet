@@ -664,7 +664,11 @@ function hideShipInFleet() {
             });
         }
     }
-    shipInFleet.forEach(id => document.getElementById(id).style.display = "none");
+    shipInFleet.forEach(id => {
+        let ship = document.getElementById(id);
+        ship.style.display = "none";
+        ship.setAttribute("displayed", false);
+    });
 }
 
 function isCorrectShipType(type) {
