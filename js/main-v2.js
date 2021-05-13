@@ -458,8 +458,8 @@ function loadCookie() {
     }
 
     if (clist.thick_frame == 1) {
-        //let ele = document.getElementById("frame_setting");
-        //setTimeout(() => frameSize(ele), 1000);
+        let ele = document.getElementById("frame_setting");
+        setTimeout(() => frameSize(ele), 1000);
     }
 
     if (clist.layout) {
