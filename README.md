@@ -17,6 +17,8 @@ Compatibility with other browsers is unknown
   - default: filter low rarity/tier equip
   - always: auto use default
 - auto focus to search input
+- show ship position
+- frame switch
 
 **2021-05-12**
 - auto adjust some UI to small screen  

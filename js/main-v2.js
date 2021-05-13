@@ -458,7 +458,9 @@ function loadCookie() {
     }
 
     if (clist.thick_frame == 1) {
-        document.getElementById("frame_setting").click();
+        let ele = document.getElementById("frame_setting");
+        ele.click();
+        frameSize(ele);
     }
 
     if (clist.layout) {
@@ -1253,12 +1255,12 @@ async function initial() {
     await createAllEquip();
     addLanguageToEle();
     add_search_event();
-    loadCookie();
-    loadStorage();
     splitButtonGroup("shipnation");
     splitButtonGroup("eq_nation");
     //splitButtonGroup("eq_type", 6, filter_btn_class.replace("line-5-item", "line-6-item"));
     addWindowSizeEvent();
+    loadCookie();
+    loadStorage();
     document.querySelector("#loading_box").style.display = "none";
     document.querySelector("#app_area").style.display = "";
     console.timeEnd(initial.name);
@@ -1812,7 +1814,6 @@ function remove_fleet() {
 
 function frameSize(ele) {
     $(ele).button("toggle");
-    //ele = document.getElementById("frame_setting");
     let thicc = ele.ariaPressed ? true : false,
         location = window.location.href,
         reg = /b\.png/, done = 0, fail = 0;
