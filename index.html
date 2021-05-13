@@ -299,19 +299,19 @@
                 <div class="modal-body p-2">
                     <div class="font-weight-bold border-top border-right border-left border-secondary rounded p-1 my-1">
                         <div class="h5 m-1" ui_id="filter_nation">Nation</div>
-                        <div class="btn-group d-flex" id='shipnation'>
+                        <div class="btn-group d-flex ml-1" id='shipnation'>
                             <ship-nation-button v-for="item in nation" v-bind:key="item.id" v-bind:name="item.name" v-text="item[lang]" v-bind:value="item.id"></ship-nation-button>
                         </div>
                     </div>
                     <div class="font-weight-bold border-top border-right border-left border-secondary rounded p-1 my-1">
                         <div class="h5 m-1" ui_id="filter_type">Type</div>
-                        <div class="btn-group d-flex " id="shiptype">
+                        <div class="btn-group d-flex ml-1" id="shiptype">
                             <ship-type-button v-for="item in type" v-bind:key="item.id" v-bind:name="item.name" v-show="item.display" v-text="item[lang]" v-bind:value="item.id"></ship-type-button>
                         </div>
                     </div>
                     <div class="font-weight-bold border-top border-right border-left border-secondary rounded p-1 my-1">
                         <div class="h5 m-1" ui_id="filter_rarity">Rarity</div>
-                        <div class="btn-group d-flex" id='shiprarity'>
+                        <div class="btn-group d-flex ml-1" id='shiprarity'>
                             <ship-rarity-button v-for="item in rarity" v-bind:key="item.id" v-bind:name="item.name" v-text="item[lang]" v-bind:value="item.id"></ship-rarity-button>
                         </div>
                     </div>
@@ -343,25 +343,25 @@
                 <div class="modal-body p-2">
                     <div class="font-weight-bold border-top border-right border-left border-secondary rounded p-1 my-1">
                         <div class="h5 m-1" ui_id="filter_nation">Nation</div>
-                        <div class="btn-group d-flex" id='eq_nation'>
+                        <div class="btn-group d-flex ml-1" id='eq_nation'>
                             <equip-nation-button v-for="item in nation" v-bind:key="item.id" v-bind:name="item.name" v-text="item[lang]" v-bind:value="item.id"></equip-nation-button>
                         </div>
                     </div>
                     <div class="font-weight-bold border-top border-right border-left border-secondary rounded p-1 my-1">
                         <div class="h5 m-1" ui_id="filter_type">Type</div>
-                        <div class="btn-group d-flex " id="eq_type">
+                        <div class="btn-group d-flex ml-1" id="eq_type">
                             <equip-type-button v-for="item in type" v-bind:key="item.id" v-bind:name="item.name" v-show="item.display" v-text="item[lang]" v-bind:value="item.id"></equip-type-button>
                         </div>
                     </div>
                     <div class="font-weight-bold border-top border-right border-left border-secondary rounded p-1 my-1">
                         <div class="h5 m-1" ui_id="filter_rarity">Rarity</div>
-                        <div class="btn-group d-flex" id='eq_rarity'>
+                        <div class="btn-group d-flex ml-1" id='eq_rarity'>
                             <equip-rarity-button v-for="item in rarity" v-bind:key="item.id" v-bind:name="item.name" v-text="item[lang]" v-bind:value="item.id"></equip-rarity-button>
                         </div>
                     </div>
                     <div class="font-weight-bold border-top border-right border-left border-secondary rounded p-1 my-1">
                         <div class="h5 m-1" ui_id="filter_eq_tier">Tier</div>
-                        <div class="btn-group d-flex" id='eq_tier'>
+                        <div class="btn-group d-flex ml-1" id='eq_tier'>
                             <equip-tier-button v-for="item in tier" v-bind:key="item.id" v-bind:name="item.name" v-text="item[lang]" v-bind:value="item.id"></equip-tier-button>
                         </div>
                     </div>

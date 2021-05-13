@@ -1548,7 +1548,7 @@ function splitButtonGroup(target_id = "", max_per_line = 5, alt_class = "") {
     buttons.forEach((btn, index) => {
         if (index % max_per_line == 0) {
             new_line = document.createElement("div");
-            new_line.className = "btn-group d-flex flex-wrap" + (line_count > 0 ? " mt-1" : "");
+            new_line.className = "btn-group d-flex flex-wrap ml-1" + (line_count > 0 ? " mt-1" : "");
             pos.appendChild(new_line);
             line_count++;
         }
