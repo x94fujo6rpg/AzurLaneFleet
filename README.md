@@ -15,7 +15,7 @@ Compatibility with other browsers is unknown
 - equip filter
   - clear: remove all filter setting
   - default: filter low rarity/tier equip
-  - always: auto use default
+  - auto: auto use default
 - auto focus to search input
 - show ship position
 - frame switch

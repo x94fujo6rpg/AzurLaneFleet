@@ -11,7 +11,7 @@ const
         { id: "select_fleet", en: "Select Fleet", jp: "艦隊を選択", tw: "選擇艦隊", },
         { id: "load_fleet", en: "Load Fleet", jp: "ロード", tw: "載入艦隊", },
         { id: "remove_fleet", en: "Delete", jp: "削除", tw: "刪除", },
-        { id: "fleet_name_label", en: "Fleet Name", jp: "艦隊の名前", tw: "艦隊名稱", },
+        { id: "fleet_name_label", en: "Fleet Name", jp: "艦隊名", tw: "艦隊名稱", },
 
         { id: "emptyfleet", en: "Empty Current Fleet", jp: "現在の艦隊を空に", tw: "清空目前艦隊", },
 
@@ -30,7 +30,7 @@ const
 
         { id: "search_input", en: "Search", jp: "検索", tw: "搜尋", },
         { id: "filter_search_result", en: "Result", jp: "結果", tw: "結果", },
-        { id: "filter_retro", en: "Retrofitted Ship Only", jp: "改造された艦船だけ", tw: "只顯示改造後的", },
+        { id: "filter_retro", en: "Retrofitted Only", jp: "改造された艦船だけ", tw: "只顯示改造後的", },
 
         { id: "select_equip", en: "Select Equip", jp: "装備を選択", tw: "選擇裝備", },
     ],
