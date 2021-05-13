@@ -131,6 +131,7 @@ Vue.component("item-container", {
                 <img class="img-fluid frame" v-bind:src="item.property.frame">
                 <img class="img-fluid icon" v-bind:src="item.property.icon">
                 <span class="d-flex justify-content-start text-monospace itemq" v-text="item.property.quantity"></span>
+                <span class="d-flex justify-content-start text-monospace ship_pos2" v-text="item.property.ship_pos"></span>
               </div>
               <span class="justify-content-center item_name" v-text="item.property[lang]"></span>
             </div>
@@ -1379,30 +1380,20 @@ function buildFleet() {
         let item = [];
         if (i === 0) {
             let ship = {
-                id: "",
-                icon: "ui/empty.png",
-                type: "",
-                star: "",
-                rarity: "",
+                id: "", type: "", star: "", rarity: "",
                 tw: "", en: "", cn: "", jp: "",
+                icon: "ui/empty.png", bg: "", frame: "",
                 target: "#shipselect",
-                bg: "",
-                frame: "",
                 base: [],
                 quantity: "",
             };
             item = ship;
         } else {
             let eq = {
-                id: "",
-                icon: "ui/icon_back.png",
-                type: [],
-                star: "",
-                rarity: "",
+                id: "", type: [], star: "", rarity: "",
                 tw: "", en: "", cn: "", jp: "",
+                icon: "ui/icon_back.png", bg: "", frame: "",
                 target: "",
-                bg: "",
-                frame: "",
                 fb: [],
                 type_tw: "", type_cn: "", type_en: "", type_jp: "",
                 limit: "",
@@ -1413,30 +1404,38 @@ function buildFleet() {
         empty_ship.push({ id: i, property: [], });
         empty_ship[i].property = Object.assign({}, item);
     }
-    // item id _0123 => fleet=0 side=1 pos=2 item=3
-    let newfleet = [];
+    /*
+        item id _0123 => fleet=0 side=1 pos=2 item=3
+        pos
+        0 => 2 (1) | 0 => 3 (2)
+        1 => 1 (0) | 1 => 2 (1)
+        2 => 3 (2) | 2 => 1 (0)
+    */
+    let newfleet = [],
+        pos_table = { back_sub: { 0: 2, 1: 1, 2: 3 }, front: { 0: 3, 1: 2, 2: 1 }, };
     for (let fleet_id = 0; fleet_id < 5; fleet_id++) {
         let new_ship_data = [];
         if (fleet_id < 4) { // normal fleet
-            let front = [];
-            let back = [];
+            let front = [], back = [];
             for (let ship_pos = 0; ship_pos < 6; ship_pos++) {
                 let new_data = [];
                 if (ship_pos < 3) {
                     for (let item_index in empty_ship) {
-                        let new_value = `_${fleet_id}0${ship_pos}${item_index}`;
-                        let new_prop = Object.assign({}, empty_ship[item_index].property);
+                        let new_value = `_${fleet_id}0${ship_pos}${item_index}`,
+                            new_prop = Object.assign({}, empty_ship[item_index].property);
                         new_prop.pos = "front";
+                        if (item_index == 0) new_prop.ship_pos = pos_table.front[ship_pos];
                         new_data.push({ id: new_value, property: new_prop, });
                     }
                     new_ship_data = { id: `fleet_${fleet_id}_front_ship${ship_pos}`, item: new_data, };
                     front.push(new_ship_data);
                 } else {
                     for (let item_index in empty_ship) {
-                        let new_value = `_${fleet_id}1${ship_pos - 3}${item_index}`;
-                        let new_prop = Object.assign({}, empty_ship[item_index].property);
+                        let new_value = `_${fleet_id}1${ship_pos - 3}${item_index}`,
+                            new_prop = Object.assign({}, empty_ship[item_index].property);
                         new_data.push({ id: new_value, property: new_prop, });
                         new_prop.pos = "back";
+                        if (item_index == 0) new_prop.ship_pos = pos_table.back_sub[ship_pos - 3];
                     }
                     new_ship_data = { id: `fleet_${fleet_id}_back_ship${ship_pos - 3}`, item: new_data, };
                     back.push(new_ship_data);
@@ -1453,6 +1452,7 @@ function buildFleet() {
                     let new_prop = Object.assign({}, empty_ship[item_index].property);
                     new_prop.pos = "sub";
                     new_data.push({ id: new_value, property: new_prop, });
+                    if (item_index == 0) new_prop.ship_pos = pos_table.back_sub[ship_pos];
                 }
                 new_ship_data = { id: `fleet_${fleet_id}_sub_ship${ship_pos}`, item: new_data, };
                 sub.push(new_ship_data);
