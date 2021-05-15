@@ -1,12 +1,16 @@
 ﻿# [AzurLaneFleet](https://x94fujo6rpg.github.io/AzurLaneFleet/) #  
 The goal of this project  
 Is just for easily share fleet configuration in one shot  
-![](https://github.com/x94fujo6rpg/AzurLaneFleet/raw/master/ui/screenshot.jpg)
+![](https://github.com/x94fujo6rpg/AzurLaneFleet/raw/master/ui/screenshot.jpg)  
+
+If you need DPS calculator, go check [Zoratsu's AzurLaneCalculator](https://github.com/Zoratsu/AzurLaneCalculator)  
+  
+[Why is it so hard to calculate DPS in this game](https://github.com/x94fujo6rpg/AzurLaneFleet#simple-explain)
 
 # Browser support
 Recommend using `Chrome` for the best experience  
 This site was developed and tested on `Chrome`/`Firefox`  
-`IE`/`Edge(Old)` is unsupported  
+`IE` `Edge(Old)` is unsupported  
 Compatibility with other browsers is unknown  
 
 ## Update  
@@ -127,3 +131,25 @@ Compatibility with other browsers is unknown
 ## Data source  
 - [AzurLaneSourceJson](https://github.com/nobbyfix/AzurLaneSourceJson)  
 - [AzurLaneData](https://github.com/Dimbreath/AzurLaneData)  
+
+## Simple explain
+
+If you want to calculate the DPS correctly  
+You basically need to simulate the entire game  
+It's crazy to try to calculate the interaction between skills  
+Even if you manage to do it  
+The game itself will still have bugs that cause the reality doesn't match  
+  
+It is very common for skills to have bugs  
+If you have followed some players on `bilibili` `NGA` `CN Wiki` you will know  
+~~`certain anonymous inorganic compound`, `#\d{4}`, `those who make the Tier List`...etc~~  
+  
+If you realy want to peek at how crazy it is  
+Try [航母調速對軸表](https://wiki.biligame.com/blhx/%E8%88%AA%E6%AF%8D%E8%B0%83%E9%80%9F%E5%AF%B9%E8%BD%B4%E8%A1%A8)  
+It's CN EXCEL calculate table, just and only for the carrier takeoff time-axis in META battles  
+  
+It is normal if you experience the following symptoms during the process of understanding how the table works  
+Dizziness, Headache, Hysterical, Screaming,  
+Nausea, Stroke, Brain Cancer, Hair Fall, Seizure,  
+Brain fluid coming out of nose,  
+Banging your head against the wall...etc  
