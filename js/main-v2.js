@@ -617,9 +617,8 @@ async function parseID(data) {
                     let empty_ship = false;
                     ship.forEach((item, item_index) => {
                         // set as empty ship/equip
-                        if (item === "" || item === 0) {
+                        if (item === "" || item === 0) 
                             item = (item_index == 0) ? "000000" : "666666";
-                            if (item === "000000") empty_ship = true;
                         }
                         // skip empty ship
                         if (!empty_ship) {
@@ -643,6 +642,7 @@ async function parseID(data) {
                             } else {
                                 setEquip(ship_item, false);
                             }
+                            if (item === "000000") empty_ship = true;
                         }
                     });
                 });
@@ -1187,7 +1187,7 @@ function getSide() {
 
 function setShipAndEquip(item, save = true) {
     let side = getSide();
-    console.log(`${setShipAndEquip.name}: ${item.id} ${typeof item.id}`);
+    //console.log(`${setShipAndEquip.name}: ${item.id} ${typeof item.id}`);
     let shipInApp = fleet_data[c_fleet][side][c_pos];
     let shipInList = sorted_ship_data.find((ele) => {
         if (ele.id === `${item.id}` || ele.id === item.id) return Object.assign({}, ele);
