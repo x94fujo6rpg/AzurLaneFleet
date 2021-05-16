@@ -617,7 +617,7 @@ async function parseID(data) {
                     let empty_ship = false;
                     ship.forEach((item, item_index) => {
                         // set as empty ship/equip
-                        if (item === "" || item === 0) 
+                        if (item === "" || item === 0) {
                             item = (item_index == 0) ? "000000" : "666666";
                         }
                         // skip empty ship

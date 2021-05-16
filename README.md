@@ -1,7 +1,7 @@
 ﻿# [AzurLaneFleet](https://x94fujo6rpg.github.io/AzurLaneFleet/) #  
 The goal of this project  
 Is just for easily share fleet configuration in one shot  
-![](https://github.com/x94fujo6rpg/AzurLaneFleet/raw/master/ui/screenshot.jpg)  
+![](https://github.com/x94fujo6rpg/AzurLaneFleet/raw/master/ui/screenshots.jpg)  
 
 If you need DPS calculator, go check [Zoratsu's AzurLaneCalculator](https://github.com/Zoratsu/AzurLaneCalculator)  
   
