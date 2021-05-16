@@ -539,7 +539,8 @@ function stringifyReplacer(key, value) {
 
 function generateURL() {
     let data = dumpID();
-    let url = new URL("https://x94fujo6rpg.github.io/AzurLaneFleet/");
+    let url = "BYFxAcGcC4HpYB4E4AsAzArgKwPYDYAncAcwDpiBLEYDAI1Ip1gEEAvDAgGQEMA7AUwBiAG378QsIA";
+    url = new URL(url);
     let textbox = document.getElementById("url_box");
     url.searchParams.append("AFLD", data);
     url = url.href;
