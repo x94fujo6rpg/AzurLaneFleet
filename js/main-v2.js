@@ -540,8 +540,15 @@ function stringifyReplacer(key, value) {
 function generateURL() {
     let data = dumpID();
     let url = new URL("https://x94fujo6rpg.github.io/AzurLaneFleet/");
+    let textbox = document.getElementById("url_box");
     url.searchParams.append("AFLD", data);
-    return url.href;
+    url = url.href;
+    if (url.length >= 2000) {
+        textbox.value = "URL too long. You still can share it by use fleetdata below";
+        throw Error("url too long");
+    }else{
+        textbox.value = url;
+    }
 }
 
 async function loadDataByID() {
@@ -1257,6 +1264,13 @@ function setShipAndEquip(item, save = true) {
         }
     }
     if (save) saveCookie("fleet", dumpID());
+}
+
+function copyURL() {
+    let text = document.querySelector("#url_box");
+    text.select();
+    text.setSelectionRange(0, 99999);
+    document.execCommand("copy");
 }
 
 function copyData() {

@@ -20,8 +20,7 @@ Compatibility with other browsers is unknown
   - Sub: add Submarine fleet to top/bottom
   - X: delete fleet (min fleet count: 1)
   - Compatible with old data (v0.04)
-- known issue
-  - ~~can't empty fleet...~~ (Fixed)
+- Now can generate shareable `URL`
 
 **2021-05-13**
 - better auto adjust UI (no longer force use code)
