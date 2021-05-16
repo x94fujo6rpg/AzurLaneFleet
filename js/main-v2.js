@@ -449,7 +449,7 @@ function dumpID(raw = false, input_data = []) {
             throw Error("unknown version");
     }
     function v004() {
-        console.time(dumpID.name);
+        //console.time(dumpID.name);
         let data = [];
         fleet_data.forEach(fleet => {
             let fleetdata = [];
@@ -474,11 +474,11 @@ function dumpID(raw = false, input_data = []) {
         data = LZString.compressToEncodedURIComponent(data);
         let textbox = document.getElementById("fleetdata");
         textbox.value = data;
-        console.timeEnd(dumpID.name);
+        //console.timeEnd(dumpID.name);
         return data;
     }
     function v005() {
-        console.time(dumpID.name);
+        //console.time(dumpID.name);
         let data = [], raw_data = [];
         if (!input_data.length) {
             fleet_data.forEach(fleet => data.push(dumpFleet(fleet)));
@@ -489,7 +489,7 @@ function dumpID(raw = false, input_data = []) {
         //if(!input_data.length) c_formation = extractFormation(raw_data);
         data = JSON.stringify(data, stringifyReplacer);
         data = updateFleetDataBox(data);
-        console.timeEnd(dumpID.name);
+        //console.timeEnd(dumpID.name);
         return raw ? raw_data : data;
     }
 }
@@ -580,7 +580,7 @@ function extractFormation(a_fleet_data = []) {
     if (!(a_fleet_data instanceof Array)) throw Error("Invalid data");
     let formation_data = [];
     a_fleet_data.forEach(fleet => { if (!isNaN(fleet[fleet.length - 1])) formation_data.push(fleet[fleet.length - 1]); });
-    console.log(`new formation: [${formation_data}]`);
+    //console.log(`new formation: [${formation_data}]`);
     return formation_data;
 }
 
@@ -1786,7 +1786,7 @@ function insertFleet(ele) {
 }
 
 function buildFleet(formation_data = [], update = false) {
-    console.time(buildFleet.name);
+    //console.time(buildFleet.name);
     if (!formation_data.length) throw Error("formation data is empty!!");
     //-------------------------------
     /*  
@@ -1814,7 +1814,7 @@ function buildFleet(formation_data = [], update = false) {
         }
     });
 
-    console.timeEnd(buildFleet.name);
+    //console.timeEnd(buildFleet.name);
     //console.log(newfleet);
     c_formation = formation_data;
     if (!update) {
