@@ -434,10 +434,11 @@ function ship_name_search(ele) {
 }
 
 function emptyfleet() {
-    let data = 'No4IjAaDqn7AXUuObYYs1n0MdjgrrNseWmXtaQSiBSVioxVU9XQzWyz53w64ChIv1KDWlSeKyEpwmUOZjlSLtzUTVU9grn190nfz2z1oo9qsqbFxEA';
+    let data = 'No4BgGk6qhdC5Y2gpLlze5nEZTQMwQEYsg';
     data = LZString.decompressFromEncodedURIComponent(data);
-    data = JSON.parse(data);
-    parseID(data);
+    updateFleetDataBox(data);
+    loadDataByID();
+    disableInvalidMoveButton();
 }
 
 function dumpID(raw = false, input_data = []) {
@@ -617,7 +618,7 @@ async function parseID(data) {
                     ship.forEach((item, item_index) => {
                         // set as empty ship/equip
                         if (item === "" || item === 0) {
-                            item = item_index == 0 ? "000000" : 666666;
+                            item = (item_index == 0) ? "000000" : "666666";
                             if (item === "000000") empty_ship = true;
                         }
                         // skip empty ship
@@ -637,7 +638,7 @@ async function parseID(data) {
                             }
                             let ship_item = { name: item_name, id: item };
                             setCurrent(ship_item);
-                            if (item_index === 0 && item != 0) {
+                            if (item_index === 0) {
                                 setShipAndEquip(ship_item, false);
                             } else {
                                 setEquip(ship_item, false);

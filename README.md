@@ -21,7 +21,7 @@ Compatibility with other browsers is unknown
   - X: delete fleet (min fleet count: 1)
   - Compatible with old data (v0.04)
 - known issue
-  - can't empty fleet...
+  - ~~can't empty fleet...~~ (Fixed)
 
 **2021-05-13**
 - better auto adjust UI (no longer force use code)
