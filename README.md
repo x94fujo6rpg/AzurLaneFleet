@@ -16,11 +16,16 @@ Compatibility with other browsers is unknown
 ## Update  
 **2021-05-16**
 - Dynamic fleet
-  - Normal: add normal fleet to top/bottom
-  - Sub: add Submarine fleet to top/bottom
-  - X: delete fleet (min fleet count: 1)
+  - `Normal` add normal fleet to top/bottom
+  - `Sub` add Submarine fleet to top/bottom
+  - `X` delete fleet (min fleet count 1)
   - Compatible with old data (v0.04)
-- Now can generate shareable URL
+  - limit...untested...
+    - It is not recommended to add too many fleets
+      (your browser will start complain at some point)  
+- ~~Now can generate shareable URL~~  
+  (giuhub just exploded, no one can build right now...)  
+- URL have limit...max length is 2000
 
 **2021-05-13**
 - better auto adjust UI (no longer force use code)
@@ -102,6 +107,7 @@ Compatibility with other browsers is unknown
 - add import/export setting  
 
 ## todo...
+- copy/multiply fleet  
 - make re-sort for ship/equip
 
 ## Code  
