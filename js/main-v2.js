@@ -158,9 +158,9 @@ Vue.component("ship-container", {
 // no use yet & blocking
 
 const fleet_btn_style = {
-    normal: `btn btn-outline-secondary btn-sm`,
-    yellow: `btn btn-outline-warning btn-sm`,
-    text: `text-monospace text-center w-50 d-flex align-items-center justify-content-center border border-warning`,
+    normal: `btn btn-outline-secondary btn-sm fleet_op_btn p-0 w-50`,
+    yellow: `btn btn-outline-warning btn-sm fleet_op_btn p-0 w-50`,
+    text: `text-monospace text-center w-100 d-flex align-items-center justify-content-center border border-warning`,
 };
 
 x = `${insertFleet}(,fleet.id[fleet.id.length-1],)`;
@@ -172,22 +172,22 @@ Vue.component("fleet-container", {
                 <div class="line-5-item text-monospace text-center m-auto fleet_name" v-text="fleet.id">Fleet_ID</div>
                 <div class="d-flex line-5-item">
                     <div class="d-flex btn-group w-100 m-auto">
-                        <button class="${fleet_btn_style.yellow} w-50" v-bind:pos="fleet.id" data="1,0" onclick="${insertFleet.name}(this)">↑</button>    
+                        <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="1,0" onclick="${insertFleet.name}(this)">↑</button>    
                         <div class="${fleet_btn_style.text}">Normal</div>                    
-                        <button class="${fleet_btn_style.yellow} w-50" v-bind:pos="fleet.id" data="1,1" onclick="${insertFleet.name}(this)">↓</button>                        
+                        <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="1,1" onclick="${insertFleet.name}(this)">↓</button>                        
                     </div>
                 </div>
                 <div class="d-flex line-5-item">
-                    <div class="d-flex btn-group w-50 m-auto">
-                        <button class="${fleet_btn_style.normal} w-50 border-right" v-bind:pos="fleet.id" onclick="${moveFleet.name}(this)" data="-1">↑</button>
-                        <button class="${fleet_btn_style.normal} w-50 border-left" v-bind:pos="fleet.id" onclick="${moveFleet.name}(this)" data="1">↓</button>
+                    <div class="d-flex btn-group w-100 mx-1 my-auto">
+                        <button class="${fleet_btn_style.normal} border-right" v-bind:pos="fleet.id" onclick="${moveFleet.name}(this)" data="-1">↑</button>
+                        <button class="${fleet_btn_style.normal} border-left" v-bind:pos="fleet.id" onclick="${moveFleet.name}(this)" data="1">↓</button>
                     </div>
                 </div>
                 <div class="d-flex line-5-item">
                     <div class="d-flex btn-group w-100 m-auto">                        
-                        <button class="${fleet_btn_style.yellow} w-50" v-bind:pos="fleet.id" data="2,0" onclick="${insertFleet.name}(this)">↑</button>
+                        <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="2,0" onclick="${insertFleet.name}(this)">↑</button>
                         <div class="${fleet_btn_style.text}">Sub</div>
-                        <button class="${fleet_btn_style.yellow} w-50" v-bind:pos="fleet.id" data="2,1" onclick="${insertFleet.name}(this)">↓</button>
+                        <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="2,1" onclick="${insertFleet.name}(this)">↓</button>
                     </div>
                 </div>
                 <div class="d-flex line-5-item">
