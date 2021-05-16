@@ -1717,14 +1717,14 @@ function moveFleet(ele) {
     if (direction < 0) {
         if (pos - 1 < 0) {
             classManager(msg, "exchange", msg_color.green, msg_color.red);
-            msg.textContent = "yes";
-            throw Error("can't move over 0");
+            msg.textContent = "can't yeet the fleet higher than it is";
+            throw Error("can't yeet the fleet higher");
         }
     } else {
         if (pos + 1 > fleetData.length - 1) {
             classManager(msg, "exchange", msg_color.green, msg_color.red);
-            msg.textContent = "yes";
-            throw Error("can't move under 1");
+            msg.textContent = "can't yeet the fleet lower than it is";
+            throw Error("can't yeet the fleet lower");
         }
     }
     direction = direction < 0 ? pos - 1 : pos + 1;

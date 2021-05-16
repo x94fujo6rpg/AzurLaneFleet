@@ -125,7 +125,6 @@ Compatibility with other browsers is unknown
 - add import/export setting  
 
 ## todo...
-- copy/multiply fleet  
 - make re-sort for ship/equip
 
 ## Code  
