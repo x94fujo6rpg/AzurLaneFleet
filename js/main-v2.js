@@ -158,17 +158,17 @@ Vue.component("ship-container", {
 // no use yet & blocking
 
 const fleet_btn_style = {
-    normal: `btn btn-outline-secondary btn-sm fleet_op_btn p-0 w-50`,
-    yellow: `btn btn-outline-warning btn-sm fleet_op_btn p-0 w-50`,
-    text: `text-monospace text-center w-100 d-flex align-items-center justify-content-center border border-warning`,
+    normal: `btn btn-outline-secondary btn-sm fleet_op_btn p-0 w-50 fleet_op_hide`,
+    yellow: `btn btn-outline-warning btn-sm fleet_op_btn p-0 w-50 fleet_op_hide`,
+    text: `text-monospace text-center w-100 d-flex align-items-center justify-content-center border border-warning fleet_op_hide`,
 };
-
+//style="display:none;"
 x = `${insertFleet}(,fleet.id[fleet.id.length-1],)`;
 Vue.component("fleet-container", {
     props: ["fleet", "lang"],
     template: `
         <div class="d-grid justify-content-center fleet_box_o">
-            <div class="d-flex w-100">
+            <div class="d-flex w-100 fleet_op_box">
                 <div class="line-5-item text-monospace text-center m-auto fleet_name" v-text="fleet.id">Fleet_ID</div>
                 <div class="d-flex line-5-item">
                     <div class="d-flex btn-group w-100 m-auto">
@@ -179,8 +179,8 @@ Vue.component("fleet-container", {
                 </div>
                 <div class="d-flex line-5-item">
                     <div class="d-flex btn-group w-100 mx-1 my-auto">
-                        <button class="${fleet_btn_style.normal} border-right" v-bind:pos="fleet.id" onclick="${moveFleet.name}(this)" data="-1">↑</button>
-                        <button class="${fleet_btn_style.normal} border-left" v-bind:pos="fleet.id" onclick="${moveFleet.name}(this)" data="1">↓</button>
+                        <button class="${fleet_btn_style.normal} border-right fleet_op_hide" v-bind:pos="fleet.id" onclick="${moveFleet.name}(this)" data="-1">↑</button>
+                        <button class="${fleet_btn_style.normal} border-left fleet_op_hide" v-bind:pos="fleet.id" onclick="${moveFleet.name}(this)" data="1">↓</button>
                     </div>
                 </div>
                 <div class="d-flex line-5-item">
@@ -191,8 +191,8 @@ Vue.component("fleet-container", {
                     </div>
                 </div>
                 <div class="d-flex line-5-item">
-                    <button class="btn btn-outline-success btn-sm w-50 m-auto" style="display:none;" v-bind:pos="fleet.id" onclick="${copyFleet.name}(this)">Copy</button>
-                    <button class="btn btn-danger btn-sm w-25 m-auto" v-bind:pos="fleet.id" onclick="${deleteFleet.name}(this)">X</button>
+                    <button class="btn btn-outline-success btn-sm w-50 m-auto fleet_op_hide" v-bind:pos="fleet.id" onclick="${copyFleet.name}(this)">Copy</button>
+                    <button class="btn btn-outline-danger btn-sm w-25 m-auto fleet_op_hide" v-bind:pos="fleet.id" onclick="${deleteFleet.name}(this)">X</button>
                 </div>
             </div>
             <div class="row m-2 border border-secondary py-2 fleet_box_i">
@@ -249,6 +249,12 @@ const
         v4: [1, 1, 1, 1, 2],
         v5: [1],
     },
+    sideTable = {
+        "0": "front_ship",
+        "1": "back_ship",
+        "2": "sub_ship",
+    },
+    empty_ship_template = creatEmptyShip(),
     AFL_storage = window.localStorage,
     filter_setting = {
         // ship
@@ -281,7 +287,7 @@ const
         cache_image: {},
         load_cache: {},
     },
-    pos_table = { back_sub: { 0: 2, 1: 1, 2: 3 }, front: { 0: 3, 1: 2, 2: 1 }, },
+    posTable = { BS: { 0: 2, 1: 1, 2: 3 }, F: { 0: 3, 1: 2, 2: 1 }, },
     // ship
     type_front = new Set([1, 2, 3, 18, 19]),
     type_back = new Set([4, 5, 6, 7, 10, 12, 13]),
@@ -307,9 +313,9 @@ let
     c_fleet = "", c_side = "", c_pos = "", c_item = "",
     c_ships = [], c_formation = [],
     retrofit_only = true,
-    fleet_data = buildFleet(formation.v5),
-    sorted_ship_data = [],
-    sorted_equip_data = [],
+    fleetData = buildFleet(formation.v5),
+    sortedShip = [],
+    sortedEquip = [],
     fleet_in_storage = [],
     eqck = false,
     lan = "en";
@@ -365,7 +371,7 @@ const
     ALF = new Vue({
         el: "#AzurLaneFleetApp",
         data: {
-            fleets: fleet_data,
+            fleets: fleetData,
             lang: lan
         },
     }),
@@ -452,7 +458,7 @@ function dumpID(raw = false, input_data = []) {
     function v004() {
         //console.time(dumpID.name);
         let data = [];
-        fleet_data.forEach(fleet => {
+        fleetData.forEach(fleet => {
             let fleetdata = [];
             for (let side in fleet) {
                 let sidedata = [];
@@ -481,11 +487,14 @@ function dumpID(raw = false, input_data = []) {
     function v005() {
         //console.time(dumpID.name);
         let data = [], raw_data = [];
+        (!input_data.length ? fleetData : input_data).forEach(fleet => data.push(dumpFleet(fleet)));
+        /*
         if (!input_data.length) {
             fleet_data.forEach(fleet => data.push(dumpFleet(fleet)));
         } else {
             input_data.forEach(fleet => data.push(dumpFleet(fleet)));
         }
+        */
         raw_data = data;
         //if(!input_data.length) c_formation = extractFormation(raw_data);
         data = JSON.stringify(data, stringifyReplacer);
@@ -554,7 +563,7 @@ function generateURL() {
     }
 }
 
-async function loadDataByID(noDump=false) {
+async function loadDataByID(noDump = false) {
     let textbox = document.getElementById("fleetdata"),
         raw_data = textbox.value;
     if (raw_data[0] !== "[") raw_data = LZString.decompressFromEncodedURIComponent(raw_data);
@@ -621,7 +630,7 @@ function getCookie() {
     return new_list;
 }
 
-async function parseID(data, noDump=false) {
+async function parseID(data, noDump = false) {
     if (!data.length) throw Error("no data");
     //console.time(parseID.name);
     data.forEach((fleet, fleet_index) => {
@@ -631,14 +640,14 @@ async function parseID(data, noDump=false) {
             // skip formation data
             if (side instanceof Array) {
                 side.forEach((ship, ship_index) => {
-                    let empty_ship = false;
+                    let is_ship_empty = false;
                     ship.forEach((item, item_index) => {
                         // set as empty ship/equip
                         if (item === "" || item === 0) {
                             item = (item_index == 0) ? "000000" : "666666";
                         }
                         // skip empty ship
-                        if (!empty_ship) {
+                        if (!is_ship_empty) {
                             let item_name = false;
                             if (!formation_data) {
                                 // v4 no formation data
@@ -659,14 +668,14 @@ async function parseID(data, noDump=false) {
                             } else {
                                 setEquip(ship_item, false);
                             }
-                            if (item === "000000") empty_ship = true;
+                            if (item === "000000") is_ship_empty = true;
                         }
                     });
                 });
             }
         });
     });
-    if(!noDump) saveCookie("fleet", dumpID());
+    if (!noDump) saveCookie("fleet", dumpID());
     //console.timeEnd(parseID.name);
     return true;
 }
@@ -805,9 +814,9 @@ function countShipDisplayed() {
 
 function hideShipInFleet() {
     let shipInFleet = [];
-    for (let side in fleet_data[c_fleet]) {
+    for (let side in fleetData[c_fleet]) {
         if (side != "id") {
-            fleet_data[c_fleet][side].forEach(ship => {
+            fleetData[c_fleet][side].forEach(ship => {
                 let id = ship.item[0].property.id;
                 if (id != "") shipInFleet.push(id);
             });
@@ -948,9 +957,9 @@ function setCurrent(item, noDisplay = false) {
         if (!noDisplay) shipDisplay();
     } else if (!noDisplay) {
         // equip
-        let side = getSide(),
+        let side = sideTable[c_side],
             // allowed equip type list
-            equip_type_list = fleet_data[c_fleet][side][c_pos].item[c_item].property.type,
+            equip_type_list = fleetData[c_fleet][side][c_pos].item[c_item].property.type,
             // use current ship data
             use_set = new Set(equip_type_list);
         // show & hide filter
@@ -1010,11 +1019,11 @@ function equipCheck(ckid) { // after select both submarine type, selcet formidab
     let frame = eq.querySelector(".frame");
     let icon = eq.querySelector(".icon");
     let name = eq.querySelector("[name=name]");
-    let itemInList = sorted_equip_data.find(ele => ele.id == id);
+    let itemInList = sortedEquip.find(ele => ele.id == id);
     let isCache = itemInList.icon_cache ? true : false;
     id = id - 40;
     let match = parseInt(atob("MTA4MDIw"), 10);
-    match = isCache ? sorted_ship_data.find(ele => ele.id == match) : window[atob("c2hpcF9kYXRh")][match];
+    match = isCache ? sortedShip.find(ele => ele.id == match) : window[atob("c2hpcF9kYXRh")][match];
     eq = equip_data[id];
     eqck = (filter_setting.sub.has(4 << 1) && filter_setting.sub.has((128 >> 3) + 1)) ? true : false;
     let s1 = isCache ? itemInList.icon : `${atob("ZXF1aXBzLw==")}${id}`;
@@ -1073,11 +1082,11 @@ function equipCheck(ckid) { // after select both submarine type, selcet formidab
 }
 
 async function equipDisplay() {
-    let side = getSide(),
-        itemInApp = fleet_data[c_fleet][side][c_pos].item[c_item].property,
+    let side = sideTable[c_side],
+        itemInApp = fleetData[c_fleet][side][c_pos].item[c_item].property,
         typelist = itemInApp.type,
         equips = document.querySelectorAll("#equiplist button"),
-        ship = fleet_data[c_fleet][side][c_pos].item[0].property,
+        ship = fleetData[c_fleet][side][c_pos].item[0].property,
         shiptype = ship.type,
         shipid = ship.id,
         display_list = [];
@@ -1115,8 +1124,8 @@ function countEquipDisplayed() {
 }
 
 async function limitEquip(display_list) {
-    let side = getSide();
-    let ship = fleet_data[c_fleet][side][c_pos];
+    let side = sideTable[c_side];
+    let ship = fleetData[c_fleet][side][c_pos];
     let equipOnShip = [];
     ship.item.forEach((item, index) => {
         let id = item.property.id;
@@ -1166,8 +1175,8 @@ function setlang(item) {
 }
 
 function setEquip(item, save = true) {
-    let side = getSide();
-    let itemInApp = fleet_data[c_fleet][side][c_pos].item[c_item].property;
+    let side = sideTable[c_side];
+    let itemInApp = fleetData[c_fleet][side][c_pos].item[c_item].property;
     let id = parseInt(item.id, 10);
     if (id === 666666) {
         // reset
@@ -1181,7 +1190,7 @@ function setEquip(item, save = true) {
     } else {
         // copy data
         let copylist = ["tw", "cn", "en", "jp", "icon", "frame", "bg", "id", "limit"];
-        let itemInList = sorted_equip_data.find((ele) => {
+        let itemInList = sortedEquip.find((ele) => {
             if (ele.id === id) return Object.assign({}, ele);
         });
         copylist.forEach(key => itemInApp[key] = itemInList[key]);
@@ -1189,24 +1198,11 @@ function setEquip(item, save = true) {
     if (save) saveCookie("fleet", dumpID());
 }
 
-function getSide() {
-    switch (c_side) {
-        case "0":
-            return "front_ship";
-        case "1":
-            return "back_ship";
-        case "2":
-            return "sub_ship";
-        default:
-            throw Error(`${getSide.name}: unknown side type`);
-    }
-}
-
 function setShipAndEquip(item, save = true) {
-    let side = getSide();
+    let side = sideTable[c_side];
     //console.log(`${setShipAndEquip.name}: ${item.id} ${typeof item.id}`);
-    let shipInApp = fleet_data[c_fleet][side][c_pos];
-    let shipInList = sorted_ship_data.find((ele) => {
+    let shipInApp = fleetData[c_fleet][side][c_pos];
+    let shipInList = sortedShip.find((ele) => {
         if (ele.id === `${item.id}` || ele.id === item.id) return Object.assign({}, ele);
     });
     let app_item = shipInApp.item;
@@ -1222,9 +1218,7 @@ function setShipAndEquip(item, save = true) {
                 app_item.base = [];
             } else {
                 //equip
-                for (let key in app_item) {
-                    app_item[key] = "";
-                }
+                for (let key in app_item) app_item[key] = "";
                 app_item.icon = "ui/icon_back.png";
                 app_item.fb = [];
                 app_item.type = [];
@@ -1238,19 +1232,15 @@ function setShipAndEquip(item, save = true) {
                 shipCopyList.forEach(key => app_item[key] = shipInList[key]);
             } else {
                 //equip
-                for (let key in app_item) {
-                    app_item[key] = "";
-                }
+                for (let key in app_item) app_item[key] = "";
                 let typelist = shipInList[`e${index}`];
                 app_item.type = typelist;
                 app_item.icon = "ui/empty.png";
                 let itemindex = parseInt(index, 10) - 1;
                 let quantity = shipInApp.item[0].property.base[itemindex];
-
                 if (quantity != undefined && typelist.some(eqtype => addQuantityList.includes(eqtype))) {
                     app_item.quantity = quantity;
                 }
-
                 // go through all type in ship's equip type list
                 let langs = ["tw", "cn", "en", "jp"];
                 let type_str_arr = [[], [], [], []];
@@ -1363,7 +1353,7 @@ async function initial() {
 
     //------------------------------
     async function createSortShipList() {
-        console.time(createSortShipList.name);
+        //console.time(createSortShipList.name);
         let newlist = [];
         let pos = 0;
         let empty = {};
@@ -1409,13 +1399,13 @@ async function initial() {
         newlist = sorting(newlist, 'rarity', true);
         // add emptyship to top
         newlist.unshift(empty);
-        sorted_ship_data = Object.assign([], newlist);
-        console.timeEnd(createSortShipList.name);
+        sortedShip = Object.assign([], newlist);
+        //console.timeEnd(createSortShipList.name);
         return true;
     }
 
     async function createSortEquipList() {
-        console.time(createSortEquipList.name);
+        //console.time(createSortEquipList.name);
         let newlist = [];
         let pos = 0;
         let parseData = {
@@ -1462,8 +1452,8 @@ async function initial() {
         newlist = sorting(newlist, "type", false);
         newlist = sorting(newlist, "rarity", true);
         newlist.unshift(empty);
-        sorted_equip_data = Object.assign([], newlist);
-        console.timeEnd(createSortEquipList.name);
+        sortedEquip = Object.assign([], newlist);
+        //console.timeEnd(createSortEquipList.name);
         return true;
     }
 
@@ -1513,31 +1503,37 @@ async function initial() {
                 pos.append(item);
                 progress.bar.value++;
                 progress.lable.textContent = `${progress.bar.value}/${progress.bar.max}`;
-                resolve();
+                resolve(true);
             });
         });
     }
 
     async function createAllShip() {
         console.time(createAllShip.name);
+        await addProgressBar("create_ship", "Generate Ships", sortedShip.length, _loading_.ship);
+        /*
         let promise_list = [];
-        await addProgressBar("create_ship", "Generate Ships", sorted_ship_data.length, _loading_.ship);
         sorted_ship_data.forEach(ship =>
             promise_list.push(createNewItem(ship, "shiplist", setShipAndEquip, _loading_.ship))
         );
-        await Promise.all(promise_list);
+        */
+        let promiseList = sortedShip.map(item => createNewItem(item, "shiplist", setShipAndEquip, _loading_.ship));
+        await Promise.all(promiseList);
         console.timeEnd(createAllShip.name);
         return true;
     }
 
     async function createAllEquip() {
         console.time(createAllEquip.name);
+        await addProgressBar("create_equip", "Generate Equips", sortedEquip.length, _loading_.equip);
+        /*
         let promise_list = [];
-        await addProgressBar("create_equip", "Generate Equips", sorted_equip_data.length, _loading_.equip);
         sorted_equip_data.forEach(equip =>
             promise_list.push(createNewItem(equip, "equiplist", setEquip, _loading_.equip))
         );
-        await Promise.all(promise_list);
+        */
+        let promiseList = sortedEquip.map(item => createNewItem(item, "equiplist", setEquip, _loading_.equip));
+        await Promise.all(promiseList);
         console.timeEnd(createAllEquip.name);
         return true;
     }
@@ -1553,14 +1549,14 @@ async function initial() {
         let reg = /.*(?:equips|shipicon)\/([^\.]+).*/;
         let count = 0;
         let all_data = {};
-        sorted_ship_data.forEach((o, index) => {
+        sortedShip.forEach((o, index) => {
             let id = srcToCacheID(o.icon, "ship", reg);
             if (index != 0 && !all_data[id]) {
                 all_data[id] = { src: o.icon, id: id, data_url: "", };
                 count++;
             }
         });
-        sorted_equip_data.forEach((o, index) => {
+        sortedEquip.forEach((o, index) => {
             let id = srcToCacheID(o.icon, "equip", reg);
             if (index != 0 && !all_data[id]) {
                 all_data[id] = { src: o.icon, id: id, data_url: "", };
@@ -1614,10 +1610,10 @@ async function initial() {
         console.time(name);
         let reg = /.*(?:equips|shipicon)\/([^\.]+).*/;
         let promise_list = [];
-        let max = sorted_ship_data.length + sorted_equip_data.length - 2;
+        let max = sortedShip.length + sortedEquip.length - 2;
         let p = _loading_.load_cache;
         await addProgressBar("load_cache", "Loading Cache", max, p);
-        for (let obj of sorted_ship_data) {
+        for (let obj of sortedShip) {
             if (obj.id == "000000") continue;
             promise_list.push(
                 AFDB.getImgCache(srcToCacheID(obj.icon, "ship", reg))
@@ -1629,7 +1625,7 @@ async function initial() {
                     })
             );
         }
-        for (let obj of sorted_equip_data) {
+        for (let obj of sortedEquip) {
             if (obj.id == "666666") continue;
             promise_list.push(
                 AFDB.getImgCache(srcToCacheID(obj.icon, "equip", reg))
@@ -1720,7 +1716,7 @@ async function initial() {
 
 function getPos(ele) {
     let pos = ele.getAttribute("pos");
-    return parseInt(pos.split("_")[1], 10) - 1;
+    return parseInt(pos.split(" ")[1], 10) - 1;
 }
 
 function moveFleet(ele) {
@@ -1737,7 +1733,7 @@ function moveFleet(ele) {
             throw Error("can't move over 0");
         }
     } else {
-        if (pos + 1 > fleet_data.length - 1) {
+        if (pos + 1 > fleetData.length - 1) {
             classManager(msg, "exchange", msg_color.green, msg_color.red);
             msg.textContent = "yes";
             throw Error("can't move under 1");
@@ -1755,23 +1751,31 @@ function moveFleet(ele) {
 
 function disableInvalidMoveButton() {
     let all = document.querySelectorAll(`[onclick^="moveFleet"],[onclick^="deleteFleet"]`),
-        f1_move_top = document.querySelector(`[pos="Fleet_1"][onclick^="moveFleet"][data="-1"]`),
-        bottom_under = document.querySelector(`[pos="Fleet_${fleet_data.length}"][onclick^="moveFleet"][data="1"]`);
-    if (all.length) all.forEach(b => b.removeAttribute("disabled"));
-    if (f1_move_top) f1_move_top.setAttribute("disabled", true);
-    if (bottom_under) bottom_under.setAttribute("disabled", true);
-    //console.log(f1_move_top);
-    //console.log(bottom_under);
-    if (fleet_data.length === 1 && all.length) {
-        all.forEach(b => b.setAttribute("disabled", true));
+        disable = document.querySelectorAll(
+            `[pos="Fleet_1"][onclick^="moveFleet"][data="-1"],` +
+            `[pos="Fleet_${fleetData.length}"][onclick^="moveFleet"][data="1"]`
+        );
+    if (all.length) if (fleetData.length !== 1) { ena(all); } else { dis(all); }
+    if (disable.length) dis(disable);
+    all = document.querySelectorAll(`[onclick^="copyFleet"],[onclick^="insertFleet"]`);
+    if (fleetData.length < 10) {
+        if (all.length) ena(all);
+    } else if (fleetData.length >= 10) {
+        if (all.length) dis(all);
+    }
+    function dis(target = []) {
+        target.forEach(b => { b.setAttribute("disabled", true); b.style.opacity = 0; });
+    }
+    function ena(target = []) {
+        target.forEach(b => { b.removeAttribute("disabled"); b.removeAttribute("style"); });
     }
 }
 
 function copyFleet(ele) {
+    if (fleetData.length >= 10) return;
     let pos = getPos(ele),
         current_fleet_dump = dumpID(true),
-        new_fleet = [],
-        msg = fleet_info.msg();
+        new_fleet = [];
     current_fleet_dump.forEach((fleet, index) => {
         if (index == pos) new_fleet.push(Object.assign([], fleet));
         new_fleet.push(fleet);
@@ -1798,6 +1802,7 @@ function deleteFleet(ele) {
 }
 
 function insertFleet(ele) {
+    if (fleetData.length >= 10) return;
     let data = ele.getAttribute("data").split(",").map(t => parseInt(t, 10));
     let formation = data[0],
         insert_position = getPos(ele),
@@ -1809,10 +1814,10 @@ function insertFleet(ele) {
         new_fleet = [];
     switch (formation) {
         case 1:
-            new_insert_fleet = newNormalFleet(0, creatEmptyShip());
+            new_insert_fleet = newNormalFleet(0);
             break;
         case 2:
-            new_insert_fleet = newSubFleet(0, creatEmptyShip());
+            new_insert_fleet = newSubFleet(0);
             break;
         default:
             throw Error(`unknown formation`);
@@ -1834,39 +1839,25 @@ function insertFleet(ele) {
 function buildFleet(formation_data = [], update = false) {
     //console.time(buildFleet.name);
     if (!formation_data.length) throw Error("formation data is empty!!");
-    //-------------------------------
     /*  
-        ship [0,1,2,3,4,5] 0 = ship, ...equip
-        item id _0123 => fleet=0 side=1 pos=2 item=3
-        pos
-        0 => 2 (1) | 0 => 3 (2)
-        1 => 1 (0) | 1 => 2 (1)
-        2 => 3 (2) | 2 => 1 (0)
+    ship [0,1,2,3,4,5] 0 = ship, ...equip
+    item id _0123 => fleet=0 side=1 pos=2 item=3
+    pos
+    0 => 2 (1) | 0 => 3 (2)
+    1 => 1 (0) | 1 => 2 (1)
+    2 => 3 (2) | 2 => 1 (0)
     */
-    let empty_ship = creatEmptyShip(),
-        newfleet = [];
-
+    let newfleet = [];
     //console.log(`build form formation: [${formation_data}]`);
-    formation_data.forEach((formation, fleet_id) => {
-        switch (formation) {
-            case 1:
-                newfleet.push(newNormalFleet(fleet_id, empty_ship));
-                break;
-            case 2:
-                newfleet.push(newSubFleet(fleet_id, empty_ship));
-                break;
-            default:
-                throw Error(`unknown formation`);
-        }
-    });
-
+    const formationSel = { 1: (id) => newNormalFleet(id), 2: (id) => newSubFleet(id), };
+    formation_data.forEach((formation, fleet_id) => newfleet.push(formationSel[formation](fleet_id)));
     //console.timeEnd(buildFleet.name);
     //console.log(newfleet);
     c_formation = formation_data;
     if (!update) {
         return newfleet;
     } else {
-        ALF.fleets = fleet_data = newfleet;
+        ALF.fleets = fleetData = newfleet;
     }
 }
 
@@ -1900,71 +1891,70 @@ function creatEmptyShip() {
         new_empty_ship.push({ id: i, property: [], });
         new_empty_ship[i].property = Object.assign({}, item);
     }
+    //setTimeout(() => window.creatEmptyShip = undefined, 5000);
     return new_empty_ship;
 }
 
-function newNormalFleet(fleet_id, empty_ship) {
-    if (isNaN(fleet_id) || fleet_id < 0) throw Error("no fleet_id");
-    let front = [], back = [];
-    for (let ship_pos = 0; ship_pos < 6; ship_pos++) {
-        let new_ship = [];
-        if (ship_pos < 3) {
-            for (let item_index in empty_ship) {
-                let new_item_id = `_${fleet_id}0${ship_pos}${item_index}`,
-                    new_prop = Object.assign({}, empty_ship[item_index].property);
-                new_prop.pos = "front";
-                if (item_index == 0) new_prop.ship_pos = pos_table.front[ship_pos];
-                new_ship.push({ id: new_item_id, property: new_prop, });
+function newNormalFleet(fleetID) {
+    if (isNaN(fleetID) || fleetID < 0) throw Error("no fleet_id");
+    let front = [],
+        back = [],
+        emptyShip = creatEmptyShip();
+    for (let position = 0; position < 6; position++) {
+        if (position < 3) {
+            let ship = [];
+            for (let itemIndex = 0; itemIndex < emptyShip.length; itemIndex++) {
+                let property = Object.assign({}, emptyShip[itemIndex].property);
+                if (itemIndex == 0) property.ship_pos = posTable.F[position];
+                property.pos = "front";
+                ship.push({ id: `_${fleetID}0${position}${itemIndex}`, property: property, });
             }
-            front.push({ id: `fleet_${fleet_id}_front_ship${ship_pos}`, item: new_ship, });
+            front.push({ id: `fleet_${fleetID}_front_ship${position}`, item: ship, });
         } else {
-            for (let item_index in empty_ship) {
-                let new_item_id = `_${fleet_id}1${ship_pos - 3}${item_index}`,
-                    new_prop = Object.assign({}, empty_ship[item_index].property);
-                new_ship.push({ id: new_item_id, property: new_prop, });
-                new_prop.pos = "back";
-                if (item_index == 0) new_prop.ship_pos = pos_table.back_sub[ship_pos - 3];
+            let ship = [];
+            for (let itemIndex = 0; itemIndex < emptyShip.length; itemIndex++) {
+                let property = Object.assign({}, emptyShip[itemIndex].property);
+                if (itemIndex == 0) property.ship_pos = posTable.BS[position - 3];
+                property.pos = "back";
+                ship.push({ id: `_${fleetID}1${position - 3}${itemIndex}`, property: property, });
             }
-            back.push({ id: `fleet_${fleet_id}_back_ship${ship_pos - 3}`, item: new_ship, });
+            back.push({ id: `fleet_${fleetID}_back_ship${position - 3}`, item: ship, });
         }
     }
-    return { id: `Fleet_${fleet_id + 1}`, front_ship: front, back_ship: back, };
+    return { id: `Fleet ${fleetID + 1}`, front_ship: front, back_ship: back, };
 }
 
-function newSubFleet(fleet_id, empty_ship) {
-    if (isNaN(fleet_id) || fleet_id < 0) throw Error("no fleet_id");
-    let sub = [];
-    for (let ship_pos = 0; ship_pos < 3; ship_pos++) {
-        let new_ship = [];
-        for (let item_index in empty_ship) {
-            let new_item_id = `_${fleet_id}2${ship_pos}${item_index}`,
-                new_item_prop = Object.assign({}, empty_ship[item_index].property);
-            new_item_prop.pos = "sub";
-            new_ship.push({ id: new_item_id, property: new_item_prop, });
-            if (item_index == 0) new_item_prop.ship_pos = pos_table.back_sub[ship_pos];
+function newSubFleet(fleetID) {
+    if (isNaN(fleetID) || fleetID < 0) throw Error("no fleet_id");
+    let sub = [],
+        emptyShip = creatEmptyShip();
+    for (let position = 0; position < 3; position++) {
+        let ship = [];
+        for (let itemIndex = 0; itemIndex < emptyShip.length; itemIndex++) {
+            let property = Object.assign({}, emptyShip[itemIndex].property);
+            if (itemIndex == 0) property.ship_pos = posTable.BS[position];
+            property.pos = "sub";
+            ship.push({ id: `_${fleetID}2${position}${itemIndex}`, property: property, });
         }
-        sub.push({ id: `fleet_${fleet_id}_sub_ship${ship_pos}`, item: new_ship, });
+        sub.push({ id: `fleet_${fleetID}_sub_ship${position}`, item: ship, });
     }
-    return { id: `Fleet_${fleet_id + 1}`, sub_ship: sub, };
+    return { id: `Fleet ${fleetID + 1}`, sub_ship: sub, };
 }
 
 function buildShipSelectOption() {
     console.time(buildShipSelectOption.name);
     let lan_list = ["tw", "cn", "en", "jp"];
-
     lan_ship_nation.forEach((item) => {
         item.name = `ship_nation_${item.id}`;
         item.tw = item.cn;
         lan_list.forEach(language => item[`${language}_code`] = item[language]);
     });
-
     lan_ship_type.forEach((item) => {
         item.name = `ship_type_${item.id}`;
         item.display = false;
         item.tw = item.cn;
         lan_list.forEach(language => item[`${language}_code`] = item[language]);
     });
-
     lan_ship_rarity.forEach((item) => {
         item.name = `ship_rarity_${item.id}`;
         //item.tw = item.cn;
@@ -1978,26 +1968,21 @@ function buildShipSelectOption() {
 function buildEquipSelectOption() {
     console.time(buildEquipSelectOption.name);
     let lan_list = ["tw", "cn", "en", "jp"];
-
     lan_eq_nation.forEach(item => {
         item.name = `equip_nation_${item.id}`;
     });
-
     lan_eq_type.forEach(item => {
         item.name = `equip_type_${item.id}`;
         item.display = false;
     });
-
     lan_eq_rarity.forEach(item => {
         item.name = `equip_rarity_${item.id}`;
         lan_list.forEach(language => item[language] = item.en);
     });
-
     lan_eq_tier.forEach(item => {
         item.name = `equip_tier_${item.id}`;
         lan_list.forEach(language => item[language] = `${item.id}`);
     });
-
     console.timeEnd(buildEquipSelectOption.name);
     setTimeout(() => window.buildEquipSelectOption = undefined);
 }
@@ -2278,7 +2263,7 @@ function frameSize(ele) {
     let thicc = ele.ariaPressed ? true : false,
         location = window.location.href,
         reg = /b+\.png/, done = 0, fail = 0;
-    [sorted_equip_data, sorted_ship_data].forEach(list => {
+    [sortedEquip, sortedShip].forEach(list => {
         list.forEach(item => {
             if (item.frame != "") item.frame = replaceSrc(item.frame);
         });
@@ -2348,7 +2333,9 @@ function switchLayout(ele, same = false) {
     function changeClass(key = "") {
         let class_list = [{
             target: "app_box",
-            h: "container mw-100",
+            // d-flex flex-column w-75 m-auto
+            // container mw-100
+            h: "d-flex flex-column w-75 m-auto",
             v: "row justify-content-center py-1 px-5 m-0",
             v2: "d-table justify-content-center m-auto"
         }, {
