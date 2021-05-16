@@ -1186,7 +1186,7 @@ function getSide() {
 
 function setShipAndEquip(item, save = true) {
     let side = getSide();
-    console.log(`${setShipAndEquip.name}: ${item} ${typeof item}`);
+    console.log(`${setShipAndEquip.name}: ${item.id} ${typeof item.id}`);
     let shipInApp = fleet_data[c_fleet][side][c_pos];
     let shipInList = sorted_ship_data.find((ele) => {
         if (ele.id === `${item.id}` || ele.id === item.id) return Object.assign({}, ele);
