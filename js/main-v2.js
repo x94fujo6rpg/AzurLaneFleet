@@ -546,7 +546,7 @@ function generateURL() {
     if (url.length >= 2000) {
         textbox.value = "URL too long. You still can share it by use fleetdata below";
         throw Error("url too long");
-    }else{
+    } else {
         textbox.value = url;
     }
 }
