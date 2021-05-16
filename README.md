@@ -16,10 +16,26 @@ Compatibility with other browsers is unknown
 ## Update  
 **2021-05-17**
 - Now can generate shareable URL
+  - `limit` URL length limit is **2000**, which is about `28~30` fleet with all equip
 - Dynamic fleet
-  - `limit` 10 fleet
   - improve speed (skip unnecessary action when load fleet)
+    - `for...in` `forEach` ... this kind method is slower than the traditional `for (i++)`
+      but it way more readable & easier to debug...
   - hide buttom, now only display when hover on it
+  - ~~limit to 10 fleet~~ (removed)
+    ```
+    the causes of this problem is the id system I use...
+
+    old id:_0123 => fleet:0, side:1, pos:2, item:3
+
+    when you have over 10 fleet...
+    _10123 => fleet:0 but it already exist...???
+    what a classic mistake...
+
+    new id
+    999_1_2_3 => id.split("_") => [999,1,2,3]
+    ```
+- no longer hide scrollbar because we can have so many fleet now
 
 **2021-05-16**
 ~~(giuhub just exploded, no one can build right now...)~~  

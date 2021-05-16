@@ -196,30 +196,30 @@ Vue.component("fleet-container", {
                 </div>
             </div>
             <div class="row m-2 border border-secondary py-2 fleet_box_i">
-                <div class="flex-col fleet_side_box" v-if="fleet.back_ship">
+                <div class="flex-col fleet_side_box" v-if="fleet.back">
                     <ship-container
-                        v-for="back_ship in fleet.back_ship"
-                        v-bind:key="back_ship.id"
-                        v-bind:ship="back_ship"
-                        v-bind:name="back_ship.id"
+                        v-for="back in fleet.back"
+                        v-bind:key="back.id"
+                        v-bind:ship="back"
+                        v-bind:name="back.id"
                         v-bind:lang="lang"
                     ></ship-container>
                 </div>
-                <div class="flex-col fleet_side_box" v-if="fleet.front_ship">
+                <div class="flex-col fleet_side_box" v-if="fleet.front">
                     <ship-container
-                        v-for="front_ship in fleet.front_ship"
-                        v-bind:key="front_ship.id"
-                        v-bind:ship="front_ship"
-                        v-bind:name="front_ship.id"
+                        v-for="front in fleet.front"
+                        v-bind:key="front.id"
+                        v-bind:ship="front"
+                        v-bind:name="front.id"
                         v-bind:lang="lang"
                     ></ship-container>
                 </div>
-                <div class="flex-col fleet_side_box" v-if="fleet.sub_ship">
+                <div class="flex-col fleet_side_box" v-if="fleet.sub">
                     <ship-container
-                        v-for="sub_ship in fleet.sub_ship"
-                        v-bind:key="sub_ship.id"
-                        v-bind:ship="sub_ship"
-                        v-bind:name="sub_ship.id"
+                        v-for="sub in fleet.sub"
+                        v-bind:key="sub.id"
+                        v-bind:ship="sub"
+                        v-bind:name="sub.id"
                         v-bind:lang="lang"
                     ></ship-container>
                 </div>
@@ -250,9 +250,9 @@ const
         v5: [1],
     },
     sideTable = {
-        "0": "front_ship",
-        "1": "back_ship",
-        "2": "sub_ship",
+        "0": "front",
+        "1": "back",
+        "2": "sub",
     },
     empty_ship_template = creatEmptyShip(),
     AFL_storage = window.localStorage,
@@ -527,7 +527,7 @@ function dumpFleet(input_fleet_data = []) {
     }
     // 1:normal, 2:sub
     // attach it to the end, or it will break fleet sequence and loadID
-    fleetdata.push(input_fleet_data.sub_ship ? 2 : 1);
+    fleetdata.push(input_fleet_data.sub ? 2 : 1);
     return fleetdata;
 }
 
@@ -560,6 +560,7 @@ function generateURL() {
         throw Error("url too long");
     } else {
         textbox.value = link;
+        copyURL();
     }
 }
 
@@ -652,14 +653,14 @@ async function parseID(data, noDump = false) {
                             if (!formation_data) {
                                 // v4 no formation data
                                 item_name = fleet_index < 4 ?
-                                    `_${fleet_index}${side_index}${ship_index}${item_index}` : // normal fleet
-                                    `_${fleet_index}2${ship_index}${item_index}`; // sub fleet
+                                    `${fleet_index}_${side_index}_${ship_index}_${item_index}` : // normal fleet
+                                    `${fleet_index}_2_${ship_index}_${item_index}`; // sub fleet
                             } else {
                                 // v5+
                                 // side { 0:front, 1:back, 2:sub }, formation { 1: normal, 2:sub }
                                 item_name = formation_data == 1 ?
-                                    `_${fleet_index}${side_index}${ship_index}${item_index}` : // normal fleet
-                                    `_${fleet_index}2${ship_index}${item_index}`; // sub fleet
+                                    `${fleet_index}_${side_index}_${ship_index}_${item_index}` : // normal fleet
+                                    `${fleet_index}_2_${ship_index}_${item_index}`; // sub fleet
                             }
                             let ship_item = { name: item_name, id: item };
                             setCurrent(ship_item, true);
@@ -934,8 +935,7 @@ function isEquipSelect(nation, type, rarity, tier) {
 }
 
 function setCurrent(item, noDisplay = false) {
-    let pos = item.name;
-    [c_fleet, c_side, c_pos, c_item] = [pos[1], pos[2], pos[3], pos[4]];
+    [c_fleet, c_side, c_pos, c_item] = item.name.split("_");
     if (c_item === "0") {
         //ship
         let use_set = false;
@@ -1511,12 +1511,6 @@ async function initial() {
     async function createAllShip() {
         console.time(createAllShip.name);
         await addProgressBar("create_ship", "Generate Ships", sortedShip.length, _loading_.ship);
-        /*
-        let promise_list = [];
-        sorted_ship_data.forEach(ship =>
-            promise_list.push(createNewItem(ship, "shiplist", setShipAndEquip, _loading_.ship))
-        );
-        */
         let promiseList = sortedShip.map(item => createNewItem(item, "shiplist", setShipAndEquip, _loading_.ship));
         await Promise.all(promiseList);
         console.timeEnd(createAllShip.name);
@@ -1526,12 +1520,6 @@ async function initial() {
     async function createAllEquip() {
         console.time(createAllEquip.name);
         await addProgressBar("create_equip", "Generate Equips", sortedEquip.length, _loading_.equip);
-        /*
-        let promise_list = [];
-        sorted_equip_data.forEach(equip =>
-            promise_list.push(createNewItem(equip, "equiplist", setEquip, _loading_.equip))
-        );
-        */
         let promiseList = sortedEquip.map(item => createNewItem(item, "equiplist", setEquip, _loading_.equip));
         await Promise.all(promiseList);
         console.timeEnd(createAllEquip.name);
@@ -1757,6 +1745,8 @@ function disableInvalidMoveButton() {
         );
     if (all.length) if (fleetData.length !== 1) { ena(all); } else { dis(all); }
     if (disable.length) dis(disable);
+    return;
+    //limiter
     all = document.querySelectorAll(`[onclick^="copyFleet"],[onclick^="insertFleet"]`);
     if (fleetData.length < 10) {
         if (all.length) ena(all);
@@ -1772,7 +1762,7 @@ function disableInvalidMoveButton() {
 }
 
 function copyFleet(ele) {
-    if (fleetData.length >= 10) return;
+    //if (fleetData.length >= 10) return; //limiter
     let pos = getPos(ele),
         current_fleet_dump = dumpID(true),
         new_fleet = [];
@@ -1802,7 +1792,7 @@ function deleteFleet(ele) {
 }
 
 function insertFleet(ele) {
-    if (fleetData.length >= 10) return;
+    //if (fleetData.length >= 10) return; //limiter
     let data = ele.getAttribute("data").split(",").map(t => parseInt(t, 10));
     let formation = data[0],
         insert_position = getPos(ele),
@@ -1841,7 +1831,17 @@ function buildFleet(formation_data = [], update = false) {
     if (!formation_data.length) throw Error("formation data is empty!!");
     /*  
     ship [0,1,2,3,4,5] 0 = ship, ...equip
-    item id _0123 => fleet=0 side=1 pos=2 item=3
+    
+    item id 
+    old 
+    _0123 => fleet=0 side=1 pos=2 item=3
+    => when id bigger then 10
+    => -10123 => explosion
+
+    new
+    0_1_2_3 => can handle more digi
+    0_1_2_3.split("_") => [0,1,2,3]
+
     pos
     0 => 2 (1) | 0 => 3 (2)
     1 => 1 (0) | 1 => 2 (1)
@@ -1907,21 +1907,21 @@ function newNormalFleet(fleetID) {
                 let property = Object.assign({}, emptyShip[itemIndex].property);
                 if (itemIndex == 0) property.ship_pos = posTable.F[position];
                 property.pos = "front";
-                ship.push({ id: `_${fleetID}0${position}${itemIndex}`, property: property, });
+                ship.push({ id: `${fleetID}_0_${position}_${itemIndex}`, property: property, });
             }
-            front.push({ id: `fleet_${fleetID}_front_ship${position}`, item: ship, });
+            front.push({ id: `fleet_${fleetID}_front_${position}`, item: ship, });
         } else {
             let ship = [];
             for (let itemIndex = 0; itemIndex < emptyShip.length; itemIndex++) {
                 let property = Object.assign({}, emptyShip[itemIndex].property);
                 if (itemIndex == 0) property.ship_pos = posTable.BS[position - 3];
                 property.pos = "back";
-                ship.push({ id: `_${fleetID}1${position - 3}${itemIndex}`, property: property, });
+                ship.push({ id: `${fleetID}_1_${position - 3}_${itemIndex}`, property: property, });
             }
-            back.push({ id: `fleet_${fleetID}_back_ship${position - 3}`, item: ship, });
+            back.push({ id: `fleet_${fleetID}_back_${position - 3}`, item: ship, });
         }
     }
-    return { id: `Fleet ${fleetID + 1}`, front_ship: front, back_ship: back, };
+    return { id: `Fleet ${fleetID + 1}`, front: front, back: back, };
 }
 
 function newSubFleet(fleetID) {
@@ -1934,11 +1934,11 @@ function newSubFleet(fleetID) {
             let property = Object.assign({}, emptyShip[itemIndex].property);
             if (itemIndex == 0) property.ship_pos = posTable.BS[position];
             property.pos = "sub";
-            ship.push({ id: `_${fleetID}2${position}${itemIndex}`, property: property, });
+            ship.push({ id: `${fleetID}_2_${position}_${itemIndex}`, property: property, });
         }
-        sub.push({ id: `fleet_${fleetID}_sub_ship${position}`, item: ship, });
+        sub.push({ id: `fleet_${fleetID}_sub_${position}`, item: ship, });
     }
-    return { id: `Fleet ${fleetID + 1}`, sub_ship: sub, };
+    return { id: `Fleet ${fleetID + 1}`, sub: sub, };
 }
 
 function buildShipSelectOption() {
