@@ -1696,7 +1696,7 @@ function moveFleet(ele) {
         current_fleet_dump = dumpID(true),
         temp = [],
         msg = fleet_info.msg();
-    console.log("before", JSON.stringify(current_fleet_dump, stringifyReplacer));
+    //console.log("before", JSON.stringify(current_fleet_dump, stringifyReplacer));
     if (direction < 0) {
         if (pos - 1 < 0) {
             classManager(msg, "exchange", msg_color.green, msg_color.red);
@@ -1714,7 +1714,7 @@ function moveFleet(ele) {
     temp = current_fleet_dump.splice(pos, 1).flat();
     current_fleet_dump.splice(direction, 0, temp);
     current_fleet_dump = JSON.stringify(current_fleet_dump, stringifyReplacer);
-    console.log("after", current_fleet_dump);
+    //console.log("after", current_fleet_dump);
     updateFleetDataBox(current_fleet_dump);
     loadDataByID();
     disableInvalidMoveButton();
@@ -1727,8 +1727,8 @@ function disableInvalidMoveButton() {
     if (all.length) all.forEach(b => b.removeAttribute("disabled"));
     if (f1_move_top) f1_move_top.setAttribute("disabled", true);
     if (bottom_under) bottom_under.setAttribute("disabled", true);
-    console.log(f1_move_top);
-    console.log(bottom_under);
+    //console.log(f1_move_top);
+    //console.log(bottom_under);
     if (fleet_data.length === 1 && all.length) {
         all.forEach(b => b.setAttribute("disabled", true));
     }
@@ -1799,7 +1799,7 @@ function buildFleet(formation_data = [], update = false) {
     let empty_ship = creatEmptyShip(),
         newfleet = [];
 
-    console.log(`build form formation: [${formation_data}]`);
+    //console.log(`build form formation: [${formation_data}]`);
     formation_data.forEach((formation, fleet_id) => {
         switch (formation) {
             case 1:
