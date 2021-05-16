@@ -14,17 +14,20 @@ This site was developed and tested on `Chrome`/`Firefox`
 Compatibility with other browsers is unknown  
 
 ## Update  
+**2021-05-17**
+- Now can generate shareable URL
+- Dynamic fleet
+  - `limit` 10 fleet
+  - improve speed (skip unnecessary action when load fleet)
+  - hide buttom, now only display when hover on it
+
 **2021-05-16**
+~~(giuhub just exploded, no one can build right now...)~~  
 - Dynamic fleet
   - `Normal` add normal fleet to top/bottom
   - `Sub` add Submarine fleet to top/bottom
   - `X` delete fleet (min fleet count 1)
   - Compatible with old data (v0.04)
-  - `limit` 10 fleet
-  - improve the speed
-- ~~Now can generate shareable URL~~  
-  (giuhub just exploded, no one can build right now...)  
-- URL have limit...max length is 2000
 
 **2021-05-13**
 - better auto adjust UI (no longer force use code)
