@@ -191,7 +191,8 @@ Vue.component("fleet-container", {
                     </div>
                 </div>
                 <div class="d-flex line-5-item">
-                    <button class="btn btn-danger btn-sm w-25 mx-auto" v-bind:pos="fleet.id" onclick="${deleteFleet.name}(this)">X</button>
+                    <button class="btn btn-outline-success btn-sm w-50 m-auto" style="display:none;" v-bind:pos="fleet.id" onclick="${copyFleet.name}(this)">Copy</button>
+                    <button class="btn btn-danger btn-sm w-25 m-auto" v-bind:pos="fleet.id" onclick="${deleteFleet.name}(this)">X</button>
                 </div>
             </div>
             <div class="row m-2 border border-secondary py-2 fleet_box_i">
@@ -499,6 +500,7 @@ function updateFleetDataBox(input_data = "") {
         data = `${input_data}!0.05!${CryptoJS.MD5(input_data).toString()}`;
     data = LZString.compressToEncodedURIComponent(data);
     textbox.value = data;
+    console.log(data.length);
     return data;
 }
 
@@ -552,7 +554,7 @@ function generateURL() {
     }
 }
 
-async function loadDataByID() {
+async function loadDataByID(noDump=false) {
     let textbox = document.getElementById("fleetdata"),
         raw_data = textbox.value;
     if (raw_data[0] !== "[") raw_data = LZString.decompressFromEncodedURIComponent(raw_data);
@@ -580,7 +582,7 @@ async function loadDataByID() {
             throw Error(`unknown version ${ver}`);
     }
     textbox.value = "";
-    await parseID(data);
+    await parseID(data, noDump);
     disableInvalidMoveButton();
 
     function loadError(_ck_ = "") {
@@ -619,7 +621,7 @@ function getCookie() {
     return new_list;
 }
 
-async function parseID(data) {
+async function parseID(data, noDump=false) {
     if (!data.length) throw Error("no data");
     //console.time(parseID.name);
     data.forEach((fleet, fleet_index) => {
@@ -651,7 +653,7 @@ async function parseID(data) {
                                     `_${fleet_index}2${ship_index}${item_index}`; // sub fleet
                             }
                             let ship_item = { name: item_name, id: item };
-                            setCurrent(ship_item);
+                            setCurrent(ship_item, true);
                             if (item_index === 0) {
                                 setShipAndEquip(ship_item, false);
                             } else {
@@ -664,7 +666,7 @@ async function parseID(data) {
             }
         });
     });
-    saveCookie("fleet", dumpID()); // save data at end
+    if(!noDump) saveCookie("fleet", dumpID());
     //console.timeEnd(parseID.name);
     return true;
 }
@@ -922,7 +924,7 @@ function isEquipSelect(nation, type, rarity, tier) {
     }*/
 }
 
-function setCurrent(item) {
+function setCurrent(item, noDisplay = false) {
     let pos = item.name;
     [c_fleet, c_side, c_pos, c_item] = [pos[1], pos[2], pos[3], pos[4]];
     if (c_item === "0") {
@@ -943,8 +945,8 @@ function setCurrent(item) {
         }
         // show & hide filter
         lan_ship_type.forEach((type) => type.display = use_set.has(type.id) ? true : ((type.id == 0) ? true : false));
-        shipDisplay();
-    } else {
+        if (!noDisplay) shipDisplay();
+    } else if (!noDisplay) {
         // equip
         let side = getSide(),
             // allowed equip type list
@@ -1668,11 +1670,11 @@ async function initial() {
 
         if (data) {
             textbox.value = data;
-            loadDataByID();
+            loadDataByID(true);
         } else {
             if (clist.fleet) {
                 textbox.value = clist.fleet;
-                loadDataByID();
+                loadDataByID(true);
             } else {
                 saveCookie("fleet", dumpID());
             }
@@ -1718,7 +1720,7 @@ async function initial() {
 
 function getPos(ele) {
     let pos = ele.getAttribute("pos");
-    return parseInt(pos[pos.length - 1], 10) - 1;
+    return parseInt(pos.split("_")[1], 10) - 1;
 }
 
 function moveFleet(ele) {
@@ -1747,7 +1749,7 @@ function moveFleet(ele) {
     current_fleet_dump = JSON.stringify(current_fleet_dump, stringifyReplacer);
     //console.log("after", current_fleet_dump);
     updateFleetDataBox(current_fleet_dump);
-    loadDataByID();
+    loadDataByID(true);
     disableInvalidMoveButton();
 }
 
@@ -1765,6 +1767,20 @@ function disableInvalidMoveButton() {
     }
 }
 
+function copyFleet(ele) {
+    let pos = getPos(ele),
+        current_fleet_dump = dumpID(true),
+        new_fleet = [],
+        msg = fleet_info.msg();
+    current_fleet_dump.forEach((fleet, index) => {
+        if (index == pos) new_fleet.push(Object.assign([], fleet));
+        new_fleet.push(fleet);
+    });
+    new_fleet = JSON.stringify(new_fleet, stringifyReplacer);
+    updateFleetDataBox(new_fleet);
+    loadDataByID(true);
+}
+
 function deleteFleet(ele) {
     let del_pos = getPos(ele),
         current_fleet_dump = dumpID(true),
@@ -1778,7 +1794,7 @@ function deleteFleet(ele) {
     }
     new_fleet = JSON.stringify(new_fleet, stringifyReplacer);
     updateFleetDataBox(new_fleet);
-    loadDataByID();
+    loadDataByID(true);
 }
 
 function insertFleet(ele) {
@@ -1812,7 +1828,7 @@ function insertFleet(ele) {
     new_fleet = JSON.stringify(new_fleet, stringifyReplacer);
     //console.log(`new fleet: ${new_fleet}`);
     updateFleetDataBox(new_fleet);
-    loadDataByID();
+    loadDataByID(true);
 }
 
 function buildFleet(formation_data = [], update = false) {

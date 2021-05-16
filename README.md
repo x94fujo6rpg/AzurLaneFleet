@@ -20,9 +20,11 @@ Compatibility with other browsers is unknown
   - `Sub` add Submarine fleet to top/bottom
   - `X` delete fleet (min fleet count 1)
   - Compatible with old data (v0.04)
-  - limit...untested...
-    - It is not recommended to add too many fleets
-      (your browser will start complain at some point)  
+  - `limit` about 10...ish
+    - Not sure what caused it
+    - I haven't make the limiter
+    - Not recommended to add more then 10 fleets  
+  - improve the speed
 - ~~Now can generate shareable URL~~  
   (giuhub just exploded, no one can build right now...)  
 - URL have limit...max length is 2000
