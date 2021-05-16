@@ -1,4 +1,5 @@
 /* jshint esversion: 9 */
+// everything is temporarily, unless it work...
 //----------------------------------------------------------
 const
     lan_target_list = [
@@ -155,10 +156,44 @@ Vue.component("ship-container", {
 
 // <span class="row ml-1 text-monospace fleet_name" v-text="fleet.id" v-if="fleet.show_name"></span>
 // no use yet & blocking
+
+const fleet_btn_style = {
+    normal: `btn btn-outline-secondary btn-sm`,
+    yellow: `btn btn-outline-warning btn-sm`,
+    text: `text-monospace text-center w-50 d-flex align-items-center justify-content-center border border-warning`,
+};
+
+x = `${insertFleet}(,fleet.id[fleet.id.length-1],)`;
 Vue.component("fleet-container", {
     props: ["fleet", "lang"],
     template: `
         <div class="d-grid justify-content-center fleet_box_o">
+            <div class="d-flex w-100">
+                <div class="line-5-item text-monospace text-center m-auto fleet_name" v-text="fleet.id">Fleet_ID</div>
+                <div class="d-flex line-5-item">
+                    <div class="d-flex btn-group w-100 m-auto">
+                        <button class="${fleet_btn_style.yellow} w-50" v-bind:pos="fleet.id" data="1,0" onclick="${insertFleet.name}(this)">↑</button>    
+                        <div class="${fleet_btn_style.text}">Normal</div>                    
+                        <button class="${fleet_btn_style.yellow} w-50" v-bind:pos="fleet.id" data="1,1" onclick="${insertFleet.name}(this)">↓</button>                        
+                    </div>
+                </div>
+                <div class="d-flex line-5-item">
+                    <div class="d-flex btn-group w-50 m-auto">
+                        <button class="${fleet_btn_style.normal} w-50 border-right" v-bind:pos="fleet.id" onclick="${moveFleet.name}(this)" data="-1">↑</button>
+                        <button class="${fleet_btn_style.normal} w-50 border-left" v-bind:pos="fleet.id" onclick="${moveFleet.name}(this)" data="1">↓</button>
+                    </div>
+                </div>
+                <div class="d-flex line-5-item">
+                    <div class="d-flex btn-group w-100 m-auto">                        
+                        <button class="${fleet_btn_style.yellow} w-50" v-bind:pos="fleet.id" data="2,0" onclick="${insertFleet.name}(this)">↑</button>
+                        <div class="${fleet_btn_style.text}">Sub</div>
+                        <button class="${fleet_btn_style.yellow} w-50" v-bind:pos="fleet.id" data="2,1" onclick="${insertFleet.name}(this)">↓</button>
+                    </div>
+                </div>
+                <div class="d-flex line-5-item">
+                    <button class="btn btn-danger btn-sm w-25 mx-auto" v-bind:pos="fleet.id" onclick="${deleteFleet.name}(this)">X</button>
+                </div>
+            </div>
             <div class="row m-2 border border-secondary py-2 fleet_box_i">
                 <div class="flex-col fleet_side_box" v-if="fleet.back_ship">
                     <ship-container
@@ -208,21 +243,11 @@ Vue.component("equip-rarity-button", { props: ['rarity', "lang"], template: filt
 Vue.component("equip-tier-button", { props: ['tier', "lang"], template: filter_btn_template });
 
 //----------------------------------------------------------
-let
-    c_fleet = "",
-    c_side = "",
-    c_pos = "",
-    c_item = "",
-    c_ships = [],
-    retrofit_only = true,
-    fleet_data = buildFleet(),
-    sorted_ship_data = [],
-    sorted_equip_data = [],
-    fleet_in_storage = [],
-    eqck = false,
-    lan = "en";
-
 const
+    formation = {
+        v4: [1, 1, 1, 1, 2],
+        v5: [1],
+    },
     AFL_storage = window.localStorage,
     filter_setting = {
         // ship
@@ -254,9 +279,8 @@ const
         equip: {},
         cache_image: {},
         load_cache: {},
-    };
-
-const
+    },
+    pos_table = { back_sub: { 0: 2, 1: 1, 2: 3 }, front: { 0: 3, 1: 2, 2: 1 }, },
     // ship
     type_front = new Set([1, 2, 3, 18, 19]),
     type_back = new Set([4, 5, 6, 7, 10, 12, 13]),
@@ -276,15 +300,63 @@ const
     db_name = "image_cache",
     db_ver = 1,
     // dump data
-    version = 0.04;
+    ALF_version = 0.05;
+
+let
+    c_fleet = "", c_side = "", c_pos = "", c_item = "",
+    c_ships = [], c_formation = [],
+    retrofit_only = true,
+    fleet_data = buildFleet(formation.v5),
+    sorted_ship_data = [],
+    sorted_equip_data = [],
+    fleet_in_storage = [],
+    eqck = false,
+    lan = "en";
 
 //----------------------------------------------------------
-Object.defineProperty(Array.prototype, 'isAll', {
-    value: function () { return this.every(v => Boolean(v)); },
-    // function will be enumerable if directly use Array.prototype.custom_function
-    enumerable: false,
-    // then it will show up in every (for...in) and broke the code
+// function will be enumerable if directly use Array.prototype.custom_function
+// it will show up in every (for...in) and broke the code
+
+Object.defineProperty(Array.prototype, "isAll", {
+    value:
+        /**
+         * check is every value in Array pass Boolean(value)
+         * @returns 
+         */
+        function () {
+            return this.every(v => Boolean(v));
+        }
 });
+
+Object.defineProperty(Array.prototype, "sameAs", {
+    value:
+        /**
+         * compare is this Array the same as input
+         * @param {Array} arr array to compare
+         * @returns {Boolean}
+         */
+        function (arr) {
+            if (!(arr instanceof Array)) throw Error(`[${arr}] (${typeof arr}) is not Array!!`);
+            return (JSON.stringify(this) === JSON.stringify(arr));
+        }
+});
+
+const sleep = (ms = 0) => new Promise(resolve => setTimeout(resolve, ms));
+const indexInObj = (obj, getvalue = false) => {
+    let new_list = [];
+    if (getvalue) {
+        for (let index in obj) {
+            new_list.push(index, obj[index]);
+        }
+    } else {
+        for (let index in obj) {
+            new_list.push(index);
+        }
+    }
+    return new_list;
+};
+
+//----------------------------------------------------------
 initial();
 
 //----------------------------------------------------------
@@ -295,7 +367,8 @@ const
             fleets: fleet_data,
             lang: lan
         },
-    }), shipSelect = new Vue({
+    }),
+    shipSelect = new Vue({
         el: "#shipselect",
         data: {
             nation: lan_ship_nation,
@@ -304,7 +377,8 @@ const
             //shiplist: sorted_ship_data,
             lang: lan
         }
-    }), equipSelect = new Vue({
+    }),
+    equipSelect = new Vue({
         el: "#equipselect",
         data: {
             nation: lan_eq_nation,
@@ -326,6 +400,7 @@ function add_search_event() {
     selship.on("shown.bs.modal", function () { $(this).find("[autofocus]").focus(); }); // autofocus to input
     selship.on("hide.bs.modal", () => search_input.value = ""); // empty text when modal fade
     //console.log("add search event");
+    setTimeout(() => window.add_search_event = undefined);
 }
 
 function ship_name_search(ele) {
@@ -361,58 +436,151 @@ function ship_name_search(ele) {
 function emptyfleet() {
     let data = 'No4IjAaDqn7AXUuObYYs1n0MdjgrrNseWmXtaQSiBSVioxVU9XQzWyz53w64ChIv1KDWlSeKyEpwmUOZjlSLtzUTVU9grn190nfz2z1oo9qsqbFxEA';
     data = LZString.decompressFromEncodedURIComponent(data);
+    data = JSON.parse(data);
     parseID(data);
 }
 
-function dumpID() {
-    console.time(dumpID.name);
-    let data = [];
-    fleet_data.forEach(fleet => {
-        let fleetdata = [];
-        for (let side in fleet) {
-            let sidedata = [];
-            if (side != "id") {
-                fleet[side].forEach(ship => {
-                    let shipdata = [];
-                    ship.item.forEach(item => {
-                        shipdata.push(item.property.id);
+function dumpID(raw = false, input_data = []) {
+    switch (ALF_version) {
+        case 0.05:
+            return v005();
+        default:
+            throw Error("unknown version");
+    }
+    function v004() {
+        console.time(dumpID.name);
+        let data = [];
+        fleet_data.forEach(fleet => {
+            let fleetdata = [];
+            for (let side in fleet) {
+                let sidedata = [];
+                if (side != "id") {
+                    fleet[side].forEach(ship => {
+                        let shipdata = [];
+                        ship.item.forEach(item => {
+                            shipdata.push(item.property.id);
+                        });
+                        sidedata.push(shipdata);
                     });
-                    sidedata.push(shipdata);
-                });
-                fleetdata.push(sidedata);
+                    fleetdata.push(sidedata);
+                }
             }
+            data.push(fleetdata);
+        });
+        data = JSON.stringify(data);
+        let hash = CryptoJS.SHA3(data, { outputLength: 256 }).toString();
+        data = `${data}!0.04!${hash}`;
+        data = LZString.compressToEncodedURIComponent(data);
+        let textbox = document.getElementById("fleetdata");
+        textbox.value = data;
+        console.timeEnd(dumpID.name);
+        return data;
+    }
+    function v005() {
+        console.time(dumpID.name);
+        let data = [], raw_data = [];
+        if (!input_data.length) {
+            fleet_data.forEach(fleet => data.push(dumpFleet(fleet)));
+        } else {
+            input_data.forEach(fleet => data.push(dumpFleet(fleet)));
         }
-        data.push(fleetdata);
-    });
-    data = JSON.stringify(data);
-    let hash = CryptoJS.SHA3(data, { outputLength: 256 }).toString();
-    data = `${data}!${version}!${hash}`;
+        raw_data = data;
+        //if(!input_data.length) c_formation = extractFormation(raw_data);
+        data = JSON.stringify(data, stringifyReplacer);
+        data = updateFleetDataBox(data);
+        console.timeEnd(dumpID.name);
+        return raw ? raw_data : data;
+    }
+}
+
+function updateFleetDataBox(input_data = "") {
+    let textbox = document.getElementById("fleetdata"),
+        data = `${input_data}!0.05!${CryptoJS.MD5(input_data).toString()}`;
     data = LZString.compressToEncodedURIComponent(data);
-    let textbox = document.getElementById("fleetdata");
     textbox.value = data;
-    console.timeEnd(dumpID.name);
     return data;
 }
 
-function loadDataByID() {
-    let data = document.getElementById("fleetdata").value,
-        textbox = document.getElementById("fleetdata");
-    if (data[0] !== "[") {
-        data = LZString.decompressFromEncodedURIComponent(data);
-        //console.log(data);
+function dumpFleet(input_fleet_data = []) {
+    let fleetdata = [];
+    for (let side_key in input_fleet_data) {
+        if (side_key == "id") continue;
+        let sidedata = [];
+        input_fleet_data[side_key].forEach(ship => {
+            let shipdata = [];
+            ship.item.forEach(item => shipdata.push(item.property.id));
+            sidedata.push(shipdata);
+        });
+        fleetdata.push(sidedata);
     }
-    data = data.split("!");
-    let [main_data, ver, hash] = data,
-        ck = CryptoJS.SHA3(main_data, { outputLength: 256 }).toString();
-    if (ck != hash) {
-        message = "Error: Corrupted data";
-        textbox.value = message;
-        console.log(message);
-        console.log(main_data);
-        return;
+    // 1:normal, 2:sub
+    // attach it to the end, or it will break fleet sequence and loadID
+    fleetdata.push(input_fleet_data.sub_ship ? 2 : 1);
+    return fleetdata;
+}
+
+function stringifyReplacer(key, value) {
+    if (typeof value === 'string') {
+        if (value == "") {
+            return 0;
+        } else {
+            let num = parseInt(value, 10);
+            if (num) {
+                return num;
+            } else {
+                return value;
+            }
+        }
+    } else {
+        return value;
+    }
+}
+
+async function loadDataByID() {
+    let textbox = document.getElementById("fleetdata"),
+        raw_data = textbox.value;
+    if (raw_data[0] !== "[") raw_data = LZString.decompressFromEncodedURIComponent(raw_data);
+
+    let [data, ver, hash] = raw_data.split("!"),
+        ck = false;
+
+    switch (parseFloat(ver)) {
+        case 0.04:
+            ck = CryptoJS.SHA3(data, { outputLength: 256 }).toString();
+            if (ck !== hash) return loadError(ck);
+            data = JSON.parse(data);
+            if (!c_formation.sameAs(formation.v4)) buildFleet(formation.v4, true);
+            break;
+
+        case 0.05:
+            ck = CryptoJS.MD5(data).toString();
+            if (ck !== hash) return loadError(ck);
+            data = JSON.parse(data);
+            c_formation = extractFormation(data);
+            buildFleet(c_formation, true);
+            break;
+
+        default:
+            throw Error(`unknown version ${ver}`);
     }
     textbox.value = "";
-    parseID(main_data);
+    await parseID(data);
+    disableInvalidMoveButton();
+
+    function loadError(_ck_ = "") {
+        message = `Error: Corrupted data!!! [${_ck_}] should be [${hash}]`;
+        textbox.value = message;
+        console.log(data);
+        throw Error(message);
+    }
+}
+
+function extractFormation(a_fleet_data = []) {
+    if (!(a_fleet_data instanceof Array)) throw Error("Invalid data");
+    let formation_data = [];
+    a_fleet_data.forEach(fleet => { if (!isNaN(fleet[fleet.length - 1])) formation_data.push(fleet[fleet.length - 1]); });
+    console.log(`new formation: [${formation_data}]`);
+    return formation_data;
 }
 
 function saveCookie(ckey, cvalue, expday = 365) {
@@ -435,77 +603,54 @@ function getCookie() {
     return new_list;
 }
 
-function loadCookie() {
-    let clist = getCookie();
-    if (clist.lan) {
-        let button = document.getElementById(clist.lan);
-        button.click();
-    } else {
-        setlang({ id: "en" });
-        saveCookie("lan", lan);
-    }
-
-    if (clist.fleet) {
-        let data = document.getElementById("fleetdata");
-        data.value = clist.fleet;
-        loadDataByID();
-    } else {
-        saveCookie("fleet", dumpID());
-    }
-
-    if (clist.allow_dup == 1) {
-        allow_dup();
-    }
-
-    if (clist.thick_frame == 1) {
-        let ele = document.getElementById("frame_setting");
-        setTimeout(() => frameSize(ele), 0);
-    }
-
-    if (clist.layout) {
-        let layout_switch = document.querySelector("#layout_setting");
-        layout_switch.textContent = clist.layout;
-        switchLayout(layout_switch, true);
-    }
-}
-
-function parseID(data) {
-    console.time(parseID.name);
-    data = JSON.parse(data);
+async function parseID(data) {
+    if (!data.length) throw Error("no data");
+    //console.time(parseID.name);
     data.forEach((fleet, fleet_index) => {
+        let last_item = fleet[fleet.length - 1],
+            formation_data = (!isNaN(last_item)) ? last_item : false;
         fleet.forEach((side, side_index) => {
-            side.forEach((ship, ship_index) => {
-                let empty = false;
-                ship.forEach((item, item_index) => {
-                    if (item === "") {
+            // skip formation data
+            if (side instanceof Array) {
+                side.forEach((ship, ship_index) => {
+                    let empty_ship = false;
+                    ship.forEach((item, item_index) => {
                         // set as empty ship/equip
-                        if (item_index === 0) {
-                            item = "000000";
-                        } else {
-                            item = 666666;
+                        if (item === "" || item === 0) {
+                            item = item_index == 0 ? "000000" : 666666;
+                            if (item === "000000") empty_ship = true;
                         }
-                    }
-                    if (!empty) {
-                        let item_name = fleet_index < 4 ?
-                            `_${fleet_index}${side_index}${ship_index}${item_index}` : // normal fleet
-                            `_${fleet_index}2${ship_index}${item_index}`; // sub fleet
-                        let ship_item = { name: item_name, id: item };
-                        setCurrent(ship_item);
-                        if (item_index === 0) {
-                            setShipAndEquip(ship_item, false);
-                        } else {
-                            setEquip(ship_item, false);
+                        // skip empty ship
+                        if (!empty_ship) {
+                            let item_name = false;
+                            if (!formation_data) {
+                                // v4 no formation data
+                                item_name = fleet_index < 4 ?
+                                    `_${fleet_index}${side_index}${ship_index}${item_index}` : // normal fleet
+                                    `_${fleet_index}2${ship_index}${item_index}`; // sub fleet
+                            } else {
+                                // v5+
+                                // side { 0:front, 1:back, 2:sub }, formation { 1: normal, 2:sub }
+                                item_name = formation_data == 1 ?
+                                    `_${fleet_index}${side_index}${ship_index}${item_index}` : // normal fleet
+                                    `_${fleet_index}2${ship_index}${item_index}`; // sub fleet
+                            }
+                            let ship_item = { name: item_name, id: item };
+                            setCurrent(ship_item);
+                            if (item_index === 0 && item != 0) {
+                                setShipAndEquip(ship_item, false);
+                            } else {
+                                setEquip(ship_item, false);
+                            }
                         }
-                        if (item === "000000") {
-                            empty = true;
-                        }
-                    }
+                    });
                 });
-            });
+            }
         });
     });
     saveCookie("fleet", dumpID()); // save data at end
-    console.timeEnd(parseID.name);
+    //console.timeEnd(parseID.name);
+    return true;
 }
 
 function setRetro() {
@@ -543,20 +688,6 @@ function setEqCode(item) {
             });
         });
     });
-}
-
-function indexInObj(obj, getvalue = false) {
-    let new_list = [];
-    if (getvalue) {
-        for (let index in obj) {
-            new_list.push(index, obj[index]);
-        }
-    } else {
-        for (let index in obj) {
-            new_list.push(index);
-        }
-    }
-    return new_list;
 }
 
 async function updateSetting(item) {
@@ -1055,11 +1186,10 @@ function getSide() {
 
 function setShipAndEquip(item, save = true) {
     let side = getSide();
+    console.log(`${setShipAndEquip.name}: ${item} ${typeof item}`);
     let shipInApp = fleet_data[c_fleet][side][c_pos];
     let shipInList = sorted_ship_data.find((ele) => {
-        if (ele.id === item.id) {
-            return Object.assign({}, ele);
-        }
+        if (ele.id === `${item.id}` || ele.id === item.id) return Object.assign({}, ele);
     });
     let app_item = shipInApp.item;
     const shipCopyList = ["tw", "cn", "en", "jp", "icon", "frame", "bg", "id", "type", "rarity", "star", "base"];
@@ -1135,108 +1265,10 @@ function emptyData() {
 
 async function initial() {
     console.time(initial.name);
-    //create sorted ship list
-    console.time("sortship");
-    let newlist = [];
-    let pos = 0;
-    let empty = {};
-    let parseData = {
-        id: "uni_id",
-        tw: "tw_name", cn: "cn_name", en: "en_name", jp: "jp_name",
-        type: "type",
-        nationality: "nationality",
-        rarity: "rarity",
-        star: "star",
-        retro: "retro",
-        base: "base_list",
-        e1: "equip_1", e2: "equip_2", e3: "equip_3", e4: "equip_4", e5: "equip_5",
-    };
-    for (let index in ship_data) {
-        let item = Object.assign({}, ship_data[index]);
-        let newitem = {};
-        // parse data
-        for (let key in parseData) {
-            newitem[key] = item[parseData[key]];
-        }
-        // set other data
-        newitem.icon = `shipicon/${item.painting.toLowerCase()}.png`;
-        newitem.bg = `ui/bg${item.rarity - 1}.png`;
-        newitem.frame = `ui/frame_${item.rarity - 1}.png`;
-        // create empty ship
-        if (pos === 0) {
-            empty = Object.assign({}, newitem);
-            for (let key in empty) {
-                empty[key] = "";
-            }
-            empty.id = "000000";
-            empty.en = "remove";
-            empty.tw = empty.cn = "移除";
-            empty.jp = "除隊";
-            empty.icon = "ui/empty.png";
-        }
-        newlist.push(newitem);
-        pos++;
-    }
-    newlist = sorting(newlist, 'type', true);
-    newlist = sorting(newlist, 'nationality', true);
-    newlist = sorting(newlist, 'rarity', true);
-    // add emptyship to top
-    newlist.unshift(empty);
-    sorted_ship_data = Object.assign([], newlist);
-    //--------------------------------
-    console.timeEnd("sortship");
-    //create sorted equip list
-    console.time("sortequip");
-    newlist = [];
-    pos = 0;
-    parseData = {
-        id: "id",
-        tw: "tw_name", cn: "cn_name", en: "en_name", jp: "jp_name",
-        type: "type",
-        nationality: "nationality",
-        rarity: "rarity",
-        fb: "ship_type_forbidden",
-        limit: "equip_limit",
-    };
-    for (let index in equip_data) {
-        let item = Object.assign({}, equip_data[index]);
-        let newitem = {};
-        // parse data
-        for (let key in parseData) {
-            newitem[key] = item[parseData[key]];
-        }
-        // set other data
-        newitem.icon = `equips/${item.icon}.png`;
-        if (item.rarity != 1) {
-            newitem.bg = `ui/bg${item.rarity - 1}.png`;
-            newitem.frame = `ui/frame_${item.rarity - 1}.png`;
-        } else {
-            newitem.bg = `ui/bg${item.rarity}.png`;
-            newitem.frame = `ui/frame_${item.rarity}.png`;
-        }
-        // create empty equip
-        if (pos === 0) {
-            empty = Object.assign({}, newitem);
-            for (let key in empty) {
-                empty[key] = "";
-            }
-            empty.id = "666666";
-            empty.en = "remove";
-            empty.tw = empty.cn = "移除";
-            empty.jp = "外す";
-            empty.icon = "ui/empty.png";
-        }
-        newlist.push(newitem);
-        pos++;
-    }
-    newlist = sorting(newlist, "nationality", false);
-    newlist = sorting(newlist, "type", false);
-    newlist = sorting(newlist, "rarity", true);
-    newlist.unshift(empty);
-    sorted_equip_data = Object.assign([], newlist);
-    console.timeEnd("sortequip");
-    //--------------------------------------
-    if (indexedDB) {
+    await createSortShipList();
+    await createSortEquipList();
+    // ------------------------------
+    if (indexedDB || window.idb) {
         const [db, AFDB] = await initialDB(db_name, db_ver);
         let all_key = await AFDB.allKeys();
         if (!all_key.length) {
@@ -1247,13 +1279,17 @@ async function initial() {
                 console.log(`cached ${cacheData.length} images`);
             }
         }
-        await loadImgCache(AFDB).then(r => {
-            console.log(`set ${r} src to image cache`);
-        });
+        await loadImgCache(AFDB);
     } else {
+        let pos = document.querySelector("#loading_box"),
+            message = document.createElement("div");
+        message.textContent = "not support indexedDB";
+        message.className = "row text-center text-monospace";
+        pos.appendChild(message);
         console.log("not support indexedDB");
+        return;
     }
-
+    // ------------------------------
     await createAllShip();
     await createAllEquip();
     addLanguageToEle();
@@ -1262,129 +1298,533 @@ async function initial() {
     splitButtonGroup("eq_nation");
     //splitButtonGroup("eq_type", 6, filter_btn_class.replace("line-5-item", "line-6-item"));
     addWindowSizeEvent();
-    loadCookie();
-    loadStorage();
+    await loadCookie();
+    await loadStorage();
     document.querySelector("#loading_box").style.display = "none";
     document.querySelector("#app_area").style.display = "";
+    disableInvalidMoveButton();
     console.timeEnd(initial.name);
-    setTimeout(windowCleaner);
-}
+    setTimeout(() => window.initial = undefined);
+    //------------------------------
+    async function addProgressBar(id = "", text = "", max = 100, appendTo = {}) {
+        let bar = document.createElement("progress");
+        bar.id = id;
+        bar.max = max;
+        bar.className = "flex-col my-auto";
 
-function windowCleaner() {
-    [
-        "aW5pdGlhbA==#Y3JlYXRlTmV3SXRlbQ==#Y3JlYXRlQWxsRXF1aXA=#Y3JlYXRlQWxsU2hpcA==#YWRkX3NlYXJjaF9ldmVudA==",
-        "#YnVpbGRGbGVldA==#YnVpbGRTaGlwU2VsZWN0T3B0aW9u#YWRkTGFuZ3VhZ2VUb0VsZQ==#c3BsaXRCdXR0b25Hcm91cA==#YWR",
-        "kV2luZG93U2l6ZUV2ZW50#"
-    ].join("").replace(/[^#]+(?=#)/g, (t) => window[atob(t)] = () => { });
-}
+        let lable = document.createElement("label");
+        lable.className = "flex-col text-monospace m-1";
+        lable.textContent = text;
+        lable.for = id;
 
-function createNewItem(data, pos_id, onclick, progress) {
-    return new Promise(resolve => {
-        setTimeout(() => {
-            let pos = document.getElementById(pos_id);
-            let icon_box = document.createElement("div");
-            icon_box.className = "container-fluid icon_box";
+        let lable2 = document.createElement("lable");
+        lable2.className = "flex-col text-monospace m-1";
+        lable2.textContent = `0/${max}`;
+        lable2.for = id;
 
-            let icon = document.createElement("img");
-            icon.className = "img-fluid icon";
-            icon.loading = "lazy";
-            icon.src = data.icon;
+        let box = document.createElement("div");
+        box.className = "row justify-content-center";
+        box.appendChild(lable);
+        box.appendChild(lable2);
+        box.appendChild(bar);
 
-            let bg = document.createElement("img");
-            bg.className = "img-fluid bg";
-            bg.src = data.bg;
+        let pos = document.querySelector("#loading_box");
+        pos.appendChild(box);
 
-            let frame = document.createElement("img");
-            frame.className = "img-fluid frame";
-            frame.src = data.frame;
+        appendTo.bar = bar;
+        appendTo.lable = lable2;
+        return true;
+    }
 
-            icon_box.append(bg, frame, icon);
-            //-----------------------------------------------
-            let box = document.createElement("div");
-            box.className = "container-fluid p-0 box";
+    //------------------------------
+    async function createSortShipList() {
+        console.time(createSortShipList.name);
+        let newlist = [];
+        let pos = 0;
+        let empty = {};
+        let parseData = {
+            id: "uni_id",
+            tw: "tw_name", cn: "cn_name", en: "en_name", jp: "jp_name",
+            type: "type",
+            nationality: "nationality",
+            rarity: "rarity",
+            star: "star",
+            retro: "retro",
+            base: "base_list",
+            e1: "equip_1", e2: "equip_2", e3: "equip_3", e4: "equip_4", e5: "equip_5",
+        };
+        for (let index in ship_data) {
+            let item = Object.assign({}, ship_data[index]);
+            let newitem = {};
+            // parse data
+            for (let key in parseData) {
+                newitem[key] = item[parseData[key]];
+            }
+            // set other data
+            newitem.icon = `shipicon/${item.painting.toLowerCase()}.png`;
+            newitem.bg = `ui/bg${item.rarity - 1}.png`;
+            newitem.frame = `ui/frame_${item.rarity - 1}.png`;
+            // create empty ship
+            if (pos === 0) {
+                empty = Object.assign({}, newitem);
+                for (let key in empty) {
+                    empty[key] = "";
+                }
+                empty.id = "000000";
+                empty.en = "remove";
+                empty.tw = empty.cn = "移除";
+                empty.jp = "除隊";
+                empty.icon = "ui/empty.png";
+            }
+            newlist.push(newitem);
+            pos++;
+        }
+        newlist = sorting(newlist, 'type', true);
+        newlist = sorting(newlist, 'nationality', true);
+        newlist = sorting(newlist, 'rarity', true);
+        // add emptyship to top
+        newlist.unshift(empty);
+        sorted_ship_data = Object.assign([], newlist);
+        console.timeEnd(createSortShipList.name);
+        return true;
+    }
 
-            let name = document.createElement("span");
-            name.className = "justify-content-center item_name";
-            name.setAttribute("name", "name");
-            name.setAttribute("tw", data.tw);
-            name.setAttribute("cn", data.cn);
-            name.setAttribute("en", data.en);
-            name.setAttribute("jp", data.jp);
-            name.textContent = data[lan];
+    async function createSortEquipList() {
+        console.time(createSortEquipList.name);
+        let newlist = [];
+        let pos = 0;
+        let parseData = {
+            id: "id",
+            tw: "tw_name", cn: "cn_name", en: "en_name", jp: "jp_name",
+            type: "type",
+            nationality: "nationality",
+            rarity: "rarity",
+            fb: "ship_type_forbidden",
+            limit: "equip_limit",
+        };
+        for (let index in equip_data) {
+            let item = Object.assign({}, equip_data[index]);
+            let newitem = {};
+            // parse data
+            for (let key in parseData) {
+                newitem[key] = item[parseData[key]];
+            }
+            // set other data
+            newitem.icon = `equips/${item.icon}.png`;
+            if (item.rarity != 1) {
+                newitem.bg = `ui/bg${item.rarity - 1}.png`;
+                newitem.frame = `ui/frame_${item.rarity - 1}.png`;
+            } else {
+                newitem.bg = `ui/bg${item.rarity}.png`;
+                newitem.frame = `ui/frame_${item.rarity}.png`;
+            }
+            // create empty equip
+            if (pos === 0) {
+                empty = Object.assign({}, newitem);
+                for (let key in empty) {
+                    empty[key] = "";
+                }
+                empty.id = "666666";
+                empty.en = "remove";
+                empty.tw = empty.cn = "移除";
+                empty.jp = "外す";
+                empty.icon = "ui/empty.png";
+            }
+            newlist.push(newitem);
+            pos++;
+        }
+        newlist = sorting(newlist, "nationality", false);
+        newlist = sorting(newlist, "type", false);
+        newlist = sorting(newlist, "rarity", true);
+        newlist.unshift(empty);
+        sorted_equip_data = Object.assign([], newlist);
+        console.timeEnd(createSortEquipList.name);
+        return true;
+    }
 
-            box.append(icon_box, name);
-            //-----------------------------------------------
-            let item = document.createElement("button");
-            item.className = "p-1 item_container";
-            item.id = data.id;
-            item.onclick = function () { onclick(this); };
-            item.setAttribute("data-dismiss", "modal");
+    function createNewItem(data, pos_id, onclick, progress) {
+        return new Promise(resolve => {
+            setTimeout(() => {
+                let pos = document.getElementById(pos_id);
+                let icon_box = document.createElement("div");
+                icon_box.className = "container-fluid icon_box";
 
-            item.append(box);
-            pos.append(item);
-            progress.bar.value++;
-            progress.lable.textContent = `${progress.bar.value}/${progress.bar.max}`;
-            resolve();
+                let icon = document.createElement("img");
+                icon.className = "img-fluid icon";
+                icon.loading = "lazy";
+                icon.src = data.icon;
+
+                let bg = document.createElement("img");
+                bg.className = "img-fluid bg";
+                bg.src = data.bg;
+
+                let frame = document.createElement("img");
+                frame.className = "img-fluid frame";
+                frame.src = data.frame;
+
+                icon_box.append(bg, frame, icon);
+                //-----------------------------------------------
+                let box = document.createElement("div");
+                box.className = "container-fluid p-0 box";
+
+                let name = document.createElement("span");
+                name.className = "justify-content-center item_name";
+                name.setAttribute("name", "name");
+                name.setAttribute("tw", data.tw);
+                name.setAttribute("cn", data.cn);
+                name.setAttribute("en", data.en);
+                name.setAttribute("jp", data.jp);
+                name.textContent = data[lan];
+
+                box.append(icon_box, name);
+                //-----------------------------------------------
+                let item = document.createElement("button");
+                item.className = "p-1 item_container";
+                item.id = data.id;
+                item.onclick = function () { onclick(this); };
+                item.setAttribute("data-dismiss", "modal");
+
+                item.append(box);
+                pos.append(item);
+                progress.bar.value++;
+                progress.lable.textContent = `${progress.bar.value}/${progress.bar.max}`;
+                resolve();
+            });
         });
+    }
+
+    async function createAllShip() {
+        console.time(createAllShip.name);
+        let promise_list = [];
+        await addProgressBar("create_ship", "Generate Ships", sorted_ship_data.length, _loading_.ship);
+        sorted_ship_data.forEach(ship =>
+            promise_list.push(createNewItem(ship, "shiplist", setShipAndEquip, _loading_.ship))
+        );
+        await Promise.all(promise_list);
+        console.timeEnd(createAllShip.name);
+        return true;
+    }
+
+    async function createAllEquip() {
+        console.time(createAllEquip.name);
+        let promise_list = [];
+        await addProgressBar("create_equip", "Generate Equips", sorted_equip_data.length, _loading_.equip);
+        sorted_equip_data.forEach(equip =>
+            promise_list.push(createNewItem(equip, "equiplist", setEquip, _loading_.equip))
+        );
+        await Promise.all(promise_list);
+        console.timeEnd(createAllEquip.name);
+        return true;
+    }
+
+    //------------------------------
+    function srcToCacheID(src = "", type = "ship", reg = "") {
+        return `${type == "ship" ? "shipicon" : "equips"}_${src.replace(reg, "$1")}`;
+    }
+
+    async function imgToDataURL() {
+        let name = "imgToDataURL";
+        console.time(name);
+        let reg = /.*(?:equips|shipicon)\/([^\.]+).*/;
+        let count = 0;
+        let all_data = {};
+        sorted_ship_data.forEach((o, index) => {
+            let id = srcToCacheID(o.icon, "ship", reg);
+            if (index != 0 && !all_data[id]) {
+                all_data[id] = { src: o.icon, id: id, data_url: "", };
+                count++;
+            }
+        });
+        sorted_equip_data.forEach((o, index) => {
+            let id = srcToCacheID(o.icon, "equip", reg);
+            if (index != 0 && !all_data[id]) {
+                all_data[id] = { src: o.icon, id: id, data_url: "", };
+                count++;
+            }
+        });
+        let url_data = [];
+        let promise_list = [];
+        let p = _loading_.cache_image;
+        await addProgressBar("fetch_img", "Fetch Images", count, p);
+        for (let key in all_data) {
+            let obj = all_data[key];
+            promise_list.push(
+                fetchImageToDataURL(obj.src).then(data_url => {
+                    obj.data_url = data_url;
+                    p.bar.value++;
+                    p.lable.textContent = `${p.bar.value}/${p.bar.max}`;
+                })
+            );
+            url_data.push(obj);
+        }
+        await Promise.all(promise_list);
+        console.log(`fetch ${count} images`);
+        console.timeEnd(name);
+        return url_data;
+    }
+
+    async function fetchImageToDataURL(url = "", test = false) {
+        let local = window.location.protocol == "file:" ? true : false;
+        if (test || local) {
+            return url; // can't fetch in local file
+        } else {
+            return fetch(url).then(r => {
+                return r.blob();
+            }).then(blob => {
+                return blobToURL(blob);
+            });
+        }
+        function blobToURL(blob) {
+            return new Promise((resolve, reject) => {
+                var fr = new FileReader();
+                fr.onload = () => { resolve(fr.result); };
+                fr.onerror = reject;
+                fr.readAsDataURL(blob);
+            });
+        }
+    }
+
+    async function loadImgCache(AFDB) {
+        let name = "loadImgCache";
+        console.time(name);
+        let reg = /.*(?:equips|shipicon)\/([^\.]+).*/;
+        let promise_list = [];
+        let max = sorted_ship_data.length + sorted_equip_data.length - 2;
+        let p = _loading_.load_cache;
+        await addProgressBar("load_cache", "Loading Cache", max, p);
+        for (let obj of sorted_ship_data) {
+            if (obj.id == "000000") continue;
+            promise_list.push(
+                AFDB.getImgCache(srcToCacheID(obj.icon, "ship", reg))
+                    .then(cache => {
+                        obj.icon = cache.data_url;
+                        obj.icon_cache = true;
+                        p.bar.value++;
+                        p.lable.textContent = `${p.bar.value}/${p.bar.max}`;
+                    })
+            );
+        }
+        for (let obj of sorted_equip_data) {
+            if (obj.id == "666666") continue;
+            promise_list.push(
+                AFDB.getImgCache(srcToCacheID(obj.icon, "equip", reg))
+                    .then(cache => {
+                        obj.icon = cache.data_url;
+                        obj.icon_cache = true;
+                        p.bar.value++;
+                        p.lable.textContent = `${p.bar.value}/${p.bar.max}`;
+                    })
+            );
+        }
+        await Promise.all(promise_list);
+        console.log(`set ${promise_list.length} src to image cache`);
+        console.timeEnd(name);
+        return true;
+    }
+
+    async function saveCacheData(db, db_name, cacheData) {
+        const tx = db.transaction(db_name, "readwrite");
+        const promise_list = cacheData.map(obj => { return tx.store.add(obj); });
+        await Promise.all([...promise_list, tx.done]);
+    }
+
+    //------------------------------
+    async function loadCookie() {
+        let clist = getCookie();
+        if (clist.lan) {
+            let button = document.getElementById(clist.lan);
+            button.click();
+        } else {
+            setlang({ id: "en" });
+            saveCookie("lan", lan);
+        }
+
+        if (clist.fleet) {
+            let data = document.getElementById("fleetdata");
+            data.value = clist.fleet;
+            loadDataByID();
+        } else {
+            saveCookie("fleet", dumpID());
+        }
+
+        if (clist.allow_dup == 1) {
+            allow_dup();
+        }
+
+        if (clist.thick_frame == 1) {
+            let ele = document.getElementById("frame_setting");
+            setTimeout(() => frameSize(ele), 0);
+        }
+
+        if (clist.layout) {
+            let layout_switch = document.querySelector("#layout_setting");
+            layout_switch.textContent = clist.layout;
+            switchLayout(layout_switch, true);
+        }
+
+        return true;
+    }
+
+    async function loadStorage() {
+        let num = number_of_fleet();
+        if (num <= 0) return;
+        fleet_in_storage = []; // empty storage
+        for (let i = 1; i <= num; i++) {
+            let id = `fleet_index_${i}`;
+            let data = storageManager("get", id);
+            if (!data) continue;
+            if (!data.name || !data.fleet) continue;
+            fleet_in_storage.push({ name: data.name, fleet: data.fleet, });
+            //console.log(data);
+        }
+        let msg = fleet_info.msg();
+        classManager(msg, "exchange", msg_color.red, msg_color.green);
+        msg.textContent = `load ${fleet_in_storage.length} fleet`;
+        console.log(msg.textContent);
+        return true;
+    }
+}
+
+function getPos(ele) {
+    let pos = ele.getAttribute("pos");
+    return parseInt(pos[pos.length - 1], 10) - 1;
+}
+
+function moveFleet(ele) {
+    let pos = getPos(ele),
+        direction = parseInt(ele.getAttribute("data"), 10),
+        current_fleet_dump = dumpID(true),
+        temp = [],
+        msg = fleet_info.msg();
+    console.log("before", JSON.stringify(current_fleet_dump, stringifyReplacer));
+    if (direction < 0) {
+        if (pos - 1 < 0) {
+            classManager(msg, "exchange", msg_color.green, msg_color.red);
+            msg.textContent = "yes";
+            throw Error("can't move over 0");
+        }
+    } else {
+        if (pos + 1 > fleet_data.length - 1) {
+            classManager(msg, "exchange", msg_color.green, msg_color.red);
+            msg.textContent = "yes";
+            throw Error("can't move under 1");
+        }
+    }
+    direction = direction < 0 ? pos - 1 : pos + 1;
+    temp = current_fleet_dump.splice(pos, 1).flat();
+    current_fleet_dump.splice(direction, 0, temp);
+    current_fleet_dump = JSON.stringify(current_fleet_dump, stringifyReplacer);
+    console.log("after", current_fleet_dump);
+    updateFleetDataBox(current_fleet_dump);
+    loadDataByID();
+    disableInvalidMoveButton();
+}
+
+function disableInvalidMoveButton() {
+    let all = document.querySelectorAll(`[onclick^="moveFleet"],[onclick^="deleteFleet"]`),
+        f1_move_top = document.querySelector(`[pos="Fleet_1"][onclick^="moveFleet"][data="-1"]`),
+        bottom_under = document.querySelector(`[pos="Fleet_${fleet_data.length}"][onclick^="moveFleet"][data="1"]`);
+    if (all.length) all.forEach(b => b.removeAttribute("disabled"));
+    if (f1_move_top) f1_move_top.setAttribute("disabled", true);
+    if (bottom_under) bottom_under.setAttribute("disabled", true);
+    console.log(f1_move_top);
+    console.log(bottom_under);
+    if (fleet_data.length === 1 && all.length) {
+        all.forEach(b => b.setAttribute("disabled", true));
+    }
+}
+
+function deleteFleet(ele) {
+    let del_pos = getPos(ele),
+        current_fleet_dump = dumpID(true),
+        new_fleet = [],
+        msg = fleet_info.msg();
+    current_fleet_dump.forEach((fleet, index) => { if (index != del_pos) new_fleet.push(fleet); });
+    if (!new_fleet.length) {
+        classManager(msg, "exchange", msg_color.green, msg_color.red);
+        msg.textContent = "yes";
+        throw Error("you can't delete the last fleet");
+    }
+    new_fleet = JSON.stringify(new_fleet, stringifyReplacer);
+    updateFleetDataBox(new_fleet);
+    loadDataByID();
+}
+
+function insertFleet(ele) {
+    let data = ele.getAttribute("data").split(",").map(t => parseInt(t, 10));
+    let formation = data[0],
+        insert_position = getPos(ele),
+        direction = data[1];
+    if (insert_position < 0) throw Error("position must be positive");
+    if (![0, 1].includes(direction)) throw Error(`unknown direction`);
+    let current_fleet_dump = dumpID(true),
+        new_insert_fleet = {},
+        new_fleet = [];
+    switch (formation) {
+        case 1:
+            new_insert_fleet = newNormalFleet(0, creatEmptyShip());
+            break;
+        case 2:
+            new_insert_fleet = newSubFleet(0, creatEmptyShip());
+            break;
+        default:
+            throw Error(`unknown formation`);
+    }
+    //console.log(new_insert_fleet);
+    new_insert_fleet = dumpFleet(new_insert_fleet);
+    //console.log(`old fleet: ${JSON.stringify(current_fleet_dump, stringifyReplacer)}`);
+    current_fleet_dump.forEach((fleet, index) => {
+        if (direction == 0 && insert_position == index) new_fleet.push(new_insert_fleet);
+        new_fleet.push(fleet);
+        if (direction == 1 && insert_position == index) new_fleet.push(new_insert_fleet);
     });
+    new_fleet = JSON.stringify(new_fleet, stringifyReplacer);
+    //console.log(`new fleet: ${new_fleet}`);
+    updateFleetDataBox(new_fleet);
+    loadDataByID();
 }
 
-async function addProgressBar(id = "", text = "", max = 100, appendTo = {}) {
-    let bar = document.createElement("progress");
-    bar.id = id;
-    bar.max = max;
-    bar.className = "flex-col my-auto";
-
-    let lable = document.createElement("label");
-    lable.className = "flex-col text-monospace m-1";
-    lable.textContent = text;
-    lable.for = id;
-
-    let lable2 = document.createElement("lable");
-    lable2.className = "flex-col text-monospace m-1";
-    lable2.textContent = `0/${max}`;
-    lable2.for = id;
-
-    let box = document.createElement("div");
-    box.className = "row justify-content-center";
-    box.appendChild(lable);
-    box.appendChild(lable2);
-    box.appendChild(bar);
-
-    let pos = document.querySelector("#loading_box");
-    pos.appendChild(box);
-
-    appendTo.bar = bar;
-    appendTo.lable = lable2;
-}
-
-async function createAllShip() {
-    console.time(createAllShip.name);
-    let promise_list = [];
-    addProgressBar("create_ship", "Generate Ships", sorted_ship_data.length, _loading_.ship);
-    sorted_ship_data.forEach(ship =>
-        promise_list.push(createNewItem(ship, "shiplist", setShipAndEquip, _loading_.ship))
-    );
-    await Promise.all(promise_list);
-    console.timeEnd(createAllShip.name);
-    return new Promise(resolve => resolve());
-}
-
-async function createAllEquip() {
-    console.time(createAllEquip.name);
-    let promise_list = [];
-    addProgressBar("create_equip", "Generate Equips", sorted_equip_data.length, _loading_.equip);
-    sorted_equip_data.forEach(equip =>
-        promise_list.push(createNewItem(equip, "equiplist", setEquip, _loading_.equip))
-    );
-    await Promise.all(promise_list);
-    console.timeEnd(createAllEquip.name);
-    return new Promise(resolve => resolve());
-}
-
-function buildFleet() {
+function buildFleet(formation_data = [], update = false) {
     console.time(buildFleet.name);
-    let empty_ship = [];
+    if (!formation_data.length) throw Error("formation data is empty!!");
+    //-------------------------------
+    /*  
+        ship [0,1,2,3,4,5] 0 = ship, ...equip
+        item id _0123 => fleet=0 side=1 pos=2 item=3
+        pos
+        0 => 2 (1) | 0 => 3 (2)
+        1 => 1 (0) | 1 => 2 (1)
+        2 => 3 (2) | 2 => 1 (0)
+    */
+    let empty_ship = creatEmptyShip(),
+        newfleet = [];
+
+    console.log(`build form formation: [${formation_data}]`);
+    formation_data.forEach((formation, fleet_id) => {
+        switch (formation) {
+            case 1:
+                newfleet.push(newNormalFleet(fleet_id, empty_ship));
+                break;
+            case 2:
+                newfleet.push(newSubFleet(fleet_id, empty_ship));
+                break;
+            default:
+                throw Error(`unknown formation`);
+        }
+    });
+
+    console.timeEnd(buildFleet.name);
+    //console.log(newfleet);
+    c_formation = formation_data;
+    if (!update) {
+        return newfleet;
+    } else {
+        ALF.fleets = fleet_data = newfleet;
+    }
+}
+
+function creatEmptyShip() {
+    let new_empty_ship = [];
     for (let i = 0; i < 6; i++) {
         let item = [];
         if (i === 0) {
@@ -1410,68 +1850,55 @@ function buildFleet() {
             };
             item = eq;
         }
-        empty_ship.push({ id: i, property: [], });
-        empty_ship[i].property = Object.assign({}, item);
+        new_empty_ship.push({ id: i, property: [], });
+        new_empty_ship[i].property = Object.assign({}, item);
     }
-    /*
-        item id _0123 => fleet=0 side=1 pos=2 item=3
-        pos
-        0 => 2 (1) | 0 => 3 (2)
-        1 => 1 (0) | 1 => 2 (1)
-        2 => 3 (2) | 2 => 1 (0)
-    */
-    let newfleet = [],
-        pos_table = { back_sub: { 0: 2, 1: 1, 2: 3 }, front: { 0: 3, 1: 2, 2: 1 }, };
-    for (let fleet_id = 0; fleet_id < 5; fleet_id++) {
-        let new_ship_data = [];
-        if (fleet_id < 4) { // normal fleet
-            let front = [], back = [];
-            for (let ship_pos = 0; ship_pos < 6; ship_pos++) {
-                let new_data = [];
-                if (ship_pos < 3) {
-                    for (let item_index in empty_ship) {
-                        let new_value = `_${fleet_id}0${ship_pos}${item_index}`,
-                            new_prop = Object.assign({}, empty_ship[item_index].property);
-                        new_prop.pos = "front";
-                        if (item_index == 0) new_prop.ship_pos = pos_table.front[ship_pos];
-                        new_data.push({ id: new_value, property: new_prop, });
-                    }
-                    new_ship_data = { id: `fleet_${fleet_id}_front_ship${ship_pos}`, item: new_data, };
-                    front.push(new_ship_data);
-                } else {
-                    for (let item_index in empty_ship) {
-                        let new_value = `_${fleet_id}1${ship_pos - 3}${item_index}`,
-                            new_prop = Object.assign({}, empty_ship[item_index].property);
-                        new_data.push({ id: new_value, property: new_prop, });
-                        new_prop.pos = "back";
-                        if (item_index == 0) new_prop.ship_pos = pos_table.back_sub[ship_pos - 3];
-                    }
-                    new_ship_data = { id: `fleet_${fleet_id}_back_ship${ship_pos - 3}`, item: new_data, };
-                    back.push(new_ship_data);
-                }
+    return new_empty_ship;
+}
+
+function newNormalFleet(fleet_id, empty_ship) {
+    if (isNaN(fleet_id) || fleet_id < 0) throw Error("no fleet_id");
+    let front = [], back = [];
+    for (let ship_pos = 0; ship_pos < 6; ship_pos++) {
+        let new_ship = [];
+        if (ship_pos < 3) {
+            for (let item_index in empty_ship) {
+                let new_item_id = `_${fleet_id}0${ship_pos}${item_index}`,
+                    new_prop = Object.assign({}, empty_ship[item_index].property);
+                new_prop.pos = "front";
+                if (item_index == 0) new_prop.ship_pos = pos_table.front[ship_pos];
+                new_ship.push({ id: new_item_id, property: new_prop, });
             }
-            newfleet.push({ id: `fleet_${fleet_id}`, front_ship: front, back_ship: back, });
+            front.push({ id: `fleet_${fleet_id}_front_ship${ship_pos}`, item: new_ship, });
         } else {
-            // submarine
-            let sub = [];
-            for (let ship_pos = 0; ship_pos < 3; ship_pos++) {
-                let new_data = [];
-                for (let item_index in empty_ship) {
-                    let new_value = `_${fleet_id}2${ship_pos}${item_index}`;
-                    let new_prop = Object.assign({}, empty_ship[item_index].property);
-                    new_prop.pos = "sub";
-                    new_data.push({ id: new_value, property: new_prop, });
-                    if (item_index == 0) new_prop.ship_pos = pos_table.back_sub[ship_pos];
-                }
-                new_ship_data = { id: `fleet_${fleet_id}_sub_ship${ship_pos}`, item: new_data, };
-                sub.push(new_ship_data);
+            for (let item_index in empty_ship) {
+                let new_item_id = `_${fleet_id}1${ship_pos - 3}${item_index}`,
+                    new_prop = Object.assign({}, empty_ship[item_index].property);
+                new_ship.push({ id: new_item_id, property: new_prop, });
+                new_prop.pos = "back";
+                if (item_index == 0) new_prop.ship_pos = pos_table.back_sub[ship_pos - 3];
             }
-            newfleet.push({ id: `fleet_${fleet_id}`, sub_ship: sub, });
+            back.push({ id: `fleet_${fleet_id}_back_ship${ship_pos - 3}`, item: new_ship, });
         }
     }
-    console.timeEnd(buildFleet.name);
-    //console.log(newfleet);
-    return newfleet;
+    return { id: `Fleet_${fleet_id + 1}`, front_ship: front, back_ship: back, };
+}
+
+function newSubFleet(fleet_id, empty_ship) {
+    if (isNaN(fleet_id) || fleet_id < 0) throw Error("no fleet_id");
+    let sub = [];
+    for (let ship_pos = 0; ship_pos < 3; ship_pos++) {
+        let new_ship = [];
+        for (let item_index in empty_ship) {
+            let new_item_id = `_${fleet_id}2${ship_pos}${item_index}`,
+                new_item_prop = Object.assign({}, empty_ship[item_index].property);
+            new_item_prop.pos = "sub";
+            new_ship.push({ id: new_item_id, property: new_item_prop, });
+            if (item_index == 0) new_item_prop.ship_pos = pos_table.back_sub[ship_pos];
+        }
+        sub.push({ id: `fleet_${fleet_id}_sub_ship${ship_pos}`, item: new_ship, });
+    }
+    return { id: `Fleet_${fleet_id + 1}`, sub_ship: sub, };
 }
 
 function buildShipSelectOption() {
@@ -1498,6 +1925,7 @@ function buildShipSelectOption() {
         lan_list.forEach(language => item[language] = item.code);
     });
     console.timeEnd(buildShipSelectOption.name);
+    setTimeout(() => window.buildShipSelectOption = undefined);
 }
 
 function buildEquipSelectOption() {
@@ -1524,6 +1952,7 @@ function buildEquipSelectOption() {
     });
 
     console.timeEnd(buildEquipSelectOption.name);
+    setTimeout(() => window.buildEquipSelectOption = undefined);
 }
 
 function addLanguageToEle() {
@@ -1689,24 +2118,6 @@ function storageManager(mode = "get", data_key = "", data = "") {
         let data = JSON.stringify(value);
         AFL_storage.setItem(key, data);
     }
-}
-
-function loadStorage() {
-    let num = number_of_fleet();
-    if (num <= 0) return;
-    fleet_in_storage = []; // empty storage
-    for (let i = 1; i <= num; i++) {
-        let id = `fleet_index_${i}`;
-        let data = storageManager("get", id);
-        if (!data) continue;
-        if (!data.name || !data.fleet) continue;
-        fleet_in_storage.push({ name: data.name, fleet: data.fleet, });
-        //console.log(data);
-    }
-    let msg = fleet_info.msg();
-    classManager(msg, "exchange", msg_color.red, msg_color.green);
-    msg.textContent = `load ${fleet_in_storage.length} fleet`;
-    console.log(msg.textContent);
 }
 
 function updateStorageList() {
@@ -1938,114 +2349,6 @@ async function initialDB(db_name, db_ver) {
     };
     //console.log(AFDB);
     return [db, AFDB];
-}
-
-async function saveCacheData(db, db_name, cacheData) {
-    const tx = db.transaction(db_name, "readwrite");
-    const promise_list = cacheData.map(obj => { return tx.store.add(obj); });
-    await Promise.all([...promise_list, tx.done]);
-}
-
-function srcToCacheID(src = "", type = "ship", reg = "") {
-    return `${type == "ship" ? "shipicon" : "equips"}_${src.replace(reg, "$1")}`;
-}
-
-async function loadImgCache(AFDB) {
-    console.time(loadImgCache.name);
-    let reg = /.*(?:equips|shipicon)\/([^\.]+).*/;
-    let promise_list = [];
-    let max = sorted_ship_data.length + sorted_equip_data.length - 2;
-    let p = _loading_.load_cache;
-    addProgressBar("load_cache", "Loading Cache", max, p);
-    for (let obj of sorted_ship_data) {
-        if (obj.id == "000000") continue;
-        promise_list.push(
-            AFDB.getImgCache(srcToCacheID(obj.icon, "ship", reg))
-                .then(cache => {
-                    obj.icon = cache.data_url;
-                    obj.icon_cache = true;
-                    p.bar.value++;
-                    p.lable.textContent = `${p.bar.value}/${p.bar.max}`;
-                })
-        );
-    }
-    for (let obj of sorted_equip_data) {
-        if (obj.id == "666666") continue;
-        promise_list.push(
-            AFDB.getImgCache(srcToCacheID(obj.icon, "equip", reg))
-                .then(cache => {
-                    obj.icon = cache.data_url;
-                    obj.icon_cache = true;
-                    p.bar.value++;
-                    p.lable.textContent = `${p.bar.value}/${p.bar.max}`;
-                })
-        );
-    }
-    await Promise.all(promise_list);
-    console.timeEnd(loadImgCache.name);
-    return promise_list.length;
-}
-
-async function imgToDataURL() {
-    console.time(imgToDataURL.name);
-    let reg = /.*(?:equips|shipicon)\/([^\.]+).*/;
-    let count = 0;
-    let all_data = {};
-    sorted_ship_data.forEach((o, index) => {
-        let id = srcToCacheID(o.icon, "ship", reg);
-        if (index != 0 && !all_data[id]) {
-            all_data[id] = { src: o.icon, id: id, data_url: "", };
-            count++;
-        }
-    });
-    sorted_equip_data.forEach((o, index) => {
-        let id = srcToCacheID(o.icon, "equip", reg);
-        if (index != 0 && !all_data[id]) {
-            all_data[id] = { src: o.icon, id: id, data_url: "", };
-            count++;
-        }
-    });
-    let url_data = [];
-    let promise_list = [];
-    let p = _loading_.cache_image;
-    await addProgressBar("fetch_img", "Fetch Images", count, p);
-    for (let key in all_data) {
-        let obj = all_data[key];
-        promise_list.push(
-            fetchImageToDataURL(obj.src).then(data_url => {
-                obj.data_url = data_url;
-                p.bar.value++;
-                p.lable.textContent = `${p.bar.value}/${p.bar.max}`;
-            })
-        );
-        url_data.push(obj);
-    }
-    await Promise.all(promise_list);
-    console.log(`fetch ${count} images`);
-    console.timeEnd(imgToDataURL.name);
-    return url_data;
-}
-
-async function fetchImageToDataURL(url = "", test = false) {
-    let local = window.location.protocol == "file:" ? true : false;
-    if (test || local) {
-        return url; // can't fetch in local file
-    } else {
-        return fetch(url).then(r => {
-            return r.blob();
-        }).then(blob => {
-            return blobToURL(blob);
-        });
-    }
-
-    function blobToURL(blob) {
-        return new Promise((resolve, reject) => {
-            var fr = new FileReader();
-            fr.onload = () => { resolve(fr.result); };
-            fr.onerror = reject;
-            fr.readAsDataURL(blob);
-        });
-    }
 }
 
 async function emptyCache() {

@@ -14,6 +14,13 @@ This site was developed and tested on `Chrome`/`Firefox`
 Compatibility with other browsers is unknown  
 
 ## Update  
+**2021-05-16**
+- Dynamic fleet
+  - Normal: add normal fleet to top/bottom
+  - Sub: add Submarine fleet to top/bottom
+  - X: delete fleet (min fleet count: 1)
+  - Compatible with old data (v0.04)
+
 **2021-05-13**
 - better auto adjust UI (no longer force use code)
 - equip filter
@@ -144,7 +151,7 @@ It is very common for skills to have bugs
 If you have followed some players on `bilibili` `NGA` `CN Wiki` you will know  
 ~~`certain anonymous inorganic compound`, `#\d{4}`, `those who make the Tier List`...etc~~  
   
-If you realy want to peek at how crazy it is  
+If you really want to peek at how crazy it is  
 Try [航母調速對軸表](https://wiki.biligame.com/blhx/%E8%88%AA%E6%AF%8D%E8%B0%83%E9%80%9F%E5%AF%B9%E8%BD%B4%E8%A1%A8)  
 It's CN EXCEL calculate table, just and only for the carrier takeoff time-axis in META battles  
   
