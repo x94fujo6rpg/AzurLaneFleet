@@ -539,16 +539,16 @@ function stringifyReplacer(key, value) {
 
 function generateURL() {
     let data = dumpID();
-    let url = "BYFxAcGcC4HpYB4E4AsAzArgKwPYDYAncAcwDpiBLEYDAI1Ip1gEEAvDAgGQEMA7AUwBiAG378QsIA";
-    url = new URL(url);
+    let link = LZString.decompressFromEncodedURIComponent("BYFxAcGcC4HpYB4E4AsAzArgKwPYDYAncAcwDpiBLEYDAI1Ip1gEEAvDAgGQEMA7AUwBiAG378QsIA");
+    link = new URL(link);
     let textbox = document.getElementById("url_box");
-    url.searchParams.append("AFLD", data);
-    url = url.href;
-    if (url.length >= 2000) {
+    link.searchParams.append("AFLD", data);
+    link = link.href;
+    if (link.length >= 2000) {
         textbox.value = "URL too long. You still can share it by use fleetdata below";
         throw Error("url too long");
     } else {
-        textbox.value = url;
+        textbox.value = link;
     }
 }
 
