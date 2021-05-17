@@ -1673,7 +1673,7 @@ async function initial() {
     //------------------------------
     async function loadCookie() {
         let clist = getCookie();
-        if (clist.lan.length) {
+        if (clist.lan) {
             let button = document.getElementById(clist.lan);
             button.click();
         } else {
@@ -1689,7 +1689,7 @@ async function initial() {
             textbox.value = data;
             loadDataByID(true);
         } else {
-            if (clist.fleet.length) {
+            if (clist.fleet) {
                 textbox.value = clist.fleet;
                 loadDataByID(true);
             } else {
