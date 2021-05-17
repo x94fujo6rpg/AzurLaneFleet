@@ -247,9 +247,70 @@ Vue.component("equip-tier-button", { props: ['tier', "lang"], template: filter_b
 
 //----------------------------------------------------------
 const
+    maximumFleet = 30,
+    msg = {
+        error: {
+            _t(text = "") { return fleet_info.msg.red("Error: " + text); },
+            delete_last() { return this._t("You can't delete the last Fleet"); },
+            maximum_fleet() { return this._t("Exceed maximum Fleet limit"); },
+            negative_position() { return this._t("Position must be positive"); },
+            unknown_direction() { return this._t("Unknown direction"); },
+            empty_name() { return this._t("Fleet name is empty"); },
+            invalid_id() { return this._t("Invalid Fleet id"); },
+            no_data() { return this._t("Fleet data is empty"); },
+            long_url() { return this._t("URL too long. You still can share it by use fleetdata below"); },
+            too_high() { return this._t("Can't yeet the Fleet higher than it is"); },
+            too_low() { return this._t("Can't yeet the Fleet lower than it is"); },
+            unzip_failed() { return this._t("Invalid data"); },
+            corrupted_data() { return this._t("Corrupted data"); },
+            unknown_version() { return this._t("Unknown version"); },
+        },
+        normal: {
+            _t(text = "") { return fleet_info.msg.green(text); },
+            storage_add_fleet(name) { return this._t(`Fleet [${decodeURIComponent(name)}] Saved`); },
+            storage_load_fleet(fleet_id, name) { return this._t(`Fleet ${fleet_id} [${decodeURIComponent(name)}] loaded`); },
+            storage_remove_fleet(fleet_id, name) { return this._t(`Fleet ${fleet_id} [${decodeURIComponent(name)}] removed`); },
+            storage_found_fleets(num) { return this._t(`Found ${num} Fleet in storage`); },
+            copied() { return this._t("Copied"); },
+            fleet_dump() { return this._t(`Fleet data dumped`); },
+            fleet_copied(fleet_id) { return this._t(`Fleet ${fleet_id + 1} copied`); },
+            fleet_removed(fleet_id) { return this._t(`Fleet ${fleet_id + 1} removed`); },
+            fleet_added(type) { return this._t(`New ${type == 1 ? "Normal" : "Submarine"} Fleet added`); },
+            fleet_loaded() { return this._t("Successfully loaded Fleet data"); }
+        },
+    },
+    fleet_info = {
+        name: () => document.querySelector("#fleet_name"),
+        select: () => document.querySelector("#select_fleet"),
+        list: () => document.querySelector("#fleet_list"),
+        load: () => document.querySelector("#load_fleet"),
+        remove: () => document.querySelector("#remove_fleet"),
+        msg: {
+            red(text = "", throwError = true) {
+                let ele = document.querySelector("#error_message");
+                classManager(ele, msg_color.green, msg_color.red).exchange();
+                ele.textContent = text;
+                ele.style.opacity = 1;
+                this.clear_queue();
+                this.queue.push(setTimeout(() => { ele.style.opacity = 0; }, 3000));
+                if (throwError) throw Error(text);
+            },
+            green(text = "", showLog = true) {
+                let ele = document.querySelector("#error_message");
+                classManager(ele, msg_color.red, msg_color.green).exchange();
+                ele.textContent = text;
+                ele.style.opacity = 1;
+                this.clear_queue();
+                this.queue.push(setTimeout(() => { ele.style.opacity = 0; }, 3000));
+                if (showLog) console.log(text);
+            },
+            clear_queue() { this.queue.forEach(tid => clearTimeout(tid)); },
+            queue: [],
+        }
+    },
     appClassData = {
         app_box: {
-            h: "app_box d-flex flex-column w-75 m-auto",
+            h: "app_box d-flex flex-column w-100 m-auto", // container mw-100 / d-flex flex-column w-100 m-auto
             v: "app_box row justify-content-center py-1 px-5 m-0",
             v2: "app_box d-table justify-content-center m-auto"
         },
@@ -281,7 +342,6 @@ const
         "1": "back",
         "2": "sub",
     },
-    empty_ship_template = creatEmptyShip(),
     AFL_storage = window.localStorage,
     filter_setting = {
         // ship
@@ -295,15 +355,7 @@ const
         eq_rarity: new Set(),
         eq_type: new Set(),
         eq_tier: new Set(),
-    },
-    fleet_info = {
-        name: () => document.querySelector("#fleet_name"),
-        select: () => document.querySelector("#select_fleet"),
-        msg: () => document.querySelector("#error_message"),
-        list: () => document.querySelector("#fleet_list"),
-        load: () => document.querySelector("#load_fleet"),
-        remove: () => document.querySelector("#remove_fleet"),
-    },
+    },    
     msg_color = {
         red: "text-danger",
         green: "text-success",
@@ -379,13 +431,9 @@ const sleep = (ms = 0) => new Promise(resolve => setTimeout(resolve, ms));
 const indexInObj = (obj, getvalue = false) => {
     let new_list = [];
     if (getvalue) {
-        for (let index in obj) {
-            new_list.push(index, obj[index]);
-        }
+        for (let index in obj) new_list.push(index, obj[index]);
     } else {
-        for (let index in obj) {
-            new_list.push(index);
-        }
+        for (let index in obj) new_list.push(index);
     }
     return new_list;
 };
@@ -481,7 +529,7 @@ function emptyfleet() {
     disableInvalidMoveButton();
 }
 
-function dumpID(raw = false, input_data = []) {
+function dumpID(raw = false, input_data = [], event = undefined) {
     switch (ALF_version) {
         case 0.05:
             return v005();
@@ -532,6 +580,7 @@ function dumpID(raw = false, input_data = []) {
         //if(!input_data.length) c_formation = extractFormation(raw_data);
         data = JSON.stringify(data, stringifyReplacer);
         data = updateFleetDataBox(data);
+        if (event) msg.normal.fleet_dump();
         //console.timeEnd(dumpID.name);
         return raw ? raw_data : data;
     }
@@ -542,7 +591,7 @@ function updateFleetDataBox(input_data = "") {
         data = `${input_data}!0.05!${CryptoJS.MD5(input_data).toString()}`;
     data = LZString.compressToEncodedURIComponent(data);
     textbox.value = data;
-    console.log(data.length);
+    //console.log(data.length);
     return data;
 }
 
@@ -590,21 +639,21 @@ function generateURL() {
     link = link.href;
     if (link.length >= 2000) {
         textbox.value = "URL too long. You still can share it by use fleetdata below";
-        throw Error("url too long");
+        msg.error.long_url();
     } else {
         textbox.value = link;
         copyURL();
     }
 }
 
-async function loadDataByID(noDump = false) {
+async function loadDataByID(noDump = false, event = undefined) {
     let textbox = document.getElementById("fleetdata"),
         raw_data = textbox.value;
+    if (!raw_data.length) msg.error.no_data();
     if (raw_data[0] !== "[") raw_data = LZString.decompressFromEncodedURIComponent(raw_data);
-
+    if (!raw_data.length) msg.error.unzip_failed();
     let [data, ver, hash] = raw_data.split("!"),
         ck = false;
-
     switch (parseFloat(ver)) {
         case 0.04:
             ck = CryptoJS.SHA3(data, { outputLength: 256 }).toString();
@@ -612,7 +661,6 @@ async function loadDataByID(noDump = false) {
             data = JSON.parse(data);
             if (!c_formation.sameAs(formation.v4)) buildFleet(formation.v4, true);
             break;
-
         case 0.05:
             ck = CryptoJS.MD5(data).toString();
             if (ck !== hash) return loadError(ck);
@@ -620,19 +668,18 @@ async function loadDataByID(noDump = false) {
             c_formation = extractFormation(data);
             buildFleet(c_formation, true);
             break;
-
         default:
-            throw Error(`unknown version ${ver}`);
+            msg.error.unknown_version();
     }
     textbox.value = "";
     await parseID(data, noDump);
     disableInvalidMoveButton();
+    if (event) msg.normal.fleet_loaded();
 
     function loadError(_ck_ = "") {
-        message = `Error: Corrupted data!!! [${_ck_}] should be [${hash}]`;
-        textbox.value = message;
+        textbox.value = `Error: Corrupted data!!! [${_ck_}] should be [${hash}]`;
         console.log(data);
-        throw Error(message);
+        msg.error.corrupted_data();
     }
 }
 
@@ -1297,6 +1344,7 @@ function copyURL() {
     text.select();
     text.setSelectionRange(0, 99999);
     document.execCommand("copy");
+    msg.normal.copied();
 }
 
 function copyData() {
@@ -1304,6 +1352,7 @@ function copyData() {
     text.select();
     text.setSelectionRange(0, 99999);
     document.execCommand("copy");
+    msg.normal.copied();
 }
 
 function emptyData() {
@@ -1727,17 +1776,13 @@ async function initial() {
         if (num <= 0) return;
         fleet_in_storage = []; // empty storage
         for (let i = 1; i <= num; i++) {
-            let id = `fleet_index_${i}`;
-            let data = storageManager("get", id);
+            let data = storageManager().getData(`fleet_index_${i}`);
             if (!data) continue;
             if (!data.name || !data.fleet) continue;
             fleet_in_storage.push({ name: data.name, fleet: data.fleet, });
             //console.log(data);
         }
-        let msg = fleet_info.msg();
-        classManager(msg, "exchange", msg_color.red, msg_color.green);
-        msg.textContent = `load ${fleet_in_storage.length} fleet`;
-        console.log(msg.textContent);
+        msg.normal.storage_found_fleets(fleet_in_storage.length);
         return true;
     }
 }
@@ -1751,21 +1796,12 @@ function moveFleet(ele) {
     let pos = getPos(ele),
         direction = parseInt(ele.getAttribute("data"), 10),
         current_fleet_dump = dumpID(true),
-        temp = [],
-        msg = fleet_info.msg();
+        temp = [];
     //console.log("before", JSON.stringify(current_fleet_dump, stringifyReplacer));
     if (direction < 0) {
-        if (pos - 1 < 0) {
-            classManager(msg, "exchange", msg_color.green, msg_color.red);
-            msg.textContent = "can't yeet the fleet higher than it is";
-            throw Error("can't yeet the fleet higher");
-        }
+        if (pos - 1 < 0) msg.error.too_high();
     } else {
-        if (pos + 1 > fleetData.length - 1) {
-            classManager(msg, "exchange", msg_color.green, msg_color.red);
-            msg.textContent = "can't yeet the fleet lower than it is";
-            throw Error("can't yeet the fleet lower");
-        }
+        if (pos + 1 > fleetData.length - 1) msg.error.too_low();
     }
     direction = direction < 0 ? pos - 1 : pos + 1;
     temp = current_fleet_dump.splice(pos, 1).flat();
@@ -1785,16 +1821,14 @@ function disableInvalidMoveButton() {
         );
     if (all.length) if (fleetData.length !== 1) { ena(all); } else { dis(all); }
     if (disable.length) dis(disable);
-    return;
-    //limiter
-    /*
+    //return;
+    //limiter    
     all = document.querySelectorAll(`[onclick^="copyFleet"],[onclick^="insertFleet"]`);
-    if (fleetData.length < 10) {
+    if (fleetData.length < maximumFleet) {
         if (all.length) ena(all);
-    } else if (fleetData.length >= 10) {
+    } else if (fleetData.length >= maximumFleet) {
         if (all.length) dis(all);
     }
-    */
     function dis(target = []) {
         target.forEach(b => { b.setAttribute("disabled", true); b.style.opacity = 0; });
     }
@@ -1804,7 +1838,7 @@ function disableInvalidMoveButton() {
 }
 
 function copyFleet(ele) {
-    //if (fleetData.length >= 10) return; //limiter
+    if (fleetData.length >= maximumFleet) msg.error.maximum_fleet();
     let pos = getPos(ele),
         current_fleet_dump = dumpID(true),
         new_fleet = [];
@@ -1815,32 +1849,29 @@ function copyFleet(ele) {
     new_fleet = JSON.stringify(new_fleet, stringifyReplacer);
     updateFleetDataBox(new_fleet);
     loadDataByID(true);
+    msg.normal.fleet_copied(pos);
 }
 
 function deleteFleet(ele) {
     let del_pos = getPos(ele),
         current_fleet_dump = dumpID(true),
-        new_fleet = [],
-        msg = fleet_info.msg();
+        new_fleet = [];
     current_fleet_dump.forEach((fleet, index) => { if (index != del_pos) new_fleet.push(fleet); });
-    if (!new_fleet.length) {
-        classManager(msg, "exchange", msg_color.green, msg_color.red);
-        msg.textContent = "yes";
-        throw Error("you can't delete the last fleet");
-    }
+    if (!new_fleet.length) msg.error.delete_last();
     new_fleet = JSON.stringify(new_fleet, stringifyReplacer);
     updateFleetDataBox(new_fleet);
     loadDataByID(true);
+    msg.normal.fleet_removed(del_pos);
 }
 
 function insertFleet(ele) {
-    //if (fleetData.length >= 10) return; //limiter
+    if (fleetData.length >= maximumFleet) msg.error.maximum_fleet();
     let data = ele.getAttribute("data").split(",").map(t => parseInt(t, 10));
     let formation = data[0],
         insert_position = getPos(ele),
         direction = data[1];
-    if (insert_position < 0) throw Error("position must be positive");
-    if (![0, 1].includes(direction)) throw Error(`unknown direction`);
+    if (insert_position < 0) msg.error.negative_position();
+    if (![0, 1].includes(direction)) msg.error.unknown_direction();
     let current_fleet_dump = dumpID(true),
         new_insert_fleet = {},
         new_fleet = [];
@@ -1866,6 +1897,7 @@ function insertFleet(ele) {
     //console.log(`new fleet: ${new_fleet}`);
     updateFleetDataBox(new_fleet);
     loadDataByID(true);
+    msg.normal.fleet_added(formation);
 }
 
 function buildFleet(formation_data = [], update = false) {
@@ -1904,6 +1936,8 @@ function buildFleet(formation_data = [], update = false) {
 }
 
 function creatEmptyShip() {
+    // creat empty obj faster than use JSON to deep copy
+    // Object.assign only deep copy 1st layer
     let new_empty_ship = [];
     for (let i = 0; i < 6; i++) {
         let item = [];
@@ -2074,65 +2108,58 @@ function adjustEle() {
     let width = $(window).width();
     let safe_size = 1300;
     let no_effect_class = "adjustEle_placeholder";
-    let target_list = [{
-        ele: document.getElementById("option_box_1"), mode: "exchange",
-        normal_class: "w-25",
-        small_class: "w-50",
-    }, {
-        ele: document.getElementById("fleet_storage"), mode: "exchange",
-        normal_class: "w-50",
-        small_class: "w-100",
-    }, {
-        ele: document.getElementById("dialog_shipselect"), mode: "batch_exchange",
-        normal_class: no_effect_class.split(" "),
-        small_class: "mw-100".split(" "),
-    }, {
-        ele: document.getElementById("dialog_select_equip"), mode: "batch_exchange",
-        normal_class: no_effect_class.split(" "),
-        small_class: "mw-100".split(" "),
-    }, {
-        ele: document.getElementById("search_box"), mode: "exchange",
-        normal_class: "d-flex",
-        small_class: "flex-wrap",
-    }];
-    // code button
-    //let btn = document.getElementById("use_code");
-    //let btnIsOn = btn.classList.contains("active");
+    let target_list = [
+        {
+            ele: document.getElementById("option_box_1"), mode: "exchange",
+            normal_class: "w-25",
+            small_class: "w-50",
+        },
+        {
+            ele: document.getElementById("option_box_2"), mode: "exchange",
+            normal_class: "w-25",
+            small_class: "w-50",
+        },
+        {
+            ele: document.getElementById("fleet_storage"), mode: "exchange",
+            normal_class: "w-50",
+            small_class: "w-100",
+        },
+        {
+            ele: document.getElementById("dialog_shipselect"), mode: "batchExchange",
+            normal_class: no_effect_class.split(" "),
+            small_class: "mw-100".split(" "),
+        },
+        {
+            ele: document.getElementById("dialog_select_equip"), mode: "batchExchange",
+            normal_class: no_effect_class.split(" "),
+            small_class: "mw-100".split(" "),
+        },
+        {
+            ele: document.getElementById("search_box"), mode: "exchange",
+            normal_class: "d-flex",
+            small_class: "flex-wrap",
+        },
+    ];
     if (width < safe_size) {
-        // force enable code mode
-        /*
-        if (lan == "en") {
-            if (!btnIsOn) {
-                btn.click();
-                btn.classList.add("active");
-                btn.setAttribute("aria-pressed", true);
-            }
-            if (!btn.disabled) btn.disabled = true;
-        } else {
-            if (btn.disabled) btn.disabled = false;
-        }
-        */
-        target_list.forEach(t => classManager(t.ele, t.mode, t.normal_class, t.small_class));
+        target_list.forEach(t => classManager(t.ele, t.normal_class, t.small_class)[t.mode]());
     } else {
-        // safe size
-        // if (btn.disabled) btn.disabled = false;
-        target_list.forEach(t => classManager(t.ele, t.mode, t.small_class, t.normal_class));
+        target_list.forEach(t => classManager(t.ele, t.small_class, t.normal_class)[t.mode]());
     }
 }
 
-function classManager(ele = "", mode = "", class_1 = "", class_2 = "") {
-    switch (mode) {
-        case "exchange":
+function classManager(ele = "", class_1 = "", class_2 = "") {
+    return {
+        exchange() {
             if (ele.classList.contains(class_1)) ele.classList.remove(class_1);
             ele.classList.add(class_2);
-            break;
-        case "batch_exchange":
+        },
+        batchExchange() {
             if ((class_1 && class_2) instanceof Array && (class_1 && class_2).length > 0) {
                 class_1.forEach(c => ele.classList.remove(c));
                 class_2.forEach(c => ele.classList.add(c));
             }
-            break;
-    }
+        },
+    };
 }
 
 function displayOP(ele) {
@@ -2185,62 +2212,50 @@ function displayBorder(ele) {
 }
 
 //-------------------------------localStorage
-function fleetManager(mode = "", all_fleet = []) {
-    switch (mode) {
-        case "storage":
-            let length = all_fleet.length;
-            try {
-                if (!(all_fleet instanceof Array)) throw new Error("invalid data");
-                if (length == 0) throw new Error("no fleet data");
-            } catch (e) {
-                console.log(e.message);
-            } finally {
-                for (let i = 1; i <= length; i++) {
-                    storageManager("set", `fleet_index_${i}`, all_fleet[i - 1]);
-                }
-                storageManager("set", "num_of_fleet", length);
+function fleetManager() {
+    return {
+        storage(fleet_data = []) {
+            let length = fleet_data.length;
+            if (!(fleet_data instanceof Array)) throw Error("fleet data is not Array");
+            if (!length) throw Error("no fleet data");
+            for (let i = 1; i <= length; i++) {
+                storageManager().setData(`fleet_index_${i}`, fleet_data[i - 1]);
             }
+            storageManager().setData("num_of_fleet", length);
             console.log(`storage ${length} fleet data`);
             return true;
-        case "clear":
+        },
+        clear() {
             let eof_fleet = number_of_fleet();
             for (let i = 1; i <= eof_fleet; i++) {
-                storageManager("remove", `fleet_index_${i}`);
+                storageManager().remove(`fleet_index_${i}`);
             }
-            storageManager("remove", "num_of_fleet");
+            storageManager().remove("num_of_fleet");
             console.log(`remove ${eof_fleet} old fleet data`);
             return true;
-        default:
-            throw Error(`unknown action: ${mode}`);
-    }
+        }
+    };
 }
 
 function number_of_fleet() {
-    let num = storageManager("get", "num_of_fleet");
+    let num = storageManager().getData("num_of_fleet");
     return num ? num : 0;
 }
 
-function storageManager(mode = "get", data_key = "", data = "") {
-    switch (mode) {
-        case "get":
-            return getData(data_key);
-        case "set":
-            return setData(data_key, data);
-        case "remove":
-            return AFL_storage.removeItem(data_key);
-        default:
-            throw Error(`unknown action: ${mode}`);
-    }
-
-    function getData(key) {
-        let data = AFL_storage.getItem(key);
-        return data ? JSON.parse(data) : null;
-    }
-
-    function setData(key, value) {
-        let data = JSON.stringify(value);
-        AFL_storage.setItem(key, data);
-    }
+function storageManager() {
+    return {
+        getData(key) {
+            let data = AFL_storage.getItem(key);
+            return data ? JSON.parse(data) : null;
+        },
+        setData(key, value) {
+            let data = JSON.stringify(value);
+            return AFL_storage.setItem(key, data);
+        },
+        remove(key) {
+            return AFL_storage.removeItem(key);
+        }
+    };
 }
 
 function updateStorageList() {
@@ -2267,49 +2282,33 @@ function updateStorageList() {
 
 function saveStorage() {
     let num = fleet_in_storage.length;
-    if (num <= 0) return;
-    fleetManager("clear");
-    fleetManager("storage", fleet_in_storage);
+    if (!num) return;
+    fleetManager().clear();
+    fleetManager().storage(fleet_in_storage);
 }
 
-function add_fleet() {
-    let ele = fleet_info.name();
-    let name = ele.value.trim();
-    let name_enc = encodeURIComponent(name);
-    let msg = fleet_info.msg();
+function addFleetToStorage() {
+    let nameBox = fleet_info.name(),
+        name = nameBox.value.trim(),
+        name_enc = encodeURIComponent(name);
     if (!name || name.length == 0) {
-        classManager(msg, "exchange", msg_color.green, msg_color.red);
-        msg.textContent = "error: no fleet name";
-        return;
+        msg.error.empty_name();
     } else {
         let data = dumpID();
         fleet_in_storage.push({ name: name_enc, fleet: data });
         saveStorage();
-        classManager(msg, "exchange", msg_color.red, msg_color.green);
-        msg.textContent = `add fleet: ${name}`;
-        ele.value = ""; // clear after save
+        msg.normal.storage_add_fleet(name_enc);
+        nameBox.value = ""; // clear after save
     }
 }
 
 function load_fleet() {
-    let msg = fleet_info.msg();
     let fleet_id = fleet_info.select().getAttribute("sotrge_id");
-    if (!fleet_id || isNaN(fleet_id)) {
-        classManager(msg, "exchange", msg_color.green, msg_color.red);
-        msg.textContent = "error: invalid fleet id";
-        return;
-    }
-
+    if (!fleet_id || isNaN(fleet_id)) msg.error.invalid_id();
     let data = fleet_in_storage[fleet_id];
-    if (!data) {
-        classManager(msg, "exchange", msg_color.green, msg_color.red);
-        msg.textContent = "error: no fleet data";
-        return;
-    }
-
+    if (!data) msg.error.no_data();
     let name = decodeURIComponent(data.name);
-    classManager(msg, "exchange", msg_color.red, msg_color.green);
-    msg.textContent = `load fleet:${fleet_id}_[${name}]`;
+    msg.normal.storage_load_fleet(fleet_id, data.name);
     fleet_info.name().value = name;
     clear_select();
     let text_box = document.getElementById("fleetdata");
@@ -2326,24 +2325,11 @@ function clear_select() {
 }
 
 function remove_fleet() {
-    let msg = fleet_info.msg();
     let fleet_id = fleet_info.select().getAttribute("sotrge_id");
-    if (!fleet_id || isNaN(fleet_id)) {
-        classManager(msg, "exchange", msg_color.green, msg_color.red);
-        msg.textContent = "error: invalid fleet id";
-        return;
-    }
-
+    if (!fleet_id || isNaN(fleet_id)) msg.error.invalid_id();
     let data = fleet_in_storage[fleet_id];
-    if (!data) {
-        classManager(msg, "exchange", msg_color.green, msg_color.red);
-        msg.textContent = "error: no fleet data";
-        return;
-    }
-
-    let name = decodeURIComponent(data.name);
-    classManager(msg, "exchange", msg_color.red, msg_color.green);
-    msg.textContent = `remove fleet: ${fleet_id}_[${name}]`;
+    if (!data) msg.error.no_data();
+    msg.normal.storage_remove_fleet(fleet_id, data.name);
     clear_select();
     fleet_in_storage.splice(fleet_id, 1);
     saveStorage();
@@ -2412,39 +2398,18 @@ function switchLayout(ele, same = false) {
             }
             break;
         default:
-            break;
+            throw Error("unknown layout");
     }
     saveCookie("layout", ele.textContent);
     function changeClass(classKey = "") {
         for (let key in appClassData) {
-            if (key != "app_box") ALF.class_data[key] = appClassData[key][classKey];
+            if (key == "app_box") {
+                // non vue
+                document.querySelector(".app_box").className = `${appClassData.app_box[classKey]} app_box`;
+            } else {
+                ALF.class_data[key] = appClassData[key][classKey];
+            }
         }
-        document.querySelector(".app_box").className = `${appClassData.app_box[classKey]} app_box`;
-        /*
-        let class_list = [{
-            target: "app_box",
-            // d-flex flex-column w-75 m-auto
-            // container mw-100
-            h: "d-flex flex-column w-75 m-auto",
-            v: "row justify-content-center py-1 px-5 m-0",
-            v2: "d-table justify-content-center m-auto"
-        }, {
-            target: "fleet_box_o",
-            h: "d-grid justify-content-center",
-            v: "d-grid border border-secondary",
-            v2: "flex-row border border-secondary"
-        }, {
-            target: "fleet_box_i",
-            h: "row m-2 border border-secondary py-2",
-            v: "col m-2",
-            v2: "col m-2"
-        },];
-        class_list.forEach(o => {
-            document.querySelectorAll(`.${o.target}`).forEach(e => {
-                e.className = `${o[key]} ${o.target}`;
-            });
-        });
-        */
     }
 }
 

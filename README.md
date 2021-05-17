@@ -14,6 +14,10 @@ This site was developed and tested on `Chrome`/`Firefox`
 Compatibility with other browsers is unknown  
 
 ## Update  
+**2021-05-18**
+- display message at the bottom
+- limit fleet size to `30`
+
 **2021-05-17**
 - fix & actually using vue to handle layout  
   now it will really respond to any added fleet  
@@ -29,7 +33,7 @@ Compatibility with other browsers is unknown
     - `for...in` `forEach` ... this kind method is slower than the traditional `for (i++)`
       but it way more readable & easier to debug...
   - hide buttom, now only display when hover on it
-  - ~~limit to 10 fleet~~ (removed)
+  - ~~limit to 10 fleet~~
     ```
     the causes of this problem is the id system I use...
 
