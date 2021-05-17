@@ -1673,7 +1673,7 @@ async function initial() {
     //------------------------------
     async function loadCookie() {
         let clist = getCookie();
-        if (clist.lan) {
+        if (clist.lan.length) {
             let button = document.getElementById(clist.lan);
             button.click();
         } else {
@@ -1689,34 +1689,34 @@ async function initial() {
             textbox.value = data;
             loadDataByID(true);
         } else {
-            if (clist.fleet) {
+            if (clist.fleet.length) {
                 textbox.value = clist.fleet;
                 loadDataByID(true);
             } else {
                 saveCookie("fleet", dumpID());
             }
         }
-
-        if (clist.allow_dup) {
+        // cookie data is string, so not Boolean(0) it's Boolean("0")
+        if (clist.allow_dup == 1) {
             allow_dup();
         }
 
-        if (clist.thick_frame) {
+        if (clist.thick_frame == 1) {
             let ele = document.getElementById("frame_setting");
             setTimeout(() => frameSize(ele), 0);
         }
 
-        if (clist.layout) {
+        if (clist.layout == 1) {
             let layout_switch = document.querySelector("#layout_setting");
             layout_switch.textContent = clist.layout;
             switchLayout(layout_switch, true);
         }
 
-        if (clist.f_op) {
+        if (clist.f_op == 1) {
             document.querySelector("#display_fleet_op").click();
         }
 
-        if (clist.f_border) {
+        if (clist.f_border == 1) {
             document.querySelector("#display_fleet_border").click();
         }
         return true;
