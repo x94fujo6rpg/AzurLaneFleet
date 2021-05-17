@@ -33,12 +33,12 @@
             /*scrollbar-width: none;*/
             /* Firefox */
         }
-        
         /* Chrome Safari Opera 
         body::-webkit-scrollbar {
             display: none;
         }
         */
+        
         .fleet_container {
             background-color: rgb(58, 58, 58);
         }
@@ -228,7 +228,7 @@
             -o-transition: all 500ms ease-in-out;
             transition: all 500ms ease-in-out;
         }
-
+        
         .fleet_box_o:hover>div>div>.fleet_op_hide {
             opacity: 1;
         }
@@ -269,6 +269,10 @@
                 <button class="btn btn-secondary w-100 border-left border-right" type="button" id="layout_setting" onclick="switchLayout(this)">Horizontal</button>
                 <button class="btn btn-outline-secondary w-100 border-left" type="button" id="frame_setting" onclick="frameSize(this)">Thick frame</button>
             </div>
+            <div class="btn-group d-flex my-2 mx-auto w-25" id="option_box_2">
+                <button class="btn btn-outline-secondary w-50 border-right" type="button" id="display_fleet_op" onclick="displayOP(this)">Fleet ID / Edit Button</button>
+                <button class="btn btn-outline-secondary w-50 border-left" type="button" id="display_fleet_border" onclick="displayBorder(this)">Border</button>
+            </div>
             <div class="dropdown my-1 container d-flex w-50" id="fleet_storage">
                 <button class="btn btn-primary w-25 mx-1" type="button" id="add_fleet" onclick="add_fleet()">Save Current</button>
                 <button class="btn btn-info w-25 mx-1 dropdown-toggle text-truncate" type="button" id="select_fleet" onclick="updateStorageList()" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -285,7 +289,7 @@
             </div>
         </div>
         <div id="AzurLaneFleetApp" class="d-flex flex-column w-75 m-auto app_box">
-            <fleet-container v-for="fleet in fleets" v-bind:key="fleet.id" v-bind:fleet="fleet" v-bind:name="fleet.id" v-bind:lang="lang">
+            <fleet-container v-for="fleet in fleets" v-bind:key="fleet.id" v-bind:show_op="show_op" v-bind:fleet="fleet" v-bind:name="fleet.id" v-bind:lang="lang" v-bind:class_data="class_data">
             </fleet-container>
         </div>
         <div class="d-flex mx-auto my-5">

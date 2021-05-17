@@ -1,5 +1,12 @@
 /* jshint esversion: 9 */
-// everything is temporarily, unless it work...
+/* 
+↑ just to keep jshint happy
+
+everything is temporarily, unless it work...
+
+if you want to keep obj format in this way
+I use the default formatter of vscode, its formatting is less aggressive than other expansion
+*/
 //----------------------------------------------------------
 const
     lan_target_list = [
@@ -154,21 +161,16 @@ Vue.component("ship-container", {
     `
 });
 
-// <span class="row ml-1 text-monospace fleet_name" v-text="fleet.id" v-if="fleet.show_name"></span>
-// no use yet & blocking
-
 const fleet_btn_style = {
     normal: `btn btn-outline-secondary btn-sm fleet_op_btn p-0 w-50 fleet_op_hide`,
     yellow: `btn btn-outline-warning btn-sm fleet_op_btn p-0 w-50 fleet_op_hide`,
     text: `text-monospace text-center w-100 d-flex align-items-center justify-content-center border border-warning fleet_op_hide`,
 };
-//style="display:none;"
-x = `${insertFleet}(,fleet.id[fleet.id.length-1],)`;
 Vue.component("fleet-container", {
-    props: ["fleet", "lang"],
+    props: ["fleet", "lang", "show_op", "class_data"],
     template: `
-        <div class="d-grid justify-content-center fleet_box_o">
-            <div class="d-flex w-100 fleet_op_box">
+        <div v-bind:class="class_data.fleet_box_o">
+            <div class="d-flex w-100 fleet_op_box" v-if="show_op">
                 <div class="line-5-item text-monospace text-center m-auto fleet_name" v-text="fleet.id">Fleet_ID</div>
                 <div class="d-flex line-5-item">
                     <div class="d-flex btn-group w-100 m-auto">
@@ -195,7 +197,7 @@ Vue.component("fleet-container", {
                     <button class="btn btn-outline-danger btn-sm w-25 m-auto fleet_op_hide" v-bind:pos="fleet.id" onclick="${deleteFleet.name}(this)">X</button>
                 </div>
             </div>
-            <div class="row m-2 border border-secondary py-2 fleet_box_i">
+            <div v-bind:class="class_data.fleet_box_i">
                 <div class="flex-col fleet_side_box" v-if="fleet.back">
                     <ship-container
                         v-for="back in fleet.back"
@@ -225,7 +227,7 @@ Vue.component("fleet-container", {
                 </div>
             </div>
         </div>
-    `
+    `,
 });
 
 //----------------------------------------------------------
@@ -245,6 +247,31 @@ Vue.component("equip-tier-button", { props: ['tier', "lang"], template: filter_b
 
 //----------------------------------------------------------
 const
+    appClassData = {
+        app_box: {
+            h: "app_box d-flex flex-column w-75 m-auto",
+            v: "app_box row justify-content-center py-1 px-5 m-0",
+            v2: "app_box d-table justify-content-center m-auto"
+        },
+        fleet_box_o: {
+            h: "fleet_box_o d-grid justify-content-center",
+            v: "fleet_box_o d-grid",
+            v2: "fleet_box_o flex-row"
+        },
+        fleet_box_i: {
+            h: "fleet_box_i row m-2",
+            v: "fleet_box_i col m-2",
+            v2: "fleet_box_i col m-2"
+        }
+    },
+    layout_list = {
+        h: "Horizontal",
+        v: "Vertical 1",
+        v2: "Vertical 2",
+        "Horizontal": "h",
+        "Vertical 1": "v",
+        "Vertical 2": "v2",
+    },
     formation = {
         v4: [1, 1, 1, 1, 2],
         v5: [1],
@@ -372,7 +399,13 @@ const
         el: "#AzurLaneFleetApp",
         data: {
             fleets: fleetData,
-            lang: lan
+            lang: lan,
+            show_op: false,
+            class_data: {
+                app_box: appClassData.app_box.h,
+                fleet_box_o: appClassData.fleet_box_o.h,
+                fleet_box_i: appClassData.fleet_box_i.h,
+            }
         },
     }),
     shipSelect = new Vue({
@@ -1664,11 +1697,11 @@ async function initial() {
             }
         }
 
-        if (clist.allow_dup == 1) {
+        if (clist.allow_dup) {
             allow_dup();
         }
 
-        if (clist.thick_frame == 1) {
+        if (clist.thick_frame) {
             let ele = document.getElementById("frame_setting");
             setTimeout(() => frameSize(ele), 0);
         }
@@ -1679,6 +1712,13 @@ async function initial() {
             switchLayout(layout_switch, true);
         }
 
+        if (clist.f_op) {
+            document.querySelector("#display_fleet_op").click();
+        }
+
+        if (clist.f_border) {
+            document.querySelector("#display_fleet_border").click();
+        }
         return true;
     }
 
@@ -1747,12 +1787,14 @@ function disableInvalidMoveButton() {
     if (disable.length) dis(disable);
     return;
     //limiter
+    /*
     all = document.querySelectorAll(`[onclick^="copyFleet"],[onclick^="insertFleet"]`);
     if (fleetData.length < 10) {
         if (all.length) ena(all);
     } else if (fleetData.length >= 10) {
         if (all.length) dis(all);
     }
+    */
     function dis(target = []) {
         target.forEach(b => { b.setAttribute("disabled", true); b.style.opacity = 0; });
     }
@@ -2093,6 +2135,55 @@ function classManager(ele = "", mode = "", class_1 = "", class_2 = "") {
     }
 }
 
+function displayOP(ele) {
+    $(ele).button("toggle");
+    let display = ele.classList.contains("active") ? true : false;
+    ALF.show_op = display;
+    saveCookie("f_op", display ? 1 : 0);
+}
+
+function displayBorder(ele) {
+    $(ele).button("toggle");
+    let layoutKey = layout_list[document.querySelector("#layout_setting").textContent],
+        display = ele.classList.contains("active");
+    if (display) {
+        const border = {
+            fleet_box_o: {
+                h: "fleet_box_o d-grid justify-content-center",
+                v: "fleet_box_o d-grid border border-secondary",
+                v2: "fleet_box_o flex-row border border-secondary"
+            },
+            fleet_box_i: {
+                h: "fleet_box_i row m-2 border border-secondary py-2",
+                v: "fleet_box_i col m-2",
+                v2: "fleet_box_i col m-2"
+            }
+        };
+        for (let key in border) {
+            appClassData[key] = border[key];
+            ALF.class_data[key] = appClassData[key][layoutKey];
+        }
+    } else {
+        const noborder = {
+            fleet_box_o: {
+                h: "fleet_box_o d-grid justify-content-center",
+                v: "fleet_box_o d-grid",
+                v2: "fleet_box_o flex-row"
+            },
+            fleet_box_i: {
+                h: "fleet_box_i row m-2",
+                v: "fleet_box_i col m-2",
+                v2: "fleet_box_i col m-2"
+            }
+        };
+        for (let key in noborder) {
+            appClassData[key] = noborder[key];
+            ALF.class_data[key] = appClassData[key][layoutKey];
+        }
+    }
+    saveCookie("f_border", display ? 1 : 0);
+}
+
 //-------------------------------localStorage
 function fleetManager(mode = "", all_fleet = []) {
     switch (mode) {
@@ -2292,12 +2383,6 @@ function frameSize(ele) {
 }
 
 function switchLayout(ele, same = false) {
-    const layout_list = {
-        h: "Horizontal",
-        v: "Vertical 1",
-        v2: "Vertical 2",
-    };
-    //for (let key in layout_list) layout_list[key] = `Layout: ${layout_list[key]}`;
     switch (ele.textContent) {
         case layout_list.h:
             if (same) {
@@ -2330,7 +2415,12 @@ function switchLayout(ele, same = false) {
             break;
     }
     saveCookie("layout", ele.textContent);
-    function changeClass(key = "") {
+    function changeClass(classKey = "") {
+        for (let key in appClassData) {
+            if (key != "app_box") ALF.class_data[key] = appClassData[key][classKey];
+        }
+        document.querySelector(".app_box").className = `${appClassData.app_box[classKey]} app_box`;
+        /*
         let class_list = [{
             target: "app_box",
             // d-flex flex-column w-75 m-auto
@@ -2354,6 +2444,7 @@ function switchLayout(ele, same = false) {
                 e.className = `${o[key]} ${o.target}`;
             });
         });
+        */
     }
 }
 

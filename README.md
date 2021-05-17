@@ -15,9 +15,16 @@ Compatibility with other browsers is unknown
 
 ## Update  
 **2021-05-17**
+- fix & actually using vue to handle layout  
+  now it will really respond to any added fleet  
+- add button to turn on/off
+  - `Fleet ID / Edit Button`
+  - `Fleet Border`
 - Now can generate shareable URL
   - `limit` URL length limit is **2000**, which is about `28~30` fleet with all equip
+- no longer hide scrollbar because we can have so many fleet now
 - Dynamic fleet
+  - add `Copy`, now can copy fleet
   - improve speed (skip unnecessary action when load fleet)
     - `for...in` `forEach` ... this kind method is slower than the traditional `for (i++)`
       but it way more readable & easier to debug...
@@ -35,7 +42,6 @@ Compatibility with other browsers is unknown
     new id
     999_1_2_3 => id.split("_") => [999,1,2,3]
     ```
-- no longer hide scrollbar because we can have so many fleet now
 
 **2021-05-16**
 ~~(giuhub just exploded, no one can build right now...)~~  
