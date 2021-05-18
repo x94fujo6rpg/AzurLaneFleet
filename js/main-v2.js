@@ -123,15 +123,10 @@ buildEquipSelectOption();
 Vue.component("item-container", {
     props: ["item", "lang"],
     template: `
-        <button
-          class="p-1 item_container" 
-
+        <button class="p-1 item_container" onclick="${setCurrent.name}(this)" data-toggle="modal"      
           v-bind:name="item.id"
           v-bind:pos="item.property.pos"
-          v-bind:data-target="item.property.target"
-
-          onclick="${setCurrent.name}(this)"
-          data-toggle="modal"          
+          v-bind:data-target="item.property.target"              
           >
             <div class="container-fluid p-0 box">
               <div class="icon_box">
@@ -174,27 +169,27 @@ Vue.component("fleet-container", {
                 <div class="line-5-item text-monospace text-center m-auto fleet_name" v-text="fleet.id">Fleet_ID</div>
                 <div class="d-flex line-5-item">
                     <div class="d-flex btn-group w-100 m-auto">
-                        <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="1,0" onclick="${insertFleet.name}(this)">↑</button>    
+                        <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="1,0" onclick="${insertFleet.name}(this)">⮝</button>    
                         <div class="${fleet_btn_style.text}">Normal</div>                    
-                        <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="1,1" onclick="${insertFleet.name}(this)">↓</button>                        
+                        <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="1,1" onclick="${insertFleet.name}(this)">⮟</button>                        
                     </div>
                 </div>
                 <div class="d-flex line-5-item">
                     <div class="d-flex btn-group w-100 mx-1 my-auto">
-                        <button class="${fleet_btn_style.normal} border-right fleet_op_hide" v-bind:pos="fleet.id" onclick="${moveFleet.name}(this)" data="-1">↑</button>
-                        <button class="${fleet_btn_style.normal} border-left fleet_op_hide" v-bind:pos="fleet.id" onclick="${moveFleet.name}(this)" data="1">↓</button>
+                        <button class="${fleet_btn_style.normal} border-right fleet_op_hide" v-bind:pos="fleet.id" onclick="${moveFleet.name}(this)" data="-1">⮝</button>
+                        <button class="${fleet_btn_style.normal} border-left fleet_op_hide" v-bind:pos="fleet.id" onclick="${moveFleet.name}(this)" data="1">⮟</button>
                     </div>
                 </div>
                 <div class="d-flex line-5-item">
                     <div class="d-flex btn-group w-100 m-auto">                        
-                        <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="2,0" onclick="${insertFleet.name}(this)">↑</button>
+                        <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="2,0" onclick="${insertFleet.name}(this)">⮝</button>
                         <div class="${fleet_btn_style.text}">Sub</div>
-                        <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="2,1" onclick="${insertFleet.name}(this)">↓</button>
+                        <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="2,1" onclick="${insertFleet.name}(this)">⮟</button>
                     </div>
                 </div>
                 <div class="d-flex line-5-item">
                     <button class="btn btn-outline-success btn-sm w-50 m-auto fleet_op_hide" v-bind:pos="fleet.id" onclick="${copyFleet.name}(this)">Copy</button>
-                    <button class="btn btn-outline-danger btn-sm w-25 m-auto fleet_op_hide" v-bind:pos="fleet.id" onclick="${deleteFleet.name}(this)">X</button>
+                    <button class="btn btn-outline-danger btn-sm w-25 m-auto fleet_op_hide" v-bind:pos="fleet.id" onclick="${deleteFleet.name}(this)">✖</button>
                 </div>
             </div>
             <div v-bind:class="class_data.fleet_box_i">
@@ -355,7 +350,7 @@ const
         eq_rarity: new Set(),
         eq_type: new Set(),
         eq_tier: new Set(),
-    },    
+    },
     msg_color = {
         red: "text-danger",
         green: "text-success",
