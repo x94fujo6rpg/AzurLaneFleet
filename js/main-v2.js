@@ -415,481 +415,7 @@ const
             }
         },
     },
-    app = {
-        async initialize() {
-            console.time(app.initialize.name);
-            await createSortShipList();
-            await createSortEquipList();
-            // ------------------------------
-            if (indexedDB || window.idb) {
-                const [db, AFDB] = await initialDB(db_name, db_ver);
-                let all_key = await AFDB.allKeys();
-                if (!all_key.length) {
-                    let cacheData = await imgToDataURI();
-                    //console.log(cacheData);
-                    if (cacheData.length > 0) {
-                        await saveCacheData(db, db_name, cacheData);
-                        console.log(`cached ${cacheData.length} images`);
-                    }
-                }
-                await loadImgCache(AFDB);
-            } else {
-                let pos = document.querySelector("#loading_box"),
-                    message = document.createElement("div");
-                message.textContent = "not support indexedDB";
-                message.className = "row text-center text-monospace";
-                pos.appendChild(message);
-                console.log("not support indexedDB");
-                return;
-            }
-            // ------------------------------
-            await createAllShip();
-            await createAllEquip();
-            addLanguageToEle();
-            add_search_event();
-            splitButtonGroup("shipnation");
-            splitButtonGroup("eq_nation");
-            addWindowSizeEvent();
-            await loadCookie();
-            await loadStorage();
-            document.querySelector("#loading_box").style.display = "none";
-            document.querySelector("#app_area").style.display = "";
-            dynamicFleet.disableInvalidMoveButton();
-            console.timeEnd(app.initialize.name);
-            setTimeout(() => delete app.initialize, 500);
-
-            //------------------------------
-            async function addProgressBar(id = "", text = "", max = 100, appendTo = {}) {
-                let bar = document.createElement("progress");
-                bar.id = id;
-                bar.max = max;
-                bar.className = "flex-col my-auto";
-
-                let lable = document.createElement("label");
-                lable.className = "flex-col text-monospace m-1";
-                lable.textContent = text;
-                lable.for = id;
-
-                let lable2 = document.createElement("lable");
-                lable2.className = "flex-col text-monospace m-1";
-                lable2.textContent = `0/${max}`;
-                lable2.for = id;
-
-                let box = document.createElement("div");
-                box.className = "row justify-content-center";
-                box.appendChild(lable);
-                box.appendChild(lable2);
-                box.appendChild(bar);
-
-                let pos = document.querySelector("#loading_box");
-                pos.appendChild(box);
-
-                appendTo.bar = bar;
-                appendTo.lable = lable2;
-                return true;
-            }
-
-            //------------------------------
-            async function createSortShipList() {
-                let newlist = [];
-                let pos = 0;
-                let empty = {};
-                let parseData = {
-                    id: "uni_id",
-                    tw: "tw_name", cn: "cn_name", en: "en_name", jp: "jp_name",
-                    type: "type",
-                    nationality: "nationality",
-                    rarity: "rarity",
-                    star: "star",
-                    retro: "retro",
-                    base: "base_list",
-                    e1: "equip_1", e2: "equip_2", e3: "equip_3", e4: "equip_4", e5: "equip_5",
-                };
-                for (let index in ship_data) {
-                    let item = Object.assign({}, ship_data[index]);
-                    let newitem = {};
-                    // parse data
-                    for (let key in parseData) {
-                        newitem[key] = item[parseData[key]];
-                    }
-                    // set other data
-                    newitem.icon = `shipicon/${item.painting.toLowerCase()}.png`;
-                    newitem.bg = `ui/bg${item.rarity - 1}.png`;
-                    newitem.frame = `ui/frame_${item.rarity - 1}.png`;
-                    // create empty ship
-                    if (pos === 0) {
-                        empty = Object.assign({}, newitem);
-                        for (let key in empty) {
-                            empty[key] = "";
-                        }
-                        empty.id = "000000";
-                        empty.en = "remove";
-                        empty.tw = empty.cn = "移除";
-                        empty.jp = "除隊";
-                        empty.icon = "ui/empty.png";
-                    }
-                    newlist.push(newitem);
-                    pos++;
-                }
-                newlist = util.sorting(newlist, 'type', true);
-                newlist = util.sorting(newlist, 'nationality', true);
-                newlist = util.sorting(newlist, 'rarity', true);
-                // add emptyship to top
-                newlist.unshift(empty);
-                sortedShip = Object.assign([], newlist);
-                return true;
-            }
-
-            async function createSortEquipList() {
-                let newlist = [];
-                let pos = 0;
-                let parseData = {
-                    id: "id",
-                    tw: "tw_name", cn: "cn_name", en: "en_name", jp: "jp_name",
-                    type: "type",
-                    nationality: "nationality",
-                    rarity: "rarity",
-                    fb: "ship_type_forbidden",
-                    limit: "equip_limit",
-                };
-                for (let index in equip_data) {
-                    let item = Object.assign({}, equip_data[index]);
-                    let newitem = {};
-                    // parse data
-                    for (let key in parseData) {
-                        newitem[key] = item[parseData[key]];
-                    }
-                    // set other data
-                    newitem.icon = `equips/${item.icon}.png`;
-                    if (item.rarity != 1) {
-                        newitem.bg = `ui/bg${item.rarity - 1}.png`;
-                        newitem.frame = `ui/frame_${item.rarity - 1}.png`;
-                    } else {
-                        newitem.bg = `ui/bg${item.rarity}.png`;
-                        newitem.frame = `ui/frame_${item.rarity}.png`;
-                    }
-                    // create empty equip
-                    if (pos === 0) {
-                        empty = Object.assign({}, newitem);
-                        for (let key in empty) {
-                            empty[key] = "";
-                        }
-                        empty.id = "666666";
-                        empty.en = "remove";
-                        empty.tw = empty.cn = "移除";
-                        empty.jp = "外す";
-                        empty.icon = "ui/empty.png";
-                    }
-                    newlist.push(newitem);
-                    pos++;
-                }
-                newlist = util.sorting(newlist, "nationality", false);
-                newlist = util.sorting(newlist, "type", false);
-                newlist = util.sorting(newlist, "rarity", true);
-                newlist.unshift(empty);
-                sortedEquip = Object.assign([], newlist);
-                return true;
-            }
-
-            //------------------------------
-            function createNewItem(data, pos_id, onclick, progress) {
-                return new Promise(resolve => {
-                    setTimeout(() => {
-                        let pos = document.getElementById(pos_id);
-                        let icon_box = document.createElement("div");
-                        icon_box.className = "container-fluid icon_box";
-
-                        let icon = document.createElement("img");
-                        icon.className = "img-fluid icon";
-                        icon.loading = "lazy";
-                        icon.src = data.icon;
-
-                        let bg = document.createElement("img");
-                        bg.className = "img-fluid bg";
-                        bg.src = data.bg;
-
-                        let frame = document.createElement("img");
-                        frame.className = "img-fluid frame";
-                        frame.src = data.frame;
-
-                        icon_box.append(bg, frame, icon);
-                        //-----------------------------------------------
-                        let box = document.createElement("div");
-                        box.className = "container-fluid p-0 box";
-
-                        let name = document.createElement("span");
-                        name.className = "justify-content-center item_name";
-                        name.setAttribute("name", "name");
-                        name.setAttribute("tw", data.tw);
-                        name.setAttribute("cn", data.cn);
-                        name.setAttribute("en", data.en);
-                        name.setAttribute("jp", data.jp);
-                        name.textContent = data[lan];
-
-                        box.append(icon_box, name);
-                        //-----------------------------------------------
-                        let item = document.createElement("button");
-                        item.className = "p-1 item_container";
-                        item.id = data.id;
-                        item.onclick = function () { onclick(this); };
-                        item.setAttribute("data-dismiss", "modal");
-
-                        item.append(box);
-                        pos.append(item);
-                        progress.bar.value++;
-                        progress.lable.textContent = `${progress.bar.value}/${progress.bar.max}`;
-                        resolve(true);
-                    });
-                });
-            }
-
-            async function createAllShip() {
-                console.time("createAllShip");
-                await addProgressBar("create_ship", "Generate Ships", sortedShip.length, _loading_.ship);
-                let promiseList = sortedShip.map(item => createNewItem(item, "shiplist", app.setShipAndEquip, _loading_.ship));
-                await Promise.all(promiseList);
-                console.timeEnd("createAllShip");
-                return true;
-            }
-
-            async function createAllEquip() {
-                console.time("createAllEquip");
-                await addProgressBar("create_equip", "Generate Equips", sortedEquip.length, _loading_.equip);
-                let promiseList = sortedEquip.map(item => createNewItem(item, "equiplist", app.setEquip, _loading_.equip));
-                await Promise.all(promiseList);
-                console.timeEnd("createAllEquip");
-                return true;
-            }
-
-            //------------------------------
-            function srcToCacheID(src = "", type = "ship", reg = "") {
-                return `${type == "ship" ? "shipicon" : "equips"}_${src.replace(reg, "$1")}`;
-            }
-
-            async function imgToDataURI() {
-                let name = "imgToDataURI";
-                console.time(name);
-                let reg = /.*(?:equips|shipicon)\/([^\.]+).*/;
-                let count = 0;
-                let all_data = {};
-                sortedShip.forEach((o, index) => {
-                    let id = srcToCacheID(o.icon, "ship", reg);
-                    if (index != 0 && !all_data[id]) {
-                        all_data[id] = { src: o.icon, id: id, data_url: "", };
-                        count++;
-                    }
-                });
-                sortedEquip.forEach((o, index) => {
-                    let id = srcToCacheID(o.icon, "equip", reg);
-                    if (index != 0 && !all_data[id]) {
-                        all_data[id] = { src: o.icon, id: id, data_url: "", };
-                        count++;
-                    }
-                });
-                let url_data = [];
-                let promise_list = [];
-                let p = _loading_.cache_image;
-                await addProgressBar("fetch_img", "Fetch Images", count, p);
-                for (let key in all_data) {
-                    let obj = all_data[key];
-                    promise_list.push(
-                        fetchImageToDataURI(obj.src).then(data_url => {
-                            obj.data_url = data_url;
-                            p.bar.value++;
-                            p.lable.textContent = `${p.bar.value}/${p.bar.max}`;
-                        })
-                    );
-                    url_data.push(obj);
-                }
-                await Promise.all(promise_list);
-                console.log(`fetch ${count} images`);
-                console.timeEnd(name);
-                return url_data;
-            }
-
-            async function fetchImageToDataURI(url = "", test = false) {
-                let local = window.location.protocol == "file:" ? true : false;
-                if (test || local) {
-                    return url; // can't fetch in local file
-                } else {
-                    return fetch(url).then(r => {
-                        return r.blob();
-                    }).then(blob => {
-                        return blobToURL(blob);
-                    });
-                }
-                function blobToURL(blob) {
-                    return new Promise((resolve, reject) => {
-                        var fr = new FileReader();
-                        fr.onload = () => { resolve(fr.result); };
-                        fr.onerror = reject;
-                        fr.readAsDataURL(blob);
-                    });
-                }
-            }
-
-            async function loadImgCache(AFDB) {
-                let name = "loadImgCache";
-                console.time(name);
-                let reg = /.*(?:equips|shipicon)\/([^\.]+).*/;
-                let promise_list = [];
-                let max = sortedShip.length + sortedEquip.length - 2;
-                let p = _loading_.load_cache;
-                await addProgressBar("load_cache", "Loading Cache", max, p);
-                for (let obj of sortedShip) {
-                    if (obj.id == "000000") continue;
-                    promise_list.push(
-                        AFDB.getImgCache(srcToCacheID(obj.icon, "ship", reg))
-                            .then(cache => {
-                                obj.icon = cache.data_url;
-                                obj.icon_cache = true;
-                                p.bar.value++;
-                                p.lable.textContent = `${p.bar.value}/${p.bar.max}`;
-                            })
-                    );
-                }
-                for (let obj of sortedEquip) {
-                    if (obj.id == "666666") continue;
-                    promise_list.push(
-                        AFDB.getImgCache(srcToCacheID(obj.icon, "equip", reg))
-                            .then(cache => {
-                                obj.icon = cache.data_url;
-                                obj.icon_cache = true;
-                                p.bar.value++;
-                                p.lable.textContent = `${p.bar.value}/${p.bar.max}`;
-                            })
-                    );
-                }
-                await Promise.all(promise_list);
-                console.log(`set ${promise_list.length} src to image cache`);
-                console.timeEnd(name);
-                return true;
-            }
-
-            async function saveCacheData(db, db_name, cacheData) {
-                const tx = db.transaction(db_name, "readwrite");
-                const promise_list = cacheData.map(obj => { return tx.store.add(obj); });
-                await Promise.all([...promise_list, tx.done]);
-            }
-
-            //------------------------------
-            function addLanguageToEle() {
-                let lan_list = ["en", "jp", "tw"];
-                lan_target_list.forEach(o => {
-                    let eles = document.querySelectorAll(`#${o.id},[ui_id=${o.id}]`);
-                    if (eles.length > 0) {
-                        eles.forEach(e => {
-                            e.setAttribute("ui_text", "true");
-                            e.setAttribute("ui_cn", o.tw);
-                            lan_list.forEach(key => e.setAttribute(`ui_${key}`, o[key]));
-                        });
-                    } else {
-                        console.log(`id[${o.id}] not found`);
-                    }
-                });
-            }
-
-            function add_search_event() {
-                let search_input = document.querySelector("#search_input");
-                if (!search_input) return console.log("search_input not found");
-                search_input.addEventListener("input", app.action.ship_name_search);
-                let selship = $("#shipselect");
-                selship.on("shown.bs.modal", function () { $(this).find("[autofocus]").focus(); }); // autofocus to input
-                selship.on("hide.bs.modal", () => search_input.value = ""); // empty text when modal fade
-                console.log("add search event");
-            }
-
-            function splitButtonGroup(target_id = "", max_per_line = 5, alt_class = "") {
-                if (max_per_line != 5 && alt_class.length == 0) throw Error("max != 5, but no alt_class.");
-                let pos = document.getElementById(target_id);
-                let buttons = pos.querySelectorAll("button");
-                if (buttons.length <= 5) return;
-                let new_line = false;
-                let line_count = 0;
-                buttons.forEach((btn, index) => {
-                    if (index % max_per_line == 0) {
-                        new_line = document.createElement("div");
-                        new_line.className = "btn-group d-flex flex-wrap ml-1" + (line_count > 0 ? " mt-1" : "");
-                        pos.appendChild(new_line);
-                        line_count++;
-                    }
-                    if (max_per_line != 5) btn.className = alt_class;
-                    if (new_line) new_line.appendChild(btn);
-                });
-                pos.className = "";
-            }
-
-            function addWindowSizeEvent() {
-                window.addEventListener('resize', app.option.adjustEle);
-                if ($(window).width() < 1300) app.option.adjustEle();
-            }
-
-            async function loadCookie() {
-                let clist = app.util.getCookie();
-                if (clist.lan) {
-                    let button = document.getElementById(clist.lan);
-                    button.click();
-                } else {
-                    app.option.setLanguage({ id: "en" });
-                    app.util.saveCookie("lan", lan);
-                }
-
-                let url = new URL(window.location.href),
-                    data = url.searchParams.get("AFLD"),
-                    textbox = document.querySelector("#fleetdata");
-
-                if (data) {
-                    textbox.value = data;
-                    app.util.loadDataByID(true);
-                } else {
-                    if (clist.fleet) {
-                        textbox.value = clist.fleet;
-                        app.util.loadDataByID(true);
-                    } else {
-                        app.util.saveCookie("fleet", app.util.dumpID());
-                    }
-                }
-                // cookie data is string, so not Boolean(0) it's Boolean("0")
-                if (clist.allow_dup == 1) {
-                    app.option.ship.allow_dup();
-                }
-
-                if (clist.thick_frame == 1) {
-                    let ele = document.getElementById("frame_setting");
-                    setTimeout(() => app.option.frameSize(ele), 0);
-                }
-
-                if (clist.layout == 1) {
-                    let layout_switch = document.querySelector("#layout_setting");
-                    layout_switch.textContent = clist.layout;
-                    app.option.switchLayout(layout_switch, true);
-                }
-
-                if (clist.f_op == 1) {
-                    document.querySelector("#display_fleet_op").click();
-                }
-
-                if (clist.f_border == 1) {
-                    document.querySelector("#display_fleet_border").click();
-                }
-                return true;
-            }
-
-            async function loadStorage() {
-                let num = LS.number_of_fleet();
-                if (num <= 0) return;
-                fleet_in_storage = []; // empty storage
-                for (let i = 1; i <= num; i++) {
-                    let data = LS.storageManager.getData(`fleet_index_${i}`);
-                    if (!data) continue;
-                    if (!data.name || !data.fleet) continue;
-                    fleet_in_storage.push({ name: data.name, fleet: data.fleet, });
-                    //console.log(data);
-                }
-                msg.normal.storage_found_fleets(fleet_in_storage.length);
-                return true;
-            }
-        },
+    app = {        
         option: {
             setLanguage(ele) {
                 let key = ele.id;
@@ -1909,6 +1435,480 @@ const
                 copylist.forEach(key => itemInApp[key] = itemInList[key]);
             }
             if (save) app.util.saveCookie("fleet", app.util.dumpID());
+        },
+        async initialize() {
+            console.time(app.initialize.name);
+            await createSortShipList();
+            await createSortEquipList();
+            // ------------------------------
+            if (indexedDB || window.idb) {
+                const [db, AFDB] = await initialDB(db_name, db_ver);
+                let all_key = await AFDB.allKeys();
+                if (!all_key.length) {
+                    let cacheData = await imgToDataURI();
+                    //console.log(cacheData);
+                    if (cacheData.length > 0) {
+                        await saveCacheData(db, db_name, cacheData);
+                        console.log(`cached ${cacheData.length} images`);
+                    }
+                }
+                await loadImgCache(AFDB);
+            } else {
+                let pos = document.querySelector("#loading_box"),
+                    message = document.createElement("div");
+                message.textContent = "not support indexedDB";
+                message.className = "row text-center text-monospace";
+                pos.appendChild(message);
+                console.log("not support indexedDB");
+                return;
+            }
+            // ------------------------------
+            await createAllShip();
+            await createAllEquip();
+            addLanguageToEle();
+            add_search_event();
+            splitButtonGroup("shipnation");
+            splitButtonGroup("eq_nation");
+            addWindowSizeEvent();
+            await loadCookie();
+            await loadStorage();
+            document.querySelector("#loading_box").style.display = "none";
+            document.querySelector("#app_area").style.display = "";
+            dynamicFleet.disableInvalidMoveButton();
+            console.timeEnd(app.initialize.name);
+            setTimeout(() => delete app.initialize, 500);
+
+            //------------------------------
+            async function addProgressBar(id = "", text = "", max = 100, appendTo = {}) {
+                let bar = document.createElement("progress");
+                bar.id = id;
+                bar.max = max;
+                bar.className = "flex-col my-auto";
+
+                let lable = document.createElement("label");
+                lable.className = "flex-col text-monospace m-1";
+                lable.textContent = text;
+                lable.for = id;
+
+                let lable2 = document.createElement("lable");
+                lable2.className = "flex-col text-monospace m-1";
+                lable2.textContent = `0/${max}`;
+                lable2.for = id;
+
+                let box = document.createElement("div");
+                box.className = "row justify-content-center";
+                box.appendChild(lable);
+                box.appendChild(lable2);
+                box.appendChild(bar);
+
+                let pos = document.querySelector("#loading_box");
+                pos.appendChild(box);
+
+                appendTo.bar = bar;
+                appendTo.lable = lable2;
+                return true;
+            }
+
+            //------------------------------
+            async function createSortShipList() {
+                let newlist = [];
+                let pos = 0;
+                let empty = {};
+                let parseData = {
+                    id: "uni_id",
+                    tw: "tw_name", cn: "cn_name", en: "en_name", jp: "jp_name",
+                    type: "type",
+                    nationality: "nationality",
+                    rarity: "rarity",
+                    star: "star",
+                    retro: "retro",
+                    base: "base_list",
+                    e1: "equip_1", e2: "equip_2", e3: "equip_3", e4: "equip_4", e5: "equip_5",
+                };
+                for (let index in ship_data) {
+                    let item = Object.assign({}, ship_data[index]);
+                    let newitem = {};
+                    // parse data
+                    for (let key in parseData) {
+                        newitem[key] = item[parseData[key]];
+                    }
+                    // set other data
+                    newitem.icon = `shipicon/${item.painting.toLowerCase()}.png`;
+                    newitem.bg = `ui/bg${item.rarity - 1}.png`;
+                    newitem.frame = `ui/frame_${item.rarity - 1}.png`;
+                    // create empty ship
+                    if (pos === 0) {
+                        empty = Object.assign({}, newitem);
+                        for (let key in empty) {
+                            empty[key] = "";
+                        }
+                        empty.id = "000000";
+                        empty.en = "remove";
+                        empty.tw = empty.cn = "移除";
+                        empty.jp = "除隊";
+                        empty.icon = "ui/empty.png";
+                    }
+                    newlist.push(newitem);
+                    pos++;
+                }
+                newlist = util.sorting(newlist, 'type', true);
+                newlist = util.sorting(newlist, 'nationality', true);
+                newlist = util.sorting(newlist, 'rarity', true);
+                // add emptyship to top
+                newlist.unshift(empty);
+                sortedShip = Object.assign([], newlist);
+                return true;
+            }
+
+            async function createSortEquipList() {
+                let newlist = [];
+                let pos = 0;
+                let parseData = {
+                    id: "id",
+                    tw: "tw_name", cn: "cn_name", en: "en_name", jp: "jp_name",
+                    type: "type",
+                    nationality: "nationality",
+                    rarity: "rarity",
+                    fb: "ship_type_forbidden",
+                    limit: "equip_limit",
+                };
+                for (let index in equip_data) {
+                    let item = Object.assign({}, equip_data[index]);
+                    let newitem = {};
+                    // parse data
+                    for (let key in parseData) {
+                        newitem[key] = item[parseData[key]];
+                    }
+                    // set other data
+                    newitem.icon = `equips/${item.icon}.png`;
+                    if (item.rarity != 1) {
+                        newitem.bg = `ui/bg${item.rarity - 1}.png`;
+                        newitem.frame = `ui/frame_${item.rarity - 1}.png`;
+                    } else {
+                        newitem.bg = `ui/bg${item.rarity}.png`;
+                        newitem.frame = `ui/frame_${item.rarity}.png`;
+                    }
+                    // create empty equip
+                    if (pos === 0) {
+                        empty = Object.assign({}, newitem);
+                        for (let key in empty) {
+                            empty[key] = "";
+                        }
+                        empty.id = "666666";
+                        empty.en = "remove";
+                        empty.tw = empty.cn = "移除";
+                        empty.jp = "外す";
+                        empty.icon = "ui/empty.png";
+                    }
+                    newlist.push(newitem);
+                    pos++;
+                }
+                newlist = util.sorting(newlist, "nationality", false);
+                newlist = util.sorting(newlist, "type", false);
+                newlist = util.sorting(newlist, "rarity", true);
+                newlist.unshift(empty);
+                sortedEquip = Object.assign([], newlist);
+                return true;
+            }
+
+            //------------------------------
+            function createNewItem(data, pos_id, onclick, progress) {
+                return new Promise(resolve => {
+                    setTimeout(() => {
+                        let pos = document.getElementById(pos_id);
+                        let icon_box = document.createElement("div");
+                        icon_box.className = "container-fluid icon_box";
+
+                        let icon = document.createElement("img");
+                        icon.className = "img-fluid icon";
+                        icon.loading = "lazy";
+                        icon.src = data.icon;
+
+                        let bg = document.createElement("img");
+                        bg.className = "img-fluid bg";
+                        bg.src = data.bg;
+
+                        let frame = document.createElement("img");
+                        frame.className = "img-fluid frame";
+                        frame.src = data.frame;
+
+                        icon_box.append(bg, frame, icon);
+                        //-----------------------------------------------
+                        let box = document.createElement("div");
+                        box.className = "container-fluid p-0 box";
+
+                        let name = document.createElement("span");
+                        name.className = "justify-content-center item_name";
+                        name.setAttribute("name", "name");
+                        name.setAttribute("tw", data.tw);
+                        name.setAttribute("cn", data.cn);
+                        name.setAttribute("en", data.en);
+                        name.setAttribute("jp", data.jp);
+                        name.textContent = data[lan];
+
+                        box.append(icon_box, name);
+                        //-----------------------------------------------
+                        let item = document.createElement("button");
+                        item.className = "p-1 item_container";
+                        item.id = data.id;
+                        item.onclick = function () { onclick(this); };
+                        item.setAttribute("data-dismiss", "modal");
+
+                        item.append(box);
+                        pos.append(item);
+                        progress.bar.value++;
+                        progress.lable.textContent = `${progress.bar.value}/${progress.bar.max}`;
+                        resolve(true);
+                    });
+                });
+            }
+
+            async function createAllShip() {
+                console.time("createAllShip");
+                await addProgressBar("create_ship", "Generate Ships", sortedShip.length, _loading_.ship);
+                let promiseList = sortedShip.map(item => createNewItem(item, "shiplist", app.setShipAndEquip, _loading_.ship));
+                await Promise.all(promiseList);
+                console.timeEnd("createAllShip");
+                return true;
+            }
+
+            async function createAllEquip() {
+                console.time("createAllEquip");
+                await addProgressBar("create_equip", "Generate Equips", sortedEquip.length, _loading_.equip);
+                let promiseList = sortedEquip.map(item => createNewItem(item, "equiplist", app.setEquip, _loading_.equip));
+                await Promise.all(promiseList);
+                console.timeEnd("createAllEquip");
+                return true;
+            }
+
+            //------------------------------
+            function srcToCacheID(src = "", type = "ship", reg = "") {
+                return `${type == "ship" ? "shipicon" : "equips"}_${src.replace(reg, "$1")}`;
+            }
+
+            async function imgToDataURI() {
+                let name = "imgToDataURI";
+                console.time(name);
+                let reg = /.*(?:equips|shipicon)\/([^\.]+).*/;
+                let count = 0;
+                let all_data = {};
+                sortedShip.forEach((o, index) => {
+                    let id = srcToCacheID(o.icon, "ship", reg);
+                    if (index != 0 && !all_data[id]) {
+                        all_data[id] = { src: o.icon, id: id, data_url: "", };
+                        count++;
+                    }
+                });
+                sortedEquip.forEach((o, index) => {
+                    let id = srcToCacheID(o.icon, "equip", reg);
+                    if (index != 0 && !all_data[id]) {
+                        all_data[id] = { src: o.icon, id: id, data_url: "", };
+                        count++;
+                    }
+                });
+                let url_data = [];
+                let promise_list = [];
+                let p = _loading_.cache_image;
+                await addProgressBar("fetch_img", "Fetch Images", count, p);
+                for (let key in all_data) {
+                    let obj = all_data[key];
+                    promise_list.push(
+                        fetchImageToDataURI(obj.src).then(data_url => {
+                            obj.data_url = data_url;
+                            p.bar.value++;
+                            p.lable.textContent = `${p.bar.value}/${p.bar.max}`;
+                        })
+                    );
+                    url_data.push(obj);
+                }
+                await Promise.all(promise_list);
+                console.log(`fetch ${count} images`);
+                console.timeEnd(name);
+                return url_data;
+            }
+
+            async function fetchImageToDataURI(url = "", test = false) {
+                let local = window.location.protocol == "file:" ? true : false;
+                if (test || local) {
+                    return url; // can't fetch in local file
+                } else {
+                    return fetch(url).then(r => {
+                        return r.blob();
+                    }).then(blob => {
+                        return blobToURL(blob);
+                    });
+                }
+                function blobToURL(blob) {
+                    return new Promise((resolve, reject) => {
+                        var fr = new FileReader();
+                        fr.onload = () => { resolve(fr.result); };
+                        fr.onerror = reject;
+                        fr.readAsDataURL(blob);
+                    });
+                }
+            }
+
+            async function loadImgCache(AFDB) {
+                let name = "loadImgCache";
+                console.time(name);
+                let reg = /.*(?:equips|shipicon)\/([^\.]+).*/;
+                let promise_list = [];
+                let max = sortedShip.length + sortedEquip.length - 2;
+                let p = _loading_.load_cache;
+                await addProgressBar("load_cache", "Loading Cache", max, p);
+                for (let obj of sortedShip) {
+                    if (obj.id == "000000") continue;
+                    promise_list.push(
+                        AFDB.getImgCache(srcToCacheID(obj.icon, "ship", reg))
+                            .then(cache => {
+                                obj.icon = cache.data_url;
+                                obj.icon_cache = true;
+                                p.bar.value++;
+                                p.lable.textContent = `${p.bar.value}/${p.bar.max}`;
+                            })
+                    );
+                }
+                for (let obj of sortedEquip) {
+                    if (obj.id == "666666") continue;
+                    promise_list.push(
+                        AFDB.getImgCache(srcToCacheID(obj.icon, "equip", reg))
+                            .then(cache => {
+                                obj.icon = cache.data_url;
+                                obj.icon_cache = true;
+                                p.bar.value++;
+                                p.lable.textContent = `${p.bar.value}/${p.bar.max}`;
+                            })
+                    );
+                }
+                await Promise.all(promise_list);
+                console.log(`set ${promise_list.length} src to image cache`);
+                console.timeEnd(name);
+                return true;
+            }
+
+            async function saveCacheData(db, db_name, cacheData) {
+                const tx = db.transaction(db_name, "readwrite");
+                const promise_list = cacheData.map(obj => { return tx.store.add(obj); });
+                await Promise.all([...promise_list, tx.done]);
+            }
+
+            //------------------------------
+            function addLanguageToEle() {
+                let lan_list = ["en", "jp", "tw"];
+                lan_target_list.forEach(o => {
+                    let eles = document.querySelectorAll(`#${o.id},[ui_id=${o.id}]`);
+                    if (eles.length > 0) {
+                        eles.forEach(e => {
+                            e.setAttribute("ui_text", "true");
+                            e.setAttribute("ui_cn", o.tw);
+                            lan_list.forEach(key => e.setAttribute(`ui_${key}`, o[key]));
+                        });
+                    } else {
+                        console.log(`id[${o.id}] not found`);
+                    }
+                });
+            }
+
+            function add_search_event() {
+                let search_input = document.querySelector("#search_input");
+                if (!search_input) return console.log("search_input not found");
+                search_input.addEventListener("input", app.action.ship_name_search);
+                let selship = $("#shipselect");
+                selship.on("shown.bs.modal", function () { $(this).find("[autofocus]").focus(); }); // autofocus to input
+                selship.on("hide.bs.modal", () => search_input.value = ""); // empty text when modal fade
+                console.log("add search event");
+            }
+
+            function splitButtonGroup(target_id = "", max_per_line = 5, alt_class = "") {
+                if (max_per_line != 5 && alt_class.length == 0) throw Error("max != 5, but no alt_class.");
+                let pos = document.getElementById(target_id);
+                let buttons = pos.querySelectorAll("button");
+                if (buttons.length <= 5) return;
+                let new_line = false;
+                let line_count = 0;
+                buttons.forEach((btn, index) => {
+                    if (index % max_per_line == 0) {
+                        new_line = document.createElement("div");
+                        new_line.className = "btn-group d-flex flex-wrap ml-1" + (line_count > 0 ? " mt-1" : "");
+                        pos.appendChild(new_line);
+                        line_count++;
+                    }
+                    if (max_per_line != 5) btn.className = alt_class;
+                    if (new_line) new_line.appendChild(btn);
+                });
+                pos.className = "";
+            }
+
+            function addWindowSizeEvent() {
+                window.addEventListener('resize', app.option.adjustEle);
+                if ($(window).width() < 1300) app.option.adjustEle();
+            }
+
+            async function loadCookie() {
+                let clist = app.util.getCookie();
+                if (clist.lan) {
+                    let button = document.getElementById(clist.lan);
+                    button.click();
+                } else {
+                    app.option.setLanguage({ id: "en" });
+                    app.util.saveCookie("lan", lan);
+                }
+
+                let url = new URL(window.location.href),
+                    data = url.searchParams.get("AFLD"),
+                    textbox = document.querySelector("#fleetdata");
+
+                if (data) {
+                    textbox.value = data;
+                    app.util.loadDataByID(true);
+                } else {
+                    if (clist.fleet) {
+                        textbox.value = clist.fleet;
+                        app.util.loadDataByID(true);
+                    } else {
+                        app.util.saveCookie("fleet", app.util.dumpID());
+                    }
+                }
+                // cookie data is string, so not Boolean(0) it's Boolean("0")
+                if (clist.allow_dup == 1) {
+                    app.option.ship.allow_dup();
+                }
+
+                if (clist.thick_frame == 1) {
+                    let ele = document.getElementById("frame_setting");
+                    setTimeout(() => app.option.frameSize(ele), 0);
+                }
+
+                if (clist.layout == 1) {
+                    let layout_switch = document.querySelector("#layout_setting");
+                    layout_switch.textContent = clist.layout;
+                    app.option.switchLayout(layout_switch, true);
+                }
+
+                if (clist.f_op == 1) {
+                    document.querySelector("#display_fleet_op").click();
+                }
+
+                if (clist.f_border == 1) {
+                    document.querySelector("#display_fleet_border").click();
+                }
+                return true;
+            }
+
+            async function loadStorage() {
+                let num = LS.number_of_fleet();
+                if (num <= 0) return;
+                fleet_in_storage = []; // empty storage
+                for (let i = 1; i <= num; i++) {
+                    let data = LS.storageManager.getData(`fleet_index_${i}`);
+                    if (!data) continue;
+                    if (!data.name || !data.fleet) continue;
+                    fleet_in_storage.push({ name: data.name, fleet: data.fleet, });
+                    //console.log(data);
+                }
+                msg.normal.storage_found_fleets(fleet_in_storage.length);
+                return true;
+            }
         },
     },
     dynamicFleet = {
