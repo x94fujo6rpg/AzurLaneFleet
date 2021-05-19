@@ -1947,7 +1947,7 @@ const
                 new_fleet.push(fleet);
             });
             new_fleet = JSON.stringify(new_fleet, util.stringifyReplacer);
-            app.util.updateFleetDataBox(new_fleet);
+            new_fleet = app.util.updateFleetDataBox(new_fleet);
             app.util.loadDataByID(true);
             app.util.saveCookie("fleet", new_fleet);
             msg.normal.fleet_copied(pos);
@@ -1959,7 +1959,7 @@ const
             current_fleet_dump.forEach((fleet, index) => { if (index != del_pos) new_fleet.push(fleet); });
             if (!new_fleet.length) msg.error.delete_last();
             new_fleet = JSON.stringify(new_fleet, util.stringifyReplacer);
-            app.util.updateFleetDataBox(new_fleet);
+            new_fleet = app.util.updateFleetDataBox(new_fleet);
             app.util.loadDataByID(true);
             app.util.saveCookie("fleet", new_fleet);
             msg.normal.fleet_removed(del_pos);
@@ -1995,7 +1995,7 @@ const
             });
             new_fleet = JSON.stringify(new_fleet, util.stringifyReplacer);
             //console.log(`new fleet: ${new_fleet}`);
-            app.util.updateFleetDataBox(new_fleet);
+            new_fleet = app.util.updateFleetDataBox(new_fleet);
             app.util.loadDataByID(true);
             app.util.saveCookie("fleet", new_fleet);
             msg.normal.fleet_added(formation);
