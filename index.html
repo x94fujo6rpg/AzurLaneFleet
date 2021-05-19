@@ -252,36 +252,36 @@
     <div id="app_area" style="display:none;">
         <div id="options" class="">
             <div class="btn-group btn-group-toggle d-flex w-25 my-2 mx-auto" data-toggle="buttons">
-                <label class="btn btn-outline-secondary font-weight-bold w-100" id="tw" onclick="setlang(this)">
+                <label class="btn btn-outline-secondary font-weight-bold w-100" id="tw" onclick="app.option.setLanguage(this)">
                     <input type="radio" name="lang">TW
                 </label>
-                <label class="btn btn-outline-secondary font-weight-bold w-100" id="cn" onclick="setlang(this)">
+                <label class="btn btn-outline-secondary font-weight-bold w-100" id="cn" onclick="app.option.setLanguage(this)">
                     <input type="radio" name="lang">CN
                 </label>
-                <label class="btn btn-outline-secondary font-weight-bold w-100" id="jp" onclick="setlang(this)">
+                <label class="btn btn-outline-secondary font-weight-bold w-100" id="jp" onclick="app.option.setLanguage(this)">
                     <input type="radio" name="lang">JP
                 </label>
-                <label class="btn btn-outline-secondary font-weight-bold w-100 active" id="en" onclick="setlang(this)">
+                <label class="btn btn-outline-secondary font-weight-bold w-100 active" id="en" onclick="app.option.setLanguage(this)">
                     <input type="radio" name="lang" checked>EN
                 </label>
             </div>
             <div class="btn-group d-flex my-2 mx-auto w-25" id="option_box_1">
-                <button class="btn btn-outline-secondary w-100 border-right" type="button" id="allow_dup_btn" onclick="allow_dup()">Allow Duplicate</button>
-                <button class="btn btn-secondary w-100 border-left border-right" type="button" id="layout_setting" onclick="switchLayout(this)">Horizontal</button>
-                <button class="btn btn-outline-secondary w-100 border-left" type="button" id="frame_setting" onclick="frameSize(this)">Thick frame</button>
+                <button class="btn btn-outline-secondary w-100 border-right" type="button" id="allow_dup_btn" onclick="app.option.ship.allow_dup(this)">Allow Duplicate</button>
+                <button class="btn btn-secondary w-100 border-left border-right" type="button" id="layout_setting" onclick="app.option.switchLayout(this)">Horizontal</button>
+                <button class="btn btn-outline-secondary w-100 border-left" type="button" id="frame_setting" onclick="app.option.frameSize(this)">Thick frame</button>
             </div>
             <div class="btn-group d-flex my-2 mx-auto w-25" id="option_box_2">
-                <button class="btn btn-outline-secondary w-50 border-right" type="button" id="display_fleet_op" onclick="displayOP(this)">Fleet ID / Edit Button</button>
-                <button class="btn btn-outline-secondary w-50 border-left" type="button" id="display_fleet_border" onclick="displayBorder(this)">Fleet Border</button>
+                <button class="btn btn-outline-secondary w-50 border-right" type="button" id="display_fleet_op" onclick="app.option.displayOP(this)">Fleet ID / Edit Button</button>
+                <button class="btn btn-outline-secondary w-50 border-left" type="button" id="display_fleet_border" onclick="app.option.displayBorder(this)">Fleet Border</button>
             </div>
             <div class="dropdown my-1 container d-flex w-50" id="fleet_storage">
-                <button class="btn btn-primary w-25 mx-1" type="button" id="add_fleet" onclick="addFleetToStorage()">Save Current</button>
-                <button class="btn btn-info w-25 mx-1 dropdown-toggle text-truncate" type="button" id="select_fleet" onclick="updateStorageList()" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button class="btn btn-primary w-25 mx-1" type="button" id="add_fleet" onclick="LS.add_fleet()">Save Current</button>
+                <button class="btn btn-info w-25 mx-1 dropdown-toggle text-truncate" type="button" id="select_fleet" onclick="LS.updateStorageList()" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Select Fleet
                     </button>
                 <div class="dropdown-menu bg-info" id="fleet_list" aria-labelledby="select_fleet"></div>
-                <button class="btn btn-success w-25 mx-1" type="button" id="load_fleet" onclick="load_fleet()" disabled>Load Fleet</button>
-                <button class="btn btn-danger w-25 mx-1" type="button" id="remove_fleet" onclick="remove_fleet()" disabled>Remove</button>
+                <button class="btn btn-success w-25 mx-1" type="button" id="load_fleet" onclick="LS.load_fleet()" disabled>Load Fleet</button>
+                <button class="btn btn-danger w-25 mx-1" type="button" id="remove_fleet" onclick="LS.remove_fleet()" disabled>Remove</button>
             </div>
             <div class="d-grid my-2 mx-auto w-25">
                 <label class="h4 m-auto" for="fleet_name" id="fleet_name_label">Fleet Name</label>
@@ -293,24 +293,24 @@
             </fleet-container>
         </div>
         <div class="d-flex mx-auto my-5">
-            <button type="button" class="btn btn-danger m-auto" id="emptyfleet" onclick="emptyfleet()">Empty Current Fleet</button>
+            <button type="button" class="btn btn-danger m-auto" id="emptyfleet" onclick="app.action.emptyfleet()">Empty Current Fleet</button>
         </div>
         <div class="d-grid mx-auto my-5">
             <h4 class="d-flex text-light mx-auto my-1">URL</h4>
             <textarea class="d-flex databox text-light mx-auto my-1" id="url_box" readonly></textarea>
             <div class="d-flex mx-auto my-1">
-                <button type="button" class="btn mx-1 w-100" onclick="generateURL()">Generate URL</button>
-                <button type="button" class="btn mx-1 w-100" onclick="copyURL()">Copy</button>
+                <button type="button" class="btn mx-1 w-100" onclick="app.action.generateURL()">Generate URL</button>
+                <button type="button" class="btn mx-1 w-100" onclick="app.action.copyURL()">Copy</button>
             </div>
         </div>
         <div class="d-grid mx-auto my-5">
             <h4 class="d-flex text-light mx-auto my-1" id="fleetdata_text">Fleet data</h4>
             <textarea class="d-flex databox text-light mx-auto my-1" id="fleetdata"></textarea>
             <div class="d-flex mx-auto my-1">
-                <button type="button" class="btn mx-1 w-100" id="dumpdata" onclick="dumpID(false, [], event)">Dump</button>
-                <button type="button" class="btn mx-1 w-100" id="copyData" onclick="copyData()">Copy</button>
-                <button type="button" class="btn mx-1 w-100" id="emptyData" onclick="emptyData()">Clear</button>
-                <button type="button" class="btn mx-1 w-100 btn-danger" id="loadDataByID" onclick="loadDataByID(false, event)">Load</button>
+                <button type="button" class="btn mx-1 w-100" id="dumpdata" onclick="app.util.dumpID(false, [], event)">Dump</button>
+                <button type="button" class="btn mx-1 w-100" id="copyData" onclick="app.action.copyData()">Copy</button>
+                <button type="button" class="btn mx-1 w-100" id="emptyData" onclick="app.action.emptyData()">Clear</button>
+                <button type="button" class="btn mx-1 w-100 btn-danger" id="loadDataByID" onclick="app.util.loadDataByID(false, event)">Load</button>
             </div>
         </div>
     </div>
@@ -354,8 +354,8 @@
                             <div class="my-auto mr-auto ml-1" id="ship_count"></div>
                         </div>
                         <div class="btn-group d-flex m-3 line-3-item">
-                            <button id='use_code' name="use_code" type="button" class="w-100 m-auto btn btn-outline-light font-weight-bold" aria-pressed="false" onclick="setCode(this)">Code</button>
-                            <button id='filter_retro' name="retro_ship_only" type="button" class="w-100 m-auto btn btn-outline-light font-weight-bold active" aria-pressed="true" onclick="setRetro(this)">Retrofitted Only</button>
+                            <button id='use_code' name="use_code" type="button" class="w-100 m-auto btn btn-outline-light font-weight-bold" aria-pressed="false" onclick="app.option.ship.setCode(this)">Code</button>
+                            <button id='filter_retro' name="retro_ship_only" type="button" class="w-100 m-auto btn btn-outline-light font-weight-bold active" aria-pressed="true" onclick="app.option.ship.setRetro(this)">Retrofitted Only</button>
                         </div>
                     </div>
                     <div class="row justify-content-center m-auto" id="shiplist"></div>
@@ -397,16 +397,16 @@
                     </div>
                     <div class="d-inline-flex w-100 font-weight-bold">
                         <div class="btn-group d-flex m-3 line-3-item">
-                            <button id='always_reset_equip_filter' type="button" class="w-100 m-auto btn btn-outline-light font-weight-bold" aria-pressed="false" onclick="autoUseDefault(this)">Auto</button>
-                            <button id='reset_equip_filter' type="button" class="w-100 m-auto btn btn-outline-light font-weight-bold" aria-pressed="false" onclick="resetEquipFilter(true)">Default</button>
-                            <button id='clear_equip_filter' type="button" class="w-100 m-auto btn btn-outline-light font-weight-bold" aria-pressed="false" onclick="resetEquipFilter(false)">Clear</button>
+                            <button id='always_reset_equip_filter' type="button" class="w-100 m-auto btn btn-outline-light font-weight-bold" aria-pressed="false" onclick="app.option.equip.autoUseDefault(this)">Auto</button>
+                            <button id='reset_equip_filter' type="button" class="w-100 m-auto btn btn-outline-light font-weight-bold" aria-pressed="false" onclick="app.option.equip.resetFilter(true)">Default</button>
+                            <button id='clear_equip_filter' type="button" class="w-100 m-auto btn btn-outline-light font-weight-bold" aria-pressed="false" onclick="app.option.equip.resetFilter(false)">Clear</button>
                         </div>
                         <div class="d-flex m-3 line-3-item">
                             <div class="my-auto ml-auto mr-1" ui_id="filter_search_result">Result</div>
                             <div class="my-auto mr-auto ml-1" id="equip_count"></div>
                         </div>
                         <div class="d-flex m-3 line-3-item">
-                            <button id='use_eq_code' type="button" class="w-100 m-auto btn btn-outline-light font-weight-bold" aria-pressed="false" onclick="setEqCode(this)">Code</button>
+                            <button id='use_eq_code' type="button" class="w-100 m-auto btn btn-outline-light font-weight-bold" aria-pressed="false" onclick="app.option.equip.setCode(this)">Code</button>
                         </div>
                     </div>
                     <div class="row justify-content-center m-auto" id="equiplist"></div>
