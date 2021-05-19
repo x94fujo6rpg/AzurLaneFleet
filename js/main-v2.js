@@ -1871,7 +1871,7 @@ const
                 }
                 // cookie data is string, so not Boolean(0) it's Boolean("0")
                 if (clist.allow_dup == 1) {
-                    app.option.ship.allow_dup();
+                    app.option.ship.allow_dup(document.getElementById("allow_dup_btn"));
                 }
 
                 if (clist.thick_frame == 1) {
