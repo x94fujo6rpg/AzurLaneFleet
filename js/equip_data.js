@@ -2170,6 +2170,23 @@ var equip_data = {
         "en_name": "Air Radar",
         "equip_limit": 0
     },
+    "940": {
+        "nationality": 1,
+        "type": 10,
+        "attribute_2": null,
+        "rarity": 4,
+        "tech": 0,
+        "ammo": 10,
+        "ammo_icon": [],
+        "id": 940,
+        "icon": "940",
+        "ship_type_forbidden": [],
+        "jp_name": "作戦記録：AF",
+        "cn_name": "作战报告：AF",
+        "tw_name": "作戰報告：AF",
+        "en_name": "Action Report: Operation AF",
+        "equip_limit": 940
+    },
     "500": {
         "nationality": 1,
         "type": 10,
