@@ -806,7 +806,12 @@ const
                     if (!ignore.has(key)) cookieList[key] = value;
                 });
                 for (let key in cookieList) {
-                    this.removeCookie(key);
+                    removeCookie(key);
+                }
+                function removeCookie(ckey, cvalue="", expday = -1) {
+                    let time = new Date(), exp = new Date();
+                    exp.setTime(time.getTime() + (expday * 1000 * 60 * 60 * 24));
+                    document.cookie = `${ckey}=${cvalue};expires=${exp.toUTCString()};SameSite=Strict;`;
                 }
             },
             isCorrectShipType(type) {
