@@ -149,6 +149,15 @@ Object.defineProperty(Array.prototype, "sameAs", {
 });
 
 const
+    settingKey = {
+        language: "language",
+        fleetData: "fleetData",
+        allowDup: "allowDup",
+        thickFrame: "thickFrame",
+        layout: "layout",
+        fleetEdit: "fleetEdit",
+        fleetBorder: "fleetBorder",
+    },
     util = {
         sleep(ms = 0) {
             return new Promise(resolve => setTimeout(resolve, ms));
@@ -206,33 +215,45 @@ const
     },
     //localStorage
     LS = {
-        number_of_fleet() {
-            let num = LS.storageManager.getData("num_of_fleet");
-            return num ? num : 0;
+        userSetting: {
+            prefix: "user_setting_",
+            set(key, value) {
+                if (key.match(/fleet_index_/)) throw Error("Invalid Key");
+                AFL_storage.setItem(`${this.prefix}${key}`, value);
+                console.log(`save key:[${key}], value:[${value}]`);
+            },
+            get(key) {
+                return AFL_storage.getItem(`${this.prefix}${key}`);
+            },
+            del(key) {
+                return AFL_storage.removeItem(`${this.prefix}${key}`);
+            }
         },
         fleetManager: {
-            storage(fleet_data = []) {
+            fleetLength() {
+                let num = this.getData("num_of_fleet");
+                return num ? num : 0;
+            },
+            storageFleetData(fleet_data = []) {
                 let length = fleet_data.length;
                 if (!(fleet_data instanceof Array)) throw Error("fleet data is not Array");
                 if (!length) throw Error("no fleet data");
                 for (let i = 1; i <= length; i++) {
-                    LS.storageManager.setData(`fleet_index_${i}`, fleet_data[i - 1]);
+                    this.setData(`fleet_index_${i}`, fleet_data[i - 1]);
                 }
-                LS.storageManager.setData("num_of_fleet", length);
+                this.setData("num_of_fleet", length);
                 console.log(`storage ${length} fleet data`);
                 return true;
             },
-            clear() {
-                let eof_fleet = LS.number_of_fleet();
+            clearFleetData() {
+                let eof_fleet = this.fleetLength();
                 for (let i = 1; i <= eof_fleet; i++) {
-                    LS.storageManager.remove(`fleet_index_${i}`);
+                    this.remove(`fleet_index_${i}`);
                 }
-                LS.storageManager.remove("num_of_fleet");
+                this.remove("num_of_fleet");
                 console.log(`remove ${eof_fleet} old fleet data`);
                 return true;
-            }
-        },
-        storageManager: {
+            },
             getData(key) {
                 let data = AFL_storage.getItem(key);
                 return data ? JSON.parse(data) : null;
@@ -269,8 +290,8 @@ const
         saveStorage() {
             let num = fleet_in_storage.length;
             if (!num) return;
-            LS.fleetManager.clear();
-            LS.fleetManager.storage(fleet_in_storage);
+            LS.fleetManager.clearFleetData();
+            LS.fleetManager.storageFleetData(fleet_in_storage);
         },
         add_fleet() {
             let nameBox = fleet_info.name(),
@@ -415,11 +436,11 @@ const
             }
         },
     },
-    app = {        
+    app = {
         option: {
             setLanguage(ele) {
                 let key = ele.id;
-                lan = ALF.lang = shipSelect.lang = equipSelect.lang = key;
+                language = ALF.lang = shipSelect.lang = equipSelect.lang = key;
                 document.querySelectorAll("[name=name]").forEach(name => name.textContent = name.getAttribute(key));
                 document.querySelectorAll("[ui_text='true']").forEach(ui_ele => {
                     if (ui_ele.tagName == "INPUT") {
@@ -428,7 +449,7 @@ const
                         ui_ele.textContent = ui_ele.getAttribute(`ui_${key}`);
                     }
                 });
-                app.util.saveCookie("lan", key);
+                LS.userSetting.set(settingKey.language, language);
                 this.adjustEle();
             },
             switchLayout(ele, same = false) {
@@ -463,7 +484,7 @@ const
                     default:
                         throw Error("unknown layout");
                 }
-                app.util.saveCookie("layout", ele.textContent);
+                LS.userSetting.set(settingKey.layout, layout_list[ele.textContent]);
                 function changeClass(classKey = "") {
                     for (let key in appClassData) {
                         if (key == "app_box") {
@@ -477,7 +498,7 @@ const
             },
             frameSize(ele) {
                 $(ele).button("toggle");
-                let thicc = ele.ariaPressed ? true : false,
+                let thicc = ele.ariaPressed == "true" ? true : false,
                     location = window.location.href,
                     reg = /b+\.png/, done = 0, fail = 0;
 
@@ -492,7 +513,7 @@ const
                 });
 
                 //console.log(`[${frameSize.name}] done: ${done}, failed: ${fail}`);
-                app.util.saveCookie("thick_frame", thicc ? 1 : 0);
+                LS.userSetting.set(settingKey.thickFrame, thicc ? 1 : 0);
 
                 function replaceSrc(src = "") {
                     if (src != location) {
@@ -515,7 +536,7 @@ const
                 $(ele).button("toggle");
                 let display = ele.classList.contains("active") ? true : false;
                 ALF.show_op = display;
-                app.util.saveCookie("f_op", display ? 1 : 0);
+                LS.userSetting.set(settingKey.fleetEdit, display ? 1 : 0);
             },
             displayBorder(ele) {
                 $(ele).button("toggle");
@@ -556,7 +577,7 @@ const
                         ALF.class_data[key] = appClassData[key][layoutKey];
                     }
                 }
-                app.util.saveCookie("f_border", display ? 1 : 0);
+                LS.userSetting.set(settingKey.fleetBorder, display ? 1 : 0);
             },
             adjustEle() {
                 const
@@ -598,7 +619,7 @@ const
             ship: {
                 allow_dup(ele) {
                     $(ele).button("toggle");
-                    app.util.saveCookie("allow_dup", ele.classList.contains("active") ? "1" : "0");
+                    LS.userSetting.set(settingKey.allowDup, ele.classList.contains("active") ? 1 : 0);
                 },
                 setCode(ele) {
                     $(ele).button("toggle");
@@ -772,22 +793,21 @@ const
             },
         },
         util: {
-            saveCookie(ckey, cvalue, expday = 365) {
-                let time = new Date(), exp = new Date();
-                exp.setTime(time.getTime() + (expday * 1000 * 60 * 60 * 24));
-                document.cookie = `${ckey}=${cvalue};expires=${exp.toUTCString()};SameSite=Strict;`;
-                //console.log(`${ckey}=${cvalue};`);
-            },
-            getCookie() {
+            removeAllCookie() {
+                //------------------------------
+                // stop use cookie, use localStorage now
+                //------------------------------
                 let cookie = document.cookie,
-                    new_list = {},
+                    cookieList = {},
                     ignore = new Set(["expires", "SameSite",]);
                 cookie = cookie.split(";").map(t => t.trim());
                 cookie.forEach(data => {
                     let [key, value] = data.split("=");
-                    if (!ignore.has(key)) new_list[key] = value;
+                    if (!ignore.has(key)) cookieList[key] = value;
                 });
-                return new_list;
+                for (let key in cookieList) {
+                    this.removeCookie(key);
+                }
             },
             isCorrectShipType(type) {
                 if (c_side === "0" && !type_front.has(type)) {
@@ -910,7 +930,7 @@ const
                             name.setAttribute(key, match[isCache ? key : `${key}_name`]);
                             itemInList[key] = match[isCache ? key : `${key}_name`];
                         });
-                        name.textContent = match[isCache ? lan : `${lan}_name`];
+                        name.textContent = match[isCache ? language : `${language}_name`];
                     } else {
                         restore();
                     }
@@ -934,7 +954,7 @@ const
                         name.setAttribute(key, eq[`${key}_name`]);
                         itemInList[key] = eq[`${key}_name`];
                     });
-                    name.textContent = eq[`${lan}_name`];
+                    name.textContent = eq[`${language}_name`];
                 }
                 function att(item, key, v1, v2) {
                     item.setAttribute(key, item.getAttribute(key).replace(v1, v2));
@@ -1064,7 +1084,7 @@ const
                         }
                     });
                 });
-                if (!noDump) this.saveCookie("fleet", this.dumpID());
+                if (!noDump) LS.userSetting.set(settingKey.fleetData, app.util.dumpID());
                 return true;
             },
             extractFormation(a_fleet_data = []) {
@@ -1319,7 +1339,7 @@ const
                     }
                 }
             }
-            if (save) app.util.saveCookie("fleet", app.util.dumpID());
+            if (save) LS.userSetting.set(settingKey.fleetData, app.util.dumpID());
         },
         async equipDisplay() {
             let side = sideTable[c_side],
@@ -1434,7 +1454,7 @@ const
                 let itemInList = sortedEquip.find((ele) => { if (ele.id === id) return Object.assign({}, ele); });
                 copylist.forEach(key => itemInApp[key] = itemInList[key]);
             }
-            if (save) app.util.saveCookie("fleet", app.util.dumpID());
+            if (save) LS.userSetting.set(settingKey.fleetData, app.util.dumpID());
         },
         async initialize() {
             console.time(app.initialize.name);
@@ -1470,7 +1490,7 @@ const
             splitButtonGroup("shipnation");
             splitButtonGroup("eq_nation");
             addWindowSizeEvent();
-            await loadCookie();
+            await loadUserSetting();
             await loadStorage();
             document.querySelector("#loading_box").style.display = "none";
             document.querySelector("#app_area").style.display = "";
@@ -1644,7 +1664,7 @@ const
                         name.setAttribute("cn", data.cn);
                         name.setAttribute("en", data.en);
                         name.setAttribute("jp", data.jp);
-                        name.textContent = data[lan];
+                        name.textContent = data[language];
 
                         box.append(icon_box, name);
                         //-----------------------------------------------
@@ -1844,63 +1864,71 @@ const
                 if ($(window).width() < 1300) app.option.adjustEle();
             }
 
-            async function loadCookie() {
-                let clist = app.util.getCookie();
-                if (clist.lan) {
-                    let button = document.getElementById(clist.lan);
-                    button.click();
-                } else {
-                    app.option.setLanguage({ id: "en" });
-                    app.util.saveCookie("lan", lan);
+            async function loadUserSetting() {
+                //------------------------------
+                // use localStorage now
+                if (document.cookie) app.util.removeAllCookie();
+                //------------------------------
+
+                let setting = {};
+                for (let key in settingKey) {
+                    let data = LS.userSetting.get(key);
+                    setting[key] = data ? data : false;
                 }
 
                 let url = new URL(window.location.href),
-                    data = url.searchParams.get("AFLD"),
+                    fleetDataInURL = url.searchParams.get("AFLD"),
                     textbox = document.querySelector("#fleetdata");
 
-                if (data) {
-                    textbox.value = data;
+                if (setting[settingKey.language]) {
+                    document.getElementById(setting[settingKey.language]).click();
+                } else {
+                    app.option.setLanguage({ id: language });
+                    LS.userSetting.set(settingKey.language, language);
+                }
+
+                if (fleetDataInURL) {
+                    textbox.value = fleetDataInURL;
                     app.util.loadDataByID(true);
                 } else {
-                    if (clist.fleet) {
-                        textbox.value = clist.fleet;
+                    if (setting[settingKey.fleetData]) {
+                        textbox.value = setting.fleetData;
                         app.util.loadDataByID(true);
-                    } else {
-                        app.util.saveCookie("fleet", app.util.dumpID());
                     }
                 }
-                // cookie data is string, so not Boolean(0) it's Boolean("0")
-                if (clist.allow_dup == 1) {
+
+                // data is string, so not Boolean(0) it's Boolean("0")
+                if (setting[settingKey.allowDup] == 1) {
                     app.option.ship.allow_dup(document.getElementById("allow_dup_btn"));
                 }
 
-                if (clist.thick_frame == 1) {
+                if (setting[settingKey.thickFrame] == 1) {
                     let ele = document.getElementById("frame_setting");
                     setTimeout(() => app.option.frameSize(ele), 0);
                 }
 
-                if (clist.layout == 1) {
-                    let layout_switch = document.querySelector("#layout_setting");
-                    layout_switch.textContent = clist.layout;
-                    app.option.switchLayout(layout_switch, true);
+                if (setting[settingKey.layout]) {
+                    let layoutSwitch = document.querySelector("#layout_setting");
+                    layoutSwitch.textContent = layout_list[setting[settingKey.layout]];
+                    app.option.switchLayout(layoutSwitch, true);
                 }
 
-                if (clist.f_op == 1) {
+                if (setting[settingKey.fleetEdit] == 1) {
                     document.querySelector("#display_fleet_op").click();
                 }
 
-                if (clist.f_border == 1) {
+                if (setting[settingKey.fleetBorder] == 1) {
                     document.querySelector("#display_fleet_border").click();
                 }
                 return true;
             }
 
             async function loadStorage() {
-                let num = LS.number_of_fleet();
+                let num = LS.fleetManager.fleetLength();
                 if (num <= 0) return;
                 fleet_in_storage = []; // empty storage
                 for (let i = 1; i <= num; i++) {
-                    let data = LS.storageManager.getData(`fleet_index_${i}`);
+                    let data = LS.fleetManager.getData(`fleet_index_${i}`);
                     if (!data) continue;
                     if (!data.name || !data.fleet) continue;
                     fleet_in_storage.push({ name: data.name, fleet: data.fleet, });
@@ -1934,7 +1962,7 @@ const
             //console.log("after", current_fleet_dump);
             new_fleet = app.util.updateFleetDataBox(new_fleet); //with hash
             app.util.loadDataByID(true); //skip dump
-            app.util.saveCookie("fleet", new_fleet);
+            LS.userSetting.set(settingKey.fleetData, new_fleet);
             this.disableInvalidMoveButton();
         },
         copyFleet(ele) {
@@ -1949,7 +1977,7 @@ const
             new_fleet = JSON.stringify(new_fleet, util.stringifyReplacer);
             new_fleet = app.util.updateFleetDataBox(new_fleet);
             app.util.loadDataByID(true);
-            app.util.saveCookie("fleet", new_fleet);
+            LS.userSetting.set(settingKey.fleetData, new_fleet);
             msg.normal.fleet_copied(pos);
         },
         deleteFleet(ele) {
@@ -1961,7 +1989,7 @@ const
             new_fleet = JSON.stringify(new_fleet, util.stringifyReplacer);
             new_fleet = app.util.updateFleetDataBox(new_fleet);
             app.util.loadDataByID(true);
-            app.util.saveCookie("fleet", new_fleet);
+            LS.userSetting.set(settingKey.fleetData, new_fleet);
             msg.normal.fleet_removed(del_pos);
         },
         insertFleet(ele) {
@@ -1997,14 +2025,14 @@ const
             //console.log(`new fleet: ${new_fleet}`);
             new_fleet = app.util.updateFleetDataBox(new_fleet);
             app.util.loadDataByID(true);
-            app.util.saveCookie("fleet", new_fleet);
+            LS.userSetting.set(settingKey.fleetData, new_fleet);
             msg.normal.fleet_added(formation);
         },
         disableInvalidMoveButton() {
             let all = document.querySelectorAll(`[onclick^="dynamicFleet.moveFleet"],[onclick^="dynamicFleet.deleteFleet"]`),
                 disable = document.querySelectorAll(
-                    `[pos="Fleet_1"][onclick^="dynamicFleet.moveFleet"][data="-1"],` +
-                    `[pos="Fleet_${fleetData.length}"][onclick^="dynamicFleet.moveFleet"][data="1"]`
+                    `[pos="Fleet 1"][onclick^="dynamicFleet.moveFleet"][data="-1"],` +
+                    `[pos="Fleet ${fleetData.length}"][onclick^="dynamicFleet.moveFleet"][data="1"]`
                 );
             if (all.length) if (fleetData.length !== 1) { ena(all); } else { dis(all); }
             if (disable.length) dis(disable);
@@ -2117,7 +2145,7 @@ let
     sortedEquip = [],
     fleet_in_storage = [],
     eqck = false,
-    lan = "en";
+    language = "en";
 
 //----------------------------------------------------------
 Vue.component("item-container", {
@@ -2257,7 +2285,7 @@ const
         el: "#AzurLaneFleetApp",
         data: {
             fleets: fleetData,
-            lang: lan,
+            lang: language,
             show_op: false,
             class_data: {
                 app_box: appClassData.app_box.h,
@@ -2273,7 +2301,7 @@ const
             type: lan_ship_type,
             rarity: lan_ship_rarity,
             //shiplist: sorted_ship_data,
-            lang: lan
+            lang: language
         }
     }),
     equipSelect = new Vue({
@@ -2284,7 +2312,7 @@ const
             rarity: lan_eq_rarity,
             tier: lan_eq_tier,
             //equips: sorted_equip_data,
-            lang: lan,
+            lang: language,
         }
     });
 

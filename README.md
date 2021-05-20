@@ -14,6 +14,10 @@ This site was developed and tested on `Chrome`/`Firefox`
 Compatibility with other browsers is unknown  
 
 ## Update  
+**2021-05-20**
+- no longer use cookie, all setting now save in localStorage  
+  so the settings work in local environment too  
+
 **2021-05-18**
 - display message at the bottom
 - limit fleet size to `30`
@@ -40,7 +44,7 @@ Compatibility with other browsers is unknown
     old id:_0123 => fleet:0, side:1, pos:2, item:3
 
     when you have over 10 fleet...
-    _10123 => fleet:0 but it already exist...???
+    _10123 => fleet:1?...0? but it already exist...???
     what a classic mistake...
 
     new id
