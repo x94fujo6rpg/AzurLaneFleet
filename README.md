@@ -14,6 +14,11 @@ This site was developed and tested on `Chrome`/`Firefox`
 Compatibility with other browsers is unknown  
 
 ## Update  
+**2021-05-21**
+- fix `allow duplicate` `thick frame` not work on Firefox
+- fix stuck when image cache not found
+- update error message when indexedDB is unavailable
+
 **2021-05-20**
 - no longer use cookie, all setting now save in localStorage  
   so the settings work in local environment too  

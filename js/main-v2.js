@@ -204,12 +204,12 @@ const
             function active() {
                 ele.click();
                 ele.classList.add("active");
-                ele.ariaPressed = true;
+                ele.setAttribute("aria-pressed", true);
             }
             function deactiv() {
                 ele.click();
                 ele.classList.remove("active");
-                ele.ariaPressed = false;
+                ele.setAttribute("aria-pressed", false);
             }
         },
     },
@@ -341,8 +341,8 @@ const
     // indexedDB
     initialDB = async (db_name, db_ver) => {
         const db = await idb.openDB(db_name, db_ver, {
-            upgrade(db) {
-                if (db.newVersion > db.oldVersion) {
+            upgrade(db, oldVersion, newVersion) {
+                if (newVersion > oldVersion) {
                     console.log("clear old version");
                     db.deleteObjectStore(db_name);
                 }
@@ -498,7 +498,8 @@ const
             },
             frameSize(ele) {
                 $(ele).button("toggle");
-                let thicc = ele.ariaPressed == "true" ? true : false,
+                // firefox doesn't support ".ariaPressed" https://caniuse.com/?search=ariaPressed
+                let thicc = ele.getAttribute("aria-pressed") == "true" ? true : false,
                     location = window.location.href,
                     reg = /b+\.png/, done = 0, fail = 0;
 
@@ -512,7 +513,7 @@ const
                     if (item.currentSrc != "") item.src = replaceSrc(item.currentSrc);
                 });
 
-                //console.log(`[${frameSize.name}] done: ${done}, failed: ${fail}`);
+                //console.log(`[${this.frameSize.name}] done: ${done}, failed: ${fail}`);
                 LS.userSetting.set(settingKey.thickFrame, thicc ? 1 : 0);
 
                 function replaceSrc(src = "") {
@@ -808,7 +809,7 @@ const
                 for (let key in cookieList) {
                     removeCookie(key);
                 }
-                function removeCookie(ckey, cvalue="", expday = -1) {
+                function removeCookie(ckey, cvalue = "", expday = -1) {
                     let time = new Date(), exp = new Date();
                     exp.setTime(time.getTime() + (expday * 1000 * 60 * 60 * 24));
                     document.cookie = `${ckey}=${cvalue};expires=${exp.toUTCString()};SameSite=Strict;`;
@@ -1123,7 +1124,7 @@ const
                     // show & hide filter
                     lan_eq_type.forEach((item) => item.display = use_set.has(parseInt(item.id)) ? true : false);
                     // auto set to default
-                    if (document.getElementById("always_reset_equip_filter").ariaPressed == "true") app.option.equip.resetFilter(true);
+                    if (document.getElementById("always_reset_equip_filter").getAttribute("aria-pressed") == "true") app.option.equip.resetFilter(true);
                     app.equipDisplay();
                 }
             },
@@ -1479,13 +1480,13 @@ const
                 }
                 await loadImgCache(AFDB);
             } else {
-                let pos = document.querySelector("#loading_box"),
-                    message = document.createElement("div");
-                message.textContent = "not support indexedDB";
-                message.className = "row text-center text-monospace";
-                pos.appendChild(message);
-                console.log("not support indexedDB");
-                return;
+                let pos = document.querySelector("#loading_box");
+                pos.innerHTML = `
+                    <div>Unable to access indexedDB.</div>
+                    <div>This browser doesn't support it or it's in incognito mode.</div>
+                `;
+                pos.className = "h5 text-danger text-center text-monospace mx-auto my-5";
+                return setTimeout(() => delete app.initialize, 500);
             }
             // ------------------------------
             await createAllShip();
@@ -1786,8 +1787,13 @@ const
                     promise_list.push(
                         AFDB.getImgCache(srcToCacheID(obj.icon, "ship", reg))
                             .then(cache => {
-                                obj.icon = cache.data_url;
-                                obj.icon_cache = true;
+                                if (cache) {
+                                    obj.icon = cache.data_url;
+                                    obj.icon_cache = true;
+                                } else {
+                                    obj.icon_cache = false;
+                                    console.log(obj, "cache not found");
+                                }
                                 p.bar.value++;
                                 p.lable.textContent = `${p.bar.value}/${p.bar.max}`;
                             })
@@ -1798,8 +1804,13 @@ const
                     promise_list.push(
                         AFDB.getImgCache(srcToCacheID(obj.icon, "equip", reg))
                             .then(cache => {
-                                obj.icon = cache.data_url;
-                                obj.icon_cache = true;
+                                if (cache) {
+                                    obj.icon = cache.data_url;
+                                    obj.icon_cache = true;
+                                } else {
+                                    obj.icon_cache = false;
+                                    console.log(obj, "cache not found");
+                                }
                                 p.bar.value++;
                                 p.lable.textContent = `${p.bar.value}/${p.bar.max}`;
                             })
@@ -2137,7 +2148,7 @@ const
     eq_tier = new Set(lan_eq_tier.map(o => parseInt(o.id, 10))),
     // db
     db_name = "image_cache",
-    db_ver = 1,
+    db_ver = 2,
     // dump data
     ALF_version = 0.05;
 
