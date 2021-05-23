@@ -1993,6 +1993,7 @@ const
             app.util.loadDataByID(true);
             LS.userSetting.set(settingKey.fleetData, new_fleet);
             msg.normal.fleet_removed(del_pos);
+            this.disableInvalidMoveButton();
         },
         insertFleet(ele) {
             if (fleetData.length >= maximumFleet) msg.error.maximum_fleet();
