@@ -289,7 +289,7 @@
             </div>
         </div>
         <div id="AzurLaneFleetApp" class="d-flex flex-column w-75 m-auto app_box">
-            <fleet-container v-for="fleet in fleets" v-bind:key="fleet.id" v-bind:show_op="show_op" v-bind:fleet="fleet" v-bind:name="fleet.id" v-bind:lang="lang" v-bind:class_data="class_data">
+            <fleet-container v-for="fleet in fleets" v-bind:key="fleet.id" v-bind:show_op="show_op" v-bind:fleet="fleet" v-bind:name="fleet.id" v-bind:lang="lang" v-bind:class_data="class_data" v-bind:ui_text="ui_text">
             </fleet-container>
         </div>
         <div class="d-flex mx-auto my-5">

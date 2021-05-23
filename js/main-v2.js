@@ -14,12 +14,15 @@ const
         // do not change id, unless you know what you are doing.
         { id: "allow_dup_btn", en: "Allow Duplicate", jp: "重複を許可する", tw: "允許重複的船", },
         { id: "layout_label", en: "Layout:", jp: "スタイル:", tw: "排版方式:", },
+        { id: "display_fleet_border", en: "Fleet Border", jp: "フレーム表示", tw: "顯示外框" },
+        { id: "display_fleet_op", en: "Fleet ID / Edit Button", jp: "編集ボタン表示", tw: "顯示編輯" },
+        { id: "frame_setting", en: "Thick frame", jp: "厚いフレーム", tw: "粗框" },
 
         { id: "add_fleet", en: "Save Current", jp: "現在の艦隊をセーブ", tw: "儲存目前艦隊", },
         { id: "select_fleet", en: "Select Fleet", jp: "艦隊を選択", tw: "選擇艦隊", },
         { id: "load_fleet", en: "Load Fleet", jp: "ロード", tw: "載入艦隊", },
         { id: "remove_fleet", en: "Delete", jp: "削除", tw: "刪除", },
-        { id: "fleet_name_label", en: "Fleet Name", jp: "艦隊名", tw: "艦隊名稱", },
+        { id: "fleet_name_label", en: "Fleet Name", jp: "艦隊名", tw: "艦隊名", },
 
         { id: "emptyfleet", en: "Empty Current Fleet", jp: "現在の艦隊を空に", tw: "清空目前艦隊", },
 
@@ -42,6 +45,11 @@ const
 
         { id: "select_equip", en: "Select Equip", jp: "装備を選択", tw: "選擇裝備", },
     ],
+    vue_ui_text = {
+        sub_fleet: { en: "Sub", jp: "潜水", tw: "潛艇", cn: "潛艇" },
+        normal_fleet: { en: "Normal", jp: "通常", tw: "一般", cn: "一般" },
+        copy_fleet: { en: "Copy", jp: "コピー", tw: "複製", cn: "複製", },
+    },
     // equip type
     parsetype = {
         1: { cn: "驅逐砲", en: "DD Gun", jp: "駆逐砲" },
@@ -816,13 +824,9 @@ const
                 }
             },
             isCorrectShipType(type) {
-                if (c_side === "0" && !type_front.has(type)) {
-                    return false;
-                } else if (c_side === "1" && !type_back.has(type)) {
-                    return false;
-                } else if (c_side === "2" && !type_sub.has(type)) {
-                    return false;
-                }
+                if (c_side === "0" && !type_front.has(type)) return false;
+                if (c_side === "1" && !type_back.has(type)) return false;
+                if (c_side === "2" && !type_sub.has(type)) return false;
                 return true;
             },
             async updateFilter(key, value, type) {
@@ -1053,41 +1057,37 @@ const
                         formation_data = (!isNaN(last_item)) ? last_item : false;
                     fleet.forEach((side, side_index) => {
                         // skip formation data
-                        if (side instanceof Array) {
-                            side.forEach((ship, ship_index) => {
-                                let is_ship_empty = false;
-                                ship.forEach((item, item_index) => {
-                                    // set as empty ship/equip
-                                    if (item === "" || item === 0) {
-                                        item = (item_index == 0) ? "000000" : "666666";
-                                    }
-                                    // skip empty ship
-                                    if (!is_ship_empty) {
-                                        let item_name = false;
-                                        if (!formation_data) {
-                                            // v4 no formation data
-                                            item_name = fleet_index < 4 ?
-                                                `${fleet_index}_${side_index}_${ship_index}_${item_index}` : // normal fleet
-                                                `${fleet_index}_2_${ship_index}_${item_index}`; // sub fleet
-                                        } else {
-                                            // v5+
-                                            // side { 0:front, 1:back, 2:sub }, formation { 1: normal, 2:sub }
-                                            item_name = formation_data == 1 ?
-                                                `${fleet_index}_${side_index}_${ship_index}_${item_index}` : // normal fleet
-                                                `${fleet_index}_2_${ship_index}_${item_index}`; // sub fleet
-                                        }
-                                        let ship_item = { name: item_name, id: item };
-                                        this.setCurrent(ship_item, true);
-                                        if (item_index === 0) {
-                                            app.setShipAndEquip(ship_item, false);
-                                        } else {
-                                            app.setEquip(ship_item, false);
-                                        }
-                                        if (item === "000000") is_ship_empty = true;
-                                    }
-                                });
+                        if (!(side instanceof Array)) return;
+                        side.forEach((ship, ship_index) => {
+                            let is_ship_empty = false;
+                            ship.forEach((item, item_index) => {
+                                // set as empty ship/equip
+                                if (item === "" || item === 0) item = (item_index == 0) ? "000000" : "666666";
+                                // skip empty ship
+                                if (is_ship_empty) return;
+                                let item_name = false;
+                                if (!formation_data) {
+                                    // v4 no formation data
+                                    item_name = fleet_index < 4 ?
+                                        `${fleet_index}_${side_index}_${ship_index}_${item_index}` : // normal fleet
+                                        `${fleet_index}_2_${ship_index}_${item_index}`; // sub fleet
+                                } else {
+                                    // v5+
+                                    // side { 0:front, 1:back, 2:sub }, formation { 1: normal, 2:sub }
+                                    item_name = formation_data == 1 ?
+                                        `${fleet_index}_${side_index}_${ship_index}_${item_index}` : // normal fleet
+                                        `${fleet_index}_2_${ship_index}_${item_index}`; // sub fleet
+                                }
+                                let ship_item = { name: item_name, id: item };
+                                this.setCurrent(ship_item, true);
+                                if (item_index === 0) {
+                                    app.setShipAndEquip(ship_item, false);
+                                } else {
+                                    app.setEquip(ship_item, false);
+                                }
+                                if (item === "000000") is_ship_empty = true;
                             });
-                        }
+                        });
                     });
                 });
                 if (!noDump) LS.userSetting.set(settingKey.fleetData, app.util.dumpID());
@@ -1327,7 +1327,7 @@ const
                         app_item.icon = "ui/empty.png";
                         let itemindex = parseInt(index, 10) - 1;
                         let quantity = shipInApp.item[0].property.base[itemindex];
-                        if (quantity != undefined && typelist.some(eqtype => addQuantityList.includes(eqtype))) {
+                        if (quantity != undefined && typelist.some(eqtype => addQuantityList.has(eqtype))) {
                             app_item.quantity = quantity;
                         }
                         // go through all type in ship's equip type list
@@ -1715,34 +1715,27 @@ const
             async function imgToDataURI() {
                 let name = "imgToDataURI";
                 console.time(name);
-                let reg = /.*(?:equips|shipicon)\/([^\.]+).*/;
-                let count = 0;
-                let all_data = {};
-                sortedShip.forEach((o, index) => {
-                    let id = srcToCacheID(o.icon, "ship", reg);
-                    if (index != 0 && !all_data[id]) {
-                        all_data[id] = { src: o.icon, id: id, data_url: "", };
+                let reg = /.*(?:equips|shipicon)\/([^\.]+).*/,
+                    count = 0,
+                    all_data = {};
+                [sortedShip, sortedEquip].forEach((list, index) => {
+                    list.forEach(obj => {
+                        let id = srcToCacheID(obj.icon, index == 0 ? "ship" : "equip", reg);
+                        all_data[id] = { src: obj.icon, id: id, data_url: "", };
                         count++;
-                    }
+                    });
                 });
-                sortedEquip.forEach((o, index) => {
-                    let id = srcToCacheID(o.icon, "equip", reg);
-                    if (index != 0 && !all_data[id]) {
-                        all_data[id] = { src: o.icon, id: id, data_url: "", };
-                        count++;
-                    }
-                });
-                let url_data = [];
-                let promise_list = [];
-                let p = _loading_.cache_image;
-                await addProgressBar("fetch_img", "Fetch Images", count, p);
+                let url_data = [],
+                    promise_list = [],
+                    progress = _loading_.cache_image;
+                await addProgressBar("fetch_img", "Fetch Images", count, progress);
                 for (let key in all_data) {
                     let obj = all_data[key];
                     promise_list.push(
                         fetchImageToDataURI(obj.src).then(data_url => {
                             obj.data_url = data_url;
-                            p.bar.value++;
-                            p.lable.textContent = `${p.bar.value}/${p.bar.max}`;
+                            progress.bar.value++;
+                            progress.lable.textContent = `${progress.bar.value}/${progress.bar.max}`;
                         })
                     );
                     url_data.push(obj);
@@ -1777,55 +1770,48 @@ const
             async function loadImgCache(AFDB) {
                 let name = "loadImgCache";
                 console.time(name);
-                let reg = /.*(?:equips|shipicon)\/([^\.]+).*/;
-                let promise_list = [];
-                let max = sortedShip.length + sortedEquip.length - 2;
-                let p = _loading_.load_cache;
-                await addProgressBar("load_cache", "Loading Cache", max, p);
+                let reg = /.*(?:equips|shipicon)\/([^\.]+).*/,
+                    promise_list = [],
+                    max = sortedShip.length + sortedEquip.length - 2,
+                    progress = _loading_.load_cache;
+                await addProgressBar("load_cache", "Loading Cache", max, progress);
                 for (let obj of sortedShip) {
                     if (obj.id == "000000") continue;
                     promise_list.push(
                         AFDB.getImgCache(srcToCacheID(obj.icon, "ship", reg))
-                            .then(cache => {
-                                if (cache) {
-                                    obj.icon = cache.data_url;
-                                    obj.icon_cache = true;
-                                } else {
-                                    obj.icon_cache = false;
-                                    console.log(obj, "cache not found");
-                                }
-                                p.bar.value++;
-                                p.lable.textContent = `${p.bar.value}/${p.bar.max}`;
-                            })
+                            .then(cache => replaceURLToDataURI(obj, cache, progress))
                     );
                 }
                 for (let obj of sortedEquip) {
                     if (obj.id == "666666") continue;
                     promise_list.push(
                         AFDB.getImgCache(srcToCacheID(obj.icon, "equip", reg))
-                            .then(cache => {
-                                if (cache) {
-                                    obj.icon = cache.data_url;
-                                    obj.icon_cache = true;
-                                } else {
-                                    obj.icon_cache = false;
-                                    console.log(obj, "cache not found");
-                                }
-                                p.bar.value++;
-                                p.lable.textContent = `${p.bar.value}/${p.bar.max}`;
-                            })
+                            .then(cache => replaceURLToDataURI(obj, cache, progress))
                     );
                 }
                 await Promise.all(promise_list);
                 console.log(`set ${promise_list.length} src to image cache`);
                 console.timeEnd(name);
                 return true;
+
+                function replaceURLToDataURI(obj, cache, progress) {
+                    if (cache) {
+                        obj.icon = cache.data_url;
+                        obj.icon_cache = true;
+                    } else {
+                        obj.icon_cache = false;
+                        console.log(obj, "cache not found");
+                    }
+                    progress.bar.value++;
+                    progress.lable.textContent = `${progress.bar.value}/${progress.bar.max}`;
+                }
             }
 
             async function saveCacheData(db, db_name, cacheData) {
                 const tx = db.transaction(db_name, "readwrite");
                 const promise_list = cacheData.map(obj => { return tx.store.add(obj); });
                 await Promise.all([...promise_list, tx.done]);
+                return true;
             }
 
             //------------------------------
@@ -1920,7 +1906,7 @@ const
 
                 if (setting[settingKey.thickFrame] == 1) {
                     let ele = document.getElementById("frame_setting");
-                    setTimeout(() => app.option.frameSize(ele), 0);
+                    setTimeout(() => app.option.frameSize(ele), 500);
                 }
 
                 if (setting[settingKey.layout]) {
@@ -2140,7 +2126,7 @@ const
     other_back = new Set([10]),
     other_sub = new Set([0]),
     // equip
-    addQuantityList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13,],
+    addQuantityList = new Set([1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13,]),
     eq_other_nation = new Set([104, 105, 106]),
     eq_nation = new Set(lan_eq_nation.map(o => parseInt(o.id, 10))),
     eq_type = new Set(lan_eq_type.map(o => parseInt(o.id, 10))),
@@ -2214,7 +2200,7 @@ const
         delete: path(dynamicFleet.deleteFleet.name),
     };
 Vue.component("fleet-container", {
-    props: ["fleet", "lang", "show_op", "class_data"],
+    props: ["fleet", "lang", "show_op", "class_data", "ui_text"],
     template: `
         <div v-bind:class="class_data.fleet_box_o">
             <div class="d-flex w-100 fleet_op_box" v-if="show_op">
@@ -2222,7 +2208,7 @@ Vue.component("fleet-container", {
                 <div class="d-flex line-5-item">
                     <div class="d-flex btn-group w-100 m-auto">
                         <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="1,0" onclick="${action.insert}">⮝</button>
-                        <div class="${fleet_btn_style.text}">Normal</div>
+                        <div class="${fleet_btn_style.text}" v-text="ui_text.normal_fleet[lang]">Normal</div>
                         <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="1,1" onclick="${action.insert}">⮟</button>
                     </div>
                 </div>
@@ -2235,12 +2221,12 @@ Vue.component("fleet-container", {
                 <div class="d-flex line-5-item">
                     <div class="d-flex btn-group w-100 m-auto">
                         <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="2,0" onclick="${action.insert}">⮝</button>
-                        <div class="${fleet_btn_style.text}">Sub</div>
+                        <div class="${fleet_btn_style.text}" v-text="ui_text.sub_fleet[lang]">Sub</div>
                         <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="2,1" onclick="${action.insert}">⮟</button>
                     </div>
                 </div>
                 <div class="d-flex line-5-item">
-                    <button class="btn btn-outline-success btn-sm w-50 m-auto fleet_op_hide" v-bind:pos="fleet.id" onclick="${action.copy}">Copy</button>
+                    <button class="btn btn-outline-success btn-sm w-50 m-auto fleet_op_hide" v-bind:pos="fleet.id" onclick="${action.copy}"  v-text="ui_text.copy_fleet[lang]">Copy</button>
                     <button class="btn btn-outline-danger btn-sm w-25 m-auto fleet_op_hide" v-bind:pos="fleet.id" onclick="${action.delete}">✖</button>
                 </div>
             </div>
@@ -2307,6 +2293,11 @@ const
                 app_box: appClassData.app_box.h,
                 fleet_box_o: appClassData.fleet_box_o.h,
                 fleet_box_i: appClassData.fleet_box_i.h,
+            },
+            ui_text: {
+                sub_fleet: vue_ui_text.sub_fleet,
+                normal_fleet: vue_ui_text.normal_fleet,
+                copy_fleet: vue_ui_text.copy_fleet,
             }
         },
     }),
