@@ -974,22 +974,14 @@ const
                 }
             },
             dumpID(raw = false, input_data = [], event = undefined) {
-                switch (ALF_version) {
-                    case 0.05:
-                        return v005();
-                    default:
-                        throw Error("unknown version");
-                }
-                function v005() {
-                    let data = [], raw_data = [];
-                    (!input_data.length ? fleetData : input_data).forEach(fleet => data.push(app.util.dumpFleet(fleet)));
-                    raw_data = data;
-                    //if(!input_data.length) c_formation = extractFormation(raw_data);
-                    data = JSON.stringify(data, util.stringifyReplacer);
-                    data = app.util.updateFleetDataBox(data);
-                    if (event) msg.normal.fleet_dump();
-                    return raw ? raw_data : data;
-                }
+                let data = [];
+                (!input_data.length ? fleetData : input_data).forEach(fleet => data.push(app.util.dumpFleet(fleet)));
+                if (raw) return data; // skip
+                //if(!input_data.length) c_formation = extractFormation(raw_data);
+                data = JSON.stringify(data, util.stringifyReplacer);
+                data = app.util.updateFleetDataBox(data);
+                if (event) msg.normal.fleet_dump();
+                return data;
             },
             dumpFleet(input_fleet_data = []) {
                 let fleetdata = [];
@@ -1464,9 +1456,10 @@ const
         },
         async initialize() {
             console.time(app.initialize.name);
-            await createSortShipList();
-            await createSortEquipList();
+            step("sort Ship"); await createSortShipList();
+            step("sort Equip"); await createSortEquipList();
             // ------------------------------
+            step("access indexedDB");
             if (indexedDB || window.idb) {
                 const [db, AFDB] = await initialDB(db_name, db_ver);
                 let all_key = await AFDB.allKeys();
@@ -1491,18 +1484,26 @@ const
             // ------------------------------
             await createAllShip();
             await createAllEquip();
-            addLanguageToEle();
-            add_search_event();
-            splitButtonGroup("shipnation");
-            splitButtonGroup("eq_nation");
-            addWindowSizeEvent();
-            await loadUserSetting();
-            await loadStorage();
+            step("add text to ele"); addLanguageToEle();
+            step("add search"); add_search_event();
+            step("split button group [ship nation]"); splitButtonGroup("shipnation");
+            step("split button group [equip nation]"); splitButtonGroup("eq_nation");
+            step("add resize event"); addWindowSizeEvent();
+            step("load user setting"); await loadUserSetting();
+            step("load fleet storage"); await loadStorage();
             document.querySelector("#loading_box").style.display = "none";
             document.querySelector("#app_area").style.display = "";
             dynamicFleet.disableInvalidMoveButton();
             console.timeEnd(app.initialize.name);
             setTimeout(() => delete app.initialize, 500);
+
+            //------------------------------
+            function step(text = "") {
+                let ele = document.createElement("div");
+                ele.textContent = text;
+                ele.className = "text-center text-monospace";
+                document.getElementById("loading_box").appendChild(ele);
+            }
 
             //------------------------------
             async function addProgressBar(id = "", text = "", max = 100, appendTo = {}) {
@@ -1721,6 +1722,7 @@ const
                 [sortedShip, sortedEquip].forEach((list, index) => {
                     list.forEach(obj => {
                         let id = srcToCacheID(obj.icon, index == 0 ? "ship" : "equip", reg);
+                        if (all_data[id]) return;
                         all_data[id] = { src: obj.icon, id: id, data_url: "", };
                         count++;
                     });
