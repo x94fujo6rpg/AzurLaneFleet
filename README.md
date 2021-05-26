@@ -14,6 +14,9 @@ This site was developed and tested on `Chrome`/`Firefox`
 Compatibility with other browsers is unknown  
 
 ## Update  
+**2021-05-26**
+- fix indexedDB issue
+
 **2021-05-21**
 - fix `allow duplicate` `thick frame` not work on Firefox
 - fix stuck when image cache not found

@@ -350,7 +350,8 @@ const
     initialDB = async (db_name, db_ver) => {
         const db = await idb.openDB(db_name, db_ver, {
             upgrade(db, oldVersion, newVersion) {
-                if (newVersion > oldVersion) {
+                if ((oldVersion > 0) && (newVersion > oldVersion)) {
+                    // oldVersion 0 = no db exist
                     console.log("clear old version");
                     db.deleteObjectStore(db_name);
                 }
