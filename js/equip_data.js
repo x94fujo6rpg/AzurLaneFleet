@@ -9587,7 +9587,7 @@ var equip_data = {
         "jp_name": "406mm三連装砲MK7",
         "cn_name": "三联装406mm主炮Mk7",
         "tw_name": "三聯裝406mm主炮Mk7",
-        "en_name": "untranslated",
+        "en_name": "Triple 406mm MK7 Main Gun",
         "equip_limit": 0
     },
     "14340": {
