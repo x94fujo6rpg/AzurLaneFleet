@@ -719,7 +719,7 @@ var ship_data = {
         "star_string": "★★★★★",
         "rarity_string": "SR",
         "jp_name": "フミルィル",
-        "en_name": "Fumiruiru",
+        "en_name": "Fumiruiru (no DATA)",
         "cn_name": "芙米露露",
         "tw_name": "芙米露露",
         "equip_1": [
@@ -757,7 +757,7 @@ var ship_data = {
         "star_string": "★★★★★",
         "rarity_string": "SR",
         "jp_name": "サラァナ",
-        "en_name": "Saraana",
+        "en_name": "Saraana (no DATA)",
         "cn_name": "萨拉娜",
         "tw_name": "薩拉娜",
         "equip_1": [
@@ -797,7 +797,7 @@ var ship_data = {
         "star_string": "★★★★★",
         "rarity_string": "SR",
         "jp_name": "ウルゥル",
-        "en_name": "Uruuru",
+        "en_name": "Uruuru (no DATA)",
         "cn_name": "乌璐露",
         "tw_name": "烏璐露",
         "equip_1": [
@@ -837,7 +837,7 @@ var ship_data = {
         "star_string": "★★★★★★",
         "rarity_string": "SSR",
         "jp_name": "クオン",
-        "en_name": "Kuon",
+        "en_name": "Kuon (no DATA)",
         "cn_name": "久远",
         "tw_name": "久遠",
         "equip_1": [
@@ -875,7 +875,7 @@ var ship_data = {
         "star_string": "★★★★★★",
         "rarity_string": "SSR",
         "jp_name": "ルルティエ",
-        "en_name": "Rurutie",
+        "en_name": "Rurutie (no DATA)",
         "cn_name": "露露缇耶",
         "tw_name": "露露緹耶",
         "equip_1": [
@@ -915,7 +915,7 @@ var ship_data = {
         "star_string": "★★★★★★",
         "rarity_string": "SSR",
         "jp_name": "ネコネ",
-        "en_name": "Nekone",
+        "en_name": "Nekone (no DATA)",
         "cn_name": "猫音",
         "tw_name": "貓音",
         "equip_1": [
@@ -16869,6 +16869,44 @@ var ship_data = {
             10
         ]
     },
+    "108060": {
+        "nationality": 1,
+        "type": 8,
+        "base_list": [
+            2,
+            2,
+            1
+        ],
+        "id": 108064,
+        "skin_id": 108060,
+        "english_name": "USS Archerfish",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "108060",
+        "painting": "sheshuiyu",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "アーチャーフィッシュ",
+        "en_name": "USS Archerfish (no DATA)",
+        "cn_name": "射水鱼",
+        "tw_name": "射水魚",
+        "equip_1": [
+            13
+        ],
+        "equip_2": [
+            13
+        ],
+        "equip_3": [
+            1
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
     "108050": {
         "nationality": 1,
         "type": 8,
@@ -17059,6 +17097,44 @@ var ship_data = {
             10
         ]
     },
+    "107990": {
+        "nationality": 1,
+        "type": 7,
+        "base_list": [
+            3,
+            3,
+            2
+        ],
+        "id": 107994,
+        "skin_id": 107990,
+        "english_name": "USS Enterprise",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "107990",
+        "painting": "qiye_younv",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "リトル・エンタープライズ",
+        "en_name": "USS Enterprise (no DATA)",
+        "cn_name": "小企业",
+        "tw_name": "小企業",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            9
+        ],
+        "equip_3": [
+            8
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
     "107380": {
         "nationality": 1,
         "type": 7,
@@ -17119,6 +17195,44 @@ var ship_data = {
         "en_name": "Bunker Hill",
         "cn_name": "邦克山",
         "tw_name": "邦克山",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            9
+        ],
+        "equip_3": [
+            8
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
+    "107140": {
+        "nationality": 1,
+        "type": 7,
+        "base_list": [
+            3,
+            3,
+            2
+        ],
+        "id": 107144,
+        "skin_id": 107140,
+        "english_name": "USS Ticonderoga",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "107140",
+        "painting": "tikangdeluojia",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "タイコンデロガ",
+        "en_name": "USS Ticonderoga (no DATA)",
+        "cn_name": "提康德罗加",
+        "tw_name": "提康德羅加",
         "equip_1": [
             7
         ],
@@ -17557,6 +17671,46 @@ var ship_data = {
             15
         ]
     },
+    "107229": {
+        "nationality": 1,
+        "type": 6,
+        "base_list": [
+            4,
+            4,
+            1
+        ],
+        "id": 107984,
+        "skin_id": 107229,
+        "english_name": "USS Independence",
+        "star": 5,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "107229",
+        "painting": "duli_g",
+        "star_string": "★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "インディペンデンス改",
+        "en_name": "USS Independence (no DATA)",
+        "cn_name": "独立.改",
+        "tw_name": "獨立.改",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            8
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            15
+        ],
+        "equip_5": [
+            10,
+            15
+        ]
+    },
     "107220": {
         "nationality": 1,
         "type": 6,
@@ -17570,7 +17724,7 @@ var ship_data = {
         "english_name": "USS Independence",
         "star": 5,
         "rarity": 4,
-        "retro": 0,
+        "retro": 1,
         "uni_id": "107220",
         "painting": "duli",
         "star_string": "★★★★★",
@@ -18055,6 +18209,44 @@ var ship_data = {
         "en_name": "Massachusetts",
         "cn_name": "马萨诸塞",
         "tw_name": "馬薩諸塞",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
+    "105170": {
+        "nationality": 1,
+        "type": 5,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 105174,
+        "skin_id": 105170,
+        "english_name": "USS New Jersey",
+        "star": 6,
+        "rarity": 6,
+        "retro": 0,
+        "uni_id": "105170",
+        "painting": "xinzexi",
+        "star_string": "★★★★★★",
+        "rarity_string": "UR",
+        "jp_name": "ニュージャージー",
+        "en_name": "USS New Jersey (no DATA)",
+        "cn_name": "新泽西",
+        "tw_name": "新澤西",
         "equip_1": [
             4
         ],
@@ -18717,6 +18909,44 @@ var ship_data = {
             10
         ]
     },
+    "103140": {
+        "nationality": 1,
+        "type": 3,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 103144,
+        "skin_id": 103140,
+        "english_name": "USS San Francisco",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "103140",
+        "painting": "jiujinshan",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "サンフランシスコ",
+        "en_name": "USS San Francisco (no DATA)",
+        "cn_name": "旧金山",
+        "tw_name": "舊金山",
+        "equip_1": [
+            3
+        ],
+        "equip_2": [
+            1
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
     "103130": {
         "nationality": 1,
         "type": 3,
@@ -19239,6 +19469,46 @@ var ship_data = {
         "equip_2": [
             2,
             6
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "102290": {
+        "nationality": 1,
+        "type": 2,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 102294,
+        "skin_id": 102290,
+        "english_name": "USS Boise",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "102290",
+        "painting": "boyixi",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "ボイシ",
+        "en_name": "USS Boise (no DATA)",
+        "cn_name": "博伊西",
+        "tw_name": "博伊西",
+        "equip_1": [
+            2
+        ],
+        "equip_2": [
+            1
         ],
         "equip_3": [
             6
@@ -20363,6 +20633,46 @@ var ship_data = {
         "tw_name": "奧馬哈",
         "equip_1": [
             2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "101470": {
+        "nationality": 1,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 101474,
+        "skin_id": 101470,
+        "english_name": "USS Morrison",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "101470",
+        "painting": "molisen",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "モリソン",
+        "en_name": "USS Morrison (no DATA)",
+        "cn_name": "莫里森",
+        "tw_name": "莫里森",
+        "equip_1": [
+            1
         ],
         "equip_2": [
             5

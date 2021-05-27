@@ -9552,6 +9552,44 @@ var equip_data = {
         "en_name": "Triple 406mm Mk 2 Main Gun Mount",
         "equip_limit": 0
     },
+    "14400": {
+        "nationality": 1,
+        "type": 4,
+        "attribute_2": "cannon",
+        "rarity": 3,
+        "tech": 1,
+        "ammo": 3,
+        "ammo_icon": [
+            1
+        ],
+        "id": 14400,
+        "icon": "14400",
+        "ship_type_forbidden": [],
+        "jp_name": "406mm三連装砲MK7",
+        "cn_name": "三联装406mm主炮Mk7",
+        "tw_name": "三聯裝406mm主炮Mk7",
+        "en_name": "Triple 406mm MK7 Main Gun",
+        "equip_limit": 0
+    },
+    "14460": {
+        "nationality": 1,
+        "type": 4,
+        "attribute_2": "cannon",
+        "rarity": 6,
+        "tech": 0,
+        "ammo": 2,
+        "ammo_icon": [
+            3
+        ],
+        "id": 14460,
+        "icon": "14400",
+        "ship_type_forbidden": [],
+        "jp_name": "406mm三連装砲MK7",
+        "cn_name": "三联装406mm主炮Mk7",
+        "tw_name": "三聯裝406mm主炮Mk7",
+        "en_name": "untranslated",
+        "equip_limit": 0
+    },
     "14340": {
         "nationality": 1,
         "type": 4,

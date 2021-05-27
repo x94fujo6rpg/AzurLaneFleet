@@ -350,12 +350,18 @@ const
     initialDB = async (db_name, db_ver) => {
         const db = await idb.openDB(db_name, db_ver, {
             upgrade(db, oldVersion, newVersion) {
-                if (oldVersion && db.objectStoreNames.length && (newVersion > oldVersion)) {
-                    // oldVersion 0 = no db exist
-                    console.log("clear old version");
-                    db.deleteObjectStore(db_name);
+                try {
+                    if (oldVersion && db.objectStoreNames.length && (newVersion > oldVersion)) {
+                        // oldVersion 0 = no db exist
+                        // db.objectStoreNames.length 0 = no store exist
+                        console.log("clear old version");
+                        db.deleteObjectStore(db_name);
+                    }
+                } catch (e) {
+                    console.log(db, oldVersion, newVersion, e);
+                } finally {
+                    db.createObjectStore(db_name, { keyPath: "id", });
                 }
-                db.createObjectStore(db_name, { keyPath: "id", });
             }
         });
         //console.log(db);
@@ -696,8 +702,8 @@ const
                 item id 
                 old 
                 _0123 => fleet=0 side=1 pos=2 item=3
-                => when id bigger then 10
-                => -10123 => explosion
+                => when fleet id bigger then 10
+                => _10123 => explosion
             
                 new
                 0_1_2_3 => can handle more digi
