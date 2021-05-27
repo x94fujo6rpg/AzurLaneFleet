@@ -14,6 +14,7 @@
     <meta name="og:image" content="https://github.com/x94fujo6rpg/AzurLaneFleet/raw/master/ui/screenshots.jpg" />
     <meta name="og:description" content="Easily share your AzurLane fleet configuration" />
 
+    <link rel="stylesheet" href="lib/normalize.css" as="style">
     <link rel="stylesheet" href="lib/bootstrap.min.css" as="style">
     <link rel="prefetch" href="lib/jquery-3.3.1.slim.min.js" as="script">
     <link rel="prefetch" href="lib/popper.min.js" as="script">
@@ -23,7 +24,7 @@
     <link rel="prefetch" href="lib/lz-string.min.js" as="script">
     <link rel="prefetch" href="js/ship_data.min.js?v=a818001cdf9b" as="script">
     <link rel="prefetch" href="js/equip_data.min.js?v=0a0c7337b59c" as="script">
-    <link rel="prefetch" href="js/main-v2.min.js?v=5b3ac457c041" as="script">
+    <link rel="prefetch" href="js/main-v2.min.js?v=eb95d9ac5ef1" as="script">
     <style>
         body {
             color: white;
@@ -34,8 +35,15 @@
             background-color: rgb(58, 58, 58);
         }
         
-        .ship_container {
-            background-color: blue;
+        .fleet_side_box {
+            margin: 0.5rem;
+            /*padding: 0.5rem;*/
+        }
+
+        .fleet_op_box {
+            display:flex;
+            width: 100%;
+            padding: 0.5rem;
         }
         
         .item_container {
@@ -115,13 +123,15 @@
         .itemq {
             font-family: monospace;
             position: absolute;
-            top: -0.2rem;
-            right: 0.5rem;
+            /*top: -0.2rem;
+            right: 0.5rem;*/
             z-index: 103;
             color: white;
             font-size: 1.5rem;
             font-weight: bold;
             text-shadow: 0 0 0.2rem black, 0 0 0.3rem black;
+            margin-left: -1.3rem;
+            margin-top: -0.1rem;
         }
         
         .ship_pos2 {
@@ -222,6 +232,12 @@
         
         .fleet_box_o:hover>div>div>div>.fleet_op_hide {
             opacity: 1;
+        }
+        
+        .ship_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         
         .msg_box {
@@ -436,7 +452,7 @@
     <script src="lib/index-min.js"></script>
     <script src='js/ship_data.min.js?v=a818001cdf9b'></script>
     <script src='js/equip_data.min.js?v=0a0c7337b59c'></script>
-    <script src="js/main-v2.min.js?v=5b3ac457c041"></script>
+    <script src="js/main-v2.min.js?v=eb95d9ac5ef1"></script>
 </body>
 
 </html>

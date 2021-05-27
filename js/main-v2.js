@@ -563,12 +563,12 @@ const
                         fleet_box_o: {
                             h: "fleet_box_o d-grid justify-content-center",
                             v: "fleet_box_o d-grid border border-secondary",
-                            v2: "fleet_box_o flex-row border border-secondary"
+                            v2: "fleet_box_o flex-row"
                         },
                         fleet_box_i: {
-                            h: "fleet_box_i row m-2 border border-secondary py-2",
-                            v: "fleet_box_i col m-2",
-                            v2: "fleet_box_i col m-2"
+                            h: "fleet_box_i row m-2 border border-secondary", // p-1 py-2
+                            v: "fleet_box_i col p-0", // m-2
+                            v2: "fleet_box_i col p-0 border border-secondary" // m-2
                         }
                     };
                     for (let key in border) {
@@ -584,8 +584,8 @@ const
                         },
                         fleet_box_i: {
                             h: "fleet_box_i row m-2",
-                            v: "fleet_box_i col m-2",
-                            v2: "fleet_box_i col m-2"
+                            v: "fleet_box_i col p-0", // m-2
+                            v2: "fleet_box_i col p-0" // m-2
                         }
                     };
                     for (let key in noborder) {
@@ -2081,8 +2081,8 @@ const
         },
         fleet_box_i: {
             h: "fleet_box_i row m-2",
-            v: "fleet_box_i col m-2",
-            v2: "fleet_box_i col m-2"
+            v: "fleet_box_i col p-0", // m-2
+            v2: "fleet_box_i col p-0" // m-2
         }
     },
     layout_list = {
@@ -2173,19 +2173,19 @@ Vue.component("item-container", {
                 <img class="img-fluid bg" v-bind:src="item.property.bg">
                 <img class="img-fluid frame" v-bind:src="item.property.frame">
                 <img class="img-fluid icon" v-bind:src="item.property.icon">
-                <span class="d-flex justify-content-start text-monospace itemq" v-text="item.property.quantity"></span>
-                <span class="d-flex justify-content-start text-monospace ship_pos2" v-text="item.property.ship_pos"></span>
+                <span class="text-monospace itemq" v-text="item.property.quantity" v-if="item.property.quantity"></span>
+                <span class="text-monospace ship_pos2" v-text="item.property.ship_pos" v-if="item.property.ship_pos"></span>
               </div>
               <span class="justify-content-center item_name" v-text="item.property[lang]"></span>
             </div>
         </button>
     `
 });
-
+//col
 Vue.component("ship-container", {
     props: ["ship", "lang"],
     template: `
-        <div class="col">
+        <div class="ship_container">
             <item-container
                 v-for="item in ship.item"
                 v-bind:key="item.id"
@@ -2213,7 +2213,7 @@ Vue.component("fleet-container", {
     props: ["fleet", "lang", "show_op", "class_data", "ui_text"],
     template: `
         <div v-bind:class="class_data.fleet_box_o">
-            <div class="d-flex w-100 fleet_op_box" v-if="show_op">
+            <div class="fleet_op_box" v-if="show_op">
                 <div class="line-5-item text-monospace text-center m-auto fleet_name" v-text="fleet.id">Fleet_ID</div>
                 <div class="d-flex line-5-item">
                     <div class="d-flex btn-group w-100 m-auto">
