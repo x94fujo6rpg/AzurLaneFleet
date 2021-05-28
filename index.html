@@ -101,35 +101,38 @@
             background-color: black;
         }
         
+        .box:hover>.icon_box {
+            opacity: 0.5;
+        }
+        
         .box:hover>span {
             color: Tomato;
             background-color: black;
-            border-width: 0.2rem 0.2rem 0.2rem 0.2rem;
-            border-color: black;
-            border-style: solid;
+            padding: 0.2rem 0.3rem;
+            top: 0.02rem;
+        }
+        
+        .text_shadow {
+            color: white;
+            font-family: monospace, monospace;
+            text-shadow: 0 0 0.1rem black, 0 0 0.1rem black, 0 0 0.2rem black, 0 0 0.5rem black;
         }
         
         .item_name {
-            font-family: monospace;
             white-space: nowrap;
             font-size: 1.1rem;
-            color: white;
             display: inline;
             position: relative;
             top: -0.05rem;
-            text-shadow: 0 0 0.2rem black;
         }
         
         .itemq {
-            font-family: monospace;
             position: absolute;
             top: 0.1rem;
             right: 0.6rem;
             z-index: 103;
-            color: white;
             font-size: 1.4rem;
             font-weight: bold;
-            text-shadow: 0 0 0.1rem black, 0 0 0.1rem black, 0 0 0.2rem black, 0 0 0.2rem black;
             /* some browser doesn't support this...?
             margin-left: -1.3rem;
             margin-top: -0.1rem;
@@ -137,29 +140,12 @@
         }
         
         .ship_pos2 {
-            font-family: monospace;
             position: absolute;
             bottom: -0.3rem;
             right: 0.3rem;
             z-index: 103;
-            color: white;
             font-size: 1.5rem;
             font-weight: bold;
-            text-shadow: 0 0 0.1rem black, 0 0 0.1rem black, 0 0 0.2rem black, 0 0 0.2rem black;
-        }
-        
-        .ship_pos {
-            font-family: monospace;
-            position: absolute;
-            top: 0.1rem;
-            left: 0.5rem;
-            z-index: 103;
-            font-size: 1.2rem;
-            font-weight: bold;
-            text-shadow: 0 0 0.2rem rgb(0 0 0 / 50%), 0 0 0.3rem rgb(0 0 0 / 50%);
-            -webkit-text-stroke: rgba(0, 0, 0, 0.1);
-            -webkit-text-stroke-width: 0.2rem;
-            -webkit-text-fill-color: rgba(255, 255, 255, 0.7);
         }
         
         .databox {

@@ -1672,7 +1672,7 @@ const
                         box.className = "container-fluid p-0 box";
 
                         let name = document.createElement("span");
-                        name.className = "justify-content-center item_name";
+                        name.className = "item_name text_shadow";
                         name.setAttribute("name", "name");
                         name.setAttribute("tw", data.tw);
                         name.setAttribute("cn", data.cn);
@@ -2173,14 +2173,15 @@ Vue.component("item-container", {
                 <img class="img-fluid bg" v-bind:src="item.property.bg">
                 <img class="img-fluid frame" v-bind:src="item.property.frame">
                 <img class="img-fluid icon" v-bind:src="item.property.icon">
-                <span class="text-monospace itemq" v-text="item.property.quantity" v-if="item.property.quantity"></span>
-                <span class="text-monospace ship_pos2" v-text="item.property.ship_pos" v-if="item.property.ship_pos"></span>
+                <span class="itemq text_shadow" v-text="item.property.quantity" v-if="item.property.quantity"></span>
+                <span class="ship_pos2 text_shadow" v-text="item.property.ship_pos" v-if="item.property.ship_pos"></span>
               </div>
-              <span class="justify-content-center item_name" v-text="item.property[lang]"></span>
+              <span class="item_name text_shadow" v-text="item.property[lang]"></span>
             </div>
         </button>
     `
 });
+
 //col
 Vue.component("ship-container", {
     props: ["ship", "lang"],
