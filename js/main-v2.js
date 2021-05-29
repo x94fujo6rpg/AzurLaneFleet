@@ -660,7 +660,7 @@ const
             },
             equip: {
                 resetFilter(toDefault = false) {
-                    const default_rarity = new Set(toDefault ? [6, 5, 4] : []),
+                    const default_rarity = new Set(toDefault ? [6, 5, 4, 3] : []),
                         default_tier = new Set(toDefault ? [0, 3] : []);
                     document.querySelectorAll("#eq_tier button").forEach(b => util.changeButtonStats(b, default_tier.has(parseInt(b.value, 10)) ? true : false));
                     document.querySelectorAll("#eq_rarity button").forEach(b => util.changeButtonStats(b, default_rarity.has(parseInt(b.value, 10)) ? true : false));
@@ -767,11 +767,12 @@ const
                 if (isNaN(fleetID) || fleetID < 0) throw Error("no fleet_id");
                 let front = [],
                     back = [],
-                    emptyShip = this.creatEmptyShip();
+                    emptyShip = this.creatEmptyShip(),
+                    max = emptyShip.length;
                 for (let position = 0; position < 6; position++) {
                     if (position < 3) {
                         let ship = [];
-                        for (let itemIndex = 0; itemIndex < emptyShip.length; itemIndex++) {
+                        for (let itemIndex = 0; itemIndex < max; itemIndex++) {
                             let property = Object.assign({}, emptyShip[itemIndex].property);
                             if (itemIndex == 0) property.ship_pos = posTable.F[position];
                             property.pos = "front";
@@ -780,7 +781,7 @@ const
                         front.push({ id: `fleet_${fleetID}_front_${position}`, item: ship, });
                     } else {
                         let ship = [];
-                        for (let itemIndex = 0; itemIndex < emptyShip.length; itemIndex++) {
+                        for (let itemIndex = 0; itemIndex < max; itemIndex++) {
                             let property = Object.assign({}, emptyShip[itemIndex].property);
                             if (itemIndex == 0) property.ship_pos = posTable.BS[position - 3];
                             property.pos = "back";
@@ -796,8 +797,8 @@ const
                 let sub = [],
                     emptyShip = this.creatEmptyShip();
                 for (let position = 0; position < 3; position++) {
-                    let ship = [];
-                    for (let itemIndex = 0; itemIndex < emptyShip.length; itemIndex++) {
+                    let ship = [], max = emptyShip.length;
+                    for (let itemIndex = 0; itemIndex < max; itemIndex++) {
                         let property = Object.assign({}, emptyShip[itemIndex].property);
                         if (itemIndex == 0) property.ship_pos = posTable.BS[position];
                         property.pos = "sub";
@@ -860,48 +861,48 @@ const
             async updateSetting(item) {
                 $(item).button("toggle");
                 let strlist = item.name.split("_"),
-                    type1 = strlist[0], // ship, equip
-                    type2 = strlist[1],
+                    type = strlist[0], // ship, equip
+                    filter_type = strlist[1],
                     value = parseInt(strlist[2], 10); //type int
-                if (type1 == "ship") {
-                    if (type2 === "nation") {
-                        await this.updateFilter("nation", value, type2);
-                    } else if (type2 === "type") {
+                if (type == "ship") {
+                    if (filter_type === "nation") {
+                        await this.updateFilter("nation", value, filter_type);
+                    } else if (filter_type === "type") {
                         switch (c_side) {
                             case "0":
-                                await this.updateFilter("front", value, type2);
+                                await this.updateFilter("front", value, filter_type);
                                 break;
                             case "1":
-                                await this.updateFilter("back", value, type2);
+                                await this.updateFilter("back", value, filter_type);
                                 break;
                             case "2":
-                                await this.updateFilter("sub", value, type2);
+                                await this.updateFilter("sub", value, filter_type);
                                 break;
                             default:
-                                throw Error(`unknown ship type ${type2}`);
+                                throw Error(`unknown ship type ${filter_type}`);
                         }
-                    } else if (type2 === "rarity") {
-                        await this.updateFilter("rarity", value, type2);
+                    } else if (filter_type === "rarity") {
+                        await this.updateFilter("rarity", value, filter_type);
                         item.style.color = item.style.color.length > 0 ? "" : "gold";
                     }
                     app.shipDisplay();
-                } else if (type1 == "equip") {
-                    switch (type2) {
+                } else if (type == "equip") {
+                    switch (filter_type) {
                         case "nation":
-                            await this.updateFilter("eq_nation", value, type2);
+                            await this.updateFilter("eq_nation", value, filter_type);
                             break;
                         case "type":
-                            await this.updateFilter("eq_type", value, type2);
+                            await this.updateFilter("eq_type", value, filter_type);
                             break;
                         case "rarity":
-                            await this.updateFilter("eq_rarity", value, type2);
+                            await this.updateFilter("eq_rarity", value, filter_type);
                             item.style.color = item.style.color.length > 0 ? "" : "gold";
                             break;
                         case "tier":
-                            await this.updateFilter("eq_tier", value, type2);
+                            await this.updateFilter("eq_tier", value, filter_type);
                             break;
                         default:
-                            throw Error(`unknown equip type ${type2}`);
+                            throw Error(`unknown equip type ${filter_type}`);
                     }
                     app.equipDisplay();
                 }
@@ -1142,25 +1143,24 @@ const
                 console.log("search:", search_input);
                 let shiplist = document.querySelectorAll("#shiplist button");
                 shiplist.forEach(item => {
-                    if (item.id != "000000") {
-                        let ship = ship_data[item.id];
-                        let ismatch = [
-                            ship.tw_name,
-                            ship.cn_name,
-                            ship.en_name.toLowerCase(),
-                            ship.jp_name,
-                            ship.english_name.toLowerCase(),
-                        ].some(t => t.includes(search_input));
-                        if (ismatch) {
-                            if (ship) {
-                                let is_select = app.util.isCorrectShipType(ship.type);
-                                item.style.display = is_select ? "" : "none";
-                                item.setAttribute("displayed", is_select ? true : false);
-                            }
-                        } else {
-                            item.style.display = "none";
-                            item.setAttribute("displayed", false);
+                    if (item.id == "000000") return;
+                    let ship = ship_data[item.id];
+                    let ismatch = [
+                        ship.tw_name,
+                        ship.cn_name,
+                        ship.en_name.toLowerCase(),
+                        ship.jp_name,
+                        ship.english_name.toLowerCase(),
+                    ].some(t => t.includes(search_input));
+                    if (ismatch) {
+                        if (ship) {
+                            let is_select = app.util.isCorrectShipType(ship.type);
+                            item.style.display = is_select ? "" : "none";
+                            item.setAttribute("displayed", is_select ? true : false);
                         }
+                    } else {
+                        item.style.display = "none";
+                        item.setAttribute("displayed", false);
                     }
                 });
                 app.util.countShipDisplayed();
@@ -1201,16 +1201,15 @@ const
         shipDisplay() {
             let shiplist = document.querySelectorAll("#shiplist button");
             shiplist.forEach((item) => {
-                if (item.id != "000000") {
-                    let id = parseInt(item.id, 10),
-                        nation = ship_data[id].nationality,
-                        type = ship_data[id].type,
-                        rarity = ship_data[id].rarity,
-                        retro = ship_data[id].retro,
-                        is_select = _isShipSelect(nation, type, rarity, retro);
-                    item.style.display = is_select ? "" : "none";
-                    item.setAttribute("displayed", is_select ? true : false);
-                }
+                if (item.id == "000000") return;
+                let id = parseInt(item.id, 10),
+                    nation = ship_data[id].nationality,
+                    type = ship_data[id].type,
+                    rarity = ship_data[id].rarity,
+                    retro = ship_data[id].retro,
+                    is_select = _isShipSelect(nation, type, rarity, retro);
+                item.style.display = is_select ? "" : "none";
+                item.setAttribute("displayed", is_select ? true : false);
             });
             if (!document.getElementById("allow_dup_btn").classList.contains("active")) _hideShipInFleet();
             app.util.countShipDisplayed();

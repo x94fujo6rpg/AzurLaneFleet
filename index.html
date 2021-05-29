@@ -29,6 +29,8 @@
         body {
             color: white;
             background-color: rgb(50, 50, 50);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
         
         .fleet_container {
@@ -37,7 +39,6 @@
         
         .fleet_side_box {
             margin: 0.5rem;
-            /*padding: 0.5rem;*/
         }
         
         .fleet_op_box {
@@ -108,14 +109,16 @@
         .box:hover>span {
             color: Tomato;
             background-color: black;
-            padding: 0.1rem 0.2rem;
-            top: 0.02rem;
+            border-width: 0.2rem;
+            border-color: black;
+            border-style: solid;
+            top: 0.01rem;
         }
         
         .text_shadow {
+            --shadow: black;
             color: white;
-            font-family: monospace, monospace;
-            text-shadow: 0 0 0.1rem black, 0 0 0.1rem black, 0 0 0.2rem black, 0 0 0.5rem black;
+            text-shadow: 0 0 0.1rem var(--shadow), 0 0 0.2rem var(--shadow), 0 0 0.2rem var(--shadow), 0 0 0.5rem var(--shadow);
         }
         
         .item_name {
@@ -133,10 +136,6 @@
             z-index: 103;
             font-size: 1.4rem;
             font-weight: bold;
-            /* some browser doesn't support this...?
-            margin-left: -1.3rem;
-            margin-top: -0.1rem;
-            */
         }
         
         .ship_pos2 {
@@ -242,6 +241,17 @@
             word-break: break-word;
         }
     </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKESRCZC4Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-YKESRCZC4Z');
+    </script>
 </head>
 
 <body class="text-monospace">
@@ -255,7 +265,7 @@
         </div>
     </div>
     <div id="app_area" style="display:none;">
-        <div id="options" class="">
+        <div id="options">
             <div class="btn-group btn-group-toggle d-flex w-25 my-2 mx-auto" data-toggle="buttons">
                 <label class="btn btn-outline-secondary font-weight-bold w-100" id="tw" onclick="app.option.setLanguage(this)">
                     <input type="radio" name="lang">TW
