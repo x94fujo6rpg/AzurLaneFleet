@@ -1444,6 +1444,46 @@ var ship_data = {
             10
         ]
     },
+    "9702010": {
+        "nationality": 97,
+        "type": 2,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 9702014,
+        "skin_id": 9702010,
+        "english_name": "Helena.META",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "9702010",
+        "painting": "hailunna_alter",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "ヘレナ(META)",
+        "en_name": "Helena META",
+        "cn_name": "海伦娜·META",
+        "tw_name": "海倫娜·META",
+        "equip_1": [
+            2
+        ],
+        "equip_2": [
+            1
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
     "999010": {
         "nationality": 9,
         "type": 5,

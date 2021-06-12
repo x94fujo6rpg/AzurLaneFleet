@@ -99,13 +99,13 @@ const
         { id: 4, cn: "戰巡", en: "Battle Cruiser", jp: "巡洋戦艦", code: "BC", pos: "back" },
         { id: 5, cn: "戰列", en: "Battle Ship", jp: "戦艦", code: "BB", pos: "back" },
         { id: 6, cn: "輕航", en: "Light Carrier", jp: "軽空母", code: "CVL", pos: "back" },
-        { id: 7, cn: "航母", en: "Carrier", jp: "空母", code: "CV", pos: "back" },
+        { id: 7, cn: "航母", en: "Aircraft Carrier", jp: "空母", code: "CV", pos: "back" },
         { id: 13, cn: "重砲", en: "Monitor", jp: "砲艦", code: "BM", pos: "back" },
         { id: 12, cn: "維修", en: "Repair Ship", jp: "工作", code: "AR", pos: "back" },
         { id: 0, cn: "其他", en: "Other", jp: "その他", code: "Other" },
     ],
     lan_ship_rarity = [
-        { id: 6, cn: "海上傳奇", en: "Decisive", jp: "UR", code: "★★★★★★" },
+        { id: 6, cn: "海上傳奇", en: "Ultra Rare", jp: "UR", code: "★★★★★★" },
         { id: 5, cn: "超稀有", en: "SuperRare", jp: "SSR", code: "★★★★★" },
         { id: 4, cn: "精銳", en: "Elite", jp: "SR", code: "★★★★" },
         { id: 3, cn: "稀有", en: "Rare", jp: "R", code: "★★★" },
@@ -1466,7 +1466,7 @@ const
             step("sort Equip"); await createSortEquipList();
             // ------------------------------
             step("access indexedDB");
-            if (indexedDB || window.idb) {
+            if (indexedDB && window.idb) {
                 const [db, AFDB] = await initialDB(db_name, db_ver);
                 let all_key = await AFDB.allKeys();
                 if (!all_key.length) {
@@ -2143,7 +2143,7 @@ const
     eq_tier = new Set(lan_eq_tier.map(o => parseInt(o.id, 10))),
     // db
     db_name = "image_cache",
-    db_ver = 3,
+    db_ver = 4,
     // dump data
     ALF_version = 0.05;
 
