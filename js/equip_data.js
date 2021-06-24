@@ -1616,6 +1616,32 @@ var equip_data = {
         "en_name": "Pressure-Resistant Hull Design",
         "equip_limit": 800
     },
+    "960": {
+        "nationality": 4,
+        "type": 10,
+        "attribute_2": "cannon",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 10,
+        "ammo_icon": [],
+        "id": 960,
+        "icon": "960",
+        "ship_type_forbidden": [
+            1,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            17
+        ],
+        "jp_name": "FuMO 25",
+        "cn_name": "FuMO 25",
+        "tw_name": "FuMO 25",
+        "en_name": "FuMO 25",
+        "equip_limit": 960
+    },
     "2740": {
         "nationality": 4,
         "type": 10,

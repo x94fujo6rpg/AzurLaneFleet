@@ -9849,6 +9849,46 @@ var ship_data = {
             14
         ]
     },
+    "301860": {
+        "nationality": 3,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 301864,
+        "skin_id": 301860,
+        "english_name": "IJN Kazagumo",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "301860",
+        "painting": "fengyun",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "風雲",
+        "en_name": "Kazagumo",
+        "cn_name": "风云",
+        "tw_name": "風雲",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
     "301850": {
         "nationality": 3,
         "type": 1,
@@ -10009,6 +10049,46 @@ var ship_data = {
             14
         ]
     },
+    "301819": {
+        "nationality": 3,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 301534,
+        "skin_id": 301819,
+        "english_name": "IJN Kasumi",
+        "star": 5,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "301819",
+        "painting": "xia_g",
+        "star_string": "★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "霞改",
+        "en_name": "Kasumi (Retrofit)",
+        "cn_name": "霞改",
+        "tw_name": "霞改",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
     "301810": {
         "nationality": 3,
         "type": 1,
@@ -10022,7 +10102,7 @@ var ship_data = {
         "english_name": "IJN Kasumi",
         "star": 5,
         "rarity": 4,
-        "retro": 0,
+        "retro": 1,
         "uni_id": "301810",
         "painting": "xia",
         "star_string": "★★★★★",
@@ -12351,6 +12431,46 @@ var ship_data = {
         "en_name": "Ayanami",
         "cn_name": "绫波",
         "tw_name": "綾波",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "301020": {
+        "nationality": 3,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 301024,
+        "skin_id": 301020,
+        "english_name": "IJN Shirayuki",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "301020",
+        "painting": "baixue",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "白雪",
+        "en_name": "Shirayuki",
+        "cn_name": "白雪",
+        "tw_name": "白雪",
         "equip_1": [
             1
         ],

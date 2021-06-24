@@ -470,36 +470,24 @@ const
             switchLayout(ele, same = false) {
                 switch (ele.textContent) {
                     case layout_list.h:
-                        if (same) {
-                            changeClass("h");
-                            ele.textContent = layout_list.h;
-                        } else {
-                            changeClass("v");
-                            ele.textContent = layout_list.v;
-                        }
+                        setLayout("h", "v");
                         break;
                     case layout_list.v:
-                        if (same) {
-                            changeClass("v");
-                            ele.textContent = layout_list.v;
-                        } else {
-                            changeClass("v2");
-                            ele.textContent = layout_list.v2;
-                        }
+                        setLayout("v", "v2");
                         break;
                     case layout_list.v2:
-                        if (same) {
-                            changeClass("v2");
-                            ele.textContent = layout_list.v2;
-                        } else {
-                            changeClass("h");
-                            ele.textContent = layout_list.h;
-                        }
+                        setLayout("v2", "h");
                         break;
                     default:
                         throw Error("unknown layout");
                 }
                 LS.userSetting.set(settingKey.layout, layout_list[ele.textContent]);
+
+                function setLayout(current, next) {
+                    changeClass(same ? current : next);
+                    ele.textContent = layout_list[same ? current : next];
+                }
+
                 function changeClass(classKey = "") {
                     for (let key in appClassData) {
                         if (key == "app_box") {
@@ -2143,7 +2131,7 @@ const
     eq_tier = new Set(lan_eq_tier.map(o => parseInt(o.id, 10))),
     // db
     db_name = "image_cache",
-    db_ver = 4,
+    db_ver = 5,
     // dump data
     ALF_version = 0.05;
 

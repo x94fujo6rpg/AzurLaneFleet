@@ -192,8 +192,9 @@ You basically need to simulate the entire game
 It's crazy to try to calculate the interaction between skills  
 Even if you manage to do it  
 The game itself will still have bugs that cause the reality doesn't match  
-  
-It is very common for skills to have bugs  
+
+Some game design/bug, can only be found by directly checking the code  
+And it is very common for skills to have bugs  
 If you have followed some players on `bilibili` `NGA` `CN Wiki` you will know  
 ~~`certain anonymous inorganic compound`, `#\d{4}`, `those who make the Tier List`...etc~~  
   
