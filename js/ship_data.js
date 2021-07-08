@@ -3225,6 +3225,45 @@ var ship_data = {
             10
         ]
     },
+    "699010": {
+        "nationality": 6,
+        "type": 5,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 699014,
+        "skin_id": 699010,
+        "english_name": "RN Marco Polo",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "699010",
+        "painting": "makeboluo",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "マルコ・ポーロ",
+        "en_name": "RN Marco Polo (no DATA)",
+        "cn_name": "马可波罗",
+        "tw_name": "馬可波羅",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
     "605060": {
         "nationality": 6,
         "type": 5,
@@ -4173,6 +4212,45 @@ var ship_data = {
             14
         ]
     },
+    "499050": {
+        "nationality": 4,
+        "type": 18,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 499054,
+        "skin_id": 499050,
+        "english_name": "KMS Ägir",
+        "star": 6,
+        "rarity": 6,
+        "retro": 0,
+        "uni_id": "499050",
+        "painting": "aijier",
+        "star_string": "★★★★★★",
+        "rarity_string": "UR",
+        "jp_name": "エーギル",
+        "en_name": "KMS Ägir (no DATA)",
+        "cn_name": "埃吉尔",
+        "tw_name": "埃吉爾",
+        "equip_1": [
+            3,
+            11
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
     "408110": {
         "nationality": 4,
         "type": 8,
@@ -4583,6 +4661,44 @@ var ship_data = {
         ],
         "equip_3": [
             1
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
+    "499060": {
+        "nationality": 4,
+        "type": 7,
+        "base_list": [
+            2,
+            3,
+            3
+        ],
+        "id": 499064,
+        "skin_id": 499060,
+        "english_name": "KMS August von Parseval",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "499060",
+        "painting": "aogusite",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "アウグスト・フォン・パーセヴァル",
+        "en_name": "KMS August von Parseval (no DATA)",
+        "cn_name": "奥古斯特·冯·帕塞瓦尔",
+        "tw_name": "奧古斯特·馮·帕塞瓦爾",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            9
+        ],
+        "equip_3": [
+            8
         ],
         "equip_4": [
             10
@@ -6670,6 +6786,46 @@ var ship_data = {
         ],
         "equip_3": [
             1
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
+    "399050": {
+        "nationality": 3,
+        "type": 7,
+        "base_list": [
+            3,
+            4,
+            2
+        ],
+        "id": 399054,
+        "skin_id": 399050,
+        "english_name": "IJN Hakuryū",
+        "star": 6,
+        "rarity": 6,
+        "retro": 0,
+        "uni_id": "399050",
+        "painting": "bailong",
+        "star_string": "★★★★★★",
+        "rarity_string": "UR",
+        "jp_name": "白龍",
+        "en_name": "IJN Hakuryū (no DATA)",
+        "cn_name": "白龙",
+        "tw_name": "白龍",
+        "equip_1": [
+            7,
+            8
+        ],
+        "equip_2": [
+            9
+        ],
+        "equip_3": [
+            8,
+            9
         ],
         "equip_4": [
             10
@@ -18944,6 +19100,44 @@ var ship_data = {
         ],
         "equip_2": [
             1
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
+    "199030": {
+        "nationality": 1,
+        "type": 3,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 199034,
+        "skin_id": 199030,
+        "english_name": "USS Anchorage ",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "199030",
+        "painting": "ankeleiqi",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "アンカレッジ",
+        "en_name": "USS Anchorage  (no DATA)",
+        "cn_name": "安克雷奇",
+        "tw_name": "安克雷奇",
+        "equip_1": [
+            3
+        ],
+        "equip_2": [
+            5
         ],
         "equip_3": [
             6

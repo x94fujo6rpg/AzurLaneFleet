@@ -1209,6 +1209,27 @@ var equip_data = {
         "en_name": "Type 2 Seaplane Fighter",
         "equip_limit": 0
     },
+    "44400": {
+        "nationality": 4,
+        "type": 11,
+        "attribute_2": "cannon",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 1,
+        "ammo_icon": [
+            2
+        ],
+        "id": 44400,
+        "icon": "44400",
+        "ship_type_forbidden": [
+            3
+        ],
+        "jp_name": "試作型三連装305mmSKC39主砲(超巡)",
+        "cn_name": "试作型三联装305mmSKC39主炮(超巡用)",
+        "tw_name": "試作型三聯裝305mmSKC39主炮(超巡用)",
+        "en_name": "(no DATA)",
+        "equip_limit": 0
+    },
     "43140": {
         "nationality": 4,
         "type": 11,
@@ -3674,6 +3695,25 @@ var equip_data = {
         "en_name": "He-50b",
         "equip_limit": 0
     },
+    "39340": {
+        "nationality": 3,
+        "type": 9,
+        "attribute_2": "air",
+        "rarity": 6,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 39340,
+        "icon": "39340",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "試作型天雷(特別計画艦仕様)",
+        "cn_name": "试作舰载型天雷",
+        "tw_name": "試作艦載型天雷",
+        "en_name": "(no DATA)",
+        "equip_limit": 0
+    },
     "39320": {
         "nationality": 3,
         "type": 9,
@@ -4297,6 +4337,25 @@ var equip_data = {
         "cn_name": "Ar-195舰载鱼雷机",
         "tw_name": "Ar-195艦載魚雷機",
         "en_name": "Ar 195",
+        "equip_limit": 0
+    },
+    "38300": {
+        "nationality": 3,
+        "type": 8,
+        "attribute_2": "air",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 38300,
+        "icon": "38300",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "試作型彩雲(艦攻型・特別計画艦仕様)",
+        "cn_name": "试作型彩云(舰攻型)",
+        "tw_name": "試作型彩雲(艦攻型)",
+        "en_name": "(no DATA)",
         "equip_limit": 0
     },
     "38240": {
@@ -5076,6 +5135,25 @@ var equip_data = {
         "cn_name": "试作型舰载FW-190 A-5",
         "tw_name": "試作型艦載FW-190 A-5",
         "en_name": "Prototype Fw 190 A-5 (Carrier-based)",
+        "equip_limit": 0
+    },
+    "47160": {
+        "nationality": 4,
+        "type": 7,
+        "attribute_2": "air",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 47160,
+        "icon": "47160",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "試作型BF-109G(特別計画艦仕様)",
+        "cn_name": "试作舰载型BF-109G",
+        "tw_name": "試作艦載型BF-109G",
+        "en_name": "(no DATA)",
         "equip_limit": 0
     },
     "47140": {
@@ -6285,6 +6363,23 @@ var equip_data = {
         "cn_name": "B-34 100mm双联装防空炮MZ-14",
         "tw_name": "B-34 100mm雙聯裝防空炮MZ-14",
         "en_name": "Twin 100mm B-34 MZ-14 Dual-Purpose AA Gun",
+        "equip_limit": 0
+    },
+    "95160": {
+        "nationality": 6,
+        "type": 6,
+        "attribute_2": "antiaircraft",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 95160,
+        "icon": "55160",
+        "ship_type_forbidden": [],
+        "jp_name": "試作型90mm連装高角砲Model1939",
+        "cn_name": "试作型双联90mm高角炮Model1939",
+        "tw_name": "試作型雙聯90mm高角炮Model1939",
+        "en_name": "(no DATA)",
         "equip_limit": 0
     },
     "95140": {
@@ -8702,6 +8797,38 @@ var equip_data = {
         "cn_name": "三联装305mm主炮Model1907",
         "tw_name": "三聯裝305mm主炮Model1907",
         "en_name": "Triple 305mm M1907 Main Gun Mount",
+        "equip_limit": 0
+    },
+    "95900": {
+        "nationality": 6,
+        "type": 4,
+        "attribute_2": "cannon",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 7,
+        "ammo_icon": [
+            4
+        ],
+        "id": 95900,
+        "icon": "55900",
+        "ship_type_forbidden": [
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            17,
+            18,
+            19
+        ],
+        "jp_name": "試作型三連装406mm主砲Model1940",
+        "cn_name": "试作型三联装406mm主炮Model1940",
+        "tw_name": "試作型三聯裝406mm主炮Model1940",
+        "en_name": "(no DATA)",
         "equip_limit": 0
     },
     "95040": {
