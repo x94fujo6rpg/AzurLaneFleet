@@ -1227,7 +1227,7 @@ var equip_data = {
         "jp_name": "試作型三連装305mmSKC39主砲(超巡)",
         "cn_name": "试作型三联装305mmSKC39主炮(超巡用)",
         "tw_name": "試作型三聯裝305mmSKC39主炮(超巡用)",
-        "en_name": "(no DATA)",
+        "en_name": "Prototype Triple 305mm SK C/39 Main Gun",
         "equip_limit": 0
     },
     "43140": {
@@ -3711,7 +3711,7 @@ var equip_data = {
         "jp_name": "試作型天雷(特別計画艦仕様)",
         "cn_name": "试作舰载型天雷",
         "tw_name": "試作艦載型天雷",
-        "en_name": "(no DATA)",
+        "en_name": "Prototype Tenrai",
         "equip_limit": 0
     },
     "39320": {
@@ -4355,7 +4355,7 @@ var equip_data = {
         "jp_name": "試作型彩雲(艦攻型・特別計画艦仕様)",
         "cn_name": "试作型彩云(舰攻型)",
         "tw_name": "試作型彩雲(艦攻型)",
-        "en_name": "(no DATA)",
+        "en_name": "Prototype Saiun Kai",
         "equip_limit": 0
     },
     "38240": {
@@ -5153,7 +5153,7 @@ var equip_data = {
         "jp_name": "試作型BF-109G(特別計画艦仕様)",
         "cn_name": "试作舰载型BF-109G",
         "tw_name": "試作艦載型BF-109G",
-        "en_name": "(no DATA)",
+        "en_name": "Prototype BF-109G",
         "equip_limit": 0
     },
     "47140": {
@@ -6379,7 +6379,7 @@ var equip_data = {
         "jp_name": "試作型90mm連装高角砲Model1939",
         "cn_name": "试作型双联90mm高角炮Model1939",
         "tw_name": "試作型雙聯90mm高角炮Model1939",
-        "en_name": "(no DATA)",
+        "en_name": "Prototype Twin 90mm Model 1939 High Angle Gun",
         "equip_limit": 0
     },
     "95140": {
@@ -8828,7 +8828,7 @@ var equip_data = {
         "jp_name": "試作型三連装406mm主砲Model1940",
         "cn_name": "试作型三联装406mm主炮Model1940",
         "tw_name": "試作型三聯裝406mm主炮Model1940",
-        "en_name": "(no DATA)",
+        "en_name": "Prototype Triple 406mm Model 1940 Main Gun",
         "equip_limit": 0
     },
     "95040": {

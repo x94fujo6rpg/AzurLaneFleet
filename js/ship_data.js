@@ -3244,7 +3244,7 @@ var ship_data = {
         "star_string": "★★★★★★",
         "rarity_string": "SSR",
         "jp_name": "マルコ・ポーロ",
-        "en_name": "RN Marco Polo (no DATA)",
+        "en_name": "Marco Polo",
         "cn_name": "马可波罗",
         "tw_name": "馬可波羅",
         "equip_1": [
@@ -4231,7 +4231,7 @@ var ship_data = {
         "star_string": "★★★★★★",
         "rarity_string": "UR",
         "jp_name": "エーギル",
-        "en_name": "KMS Ägir (no DATA)",
+        "en_name": "Ägir",
         "cn_name": "埃吉尔",
         "tw_name": "埃吉爾",
         "equip_1": [
@@ -4688,7 +4688,7 @@ var ship_data = {
         "star_string": "★★★★★★",
         "rarity_string": "SSR",
         "jp_name": "アウグスト・フォン・パーセヴァル",
-        "en_name": "KMS August von Parseval (no DATA)",
+        "en_name": "August von Parseval",
         "cn_name": "奥古斯特·冯·帕塞瓦尔",
         "tw_name": "奧古斯特·馮·帕塞瓦爾",
         "equip_1": [
@@ -6813,7 +6813,7 @@ var ship_data = {
         "star_string": "★★★★★★",
         "rarity_string": "UR",
         "jp_name": "白龍",
-        "en_name": "IJN Hakuryū (no DATA)",
+        "en_name": "Hakuryuu",
         "cn_name": "白龙",
         "tw_name": "白龍",
         "equip_1": [
@@ -19130,7 +19130,7 @@ var ship_data = {
         "star_string": "★★★★★★",
         "rarity_string": "SSR",
         "jp_name": "アンカレッジ",
-        "en_name": "USS Anchorage  (no DATA)",
+        "en_name": "Anchorage",
         "cn_name": "安克雷奇",
         "tw_name": "安克雷奇",
         "equip_1": [
