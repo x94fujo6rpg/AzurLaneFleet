@@ -1308,6 +1308,23 @@ var equip_data = {
         "en_name": "Prototype Triple 310mm Type 0 Main Gun Mount",
         "equip_limit": 0
     },
+    "89280": {
+        "nationality": 107,
+        "type": 10,
+        "attribute_2": "hit",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 10,
+        "ammo_icon": [],
+        "id": 89280,
+        "icon": "89280",
+        "ship_type_forbidden": [],
+        "jp_name": "輝きのブレスレット",
+        "cn_name": "偶像手环",
+        "tw_name": "偶像手環",
+        "en_name": "Shining Bracelet",
+        "equip_limit": 0
+    },
     "89240": {
         "nationality": 106,
         "type": 10,

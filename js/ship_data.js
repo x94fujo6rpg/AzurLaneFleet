@@ -1,4 +1,275 @@
 var ship_data = {
+    "10700050": {
+        "nationality": 107,
+        "type": 19,
+        "base_list": [
+            1,
+            1,
+            1
+        ],
+        "id": 10700054,
+        "skin_id": 10700050,
+        "english_name": "Akizuki Ritsuko",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "10700050",
+        "painting": "lvzi",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "秋月律子",
+        "en_name": "Ritsuko Akizuki",
+        "cn_name": "秋月律子",
+        "tw_name": "秋月律子",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            6
+        ],
+        "equip_3": [
+            10,
+            18
+        ],
+        "equip_4": [
+            10,
+            18
+        ],
+        "equip_5": [
+            10,
+            18
+        ]
+    },
+    "10700070": {
+        "nationality": 107,
+        "type": 8,
+        "base_list": [
+            2,
+            2,
+            1
+        ],
+        "id": 10700074,
+        "skin_id": 10700070,
+        "english_name": "Futami Mami",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "10700070",
+        "painting": "zhenmei",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "双海真美",
+        "en_name": "Mami Futami",
+        "cn_name": "双海真美",
+        "tw_name": "雙海真美",
+        "equip_1": [
+            13
+        ],
+        "equip_2": [
+            13
+        ],
+        "equip_3": [
+            1
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
+    "10700060": {
+        "nationality": 107,
+        "type": 8,
+        "base_list": [
+            2,
+            2,
+            1
+        ],
+        "id": 10700064,
+        "skin_id": 10700060,
+        "english_name": "Futami Ami",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "10700060",
+        "painting": "yamei",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "双海亜美",
+        "en_name": "Ami Futami",
+        "cn_name": "双海亚美",
+        "tw_name": "雙海亞美",
+        "equip_1": [
+            13
+        ],
+        "equip_2": [
+            13
+        ],
+        "equip_3": [
+            1
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
+    "10700020": {
+        "nationality": 107,
+        "type": 7,
+        "base_list": [
+            2,
+            3,
+            3
+        ],
+        "id": 10700024,
+        "skin_id": 10700020,
+        "english_name": "Kisaragi Chihaya",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "10700020",
+        "painting": "qianzao",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "如月千早",
+        "en_name": "Chihaya Kisaragi",
+        "cn_name": "如月千早",
+        "tw_name": "如月千早",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            9
+        ],
+        "equip_3": [
+            8
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
+    "10700030": {
+        "nationality": 107,
+        "type": 5,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 10700034,
+        "skin_id": 10700030,
+        "english_name": "Minase Iori",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "10700030",
+        "painting": "yizhi",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "水瀬伊織",
+        "en_name": "Iori Minase",
+        "cn_name": "水濑伊织",
+        "tw_name": "水瀨伊織",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
+    "10700040": {
+        "nationality": 107,
+        "type": 3,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 10700044,
+        "skin_id": 10700040,
+        "english_name": "Miura Azusa",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "10700040",
+        "painting": "zi",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "三浦あずさ",
+        "en_name": "Azusa Miura",
+        "cn_name": "三浦 梓",
+        "tw_name": "三浦 梓",
+        "equip_1": [
+            3
+        ],
+        "equip_2": [
+            1
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
+    "10700010": {
+        "nationality": 107,
+        "type": 2,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 10700014,
+        "skin_id": 10700010,
+        "english_name": "Amami Haruka",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "10700010",
+        "painting": "chunxiang",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "天海春香",
+        "en_name": "Haruka Amami",
+        "cn_name": "天海春香",
+        "tw_name": "天海春香",
+        "equip_1": [
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
     "10600060": {
         "nationality": 106,
         "type": 7,
