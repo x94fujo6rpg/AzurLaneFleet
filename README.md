@@ -15,7 +15,7 @@ Compatibility with other browsers is unknown
 
 ## Update  
 **2021-08-05**
-- add new feature: swap ship position
+- add new feature: swap ship position  
   ![](https://github.com/x94fujo6rpg/AzurLaneFleet/raw/master/ui/swap.gif)  
 
 **2021-05-26**
