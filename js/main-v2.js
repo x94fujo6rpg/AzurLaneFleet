@@ -2354,9 +2354,9 @@ Vue.component("fleet-container", {
                 </div>
                 <div class="d-flex line-5-item">
                     <div class="d-flex btn-group w-100 mx-1 my-auto">
-                        <button class="${fleet_btn_style.normal} w-25 w-border-right" v-bind:pos="fleet.id" onclick="${action.move}" data="-1">⮝</button>
+                        <button class="${fleet_btn_style.normal} w-50 w-border-right" v-bind:pos="fleet.id" onclick="${action.move}" data="-1">⮝</button>
                         <div class="${fleet_btn_style.normal} w-75" onclick="${action.swap}" v-text="ui_text.swap_ship[lang]">Swap</div>
-                        <button class="${fleet_btn_style.normal} w-25 border-left" v-bind:pos="fleet.id" onclick="${action.move}" data="1">⮟</button>
+                        <button class="${fleet_btn_style.normal} w-50 border-left" v-bind:pos="fleet.id" onclick="${action.move}" data="1">⮟</button>
                     </div>
                 </div>
                 <div class="d-flex line-5-item">
