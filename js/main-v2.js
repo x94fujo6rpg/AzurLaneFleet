@@ -49,6 +49,7 @@ const
         sub_fleet: { en: "Sub", jp: "潜水", tw: "潛艇", cn: "潛艇" },
         normal_fleet: { en: "Normal", jp: "通常", tw: "一般", cn: "一般" },
         copy_fleet: { en: "Copy", jp: "コピー", tw: "複製", cn: "複製", },
+        swap_ship: { en: "Swap", jp: "交換", tw: "交換", cn: "交換", },
     },
     // equip type
     parsetype = {
@@ -407,7 +408,7 @@ const
             fleet_copied(fleet_id) { return this._t(`Fleet ${fleet_id + 1} copied`); },
             fleet_removed(fleet_id) { return this._t(`Fleet ${fleet_id + 1} removed`); },
             fleet_added(type) { return this._t(`New ${type == 1 ? "Normal" : "Submarine"} Fleet added`); },
-            fleet_loaded() { return this._t("Successfully loaded Fleet data"); }
+            fleet_loaded() { return this._t("Successfully loaded Fleet data"); },
         },
     },
     fleet_info = {
@@ -1090,6 +1091,21 @@ const
             },
             setCurrent(item, noDisplay = false) {
                 [c_fleet, c_side, c_pos, c_item] = item.name.split("_");
+                let sw = dynamicFleet._swap;
+                if (sw.on) {
+                    // set swap data
+                    if (sw.state == 1) {
+                        sw.state = 2;
+                        sw.a = [c_fleet, c_side, c_pos, c_item];
+                        return;
+                    }
+                    if (sw.state == 2) {
+                        sw.b = [c_fleet, c_side, c_pos, c_item];
+                        return;
+                    }
+                    // skip when swap
+                    return;
+                }
                 if (c_item === "0") {
                     //ship
                     let use_set = {
@@ -2050,6 +2066,131 @@ const
                 target.forEach(b => { b.removeAttribute("disabled"); b.removeAttribute("style"); });
             }
         },
+        _swap: {
+            on: false,
+            state: 0,
+            a: false,
+            b: false,
+        },
+        async swapPos() {
+            let
+                target_list = document.querySelectorAll(
+                    [
+                        "#options",
+                        ".fleet_op_box",
+                        "#empty_fleet",
+                        "#url_area",
+                        "#data_area",
+                        "#reset_cache"
+                    ].join(",")
+                ),
+                allShip = document.querySelectorAll(".ship_container"),
+                disableClass = "disable_ele",
+                sw = this._swap,
+                set_wait = (_function, _interval = 100) => {
+                    return new Promise(resolve => {
+                        let id = setInterval(() => {
+                            if (_function()) {
+                                clearInterval(id);
+                                return resolve(true);
+                            }
+                        }, _interval);
+                    });
+                },
+                a, b, temp;
+
+            otherButtonAction(disableElement);
+            shipButtonAction(disableNonShip);
+
+            // start swap
+            sw.on = true;
+            sw.state = 1;
+
+            // select ship you want to swap
+            console.log("select ship you want to swap");
+            await set_wait(() => Boolean(sw.a));
+
+            // disable other side
+            shipButtonAction(disableOtherSide);
+
+            // select target
+            console.log("select target");
+            await set_wait(() => Boolean(sw.b));
+
+            // ship data
+            a = fleetData[sw.a[0]][sideTable[sw.a[1]]][sw.a[2]].item;
+            b = fleetData[sw.b[0]][sideTable[sw.b[1]]][sw.b[2]].item;
+
+            a.forEach((item, item_index) => {
+                Object.keys(item.property).forEach(key => {
+                    if (key != "ship_pos") {
+                        temp = a[item_index].property[key];
+                        a[item_index].property[key] = b[item_index].property[key];
+                        b[item_index].property[key] = temp;
+                    }
+                });
+            });
+
+            // re-enable all button
+            reEnableAll();
+
+            // reset state
+            this._swap = {
+                on: false,
+                state: 0,
+                a: false,
+                b: false,
+            };
+
+            // save data
+            LS.userSetting.set(settingKey.fleetData, app.util.dumpID());
+
+            function disableOtherSide(ele, index) {
+                if (index == 0) {
+                    let side = ele.name.split("_")[1];
+                    if (side != sw.a[1]) disableElement(ele);
+                }
+            }
+
+            function reEnableAll() {
+                shipButtonAction(enableElement);
+                otherButtonAction(enableElement);
+            }
+
+            function otherButtonAction(_function) {
+                target_list.forEach(e => _function(e));
+            }
+
+            function shipButtonAction(_function) {
+                allShip.forEach(ship => {
+                    [...ship.children].forEach((ele, index) => {
+                        _function(ele, index);
+                    });
+                });
+            }
+
+            function disableToggle(ele) {
+                if (ele.getAttribute("data-toggle")) ele.setAttribute("data-toggle", "false");
+            }
+
+            function enableToggle(ele) {
+                if (ele.getAttribute("data-toggle")) ele.setAttribute("data-toggle", "modal");
+            }
+
+            function disableNonShip(ele, index) {
+                if (index > 0) disableElement(ele);
+                disableToggle(ele);
+            }
+
+            function disableElement(ele) {
+                ele.classList.add(disableClass);
+            }
+
+            function enableElement(ele) {
+                ele.classList.remove(disableClass);
+                enableToggle(ele);
+            }
+        },
     };
 
 //----------------------------------------------------------
@@ -2186,9 +2327,9 @@ Vue.component("ship-container", {
 
 const
     fleet_btn_style = {
-        normal: `btn btn-outline-secondary btn-sm fleet_op_btn p-0 w-50 fleet_op_hide`,
+        normal: `btn btn-outline-secondary btn-sm fleet_op_btn p-0 fleet_op_hide`,
         yellow: `btn btn-outline-warning btn-sm fleet_op_btn p-0 w-50 fleet_op_hide`,
-        text: `text-monospace text-center w-100 d-flex align-items-center justify-content-center border border-warning fleet_op_hide`,
+        text: `text-monospace text-center w-100 d-flex align-items-center justify-content-center border fleet_op_hide`,
     },
     path = (target = "") => { return `dynamicFleet.${target}(this)`; },
     action = {
@@ -2196,6 +2337,7 @@ const
         move: path(dynamicFleet.moveFleet.name),
         copy: path(dynamicFleet.copyFleet.name),
         delete: path(dynamicFleet.deleteFleet.name),
+        swap: path(dynamicFleet.swapPos.name),
     };
 Vue.component("fleet-container", {
     props: ["fleet", "lang", "show_op", "class_data", "ui_text"],
@@ -2206,25 +2348,26 @@ Vue.component("fleet-container", {
                 <div class="d-flex line-5-item">
                     <div class="d-flex btn-group w-100 m-auto">
                         <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="1,0" onclick="${action.insert}">⮝</button>
-                        <div class="${fleet_btn_style.text}" v-text="ui_text.normal_fleet[lang]">Normal</div>
+                        <div class="${fleet_btn_style.text} border-warning" v-text="ui_text.normal_fleet[lang]">Normal</div>
                         <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="1,1" onclick="${action.insert}">⮟</button>
                     </div>
                 </div>
                 <div class="d-flex line-5-item">
                     <div class="d-flex btn-group w-100 mx-1 my-auto">
-                        <button class="${fleet_btn_style.normal} border-right fleet_op_hide" v-bind:pos="fleet.id" onclick="${action.move}" data="-1">⮝</button>
-                        <button class="${fleet_btn_style.normal} border-left fleet_op_hide" v-bind:pos="fleet.id" onclick="${action.move}" data="1">⮟</button>
+                        <button class="${fleet_btn_style.normal} w-25 w-border-right" v-bind:pos="fleet.id" onclick="${action.move}" data="-1">⮝</button>
+                        <div class="${fleet_btn_style.normal} w-75" onclick="${action.swap}" v-text="ui_text.swap_ship[lang]">Swap</div>
+                        <button class="${fleet_btn_style.normal} w-25 border-left" v-bind:pos="fleet.id" onclick="${action.move}" data="1">⮟</button>
                     </div>
                 </div>
                 <div class="d-flex line-5-item">
                     <div class="d-flex btn-group w-100 m-auto">
                         <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="2,0" onclick="${action.insert}">⮝</button>
-                        <div class="${fleet_btn_style.text}" v-text="ui_text.sub_fleet[lang]">Sub</div>
+                        <div class="${fleet_btn_style.text} border-warning" v-text="ui_text.sub_fleet[lang]">Sub</div>
                         <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="2,1" onclick="${action.insert}">⮟</button>
                     </div>
                 </div>
                 <div class="d-flex line-5-item">
-                    <button class="btn btn-outline-success btn-sm w-50 m-auto fleet_op_hide" v-bind:pos="fleet.id" onclick="${action.copy}"  v-text="ui_text.copy_fleet[lang]">Copy</button>
+                    <button class="btn btn-outline-success btn-sm w-50 m-auto fleet_op_hide" v-bind:pos="fleet.id" onclick="${action.copy}" v-text="ui_text.copy_fleet[lang]">Copy</button>
                     <button class="btn btn-outline-danger btn-sm w-25 m-auto fleet_op_hide" v-bind:pos="fleet.id" onclick="${action.delete}">✖</button>
                 </div>
             </div>
@@ -2296,6 +2439,7 @@ const
                 sub_fleet: vue_ui_text.sub_fleet,
                 normal_fleet: vue_ui_text.normal_fleet,
                 copy_fleet: vue_ui_text.copy_fleet,
+                swap_ship: vue_ui_text.swap_ship,
             }
         },
     }),

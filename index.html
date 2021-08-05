@@ -24,7 +24,7 @@
     <link rel="prefetch" href="lib/lz-string.min.js" as="script">
     <link rel="prefetch" href="js/ship_data.min.js?v=9c45dc463b56" as="script">
     <link rel="prefetch" href="js/equip_data.min.js?v=b7b914a30e99" as="script">
-    <link rel="prefetch" href="js/main-v2.min.js?v=e8b147354c9f" as="script">
+    <link rel="prefetch" href="js/main-v2.min.js?v=3c01302a9085" as="script">
     <style>
         body {
             color: white;
@@ -240,6 +240,11 @@
             background: rgba(0, 0, 0, 0.95);
             word-break: break-word;
         }
+
+        .disable_ele {
+            pointer-events: none;
+            opacity: 0.1;
+        }
     </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKESRCZC4Z"></script>
     <script>
@@ -310,10 +315,10 @@
             <fleet-container v-for="fleet in fleets" v-bind:key="fleet.id" v-bind:show_op="show_op" v-bind:fleet="fleet" v-bind:name="fleet.id" v-bind:lang="lang" v-bind:class_data="class_data" v-bind:ui_text="ui_text">
             </fleet-container>
         </div>
-        <div class="d-flex mx-auto my-5">
+        <div class="d-flex mx-auto my-5" id="empty_fleet">
             <button type="button" class="btn btn-danger m-auto" id="emptyfleet" onclick="app.action.emptyfleet()">Empty Current Fleet</button>
         </div>
-        <div class="d-grid mx-auto my-5">
+        <div class="d-grid mx-auto my-5" id="url_area">
             <h4 class="d-flex text-light mx-auto my-1">URL</h4>
             <textarea class="d-flex databox text-light mx-auto my-1" id="url_box" readonly></textarea>
             <div class="d-flex mx-auto my-1">
@@ -321,7 +326,7 @@
                 <button type="button" class="btn mx-1 w-100" onclick="app.action.copyURL()">Copy</button>
             </div>
         </div>
-        <div class="d-grid mx-auto my-5">
+        <div class="d-grid mx-auto my-5" id="data_area">
             <h4 class="d-flex text-light mx-auto my-1" id="fleetdata_text">Fleet data</h4>
             <textarea class="d-flex databox text-light mx-auto my-1" id="fleetdata"></textarea>
             <div class="d-flex mx-auto my-1">
@@ -337,6 +342,18 @@
             <a href="https://github.com/x94fujo6rpg/AzurLaneFleet" target="_blank">Github</a>
         </div>
     </div>
+    <div class="d-flex my-3 mx-auto" id="reset_cache">
+        <button type="button" class="btn btn-danger px-1 py-0 mx-auto" onclick="emptyCache()" id="rebuild_cache_btn">Rebuild Cache</button>
+    </div>
+    <div class="container">
+        <div class="text-center text-info mt-5" id="suggestion">
+            Recommend using Chrome for the best experience.<br> This site was developed and tested on Chrome/Firefox.<br> IE/Edge(Old) is unsupported.<br> Compatibility with other browsers is unknown.<br> If you have issue, try CTRL+F5 to force laod lastest
+            version.
+        </div>
+    </div>
+    <footer class="container text-center mt-5" id="footer">
+        The copyright of the data used on this site is owned by the following companies<br> © Manjuu Co.,Ltd. & YongShi Co.,Ltd.<br> © Yostar, Inc.
+    </footer>
     <div class="modal fade" id="shipselect">
         <div class="modal-dialog mt-1 " id="dialog_shipselect">
             <div class="modal-content text-light bg-dark">
@@ -432,18 +449,6 @@
             </div>
         </div>
     </div>
-    <div class="d-flex my-3 mx-auto">
-        <button type="button" class="btn btn-danger px-1 py-0 mx-auto" onclick="emptyCache()" id="rebuild_cache_btn">Rebuild Cache</button>
-    </div>
-    <div class="container">
-        <div class="text-center text-info mt-5" id="suggestion">
-            Recommend using Chrome for the best experience.<br> This site was developed and tested on Chrome/Firefox.<br> IE/Edge(Old) is unsupported.<br> Compatibility with other browsers is unknown.<br> If you have issue, try CTRL+F5 to force laod lastest
-            version.
-        </div>
-    </div>
-    <footer class="container text-center mt-5" id="footer">
-        The copyright of the data used on this site is owned by the following companies<br> © Manjuu Co.,Ltd. & YongShi Co.,Ltd.<br> © Yostar, Inc.
-    </footer>
     <script src="lib/jquery-3.6.0.min.js"></script>
     <script src="lib/popper.min.js"></script>
     <script src="lib/bootstrap.min.js"></script>
@@ -453,7 +458,7 @@
     <script src="lib/index-min.js"></script>
     <script src='js/ship_data.min.js?v=9c45dc463b56'></script>
     <script src='js/equip_data.min.js?v=b7b914a30e99'></script>
-    <script src="js/main-v2.min.js?v=e8b147354c9f"></script>
+    <script src="js/main-v2.min.js?v=3c01302a9085"></script>
 </body>
 
 </html>
