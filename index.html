@@ -24,7 +24,7 @@
     <link rel="prefetch" href="lib/lz-string.min.js" as="script">
     <link rel="prefetch" href="js/ship_data.min.js?v=9c45dc463b56" as="script">
     <link rel="prefetch" href="js/equip_data.min.js?v=b7b914a30e99" as="script">
-    <link rel="prefetch" href="js/main-v2.min.js?v=a88f7b5ec759" as="script">
+    <link rel="prefetch" href="js/main-v2.min.js?v=c2af52528567" as="script">
     <style>
         body {
             color: white;
@@ -132,19 +132,21 @@
         .itemq {
             position: absolute;
             top: 0rem;
-            right: 0.5rem;
+            right: 0.4rem;
             z-index: 103;
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             font-weight: bold;
+            opacity: 0.85;
         }
         
         .ship_pos2 {
             position: absolute;
-            bottom: -0.3rem;
-            right: 0.3rem;
+            bottom: -0.2rem;
+            right: 0.2rem;
             z-index: 103;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: bold;
+            opacity: 0.85;
         }
         
         .databox {
@@ -382,7 +384,7 @@
                     </div>
                     <div class="d-inline-flex w-100 font-weight-bold">
                         <div class="d-flex m-3 line-3-item" id="search_box">
-                            <input class="w-100 rounded" type="text" class="mx-1 w-100" id="search_input" autocomplete="on" name="shipname" autofocus>
+                            <input class="w-100 rounded" type="text" class="mx-1 w-100" id="search_input" autocomplete="on" name="shipname">
                         </div>
                         <div class="d-flex m-auto line-3-item">
                             <label class="my-auto ml-auto mr-1" ui_id="filter_search_result">Result</label>
@@ -458,7 +460,7 @@
     <script src="lib/index-min.js"></script>
     <script src='js/ship_data.min.js?v=9c45dc463b56'></script>
     <script src='js/equip_data.min.js?v=b7b914a30e99'></script>
-    <script src="js/main-v2.min.js?v=a88f7b5ec759"></script>
+    <script src="js/main-v2.min.js?v=c2af52528567"></script>
 </body>
 
 </html>

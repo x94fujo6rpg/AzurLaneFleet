@@ -1330,7 +1330,7 @@ const
                         let itemindex = parseInt(index, 10) - 1;
                         let quantity = shipInApp.item[0].property.base[itemindex];
                         if (quantity != undefined && typelist.some(eqtype => addQuantityList.has(eqtype))) {
-                            app_item.quantity = quantity;
+                            app_item.quantity = `x${quantity}`;
                         }
                         // go through all type in ship's equip type list
                         let langs = ["tw", "cn", "en", "jp"];
@@ -1848,7 +1848,7 @@ const
                 if (!search_input) return console.log("search_input not found");
                 search_input.addEventListener("input", app.action.ship_name_search);
                 let selship = $("#shipselect");
-                selship.on("shown.bs.modal", function () { $(this).find("[autofocus]").focus(); }); // autofocus to input
+                //selship.on("shown.bs.modal", function () { $(this).find("[autofocus]").focus(); }); // autofocus to input
                 selship.on("hide.bs.modal", () => search_input.value = ""); // empty text when modal fade
                 console.log("add search event");
             }
@@ -2254,7 +2254,7 @@ const
         cache_image: {},
         load_cache: {},
     },
-    posTable = { BS: { 0: 2, 1: 1, 2: 3 }, F: { 0: 3, 1: 2, 2: 1 }, },
+    posTable = { BS: { 0: "2nd", 1: "1st", 2: "3rd" }, F: { 0: "3rd", 1: "2nd", 2: "1st" }, },
     // ship
     type_front = new Set([1, 2, 3, 18, 19]),
     type_back = new Set([4, 5, 6, 7, 10, 12, 13]),
