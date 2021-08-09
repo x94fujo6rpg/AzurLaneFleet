@@ -70,7 +70,7 @@
         .icon {
             position: relative;
             height: 5.3rem;
-            padding: 2px;
+            padding: 1px;
             z-index: 101;
             object-fit: scale-down;
         }
@@ -87,6 +87,11 @@
             position: relative;
             width: 100%;
             margin: 0px;
+            padding: 0px;
+        }
+        
+        .icon_box>img[src="ui/empty.png"],
+        img[src="ui/icon_back.png"] {
             padding: 0px;
         }
         
@@ -127,6 +132,11 @@
             display: inline;
             position: relative;
             top: -0.05rem;
+        }
+
+        .item_name:empty::after {
+            content: "empty";
+            visibility: hidden;
         }
         
         .itemq {
@@ -242,7 +252,7 @@
             background: rgba(0, 0, 0, 0.95);
             word-break: break-word;
         }
-
+        
         .disable_ele {
             pointer-events: none;
             opacity: 0.1;

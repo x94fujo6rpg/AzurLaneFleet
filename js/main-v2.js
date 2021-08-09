@@ -728,7 +728,7 @@ const
                         let ship = {
                             id: "", type: "", star: "", rarity: "",
                             tw: "", en: "", cn: "", jp: "",
-                            icon: "ui/empty.png", bg: "", frame: "",
+                            icon: ui_table.empty_item, bg: "", frame: "",
                             target: "#shipselect",
                             base: [],
                             quantity: "",
@@ -738,7 +738,7 @@ const
                         let eq = {
                             id: "", type: [], star: "", rarity: "",
                             tw: "", en: "", cn: "", jp: "",
-                            icon: "ui/icon_back.png", bg: "", frame: "",
+                            icon: ui_table.empty_disable, bg: "", frame: "",
                             target: "",
                             fb: [],
                             type_tw: "", type_cn: "", type_en: "", type_jp: "",
@@ -1297,20 +1297,19 @@ const
                 if (ele.id === `${item.id}` || ele.id === item.id) return Object.assign({}, ele);
             });
             let app_item = shipInApp.item;
-            const shipCopyList = ["tw", "cn", "en", "jp", "icon", "frame", "bg", "id", "type", "rarity", "star", "base"];
             for (let index in app_item) {
                 app_item = shipInApp.item[index].property;
                 if (item.id === "000000") {
                     // empty ship/equip
                     if (index === "0") {
                         //ship
-                        shipCopyList.forEach(key => app_item[key] = "");
+                        ui_table.copy_ship.forEach(key => app_item[key] = "");
                         app_item.icon = shipInList.icon;
                         app_item.base = [];
                     } else {
                         //equip
                         for (let key in app_item) app_item[key] = "";
-                        app_item.icon = "ui/icon_back.png";
+                        app_item.icon = ui_table.empty_disable;
                         app_item.fb = [];
                         app_item.type = [];
                         app_item.target = "";
@@ -1320,27 +1319,26 @@ const
                     //copy ship data & equip setting
                     if (index === "0") {
                         //ship
-                        shipCopyList.forEach(key => app_item[key] = shipInList[key]);
+                        ui_table.copy_ship.forEach(key => app_item[key] = shipInList[key]);
                     } else {
                         //equip
                         for (let key in app_item) app_item[key] = "";
                         let typelist = shipInList[`e${index}`];
                         app_item.type = typelist;
-                        app_item.icon = "ui/empty.png";
+                        app_item.icon = ui_table.empty_item;
                         let itemindex = parseInt(index, 10) - 1;
                         let quantity = shipInApp.item[0].property.base[itemindex];
                         if (quantity != undefined && typelist.some(eqtype => addQuantityList.has(eqtype))) {
                             app_item.quantity = `x${quantity}`;
                         }
                         // go through all type in ship's equip type list
-                        let langs = ["tw", "cn", "en", "jp"];
                         let type_str_arr = [[], [], [], []];
                         typelist.forEach(type => {
-                            langs.forEach((lan_str, index) => {
+                            ui_table.langs.forEach((lan_str, index) => {
                                 type_str_arr[index].push(parsetype[type][lan_str]);
                             });
                         });
-                        langs.forEach((lan_str, index) => {
+                        ui_table.langs.forEach((lan_str, index) => {
                             app_item[lan_str] = app_item[`type_${lan_str}`] = type_str_arr[index].join("/");
                         });
                         app_item.target = "#equipselect";
@@ -1454,13 +1452,12 @@ const
                 itemInApp.en = itemInApp.type_en;
                 itemInApp.jp = itemInApp.type_jp;
                 itemInApp.frame = itemInApp.bg = "";
-                itemInApp.icon = "ui/empty.png";
+                item.icon = ui_table.empty_item;
                 itemInApp.id = "";
             } else {
                 // copy data
-                let copylist = ["tw", "cn", "en", "jp", "icon", "frame", "bg", "id", "limit"];
                 let itemInList = sortedEquip.find((ele) => { if (ele.id === id) return Object.assign({}, ele); });
-                copylist.forEach(key => itemInApp[key] = itemInList[key]);
+                ui_table.copy_equip.forEach(key => itemInApp[key] = itemInList[key]);
             }
             if (save) LS.userSetting.set(settingKey.fleetData, app.util.dumpID());
         },
@@ -1583,7 +1580,7 @@ const
                         empty.en = "remove";
                         empty.tw = empty.cn = "移除";
                         empty.jp = "除隊";
-                        empty.icon = "ui/empty.png";
+                        empty.icon = ui_table.empty_item;
                     }
                     newlist.push(newitem);
                     pos++;
@@ -1635,7 +1632,7 @@ const
                         empty.en = "remove";
                         empty.tw = empty.cn = "移除";
                         empty.jp = "外す";
-                        empty.icon = "ui/empty.png";
+                        empty.icon = ui_table.empty_item;
                     }
                     newlist.push(newitem);
                     pos++;
@@ -2229,6 +2226,13 @@ const
         "0": "front",
         "1": "back",
         "2": "sub",
+    },
+    ui_table = {
+        empty_item: "ui/empty.png",
+        empty_disable: "ui/icon_back.png",
+        langs: ["tw", "cn", "en", "jp"],
+        copy_ship: ["tw", "cn", "en", "jp", "icon", "frame", "bg", "id", "type", "rarity", "star", "base"],
+        copy_equip: ["tw", "cn", "en", "jp", "icon", "frame", "bg", "id", "limit"],
     },
     AFL_storage = window.localStorage,
     filter_setting = {
