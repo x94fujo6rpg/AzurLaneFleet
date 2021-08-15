@@ -13299,6 +13299,44 @@ var ship_data = {
             10
         ]
     },
+    "207029": {
+        "nationality": 2,
+        "type": 7,
+        "base_list": [
+            3,
+            3,
+            2
+        ],
+        "id": 207024,
+        "skin_id": 207029,
+        "english_name": "HMS Ark Royal",
+        "star": 5,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "207029",
+        "painting": "huangjiafangzhou_g",
+        "star_string": "★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "アーク・ロイヤル改",
+        "en_name": "Ark Royal (Retrofit)",
+        "cn_name": "皇家方舟·改",
+        "tw_name": "皇家方舟·改",
+        "equip_1": [
+            8
+        ],
+        "equip_2": [
+            8
+        ],
+        "equip_3": [
+            9
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
     "207020": {
         "nationality": 2,
         "type": 7,
@@ -13312,7 +13350,7 @@ var ship_data = {
         "english_name": "HMS Ark Royal",
         "star": 5,
         "rarity": 4,
-        "retro": 0,
+        "retro": 1,
         "uni_id": "207020",
         "painting": "huangjiafangzhou",
         "star_string": "★★★★★",

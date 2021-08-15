@@ -1095,7 +1095,6 @@ const
                 if (sw.on) {
                     // set swap data
                     if (sw.state == 1) {
-                        sw.state = 2;
                         sw.a = [c_fleet, c_side, c_pos, c_item];
                         return;
                     }
@@ -1103,6 +1102,7 @@ const
                         sw.b = [c_fleet, c_side, c_pos, c_item];
                         return;
                     }
+                    if (sw.state != 0) throw Error("unknown state");
                     // skip when swap
                     return;
                 }
@@ -2084,17 +2084,21 @@ const
                 allShip = document.querySelectorAll(".ship_container"),
                 disableClass = "disable_ele",
                 sw = this._swap,
-                set_wait = (_function, _interval = 100) => {
-                    return new Promise(resolve => {
+                set_wait = (_function, _interval = 100, _timeout = 0) => {
+                    return new Promise((resolve, reject) => {
                         let id = setInterval(() => {
                             if (_function()) {
                                 clearInterval(id);
                                 return resolve(true);
                             }
+                            if (_timeout < 0) {
+                                clearInterval(id);
+                                return reject("swap timeout");
+                            }
+                            if (_timeout > 0) _timeout -= _interval;
                         }, _interval);
                     });
-                },
-                a, b, temp;
+                };
 
             otherButtonAction(disableElement);
             shipButtonAction(disableNonShip);
@@ -2103,55 +2107,63 @@ const
             sw.on = true;
             sw.state = 1;
 
-            // select ship you want to swap
-            console.log("select ship you want to swap");
-            await set_wait(() => Boolean(sw.a));
+            try {
+                // select ship you want to swap
+                await set_wait(() => Boolean(sw.a));
+                sw.state++;
+                if (!(sw.a instanceof Array)) throw Error("unknown position");
 
-            // disable other side
-            shipButtonAction(disableOtherSide);
+                // disable other side
+                shipButtonAction(disableOtherSide);
 
-            // select target
-            console.log("select target");
-            await set_wait(() => Boolean(sw.b));
+                // select target
+                await set_wait(() => Boolean(sw.b));
+                if (!(sw.b instanceof Array)) throw Error("unknown position");
 
-            // ship data
-            a = fleetData[sw.a[0]][sideTable[sw.a[1]]][sw.a[2]].item;
-            b = fleetData[sw.b[0]][sideTable[sw.b[1]]][sw.b[2]].item;
+                // swap ship data
+                await swapShip();
+            } catch (e) {
+                console.log(e);
+            } finally {
+                // re-enable all button & reset state
+                reset();
 
-            a.forEach((item, item_index) => {
-                Object.keys(item.property).forEach(key => {
-                    if (key != "ship_pos") {
-                        temp = a[item_index].property[key];
-                        a[item_index].property[key] = b[item_index].property[key];
-                        b[item_index].property[key] = temp;
-                    }
+                // save data
+                LS.userSetting.set(settingKey.fleetData, app.util.dumpID());
+            }
+
+            function reset() {
+                shipButtonAction(enableElement);
+                otherButtonAction(enableElement);
+                dynamicFleet._swap = {
+                    on: false,
+                    state: 0,
+                    a: false,
+                    b: false,
+                };
+            }
+
+            async function swapShip() {
+                let a, b, temp;
+                a = fleetData[sw.a[0]][sideTable[sw.a[1]]][sw.a[2]].item;
+                b = fleetData[sw.b[0]][sideTable[sw.b[1]]][sw.b[2]].item;
+                a.forEach((item, item_index) => {
+                    Object.keys(item.property).forEach(key => {
+                        if (key != "ship_pos") {
+                            temp = a[item_index].property[key];
+                            a[item_index].property[key] = b[item_index].property[key];
+                            b[item_index].property[key] = temp;
+                        }
+                    });
                 });
-            });
-
-            // re-enable all button
-            reEnableAll();
-
-            // reset state
-            this._swap = {
-                on: false,
-                state: 0,
-                a: false,
-                b: false,
-            };
-
-            // save data
-            LS.userSetting.set(settingKey.fleetData, app.util.dumpID());
+                return true;
+            }
 
             function disableOtherSide(ele, index) {
                 if (index == 0) {
                     let side = ele.name.split("_")[1];
                     if (side != sw.a[1]) disableElement(ele);
                 }
-            }
-
-            function reEnableAll() {
-                shipButtonAction(enableElement);
-                otherButtonAction(enableElement);
             }
 
             function otherButtonAction(_function) {
@@ -2276,7 +2288,7 @@ const
     eq_tier = new Set(lan_eq_tier.map(o => parseInt(o.id, 10))),
     // db
     db_name = "image_cache",
-    db_ver = 7,
+    db_ver = 8,
     // dump data
     ALF_version = 0.05;
 
