@@ -17494,6 +17494,45 @@ var ship_data = {
             10
         ]
     },
+    "108070": {
+        "nationality": 1,
+        "type": 8,
+        "base_list": [
+            2,
+            2,
+            1
+        ],
+        "id": 108074,
+        "skin_id": 108070,
+        "english_name": "USS Nautilus ",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "108070",
+        "painting": "yingwuluo",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "ノーチラス",
+        "en_name": "Nautilus",
+        "cn_name": "鹦鹉螺",
+        "tw_name": "鸚鵡螺",
+        "equip_1": [
+            13
+        ],
+        "equip_2": [
+            13
+        ],
+        "equip_3": [
+            1,
+            2
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
     "108060": {
         "nationality": 1,
         "type": 8,
@@ -21296,6 +21335,46 @@ var ship_data = {
         "tw_name": "奧馬哈",
         "equip_1": [
             2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "101480": {
+        "nationality": 1,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 101484,
+        "skin_id": 101480,
+        "english_name": "USS Ingraham",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "101480",
+        "painting": "yinggelahan",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "イングラハム",
+        "en_name": "Ingraham",
+        "cn_name": "英格拉罕",
+        "tw_name": "英格拉罕",
+        "equip_1": [
+            1
         ],
         "equip_2": [
             5
