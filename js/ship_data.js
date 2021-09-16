@@ -1639,6 +1639,44 @@ var ship_data = {
             14
         ]
     },
+    "9707030": {
+        "nationality": 97,
+        "type": 7,
+        "base_list": [
+            3,
+            3,
+            2
+        ],
+        "id": 9707034,
+        "skin_id": 9707030,
+        "english_name": "Sōryū.META",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "9707030",
+        "painting": "canglong_alter",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "蒼龍(META)",
+        "en_name": "Souryuu META",
+        "cn_name": "苍龙·META",
+        "tw_name": "蒼龍·META",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            9
+        ],
+        "equip_3": [
+            8
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
     "9707020": {
         "nationality": 97,
         "type": 7,
@@ -7105,6 +7143,44 @@ var ship_data = {
             10
         ]
     },
+    "307120": {
+        "nationality": 3,
+        "type": 7,
+        "base_list": [
+            3,
+            2,
+            3
+        ],
+        "id": 307124,
+        "skin_id": 307120,
+        "english_name": "IJN Katsuragi",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "307120",
+        "painting": "gecheng",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "葛城",
+        "en_name": "Katsuragi",
+        "cn_name": "葛城",
+        "tw_name": "葛城",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            9
+        ],
+        "equip_3": [
+            8
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
     "307110": {
         "nationality": 3,
         "type": 7,
@@ -9248,6 +9324,44 @@ var ship_data = {
             10
         ]
     },
+    "303060": {
+        "nationality": 3,
+        "type": 3,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 303064,
+        "skin_id": 303060,
+        "english_name": "IJN Chikuma",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "303060",
+        "painting": "zhumo",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "筑摩",
+        "en_name": "Chikuma",
+        "cn_name": "筑摩",
+        "tw_name": "築摩",
+        "equip_1": [
+            3
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
     "303040": {
         "nationality": 3,
         "type": 3,
@@ -10016,6 +10130,46 @@ var ship_data = {
         "en_name": "Kinu",
         "cn_name": "鬼怒",
         "tw_name": "鬼怒",
+        "equip_1": [
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "302070": {
+        "nationality": 3,
+        "type": 2,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 302074,
+        "skin_id": 302070,
+        "english_name": "IJN Yura",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "302070",
+        "painting": "youliang",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "由良",
+        "en_name": "Yura",
+        "cn_name": "由良",
+        "tw_name": "由良",
         "equip_1": [
             2
         ],
@@ -11276,6 +11430,86 @@ var ship_data = {
             14
         ]
     },
+    "301480": {
+        "nationality": 3,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 301484,
+        "skin_id": 301480,
+        "english_name": "IJN Yamakaze",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "301480",
+        "painting": "shanfeng",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "山風",
+        "en_name": "Yamakaze",
+        "cn_name": "山风",
+        "tw_name": "山風",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "301470": {
+        "nationality": 3,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 301474,
+        "skin_id": 301470,
+        "english_name": "IJN Umikaze",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "301470",
+        "painting": "haifeng",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "海風",
+        "en_name": "Umikaze",
+        "cn_name": "海风",
+        "tw_name": "海風",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
     "301410": {
         "nationality": 3,
         "type": 1,
@@ -11778,6 +12012,46 @@ var ship_data = {
         "en_name": "Kamikaze",
         "cn_name": "神风",
         "tw_name": "神風",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "301290": {
+        "nationality": 3,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 301294,
+        "skin_id": 301290,
+        "english_name": "IJN Shimakaze",
+        "star": 6,
+        "rarity": 6,
+        "retro": 0,
+        "uni_id": "301290",
+        "painting": "daofeng",
+        "star_string": "★★★★★★",
+        "rarity_string": "UR",
+        "jp_name": "島風",
+        "en_name": "Shimakaze",
+        "cn_name": "岛风",
+        "tw_name": "島風",
         "equip_1": [
             1
         ],
