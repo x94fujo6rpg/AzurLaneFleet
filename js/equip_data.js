@@ -13298,7 +13298,7 @@ var equip_data = {
         "tech": 3,
         "ammo": 5,
         "ammo_icon": [],
-        "id": 35300,
+        "id": 35340,
         "icon": "35300",
         "ship_type_forbidden": [],
         "jp_name": "610mm五連装魚雷",
