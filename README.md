@@ -15,8 +15,8 @@ Compatibility with other browsers is unknown
 
 ## Update  
 **2021-10-07**
-due to some change, old tools are no longer suitable
-for various reasons, no tool will be release in the future
+- due to some change, old tools are no longer suitable  
+  for various reasons, no tool will be release in the future  
 
 **2021-08-05**
 - add new feature: swap ship position  
