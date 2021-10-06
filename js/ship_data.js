@@ -1753,6 +1753,45 @@ var ship_data = {
             10
         ]
     },
+    "9705010": {
+        "nationality": 97,
+        "type": 5,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 9705014,
+        "skin_id": 9705010,
+        "english_name": "Fuso.META",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "9705010",
+        "painting": "fusang_alter",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "扶桑(META)",
+        "en_name": "Fusou META",
+        "cn_name": "扶桑·META",
+        "tw_name": "扶桑·META",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
     "9702010": {
         "nationality": 97,
         "type": 2,
@@ -12830,6 +12869,46 @@ var ship_data = {
             14
         ]
     },
+    "301149": {
+        "nationality": 3,
+        "type": 1,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 301874,
+        "skin_id": 301149,
+        "english_name": "IJN Yūdachi",
+        "star": 6,
+        "rarity": 6,
+        "retro": 0,
+        "uni_id": "301149",
+        "painting": "xili_g",
+        "star_string": "★★★★★★",
+        "rarity_string": "UR",
+        "jp_name": "夕立改",
+        "en_name": "Yuudachi (Retrofit)",
+        "cn_name": "夕立改",
+        "tw_name": "夕立改",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
     "301140": {
         "nationality": 3,
         "type": 1,
@@ -12843,7 +12922,7 @@ var ship_data = {
         "english_name": "IJN Yūdachi",
         "star": 6,
         "rarity": 5,
-        "retro": 0,
+        "retro": 1,
         "uni_id": "301140",
         "painting": "xili",
         "star_string": "★★★★★★",

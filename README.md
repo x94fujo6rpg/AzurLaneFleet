@@ -14,6 +14,10 @@ This site was developed and tested on `Chrome`/`Firefox`
 Compatibility with other browsers is unknown  
 
 ## Update  
+**2021-10-07**
+due to some change, old tools are no longer suitable
+for various reasons, no tool will be release in the future
+
 **2021-08-05**
 - add new feature: swap ship position  
   ![](https://github.com/x94fujo6rpg/AzurLaneFleet/raw/master/ui/swap.gif)  

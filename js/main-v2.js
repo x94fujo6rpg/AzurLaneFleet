@@ -1297,6 +1297,8 @@ const
                 if (ele.id === `${item.id}` || ele.id === item.id) return Object.assign({}, ele);
             });
             let app_item = shipInApp.item;
+            // ship not exist
+            if (!shipInList) return console.log(`%cship id[${id}] not found, skip`, "color:red;");
             for (let index in app_item) {
                 app_item = shipInApp.item[index].property;
                 if (item.id === "000000") {
@@ -1457,6 +1459,8 @@ const
             } else {
                 // copy data
                 let itemInList = sortedEquip.find((ele) => { if (ele.id === id) return Object.assign({}, ele); });
+                // equip not exist
+                if (!itemInList) return console.log(`%cequip id[${id}] not found, skip`, "color:red;");
                 ui_table.copy_equip.forEach(key => itemInApp[key] = itemInList[key]);
             }
             if (save) LS.userSetting.set(settingKey.fleetData, app.util.dumpID());
@@ -2288,7 +2292,7 @@ const
     eq_tier = new Set(lan_eq_tier.map(o => parseInt(o.id, 10))),
     // db
     db_name = "image_cache",
-    db_ver = 10,
+    db_ver = 11,
     // dump data
     ALF_version = 0.05;
 
