@@ -24,7 +24,7 @@
     <link rel="prefetch" href="lib/lz-string.min.js" as="script">
     <link rel="prefetch" href="js/ship_data.min.js?v=ff4a351bdb45" as="script">
     <link rel="prefetch" href="js/equip_data.min.js?v=334f84d47dc3" as="script">
-    <link rel="prefetch" href="js/main-v2.min.js?v=8937e4981461" as="script">
+    <link rel="prefetch" href="js/main-v2.min.js?v=e5b316bb6433" as="script">
     <style>
         body {
             color: white;
@@ -133,7 +133,7 @@
             position: relative;
             top: -0.05rem;
         }
-
+        
         .item_name:empty::after {
             content: "empty";
             visibility: hidden;
@@ -202,6 +202,11 @@
         .line-3-item {
             max-width: 100%;
             width: calc(100% / 3);
+        }
+
+        .line-40 {
+            max-width: 100%;
+            width: calc(100% / 5 * 2);
         }
         
         .line-5-item {
@@ -312,8 +317,8 @@
             <div class="dropdown my-1 container d-flex w-50" id="fleet_storage">
                 <button class="btn btn-primary w-25 mx-1" type="button" id="add_fleet" onclick="LS.add_fleet()">Save Current</button>
                 <button class="btn btn-info w-25 mx-1 dropdown-toggle text-truncate" type="button" id="select_fleet" onclick="LS.updateStorageList()" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Select Fleet
-                    </button>
+                    Select Fleet
+                </button>
                 <div class="dropdown-menu bg-info" id="fleet_list" aria-labelledby="select_fleet"></div>
                 <button class="btn btn-success w-25 mx-1" type="button" id="load_fleet" onclick="LS.load_fleet()" disabled>Load Fleet</button>
                 <button class="btn btn-danger w-25 mx-1" type="button" id="remove_fleet" onclick="LS.remove_fleet()" disabled>Remove</button>
@@ -393,16 +398,28 @@
                         </div>
                     </div>
                     <div class="d-inline-flex w-100 font-weight-bold">
-                        <div class="d-flex m-3 line-3-item" id="search_box">
-                            <input class="w-100 rounded" type="text" class="mx-1 w-100" id="search_input" autocomplete="on" name="shipname">
+                        <div class="d-flex my-2 line-40" id="search_box">
+                            <input class="w-50 mx-1 rounded" type="text" class="mx-1 w-100" id="search_input" autocomplete="on" name="shipname">
+                            <button id='filter_retro' name="retro_ship_only" type="button" class="w-50 mx-1 btn btn-outline-light font-weight-bold text-truncate active" aria-pressed="true" onclick="app.option.ship.setRetro(this)">Retrofitted Only</button>
                         </div>
-                        <div class="d-flex m-auto line-3-item">
+                        <div class="d-flex m-auto line-5-item">
                             <label class="my-auto ml-auto mr-1" ui_id="filter_search_result">Result</label>
                             <div class="my-auto mr-auto ml-1" id="ship_count"></div>
                         </div>
-                        <div class="btn-group d-flex m-3 line-3-item">
-                            <button id='use_code' name="use_code" type="button" class="w-100 m-auto btn btn-outline-light font-weight-bold" aria-pressed="false" onclick="app.option.ship.setCode(this)">Code</button>
-                            <button id='filter_retro' name="retro_ship_only" type="button" class="w-100 m-auto btn btn-outline-light font-weight-bold active" aria-pressed="true" onclick="app.option.ship.setRetro(this)">Retrofitted Only</button>
+                        <div class="d-flex m-auto line-40">
+                            <div class="dropdown w-50 mx-1 btn-group">
+                                <button id="ship_sort_order" name="ship_sort_order" type="button" class="w-25 btn btn-outline-light font-weight-bold active" aria-pressed="true" onclick="app.option.ship.sort_order(this)" value="1">↓</button>
+                                <button ui_id="sort" class="btn btn-outline-light w-75 dropdown-toggle text-truncate" type="button" id="sort_menu" data-toggle="dropdown" aria-expanded="false">
+                                    Sort
+                                </button>
+                                <div class="dropdown-menu bg-secondary" aria-labelledby="sort_menu">
+                                    <div class="dropdown-item text-light text-monospace" ui_id="sort_nation" value="nationality" onclick="app.option.ship.sort(this)">Nation</div>
+                                    <div class="dropdown-item text-light text-monospace" ui_id="sort_type" value="type" onclick="app.option.ship.sort(this)">Type</div>
+                                    <div class="dropdown-item text-light text-monospace" ui_id="sort_rarity" value="rarity" onclick="app.option.ship.sort(this)">Rarity</div>
+                                    <div class="dropdown-item text-light bg-primary text-monospace" ui_id="sort_default" value="default" onclick="app.option.ship.sort(this, true)">Default</div>
+                                </div>
+                            </div>
+                            <button id='use_code' name="use_code" type="button" class="w-50 mx-1 btn btn-outline-light font-weight-bold" aria-pressed="false" onclick="app.option.ship.setCode(this)">Code</button>
                         </div>
                     </div>
                     <div class="row justify-content-center m-auto" id="shiplist"></div>
@@ -443,17 +460,29 @@
                         </div>
                     </div>
                     <div class="d-inline-flex w-100 font-weight-bold">
-                        <div class="btn-group d-flex m-3 line-3-item">
+                        <div class="btn-group d-flex my-2 mx-1 line-40">
                             <button id='always_reset_equip_filter' type="button" class="w-100 m-auto btn btn-outline-light font-weight-bold" aria-pressed="false" onclick="app.option.equip.autoUseDefault(this)">Auto</button>
                             <button id='reset_equip_filter' type="button" class="w-100 m-auto btn btn-outline-light font-weight-bold" aria-pressed="false" onclick="app.option.equip.resetFilter(true)">Default</button>
                             <button id='clear_equip_filter' type="button" class="w-100 m-auto btn btn-outline-light font-weight-bold" aria-pressed="false" onclick="app.option.equip.resetFilter(false)">Clear</button>
                         </div>
-                        <div class="d-flex m-3 line-3-item">
+                        <div class="d-flex m-auto line-5-item">
                             <div class="my-auto ml-auto mr-1" ui_id="filter_search_result">Result</div>
                             <div class="my-auto mr-auto ml-1" id="equip_count"></div>
                         </div>
-                        <div class="d-flex m-3 line-3-item">
-                            <button id='use_eq_code' type="button" class="w-100 m-auto btn btn-outline-light font-weight-bold" aria-pressed="false" onclick="app.option.equip.setCode(this)">Code</button>
+                        <div class="d-flex m-auto line-40">
+                            <div class="dropdown w-50 btn-group mx-1">
+                                <button id="equip_sort_order" name="equip_sort_order" type="button" class="w-25 btn btn-outline-light font-weight-bold active" aria-pressed="true" onclick="app.option.equip.sort_order(this)" value="1">↓</button>
+                                <button ui_id="sort" class="btn btn-outline-light w-75 dropdown-toggle text-truncate" type="button" id="sort_menu" data-toggle="dropdown" aria-expanded="false">
+                                    Sort
+                                </button>
+                                <div class="dropdown-menu bg-secondary" aria-labelledby="sort_menu">
+                                    <div class="dropdown-item text-light text-monospace" ui_id="sort_nation" value="nationality" onclick="app.option.equip.sort(this)">Nation</div>
+                                    <div class="dropdown-item text-light text-monospace" ui_id="sort_type" value="type" onclick="app.option.equip.sort(this)">Type</div>
+                                    <div class="dropdown-item text-light text-monospace" ui_id="sort_rarity" value="rarity" onclick="app.option.equip.sort(this)">Rarity</div>
+                                    <div class="dropdown-item text-light bg-primary text-monospace" ui_id="sort_default" value="default" onclick="app.option.equip.sort(this, true)">Default</div>
+                                </div>
+                            </div>
+                            <button id='use_eq_code' type="button" class="w-50 mx-1 btn btn-outline-light font-weight-bold" aria-pressed="false" onclick="app.option.equip.setCode(this)">Code</button>
                         </div>
                     </div>
                     <div class="row justify-content-center m-auto" id="equiplist"></div>
@@ -470,7 +499,7 @@
     <script src="lib/index-min.js"></script>
     <script src='js/ship_data.min.js?v=ff4a351bdb45'></script>
     <script src='js/equip_data.min.js?v=334f84d47dc3'></script>
-    <script src="js/main-v2.min.js?v=8937e4981461"></script>
+    <script src="js/main-v2.min.js?v=e5b316bb6433"></script>
 </body>
 
 </html>

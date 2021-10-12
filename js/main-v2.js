@@ -39,6 +39,12 @@ const
         { id: "filter_type", en: "Type", jp: "種類", tw: "種類", },
         { id: "filter_rarity", en: "Rarity", jp: "レア度", tw: "稀有度", },
 
+        { id: "sort", en: "Sorting", jp: "並べ替え", tw: "排序", },
+        { id: "sort_nation", en: "Nation", jp: "陣営", tw: "國家", },
+        { id: "sort_type", en: "Type", jp: "種類", tw: "種類", },
+        { id: "sort_rarity", en: "Rarity", jp: "レア度", tw: "稀有度", },
+        { id: "sort_default", en: "Default", jp: "初期設定", tw: "預設", },
+
         { id: "search_input", en: "Search", jp: "検索", tw: "搜尋", },
         { id: "filter_search_result", en: "Result", jp: "結果", tw: "結果", },
         { id: "filter_retro", en: "Retrofitted Only", jp: "改造された艦船だけ", tw: "只顯示改造後的", },
@@ -182,9 +188,12 @@ const
         },
         sorting(arr, key, descen) {
             if (descen) {
-                arr.sort((a, b) => { return a[key] < b[key] ? 1 : -1; });
+                arr.sort((a, b) => { return naturalSort(b[key], a[key]); });
             } else {
-                arr.sort((a, b) => { return a[key] > b[key] ? 1 : -1; });
+                arr.sort((a, b) => { return naturalSort(a[key], b[key]); });
+            }
+            function naturalSort(a, b) {
+                return String(a).localeCompare(String(b), navigator.languages[0] || navigator.language, { numeric: true });
             }
             return arr;
         },
@@ -613,7 +622,7 @@ const
                         ["fleet_storage", _d.exchange, _d.w50, _d.w100],
                         ["dialog_shipselect", _d.exchange, _d.no_effect, _d.mw100],
                         ["dialog_select_equip", _d.exchange, _d.no_effect, _d.mw100],
-                        ["search_box", _d.exchange, _d.df, _d.fw],
+                        //["search_box", _d.exchange, _d.df, _d.fw],
                     ];
                 if (width < safe_size) {
                     target_list.forEach(t => { t = converter(...t); classManager[t.mode](t.ele, t.n, t.s); });
@@ -646,6 +655,33 @@ const
                     retrofit_only = ele.classList.contains("active");
                     app.shipDisplay();
                 },
+                sort_order(ele) {
+                    $(ele).button("toggle");
+                    ele.value = ele.value == 1 ? 0 : 1;
+                },
+                isDescend() {
+                    if (!this._sort_order) this._sort_order = document.querySelector("#ship_sort_order");
+                    return this._sort_order.value == 1 ? true : false;
+                },
+                last_sort: {},
+                sort(ele, reset = false) {
+                    let
+                        shiplist = document.querySelector("#shiplist"),
+                        tid = "000000",
+                        top = sortedShip[0],
+                        list = (this.last_sort.list ? this.last_sort.list : sortedShip).filter(ship => ship.id != tid),
+                        key = ele.getAttribute("value"),
+                        descend = this.isDescend();
+                    console.log(`sort by:${key}, descend:${descend}`);
+                    if (!reset) {
+                        list = util.sorting(list, key, descend);
+                        list.unshift(top);
+                    } else {
+                        list = sortedShip;
+                    }
+                    list.forEach(ship => shiplist.appendChild(shiplist.querySelector(`[id="${ship.id}"]`)));
+                    this.last_sort = { key, descend, list };
+                }
             },
             equip: {
                 resetFilter(toDefault = false) {
@@ -680,6 +716,33 @@ const
                         this.resetFilter(false);
                     }
                 },
+                sort_order(ele) {
+                    $(ele).button("toggle");
+                    ele.value = ele.value == 1 ? 0 : 1;
+                },
+                isDescend() {
+                    if (!this._sort_order) this._sort_order = document.querySelector("#equip_sort_order");
+                    return this._sort_order.value == 1 ? true : false;
+                },
+                last_sort: {},
+                sort(ele, reset = false) {
+                    let
+                        equiplist = document.querySelector("#equiplist"),
+                        tid = "666666",
+                        top = sortedEquip[0],
+                        list = (this.last_sort.list ? this.last_sort.list : sortedEquip).filter(equip => equip.id != tid),
+                        key = ele.getAttribute("value"),
+                        descend = this.isDescend();
+                    console.log(`sort by:${key}, descend:${descend}`);
+                    if (!reset) {
+                        list = util.sorting(list, key, descend);
+                        list.unshift(top);
+                    } else {
+                        list = sortedEquip;
+                    }
+                    list.forEach(equip => equiplist.appendChild(equiplist.querySelector(`[id="${equip.id}"]`)));
+                    this.last_sort = { key, descend, list };
+                }
             },
         },
         fleet: {
@@ -1589,8 +1652,9 @@ const
                     newlist.push(newitem);
                     pos++;
                 }
-                newlist = util.sorting(newlist, 'type', true);
-                newlist = util.sorting(newlist, 'nationality', true);
+                newlist = util.sorting(newlist, 'type', false);
+                newlist = util.sorting(newlist, 'id', false);
+                newlist = util.sorting(newlist, 'nationality', false);
                 newlist = util.sorting(newlist, 'rarity', true);
                 // add emptyship to top
                 newlist.unshift(empty);
@@ -1641,8 +1705,9 @@ const
                     newlist.push(newitem);
                     pos++;
                 }
+                newlist = util.sorting(newlist, "id", true);
+                newlist = util.sorting(newlist, "type", true);
                 newlist = util.sorting(newlist, "nationality", false);
-                newlist = util.sorting(newlist, "type", false);
                 newlist = util.sorting(newlist, "rarity", true);
                 newlist.unshift(empty);
                 sortedEquip = Object.assign([], newlist);

@@ -14,6 +14,9 @@ This site was developed and tested on `Chrome`/`Firefox`
 Compatibility with other browsers is unknown  
 
 ## Update  
+**2021-10-12**
+- add sorting
+
 **2021-10-07**
 - due to some change, old tools are no longer suitable  
   for various reasons, no tool will be release in the future  
@@ -153,9 +156,6 @@ Compatibility with other browsers is unknown
 - new version  
 - check duplicate ship/equip  
 - add import/export setting  
-
-## todo...
-- make re-sort for ship/equip
 
 ## Code  
 [Hull classification symbol](https://en.wikipedia.org/wiki/Hull_classification_symbol)  
