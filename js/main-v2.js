@@ -44,6 +44,11 @@ const
         { id: "sort_type", en: "Type", jp: "種類", tw: "種類", },
         { id: "sort_rarity", en: "Rarity", jp: "レア度", tw: "稀有度", },
         { id: "sort_default", en: "Default", jp: "初期設定", tw: "預設", },
+        { id: "sort_retro", en: "Retrofit", jp: "改造", tw: "改造", },
+        { id: "sort_jp", en: "Name(JP)", jp: "名前(JP)", tw: "名稱(JP)", },
+        { id: "sort_en", en: "Name(EN)", jp: "名前(EN)", tw: "名稱(EN)", },
+        { id: "sort_tw", en: "Name(TW)", jp: "名前(TW)", tw: "名稱(TW)", },
+        { id: "sort_cn", en: "Name(CN)", jp: "名前(CN)", tw: "名稱(CN)", },
 
         { id: "search_input", en: "Search", jp: "検索", tw: "搜尋", },
         { id: "filter_search_result", en: "Result", jp: "結果", tw: "結果", },
@@ -656,8 +661,8 @@ const
                     app.shipDisplay();
                 },
                 sort_order(ele) {
-                    $(ele).button("toggle");
                     ele.value = ele.value == 1 ? 0 : 1;
+                    ele.textContent = ele.value == 1 ? "⮟" : "⮝";
                 },
                 isDescend() {
                     if (!this._sort_order) this._sort_order = document.querySelector("#ship_sort_order");
@@ -717,8 +722,8 @@ const
                     }
                 },
                 sort_order(ele) {
-                    $(ele).button("toggle");
                     ele.value = ele.value == 1 ? 0 : 1;
+                    ele.textContent = ele.value == 1 ? "⮟" : "⮝";
                 },
                 isDescend() {
                     if (!this._sort_order) this._sort_order = document.querySelector("#equip_sort_order");
@@ -1652,9 +1657,9 @@ const
                     newlist.push(newitem);
                     pos++;
                 }
-                newlist = util.sorting(newlist, 'type', false);
-                newlist = util.sorting(newlist, 'id', false);
                 newlist = util.sorting(newlist, 'nationality', false);
+                newlist = util.sorting(newlist, 'type', true);
+                newlist = util.sorting(newlist, 'id', false);
                 newlist = util.sorting(newlist, 'rarity', true);
                 // add emptyship to top
                 newlist.unshift(empty);
