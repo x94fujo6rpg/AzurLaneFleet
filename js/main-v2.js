@@ -1522,7 +1522,7 @@ const
                 itemInApp.en = itemInApp.type_en;
                 itemInApp.jp = itemInApp.type_jp;
                 itemInApp.frame = itemInApp.bg = "";
-                item.icon = ui_table.empty_item;
+                itemInApp.icon = ui_table.empty_item;
                 itemInApp.id = "";
             } else {
                 // copy data
