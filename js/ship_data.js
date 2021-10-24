@@ -20040,6 +20040,44 @@ var ship_data = {
             10
         ]
     },
+    "103120": {
+        "nationality": 1,
+        "type": 3,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 103124,
+        "skin_id": 103120,
+        "english_name": "USS New Orlean",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "103120",
+        "painting": "xinaoerliang",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "ニューオリンズ",
+        "en_name": "New Orleans",
+        "cn_name": "新奥尔良",
+        "tw_name": "新奧爾良",
+        "equip_1": [
+            3
+        ],
+        "equip_2": [
+            1
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
     "103110": {
         "nationality": 1,
         "type": 3,
