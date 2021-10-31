@@ -35,6 +35,7 @@ Compatibility with other browsers is unknown
   | Köln                    | Koln                    |
   | Königsberg              | Konigsberg              |
   | Hermann Künne (Z19)     | Hermann Kunne (Z19)     |
+  
   *both of them are supported
 
 **2021-10-12**
