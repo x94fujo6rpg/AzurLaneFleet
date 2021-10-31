@@ -1218,12 +1218,12 @@ const
                     if (item.id == "000000") return;
                     let ship = ship_data[item.id];
                     let ismatch = [
-                        ship.tw_name,
+                        ship.tw_name.toLowerCase(),
                         ship.cn_name,
                         ship.en_name.toLowerCase(),
                         ship.jp_name,
                         ship.english_name.toLowerCase(),
-                    ].some(t => t.includes(search_input));
+                    ].some(t => t.match(search_input));
                     if (ismatch) {
                         if (ship) {
                             let is_select = app.util.isCorrectShipType(ship.type);

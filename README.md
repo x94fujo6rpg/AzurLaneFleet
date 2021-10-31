@@ -14,6 +14,29 @@ This site was developed and tested on `Chrome`/`Firefox`
 Compatibility with other browsers is unknown  
 
 ## Update  
+**2021-11-01**
+- useing TW name data. if not found, convert from CN
+- unreleased ship name marked with `*` *(on that server)*
+- now can use `TWnoData`/`ENnoData` to find unreleased ships *(on that server)*
+- normalize some of the ship names (so that they can be searched with normal letters)
+  | Original                | Normalized              |
+  |-------------------------|-------------------------|
+  | Algérie                 | Algerie                 |
+  | La Galissonnière        | La Galissonniere        |
+  | Béarn                   | Bearn                   |
+  | Émile Bertin            | Emile Bertin            |
+  | Maillé Brézé            | Maille Breze            |
+  | L'Opiniâtre             | L'Opiniatre             |
+  | Le Téméraire            | Le Temeraire            |
+  | Ägir                    | Agir                    |
+  | Friedrich der Große     | Friedrich der Grosse    |
+  | Nürnberg                | Nurnberg                |
+  | Köln (Retrofit)         | Koln (Retrofit)         |
+  | Köln                    | Koln                    |
+  | Königsberg              | Konigsberg              |
+  | Hermann Künne (Z19)     | Hermann Kunne (Z19)     |
+  *both of them are supported
+
 **2021-10-12**
 - add sorting
 
