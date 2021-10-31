@@ -2618,6 +2618,86 @@ var ship_data = {
             14
         ]
     },
+    "801080": {
+        "nationality": 8,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 801084,
+        "skin_id": 801080,
+        "english_name": "FFNF Maillé Brézé",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "801080",
+        "painting": "mayebuleize",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "マイレ・ブレゼ",
+        "en_name": "Maillé Brézé",
+        "cn_name": "马耶·布雷泽",
+        "tw_name": "馬耶·佈雷澤",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "801070": {
+        "nationality": 8,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 801074,
+        "skin_id": 801070,
+        "english_name": "FFNF Le Terrible",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "801070",
+        "painting": "kebu",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "ル・テリブル",
+        "en_name": "Le Terrible",
+        "cn_name": "可怖",
+        "tw_name": "可怖",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
     "801040": {
         "nationality": 8,
         "type": 1,
