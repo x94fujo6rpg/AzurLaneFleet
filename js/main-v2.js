@@ -663,6 +663,9 @@ const
                 sort_order(ele) {
                     ele.value = ele.value == 1 ? 0 : 1;
                     ele.textContent = ele.value == 1 ? "⮟" : "⮝";
+                    // trigger sort
+                    document.querySelector(`[onclick*="app.option.ship.sort"]`) //ship
+                        .parentElement.querySelector(`[aria-labelledby="sort_menu"]>.active`).click();
                 },
                 isDescend() {
                     if (!this._sort_order) this._sort_order = document.querySelector("#ship_sort_order");
@@ -682,10 +685,15 @@ const
                         list = util.sorting(list, key, descend);
                         list.unshift(top);
                     } else {
-                        list = sortedShip;
+                        list = descend ? sortedShip : sortedShip.slice().reverse();
+                        if (!descend) list.unshift(list.pop());
                     }
                     list.forEach(ship => shiplist.appendChild(shiplist.querySelector(`[id="${ship.id}"]`)));
                     this.last_sort = { key, descend, list };
+                    // clear other selected
+                    [...ele.parentElement.children].forEach(item => item.classList.remove("active"));
+                    // set current as selected
+                    ele.classList.add("active");
                 }
             },
             equip: {
@@ -724,6 +732,9 @@ const
                 sort_order(ele) {
                     ele.value = ele.value == 1 ? 0 : 1;
                     ele.textContent = ele.value == 1 ? "⮟" : "⮝";
+                    // trigger sort
+                    document.querySelector(`[onclick*="app.option.equip.sort"]`) //equip
+                        .parentElement.querySelector(`[aria-labelledby="sort_menu"]>.active`).click();
                 },
                 isDescend() {
                     if (!this._sort_order) this._sort_order = document.querySelector("#equip_sort_order");
@@ -743,10 +754,15 @@ const
                         list = util.sorting(list, key, descend);
                         list.unshift(top);
                     } else {
-                        list = sortedEquip;
+                        list = descend ? sortedEquip : sortedEquip.slice().reverse();
+                        if (!descend) list.unshift(list.pop());
                     }
                     list.forEach(equip => equiplist.appendChild(equiplist.querySelector(`[id="${equip.id}"]`)));
                     this.last_sort = { key, descend, list };
+                    // clear other selected
+                    [...ele.parentElement.children].forEach(item => item.classList.remove("active"));
+                    // set current as selected
+                    ele.classList.add("active");
                 }
             },
         },

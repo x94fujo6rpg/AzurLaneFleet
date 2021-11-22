@@ -3,6 +3,9 @@ The goal of this project
 Is just for easily share fleet configuration in one shot  
 ![](https://github.com/x94fujo6rpg/AzurLaneFleet/raw/master/ui/screenshots.jpg)  
 
+### [Chinese WIKI version](https://wiki.biligame.com/blhx/%E8%88%B0%E9%98%9F%E6%A8%A1%E6%8B%9F%E5%99%A8) is  online ###  
+***Caution! Data stored in two versions are not compatible!***  
+
 If you need DPS calculator, go check [Zoratsu's AzurLaneCalculator](https://github.com/Zoratsu/AzurLaneCalculator)  
   
 [Why is it so hard to calculate DPS in this game](https://github.com/x94fujo6rpg/AzurLaneFleet#simple-explain)
@@ -14,6 +17,10 @@ This site was developed and tested on `Chrome`/`Firefox`
 Compatibility with other browsers is unknown  
 
 ## Update  
+**2021-11-23**
+- now the last sorting method will be marked
+- now the `sort order` button will also trigger sorting
+
 **2021-11-01**
 - useing TW name data. if not found, convert from CN
 - unreleased ship name marked with `*` *(on that server)*
