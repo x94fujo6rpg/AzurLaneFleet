@@ -2014,11 +2014,11 @@ const
                     app.option.switchLayout(layoutSwitch, true);
                 }
 
-                if (setting[settingKey.fleetEdit] == 1) {
+                if (setting[settingKey.fleetEdit] == 1 || !setting[settingKey.fleetEdit]) {
                     document.querySelector("#display_fleet_op").click();
                 }
 
-                if (setting[settingKey.fleetBorder] == 1) {
+                if (setting[settingKey.fleetBorder] == 1 || !setting[settingKey.fleetEdit]) {
                     document.querySelector("#display_fleet_border").click();
                 }
                 return true;

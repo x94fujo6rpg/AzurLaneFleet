@@ -20,6 +20,7 @@ Compatibility with other browsers is unknown
 **2021-11-23**
 - now the last sorting method will be marked
 - now the `sort order` button will also trigger sorting
+- `Fleet ID / Edit Button` & `Fleet Border` now enabled by default
 
 **2021-11-01**
 - useing TW name data. if not found, convert from CN
