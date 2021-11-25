@@ -3,7 +3,7 @@ The goal of this project
 Is just for easily share fleet configuration in one shot  
 ![](https://x94fujo6rpg.github.io/AzurLaneFleet/ui/screenshots.jpg)  
 ```
-No4RgBgDg3IGigTgCy0UgzANghza+ATHsprALrzjSwQCseSYkeb8bVNMs5H-7CBS7c6JARKHVIPCLkkCuMugHZBk4fDAjRsQus7UDiows4jjh4JY5cbQqtooBCCADoGzgCZRMYAKbYKACGXvRY-vQqAMZQ2FDR9ET04f4qKgBGSFBeQA
+No4RgBgDg3IGigTgCy0UgzANghza+ATHsprALrzjSwQCseSYkeb8bVNMs5H-7CBS7c6JARKHVIPCLkkCuMugHZBk4fDAjRsQus7UDiows4ika3AmNTgtjlwdCq2igEIIAOgbuARgAm9GAqKkT0AGZQ4REAhihEUADGfkR+SQCmKSpg2GCpYEA
 ```
 
 ### [Chinese WIKI version](https://wiki.biligame.com/blhx/%E8%88%B0%E9%98%9F%E6%A8%A1%E6%8B%9F%E5%99%A8) is  online ###  
