@@ -1,7 +1,7 @@
 ﻿# [AzurLaneFleet](https://x94fujo6rpg.github.io/AzurLaneFleet/) #  
 The goal of this project  
 Is just for easily share fleet configuration in one shot  
-![](https://github.com/x94fujo6rpg/AzurLaneFleet/raw/master/ui/screenshots.jpg)  
+![](https://x94fujo6rpg.github.io/AzurLaneFleet/ui/screenshots.jpg)  
 
 ### [Chinese WIKI version](https://wiki.biligame.com/blhx/%E8%88%B0%E9%98%9F%E6%A8%A1%E6%8B%9F%E5%99%A8) is  online ###  
 ***Caution! Data stored in two versions are not compatible!***  
