@@ -763,7 +763,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "潜水艦用九六式酸素魚雷",
         "cn_name": "潜艇用96式纯氧鱼雷",
-        "tw_name": "潛艇用96式純氧魚雷*",
+        "tw_name": "潛艇用96式純氧魚雷",
         "en_name": "Type 96 Submarine Torpedo",
         "equip_limit": 0
     },
@@ -831,7 +831,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "潜水艦用九二式電動魚雷改",
         "cn_name": "潜艇用92式潜射鱼雷改",
-        "tw_name": "潛艇用92式潛射魚雷改*",
+        "tw_name": "潛艇用92式潛射魚雷改",
         "en_name": "Type 92 Kai Electric Submarine Torpedo",
         "equip_limit": 0
     },
@@ -899,7 +899,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "潜水艦用MarkVIII魚雷",
         "cn_name": "潜艇用Mark VIII鱼雷",
-        "tw_name": "潛艇用Mark VIII魚雷*",
+        "tw_name": "潛艇用Mark VIII魚雷",
         "en_name": "Mark VIII Submarine Torpedo",
         "equip_limit": 0
     },
@@ -916,7 +916,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "潜水艦用MarkVIII魚雷",
         "cn_name": "潜艇用Mark VIII鱼雷",
-        "tw_name": "潛艇用Mark VIII魚雷*",
+        "tw_name": "潛艇用Mark VIII魚雷",
         "en_name": "Mark VIII Submarine Torpedo",
         "equip_limit": 0
     },
@@ -933,7 +933,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "潜水艦用MarkVIII魚雷",
         "cn_name": "潜艇用Mark VIII鱼雷",
-        "tw_name": "潛艇用Mark VIII魚雷*",
+        "tw_name": "潛艇用Mark VIII魚雷",
         "en_name": "Mark VIII Submarine Torpedo",
         "equip_limit": 0
     },
@@ -950,7 +950,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "潜水艦用Mark20(S)魚雷“Bidder”",
         "cn_name": "潜艇用Mark 20 S鱼雷-彼得",
-        "tw_name": "潛艇用Mark 20 S魚雷-彼得*",
+        "tw_name": "潛艇用Mark 20 S魚雷-彼得",
         "en_name": "Mark 20 \"Bidder\" Submarine Torpedo",
         "equip_limit": 0
     },
@@ -967,7 +967,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "潜水艦用Mark12魚雷“Ferry”",
         "cn_name": "潜艇用Mark 12鱼雷-菲里",
-        "tw_name": "潛艇用Mark 12魚雷-菲里*",
+        "tw_name": "潛艇用Mark 12魚雷-菲里",
         "en_name": "Mark 12 \"Ferry\" Submarine Torpedo",
         "equip_limit": 0
     },
@@ -984,7 +984,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "潜水艦用Mark28魚雷",
         "cn_name": "潜艇用Mark 28鱼雷",
-        "tw_name": "潛艇用Mark 28魚雷*",
+        "tw_name": "潛艇用Mark 28魚雷",
         "en_name": "Mark 28 Submarine Torpedo",
         "equip_limit": 0
     },
@@ -1001,7 +1001,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "潜水艦用Mark18魚雷",
         "cn_name": "潜艇用Mark 18鱼雷",
-        "tw_name": "潛艇用Mark 18魚雷*",
+        "tw_name": "潛艇用Mark 18魚雷",
         "en_name": "Mark 18 Submarine Torpedo",
         "equip_limit": 0
     },
@@ -1188,7 +1188,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "強風",
         "cn_name": "强风",
-        "tw_name": "強風*",
+        "tw_name": "強風",
         "en_name": "N1K1 Kyoufuu",
         "equip_limit": 0
     },
@@ -1205,7 +1205,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "二式水戦",
         "cn_name": "二式水上战斗机",
-        "tw_name": "二式水上戰鬥機*",
+        "tw_name": "二式水上戰鬥機",
         "en_name": "Type 2 Seaplane Fighter",
         "equip_limit": 0
     },
@@ -1307,6 +1307,117 @@ var equip_data = {
         "tw_name": "試作型三聯裝310mm主炮",
         "en_name": "Prototype Triple 310mm Type 0 Main Gun Mount",
         "equip_limit": 0
+    },
+    "89300": {
+        "nationality": 108,
+        "type": 10,
+        "attribute_2": "dodge",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 10,
+        "ammo_icon": [],
+        "id": 89300,
+        "icon": "89300",
+        "ship_type_forbidden": [],
+        "jp_name": "バトルトラクトマックス",
+        "cn_name": "征战巨坦",
+        "tw_name": "征戰巨坦*",
+        "en_name": "Battle Tracto Max",
+        "equip_limit": 89300
+    },
+    "89340": {
+        "nationality": 108,
+        "type": 10,
+        "attribute_2": null,
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 10,
+        "ammo_icon": [],
+        "id": 89340,
+        "icon": "89340",
+        "ship_type_forbidden": [],
+        "jp_name": "バスターボラー",
+        "cn_name": "爆裂钻孔机",
+        "tw_name": "爆裂鑽孔機*",
+        "en_name": "Buster Borr",
+        "equip_limit": 89340
+    },
+    "89380": {
+        "nationality": 108,
+        "type": 10,
+        "attribute_2": null,
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 10,
+        "ammo_icon": [],
+        "id": 89380,
+        "icon": "89380",
+        "ship_type_forbidden": [
+            1,
+            2,
+            6,
+            7,
+            8,
+            11,
+            12,
+            17
+        ],
+        "jp_name": "ダイナミックキャノン",
+        "cn_name": "戴拿爆能加农",
+        "tw_name": "戴拿爆能加農*",
+        "en_name": "Dynamic Cannon",
+        "equip_limit": 89380
+    },
+    "89360": {
+        "nationality": 108,
+        "type": 10,
+        "attribute_2": null,
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 10,
+        "ammo_icon": [],
+        "id": 89360,
+        "icon": "89360",
+        "ship_type_forbidden": [],
+        "jp_name": "スカイヴィッター",
+        "cn_name": "苍穹喷射机",
+        "tw_name": "蒼穹噴射機*",
+        "en_name": "Sky Vitter",
+        "equip_limit": 89360
+    },
+    "89400": {
+        "nationality": 108,
+        "type": 10,
+        "attribute_2": null,
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 10,
+        "ammo_icon": [],
+        "id": 89400,
+        "icon": "89400",
+        "ship_type_forbidden": [],
+        "jp_name": "ゴルドバーン",
+        "cn_name": "煌翼炎龙",
+        "tw_name": "煌翼炎龍*",
+        "en_name": "Goldburn",
+        "equip_limit": 89400
+    },
+    "89320": {
+        "nationality": 108,
+        "type": 10,
+        "attribute_2": null,
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 10,
+        "ammo_icon": [],
+        "id": 89320,
+        "icon": "89320",
+        "ship_type_forbidden": [],
+        "jp_name": "グリッドマンキャリバー",
+        "cn_name": "古立特圣剑",
+        "tw_name": "古立特聖劍*",
+        "en_name": "Gridman Calibur",
+        "equip_limit": 89320
     },
     "89280": {
         "nationality": 107,
@@ -3708,7 +3819,7 @@ var equip_data = {
         ],
         "jp_name": "He-50b",
         "cn_name": "He-50b舰载轰炸机",
-        "tw_name": "He-50b艦載轟炸機*",
+        "tw_name": "He-50b艦載轟炸機",
         "en_name": "He-50b",
         "equip_limit": 0
     },
@@ -3763,7 +3874,7 @@ var equip_data = {
         ],
         "jp_name": "彗星二一型",
         "cn_name": "彗星二一型",
-        "tw_name": "彗星二一型*",
+        "tw_name": "彗星二一型",
         "en_name": "Suisei Model 21",
         "equip_limit": 0
     },
@@ -3782,7 +3893,7 @@ var equip_data = {
         ],
         "jp_name": "彗星一二型甲",
         "cn_name": "彗星一二型甲",
-        "tw_name": "彗星一二型甲*",
+        "tw_name": "彗星一二型甲",
         "en_name": "Suisei Model 12A",
         "equip_limit": 0
     },
@@ -3858,7 +3969,7 @@ var equip_data = {
         ],
         "jp_name": "九九式艦爆改",
         "cn_name": "九九式舰爆改",
-        "tw_name": "九九式艦爆改*",
+        "tw_name": "九九式艦爆改",
         "en_name": "Type 99 Dive Bomber Kai",
         "equip_limit": 0
     },
@@ -4086,7 +4197,7 @@ var equip_data = {
         ],
         "jp_name": "実験型XSB3C-1",
         "cn_name": "实验型XSB3C-1",
-        "tw_name": "實驗型XSB3C-1*",
+        "tw_name": "實驗型XSB3C-1",
         "en_name": "Experimental XSB3C-1",
         "equip_limit": 0
     },
@@ -4314,7 +4425,7 @@ var equip_data = {
         ],
         "jp_name": "Ju-87 D-4",
         "cn_name": "Ju-87 D-4",
-        "tw_name": "Ju-87 D-4*",
+        "tw_name": "Ju-87 D-4",
         "en_name": "Ju-87 D-4",
         "equip_limit": 0
     },
@@ -4333,7 +4444,7 @@ var equip_data = {
         ],
         "jp_name": "Fi-167",
         "cn_name": "Fi-167舰载鱼雷机",
-        "tw_name": "Fi-167艦載魚雷機*",
+        "tw_name": "Fi-167艦載魚雷機",
         "en_name": "Fi 167",
         "equip_limit": 0
     },
@@ -4352,7 +4463,7 @@ var equip_data = {
         ],
         "jp_name": "Ar-195",
         "cn_name": "Ar-195舰载鱼雷机",
-        "tw_name": "Ar-195艦載魚雷機*",
+        "tw_name": "Ar-195艦載魚雷機",
         "en_name": "Ar 195",
         "equip_limit": 0
     },
@@ -4447,7 +4558,7 @@ var equip_data = {
         ],
         "jp_name": "天山改",
         "cn_name": "天山改",
-        "tw_name": "天山改*",
+        "tw_name": "天山改",
         "en_name": "Tenzan Kai",
         "equip_limit": 0
     },
@@ -4523,7 +4634,7 @@ var equip_data = {
         ],
         "jp_name": "九七式艦攻改",
         "cn_name": "九七式舰攻改",
-        "tw_name": "九七式艦攻改*",
+        "tw_name": "九七式艦攻改",
         "en_name": "Type 97 Torpedo Bomber Kai",
         "equip_limit": 0
     },
@@ -4599,7 +4710,7 @@ var equip_data = {
         ],
         "jp_name": "ワイヴァーン",
         "cn_name": "飞龙",
-        "tw_name": "飛龍*",
+        "tw_name": "飛龍",
         "en_name": "Wyvern",
         "equip_limit": 0
     },
@@ -4694,7 +4805,7 @@ var equip_data = {
         ],
         "jp_name": "ファイアクレスト",
         "cn_name": "火冠",
-        "tw_name": "火冠*",
+        "tw_name": "火冠",
         "en_name": "Firecrest",
         "equip_limit": 0
     },
@@ -4846,7 +4957,7 @@ var equip_data = {
         ],
         "jp_name": "XTB2D-1スカイパイレート",
         "cn_name": "XTB2D-1天空海盗",
-        "tw_name": "XTB2D-1天空海盜*",
+        "tw_name": "XTB2D-1天空海盜",
         "en_name": "XTB2D-1 Skypirate",
         "equip_limit": 0
     },
@@ -5150,7 +5261,7 @@ var equip_data = {
         ],
         "jp_name": "試作型FW-190 A-5(艦載機型)",
         "cn_name": "试作型舰载FW-190 A-5",
-        "tw_name": "試作型艦載FW-190 A-5*",
+        "tw_name": "試作型艦載FW-190 A-5",
         "en_name": "Prototype Fw 190 A-5 (Carrier-based)",
         "equip_limit": 0
     },
@@ -5302,7 +5413,7 @@ var equip_data = {
         ],
         "jp_name": "Ar-197",
         "cn_name": "Ar-197舰载战斗机",
-        "tw_name": "Ar-197艦載戰鬥機*",
+        "tw_name": "Ar-197艦載戰鬥機",
         "en_name": "Ar 197",
         "equip_limit": 0
     },
@@ -5435,7 +5546,7 @@ var equip_data = {
         ],
         "jp_name": "零戦三二型",
         "cn_name": "零战三二型",
-        "tw_name": "零戰三二型*",
+        "tw_name": "零戰三二型",
         "en_name": "Type 0 Fighter Model 32",
         "equip_limit": 0
     },
@@ -5682,7 +5793,7 @@ var equip_data = {
         ],
         "jp_name": "シーファイアFR.47",
         "cn_name": "海喷火FR.47",
-        "tw_name": "海噴火FR.47*",
+        "tw_name": "海噴火FR.47",
         "en_name": "Seafire FR.47",
         "equip_limit": 0
     },
@@ -5758,7 +5869,7 @@ var equip_data = {
         ],
         "jp_name": "シーハリケーン",
         "cn_name": "海飓风",
-        "tw_name": "海颶風*",
+        "tw_name": "海颶風",
         "en_name": "Sea Hurricane",
         "equip_limit": 0
     },
@@ -5834,7 +5945,7 @@ var equip_data = {
         ],
         "jp_name": "試作型XF2A-4バッファロー",
         "cn_name": "试作型XF2A-4水牛",
-        "tw_name": "試作型XF2A-4水牛*",
+        "tw_name": "試作型XF2A-4水牛",
         "en_name": "Prototype XF2A-4 Buffalo",
         "equip_limit": 0
     },
@@ -5872,7 +5983,7 @@ var equip_data = {
         ],
         "jp_name": "F8Fベアキャット",
         "cn_name": "F8F熊猫",
-        "tw_name": "F8F熊貓*",
+        "tw_name": "F8F熊貓",
         "en_name": "F8F Bearcat",
         "equip_limit": 0
     },
@@ -5891,7 +6002,7 @@ var equip_data = {
         ],
         "jp_name": "F7Fタイガーキャット",
         "cn_name": "F7F虎猫",
-        "tw_name": "F7F虎貓*",
+        "tw_name": "F7F虎貓",
         "en_name": "F7F Tigercat",
         "equip_limit": 0
     },
@@ -6514,7 +6625,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "88mmSKC32高角砲",
         "cn_name": "双联装88mmSKC32高炮",
-        "tw_name": "雙聯裝88mmSKC32高炮*",
+        "tw_name": "雙聯裝88mmSKC32高炮",
         "en_name": "Twin 88mm SK C/32 AA Gun Mount",
         "equip_limit": 0
     },
@@ -6633,7 +6744,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "37mmFlak M43連装機銃",
         "cn_name": "双联37mm Flak M43机枪",
-        "tw_name": "雙聯37mm Flak M43機槍*",
+        "tw_name": "雙聯37mm Flak M43機槍",
         "en_name": "Twin 37mm Flak M43 Machine Gun Mount",
         "equip_limit": 0
     },
@@ -6701,7 +6812,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "105mmSKC高角連装砲改修型",
         "cn_name": "双联105mmSKC高炮改进型",
-        "tw_name": "雙聯105mmSKC高炮改進型*",
+        "tw_name": "雙聯105mmSKC高炮改進型",
         "en_name": "Twin 105mm SK C/33 na AA Gun Mount",
         "equip_limit": 0
     },
@@ -6837,7 +6948,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "80mm高射砲",
         "cn_name": "80mm高射炮",
-        "tw_name": "80mm高射炮*",
+        "tw_name": "80mm高射炮",
         "en_name": "Single 80mm AA Gun Mount",
         "equip_limit": 0
     },
@@ -7007,7 +7118,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "25mm九六式三連装機銃(爆風避盾装備)",
         "cn_name": "九六式25mm三连装暴风避盾机炮",
-        "tw_name": "九六式25mm三連裝暴風避盾機炮*",
+        "tw_name": "九六式25mm三連裝暴風避盾機炮",
         "en_name": "Triple 25mm Type 96 AT/AA Gun Mount",
         "equip_limit": 0
     },
@@ -7075,7 +7186,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "127mm連装高角砲改",
         "cn_name": "127mm连装高角炮改",
-        "tw_name": "127mm連裝高角炮改*",
+        "tw_name": "127mm連裝高角炮改",
         "en_name": "Twin 127mm Type 89 AA Gun Mount",
         "equip_limit": 0
     },
@@ -7364,7 +7475,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "40mmボフォース連装対空機銃MarkI",
         "cn_name": "双联装40mm博福斯对空机炮Mark I",
-        "tw_name": "雙聯裝40mm博福斯對空機炮Mark I*",
+        "tw_name": "雙聯裝40mm博福斯對空機炮Mark I",
         "en_name": "Twin 40mm Bofors RP Mark I AA Gun Mount",
         "equip_limit": 0
     },
@@ -7381,7 +7492,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "20mmエリコン高角砲MkII",
         "cn_name": "20mm厄利孔高射炮MkII",
-        "tw_name": "20mm厄利孔高射炮MkII*",
+        "tw_name": "20mm厄利孔高射炮MkII",
         "en_name": "Single 20mm Mk II Oerlikon AA Gun Mount",
         "equip_limit": 0
     },
@@ -7415,7 +7526,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "120mm対空砲MarkVIII",
         "cn_name": "120mm高射炮Mark VIII",
-        "tw_name": "120mm高射炮Mark VIII*",
+        "tw_name": "120mm高射炮Mark VIII",
         "en_name": "120mm High-Angle Gun MkVIII",
         "equip_limit": 0
     },
@@ -7687,7 +7798,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "76mm高角砲改修型",
         "cn_name": "76mm高射炮改进型",
-        "tw_name": "76mm高射炮改進型*",
+        "tw_name": "76mm高射炮改進型",
         "en_name": "Single 76mm Mk 26 AA Gun Mount",
         "equip_limit": 0
     },
@@ -7755,7 +7866,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "76mm連装RF砲Mk27",
         "cn_name": "双联装76mmRF火炮Mk27",
-        "tw_name": "雙聯裝76mmRF火炮Mk27*",
+        "tw_name": "雙聯裝76mmRF火炮Mk27",
         "en_name": "Twin 76mm Mk 27 RF AA Gun Mount",
         "equip_limit": 0
     },
@@ -7772,7 +7883,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "20mm四連装エリコン機関砲Mk15",
         "cn_name": "四联装20mm厄利孔高射炮Mk15",
-        "tw_name": "四聯裝20mm厄利孔高射炮Mk15*",
+        "tw_name": "四聯裝20mm厄利孔高射炮Mk15",
         "en_name": "Quadruple 20mm Mk 15 Oerlikon AA Gun Mount",
         "equip_limit": 0
     },
@@ -8248,7 +8359,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "610mm四連装魚雷改",
         "cn_name": "四联装610mm鱼雷改",
-        "tw_name": "四聯裝610mm魚雷改*",
+        "tw_name": "四聯裝610mm魚雷改",
         "en_name": "610mm Quadruple Torpedo Mount Kai",
         "equip_limit": 0
     },
@@ -8333,7 +8444,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "610mm三連装魚雷改",
         "cn_name": "三联装610mm鱼雷改",
-        "tw_name": "三聯裝610mm魚雷改*",
+        "tw_name": "三聯裝610mm魚雷改",
         "en_name": "610mm Triple Torpedo Mount Kai",
         "equip_limit": 0
     },
@@ -8401,7 +8512,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "533mm四連装魚雷MarkIX",
         "cn_name": "四联装533mm鱼雷Mark IX",
-        "tw_name": "四聯裝533mm魚雷Mark IX*",
+        "tw_name": "四聯裝533mm魚雷Mark IX",
         "en_name": "533mm Quadruple Torpedo Mount Mk IX",
         "equip_limit": 0
     },
@@ -8418,7 +8529,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "533mm五連装魚雷MarkIX",
         "cn_name": "五联装533mm鱼雷Mark IX",
-        "tw_name": "五聯裝533mm魚雷Mark IX*",
+        "tw_name": "五聯裝533mm魚雷Mark IX",
         "en_name": "533mm Quintuple Torpedo Mount Mk IX",
         "equip_limit": 0
     },
@@ -8435,7 +8546,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "533mm三連装魚雷MarkIX",
         "cn_name": "三联装533mm鱼雷Mark IX",
-        "tw_name": "三聯裝533mm魚雷Mark IX*",
+        "tw_name": "三聯裝533mm魚雷Mark IX",
         "en_name": "533mm Triple Torpedo Mount Mk IX",
         "equip_limit": 0
     },
@@ -8452,7 +8563,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "533mm四連装魚雷Mk17",
         "cn_name": "四联装533mm鱼雷Mk17",
-        "tw_name": "四聯裝533mm魚雷Mk17*",
+        "tw_name": "四聯裝533mm魚雷Mk17",
         "en_name": "533mm Quadruple Torpedo Mount Mk 17",
         "equip_limit": 0
     },
@@ -8469,7 +8580,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "533mm五連装魚雷Mk17",
         "cn_name": "五联装533mm鱼雷Mk17",
-        "tw_name": "五聯裝533mm魚雷Mk17*",
+        "tw_name": "五聯裝533mm魚雷Mk17",
         "en_name": "533mm Quintuple Torpedo Mount Mk 17",
         "equip_limit": 0
     },
@@ -8486,7 +8597,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "533mm三連装魚雷Mk17",
         "cn_name": "三联装533mm鱼雷Mk17",
-        "tw_name": "三聯裝533mm魚雷Mk17*",
+        "tw_name": "三聯裝533mm魚雷Mk17",
         "en_name": "533mm Triple Torpedo Mount Mk 17",
         "equip_limit": 0
     },
@@ -9127,7 +9238,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "毘式356mm連装砲",
         "cn_name": "356mm毘式连装炮",
-        "tw_name": "356mm毘式連裝炮*",
+        "tw_name": "356mm毘式連裝炮",
         "en_name": "Twin 356mm 41st Year Type Naval Gun Mount",
         "equip_limit": 0
     },
@@ -9146,7 +9257,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "410mm連装砲改",
         "cn_name": "410mm连装炮改",
-        "tw_name": "410mm連裝炮改*",
+        "tw_name": "410mm連裝炮改",
         "en_name": "Twin 410mm Kai Naval Gun Mount",
         "equip_limit": 0
     },
@@ -9507,7 +9618,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "356mm連装砲MarkVII",
         "cn_name": "双联装356mm主炮",
-        "tw_name": "雙聯裝356mm主炮*",
+        "tw_name": "雙聯裝356mm主炮",
         "en_name": "Twin 356mm Mk VII Main Gun Mount",
         "equip_limit": 0
     },
@@ -9602,7 +9713,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "試作型406mm三連装砲MkD",
         "cn_name": "试作型三联装406mm主炮MkD",
-        "tw_name": "試作型三聯裝406mm主炮MkD*",
+        "tw_name": "試作型三聯裝406mm主炮MkD",
         "en_name": "Prototype 406mm Mk D Main Gun Mount",
         "equip_limit": 0
     },
@@ -9621,7 +9732,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "試作型356mm四連装砲MkB",
         "cn_name": "试作型四联装356mm主炮MkB",
-        "tw_name": "試作型四聯裝356mm主炮MkB*",
+        "tw_name": "試作型四聯裝356mm主炮MkB",
         "en_name": "Prototype Quadruple 356mm Mk B Main Gun Mount",
         "equip_limit": 0
     },
@@ -9640,7 +9751,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "406mm連装砲Mk8",
         "cn_name": "双联装406mm主炮Mk8",
-        "tw_name": "雙聯裝406mm主炮Mk8*",
+        "tw_name": "雙聯裝406mm主炮Mk8",
         "en_name": "Twin 406mm Mk 8 Main Gun Mount",
         "equip_limit": 0
     },
@@ -9659,7 +9770,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "406mm連装砲Mk1",
         "cn_name": "双联装406mm主炮Mk1",
-        "tw_name": "雙聯裝406mm主炮Mk1*",
+        "tw_name": "雙聯裝406mm主炮Mk1",
         "en_name": "Twin 406mm Mk 1 Main Gun Mount",
         "equip_limit": 0
     },
@@ -9735,7 +9846,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "406mm三連装砲Mk2",
         "cn_name": "三联装406mm主炮Mk2",
-        "tw_name": "三聯裝406mm主炮Mk2*",
+        "tw_name": "三聯裝406mm主炮Mk2",
         "en_name": "Triple 406mm Mk 2 Main Gun Mount",
         "equip_limit": 0
     },
@@ -9963,10 +10074,10 @@ var equip_data = {
             8,
             17
         ],
-        "jp_name": "203mm連装砲Mle1924",
-        "cn_name": "双联装203mm主炮Mle1924",
-        "tw_name": "雙聯裝203mm主砲Mle1924",
-        "en_name": "Twin 203mm Mle 1924 Main Gun Mount",
+        "jp_name": "203mm連装砲Mle1931",
+        "cn_name": "双联装203mm主炮Mle1931",
+        "tw_name": "雙聯裝203mm主炮Mle1931",
+        "en_name": "Twin 203mm Mle 1931 Main Gun Mount",
         "equip_limit": 0
     },
     "90880": {
@@ -9985,10 +10096,10 @@ var equip_data = {
             8,
             17
         ],
-        "jp_name": "203mm連装砲Mle1924",
-        "cn_name": "双联装203mm主炮Mle1924",
-        "tw_name": "雙聯裝203mm主砲Mle1924",
-        "en_name": "Twin 203mm Mle 1924 Main Gun Mount",
+        "jp_name": "203mm連装砲Mle1931",
+        "cn_name": "双联装203mm主炮Mle1931",
+        "tw_name": "雙聯裝203mm主炮Mle1931",
+        "en_name": "Twin 203mm Mle 1931 Main Gun Mount",
         "equip_limit": 0
     },
     "90860": {
@@ -10007,9 +10118,31 @@ var equip_data = {
             8,
             17
         ],
+        "jp_name": "203mm連装砲Mle1931",
+        "cn_name": "双联装203mm主炮Mle1931",
+        "tw_name": "雙聯裝203mm主炮Mle1931",
+        "en_name": "Twin 203mm Mle 1931 Main Gun Mount",
+        "equip_limit": 0
+    },
+    "91100": {
+        "nationality": 8,
+        "type": 3,
+        "attribute_2": "cannon",
+        "rarity": 2,
+        "tech": 1,
+        "ammo": 2,
+        "ammo_icon": [
+            3
+        ],
+        "id": 91100,
+        "icon": "51100",
+        "ship_type_forbidden": [
+            8,
+            17
+        ],
         "jp_name": "203mm連装砲Mle1924",
         "cn_name": "双联装203mm主炮Mle1924",
-        "tw_name": "雙聯裝203mm主砲Mle1924",
+        "tw_name": "雙聯裝203mm主炮Mle1924*",
         "en_name": "Twin 203mm Mle 1924 Main Gun Mount",
         "equip_limit": 0
     },
@@ -10273,7 +10406,7 @@ var equip_data = {
         ],
         "jp_name": "203mm連装砲改",
         "cn_name": "203mm连装炮改",
-        "tw_name": "203mm連裝炮改*",
+        "tw_name": "203mm連裝炮改",
         "en_name": "Twin 203mm No. 2 Naval Gun Mount",
         "equip_limit": 0
     },
@@ -10405,7 +10538,7 @@ var equip_data = {
         ],
         "jp_name": "試作型203mm三連装砲MarkIX",
         "cn_name": "试作型三联装203mm主炮Mark IX",
-        "tw_name": "試作型三聯裝203mm主炮Mark IX*",
+        "tw_name": "試作型三聯裝203mm主炮Mark IX",
         "en_name": "Prototype Triple 203mm Mk IX Main Gun Mount",
         "equip_limit": 0
     },
@@ -10559,7 +10692,7 @@ var equip_data = {
         ],
         "jp_name": "203mm三連装砲Mk15",
         "cn_name": "三联装203mm主炮Mk15",
-        "tw_name": "三聯裝203mm主炮Mk15*",
+        "tw_name": "三聯裝203mm主炮Mk15",
         "en_name": "Triple 203mm Mk 15 Main Gun Mount",
         "equip_limit": 0
     },
@@ -10581,7 +10714,7 @@ var equip_data = {
         ],
         "jp_name": "203mm三連装砲Mk13",
         "cn_name": "三联装203mm主炮Mk13",
-        "tw_name": "三聯裝203mm主炮Mk13*",
+        "tw_name": "三聯裝203mm主炮Mk13",
         "en_name": "Triple 203mm Mk 13 Main Gun Mount",
         "equip_limit": 0
     },
@@ -10913,7 +11046,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "152mm三連装砲Model1934",
         "cn_name": "三联装152mm主炮Model1934",
-        "tw_name": "三聯裝152mm主炮Model1934 *",
+        "tw_name": "三聯裝152mm主炮Model1934*",
         "en_name": "Triple 152mm Model 1934 Main Gun Mount",
         "equip_limit": 0
     },
@@ -11008,7 +11141,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "150mmTbtsKC36単装砲",
         "cn_name": "单装TbtsKC36式150mm主炮",
-        "tw_name": "單裝TbtsKC36式150mm主炮*",
+        "tw_name": "單裝TbtsKC36式150mm主炮",
         "en_name": "Single 150mm TbtsK C/36 Main Gun Mount",
         "equip_limit": 0
     },
@@ -11027,7 +11160,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "150mmTbtsKC36単装砲",
         "cn_name": "单装TbtsKC36式150mm主炮",
-        "tw_name": "單裝TbtsKC36式150mm主炮*",
+        "tw_name": "單裝TbtsKC36式150mm主炮",
         "en_name": "Single 150mm TbtsK C/36 Main Gun Mount",
         "equip_limit": 0
     },
@@ -11103,7 +11236,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "150mmSKC28連装副砲",
         "cn_name": "双联装SKC28式150mm副炮",
-        "tw_name": "雙聯裝SKC28式150mm副炮*",
+        "tw_name": "雙聯裝SKC28式150mm副炮",
         "en_name": "Twin 150mm SK C/28 Secondary Gun Mount",
         "equip_limit": 0
     },
@@ -11350,7 +11483,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "152mm単装砲",
         "cn_name": "152mm单装炮",
-        "tw_name": "152mm單裝炮*",
+        "tw_name": "152mm單裝炮",
         "en_name": "Single 152mm Pattern 1892 Naval Gun Mount",
         "equip_limit": 0
     },
@@ -11559,7 +11692,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "152mm連装副砲",
         "cn_name": "双联装152mm副炮",
-        "tw_name": "雙聯裝152mm副炮*",
+        "tw_name": "雙聯裝152mm副炮",
         "en_name": "Twin 152mm Secondary Gun Mount",
         "equip_limit": 0
     },
@@ -11711,7 +11844,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "152mm連装砲Mk15",
         "cn_name": "双联152mm主炮Mk15",
-        "tw_name": "雙聯152mm主炮Mk15*",
+        "tw_name": "雙聯152mm主炮Mk15",
         "en_name": "Twin 152mm Mk 15 Main Gun Mount",
         "equip_limit": 0
     },
@@ -11787,7 +11920,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "152mm三連装砲Mk16",
         "cn_name": "三联装152mm主炮Mk16",
-        "tw_name": "三聯裝152mm主炮Mk16*",
+        "tw_name": "三聯裝152mm主炮Mk16",
         "en_name": "Triple 152mm Mk 16 Main Gun Mount",
         "equip_limit": 0
     },
@@ -12243,7 +12376,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "120mm連装砲",
         "cn_name": "双联装120mm主炮",
-        "tw_name": "雙聯裝120mm主炮*",
+        "tw_name": "雙聯裝120mm主炮",
         "en_name": "Twin 120mm Main Gun Mount",
         "equip_limit": 0
     },
@@ -12262,7 +12395,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "128mmSKC41連装両用砲改",
         "cn_name": "双联装128mmSKC41高平两用炮改",
-        "tw_name": "雙聯裝128mmSKC41高平兩用炮改*",
+        "tw_name": "雙聯裝128mmSKC41高平兩用炮改",
         "en_name": "Twin 128mm/45 SK C/41 Dual-Purpose Gun Mount",
         "equip_limit": 0
     },
@@ -12395,7 +12528,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "127mmKM40連装砲",
         "cn_name": "双联装127mmKM40主炮",
-        "tw_name": "雙聯裝127mmKM40主炮*",
+        "tw_name": "雙聯裝127mmKM40主炮",
         "en_name": "Twin 127mm KM40 Main Gun Mount",
         "equip_limit": 0
     },
@@ -12414,7 +12547,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "127mm連装砲改",
         "cn_name": "127mm连装炮改",
-        "tw_name": "127mm連裝炮改*",
+        "tw_name": "127mm連裝炮改",
         "en_name": "Twin 127mm Type 3 Kai Naval Gun Mount",
         "equip_limit": 0
     },
@@ -12490,7 +12623,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "127mm両用砲",
         "cn_name": "127mm单装两用炮",
-        "tw_name": "127mm單裝兩用炮*",
+        "tw_name": "127mm單裝兩用炮",
         "en_name": "Single 127mm Dual-Purpose Gun",
         "equip_limit": 0
     },
@@ -12509,7 +12642,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "120mm高角砲",
         "cn_name": "120mm单装高角炮",
-        "tw_name": "120mm單裝高角炮*",
+        "tw_name": "120mm單裝高角炮",
         "en_name": "Single 120mm High-Angle Gun Mount",
         "equip_limit": 0
     },
@@ -12585,7 +12718,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "120mm十一年式砲",
         "cn_name": "十一年式120mm单装炮",
-        "tw_name": "十一年式120mm單裝炮*",
+        "tw_name": "十一年式120mm單裝炮",
         "en_name": "Single 120mm 11th Year Type Naval Gun Mount",
         "equip_limit": 0
     },
@@ -12604,7 +12737,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "100mm八八式砲",
         "cn_name": "100mm88式火炮",
-        "tw_name": "100mm88式火炮*",
+        "tw_name": "100mm88式火炮",
         "en_name": "Single 100mm Type 88 Naval Gun Mount",
         "equip_limit": 0
     },
@@ -12794,7 +12927,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "120mm連装両用砲MarkXI",
         "cn_name": "双联装120mm高平两用炮Mark XI",
-        "tw_name": "雙聯裝120mm高平兩用炮Mark XI*",
+        "tw_name": "雙聯裝120mm高平兩用炮Mark XI",
         "en_name": "Twin 120mm Mk XI Dual-Purpose Gun Mount",
         "equip_limit": 0
     },
@@ -12946,7 +13079,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "102mm連装副砲MarkXVI",
         "cn_name": "双联装102mm副炮Mark XVI",
-        "tw_name": "雙聯裝102mm副炮Mark XVI*",
+        "tw_name": "雙聯裝102mm副炮Mark XVI",
         "en_name": "Twin 102mm Mk XVI Secondary Gun Mount",
         "equip_limit": 0
     },
@@ -13136,7 +13269,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "127mm連装副砲",
         "cn_name": "双联装127mm副炮",
-        "tw_name": "雙聯裝127mm副炮*",
+        "tw_name": "雙聯裝127mm副炮",
         "en_name": "Twin 127mm Secondary Gun Mount",
         "equip_limit": 0
     },
@@ -13212,7 +13345,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "127mm単装砲初期型",
         "cn_name": "127mm单装炮早期型",
-        "tw_name": "127mm單裝炮早期型*",
+        "tw_name": "127mm單裝炮早期型",
         "en_name": "Early Model Single 127mm Gun",
         "equip_limit": 0
     },

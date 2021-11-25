@@ -2523,7 +2523,7 @@ const
     eq_tier = new Set(lan_eq_tier.map(o => parseInt(o.id, 10))),
     // db
     db_name = "image_cache",
-    db_ver = 13,
+    db_ver = 14,
     // dump data
     ALF_version = 0.05;
 

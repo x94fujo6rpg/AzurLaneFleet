@@ -1,4 +1,279 @@
 var ship_data = {
+    "10800060": {
+        "nationality": 108,
+        "type": 7,
+        "base_list": [
+            2,
+            3,
+            3
+        ],
+        "id": 10800064,
+        "skin_id": 10800060,
+        "english_name": "Asukagawa Chise !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "10800060",
+        "painting": "qianlai",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "飛鳥川ちせ",
+        "en_name": "Chise Asukagawa",
+        "cn_name": "飞鸟川千濑",
+        "tw_name": "飛鳥川千瀨*",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            9
+        ],
+        "equip_3": [
+            8
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
+    "10800070": {
+        "nationality": 108,
+        "type": 5,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 10800074,
+        "skin_id": 10800070,
+        "english_name": "Mujina !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "10800070",
+        "painting": "he",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "ムジナ",
+        "en_name": "Mujina",
+        "cn_name": "貉",
+        "tw_name": "貉*",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
+    "10800020": {
+        "nationality": 108,
+        "type": 5,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 10800024,
+        "skin_id": 10800020,
+        "english_name": "Shinjo Akane !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "10800020",
+        "painting": "qian",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "新条アカネ",
+        "en_name": "Akane Shinjo",
+        "cn_name": "新条茜",
+        "tw_name": "新條茜*",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
+    "10800050": {
+        "nationality": 108,
+        "type": 3,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 10800054,
+        "skin_id": 10800050,
+        "english_name": "Minami Yume !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "10800050",
+        "painting": "mengya",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "南夢芽",
+        "en_name": "Yume Minami",
+        "cn_name": "南梦芽",
+        "tw_name": "南夢芽*",
+        "equip_1": [
+            3
+        ],
+        "equip_2": [
+            1
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
+    "10800040": {
+        "nationality": 108,
+        "type": 3,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 10800044,
+        "skin_id": 10800040,
+        "english_name": "Namiko !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "10800040",
+        "painting": "naimeizi",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "なみこ",
+        "en_name": "Namiko",
+        "cn_name": "奈美子",
+        "tw_name": "奈美子*",
+        "equip_1": [
+            3
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
+    "10800030": {
+        "nationality": 108,
+        "type": 2,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 10800034,
+        "skin_id": 10800030,
+        "english_name": "Hass !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "10800030",
+        "painting": "lian",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "はっす",
+        "en_name": "Hass",
+        "cn_name": "莲",
+        "tw_name": "蓮*",
+        "equip_1": [
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
+    "10800010": {
+        "nationality": 108,
+        "type": 2,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 10800014,
+        "skin_id": 10800010,
+        "english_name": "Takarada Rikka !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "10800010",
+        "painting": "baoduoliuhua",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "宝多六花",
+        "en_name": "Rikka Takarada",
+        "cn_name": "宝多六花",
+        "tw_name": "寶多六花*",
+        "equip_1": [
+            2,
+            10
+        ],
+        "equip_2": [
+            5,
+            10
+        ],
+        "equip_3": [
+            6,
+            10
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ]
+    },
     "10700050": {
         "nationality": 107,
         "type": 19,
@@ -601,7 +876,7 @@ var ship_data = {
         "star_string": "★★★★★",
         "rarity_string": "SR",
         "jp_name": "大神ミオ",
-        "en_name": "Ookami Mio",
+        "en_name": "Ōkami Mio",
         "cn_name": "大神澪",
         "tw_name": "大神澪*",
         "equip_1": [
@@ -1725,7 +2000,7 @@ var ship_data = {
         ],
         "id": 9707014,
         "skin_id": 9707010,
-        "english_name": "Hiryu.META !TWnoData",
+        "english_name": "Hiryu.META",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -1736,7 +2011,7 @@ var ship_data = {
         "jp_name": "飛龍(META)",
         "en_name": "Hiryuu META",
         "cn_name": "飞龙·META",
-        "tw_name": "飛龍·META*",
+        "tw_name": "飛龍·META",
         "equip_1": [
             7
         ],
@@ -1751,6 +2026,46 @@ var ship_data = {
         ],
         "equip_5": [
             10
+        ]
+    },
+    "9706010": {
+        "nationality": 97,
+        "type": 6,
+        "base_list": [
+            2,
+            3,
+            2
+        ],
+        "id": 9706014,
+        "skin_id": 9706010,
+        "english_name": "Hiyo.META !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "9706010",
+        "painting": "feiying_alter",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "飛鷹(META)",
+        "en_name": "Hiyou META",
+        "cn_name": "飞鹰·META",
+        "tw_name": "飛鷹·META*",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            9
+        ],
+        "equip_3": [
+            8
+        ],
+        "equip_4": [
+            10,
+            15
+        ],
+        "equip_5": [
+            10,
+            15
         ]
     },
     "9705010": {
@@ -2245,7 +2560,7 @@ var ship_data = {
         "rarity_string": "SR",
         "jp_name": "ル・マルス改",
         "en_name": "Le Mars (Retrofit)",
-        "cn_name": "勒马尔.改",
+        "cn_name": "勒马尔改",
         "tw_name": "勒馬爾改",
         "equip_1": [
             1
@@ -2558,7 +2873,7 @@ var ship_data = {
         "rarity_string": "SSR",
         "jp_name": "エミール・ベルタン改",
         "en_name": "Émile Bertin (Retrofit)",
-        "cn_name": "埃米尔·贝尔汀.改",
+        "cn_name": "埃米尔·贝尔汀改",
         "tw_name": "埃米爾•貝爾坦改",
         "equip_1": [
             2
@@ -2798,7 +3113,7 @@ var ship_data = {
         "rarity_string": "SR",
         "jp_name": "フォルバン改",
         "en_name": "Forbin (Retrofit)",
-        "cn_name": "福尔班.改",
+        "cn_name": "福尔班改",
         "tw_name": "福爾班改",
         "equip_1": [
             1
@@ -3195,8 +3510,8 @@ var ship_data = {
         "star_string": "★★★★★",
         "rarity_string": "SSR",
         "jp_name": "パーミャチ・メルクーリヤ改",
-        "en_name": "Pamiat‘ Merkuria (Retrofit)",
-        "cn_name": "水星纪念.改",
+        "en_name": "Pamiat' Merkuria (Retrofit)",
+        "cn_name": "水星纪念改",
         "tw_name": "水星紀念改",
         "equip_1": [
             1
@@ -3235,7 +3550,7 @@ var ship_data = {
         "star_string": "★★★★★",
         "rarity_string": "SR",
         "jp_name": "パーミャチ・メルクーリヤ",
-        "en_name": "Pamiat Merkuria",
+        "en_name": "Pamiat' Merkuria",
         "cn_name": "水星纪念",
         "tw_name": "水星紀念",
         "equip_1": [
@@ -4300,7 +4615,7 @@ var ship_data = {
         "rarity_string": "SSR",
         "jp_name": "平海改",
         "en_name": "Ping Hai (Retrofit)",
-        "cn_name": "平海.改",
+        "cn_name": "平海改",
         "tw_name": "平海改",
         "equip_1": [
             2
@@ -4380,7 +4695,7 @@ var ship_data = {
         "rarity_string": "SSR",
         "jp_name": "寧海改",
         "en_name": "Ning Hai (Retrofit)",
-        "cn_name": "宁海.改",
+        "cn_name": "宁海改",
         "tw_name": "寧海改",
         "equip_1": [
             2
@@ -5078,7 +5393,7 @@ var ship_data = {
         "star_string": "★★★★★★",
         "rarity_string": "SSR",
         "jp_name": "U-81",
-        "en_name": "U81",
+        "en_name": "U-81",
         "cn_name": "U-81",
         "tw_name": "U-81",
         "equip_1": [
@@ -5697,7 +6012,7 @@ var ship_data = {
         "rarity_string": "SR",
         "jp_name": "アドミラル・グラーフ・シュペー",
         "en_name": "Admiral Graf Spee",
-        "cn_name": "斯佩伯爵",
+        "cn_name": "斯佩伯爵海军上将",
         "tw_name": "施佩伯爵將軍",
         "equip_1": [
             3,
@@ -5931,7 +6246,7 @@ var ship_data = {
         "rarity_string": "SR",
         "jp_name": "ライプツィヒ改",
         "en_name": "Leipzig (Retrofit)",
-        "cn_name": "莱比锡.改",
+        "cn_name": "莱比锡改",
         "tw_name": "萊比錫改",
         "equip_1": [
             2
@@ -6011,7 +6326,7 @@ var ship_data = {
         "rarity_string": "R",
         "jp_name": "ケルン改",
         "en_name": "Köln (Retrofit)",
-        "cn_name": "科隆.改",
+        "cn_name": "科隆改",
         "tw_name": "科隆改",
         "equip_1": [
             2
@@ -6092,7 +6407,7 @@ var ship_data = {
         "rarity_string": "R",
         "jp_name": "カールスルーエ改",
         "en_name": "Karlsruhe (Retrofit)",
-        "cn_name": "卡尔斯鲁厄.改",
+        "cn_name": "卡尔斯鲁厄改",
         "tw_name": "卡爾斯魯厄改",
         "equip_1": [
             2
@@ -6496,7 +6811,7 @@ var ship_data = {
         "rarity_string": "SSR",
         "jp_name": "Z23改",
         "en_name": "Z23 (Retrofit)",
-        "cn_name": "Z23.改",
+        "cn_name": "Z23改",
         "tw_name": "Z23改",
         "equip_1": [
             1,
@@ -6577,7 +6892,7 @@ var ship_data = {
         "star_string": "★★★★",
         "rarity_string": "N",
         "jp_name": "Z21",
-        "en_name": "Wilhelm Heidkamp (Z21)",
+        "en_name": "Z21",
         "cn_name": "Z21",
         "tw_name": "Z21",
         "equip_1": [
@@ -6617,7 +6932,7 @@ var ship_data = {
         "star_string": "★★★★",
         "rarity_string": "N",
         "jp_name": "Z20",
-        "en_name": "Karl Galster (Z20)",
+        "en_name": "Z20",
         "cn_name": "Z20",
         "tw_name": "Z20",
         "equip_1": [
@@ -6657,7 +6972,7 @@ var ship_data = {
         "star_string": "★★★★★",
         "rarity_string": "R",
         "jp_name": "Z19",
-        "en_name": "Hermann Künne (Z19)",
+        "en_name": "Z19",
         "cn_name": "Z19",
         "tw_name": "Z19",
         "equip_1": [
@@ -6778,7 +7093,7 @@ var ship_data = {
         "rarity_string": "SSR",
         "jp_name": "Z1改",
         "en_name": "Z1 (Retrofit)",
-        "cn_name": "Z1.改",
+        "cn_name": "Z1改",
         "tw_name": "Z1改",
         "equip_1": [
             1
@@ -6817,7 +7132,7 @@ var ship_data = {
         "star_string": "★★★★★",
         "rarity_string": "SR",
         "jp_name": "Z1",
-        "en_name": "Leberecht Maass (Z1)",
+        "en_name": "Z1",
         "cn_name": "Z1",
         "tw_name": "Z1",
         "equip_1": [
@@ -7320,8 +7635,8 @@ var ship_data = {
         "rarity_string": "SSR",
         "jp_name": "大鳳(μ兵装)",
         "en_name": "Taihou μ",
-        "cn_name": "大凤",
-        "tw_name": "大鳳*",
+        "cn_name": "大凤(μ兵装)",
+        "tw_name": "大鳳(μ兵裝)*",
         "equip_1": [
             7
         ],
@@ -8472,7 +8787,7 @@ var ship_data = {
         "nationality": 3,
         "type": 10,
         "base_list": [
-            3,
+            2,
             3,
             1
         ],
@@ -8552,7 +8867,7 @@ var ship_data = {
         "nationality": 3,
         "type": 10,
         "base_list": [
-            3,
+            2,
             3,
             1
         ],
@@ -8632,7 +8947,7 @@ var ship_data = {
         "nationality": 3,
         "type": 10,
         "base_list": [
-            3,
+            2,
             3,
             1
         ],
@@ -8712,7 +9027,7 @@ var ship_data = {
         "nationality": 3,
         "type": 10,
         "base_list": [
-            3,
+            2,
             3,
             1
         ],
@@ -10608,7 +10923,7 @@ var ship_data = {
         "star_string": "★★★★★",
         "rarity_string": "R",
         "jp_name": "追風",
-        "en_name": "Oite.",
+        "en_name": "Oite",
         "cn_name": "追风",
         "tw_name": "追風*",
         "equip_1": [
@@ -13752,7 +14067,7 @@ var ship_data = {
         "rarity_string": "SSR",
         "jp_name": "アーク・ロイヤル改",
         "en_name": "Ark Royal (Retrofit)",
-        "cn_name": "皇家方舟·改",
+        "cn_name": "皇家方舟改",
         "tw_name": "皇家方舟改",
         "equip_1": [
             8
@@ -14027,7 +14342,7 @@ var ship_data = {
         "rarity_string": "R",
         "jp_name": "ハーミーズ改",
         "en_name": "Hermes (Retrofit)",
-        "cn_name": "竞技神.改",
+        "cn_name": "竞技神改",
         "tw_name": "競技神改",
         "equip_1": [
             8
@@ -14419,7 +14734,7 @@ var ship_data = {
         "rarity_string": "UR",
         "jp_name": "ウォースパイト改",
         "en_name": "Warspite (Retrofit)",
-        "cn_name": "厌战.改",
+        "cn_name": "厌战改",
         "tw_name": "厭戰改",
         "equip_1": [
             4
@@ -14803,7 +15118,7 @@ var ship_data = {
         "rarity_string": "SSR",
         "jp_name": "エクセター改",
         "en_name": "Exeter (Retrofit)",
-        "cn_name": "埃克塞特.改",
+        "cn_name": "埃克塞特改",
         "tw_name": "埃克塞特改",
         "equip_1": [
             3
@@ -14879,7 +15194,7 @@ var ship_data = {
         "rarity_string": "SSR",
         "jp_name": "ヨーク改",
         "en_name": "York (Retrofit)",
-        "cn_name": "约克.改",
+        "cn_name": "约克改",
         "tw_name": "約克改",
         "equip_1": [
             3
@@ -15031,7 +15346,7 @@ var ship_data = {
         "rarity_string": "SR",
         "jp_name": "サフォーク改",
         "en_name": "Suffolk (Retrofit)",
-        "cn_name": "萨福克.改",
+        "cn_name": "萨福克改",
         "tw_name": "薩福克改",
         "equip_1": [
             3
@@ -15183,7 +15498,7 @@ var ship_data = {
         "rarity_string": "SSR",
         "jp_name": "ロンドン改",
         "en_name": "London (Retrofit)",
-        "cn_name": "伦敦.改",
+        "cn_name": "伦敦改",
         "tw_name": "倫敦改",
         "equip_1": [
             3
@@ -15339,7 +15654,7 @@ var ship_data = {
         "star_string": "★★★★★★",
         "rarity_string": "SSR",
         "jp_name": "ダイドー(μ兵装)",
-        "en_name": "Dido µ",
+        "en_name": "Dido μ",
         "cn_name": "黛朵(μ兵装)",
         "tw_name": "黛朵(μ兵裝)*",
         "equip_1": [
@@ -15583,7 +15898,7 @@ var ship_data = {
         "rarity_string": "SR",
         "jp_name": "カーリュー改",
         "en_name": "Curlew (Retrofit)",
-        "cn_name": "杓鹬.改",
+        "cn_name": "杓鹬改",
         "tw_name": "杓鷸改",
         "equip_1": [
             1,
@@ -15665,7 +15980,7 @@ var ship_data = {
         "rarity_string": "SR",
         "jp_name": "キュラソー改",
         "en_name": "Curacoa (Retrofit)",
-        "cn_name": "库拉索.改",
+        "cn_name": "库拉索改",
         "tw_name": "庫拉索改",
         "equip_1": [
             1,
@@ -15788,7 +16103,7 @@ var ship_data = {
         "rarity_string": "SR",
         "jp_name": "ニューカッスル改",
         "en_name": "Newcastle (Retrofit)",
-        "cn_name": "纽卡斯尔.改",
+        "cn_name": "纽卡斯尔改",
         "tw_name": "紐卡斯爾改",
         "equip_1": [
             2
@@ -16349,7 +16664,7 @@ var ship_data = {
         "rarity_string": "SR",
         "jp_name": "エイジャックス改",
         "en_name": "Ajax (Retrofit)",
-        "cn_name": "阿贾克斯.改",
+        "cn_name": "阿贾克斯改",
         "tw_name": "阿賈克斯改",
         "equip_1": [
             2
@@ -16429,7 +16744,7 @@ var ship_data = {
         "rarity_string": "SR",
         "jp_name": "アキリーズ改",
         "en_name": "Achilles (Retrofit)",
-        "cn_name": "阿基里斯.改",
+        "cn_name": "阿基里斯改",
         "tw_name": "阿基里斯改",
         "equip_1": [
             2
@@ -16509,7 +16824,7 @@ var ship_data = {
         "rarity_string": "R",
         "jp_name": "リアンダー改",
         "en_name": "Leander (Retrofit)",
-        "cn_name": "利安得.改",
+        "cn_name": "利安得改",
         "tw_name": "利安得改",
         "equip_1": [
             2
@@ -16949,7 +17264,7 @@ var ship_data = {
         "rarity_string": "SSR",
         "jp_name": "ジャベリン改",
         "en_name": "Javelin (Retrofit)",
-        "cn_name": "标枪.改",
+        "cn_name": "标枪改",
         "tw_name": "標槍改",
         "equip_1": [
             1
@@ -17189,7 +17504,7 @@ var ship_data = {
         "rarity_string": "SR",
         "jp_name": "フォーチュン改",
         "en_name": "Fortune (Retrofit)",
-        "cn_name": "命运女神.改",
+        "cn_name": "命运女神改",
         "tw_name": "命運女神改",
         "equip_1": [
             1
@@ -17269,7 +17584,7 @@ var ship_data = {
         "rarity_string": "R",
         "jp_name": "フォックスハウンド改",
         "en_name": "Foxhound (Retrofit)",
-        "cn_name": "狐提.改",
+        "cn_name": "狐提改",
         "tw_name": "狐提改",
         "equip_1": [
             1
@@ -17349,7 +17664,7 @@ var ship_data = {
         "rarity_string": "R",
         "jp_name": "シグニット改",
         "en_name": "Cygnet (Retrofit)",
-        "cn_name": "小天鹅.改",
+        "cn_name": "小天鹅改",
         "tw_name": "小天鵝改",
         "equip_1": [
             1
@@ -17429,7 +17744,7 @@ var ship_data = {
         "rarity_string": "R",
         "jp_name": "クレセント改",
         "en_name": "Crescent (Retrofit)",
-        "cn_name": "新月.改",
+        "cn_name": "新月改",
         "tw_name": "新月改",
         "equip_1": [
             1
@@ -17509,7 +17824,7 @@ var ship_data = {
         "rarity_string": "R",
         "jp_name": "コメット改",
         "en_name": "Comet (Retrofit)",
-        "cn_name": "彗星.改",
+        "cn_name": "彗星改",
         "tw_name": "彗星改",
         "equip_1": [
             1
@@ -17669,7 +17984,7 @@ var ship_data = {
         "rarity_string": "SR",
         "jp_name": "アーデント改",
         "en_name": "Ardent (Retrofit)",
-        "cn_name": "热心.改",
+        "cn_name": "热心改",
         "tw_name": "熱心改",
         "equip_1": [
             1
@@ -17749,7 +18064,7 @@ var ship_data = {
         "rarity_string": "SR",
         "jp_name": "アカスタ改",
         "en_name": "Acasta (Retrofit)",
-        "cn_name": "阿卡司塔.改",
+        "cn_name": "阿卡司塔改",
         "tw_name": "阿卡司塔改",
         "equip_1": [
             1
@@ -17829,7 +18144,7 @@ var ship_data = {
         "rarity_string": "SR",
         "jp_name": "アマゾン改",
         "en_name": "Amazon (Retrofit)",
-        "cn_name": "女将.改",
+        "cn_name": "女将改",
         "tw_name": "女將改",
         "equip_1": [
             1
@@ -18594,7 +18909,7 @@ var ship_data = {
         "rarity_string": "SSR",
         "jp_name": "サラトガ改",
         "en_name": "Saratoga (Retrofit)",
-        "cn_name": "萨拉托加.改",
+        "cn_name": "萨拉托加改",
         "tw_name": "薩拉托加改",
         "equip_1": [
             7
@@ -18788,7 +19103,7 @@ var ship_data = {
         "rarity_string": "SSR",
         "jp_name": "インディペンデンス改",
         "en_name": "Independence (Retrofit)",
-        "cn_name": "独立.改",
+        "cn_name": "独立改",
         "tw_name": "獨立改",
         "equip_1": [
             7
@@ -18868,7 +19183,7 @@ var ship_data = {
         "rarity_string": "R",
         "jp_name": "レンジャー改",
         "en_name": "Ranger (Retrofit)",
-        "cn_name": "突击者.改",
+        "cn_name": "突击者改",
         "tw_name": "遊騎兵改",
         "equip_1": [
             8
@@ -18948,7 +19263,7 @@ var ship_data = {
         "rarity_string": "R",
         "jp_name": "ラングレー改",
         "en_name": "Langley (Retrofit)",
-        "cn_name": "兰利.改",
+        "cn_name": "兰利改",
         "tw_name": "蘭利改",
         "equip_1": [
             7
@@ -19068,7 +19383,7 @@ var ship_data = {
         "rarity_string": "R",
         "jp_name": "ボーグ改",
         "en_name": "Bogue (Retrofit)",
-        "cn_name": "博格.改",
+        "cn_name": "博格改",
         "tw_name": "博格改",
         "equip_1": [
             7
@@ -19148,7 +19463,7 @@ var ship_data = {
         "rarity_string": "SR",
         "jp_name": "ロング・アイランド改",
         "en_name": "Long Island (Retrofit)",
-        "cn_name": "长岛.改",
+        "cn_name": "长岛改",
         "tw_name": "長島改",
         "equip_1": [
             7
@@ -19760,7 +20075,7 @@ var ship_data = {
         "rarity_string": "R",
         "jp_name": "オクラホマ改",
         "en_name": "Oklahoma (Retrofit)",
-        "cn_name": "俄克拉荷马.改",
+        "cn_name": "俄克拉荷马改",
         "tw_name": "奧克拉荷馬改",
         "equip_1": [
             4
@@ -19836,7 +20151,7 @@ var ship_data = {
         "rarity_string": "R",
         "jp_name": "ネバダ改",
         "en_name": "Nevada (Retrofit)",
-        "cn_name": "内华达.改",
+        "cn_name": "内华达改",
         "tw_name": "內華達改",
         "equip_1": [
             4
@@ -20130,7 +20445,7 @@ var ship_data = {
         ],
         "id": 103124,
         "skin_id": 103120,
-        "english_name": "USS New Orlean !TWnoData",
+        "english_name": "USS New Orleans !TWnoData",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -20368,7 +20683,7 @@ var ship_data = {
         "rarity_string": "SR",
         "jp_name": "ポートランド改",
         "en_name": "Portland (Retrofit)",
-        "cn_name": "波特兰.改",
+        "cn_name": "波特兰改",
         "tw_name": "波特蘭改",
         "equip_1": [
             3
@@ -21438,7 +21753,7 @@ var ship_data = {
         "rarity_string": "UR",
         "jp_name": "サンディエゴ改",
         "en_name": "San Diego (Retrofit)",
-        "cn_name": "圣地亚哥.改",
+        "cn_name": "圣地亚哥改",
         "tw_name": "聖地牙哥改",
         "equip_1": [
             1,
@@ -21602,7 +21917,7 @@ var ship_data = {
         "rarity_string": "SSR",
         "jp_name": "ヘレナ改",
         "en_name": "Helena (Retrofit)",
-        "cn_name": "海伦娜.改",
+        "cn_name": "海伦娜改",
         "tw_name": "海倫娜改",
         "equip_1": [
             2
@@ -22042,7 +22357,7 @@ var ship_data = {
         "rarity_string": "R",
         "jp_name": "ハルゼー・パウエル",
         "en_name": "Halsey Powell",
-        "cn_name": "哈尔西鲍威尔",
+        "cn_name": "哈尔西·鲍威尔",
         "tw_name": "海爾賽‧鮑威爾",
         "equip_1": [
             1
@@ -22482,7 +22797,7 @@ var ship_data = {
         "rarity_string": "SSR",
         "jp_name": "ニコラス改",
         "en_name": "Nicholas (Retrofit)",
-        "cn_name": "尼古拉斯.改",
+        "cn_name": "尼古拉斯改",
         "tw_name": "尼古拉斯改",
         "equip_1": [
             1
@@ -22642,7 +22957,7 @@ var ship_data = {
         "rarity_string": "SR",
         "jp_name": "ベイリー改",
         "en_name": "Bailey (Retrofit)",
-        "cn_name": "贝利.改",
+        "cn_name": "贝利改",
         "tw_name": "貝利改",
         "equip_1": [
             1
@@ -22762,7 +23077,7 @@ var ship_data = {
         "rarity_string": "SR",
         "jp_name": "ハムマン改",
         "en_name": "Hammann (Retrofit)",
-        "cn_name": "哈曼.改",
+        "cn_name": "哈曼改",
         "tw_name": "哈曼改",
         "equip_1": [
             1
@@ -22842,7 +23157,7 @@ var ship_data = {
         "rarity_string": "SR",
         "jp_name": "シムス改",
         "en_name": "Sims (Retrofit)",
-        "cn_name": "西姆斯.改",
+        "cn_name": "西姆斯改",
         "tw_name": "西姆斯改",
         "equip_1": [
             1
@@ -22922,7 +23237,7 @@ var ship_data = {
         "rarity_string": "SSR",
         "jp_name": "ラフィー改",
         "en_name": "Laffey (Retrofit)",
-        "cn_name": "拉菲.改",
+        "cn_name": "拉菲改",
         "tw_name": "拉菲改",
         "equip_1": [
             1
@@ -23442,7 +23757,7 @@ var ship_data = {
         "rarity_string": "R",
         "jp_name": "ダウンズ改",
         "en_name": "Downes (Retrofit)",
-        "cn_name": "唐斯.改",
+        "cn_name": "唐斯改",
         "tw_name": "唐斯改",
         "equip_1": [
             1
@@ -23522,7 +23837,7 @@ var ship_data = {
         "rarity_string": "R",
         "jp_name": "カッシン改",
         "en_name": "Cassin (Retrofit)",
-        "cn_name": "卡辛.改",
+        "cn_name": "卡辛改",
         "tw_name": "卡辛改",
         "equip_1": [
             1
