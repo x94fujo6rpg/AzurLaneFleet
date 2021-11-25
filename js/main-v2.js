@@ -12,6 +12,7 @@ const
     lan_target_list = [
         // for ui element that have no language.
         // do not change id, unless you know what you are doing.
+        { id: "show_setting", en: "⮟ Settings", jp: "⮟ 設定", tw: "⮟ 設定", },
         { id: "allow_dup_btn", en: "Allow Duplicate", jp: "重複を許可する", tw: "允許重複的船", },
         { id: "layout_label", en: "Layout:", jp: "スタイル:", tw: "排版方式:", },
         { id: "display_fleet_border", en: "Fleet Border", jp: "フレーム表示", tw: "顯示外框" },
@@ -33,6 +34,15 @@ const
         { id: "loadDataByID", en: "Load", jp: "ロード", tw: "載入", },
 
         { id: "rebuild_cache_btn", en: "Rebuild Cache", jp: "キャッシュをクリア&再構築", tw: "重建快取", },
+
+        { id: "show_ship_filter", en: "⮟ Show Filter", jp: "⮟ 設定", tw: "⮟ 設定", },
+        { id: "show_equip_filter", en: "⮟ Show Filter", jp: "⮟ 設定", tw: "⮟ 設定", },
+
+        { id: "owned_ship_set", en: "Set Owned Ship", jp: "所持している艦船を設定", tw: "設定已有的船", },
+        { id: "owned_ship_only", en: "Only Show Owned", jp: "所持しているだけを表示", tw: "只顯示已有的船", },
+
+        { id: "owned_equip_set", en: "Set Owned Equip", jp: "所持している装備を設定", tw: "設定已有的裝備", },
+        { id: "owned_equip_only", en: "Only Show Owned", jp: "所持しているだけを表示", tw: "只顯示已有的裝備", },
 
         { id: "select_ship", en: "Select Ship", jp: "艦船を選択", tw: "選擇艦船", },
         { id: "filter_nation", en: "Nation", jp: "陣営", tw: "國家", },
@@ -177,6 +187,7 @@ const
         layout: "layout",
         fleetEdit: "fleetEdit",
         fleetBorder: "fleetBorder",
+        ownedItem: "ownedItem",
     },
     util = {
         sleep(ms = 0) {
@@ -883,6 +894,105 @@ const
             },
         },
         util: {
+            _owned: {
+                ship: new Set([]),
+                equip: new Set([]),
+                ship_on: 0,
+                equip_on: 0,
+            },
+            saveOwned() {
+                let data =
+                    JSON.stringify({
+                        ship: [...this._owned.ship],
+                        equip: [...this._owned.equip],
+                        ship_on: this._owned.ship_on,
+                        equip_on: this._owned.equip_on
+                    });
+                data = LZString.compress(data);
+                LS.userSetting.set(settingKey.ownedItem, data);
+            },
+            setOwned(btn, type) {
+                let isOn = btn.classList.contains("active");
+                this._owned[`${type}_on`] = isOn ? 0 : 1;
+                if (!isOn) {
+                    btn.classList.add("active");
+                } else {
+                    btn.classList.remove("active");
+                }
+                if (type == "ship") app.shipDisplay();
+                if (type == "equip") app.equipDisplay();
+                this.saveOwned();
+            },
+            editOwned(btn, type = "") {
+                let list = this._owned[type],
+                    enable_btn = document.querySelector(`#owned_${type}_only`),
+                    func = {
+                        ship: function () { app.setShipAndEquip(this); },
+                        equip: function () { app.setEquip(this); },
+                    };
+                if (!(btn.classList.contains("active"))) {
+                    btn.classList.add("active");
+                    // disable owned filter
+                    if (enable_btn.classList.contains("active")) enable_btn.click();
+                    enable_btn.disabled = true;
+                    editOn();
+                } else {
+                    btn.classList.remove("active");
+                    editOff();
+                }
+
+                function editOn() {
+                    let all_btn = document.querySelectorAll(`#${type}list button`),
+                        remove;
+                    all_btn = [...all_btn];
+                    remove = all_btn.shift();
+
+                    all_btn.forEach(btn => {
+                        btn.setAttribute("data-dismiss", "");
+                        btn.onclick = function () { editList(this); };
+                    });
+                    remove.setAttribute("data-dismiss", "");
+                    remove.disabled = true;
+                    remove.onclick = "";
+                    updateList();
+
+                    function editList(ele) {
+                        let id = parseInt(ele.id, 10);
+                        if (list.has(id)) {
+                            list.delete(id);
+                        } else {
+                            list.add(id);
+                        }
+                        updateList(ele);
+                        app.util.saveOwned();
+                    }
+
+                    function updateList(target) {
+                        if (!target) {
+                            all_btn.forEach(btn => btn.style.opacity = list.has(parseInt(btn.id, 10)) ? 1 : 0.2);
+                        } else {
+                            target.style.opacity = list.has(parseInt(target.id, 10)) ? 1 : 0.2;
+                        }
+                    }
+                }
+
+                function editOff() {
+                    let all_btn = document.querySelectorAll(`#${type}list button`),
+                        remove;
+                    all_btn = [...all_btn];
+                    remove = all_btn.shift();
+                    all_btn.forEach(btn => {
+                        btn.setAttribute("data-dismiss", "modal");
+                        btn.onclick = func[type];
+                        btn.style.opacity = 1;
+                    });
+                    enable_btn.disabled = false;
+
+                    remove.disabled = false;
+                    remove.setAttribute("data-dismiss", "modal");
+                    remove.onclick = func[type];
+                }
+            },
             removeAllCookie() {
                 //------------------------------
                 // stop use cookie, use localStorage now
@@ -1288,8 +1398,9 @@ const
         },
         shipDisplay() {
             let shiplist = document.querySelectorAll("#shiplist button");
-            shiplist.forEach((item) => {
-                if (item.id == "000000") return;
+            shiplist = [...shiplist];
+            shiplist.shift(); // skip remove
+            shiplist.forEach(item => {
                 let id = parseInt(item.id, 10),
                     nation = ship_data[id].nationality,
                     type = ship_data[id].type,
@@ -1300,6 +1411,7 @@ const
                 item.setAttribute("displayed", is_select ? true : false);
             });
             if (!document.getElementById("allow_dup_btn").classList.contains("active")) _hideShipInFleet();
+            if (document.querySelector("#owned_ship_only").classList.contains("active")) _hideNotOwned();
             app.util.countShipDisplayed();
 
             function _isShipSelect(nation, type, rarity, retro) {
@@ -1372,6 +1484,16 @@ const
                     }
                 }
             }
+
+            function _hideNotOwned() {
+                let list = app.util._owned.ship;
+                shiplist.forEach(item => {
+                    if (!(list.has(parseInt(item.id, 10)))) {
+                        item.style.display = "none";
+                        item.setAttribute("displayed", false);
+                    }
+                });
+            }
         },
         setShipAndEquip(item, save = true) {
             let side = sideTable[c_side];
@@ -1442,31 +1564,33 @@ const
                 shiptype = ship.type,
                 shipid = ship.id,
                 display_list = [];
+
+            equips = [...equips];
+            equips.shift(); // skip remove
             app.util.equipCheck(shipid);
-            equips.forEach((item) => {
-                if (item.id != "666666") {
-                    let id = parseInt(item.id, 10),
-                        e = equip_data[id],
-                        type = e.type,
-                        forbidden = e.ship_type_forbidden;
-                    if (typelist.includes(type)) {
-                        if (forbidden.includes(shiptype)) {
-                            item.style.display = "none";
-                        } else {
-                            if (isEquipSelect(e.nationality, type, e.rarity, e.tech)) {
-                                item.style.display = "";
-                                display_list.push(id);
-                            } else {
-                                item.style.display = "none";
-                            }
-                        }
-                    } else {
+            equips.forEach(item => {
+                let id = parseInt(item.id, 10),
+                    e = equip_data[id],
+                    type = e.type,
+                    forbidden = e.ship_type_forbidden;
+                if (typelist.includes(type)) {
+                    if (forbidden.includes(shiptype)) {
                         item.style.display = "none";
+                    } else {
+                        if (isEquipSelect(e.nationality, type, e.rarity, e.tech)) {
+                            item.style.display = "";
+                            display_list.push(id);
+                        } else {
+                            item.style.display = "none";
+                        }
                     }
-                    item.setAttribute("displayed", item.style.display == "" ? true : false);
+                } else {
+                    item.style.display = "none";
                 }
+                item.setAttribute("displayed", item.style.display == "" ? true : false);
             });
             await limitEquip(display_list);
+            if (document.querySelector("#owned_equip_only").classList.contains("active")) _hideNotOwned();
             app.util.countEquipDisplayed();
 
             function isEquipSelect(nation, type, rarity, tier) {
@@ -1525,6 +1649,16 @@ const
                     }
                 });
                 return true;
+            }
+
+            function _hideNotOwned() {
+                let list = app.util._owned.equip;
+                equips.forEach(item => {
+                    if (!(list.has(parseInt(item.id, 10)))) {
+                        item.style.display = "none";
+                        item.setAttribute("displayed", false);
+                    }
+                });
             }
         },
         setEquip(item, save = true) {
@@ -1968,7 +2102,7 @@ const
             async function loadUserSetting() {
                 //------------------------------
                 // use localStorage now
-                if (document.cookie) app.util.removeAllCookie();
+                // if (document.cookie) app.util.removeAllCookie();
                 //------------------------------
 
                 let setting = {};
@@ -2021,6 +2155,17 @@ const
                 if (setting[settingKey.fleetBorder] == 1 || !setting[settingKey.fleetEdit]) {
                     document.querySelector("#display_fleet_border").click();
                 }
+
+                if (setting[settingKey.ownedItem]) {
+                    let { ship, equip, ship_on, equip_on } = JSON.parse(LZString.decompress(setting[settingKey.ownedItem]));
+                    ship = new Set(ship);
+                    equip = new Set(equip);
+                    app.util._owned = { ship, equip, ship_on, equip_on };
+                    if (ship_on) document.querySelector("#owned_ship_only").click();
+                    if (equip_on) document.querySelector("#owned_equip_only").click();
+                    console.log("load owned item data", app.util._owned);
+                }
+
                 return true;
             }
 

@@ -17,6 +17,10 @@ This site was developed and tested on `Chrome`/`Firefox`
 Compatibility with other browsers is unknown  
 
 ## Update  
+**2021-11-25**
+- fold setting/filter
+- new feature: only show owned ship/equipment
+
 **2021-11-23**
 - now the last sorting method will be marked
 - now the `sort order` button will also trigger sorting
