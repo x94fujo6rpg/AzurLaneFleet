@@ -6,9 +6,10 @@ Is just for easily share fleet configuration in one shot
 ### [Chinese WIKI version](https://wiki.biligame.com/blhx/%E8%88%B0%E9%98%9F%E6%A8%A1%E6%8B%9F%E5%99%A8) is  online ###  
 ***Caution! Data stored in two versions are not compatible!***  
 
-If you need DPS calculator, go check [Zoratsu's AzurLaneCalculator](https://github.com/Zoratsu/AzurLaneCalculator)  
-  
-[Why is it so hard to calculate DPS in this game](https://github.com/x94fujo6rpg/AzurLaneFleet#simple-explain)
+### Related userscripts ###
+for CN WIKI
+- 碧航艦隊科技工具 [github](https://github.com/x94fujo6rpg/SomeTampermonkeyScripts/blob/master/az_cn_wiki_fleet_tech_tool.user.js) / [greasyfork](https://greasyfork.org/scripts/435568)
+- 還原艦船名稱 [greasyfork](https://greasyfork.org/scripts/405281)
 
 # Browser support
 Recommend using `Chrome` for the best experience  
@@ -43,7 +44,6 @@ Compatibility with other browsers is unknown
   | Ägir                    | Agir                    |
   | Friedrich der Große     | Friedrich der Grosse    |
   | Nürnberg                | Nurnberg                |
-  | Köln (Retrofit)         | Koln (Retrofit)         |
   | Köln                    | Koln                    |
   | Königsberg              | Konigsberg              |
   | Hermann Künne (Z19)     | Hermann Kunne (Z19)     |
@@ -228,26 +228,4 @@ Compatibility with other browsers is unknown
 ## Data source  
 - [AzurLaneSourceJson](https://github.com/nobbyfix/AzurLaneSourceJson)  
 - [AzurLaneData](https://github.com/Dimbreath/AzurLaneData)  
-
-## Simple explain
-
-If you want to calculate the DPS correctly  
-You basically need to simulate the entire game  
-It's crazy to try to calculate the interaction between skills  
-Even if you manage to do it  
-The game itself will still have bugs that cause the reality doesn't match  
-
-Some game design/bug, can only be found by directly checking the code  
-And it is very common for skills to have bugs  
-If you have followed some players on `bilibili` `NGA` `CN Wiki` you will know  
-~~`certain anonymous inorganic compound`, `#\d{4}`, `those who make the Tier List`...etc~~  
-  
-If you really want to peek at how crazy it is  
-Try [航母調速對軸表](https://wiki.biligame.com/blhx/%E8%88%AA%E6%AF%8D%E8%B0%83%E9%80%9F%E5%AF%B9%E8%BD%B4%E8%A1%A8)  
-It's CN EXCEL calculate table, just and only for the carrier takeoff time-axis in META battles  
-  
-It is normal if you experience the following symptoms during the process of understanding how the table works  
-Dizziness, Headache, Hysterical, Screaming,  
-Nausea, Stroke, Brain Cancer, Hair Fall, Seizure,  
-Brain fluid coming out of nose,  
-Banging your head against the wall...etc  
+- [AzurLaneTools](https://github.com/AzurLaneTools)  
