@@ -25,7 +25,7 @@
     <link rel="prefetch" href="js/ship_data.min.js?v=02bea05c991f" as="script">
     <link rel="prefetch" href="js/equip_data.min.js?v=6306080a549c" as="script">
     <link rel="prefetch" href="js/cnwiki2alf.min.js?v=72de46d883fc" as="script">
-    <link rel="prefetch" href="js/main-v2.min.js?v=cd1d36fc8ddc" as="script">
+    <link rel="prefetch" href="js/main-v2.min.js?v=16b9fc30a59f" as="script">
     <style>
         body {
             color: white;
@@ -292,7 +292,7 @@
     </div>
     <div id="app_area" style="display:none;">
         <div id="options">
-            <div class="btn-group btn-group-toggle d-flex w-25 my-2 mx-auto" data-toggle="buttons">
+            <div class="btn-group btn-group-toggle d-flex w-25 my-2 mx-auto" data-toggle="buttons" id="language_select_group">
                 <label class="btn btn-outline-secondary font-weight-bold w-100" id="tw" onclick="app.option.setLanguage(this)">
                     <input type="radio" name="lang">TW
                 </label>
@@ -306,19 +306,19 @@
                     <input type="radio" name="lang" checked>EN
                 </label>
             </div>
-            <button id="show_setting" class="btn btn-outline-secondary d-flex my-2 mx-auto" type="button" data-toggle="collapse" data-target="#setting_area" aria-expanded="false" aria-controls="setting_area">⮟ Settings</button>
+            <button id="show_setting" class="btn btn-outline-secondary d-flex mt-3 mx-auto w-25 justify-content-center" type="button" data-toggle="collapse" data-target="#setting_area" aria-expanded="false" aria-controls="setting_area">⮟ Settings</button>
             <div id="setting_area" class="collapse">
-                <div class="btn-group d-flex my-2 mx-auto w-25" id="option_box_1">
+                <div class="btn-group d-flex mt-3 mx-auto w-25" id="option_box_1">
                     <button class="btn btn-outline-secondary w-100 border-right" type="button" id="allow_dup_btn" onclick="app.option.ship.allow_dup(this)">Allow Duplicate</button>
                     <button class="btn btn-secondary w-100 border-left border-right" type="button" id="layout_setting" onclick="app.option.switchLayout(this)">Horizontal</button>
                     <button class="btn btn-outline-secondary w-100 border-left" type="button" id="frame_setting" onclick="app.option.frameSize(this)">Thick frame</button>
                 </div>
-                <div class="btn-group d-flex my-2 mx-auto w-25" id="option_box_2">
+                <div class="btn-group d-flex my-3 mx-auto w-25" id="option_box_2">
                     <button class="btn btn-outline-secondary w-50 border-right" type="button" id="display_fleet_op" onclick="app.option.displayOP(this)">Fleet ID / Edit Button</button>
                     <button class="btn btn-outline-secondary w-50 border-left" type="button" id="display_fleet_border" onclick="app.option.displayBorder(this)">Fleet Border</button>
                 </div>
             </div>
-            <div class="dropdown my-1 container d-flex w-50" id="fleet_storage">
+            <div class="dropdown mt-3 container d-flex w-50" id="fleet_storage">
                 <button class="btn btn-primary w-25 mx-1" type="button" id="add_fleet" onclick="LS.add_fleet()">Save Current</button>
                 <button class="btn btn-info w-25 mx-1 dropdown-toggle text-truncate" type="button" id="select_fleet" onclick="LS.updateStorageList()" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Select Fleet
@@ -529,7 +529,7 @@
     <script src='js/ship_data.min.js?v=02bea05c991f'></script>
     <script src='js/equip_data.min.js?v=6306080a549c'></script>
     <script src='js/cnwiki2alf.min.js?v=72de46d883fc'></script>
-    <script src="js/main-v2.min.js?v=cd1d36fc8ddc"></script>
+    <script src="js/main-v2.min.js?v=16b9fc30a59f"></script>
 </body>
 
 </html>

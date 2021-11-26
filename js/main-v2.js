@@ -35,8 +35,8 @@ const
 
         { id: "rebuild_cache_btn", en: "Rebuild Cache", jp: "キャッシュをクリア&再構築", tw: "重建快取", },
 
-        { id: "show_ship_filter", en: "⮟ Show Filter", jp: "⮟ 設定", tw: "⮟ 設定", },
-        { id: "show_equip_filter", en: "⮟ Show Filter", jp: "⮟ 設定", tw: "⮟ 設定", },
+        { id: "show_ship_filter", en: "⮟ Show Filter", jp: "⮟ フィルター", tw: "⮟ 顯示過濾器", },
+        { id: "show_equip_filter", en: "⮟ Show Filter", jp: "⮟ フィルター", tw: "⮟ 顯示過濾器", },
 
         { id: "owned_ship_set", en: "Set Owned Ship", jp: "所持している艦船を設定", tw: "設定已有的船", },
         { id: "owned_ship_only", en: "Only Show Owned", jp: "所持しているだけを表示", tw: "只顯示已有的船", },
@@ -107,6 +107,7 @@ const
         { id: 7, cn: "北方聯合", en: "Northern Parliament", jp: "北連", code: "SN" },
         { id: 8, cn: "自由鳶尾", en: "Iris Libre", jp: "アイリス", code: "FFNF" },
         { id: 9, cn: "維希教廷", en: "Vichya Dominion", jp: "ヴィシア", code: "MNF" },
+        { id: 100, cn: "連動", en: "Collab", jp: "コラボ", code: "Collab" },
         { id: 0, cn: "其他", en: "Other", jp: "その他", code: "Other" },
     ],
     lan_ship_type = [
@@ -618,6 +619,7 @@ const
                         batch: "batchExchange",
                         w25: "w-25",
                         w50: "w-50",
+                        w75: "w-75",
                         w100: "w-100",
                         mw100: "mw-100",
                         no_effect: "adjustEle_placeholder",
@@ -638,6 +640,7 @@ const
                         ["fleet_storage", _d.exchange, _d.w50, _d.w100],
                         ["dialog_shipselect", _d.exchange, _d.no_effect, _d.mw100],
                         ["dialog_select_equip", _d.exchange, _d.no_effect, _d.mw100],
+                        ["language_select_group", _d.exchange, _d.w25, _d.w75]
                         //["search_box", _d.exchange, _d.df, _d.fw],
                     ];
                 if (width < safe_size) {
@@ -1454,6 +1457,8 @@ const
                 // if ship nation match current selected
                 if (filter_setting.nation.has(nation) || filter_setting.nation.size === 0) {
                     is_nation = true;
+                } else if (filter_setting.nation.has(100) && collab_nation.has(nation)) {
+                    is_nation = true;
                 } else if (filter_setting.nation.has(0) && other_nation.has(nation)) {
                     is_nation = true;
                 } else {
@@ -1511,7 +1516,7 @@ const
             if (!shipInList) {
                 let match_id = cn_wiki_to_alf_id[item.id];
                 if (match_id) {
-                    [item.id,match_id] = [match_id, item.id];
+                    [item.id, match_id] = [match_id, item.id];
                     shipInList = sortedShip.find(ele => {
                         if (ele.id === `${item.id}` || ele.id === item.id) return Object.assign({}, ele);
                     });
@@ -1619,6 +1624,8 @@ const
                     is_rarity = false,
                     is_tier = false;
                 if (filter_setting.eq_nation.has(nation) || filter_setting.eq_nation.size === 0) {
+                    is_nation = true;
+                } else if (filter_setting.eq_nation.has(100) && eq_collab_nation.has(nation)) {
                     is_nation = true;
                 } else if (filter_setting.eq_nation.has(0) && eq_other_nation.has(nation)) {
                     is_nation = true;
@@ -1743,8 +1750,8 @@ const
             await createAllEquip();
             step("add text to ele"); addLanguageToEle();
             step("add search"); add_search_event();
-            step("split button group [ship nation]"); splitButtonGroup("shipnation");
-            step("split button group [equip nation]"); splitButtonGroup("eq_nation");
+            step("split button group [ship nation]"); splitButtonGroup("shipnation", 6, filter_btn_class.replace("line-5-item", "line-6-item"));
+            step("split button group [equip nation]"); splitButtonGroup("eq_nation", 6, filter_btn_class.replace("line-5-item", "line-6-item"));
             step("add resize event"); addWindowSizeEvent();
             step("load user setting"); await loadUserSetting();
             step("load fleet storage"); await loadStorage();
@@ -2538,13 +2545,15 @@ const
     type_front = new Set([1, 2, 3, 18, 19]),
     type_back = new Set([4, 5, 6, 7, 10, 12, 13]),
     type_sub = new Set([8, 17]),
-    other_nation = new Set([97, 98, 101, 103, 104, 105, 106, 107, 108, 109, 110]), // 97:META, 98:Bulin, 100+:collab
+    other_nation = new Set([97, 98]), // 97:META, 98:Bulin, 100+:collab
+    collab_nation = new Set([101, 103, 104, 105, 106, 107, 108, 109, 110]),
     other_front = new Set([19]),
     other_back = new Set([10]),
     other_sub = new Set([0]),
     // equip
     addQuantityList = new Set([1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13,]),
-    eq_other_nation = new Set([104, 105, 106]),
+    eq_other_nation = other_nation,
+    eq_collab_nation = collab_nation,
     eq_nation = new Set(lan_eq_nation.map(o => parseInt(o.id, 10))),
     eq_type = new Set(lan_eq_type.map(o => parseInt(o.id, 10))),
     eq_rarity = new Set(lan_eq_rarity.map(o => parseInt(o, 10))),
