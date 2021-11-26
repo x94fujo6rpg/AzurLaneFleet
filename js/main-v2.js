@@ -1205,7 +1205,9 @@ const
                     raw_data = textbox.value;
                 if (!raw_data.length) msg.error.no_data();
                 if (raw_data[0] !== "[") raw_data = LZString.decompressFromEncodedURIComponent(raw_data);
-                if (!raw_data.length) msg.error.unzip_failed();
+                // try decode uri
+                if (!raw_data) raw_data = LZString.decompressFromEncodedURIComponent(decodeURIComponent(textbox.value));
+                if (!raw_data) msg.error.unzip_failed();
                 let [data, ver, hash] = raw_data.split("!"),
                     ck = false;
                 switch (parseFloat(ver)) {
