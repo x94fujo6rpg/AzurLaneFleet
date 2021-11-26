@@ -1248,7 +1248,8 @@ const
                                 if (item === "" || item === 0) item = (item_index == 0) ? "000000" : "666666";
                                 // skip empty ship
                                 if (is_ship_empty) return;
-                                let item_name = false;
+
+                                let item_name;
                                 if (!formation_data) {
                                     // v4 no formation data
                                     item_name = fleet_index < 4 ?
@@ -1261,10 +1262,12 @@ const
                                         `${fleet_index}_${side_index}_${ship_index}_${item_index}` : // normal fleet
                                         `${fleet_index}_2_${ship_index}_${item_index}`; // sub fleet
                                 }
+
                                 let ship_item = { name: item_name, id: item };
                                 this.setCurrent(ship_item, true);
                                 if (item_index === 0) {
-                                    app.setShipAndEquip(ship_item, false);
+                                    let is_ship_set = app.setShipAndEquip(ship_item, false);
+                                    if (!is_ship_set) is_ship_empty = true; // set ship failed, skip equip
                                 } else {
                                     app.setEquip(ship_item, false);
                                 }
@@ -1496,15 +1499,19 @@ const
             }
         },
         setShipAndEquip(item, save = true) {
-            let side = sideTable[c_side];
-            //console.log(`${setShipAndEquip.name}: ${item.id} ${typeof item.id}`);
-            let shipInApp = fleetData[c_fleet][side][c_pos];
-            let shipInList = sortedShip.find((ele) => {
-                if (ele.id === `${item.id}` || ele.id === item.id) return Object.assign({}, ele);
-            });
-            let app_item = shipInApp.item;
+            let side = sideTable[c_side],
+                //console.log(`${setShipAndEquip.name}: ${item.id} ${typeof item.id}`);
+                shipInApp = fleetData[c_fleet][side][c_pos],
+                shipInList = sortedShip.find(ele => {
+                    if (ele.id === `${item.id}` || ele.id === item.id) return Object.assign({}, ele);
+                }),
+                app_item = shipInApp.item,
+                pos = `fleet:${c_fleet}, ${side}, pos:${c_pos}, item:${c_item}`;
             // ship not exist
-            if (!shipInList) return console.log(`%cship id[${id}] not found, skip`, "color:red;");
+            if (!shipInList) {
+                console.log(`%cship id[${item.id}] at [${pos}] not found, abort`, "color:red;");
+                return false;
+            }
             for (let index in app_item) {
                 app_item = shipInApp.item[index].property;
                 if (item.id === "000000") {
@@ -1554,6 +1561,7 @@ const
                 }
             }
             if (save) LS.userSetting.set(settingKey.fleetData, app.util.dumpID());
+            return true;
         },
         async equipDisplay() {
             let side = sideTable[c_side],
@@ -1662,9 +1670,14 @@ const
             }
         },
         setEquip(item, save = true) {
-            let side = sideTable[c_side];
-            let itemInApp = fleetData[c_fleet][side][c_pos].item[c_item].property;
-            let id = parseInt(item.id, 10);
+            let side = sideTable[c_side],
+                itemInApp = fleetData[c_fleet][side][c_pos].item[c_item].property,
+                id = parseInt(item.id, 10),
+                pos = `fleet:${c_fleet}, ${side}, pos:${c_pos}, item:${c_item}`;
+            if (!id) {
+                console.log(`%cinvalid equip id[${item.id}] at [${pos}], abort`, "color:red;");
+                return false;
+            }
             if (id === 666666) {
                 // reset
                 itemInApp.tw = itemInApp.type_tw;
@@ -1678,10 +1691,14 @@ const
                 // copy data
                 let itemInList = sortedEquip.find((ele) => { if (ele.id === id) return Object.assign({}, ele); });
                 // equip not exist
-                if (!itemInList) return console.log(`%cequip id[${id}] not found, skip`, "color:red;");
+                if (!itemInList) {
+                    console.log(`%cequip id[${id}] at [${pos}] not found, abort`, "color:red;");
+                    return false;
+                }
                 ui_table.copy_equip.forEach(key => itemInApp[key] = itemInList[key]);
             }
             if (save) LS.userSetting.set(settingKey.fleetData, app.util.dumpID());
+            return true;
         },
         async initialize() {
             console.time(app.initialize.name);

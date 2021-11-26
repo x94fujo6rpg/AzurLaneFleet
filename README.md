@@ -21,6 +21,12 @@ This site was developed and tested on `Chrome`/`Firefox`
 Compatibility with other browsers is unknown  
 
 ## Update  
+**2021-11-26**
+- improve handling when invalid data is loaded  
+  it will still load the formation and show successful, error message displayed in console
+  - ship: stop load and skip rest equip
+  - equip: skip
+
 **2021-11-25**
 - fold setting/filter
 - new feature: only show owned ship/equipment
