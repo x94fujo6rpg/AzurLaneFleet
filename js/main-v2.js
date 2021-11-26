@@ -1507,6 +1507,17 @@ const
                 }),
                 app_item = shipInApp.item,
                 pos = `fleet:${c_fleet}, ${side}, pos:${c_pos}, item:${c_item}`;
+            // try cn wiki id
+            if (!shipInList) {
+                let match_id = cn_wiki_to_alf_id[item.id];
+                if (match_id) {
+                    [item.id,match_id] = [match_id, item.id];
+                    shipInList = sortedShip.find(ele => {
+                        if (ele.id === `${item.id}` || ele.id === item.id) return Object.assign({}, ele);
+                    });
+                    if (shipInList) console.log(`%cfound [${item.id}] match cn wiki [${match_id}]`, "color:orange");
+                }
+            }
             // ship not exist
             if (!shipInList) {
                 console.log(`%cship id[${item.id}] at [${pos}] not found, abort`, "color:red;");
