@@ -1860,15 +1860,16 @@ const
             async function addClickEventAndImg() {
                 console.time("addClickEventAndImg");
                 [
-                    { type: "ship", onclick: app.setShipAndEquip, list: Object.assign([], sortedShip) },
-                    { type: "equip", onclick: app.setEquip, list: Object.assign([], sortedEquip) }
+                    { type: "ship", onclick: app.setShipAndEquip, list: [...sortedShip] },
+                    { type: "equip", onclick: app.setEquip, list: [...sortedEquip] }
                 ].forEach(obj =>
-                    document.querySelectorAll(`#${obj.type}list>button`)
-                        .forEach(btn => {
-                            let index = obj.list.findIndex(o => o.id == btn.id);
-                            btn.children[0].children[0].children[2].src = obj.list.splice(index, 1)[0].icon;
+                    obj.list.forEach(o => {
+                        setTimeout(() => {
+                            let btn = document.querySelector(`[id="${o.id}"]`);
+                            btn.children[0].children[0].children[2].src = o.icon;
                             btn.onclick = function () { obj.onclick(this); };
-                        })
+                        });
+                    })
                 );
                 console.timeEnd("addClickEventAndImg");
             }
