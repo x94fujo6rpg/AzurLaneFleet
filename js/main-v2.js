@@ -14,7 +14,6 @@ const
         // do not change id, unless you know what you are doing.
         { id: "show_setting", en: "⮟ Settings", jp: "⮟ 設定", tw: "⮟ 設定", },
         { id: "allow_dup_btn", en: "Allow Duplicate", jp: "重複を許可する", tw: "允許重複的船", },
-        { id: "layout_label", en: "Layout:", jp: "スタイル:", tw: "排版方式:", },
         { id: "display_fleet_border", en: "Fleet Border", jp: "フレーム表示", tw: "顯示外框" },
         { id: "display_fleet_op", en: "Fleet ID / Edit Button", jp: "編集ボタン表示", tw: "顯示編輯" },
         { id: "frame_setting", en: "Thick frame", jp: "厚いフレーム", tw: "粗框" },
@@ -37,14 +36,13 @@ const
 
         { id: "show_ship_filter", en: "⮟ Show Filter", jp: "⮟ フィルター", tw: "⮟ 顯示過濾器", },
         { id: "show_equip_filter", en: "⮟ Show Filter", jp: "⮟ フィルター", tw: "⮟ 顯示過濾器", },
-
         { id: "owned_ship_set", en: "Set Owned Ship", jp: "所持している艦船を設定", tw: "設定已有的船", },
         { id: "owned_ship_only", en: "Only Show Owned", jp: "所持しているだけを表示", tw: "只顯示已有的船", },
-
         { id: "owned_equip_set", en: "Set Owned Equip", jp: "所持している装備を設定", tw: "設定已有的裝備", },
         { id: "owned_equip_only", en: "Only Show Owned", jp: "所持しているだけを表示", tw: "只顯示已有的裝備", },
 
         { id: "select_ship", en: "Select Ship", jp: "艦船を選択", tw: "選擇艦船", },
+        { id: "select_equip", en: "Select Equip", jp: "装備を選択", tw: "選擇裝備", },
         { id: "filter_nation", en: "Nation", jp: "陣営", tw: "國家", },
         { id: "filter_type", en: "Type", jp: "種類", tw: "種類", },
         { id: "filter_rarity", en: "Rarity", jp: "レア度", tw: "稀有度", },
@@ -63,8 +61,6 @@ const
         { id: "search_input", en: "Search", jp: "検索", tw: "搜尋", },
         { id: "filter_search_result", en: "Result", jp: "結果", tw: "結果", },
         { id: "filter_retro", en: "Retrofitted Only", jp: "改造された艦船だけ", tw: "只顯示改造後的", },
-
-        { id: "select_equip", en: "Select Equip", jp: "装備を選択", tw: "選擇裝備", },
     ],
     vue_ui_text = {
         sub_fleet: { en: "Sub", jp: "潜水", tw: "潛艇", cn: "潛艇" },
@@ -917,14 +913,14 @@ const
             setOwned(btn, type) {
                 let isOn = btn.classList.contains("active");
                 this._owned[`${type}_on`] = isOn ? 0 : 1;
-                if (!isOn) {
-                    btn.classList.add("active");
-                } else {
-                    btn.classList.remove("active");
-                }
+                btn.classList[isOn ? "remove" : "add"]("active");
                 if (type == "ship") app.shipDisplay();
                 if (type == "equip") app.equipDisplay();
                 this.saveOwned();
+            },
+            _editing_owned: {
+                ship: false,
+                equip: false,
             },
             editOwned(btn, type = "") {
                 let list = this._owned[type],
@@ -939,17 +935,18 @@ const
                     if (enable_btn.classList.contains("active")) enable_btn.click();
                     enable_btn.disabled = true;
                     editOn();
+                    this._editing_owned[type] = true;
                 } else {
                     btn.classList.remove("active");
                     editOff();
+                    this._editing_owned[type] = false;
                 }
+                if (type == "ship") app.shipDisplay();
+                if (type == "equip") app.equipDisplay();
 
                 function editOn() {
-                    let all_btn = document.querySelectorAll(`#${type}list button`),
-                        remove;
-                    all_btn = [...all_btn];
-                    remove = all_btn.shift();
-
+                    let all_btn = [...document.querySelectorAll(`#${type}list button`)],
+                        remove = all_btn.shift();
                     all_btn.forEach(btn => {
                         btn.setAttribute("data-dismiss", "");
                         btn.onclick = function () { editList(this); };
@@ -961,29 +958,20 @@ const
 
                     function editList(ele) {
                         let id = parseInt(ele.id, 10);
-                        if (list.has(id)) {
-                            list.delete(id);
-                        } else {
-                            list.add(id);
-                        }
+                        list[list.has(id) ? "delete" : "add"](id);
                         updateList(ele);
                         app.util.saveOwned();
                     }
 
                     function updateList(target) {
-                        if (!target) {
-                            all_btn.forEach(btn => btn.style.opacity = list.has(parseInt(btn.id, 10)) ? 1 : 0.2);
-                        } else {
-                            target.style.opacity = list.has(parseInt(target.id, 10)) ? 1 : 0.2;
-                        }
+                        if (!target) all_btn.forEach(btn => btn.style.opacity = list.has(parseInt(btn.id, 10)) ? 1 : 0.2);
+                        if (target) target.style.opacity = list.has(parseInt(target.id, 10)) ? 1 : 0.2;
                     }
                 }
 
                 function editOff() {
-                    let all_btn = document.querySelectorAll(`#${type}list button`),
-                        remove;
-                    all_btn = [...all_btn];
-                    remove = all_btn.shift();
+                    let all_btn = [...document.querySelectorAll(`#${type}list button`)],
+                        remove = all_btn.shift();
                     all_btn.forEach(btn => {
                         btn.setAttribute("data-dismiss", "modal");
                         btn.onclick = func[type];
@@ -1027,7 +1015,7 @@ const
                 let hasvalue = filter_setting[key].has(value),
                     add_value = (_key, _value) => filter_setting[_key].add(_value),
                     delete_value = (_key, _value) => filter_setting[_key].delete(_value),
-                    normal_value = (_key, _value) => hasvalue ? delete_value(_key, _value) : add_value(_key, _value);
+                    normal_value = (_key, _value) => (hasvalue ? delete_value : add_value)(_key, _value);
                 if (value != 0) {
                     normal_value(key, value);
                 } else if (value == 0) {
@@ -1418,7 +1406,8 @@ const
                 item.style.display = is_select ? "" : "none";
                 item.setAttribute("displayed", is_select ? true : false);
             });
-            if (!document.getElementById("allow_dup_btn").classList.contains("active")) _hideShipInFleet();
+            if (!document.getElementById("allow_dup_btn").classList.contains("active") &&
+                !app.util._editing_owned.ship) _hideShipInFleet();
             if (document.querySelector("#owned_ship_only").classList.contains("active")) _hideNotOwned();
             app.util.countShipDisplayed();
 
@@ -1564,8 +1553,8 @@ const
                         if (quantity != undefined && typelist.some(eqtype => addQuantityList.has(eqtype))) {
                             app_item.quantity = `x${quantity}`;
                         }
-                        // go through all type in ship's equip type list
-                        let type_str_arr = [[], [], [], []];
+                        // go through all type in ship's equip type list and add it in readable string
+                        let type_str_arr = [[], [], [], []]; // for each language: tw cn en jp
                         typelist.forEach(type => {
                             ui_table.langs.forEach((lan_str, index) => {
                                 type_str_arr[index].push(parsetype[type][lan_str]);
@@ -1590,7 +1579,6 @@ const
                 shiptype = ship.type,
                 shipid = ship.id,
                 display_list = [];
-
             equips = [...equips];
             equips.shift(); // skip remove
             app.util.equipCheck(shipid);
@@ -1615,7 +1603,7 @@ const
                 }
                 item.setAttribute("displayed", item.style.display == "" ? true : false);
             });
-            await limitEquip(display_list);
+            if (!app.util._editing_owned.equip) await limitEquip(display_list);
             if (document.querySelector("#owned_equip_only").classList.contains("active")) _hideNotOwned();
             app.util.countEquipDisplayed();
 
@@ -1653,9 +1641,9 @@ const
             }
 
             async function limitEquip(display_list) {
-                let side = sideTable[c_side];
-                let ship = fleetData[c_fleet][side][c_pos];
-                let equipOnShip = [];
+                let side = sideTable[c_side],
+                    ship = fleetData[c_fleet][side][c_pos],
+                    equipOnShip = [];
                 ship.item.forEach((item, index) => {
                     let id = item.property.id;
                     if (index != 0 && id != "") equipOnShip.push(id);
@@ -1704,9 +1692,8 @@ const
                 itemInApp.cn = itemInApp.type_cn;
                 itemInApp.en = itemInApp.type_en;
                 itemInApp.jp = itemInApp.type_jp;
-                itemInApp.frame = itemInApp.bg = "";
+                itemInApp.limit = itemInApp.id = itemInApp.frame = itemInApp.bg = "";
                 itemInApp.icon = ui_table.empty_item;
-                itemInApp.id = "";
             } else {
                 // copy data
                 let itemInList = sortedEquip.find((ele) => { if (ele.id === id) return Object.assign({}, ele); });
@@ -1761,6 +1748,7 @@ const
             document.querySelector("#app_area").style.display = "";
             dynamicFleet.disableInvalidMoveButton();
             console.timeEnd(app.initialize.name);
+            setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
             setTimeout(() => delete app.initialize, 500);
 
             //------------------------------
@@ -1804,105 +1792,89 @@ const
 
             //------------------------------
             async function createSortShipList() {
-                let newlist = [];
-                let pos = 0;
-                let empty = {};
-                let parseData = {
-                    id: "uni_id",
-                    tw: "tw_name", cn: "cn_name", en: "en_name", jp: "jp_name",
-                    type: "type",
-                    nationality: "nationality",
-                    rarity: "rarity",
-                    star: "star",
-                    retro: "retro",
-                    base: "base_list",
-                    e1: "equip_1", e2: "equip_2", e3: "equip_3", e4: "equip_4", e5: "equip_5",
-                };
-                for (let index in ship_data) {
-                    let item = Object.assign({}, ship_data[index]);
-                    let newitem = {};
-                    // parse data
-                    for (let key in parseData) {
-                        newitem[key] = item[parseData[key]];
-                    }
-                    // set other data
-                    newitem.icon = `shipicon/${item.painting.toLowerCase()}.png`;
-                    newitem.bg = `ui/bg${item.rarity - 1}.png`;
-                    newitem.frame = `ui/frame_${item.rarity - 1}.png`;
-                    // create empty ship
-                    if (pos === 0) {
-                        empty = Object.assign({}, newitem);
-                        for (let key in empty) {
-                            empty[key] = "";
-                        }
-                        empty.id = "000000";
-                        empty.en = "remove";
-                        empty.tw = empty.cn = "移除";
-                        empty.jp = "除隊";
-                        empty.icon = ui_table.empty_item;
-                    }
-                    newlist.push(newitem);
-                    pos++;
-                }
-                newlist = util.sorting(newlist, 'nationality', false);
-                newlist = util.sorting(newlist, 'type', true);
-                newlist = util.sorting(newlist, 'id', false);
-                newlist = util.sorting(newlist, 'rarity', true);
-                // add emptyship to top
-                newlist.unshift(empty);
-                sortedShip = Object.assign([], newlist);
+                let destr = (from) => {
+                    let {
+                        uni_id: id,
+                        tw_name: tw, cn_name: cn, en_name: en, jp_name: jp,
+                        type, nationality, rarity, star, retro,
+                        base_list: base,
+                        equip_1: e1, equip_2: e2, equip_3: e3, equip_4: e4, equip_5: e5,
+                        painting: icon,
+                        bg = "",
+                        frame = "",
+                    } = from;
+                    icon = `shipicon/${icon.toLowerCase()}.png`;
+                    bg = `ui/bg${rarity - 1}.png`;
+                    frame = `ui/frame_${rarity - 1}.png`;
+                    return {
+                        id, tw, cn, en, jp,
+                        type, nationality, rarity, star, retro,
+                        base, e1, e2, e3, e4, e5,
+                        icon, bg, frame
+                    };
+                }, list = [], empty = {};
+                for (let id in ship_data) list.push(destr(ship_data[id]));
+                list = util.sorting(list, 'nationality', false);
+                list = util.sorting(list, 'type', true);
+                list = util.sorting(list, 'id', false);
+                list = util.sorting(list, 'rarity', true);
+                Object.assign(empty, list[0]);
+                for (let key in empty) empty[key] = "";
+                list.unshift(Object.assign(empty, {
+                    id: "000000",
+                    en: "remove",
+                    tw: "移除",
+                    cn: "移除",
+                    jp: "除隊",
+                    icon: ui_table.empty_item
+                }));
+                sortedShip = list;
                 return true;
             }
 
             async function createSortEquipList() {
-                let newlist = [];
-                let pos = 0;
-                let parseData = {
-                    id: "id",
-                    tw: "tw_name", cn: "cn_name", en: "en_name", jp: "jp_name",
-                    type: "type",
-                    nationality: "nationality",
-                    rarity: "rarity",
-                    fb: "ship_type_forbidden",
-                    limit: "equip_limit",
-                };
-                for (let index in equip_data) {
-                    let item = Object.assign({}, equip_data[index]);
-                    let newitem = {};
-                    // parse data
-                    for (let key in parseData) {
-                        newitem[key] = item[parseData[key]];
-                    }
-                    // set other data
-                    newitem.icon = `equips/${item.icon}.png`;
-                    if (item.rarity != 1) {
-                        newitem.bg = `ui/bg${item.rarity - 1}.png`;
-                        newitem.frame = `ui/frame_${item.rarity - 1}.png`;
+                let destr = (from) => {
+                    let {
+                        id,
+                        tw_name: tw, cn_name: cn, en_name: en, jp_name: jp,
+                        type, nationality, rarity,
+                        ship_type_forbidden: fb,
+                        equip_limit: limit,
+                        icon,
+                        bg = "",
+                        frame = "",
+                    } = from;
+                    icon = `equips/${icon}.png`;
+                    if (rarity != 1) {
+                        bg = `ui/bg${rarity - 1}.png`;
+                        frame = `ui/frame_${rarity - 1}.png`;
                     } else {
-                        newitem.bg = `ui/bg${item.rarity}.png`;
-                        newitem.frame = `ui/frame_${item.rarity}.png`;
+                        bg = `ui/bg${rarity}.png`;
+                        frame = `ui/frame_${rarity}.png`;
                     }
-                    // create empty equip
-                    if (pos === 0) {
-                        empty = Object.assign({}, newitem);
-                        for (let key in empty) {
-                            empty[key] = "";
-                        }
-                        empty.id = "666666";
-                        empty.en = "remove";
-                        empty.tw = empty.cn = "移除";
-                        empty.jp = "外す";
-                        empty.icon = ui_table.empty_item;
-                    }
-                    newlist.push(newitem);
-                    pos++;
-                }
-                newlist = util.sorting(newlist, "id", true);
-                newlist = util.sorting(newlist, "type", true);
-                newlist = util.sorting(newlist, "nationality", false);
-                newlist = util.sorting(newlist, "rarity", true);
-                newlist.unshift(empty);
-                sortedEquip = Object.assign([], newlist);
+                    return {
+                        id, tw, cn, en, jp,
+                        type, nationality, rarity,
+                        fb, limit,
+                        icon, bg, frame
+                    };
+                }, list = [], empty = {};
+                for (let id in equip_data) list.push(destr(equip_data[id]));
+                list = util.sorting(list, "id", true);
+                list = util.sorting(list, "type", true);
+                list = util.sorting(list, "nationality", false);
+                list = util.sorting(list, "rarity", true);
+                Object.assign(empty, list[0]);
+                for (let key in empty) empty[key] = "";
+                list.unshift(Object.assign(empty, {
+                    id: "666666",
+                    en: "remove",
+                    tw: "移除",
+                    cn: "移除",
+                    jp: "外す",
+                    icon: ui_table.empty_item
+                }));
+                sortedEquip = list;
                 return true;
             }
 
@@ -2725,12 +2697,7 @@ const
                 fleet_box_o: appClassData.fleet_box_o.h,
                 fleet_box_i: appClassData.fleet_box_i.h,
             },
-            ui_text: {
-                sub_fleet: vue_ui_text.sub_fleet,
-                normal_fleet: vue_ui_text.normal_fleet,
-                copy_fleet: vue_ui_text.copy_fleet,
-                swap_ship: vue_ui_text.swap_ship,
-            }
+            ui_text: vue_ui_text
         },
     }),
     shipSelect = new Vue({
