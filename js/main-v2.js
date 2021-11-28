@@ -1728,7 +1728,7 @@ const
             // ------------------------------
             await createAllShip();
             await createAllEquip();
-            step("add click event & img"); await addClickEventAndImg();
+            await addClickEventAndImg();
             step("add text to ele"); addLanguageToEle();
             step("add search"); add_search_event();
             step("split button group [ship nation]"); splitButtonGroup("shipnation", 6, filter_btn_class.replace("line-5-item", "line-6-item"));
@@ -1859,19 +1859,33 @@ const
 
             async function addClickEventAndImg() {
                 console.time("addClickEventAndImg");
-                [
-                    { type: "ship", onclick: app.setShipAndEquip, list: [...sortedShip] },
-                    { type: "equip", onclick: app.setEquip, list: [...sortedEquip] }
-                ].forEach(obj =>
-                    obj.list.forEach(o => {
+                let promise_list = [],
+                    list = [
+                        { type: "ship", list: [...sortedShip], onclick: app.setShipAndEquip },
+                        { type: "equip", list: [...sortedEquip], onclick: app.setEquip }
+                    ],
+                    max = sortedShip.length + sortedEquip.length - 2,
+                    progress = _loading_.add_img;
+                await addProgressBar("add_img", "add event & image", max, progress);
+                for (let obj of list) {
+                    for (let item of obj.list) {
+                        promise_list.push(process(item, progress));
+                    }
+                }
+                await Promise.all(promise_list);
+                console.timeEnd("addClickEventAndImg");
+
+                function process(o) {
+                    return new Promise(resolve => {
                         setTimeout(() => {
                             let btn = document.querySelector(`[id="${o.id}"]`);
                             btn.children[0].children[0].children[2].src = o.icon;
                             btn.onclick = function () { obj.onclick(this); };
+                            progress.lable.textContent = `${++progress.bar.value}/${progress.bar.max}`;
+                            resolve();
                         });
-                    })
-                );
-                console.timeEnd("addClickEventAndImg");
+                    });
+                }
             }
 
             function createNewItem(data, progress) {
@@ -1947,8 +1961,7 @@ const
                     promise_list.push(
                         fetchImageToDataURI(obj.src).then(data_url => {
                             obj.data_url = data_url;
-                            progress.bar.value++;
-                            progress.lable.textContent = `${progress.bar.value}/${progress.bar.max}`;
+                            progress.lable.textContent = `${++progress.bar.value}/${progress.bar.max}`;
                         })
                     );
                     url_data.push(obj);
@@ -2015,8 +2028,7 @@ const
                         obj.icon_cache = false;
                         console.log(obj, "cache not found");
                     }
-                    progress.bar.value++;
-                    progress.lable.textContent = `${progress.bar.value}/${progress.bar.max}`;
+                    progress.lable.textContent = `${++progress.bar.value}/${progress.bar.max}`;
                 }
             }
 
@@ -2484,6 +2496,7 @@ const
         equip: {},
         cache_image: {},
         load_cache: {},
+        add_img: {},
     },
     posTable = { BS: { 0: "2nd", 1: "1st", 2: "3rd" }, F: { 0: "3rd", 1: "2nd", 2: "1st" }, },
     // ship
