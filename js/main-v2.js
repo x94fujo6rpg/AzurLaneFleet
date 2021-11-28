@@ -1728,7 +1728,7 @@ const
             // ------------------------------
             await createAllShip();
             await createAllEquip();
-            step("addClickEvent"); await addClickEvent();
+            step("add click event & img"); await addClickEventAndImg();
             step("add text to ele"); addLanguageToEle();
             step("add search"); add_search_event();
             step("split button group [ship nation]"); splitButtonGroup("shipnation", 6, filter_btn_class.replace("line-5-item", "line-6-item"));
@@ -1856,16 +1856,21 @@ const
             }
 
             //------------------------------
-            async function addClickEvent() {
-                console.time("addClickEvent");
+
+            async function addClickEventAndImg() {
+                console.time("addClickEventAndImg");
                 [
-                    { type: "ship", onclick: app.setShipAndEquip },
-                    { type: "equip", onclick: app.setEquip }
+                    { type: "ship", onclick: app.setShipAndEquip, list: Object.assign([], sortedShip) },
+                    { type: "equip", onclick: app.setEquip, list: Object.assign([], sortedEquip) }
                 ].forEach(obj =>
                     document.querySelectorAll(`#${obj.type}list>button`)
-                        .forEach(btn => btn.onclick = function () { obj.onclick(this); })
+                        .forEach(btn => {
+                            let index = obj.list.findIndex(o => o.id == btn.id);
+                            btn.children[0].children[0].children[2].src = obj.list.splice(index, 1)[0].icon;
+                            btn.onclick = function () { obj.onclick(this); };
+                        })
                 );
-                console.timeEnd("addClickEvent");
+                console.timeEnd("addClickEventAndImg");
             }
 
             function createNewItem(data, progress) {
@@ -1877,10 +1882,10 @@ const
                                     <div class="container-fluid icon_box">
                                         <img class="img-fluid bg" src="${data.bg}">
                                         <img class="img-fluid frame" src="${data.frame}">
-                                        <img class="img-fluid icon" loading="lazy" src="${data.icon}">
+                                        <img class="img-fluid icon" loading="lazy" src="">
                                     </div>
                                     <span class="item_name text_shadow" name="name" tw="${data.tw}" cn="${data.cn}" en="${data.en}" jp="${data.jp}">
-                                    ${data[language]}
+                                        ${data[language]}
                                     </span>
                                 </div>
                             </button>
