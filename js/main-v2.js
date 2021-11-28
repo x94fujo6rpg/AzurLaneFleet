@@ -1398,11 +1398,12 @@ const
             shiplist.shift(); // skip remove
             shiplist.forEach(item => {
                 let id = parseInt(item.id, 10),
-                    nation = ship_data[id].nationality,
-                    type = ship_data[id].type,
-                    rarity = ship_data[id].rarity,
-                    retro = ship_data[id].retro,
-                    is_select = _isShipSelect(nation, type, rarity, retro);
+                    is_select = _isShipSelect(
+                        ship_data[id].nationality,
+                        ship_data[id].type,
+                        ship_data[id].rarity,
+                        ship_data[id].retro
+                    );
                 item.style.display = is_select ? "" : "none";
                 item.setAttribute("displayed", is_select ? true : false);
             });
@@ -1585,22 +1586,12 @@ const
             equips.forEach(item => {
                 let id = parseInt(item.id, 10),
                     e = equip_data[id],
-                    type = e.type,
-                    forbidden = e.ship_type_forbidden;
-                if (typelist.includes(type)) {
-                    if (forbidden.includes(shiptype)) {
-                        item.style.display = "none";
-                    } else {
-                        if (isEquipSelect(e.nationality, type, e.rarity, e.tech)) {
-                            item.style.display = "";
-                            display_list.push(id);
-                        } else {
-                            item.style.display = "none";
-                        }
-                    }
-                } else {
-                    item.style.display = "none";
-                }
+                    is_select =
+                        typelist.includes(e.type) &&
+                        !(e.ship_type_forbidden.includes(shiptype)) &&
+                        isEquipSelect(e.nationality, e.type, e.rarity, e.tech);
+                if (is_select) { item.style.display = ""; display_list.push(id); }
+                if (!is_select) item.style.display = "none";
                 item.setAttribute("displayed", item.style.display == "" ? true : false);
             });
             if (!app.util._editing_owned.equip) await limitEquip(display_list);
@@ -1737,6 +1728,7 @@ const
             // ------------------------------
             await createAllShip();
             await createAllEquip();
+            step("addClickEvent"); await addClickEvent();
             step("add text to ele"); addLanguageToEle();
             step("add search"); add_search_event();
             step("split button group [ship nation]"); splitButtonGroup("shipnation", 6, filter_btn_class.replace("line-5-item", "line-6-item"));
@@ -1761,32 +1753,17 @@ const
 
             //------------------------------
             async function addProgressBar(id = "", text = "", max = 100, appendTo = {}) {
-                let bar = document.createElement("progress");
-                bar.id = id;
-                bar.max = max;
-                bar.className = "flex-col my-auto";
-
-                let lable = document.createElement("label");
-                lable.className = "flex-col text-monospace m-1";
-                lable.textContent = text;
-                lable.for = id;
-
-                let lable2 = document.createElement("lable");
-                lable2.className = "flex-col text-monospace m-1";
-                lable2.textContent = `0/${max}`;
-                lable2.for = id;
-
-                let box = document.createElement("div");
-                box.className = "row justify-content-center";
-                box.appendChild(lable);
-                box.appendChild(lable2);
-                box.appendChild(bar);
-
-                let pos = document.querySelector("#loading_box");
-                pos.appendChild(box);
-
-                appendTo.bar = bar;
-                appendTo.lable = lable2;
+                let pos = document.querySelector("#loading_box"),
+                    ele = document.createElement("div");
+                ele.className = "row justify-content-center";
+                ele.innerHTML = `
+                    <label class="flex-col text-monospace m-1">${text}</label>
+                    <lable class="flex-col text-monospace m-1">0/${max}</lable>
+                    <progress id="${id}" max="${max}" class="flex-col my-auto" value="0"></progress>
+                `;
+                pos.appendChild(ele);
+                appendTo.bar = ele.children[2];
+                appendTo.lable = ele.children[1];
                 return true;
             }
 
@@ -1879,53 +1856,37 @@ const
             }
 
             //------------------------------
-            function createNewItem(data, pos_id, onclick, progress) {
+            async function addClickEvent() {
+                console.time("addClickEvent");
+                [
+                    { type: "ship", onclick: app.setShipAndEquip },
+                    { type: "equip", onclick: app.setEquip }
+                ].forEach(obj =>
+                    document.querySelectorAll(`#${obj.type}list>button`)
+                        .forEach(btn => btn.onclick = function () { obj.onclick(this); })
+                );
+                console.timeEnd("addClickEvent");
+            }
+
+            function createNewItem(data, progress) {
                 return new Promise(resolve => {
                     setTimeout(() => {
-                        let pos = document.getElementById(pos_id);
-                        let icon_box = document.createElement("div");
-                        icon_box.className = "container-fluid icon_box";
-
-                        let icon = document.createElement("img");
-                        icon.className = "img-fluid icon";
-                        icon.loading = "lazy";
-                        icon.src = data.icon;
-
-                        let bg = document.createElement("img");
-                        bg.className = "img-fluid bg";
-                        bg.src = data.bg;
-
-                        let frame = document.createElement("img");
-                        frame.className = "img-fluid frame";
-                        frame.src = data.frame;
-
-                        icon_box.append(bg, frame, icon);
-                        //-----------------------------------------------
-                        let box = document.createElement("div");
-                        box.className = "container-fluid p-0 box";
-
-                        let name = document.createElement("span");
-                        name.className = "item_name text_shadow";
-                        name.setAttribute("name", "name");
-                        name.setAttribute("tw", data.tw);
-                        name.setAttribute("cn", data.cn);
-                        name.setAttribute("en", data.en);
-                        name.setAttribute("jp", data.jp);
-                        name.textContent = data[language];
-
-                        box.append(icon_box, name);
-                        //-----------------------------------------------
-                        let item = document.createElement("button");
-                        item.className = "p-1 item_container";
-                        item.id = data.id;
-                        item.onclick = function () { onclick(this); };
-                        item.setAttribute("data-dismiss", "modal");
-
-                        item.append(box);
-                        pos.append(item);
-                        progress.bar.value++;
-                        progress.lable.textContent = `${progress.bar.value}/${progress.bar.max}`;
-                        resolve(true);
+                        let html = `
+                      <button class="p-1 item_container" data-dismiss="modal" displayed="true" style="opacity: 1;" id="${data.id}">
+                        <div class="container-fluid p-0 box">
+                          <div class="container-fluid icon_box">
+                            <img class="img-fluid bg" src="${data.bg}">
+                            <img class="img-fluid frame" src="${data.frame}">
+                            <img class="img-fluid icon" loading="lazy" src="${data.icon}">
+                          <div>
+                          <span class="item_name text_shadow" name="name" tw="${data.tw}" cn="${data.cn}" en="${data.en}" jp="${data.jp}">
+                            ${data[language]}
+                          </span>
+                        </div>
+                      </button>
+                    `;
+                        progress.lable.textContent = `${++progress.bar.value}/${progress.bar.max}`;
+                        resolve(html);
                     });
                 });
             }
@@ -1933,8 +1894,10 @@ const
             async function createAllShip() {
                 console.time("createAllShip");
                 await addProgressBar("create_ship", "Generate Ships", sortedShip.length, _loading_.ship);
-                let promiseList = sortedShip.map(item => createNewItem(item, "shiplist", app.setShipAndEquip, _loading_.ship));
-                await Promise.all(promiseList);
+                let pos = document.querySelector("#shiplist"),
+                    html = sortedShip.map(item => createNewItem(item, _loading_.ship));
+                html = await Promise.all(html);
+                pos.innerHTML = html.join("");
                 console.timeEnd("createAllShip");
                 return true;
             }
@@ -1942,8 +1905,10 @@ const
             async function createAllEquip() {
                 console.time("createAllEquip");
                 await addProgressBar("create_equip", "Generate Equips", sortedEquip.length, _loading_.equip);
-                let promiseList = sortedEquip.map(item => createNewItem(item, "equiplist", app.setEquip, _loading_.equip));
-                await Promise.all(promiseList);
+                let pos = document.querySelector("#equiplist"),
+                    html = sortedEquip.map(item => createNewItem(item, _loading_.equip));
+                html = await Promise.all(html);
+                pos.innerHTML = html.join("");
                 console.timeEnd("createAllEquip");
                 return true;
             }

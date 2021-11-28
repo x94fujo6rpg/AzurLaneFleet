@@ -23,6 +23,7 @@ Compatibility with other browsers is unknown
 
 ## Update  
 **2021-11-28**
+- speed improvement: ships/equipment generating now 5~10x faster
 - bug fix: equip slot's limit not reset properly when removed
 - now, when setting owned ship/equip, some limit/filter will be skipped
 - auto scroll to top after site loaded
