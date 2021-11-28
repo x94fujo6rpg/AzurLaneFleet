@@ -1872,19 +1872,19 @@ const
                 return new Promise(resolve => {
                     setTimeout(() => {
                         let html = `
-                      <button class="p-1 item_container" data-dismiss="modal" displayed="true" style="opacity: 1;" id="${data.id}">
-                        <div class="container-fluid p-0 box">
-                          <div class="container-fluid icon_box">
-                            <img class="img-fluid bg" src="${data.bg}">
-                            <img class="img-fluid frame" src="${data.frame}">
-                            <img class="img-fluid icon" loading="lazy" src="${data.icon}">
-                          <div>
-                          <span class="item_name text_shadow" name="name" tw="${data.tw}" cn="${data.cn}" en="${data.en}" jp="${data.jp}">
-                            ${data[language]}
-                          </span>
-                        </div>
-                      </button>
-                    `;
+                            <button class="p-1 item_container" data-dismiss="modal" displayed="true" style="opacity: 1;" id="${data.id}">
+                                <div class="container-fluid p-0 box">
+                                    <div class="container-fluid icon_box">
+                                        <img class="img-fluid bg" src="${data.bg}">
+                                        <img class="img-fluid frame" src="${data.frame}">
+                                        <img class="img-fluid icon" loading="lazy" src="${data.icon}">
+                                    </div>
+                                    <span class="item_name text_shadow" name="name" tw="${data.tw}" cn="${data.cn}" en="${data.en}" jp="${data.jp}">
+                                    ${data[language]}
+                                    </span>
+                                </div>
+                            </button>
+                        `;
                         progress.lable.textContent = `${++progress.bar.value}/${progress.bar.max}`;
                         resolve(html);
                     });
