@@ -1866,6 +1866,7 @@ const
                     ],
                     max = sortedShip.length + sortedEquip.length - 2,
                     progress = _loading_.add_img;
+                let dev = LS.userSetting.get("dev_test");
                 await addProgressBar("add_img", "add event & image", max, progress);
                 for (let obj of list) {
                     for (let item of obj.list) {
@@ -1879,12 +1880,19 @@ const
                     return new Promise(resolve => {
                         setTimeout(() => {
                             let btn = document.querySelector(`[id="${item.id}"]`);
-                            btn.children[0].children[0].children[2].src = item.icon;
+                            if (!dev) btn.children[0].children[0].children[2].src = item.icon;
+                            if (dev) base64ToBlobURL(item.icon, btn.children[0].children[0].children[2]);
                             btn.onclick = function () { onclick(this); };
                             progress.lable.textContent = `${++progress.bar.value}/${progress.bar.max}`;
                             resolve();
                         });
                     });
+                }
+
+                async function base64ToBlobURL(base64, to) {
+                    let blob = await fetch(base64);
+                    blob = await blob.blob();
+                    to.src = window.URL.createObjectURL(blob);
                 }
             }
 
