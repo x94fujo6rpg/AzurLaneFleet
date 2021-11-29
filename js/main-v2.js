@@ -1881,18 +1881,12 @@ const
                         setTimeout(() => {
                             let btn = document.querySelector(`[id="${item.id}"]`);
                             if (!dev) btn.children[0].children[0].children[2].src = item.icon;
-                            if (dev) base64ToBlobURL(item.icon, btn.children[0].children[0].children[2]);
+                            if (dev) fetch(item.icon).then(r => r.blob()).then(b => btn.children[0].children[0].children[2].src = URL.createObjectURL(b));
                             btn.onclick = function () { onclick(this); };
                             progress.lable.textContent = `${++progress.bar.value}/${progress.bar.max}`;
                             resolve();
                         });
                     });
-                }
-
-                async function base64ToBlobURL(base64, to) {
-                    let blob = await fetch(base64);
-                    blob = await blob.blob();
-                    to.src = window.URL.createObjectURL(blob);
                 }
             }
 
