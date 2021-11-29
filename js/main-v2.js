@@ -1869,18 +1869,18 @@ const
                 await addProgressBar("add_img", "add event & image", max, progress);
                 for (let obj of list) {
                     for (let item of obj.list) {
-                        promise_list.push(process(item, progress));
+                        promise_list.push(process(item, progress, obj.onclick));
                     }
                 }
                 await Promise.all(promise_list);
                 console.timeEnd("addClickEventAndImg");
 
-                function process(o) {
+                function process(item, progress, onclick) {
                     return new Promise(resolve => {
                         setTimeout(() => {
-                            let btn = document.querySelector(`[id="${o.id}"]`);
-                            btn.children[0].children[0].children[2].src = o.icon;
-                            btn.onclick = function () { obj.onclick(this); };
+                            let btn = document.querySelector(`[id="${item.id}"]`);
+                            btn.children[0].children[0].children[2].src = item.icon;
+                            btn.onclick = function () { onclick(this); };
                             progress.lable.textContent = `${++progress.bar.value}/${progress.bar.max}`;
                             resolve();
                         });
