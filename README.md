@@ -22,6 +22,12 @@ This site was developed and tested on `Chrome`/`Firefox`
 Compatibility with other browsers is unknown  
 
 ## Update  
+**2021-12-03**
+- new feature: export/import owned ship/equipment data (in setting)  
+  `Save` will **overwrite** data in your setting  
+  if you just use other player's data to make fleet for them: use `Load`, **don't click** `Save`  
+- because of the above, you now have to save the setting manually after editing `owned ship/equipment`
+
 **2021-11-28**
 - speed improvement: ships/equipment generating now 5~10x faster
 - bug fix: equip slot's limit not reset properly when removed
@@ -67,7 +73,6 @@ Compatibility with other browsers is unknown
   | Nürnberg                | Nurnberg                |
   | Köln                    | Koln                    |
   | Königsberg              | Konigsberg              |
-  | Hermann Künne (Z19)     | Hermann Kunne (Z19)     |
   
   *both of them are supported
 

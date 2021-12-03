@@ -32,6 +32,13 @@ const
         { id: "emptyData", en: "Clear", jp: "クリア", tw: "清空", },
         { id: "loadDataByID", en: "Load", jp: "ロード", tw: "載入", },
 
+        { id: "owned_data_title", en: "Owned Ship/Equip Data", jp: "所持して艦船/装備データ", tw: "已有的船/裝備資料", },
+        { id: "dumpOwned", en: "Dump", jp: "ダンプ", tw: "匯出", },
+        { id: "copyOwned", en: "Copy", jp: "コピー", tw: "複製", },
+        { id: "emptyOwned", en: "Clear", jp: "クリア", tw: "清空", },
+        { id: "loadOwned", en: "Load", jp: "ロード", tw: "載入", },
+        { id: "saveOwned", en: "Save", jp: "セーブ", tw: "儲存", },
+
         { id: "rebuild_cache_btn", en: "Rebuild Cache", jp: "キャッシュをクリア&再構築", tw: "重建快取", },
 
         { id: "show_ship_filter", en: "⮟ Show Filter", jp: "⮟ フィルター", tw: "⮟ 顯示過濾器", },
@@ -416,7 +423,7 @@ const
             too_high() { return this._t("Can't yeet the Fleet higher than it is"); },
             too_low() { return this._t("Can't yeet the Fleet lower than it is"); },
             unzip_failed() { return this._t("Invalid data"); },
-            corrupted_data() { return this._t("Corrupted data"); },
+            corrupted_data(t) { return this._t(`Corrupted data` + (t.length ? ` (${t})` : "")); },
             unknown_version() { return this._t("Unknown version"); },
         },
         normal: {
@@ -431,6 +438,9 @@ const
             fleet_removed(fleet_id) { return this._t(`Fleet ${fleet_id + 1} removed`); },
             fleet_added(type) { return this._t(`New ${type == 1 ? "Normal" : "Submarine"} Fleet added`); },
             fleet_loaded() { return this._t("Successfully loaded Fleet data"); },
+            owned_dump(s_count, e_count) { return this._t(`Owned data dumped [Ship:${s_count}, Equip:${e_count}]`); },
+            owned_load(s_count, e_count) { return this._t(`Owned data loaded [Ship:${s_count}, Equip:${e_count}]`); },
+            owned_save(s_count, e_count) { return this._t(`Owned data saved [Ship:${s_count}, Equip:${e_count}]`); },
         },
     },
     fleet_info = {
@@ -636,7 +646,10 @@ const
                         ["fleet_storage", _d.exchange, _d.w50, _d.w100],
                         ["dialog_shipselect", _d.exchange, _d.no_effect, _d.mw100],
                         ["dialog_select_equip", _d.exchange, _d.no_effect, _d.mw100],
-                        ["language_select_group", _d.exchange, _d.w25, _d.w75]
+                        ["language_select_group", _d.exchange, _d.w25, _d.w75],
+                        ["url_area", _d.exchange, _d.w25, _d.w50],
+                        ["data_area", _d.exchange, _d.w25, _d.w50],
+                        ["owned_data_area", _d.exchange, _d.w25, _d.w50],
                         //["search_box", _d.exchange, _d.df, _d.fw],
                     ];
                 if (width < safe_size) {
@@ -909,6 +922,7 @@ const
                     });
                 data = LZString.compress(data);
                 LS.userSetting.set(settingKey.ownedItem, data);
+                msg.normal.owned_save(this._owned.ship.size, this._owned.equip.size);
             },
             setOwned(btn, type) {
                 let isOn = btn.classList.contains("active");
@@ -916,7 +930,7 @@ const
                 btn.classList[isOn ? "remove" : "add"]("active");
                 if (type == "ship") app.shipDisplay();
                 if (type == "equip") app.equipDisplay();
-                this.saveOwned();
+                //this.saveOwned();
             },
             _editing_owned: {
                 ship: false,
@@ -960,7 +974,7 @@ const
                         let id = parseInt(ele.id, 10);
                         list[list.has(id) ? "delete" : "add"](id);
                         updateList(ele);
-                        app.util.saveOwned();
+                        //app.util.saveOwned();
                     }
 
                     function updateList(target) {
@@ -1221,7 +1235,7 @@ const
                 if (event) msg.normal.fleet_loaded();
 
                 function loadError(_ck_ = "") {
-                    textbox.value = `Error: Corrupted data!!! [${_ck_}] should be [${hash}]`;
+                    textbox.value = `Error: Corrupted data!!!`;
                     console.log(data);
                     msg.error.corrupted_data();
                 }
@@ -1375,21 +1389,52 @@ const
                 }
             },
             copyURL() {
-                let text = document.querySelector("#url_box");
+                let text = document.getElementById("url_box");
                 text.select();
                 text.setSelectionRange(0, 99999);
                 document.execCommand("copy");
                 msg.normal.copied();
             },
-            copyData() {
-                let text = document.getElementById("fleetdata");
+            copyData(id) {
+                let text = document.getElementById(id);
                 text.select();
                 text.setSelectionRange(0, 99999);
                 document.execCommand("copy");
                 msg.normal.copied();
             },
-            emptyData() {
-                document.getElementById("fleetdata").value = "";
+            emptyData(id) {
+                document.getElementById(id).value = "";
+            },
+            dumpOwned() {
+                let { ship, equip, } = app.util._owned,
+                    data = JSON.stringify({ ship: [...ship], equip: [...equip], }),
+                    version = 0.1,
+                    hash = CryptoJS.MD5(data).toString();
+                data = `${data}!${version}!${hash}`;
+                data = LZString.compressToEncodedURIComponent(data);
+                document.getElementById("owned_data_dump").value = data;
+                msg.normal.owned_dump(ship.size, equip.size);
+            },
+            loadOwned() {
+                let raw_data = LZString.decompressFromEncodedURIComponent(decodeURIComponent(document.getElementById("owned_data_dump").value));
+                if (!raw_data) msg.error.unzip_failed();
+                raw_data = raw_data.split("!");
+                if (raw_data.length == 3) {
+                    let [data, version, hash] = raw_data,
+                        ck = CryptoJS.MD5(data).toString();
+                    if (hash == ck) {
+                        let { ship, equip } = JSON.parse(data);
+                        Object.assign(app.util._owned, {
+                            ship: new Set(ship),
+                            equip: new Set(equip),
+                        });
+                        msg.normal.owned_load(ship.length, equip.length);
+                    } else {
+                        msg.error.corrupted_data();
+                    }
+                } else {
+                    msg.error.corrupted_data(`Incorrect data length:${raw_data.length}`);
+                }
             },
         },
         shipDisplay() {
