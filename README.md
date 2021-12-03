@@ -27,6 +27,7 @@ Compatibility with other browsers is unknown
   `Save` will **overwrite** data in your setting  
   if you just use other player's data to make fleet for them: use `Load`, **don't click** `Save`  
 - because of the above, you now have to save the setting manually after editing `owned ship/equipment`
+- `Reload Setting` use this to load `owned ship/equipment` from your setting
 
 **2021-11-28**
 - speed improvement: ships/equipment generating now 5~10x faster

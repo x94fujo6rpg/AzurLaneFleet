@@ -38,6 +38,7 @@ const
         { id: "emptyOwned", en: "Clear", jp: "クリア", tw: "清空", },
         { id: "loadOwned", en: "Load", jp: "ロード", tw: "載入", },
         { id: "saveOwned", en: "Save", jp: "セーブ", tw: "儲存", },
+        { id: "loadOwnedSetting", en: "Reload Setting", jp: "設定再読み込み", tw: "重新讀取設定", },
 
         { id: "rebuild_cache_btn", en: "Rebuild Cache", jp: "キャッシュをクリア&再構築", tw: "重建快取", },
 
@@ -439,7 +440,8 @@ const
             fleet_added(type) { return this._t(`New ${type == 1 ? "Normal" : "Submarine"} Fleet added`); },
             fleet_loaded() { return this._t("Successfully loaded Fleet data"); },
             owned_dump(s_count, e_count) { return this._t(`Owned data dumped [Ship:${s_count}, Equip:${e_count}]`); },
-            owned_load(s_count, e_count) { return this._t(`Owned data loaded [Ship:${s_count}, Equip:${e_count}]`); },
+            owned_load(s_count, e_count) { return this._t(`Owned data loaded (text) [Ship:${s_count}, Equip:${e_count}]`); },
+            owned_load_setting(s_count, e_count) { return this._t(`Owned data loaded (setting) [Ship:${s_count}, Equip:${e_count}]`); },
             owned_save(s_count, e_count) { return this._t(`Owned data saved [Ship:${s_count}, Equip:${e_count}]`); },
         },
     },
@@ -1436,6 +1438,16 @@ const
                     msg.error.corrupted_data(`Incorrect data length:${raw_data.length}`);
                 }
             },
+            loadOwnedSetting(show_msg = false) {
+                let { ship, equip, ship_on, equip_on } = JSON.parse(LZString.decompress(LS.userSetting.get([settingKey.ownedItem])));
+                ship = new Set(ship);
+                equip = new Set(equip);
+                app.util._owned = { ship, equip, ship_on, equip_on };
+                if (ship_on) document.querySelector("#owned_ship_only").click();
+                if (equip_on) document.querySelector("#owned_equip_only").click();
+                console.log("load owned item data", app.util._owned);
+                if (show_msg) msg.normal.owned_load_setting(ship.size, equip.size);
+            }
         },
         shipDisplay() {
             let shiplist = document.querySelectorAll("#shiplist button");
@@ -2190,13 +2202,7 @@ const
                 }
 
                 if (setting[settingKey.ownedItem]) {
-                    let { ship, equip, ship_on, equip_on } = JSON.parse(LZString.decompress(setting[settingKey.ownedItem]));
-                    ship = new Set(ship);
-                    equip = new Set(equip);
-                    app.util._owned = { ship, equip, ship_on, equip_on };
-                    if (ship_on) document.querySelector("#owned_ship_only").click();
-                    if (equip_on) document.querySelector("#owned_equip_only").click();
-                    console.log("load owned item data", app.util._owned);
+                    app.action.loadOwnedSetting();
                 }
 
                 return true;
