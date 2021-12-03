@@ -1859,31 +1859,27 @@ const
 
             async function addClickEventAndImg() {
                 console.time("addClickEventAndImg");
-                let promise_list = [],
+                let
                     list = [
-                        { type: "ship", list: [...sortedShip], onclick: app.setShipAndEquip },
-                        { type: "equip", list: [...sortedEquip], onclick: app.setEquip }
+                        { type: "ship", list: sortedShip, onclick: app.setShipAndEquip },
+                        { type: "equip", list: sortedEquip, onclick: app.setEquip },
                     ],
                     max = sortedShip.length + sortedEquip.length - 2,
                     progress = _loading_.add_img;
                 await addProgressBar("add_img", "add event & image", max, progress);
                 for (let obj of list) {
                     for (let item of obj.list) {
-                        promise_list.push(process(item, progress, obj.onclick));
+                        process(item, progress, obj.onclick);
                     }
                 }
-                //await Promise.all(promise_list);
                 console.timeEnd("addClickEventAndImg");
 
                 function process(item, progress, onclick) {
-                    return new Promise(resolve => {
-                        setTimeout(() => {
-                            let btn = document.querySelector(`[id="${item.id}"]`);
-                            btn.children[0].children[0].children[2].src = item.icon;
-                            btn.onclick = function () { onclick(this); };
-                            progress.lable.textContent = `${++progress.bar.value}/${progress.bar.max}`;
-                            resolve();
-                        });
+                    return setTimeout(() => {
+                        let btn = document.getElementById(item.id);
+                        btn.querySelector(".icon").src = item.icon; // 1-layer: querySelector 12% slower / 3-layer: children 25% slower 
+                        btn.onclick = function () { onclick(this); };
+                        progress.lable.textContent = `${++progress.bar.value}/${progress.bar.max}`;
                     });
                 }
             }
