@@ -425,7 +425,8 @@ const
             too_low() { return this._t("Can't yeet the Fleet lower than it is"); },
             unzip_failed() { return this._t("Invalid data"); },
             corrupted_data(t) { return this._t(`Corrupted data` + (t.length ? ` (${t})` : "")); },
-            unknown_version() { return this._t("Unknown version"); },
+            unknown_version(t) { return this._t("Unknown version" + (t.length ? ` (${t})` : "")); },
+            wrong_data_type(t) { return this._t(`Wrong data type` + (t.length ? ` (${t})` : "")); },
         },
         normal: {
             _t(text = "") { return fleet_info.msg.green(text); },
@@ -1425,12 +1426,20 @@ const
                     let [data, version, hash] = raw_data,
                         ck = CryptoJS.MD5(data).toString();
                     if (hash == ck) {
-                        let { ship, equip } = JSON.parse(data);
-                        Object.assign(app.util._owned, {
-                            ship: new Set(ship),
-                            equip: new Set(equip),
-                        });
-                        msg.normal.owned_load(ship.length, equip.length);
+                        switch (version) {
+                            case "0.1":
+                                let { ship, equip } = JSON.parse(data);
+                                if (!((ship && equip) instanceof Array)) msg.error.wrong_data_type();
+                                Object.assign(app.util._owned, {
+                                    ship: new Set(ship),
+                                    equip: new Set(equip),
+                                });
+                                msg.normal.owned_load(ship.length, equip.length);
+                                break;
+                            default:
+                                msg.error.unknown_version(version);
+                                break;
+                        }
                     } else {
                         msg.error.corrupted_data();
                     }
