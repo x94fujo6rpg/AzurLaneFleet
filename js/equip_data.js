@@ -1,4 +1,4 @@
-var equip_data = {
+const equip_data = {
     "3400": {
         "nationality": 3,
         "type": 18,
@@ -1321,7 +1321,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "バトルトラクトマックス",
         "cn_name": "征战巨坦",
-        "tw_name": "征戰巨坦*",
+        "tw_name": "征戰巨坦",
         "en_name": "Battle Tracto Max",
         "equip_limit": 89300
     },
@@ -1338,7 +1338,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "バスターボラー",
         "cn_name": "爆裂钻孔机",
-        "tw_name": "爆裂鑽孔機*",
+        "tw_name": "爆裂鑽孔機",
         "en_name": "Buster Borr",
         "equip_limit": 89340
     },
@@ -1364,7 +1364,7 @@ var equip_data = {
         ],
         "jp_name": "ダイナミックキャノン",
         "cn_name": "戴拿爆能加农",
-        "tw_name": "戴拿爆能加農*",
+        "tw_name": "戴拿爆能加農",
         "en_name": "Dynamic Cannon",
         "equip_limit": 89380
     },
@@ -1381,7 +1381,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "スカイヴィッター",
         "cn_name": "苍穹喷射机",
-        "tw_name": "蒼穹噴射機*",
+        "tw_name": "蒼穹噴射機",
         "en_name": "Sky Vitter",
         "equip_limit": 89360
     },
@@ -1398,7 +1398,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "ゴルドバーン",
         "cn_name": "煌翼炎龙",
-        "tw_name": "煌翼炎龍*",
+        "tw_name": "煌翼炎龍",
         "en_name": "Goldburn",
         "equip_limit": 89400
     },
@@ -1415,7 +1415,7 @@ var equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "グリッドマンキャリバー",
         "cn_name": "古立特圣剑",
-        "tw_name": "古立特聖劍*",
+        "tw_name": "古利特聖劍",
         "en_name": "Gridman Calibur",
         "equip_limit": 89320
     },
@@ -13406,4 +13406,4 @@ var equip_data = {
         "en_name": "Single 127mm Main Gun",
         "equip_limit": 0
     }
-}
+};

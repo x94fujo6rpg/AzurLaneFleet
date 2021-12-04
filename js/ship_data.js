@@ -1,4 +1,4 @@
-var ship_data = {
+const ship_data = {
     "10800060": {
         "nationality": 108,
         "type": 7,
@@ -9,7 +9,7 @@ var ship_data = {
         ],
         "id": 10800064,
         "skin_id": 10800060,
-        "english_name": "Asukagawa Chise !TWnoData",
+        "english_name": "Asukagawa Chise",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -20,7 +20,7 @@ var ship_data = {
         "jp_name": "飛鳥川ちせ",
         "en_name": "Chise Asukagawa",
         "cn_name": "飞鸟川千濑",
-        "tw_name": "飛鳥川千瀨*",
+        "tw_name": "飛鳥川千瀨",
         "equip_1": [
             7
         ],
@@ -47,7 +47,7 @@ var ship_data = {
         ],
         "id": 10800074,
         "skin_id": 10800070,
-        "english_name": "Mujina !TWnoData",
+        "english_name": "Mujina",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -58,7 +58,7 @@ var ship_data = {
         "jp_name": "ムジナ",
         "en_name": "Mujina",
         "cn_name": "貉",
-        "tw_name": "貉*",
+        "tw_name": "貉",
         "equip_1": [
             4
         ],
@@ -86,7 +86,7 @@ var ship_data = {
         ],
         "id": 10800024,
         "skin_id": 10800020,
-        "english_name": "Shinjo Akane !TWnoData",
+        "english_name": "Shinjo Akane",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -97,7 +97,7 @@ var ship_data = {
         "jp_name": "新条アカネ",
         "en_name": "Akane Shinjo",
         "cn_name": "新条茜",
-        "tw_name": "新條茜*",
+        "tw_name": "新條茜",
         "equip_1": [
             4
         ],
@@ -125,7 +125,7 @@ var ship_data = {
         ],
         "id": 10800054,
         "skin_id": 10800050,
-        "english_name": "Minami Yume !TWnoData",
+        "english_name": "Minami Yume",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -136,7 +136,7 @@ var ship_data = {
         "jp_name": "南夢芽",
         "en_name": "Yume Minami",
         "cn_name": "南梦芽",
-        "tw_name": "南夢芽*",
+        "tw_name": "南夢芽",
         "equip_1": [
             3
         ],
@@ -163,7 +163,7 @@ var ship_data = {
         ],
         "id": 10800044,
         "skin_id": 10800040,
-        "english_name": "Namiko !TWnoData",
+        "english_name": "Namiko",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -174,7 +174,7 @@ var ship_data = {
         "jp_name": "なみこ",
         "en_name": "Namiko",
         "cn_name": "奈美子",
-        "tw_name": "奈美子*",
+        "tw_name": "奈美子",
         "equip_1": [
             3
         ],
@@ -201,7 +201,7 @@ var ship_data = {
         ],
         "id": 10800034,
         "skin_id": 10800030,
-        "english_name": "Hass !TWnoData",
+        "english_name": "Hass",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -212,7 +212,7 @@ var ship_data = {
         "jp_name": "はっす",
         "en_name": "Hass",
         "cn_name": "莲",
-        "tw_name": "蓮*",
+        "tw_name": "哈絲",
         "equip_1": [
             2
         ],
@@ -241,7 +241,7 @@ var ship_data = {
         ],
         "id": 10800014,
         "skin_id": 10800010,
-        "english_name": "Takarada Rikka !TWnoData",
+        "english_name": "Takarada Rikka",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -252,7 +252,7 @@ var ship_data = {
         "jp_name": "宝多六花",
         "en_name": "Rikka Takarada",
         "cn_name": "宝多六花",
-        "tw_name": "寶多六花*",
+        "tw_name": "寶多六花",
         "equip_1": [
             2,
             10
@@ -23937,4 +23937,4 @@ var ship_data = {
             14
         ]
     }
-}
+};
