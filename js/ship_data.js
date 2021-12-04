@@ -2151,7 +2151,7 @@ var ship_data = {
         "nationality": 9,
         "type": 5,
         "base_list": [
-            1,
+            2,
             3,
             1
         ],
