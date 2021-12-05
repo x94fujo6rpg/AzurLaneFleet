@@ -32,7 +32,7 @@ const
         { id: "emptyData", en: "Clear", jp: "クリア", tw: "清空", },
         { id: "loadDataByID", en: "Load", jp: "ロード", tw: "載入", },
 
-        { id: "owned_data_title", en: "Owned Ship/Equip Data", jp: "所持して艦船/装備データ", tw: "已有的船/裝備資料", },
+        { id: "owned_data_title", en: "⮟ Owned Ship/Equip Data", jp: "⮟ 所持して艦船/装備データ", tw: "⮟ 已有的船/裝備資料", },
         { id: "dumpOwned", en: "Dump", jp: "ダンプ", tw: "匯出", },
         { id: "copyOwned", en: "Copy", jp: "コピー", tw: "複製", },
         { id: "emptyOwned", en: "Clear", jp: "クリア", tw: "清空", },
@@ -73,7 +73,8 @@ const
     vue_ui_text = {
         sub_fleet: { en: "Sub", jp: "潜水", tw: "潛艇", cn: "潛艇" },
         normal_fleet: { en: "Normal", jp: "通常", tw: "一般", cn: "一般" },
-        copy_fleet: { en: "Copy", jp: "コピー", tw: "複製", cn: "複製", },
+        copy_fleet: { en: "CopyFleet", jp: "コピー艦隊", tw: "複製艦隊", cn: "複製艦隊", },
+        copy_ship: { en: "CopyShip", jp: "コピー艦船", tw: "複製艦船", cn: "複製艦船", },
         swap_ship: { en: "Swap", jp: "交換", tw: "交換", cn: "交換", },
     },
     // equip type
@@ -444,6 +445,7 @@ const
             owned_load(s_count, e_count) { return this._t(`Owned data loaded (text) [Ship:${s_count}, Equip:${e_count}]`); },
             owned_load_setting(s_count, e_count) { return this._t(`Owned data loaded (setting) [Ship:${s_count}, Equip:${e_count}]`); },
             owned_save(s_count, e_count) { return this._t(`Owned data saved [Ship:${s_count}, Equip:${e_count}]`); },
+            ship_copied(ship) { return this._t(`[${ship[0].property[language]}] copied`); },
         },
     },
     fleet_info = {
@@ -889,7 +891,7 @@ const
                         back.push({ id: `fleet_${fleetID}_back_${position - 3}`, item: ship, });
                     }
                 }
-                return { id: `Fleet ${fleetID + 1}`, front: front, back: back, };
+                return { id: ` ${fleetID + 1} `, front: front, back: back, };  // this id effect disableInvalidMoveButton, change the [pos="id"] in css selector
             },
             newSubFleet(fleetID) {
                 if (isNaN(fleetID) || fleetID < 0) throw Error("no fleet_id");
@@ -905,7 +907,7 @@ const
                     }
                     sub.push({ id: `fleet_${fleetID}_sub_${position}`, item: ship, });
                 }
-                return { id: `Fleet ${fleetID + 1}`, sub: sub, };
+                return { id: ` ${fleetID + 1} `, sub: sub, };  // this id effect disableInvalidMoveButton, change the [pos="id"] in css selector
             },
         },
         util: {
@@ -1835,8 +1837,8 @@ const
 
             //------------------------------
             async function createSortShipList() {
-                let destr = (from) => {
-                    let {
+                let
+                    destr = ({
                         uni_id: id,
                         tw_name: tw, cn_name: cn, en_name: en, jp_name: jp,
                         type, nationality, rarity, star, retro,
@@ -1845,17 +1847,18 @@ const
                         painting: icon,
                         bg = "",
                         frame = "",
-                    } = from;
-                    icon = `shipicon/${icon.toLowerCase()}.png`;
-                    bg = `ui/bg${rarity - 1}.png`;
-                    frame = `ui/frame_${rarity - 1}.png`;
-                    return {
-                        id, tw, cn, en, jp,
-                        type, nationality, rarity, star, retro,
-                        base, e1, e2, e3, e4, e5,
-                        icon, bg, frame
-                    };
-                }, list = [], empty = {};
+                    }) => {
+                        icon = `shipicon/${icon.toLowerCase()}.png`;
+                        bg = `ui/bg${rarity - 1}.png`;
+                        frame = `ui/frame_${rarity - 1}.png`;
+                        return {
+                            id, tw, cn, en, jp,
+                            type, nationality, rarity, star, retro,
+                            base, e1, e2, e3, e4, e5,
+                            icon, bg, frame
+                        };
+                    },
+                    list = [], empty = {};
                 for (let id in ship_data) list.push(destr(ship_data[id]));
                 list = util.sorting(list, 'nationality', false);
                 list = util.sorting(list, 'type', true);
@@ -1876,8 +1879,8 @@ const
             }
 
             async function createSortEquipList() {
-                let destr = (from) => {
-                    let {
+                let
+                    destr = ({
                         id,
                         tw_name: tw, cn_name: cn, en_name: en, jp_name: jp,
                         type, nationality, rarity,
@@ -1886,22 +1889,23 @@ const
                         icon,
                         bg = "",
                         frame = "",
-                    } = from;
-                    icon = `equips/${icon}.png`;
-                    if (rarity != 1) {
-                        bg = `ui/bg${rarity - 1}.png`;
-                        frame = `ui/frame_${rarity - 1}.png`;
-                    } else {
-                        bg = `ui/bg${rarity}.png`;
-                        frame = `ui/frame_${rarity}.png`;
-                    }
-                    return {
-                        id, tw, cn, en, jp,
-                        type, nationality, rarity,
-                        fb, limit,
-                        icon, bg, frame
-                    };
-                }, list = [], empty = {};
+                    }) => {
+                        icon = `equips/${icon}.png`;
+                        if (rarity != 1) {
+                            bg = `ui/bg${rarity - 1}.png`;
+                            frame = `ui/frame_${rarity - 1}.png`;
+                        } else {
+                            bg = `ui/bg${rarity}.png`;
+                            frame = `ui/frame_${rarity}.png`;
+                        }
+                        return {
+                            id, tw, cn, en, jp,
+                            type, nationality, rarity,
+                            fb, limit,
+                            icon, bg, frame
+                        };
+                    },
+                    list = [], empty = {};
                 for (let id in equip_data) list.push(destr(equip_data[id]));
                 list = util.sorting(list, "id", true);
                 list = util.sorting(list, "type", true);
@@ -2326,8 +2330,8 @@ const
         disableInvalidMoveButton() {
             let all = document.querySelectorAll(`[onclick^="dynamicFleet.moveFleet"],[onclick^="dynamicFleet.deleteFleet"]`),
                 disable = document.querySelectorAll(
-                    `[pos="Fleet 1"][onclick^="dynamicFleet.moveFleet"][data="-1"],` +
-                    `[pos="Fleet ${fleetData.length}"][onclick^="dynamicFleet.moveFleet"][data="1"]`
+                    `[pos=" 1 "][onclick^="dynamicFleet.moveFleet"][data="-1"],` +
+                    `[pos=" ${fleetData.length} "][onclick^="dynamicFleet.moveFleet"][data="1"]`
                 );
             if (all.length) if (fleetData.length !== 1) { ena(all); } else { dis(all); }
             if (disable.length) dis(disable);
@@ -2351,8 +2355,9 @@ const
             state: 0,
             a: false,
             b: false,
+            is_ship: false,
         },
-        async swapPos() {
+        async swapPos(btn, copy_ship = false) {
             let
                 target_list = document.querySelectorAll(
                     [
@@ -2367,20 +2372,75 @@ const
                 allShip = document.querySelectorAll(".ship_container"),
                 disableClass = "disable_ele",
                 sw = this._swap,
-                set_wait = (_function, _interval = 100, _timeout = 0) => {
+                set_wait = (_function, _interval = 100, _timeout = 0, _no_timeout = true) => {
+                    if (_no_timeout) _timeout = 0;
+                    if (_timeout > 0 && _no_timeout) _no_timeout = false;
+                    document.addEventListener("click", checkClickTarget);  // detect is user click ship or not
                     return new Promise((resolve, reject) => {
                         let id = setInterval(() => {
                             if (_function()) {
                                 clearInterval(id);
+                                document.removeEventListener("click", checkClickTarget);
                                 return resolve(true);
                             }
-                            if (_timeout < 0) {
+                            if (_timeout < 0 || !sw.is_ship) {
                                 clearInterval(id);
-                                return reject("swap timeout");
+                                document.removeEventListener("click", checkClickTarget);
+                                let text = [];
+                                if (_timeout < 0) text.push("swap timeout");
+                                if (!sw.is_ship) text.push("target is not ship");
+                                return reject(text.join(", "));
                             }
-                            if (_timeout > 0) _timeout -= _interval;
+                            if (_timeout >= 0 && !_no_timeout) _timeout -= _interval;
                         }, _interval);
                     });
+                },
+                checkClickTarget = (event) => {
+                    if (event.target == btn) {
+                        //console.log("trigger by start swap, bypass");
+                        sw.is_ship = true;
+                    } else {
+                        let find_ship = searchParent({ _elem: event.target });
+                        /*console.log("------");
+                        console.log("event.target", event.target);
+                        console.log("searchParent", find_ship);*/
+                        sw.is_ship = find_ship ? true : false;
+                    }
+
+                    function searchParent({
+                        _attr = "data-target",
+                        _value = "#shipselect",
+                        _elem = document,
+                        _max_rase = 3,
+                    }) {
+                        if (!_elem.ELEMENT_NODE) {
+                            return false;
+                        } else {
+                            let __find = false,
+                                __up_layer = _elem,
+                                __count = 0;
+                            if (!__up_layer.getAttribute) return false;
+                            while (__count <= _max_rase && !__find && __up_layer) {
+                                if (__up_layer.getAttribute(_attr) == _value) {
+                                    __find = __up_layer;
+                                    //console.log("find!!", __find);
+                                } else {
+                                    let children = [...__up_layer.children].find(e => e.getAttribute(_attr) == _value);
+                                    if (children && __up_layer.className != "ship_container") {
+                                        __find = children;
+                                        //console.log("find children!!", __find);
+                                    }
+                                }
+                                if (__find || !(__up_layer.parentElement)) break;
+                                /*console.log("up_layer", __up_layer);
+                                console.log(`getAttr ${_attr}`, __up_layer.getAttribute(_attr));
+                                console.log("find", __find);*/
+                                __up_layer = __up_layer.parentElement;
+                                __count++;
+                            }
+                            return __find ? __find : false;
+                        }
+                    }
                 };
 
             otherButtonAction(disableElement);
@@ -2389,6 +2449,7 @@ const
             // start swap
             sw.on = true;
             sw.state = 1;
+            sw.is_ship = true;
 
             try {
                 // select ship you want to swap
@@ -2404,7 +2465,8 @@ const
                 if (!(sw.b instanceof Array)) throw Error("unknown position");
 
                 // swap ship data
-                await swapShip();
+                if (!copy_ship) await swapShip();
+                if (copy_ship) await copyShip();
             } catch (e) {
                 console.log(e);
             } finally {
@@ -2423,7 +2485,23 @@ const
                     state: 0,
                     a: false,
                     b: false,
+                    is_ship: false,
                 };
+            }
+
+            async function copyShip() {
+                let a, b;
+                a = fleetData[sw.a[0]][sideTable[sw.a[1]]][sw.a[2]].item;
+                b = fleetData[sw.b[0]][sideTable[sw.b[1]]][sw.b[2]].item;
+                a.forEach((item, item_index) => {
+                    Object.keys(item.property).forEach(key => {
+                        if (key != "ship_pos") {
+                            b[item_index].property[key] = a[item_index].property[key];
+                        }
+                    });
+                });
+                msg.normal.ship_copied(a);
+                return true;
             }
 
             async function swapShip() {
@@ -2632,6 +2710,8 @@ const
         normal: `btn btn-outline-secondary btn-sm fleet_op_btn p-0 fleet_op_hide`,
         yellow: `btn btn-outline-warning btn-sm fleet_op_btn p-0 w-50 fleet_op_hide`,
         text: `text-monospace text-center w-100 d-flex align-items-center justify-content-center border fleet_op_hide`,
+        copy: `btn btn-outline-success btn-sm w-75 mx-1 my-auto fleet_op_hide text-truncate`,
+        del: `btn btn-outline-danger btn-sm mr-0 ml-auto my-auto fleet_op_hide`,
     },
     path = (target = "") => { return `dynamicFleet.${target}(this)`; },
     action = {
@@ -2640,13 +2720,17 @@ const
         copy: path(dynamicFleet.copyFleet.name),
         delete: path(dynamicFleet.deleteFleet.name),
         swap: path(dynamicFleet.swapPos.name),
+        swap_copy: path(dynamicFleet.swapPos.name),
     };
 Vue.component("fleet-container", {
     props: ["fleet", "lang", "show_op", "class_data", "ui_text"],
     template: `
         <div v-bind:class="class_data.fleet_box_o">
             <div class="fleet_op_box" v-if="show_op">
-                <div class="line-5-item text-monospace text-center m-auto fleet_name" v-text="fleet.id">Fleet_ID</div>
+                <div class="d-flex line-5-item">
+                    <div class="w-25 text-monospace text-center m-auto fleet_name" v-text="fleet.id">Fleet_ID</div>
+                    <button class="${fleet_btn_style.copy}" v-bind:pos="fleet.id" onclick="${action.copy}" v-text="ui_text.copy_fleet[lang]">CopyFleet</button>
+                </div>
                 <div class="d-flex line-5-item">
                     <div class="d-flex btn-group w-100 m-auto">
                         <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="1,0" onclick="${action.insert}">⮝</button>
@@ -2669,8 +2753,8 @@ Vue.component("fleet-container", {
                     </div>
                 </div>
                 <div class="d-flex line-5-item">
-                    <button class="btn btn-outline-success btn-sm w-50 m-auto fleet_op_hide" v-bind:pos="fleet.id" onclick="${action.copy}" v-text="ui_text.copy_fleet[lang]">Copy</button>
-                    <button class="btn btn-outline-danger btn-sm w-25 m-auto fleet_op_hide" v-bind:pos="fleet.id" onclick="${action.delete}">✖</button>
+                    <button class="${fleet_btn_style.copy}" v-bind:pos="fleet.id" onclick="${action.swap_copy.replace("this", "this, true")}" v-text="ui_text.copy_ship[lang]">CopyShip</button>
+                    <button class="${fleet_btn_style.del}" v-bind:pos="fleet.id" onclick="${action.delete}">✖</button>
                 </div>
             </div>
             <div v-bind:class="class_data.fleet_box_i">

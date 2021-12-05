@@ -22,6 +22,13 @@ This site was developed and tested on `Chrome`/`Firefox`
 Compatibility with other browsers is unknown  
 
 ## Update  
+**2021-12-05**
+- new feature:
+  - `CopyShip`: copy the ship & it's current equipment to anywhere  
+    (if it exists, this will **overwrite the ship at destination**)
+  - `Swap` / `CopyShip` can be cancelled by clicking anywhere that is not ship
+- adjust some UI
+
 **2021-12-03**
 - new feature: export/import owned ship/equipment data (in setting)  
   `Save` will **overwrite** data in your setting  
@@ -60,20 +67,20 @@ Compatibility with other browsers is unknown
 - unreleased ship name marked with `*` *(on that server)*
 - now can use `TWnoData`/`ENnoData` to find unreleased ships *(on that server)*
 - normalize some of the ship names (so that they can be searched with normal letters)
-  | Original                | Normalized              |
-  |-------------------------|-------------------------|
-  | Algérie                 | Algerie                 |
-  | La Galissonnière        | La Galissonniere        |
-  | Béarn                   | Bearn                   |
-  | Émile Bertin            | Emile Bertin            |
-  | Maillé Brézé            | Maille Breze            |
-  | L'Opiniâtre             | L'Opiniatre             |
-  | Le Téméraire            | Le Temeraire            |
-  | Ägir                    | Agir                    |
-  | Friedrich der Große     | Friedrich der Grosse    |
-  | Nürnberg                | Nurnberg                |
-  | Köln                    | Koln                    |
-  | Königsberg              | Konigsberg              |
+  | Original            | Normalized           |
+  | ------------------- | -------------------- |
+  | Algérie             | Algerie              |
+  | La Galissonnière    | La Galissonniere     |
+  | Béarn               | Bearn                |
+  | Émile Bertin        | Emile Bertin         |
+  | Maillé Brézé        | Maille Breze         |
+  | L'Opiniâtre         | L'Opiniatre          |
+  | Le Téméraire        | Le Temeraire         |
+  | Ägir                | Agir                 |
+  | Friedrich der Große | Friedrich der Grosse |
+  | Nürnberg            | Nurnberg             |
+  | Köln                | Koln                 |
+  | Königsberg          | Konigsberg           |
   
   *both of them are supported
 
