@@ -30,7 +30,8 @@ Compatibility with other browsers is unknown
   - old data without levels will load with default level: `120(ship)` / `10(equip)`
   - bugs++
 - if it feel slow, try turn on the hardware acceleration in your browser...
-  - I should probably remove some css...:(
+  - I should probably remove some css... :(
+- if `owned item data` failed to load, it will skip it & remove the broken data
 
 **2021-12-05**
 - new feature:
