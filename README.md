@@ -16,12 +16,22 @@ for CN WIKI
 - 還原艦船名稱 [greasyfork](https://greasyfork.org/scripts/405281)
 
 # Browser support
+If it feel slow, try turn on the hardware acceleration in your browser
 Recommend using `Chrome` for the best experience  
 This site was developed and tested on `Chrome`/`Firefox`  
 `IE` `Edge(Old)` is unsupported  
 Compatibility with other browsers is unknown  
 
 ## Update  
+**2021-12-05**
+- new feature:
+  - add `ship/equip level`, setup by click `set level`
+  - it will save to fleet data
+  - old data without levels will load with default level: `120(ship)` / `10(equip)`
+  - bugs++
+- if it feel slow, try turn on the hardware acceleration in your browser...
+  - I should probably remove some css...:(
+
 **2021-12-05**
 - new feature:
   - `CopyShip`: copy the ship & it's current equipment to anywhere  

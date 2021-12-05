@@ -22,10 +22,11 @@
     <link rel="prefetch" href="lib/vue.min.js" as="script">
     <link rel="prefetch" href="lib/crypto-js.min.js" as="script">
     <link rel="prefetch" href="lib/lz-string.min.js" as="script">
+    <link rel="prefetch" href="lib/index-min.js" as="script">
     <link rel="prefetch" href="js/ship_data.min.js?v=97536bc9a895" as="script">
     <link rel="prefetch" href="js/equip_data.min.js?v=c585d343b0d4" as="script">
     <link rel="prefetch" href="js/cnwiki2alf.min.js?v=72de46d883fc" as="script">
-    <link rel="prefetch" href="js/main-v2.min.js?v=e2f310b2ca97" as="script">
+    <link rel="prefetch" href="js/main-v2.min.js?v=f74f96f1f3c0" as="script">
     <style>
         body {
             color: white;
@@ -152,12 +153,51 @@
         
         .ship_pos2 {
             position: absolute;
-            bottom: -0.2rem;
-            right: 0.2rem;
+            bottom: 0.1rem;
+            right: 0.1rem;
             z-index: 103;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             font-weight: bold;
             opacity: 0.85;
+            line-height: 1.2rem;
+            width: 1.3rem;
+            padding: 0.1rem 0 0 0.1rem;
+            background: rgba(0, 0, 0, 0.6);
+            clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%, 0 50%);
+            text-indent: 0.1rem;
+        }
+        
+        .ship_level {
+            position: absolute;
+            bottom: 0.2rem;
+            left: 0.1rem;
+            z-index: 103;
+            font-size: 1.3rem;
+            font-weight: bold;
+            opacity: 0.85;
+            line-height: 1.2rem;
+            background: rgba(0, 0, 0, 0.8);
+            text-indent: -0.5rem;
+            width: 3.1rem;
+            padding: 0.05rem;
+            clip-path: polygon(75% 0, 100% 50%, 75% 100%, 0 100%, 0 0);
+        }
+        
+        .equip_level {
+            position: absolute;
+            bottom: 0.2rem;
+            left: 0.1rem;
+            z-index: 103;
+            font-size: 1.3rem;
+            font-weight: bold;
+            opacity: 0.85;
+            line-height: 1.2rem;
+            background: rgba(0, 0, 0, 0.8);
+            text-align: left;
+            text-indent: 0.1rem;
+            width: 3.1rem;
+            padding: 0.05rem;
+            clip-path: polygon(75% 0, 100% 50%, 75% 100%, 0 100%, 0 0);
         }
         
         .databox {
@@ -449,6 +489,13 @@
                         <button class="btn btn-danger mx-4" type="button" ui_id="saveOwned" onclick="app.util.saveOwned()">Save</button>
                         <button class="btn btn-outline-light w-25 mx-2" type="button" id="owned_ship_only" onclick="app.util.setOwned(this, 'ship')">Only Show Owned</button>
                     </div>
+                    <div class="d-flex w-50 my-3 mx-auto font-weight-bold justify-content-center">
+                        <div class="my-auto mr-1 ml-auto w-25 text-right" ui_id="item_level_ship">Level</div>
+                        <div class="d-inline-flex my-1">
+                            <input type="text" class="mx-1 text-center rounded" id="ship_level_input" value="120">
+                        </div>
+                        <button class="btn btn-primary my-1 ml-1 mr-auto w-25" id="ship_level_set" onclick="app.setLevel('ship')" data-dismiss="modal">Set Level</button>
+                    </div>
                     <div class="d-inline-flex w-100 font-weight-bold">
                         <div class="d-flex my-2 line-40" id="search_box">
                             <input class="w-50 mx-1 rounded" type="text" class="mx-1 w-100" id="search_input" autocomplete="on" name="shipname">
@@ -525,6 +572,13 @@
                         <button class="btn btn-danger mx-4" type="button" ui_id="saveOwned" onclick="app.util.saveOwned()">Save</button>
                         <button class="btn btn-outline-light w-25 mx-2" type="button" id="owned_equip_only" onclick="app.util.setOwned(this, 'equip')">Only Show Owned</button>
                     </div>
+                    <div class="d-flex w-50 my-3 mx-auto font-weight-bold justify-content-center">
+                        <div class="my-auto mr-1 ml-auto w-25 text-right" ui_id="item_level_equip">Enhance Level</div>
+                        <div class="d-inline-flex my-1">
+                            <input type="text" class="mx-1 text-center rounded" id="equip_level_input" value="10">
+                        </div>
+                        <button class="btn btn-primary my-1 ml-1 mr-auto w-25" id="equip_level_set" onclick="app.setLevel('equip')" data-dismiss="modal">Set Level</button>
+                    </div>
                     <div class="d-inline-flex w-100 font-weight-bold">
                         <div class="btn-group d-flex my-2 mx-1 line-40">
                             <button id='always_reset_equip_filter' type="button" class="w-100 m-auto btn btn-outline-light font-weight-bold" aria-pressed="false" onclick="app.option.equip.autoUseDefault(this)">Auto</button>
@@ -571,7 +625,7 @@
     <script src='js/ship_data.min.js?v=97536bc9a895'></script>
     <script src='js/equip_data.min.js?v=c585d343b0d4'></script>
     <script src='js/cnwiki2alf.min.js?v=72de46d883fc'></script>
-    <script src="js/main-v2.min.js?v=e2f310b2ca97"></script>
+    <script src="js/main-v2.min.js?v=f74f96f1f3c0"></script>
 </body>
 
 </html>
