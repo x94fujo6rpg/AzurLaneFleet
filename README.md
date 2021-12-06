@@ -13,14 +13,14 @@ for CN WIKI
 - 還原艦船名稱 [greasyfork](https://greasyfork.org/scripts/405281)
 
 # Browser support
-If it feel slow, try turn on the hardware acceleration in your browser
+If it feel slow, try turn on the hardware acceleration in your browser  
 Recommend using `Chrome` for the best experience  
 This site was developed and tested on `Chrome`/`Firefox`  
 `IE` `Edge(Old)` is unsupported  
 Compatibility with other browsers is unknown  
 
 ## Update  
-**2021-12-05**
+**2021-12-06**
 - new feature:
   - add `ship/equip level`, setup by click `set level`
   - it will save to fleet data
