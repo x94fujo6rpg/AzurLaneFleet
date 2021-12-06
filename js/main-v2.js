@@ -1648,10 +1648,21 @@ const
                 let side = sideTable[c_side],
                     item_in_app = fleetData[c_fleet][side][c_pos].item[c_item].property,
                     level_app = item_in_app[`${type}_level`],
-                    level_input = document.getElementById(`${type}_level_input`);
-                if (type == "ship") if (level_app <= 0 || level_app > 125 || isNaN(level_app)) item_in_app[`${type}_level`] = app._level_default.ship;
-                if (type == "equip") if (level_app < 0 || level_app > 13 || isNaN(level_app)) item_in_app[`${type}_level`] = app._level_default.equip
-                level_input.value = item_in_app[`${type}_level`];
+                    level_input = document.getElementById(`${type}_level_input`),
+                    level_slider = document.getElementById(`${type}_level_slider`);
+                switch (type) {
+                    case "ship":
+                        if (isNaN(level_app)) item_in_app[`${type}_level`] = app._level_default.ship;
+                        if (level_app <= 0) item_in_app[`${type}_level`] = 1;
+                        if (level_app > 125) item_in_app[`${type}_level`] = 125;
+                        break;
+                    case "equip":
+                        if (isNaN(level_app)) item_in_app[`${type}_level`] = app._level_default.equip;
+                        if (level_app < 0) item_in_app[`${type}_level`] = 0;
+                        if (level_app > 13) item_in_app[`${type}_level`] = 13;
+                        break;
+                }
+                level_slider.value = level_input.value = item_in_app[`${type}_level`];
             }
         },
         setLevel(type = "", skip = false) {
@@ -1660,14 +1671,21 @@ const
             } else {
                 let side = sideTable[c_side],
                     item_in_app = fleetData[c_fleet][side][c_pos].item[c_item].property,
-                    level_input = parseInt(document.getElementById(`${type}_level_input`).value, 10),
-                    data;
-                if (skip) return; // skip
-                if (type == "ship") if (level_input <= 0 || level_input > 125 || isNaN(level_input)) level_input = app._level_default.ship;
-                if (type == "equip") if (level_input < 0 || level_input > 13 || isNaN(level_input)) level_input = app._level_default.equip;
+                    level_input = parseInt(document.getElementById(`${type}_level_input`).value, 10);
+                switch (type) {
+                    case "ship":
+                        if (isNaN(level_input)) level_input = app._level_default.ship;
+                        if (level_input <= 0) level_input = 1;
+                        if (level_input > 125) level_input = 125;
+                        break;
+                    case "equip":
+                        if (isNaN(level_input)) level_input = app._level_default.equip;
+                        if (level_input < 0) level_input = 0;
+                        if (level_input > 13) level_input = 13;
+                        break;
+                }
                 item_in_app[`${type}_level`] = level_input;
-                data = app.util.dumpID();
-                LS.userSetting.set(settingKey.fleetData, data);
+                LS.userSetting.set(settingKey.fleetData, app.util.dumpID());
             }
         },
         setShipAndEquip(item, save = true, skip_level = false) {
@@ -1917,6 +1935,7 @@ const
             step("add resize event"); addWindowSizeEvent();
             step("load user setting"); await loadUserSetting();
             step("load fleet storage"); await loadStorage();
+            step("set slider"); setSlider();
             document.querySelector("#loading_box").style.display = "none";
             document.querySelector("#app_area").style.display = "";
             dynamicFleet.disableInvalidMoveButton();
@@ -1946,6 +1965,48 @@ const
                 appendTo.bar = ele.children[2];
                 appendTo.lable = ele.children[1];
                 return true;
+            }
+            //------------------------------
+            function setSlider() {
+                let ship_text = document.getElementById("ship_level_input"),
+                    ship_slider = document.getElementById("ship_level_slider"),
+                    equip_text = document.getElementById("equip_level_input"),
+                    equip_slider = document.getElementById("equip_level_slider");
+
+                ship_text.addEventListener("change", () => syncText2Slider("ship"));
+                equip_text.addEventListener("change", () => syncText2Slider("equip"));
+
+                ship_slider.addEventListener("input", () => syncSlider2Text("ship"));
+                equip_slider.addEventListener("input", () => syncSlider2Text("equip"));
+
+                ship_slider.addEventListener("change", () => app.setLevel("ship"));
+                equip_slider.addEventListener("change", () => app.setLevel("equip"));
+
+                function syncSlider2Text(type = "") {
+                    if (type == "ship") ship_text.value = ship_slider.value;
+                    if (type == "equip") equip_text.value = equip_slider.value;
+                }
+
+                function syncText2Slider(type = "") {
+                    let input;
+                    switch (type) {
+                        case "ship":
+                            input = ship_text.value;
+                            if (isNaN(input)) input = app._level_default.ship;
+                            if (input <= 0) input = 1;
+                            if (input > 125) input = 125;
+                            ship_text.value = ship_slider.value = input;
+                            break;
+                        case "equip":
+                            input = equip_text.value;
+                            if (isNaN(input)) input = app._level_default.equip;
+                            if (input < 0) input = 0;
+                            if (input > 13) input = 13;
+                            equip_text.value = equip_slider.value = input;
+                            break;
+                    }
+                    app.setLevel(type);
+                }
             }
 
             //------------------------------

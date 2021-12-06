@@ -27,11 +27,17 @@ Compatibility with other browsers is unknown
 - new feature:
   - add `ship/equip level`, setup by click `set level`
   - it will save to fleet data
-  - old data without levels will load with default level: `120(ship)` / `10(equip)`
+  - old data without levels will load with default level: `ship:120` / `equip:10`
   - bugs++
 - if it feel slow, try turn on the hardware acceleration in your browser...
   - I should probably remove some css... :(
 - if `owned item data` failed to load, it will skip it & remove the broken data
+- add slider to set level
+- now the level is set when any input is made, the `set level` button now only functions as exit.
+- level limit:
+  - `not number` => use default level: `ship:120` / `equip:10`
+  - `input < min` =>  `equip:0` / `ship:1`
+  - `input > max` => `equip:13` / `ship:125`
 
 **2021-12-05**
 - new feature:
