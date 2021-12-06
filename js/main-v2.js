@@ -1192,7 +1192,9 @@ const
                 return data;
             },
             dumpFleet(input_fleet_data = []) {
-                let fleetdata = [];
+                let fleetdata = [],
+                    ship_level = app._level_default.ship,
+                    equip_level = app._level_default.equip;
                 for (let side_key in input_fleet_data) {
                     if (side_key == "id") continue;
                     let sidedata = [];
@@ -1211,12 +1213,12 @@ const
                                 if (!int_id) {
                                     // empty equip
                                     ship_data.push(0);
-                                    level_data.push(0);
+                                    level_data.push(equip_level.toString(16));
                                 } else {
                                     ship_data.push(int_id);
                                     // level ship:125=>7d / equip:13=>d
-                                    if (i == 0) level_data.push((int_level ? int_level : 0).toString(16).padStart(2, 0));
-                                    if (i != 0) level_data.push((int_level ? int_level : 0).toString(16));
+                                    if (i == 0) level_data.push((int_level ? int_level : ship_level).toString(16).padStart(2, 0));
+                                    if (i != 0) level_data.push((int_level ? int_level : equip_level).toString(16));
                                 }
                             });
                             sidedata.push(ship_data.concat(level_data.join("")));
@@ -1552,7 +1554,6 @@ const
             if (document.querySelector("#owned_ship_only").classList.contains("active")) _hideNotOwned();
             app.util.countShipDisplayed();
             app.getLevel("ship");
-            app.setLevel("ship");
 
             function _isShipSelect(nation, type, rarity, retro) {
                 // when current select ship is front, hide back ships
@@ -1665,7 +1666,7 @@ const
                 level_slider.value = level_input.value = item_in_app[`${type}_level`];
             }
         },
-        setLevel(type = "", skip = false) {
+        setLevel(type = "", skip = false, save = true) {
             if (skip) {
                 return;
             } else {
@@ -1685,7 +1686,7 @@ const
                         break;
                 }
                 item_in_app[`${type}_level`] = level_input;
-                LS.userSetting.set(settingKey.fleetData, app.util.dumpID());
+                if (save) LS.userSetting.set(settingKey.fleetData, app.util.dumpID());
             }
         },
         setShipAndEquip(item, save = true, skip_level = false) {
@@ -1793,7 +1794,6 @@ const
             if (document.querySelector("#owned_equip_only").classList.contains("active")) _hideNotOwned();
             app.util.countEquipDisplayed();
             app.getLevel("equip");
-            app.setLevel("equip");
 
             function isEquipSelect(nation, type, rarity, tier) {
                 [nation, type, rarity, tier].forEach(num => parseInt(num));
@@ -2139,7 +2139,7 @@ const
                                         <img class="img-fluid frame" src="${data.frame}">
                                         <img class="img-fluid icon" loading="lazy" src="">
                                     </div>
-                                    <span class="item_name text_shadow" name="name" tw="${data.tw}" cn="${data.cn}" en="${data.en}" jp="${data.jp}">
+                                    <span class="item_name" name="name" tw="${data.tw}" cn="${data.cn}" en="${data.en}" jp="${data.jp}">
                                         ${data[language]}
                                     </span>
                                 </div>
@@ -2857,11 +2857,11 @@ Vue.component("item-container", {
                 <img class="img-fluid frame" v-bind:src="item.property.frame">
                 <img class="img-fluid icon" v-bind:src="item.property.icon">
                 <span class="itemq text_shadow" v-text="item.property.quantity" v-if="item.property.quantity"></span>
-                <span class="ship_pos2 text_shadow" v-text="item.property.ship_pos" v-if="item.property.ship_pos"></span>
-                <span class="ship_level text_shadow" v-text="item.property.ship_level" v-if="item.property.bg && item.property.ship_level > 0"></span>
-                <span class="equip_level text_shadow" v-text="'+'+item.property.equip_level" v-if="item.property.bg && item.property.equip_level > 0"></span>
+                <span class="ship_pos2" v-text="item.property.ship_pos" v-if="item.property.ship_pos"></span>
+                <span class="ship_level" v-text="item.property.ship_level" v-if="item.property.bg && item.property.ship_level > 0"></span>
+                <span class="equip_level" v-text="'+'+item.property.equip_level" v-if="item.property.bg && item.property.equip_level > 0"></span>
               </div>
-              <span class="item_name text_shadow" v-text="item.property[lang]"></span>
+              <span class="item_name" v-text="item.property[lang]"></span>
             </div>
         </button>
     `
@@ -2883,12 +2883,12 @@ Vue.component("ship-container", {
 });
 
 const
-    fleet_btn_style = {
-        normal: `btn btn-outline-secondary btn-sm fleet_op_btn p-0 fleet_op_hide`,
-        yellow: `btn btn-outline-warning btn-sm fleet_op_btn p-0 w-50 fleet_op_hide`,
-        text: `text-monospace text-center w-100 d-flex align-items-center justify-content-center border fleet_op_hide`,
-        copy: `btn btn-outline-success btn-sm w-75 mx-1 my-auto fleet_op_hide text-truncate`,
-        del: `btn btn-outline-danger btn-sm mr-0 ml-auto my-auto fleet_op_hide`,
+    fleet_btn_style = { // fleet_op_hide
+        normal: `btn btn-outline-secondary btn-sm fleet_op_btn p-0`,
+        yellow: `btn btn-outline-warning btn-sm fleet_op_btn p-0 w-50`,
+        text: `text-monospace text-center w-100 d-flex align-items-center justify-content-center border `,
+        copy: `btn btn-outline-success btn-sm w-75 mx-1 my-auto text-truncate fleet_op_btn p-0`,
+        del: `btn btn-outline-danger btn-sm mr-0 ml-auto my-auto fleet_op_btn px-2 py-0`,
     },
     path = (target = "") => { return `dynamicFleet.${target}(this)`; },
     action = {

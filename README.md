@@ -35,6 +35,10 @@ Compatibility with other browsers is unknown
   - `not number` => use default level: `ship:120` / `equip:10`
   - `input < min` =>  `equip:0` / `ship:1`
   - `input > max` => `equip:13` / `ship:125`
+- bug fix: `dumpID` not use default level
+  - causes all empty equip's slot set to `level 0`
+- UI adjust: remove most of the text shadow. use monospace in item names.
+- avoid some redundant actions that causes some performance issues
 
 **2021-12-05**
 - new feature:
