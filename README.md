@@ -1,7 +1,7 @@
 ﻿# [AzurLaneFleet](https://x94fujo6rpg.github.io/AzurLaneFleet/) #  
 The goal of this project  
 Is just for easily share fleet configuration in one shot  
-![](https://x94fujo6rpg.github.io/AzurLaneFleet/ui/screenshots.jpg)  
+[![](https://x94fujo6rpg.github.io/AzurLaneFleet/ui/screenshots.jpg?)](https://x94fujo6rpg.github.io/AzurLaneFleet/)  
 ```
 No4RgBgDg3IGigTgCy0UgzANghza+ATHsprALrzjSwQCseSYkeb8bVNMs5H-7CBS7c6JARKHVIPCLkkCuMugHZBk4fDAjRsQus7UDiows4ika3AmNTgtjlwdCq2igEIIAOgbuARgAm9GAqKkT0AGZQ4REAhihEUADGfkR+SQCmKSpg2GCpYEA
 ```
