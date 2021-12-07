@@ -941,7 +941,11 @@ const
                 let isOn = btn.classList.contains("active");
                 this._owned[`${type}_on`] = isOn ? 0 : 1;
                 //btn.classList[isOn ? "remove" : "add"]("active");  this is very slow... https://jsbench.me/h2kwwm3v1t/1
-                (isOn ? btn.classList.remove : btn.classList.add)("active");
+                if (isOn) {
+                    btn.classList.remove("active");
+                } else {
+                    btn.classList.add("active");
+                }
                 if (type == "ship") app.shipDisplay();
                 if (type == "equip") app.equipDisplay();
                 //this.saveOwned();
