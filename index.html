@@ -26,7 +26,7 @@
     <link rel="prefetch" href="js/ship_data.min.js?v=97536bc9a895" as="script">
     <link rel="prefetch" href="js/equip_data.min.js?v=c585d343b0d4" as="script">
     <link rel="prefetch" href="js/cnwiki2alf.min.js?v=72de46d883fc" as="script">
-    <link rel="prefetch" href="js/main-v2.min.js?v=30678a3e5867" as="script">
+    <link rel="prefetch" href="js/main-v2.min.js?v=2e89452f6ca5" as="script">
     <style>
         body {
             color: white;
@@ -329,7 +329,7 @@
         
         .af_slider_box {
             border-radius: 0.6rem;
-            padding: 0 0.5rem 0 0.5rem;
+            padding: 0 0.2rem 0 0.2rem;
             background: rgba(0, 0, 0, 0.3);
         }
     </style>
@@ -508,7 +508,9 @@
                         <button class="btn btn-primary my-1 ml-1 mr-auto w-25" id="ship_level_set" _onclick="app.setLevel('ship')" data-dismiss="modal">Set Level</button>
                     </div>
                     <div class="af_slider_box d-flex w-50 my-2 mx-auto justify-content-center">
+                        <div id="ship_level_min" class="mx-2 my-auto text-monospace">1</div>
                         <input type="range" min="1" max="125" step="1" value="120" id="ship_level_slider" class="af_slider w-100">
+                        <div id="ship_level_max" class="mx-2 my-auto text-monospace">125</div>
                     </div>
                     <div class="d-inline-flex w-100 font-weight-bold">
                         <div class="d-flex my-2 line-40" id="search_box">
@@ -594,7 +596,9 @@
                         <button class="btn btn-primary my-1 ml-1 mr-auto w-25" id="equip_level_set" _onclick="app.setLevel('equip')" data-dismiss="modal">Set Level</button>
                     </div>
                     <div class="af_slider_box d-flex w-50 my-2 mx-auto justify-content-center">
+                        <div id="equip_level_min" class="mx-2 my-auto text-monospace">0</div>
                         <input type="range" min="0" max="13" step="1" value="10" id="equip_level_slider" class="af_slider w-100">
+                        <div id="equip_level_max" class="mx-2 my-auto text-monospace">13</div>
                     </div>
                     <div class="d-inline-flex w-100 font-weight-bold">
                         <div class="btn-group d-flex my-2 mx-1 line-40">
@@ -642,7 +646,7 @@
     <script src='js/ship_data.min.js?v=97536bc9a895'></script>
     <script src='js/equip_data.min.js?v=c585d343b0d4'></script>
     <script src='js/cnwiki2alf.min.js?v=72de46d883fc'></script>
-    <script src="js/main-v2.min.js?v=30678a3e5867"></script>
+    <script src="js/main-v2.min.js?v=2e89452f6ca5"></script>
 </body>
 
 </html>

@@ -20,6 +20,20 @@ This site was developed and tested on `Chrome`/`Firefox`
 Compatibility with other browsers is unknown  
 
 ## Update  
+**2021-12-07**
+- now will limit equip level (also applies to load data)
+  - t0 & t3:
+    - rainbow/gold: +13
+    - purple: +11
+    - blue: +7
+    - white: +3
+  - else:
+    - rainbow/gold: +10
+    - purple: +10
+    - blue: +6
+    - white: +3
+- now only save data when closing UI
+
 **2021-12-06**
 - new feature:
   - add `ship/equip level`, setup by click `set level`

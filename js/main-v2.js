@@ -78,8 +78,8 @@ const
     vue_ui_text = {
         sub_fleet: { en: "Sub", jp: "潜水", tw: "潛艇", cn: "潛艇" },
         normal_fleet: { en: "Normal", jp: "通常", tw: "一般", cn: "一般" },
-        copy_fleet: { en: "CopyFleet", jp: "コピー艦隊", tw: "複製艦隊", cn: "複製艦隊", },
-        copy_ship: { en: "CopyShip", jp: "コピー艦船", tw: "複製艦船", cn: "複製艦船", },
+        copy_fleet: { en: "FleetCopy", jp: "艦隊コピー", tw: "艦隊複製", cn: "艦隊複製", },
+        copy_ship: { en: "ShipCopy", jp: "艦船コピー", tw: "艦船複製", cn: "艦船複製", },
         swap_ship: { en: "Swap", jp: "交換", tw: "交換", cn: "交換", },
     },
     // equip type
@@ -863,6 +863,7 @@ const
                             limit: "",
                             quantity: "",
                             equip_level: app._level_default.equip,
+                            tech: "",
                         };
                         item = eq;
                     }
@@ -1308,13 +1309,14 @@ const
                                         `${fleet_index}_2_${ship_index}_${item_index}`, // sub fleet
                                         ship_item = { name, id },
                                         level = parseInt(level_data[item_index], 16),
-                                        [f, s, p, i] = this.setCurrent(ship_item, true); // get current data
+                                        [f, s, p, i] = this.setCurrent(ship_item, true), // get current data
+                                        app_item = fleetData[f][s][p].item[i].property;
                                     if (item_index == 0) {
-                                        fleetData[f][s][p].item[i].property.ship_level = level; // set level
                                         if (!app.setShipAndEquip(ship_item, false, true)) is_empty = true; // set ship failed, skip rest
+                                        app_item.ship_level = app.shipLevelLimit(level); // set level
                                     } else {
-                                        fleetData[f][s][p].item[i].property.equip_level = level; // set level
-                                        app.setEquip(ship_item, false, true);
+                                        app.setEquip(ship_item, false, true);  // set equip first so the rarity is set
+                                        app_item.equip_level = app.equipLevelLimit(app_item.rarity, level, app_item.tech);
                                     }
                                 });
                             } else {
@@ -1339,14 +1341,15 @@ const
                                             `${fleet_index}_2_${ship_index}_${item_index}`; // sub fleet
                                     }
 
-                                    let ship_item = { name: item_name, id: item };
-                                    let [f, s, p, i] = this.setCurrent(ship_item, true);
+                                    let ship_item = { name: item_name, id: item },
+                                        [f, s, p, i] = this.setCurrent(ship_item, true),
+                                        app_item = fleetData[f][s][p].item[i].property;
                                     if (item_index === 0) {
-                                        fleetData[f][s][p].item[i].property.ship_level = app._level_default.ship;
                                         if (!(app.setShipAndEquip(ship_item, false, true))) is_ship_empty = true; // set ship failed, skip equip
+                                        app_item.ship_level = app.shipLevelLimit(app._level_default.ship);
                                     } else {
-                                        fleetData[f][s][p].item[i].property.equip_level = app._level_default.equip;
                                         app.setEquip(ship_item, false, true);
+                                        app_item.equip_level = app.equipLevelLimit(app_item.rarity, app._level_default.equip, app_item.tech);
                                     }
                                     if (item === "000000") is_ship_empty = true;
                                 });
@@ -1642,54 +1645,52 @@ const
             ship: 120,
             equip: 10,
         },
+        shipLevelLimit(level = 1) {
+            level = parseInt(level, 10);
+            if (isNaN(level)) return app._level_default.ship;
+            if (level <= 0) return 1;
+            if (level > 125) return 125;
+            return level;
+        },
+        equipLevelLimit(rarity = 5, level = 13, tech = 0) {
+            let max = 13;
+            [rarity, level, tech].forEach(a => a = parseInt(a, 10));
+            if (isNaN(rarity) || rarity < 1 || rarity > 6) rarity = 5;  // as default, and empty equip have no rarity
+            if (isNaN(tech) || tech < 0 || tech > 3) tech = 0;
+            if (isNaN(level)) level = app._level_default.equip;
+            if (level < 0) return 0;
+            if (rarity == 6) max = (tech == 3 || tech == 0) ? 13 : 10;
+            if (rarity == 5) max = (tech == 3 || tech == 0) ? 13 : 10;
+            if (rarity == 4) max = (tech == 3 || tech == 0) ? 11 : 10;
+            if (rarity == 3) max = (tech == 3 || tech == 0) ? 7 : 6;
+            if (rarity < 3) max = 3;
+            if (level > max) level = max;
+            return level;
+        },
         getLevel(type = "", skip = false) {
-            if (skip) {
-                return;
-            } else {
+            if (!skip) {
                 let side = sideTable[c_side],
                     item_in_app = fleetData[c_fleet][side][c_pos].item[c_item].property,
                     level_app = item_in_app[`${type}_level`],
                     level_input = document.getElementById(`${type}_level_input`),
                     level_slider = document.getElementById(`${type}_level_slider`);
-                switch (type) {
-                    case "ship":
-                        if (isNaN(level_app)) item_in_app[`${type}_level`] = app._level_default.ship;
-                        if (level_app <= 0) item_in_app[`${type}_level`] = 1;
-                        if (level_app > 125) item_in_app[`${type}_level`] = 125;
-                        break;
-                    case "equip":
-                        if (isNaN(level_app)) item_in_app[`${type}_level`] = app._level_default.equip;
-                        if (level_app < 0) item_in_app[`${type}_level`] = 0;
-                        if (level_app > 13) item_in_app[`${type}_level`] = 13;
-                        break;
-                }
+                if (type == "ship") item_in_app[`${type}_level`] = this.shipLevelLimit(level_app);
+                if (type == "equip") item_in_app[`${type}_level`] = this.equipLevelLimit(item_in_app.rarity, level_app, item_in_app.tech);
                 level_slider.value = level_input.value = item_in_app[`${type}_level`];
             }
         },
         setLevel(type = "", skip = false, save = true) {
-            if (skip) {
-                return;
-            } else {
+            if (!skip) {
                 let side = sideTable[c_side],
                     item_in_app = fleetData[c_fleet][side][c_pos].item[c_item].property,
                     level_input = parseInt(document.getElementById(`${type}_level_input`).value, 10);
-                switch (type) {
-                    case "ship":
-                        if (isNaN(level_input)) level_input = app._level_default.ship;
-                        if (level_input <= 0) level_input = 1;
-                        if (level_input > 125) level_input = 125;
-                        break;
-                    case "equip":
-                        if (isNaN(level_input)) level_input = app._level_default.equip;
-                        if (level_input < 0) level_input = 0;
-                        if (level_input > 13) level_input = 13;
-                        break;
-                }
+                if (type == "ship") level_input = this.shipLevelLimit(level_input);
+                if (type == "equip") level_input = this.equipLevelLimit(item_in_app.rarity, level_input, item_in_app.tech);
                 item_in_app[`${type}_level`] = level_input;
                 if (save) LS.userSetting.set(settingKey.fleetData, app.util.dumpID());
             }
         },
-        setShipAndEquip(item, save = true, skip_level = false) {
+        setShipAndEquip(item, save = false, skip_level = false) {
             let side = sideTable[c_side],
                 //console.log(`${setShipAndEquip.name}: ${item.id} ${typeof item.id}`);
                 shipInApp = fleetData[c_fleet][side][c_pos],
@@ -1738,7 +1739,7 @@ const
                         //ship
                         ui_table.copy_ship.forEach(key => app_item[key] = shipInList[key]);
                         // set level
-                        app.setLevel("ship", skip_level);
+                        app.setLevel("ship", skip_level, false);
                     } else {
                         //equip
                         Object.keys(app_item).filter(key => key != "equip_level").forEach(key => app_item[key] = "");
@@ -1865,7 +1866,7 @@ const
                 });
             }
         },
-        setEquip(item, save = true, skip_level = false) {
+        setEquip(item, save = false, skip_level = false) {
             let side = sideTable[c_side],
                 itemInApp = fleetData[c_fleet][side][c_pos].item[c_item].property,
                 id = parseInt(item.id, 10),
@@ -1880,7 +1881,7 @@ const
                 itemInApp.cn = itemInApp.type_cn;
                 itemInApp.en = itemInApp.type_en;
                 itemInApp.jp = itemInApp.type_jp;
-                itemInApp.limit = itemInApp.id = itemInApp.frame = itemInApp.bg = "";
+                itemInApp.rarity = itemInApp.tech = itemInApp.limit = itemInApp.id = itemInApp.frame = itemInApp.bg = "";
                 itemInApp.icon = ui_table.empty_item;
             } else {
                 // copy data
@@ -1892,7 +1893,7 @@ const
                 }
                 ui_table.copy_equip.forEach(key => itemInApp[key] = itemInList[key]);
                 // set level
-                app.setLevel("equip", skip_level);
+                app.setLevel("equip", skip_level, false);
             }
             if (save) LS.userSetting.set(settingKey.fleetData, app.util.dumpID());
             return true;
@@ -1971,42 +1972,28 @@ const
                 let ship_text = document.getElementById("ship_level_input"),
                     ship_slider = document.getElementById("ship_level_slider"),
                     equip_text = document.getElementById("equip_level_input"),
-                    equip_slider = document.getElementById("equip_level_slider");
-
+                    equip_slider = document.getElementById("equip_level_slider"),
+                    syncSlider2Text = (type = "") => {
+                        if (type == "ship") ship_text.value = ship_slider.value;
+                        if (type == "equip") equip_text.value = equip_slider.value;
+                    },
+                    syncText2Slider = (type = "") => {
+                        if (type == "ship") ship_slider.value = ship_text.value = app.shipLevelLimit(ship_text.value);
+                        if (type == "equip") equip_slider.value = equip_text.value = app.equipLevelLimit(5, equip_text.value);
+                        app.setLevel(type, false, false);
+                    };
                 ship_text.addEventListener("change", () => syncText2Slider("ship"));
                 equip_text.addEventListener("change", () => syncText2Slider("equip"));
 
                 ship_slider.addEventListener("input", () => syncSlider2Text("ship"));
                 equip_slider.addEventListener("input", () => syncSlider2Text("equip"));
 
-                ship_slider.addEventListener("change", () => app.setLevel("ship"));
-                equip_slider.addEventListener("change", () => app.setLevel("equip"));
+                ship_slider.addEventListener("change", () => app.setLevel("ship", false, false));
+                equip_slider.addEventListener("change", () => app.setLevel("equip", false, false));
 
-                function syncSlider2Text(type = "") {
-                    if (type == "ship") ship_text.value = ship_slider.value;
-                    if (type == "equip") equip_text.value = equip_slider.value;
-                }
-
-                function syncText2Slider(type = "") {
-                    let input;
-                    switch (type) {
-                        case "ship":
-                            input = ship_text.value;
-                            if (isNaN(input)) input = app._level_default.ship;
-                            if (input <= 0) input = 1;
-                            if (input > 125) input = 125;
-                            ship_text.value = ship_slider.value = input;
-                            break;
-                        case "equip":
-                            input = equip_text.value;
-                            if (isNaN(input)) input = app._level_default.equip;
-                            if (input < 0) input = 0;
-                            if (input > 13) input = 13;
-                            equip_text.value = equip_slider.value = input;
-                            break;
-                    }
-                    app.setLevel(type);
-                }
+                //only save when modal close
+                $("#shipselect").on("hide.bs.modal", () => app.setLevel("ship"));
+                $("#equipselect").on("hide.bs.modal", () => app.setLevel("equip"));
             }
 
             //------------------------------
@@ -2029,7 +2016,7 @@ const
                             id, tw, cn, en, jp,
                             type, nationality, rarity, star, retro,
                             base, e1, e2, e3, e4, e5,
-                            icon, bg, frame
+                            icon, bg, frame,
                         };
                     },
                     list = [], empty = {};
@@ -2063,6 +2050,7 @@ const
                         icon,
                         bg = "",
                         frame = "",
+                        tech,
                     }) => {
                         icon = `equips/${icon}.png`;
                         if (rarity != 1) {
@@ -2076,7 +2064,8 @@ const
                             id, tw, cn, en, jp,
                             type, nationality, rarity,
                             fb, limit,
-                            icon, bg, frame
+                            icon, bg, frame,
+                            tech,
                         };
                     },
                     list = [], empty = {};
@@ -2572,14 +2561,9 @@ const
                 },
                 checkClickTarget = (event) => {
                     if (event.target == btn) {
-                        //console.log("trigger by start swap, bypass");
-                        sw.is_ship = true;
+                        sw.is_ship = true;  // trigger by start swap, bypass
                     } else {
-                        let find_ship = searchParent({ _elem: event.target });
-                        /*console.log("------");
-                        console.log("event.target", event.target);
-                        console.log("searchParent", find_ship);*/
-                        sw.is_ship = find_ship ? true : false;
+                        sw.is_ship = searchParent({ _elem: event.target }) ? true : false;
                     }
 
                     function searchParent({
@@ -2598,18 +2582,13 @@ const
                             while (__count <= _max_rase && !__find && __up_layer) {
                                 if (__up_layer.getAttribute(_attr) == _value) {
                                     __find = __up_layer;
-                                    //console.log("find!!", __find);
                                 } else {
                                     let children = [...__up_layer.children].find(e => e.getAttribute(_attr) == _value);
                                     if (children && __up_layer.className != "ship_container") {
                                         __find = children;
-                                        //console.log("find children!!", __find);
                                     }
                                 }
                                 if (__find || !(__up_layer.parentElement)) break;
-                                /*console.log("up_layer", __up_layer);
-                                console.log(`getAttr ${_attr}`, __up_layer.getAttribute(_attr));
-                                console.log("find", __find);*/
                                 __up_layer = __up_layer.parentElement;
                                 __count++;
                             }
@@ -2642,14 +2621,14 @@ const
                 // swap ship data
                 if (!copy_ship) await swapShip();
                 if (copy_ship) await copyShip();
+
+                // save data
+                LS.userSetting.set(settingKey.fleetData, app.util.dumpID());
             } catch (e) {
                 console.log(e);
             } finally {
                 // re-enable all button & reset state
                 reset();
-
-                // save data
-                LS.userSetting.set(settingKey.fleetData, app.util.dumpID());
             }
 
             function reset() {
@@ -2696,10 +2675,7 @@ const
             }
 
             function disableOtherSide(ele, index) {
-                if (index == 0) {
-                    let side = ele.name.split("_")[1];
-                    if (side != sw.a[1]) disableElement(ele);
-                }
+                if (index == 0) if (ele.name.split("_")[1] != sw.a[1]) disableElement(ele);
             }
 
             function otherButtonAction(_function) {
@@ -2708,9 +2684,7 @@ const
 
             function shipButtonAction(_function) {
                 allShip.forEach(ship => {
-                    [...ship.children].forEach((ele, index) => {
-                        _function(ele, index);
-                    });
+                    [...ship.children].forEach((ele, index) => _function(ele, index));
                 });
             }
 
@@ -2780,7 +2754,7 @@ const
         empty_disable: "ui/icon_back.png",
         langs: ["tw", "cn", "en", "jp"],
         copy_ship: ["tw", "cn", "en", "jp", "icon", "frame", "bg", "id", "type", "rarity", "star", "base"],
-        copy_equip: ["tw", "cn", "en", "jp", "icon", "frame", "bg", "id", "limit"],
+        copy_equip: ["tw", "cn", "en", "jp", "icon", "frame", "bg", "id", "limit", "rarity", "tech"],
     },
     AFL_storage = window.localStorage,
     filter_setting = {
@@ -2886,8 +2860,8 @@ const
     fleet_btn_style = { // fleet_op_hide
         normal: `btn btn-outline-secondary btn-sm fleet_op_btn p-0`,
         yellow: `btn btn-outline-warning btn-sm fleet_op_btn p-0 w-50`,
-        text: `text-monospace text-center w-100 d-flex align-items-center justify-content-center border `,
-        copy: `btn btn-outline-success btn-sm w-75 mx-1 my-auto text-truncate fleet_op_btn p-0`,
+        text: `text-monospace text-center w-100 d-flex align-items-center justify-content-center border`,
+        copy: `btn btn-outline-success btn-sm w-75 mx-1 my-auto text-truncate text-monospace p-1`,
         del: `btn btn-outline-danger btn-sm mr-0 ml-auto my-auto fleet_op_btn px-2 py-0`,
     },
     path = (target = "") => { return `dynamicFleet.${target}(this)`; },
