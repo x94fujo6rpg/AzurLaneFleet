@@ -1,6 +1,5 @@
 ﻿# [AzurLaneFleet](https://x94fujo6rpg.github.io/AzurLaneFleet/) #  
-The goal of this project  
-Is just for easily share fleet configuration in one shot  
+A tool that can easily share fleet setups
 [![](https://x94fujo6rpg.github.io/AzurLaneFleet/ui/screenshots.jpg?)](https://x94fujo6rpg.github.io/AzurLaneFleet/)  
 
 ### [CN Wiki version](https://wiki.biligame.com/blhx/%E8%88%B0%E9%98%9F%E6%A8%A1%E6%8B%9F%E5%99%A8) is online ###  
@@ -20,6 +19,11 @@ This site was developed and tested on `Chrome`/`Firefox`
 Compatibility with other browsers is unknown  
 
 ## Update  
+**2021-12-08**
+- bug fix:
+  - when dump data, if equip level is 0, it will be set to 10
+  - in rare cases, the level of the last equipment may be incorrect
+
 **2021-12-07**
 - now will limit equip level (also applies to load data)
   - t0 & t3:

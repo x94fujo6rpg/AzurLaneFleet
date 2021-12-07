@@ -940,7 +940,8 @@ const
             setOwned(btn, type) {
                 let isOn = btn.classList.contains("active");
                 this._owned[`${type}_on`] = isOn ? 0 : 1;
-                btn.classList[isOn ? "remove" : "add"]("active");
+                //btn.classList[isOn ? "remove" : "add"]("active");  this is very slow... https://jsbench.me/h2kwwm3v1t/1
+                (isOn ? btn.classList.remove : btn.classList.add)("active");
                 if (type == "ship") app.shipDisplay();
                 if (type == "equip") app.equipDisplay();
                 //this.saveOwned();
@@ -1193,43 +1194,43 @@ const
                 return data;
             },
             dumpFleet(input_fleet_data = []) {
-                let fleetdata = [],
-                    ship_level = app._level_default.ship,
-                    equip_level = app._level_default.equip;
+                let fleet_data = [];
                 for (let side_key in input_fleet_data) {
                     if (side_key == "id") continue;
-                    let sidedata = [];
+                    let side_data = [];
                     input_fleet_data[side_key].forEach(ship => {
                         let is_empty = !(ship.item[0].property.id);
                         if (is_empty) {
                             // empty ship, set all 0
-                            sidedata.push([0]);
+                            side_data.push([0]);
                         } else {
-                            let ship_data = [], level_data = [];
+                            let ship_data = [], lv_data = [];
                             ship.item.forEach((item, i) => {
-                                let id = item.property.id,
-                                    level = item.property[(i == 0 ? 'ship_level' : 'equip_level')],
-                                    int_id = parseInt(id),
-                                    int_level = parseInt(level);
-                                if (!int_id) {
+                                let id = parseInt(item.property.id),
+                                    lv = (i == 0 ? item.property.ship_level : item.property.equip_level);
+                                if (!id) {
                                     // empty equip
                                     ship_data.push(0);
-                                    level_data.push(equip_level.toString(16));
+                                    lv_data.push(app._level_default.equip.toString(16));
                                 } else {
-                                    ship_data.push(int_id);
+                                    ship_data.push(id);
                                     // level ship:125=>7d / equip:13=>d
-                                    if (i == 0) level_data.push((int_level ? int_level : ship_level).toString(16).padStart(2, 0));
-                                    if (i != 0) level_data.push((int_level ? int_level : equip_level).toString(16));
+                                    if (i == 0) {
+                                        lv_data.push(app.shipLevelLimit(lv).toString(16).padStart(2, 0));
+                                    } else {
+                                        lv_data.push(app.equipLevelLimit(item.property.rarity, lv, item.property.tech).toString(16));
+                                    }
                                 }
                             });
-                            sidedata.push(ship_data.concat(level_data.join("")));
+                            ship_data.push(lv_data.join(""));
+                            side_data.push(ship_data);
                         }
                     });
-                    fleetdata.push(sidedata);
+                    fleet_data.push(side_data);
                 }
                 // 1:normal, 2:sub, attach it to the end, or it will break fleet sequence and loadID
-                fleetdata.push(input_fleet_data.sub ? 2 : 1);
-                return fleetdata;
+                fleet_data.push(input_fleet_data.sub ? 2 : 1);
+                return fleet_data;
             },
             updateFleetDataBox(json_data = "") {
                 let textbox = document.getElementById("fleetdata"), data;
@@ -1287,7 +1288,7 @@ const
             },
             async parseID(data, noDump = false, ver = "") {
                 if (!data.length) throw Error("no data");
-                let default_level = [app._level_default.ship].concat(Array(4).fill(app._level_default.equip));
+                let default_level = [app._level_default.ship].concat(Array(5).fill(app._level_default.equip));
                 ver = parseFloat(ver);
                 data.forEach((fleet, fleet_index) => {
                     let last_item = fleet[fleet.length - 1],
@@ -1659,12 +1660,16 @@ const
             if (isNaN(tech) || tech < 0 || tech > 3) tech = 0;
             if (isNaN(level)) level = app._level_default.equip;
             if (level < 0) return 0;
-            if (rarity == 6) max = (tech == 3 || tech == 0) ? 13 : 10;
-            if (rarity == 5) max = (tech == 3 || tech == 0) ? 13 : 10;
-            if (rarity == 4) max = (tech == 3 || tech == 0) ? 11 : 10;
-            if (rarity == 3) max = (tech == 3 || tech == 0) ? 7 : 6;
-            if (rarity < 3) max = 3;
-            if (level > max) level = max;
+            switch (rarity) {
+                case 6: max = (tech == 3 || tech == 0) ? 13 : 10; break;
+                case 5: max = (tech == 3 || tech == 0) ? 13 : 10; break;
+                case 4: max = (tech == 3 || tech == 0) ? 11 : 10; break;
+                case 3: max = (tech == 3 || tech == 0) ? 7 : 6; break;
+                case 2: max = 3; break;
+                case 1: max = 3; break;
+                default: break;
+            }
+            if (level > max) return max;
             return level;
         },
         getLevel(type = "", skip = false) {
