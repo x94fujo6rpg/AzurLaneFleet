@@ -23,6 +23,7 @@ Compatibility with other browsers is unknown
 - bug fix:
   - when dump data, if equip level is 0, it will be set to 10
   - in rare cases, the level of the last equipment may be incorrect
+- only load icon when it is visible
 
 **2021-12-07**
 - now will limit equip level (also applies to load data)

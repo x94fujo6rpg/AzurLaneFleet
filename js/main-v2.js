@@ -990,7 +990,11 @@ const
 
                     function editList(ele) {
                         let id = parseInt(ele.id, 10);
-                        list[list.has(id) ? "delete" : "add"](id);
+                        if (list.has(id)) {
+                            list.delete(id);
+                        } else {
+                            list.add(id);
+                        }
                         updateList(ele);
                         //app.util.saveOwned();
                     }
@@ -2098,7 +2102,6 @@ const
             }
 
             //------------------------------
-
             async function addClickEventAndImg() {
                 console.time("addClickEventAndImg");
                 let
@@ -2107,21 +2110,57 @@ const
                         { type: "equip", list: sortedEquip, onclick: app.setEquip },
                     ],
                     max = sortedShip.length + sortedEquip.length - 2,
-                    progress = _loading_.add_img;
+                    progress = _loading_.add_img,
+                    is_iob = (() => {
+                        if (!('IntersectionObserver' in window) ||
+                            !('IntersectionObserverEntry' in window) ||
+                            !('intersectionRatio' in window.IntersectionObserverEntry.prototype)) {
+                            return false;
+                        } else {
+                            return true;
+                        }
+                    })();
                 await addProgressBar("add_img", "add event & image", max, progress);
                 for (let obj of list) {
-                    for (let item of obj.list) {
-                        process(item, progress, obj.onclick);
-                    }
+                    let iob = is_iob ?
+                        new IntersectionObserver(iconObserver, {
+                            root: document.getElementById(`${obj.type}select`),
+                            threshold: 0.5,
+                        }) : false;
+                    obj.list.forEach((item, index) => {
+                        process(item, progress, obj.onclick, obj.type, index, iob);
+                    });
                 }
                 console.timeEnd("addClickEventAndImg");
 
-                function process(item, progress, onclick) {
+                function process(item, progress, onclick, type, index, iob) {
                     return setTimeout(() => {
-                        let btn = document.getElementById(item.id);
-                        btn.querySelector(".icon").src = item.icon; // 1-layer: querySelector 12% slower / 3-layer: children 25% slower 
+                        let btn = document.getElementById(item.id),
+                            icon = btn.querySelector(".icon"); // 1-layer: querySelector 12% slower / 3-layer: children 25% slower
+                        if (!iob) {
+                            icon.src = item.icon;
+                        } else {
+                            icon.setAttribute("img_data", `${type}_${index}`);
+                            iob.observe(icon);
+                        }
                         btn.onclick = function () { onclick(this); };
                         progress.lable.textContent = `${++progress.bar.value}/${progress.bar.max}`;
+                    });
+                }
+
+                function iconObserver(entries, observer) {
+                    entries.forEach(e => {
+                        if (e.intersectionRatio > 0.1) {
+                            loadIcon(e.target);
+                            observer.unobserve(e.target);
+                        }
+                    });
+                }
+
+                function loadIcon(e) {
+                    setTimeout(() => {
+                        let [type, index] = e.getAttribute("img_data").split("_");
+                        e.src = (type == "ship" ? sortedShip : sortedEquip)[index].icon;
                     });
                 }
             }
