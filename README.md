@@ -1,15 +1,7 @@
-﻿# [AzurLaneFleet](https://x94fujo6rpg.github.io/AzurLaneFleet/) #  
-A tool that can easily share fleet setups
+﻿# [Azur Lane Fleet Tool](https://x94fujo6rpg.github.io/AzurLaneFleet/) #  
+A tool for easily sharing/managing/simulating your AzurLane fleet setups.  
+Generate shareable text codes or links.  
 [![](https://x94fujo6rpg.github.io/AzurLaneFleet/ui/screenshots.jpg?)](https://x94fujo6rpg.github.io/AzurLaneFleet/)  
-
-### [CN Wiki version](https://wiki.biligame.com/blhx/%E8%88%B0%E9%98%9F%E6%A8%A1%E6%8B%9F%E5%99%A8) is online ###  
-***Caution! Data stored in two versions are not compatible!***  
-AzurLaneFleet now shoud load data from CN Wiki version **(irreversible)**  
-
-### Related userscripts ###
-for CN WIKI
-- 碧航艦隊科技工具 [github](https://github.com/x94fujo6rpg/SomeTampermonkeyScripts/blob/master/az_cn_wiki_fleet_tech_tool.user.js) / [greasyfork](https://greasyfork.org/scripts/435568)
-- 還原艦船名稱 [greasyfork](https://greasyfork.org/scripts/405281)
 
 # Browser support
 If it feel slow, try turn on the hardware acceleration in your browser  
@@ -17,6 +9,15 @@ Recommend using `Chrome` for the best experience
 This site was developed and tested on `Chrome`/`Firefox`  
 `IE` `Edge(Old)` is unsupported  
 Compatibility with other browsers is unknown  
+
+### Related userscripts ###
+for CN WIKI
+- 碧航艦隊科技工具 [github](https://github.com/x94fujo6rpg/SomeTampermonkeyScripts/blob/master/az_cn_wiki_fleet_tech_tool.user.js) / [greasyfork](https://greasyfork.org/scripts/435568)
+- 還原艦船名稱 [greasyfork](https://greasyfork.org/scripts/405281)
+
+### [CN Wiki version](https://wiki.biligame.com/blhx/%E8%88%B0%E9%98%9F%E6%A8%A1%E6%8B%9F%E5%99%A8) ###  
+***Caution! Data stored in two versions are not compatible!***  
+now shoud load data from CN Wiki version **(irreversible)**  
 
 ## Update  
 **2021-12-08**
