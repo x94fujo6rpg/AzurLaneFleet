@@ -26,7 +26,7 @@
     <link rel="prefetch" href="js/ship_data.min.js?v=97536bc9a895" as="script">
     <link rel="prefetch" href="js/equip_data.min.js?v=c585d343b0d4" as="script">
     <link rel="prefetch" href="js/cnwiki2alf.min.js?v=72de46d883fc" as="script">
-    <link rel="prefetch" href="js/main-v2.min.js?v=dc6bdccd65ec" as="script">
+    <link rel="prefetch" href="js/main-v2.min.js?v=29d5b41af33f" as="script">
     <style>
         body {
             color: white;
@@ -332,6 +332,32 @@
             padding: 0 0.2rem 0 0.2rem;
             background: rgba(0, 0, 0, 0.3);
         }
+        
+        @media only screen and (max-width: 1300px) {
+            .btn {
+                white-space: normal;
+            }
+            .w-25 {
+                width: 50% !important;
+            }
+            .w-75 {
+                width: 100% !important;
+            }
+            .line-5-item {
+                max-width: 100%;
+                width: calc(100% / 4);
+            }
+            .line-6-item {
+                max-width: 100%;
+                width: calc(100% / 4);
+            }
+            .af_slider {
+                height: 4rem;
+            }
+            .af_slider_box {
+                width: 75% !important;
+            }
+        }
     </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKESRCZC4Z"></script>
     <script>
@@ -466,7 +492,7 @@
     <footer class="container text-center mt-5" id="footer">
         The copyright of the data used on this site is owned by the following companies<br> © Manjuu Co.,Ltd. & YongShi Co.,Ltd.<br> © Yostar, Inc.
     </footer>
-    <div class="modal fade" id="shipselect">
+    <div class="modal" id="shipselect">
         <div class="modal-dialog mt-1" id="dialog_shipselect">
             <div class="modal-content text-light bg-dark">
                 <div class="modal-header p-2">
@@ -478,19 +504,19 @@
                     <div id="ship_filter" class="collapse">
                         <div class="font-weight-bold border-top border-right border-left border-secondary rounded p-1 my-1">
                             <div class="h5 m-1" ui_id="filter_nation">Nation</div>
-                            <div class="btn-group d-flex ml-1" id='shipnation'>
+                            <div class="btn-group d-flex ml-1 flex-wrap" id='shipnation'>
                                 <ship-nation-button v-for="item in nation" v-bind:key="item.id" v-bind:name="item.name" v-text="item[lang]" v-bind:value="item.id"></ship-nation-button>
                             </div>
                         </div>
                         <div class="font-weight-bold border-top border-right border-left border-secondary rounded p-1 my-1">
                             <div class="h5 m-1" ui_id="filter_type">Type</div>
-                            <div class="btn-group d-flex ml-1" id="shiptype">
+                            <div class="btn-group d-flex ml-1 flex-wrap" id="shiptype">
                                 <ship-type-button v-for="item in type" v-bind:key="item.id" v-bind:name="item.name" v-show="item.display" v-text="item[lang]" v-bind:value="item.id"></ship-type-button>
                             </div>
                         </div>
                         <div class="font-weight-bold border-top border-right border-left border-secondary rounded p-1 my-1">
                             <div class="h5 m-1" ui_id="filter_rarity">Rarity</div>
-                            <div class="btn-group d-flex ml-1" id='shiprarity'>
+                            <div class="btn-group d-flex ml-1 flex-wrap" id='shiprarity'>
                                 <ship-rarity-button v-for="item in rarity" v-bind:key="item.id" v-bind:name="item.name" v-text="item[lang]" v-bind:value="item.id"></ship-rarity-button>
                             </div>
                         </div>
@@ -515,7 +541,7 @@
                     <div class="d-inline-flex w-100 font-weight-bold">
                         <div class="d-flex my-2 line-40" id="search_box">
                             <input class="w-50 mx-1 rounded" type="text" class="mx-1 w-100" id="search_input" autocomplete="on" name="shipname">
-                            <button id='filter_retro' name="retro_ship_only" type="button" class="w-50 mx-1 btn btn-outline-light font-weight-bold text-truncate active" aria-pressed="true" onclick="app.option.ship.setRetro(this)">Retrofitted Only</button>
+                            <button id='filter_retro' name="retro_ship_only" type="button" class="w-50 mx-1 btn btn-outline-light font-weight-bold d-flex justify-content-center active" aria-pressed="true" onclick="app.option.ship.setRetro(this)">Retrofitted Only</button>
                         </div>
                         <div class="d-flex m-auto line-5-item">
                             <label class="my-auto ml-auto mr-1" ui_id="filter_search_result">Result</label>
@@ -523,8 +549,8 @@
                         </div>
                         <div class="d-flex m-auto line-40">
                             <div class="dropdown w-50 mx-1 btn-group">
-                                <button id="ship_sort_order" name="ship_sort_order" type="button" class="w-25 btn btn-outline-light font-weight-bold" aria-pressed="false" onclick="app.option.ship.sort_order(this)" value="1">⮟</button>
-                                <button ui_id="sort" class="btn btn-outline-light w-75 dropdown-toggle text-truncate" type="button" id="sort_menu" data-toggle="dropdown" aria-expanded="false">
+                                <button id="ship_sort_order" name="ship_sort_order" type="button" class="btn btn-outline-light font-weight-bold d-flex justify-content-center" aria-pressed="false" onclick="app.option.ship.sort_order(this)" value="1">⮟</button>
+                                <button ui_id="sort" class="btn btn-outline-light w-75 dropdown-toggle" type="button" id="sort_menu" data-toggle="dropdown" aria-expanded="false">
                                     Sort
                                 </button>
                                 <div class="dropdown-menu bg-secondary" aria-labelledby="sort_menu">
@@ -548,7 +574,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="equipselect">
+    <div class="modal" id="equipselect">
         <div class="modal-dialog mt-1" id="dialog_select_equip">
             <div class="modal-content text-light bg-dark">
                 <div class="modal-header p-2">
@@ -560,25 +586,25 @@
                     <div id="equip_filter" class="collapse">
                         <div class="font-weight-bold border-top border-right border-left border-secondary rounded p-1 my-1">
                             <div class="h5 m-1" ui_id="filter_nation">Nation</div>
-                            <div class="btn-group d-flex ml-1" id='eq_nation'>
+                            <div class="btn-group d-flex ml-1 flex-wrap" id='eq_nation'>
                                 <equip-nation-button v-for="item in nation" v-bind:key="item.id" v-bind:name="item.name" v-text="item[lang]" v-bind:value="item.id"></equip-nation-button>
                             </div>
                         </div>
                         <div class="font-weight-bold border-top border-right border-left border-secondary rounded p-1 my-1">
                             <div class="h5 m-1" ui_id="filter_type">Type</div>
-                            <div class="btn-group d-flex ml-1" id="eq_type">
+                            <div class="btn-group d-flex ml-1 flex-wrap" id="eq_type">
                                 <equip-type-button v-for="item in type" v-bind:key="item.id" v-bind:name="item.name" v-show="item.display" v-text="item[lang]" v-bind:value="item.id"></equip-type-button>
                             </div>
                         </div>
                         <div class="font-weight-bold border-top border-right border-left border-secondary rounded p-1 my-1">
                             <div class="h5 m-1" ui_id="filter_rarity">Rarity</div>
-                            <div class="btn-group d-flex ml-1" id='eq_rarity'>
+                            <div class="btn-group d-flex ml-1 flex-wrap" id='eq_rarity'>
                                 <equip-rarity-button v-for="item in rarity" v-bind:key="item.id" v-bind:name="item.name" v-text="item[lang]" v-bind:value="item.id"></equip-rarity-button>
                             </div>
                         </div>
                         <div class="font-weight-bold border-top border-right border-left border-secondary rounded p-1 my-1">
                             <div class="h5 m-1" ui_id="filter_eq_tier">Tier</div>
-                            <div class="btn-group d-flex ml-1" id='eq_tier'>
+                            <div class="btn-group d-flex ml-1 flex-wrap" id='eq_tier'>
                                 <equip-tier-button v-for="item in tier" v-bind:key="item.id" v-bind:name="item.name" v-text="item[lang]" v-bind:value="item.id"></equip-tier-button>
                             </div>
                         </div>
@@ -593,7 +619,7 @@
                         <div class="d-inline-flex my-1">
                             <input type="text" class="mx-1 text-center rounded" id="equip_level_input" value="10">
                         </div>
-                        <button class="btn btn-primary my-1 ml-1 mr-auto w-25" id="equip_level_set" _onclick="app.setLevel('equip')" data-dismiss="modal">Set Level</button>
+                        <button class="btn btn-primary my-1 ml-1 mr-auto w-25 d-flex" id="equip_level_set" _onclick="app.setLevel('equip')" data-dismiss="modal">Set Level</button>
                     </div>
                     <div class="af_slider_box d-flex w-50 my-2 mx-auto justify-content-center">
                         <div id="equip_level_min" class="mx-2 my-auto text-monospace">0</div>
@@ -612,8 +638,8 @@
                         </div>
                         <div class="d-flex m-auto line-40">
                             <div class="dropdown w-50 btn-group mx-1">
-                                <button id="equip_sort_order" name="equip_sort_order" type="button" class="w-25 btn btn-outline-light font-weight-bold" aria-pressed="false" onclick="app.option.equip.sort_order(this)" value="1">⮟</button>
-                                <button ui_id="sort" class="btn btn-outline-light w-75 dropdown-toggle text-truncate" type="button" id="sort_menu" data-toggle="dropdown" aria-expanded="false">
+                                <button id="equip_sort_order" name="equip_sort_order" type="button" class="btn btn-outline-light font-weight-bold d-flex justify-content-center" aria-pressed="false" onclick="app.option.equip.sort_order(this)" value="1">⮟</button>
+                                <button ui_id="sort" class="btn btn-outline-light w-75 dropdown-toggle d-flex" type="button" id="sort_menu" data-toggle="dropdown" aria-expanded="false">
                                     Sort
                                 </button>
                                 <div class="dropdown-menu bg-secondary" aria-labelledby="sort_menu">
@@ -646,7 +672,7 @@
     <script src='js/ship_data.min.js?v=97536bc9a895'></script>
     <script src='js/equip_data.min.js?v=c585d343b0d4'></script>
     <script src='js/cnwiki2alf.min.js?v=72de46d883fc'></script>
-    <script src="js/main-v2.min.js?v=dc6bdccd65ec"></script>
+    <script src="js/main-v2.min.js?v=29d5b41af33f"></script>
 </body>
 
 </html>

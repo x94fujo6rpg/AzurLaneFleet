@@ -637,6 +637,7 @@ const
                         w50: "w-50",
                         w75: "w-75",
                         w100: "w-100",
+                        mw75: "mw-75",
                         mw100: "mw-100",
                         no_effect: "adjustEle_placeholder",
                         df: "d-flex",
@@ -651,15 +652,15 @@ const
                         };
                     },
                     target_list = [
-                        ["option_box_1", _d.exchange, _d.w25, _d.w50],
-                        ["option_box_2", _d.exchange, _d.w25, _d.w50],
-                        ["fleet_storage", _d.exchange, _d.w50, _d.w100],
-                        ["dialog_shipselect", _d.exchange, _d.no_effect, _d.mw100],
-                        ["dialog_select_equip", _d.exchange, _d.no_effect, _d.mw100],
-                        ["language_select_group", _d.exchange, _d.w25, _d.w75],
-                        ["url_area", _d.exchange, _d.w25, _d.w50],
-                        ["data_area", _d.exchange, _d.w25, _d.w50],
-                        ["owned_data_area", _d.exchange, _d.w25, _d.w50],
+                        //["option_box_1", _d.exchange, _d.w25, _d.w50],
+                        //["option_box_2", _d.exchange, _d.w25, _d.w50],
+                        ["fleet_storage", _d.exchange, _d.w50, _d.w75],
+                        ["dialog_shipselect", _d.exchange, _d.no_effect, _d.mw75],
+                        ["dialog_select_equip", _d.exchange, _d.no_effect, _d.mw75],
+                        //["language_select_group", _d.exchange, _d.w25, _d.w50],
+                        //["url_area", _d.exchange, _d.w25, _d.w50],
+                        //["data_area", _d.exchange, _d.w25, _d.w50],
+                        //["owned_data_area", _d.exchange, _d.w25, _d.w50],
                         //["search_box", _d.exchange, _d.df, _d.fw],
                     ];
                 if (width < safe_size) {
@@ -1944,8 +1945,8 @@ const
             await addClickEventAndImg();
             step("add text to ele"); addLanguageToEle();
             step("add search"); add_search_event();
-            step("split button group [ship nation]"); splitButtonGroup("shipnation", 6, filter_btn_class.replace("line-5-item", "line-6-item"));
-            step("split button group [equip nation]"); splitButtonGroup("eq_nation", 6, filter_btn_class.replace("line-5-item", "line-6-item"));
+            //step("split button group [ship nation]"); splitButtonGroup("shipnation", 6, filter_btn_class.replace("line-5-item", "line-6-item"));
+            //step("split button group [equip nation]"); splitButtonGroup("eq_nation", 6, filter_btn_class.replace("line-5-item", "line-6-item"));
             step("add resize event"); addWindowSizeEvent();
             step("load user setting"); await loadUserSetting();
             step("load fleet storage"); await loadStorage();
@@ -2166,7 +2167,7 @@ const
 
                 function iconObserver(entries, observer) {
                     entries.forEach(e => {
-                        if (e.intersectionRatio > 0.1) {
+                        if (e.intersectionRatio > 0.25) {
                             loadIcon(e.target);
                             observer.unobserve(e.target);
                         }
@@ -3007,18 +3008,21 @@ Vue.component("fleet-container", {
 
 //----------------------------------------------------------
 const
-    filter_btn_class = "btn btn-outline-secondary line-5-item py-2 font-weight-bold text-truncate filter-btn",
-    filter_btn_template = `<button type="button" onclick="app.util.updateSetting(this)" class="${filter_btn_class}"></button>`;
+    filter_btn_class = "btn btn-outline-secondary line-5-item py-2 ml-0 font-weight-bold text-truncate filter-btn",
+    filter_btn_template = `<button type="button" onclick="app.util.updateSetting(this)" class="${filter_btn_class}"></button>`,
+    filter_btn_template_4item = filter_btn_template.replace("line-5-item", "line-4-item"),
+    filter_btn_template_6item = filter_btn_template.replace("line-5-item", "line-6-item");
+
 //----------------------------------------------------------
-Vue.component("ship-nation-button", { props: ['nation', "lang"], template: filter_btn_template });
+Vue.component("ship-nation-button", { props: ['nation', "lang"], template: filter_btn_template_6item });
 Vue.component("ship-type-button", { props: ['type', "lang"], template: filter_btn_template });
 Vue.component("ship-rarity-button", { props: ['rarity', "lang"], template: filter_btn_template });
 
 //----------------------------------------------------------
-Vue.component("equip-nation-button", { props: ['nation', "lang"], template: filter_btn_template });
+Vue.component("equip-nation-button", { props: ['nation', "lang"], template: filter_btn_template_6item });
 Vue.component("equip-type-button", { props: ['type', "lang"], template: filter_btn_template });
 Vue.component("equip-rarity-button", { props: ['rarity', "lang"], template: filter_btn_template });
-Vue.component("equip-tier-button", { props: ['tier', "lang"], template: filter_btn_template });
+Vue.component("equip-tier-button", { props: ['tier', "lang"], template: filter_btn_template_4item });
 
 //----------------------------------------------------------
 app.initialize();
