@@ -1954,8 +1954,8 @@ const
             document.querySelector("#app_area").style.display = "";
             dynamicFleet.disableInvalidMoveButton();
             console.timeEnd(app.initialize.name);
-            setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
-            setTimeout(() => delete app.initialize, 500);
+            setTimeout(() => delete app.initialize);
+            setTimeout(() => window.scrollTo({ top: 0 }));
 
             //------------------------------
             function step(text = "") {
@@ -1969,17 +1969,33 @@ const
             async function addProgressBar(id = "", text = "", max = 100, appendTo = {}) {
                 let pos = document.querySelector("#loading_box"),
                     ele = document.createElement("div");
-                ele.className = "row justify-content-center";
+                ele.className = "row justify-content-center mb-2";
                 ele.innerHTML = `
-                    <label class="flex-col text-monospace m-1">${text}</label>
-                    <lable class="flex-col text-monospace m-1">0/${max}</lable>
-                    <progress id="${id}" max="${max}" class="flex-col my-auto" value="0"></progress>
+                    <div class="text-center w-100">${text}</div>
+                    <div class="progress w-50 mx-auto position-relative">
+                        <div class="p-bar progress-bar bg-info" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="${max}">
+                            <div class="p-lable justify-content-center d-flex position-absolute w-100 text-dark">[0/${max}]</div>
+                        </div>
+                    </div>
                 `;
                 pos.appendChild(ele);
-                appendTo.bar = ele.children[2];
-                appendTo.lable = ele.children[1];
+                Object.assign(appendTo, {
+                    bar: ele.querySelector(".p-bar"),
+                    lable: ele.querySelector(".p-lable"),
+                    value: 0,
+                    max,
+                    update() {
+                        setTimeout(() => {
+                            let now = ++this.value;
+                            this.bar.style.width = `${Math.round((now / this.max) * 100)}%`;
+                            this.bar.setAttribute("aria-valuenow", now);
+                            this.lable.textContent = `[${now}/${this.max}]`;
+                        });
+                    },
+                });
                 return true;
             }
+
             //------------------------------
             function setSlider() {
                 let ship_text = document.getElementById("ship_level_input"),
@@ -2128,7 +2144,7 @@ const
                             threshold: 0.5,
                         }) : false;
                     obj.list.forEach((item, index) => {
-                        process(item, progress, obj.onclick, obj.type, index, iob);
+                        if (index != 0) process(item, progress, obj.onclick, obj.type, index, iob);
                     });
                 }
                 console.timeEnd("addClickEventAndImg");
@@ -2144,7 +2160,7 @@ const
                             iob.observe(icon);
                         }
                         btn.onclick = function () { onclick(this); };
-                        progress.lable.textContent = `${++progress.bar.value}/${progress.bar.max}`;
+                        progress.update();
                     });
                 }
 
@@ -2182,7 +2198,7 @@ const
                                 </div>
                             </button>
                         `;
-                        progress.lable.textContent = `${++progress.bar.value}/${progress.bar.max}`;
+                        progress.update();
                         resolve(html);
                     });
                 });
@@ -2238,7 +2254,7 @@ const
                     promise_list.push(
                         fetchImageToDataURI(obj.src).then(data_url => {
                             obj.data_url = data_url;
-                            progress.lable.textContent = `${++progress.bar.value}/${progress.bar.max}`;
+                            progress.update();
                         })
                     );
                     url_data.push(obj);
@@ -2305,7 +2321,7 @@ const
                         obj.icon_cache = false;
                         console.log(obj, "cache not found");
                     }
-                    progress.lable.textContent = `${++progress.bar.value}/${progress.bar.max}`;
+                    progress.update();
                 }
             }
 
