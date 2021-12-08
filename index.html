@@ -26,7 +26,7 @@
     <link rel="prefetch" href="js/ship_data.min.js?v=97536bc9a895" as="script">
     <link rel="prefetch" href="js/equip_data.min.js?v=c585d343b0d4" as="script">
     <link rel="prefetch" href="js/cnwiki2alf.min.js?v=72de46d883fc" as="script">
-    <link rel="prefetch" href="js/main-v2.min.js?v=29d5b41af33f" as="script">
+    <link rel="prefetch" href="js/main-v2.min.js?v=d0a9431f7e18" as="script">
     <style>
         body {
             color: white;
@@ -527,7 +527,7 @@
                         <button class="btn btn-outline-light w-25 mx-2" type="button" id="owned_ship_only" onclick="app.util.setOwned(this, 'ship')">Only Show Owned</button>
                     </div>
                     <div class="d-flex w-50 my-3 mx-auto font-weight-bold justify-content-center">
-                        <div class="my-auto mr-1 ml-auto w-25 text-right" ui_id="item_level_ship">Level</div>
+                        <div class="my-auto mr-1 ml-auto w-25 text-right text-nowrap" ui_id="item_level_ship">Level</div>
                         <div class="d-inline-flex my-1">
                             <input type="text" class="mx-1 text-center rounded" id="ship_level_input" value="120">
                         </div>
@@ -615,7 +615,7 @@
                         <button class="btn btn-outline-light w-25 mx-2" type="button" id="owned_equip_only" onclick="app.util.setOwned(this, 'equip')">Only Show Owned</button>
                     </div>
                     <div class="d-flex w-50 my-3 mx-auto font-weight-bold justify-content-center">
-                        <div class="my-auto mr-1 ml-auto w-25 text-right" ui_id="item_level_equip">Enhance Level</div>
+                        <div class="my-auto mr-1 ml-auto w-25 text-right text-nowrap" ui_id="item_level_equip">Enhance Level</div>
                         <div class="d-inline-flex my-1">
                             <input type="text" class="mx-1 text-center rounded" id="equip_level_input" value="10">
                         </div>
@@ -639,7 +639,7 @@
                         <div class="d-flex m-auto line-40">
                             <div class="dropdown w-50 btn-group mx-1">
                                 <button id="equip_sort_order" name="equip_sort_order" type="button" class="btn btn-outline-light font-weight-bold d-flex justify-content-center" aria-pressed="false" onclick="app.option.equip.sort_order(this)" value="1">⮟</button>
-                                <button ui_id="sort" class="btn btn-outline-light w-75 dropdown-toggle d-flex" type="button" id="sort_menu" data-toggle="dropdown" aria-expanded="false">
+                                <button ui_id="sort" class="btn btn-outline-light w-75 dropdown-toggle" type="button" id="sort_menu" data-toggle="dropdown" aria-expanded="false">
                                     Sort
                                 </button>
                                 <div class="dropdown-menu bg-secondary" aria-labelledby="sort_menu">
@@ -672,7 +672,7 @@
     <script src='js/ship_data.min.js?v=97536bc9a895'></script>
     <script src='js/equip_data.min.js?v=c585d343b0d4'></script>
     <script src='js/cnwiki2alf.min.js?v=72de46d883fc'></script>
-    <script src="js/main-v2.min.js?v=29d5b41af33f"></script>
+    <script src="js/main-v2.min.js?v=d0a9431f7e18"></script>
 </body>
 
 </html>

@@ -2926,7 +2926,7 @@ const
         normal: `btn btn-outline-secondary btn-sm fleet_op_btn p-0`,
         yellow: `btn btn-outline-warning btn-sm fleet_op_btn p-0 w-50`,
         text: `text-monospace text-center w-100 d-flex align-items-center justify-content-center border`,
-        copy: `btn btn-outline-success btn-sm w-75 mx-1 my-auto text-truncate text-monospace p-1`,
+        copy: `btn btn-outline-success btn-sm w-75 mx-1 my-auto text-truncate text-monospace p-1 text-nowrap`,
         del: `btn btn-outline-danger btn-sm mr-0 ml-auto my-auto fleet_op_btn px-2 py-0`,
     },
     path = (target = "") => { return `dynamicFleet.${target}(this)`; },
