@@ -2125,7 +2125,7 @@ const
                         { type: "ship", list: sortedShip, onclick: app.setShipAndEquip },
                         { type: "equip", list: sortedEquip, onclick: app.setEquip },
                     ],
-                    max = sortedShip.length + sortedEquip.length - 2,
+                    max = sortedShip.length + sortedEquip.length,
                     progress = _loading_.add_img,
                     is_iob = (() => {
                         if (!('IntersectionObserver' in window) ||
@@ -2144,7 +2144,7 @@ const
                             threshold: 0.5,
                         }) : false;
                     obj.list.forEach((item, index) => {
-                        if (index != 0) process(item, progress, obj.onclick, obj.type, index, iob);
+                        process(item, progress, obj.onclick, obj.type, index, iob);
                     });
                 }
                 console.timeEnd("addClickEventAndImg");
