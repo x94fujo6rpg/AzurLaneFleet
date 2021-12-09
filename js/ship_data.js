@@ -2107,6 +2107,45 @@ const ship_data = {
             10
         ]
     },
+    "9704010": {
+        "nationality": 97,
+        "type": 4,
+        "base_list": [
+            3,
+            1,
+            1
+        ],
+        "id": 9704014,
+        "skin_id": 9704010,
+        "english_name": "Gneisenau.META !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "9704010",
+        "painting": "genaisennao_alter",
+        "star_string": "★★★★★★",
+        "rarity_string": "SSR",
+        "jp_name": "グナイゼナウ(META)",
+        "en_name": "Gneisenau.META*",
+        "cn_name": "格奈森瑙·META",
+        "tw_name": "格奈森瑙·META*",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
     "9702010": {
         "nationality": 97,
         "type": 2,
@@ -2324,6 +2363,44 @@ const ship_data = {
         "en_name": "Algérie",
         "cn_name": "阿尔及利亚",
         "tw_name": "阿爾及利亞",
+        "equip_1": [
+            3
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ]
+    },
+    "903010": {
+        "nationality": 9,
+        "type": 3,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 903014,
+        "skin_id": 903010,
+        "english_name": "MNF Foch !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "903010",
+        "painting": "fuxu",
+        "star_string": "★★★★★",
+        "rarity_string": "SR",
+        "jp_name": "フォッシュ",
+        "en_name": "Foch",
+        "cn_name": "福煦",
+        "tw_name": "福煦*",
         "equip_1": [
             3
         ],
@@ -23938,3 +24015,4 @@ const ship_data = {
         ]
     }
 };
+

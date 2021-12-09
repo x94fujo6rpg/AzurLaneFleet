@@ -1920,16 +1920,25 @@ const
             step("access indexedDB", 0);
             if (indexedDB && window.idb) {
                 const [db, AFDB] = await initialDB(db_name, db_ver);
-                let all_key = await AFDB.allKeys();
+                let all_key = await AFDB.allKeys(),
+                    no_cache_list;
                 if (!all_key.length) {
                     let cacheData = await imgToDataURI();
                     //console.log(cacheData);
                     if (cacheData.length > 0) {
                         await saveCacheData(db, db_name, cacheData);
-                        console.log(`cached ${cacheData.length} images`);
+                        console.log(`cached ${cacheData.length} icons`);
                     }
                 }
-                await loadImgCache(AFDB);
+                no_cache_list = await loadImgCache(AFDB);
+                if (no_cache_list.length > 0) {
+                    no_cache_list = await getMissingCache(no_cache_list);
+                    if (no_cache_list.length > 0) {
+                        await saveCacheData(db, db_name, no_cache_list);
+                        console.log(`cached ${no_cache_list.length} icons that is missing form db`);
+                        console.log(no_cache_list);
+                    }
+                }
             } else {
                 let pos = document.querySelector("#loading_box");
                 pos.innerHTML = `
@@ -2235,6 +2244,26 @@ const
                 return `${type == "ship" ? "shipicon" : "equips"}_${src.replace(reg, "$1")}`;
             }
 
+            async function getMissingCache(no_cache_list) {
+                let name = "getMissingCache",
+                    promise_list = [],
+                    progress = _loading_.missing_cache;
+                console.time(name);
+                await addProgressBar("fetch_missing", "Found some icons have no cache, fetch it...", no_cache_list.length, progress);
+                no_cache_list.forEach(obj => {
+                    promise_list.push(
+                        fetchImageToDataURI(obj.src)
+                            .then(data_url => {
+                                obj.data_url = data_url;
+                                progress.update();
+                            })
+                    );
+                });
+                await Promise.all(promise_list);
+                console.timeEnd(name);
+                return no_cache_list;
+            }
+
             async function imgToDataURI() {
                 let name = "imgToDataURI";
                 console.time(name);
@@ -2252,7 +2281,7 @@ const
                 let url_data = [],
                     promise_list = [],
                     progress = _loading_.cache_image;
-                await addProgressBar("fetch_img", "Fetch Images", count, progress);
+                await addProgressBar("fetch_img", "Fetch Icons", count, progress);
                 for (let key in all_data) {
                     let obj = all_data[key];
                     promise_list.push(
@@ -2296,34 +2325,40 @@ const
                 let reg = /.*(?:equips|shipicon)\/([^\.]+).*/,
                     promise_list = [],
                     max = sortedShip.length + sortedEquip.length - 2,
-                    progress = _loading_.load_cache;
+                    progress = _loading_.load_cache,
+                    no_cache_obj = [];
                 await addProgressBar("load_cache", "Loading Cache", max, progress);
                 for (let obj of sortedShip) {
                     if (obj.id == "000000") continue;
                     promise_list.push(
                         AFDB.getImgCache(srcToCacheID(obj.icon, "ship", reg))
-                            .then(cache => replaceURLToDataURI(obj, cache, progress))
+                            .then(cache => replaceURLToDataURI(obj, cache, progress, "ship"))
                     );
                 }
                 for (let obj of sortedEquip) {
                     if (obj.id == "666666") continue;
                     promise_list.push(
                         AFDB.getImgCache(srcToCacheID(obj.icon, "equip", reg))
-                            .then(cache => replaceURLToDataURI(obj, cache, progress))
+                            .then(cache => replaceURLToDataURI(obj, cache, progress, "equip"))
                     );
                 }
                 await Promise.all(promise_list);
                 console.log(`set ${promise_list.length} src to image cache`);
                 console.timeEnd(name);
-                return true;
+                return no_cache_obj;
 
-                function replaceURLToDataURI(obj, cache, progress) {
+                function replaceURLToDataURI(obj, cache, progress, type) {
                     if (cache) {
                         obj.icon = cache.data_url;
                         obj.icon_cache = true;
                     } else {
                         obj.icon_cache = false;
-                        console.log(obj, "cache not found");
+                        console.log("cache not found", obj);
+                        no_cache_obj.push({
+                            src: obj.icon,
+                            id: srcToCacheID(obj.icon, type, reg),
+                            data_url: "",
+                        });
                     }
                     progress.update();
                 }
@@ -2848,6 +2883,7 @@ const
         cache_image: {},
         load_cache: {},
         add_img: {},
+        missing_cache: {},
     },
     posTable = { BS: { 0: "2", 1: "1", 2: "3" }, F: { 0: "3", 1: "2", 2: "1" }, },
     // ship

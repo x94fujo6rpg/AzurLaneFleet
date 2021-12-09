@@ -767,6 +767,23 @@ const equip_data = {
         "en_name": "Type 96 Submarine Torpedo",
         "equip_limit": 0
     },
+    "35580": {
+        "nationality": 3,
+        "type": 13,
+        "attribute_2": "torpedo",
+        "rarity": 6,
+        "tech": 0,
+        "ammo": 5,
+        "ammo_icon": [],
+        "id": 35580,
+        "icon": "35580",
+        "ship_type_forbidden": [],
+        "jp_name": "潜水艦用九五式酸素魚雷改",
+        "cn_name": "潜艇用95式纯氧鱼雷改",
+        "tw_name": "潛艇用95式純氧魚雷改*",
+        "en_name": "(no DATA)",
+        "equip_limit": 0
+    },
     "35540": {
         "nationality": 3,
         "type": 13,
@@ -9698,6 +9715,25 @@ const equip_data = {
         "en_name": "Prototype Twin 457mm Mk A Main Gun Mount",
         "equip_limit": 0
     },
+    "14520": {
+        "nationality": 1,
+        "type": 4,
+        "attribute_2": "cannon",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 1,
+        "ammo_icon": [
+            2
+        ],
+        "id": 14520,
+        "icon": "14520",
+        "ship_type_forbidden": [],
+        "jp_name": "試作型406mm連装砲Mk4",
+        "cn_name": "试作型双联装406mm主炮Mk4",
+        "tw_name": "試作型雙聯裝406mm主炮Mk4*",
+        "en_name": "(no DATA)",
+        "equip_limit": 0
+    },
     "14360": {
         "nationality": 1,
         "type": 4,
@@ -11126,6 +11162,25 @@ const equip_data = {
         "en_name": "Single 150mm Main Gun Mount",
         "equip_limit": 0
     },
+    "42080": {
+        "nationality": 4,
+        "type": 2,
+        "attribute_2": "cannon",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 1,
+        "ammo_icon": [
+            2
+        ],
+        "id": 42080,
+        "icon": "42080",
+        "ship_type_forbidden": [],
+        "jp_name": "試作型150mmSKC28連装砲改",
+        "cn_name": "试作型双联装SKC28式150mm主炮改",
+        "tw_name": "試作型雙聯裝SKC28式150mm主炮改*",
+        "en_name": "(no DATA)",
+        "equip_limit": 0
+    },
     "42340": {
         "nationality": 4,
         "type": 2,
@@ -11352,6 +11407,25 @@ const equip_data = {
         "cn_name": "三联装SKC25式150mm主炮",
         "tw_name": "三聯裝SKC25式150mm主炮",
         "en_name": "Triple 150mm SK C/25 Main Gun Mount",
+        "equip_limit": 0
+    },
+    "32260": {
+        "nationality": 3,
+        "type": 2,
+        "attribute_2": "cannon",
+        "rarity": 5,
+        "tech": 0,
+        "ammo": 2,
+        "ammo_icon": [
+            3
+        ],
+        "id": 32260,
+        "icon": "32260",
+        "ship_type_forbidden": [],
+        "jp_name": "試作型155mm三連装砲改",
+        "cn_name": "试作型155mm三连装炮改",
+        "tw_name": "試作型155mm三連裝炮改*",
+        "en_name": "(no DATA)",
         "equip_limit": 0
     },
     "32240": {
@@ -13407,3 +13481,4 @@ const equip_data = {
         "equip_limit": 0
     }
 };
+
