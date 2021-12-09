@@ -1914,10 +1914,10 @@ const
         },
         async initialize() {
             console.time(app.initialize.name);
-            step("sort Ship"); await createSortShipList();
-            step("sort Equip"); await createSortEquipList();
+            step("sort Ship", 0); await createSortShipList();
+            step("sort Equip", 0); await createSortEquipList();
             // ------------------------------
-            step("access indexedDB");
+            step("access indexedDB", 0);
             if (indexedDB && window.idb) {
                 const [db, AFDB] = await initialDB(db_name, db_ver);
                 let all_key = await AFDB.allKeys();
@@ -1943,27 +1943,29 @@ const
             await createAllShip();
             await createAllEquip();
             await addClickEventAndImg();
-            step("add text to ele"); addLanguageToEle();
-            step("add search"); add_search_event();
+            step("add text to ele", 0); addLanguageToEle();
+            step("add search", 0); add_search_event();
             //step("split button group [ship nation]"); splitButtonGroup("shipnation", 6, filter_btn_class.replace("line-5-item", "line-6-item"));
             //step("split button group [equip nation]"); splitButtonGroup("eq_nation", 6, filter_btn_class.replace("line-5-item", "line-6-item"));
-            step("add resize event"); addWindowSizeEvent();
-            step("load user setting"); await loadUserSetting();
-            step("load fleet storage"); await loadStorage();
-            step("set slider"); setSlider();
-            document.querySelector("#loading_box").style.display = "none";
-            document.querySelector("#app_area").style.display = "";
+            step("add resize event", 0); addWindowSizeEvent();
+            step("load user setting", 0); await loadUserSetting();
+            step("load fleet storage", 0); await loadStorage();
+            step("set slider", 0); setSlider();
+            $("#loading_box").delay(500).slideUp(750);
+            $(".lds-dual-ring").fadeOut(500, () => $("#app_area").slideDown(1000));
             dynamicFleet.disableInvalidMoveButton();
             console.timeEnd(app.initialize.name);
             setTimeout(() => delete app.initialize);
             setTimeout(() => window.scrollTo({ top: 0 }));
 
             //------------------------------
-            function step(text = "") {
+            function step(text = "", show = 1) {
                 let ele = document.createElement("div");
                 ele.textContent = text;
                 ele.className = "text-center text-monospace";
                 document.getElementById("loading_box").appendChild(ele);
+                if (show) $(ele).fadeOut("slow");
+                if (!show) ele.style.display = "none";
             }
 
             //------------------------------
@@ -1986,12 +1988,12 @@ const
                     value: 0,
                     max,
                     update() {
-                        setTimeout(() => {
-                            let now = ++this.value;
-                            this.bar.style.width = `${Math.round((now / this.max) * 100)}%`;
-                            this.bar.setAttribute("aria-valuenow", now);
-                            this.lable.textContent = `[${now}/${this.max}]`;
-                        });
+                        let now = ++this.value,
+                            max = this.max,
+                            percent = `${Math.round((now / max) * 100)}%`;
+                        this.bar.style.width = percent;
+                        this.bar.setAttribute("aria-valuenow", now);
+                        this.lable.textContent = `[${now}/${max}] ${percent}`;
                     },
                 });
                 return true;
@@ -2147,6 +2149,7 @@ const
                     obj.list.forEach((item, index) => {
                         process(item, progress, obj.onclick, obj.type, index, iob);
                     });
+
                 }
                 console.timeEnd("addClickEventAndImg");
 
