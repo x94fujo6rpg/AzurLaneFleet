@@ -2117,7 +2117,7 @@ const ship_data = {
         ],
         "id": 9704014,
         "skin_id": 9704010,
-        "english_name": "Gneisenau.META !ENnoData !TWnoData",
+        "english_name": "Gneisenau.META !TWnoData",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -2126,7 +2126,7 @@ const ship_data = {
         "star_string": "★★★★★★",
         "rarity_string": "SSR",
         "jp_name": "グナイゼナウ(META)",
-        "en_name": "Gneisenau.META*",
+        "en_name": "Gneisenau META",
         "cn_name": "格奈森瑙·META",
         "tw_name": "格奈森瑙·META*",
         "equip_1": [

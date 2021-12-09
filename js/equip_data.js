@@ -781,7 +781,7 @@ const equip_data = {
         "jp_name": "潜水艦用九五式酸素魚雷改",
         "cn_name": "潜艇用95式纯氧鱼雷改",
         "tw_name": "潛艇用95式純氧魚雷改*",
-        "en_name": "(no DATA)",
+        "en_name": "Type 95 Kai Pure Oxygen Submarine Torpedo",
         "equip_limit": 0
     },
     "35540": {
@@ -9731,7 +9731,7 @@ const equip_data = {
         "jp_name": "試作型406mm連装砲Mk4",
         "cn_name": "试作型双联装406mm主炮Mk4",
         "tw_name": "試作型雙聯裝406mm主炮Mk4*",
-        "en_name": "(no DATA)",
+        "en_name": "Prototype Twin 406mm Mk4 Main Gun Mount",
         "equip_limit": 0
     },
     "14360": {
@@ -11178,7 +11178,7 @@ const equip_data = {
         "jp_name": "試作型150mmSKC28連装砲改",
         "cn_name": "试作型双联装SKC28式150mm主炮改",
         "tw_name": "試作型雙聯裝SKC28式150mm主炮改*",
-        "en_name": "(no DATA)",
+        "en_name": "Prototype Twin 150mm SK C/28 Main Gun Mount",
         "equip_limit": 0
     },
     "42340": {
@@ -11425,7 +11425,7 @@ const equip_data = {
         "jp_name": "試作型155mm三連装砲改",
         "cn_name": "试作型155mm三连装炮改",
         "tw_name": "試作型155mm三連裝炮改*",
-        "en_name": "(no DATA)",
+        "en_name": "Prototype Triple 155mm Kai Naval Gun Mount",
         "equip_limit": 0
     },
     "32240": {

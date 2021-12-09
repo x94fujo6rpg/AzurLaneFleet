@@ -21,7 +21,7 @@ now shoud load data from CN Wiki version **(irreversible)**
 
 ## Update  
 **2021-12-09**
-- now will only fetch icon that is missing form cache database
+- now will only fetch icon that is missing from cache database
   - unless there is a force update
 
 **2021-12-08**
