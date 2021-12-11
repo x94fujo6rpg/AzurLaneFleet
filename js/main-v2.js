@@ -848,7 +848,7 @@ const
                             tw: "", en: "", cn: "", jp: "",
                             icon: ui_table.empty_item, bg: "", frame: "",
                             target: "#shipselect",
-                            base: [],
+                            base: [], equip_p: [],
                             quantity: "",
                             ship_level: app._level_default.ship,
                         };
@@ -865,6 +865,7 @@ const
                             quantity: "",
                             equip_level: app._level_default.equip,
                             tech: "",
+                            proficiency: "",
                         };
                         item = eq;
                     }
@@ -1737,18 +1738,16 @@ const
                         //ship
                         ui_table.copy_ship.forEach(key => app_item[key] = "");
                         app_item.icon = shipInList.icon;
-                        app_item.base = [];
+                        app_item.equip_p = app_item.base = [];
                     } else {
                         //equip
                         Object.keys(app_item).filter(key => key != "equip_level").forEach(key => app_item[key] = "");
                         app_item.icon = ui_table.empty_disable;
-                        app_item.fb = [];
-                        app_item.type = [];
-                        /*app_item.target = "";
-                        app_item.quantity = "";*/
+                        app_item.fb = app_item.type = [];
                     }
                 } else {
                     //copy ship data & equip setting
+                    let equip_p = Object.assign([], shipInList.equip_p); // copy proficiency
                     if (index === "0") {
                         //ship
                         ui_table.copy_ship.forEach(key => app_item[key] = shipInList[key]);
@@ -1756,15 +1755,19 @@ const
                         app.setLevel("ship", skip_level, false);
                     } else {
                         //equip
-                        Object.keys(app_item).filter(key => key != "equip_level").forEach(key => app_item[key] = "");
                         let typelist = shipInList[`e${index}`],
                             itemindex = parseInt(index, 10) - 1,
                             quantity = shipInApp.item[0].property.base[itemindex];
+                        Object.keys(app_item).filter(key => key != "equip_level").forEach(key => app_item[key] = "");
                         app_item.type = typelist;
                         app_item.icon = ui_table.empty_item;
-                        if (quantity != undefined && typelist.some(eqtype => addQuantityList.has(eqtype))) {
-                            app_item.quantity = `x${quantity}`;
-                        }
+
+                        // add proficiency int 1.25 => 125
+                        if (index <= 3) app_item.proficiency = Math.round(equip_p[index - 1] * 100);
+
+                        // add quantity if that equip type need it
+                        if (quantity != undefined && typelist.some(eqtype => addQuantityList.has(eqtype))) app_item.quantity = `x${quantity}`;
+
                         // go through all type in ship's equip type list and add it in readable string
                         let type_str_arr = [[], [], [], []]; // for each language: tw cn en jp
                         typelist.forEach(type => {
@@ -2049,6 +2052,7 @@ const
                         painting: icon,
                         bg = "",
                         frame = "",
+                        eq_p: equip_p,
                     }) => {
                         icon = `shipicon/${icon.toLowerCase()}.png`;
                         bg = `ui/bg${rarity - 1}.png`;
@@ -2058,6 +2062,7 @@ const
                             type, nationality, rarity, star, retro,
                             base, e1, e2, e3, e4, e5,
                             icon, bg, frame,
+                            equip_p,
                         };
                     },
                     list = [], empty = {};
@@ -2856,7 +2861,7 @@ const
         empty_item: "ui/empty.png",
         empty_disable: "ui/icon_back.png",
         langs: ["tw", "cn", "en", "jp"],
-        copy_ship: ["tw", "cn", "en", "jp", "icon", "frame", "bg", "id", "type", "rarity", "star", "base"],
+        copy_ship: ["tw", "cn", "en", "jp", "icon", "frame", "bg", "id", "type", "rarity", "star", "base", "equip_p"],
         copy_equip: ["tw", "cn", "en", "jp", "icon", "frame", "bg", "id", "limit", "rarity", "tech"],
     },
     AFL_storage = window.localStorage,
@@ -2938,6 +2943,7 @@ Vue.component("item-container", {
                 <span class="ship_pos2" v-text="item.property.ship_pos" v-if="item.property.ship_pos"></span>
                 <span class="ship_level" v-text="item.property.ship_level" v-if="item.property.bg && item.property.ship_level > 0"></span>
                 <span class="equip_level" v-text="'+'+item.property.equip_level" v-if="item.property.bg && item.property.equip_level > 0"></span>
+                <span class="equip_proficiency text_shadow" v-text="item.property.proficiency+'%'" v-if="item.property.quantity && item.property.proficiency"></span>
               </div>
               <span class="item_name" v-text="item.property[lang]"></span>
             </div>

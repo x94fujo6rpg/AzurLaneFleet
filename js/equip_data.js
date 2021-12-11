@@ -2,11 +2,8 @@ const equip_data = {
     "3400": {
         "nationality": 3,
         "type": 18,
-        "attribute_2": null,
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 3400,
         "icon": "3400",
         "ship_type_forbidden": [
@@ -35,11 +32,8 @@ const equip_data = {
     "3540": {
         "nationality": 0,
         "type": 18,
-        "attribute_2": null,
         "rarity": 4,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 3540,
         "icon": "3540",
         "ship_type_forbidden": [
@@ -68,11 +62,8 @@ const equip_data = {
     "3500": {
         "nationality": 0,
         "type": 18,
-        "attribute_2": null,
         "rarity": 4,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 3500,
         "icon": "3500",
         "ship_type_forbidden": [
@@ -101,11 +92,8 @@ const equip_data = {
     "3520": {
         "nationality": 0,
         "type": 18,
-        "attribute_2": null,
         "rarity": 4,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 3520,
         "icon": "3520",
         "ship_type_forbidden": [
@@ -134,11 +122,8 @@ const equip_data = {
     "740": {
         "nationality": 4,
         "type": 17,
-        "attribute_2": null,
         "rarity": 4,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 740,
         "icon": "740",
         "ship_type_forbidden": [
@@ -167,11 +152,8 @@ const equip_data = {
     "4240": {
         "nationality": 2,
         "type": 15,
-        "attribute_2": "antisub",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 4240,
         "icon": "4200",
         "ship_type_forbidden": [
@@ -199,11 +181,8 @@ const equip_data = {
     "4220": {
         "nationality": 2,
         "type": 15,
-        "attribute_2": "antisub",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 4220,
         "icon": "4200",
         "ship_type_forbidden": [
@@ -231,11 +210,8 @@ const equip_data = {
     "4200": {
         "nationality": 2,
         "type": 15,
-        "attribute_2": "antisub",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 4200,
         "icon": "4200",
         "ship_type_forbidden": [
@@ -263,11 +239,8 @@ const equip_data = {
     "4340": {
         "nationality": 1,
         "type": 15,
-        "attribute_2": "antisub",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 4340,
         "icon": "4300",
         "ship_type_forbidden": [
@@ -295,11 +268,8 @@ const equip_data = {
     "4320": {
         "nationality": 1,
         "type": 15,
-        "attribute_2": "antisub",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 4320,
         "icon": "4300",
         "ship_type_forbidden": [
@@ -327,11 +297,8 @@ const equip_data = {
     "4300": {
         "nationality": 1,
         "type": 15,
-        "attribute_2": "antisub",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 4300,
         "icon": "4300",
         "ship_type_forbidden": [
@@ -359,11 +326,8 @@ const equip_data = {
     "4040": {
         "nationality": 2,
         "type": 14,
-        "attribute_2": "antisub",
         "rarity": 3,
         "tech": 3,
-        "ammo": 8,
-        "ammo_icon": [],
         "id": 4040,
         "icon": "4000",
         "ship_type_forbidden": [
@@ -391,11 +355,8 @@ const equip_data = {
     "4020": {
         "nationality": 2,
         "type": 14,
-        "attribute_2": "antisub",
         "rarity": 2,
         "tech": 2,
-        "ammo": 8,
-        "ammo_icon": [],
         "id": 4020,
         "icon": "4000",
         "ship_type_forbidden": [
@@ -423,11 +384,8 @@ const equip_data = {
     "4000": {
         "nationality": 2,
         "type": 14,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 8,
-        "ammo_icon": [],
         "id": 4000,
         "icon": "4000",
         "ship_type_forbidden": [
@@ -455,11 +413,8 @@ const equip_data = {
     "25800": {
         "nationality": 2,
         "type": 14,
-        "attribute_2": "antisub",
         "rarity": 5,
         "tech": 0,
-        "ammo": 9,
-        "ammo_icon": [],
         "id": 25800,
         "icon": "25800",
         "ship_type_forbidden": [
@@ -487,11 +442,8 @@ const equip_data = {
     "4140": {
         "nationality": 1,
         "type": 14,
-        "attribute_2": "antisub",
         "rarity": 4,
         "tech": 3,
-        "ammo": 8,
-        "ammo_icon": [],
         "id": 4140,
         "icon": "4100",
         "ship_type_forbidden": [
@@ -519,11 +471,8 @@ const equip_data = {
     "4120": {
         "nationality": 1,
         "type": 14,
-        "attribute_2": "antisub",
         "rarity": 3,
         "tech": 2,
-        "ammo": 8,
-        "ammo_icon": [],
         "id": 4120,
         "icon": "4100",
         "ship_type_forbidden": [
@@ -551,11 +500,8 @@ const equip_data = {
     "4100": {
         "nationality": 1,
         "type": 14,
-        "attribute_2": "antisub",
         "rarity": 2,
         "tech": 1,
-        "ammo": 8,
-        "ammo_icon": [],
         "id": 4100,
         "icon": "4100",
         "ship_type_forbidden": [
@@ -583,11 +529,8 @@ const equip_data = {
     "5540": {
         "nationality": 8,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 5540,
         "icon": "5500",
         "ship_type_forbidden": [],
@@ -600,11 +543,8 @@ const equip_data = {
     "5520": {
         "nationality": 8,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 5520,
         "icon": "5500",
         "ship_type_forbidden": [],
@@ -617,11 +557,8 @@ const equip_data = {
     "5500": {
         "nationality": 8,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 5500,
         "icon": "5500",
         "ship_type_forbidden": [],
@@ -634,11 +571,8 @@ const equip_data = {
     "95700": {
         "nationality": 6,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 95700,
         "icon": "55700",
         "ship_type_forbidden": [],
@@ -651,11 +585,8 @@ const equip_data = {
     "45440": {
         "nationality": 4,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 5,
         "tech": 3,
-        "ammo": 4,
-        "ammo_icon": [],
         "id": 45440,
         "icon": "45400",
         "ship_type_forbidden": [],
@@ -668,11 +599,8 @@ const equip_data = {
     "45420": {
         "nationality": 4,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 2,
-        "ammo": 4,
-        "ammo_icon": [],
         "id": 45420,
         "icon": "45400",
         "ship_type_forbidden": [],
@@ -685,11 +613,8 @@ const equip_data = {
     "45400": {
         "nationality": 4,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 1,
-        "ammo": 4,
-        "ammo_icon": [],
         "id": 45400,
         "icon": "45400",
         "ship_type_forbidden": [],
@@ -702,11 +627,8 @@ const equip_data = {
     "45340": {
         "nationality": 4,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 45340,
         "icon": "45300",
         "ship_type_forbidden": [],
@@ -719,11 +641,8 @@ const equip_data = {
     "45320": {
         "nationality": 4,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 45320,
         "icon": "45300",
         "ship_type_forbidden": [],
@@ -736,11 +655,8 @@ const equip_data = {
     "45300": {
         "nationality": 4,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 45300,
         "icon": "45300",
         "ship_type_forbidden": [],
@@ -753,11 +669,8 @@ const equip_data = {
     "35560": {
         "nationality": 3,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 5,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 35560,
         "icon": "35560",
         "ship_type_forbidden": [],
@@ -770,11 +683,8 @@ const equip_data = {
     "35580": {
         "nationality": 3,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 6,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 35580,
         "icon": "35580",
         "ship_type_forbidden": [],
@@ -787,11 +697,8 @@ const equip_data = {
     "35540": {
         "nationality": 3,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 5,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 35540,
         "icon": "35500",
         "ship_type_forbidden": [],
@@ -804,11 +711,8 @@ const equip_data = {
     "35520": {
         "nationality": 3,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 35520,
         "icon": "35500",
         "ship_type_forbidden": [],
@@ -821,11 +725,8 @@ const equip_data = {
     "35500": {
         "nationality": 3,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 35500,
         "icon": "35500",
         "ship_type_forbidden": [],
@@ -838,11 +739,8 @@ const equip_data = {
     "35460": {
         "nationality": 3,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 35460,
         "icon": "35460",
         "ship_type_forbidden": [],
@@ -855,11 +753,8 @@ const equip_data = {
     "35440": {
         "nationality": 3,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 35440,
         "icon": "35400",
         "ship_type_forbidden": [],
@@ -872,11 +767,8 @@ const equip_data = {
     "35420": {
         "nationality": 3,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 35420,
         "icon": "35400",
         "ship_type_forbidden": [],
@@ -889,11 +781,8 @@ const equip_data = {
     "35400": {
         "nationality": 3,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 35400,
         "icon": "35400",
         "ship_type_forbidden": [],
@@ -906,11 +795,8 @@ const equip_data = {
     "25140": {
         "nationality": 2,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 25140,
         "icon": "25100",
         "ship_type_forbidden": [],
@@ -923,11 +809,8 @@ const equip_data = {
     "25120": {
         "nationality": 2,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 25120,
         "icon": "25100",
         "ship_type_forbidden": [],
@@ -940,11 +823,8 @@ const equip_data = {
     "25100": {
         "nationality": 2,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 25100,
         "icon": "25100",
         "ship_type_forbidden": [],
@@ -957,11 +837,8 @@ const equip_data = {
     "25300": {
         "nationality": 2,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 5,
         "tech": 0,
-        "ammo": 4,
-        "ammo_icon": [],
         "id": 25300,
         "icon": "25300",
         "ship_type_forbidden": [],
@@ -974,11 +851,8 @@ const equip_data = {
     "25200": {
         "nationality": 2,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 25200,
         "icon": "25200",
         "ship_type_forbidden": [],
@@ -991,11 +865,8 @@ const equip_data = {
     "15160": {
         "nationality": 1,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 5,
         "tech": 0,
-        "ammo": 4,
-        "ammo_icon": [],
         "id": 15160,
         "icon": "15160",
         "ship_type_forbidden": [],
@@ -1008,11 +879,8 @@ const equip_data = {
     "15060": {
         "nationality": 1,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 0,
-        "ammo": 4,
-        "ammo_icon": [],
         "id": 15060,
         "icon": "15060",
         "ship_type_forbidden": [],
@@ -1025,11 +893,8 @@ const equip_data = {
     "15140": {
         "nationality": 1,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 5,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 15140,
         "icon": "15100",
         "ship_type_forbidden": [],
@@ -1042,11 +907,8 @@ const equip_data = {
     "15120": {
         "nationality": 1,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 15120,
         "icon": "15100",
         "ship_type_forbidden": [],
@@ -1059,11 +921,8 @@ const equip_data = {
     "15100": {
         "nationality": 1,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 15100,
         "icon": "15100",
         "ship_type_forbidden": [],
@@ -1076,11 +935,8 @@ const equip_data = {
     "15040": {
         "nationality": 1,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 15040,
         "icon": "15000",
         "ship_type_forbidden": [],
@@ -1093,11 +949,8 @@ const equip_data = {
     "15020": {
         "nationality": 1,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 15020,
         "icon": "15000",
         "ship_type_forbidden": [],
@@ -1110,11 +963,8 @@ const equip_data = {
     "15000": {
         "nationality": 1,
         "type": 13,
-        "attribute_2": "torpedo",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 15000,
         "icon": "15000",
         "ship_type_forbidden": [],
@@ -1127,11 +977,8 @@ const equip_data = {
     "39240": {
         "nationality": 3,
         "type": 12,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 39240,
         "icon": "39200",
         "ship_type_forbidden": [],
@@ -1144,11 +991,8 @@ const equip_data = {
     "39220": {
         "nationality": 3,
         "type": 12,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 39220,
         "icon": "39200",
         "ship_type_forbidden": [],
@@ -1161,11 +1005,8 @@ const equip_data = {
     "39200": {
         "nationality": 3,
         "type": 12,
-        "attribute_2": null,
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 39200,
         "icon": "39200",
         "ship_type_forbidden": [],
@@ -1178,11 +1019,8 @@ const equip_data = {
     "39300": {
         "nationality": 3,
         "type": 12,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 39300,
         "icon": "39300",
         "ship_type_forbidden": [],
@@ -1195,11 +1033,8 @@ const equip_data = {
     "37440": {
         "nationality": 3,
         "type": 12,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 37440,
         "icon": "37440",
         "ship_type_forbidden": [],
@@ -1212,11 +1047,8 @@ const equip_data = {
     "37420": {
         "nationality": 3,
         "type": 12,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 37420,
         "icon": "37420",
         "ship_type_forbidden": [],
@@ -1229,13 +1061,8 @@ const equip_data = {
     "44400": {
         "nationality": 4,
         "type": 11,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 44400,
         "icon": "44400",
         "ship_type_forbidden": [
@@ -1250,13 +1077,8 @@ const equip_data = {
     "43140": {
         "nationality": 4,
         "type": 11,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 43140,
         "icon": "43100",
         "ship_type_forbidden": [],
@@ -1269,13 +1091,8 @@ const equip_data = {
     "43120": {
         "nationality": 4,
         "type": 11,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 43120,
         "icon": "43100",
         "ship_type_forbidden": [],
@@ -1288,13 +1105,8 @@ const equip_data = {
     "43100": {
         "nationality": 4,
         "type": 11,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 43100,
         "icon": "43100",
         "ship_type_forbidden": [],
@@ -1307,13 +1119,8 @@ const equip_data = {
     "33100": {
         "nationality": 3,
         "type": 11,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 33100,
         "icon": "33100",
         "ship_type_forbidden": [
@@ -1328,11 +1135,8 @@ const equip_data = {
     "89300": {
         "nationality": 108,
         "type": 10,
-        "attribute_2": "dodge",
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 89300,
         "icon": "89300",
         "ship_type_forbidden": [],
@@ -1345,11 +1149,8 @@ const equip_data = {
     "89340": {
         "nationality": 108,
         "type": 10,
-        "attribute_2": null,
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 89340,
         "icon": "89340",
         "ship_type_forbidden": [],
@@ -1362,11 +1163,8 @@ const equip_data = {
     "89380": {
         "nationality": 108,
         "type": 10,
-        "attribute_2": null,
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 89380,
         "icon": "89380",
         "ship_type_forbidden": [
@@ -1388,11 +1186,8 @@ const equip_data = {
     "89360": {
         "nationality": 108,
         "type": 10,
-        "attribute_2": null,
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 89360,
         "icon": "89360",
         "ship_type_forbidden": [],
@@ -1405,11 +1200,8 @@ const equip_data = {
     "89400": {
         "nationality": 108,
         "type": 10,
-        "attribute_2": null,
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 89400,
         "icon": "89400",
         "ship_type_forbidden": [],
@@ -1422,11 +1214,8 @@ const equip_data = {
     "89320": {
         "nationality": 108,
         "type": 10,
-        "attribute_2": null,
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 89320,
         "icon": "89320",
         "ship_type_forbidden": [],
@@ -1439,11 +1228,8 @@ const equip_data = {
     "89280": {
         "nationality": 107,
         "type": 10,
-        "attribute_2": "hit",
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 89280,
         "icon": "89280",
         "ship_type_forbidden": [],
@@ -1456,11 +1242,8 @@ const equip_data = {
     "89240": {
         "nationality": 106,
         "type": 10,
-        "attribute_2": "hit",
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 89240,
         "icon": "89240",
         "ship_type_forbidden": [],
@@ -1473,11 +1256,8 @@ const equip_data = {
     "89260": {
         "nationality": 106,
         "type": 10,
-        "attribute_2": "hit",
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 89260,
         "icon": "89260",
         "ship_type_forbidden": [],
@@ -1490,11 +1270,8 @@ const equip_data = {
     "89100": {
         "nationality": 105,
         "type": 10,
-        "attribute_2": "durability",
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 89100,
         "icon": "89100",
         "ship_type_forbidden": [],
@@ -1507,11 +1284,8 @@ const equip_data = {
     "89060": {
         "nationality": 105,
         "type": 10,
-        "attribute_2": "hit",
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 89060,
         "icon": "89060",
         "ship_type_forbidden": [],
@@ -1524,11 +1298,8 @@ const equip_data = {
     "89080": {
         "nationality": 105,
         "type": 10,
-        "attribute_2": null,
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 89080,
         "icon": "89080",
         "ship_type_forbidden": [],
@@ -1541,11 +1312,8 @@ const equip_data = {
     "89120": {
         "nationality": 105,
         "type": 10,
-        "attribute_2": "speed",
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 89120,
         "icon": "89120",
         "ship_type_forbidden": [],
@@ -1558,11 +1326,8 @@ const equip_data = {
     "89000": {
         "nationality": 104,
         "type": 10,
-        "attribute_2": "dodge",
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 89000,
         "icon": "89000",
         "ship_type_forbidden": [],
@@ -1575,11 +1340,8 @@ const equip_data = {
     "89040": {
         "nationality": 104,
         "type": 10,
-        "attribute_2": "speed",
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 89040,
         "icon": "89040",
         "ship_type_forbidden": [],
@@ -1592,11 +1354,8 @@ const equip_data = {
     "89020": {
         "nationality": 104,
         "type": 10,
-        "attribute_2": "luck",
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 89020,
         "icon": "89020",
         "ship_type_forbidden": [],
@@ -1609,11 +1368,8 @@ const equip_data = {
     "1960": {
         "nationality": 7,
         "type": 10,
-        "attribute_2": "durability",
         "rarity": 4,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1960,
         "icon": "1960",
         "ship_type_forbidden": [],
@@ -1626,11 +1382,8 @@ const equip_data = {
     "3300": {
         "nationality": 5,
         "type": 10,
-        "attribute_2": null,
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 3300,
         "icon": "3300",
         "ship_type_forbidden": [
@@ -1659,11 +1412,8 @@ const equip_data = {
     "720": {
         "nationality": 4,
         "type": 10,
-        "attribute_2": "durability",
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 720,
         "icon": "720",
         "ship_type_forbidden": [
@@ -1689,11 +1439,8 @@ const equip_data = {
     "3140": {
         "nationality": 4,
         "type": 10,
-        "attribute_2": null,
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 3140,
         "icon": "3140",
         "ship_type_forbidden": [
@@ -1721,11 +1468,8 @@ const equip_data = {
     "3120": {
         "nationality": 4,
         "type": 10,
-        "attribute_2": null,
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 3120,
         "icon": "3120",
         "ship_type_forbidden": [
@@ -1753,11 +1497,8 @@ const equip_data = {
     "800": {
         "nationality": 4,
         "type": 10,
-        "attribute_2": "durability",
         "rarity": 4,
         "tech": 2,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 800,
         "icon": "800",
         "ship_type_forbidden": [
@@ -1785,11 +1526,8 @@ const equip_data = {
     "960": {
         "nationality": 4,
         "type": 10,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 960,
         "icon": "960",
         "ship_type_forbidden": [
@@ -1811,11 +1549,8 @@ const equip_data = {
     "2740": {
         "nationality": 4,
         "type": 10,
-        "attribute_2": "hit",
         "rarity": 5,
         "tech": 3,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 2740,
         "icon": "2700",
         "ship_type_forbidden": [
@@ -1839,11 +1574,8 @@ const equip_data = {
     "540": {
         "nationality": 3,
         "type": 10,
-        "attribute_2": null,
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 540,
         "icon": "540",
         "ship_type_forbidden": [],
@@ -1856,11 +1588,8 @@ const equip_data = {
     "700": {
         "nationality": 3,
         "type": 10,
-        "attribute_2": null,
         "rarity": 4,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 700,
         "icon": "700",
         "ship_type_forbidden": [
@@ -1886,11 +1615,8 @@ const equip_data = {
     "2640": {
         "nationality": 3,
         "type": 10,
-        "attribute_2": "reload",
         "rarity": 6,
         "tech": 3,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 2640,
         "icon": "2600",
         "ship_type_forbidden": [
@@ -1912,11 +1638,8 @@ const equip_data = {
     "580": {
         "nationality": 3,
         "type": 10,
-        "attribute_2": "hit",
         "rarity": 4,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 580,
         "icon": "580",
         "ship_type_forbidden": [
@@ -1942,11 +1665,8 @@ const equip_data = {
     "600": {
         "nationality": 3,
         "type": 10,
-        "attribute_2": "hit",
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 600,
         "icon": "600",
         "ship_type_forbidden": [
@@ -1972,11 +1692,8 @@ const equip_data = {
     "640": {
         "nationality": 3,
         "type": 10,
-        "attribute_2": "hit",
         "rarity": 6,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 640,
         "icon": "640",
         "ship_type_forbidden": [
@@ -2002,11 +1719,8 @@ const equip_data = {
     "3200": {
         "nationality": 3,
         "type": 10,
-        "attribute_2": null,
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 3200,
         "icon": "3200",
         "ship_type_forbidden": [
@@ -2031,11 +1745,8 @@ const equip_data = {
     "3220": {
         "nationality": 3,
         "type": 10,
-        "attribute_2": null,
         "rarity": 4,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 3220,
         "icon": "3220",
         "ship_type_forbidden": [
@@ -2060,11 +1771,8 @@ const equip_data = {
     "2800": {
         "nationality": 3,
         "type": 10,
-        "attribute_2": "hit",
         "rarity": 4,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 2800,
         "icon": "2800",
         "ship_type_forbidden": [],
@@ -2077,11 +1785,8 @@ const equip_data = {
     "1160": {
         "nationality": 2,
         "type": 10,
-        "attribute_2": null,
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1160,
         "icon": "1160",
         "ship_type_forbidden": [],
@@ -2094,11 +1799,8 @@ const equip_data = {
     "680": {
         "nationality": 2,
         "type": 10,
-        "attribute_2": null,
         "rarity": 4,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 680,
         "icon": "680",
         "ship_type_forbidden": [
@@ -2124,11 +1826,8 @@ const equip_data = {
     "880": {
         "nationality": 2,
         "type": 10,
-        "attribute_2": "hit",
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 880,
         "icon": "880",
         "ship_type_forbidden": [
@@ -2155,11 +1854,8 @@ const equip_data = {
     "1260": {
         "nationality": 1,
         "type": 10,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1260,
         "icon": "1260",
         "ship_type_forbidden": [
@@ -2185,11 +1881,8 @@ const equip_data = {
     "840": {
         "nationality": 1,
         "type": 10,
-        "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 840,
         "icon": "840",
         "ship_type_forbidden": [],
@@ -2202,11 +1895,8 @@ const equip_data = {
     "520": {
         "nationality": 1,
         "type": 10,
-        "attribute_2": null,
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 520,
         "icon": "520",
         "ship_type_forbidden": [],
@@ -2219,11 +1909,8 @@ const equip_data = {
     "1240": {
         "nationality": 1,
         "type": 10,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1240,
         "icon": "1200",
         "ship_type_forbidden": [
@@ -2245,11 +1932,8 @@ const equip_data = {
     "1220": {
         "nationality": 1,
         "type": 10,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1220,
         "icon": "1200",
         "ship_type_forbidden": [
@@ -2271,11 +1955,8 @@ const equip_data = {
     "1200": {
         "nationality": 1,
         "type": 10,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1200,
         "icon": "1200",
         "ship_type_forbidden": [
@@ -2297,11 +1978,8 @@ const equip_data = {
     "1760": {
         "nationality": 1,
         "type": 10,
-        "attribute_2": "durability",
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1760,
         "icon": "1760",
         "ship_type_forbidden": [],
@@ -2314,11 +1992,8 @@ const equip_data = {
     "1140": {
         "nationality": 1,
         "type": 10,
-        "attribute_2": null,
         "rarity": 4,
         "tech": 3,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1140,
         "icon": "1100",
         "ship_type_forbidden": [],
@@ -2331,11 +2006,8 @@ const equip_data = {
     "1120": {
         "nationality": 1,
         "type": 10,
-        "attribute_2": null,
         "rarity": 3,
         "tech": 2,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1120,
         "icon": "1100",
         "ship_type_forbidden": [],
@@ -2348,11 +2020,8 @@ const equip_data = {
     "1100": {
         "nationality": 1,
         "type": 10,
-        "attribute_2": null,
         "rarity": 2,
         "tech": 1,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1100,
         "icon": "1100",
         "ship_type_forbidden": [],
@@ -2365,11 +2034,8 @@ const equip_data = {
     "940": {
         "nationality": 1,
         "type": 10,
-        "attribute_2": null,
         "rarity": 4,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 940,
         "icon": "940",
         "ship_type_forbidden": [],
@@ -2382,11 +2048,8 @@ const equip_data = {
     "500": {
         "nationality": 1,
         "type": 10,
-        "attribute_2": "durability",
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 500,
         "icon": "500",
         "ship_type_forbidden": [],
@@ -2399,11 +2062,8 @@ const equip_data = {
     "620": {
         "nationality": 1,
         "type": 10,
-        "attribute_2": null,
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 620,
         "icon": "620",
         "ship_type_forbidden": [
@@ -2429,11 +2089,8 @@ const equip_data = {
     "1540": {
         "nationality": 1,
         "type": 10,
-        "attribute_2": "dodge",
         "rarity": 5,
         "tech": 3,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1540,
         "icon": "1500",
         "ship_type_forbidden": [
@@ -2449,11 +2106,8 @@ const equip_data = {
     "1520": {
         "nationality": 1,
         "type": 10,
-        "attribute_2": "dodge",
         "rarity": 4,
         "tech": 2,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1520,
         "icon": "1500",
         "ship_type_forbidden": [
@@ -2469,11 +2123,8 @@ const equip_data = {
     "1500": {
         "nationality": 1,
         "type": 10,
-        "attribute_2": "dodge",
         "rarity": 3,
         "tech": 1,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1500,
         "icon": "1500",
         "ship_type_forbidden": [
@@ -2489,11 +2140,8 @@ const equip_data = {
     "15500": {
         "nationality": 1,
         "type": 10,
-        "attribute_2": "antisub",
         "rarity": 4,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 15500,
         "icon": "15500",
         "ship_type_forbidden": [
@@ -2517,11 +2165,8 @@ const equip_data = {
     "660": {
         "nationality": 1,
         "type": 10,
-        "attribute_2": null,
         "rarity": 4,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 660,
         "icon": "660",
         "ship_type_forbidden": [
@@ -2547,11 +2192,8 @@ const equip_data = {
     "1640": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1640,
         "icon": "1600",
         "ship_type_forbidden": [
@@ -2567,11 +2209,8 @@ const equip_data = {
     "1620": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1620,
         "icon": "1600",
         "ship_type_forbidden": [
@@ -2587,11 +2226,8 @@ const equip_data = {
     "1600": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1600,
         "icon": "1600",
         "ship_type_forbidden": [
@@ -2607,11 +2243,8 @@ const equip_data = {
     "1940": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "durability",
         "rarity": 3,
         "tech": 3,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1940,
         "icon": "1900",
         "ship_type_forbidden": [],
@@ -2624,11 +2257,8 @@ const equip_data = {
     "1920": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "durability",
         "rarity": 2,
         "tech": 2,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1920,
         "icon": "1900",
         "ship_type_forbidden": [],
@@ -2641,11 +2271,8 @@ const equip_data = {
     "1900": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "durability",
         "rarity": 1,
         "tech": 1,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1900,
         "icon": "1900",
         "ship_type_forbidden": [],
@@ -2658,11 +2285,8 @@ const equip_data = {
     "89180": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "hit",
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 89180,
         "icon": "89180",
         "ship_type_forbidden": [],
@@ -2675,11 +2299,8 @@ const equip_data = {
     "1040": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": null,
         "rarity": 5,
         "tech": 3,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1040,
         "icon": "1000",
         "ship_type_forbidden": [
@@ -2708,11 +2329,8 @@ const equip_data = {
     "1020": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": null,
         "rarity": 4,
         "tech": 2,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1020,
         "icon": "1000",
         "ship_type_forbidden": [
@@ -2741,11 +2359,8 @@ const equip_data = {
     "1000": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": null,
         "rarity": 3,
         "tech": 1,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1000,
         "icon": "1000",
         "ship_type_forbidden": [
@@ -2774,11 +2389,8 @@ const equip_data = {
     "2240": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 2240,
         "icon": "2200",
         "ship_type_forbidden": [
@@ -2794,11 +2406,8 @@ const equip_data = {
     "2220": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 2220,
         "icon": "2200",
         "ship_type_forbidden": [
@@ -2814,11 +2423,8 @@ const equip_data = {
     "2200": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 2200,
         "icon": "2200",
         "ship_type_forbidden": [
@@ -2834,11 +2440,8 @@ const equip_data = {
     "2140": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "durability",
         "rarity": 4,
         "tech": 3,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 2140,
         "icon": "2100",
         "ship_type_forbidden": [
@@ -2864,11 +2467,8 @@ const equip_data = {
     "2120": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "durability",
         "rarity": 3,
         "tech": 2,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 2120,
         "icon": "2100",
         "ship_type_forbidden": [
@@ -2894,11 +2494,8 @@ const equip_data = {
     "2100": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "durability",
         "rarity": 2,
         "tech": 1,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 2100,
         "icon": "2100",
         "ship_type_forbidden": [
@@ -2924,11 +2521,8 @@ const equip_data = {
     "89160": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "hit",
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 89160,
         "icon": "89160",
         "ship_type_forbidden": [],
@@ -2941,11 +2535,8 @@ const equip_data = {
     "2040": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "dodge",
         "rarity": 4,
         "tech": 3,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 2040,
         "icon": "2000",
         "ship_type_forbidden": [],
@@ -2958,11 +2549,8 @@ const equip_data = {
     "2020": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "dodge",
         "rarity": 3,
         "tech": 2,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 2020,
         "icon": "2000",
         "ship_type_forbidden": [],
@@ -2975,11 +2563,8 @@ const equip_data = {
     "2000": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "dodge",
         "rarity": 2,
         "tech": 1,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 2000,
         "icon": "2000",
         "ship_type_forbidden": [],
@@ -2992,11 +2577,8 @@ const equip_data = {
     "89140": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "hit",
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 89140,
         "icon": "89140",
         "ship_type_forbidden": [],
@@ -3009,11 +2591,8 @@ const equip_data = {
     "2540": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": null,
         "rarity": 3,
         "tech": 3,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 2540,
         "icon": "2500",
         "ship_type_forbidden": [],
@@ -3026,11 +2605,8 @@ const equip_data = {
     "2520": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": null,
         "rarity": 2,
         "tech": 2,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 2520,
         "icon": "2500",
         "ship_type_forbidden": [],
@@ -3043,11 +2619,8 @@ const equip_data = {
     "2500": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 2500,
         "icon": "2500",
         "ship_type_forbidden": [],
@@ -3060,11 +2633,8 @@ const equip_data = {
     "860": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "hit",
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 860,
         "icon": "860",
         "ship_type_forbidden": [],
@@ -3077,11 +2647,8 @@ const equip_data = {
     "1740": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "durability",
         "rarity": 3,
         "tech": 3,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1740,
         "icon": "1700",
         "ship_type_forbidden": [],
@@ -3094,11 +2661,8 @@ const equip_data = {
     "1720": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "durability",
         "rarity": 2,
         "tech": 2,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1720,
         "icon": "1700",
         "ship_type_forbidden": [],
@@ -3111,11 +2675,8 @@ const equip_data = {
     "1700": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "durability",
         "rarity": 1,
         "tech": 1,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1700,
         "icon": "1700",
         "ship_type_forbidden": [],
@@ -3128,11 +2689,8 @@ const equip_data = {
     "1440": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "durability",
         "rarity": 5,
         "tech": 3,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1440,
         "icon": "1400",
         "ship_type_forbidden": [
@@ -3158,11 +2716,8 @@ const equip_data = {
     "1420": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "durability",
         "rarity": 4,
         "tech": 2,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1420,
         "icon": "1400",
         "ship_type_forbidden": [
@@ -3188,11 +2743,8 @@ const equip_data = {
     "1400": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "durability",
         "rarity": 3,
         "tech": 1,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1400,
         "icon": "1400",
         "ship_type_forbidden": [
@@ -3218,11 +2770,8 @@ const equip_data = {
     "1840": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "speed",
         "rarity": 4,
         "tech": 3,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1840,
         "icon": "1800",
         "ship_type_forbidden": [],
@@ -3235,11 +2784,8 @@ const equip_data = {
     "1820": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "speed",
         "rarity": 3,
         "tech": 2,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1820,
         "icon": "1800",
         "ship_type_forbidden": [],
@@ -3252,11 +2798,8 @@ const equip_data = {
     "1800": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "speed",
         "rarity": 2,
         "tech": 1,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1800,
         "icon": "1800",
         "ship_type_forbidden": [],
@@ -3269,11 +2812,8 @@ const equip_data = {
     "3040": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "hit",
         "rarity": 5,
         "tech": 3,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 3040,
         "icon": "3000",
         "ship_type_forbidden": [
@@ -3301,11 +2841,8 @@ const equip_data = {
     "3020": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "hit",
         "rarity": 4,
         "tech": 2,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 3020,
         "icon": "3000",
         "ship_type_forbidden": [
@@ -3333,11 +2870,8 @@ const equip_data = {
     "3000": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "hit",
         "rarity": 3,
         "tech": 1,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 3000,
         "icon": "3000",
         "ship_type_forbidden": [
@@ -3365,11 +2899,8 @@ const equip_data = {
     "780": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "durability",
         "rarity": 4,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 780,
         "icon": "780",
         "ship_type_forbidden": [],
@@ -3382,11 +2913,8 @@ const equip_data = {
     "2440": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": null,
         "rarity": 4,
         "tech": 3,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 2440,
         "icon": "2400",
         "ship_type_forbidden": [],
@@ -3399,11 +2927,8 @@ const equip_data = {
     "2420": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": null,
         "rarity": 3,
         "tech": 2,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 2420,
         "icon": "2400",
         "ship_type_forbidden": [],
@@ -3416,11 +2941,8 @@ const equip_data = {
     "2400": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": null,
         "rarity": 2,
         "tech": 1,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 2400,
         "icon": "2400",
         "ship_type_forbidden": [],
@@ -3433,11 +2955,8 @@ const equip_data = {
     "2940": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "hit",
         "rarity": 4,
         "tech": 3,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 2940,
         "icon": "2900",
         "ship_type_forbidden": [
@@ -3465,11 +2984,8 @@ const equip_data = {
     "2920": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "hit",
         "rarity": 3,
         "tech": 2,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 2920,
         "icon": "2900",
         "ship_type_forbidden": [
@@ -3497,11 +3013,8 @@ const equip_data = {
     "2900": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "hit",
         "rarity": 2,
         "tech": 1,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 2900,
         "icon": "2900",
         "ship_type_forbidden": [
@@ -3529,11 +3042,8 @@ const equip_data = {
     "3100": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": null,
         "rarity": 4,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 3100,
         "icon": "3100",
         "ship_type_forbidden": [
@@ -3561,11 +3071,8 @@ const equip_data = {
     "760": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "durability",
         "rarity": 4,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 760,
         "icon": "760",
         "ship_type_forbidden": [],
@@ -3578,11 +3085,8 @@ const equip_data = {
     "820": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "durability",
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 820,
         "icon": "820",
         "ship_type_forbidden": [
@@ -3610,11 +3114,8 @@ const equip_data = {
     "1340": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": null,
         "rarity": 4,
         "tech": 3,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1340,
         "icon": "1300",
         "ship_type_forbidden": [
@@ -3631,11 +3132,8 @@ const equip_data = {
     "1320": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": null,
         "rarity": 3,
         "tech": 2,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1320,
         "icon": "1300",
         "ship_type_forbidden": [
@@ -3652,11 +3150,8 @@ const equip_data = {
     "1300": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": null,
         "rarity": 2,
         "tech": 1,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 1300,
         "icon": "1300",
         "ship_type_forbidden": [
@@ -3673,11 +3168,8 @@ const equip_data = {
     "89220": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": null,
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 89220,
         "icon": "89220",
         "ship_type_forbidden": [],
@@ -3690,11 +3182,8 @@ const equip_data = {
     "2340": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "speed",
         "rarity": 4,
         "tech": 3,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 2340,
         "icon": "2300",
         "ship_type_forbidden": [
@@ -3710,11 +3199,8 @@ const equip_data = {
     "2320": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "speed",
         "rarity": 3,
         "tech": 2,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 2320,
         "icon": "2300",
         "ship_type_forbidden": [
@@ -3730,11 +3216,8 @@ const equip_data = {
     "2300": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "speed",
         "rarity": 2,
         "tech": 1,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 2300,
         "icon": "2300",
         "ship_type_forbidden": [
@@ -3750,11 +3233,8 @@ const equip_data = {
     "89200": {
         "nationality": 0,
         "type": 10,
-        "attribute_2": "speed",
         "rarity": 5,
         "tech": 0,
-        "ammo": 10,
-        "ammo_icon": [],
         "id": 89200,
         "icon": "89200",
         "ship_type_forbidden": [],
@@ -3767,11 +3247,8 @@ const equip_data = {
     "49040": {
         "nationality": 4,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 49040,
         "icon": "49000",
         "ship_type_forbidden": [
@@ -3786,11 +3263,8 @@ const equip_data = {
     "49020": {
         "nationality": 4,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 49020,
         "icon": "49000",
         "ship_type_forbidden": [
@@ -3805,11 +3279,8 @@ const equip_data = {
     "49000": {
         "nationality": 4,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 49000,
         "icon": "49000",
         "ship_type_forbidden": [
@@ -3824,11 +3295,8 @@ const equip_data = {
     "49060": {
         "nationality": 4,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 49060,
         "icon": "49060",
         "ship_type_forbidden": [
@@ -3843,11 +3311,8 @@ const equip_data = {
     "39340": {
         "nationality": 3,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 6,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 39340,
         "icon": "39340",
         "ship_type_forbidden": [
@@ -3862,11 +3327,8 @@ const equip_data = {
     "39320": {
         "nationality": 3,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 39320,
         "icon": "39320",
         "ship_type_forbidden": [
@@ -3898,11 +3360,8 @@ const equip_data = {
     "39160": {
         "nationality": 3,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 39160,
         "icon": "39160",
         "ship_type_forbidden": [
@@ -3917,11 +3376,8 @@ const equip_data = {
     "39140": {
         "nationality": 3,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 39140,
         "icon": "39100",
         "ship_type_forbidden": [
@@ -3936,11 +3392,8 @@ const equip_data = {
     "39120": {
         "nationality": 3,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 39120,
         "icon": "39100",
         "ship_type_forbidden": [
@@ -3955,11 +3408,8 @@ const equip_data = {
     "39100": {
         "nationality": 3,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 39100,
         "icon": "39100",
         "ship_type_forbidden": [
@@ -3974,11 +3424,8 @@ const equip_data = {
     "39060": {
         "nationality": 3,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 39060,
         "icon": "39060",
         "ship_type_forbidden": [
@@ -3993,11 +3440,8 @@ const equip_data = {
     "39040": {
         "nationality": 3,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 39040,
         "icon": "39000",
         "ship_type_forbidden": [
@@ -4012,11 +3456,8 @@ const equip_data = {
     "39020": {
         "nationality": 3,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 39020,
         "icon": "39000",
         "ship_type_forbidden": [
@@ -4031,11 +3472,8 @@ const equip_data = {
     "39000": {
         "nationality": 3,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 39000,
         "icon": "39000",
         "ship_type_forbidden": [
@@ -4050,11 +3488,8 @@ const equip_data = {
     "29140": {
         "nationality": 2,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 29140,
         "icon": "29100",
         "ship_type_forbidden": [
@@ -4069,11 +3504,8 @@ const equip_data = {
     "29120": {
         "nationality": 2,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 29120,
         "icon": "29100",
         "ship_type_forbidden": [
@@ -4088,11 +3520,8 @@ const equip_data = {
     "29100": {
         "nationality": 2,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 29100,
         "icon": "29100",
         "ship_type_forbidden": [
@@ -4107,11 +3536,8 @@ const equip_data = {
     "29200": {
         "nationality": 2,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 29200,
         "icon": "29200",
         "ship_type_forbidden": [
@@ -4126,11 +3552,8 @@ const equip_data = {
     "29300": {
         "nationality": 2,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 29300,
         "icon": "29300",
         "ship_type_forbidden": [
@@ -4145,11 +3568,8 @@ const equip_data = {
     "29040": {
         "nationality": 2,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 29040,
         "icon": "29000",
         "ship_type_forbidden": [
@@ -4164,11 +3584,8 @@ const equip_data = {
     "29020": {
         "nationality": 2,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 2,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 29020,
         "icon": "29000",
         "ship_type_forbidden": [
@@ -4183,11 +3600,8 @@ const equip_data = {
     "29000": {
         "nationality": 2,
         "type": 9,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 29000,
         "icon": "29000",
         "ship_type_forbidden": [
@@ -4202,11 +3616,8 @@ const equip_data = {
     "19160": {
         "nationality": 1,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 19160,
         "icon": "19160",
         "ship_type_forbidden": [
@@ -4221,11 +3632,8 @@ const equip_data = {
     "19060": {
         "nationality": 1,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 19060,
         "icon": "19060",
         "ship_type_forbidden": [
@@ -4240,11 +3648,8 @@ const equip_data = {
     "19040": {
         "nationality": 1,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 19040,
         "icon": "19000",
         "ship_type_forbidden": [
@@ -4259,11 +3664,8 @@ const equip_data = {
     "19020": {
         "nationality": 1,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 2,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 19020,
         "icon": "19000",
         "ship_type_forbidden": [
@@ -4278,11 +3680,8 @@ const equip_data = {
     "19000": {
         "nationality": 1,
         "type": 9,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 19000,
         "icon": "19000",
         "ship_type_forbidden": [
@@ -4297,11 +3696,8 @@ const equip_data = {
     "19140": {
         "nationality": 1,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 19140,
         "icon": "19100",
         "ship_type_forbidden": [
@@ -4316,11 +3712,8 @@ const equip_data = {
     "19120": {
         "nationality": 1,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 19120,
         "icon": "19100",
         "ship_type_forbidden": [
@@ -4335,11 +3728,8 @@ const equip_data = {
     "19100": {
         "nationality": 1,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 19100,
         "icon": "19100",
         "ship_type_forbidden": [
@@ -4354,11 +3744,8 @@ const equip_data = {
     "19240": {
         "nationality": 1,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 19240,
         "icon": "19200",
         "ship_type_forbidden": [
@@ -4373,11 +3760,8 @@ const equip_data = {
     "19220": {
         "nationality": 1,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 19220,
         "icon": "19200",
         "ship_type_forbidden": [
@@ -4392,11 +3776,8 @@ const equip_data = {
     "19200": {
         "nationality": 1,
         "type": 9,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 19200,
         "icon": "19200",
         "ship_type_forbidden": [
@@ -4411,11 +3792,8 @@ const equip_data = {
     "90840": {
         "nationality": 8,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 90840,
         "icon": "50840",
         "ship_type_forbidden": [
@@ -4430,11 +3808,8 @@ const equip_data = {
     "48040": {
         "nationality": 4,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 48040,
         "icon": "48040",
         "ship_type_forbidden": [
@@ -4449,11 +3824,8 @@ const equip_data = {
     "48020": {
         "nationality": 4,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 48020,
         "icon": "48020",
         "ship_type_forbidden": [
@@ -4468,11 +3840,8 @@ const equip_data = {
     "48000": {
         "nationality": 4,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 48000,
         "icon": "48000",
         "ship_type_forbidden": [
@@ -4487,11 +3856,8 @@ const equip_data = {
     "38300": {
         "nationality": 3,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 38300,
         "icon": "38300",
         "ship_type_forbidden": [
@@ -4506,11 +3872,8 @@ const equip_data = {
     "38240": {
         "nationality": 3,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 38240,
         "icon": "38200",
         "ship_type_forbidden": [
@@ -4525,11 +3888,8 @@ const equip_data = {
     "38220": {
         "nationality": 3,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 38220,
         "icon": "38200",
         "ship_type_forbidden": [
@@ -4544,11 +3904,8 @@ const equip_data = {
     "38200": {
         "nationality": 3,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 38200,
         "icon": "38200",
         "ship_type_forbidden": [
@@ -4563,11 +3920,8 @@ const equip_data = {
     "38160": {
         "nationality": 3,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 38160,
         "icon": "38160",
         "ship_type_forbidden": [
@@ -4582,11 +3936,8 @@ const equip_data = {
     "38140": {
         "nationality": 3,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 38140,
         "icon": "38100",
         "ship_type_forbidden": [
@@ -4601,11 +3952,8 @@ const equip_data = {
     "38120": {
         "nationality": 3,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 38120,
         "icon": "38100",
         "ship_type_forbidden": [
@@ -4620,11 +3968,8 @@ const equip_data = {
     "38100": {
         "nationality": 3,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 38100,
         "icon": "38100",
         "ship_type_forbidden": [
@@ -4639,11 +3984,8 @@ const equip_data = {
     "38060": {
         "nationality": 3,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 38060,
         "icon": "38060",
         "ship_type_forbidden": [
@@ -4658,11 +4000,8 @@ const equip_data = {
     "38040": {
         "nationality": 3,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 38040,
         "icon": "38000",
         "ship_type_forbidden": [
@@ -4677,11 +4016,8 @@ const equip_data = {
     "38020": {
         "nationality": 3,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 2,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 38020,
         "icon": "38000",
         "ship_type_forbidden": [
@@ -4696,11 +4032,8 @@ const equip_data = {
     "38000": {
         "nationality": 3,
         "type": 8,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 38000,
         "icon": "38000",
         "ship_type_forbidden": [
@@ -4715,11 +4048,8 @@ const equip_data = {
     "28400": {
         "nationality": 2,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 6,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 28400,
         "icon": "28400",
         "ship_type_forbidden": [
@@ -4734,11 +4064,8 @@ const equip_data = {
     "28340": {
         "nationality": 2,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 28340,
         "icon": "28300",
         "ship_type_forbidden": [
@@ -4753,11 +4080,8 @@ const equip_data = {
     "28320": {
         "nationality": 2,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 28320,
         "icon": "28300",
         "ship_type_forbidden": [
@@ -4772,11 +4096,8 @@ const equip_data = {
     "28300": {
         "nationality": 2,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 28300,
         "icon": "28300",
         "ship_type_forbidden": [
@@ -4791,11 +4112,8 @@ const equip_data = {
     "28200": {
         "nationality": 2,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 28200,
         "icon": "28200",
         "ship_type_forbidden": [
@@ -4810,11 +4128,8 @@ const equip_data = {
     "28220": {
         "nationality": 2,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 28220,
         "icon": "28220",
         "ship_type_forbidden": [
@@ -4829,11 +4144,8 @@ const equip_data = {
     "28140": {
         "nationality": 2,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 28140,
         "icon": "28100",
         "ship_type_forbidden": [
@@ -4848,11 +4160,8 @@ const equip_data = {
     "28120": {
         "nationality": 2,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 28120,
         "icon": "28100",
         "ship_type_forbidden": [
@@ -4867,11 +4176,8 @@ const equip_data = {
     "28100": {
         "nationality": 2,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 28100,
         "icon": "28100",
         "ship_type_forbidden": [
@@ -4886,11 +4192,8 @@ const equip_data = {
     "28060": {
         "nationality": 2,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 28060,
         "icon": "28060",
         "ship_type_forbidden": [
@@ -4905,11 +4208,8 @@ const equip_data = {
     "28040": {
         "nationality": 2,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 28040,
         "icon": "28000",
         "ship_type_forbidden": [
@@ -4924,11 +4224,8 @@ const equip_data = {
     "28020": {
         "nationality": 2,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 28020,
         "icon": "28000",
         "ship_type_forbidden": [
@@ -4943,11 +4240,8 @@ const equip_data = {
     "28000": {
         "nationality": 2,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 28000,
         "icon": "28000",
         "ship_type_forbidden": [
@@ -4962,11 +4256,8 @@ const equip_data = {
     "18220": {
         "nationality": 1,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 18220,
         "icon": "18220",
         "ship_type_forbidden": [
@@ -4981,11 +4272,8 @@ const equip_data = {
     "18180": {
         "nationality": 1,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 18180,
         "icon": "18180",
         "ship_type_forbidden": [
@@ -5000,11 +4288,8 @@ const equip_data = {
     "18140": {
         "nationality": 1,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 18140,
         "icon": "18100",
         "ship_type_forbidden": [
@@ -5019,11 +4304,8 @@ const equip_data = {
     "18120": {
         "nationality": 1,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 18120,
         "icon": "18100",
         "ship_type_forbidden": [
@@ -5038,11 +4320,8 @@ const equip_data = {
     "18100": {
         "nationality": 1,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 18100,
         "icon": "18100",
         "ship_type_forbidden": [
@@ -5057,11 +4336,8 @@ const equip_data = {
     "18060": {
         "nationality": 1,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 18060,
         "icon": "18060",
         "ship_type_forbidden": [
@@ -5076,11 +4352,8 @@ const equip_data = {
     "18040": {
         "nationality": 1,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 18040,
         "icon": "18000",
         "ship_type_forbidden": [
@@ -5095,11 +4368,8 @@ const equip_data = {
     "18020": {
         "nationality": 1,
         "type": 8,
-        "attribute_2": "air",
         "rarity": 2,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 18020,
         "icon": "18000",
         "ship_type_forbidden": [
@@ -5114,11 +4384,8 @@ const equip_data = {
     "18000": {
         "nationality": 1,
         "type": 8,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 18000,
         "icon": "18000",
         "ship_type_forbidden": [
@@ -5133,11 +4400,8 @@ const equip_data = {
     "90820": {
         "nationality": 8,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 90820,
         "icon": "50820",
         "ship_type_forbidden": [
@@ -5152,11 +4416,8 @@ const equip_data = {
     "95840": {
         "nationality": 6,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 95840,
         "icon": "55800",
         "ship_type_forbidden": [
@@ -5171,11 +4432,8 @@ const equip_data = {
     "95820": {
         "nationality": 6,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 95820,
         "icon": "55800",
         "ship_type_forbidden": [
@@ -5190,11 +4448,8 @@ const equip_data = {
     "95800": {
         "nationality": 6,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 95800,
         "icon": "55800",
         "ship_type_forbidden": [
@@ -5209,11 +4464,8 @@ const equip_data = {
     "95760": {
         "nationality": 6,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 95760,
         "icon": "55720",
         "ship_type_forbidden": [
@@ -5228,11 +4480,8 @@ const equip_data = {
     "95740": {
         "nationality": 6,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 95740,
         "icon": "55720",
         "ship_type_forbidden": [
@@ -5247,11 +4496,8 @@ const equip_data = {
     "95720": {
         "nationality": 6,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 95720,
         "icon": "55720",
         "ship_type_forbidden": [
@@ -5266,11 +4512,8 @@ const equip_data = {
     "47080": {
         "nationality": 4,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 47080,
         "icon": "47080",
         "ship_type_forbidden": [
@@ -5285,11 +4528,8 @@ const equip_data = {
     "47160": {
         "nationality": 4,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 47160,
         "icon": "47160",
         "ship_type_forbidden": [
@@ -5304,11 +4544,8 @@ const equip_data = {
     "47140": {
         "nationality": 4,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 47140,
         "icon": "47100",
         "ship_type_forbidden": [
@@ -5323,11 +4560,8 @@ const equip_data = {
     "47120": {
         "nationality": 4,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 47120,
         "icon": "47100",
         "ship_type_forbidden": [
@@ -5342,11 +4576,8 @@ const equip_data = {
     "47100": {
         "nationality": 4,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 47100,
         "icon": "47100",
         "ship_type_forbidden": [
@@ -5361,11 +4592,8 @@ const equip_data = {
     "47040": {
         "nationality": 4,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 47040,
         "icon": "47000",
         "ship_type_forbidden": [
@@ -5380,11 +4608,8 @@ const equip_data = {
     "47020": {
         "nationality": 4,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 47020,
         "icon": "47000",
         "ship_type_forbidden": [
@@ -5399,11 +4624,8 @@ const equip_data = {
     "47000": {
         "nationality": 4,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 47000,
         "icon": "47000",
         "ship_type_forbidden": [
@@ -5418,11 +4640,8 @@ const equip_data = {
     "47060": {
         "nationality": 4,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 47060,
         "icon": "47060",
         "ship_type_forbidden": [
@@ -5437,11 +4656,8 @@ const equip_data = {
     "37240": {
         "nationality": 3,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 37240,
         "icon": "37200",
         "ship_type_forbidden": [
@@ -5456,11 +4672,8 @@ const equip_data = {
     "37220": {
         "nationality": 3,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 37220,
         "icon": "37200",
         "ship_type_forbidden": [
@@ -5475,11 +4688,8 @@ const equip_data = {
     "37200": {
         "nationality": 3,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 37200,
         "icon": "37200",
         "ship_type_forbidden": [
@@ -5494,11 +4704,8 @@ const equip_data = {
     "37140": {
         "nationality": 3,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 37140,
         "icon": "37100",
         "ship_type_forbidden": [
@@ -5513,11 +4720,8 @@ const equip_data = {
     "37120": {
         "nationality": 3,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 37120,
         "icon": "37100",
         "ship_type_forbidden": [
@@ -5532,11 +4736,8 @@ const equip_data = {
     "37100": {
         "nationality": 3,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 37100,
         "icon": "37100",
         "ship_type_forbidden": [
@@ -5551,11 +4752,8 @@ const equip_data = {
     "37160": {
         "nationality": 3,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 37160,
         "icon": "37160",
         "ship_type_forbidden": [
@@ -5570,11 +4768,8 @@ const equip_data = {
     "37400": {
         "nationality": 3,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 37400,
         "icon": "37400",
         "ship_type_forbidden": [
@@ -5589,11 +4784,8 @@ const equip_data = {
     "37340": {
         "nationality": 3,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 37340,
         "icon": "37300",
         "ship_type_forbidden": [
@@ -5608,11 +4800,8 @@ const equip_data = {
     "37320": {
         "nationality": 3,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 37320,
         "icon": "37300",
         "ship_type_forbidden": [
@@ -5627,11 +4816,8 @@ const equip_data = {
     "37300": {
         "nationality": 3,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 37300,
         "icon": "37300",
         "ship_type_forbidden": [
@@ -5646,11 +4832,8 @@ const equip_data = {
     "37040": {
         "nationality": 3,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 37040,
         "icon": "37000",
         "ship_type_forbidden": [
@@ -5665,11 +4848,8 @@ const equip_data = {
     "37020": {
         "nationality": 3,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 2,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 37020,
         "icon": "37000",
         "ship_type_forbidden": [
@@ -5684,11 +4864,8 @@ const equip_data = {
     "37000": {
         "nationality": 3,
         "type": 7,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 37000,
         "icon": "37000",
         "ship_type_forbidden": [
@@ -5703,11 +4880,8 @@ const equip_data = {
     "27320": {
         "nationality": 2,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 27320,
         "icon": "27320",
         "ship_type_forbidden": [
@@ -5722,11 +4896,8 @@ const equip_data = {
     "27300": {
         "nationality": 2,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 27300,
         "icon": "27300",
         "ship_type_forbidden": [
@@ -5741,11 +4912,8 @@ const equip_data = {
     "27140": {
         "nationality": 2,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 27140,
         "icon": "27100",
         "ship_type_forbidden": [
@@ -5760,11 +4928,8 @@ const equip_data = {
     "27120": {
         "nationality": 2,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 27120,
         "icon": "27100",
         "ship_type_forbidden": [
@@ -5779,11 +4944,8 @@ const equip_data = {
     "27100": {
         "nationality": 2,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 27100,
         "icon": "27100",
         "ship_type_forbidden": [
@@ -5798,11 +4960,8 @@ const equip_data = {
     "27060": {
         "nationality": 2,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 27060,
         "icon": "27060",
         "ship_type_forbidden": [
@@ -5817,11 +4976,8 @@ const equip_data = {
     "27040": {
         "nationality": 2,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 27040,
         "icon": "27000",
         "ship_type_forbidden": [
@@ -5836,11 +4992,8 @@ const equip_data = {
     "27020": {
         "nationality": 2,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 27020,
         "icon": "27000",
         "ship_type_forbidden": [
@@ -5855,11 +5008,8 @@ const equip_data = {
     "27000": {
         "nationality": 2,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 27000,
         "icon": "27000",
         "ship_type_forbidden": [
@@ -5874,11 +5024,8 @@ const equip_data = {
     "27260": {
         "nationality": 2,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 27260,
         "icon": "27260",
         "ship_type_forbidden": [
@@ -5893,11 +5040,8 @@ const equip_data = {
     "27240": {
         "nationality": 2,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 27240,
         "icon": "27200",
         "ship_type_forbidden": [
@@ -5912,11 +5056,8 @@ const equip_data = {
     "27220": {
         "nationality": 2,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 2,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 27220,
         "icon": "27200",
         "ship_type_forbidden": [
@@ -5931,11 +5072,8 @@ const equip_data = {
     "27200": {
         "nationality": 2,
         "type": 7,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 27200,
         "icon": "27200",
         "ship_type_forbidden": [
@@ -5950,11 +5088,8 @@ const equip_data = {
     "17080": {
         "nationality": 1,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 17080,
         "icon": "17080",
         "ship_type_forbidden": [
@@ -5969,11 +5104,8 @@ const equip_data = {
     "17400": {
         "nationality": 1,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 17400,
         "icon": "17400",
         "ship_type_forbidden": [
@@ -5988,11 +5120,8 @@ const equip_data = {
     "17380": {
         "nationality": 1,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 17380,
         "icon": "17380",
         "ship_type_forbidden": [
@@ -6007,11 +5136,8 @@ const equip_data = {
     "17360": {
         "nationality": 1,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 17360,
         "icon": "17360",
         "ship_type_forbidden": [
@@ -6026,11 +5152,8 @@ const equip_data = {
     "17340": {
         "nationality": 1,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 17340,
         "icon": "17300",
         "ship_type_forbidden": [
@@ -6045,11 +5168,8 @@ const equip_data = {
     "17320": {
         "nationality": 1,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 17320,
         "icon": "17300",
         "ship_type_forbidden": [
@@ -6064,11 +5184,8 @@ const equip_data = {
     "17300": {
         "nationality": 1,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 17300,
         "icon": "17300",
         "ship_type_forbidden": [
@@ -6083,11 +5200,8 @@ const equip_data = {
     "17260": {
         "nationality": 1,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 17260,
         "icon": "17260",
         "ship_type_forbidden": [
@@ -6102,11 +5216,8 @@ const equip_data = {
     "17240": {
         "nationality": 1,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 17240,
         "icon": "17200",
         "ship_type_forbidden": [
@@ -6121,11 +5232,8 @@ const equip_data = {
     "17220": {
         "nationality": 1,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 17220,
         "icon": "17200",
         "ship_type_forbidden": [
@@ -6140,11 +5248,8 @@ const equip_data = {
     "17200": {
         "nationality": 1,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 17200,
         "icon": "17200",
         "ship_type_forbidden": [
@@ -6159,11 +5264,8 @@ const equip_data = {
     "17140": {
         "nationality": 1,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 17140,
         "icon": "17100",
         "ship_type_forbidden": [
@@ -6178,11 +5280,8 @@ const equip_data = {
     "17120": {
         "nationality": 1,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 17120,
         "icon": "17100",
         "ship_type_forbidden": [
@@ -6197,11 +5296,8 @@ const equip_data = {
     "17100": {
         "nationality": 1,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 17100,
         "icon": "17100",
         "ship_type_forbidden": [
@@ -6216,11 +5312,8 @@ const equip_data = {
     "17060": {
         "nationality": 1,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 17060,
         "icon": "17060",
         "ship_type_forbidden": [
@@ -6235,11 +5328,8 @@ const equip_data = {
     "17040": {
         "nationality": 1,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 3,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 17040,
         "icon": "17000",
         "ship_type_forbidden": [
@@ -6254,11 +5344,8 @@ const equip_data = {
     "17020": {
         "nationality": 1,
         "type": 7,
-        "attribute_2": "air",
         "rarity": 2,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 17020,
         "icon": "17000",
         "ship_type_forbidden": [
@@ -6273,11 +5360,8 @@ const equip_data = {
     "17000": {
         "nationality": 1,
         "type": 7,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 17000,
         "icon": "17000",
         "ship_type_forbidden": [
@@ -6292,11 +5376,8 @@ const equip_data = {
     "90600": {
         "nationality": 8,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 90600,
         "icon": "50600",
         "ship_type_forbidden": [],
@@ -6309,11 +5390,8 @@ const equip_data = {
     "6140": {
         "nationality": 8,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 6140,
         "icon": "6100",
         "ship_type_forbidden": [],
@@ -6326,11 +5404,8 @@ const equip_data = {
     "6120": {
         "nationality": 8,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 6120,
         "icon": "6100",
         "ship_type_forbidden": [],
@@ -6343,11 +5418,8 @@ const equip_data = {
     "6100": {
         "nationality": 8,
         "type": 6,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 6100,
         "icon": "6100",
         "ship_type_forbidden": [],
@@ -6360,11 +5432,8 @@ const equip_data = {
     "85220": {
         "nationality": 7,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 85220,
         "icon": "85180",
         "ship_type_forbidden": [],
@@ -6377,11 +5446,8 @@ const equip_data = {
     "85200": {
         "nationality": 7,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 85200,
         "icon": "85180",
         "ship_type_forbidden": [],
@@ -6394,11 +5460,8 @@ const equip_data = {
     "85180": {
         "nationality": 7,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 85180,
         "icon": "85180",
         "ship_type_forbidden": [],
@@ -6411,11 +5474,8 @@ const equip_data = {
     "85280": {
         "nationality": 7,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 85280,
         "icon": "85240",
         "ship_type_forbidden": [],
@@ -6428,11 +5488,8 @@ const equip_data = {
     "85260": {
         "nationality": 7,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 85260,
         "icon": "85240",
         "ship_type_forbidden": [],
@@ -6445,11 +5502,8 @@ const equip_data = {
     "85060": {
         "nationality": 7,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 85060,
         "icon": "85060",
         "ship_type_forbidden": [],
@@ -6462,11 +5516,8 @@ const equip_data = {
     "85400": {
         "nationality": 7,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 85400,
         "icon": "85360",
         "ship_type_forbidden": [],
@@ -6479,11 +5530,8 @@ const equip_data = {
     "85380": {
         "nationality": 7,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 85380,
         "icon": "85360",
         "ship_type_forbidden": [],
@@ -6496,11 +5544,8 @@ const equip_data = {
     "85360": {
         "nationality": 7,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 85360,
         "icon": "85360",
         "ship_type_forbidden": [],
@@ -6513,11 +5558,8 @@ const equip_data = {
     "95160": {
         "nationality": 6,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 95160,
         "icon": "55160",
         "ship_type_forbidden": [],
@@ -6530,11 +5572,8 @@ const equip_data = {
     "95140": {
         "nationality": 6,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 95140,
         "icon": "55100",
         "ship_type_forbidden": [],
@@ -6547,11 +5586,8 @@ const equip_data = {
     "95120": {
         "nationality": 6,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 95120,
         "icon": "55100",
         "ship_type_forbidden": [],
@@ -6564,11 +5600,8 @@ const equip_data = {
     "95100": {
         "nationality": 6,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 95100,
         "icon": "55100",
         "ship_type_forbidden": [],
@@ -6581,11 +5614,8 @@ const equip_data = {
     "95540": {
         "nationality": 6,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 95540,
         "icon": "55500",
         "ship_type_forbidden": [],
@@ -6598,11 +5628,8 @@ const equip_data = {
     "95520": {
         "nationality": 6,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 95520,
         "icon": "55500",
         "ship_type_forbidden": [],
@@ -6615,11 +5642,8 @@ const equip_data = {
     "95500": {
         "nationality": 6,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 95500,
         "icon": "55500",
         "ship_type_forbidden": [],
@@ -6632,11 +5656,8 @@ const equip_data = {
     "46060": {
         "nationality": 4,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 46060,
         "icon": "46060",
         "ship_type_forbidden": [],
@@ -6649,11 +5670,8 @@ const equip_data = {
     "46240": {
         "nationality": 4,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 46240,
         "icon": "46200",
         "ship_type_forbidden": [],
@@ -6666,11 +5684,8 @@ const equip_data = {
     "46220": {
         "nationality": 4,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 46220,
         "icon": "46200",
         "ship_type_forbidden": [],
@@ -6683,11 +5698,8 @@ const equip_data = {
     "46200": {
         "nationality": 4,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 46200,
         "icon": "46200",
         "ship_type_forbidden": [],
@@ -6700,11 +5712,8 @@ const equip_data = {
     "46140": {
         "nationality": 4,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 46140,
         "icon": "46100",
         "ship_type_forbidden": [],
@@ -6717,11 +5726,8 @@ const equip_data = {
     "46120": {
         "nationality": 4,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 46120,
         "icon": "46100",
         "ship_type_forbidden": [],
@@ -6734,11 +5740,8 @@ const equip_data = {
     "46100": {
         "nationality": 4,
         "type": 6,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 46100,
         "icon": "46100",
         "ship_type_forbidden": [],
@@ -6751,11 +5754,8 @@ const equip_data = {
     "46260": {
         "nationality": 4,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 46260,
         "icon": "46260",
         "ship_type_forbidden": [],
@@ -6768,11 +5768,8 @@ const equip_data = {
     "46040": {
         "nationality": 4,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 46040,
         "icon": "46000",
         "ship_type_forbidden": [],
@@ -6785,11 +5782,8 @@ const equip_data = {
     "46020": {
         "nationality": 4,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 46020,
         "icon": "46000",
         "ship_type_forbidden": [],
@@ -6802,11 +5796,8 @@ const equip_data = {
     "46000": {
         "nationality": 4,
         "type": 6,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 46000,
         "icon": "46000",
         "ship_type_forbidden": [],
@@ -6819,11 +5810,8 @@ const equip_data = {
     "46360": {
         "nationality": 4,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 46360,
         "icon": "46360",
         "ship_type_forbidden": [],
@@ -6836,11 +5824,8 @@ const equip_data = {
     "46340": {
         "nationality": 4,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 46340,
         "icon": "46300",
         "ship_type_forbidden": [],
@@ -6853,11 +5838,8 @@ const equip_data = {
     "46320": {
         "nationality": 4,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 46320,
         "icon": "46300",
         "ship_type_forbidden": [],
@@ -6870,11 +5852,8 @@ const equip_data = {
     "46300": {
         "nationality": 4,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 46300,
         "icon": "46300",
         "ship_type_forbidden": [],
@@ -6887,11 +5866,8 @@ const equip_data = {
     "36700": {
         "nationality": 3,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 36700,
         "icon": "36700",
         "ship_type_forbidden": [],
@@ -6904,11 +5880,8 @@ const equip_data = {
     "36440": {
         "nationality": 3,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 36440,
         "icon": "36400",
         "ship_type_forbidden": [],
@@ -6921,11 +5894,8 @@ const equip_data = {
     "36420": {
         "nationality": 3,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 36420,
         "icon": "36400",
         "ship_type_forbidden": [],
@@ -6938,11 +5908,8 @@ const equip_data = {
     "36400": {
         "nationality": 3,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 36400,
         "icon": "36400",
         "ship_type_forbidden": [],
@@ -6955,11 +5922,8 @@ const equip_data = {
     "36580": {
         "nationality": 3,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 36580,
         "icon": "36580",
         "ship_type_forbidden": [],
@@ -6972,11 +5936,8 @@ const equip_data = {
     "36540": {
         "nationality": 3,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 36540,
         "icon": "36500",
         "ship_type_forbidden": [],
@@ -6989,11 +5950,8 @@ const equip_data = {
     "36520": {
         "nationality": 3,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 36520,
         "icon": "36500",
         "ship_type_forbidden": [],
@@ -7006,11 +5964,8 @@ const equip_data = {
     "36500": {
         "nationality": 3,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 36500,
         "icon": "36500",
         "ship_type_forbidden": [],
@@ -7023,11 +5978,8 @@ const equip_data = {
     "36240": {
         "nationality": 3,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 36240,
         "icon": "36200",
         "ship_type_forbidden": [],
@@ -7040,11 +5992,8 @@ const equip_data = {
     "36220": {
         "nationality": 3,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 36220,
         "icon": "36200",
         "ship_type_forbidden": [],
@@ -7057,11 +6006,8 @@ const equip_data = {
     "36200": {
         "nationality": 3,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 36200,
         "icon": "36200",
         "ship_type_forbidden": [],
@@ -7074,11 +6020,8 @@ const equip_data = {
     "36140": {
         "nationality": 3,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 36140,
         "icon": "36100",
         "ship_type_forbidden": [],
@@ -7091,11 +6034,8 @@ const equip_data = {
     "36120": {
         "nationality": 3,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 36120,
         "icon": "36100",
         "ship_type_forbidden": [],
@@ -7108,11 +6048,8 @@ const equip_data = {
     "36100": {
         "nationality": 3,
         "type": 6,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 36100,
         "icon": "36100",
         "ship_type_forbidden": [],
@@ -7125,11 +6062,8 @@ const equip_data = {
     "36360": {
         "nationality": 3,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 36360,
         "icon": "36360",
         "ship_type_forbidden": [],
@@ -7142,11 +6076,8 @@ const equip_data = {
     "36340": {
         "nationality": 3,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 36340,
         "icon": "36300",
         "ship_type_forbidden": [],
@@ -7159,11 +6090,8 @@ const equip_data = {
     "36320": {
         "nationality": 3,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 36320,
         "icon": "36300",
         "ship_type_forbidden": [],
@@ -7176,11 +6104,8 @@ const equip_data = {
     "36300": {
         "nationality": 3,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 36300,
         "icon": "36300",
         "ship_type_forbidden": [],
@@ -7193,11 +6118,8 @@ const equip_data = {
     "36660": {
         "nationality": 3,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 36660,
         "icon": "36660",
         "ship_type_forbidden": [],
@@ -7210,11 +6132,8 @@ const equip_data = {
     "36640": {
         "nationality": 3,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 36640,
         "icon": "36600",
         "ship_type_forbidden": [],
@@ -7227,11 +6146,8 @@ const equip_data = {
     "36620": {
         "nationality": 3,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 36620,
         "icon": "36600",
         "ship_type_forbidden": [],
@@ -7244,11 +6160,8 @@ const equip_data = {
     "36600": {
         "nationality": 3,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 36600,
         "icon": "36600",
         "ship_type_forbidden": [],
@@ -7261,11 +6174,8 @@ const equip_data = {
     "36560": {
         "nationality": 3,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 36560,
         "icon": "36560",
         "ship_type_forbidden": [],
@@ -7278,11 +6188,8 @@ const equip_data = {
     "26620": {
         "nationality": 2,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 26620,
         "icon": "26620",
         "ship_type_forbidden": [],
@@ -7295,11 +6202,8 @@ const equip_data = {
     "26600": {
         "nationality": 2,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 26600,
         "icon": "26600",
         "ship_type_forbidden": [],
@@ -7312,11 +6216,8 @@ const equip_data = {
     "26660": {
         "nationality": 2,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 26660,
         "icon": "26660",
         "ship_type_forbidden": [],
@@ -7329,11 +6230,8 @@ const equip_data = {
     "26140": {
         "nationality": 2,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 26140,
         "icon": "26100",
         "ship_type_forbidden": [],
@@ -7346,11 +6244,8 @@ const equip_data = {
     "26120": {
         "nationality": 2,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 26120,
         "icon": "26100",
         "ship_type_forbidden": [],
@@ -7363,11 +6258,8 @@ const equip_data = {
     "26100": {
         "nationality": 2,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 26100,
         "icon": "26100",
         "ship_type_forbidden": [],
@@ -7380,11 +6272,8 @@ const equip_data = {
     "26240": {
         "nationality": 2,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 26240,
         "icon": "26200",
         "ship_type_forbidden": [],
@@ -7397,11 +6286,8 @@ const equip_data = {
     "26220": {
         "nationality": 2,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 26220,
         "icon": "26200",
         "ship_type_forbidden": [],
@@ -7414,11 +6300,8 @@ const equip_data = {
     "26200": {
         "nationality": 2,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 26200,
         "icon": "26200",
         "ship_type_forbidden": [],
@@ -7431,11 +6314,8 @@ const equip_data = {
     "26040": {
         "nationality": 2,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 26040,
         "icon": "26000",
         "ship_type_forbidden": [],
@@ -7448,11 +6328,8 @@ const equip_data = {
     "26020": {
         "nationality": 2,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 26020,
         "icon": "26000",
         "ship_type_forbidden": [],
@@ -7465,11 +6342,8 @@ const equip_data = {
     "26000": {
         "nationality": 2,
         "type": 6,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 26000,
         "icon": "26000",
         "ship_type_forbidden": [],
@@ -7482,11 +6356,8 @@ const equip_data = {
     "26060": {
         "nationality": 2,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 26060,
         "icon": "26060",
         "ship_type_forbidden": [],
@@ -7499,11 +6370,8 @@ const equip_data = {
     "26360": {
         "nationality": 2,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 26360,
         "icon": "26360",
         "ship_type_forbidden": [],
@@ -7516,11 +6384,8 @@ const equip_data = {
     "26640": {
         "nationality": 2,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 26640,
         "icon": "21500",
         "ship_type_forbidden": [],
@@ -7533,11 +6398,8 @@ const equip_data = {
     "26460": {
         "nationality": 2,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 26460,
         "icon": "26460",
         "ship_type_forbidden": [],
@@ -7550,11 +6412,8 @@ const equip_data = {
     "26540": {
         "nationality": 2,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 26540,
         "icon": "26500",
         "ship_type_forbidden": [],
@@ -7567,11 +6426,8 @@ const equip_data = {
     "26520": {
         "nationality": 2,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 26520,
         "icon": "26500",
         "ship_type_forbidden": [],
@@ -7584,11 +6440,8 @@ const equip_data = {
     "26500": {
         "nationality": 2,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 26500,
         "icon": "26500",
         "ship_type_forbidden": [],
@@ -7601,11 +6454,8 @@ const equip_data = {
     "26440": {
         "nationality": 2,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 26440,
         "icon": "26400",
         "ship_type_forbidden": [],
@@ -7618,11 +6468,8 @@ const equip_data = {
     "26420": {
         "nationality": 2,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 26420,
         "icon": "26400",
         "ship_type_forbidden": [],
@@ -7635,11 +6482,8 @@ const equip_data = {
     "26400": {
         "nationality": 2,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 26400,
         "icon": "26400",
         "ship_type_forbidden": [],
@@ -7652,11 +6496,8 @@ const equip_data = {
     "16440": {
         "nationality": 1,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 16440,
         "icon": "16400",
         "ship_type_forbidden": [],
@@ -7669,11 +6510,8 @@ const equip_data = {
     "16420": {
         "nationality": 1,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 16420,
         "icon": "16400",
         "ship_type_forbidden": [],
@@ -7686,11 +6524,8 @@ const equip_data = {
     "16400": {
         "nationality": 1,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 16400,
         "icon": "16400",
         "ship_type_forbidden": [],
@@ -7703,11 +6538,8 @@ const equip_data = {
     "16240": {
         "nationality": 1,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 16240,
         "icon": "16200",
         "ship_type_forbidden": [],
@@ -7720,11 +6552,8 @@ const equip_data = {
     "16220": {
         "nationality": 1,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 16220,
         "icon": "16200",
         "ship_type_forbidden": [],
@@ -7737,11 +6566,8 @@ const equip_data = {
     "16200": {
         "nationality": 1,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 16200,
         "icon": "16200",
         "ship_type_forbidden": [],
@@ -7754,11 +6580,8 @@ const equip_data = {
     "16340": {
         "nationality": 1,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 16340,
         "icon": "16300",
         "ship_type_forbidden": [],
@@ -7771,11 +6594,8 @@ const equip_data = {
     "16320": {
         "nationality": 1,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 16320,
         "icon": "16300",
         "ship_type_forbidden": [],
@@ -7788,11 +6608,8 @@ const equip_data = {
     "16300": {
         "nationality": 1,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 16300,
         "icon": "16300",
         "ship_type_forbidden": [],
@@ -7805,11 +6622,8 @@ const equip_data = {
     "16060": {
         "nationality": 1,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 16060,
         "icon": "16060",
         "ship_type_forbidden": [],
@@ -7822,11 +6636,8 @@ const equip_data = {
     "26340": {
         "nationality": 1,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 26340,
         "icon": "26300",
         "ship_type_forbidden": [],
@@ -7839,11 +6650,8 @@ const equip_data = {
     "26320": {
         "nationality": 1,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 26320,
         "icon": "26300",
         "ship_type_forbidden": [],
@@ -7856,11 +6664,8 @@ const equip_data = {
     "26300": {
         "nationality": 1,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 26300,
         "icon": "26300",
         "ship_type_forbidden": [],
@@ -7873,11 +6678,8 @@ const equip_data = {
     "16080": {
         "nationality": 1,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 16080,
         "icon": "16080",
         "ship_type_forbidden": [],
@@ -7890,11 +6692,8 @@ const equip_data = {
     "16160": {
         "nationality": 1,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 16160,
         "icon": "16160",
         "ship_type_forbidden": [],
@@ -7907,11 +6706,8 @@ const equip_data = {
     "16140": {
         "nationality": 1,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 16140,
         "icon": "16100",
         "ship_type_forbidden": [],
@@ -7924,11 +6720,8 @@ const equip_data = {
     "16120": {
         "nationality": 1,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 16120,
         "icon": "16100",
         "ship_type_forbidden": [],
@@ -7941,11 +6734,8 @@ const equip_data = {
     "16100": {
         "nationality": 1,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 16100,
         "icon": "16100",
         "ship_type_forbidden": [],
@@ -7958,11 +6748,8 @@ const equip_data = {
     "16040": {
         "nationality": 1,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 16040,
         "icon": "16000",
         "ship_type_forbidden": [],
@@ -7975,11 +6762,8 @@ const equip_data = {
     "16020": {
         "nationality": 1,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 16020,
         "icon": "16000",
         "ship_type_forbidden": [],
@@ -7992,11 +6776,8 @@ const equip_data = {
     "16000": {
         "nationality": 1,
         "type": 6,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 16000,
         "icon": "16000",
         "ship_type_forbidden": [],
@@ -8009,11 +6790,8 @@ const equip_data = {
     "6040": {
         "nationality": 0,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 3,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 6040,
         "icon": "6000",
         "ship_type_forbidden": [],
@@ -8026,11 +6804,8 @@ const equip_data = {
     "6020": {
         "nationality": 0,
         "type": 6,
-        "attribute_2": "antiaircraft",
         "rarity": 2,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 6020,
         "icon": "6000",
         "ship_type_forbidden": [],
@@ -8043,11 +6818,8 @@ const equip_data = {
     "6000": {
         "nationality": 0,
         "type": 6,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 6000,
         "icon": "6000",
         "ship_type_forbidden": [],
@@ -8060,11 +6832,8 @@ const equip_data = {
     "5340": {
         "nationality": 8,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 5340,
         "icon": "5300",
         "ship_type_forbidden": [],
@@ -8077,11 +6846,8 @@ const equip_data = {
     "5320": {
         "nationality": 8,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 2,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 5320,
         "icon": "5300",
         "ship_type_forbidden": [],
@@ -8094,11 +6860,8 @@ const equip_data = {
     "5300": {
         "nationality": 8,
         "type": 5,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 5300,
         "icon": "5300",
         "ship_type_forbidden": [],
@@ -8111,11 +6874,8 @@ const equip_data = {
     "5440": {
         "nationality": 8,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 5440,
         "icon": "5400",
         "ship_type_forbidden": [],
@@ -8128,11 +6888,8 @@ const equip_data = {
     "5420": {
         "nationality": 8,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 5420,
         "icon": "5400",
         "ship_type_forbidden": [],
@@ -8145,11 +6902,8 @@ const equip_data = {
     "5400": {
         "nationality": 8,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 5400,
         "icon": "5400",
         "ship_type_forbidden": [],
@@ -8162,11 +6916,8 @@ const equip_data = {
     "45140": {
         "nationality": 4,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 5,
         "tech": 3,
-        "ammo": 4,
-        "ammo_icon": [],
         "id": 45140,
         "icon": "45100",
         "ship_type_forbidden": [],
@@ -8179,11 +6930,8 @@ const equip_data = {
     "45120": {
         "nationality": 4,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 2,
-        "ammo": 4,
-        "ammo_icon": [],
         "id": 45120,
         "icon": "45100",
         "ship_type_forbidden": [],
@@ -8196,11 +6944,8 @@ const equip_data = {
     "45100": {
         "nationality": 4,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 1,
-        "ammo": 4,
-        "ammo_icon": [],
         "id": 45100,
         "icon": "45100",
         "ship_type_forbidden": [],
@@ -8213,11 +6958,8 @@ const equip_data = {
     "45240": {
         "nationality": 4,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 6,
         "tech": 3,
-        "ammo": 4,
-        "ammo_icon": [],
         "id": 45240,
         "icon": "45200",
         "ship_type_forbidden": [],
@@ -8230,11 +6972,8 @@ const equip_data = {
     "45220": {
         "nationality": 4,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 5,
         "tech": 2,
-        "ammo": 4,
-        "ammo_icon": [],
         "id": 45220,
         "icon": "45200",
         "ship_type_forbidden": [],
@@ -8247,11 +6986,8 @@ const equip_data = {
     "45200": {
         "nationality": 4,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 1,
-        "ammo": 4,
-        "ammo_icon": [],
         "id": 45200,
         "icon": "45200",
         "ship_type_forbidden": [],
@@ -8264,11 +7000,8 @@ const equip_data = {
     "45040": {
         "nationality": 4,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 3,
-        "ammo": 4,
-        "ammo_icon": [],
         "id": 45040,
         "icon": "45000",
         "ship_type_forbidden": [],
@@ -8281,11 +7014,8 @@ const equip_data = {
     "45020": {
         "nationality": 4,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 2,
-        "ammo": 4,
-        "ammo_icon": [],
         "id": 45020,
         "icon": "45000",
         "ship_type_forbidden": [],
@@ -8298,11 +7028,8 @@ const equip_data = {
     "45000": {
         "nationality": 4,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 2,
         "tech": 1,
-        "ammo": 4,
-        "ammo_icon": [],
         "id": 45000,
         "icon": "45000",
         "ship_type_forbidden": [],
@@ -8315,11 +7042,8 @@ const equip_data = {
     "35040": {
         "nationality": 3,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 35040,
         "icon": "35000",
         "ship_type_forbidden": [],
@@ -8332,11 +7056,8 @@ const equip_data = {
     "35020": {
         "nationality": 3,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 2,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 35020,
         "icon": "35000",
         "ship_type_forbidden": [],
@@ -8349,11 +7070,8 @@ const equip_data = {
     "35000": {
         "nationality": 3,
         "type": 5,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 35000,
         "icon": "35000",
         "ship_type_forbidden": [],
@@ -8366,11 +7084,8 @@ const equip_data = {
     "35260": {
         "nationality": 3,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 35260,
         "icon": "35260",
         "ship_type_forbidden": [],
@@ -8383,11 +7098,8 @@ const equip_data = {
     "35240": {
         "nationality": 3,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 5,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 35240,
         "icon": "35200",
         "ship_type_forbidden": [],
@@ -8400,11 +7112,8 @@ const equip_data = {
     "35220": {
         "nationality": 3,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 35220,
         "icon": "35200",
         "ship_type_forbidden": [],
@@ -8417,11 +7126,8 @@ const equip_data = {
     "35200": {
         "nationality": 3,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 35200,
         "icon": "35200",
         "ship_type_forbidden": [],
@@ -8434,11 +7140,8 @@ const equip_data = {
     "35340": {
         "nationality": 3,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 6,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 35340,
         "icon": "35300",
         "ship_type_forbidden": [],
@@ -8451,11 +7154,8 @@ const equip_data = {
     "35160": {
         "nationality": 3,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 35160,
         "icon": "35160",
         "ship_type_forbidden": [],
@@ -8468,11 +7168,8 @@ const equip_data = {
     "35140": {
         "nationality": 3,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 35140,
         "icon": "35100",
         "ship_type_forbidden": [],
@@ -8485,11 +7182,8 @@ const equip_data = {
     "35120": {
         "nationality": 3,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 35120,
         "icon": "35100",
         "ship_type_forbidden": [],
@@ -8502,11 +7196,8 @@ const equip_data = {
     "35100": {
         "nationality": 3,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 35100,
         "icon": "35100",
         "ship_type_forbidden": [],
@@ -8519,11 +7210,8 @@ const equip_data = {
     "25020": {
         "nationality": 2,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 25020,
         "icon": "25020",
         "ship_type_forbidden": [],
@@ -8536,11 +7224,8 @@ const equip_data = {
     "25040": {
         "nationality": 2,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 25040,
         "icon": "25040",
         "ship_type_forbidden": [],
@@ -8553,11 +7238,8 @@ const equip_data = {
     "25000": {
         "nationality": 2,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 25000,
         "icon": "25000",
         "ship_type_forbidden": [],
@@ -8570,11 +7252,8 @@ const equip_data = {
     "15220": {
         "nationality": 1,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 15220,
         "icon": "15220",
         "ship_type_forbidden": [],
@@ -8587,11 +7266,8 @@ const equip_data = {
     "15240": {
         "nationality": 1,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 5,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 15240,
         "icon": "15240",
         "ship_type_forbidden": [],
@@ -8604,11 +7280,8 @@ const equip_data = {
     "15200": {
         "nationality": 1,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 0,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 15200,
         "icon": "15200",
         "ship_type_forbidden": [],
@@ -8621,11 +7294,8 @@ const equip_data = {
     "5140": {
         "nationality": 0,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 5140,
         "icon": "5100",
         "ship_type_forbidden": [],
@@ -8638,11 +7308,8 @@ const equip_data = {
     "5120": {
         "nationality": 0,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 5120,
         "icon": "5100",
         "ship_type_forbidden": [],
@@ -8655,11 +7322,8 @@ const equip_data = {
     "5100": {
         "nationality": 0,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 2,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 5100,
         "icon": "5100",
         "ship_type_forbidden": [],
@@ -8672,11 +7336,8 @@ const equip_data = {
     "5240": {
         "nationality": 0,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 5,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 5240,
         "icon": "5200",
         "ship_type_forbidden": [],
@@ -8689,11 +7350,8 @@ const equip_data = {
     "5220": {
         "nationality": 0,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 4,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 5220,
         "icon": "5200",
         "ship_type_forbidden": [],
@@ -8706,11 +7364,8 @@ const equip_data = {
     "5200": {
         "nationality": 0,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 5200,
         "icon": "5200",
         "ship_type_forbidden": [],
@@ -8723,11 +7378,8 @@ const equip_data = {
     "5040": {
         "nationality": 0,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 3,
         "tech": 3,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 5040,
         "icon": "5000",
         "ship_type_forbidden": [],
@@ -8740,11 +7392,8 @@ const equip_data = {
     "5020": {
         "nationality": 0,
         "type": 5,
-        "attribute_2": "torpedo",
         "rarity": 2,
         "tech": 2,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 5020,
         "icon": "5000",
         "ship_type_forbidden": [],
@@ -8757,11 +7406,8 @@ const equip_data = {
     "5000": {
         "nationality": 0,
         "type": 5,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 5,
-        "ammo_icon": [],
         "id": 5000,
         "icon": "5000",
         "ship_type_forbidden": [],
@@ -8774,13 +7420,8 @@ const equip_data = {
     "91000": {
         "nationality": 8,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 91000,
         "icon": "51000",
         "ship_type_forbidden": [],
@@ -8793,13 +7434,8 @@ const equip_data = {
     "90440": {
         "nationality": 8,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 90440,
         "icon": "50400",
         "ship_type_forbidden": [],
@@ -8812,13 +7448,8 @@ const equip_data = {
     "90420": {
         "nationality": 8,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 90420,
         "icon": "50400",
         "ship_type_forbidden": [],
@@ -8831,13 +7462,8 @@ const equip_data = {
     "90400": {
         "nationality": 8,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 90400,
         "icon": "50400",
         "ship_type_forbidden": [],
@@ -8850,13 +7476,8 @@ const equip_data = {
     "90340": {
         "nationality": 8,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 90340,
         "icon": "50300",
         "ship_type_forbidden": [],
@@ -8869,13 +7490,8 @@ const equip_data = {
     "90320": {
         "nationality": 8,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 90320,
         "icon": "50300",
         "ship_type_forbidden": [],
@@ -8888,13 +7504,8 @@ const equip_data = {
     "90300": {
         "nationality": 8,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 90300,
         "icon": "50300",
         "ship_type_forbidden": [],
@@ -8907,13 +7518,8 @@ const equip_data = {
     "85320": {
         "nationality": 7,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 85320,
         "icon": "85300",
         "ship_type_forbidden": [],
@@ -8926,13 +7532,8 @@ const equip_data = {
     "85300": {
         "nationality": 7,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 85300,
         "icon": "85300",
         "ship_type_forbidden": [],
@@ -8945,13 +7546,8 @@ const equip_data = {
     "85420": {
         "nationality": 7,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 85420,
         "icon": "85420",
         "ship_type_forbidden": [],
@@ -8964,13 +7560,8 @@ const equip_data = {
     "95900": {
         "nationality": 6,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": 7,
-        "ammo_icon": [
-            4
-        ],
         "id": 95900,
         "icon": "55900",
         "ship_type_forbidden": [
@@ -8996,13 +7587,8 @@ const equip_data = {
     "95040": {
         "nationality": 6,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 95040,
         "icon": "55000",
         "ship_type_forbidden": [],
@@ -9015,13 +7601,8 @@ const equip_data = {
     "95020": {
         "nationality": 6,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 95020,
         "icon": "55000",
         "ship_type_forbidden": [],
@@ -9034,13 +7615,8 @@ const equip_data = {
     "95000": {
         "nationality": 6,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 95000,
         "icon": "55000",
         "ship_type_forbidden": [],
@@ -9053,13 +7629,8 @@ const equip_data = {
     "95480": {
         "nationality": 6,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 0,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 95480,
         "icon": "55480",
         "ship_type_forbidden": [],
@@ -9072,13 +7643,8 @@ const equip_data = {
     "44200": {
         "nationality": 4,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 44200,
         "icon": "44200",
         "ship_type_forbidden": [],
@@ -9091,13 +7657,8 @@ const equip_data = {
     "44300": {
         "nationality": 4,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 44300,
         "icon": "44300",
         "ship_type_forbidden": [],
@@ -9110,13 +7671,8 @@ const equip_data = {
     "44140": {
         "nationality": 4,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 44140,
         "icon": "44100",
         "ship_type_forbidden": [],
@@ -9129,13 +7685,8 @@ const equip_data = {
     "44120": {
         "nationality": 4,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 44120,
         "icon": "44100",
         "ship_type_forbidden": [],
@@ -9148,13 +7699,8 @@ const equip_data = {
     "44100": {
         "nationality": 4,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 44100,
         "icon": "44100",
         "ship_type_forbidden": [],
@@ -9167,13 +7713,8 @@ const equip_data = {
     "44040": {
         "nationality": 4,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 44040,
         "icon": "44000",
         "ship_type_forbidden": [],
@@ -9186,13 +7727,8 @@ const equip_data = {
     "44020": {
         "nationality": 4,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 44020,
         "icon": "44000",
         "ship_type_forbidden": [],
@@ -9205,13 +7741,8 @@ const equip_data = {
     "44000": {
         "nationality": 4,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 44000,
         "icon": "44000",
         "ship_type_forbidden": [],
@@ -9224,13 +7755,8 @@ const equip_data = {
     "34180": {
         "nationality": 3,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 34180,
         "icon": "34180",
         "ship_type_forbidden": [],
@@ -9243,13 +7769,8 @@ const equip_data = {
     "34060": {
         "nationality": 3,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 0,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 34060,
         "icon": "34060",
         "ship_type_forbidden": [],
@@ -9262,13 +7783,8 @@ const equip_data = {
     "34300": {
         "nationality": 3,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 0,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 34300,
         "icon": "34300",
         "ship_type_forbidden": [],
@@ -9281,13 +7797,8 @@ const equip_data = {
     "34160": {
         "nationality": 3,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": 6,
-        "ammo_icon": [
-            3
-        ],
         "id": 34160,
         "icon": "34100",
         "ship_type_forbidden": [],
@@ -9300,13 +7811,8 @@ const equip_data = {
     "34140": {
         "nationality": 3,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 34140,
         "icon": "34100",
         "ship_type_forbidden": [],
@@ -9319,13 +7825,8 @@ const equip_data = {
     "34120": {
         "nationality": 3,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 34120,
         "icon": "34100",
         "ship_type_forbidden": [],
@@ -9338,13 +7839,8 @@ const equip_data = {
     "34100": {
         "nationality": 3,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 34100,
         "icon": "34100",
         "ship_type_forbidden": [],
@@ -9357,13 +7853,8 @@ const equip_data = {
     "34040": {
         "nationality": 3,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 34040,
         "icon": "34000",
         "ship_type_forbidden": [],
@@ -9376,13 +7867,8 @@ const equip_data = {
     "34020": {
         "nationality": 3,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 34020,
         "icon": "34000",
         "ship_type_forbidden": [],
@@ -9395,13 +7881,8 @@ const equip_data = {
     "34000": {
         "nationality": 3,
         "type": 4,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 34000,
         "icon": "34000",
         "ship_type_forbidden": [],
@@ -9414,13 +7895,8 @@ const equip_data = {
     "30000": {
         "nationality": 3,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 0,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 30000,
         "icon": "30000",
         "ship_type_forbidden": [],
@@ -9433,13 +7909,8 @@ const equip_data = {
     "24160": {
         "nationality": 2,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 24160,
         "icon": "24160",
         "ship_type_forbidden": [],
@@ -9452,13 +7923,8 @@ const equip_data = {
     "24240": {
         "nationality": 2,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 24240,
         "icon": "24200",
         "ship_type_forbidden": [],
@@ -9471,13 +7937,8 @@ const equip_data = {
     "24220": {
         "nationality": 2,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 24220,
         "icon": "24200",
         "ship_type_forbidden": [],
@@ -9490,13 +7951,8 @@ const equip_data = {
     "24200": {
         "nationality": 2,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 24200,
         "icon": "24200",
         "ship_type_forbidden": [],
@@ -9509,13 +7965,8 @@ const equip_data = {
     "24320": {
         "nationality": 2,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 24320,
         "icon": "24300",
         "ship_type_forbidden": [],
@@ -9528,13 +7979,8 @@ const equip_data = {
     "24300": {
         "nationality": 2,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 24300,
         "icon": "24300",
         "ship_type_forbidden": [],
@@ -9547,13 +7993,8 @@ const equip_data = {
     "24340": {
         "nationality": 2,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 24340,
         "icon": "24300",
         "ship_type_forbidden": [],
@@ -9566,13 +8007,8 @@ const equip_data = {
     "24140": {
         "nationality": 2,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 24140,
         "icon": "24100",
         "ship_type_forbidden": [],
@@ -9585,13 +8021,8 @@ const equip_data = {
     "24120": {
         "nationality": 2,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 24120,
         "icon": "24100",
         "ship_type_forbidden": [],
@@ -9604,13 +8035,8 @@ const equip_data = {
     "24100": {
         "nationality": 2,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 24100,
         "icon": "24100",
         "ship_type_forbidden": [],
@@ -9623,13 +8049,8 @@ const equip_data = {
     "24060": {
         "nationality": 2,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 0,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 24060,
         "icon": "24060",
         "ship_type_forbidden": [],
@@ -9642,13 +8063,8 @@ const equip_data = {
     "24040": {
         "nationality": 2,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 24040,
         "icon": "24000",
         "ship_type_forbidden": [],
@@ -9661,13 +8077,8 @@ const equip_data = {
     "24020": {
         "nationality": 2,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 24020,
         "icon": "24000",
         "ship_type_forbidden": [],
@@ -9680,13 +8091,8 @@ const equip_data = {
     "24000": {
         "nationality": 2,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 24000,
         "icon": "24000",
         "ship_type_forbidden": [],
@@ -9699,13 +8105,8 @@ const equip_data = {
     "14500": {
         "nationality": 1,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 6,
         "tech": 0,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 14500,
         "icon": "14500",
         "ship_type_forbidden": [],
@@ -9718,13 +8119,8 @@ const equip_data = {
     "14520": {
         "nationality": 1,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 14520,
         "icon": "14520",
         "ship_type_forbidden": [],
@@ -9737,13 +8133,8 @@ const equip_data = {
     "14360": {
         "nationality": 1,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 14360,
         "icon": "14360",
         "ship_type_forbidden": [],
@@ -9756,13 +8147,8 @@ const equip_data = {
     "14160": {
         "nationality": 1,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 0,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 14160,
         "icon": "14160",
         "ship_type_forbidden": [],
@@ -9775,13 +8161,8 @@ const equip_data = {
     "14260": {
         "nationality": 1,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 0,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 14260,
         "icon": "14260",
         "ship_type_forbidden": [],
@@ -9794,13 +8175,8 @@ const equip_data = {
     "14180": {
         "nationality": 1,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 0,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 14180,
         "icon": "14180",
         "ship_type_forbidden": [],
@@ -9813,13 +8189,8 @@ const equip_data = {
     "14240": {
         "nationality": 1,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 14240,
         "icon": "14200",
         "ship_type_forbidden": [],
@@ -9832,13 +8203,8 @@ const equip_data = {
     "14220": {
         "nationality": 1,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 14220,
         "icon": "14200",
         "ship_type_forbidden": [],
@@ -9851,13 +8217,8 @@ const equip_data = {
     "14200": {
         "nationality": 1,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 14200,
         "icon": "14200",
         "ship_type_forbidden": [],
@@ -9870,13 +8231,8 @@ const equip_data = {
     "14380": {
         "nationality": 1,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 0,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 14380,
         "icon": "14380",
         "ship_type_forbidden": [],
@@ -9889,13 +8245,8 @@ const equip_data = {
     "14400": {
         "nationality": 1,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 14400,
         "icon": "14400",
         "ship_type_forbidden": [],
@@ -9908,13 +8259,8 @@ const equip_data = {
     "14460": {
         "nationality": 1,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 6,
         "tech": 0,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 14460,
         "icon": "14400",
         "ship_type_forbidden": [],
@@ -9927,13 +8273,8 @@ const equip_data = {
     "14340": {
         "nationality": 1,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 14340,
         "icon": "14300",
         "ship_type_forbidden": [],
@@ -9946,13 +8287,8 @@ const equip_data = {
     "14320": {
         "nationality": 1,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 14320,
         "icon": "14300",
         "ship_type_forbidden": [],
@@ -9965,13 +8301,8 @@ const equip_data = {
     "14300": {
         "nationality": 1,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 14300,
         "icon": "14300",
         "ship_type_forbidden": [],
@@ -9984,13 +8315,8 @@ const equip_data = {
     "14140": {
         "nationality": 1,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 14140,
         "icon": "14100",
         "ship_type_forbidden": [],
@@ -10003,13 +8329,8 @@ const equip_data = {
     "14120": {
         "nationality": 1,
         "type": 4,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 14120,
         "icon": "14100",
         "ship_type_forbidden": [],
@@ -10022,13 +8343,8 @@ const equip_data = {
     "14100": {
         "nationality": 1,
         "type": 4,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 14100,
         "icon": "14100",
         "ship_type_forbidden": [],
@@ -10041,13 +8357,8 @@ const equip_data = {
     "7300": {
         "nationality": 8,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 7300,
         "icon": "7300",
         "ship_type_forbidden": [
@@ -10063,13 +8374,8 @@ const equip_data = {
     "7340": {
         "nationality": 8,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 0,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 7340,
         "icon": "7340",
         "ship_type_forbidden": [
@@ -10097,13 +8403,8 @@ const equip_data = {
     "90900": {
         "nationality": 8,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 90900,
         "icon": "50860",
         "ship_type_forbidden": [
@@ -10119,13 +8420,8 @@ const equip_data = {
     "90880": {
         "nationality": 8,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 90880,
         "icon": "50860",
         "ship_type_forbidden": [
@@ -10141,13 +8437,8 @@ const equip_data = {
     "90860": {
         "nationality": 8,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 90860,
         "icon": "50860",
         "ship_type_forbidden": [
@@ -10163,13 +8454,8 @@ const equip_data = {
     "91100": {
         "nationality": 8,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 91100,
         "icon": "51100",
         "ship_type_forbidden": [
@@ -10185,13 +8471,8 @@ const equip_data = {
     "95240": {
         "nationality": 6,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": 7,
-        "ammo_icon": [
-            4
-        ],
         "id": 95240,
         "icon": "55200",
         "ship_type_forbidden": [
@@ -10207,13 +8488,8 @@ const equip_data = {
     "95220": {
         "nationality": 6,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 95220,
         "icon": "55200",
         "ship_type_forbidden": [
@@ -10229,13 +8505,8 @@ const equip_data = {
     "95200": {
         "nationality": 6,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 95200,
         "icon": "55200",
         "ship_type_forbidden": [
@@ -10251,13 +8522,8 @@ const equip_data = {
     "95340": {
         "nationality": 6,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 95340,
         "icon": "55300",
         "ship_type_forbidden": [
@@ -10273,13 +8539,8 @@ const equip_data = {
     "95320": {
         "nationality": 6,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 95320,
         "icon": "55300",
         "ship_type_forbidden": [
@@ -10295,13 +8556,8 @@ const equip_data = {
     "95300": {
         "nationality": 6,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 95300,
         "icon": "55300",
         "ship_type_forbidden": [
@@ -10317,13 +8573,8 @@ const equip_data = {
     "43060": {
         "nationality": 4,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 43060,
         "icon": "43060",
         "ship_type_forbidden": [
@@ -10339,13 +8590,8 @@ const equip_data = {
     "43040": {
         "nationality": 4,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 43040,
         "icon": "43000",
         "ship_type_forbidden": [
@@ -10361,13 +8607,8 @@ const equip_data = {
     "43020": {
         "nationality": 4,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 43020,
         "icon": "43000",
         "ship_type_forbidden": [
@@ -10383,13 +8624,8 @@ const equip_data = {
     "43000": {
         "nationality": 4,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 43000,
         "icon": "43000",
         "ship_type_forbidden": [
@@ -10405,13 +8641,8 @@ const equip_data = {
     "33060": {
         "nationality": 3,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 33060,
         "icon": "33060",
         "ship_type_forbidden": [
@@ -10427,13 +8658,8 @@ const equip_data = {
     "33080": {
         "nationality": 3,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 33080,
         "icon": "33080",
         "ship_type_forbidden": [
@@ -10449,13 +8675,8 @@ const equip_data = {
     "33040": {
         "nationality": 3,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 33040,
         "icon": "33000",
         "ship_type_forbidden": [
@@ -10471,13 +8692,8 @@ const equip_data = {
     "33020": {
         "nationality": 3,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 33020,
         "icon": "33000",
         "ship_type_forbidden": [
@@ -10493,13 +8709,8 @@ const equip_data = {
     "33000": {
         "nationality": 3,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 33000,
         "icon": "33000",
         "ship_type_forbidden": [
@@ -10515,13 +8726,8 @@ const equip_data = {
     "23100": {
         "nationality": 2,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 23100,
         "icon": "23100",
         "ship_type_forbidden": [
@@ -10537,13 +8743,8 @@ const equip_data = {
     "23120": {
         "nationality": 2,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 6,
         "tech": 0,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 23120,
         "icon": "23120",
         "ship_type_forbidden": [
@@ -10559,13 +8760,8 @@ const equip_data = {
     "23200": {
         "nationality": 2,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 23200,
         "icon": "23200",
         "ship_type_forbidden": [
@@ -10581,13 +8777,8 @@ const equip_data = {
     "23040": {
         "nationality": 2,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 23040,
         "icon": "23000",
         "ship_type_forbidden": [
@@ -10603,13 +8794,8 @@ const equip_data = {
     "23020": {
         "nationality": 2,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 23020,
         "icon": "23000",
         "ship_type_forbidden": [
@@ -10625,13 +8811,8 @@ const equip_data = {
     "23000": {
         "nationality": 2,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 23000,
         "icon": "23000",
         "ship_type_forbidden": [
@@ -10647,13 +8828,8 @@ const equip_data = {
     "13140": {
         "nationality": 1,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 13140,
         "icon": "13100",
         "ship_type_forbidden": [
@@ -10669,13 +8845,8 @@ const equip_data = {
     "13120": {
         "nationality": 1,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 13120,
         "icon": "13100",
         "ship_type_forbidden": [
@@ -10691,13 +8862,8 @@ const equip_data = {
     "13100": {
         "nationality": 1,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 13100,
         "icon": "13100",
         "ship_type_forbidden": [
@@ -10713,13 +8879,8 @@ const equip_data = {
     "13160": {
         "nationality": 1,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 13160,
         "icon": "13160",
         "ship_type_forbidden": [
@@ -10735,13 +8896,8 @@ const equip_data = {
     "13060": {
         "nationality": 1,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 0,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 13060,
         "icon": "13060",
         "ship_type_forbidden": [
@@ -10757,13 +8913,8 @@ const equip_data = {
     "13040": {
         "nationality": 1,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 13040,
         "icon": "13000",
         "ship_type_forbidden": [
@@ -10779,13 +8930,8 @@ const equip_data = {
     "13020": {
         "nationality": 1,
         "type": 3,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 13020,
         "icon": "13000",
         "ship_type_forbidden": [
@@ -10801,13 +8947,8 @@ const equip_data = {
     "13000": {
         "nationality": 1,
         "type": 3,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 13000,
         "icon": "13000",
         "ship_type_forbidden": [
@@ -10823,13 +8964,8 @@ const equip_data = {
     "90780": {
         "nationality": 8,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 0,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 90780,
         "icon": "50780",
         "ship_type_forbidden": [],
@@ -10842,13 +8978,8 @@ const equip_data = {
     "90800": {
         "nationality": 8,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 0,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 90800,
         "icon": "50800",
         "ship_type_forbidden": [],
@@ -10861,13 +8992,8 @@ const equip_data = {
     "90240": {
         "nationality": 8,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 90240,
         "icon": "50200",
         "ship_type_forbidden": [],
@@ -10880,13 +9006,8 @@ const equip_data = {
     "90220": {
         "nationality": 8,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 90220,
         "icon": "50200",
         "ship_type_forbidden": [],
@@ -10899,13 +9020,8 @@ const equip_data = {
     "90200": {
         "nationality": 8,
         "type": 2,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 90200,
         "icon": "50200",
         "ship_type_forbidden": [],
@@ -10918,13 +9034,8 @@ const equip_data = {
     "85460": {
         "nationality": 7,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 85460,
         "icon": "85460",
         "ship_type_forbidden": [],
@@ -10937,13 +9048,8 @@ const equip_data = {
     "85440": {
         "nationality": 7,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 85440,
         "icon": "85440",
         "ship_type_forbidden": [],
@@ -10956,13 +9062,8 @@ const equip_data = {
     "7040": {
         "nationality": 7,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 7040,
         "icon": "7000",
         "ship_type_forbidden": [],
@@ -10975,13 +9076,8 @@ const equip_data = {
     "7020": {
         "nationality": 7,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 7020,
         "icon": "7000",
         "ship_type_forbidden": [],
@@ -10994,13 +9090,8 @@ const equip_data = {
     "7000": {
         "nationality": 7,
         "type": 2,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 7000,
         "icon": "7000",
         "ship_type_forbidden": [],
@@ -11013,13 +9104,8 @@ const equip_data = {
     "85160": {
         "nationality": 7,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 85160,
         "icon": "85120",
         "ship_type_forbidden": [],
@@ -11032,13 +9118,8 @@ const equip_data = {
     "85140": {
         "nationality": 7,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 85140,
         "icon": "85120",
         "ship_type_forbidden": [],
@@ -11051,13 +9132,8 @@ const equip_data = {
     "85120": {
         "nationality": 7,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 85120,
         "icon": "85120",
         "ship_type_forbidden": [],
@@ -11070,13 +9146,8 @@ const equip_data = {
     "95640": {
         "nationality": 6,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 95640,
         "icon": "55600",
         "ship_type_forbidden": [],
@@ -11089,13 +9160,8 @@ const equip_data = {
     "95600": {
         "nationality": 6,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 95600,
         "icon": "55600",
         "ship_type_forbidden": [],
@@ -11108,13 +9174,8 @@ const equip_data = {
     "7140": {
         "nationality": 5,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 7140,
         "icon": "7100",
         "ship_type_forbidden": [],
@@ -11127,13 +9188,8 @@ const equip_data = {
     "7120": {
         "nationality": 5,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 7120,
         "icon": "7100",
         "ship_type_forbidden": [],
@@ -11146,13 +9202,8 @@ const equip_data = {
     "7100": {
         "nationality": 5,
         "type": 2,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 7100,
         "icon": "7100",
         "ship_type_forbidden": [],
@@ -11165,13 +9216,8 @@ const equip_data = {
     "42080": {
         "nationality": 4,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 42080,
         "icon": "42080",
         "ship_type_forbidden": [],
@@ -11184,13 +9230,8 @@ const equip_data = {
     "42340": {
         "nationality": 4,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 42340,
         "icon": "42300",
         "ship_type_forbidden": [],
@@ -11203,13 +9244,8 @@ const equip_data = {
     "42300": {
         "nationality": 4,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 42300,
         "icon": "42300",
         "ship_type_forbidden": [],
@@ -11222,13 +9258,8 @@ const equip_data = {
     "42240": {
         "nationality": 4,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 42240,
         "icon": "42200",
         "ship_type_forbidden": [],
@@ -11241,13 +9272,8 @@ const equip_data = {
     "42220": {
         "nationality": 4,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 42220,
         "icon": "42200",
         "ship_type_forbidden": [],
@@ -11260,13 +9286,8 @@ const equip_data = {
     "42200": {
         "nationality": 4,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 42200,
         "icon": "42200",
         "ship_type_forbidden": [],
@@ -11279,13 +9300,8 @@ const equip_data = {
     "42060": {
         "nationality": 4,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 0,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 42060,
         "icon": "42060",
         "ship_type_forbidden": [],
@@ -11298,13 +9314,8 @@ const equip_data = {
     "42040": {
         "nationality": 4,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 42040,
         "icon": "42000",
         "ship_type_forbidden": [],
@@ -11317,13 +9328,8 @@ const equip_data = {
     "42020": {
         "nationality": 4,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 42020,
         "icon": "42000",
         "ship_type_forbidden": [],
@@ -11336,13 +9342,8 @@ const equip_data = {
     "42000": {
         "nationality": 4,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 42000,
         "icon": "42000",
         "ship_type_forbidden": [],
@@ -11355,13 +9356,8 @@ const equip_data = {
     "42140": {
         "nationality": 4,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 42140,
         "icon": "42100",
         "ship_type_forbidden": [],
@@ -11374,13 +9370,8 @@ const equip_data = {
     "42120": {
         "nationality": 4,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 42120,
         "icon": "42100",
         "ship_type_forbidden": [],
@@ -11393,13 +9384,8 @@ const equip_data = {
     "42100": {
         "nationality": 4,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 42100,
         "icon": "42100",
         "ship_type_forbidden": [],
@@ -11412,13 +9398,8 @@ const equip_data = {
     "32260": {
         "nationality": 3,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 32260,
         "icon": "32260",
         "ship_type_forbidden": [],
@@ -11431,13 +9412,8 @@ const equip_data = {
     "32240": {
         "nationality": 3,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 32240,
         "icon": "32200",
         "ship_type_forbidden": [],
@@ -11450,13 +9426,8 @@ const equip_data = {
     "32220": {
         "nationality": 3,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 32220,
         "icon": "32200",
         "ship_type_forbidden": [],
@@ -11469,13 +9440,8 @@ const equip_data = {
     "32200": {
         "nationality": 3,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 32200,
         "icon": "32200",
         "ship_type_forbidden": [],
@@ -11488,13 +9454,8 @@ const equip_data = {
     "32340": {
         "nationality": 3,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 32340,
         "icon": "32300",
         "ship_type_forbidden": [],
@@ -11507,13 +9468,8 @@ const equip_data = {
     "32320": {
         "nationality": 3,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 32320,
         "icon": "32300",
         "ship_type_forbidden": [],
@@ -11526,13 +9482,8 @@ const equip_data = {
     "32300": {
         "nationality": 3,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 32300,
         "icon": "32300",
         "ship_type_forbidden": [],
@@ -11545,13 +9496,8 @@ const equip_data = {
     "32060": {
         "nationality": 3,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": 2,
-        "ammo_icon": [
-            1
-        ],
         "id": 32060,
         "icon": "32060",
         "ship_type_forbidden": [],
@@ -11564,13 +9510,8 @@ const equip_data = {
     "32140": {
         "nationality": 3,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 32140,
         "icon": "32100",
         "ship_type_forbidden": [],
@@ -11583,13 +9524,8 @@ const equip_data = {
     "32120": {
         "nationality": 3,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 2,
-        "ammo_icon": [
-            1
-        ],
         "id": 32120,
         "icon": "32100",
         "ship_type_forbidden": [],
@@ -11602,13 +9538,8 @@ const equip_data = {
     "32100": {
         "nationality": 3,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 32100,
         "icon": "32100",
         "ship_type_forbidden": [],
@@ -11621,13 +9552,8 @@ const equip_data = {
     "32040": {
         "nationality": 3,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": 2,
-        "ammo_icon": [
-            1
-        ],
         "id": 32040,
         "icon": "32000",
         "ship_type_forbidden": [],
@@ -11640,13 +9566,8 @@ const equip_data = {
     "32020": {
         "nationality": 3,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 32020,
         "icon": "32000",
         "ship_type_forbidden": [],
@@ -11659,13 +9580,8 @@ const equip_data = {
     "32000": {
         "nationality": 3,
         "type": 2,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 32000,
         "icon": "32000",
         "ship_type_forbidden": [],
@@ -11678,13 +9594,8 @@ const equip_data = {
     "22260": {
         "nationality": 2,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 22260,
         "icon": "22260",
         "ship_type_forbidden": [],
@@ -11697,13 +9608,8 @@ const equip_data = {
     "22140": {
         "nationality": 2,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 22140,
         "icon": "22100",
         "ship_type_forbidden": [],
@@ -11716,13 +9622,8 @@ const equip_data = {
     "22120": {
         "nationality": 2,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 22120,
         "icon": "22100",
         "ship_type_forbidden": [],
@@ -11735,13 +9636,8 @@ const equip_data = {
     "22100": {
         "nationality": 2,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 22100,
         "icon": "22100",
         "ship_type_forbidden": [],
@@ -11754,13 +9650,8 @@ const equip_data = {
     "22060": {
         "nationality": 2,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 0,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 22060,
         "icon": "22060",
         "ship_type_forbidden": [],
@@ -11773,13 +9664,8 @@ const equip_data = {
     "22040": {
         "nationality": 2,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 22040,
         "icon": "22000",
         "ship_type_forbidden": [],
@@ -11792,13 +9678,8 @@ const equip_data = {
     "22020": {
         "nationality": 2,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 22020,
         "icon": "22000",
         "ship_type_forbidden": [],
@@ -11811,13 +9692,8 @@ const equip_data = {
     "22000": {
         "nationality": 2,
         "type": 2,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 22000,
         "icon": "22000",
         "ship_type_forbidden": [],
@@ -11830,13 +9706,8 @@ const equip_data = {
     "22240": {
         "nationality": 2,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 22240,
         "icon": "22200",
         "ship_type_forbidden": [],
@@ -11849,13 +9720,8 @@ const equip_data = {
     "22220": {
         "nationality": 2,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 22220,
         "icon": "22200",
         "ship_type_forbidden": [],
@@ -11868,13 +9734,8 @@ const equip_data = {
     "22200": {
         "nationality": 2,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 22200,
         "icon": "22200",
         "ship_type_forbidden": [],
@@ -11887,13 +9748,8 @@ const equip_data = {
     "12200": {
         "nationality": 1,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 12200,
         "icon": "12200",
         "ship_type_forbidden": [],
@@ -11906,13 +9762,8 @@ const equip_data = {
     "12060": {
         "nationality": 1,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 0,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 12060,
         "icon": "12060",
         "ship_type_forbidden": [],
@@ -11925,13 +9776,8 @@ const equip_data = {
     "12040": {
         "nationality": 1,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 12040,
         "icon": "12000",
         "ship_type_forbidden": [],
@@ -11944,13 +9790,8 @@ const equip_data = {
     "12020": {
         "nationality": 1,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 12020,
         "icon": "12000",
         "ship_type_forbidden": [],
@@ -11963,13 +9804,8 @@ const equip_data = {
     "12000": {
         "nationality": 1,
         "type": 2,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 12000,
         "icon": "12000",
         "ship_type_forbidden": [],
@@ -11982,13 +9818,8 @@ const equip_data = {
     "12160": {
         "nationality": 1,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 12160,
         "icon": "12160",
         "ship_type_forbidden": [],
@@ -12001,13 +9832,8 @@ const equip_data = {
     "12140": {
         "nationality": 1,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 12140,
         "icon": "12100",
         "ship_type_forbidden": [],
@@ -12020,13 +9846,8 @@ const equip_data = {
     "12120": {
         "nationality": 1,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 12120,
         "icon": "12100",
         "ship_type_forbidden": [],
@@ -12039,13 +9860,8 @@ const equip_data = {
     "12100": {
         "nationality": 1,
         "type": 2,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 12100,
         "icon": "12100",
         "ship_type_forbidden": [],
@@ -12058,13 +9874,8 @@ const equip_data = {
     "90140": {
         "nationality": 8,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 90140,
         "icon": "50100",
         "ship_type_forbidden": [],
@@ -12077,13 +9888,8 @@ const equip_data = {
     "90120": {
         "nationality": 8,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 90120,
         "icon": "50100",
         "ship_type_forbidden": [],
@@ -12096,13 +9902,8 @@ const equip_data = {
     "90100": {
         "nationality": 8,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 90100,
         "icon": "50100",
         "ship_type_forbidden": [],
@@ -12115,13 +9916,8 @@ const equip_data = {
     "90740": {
         "nationality": 8,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 90740,
         "icon": "50700",
         "ship_type_forbidden": [],
@@ -12134,13 +9930,8 @@ const equip_data = {
     "90720": {
         "nationality": 8,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 90720,
         "icon": "50700",
         "ship_type_forbidden": [],
@@ -12153,13 +9944,8 @@ const equip_data = {
     "90700": {
         "nationality": 8,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 90700,
         "icon": "50700",
         "ship_type_forbidden": [],
@@ -12172,13 +9958,8 @@ const equip_data = {
     "90500": {
         "nationality": 8,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 90500,
         "icon": "50500",
         "ship_type_forbidden": [],
@@ -12191,13 +9972,8 @@ const equip_data = {
     "90040": {
         "nationality": 8,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 90040,
         "icon": "50000",
         "ship_type_forbidden": [],
@@ -12210,13 +9986,8 @@ const equip_data = {
     "90020": {
         "nationality": 8,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 90020,
         "icon": "50000",
         "ship_type_forbidden": [],
@@ -12229,13 +10000,8 @@ const equip_data = {
     "90000": {
         "nationality": 8,
         "type": 1,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 90000,
         "icon": "50000",
         "ship_type_forbidden": [],
@@ -12248,13 +10014,8 @@ const equip_data = {
     "7320": {
         "nationality": 8,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 0,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 7320,
         "icon": "7320",
         "ship_type_forbidden": [],
@@ -12267,13 +10028,8 @@ const equip_data = {
     "85040": {
         "nationality": 7,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 85040,
         "icon": "85000",
         "ship_type_forbidden": [],
@@ -12286,13 +10042,8 @@ const equip_data = {
     "85000": {
         "nationality": 7,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 85000,
         "icon": "85000",
         "ship_type_forbidden": [],
@@ -12305,13 +10056,8 @@ const equip_data = {
     "7240": {
         "nationality": 7,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 7240,
         "icon": "7200",
         "ship_type_forbidden": [],
@@ -12324,13 +10070,8 @@ const equip_data = {
     "7220": {
         "nationality": 7,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 7220,
         "icon": "7200",
         "ship_type_forbidden": [],
@@ -12343,13 +10084,8 @@ const equip_data = {
     "7200": {
         "nationality": 7,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 7200,
         "icon": "7200",
         "ship_type_forbidden": [],
@@ -12362,13 +10098,8 @@ const equip_data = {
     "95440": {
         "nationality": 6,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 95440,
         "icon": "55400",
         "ship_type_forbidden": [],
@@ -12381,13 +10112,8 @@ const equip_data = {
     "95420": {
         "nationality": 6,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 95420,
         "icon": "55400",
         "ship_type_forbidden": [],
@@ -12400,13 +10126,8 @@ const equip_data = {
     "95400": {
         "nationality": 6,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 95400,
         "icon": "55400",
         "ship_type_forbidden": [],
@@ -12419,13 +10140,8 @@ const equip_data = {
     "95460": {
         "nationality": 6,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 0,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 95460,
         "icon": "55460",
         "ship_type_forbidden": [],
@@ -12438,13 +10154,8 @@ const equip_data = {
     "95560": {
         "nationality": 6,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 95560,
         "icon": "55560",
         "ship_type_forbidden": [],
@@ -12457,13 +10168,8 @@ const equip_data = {
     "41160": {
         "nationality": 4,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 41160,
         "icon": "41160",
         "ship_type_forbidden": [],
@@ -12476,13 +10182,8 @@ const equip_data = {
     "41140": {
         "nationality": 4,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 41140,
         "icon": "41100",
         "ship_type_forbidden": [],
@@ -12495,13 +10196,8 @@ const equip_data = {
     "41120": {
         "nationality": 4,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 41120,
         "icon": "41100",
         "ship_type_forbidden": [],
@@ -12514,13 +10210,8 @@ const equip_data = {
     "41100": {
         "nationality": 4,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 41100,
         "icon": "41100",
         "ship_type_forbidden": [],
@@ -12533,13 +10224,8 @@ const equip_data = {
     "41040": {
         "nationality": 4,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 41040,
         "icon": "41000",
         "ship_type_forbidden": [],
@@ -12552,13 +10238,8 @@ const equip_data = {
     "41020": {
         "nationality": 4,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 41020,
         "icon": "41000",
         "ship_type_forbidden": [],
@@ -12571,13 +10252,8 @@ const equip_data = {
     "41000": {
         "nationality": 4,
         "type": 1,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 41000,
         "icon": "41000",
         "ship_type_forbidden": [],
@@ -12590,13 +10266,8 @@ const equip_data = {
     "41060": {
         "nationality": 4,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 0,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 41060,
         "icon": "41060",
         "ship_type_forbidden": [],
@@ -12609,13 +10280,8 @@ const equip_data = {
     "31280": {
         "nationality": 3,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 0,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 31280,
         "icon": "31280",
         "ship_type_forbidden": [],
@@ -12628,13 +10294,8 @@ const equip_data = {
     "31240": {
         "nationality": 3,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 31240,
         "icon": "31200",
         "ship_type_forbidden": [],
@@ -12647,13 +10308,8 @@ const equip_data = {
     "31220": {
         "nationality": 3,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 31220,
         "icon": "31200",
         "ship_type_forbidden": [],
@@ -12666,13 +10322,8 @@ const equip_data = {
     "31200": {
         "nationality": 3,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 31200,
         "icon": "31200",
         "ship_type_forbidden": [],
@@ -12685,13 +10336,8 @@ const equip_data = {
     "31260": {
         "nationality": 3,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 0,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 31260,
         "icon": "31260",
         "ship_type_forbidden": [],
@@ -12704,13 +10350,8 @@ const equip_data = {
     "31180": {
         "nationality": 3,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 0,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 31180,
         "icon": "31180",
         "ship_type_forbidden": [],
@@ -12723,13 +10364,8 @@ const equip_data = {
     "31140": {
         "nationality": 3,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 31140,
         "icon": "31100",
         "ship_type_forbidden": [],
@@ -12742,13 +10378,8 @@ const equip_data = {
     "31120": {
         "nationality": 3,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 31120,
         "icon": "31100",
         "ship_type_forbidden": [],
@@ -12761,13 +10392,8 @@ const equip_data = {
     "31100": {
         "nationality": 3,
         "type": 1,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 31100,
         "icon": "31100",
         "ship_type_forbidden": [],
@@ -12780,13 +10406,8 @@ const equip_data = {
     "31160": {
         "nationality": 3,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 0,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 31160,
         "icon": "31160",
         "ship_type_forbidden": [],
@@ -12799,13 +10420,8 @@ const equip_data = {
     "31060": {
         "nationality": 3,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 0,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 31060,
         "icon": "31060",
         "ship_type_forbidden": [],
@@ -12818,13 +10434,8 @@ const equip_data = {
     "31040": {
         "nationality": 3,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 31040,
         "icon": "31000",
         "ship_type_forbidden": [],
@@ -12837,13 +10448,8 @@ const equip_data = {
     "31020": {
         "nationality": 3,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 31020,
         "icon": "31000",
         "ship_type_forbidden": [],
@@ -12856,13 +10462,8 @@ const equip_data = {
     "31000": {
         "nationality": 3,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 31000,
         "icon": "31000",
         "ship_type_forbidden": [],
@@ -12875,13 +10476,8 @@ const equip_data = {
     "21540": {
         "nationality": 2,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 21540,
         "icon": "21500",
         "ship_type_forbidden": [],
@@ -12894,13 +10490,8 @@ const equip_data = {
     "21520": {
         "nationality": 2,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 1,
-        "ammo_icon": [
-            2
-        ],
         "id": 21520,
         "icon": "21500",
         "ship_type_forbidden": [],
@@ -12913,13 +10504,8 @@ const equip_data = {
     "21500": {
         "nationality": 2,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 21500,
         "icon": "21500",
         "ship_type_forbidden": [],
@@ -12932,13 +10518,8 @@ const equip_data = {
     "21440": {
         "nationality": 2,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 21440,
         "icon": "21400",
         "ship_type_forbidden": [],
@@ -12951,13 +10532,8 @@ const equip_data = {
     "21420": {
         "nationality": 2,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 21420,
         "icon": "21400",
         "ship_type_forbidden": [],
@@ -12970,13 +10546,8 @@ const equip_data = {
     "21400": {
         "nationality": 2,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 21400,
         "icon": "21400",
         "ship_type_forbidden": [],
@@ -12989,13 +10560,8 @@ const equip_data = {
     "21460": {
         "nationality": 2,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 21460,
         "icon": "21460",
         "ship_type_forbidden": [],
@@ -13008,13 +10574,8 @@ const equip_data = {
     "21340": {
         "nationality": 2,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 21340,
         "icon": "21300",
         "ship_type_forbidden": [],
@@ -13027,13 +10588,8 @@ const equip_data = {
     "21320": {
         "nationality": 2,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 21320,
         "icon": "21300",
         "ship_type_forbidden": [],
@@ -13046,13 +10602,8 @@ const equip_data = {
     "21300": {
         "nationality": 2,
         "type": 1,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 21300,
         "icon": "21300",
         "ship_type_forbidden": [],
@@ -13065,13 +10616,8 @@ const equip_data = {
     "21600": {
         "nationality": 2,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 0,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 21600,
         "icon": "21600",
         "ship_type_forbidden": [],
@@ -13084,13 +10630,8 @@ const equip_data = {
     "21140": {
         "nationality": 2,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 21140,
         "icon": "21100",
         "ship_type_forbidden": [],
@@ -13103,13 +10644,8 @@ const equip_data = {
     "21120": {
         "nationality": 2,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 21120,
         "icon": "21100",
         "ship_type_forbidden": [],
@@ -13122,13 +10658,8 @@ const equip_data = {
     "21100": {
         "nationality": 2,
         "type": 1,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 21100,
         "icon": "21100",
         "ship_type_forbidden": [],
@@ -13141,13 +10672,8 @@ const equip_data = {
     "21160": {
         "nationality": 2,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 0,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 21160,
         "icon": "21160",
         "ship_type_forbidden": [],
@@ -13160,13 +10686,8 @@ const equip_data = {
     "21040": {
         "nationality": 2,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 21040,
         "icon": "21000",
         "ship_type_forbidden": [],
@@ -13179,13 +10700,8 @@ const equip_data = {
     "21020": {
         "nationality": 2,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 21020,
         "icon": "21000",
         "ship_type_forbidden": [],
@@ -13198,13 +10714,8 @@ const equip_data = {
     "21000": {
         "nationality": 2,
         "type": 1,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 21000,
         "icon": "21000",
         "ship_type_forbidden": [],
@@ -13217,13 +10728,8 @@ const equip_data = {
     "21240": {
         "nationality": 2,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 21240,
         "icon": "21200",
         "ship_type_forbidden": [],
@@ -13236,13 +10742,8 @@ const equip_data = {
     "21220": {
         "nationality": 2,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 21220,
         "icon": "21200",
         "ship_type_forbidden": [],
@@ -13255,13 +10756,8 @@ const equip_data = {
     "21200": {
         "nationality": 2,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 21200,
         "icon": "21200",
         "ship_type_forbidden": [],
@@ -13274,13 +10770,8 @@ const equip_data = {
     "11040": {
         "nationality": 1,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 3,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 11040,
         "icon": "11000",
         "ship_type_forbidden": [],
@@ -13293,13 +10784,8 @@ const equip_data = {
     "11020": {
         "nationality": 1,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 2,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 11020,
         "icon": "11000",
         "ship_type_forbidden": [],
@@ -13312,13 +10798,8 @@ const equip_data = {
     "11000": {
         "nationality": 1,
         "type": 1,
-        "attribute_2": null,
         "rarity": 1,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 11000,
         "icon": "11000",
         "ship_type_forbidden": [],
@@ -13331,13 +10812,8 @@ const equip_data = {
     "11160": {
         "nationality": 1,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 0,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 11160,
         "icon": "11160",
         "ship_type_forbidden": [],
@@ -13350,13 +10826,8 @@ const equip_data = {
     "11240": {
         "nationality": 1,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 5,
         "tech": 3,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 11240,
         "icon": "11200",
         "ship_type_forbidden": [],
@@ -13369,13 +10840,8 @@ const equip_data = {
     "11220": {
         "nationality": 1,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 2,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 11220,
         "icon": "11200",
         "ship_type_forbidden": [],
@@ -13388,13 +10854,8 @@ const equip_data = {
     "11200": {
         "nationality": 1,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 11200,
         "icon": "11200",
         "ship_type_forbidden": [],
@@ -13407,13 +10868,8 @@ const equip_data = {
     "11060": {
         "nationality": 1,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 0,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 11060,
         "icon": "11060",
         "ship_type_forbidden": [],
@@ -13426,13 +10882,8 @@ const equip_data = {
     "11140": {
         "nationality": 1,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 4,
         "tech": 3,
-        "ammo": 2,
-        "ammo_icon": [
-            3
-        ],
         "id": 11140,
         "icon": "11100",
         "ship_type_forbidden": [],
@@ -13445,13 +10896,8 @@ const equip_data = {
     "11120": {
         "nationality": 1,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 3,
         "tech": 2,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 11120,
         "icon": "11100",
         "ship_type_forbidden": [],
@@ -13464,13 +10910,8 @@ const equip_data = {
     "11100": {
         "nationality": 1,
         "type": 1,
-        "attribute_2": "cannon",
         "rarity": 2,
         "tech": 1,
-        "ammo": 3,
-        "ammo_icon": [
-            1
-        ],
         "id": 11100,
         "icon": "11100",
         "ship_type_forbidden": [],

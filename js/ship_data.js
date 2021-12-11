@@ -15,8 +15,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10800060",
         "painting": "qianlai",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "飛鳥川ちせ",
         "en_name": "Chise Asukagawa",
         "cn_name": "飞鸟川千濑",
@@ -35,6 +33,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.2,
+            1.25,
+            1.3
         ]
     },
     "10800070": {
@@ -53,8 +56,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10800070",
         "painting": "he",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ムジナ",
         "en_name": "Mujina",
         "cn_name": "貉",
@@ -74,6 +75,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
         ]
     },
     "10800020": {
@@ -92,8 +98,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10800020",
         "painting": "qian",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "新条アカネ",
         "en_name": "Akane Shinjo",
         "cn_name": "新条茜",
@@ -113,6 +117,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            2,
+            1
         ]
     },
     "10800050": {
@@ -131,8 +140,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10800050",
         "painting": "mengya",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "南夢芽",
         "en_name": "Yume Minami",
         "cn_name": "南梦芽",
@@ -151,6 +158,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.2,
+            0.65,
+            1.15
         ]
     },
     "10800040": {
@@ -169,8 +181,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10800040",
         "painting": "naimeizi",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "なみこ",
         "en_name": "Namiko",
         "cn_name": "奈美子",
@@ -189,6 +199,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.55,
+            1
         ]
     },
     "10800030": {
@@ -207,8 +222,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10800030",
         "painting": "lian",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "はっす",
         "en_name": "Hass",
         "cn_name": "莲",
@@ -229,6 +242,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.35,
+            1.6,
+            1.1
         ]
     },
     "10800010": {
@@ -247,8 +265,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10800010",
         "painting": "baoduoliuhua",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "宝多六花",
         "en_name": "Rikka Takarada",
         "cn_name": "宝多六花",
@@ -272,6 +288,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.55,
+            1.6,
+            1.1
         ]
     },
     "10700050": {
@@ -290,8 +311,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10700050",
         "painting": "lvzi",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "秋月律子",
         "en_name": "Ritsuko Akizuki",
         "cn_name": "秋月律子",
@@ -313,6 +332,11 @@ const ship_data = {
         "equip_5": [
             10,
             18
+        ],
+        "eq_p": [
+            1.1,
+            1.1,
+            1
         ]
     },
     "10700070": {
@@ -331,8 +355,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10700070",
         "painting": "zhenmei",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "双海真美",
         "en_name": "Mami Futami",
         "cn_name": "双海真美",
@@ -351,6 +373,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.2,
+            1.25,
+            0.85
         ]
     },
     "10700060": {
@@ -369,8 +396,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10700060",
         "painting": "yamei",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "双海亜美",
         "en_name": "Ami Futami",
         "cn_name": "双海亚美",
@@ -389,6 +414,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.2,
+            0.85
         ]
     },
     "10700020": {
@@ -407,8 +437,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10700020",
         "painting": "qianzao",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "如月千早",
         "en_name": "Chihaya Kisaragi",
         "cn_name": "如月千早",
@@ -427,6 +455,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.1,
+            1.2,
+            1.4
         ]
     },
     "10700030": {
@@ -445,8 +478,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10700030",
         "painting": "yizhi",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "水瀬伊織",
         "en_name": "Iori Minase",
         "cn_name": "水濑伊织",
@@ -465,6 +496,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            2,
+            1
         ]
     },
     "10700040": {
@@ -483,8 +519,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10700040",
         "painting": "zi",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "三浦あずさ",
         "en_name": "Azusa Miura",
         "cn_name": "三浦 梓",
@@ -503,6 +537,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.2,
+            0.65,
+            1.15
         ]
     },
     "10700010": {
@@ -521,8 +560,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10700010",
         "painting": "chunxiang",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "天海春香",
         "en_name": "Haruka Amami",
         "cn_name": "天海春香",
@@ -543,6 +580,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.55,
+            1.55,
+            1.1
         ]
     },
     "10600060": {
@@ -561,8 +603,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10600060",
         "painting": "nvtiangou_DOA",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "女天狗",
         "en_name": "Nyotengu",
         "cn_name": "女天狗",
@@ -581,6 +621,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.2,
+            1.25,
+            1.35
         ]
     },
     "10600050": {
@@ -599,8 +644,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10600050",
         "painting": "zhixiao_DOA",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "なぎさ",
         "en_name": "Nagisa",
         "cn_name": "凪咲",
@@ -620,6 +663,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
         ]
     },
     "10600020": {
@@ -638,8 +686,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10600020",
         "painting": "suixiang_doa",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ほのか",
         "en_name": "Honoka",
         "cn_name": "穗香",
@@ -659,6 +705,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            2,
+            1
         ]
     },
     "10600030": {
@@ -677,8 +728,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10600030",
         "painting": "xia_DOA",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "かすみ",
         "en_name": "Kasumi",
         "cn_name": "霞",
@@ -697,6 +746,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            1.65,
+            1.05
         ]
     },
     "10600070": {
@@ -715,8 +769,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10600070",
         "painting": "monika_DOA",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "モニカ",
         "en_name": "Monica",
         "cn_name": "莫妮卡",
@@ -737,6 +789,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.35,
+            1.6,
+            1.1
         ]
     },
     "10600040": {
@@ -755,8 +812,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10600040",
         "painting": "haixiao_DOA",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "みさき",
         "en_name": "Misaki",
         "cn_name": "海咲",
@@ -777,6 +832,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.3,
+            0.7,
+            1.1
         ]
     },
     "10600010": {
@@ -795,8 +855,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10600010",
         "painting": "maliluosi_doa",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "マリー・ローズ",
         "en_name": "Marie Rose",
         "cn_name": "玛莉萝丝",
@@ -817,6 +875,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.4,
+            1.15
         ]
     },
     "10500030": {
@@ -835,8 +898,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10500030",
         "painting": "vtuber_aqua",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "湊あくあ",
         "en_name": "Minato Aqua",
         "cn_name": "湊阿库娅",
@@ -855,6 +916,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.25,
+            0.85
         ]
     },
     "10500070": {
@@ -873,8 +939,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10500070",
         "painting": "vtuber_mio",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "大神ミオ",
         "en_name": "Ōkami Mio",
         "cn_name": "大神澪",
@@ -893,6 +957,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.4,
+            1.15,
+            1.15
         ]
     },
     "10500020": {
@@ -911,8 +980,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10500020",
         "painting": "vtuber_sora",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ときのそら",
         "en_name": "Tokino Sora",
         "cn_name": "时乃空",
@@ -931,6 +998,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.25,
+            1.25
         ]
     },
     "10500060": {
@@ -949,8 +1021,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10500060",
         "painting": "vtuber_shion",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "紫咲シオン",
         "en_name": "Murasaki Shion",
         "cn_name": "紫咲诗音",
@@ -971,6 +1041,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1.3,
+            1.25,
+            1
         ]
     },
     "10500050": {
@@ -989,8 +1064,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10500050",
         "painting": "vtuber_ayame",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "百鬼あやめ",
         "en_name": "Nakiri Ayame",
         "cn_name": "百鬼绫目",
@@ -1009,6 +1082,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.1,
+            0.55,
+            1.05
         ]
     },
     "10500040": {
@@ -1027,8 +1105,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10500040",
         "painting": "vtuber_matsuri",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "夏色まつり",
         "en_name": "Natsuiro Matsuri",
         "cn_name": "夏色祭",
@@ -1049,6 +1125,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.25,
+            1.05
         ]
     },
     "10500010": {
@@ -1067,8 +1148,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10500010",
         "painting": "vtuber_fubuki",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "白上フブキ",
         "en_name": "Shirakami Fubuki",
         "cn_name": "白上吹雪",
@@ -1089,6 +1168,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.85,
+            1.5,
+            0.8
         ]
     },
     "10400030": {
@@ -1107,8 +1191,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10400030",
         "painting": "aijiangCV",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "キズナアイ・アニバーサリー",
         "en_name": "Anniversary Kizuna AI",
         "cn_name": "绊爱·Anniversary",
@@ -1127,6 +1209,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.1,
+            1.35,
+            1.35
         ]
     },
     "10400040": {
@@ -1145,8 +1232,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10400040",
         "painting": "aijiangBB",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "キズナアイ・スーパーゲーマー",
         "en_name": "Super Gamer Kizuna AI",
         "cn_name": "绊爱·SuperGamer",
@@ -1166,6 +1251,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
         ]
     },
     "10400020": {
@@ -1184,8 +1274,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10400020",
         "painting": "aijiangCL",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "キズナアイ・エレガント",
         "en_name": "Elegant Kizuna AI",
         "cn_name": "绊爱·Elegant",
@@ -1204,6 +1292,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.1,
+            0.55,
+            1.25
         ]
     },
     "10400010": {
@@ -1222,8 +1315,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10400010",
         "painting": "aijiangDD",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "キズナアイ",
         "en_name": "Kizuna AI",
         "cn_name": "绊爱",
@@ -1244,6 +1335,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.6,
+            1.05
         ]
     },
     "10300060": {
@@ -1262,8 +1358,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10300060",
         "painting": "fumilulu",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "フミルィル",
         "en_name": "Fumiruiru*",
         "cn_name": "芙米露露",
@@ -1282,6 +1376,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.05,
+            1.05,
+            1.05
         ]
     },
     "10300050": {
@@ -1300,8 +1399,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10300050",
         "painting": "salana",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "サラァナ",
         "en_name": "Saraana*",
         "cn_name": "萨拉娜",
@@ -1322,6 +1419,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1.3,
+            1.25,
+            0.8
         ]
     },
     "10300040": {
@@ -1340,8 +1442,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10300040",
         "painting": "wululu",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ウルゥル",
         "en_name": "Uruuru*",
         "cn_name": "乌璐露",
@@ -1362,6 +1462,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1.3,
+            1.25,
+            0.8
         ]
     },
     "10300010": {
@@ -1380,8 +1485,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10300010",
         "painting": "jiuyuan",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "クオン",
         "en_name": "Kuon*",
         "cn_name": "久远",
@@ -1400,6 +1503,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.1,
+            1.05,
+            0.75
         ]
     },
     "10300030": {
@@ -1418,8 +1526,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10300030",
         "painting": "lulutiye",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ルルティエ",
         "en_name": "Rurutie*",
         "cn_name": "露露缇耶",
@@ -1440,6 +1546,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.1,
+            1.4,
+            0.6
         ]
     },
     "10300020": {
@@ -1458,8 +1569,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10300020",
         "painting": "maoyin",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ネコネ",
         "en_name": "Nekone*",
         "cn_name": "猫音",
@@ -1480,6 +1589,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.85,
+            1.2,
+            0.65
         ]
     },
     "10100080": {
@@ -1498,8 +1612,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10100080",
         "painting": "HDN402_1",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "グリーンハート",
         "en_name": "Green Heart",
         "cn_name": "翡绿之心",
@@ -1518,6 +1630,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.2,
+            1.25,
+            1.25
         ]
     },
     "10100040": {
@@ -1536,8 +1653,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10100040",
         "painting": "HDN401",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ベール",
         "en_name": "Vert",
         "cn_name": "贝露",
@@ -1556,6 +1671,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.2,
+            1.25,
+            1.25
         ]
     },
     "10100060": {
@@ -1574,8 +1694,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10100060",
         "painting": "HDN202_1",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ブラックハート",
         "en_name": "Black Heart",
         "cn_name": "圣黑之心",
@@ -1594,6 +1712,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.65,
+            1.1
         ]
     },
     "10100020": {
@@ -1612,8 +1735,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10100020",
         "painting": "HDN201",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ノワール",
         "en_name": "Noire",
         "cn_name": "诺瓦露",
@@ -1632,6 +1753,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.65,
+            1.1
         ]
     },
     "10100050": {
@@ -1650,8 +1776,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10100050",
         "painting": "HDN102_1",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "パープルハート",
         "en_name": "Purple Heart",
         "cn_name": "绀紫之心",
@@ -1672,6 +1796,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.45,
+            1.5,
+            1
         ]
     },
     "10100010": {
@@ -1690,8 +1819,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10100010",
         "painting": "HDN101",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ネプテューヌ",
         "en_name": "Neptune",
         "cn_name": "涅普顿",
@@ -1712,6 +1839,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.4,
+            1.5,
+            1
         ]
     },
     "10100070": {
@@ -1730,8 +1862,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10100070",
         "painting": "HDN302_1",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ホワイトハート",
         "en_name": "White Heart",
         "cn_name": "群白之心",
@@ -1752,6 +1882,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.8,
+            1.5,
+            0.75
         ]
     },
     "10100030": {
@@ -1770,8 +1905,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "10100030",
         "painting": "HDN301",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ブラン",
         "en_name": "Blanc",
         "cn_name": "布兰",
@@ -1792,6 +1925,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.75
         ]
     },
     "100020": {
@@ -1810,8 +1948,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "100020",
         "painting": "buli_super",
-        "star_string": "★★★★★★",
-        "rarity_string": "UR",
         "jp_name": "特装型ブリMKIII",
         "en_name": "Specialized Bulin Custom MKIII",
         "cn_name": "特装型布里MKIII",
@@ -1832,6 +1968,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1,
+            1,
+            1
         ]
     },
     "100010": {
@@ -1850,8 +1991,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "100010",
         "painting": "kin",
-        "star_string": "★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "試作型ブリMKII",
         "en_name": "Prototype Bulin MKII",
         "cn_name": "试作型布里MKII",
@@ -1872,6 +2011,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1,
+            1,
+            1
         ]
     },
     "100000": {
@@ -1890,8 +2034,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "100000",
         "painting": "gin",
-        "star_string": "★★★★",
-        "rarity_string": "SR",
         "jp_name": "汎用型ブリ",
         "en_name": "Universal Bulin",
         "cn_name": "泛用型布里",
@@ -1912,6 +2054,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1,
+            1,
+            1
         ]
     },
     "9707030": {
@@ -1930,8 +2077,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "9707030",
         "painting": "canglong_alter",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "蒼龍(META)",
         "en_name": "Souryuu META",
         "cn_name": "苍龙·META",
@@ -1950,6 +2095,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.1,
+            1.5,
+            1.2
         ]
     },
     "9707020": {
@@ -1968,8 +2118,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "9707020",
         "painting": "huangjiafangzhou_alter",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "アーク・ロイヤル(META)",
         "en_name": "Ark Royal META",
         "cn_name": "皇家方舟·META",
@@ -1988,6 +2136,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.45,
+            1.4,
+            0.8
         ]
     },
     "9707010": {
@@ -2006,8 +2159,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "9707010",
         "painting": "feilong_alter",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "飛龍(META)",
         "en_name": "Hiryuu META",
         "cn_name": "飞龙·META",
@@ -2026,6 +2177,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.1,
+            1.1,
+            1.5
         ]
     },
     "9706010": {
@@ -2044,8 +2200,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "9706010",
         "painting": "feiying_alter",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "飛鷹(META)",
         "en_name": "Hiyou META",
         "cn_name": "飞鹰·META",
@@ -2066,6 +2220,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1,
+            1.2,
+            1.1
         ]
     },
     "9705010": {
@@ -2084,8 +2243,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "9705010",
         "painting": "fusang_alter",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "扶桑(META)",
         "en_name": "Fusou META",
         "cn_name": "扶桑·META",
@@ -2105,6 +2262,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            0.8
         ]
     },
     "9704010": {
@@ -2123,8 +2285,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "9704010",
         "painting": "genaisennao_alter",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "グナイゼナウ(META)",
         "en_name": "Gneisenau META",
         "cn_name": "格奈森瑙·META",
@@ -2144,6 +2304,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
         ]
     },
     "9702010": {
@@ -2162,8 +2327,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "9702010",
         "painting": "hailunna_alter",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ヘレナ(META)",
         "en_name": "Helena META",
         "cn_name": "海伦娜·META",
@@ -2184,6 +2347,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.35,
+            0.65,
+            1
         ]
     },
     "999010": {
@@ -2202,8 +2370,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "999010",
         "painting": "jiasikenie",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ガスコーニュ",
         "en_name": "Gascogne",
         "cn_name": "加斯科涅",
@@ -2223,6 +2389,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.8,
+            2,
+            0.8
         ]
     },
     "905030": {
@@ -2241,8 +2412,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "905030",
         "painting": "jiasikenie_idol",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ガスコーニュ(μ兵装)",
         "en_name": "Gascogne μ",
         "cn_name": "加斯科涅(μ兵装)",
@@ -2262,6 +2431,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.7,
+            2,
+            0.7
         ]
     },
     "905010": {
@@ -2280,8 +2454,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "905010",
         "painting": "rangbaer",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ジャン・バール",
         "en_name": "Jean Bart",
         "cn_name": "让·巴尔",
@@ -2301,6 +2473,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.6,
+            2,
+            0.7
         ]
     },
     "904010": {
@@ -2319,8 +2496,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "904010",
         "painting": "dunkeerke",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ダンケルク",
         "en_name": "Dunkerque",
         "cn_name": "敦刻尔克",
@@ -2339,6 +2514,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.7,
+            1.5,
+            0.7
         ]
     },
     "903020": {
@@ -2357,8 +2537,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "903020",
         "painting": "aerjiliya",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "アルジェリー",
         "en_name": "Algérie",
         "cn_name": "阿尔及利亚",
@@ -2377,6 +2555,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.75,
+            1
         ]
     },
     "903010": {
@@ -2395,8 +2578,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "903010",
         "painting": "fuxu",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "フォッシュ",
         "en_name": "Foch",
         "cn_name": "福煦",
@@ -2415,6 +2596,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.15,
+            1.65,
+            0.9
         ]
     },
     "902010": {
@@ -2433,8 +2619,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "902010",
         "painting": "jialisuoniye",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ラ・ガリソニエール",
         "en_name": "La Galissonnière",
         "cn_name": "拉·加利索尼埃",
@@ -2455,6 +2639,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.35,
+            1.5,
+            1
         ]
     },
     "901120": {
@@ -2473,8 +2662,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "901120",
         "painting": "edu_idol",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ル・マラン(μ兵装)",
         "en_name": "Le Malin μ",
         "cn_name": "恶毒(μ兵装)",
@@ -2495,6 +2682,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.5,
+            1.25,
+            1.2
         ]
     },
     "901110": {
@@ -2513,8 +2705,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "901110",
         "painting": "edu",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ル・マラン",
         "en_name": "Le Malin",
         "cn_name": "恶毒",
@@ -2535,6 +2725,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.5,
+            1.25,
+            1.2
         ]
     },
     "901030": {
@@ -2553,8 +2748,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "901030",
         "painting": "wokelan",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ヴォークラン",
         "en_name": "Vauquelin",
         "cn_name": "沃克兰",
@@ -2575,6 +2768,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.4,
+            1.4,
+            0.75
         ]
     },
     "901020": {
@@ -2593,8 +2791,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "901020",
         "painting": "taertu",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "タルテュ",
         "en_name": "Tartu",
         "cn_name": "塔尔图",
@@ -2615,6 +2811,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.4,
+            1.4,
+            0.75
         ]
     },
     "901019": {
@@ -2633,8 +2834,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "901019",
         "painting": "lemaer_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ル・マルス改",
         "en_name": "Le Mars (Retrofit)",
         "cn_name": "勒马尔改",
@@ -2655,6 +2854,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.45,
+            0.8
         ]
     },
     "901010": {
@@ -2673,8 +2877,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "901010",
         "painting": "lemaer",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "ル・マルス",
         "en_name": "Le Mars",
         "cn_name": "勒马尔",
@@ -2695,6 +2897,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.15,
+            1.4,
+            0.75
         ]
     },
     "808010": {
@@ -2713,8 +2920,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "808010",
         "painting": "xukufu",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "シュルクーフ",
         "en_name": "Surcouf",
         "cn_name": "絮库夫",
@@ -2733,6 +2938,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.15,
+            1.15,
+            1.2
         ]
     },
     "807010": {
@@ -2751,8 +2961,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "807010",
         "painting": "beiyaen",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ベアルン",
         "en_name": "Béarn",
         "cn_name": "贝亚恩",
@@ -2772,6 +2980,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            1.4,
+            0.55
         ]
     },
     "899020": {
@@ -2790,8 +3003,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "899020",
         "painting": "xiangbin",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "シャンパーニュ",
         "en_name": "Champagne",
         "cn_name": "香槟",
@@ -2811,6 +3022,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.8,
+            2,
+            0.8
         ]
     },
     "805010": {
@@ -2829,8 +3045,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "805010",
         "painting": "lisailiu",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "リシュリュー",
         "en_name": "Richelieu",
         "cn_name": "黎塞留",
@@ -2850,6 +3064,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.6,
+            2,
+            1
         ]
     },
     "899010": {
@@ -2868,8 +3087,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "899010",
         "painting": "luyijiushi",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "サン・ルイ",
         "en_name": "Saint Louis",
         "cn_name": "路易九世",
@@ -2888,6 +3105,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.2,
+            1.25
         ]
     },
     "802020": {
@@ -2906,8 +3128,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "802020",
         "painting": "shengnvzhende",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ジャンヌ・ダルク",
         "en_name": "Jeanne d'Arc",
         "cn_name": "圣女贞德",
@@ -2928,6 +3148,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.35,
+            1.45,
+            1
         ]
     },
     "802019": {
@@ -2946,8 +3171,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "802019",
         "painting": "aimierbeierding_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "エミール・ベルタン改",
         "en_name": "Émile Bertin (Retrofit)",
         "cn_name": "埃米尔·贝尔汀改",
@@ -2968,6 +3191,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.45,
+            1.55,
+            1.15
         ]
     },
     "802010": {
@@ -2986,8 +3214,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "802010",
         "painting": "aimierbeierding",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "エミール・ベルタン",
         "en_name": "Émile Bertin",
         "cn_name": "埃米尔·贝尔汀",
@@ -3008,6 +3234,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.4,
+            1.55,
+            1
         ]
     },
     "801080": {
@@ -3026,8 +3257,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "801080",
         "painting": "mayebuleize",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "マイレ・ブレゼ",
         "en_name": "Maillé Brézé",
         "cn_name": "马耶·布雷泽",
@@ -3048,6 +3277,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.4,
+            1.4,
+            0.75
         ]
     },
     "801070": {
@@ -3066,8 +3300,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "801070",
         "painting": "kebu",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ル・テリブル",
         "en_name": "Le Terrible",
         "cn_name": "可怖",
@@ -3088,6 +3320,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.5,
+            1.25,
+            1.2
         ]
     },
     "801040": {
@@ -3106,8 +3343,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "801040",
         "painting": "juejiang",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ルピニャート",
         "en_name": "L'Opiniâtre",
         "cn_name": "倔强",
@@ -3128,6 +3363,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.3,
+            1.35,
+            0.75
         ]
     },
     "801030": {
@@ -3146,8 +3386,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "801030",
         "painting": "lumang",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ル・テメレール",
         "en_name": "Le Téméraire",
         "cn_name": "鲁莽",
@@ -3168,6 +3406,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.3,
+            1.15,
+            0.75
         ]
     },
     "801029": {
@@ -3186,8 +3429,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "801029",
         "painting": "fuerban_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "フォルバン改",
         "en_name": "Forbin (Retrofit)",
         "cn_name": "福尔班改",
@@ -3208,6 +3449,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.45,
+            0.8
         ]
     },
     "801020": {
@@ -3226,8 +3472,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "801020",
         "painting": "fuerban",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "フォルバン",
         "en_name": "Forbin",
         "cn_name": "福尔班",
@@ -3248,6 +3492,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.15,
+            1.4,
+            0.75
         ]
     },
     "801010": {
@@ -3266,8 +3515,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "801010",
         "painting": "kaixuan",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ル・トリオンファン",
         "en_name": "Le Triomphant",
         "cn_name": "凯旋",
@@ -3288,6 +3535,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.4,
+            1.25,
+            1.45
         ]
     },
     "705050": {
@@ -3306,8 +3558,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "705050",
         "painting": "suweiailuoxiya",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ソビエツカヤ・ロシア",
         "en_name": "Sovetskaya Rossiya",
         "cn_name": "苏维埃罗西亚",
@@ -3327,6 +3577,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            2,
+            1
         ]
     },
     "705040": {
@@ -3345,8 +3600,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "705040",
         "painting": "suweiaibeilaluosi",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ソビエツカヤ・ベラルーシア",
         "en_name": "Sovetskaya Belorussiya",
         "cn_name": "苏维埃贝拉罗斯",
@@ -3366,6 +3619,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            2,
+            1.1
         ]
     },
     "705010": {
@@ -3384,8 +3642,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "705010",
         "painting": "gangute",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ガングート",
         "en_name": "Gangut",
         "cn_name": "甘古特",
@@ -3405,6 +3661,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.1,
+            2,
+            1
         ]
     },
     "703010": {
@@ -3423,8 +3684,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "703010",
         "painting": "talin",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "タリン",
         "en_name": "Tallinn",
         "cn_name": "塔林",
@@ -3446,6 +3705,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.55,
+            1.25,
+            1.15
         ]
     },
     "702060": {
@@ -3464,8 +3728,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "702060",
         "painting": "moermansike",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ムルマンスク",
         "en_name": "Murmansk",
         "cn_name": "摩尔曼斯克",
@@ -3486,6 +3748,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.55,
+            1.3
         ]
     },
     "702040": {
@@ -3504,8 +3771,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "702040",
         "painting": "jiluofu",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "キーロフ",
         "en_name": "Kirov",
         "cn_name": "基洛夫",
@@ -3526,6 +3791,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.5,
+            1.35,
+            1.1
         ]
     },
     "702030": {
@@ -3544,8 +3814,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "702030",
         "painting": "qiabayefu",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "チャパエフ",
         "en_name": "Chapayev",
         "cn_name": "恰巴耶夫",
@@ -3566,6 +3834,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.3,
+            0.75,
+            1.2
         ]
     },
     "702029": {
@@ -3584,8 +3857,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "702029",
         "painting": "shuixingjinian_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "パーミャチ・メルクーリヤ改",
         "en_name": "Pamiat' Merkuria (Retrofit)",
         "cn_name": "水星纪念改",
@@ -3606,6 +3877,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.25,
+            0.9
         ]
     },
     "702020": {
@@ -3624,8 +3900,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "702020",
         "painting": "shuixingjinian",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "パーミャチ・メルクーリヤ",
         "en_name": "Pamiat' Merkuria",
         "cn_name": "水星纪念",
@@ -3646,6 +3920,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.2,
+            0.8
         ]
     },
     "702010": {
@@ -3664,8 +3943,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "702010",
         "painting": "afuleer",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "アヴローラ",
         "en_name": "Avrora",
         "cn_name": "阿芙乐尔",
@@ -3686,6 +3963,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.3,
+            1.25,
+            0.8
         ]
     },
     "701080": {
@@ -3704,8 +3986,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "701080",
         "painting": "hongliang",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "グロームキィ",
         "en_name": "Gromky",
         "cn_name": "洪亮",
@@ -3726,6 +4006,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.55,
+            1,
+            1.1
         ]
     },
     "701070": {
@@ -3744,8 +4029,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "701070",
         "painting": "leiming",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "グレミャーシュチ",
         "en_name": "Gremyashchy",
         "cn_name": "雷鸣",
@@ -3766,6 +4049,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.6,
+            1.1,
+            1.1
         ]
     },
     "701060": {
@@ -3784,8 +4072,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "701060",
         "painting": "shensu",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ストレミテルヌイ",
         "en_name": "Stremitelny",
         "cn_name": "神速",
@@ -3806,6 +4092,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.55,
+            1,
+            1.1
         ]
     },
     "701050": {
@@ -3824,8 +4115,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "701050",
         "painting": "tashigan_idol",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "タシュケント(μ兵装)",
         "en_name": "Tashkent μ",
         "cn_name": "塔什干(μ兵装)",
@@ -3846,6 +4135,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.65,
+            1.25,
+            1.05
         ]
     },
     "701040": {
@@ -3864,8 +4158,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "701040",
         "painting": "tashigan",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "タシュケント",
         "en_name": "Tashkent",
         "cn_name": "塔什干",
@@ -3886,6 +4178,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.65,
+            1.25,
+            1.05
         ]
     },
     "701030": {
@@ -3904,8 +4201,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "701030",
         "painting": "mingsike",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ミンスク",
         "en_name": "Minsk",
         "cn_name": "明斯克",
@@ -3926,6 +4221,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.55,
+            1.1,
+            1
         ]
     },
     "701020": {
@@ -3944,8 +4244,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "701020",
         "painting": "weiyan",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "グロズヌイ",
         "en_name": "Grozny",
         "cn_name": "威严",
@@ -3966,6 +4264,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.55,
+            1,
+            1.1
         ]
     },
     "608010": {
@@ -3984,8 +4287,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "608010",
         "painting": "tuolichaili",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "トリチェリ",
         "en_name": "Torricelli",
         "cn_name": "托里拆利",
@@ -4004,6 +4305,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.2,
+            0.85
         ]
     },
     "607010": {
@@ -4022,8 +4328,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "607010",
         "painting": "tianying",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "アクィラ",
         "en_name": "Aquila",
         "cn_name": "天鹰",
@@ -4043,6 +4347,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.2,
+            1.2,
+            1.3
         ]
     },
     "699010": {
@@ -4061,8 +4370,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "699010",
         "painting": "makeboluo",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "マルコ・ポーロ",
         "en_name": "Marco Polo",
         "cn_name": "马可波罗",
@@ -4082,6 +4389,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.45,
+            2,
+            1.2
         ]
     },
     "605060": {
@@ -4100,8 +4412,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "605060",
         "painting": "kaisa",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ジュリオ・チェザーレ",
         "en_name": "Giulio Cesare",
         "cn_name": "朱利奥·凯撒",
@@ -4120,6 +4430,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.5,
+            0.7
         ]
     },
     "605050": {
@@ -4138,8 +4453,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "605050",
         "painting": "jiafuerbojue",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "コンテ・ディ・カブール",
         "en_name": "Conte di Cavour",
         "cn_name": "加富尔伯爵",
@@ -4158,6 +4471,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.5,
+            0.7
         ]
     },
     "605020": {
@@ -4176,8 +4494,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "605020",
         "painting": "lituoliao",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "リットリオ",
         "en_name": "Littorio",
         "cn_name": "利托里奥",
@@ -4197,6 +4513,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
         ]
     },
     "605010": {
@@ -4215,8 +4536,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "605010",
         "painting": "weineituo",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ヴィットリオ・ヴェネト",
         "en_name": "Vittorio Veneto",
         "cn_name": "维托里奥·维内托",
@@ -4236,6 +4555,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
         ]
     },
     "603030": {
@@ -4254,8 +4578,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "603030",
         "painting": "bola",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ポーラ",
         "en_name": "Pola",
         "cn_name": "波拉",
@@ -4274,6 +4596,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            0.6,
+            1
         ]
     },
     "603020": {
@@ -4292,8 +4619,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "603020",
         "painting": "zhala",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ザラ",
         "en_name": "Zara",
         "cn_name": "扎拉",
@@ -4312,6 +4637,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.2,
+            0.55,
+            1
         ]
     },
     "603010": {
@@ -4330,8 +4660,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "603010",
         "painting": "teluntuo",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "トレント",
         "en_name": "Trento",
         "cn_name": "特伦托",
@@ -4350,6 +4678,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.65,
+            1
         ]
     },
     "602010": {
@@ -4368,8 +4701,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "602010",
         "painting": "abuluqi",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ドゥーカ・デッリ・アブルッツィ",
         "en_name": "Duca degli Abruzzi",
         "cn_name": "阿布鲁齐公爵",
@@ -4390,6 +4721,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.6,
+            1.1
         ]
     },
     "601060": {
@@ -4408,8 +4744,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "601060",
         "painting": "daleike",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ニコロソ・ダ・レッコ",
         "en_name": "Nicoloso da Recco",
         "cn_name": "尼科洛索·达雷科",
@@ -4430,6 +4764,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.5,
+            1.2,
+            0.85
         ]
     },
     "601050": {
@@ -4448,8 +4787,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "601050",
         "painting": "xinanfeng",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "リベッチオ",
         "en_name": "Libeccio",
         "cn_name": "西南风",
@@ -4470,6 +4807,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.4,
+            1.3,
+            1.1
         ]
     },
     "601040": {
@@ -4488,8 +4830,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "601040",
         "painting": "xibeifeng",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "マエストラーレ",
         "en_name": "Maestrale",
         "cn_name": "西北风",
@@ -4510,6 +4850,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.4,
+            1.3,
+            1.1
         ]
     },
     "601030": {
@@ -4528,8 +4873,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "601030",
         "painting": "wenqinzuojiaobeidi",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ヴィンチェンツォ・ジョベルティ",
         "en_name": "Vincenzo Gioberti",
         "cn_name": "文琴佐·焦贝蒂",
@@ -4550,6 +4893,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.3,
+            1.05
         ]
     },
     "601020": {
@@ -4568,8 +4916,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "601020",
         "painting": "longqibing",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "カラビニエーレ",
         "en_name": "Carabiniere",
         "cn_name": "龙骑兵",
@@ -4590,6 +4936,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.6,
+            1.2,
+            0.75
         ]
     },
     "502050": {
@@ -4608,8 +4959,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "502050",
         "painting": "zhaohe",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "肇和",
         "en_name": "Chao Ho",
         "cn_name": "肇和",
@@ -4630,6 +4979,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1,
+            0.9,
+            0.8
         ]
     },
     "502040": {
@@ -4648,8 +5002,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "502040",
         "painting": "yingrui",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "応瑞",
         "en_name": "Ying Swei",
         "cn_name": "应瑞",
@@ -4670,6 +5022,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1,
+            0.9,
+            0.8
         ]
     },
     "502039": {
@@ -4688,8 +5045,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "502039",
         "painting": "pinghai_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "平海改",
         "en_name": "Ping Hai (Retrofit)",
         "cn_name": "平海改",
@@ -4710,6 +5065,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.45,
+            1.55,
+            1.35
         ]
     },
     "502030": {
@@ -4728,8 +5088,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "502030",
         "painting": "pinghai",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "平海",
         "en_name": "Ping Hai",
         "cn_name": "平海",
@@ -4750,6 +5108,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.3,
+            1.55,
+            1.3
         ]
     },
     "502029": {
@@ -4768,8 +5131,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "502029",
         "painting": "ninghai_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "寧海改",
         "en_name": "Ning Hai (Retrofit)",
         "cn_name": "宁海改",
@@ -4790,6 +5151,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.45,
+            1.55,
+            1.35
         ]
     },
     "502020": {
@@ -4808,8 +5174,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "502020",
         "painting": "ninghai",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "寧海",
         "en_name": "Ning Hai",
         "cn_name": "宁海",
@@ -4830,6 +5194,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.3,
+            1.55,
+            1.3
         ]
     },
     "502010": {
@@ -4848,8 +5217,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "502010",
         "painting": "yixian",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "逸仙",
         "en_name": "Yat Sen",
         "cn_name": "逸仙",
@@ -4870,6 +5237,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.3,
+            1.2,
+            0.8
         ]
     },
     "501040": {
@@ -4888,8 +5260,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "501040",
         "painting": "taiyuan",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "太原",
         "en_name": "Tai Yuan",
         "cn_name": "太原",
@@ -4910,6 +5280,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.55,
+            1,
+            1.05
         ]
     },
     "501030": {
@@ -4928,8 +5303,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "501030",
         "painting": "changchun",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "長春",
         "en_name": "Chang Chun",
         "cn_name": "长春",
@@ -4950,6 +5323,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.55,
+            1,
+            1.05
         ]
     },
     "501020": {
@@ -4968,8 +5346,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "501020",
         "painting": "fushun",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "撫順",
         "en_name": "Fu Shun",
         "cn_name": "抚顺",
@@ -4990,6 +5366,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.55,
+            1,
+            1.05
         ]
     },
     "501010": {
@@ -5008,8 +5389,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "501010",
         "painting": "anshan",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "鞍山",
         "en_name": "An Shan",
         "cn_name": "鞍山",
@@ -5030,6 +5409,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.55,
+            1,
+            1.05
         ]
     },
     "499050": {
@@ -5048,8 +5432,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "499050",
         "painting": "aijier",
-        "star_string": "★★★★★★",
-        "rarity_string": "UR",
         "jp_name": "エーギル",
         "en_name": "Ägir",
         "cn_name": "埃吉尔",
@@ -5069,6 +5451,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.2,
+            1.1,
+            1.1
         ]
     },
     "408110": {
@@ -5087,8 +5474,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "408110",
         "painting": "U410",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "U-410",
         "en_name": "U-410",
         "cn_name": "U-410",
@@ -5107,6 +5492,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.2,
+            0.85
         ]
     },
     "408100": {
@@ -5125,8 +5515,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "408100",
         "painting": "U37",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "U-37",
         "en_name": "U-37",
         "cn_name": "U-37",
@@ -5145,6 +5533,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.25,
+            0.85
         ]
     },
     "408090": {
@@ -5163,8 +5556,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "408090",
         "painting": "U96",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "U-96",
         "en_name": "U-96",
         "cn_name": "U-96",
@@ -5183,6 +5574,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.25,
+            0.85
         ]
     },
     "408080": {
@@ -5201,8 +5597,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "408080",
         "painting": "U110",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "U-110",
         "en_name": "U-110",
         "cn_name": "U-110",
@@ -5221,6 +5615,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.2,
+            0.85
         ]
     },
     "408070": {
@@ -5239,8 +5638,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "408070",
         "painting": "U522",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "U-522",
         "en_name": "U-522",
         "cn_name": "U-522",
@@ -5259,6 +5656,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.2,
+            0.85
         ]
     },
     "408060": {
@@ -5277,8 +5679,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "408060",
         "painting": "U101",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "U-101",
         "en_name": "U-101",
         "cn_name": "U-101",
@@ -5297,6 +5697,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.25,
+            0.85
         ]
     },
     "408050": {
@@ -5315,8 +5720,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "408050",
         "painting": "U73",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "U-73",
         "en_name": "U-73",
         "cn_name": "U-73",
@@ -5335,6 +5738,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.2,
+            0.85
         ]
     },
     "408040": {
@@ -5353,8 +5761,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "408040",
         "painting": "U556",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "U-556",
         "en_name": "U-556",
         "cn_name": "U-556",
@@ -5373,6 +5779,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.2,
+            0.85
         ]
     },
     "408030": {
@@ -5391,8 +5802,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "408030",
         "painting": "U557",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "U557",
         "en_name": "U-557",
         "cn_name": "U-557",
@@ -5411,6 +5820,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.2,
+            0.85
         ]
     },
     "408020": {
@@ -5429,8 +5843,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "408020",
         "painting": "U47",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "U-47",
         "en_name": "U-47",
         "cn_name": "U-47",
@@ -5449,6 +5861,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.25,
+            0.85
         ]
     },
     "408010": {
@@ -5467,8 +5884,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "408010",
         "painting": "U81",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "U-81",
         "en_name": "U-81",
         "cn_name": "U-81",
@@ -5487,6 +5902,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.25,
+            0.85
         ]
     },
     "499060": {
@@ -5505,8 +5925,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "499060",
         "painting": "aogusite",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "アウグスト・フォン・パーセヴァル",
         "en_name": "August von Parseval",
         "cn_name": "奥古斯特·冯·帕塞瓦尔",
@@ -5525,6 +5943,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.4,
+            1.1,
+            1.4
         ]
     },
     "407030": {
@@ -5543,8 +5966,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "407030",
         "painting": "shitelasai",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ペーター・シュトラッサー",
         "en_name": "Peter Strasser",
         "cn_name": "彼得·史特拉塞",
@@ -5563,6 +5984,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.2,
+            1.3,
+            1.4
         ]
     },
     "407020": {
@@ -5581,8 +6007,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "407020",
         "painting": "qibolin_younv",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ツェッペリンちゃん",
         "en_name": "Zeppy",
         "cn_name": "小齐柏林",
@@ -5602,6 +6026,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.15,
+            1.3,
+            1
         ]
     },
     "407010": {
@@ -5620,8 +6049,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "407010",
         "painting": "qibolin",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "グラーフ・ツェッペリン",
         "en_name": "Graf Zeppelin",
         "cn_name": "齐柏林伯爵",
@@ -5641,6 +6068,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.2,
+            1.3,
+            1.3
         ]
     },
     "406010": {
@@ -5659,8 +6091,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "406010",
         "painting": "weixi",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ヴェーザー",
         "en_name": "Weser",
         "cn_name": "威悉",
@@ -5681,6 +6111,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1.3,
+            1.45,
+            0.8
         ]
     },
     "499020": {
@@ -5699,8 +6134,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "499020",
         "painting": "feiteliedadi",
-        "star_string": "★★★★★★",
-        "rarity_string": "UR",
         "jp_name": "フリードリヒ・デア・グローセ",
         "en_name": "Friedrich der Große",
         "cn_name": "腓特烈大帝",
@@ -5720,6 +6153,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.6,
+            2.2,
+            1.0
         ]
     },
     "405020": {
@@ -5738,8 +6176,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "405020",
         "painting": "tierbici",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ティルピッツ",
         "en_name": "Tirpitz",
         "cn_name": "提尔比茨",
@@ -5759,6 +6195,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            0.9
         ]
     },
     "405010": {
@@ -5777,8 +6218,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "405010",
         "painting": "bisimai",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ビスマルク",
         "en_name": "Bismarck",
         "cn_name": "俾斯麦",
@@ -5798,6 +6237,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.8,
+            0.9
         ]
     },
     "499040": {
@@ -5816,8 +6260,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "499040",
         "painting": "aoding",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "オーディン",
         "en_name": "Odin",
         "cn_name": "奥丁",
@@ -5836,6 +6278,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.4,
+            2,
+            1.1
         ]
     },
     "404020": {
@@ -5854,8 +6301,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "404020",
         "painting": "genaisennao",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "グナイゼナウ",
         "en_name": "Gneisenau",
         "cn_name": "格奈森瑙",
@@ -5875,6 +6320,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            1.5,
+            0.7
         ]
     },
     "404010": {
@@ -5893,8 +6343,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "404010",
         "painting": "shaenhuosite",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "シャルンホルスト",
         "en_name": "Scharnhorst",
         "cn_name": "沙恩霍斯特",
@@ -5914,6 +6362,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            1.5,
+            0.7
         ]
     },
     "499010": {
@@ -5932,8 +6385,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "499010",
         "painting": "luoen",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ローン",
         "en_name": "Roon",
         "cn_name": "罗恩",
@@ -5952,6 +6403,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.1,
+            1.1
         ]
     },
     "403090": {
@@ -5970,8 +6426,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "403090",
         "painting": "haiyinlixi",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "プリンツ・ハインリヒ",
         "en_name": "Prinz Heinrich",
         "cn_name": "海因里希亲王",
@@ -5991,6 +6445,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.6,
+            1.3,
+            1
         ]
     },
     "403080": {
@@ -6009,8 +6468,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "403080",
         "painting": "luoen_idol",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ローン(μ兵装)",
         "en_name": "Roon μ",
         "cn_name": "罗恩(μ兵装)",
@@ -6029,6 +6486,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.1,
+            1.1
         ]
     },
     "403070": {
@@ -6047,8 +6509,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "403070",
         "painting": "xipeier_idol",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "アドミラル・ヒッパー(μ兵装)",
         "en_name": "Admiral Hipper μ",
         "cn_name": "希佩尔海军上将(μ兵装)",
@@ -6067,6 +6527,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.6,
+            1
         ]
     },
     "403050": {
@@ -6085,8 +6550,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "403050",
         "painting": "sipeibojue",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "アドミラル・グラーフ・シュペー",
         "en_name": "Admiral Graf Spee",
         "cn_name": "斯佩伯爵海军上将",
@@ -6106,6 +6569,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.4,
+            1.3,
+            1
         ]
     },
     "403040": {
@@ -6124,8 +6592,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "403040",
         "painting": "deyizhi",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ドイッチュラント",
         "en_name": "Deutschland",
         "cn_name": "德意志",
@@ -6145,6 +6611,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.4,
+            1.3,
+            1
         ]
     },
     "403030": {
@@ -6163,8 +6634,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "403030",
         "painting": "ougen",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "プリンツ・オイゲン",
         "en_name": "Prinz Eugen",
         "cn_name": "欧根亲王",
@@ -6183,6 +6652,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.6,
+            1.2
         ]
     },
     "403010": {
@@ -6201,8 +6675,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "403010",
         "painting": "xipeierhaijunshangjiang",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "アドミラル・ヒッパー",
         "en_name": "Admiral Hipper",
         "cn_name": "希佩尔海军上将",
@@ -6221,6 +6693,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.6,
+            1
         ]
     },
     "499030": {
@@ -6239,8 +6716,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "499030",
         "painting": "meiyinci",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "マインツ",
         "en_name": "Mainz",
         "cn_name": "美因茨",
@@ -6261,6 +6736,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.3,
+            1.1,
+            1.1
         ]
     },
     "402050": {
@@ -6279,8 +6759,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "402050",
         "painting": "niulunbao",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ニュルンベルク",
         "en_name": "Nürnberg",
         "cn_name": "纽伦堡",
@@ -6301,6 +6779,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.7,
+            1.4
         ]
     },
     "402049": {
@@ -6319,8 +6802,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "402049",
         "painting": "laibixi_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ライプツィヒ改",
         "en_name": "Leipzig (Retrofit)",
         "cn_name": "莱比锡改",
@@ -6341,6 +6822,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.75,
+            1.35
         ]
     },
     "402040": {
@@ -6359,8 +6845,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "402040",
         "painting": "laibixi",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "ライプツィヒ",
         "en_name": "Leipzig",
         "cn_name": "莱比锡",
@@ -6381,6 +6865,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.6,
+            1.3
         ]
     },
     "402039": {
@@ -6399,8 +6888,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "402039",
         "painting": "kelong_g",
-        "star_string": "★★★★",
-        "rarity_string": "R",
         "jp_name": "ケルン改",
         "en_name": "Köln (Retrofit)",
         "cn_name": "科隆改",
@@ -6422,6 +6909,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.7,
+            1.35
         ]
     },
     "402030": {
@@ -6440,8 +6932,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "402030",
         "painting": "kelong",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "ケルン",
         "en_name": "Köln",
         "cn_name": "科隆",
@@ -6462,6 +6952,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.55,
+            1.3
         ]
     },
     "402029": {
@@ -6480,8 +6975,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "402029",
         "painting": "kaersilue_g",
-        "star_string": "★★★★",
-        "rarity_string": "R",
         "jp_name": "カールスルーエ改",
         "en_name": "Karlsruhe (Retrofit)",
         "cn_name": "卡尔斯鲁厄改",
@@ -6502,6 +6995,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.7,
+            1.35
         ]
     },
     "402020": {
@@ -6520,8 +7018,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "402020",
         "painting": "kaersilue",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "カールスルーエ",
         "en_name": "Karlsruhe",
         "cn_name": "卡尔斯鲁厄",
@@ -6542,6 +7038,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.55,
+            1.3
         ]
     },
     "402010": {
@@ -6560,8 +7061,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "402010",
         "painting": "kenisibao",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "ケーニヒスベルク",
         "en_name": "Königsberg",
         "cn_name": "柯尼斯堡",
@@ -6582,6 +7081,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.55,
+            1.3
         ]
     },
     "401460": {
@@ -6600,8 +7104,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "401460",
         "painting": "Z46",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "Z46",
         "en_name": "Z46",
         "cn_name": "Z46",
@@ -6622,6 +7124,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.6,
+            1.2,
+            1.4
         ]
     },
     "401360": {
@@ -6640,8 +7147,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "401360",
         "painting": "Z36",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "Z36",
         "en_name": "Z36",
         "cn_name": "Z36",
@@ -6662,6 +7167,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.45,
+            1.25,
+            1.25
         ]
     },
     "401350": {
@@ -6680,8 +7190,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "401350",
         "painting": "Z35",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "Z35",
         "en_name": "Z35",
         "cn_name": "Z35",
@@ -6702,6 +7210,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.5,
+            1.2,
+            1.25
         ]
     },
     "401280": {
@@ -6720,8 +7233,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "401280",
         "painting": "Z28",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "Z28",
         "en_name": "Z28",
         "cn_name": "Z28",
@@ -6743,6 +7254,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.6,
+            1.2,
+            0.75
         ]
     },
     "401260": {
@@ -6761,8 +7277,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "401260",
         "painting": "Z26",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "Z26",
         "en_name": "Z26",
         "cn_name": "Z26",
@@ -6784,6 +7298,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.6,
+            1.2,
+            0.75
         ]
     },
     "401250": {
@@ -6802,8 +7321,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "401250",
         "painting": "Z25",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "Z25",
         "en_name": "Z25",
         "cn_name": "Z25",
@@ -6825,6 +7342,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.6,
+            1.2,
+            0.75
         ]
     },
     "401240": {
@@ -6843,8 +7365,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "401240",
         "painting": "Z24",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "Z24",
         "en_name": "Z24",
         "cn_name": "Z24",
@@ -6866,6 +7386,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.6,
+            1.2,
+            0.75
         ]
     },
     "401239": {
@@ -6884,8 +7409,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "401239",
         "painting": "z23_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "Z23改",
         "en_name": "Z23 (Retrofit)",
         "cn_name": "Z23改",
@@ -6907,6 +7430,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.75,
+            1.2,
+            0.85
         ]
     },
     "401230": {
@@ -6925,8 +7453,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "401230",
         "painting": "z23",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "Z23",
         "en_name": "Z23",
         "cn_name": "Z23",
@@ -6948,6 +7474,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.6,
+            1.2,
+            0.75
         ]
     },
     "401210": {
@@ -6966,8 +7497,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "401210",
         "painting": "z21",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "Z21",
         "en_name": "Z21",
         "cn_name": "Z21",
@@ -6988,6 +7517,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.15,
+            1.4,
+            0.75
         ]
     },
     "401200": {
@@ -7006,8 +7540,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "401200",
         "painting": "z20",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "Z20",
         "en_name": "Z20",
         "cn_name": "Z20",
@@ -7028,6 +7560,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.15,
+            1.4,
+            0.75
         ]
     },
     "401190": {
@@ -7046,8 +7583,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "401190",
         "painting": "z19",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "Z19",
         "en_name": "Z19",
         "cn_name": "Z19",
@@ -7068,6 +7603,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.15,
+            1.4,
+            0.75
         ]
     },
     "401180": {
@@ -7086,8 +7626,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "401180",
         "painting": "z18",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "Z18",
         "en_name": "Z18",
         "cn_name": "Z18",
@@ -7108,6 +7646,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.15,
+            1.4,
+            0.75
         ]
     },
     "401020": {
@@ -7126,8 +7669,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "401020",
         "painting": "z2",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "Z2",
         "en_name": "Z2",
         "cn_name": "Z2",
@@ -7148,6 +7689,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.4,
+            0.75
         ]
     },
     "401019": {
@@ -7166,8 +7712,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "401019",
         "painting": "Z1_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "Z1改",
         "en_name": "Z1 (Retrofit)",
         "cn_name": "Z1改",
@@ -7188,6 +7732,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.55,
+            0.85
         ]
     },
     "401010": {
@@ -7206,8 +7755,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "401010",
         "painting": "z1",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "Z1",
         "en_name": "Z1",
         "cn_name": "Z1",
@@ -7228,6 +7775,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.4,
+            0.75
         ]
     },
     "319010": {
@@ -7246,8 +7798,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "319010",
         "painting": "jianye",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "樫野",
         "en_name": "Kashino",
         "cn_name": "樫野",
@@ -7269,6 +7819,11 @@ const ship_data = {
         "equip_5": [
             10,
             18
+        ],
+        "eq_p": [
+            1.1,
+            0.8,
+            1
         ]
     },
     "399040": {
@@ -7287,8 +7842,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "399040",
         "painting": "wuqi",
-        "star_string": "★★★★★★",
-        "rarity_string": "UR",
         "jp_name": "吾妻",
         "en_name": "Azuma",
         "cn_name": "吾妻",
@@ -7308,6 +7861,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.0,
+            0.6,
+            1.1
         ]
     },
     "317010": {
@@ -7326,8 +7884,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "317010",
         "painting": "I13",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "伊13",
         "en_name": "I-13",
         "cn_name": "伊13",
@@ -7346,6 +7902,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            1.15,
+            1.5
         ]
     },
     "312010": {
@@ -7364,8 +7925,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "312010",
         "painting": "mingshi",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "明石",
         "en_name": "Akashi",
         "cn_name": "明石",
@@ -7384,6 +7943,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1,
+            1,
+            1
         ]
     },
     "308060": {
@@ -7402,8 +7966,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "308060",
         "painting": "I168",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "伊168",
         "en_name": "I-168",
         "cn_name": "伊168",
@@ -7422,6 +7984,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.15,
+            0.8
         ]
     },
     "308050": {
@@ -7440,8 +8007,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "308050",
         "painting": "I56",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "伊56",
         "en_name": "I-56",
         "cn_name": "伊56",
@@ -7460,6 +8025,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.15,
+            1.15,
+            0.85
         ]
     },
     "308040": {
@@ -7478,8 +8048,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "308040",
         "painting": "I25",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "伊25",
         "en_name": "I-25",
         "cn_name": "伊25",
@@ -7498,6 +8066,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.15,
+            0.85
         ]
     },
     "308030": {
@@ -7516,8 +8089,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "308030",
         "painting": "I58",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "伊58",
         "en_name": "I-58",
         "cn_name": "伊58",
@@ -7536,6 +8107,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.2,
+            1.15,
+            0.85
         ]
     },
     "308020": {
@@ -7554,8 +8130,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "308020",
         "painting": "I26",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "伊26",
         "en_name": "I-26",
         "cn_name": "伊26",
@@ -7574,6 +8148,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.15,
+            0.85
         ]
     },
     "308010": {
@@ -7592,8 +8171,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "308010",
         "painting": "I19",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "伊19",
         "en_name": "I-19",
         "cn_name": "伊19",
@@ -7612,6 +8189,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            1.15,
+            0.8
         ]
     },
     "399050": {
@@ -7630,8 +8212,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "399050",
         "painting": "bailong",
-        "star_string": "★★★★★★",
-        "rarity_string": "UR",
         "jp_name": "白龍",
         "en_name": "Hakuryuu",
         "cn_name": "白龙",
@@ -7652,6 +8232,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.5,
+            1.3
         ]
     },
     "307120": {
@@ -7670,8 +8255,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "307120",
         "painting": "gecheng",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "葛城",
         "en_name": "Katsuragi",
         "cn_name": "葛城",
@@ -7690,6 +8273,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.15,
+            1.35
         ]
     },
     "307110": {
@@ -7708,8 +8296,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "307110",
         "painting": "dafeng_idol",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "大鳳(μ兵装)",
         "en_name": "Taihou μ",
         "cn_name": "大凤(μ兵装)",
@@ -7728,6 +8314,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.2,
+            1.3,
+            1.4
         ]
     },
     "307100": {
@@ -7746,8 +8337,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "307100",
         "painting": "chicheng_idol",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "赤城(μ兵装)",
         "en_name": "Akagi μ",
         "cn_name": "赤城(μ兵装)",
@@ -7766,6 +8355,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.25,
+            1.25
         ]
     },
     "307090": {
@@ -7784,8 +8378,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "307090",
         "painting": "chicheng_younv",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "赤城ちゃん",
         "en_name": "Akagi-chan",
         "cn_name": "小赤城",
@@ -7804,6 +8396,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.15,
+            1.25
         ]
     },
     "307080": {
@@ -7822,8 +8419,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "307080",
         "painting": "xinnong",
-        "star_string": "★★★★★★",
-        "rarity_string": "UR",
         "jp_name": "信濃",
         "en_name": "Shinano",
         "cn_name": "信浓",
@@ -7844,6 +8439,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.3,
+            1.4
         ]
     },
     "307070": {
@@ -7862,8 +8462,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "307070",
         "painting": "dafeng",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "大鳳",
         "en_name": "Taihou",
         "cn_name": "大凤",
@@ -7882,6 +8480,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.2,
+            1.3,
+            1.4
         ]
     },
     "307060": {
@@ -7900,8 +8503,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "307060",
         "painting": "ruihe",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "瑞鹤",
         "en_name": "Zuikaku",
         "cn_name": "瑞鹤",
@@ -7920,6 +8521,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.25,
+            1.25
         ]
     },
     "307050": {
@@ -7938,8 +8544,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "307050",
         "painting": "xianghe",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "翔鶴",
         "en_name": "Shoukaku",
         "cn_name": "翔鹤",
@@ -7958,6 +8562,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.1,
+            1.1,
+            1.5
         ]
     },
     "307049": {
@@ -7976,8 +8585,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "307049",
         "painting": "feilong_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "飛龍改",
         "en_name": "Hiryuu (Retrofit)",
         "cn_name": "飞龙改",
@@ -7996,6 +8603,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.15,
+            1.5
         ]
     },
     "307040": {
@@ -8014,8 +8626,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "307040",
         "painting": "feilong",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "飛龍",
         "en_name": "Hiryuu",
         "cn_name": "飞龙",
@@ -8034,6 +8644,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.1,
+            1.1,
+            1.5
         ]
     },
     "307039": {
@@ -8052,8 +8667,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "307039",
         "painting": "canglong_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "蒼龍改",
         "en_name": "Souryuu (Retrofit)",
         "cn_name": "苍龙改",
@@ -8072,6 +8685,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.5,
+            1.15
         ]
     },
     "307030": {
@@ -8090,8 +8708,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "307030",
         "painting": "canglong",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "蒼龍",
         "en_name": "Souryuu",
         "cn_name": "苍龙",
@@ -8110,6 +8726,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.1,
+            1.5,
+            1.1
         ]
     },
     "307020": {
@@ -8128,8 +8749,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "307020",
         "painting": "jiahe",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "加賀",
         "en_name": "Kaga",
         "cn_name": "加贺",
@@ -8148,6 +8767,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.1,
+            1.1,
+            1.5
         ]
     },
     "307010": {
@@ -8166,8 +8790,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "307010",
         "painting": "chicheng",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "赤城",
         "en_name": "Akagi",
         "cn_name": "赤城",
@@ -8186,6 +8808,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.25,
+            1.25
         ]
     },
     "306090": {
@@ -8204,8 +8831,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "306090",
         "painting": "qiandaitian",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "千代田",
         "en_name": "Chiyoda",
         "cn_name": "千代田",
@@ -8226,6 +8851,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1.3,
+            1.45,
+            0.8
         ]
     },
     "306080": {
@@ -8244,8 +8874,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "306080",
         "painting": "qiansui",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "千歳",
         "en_name": "Chitose",
         "cn_name": "千岁",
@@ -8266,6 +8894,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1.3,
+            1.45,
+            0.8
         ]
     },
     "306070": {
@@ -8284,8 +8917,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "306070",
         "painting": "longfeng",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "龍鳳",
         "en_name": "Ryuuhou",
         "cn_name": "龙凤",
@@ -8306,6 +8937,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1.3,
+            1.45,
+            0.8
         ]
     },
     "306060": {
@@ -8324,8 +8960,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "306060",
         "painting": "longxiang",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "龍驤",
         "en_name": "Ryuujou",
         "cn_name": "龙骧",
@@ -8346,6 +8980,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1.3,
+            1.45,
+            0.8
         ]
     },
     "306059": {
@@ -8364,8 +9003,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "306059",
         "painting": "xiangfeng_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "祥鳳改",
         "en_name": "Shouhou (Retrofit)",
         "cn_name": "祥凤改",
@@ -8386,6 +9023,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1.45,
+            1.35,
+            0.8
         ]
     },
     "306050": {
@@ -8404,8 +9046,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "306050",
         "painting": "xiangfeng",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "祥鳳",
         "en_name": "Shouhou",
         "cn_name": "祥凤",
@@ -8426,6 +9066,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1.3,
+            1.3,
+            0.8
         ]
     },
     "306030": {
@@ -8444,8 +9089,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "306030",
         "painting": "fengxiang",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "鳳翔",
         "en_name": "Houshou",
         "cn_name": "凤翔",
@@ -8466,6 +9109,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1,
+            1.3,
+            1.3
         ]
     },
     "306020": {
@@ -8484,8 +9132,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "306020",
         "painting": "sunying",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "隼鷹",
         "en_name": "Junyou",
         "cn_name": "隼鹰",
@@ -8506,6 +9152,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1,
+            1.1,
+            1.2
         ]
     },
     "306010": {
@@ -8524,8 +9175,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "306010",
         "painting": "feiying",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "飛鷹",
         "en_name": "Hiyou",
         "cn_name": "飞鹰",
@@ -8546,6 +9195,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1,
+            1.2,
+            1.1
         ]
     },
     "399020": {
@@ -8564,8 +9218,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "399020",
         "painting": "chuyun",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "出雲",
         "en_name": "Izumo",
         "cn_name": "出云",
@@ -8585,6 +9237,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.4,
+            2.1,
+            0.9
         ]
     },
     "305140": {
@@ -8603,8 +9260,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "305140",
         "painting": "junhe",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "駿河",
         "en_name": "Suruga",
         "cn_name": "骏河",
@@ -8624,6 +9279,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            2,
+            1
         ]
     },
     "305120": {
@@ -8642,8 +9302,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "305120",
         "painting": "jiyi",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "紀伊",
         "en_name": "Kii",
         "cn_name": "纪伊",
@@ -8663,6 +9321,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            2,
+            1
         ]
     },
     "305110": {
@@ -8681,8 +9344,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "305110",
         "painting": "sanli",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "三笠",
         "en_name": "Mikasa",
         "cn_name": "三笠",
@@ -8702,6 +9363,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.5,
+            1.5
         ]
     },
     "305080": {
@@ -8720,8 +9386,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "305080",
         "painting": "tuzuo",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "土佐",
         "en_name": "Tosa",
         "cn_name": "土佐",
@@ -8741,6 +9405,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            2,
+            0.9
         ]
     },
     "305070": {
@@ -8759,8 +9428,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "305070",
         "painting": "jiahezhanlie",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "加賀",
         "en_name": "Kaga(BB)",
         "cn_name": "加贺",
@@ -8780,6 +9447,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            2,
+            0.9
         ]
     },
     "305060": {
@@ -8798,8 +9470,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "305060",
         "painting": "luao",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "陸奧",
         "en_name": "Mutsu",
         "cn_name": "陆奥",
@@ -8819,6 +9489,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2.1,
+            1
         ]
     },
     "305050": {
@@ -8837,8 +9512,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "305050",
         "painting": "changmen",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "長門",
         "en_name": "Nagato",
         "cn_name": "长门",
@@ -8858,6 +9531,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            2.1,
+            1
         ]
     },
     "305049": {
@@ -8876,8 +9554,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "305049",
         "painting": "rixiang_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "日向改",
         "en_name": "Hyuuga (Retrofit)",
         "cn_name": "日向改",
@@ -8899,6 +9575,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.75,
+            2,
+            0.95
         ]
     },
     "305040": {
@@ -8917,8 +9598,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "305040",
         "painting": "rixiang",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "日向",
         "en_name": "Hyuuga",
         "cn_name": "日向",
@@ -8938,6 +9617,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            1.8,
+            0.8
         ]
     },
     "305039": {
@@ -8956,8 +9640,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "305039",
         "painting": "yishi_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "伊勢改",
         "en_name": "Ise (Retrofit)",
         "cn_name": "伊势改",
@@ -8979,6 +9661,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.8,
+            1.8,
+            0.95
         ]
     },
     "305030": {
@@ -8997,8 +9684,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "305030",
         "painting": "yishi",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "伊勢",
         "en_name": "Ise",
         "cn_name": "伊势",
@@ -9018,6 +9703,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.4,
+            2,
+            0.8
         ]
     },
     "305029": {
@@ -9036,8 +9726,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "305029",
         "painting": "shancheng_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "山城改",
         "en_name": "Yamashiro (Retrofit)",
         "cn_name": "山城改",
@@ -9059,6 +9747,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.65,
+            2,
+            0.85
         ]
     },
     "305020": {
@@ -9077,8 +9770,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "305020",
         "painting": "shancheng",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "山城",
         "en_name": "Yamashiro",
         "cn_name": "山城",
@@ -9098,6 +9789,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            0.8
         ]
     },
     "305019": {
@@ -9116,8 +9812,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "305019",
         "painting": "fusang_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "扶桑改",
         "en_name": "Fusou (Retrofit)",
         "cn_name": "扶桑改",
@@ -9139,6 +9833,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.65,
+            2,
+            0.85
         ]
     },
     "305010": {
@@ -9157,8 +9856,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "305010",
         "painting": "fusang",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "扶桑",
         "en_name": "Fusou",
         "cn_name": "扶桑",
@@ -9178,6 +9875,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            0.8
         ]
     },
     "304070": {
@@ -9196,8 +9898,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "304070",
         "painting": "tiancheng_younv",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "天城ちゃん",
         "en_name": "Amagi-chan",
         "cn_name": "小天城",
@@ -9217,6 +9917,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.5,
+            0.85
         ]
     },
     "304060": {
@@ -9235,8 +9940,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "304060",
         "painting": "birui_younv",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "比叡ちゃん",
         "en_name": "Hiei-chan",
         "cn_name": "小比叡",
@@ -9256,6 +9959,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.5,
+            0.85
         ]
     },
     "304050": {
@@ -9274,8 +9982,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "304050",
         "painting": "tiancheng",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "天城",
         "en_name": "Amagi",
         "cn_name": "天城",
@@ -9295,6 +10001,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            1.8,
+            0.9
         ]
     },
     "304040": {
@@ -9313,8 +10024,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "304040",
         "painting": "wudao",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "霧島",
         "en_name": "Kirishima",
         "cn_name": "雾岛",
@@ -9334,6 +10043,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            1.5,
+            0.9
         ]
     },
     "304030": {
@@ -9352,8 +10066,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "304030",
         "painting": "zhenming",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "榛名",
         "en_name": "Haruna",
         "cn_name": "榛名",
@@ -9373,6 +10085,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            1.5,
+            0.9
         ]
     },
     "304020": {
@@ -9391,8 +10108,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "304020",
         "painting": "birui",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "比叡",
         "en_name": "Hiei",
         "cn_name": "比叡",
@@ -9412,6 +10127,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            1.5,
+            0.9
         ]
     },
     "304010": {
@@ -9430,8 +10150,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "304010",
         "painting": "jingang",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "金剛",
         "en_name": "Kongou",
         "cn_name": "金刚",
@@ -9451,6 +10169,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            1.5,
+            0.9
         ]
     },
     "399010": {
@@ -9469,8 +10192,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "399010",
         "painting": "yichui",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "伊吹",
         "en_name": "Ibuki",
         "cn_name": "伊吹",
@@ -9489,6 +10210,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.4,
+            1.85,
+            1.1
         ]
     },
     "303180": {
@@ -9507,8 +10233,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "303180",
         "painting": "xiongye",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "熊野",
         "en_name": "Kumano",
         "cn_name": "熊野",
@@ -9528,6 +10252,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            1.45,
+            1.1
         ]
     },
     "303170": {
@@ -9546,8 +10275,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "303170",
         "painting": "linggu",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "鈴谷",
         "en_name": "Suzuya",
         "cn_name": "铃谷",
@@ -9567,6 +10294,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            1.45,
+            1.1
         ]
     },
     "303140": {
@@ -9585,8 +10317,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "303140",
         "painting": "niaohai",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "鳥海",
         "en_name": "Choukai",
         "cn_name": "鸟海",
@@ -9605,6 +10335,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.3,
+            1.1
         ]
     },
     "303130": {
@@ -9623,8 +10358,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "303130",
         "painting": "moye",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "摩耶",
         "en_name": "Maya",
         "cn_name": "摩耶",
@@ -9643,6 +10376,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.7,
+            1.2
         ]
     },
     "303120": {
@@ -9661,8 +10399,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "303120",
         "painting": "aidang",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "愛宕",
         "en_name": "Atago",
         "cn_name": "爱宕",
@@ -9681,6 +10417,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            1.7,
+            1
         ]
     },
     "303110": {
@@ -9699,8 +10440,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "303110",
         "painting": "gaoxiong",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "高雄",
         "en_name": "Takao",
         "cn_name": "高雄",
@@ -9719,6 +10458,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.75,
+            1
         ]
     },
     "303090": {
@@ -9737,8 +10481,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "303090",
         "painting": "zubing",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "足柄",
         "en_name": "Ashigara",
         "cn_name": "足柄",
@@ -9757,6 +10499,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.65,
+            1
         ]
     },
     "303080": {
@@ -9775,8 +10522,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "303080",
         "painting": "nazhi",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "那智",
         "en_name": "Nachi",
         "cn_name": "那智",
@@ -9795,6 +10540,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.65,
+            1
         ]
     },
     "303070": {
@@ -9813,8 +10563,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "303070",
         "painting": "miaogao",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "妙高",
         "en_name": "Myoukou",
         "cn_name": "妙高",
@@ -9833,6 +10581,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.65,
+            1
         ]
     },
     "303060": {
@@ -9851,8 +10604,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "303060",
         "painting": "zhumo",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "筑摩",
         "en_name": "Chikuma",
         "cn_name": "筑摩",
@@ -9871,6 +10622,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.75,
+            1
         ]
     },
     "303040": {
@@ -9889,8 +10645,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "303040",
         "painting": "yili",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "衣笠",
         "en_name": "Kinugasa",
         "cn_name": "衣笠",
@@ -9909,6 +10663,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.65,
+            1
         ]
     },
     "303030": {
@@ -9927,8 +10686,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "303030",
         "painting": "qingye",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "青葉",
         "en_name": "Aoba",
         "cn_name": "青叶",
@@ -9947,6 +10704,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.65,
+            1
         ]
     },
     "303029": {
@@ -9965,8 +10727,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "303029",
         "painting": "jiagu_g",
-        "star_string": "★★★★",
-        "rarity_string": "R",
         "jp_name": "加古改",
         "en_name": "Kako (Retrofit)",
         "cn_name": "加古改",
@@ -9985,6 +10745,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.8,
+            1.05
         ]
     },
     "303020": {
@@ -10003,8 +10768,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "303020",
         "painting": "jiagu",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "加古",
         "en_name": "Kako",
         "cn_name": "加古",
@@ -10023,6 +10786,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.7,
+            1
         ]
     },
     "303019": {
@@ -10041,8 +10809,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "303019",
         "painting": "guying_g",
-        "star_string": "★★★★",
-        "rarity_string": "R",
         "jp_name": "古鷹改",
         "en_name": "Furutaka (Retrofit)",
         "cn_name": "古鹰改",
@@ -10061,6 +10827,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.8,
+            1.05
         ]
     },
     "303010": {
@@ -10079,8 +10850,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "303010",
         "painting": "guying",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "古鷹",
         "en_name": "Furutaka",
         "cn_name": "古鹰",
@@ -10099,6 +10868,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.7,
+            1
         ]
     },
     "302210": {
@@ -10117,8 +10891,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "302210",
         "painting": "nengdai",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "能代",
         "en_name": "Noshiro",
         "cn_name": "能代",
@@ -10139,6 +10911,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.75,
+            1.1
         ]
     },
     "302200": {
@@ -10157,8 +10934,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "302200",
         "painting": "aheye",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "阿賀野",
         "en_name": "Agano",
         "cn_name": "阿贺野",
@@ -10179,6 +10954,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1,
+            1.7,
+            1
         ]
     },
     "302140": {
@@ -10197,8 +10977,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "302140",
         "painting": "nake",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "那珂",
         "en_name": "Naka",
         "cn_name": "那珂",
@@ -10219,6 +10997,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.65,
+            1.15
         ]
     },
     "302139": {
@@ -10237,8 +11020,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "302139",
         "painting": "shentong_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "神通改",
         "en_name": "Jintsuu (Retrofit)",
         "cn_name": "神通改",
@@ -10259,6 +11040,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.8,
+            1.15
         ]
     },
     "302130": {
@@ -10277,8 +11063,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "302130",
         "painting": "shentong",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "神通",
         "en_name": "Jintsuu",
         "cn_name": "神通",
@@ -10299,6 +11083,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.65,
+            1.15
         ]
     },
     "302129": {
@@ -10317,8 +11106,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "302129",
         "painting": "chuannei_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "川内改",
         "en_name": "Sendai (Retrofit)",
         "cn_name": "川内改",
@@ -10339,6 +11126,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.8,
+            1.15
         ]
     },
     "302120": {
@@ -10357,8 +11149,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "302120",
         "painting": "chuannei",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "川内",
         "en_name": "Sendai",
         "cn_name": "川内",
@@ -10379,6 +11169,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.65,
+            1.15
         ]
     },
     "302110": {
@@ -10397,8 +11192,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "302110",
         "painting": "sanwei",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "三隈",
         "en_name": "Mikuma",
         "cn_name": "三隈",
@@ -10419,6 +11212,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.1,
+            1.6,
+            1
         ]
     },
     "302109": {
@@ -10437,8 +11235,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "302109",
         "painting": "zuishang_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "最上改",
         "en_name": "Mogami (Retrofit)",
         "cn_name": "最上改",
@@ -10457,6 +11253,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.6,
+            1.05
         ]
     },
     "302100": {
@@ -10475,8 +11276,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "302100",
         "painting": "zuishang",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "最上",
         "en_name": "Mogami",
         "cn_name": "最上",
@@ -10497,6 +11296,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.1,
+            1.6,
+            1
         ]
     },
     "302099": {
@@ -10515,8 +11319,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "302099",
         "painting": "awuwei_g",
-        "star_string": "★★★★",
-        "rarity_string": "R",
         "jp_name": "阿武隈改",
         "en_name": "Abukuma (Retrofit)",
         "cn_name": "阿武隈改",
@@ -10537,6 +11339,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.15,
+            1.75,
+            1.25
         ]
     },
     "302090": {
@@ -10555,8 +11362,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "302090",
         "painting": "awuwei",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "阿武隈",
         "en_name": "Abukuma",
         "cn_name": "阿武隈",
@@ -10577,6 +11382,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.1,
+            1.6,
+            1.25
         ]
     },
     "302089": {
@@ -10595,8 +11405,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "302089",
         "painting": "guinu_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "鬼怒改",
         "en_name": "Kinu (Retrofit)",
         "cn_name": "鬼怒改",
@@ -10617,6 +11425,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.8,
+            1.3
         ]
     },
     "302080": {
@@ -10635,8 +11448,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "302080",
         "painting": "guinu",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "鬼怒",
         "en_name": "Kinu",
         "cn_name": "鬼怒",
@@ -10657,6 +11468,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.65,
+            1.25
         ]
     },
     "302070": {
@@ -10675,8 +11491,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "302070",
         "painting": "youliang",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "由良",
         "en_name": "Yura",
         "cn_name": "由良",
@@ -10697,6 +11511,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.65,
+            1.25
         ]
     },
     "302059": {
@@ -10715,8 +11534,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "302059",
         "painting": "wushiling_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "五十鈴改",
         "en_name": "Isuzu (Retrofit)",
         "cn_name": "五十铃改",
@@ -10738,6 +11555,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.05,
+            1.45,
+            1.75
         ]
     },
     "302050": {
@@ -10756,8 +11578,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "302050",
         "painting": "wushiling",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "五十鈴",
         "en_name": "Isuzu",
         "cn_name": "五十铃",
@@ -10779,6 +11599,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.05,
+            1.4,
+            1.6
         ]
     },
     "302040": {
@@ -10797,8 +11622,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "302040",
         "painting": "changliang",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "長良",
         "en_name": "Nagara",
         "cn_name": "长良",
@@ -10819,6 +11642,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.1,
+            1.6,
+            1.25
         ]
     },
     "302019": {
@@ -10837,8 +11665,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "302019",
         "painting": "xizhang_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "夕張改",
         "en_name": "Yuubari (Retrofit)",
         "cn_name": "夕张改",
@@ -10859,6 +11685,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.65,
+            1.25
         ]
     },
     "302010": {
@@ -10877,8 +11708,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "302010",
         "painting": "xizhang",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "夕張",
         "en_name": "Yuubari",
         "cn_name": "夕张",
@@ -10899,6 +11728,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.1,
+            1.6,
+            1.25
         ]
     },
     "399030": {
@@ -10917,8 +11751,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "399030",
         "painting": "beifeng",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "北風",
         "en_name": "Kitakaze",
         "cn_name": "北风",
@@ -10939,6 +11771,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.05,
+            1.35,
+            1.35
         ]
     },
     "301860": {
@@ -10957,8 +11794,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301860",
         "painting": "fengyun",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "風雲",
         "en_name": "Kazagumo",
         "cn_name": "风云",
@@ -10979,6 +11814,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.85,
+            1.6,
+            0.8
         ]
     },
     "301850": {
@@ -10997,8 +11837,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301850",
         "painting": "zhuifeng",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "追風",
         "en_name": "Oite",
         "cn_name": "追风",
@@ -11019,6 +11857,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.4,
+            0.75
         ]
     },
     "301840": {
@@ -11037,8 +11880,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301840",
         "painting": "liangyue",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "涼月",
         "en_name": "Suzutsuki",
         "cn_name": "凉月",
@@ -11059,6 +11900,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.1,
+            1.35,
+            1.45
         ]
     },
     "301830": {
@@ -11077,8 +11923,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301830",
         "painting": "changbo",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "長波",
         "en_name": "Naganami",
         "cn_name": "长波",
@@ -11099,6 +11943,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.8,
+            1.55,
+            0.75
         ]
     },
     "301820": {
@@ -11117,8 +11966,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301820",
         "painting": "huayue",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "花月",
         "en_name": "Hanazuki",
         "cn_name": "花月",
@@ -11139,6 +11986,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.05,
+            1.35,
+            1.35
         ]
     },
     "301819": {
@@ -11157,8 +12009,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301819",
         "painting": "xia_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "霞改",
         "en_name": "Kasumi (Retrofit)",
         "cn_name": "霞改",
@@ -11179,6 +12029,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.85,
+            1.55,
+            0.75
         ]
     },
     "301810": {
@@ -11197,8 +12052,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "301810",
         "painting": "xia",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "霞",
         "en_name": "Kasumi",
         "cn_name": "霞",
@@ -11219,6 +12072,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.8,
+            1.5,
+            0.75
         ]
     },
     "301800": {
@@ -11237,8 +12095,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301800",
         "painting": "juanbo",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "巻波",
         "en_name": "Makinami",
         "cn_name": "卷波",
@@ -11259,6 +12115,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.8,
+            1.55,
+            0.75
         ]
     },
     "301790": {
@@ -11277,8 +12138,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301790",
         "painting": "qifeng",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "旗風",
         "en_name": "Hatakaze",
         "cn_name": "旗风",
@@ -11299,6 +12158,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.4,
+            0.75
         ]
     },
     "301720": {
@@ -11317,8 +12181,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301720",
         "painting": "pubo",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "浦波",
         "en_name": "Uranami",
         "cn_name": "浦波",
@@ -11339,6 +12201,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.6,
+            0.75
         ]
     },
     "301660": {
@@ -11357,8 +12224,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301660",
         "painting": "huangchao",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "荒潮",
         "en_name": "Arashio",
         "cn_name": "荒潮",
@@ -11379,6 +12244,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.75
         ]
     },
     "301650": {
@@ -11397,8 +12267,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301650",
         "painting": "manchao",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "満潮",
         "en_name": "Michishio",
         "cn_name": "满潮",
@@ -11419,6 +12287,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.75
         ]
     },
     "301640": {
@@ -11437,8 +12310,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301640",
         "painting": "dachao",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "大潮",
         "en_name": "Ooshio",
         "cn_name": "大潮",
@@ -11459,6 +12330,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.75
         ]
     },
     "301630": {
@@ -11477,8 +12353,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301630",
         "painting": "zhaochao",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "朝潮",
         "en_name": "Asashio",
         "cn_name": "朝潮",
@@ -11499,6 +12373,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.75
         ]
     },
     "301629": {
@@ -11517,8 +12396,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301629",
         "painting": "gufeng_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "谷風改",
         "en_name": "Tanikaze (Retrofit)",
         "cn_name": "谷风改",
@@ -11539,6 +12416,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.8,
+            1.65,
+            0.75
         ]
     },
     "301620": {
@@ -11557,8 +12439,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "301620",
         "painting": "gufeng",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "谷風",
         "en_name": "Tanikaze",
         "cn_name": "谷风",
@@ -11579,6 +12459,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.75
         ]
     },
     "301619": {
@@ -11597,8 +12482,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301619",
         "painting": "bangfeng_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "浜風改",
         "en_name": "Hamakaze (Retrofit)",
         "cn_name": "滨风改",
@@ -11619,6 +12502,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.8,
+            1.65,
+            0.75
         ]
     },
     "301610": {
@@ -11637,8 +12525,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "301610",
         "painting": "bangfeng",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "浜風",
         "en_name": "Hamakaze",
         "cn_name": "滨风",
@@ -11659,6 +12545,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.75
         ]
     },
     "301600": {
@@ -11677,8 +12568,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301600",
         "painting": "jifeng",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "磯風",
         "en_name": "Isokaze",
         "cn_name": "矶风",
@@ -11699,6 +12588,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.75
         ]
     },
     "301590": {
@@ -11717,8 +12611,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301590",
         "painting": "pufeng",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "浦風",
         "en_name": "Urakaze",
         "cn_name": "浦风",
@@ -11739,6 +12631,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.75
         ]
     },
     "301580": {
@@ -11757,8 +12654,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301580",
         "painting": "xiaoyue",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "宵月",
         "en_name": "Yoizuki",
         "cn_name": "宵月",
@@ -11779,6 +12674,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1,
+            1.35,
+            1.35
         ]
     },
     "301570": {
@@ -11797,8 +12697,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301570",
         "painting": "chunyue",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "春月",
         "en_name": "Harutsuki",
         "cn_name": "春月",
@@ -11819,6 +12717,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1,
+            1.35,
+            1.35
         ]
     },
     "301560": {
@@ -11837,8 +12740,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301560",
         "painting": "xinyue_jp",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "新月",
         "en_name": "Niizuki",
         "cn_name": "新月",
@@ -11859,6 +12760,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1,
+            1.35,
+            1.35
         ]
     },
     "301540": {
@@ -11877,8 +12783,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301540",
         "painting": "qingbo",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "清波",
         "en_name": "Kiyonami",
         "cn_name": "清波",
@@ -11899,6 +12803,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.75
         ]
     },
     "301490": {
@@ -11917,8 +12826,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301490",
         "painting": "jiangfeng",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "江風",
         "en_name": "Kawakaze",
         "cn_name": "江风",
@@ -11939,6 +12846,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.85,
+            1.5,
+            0.85
         ]
     },
     "301480": {
@@ -11957,8 +12869,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301480",
         "painting": "shanfeng",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "山風",
         "en_name": "Yamakaze",
         "cn_name": "山风",
@@ -11979,6 +12889,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.75
         ]
     },
     "301470": {
@@ -11997,8 +12912,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301470",
         "painting": "haifeng",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "海風",
         "en_name": "Umikaze",
         "cn_name": "海风",
@@ -12019,6 +12932,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.75
         ]
     },
     "301410": {
@@ -12037,8 +12955,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301410",
         "painting": "sanriyue",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "三日月",
         "en_name": "Mikazuki",
         "cn_name": "三日月",
@@ -12059,6 +12975,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.45,
+            0.75
         ]
     },
     "301390": {
@@ -12077,8 +12998,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301390",
         "painting": "changyue",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "長月",
         "en_name": "Nagatsuki",
         "cn_name": "长月",
@@ -12099,6 +13018,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.45,
+            0.75
         ]
     },
     "301380": {
@@ -12117,8 +13041,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301380",
         "painting": "wenyue",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "文月",
         "en_name": "Fumizuki",
         "cn_name": "文月",
@@ -12139,6 +13061,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.45,
+            0.75
         ]
     },
     "301370": {
@@ -12157,8 +13084,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301370",
         "painting": "shuiwuyue",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "水無月",
         "en_name": "Minazuki",
         "cn_name": "水无月",
@@ -12179,6 +13104,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.45,
+            0.75
         ]
     },
     "301350": {
@@ -12197,8 +13127,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301350",
         "painting": "maoyue",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "卯月",
         "en_name": "Uzuki",
         "cn_name": "卯月",
@@ -12219,6 +13147,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.45,
+            0.75
         ]
     },
     "301339": {
@@ -12237,8 +13170,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301339",
         "painting": "ruyue_g",
-        "star_string": "★★★★",
-        "rarity_string": "R",
         "jp_name": "如月改",
         "en_name": "Kisaragi (Retrofit)",
         "cn_name": "如月改",
@@ -12259,6 +13190,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.8
         ]
     },
     "301330": {
@@ -12277,8 +13213,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "301330",
         "painting": "ruyue",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "如月",
         "en_name": "Kisaragi",
         "cn_name": "如月",
@@ -12299,6 +13233,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.45,
+            0.75
         ]
     },
     "301329": {
@@ -12317,8 +13256,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301329",
         "painting": "muyue_g",
-        "star_string": "★★★★",
-        "rarity_string": "R",
         "jp_name": "睦月改",
         "en_name": "Mutsuki (Retrofit)",
         "cn_name": "睦月改",
@@ -12339,6 +13276,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.8
         ]
     },
     "301320": {
@@ -12357,8 +13299,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "301320",
         "painting": "muyue",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "睦月",
         "en_name": "Mutsuki",
         "cn_name": "睦月",
@@ -12379,6 +13319,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.45,
+            0.75
         ]
     },
     "301319": {
@@ -12397,8 +13342,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301319",
         "painting": "songfeng_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "松風改",
         "en_name": "Matsukaze (Retrofit)",
         "cn_name": "松风改",
@@ -12419,6 +13362,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.45,
+            0.8
         ]
     },
     "301310": {
@@ -12437,8 +13385,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "301310",
         "painting": "songfeng",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "松風",
         "en_name": "Matsukaze",
         "cn_name": "松风",
@@ -12459,6 +13405,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.4,
+            0.75
         ]
     },
     "301309": {
@@ -12477,8 +13428,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301309",
         "painting": "shenfeng_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "神風改",
         "en_name": "Kamikaze (Retrofit)",
         "cn_name": "神风改",
@@ -12499,6 +13448,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.45,
+            0.8
         ]
     },
     "301300": {
@@ -12517,8 +13471,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "301300",
         "painting": "shenfeng",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "神風",
         "en_name": "Kamikaze",
         "cn_name": "神风",
@@ -12539,6 +13491,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.4,
+            0.75
         ]
     },
     "301290": {
@@ -12557,8 +13514,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301290",
         "painting": "daofeng",
-        "star_string": "★★★★★★",
-        "rarity_string": "UR",
         "jp_name": "島風",
         "en_name": "Shimakaze",
         "cn_name": "岛风",
@@ -12579,6 +13534,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.85,
+            1.7,
+            0.9
         ]
     },
     "301280": {
@@ -12597,8 +13557,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301280",
         "painting": "qinchao",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "親潮",
         "en_name": "Oyashio",
         "cn_name": "亲潮",
@@ -12619,6 +13577,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.75
         ]
     },
     "301270": {
@@ -12637,8 +13600,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301270",
         "painting": "heichao",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "黒潮",
         "en_name": "Kuroshio",
         "cn_name": "黑潮",
@@ -12659,6 +13620,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.75
         ]
     },
     "301269": {
@@ -12677,8 +13643,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301269",
         "painting": "ximu_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "夕暮改",
         "en_name": "Yuugure (Retrofit)",
         "cn_name": "夕暮改",
@@ -12699,6 +13663,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.55,
+            0.8
         ]
     },
     "301260": {
@@ -12717,8 +13686,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "301260",
         "painting": "ximu",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "夕暮",
         "en_name": "Yuugure",
         "cn_name": "夕暮",
@@ -12739,6 +13706,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.75
         ]
     },
     "301259": {
@@ -12757,8 +13729,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301259",
         "painting": "youming_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "有明改",
         "en_name": "Ariake (Retrofit)",
         "cn_name": "有明改",
@@ -12779,6 +13749,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.55,
+            0.8
         ]
     },
     "301250": {
@@ -12797,8 +13772,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "301250",
         "painting": "youming",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "有明",
         "en_name": "Ariake",
         "cn_name": "有明",
@@ -12819,6 +13792,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.75
         ]
     },
     "301249": {
@@ -12837,8 +13815,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301249",
         "painting": "chushuang_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "初霜改",
         "en_name": "Hatsushimo (Retrofit)",
         "cn_name": "初霜改",
@@ -12859,6 +13835,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.55,
+            0.8
         ]
     },
     "301240": {
@@ -12877,8 +13858,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "301240",
         "painting": "chushuang",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "初霜",
         "en_name": "Hatsushimo",
         "cn_name": "初霜",
@@ -12899,6 +13878,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.75
         ]
     },
     "301230": {
@@ -12917,8 +13901,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301230",
         "painting": "ruoye",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "若葉",
         "en_name": "Wakaba",
         "cn_name": "若叶",
@@ -12939,6 +13921,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.75
         ]
     },
     "301219": {
@@ -12957,8 +13944,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301219",
         "painting": "chuchun_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "初春改",
         "en_name": "Hatsuharu (Retrofit)",
         "cn_name": "初春改",
@@ -12979,6 +13964,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.55,
+            0.8
         ]
     },
     "301210": {
@@ -12997,8 +13987,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "301210",
         "painting": "chuchun",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "初春",
         "en_name": "Hatsuharu",
         "cn_name": "初春",
@@ -13019,6 +14007,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.75
         ]
     },
     "301200": {
@@ -13037,8 +14030,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301200",
         "painting": "yefen",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "野分",
         "en_name": "Nowaki",
         "cn_name": "野分",
@@ -13059,6 +14050,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.8,
+            1.55,
+            0.75
         ]
     },
     "301189": {
@@ -13077,8 +14073,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301189",
         "painting": "buzhihuo_g",
-        "star_string": "★★★★",
-        "rarity_string": "R",
         "jp_name": "不知火改",
         "en_name": "Shiranui (Retrofit)",
         "cn_name": "不知火改",
@@ -13099,6 +14093,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.8,
+            1.65,
+            0.75
         ]
     },
     "301180": {
@@ -13117,8 +14116,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "301180",
         "painting": "buzhihuo",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "不知火",
         "en_name": "Shiranui",
         "cn_name": "不知火",
@@ -13139,6 +14136,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.75
         ]
     },
     "301179": {
@@ -13157,8 +14159,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301179",
         "painting": "yangyan_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "陽炎改",
         "en_name": "Kagerou (Retrofit)",
         "cn_name": "阳炎改",
@@ -13179,6 +14179,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.8,
+            1.55,
+            0.75
         ]
     },
     "301170": {
@@ -13197,8 +14202,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "301170",
         "painting": "yangyan",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "陽炎",
         "en_name": "Kagerou",
         "cn_name": "阳炎",
@@ -13219,6 +14222,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.75
         ]
     },
     "301160": {
@@ -13237,8 +14245,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301160",
         "painting": "xuefeng",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "雪風",
         "en_name": "Yukikaze",
         "cn_name": "雪风",
@@ -13259,6 +14265,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.75
         ]
     },
     "301159": {
@@ -13277,8 +14288,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301159",
         "painting": "shiyu_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "時雨改",
         "en_name": "Shigure (Retrofit)",
         "cn_name": "时雨改",
@@ -13299,6 +14308,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.85,
+            1.65,
+            0.75
         ]
     },
     "301150": {
@@ -13317,8 +14331,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "301150",
         "painting": "shiyu",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "時雨",
         "en_name": "Shigure",
         "cn_name": "时雨",
@@ -13339,6 +14351,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.75
         ]
     },
     "301149": {
@@ -13357,8 +14374,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301149",
         "painting": "xili_g",
-        "star_string": "★★★★★★",
-        "rarity_string": "UR",
         "jp_name": "夕立改",
         "en_name": "Yuudachi (Retrofit)",
         "cn_name": "夕立改",
@@ -13379,6 +14394,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.0,
+            1.6,
+            0.85
         ]
     },
     "301140": {
@@ -13397,8 +14417,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "301140",
         "painting": "xili",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "夕立",
         "en_name": "Yuudachi",
         "cn_name": "夕立",
@@ -13419,6 +14437,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.85,
+            1.5,
+            0.85
         ]
     },
     "301130": {
@@ -13437,8 +14460,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301130",
         "painting": "bailu",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "白露",
         "en_name": "Shiratsuyu",
         "cn_name": "白露",
@@ -13459,6 +14480,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.75
         ]
     },
     "301120": {
@@ -13477,8 +14503,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301120",
         "painting": "dian",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "電",
         "en_name": "Inazuma",
         "cn_name": "电",
@@ -13499,6 +14523,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.75
         ]
     },
     "301110": {
@@ -13517,8 +14546,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301110",
         "painting": "lei",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "雷",
         "en_name": "Ikazuchi",
         "cn_name": "雷",
@@ -13539,6 +14566,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.75
         ]
     },
     "301100": {
@@ -13557,8 +14589,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301100",
         "painting": "xiang",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "響",
         "en_name": "Hibiki",
         "cn_name": "响",
@@ -13579,6 +14609,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.55,
+            0.75
         ]
     },
     "301090": {
@@ -13597,8 +14632,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301090",
         "painting": "xiao",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "暁",
         "en_name": "Akatsuki",
         "cn_name": "晓",
@@ -13619,6 +14652,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.5,
+            0.75
         ]
     },
     "301059": {
@@ -13637,8 +14675,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301059",
         "painting": "lingbo_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "綾波改",
         "en_name": "Ayanami (Retrofit)",
         "cn_name": "绫波改",
@@ -13659,6 +14695,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.85,
+            1.65,
+            0.75
         ]
     },
     "301050": {
@@ -13677,8 +14718,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "301050",
         "painting": "lingbo",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "綾波",
         "en_name": "Ayanami",
         "cn_name": "绫波",
@@ -13699,6 +14738,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.8,
+            1.6,
+            0.75
         ]
     },
     "301020": {
@@ -13717,8 +14761,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301020",
         "painting": "baixue",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "白雪",
         "en_name": "Shirayuki",
         "cn_name": "白雪",
@@ -13739,6 +14781,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.6,
+            0.75
         ]
     },
     "301010": {
@@ -13757,8 +14804,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "301010",
         "painting": "chuixue",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "吹雪",
         "en_name": "Fubuki",
         "cn_name": "吹雪",
@@ -13779,6 +14824,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            0.75,
+            1.6,
+            0.75
         ]
     },
     "213040": {
@@ -13797,8 +14847,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "213040",
         "painting": "abeikelongbi",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "アバークロンビー",
         "en_name": "Abercrombie",
         "cn_name": "阿贝克隆比",
@@ -13817,6 +14865,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.2,
+            2.05,
+            1
         ]
     },
     "213020": {
@@ -13835,8 +14888,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "213020",
         "painting": "kongbu",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "テラー",
         "en_name": "Terror",
         "cn_name": "恐怖",
@@ -13855,6 +14906,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.2,
+            2,
+            1
         ]
     },
     "213010": {
@@ -13873,8 +14929,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "213010",
         "painting": "heianjie",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "エレバス",
         "en_name": "Erebus",
         "cn_name": "黑暗界",
@@ -13893,6 +14947,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.2,
+            2,
+            1
         ]
     },
     "207110": {
@@ -13911,8 +14970,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "207110",
         "painting": "guanghui_idol",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "イラストリアス(μ兵装)",
         "en_name": "Illustrious μ",
         "cn_name": "光辉(μ兵装)",
@@ -13931,6 +14988,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.25,
+            1.35
         ]
     },
     "207090": {
@@ -13949,8 +15011,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "207090",
         "painting": "guanghui_younv",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "リトル・イラストリアス",
         "en_name": "Little Illustrious",
         "cn_name": "小光辉",
@@ -13969,6 +15029,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.25,
+            1.2
         ]
     },
     "207060": {
@@ -13987,8 +15052,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "207060",
         "painting": "guangrong",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "グロリアス",
         "en_name": "Glorious",
         "cn_name": "光荣",
@@ -14007,6 +15070,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.4,
+            1.15,
+            1.15
         ]
     },
     "207050": {
@@ -14025,8 +15093,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "207050",
         "painting": "kewei",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "フォーミダブル",
         "en_name": "Formidable",
         "cn_name": "可畏",
@@ -14046,6 +15112,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.2,
+            1.35,
+            1.25
         ]
     },
     "207040": {
@@ -14064,8 +15135,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "207040",
         "painting": "shengli",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ヴィクトリアス",
         "en_name": "Victorious",
         "cn_name": "胜利",
@@ -14084,6 +15153,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.2,
+            1.3,
+            1.3
         ]
     },
     "207030": {
@@ -14102,8 +15176,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "207030",
         "painting": "guanghui",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "イラストリアス",
         "en_name": "Illustrious",
         "cn_name": "光辉",
@@ -14122,6 +15194,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            1.35,
+            1.1
         ]
     },
     "207029": {
@@ -14140,8 +15217,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "207029",
         "painting": "huangjiafangzhou_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "アーク・ロイヤル改",
         "en_name": "Ark Royal (Retrofit)",
         "cn_name": "皇家方舟改",
@@ -14160,6 +15235,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.43,
+            1.43,
+            0.95
         ]
     },
     "207020": {
@@ -14178,8 +15258,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "207020",
         "painting": "huangjiafangzhou",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "アーク・ロイヤル",
         "en_name": "Ark Royal",
         "cn_name": "皇家方舟",
@@ -14198,6 +15276,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.4,
+            1.4,
+            0.8
         ]
     },
     "207010": {
@@ -14216,8 +15299,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "207010",
         "painting": "ying",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "イーグル",
         "en_name": "Eagle",
         "cn_name": "鹰",
@@ -14237,6 +15318,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            1.4,
+            0.55
         ]
     },
     "206060": {
@@ -14255,8 +15341,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "206060",
         "painting": "yingxianzuo",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "パーシュース",
         "en_name": "Perseus",
         "cn_name": "英仙座",
@@ -14277,6 +15361,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1,
+            1,
+            1.1
         ]
     },
     "206050": {
@@ -14295,8 +15384,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "206050",
         "painting": "zhuiganzhe",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "チェイサー",
         "en_name": "Chaser",
         "cn_name": "追赶者",
@@ -14317,6 +15404,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1.3,
+            1.45,
+            0.8
         ]
     },
     "206040": {
@@ -14335,8 +15427,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "206040",
         "painting": "banrenma",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "セントー",
         "en_name": "Centaur",
         "cn_name": "半人马",
@@ -14357,6 +15447,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1.25,
+            1.2,
+            1.4
         ]
     },
     "206030": {
@@ -14375,8 +15470,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "206030",
         "painting": "dujiaoshou",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ユニコーン",
         "en_name": "Unicorn",
         "cn_name": "独角兽",
@@ -14397,6 +15490,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1.3,
+            1.3,
+            0.8
         ]
     },
     "206019": {
@@ -14415,8 +15513,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "206019",
         "painting": "jingjishen_g",
-        "star_string": "★★★★",
-        "rarity_string": "R",
         "jp_name": "ハーミーズ改",
         "en_name": "Hermes (Retrofit)",
         "cn_name": "竞技神改",
@@ -14437,6 +15533,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1.4,
+            1.4,
+            0.85
         ]
     },
     "206010": {
@@ -14455,8 +15556,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "206010",
         "painting": "jingjishen",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "ハーミーズ",
         "en_name": "Hermes",
         "cn_name": "竞技神",
@@ -14477,6 +15576,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1.3,
+            1.3,
+            0.8
         ]
     },
     "299020": {
@@ -14495,8 +15599,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "299020",
         "painting": "junzhu",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "モナーク",
         "en_name": "Monarch",
         "cn_name": "君主",
@@ -14516,6 +15618,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.45,
+            2.1,
+            1.1
         ]
     },
     "205100": {
@@ -14534,8 +15641,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "205100",
         "painting": "yingyong",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ヴァリアント",
         "en_name": "Valiant",
         "cn_name": "英勇",
@@ -14555,6 +15660,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
         ]
     },
     "205090": {
@@ -14573,8 +15683,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "205090",
         "painting": "hao",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ハウ",
         "en_name": "Howe",
         "cn_name": "豪",
@@ -14594,6 +15702,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.4,
+            2,
+            1
         ]
     },
     "205070": {
@@ -14612,8 +15725,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "205070",
         "painting": "yuekegongjue",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "デューク・オブ・ヨーク",
         "en_name": "Duke of York",
         "cn_name": "约克公爵",
@@ -14633,6 +15744,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            2,
+            1
         ]
     },
     "205060": {
@@ -14651,8 +15767,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "205060",
         "painting": "weiershiqinwang",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "プリンス・オブ・ウェールズ",
         "en_name": "Prince of Wales",
         "cn_name": "威尔士亲王",
@@ -14672,6 +15786,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            2,
+            1
         ]
     },
     "205050": {
@@ -14690,8 +15809,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "205050",
         "painting": "qiaozhiwushi",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "キング・ジョージ5世",
         "en_name": "King George V",
         "cn_name": "英王乔治五世",
@@ -14711,6 +15828,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            2,
+            1
         ]
     },
     "205040": {
@@ -14729,8 +15851,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "205040",
         "painting": "luodeni",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ロドニー",
         "en_name": "Rodney",
         "cn_name": "罗德尼",
@@ -14750,6 +15870,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
         ]
     },
     "205030": {
@@ -14768,8 +15893,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "205030",
         "painting": "naerxun",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ネルソン",
         "en_name": "Nelson",
         "cn_name": "纳尔逊",
@@ -14789,6 +15912,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
         ]
     },
     "205029": {
@@ -14807,8 +15935,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "205029",
         "painting": "yanzhan_g",
-        "star_string": "★★★★★★",
-        "rarity_string": "UR",
         "jp_name": "ウォースパイト改",
         "en_name": "Warspite (Retrofit)",
         "cn_name": "厌战改",
@@ -14829,6 +15955,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.4,
+            2,
+            1.15
         ]
     },
     "205020": {
@@ -14847,8 +15978,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "205020",
         "painting": "yanzhan",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ウォースパイト",
         "en_name": "Warspite",
         "cn_name": "厌战",
@@ -14868,6 +15997,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
         ]
     },
     "205010": {
@@ -14886,8 +16020,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "205010",
         "painting": "yilishabai",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "クイーン・エリザベス",
         "en_name": "Queen Elizabeth",
         "cn_name": "伊丽莎白女王",
@@ -14907,6 +16039,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
         ]
     },
     "204040": {
@@ -14925,8 +16062,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "204040",
         "painting": "shengwang_younv",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "リトル・レナウン",
         "en_name": "Little Renown",
         "cn_name": "小声望",
@@ -14945,6 +16080,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            1.5,
+            0.7
         ]
     },
     "204030": {
@@ -14963,8 +16103,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "204030",
         "painting": "hude",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "フッド",
         "en_name": "Hood",
         "cn_name": "胡德",
@@ -14983,6 +16121,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.4,
+            1.5,
+            1
         ]
     },
     "204020": {
@@ -15001,8 +16144,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "204020",
         "painting": "fanji",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "レパルス",
         "en_name": "Repulse",
         "cn_name": "反击",
@@ -15021,6 +16162,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            1.5,
+            0.7
         ]
     },
     "204010": {
@@ -15039,8 +16185,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "204010",
         "painting": "shengwang",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "レナウン",
         "en_name": "Renown",
         "cn_name": "声望",
@@ -15059,6 +16203,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            1.5,
+            0.7
         ]
     },
     "299040": {
@@ -15077,8 +16226,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "299040",
         "painting": "deleike",
-        "star_string": "★★★★★★",
-        "rarity_string": "UR",
         "jp_name": "ドレイク",
         "en_name": "Drake",
         "cn_name": "德雷克",
@@ -15097,6 +16244,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.2,
+            1.25
         ]
     },
     "299030": {
@@ -15115,8 +16267,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "299030",
         "painting": "chaijun",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "チェシャー",
         "en_name": "Cheshire",
         "cn_name": "柴郡",
@@ -15135,6 +16285,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.4,
+            1.55,
+            1.65
         ]
     },
     "203090": {
@@ -15153,8 +16308,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "203090",
         "painting": "susaikesi",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "サセックス",
         "en_name": "Sussex",
         "cn_name": "苏塞克斯",
@@ -15173,6 +16326,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.45,
+            1.6,
+            1
         ]
     },
     "203089": {
@@ -15191,8 +16349,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "203089",
         "painting": "aikesaite_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "エクセター改",
         "en_name": "Exeter (Retrofit)",
         "cn_name": "埃克塞特改",
@@ -15211,6 +16367,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.5,
+            1.7,
+            1.15
         ]
     },
     "203080": {
@@ -15229,8 +16390,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "203080",
         "painting": "aikesaite",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "エクセター",
         "en_name": "Exeter",
         "cn_name": "埃克塞特",
@@ -15249,6 +16408,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.45,
+            1.7,
+            1
         ]
     },
     "203079": {
@@ -15267,8 +16431,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "203079",
         "painting": "yueke_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ヨーク改",
         "en_name": "York (Retrofit)",
         "cn_name": "约克改",
@@ -15287,6 +16449,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.55,
+            1.65,
+            1.05
         ]
     },
     "203070": {
@@ -15305,8 +16472,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "203070",
         "painting": "yueke",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ヨーク",
         "en_name": "York",
         "cn_name": "约克",
@@ -15325,6 +16490,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.4,
+            1.65,
+            1
         ]
     },
     "203060": {
@@ -15343,8 +16513,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "203060",
         "painting": "duosaitejun",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ドーセットシャー",
         "en_name": "Dorsetshire",
         "cn_name": "多塞特郡",
@@ -15363,6 +16531,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.5,
+            1.2
         ]
     },
     "203050": {
@@ -15381,8 +16554,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "203050",
         "painting": "nuofuke",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "ノーフォーク",
         "en_name": "Norfolk",
         "cn_name": "诺福克",
@@ -15401,6 +16572,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.6,
+            1.2
         ]
     },
     "203049": {
@@ -15419,8 +16595,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "203049",
         "painting": "safuke_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "サフォーク改",
         "en_name": "Suffolk (Retrofit)",
         "cn_name": "萨福克改",
@@ -15439,6 +16613,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.6,
+            1.65,
+            1
         ]
     },
     "203040": {
@@ -15457,8 +16636,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "203040",
         "painting": "safuke",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "サフォーク",
         "en_name": "Suffolk",
         "cn_name": "萨福克",
@@ -15477,6 +16654,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.45,
+            1.6,
+            1
         ]
     },
     "203030": {
@@ -15495,8 +16677,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "203030",
         "painting": "kente",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "ケント",
         "en_name": "Kent",
         "cn_name": "肯特",
@@ -15515,6 +16695,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.45,
+            1.6,
+            1
         ]
     },
     "203020": {
@@ -15533,8 +16718,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "203020",
         "painting": "shiluopujun",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "シュロップシャー",
         "en_name": "Shropshire",
         "cn_name": "什罗普郡",
@@ -15553,6 +16736,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.45,
+            1.6,
+            1
         ]
     },
     "203019": {
@@ -15571,8 +16759,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "203019",
         "painting": "lundun_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ロンドン改",
         "en_name": "London (Retrofit)",
         "cn_name": "伦敦改",
@@ -15592,6 +16778,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.5,
+            1.6,
+            1.15
         ]
     },
     "203010": {
@@ -15610,8 +16801,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "203010",
         "painting": "lundun",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ロンドン",
         "en_name": "London",
         "cn_name": "伦敦",
@@ -15630,6 +16819,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.45,
+            1.6,
+            1
         ]
     },
     "299010": {
@@ -15648,8 +16842,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "299010",
         "painting": "haiwangxing",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ネプチューン",
         "en_name": "Neptune",
         "cn_name": "海王星",
@@ -15670,6 +16862,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.5,
+            1.6,
+            1
         ]
     },
     "202290": {
@@ -15688,8 +16885,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "202290",
         "painting": "peineiluopo",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ペネロピ",
         "en_name": "Penelope",
         "cn_name": "佩内洛珀",
@@ -15710,6 +16905,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.35,
+            1.55,
+            1.3
         ]
     },
     "202280": {
@@ -15728,8 +16928,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "202280",
         "painting": "daiduo_idol",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ダイドー(μ兵装)",
         "en_name": "Dido μ",
         "cn_name": "黛朵(μ兵装)",
@@ -15751,6 +16949,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.35,
+            1.3,
+            1.4
         ]
     },
     "202270": {
@@ -15769,8 +16972,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "202270",
         "painting": "hemin",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ハーマイオニー",
         "en_name": "Hermione",
         "cn_name": "赫敏",
@@ -15792,6 +16993,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.4,
+            1.3,
+            1.3
         ]
     },
     "202260": {
@@ -15810,8 +17016,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "202260",
         "painting": "gelasige",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "グラスゴー",
         "en_name": "Glasgow",
         "cn_name": "格拉斯哥",
@@ -15832,6 +17036,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.35,
+            1.3,
+            1.35
         ]
     },
     "202250": {
@@ -15850,8 +17059,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "202250",
         "painting": "xiefeierde_idol",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "シェフィールド(μ兵装)",
         "en_name": "Sheffield μ",
         "cn_name": "谢菲尔德(μ兵装)",
@@ -15872,6 +17079,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.5,
+            1.5,
+            1.1
         ]
     },
     "202240": {
@@ -15890,8 +17102,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "202240",
         "painting": "heitaizi",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ブラック・プリンス",
         "en_name": "Black Prince",
         "cn_name": "黑太子",
@@ -15913,6 +17123,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.35,
+            1.3,
+            1.35
         ]
     },
     "202230": {
@@ -15931,8 +17146,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "202230",
         "painting": "quejie",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "スウィフトシュア",
         "en_name": "Swiftsure",
         "cn_name": "确捷",
@@ -15953,6 +17166,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.55,
+            1.55,
+            1.1
         ]
     },
     "202229": {
@@ -15971,8 +17189,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "202229",
         "painting": "biaoyu_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "カーリュー改",
         "en_name": "Curlew (Retrofit)",
         "cn_name": "杓鹬改",
@@ -15994,6 +17210,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.15,
+            0.9,
+            0.9
         ]
     },
     "202220": {
@@ -16012,8 +17233,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "202220",
         "painting": "biaoyu",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "カーリュー",
         "en_name": "Curlew",
         "cn_name": "杓鹬",
@@ -16035,6 +17254,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.1,
+            0.8,
+            0.8
         ]
     },
     "202219": {
@@ -16053,8 +17277,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "202219",
         "painting": "kulasuo_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "キュラソー改",
         "en_name": "Curacoa (Retrofit)",
         "cn_name": "库拉索改",
@@ -16076,6 +17298,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            0.9,
+            0.9
         ]
     },
     "202210": {
@@ -16094,8 +17321,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "202210",
         "painting": "kulasuo",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "キュラソー",
         "en_name": "Curacoa",
         "cn_name": "库拉索",
@@ -16117,6 +17342,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.15,
+            0.8,
+            0.8
         ]
     },
     "202200": {
@@ -16135,8 +17365,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "202200",
         "painting": "tianlangxing",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "シリアス",
         "en_name": "Sirius",
         "cn_name": "天狼星",
@@ -16158,6 +17386,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.35,
+            1.3,
+            1.3
         ]
     },
     "202199": {
@@ -16176,8 +17409,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "202199",
         "painting": "niukasier_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ニューカッスル改",
         "en_name": "Newcastle (Retrofit)",
         "cn_name": "纽卡斯尔改",
@@ -16198,6 +17429,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.55,
+            1.25,
+            1.45
         ]
     },
     "202190": {
@@ -16216,8 +17452,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "202190",
         "painting": "niukasier",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "ニューカッスル",
         "en_name": "Newcastle",
         "cn_name": "纽卡斯尔",
@@ -16238,6 +17472,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.4,
+            1.25,
+            1.4
         ]
     },
     "202180": {
@@ -16256,8 +17495,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "202180",
         "painting": "beierfasite_younv",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ベルファスト",
         "en_name": "Little Bel",
         "cn_name": "小贝法",
@@ -16278,6 +17515,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.4,
+            1.5,
+            1
         ]
     },
     "202170": {
@@ -16296,8 +17538,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "202170",
         "painting": "yamaijia",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "ジャマイカ",
         "en_name": "Jamaica",
         "cn_name": "牙买加",
@@ -16318,6 +17558,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.4,
+            1.55,
+            1.1
         ]
     },
     "202160": {
@@ -16336,8 +17581,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "202160",
         "painting": "feiji",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "フィジー",
         "en_name": "Fiji",
         "cn_name": "斐济",
@@ -16358,6 +17601,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.4,
+            1.55,
+            1.1
         ]
     },
     "202150": {
@@ -16376,8 +17624,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "202150",
         "painting": "ouruola",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "オーロラ",
         "en_name": "Aurora",
         "cn_name": "欧若拉",
@@ -16398,6 +17644,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.35,
+            1.55,
+            1.3
         ]
     },
     "202140": {
@@ -16416,8 +17667,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "202140",
         "painting": "jialadiya",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "ガラティア",
         "en_name": "Galatea",
         "cn_name": "加拉蒂亚",
@@ -16438,6 +17687,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.3,
+            1.55,
+            1.3
         ]
     },
     "202130": {
@@ -16456,8 +17710,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "202130",
         "painting": "aruituosha",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "アリシューザ",
         "en_name": "Arethusa",
         "cn_name": "阿瑞托莎",
@@ -16478,6 +17730,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.3,
+            1.55,
+            1.3
         ]
     },
     "202120": {
@@ -16496,8 +17753,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "202120",
         "painting": "beierfasite",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ベルファスト",
         "en_name": "Belfast",
         "cn_name": "贝尔法斯特",
@@ -16518,6 +17773,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.5,
+            1.55,
+            1
         ]
     },
     "202110": {
@@ -16536,8 +17796,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "202110",
         "painting": "aidingbao",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "エディンバラ",
         "en_name": "Edinburgh",
         "cn_name": "爱丁堡",
@@ -16558,6 +17816,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.5,
+            1.55,
+            1
         ]
     },
     "202100": {
@@ -16576,8 +17839,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "202100",
         "painting": "geluosite",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "グロスター",
         "en_name": "Gloucester",
         "cn_name": "格罗斯特",
@@ -16598,6 +17859,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.5,
+            1.5,
+            1.1
         ]
     },
     "202080": {
@@ -16616,8 +17882,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "202080",
         "painting": "xiefeierde",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "シェフィールド",
         "en_name": "Sheffield",
         "cn_name": "谢菲尔德",
@@ -16638,6 +17902,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.5,
+            1.5,
+            1.1
         ]
     },
     "202070": {
@@ -16656,8 +17925,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "202070",
         "painting": "nananpudun",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "サウサンプトン",
         "en_name": "Southampton",
         "cn_name": "南安普顿",
@@ -16678,6 +17945,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.35,
+            1.3,
+            1.1
         ]
     },
     "202040": {
@@ -16696,8 +17968,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "202040",
         "painting": "daiduo",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ダイドー",
         "en_name": "Dido",
         "cn_name": "黛朵",
@@ -16719,6 +17989,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.4,
+            1.3,
+            1.35
         ]
     },
     "202039": {
@@ -16737,8 +18012,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "202039",
         "painting": "ajiakesi_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "エイジャックス改",
         "en_name": "Ajax (Retrofit)",
         "cn_name": "阿贾克斯改",
@@ -16759,6 +18032,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.6,
+            1.6,
+            1
         ]
     },
     "202030": {
@@ -16777,8 +18055,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "202030",
         "painting": "ajiakesi",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "エイジャックス",
         "en_name": "Ajax",
         "cn_name": "阿贾克斯",
@@ -16799,6 +18075,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.45,
+            1.55,
+            1
         ]
     },
     "202029": {
@@ -16817,8 +18098,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "202029",
         "painting": "ajilisi_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "アキリーズ改",
         "en_name": "Achilles (Retrofit)",
         "cn_name": "阿基里斯改",
@@ -16839,6 +18118,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.6,
+            1.6,
+            1
         ]
     },
     "202020": {
@@ -16857,8 +18141,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "202020",
         "painting": "ajilisi",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "アキリーズ",
         "en_name": "Achilles",
         "cn_name": "阿基里斯",
@@ -16879,6 +18161,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.45,
+            1.55,
+            1
         ]
     },
     "202019": {
@@ -16897,8 +18184,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "202019",
         "painting": "liande_g",
-        "star_string": "★★★★",
-        "rarity_string": "R",
         "jp_name": "リアンダー改",
         "en_name": "Leander (Retrofit)",
         "cn_name": "利安得改",
@@ -16919,6 +18204,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.35,
+            1.65,
+            1.3
         ]
     },
     "202010": {
@@ -16937,8 +18227,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "202010",
         "painting": "liande",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "リアンダー",
         "en_name": "Leander",
         "cn_name": "利安得",
@@ -16959,6 +18247,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.6,
+            1.3
         ]
     },
     "201330": {
@@ -16977,8 +18270,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "201330",
         "painting": "yikaluosi",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "イカルス",
         "en_name": "Icarus",
         "cn_name": "伊卡洛斯",
@@ -16999,6 +18290,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.45,
+            1
         ]
     },
     "201320": {
@@ -17017,8 +18313,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "201320",
         "painting": "aisijimo",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "エスキモー",
         "en_name": "Eskimo",
         "cn_name": "爱斯基摩人",
@@ -17039,6 +18333,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1,
+            1.35,
+            1
         ]
     },
     "201290": {
@@ -17057,8 +18356,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "201290",
         "painting": "huisheng",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "エコー",
         "en_name": "Echo",
         "cn_name": "回声",
@@ -17079,6 +18376,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.4,
+            1.05
         ]
     },
     "201270": {
@@ -17097,8 +18399,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "201270",
         "painting": "huoqiangshou",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "マスケティーア",
         "en_name": "Musketeer",
         "cn_name": "火枪手",
@@ -17119,6 +18419,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.45,
+            1
         ]
     },
     "201260": {
@@ -17137,8 +18442,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "201260",
         "painting": "wudi",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "マッチレス",
         "en_name": "Matchless",
         "cn_name": "无敌",
@@ -17159,6 +18462,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.45,
+            1
         ]
     },
     "201250": {
@@ -17177,8 +18485,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "201250",
         "painting": "zexi",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "ジャージー",
         "en_name": "Jersey",
         "cn_name": "泽西",
@@ -17199,6 +18505,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.4,
+            1.05
         ]
     },
     "201240": {
@@ -17217,8 +18528,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "201240",
         "painting": "qiubite",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "ジュピター",
         "en_name": "Jupiter",
         "cn_name": "丘比特",
@@ -17239,6 +18548,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.4,
+            1.05
         ]
     },
     "201230": {
@@ -17257,8 +18571,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "201230",
         "painting": "xixuegui",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ヴァンパイア",
         "en_name": "Vampire",
         "cn_name": "吸血鬼",
@@ -17279,6 +18591,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.15,
+            1.45,
+            1.05
         ]
     },
     "201220": {
@@ -17297,8 +18614,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "201220",
         "painting": "tianhou",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "ジュノー",
         "en_name": "Juno",
         "cn_name": "天后",
@@ -17319,6 +18634,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.4,
+            1.05
         ]
     },
     "201219": {
@@ -17337,8 +18657,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "201219",
         "painting": "biaoqiang_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ジャベリン改",
         "en_name": "Javelin (Retrofit)",
         "cn_name": "标枪改",
@@ -17359,6 +18677,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.55,
+            1.05
         ]
     },
     "201210": {
@@ -17377,8 +18700,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "201210",
         "painting": "biaoqiang",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ジャベリン",
         "en_name": "Javelin",
         "cn_name": "标枪",
@@ -17399,6 +18720,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.5,
+            1.05
         ]
     },
     "201200": {
@@ -17417,8 +18743,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "201200",
         "painting": "lieren",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "ハンター",
         "en_name": "Hunter",
         "cn_name": "猎人",
@@ -17439,6 +18763,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.3,
+            1.05
         ]
     },
     "201160": {
@@ -17457,8 +18786,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "201160",
         "painting": "yonggan",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ハーディ",
         "en_name": "Hardy",
         "cn_name": "勇敢",
@@ -17479,6 +18806,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.3,
+            1.35,
+            1.05
         ]
     },
     "201140": {
@@ -17497,8 +18829,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "201140",
         "painting": "yinghuochong",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "グローウォーム",
         "en_name": "Glowworm",
         "cn_name": "萤火虫",
@@ -17519,6 +18849,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.3,
+            1.35,
+            1.05
         ]
     },
     "201130": {
@@ -17537,8 +18872,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "201130",
         "painting": "gelunweier",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "グレンヴィル",
         "en_name": "Grenville",
         "cn_name": "格伦维尔",
@@ -17559,6 +18892,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.35,
+            1.3,
+            1.05
         ]
     },
     "201129": {
@@ -17577,8 +18915,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "201129",
         "painting": "mingyunnvshen_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "フォーチュン改",
         "en_name": "Fortune (Retrofit)",
         "cn_name": "命运女神改",
@@ -17599,6 +18935,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.35,
+            1.1
         ]
     },
     "201120": {
@@ -17617,8 +18958,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "201120",
         "painting": "mingyunnvshen",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "フォーチュン",
         "en_name": "Fortune",
         "cn_name": "命运女神",
@@ -17639,6 +18978,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.35,
+            1.05
         ]
     },
     "201119": {
@@ -17657,8 +19001,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "201119",
         "painting": "huti_g",
-        "star_string": "★★★★",
-        "rarity_string": "R",
         "jp_name": "フォックスハウンド改",
         "en_name": "Foxhound (Retrofit)",
         "cn_name": "狐提改",
@@ -17679,6 +19021,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.35,
+            1.1
         ]
     },
     "201110": {
@@ -17697,8 +19044,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "201110",
         "painting": "huti",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "フォックスハウンド",
         "en_name": "Foxhound",
         "cn_name": "狐提",
@@ -17719,6 +19064,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.35,
+            1.05
         ]
     },
     "201109": {
@@ -17737,8 +19087,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "201109",
         "painting": "xiaotiane_g",
-        "star_string": "★★★★",
-        "rarity_string": "R",
         "jp_name": "シグニット改",
         "en_name": "Cygnet (Retrofit)",
         "cn_name": "小天鹅改",
@@ -17759,6 +19107,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.35,
+            1.1
         ]
     },
     "201100": {
@@ -17777,8 +19130,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "201100",
         "painting": "xiaotiane",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "シグニット",
         "en_name": "Cygnet",
         "cn_name": "小天鹅",
@@ -17799,6 +19150,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.35,
+            1.05
         ]
     },
     "201099": {
@@ -17817,8 +19173,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "201099",
         "painting": "xinyue_g",
-        "star_string": "★★★★",
-        "rarity_string": "R",
         "jp_name": "クレセント改",
         "en_name": "Crescent (Retrofit)",
         "cn_name": "新月改",
@@ -17839,6 +19193,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.35,
+            1.1
         ]
     },
     "201090": {
@@ -17857,8 +19216,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "201090",
         "painting": "xinyue",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "クレセント",
         "en_name": "Crescent",
         "cn_name": "新月",
@@ -17879,6 +19236,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.35,
+            1.05
         ]
     },
     "201089": {
@@ -17897,8 +19259,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "201089",
         "painting": "huixing_g",
-        "star_string": "★★★★",
-        "rarity_string": "R",
         "jp_name": "コメット改",
         "en_name": "Comet (Retrofit)",
         "cn_name": "彗星改",
@@ -17919,6 +19279,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.4,
+            1.1
         ]
     },
     "201080": {
@@ -17937,8 +19302,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "201080",
         "painting": "huixing",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "コメット",
         "en_name": "Comet",
         "cn_name": "彗星",
@@ -17959,6 +19322,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.35,
+            1.05
         ]
     },
     "201070": {
@@ -17977,8 +19345,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "201070",
         "painting": "dadouquan",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "ブルドッグ",
         "en_name": "Bulldog",
         "cn_name": "大斗犬",
@@ -17999,6 +19365,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.35,
+            1.05
         ]
     },
     "201060": {
@@ -18017,8 +19388,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "201060",
         "painting": "xiaolietuquan",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "ビーグル",
         "en_name": "Beagle",
         "cn_name": "小猎兔犬",
@@ -18039,6 +19408,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.35,
+            1.05
         ]
     },
     "201039": {
@@ -18057,8 +19431,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "201039",
         "painting": "rexin_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "アーデント改",
         "en_name": "Ardent (Retrofit)",
         "cn_name": "热心改",
@@ -18079,6 +19451,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.45,
+            1.1
         ]
     },
     "201030": {
@@ -18097,8 +19474,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "201030",
         "painting": "rexin",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "アーデント",
         "en_name": "Ardent",
         "cn_name": "热心",
@@ -18119,6 +19494,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.4,
+            1.05
         ]
     },
     "201029": {
@@ -18137,8 +19517,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "201029",
         "painting": "akasita_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "アカスタ改",
         "en_name": "Acasta (Retrofit)",
         "cn_name": "阿卡司塔改",
@@ -18159,6 +19537,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.15,
+            1.5,
+            1.1
         ]
     },
     "201020": {
@@ -18177,8 +19560,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "201020",
         "painting": "akasita",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "アカスタ",
         "en_name": "Acasta",
         "cn_name": "阿卡司塔",
@@ -18199,6 +19580,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.15,
+            1.45,
+            1.05
         ]
     },
     "201019": {
@@ -18217,8 +19603,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "201019",
         "painting": "nvjiang_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "アマゾン改",
         "en_name": "Amazon (Retrofit)",
         "cn_name": "女将改",
@@ -18239,6 +19623,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.35,
+            1.15
         ]
     },
     "201010": {
@@ -18257,8 +19646,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "201010",
         "painting": "nvjiang",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "アマゾン",
         "en_name": "Amazon",
         "cn_name": "女将",
@@ -18279,6 +19666,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.35,
+            1.05
         ]
     },
     "112010": {
@@ -18297,8 +19689,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "112010",
         "painting": "zaoshen",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ヴェスタル",
         "en_name": "Vestal",
         "cn_name": "女灶神",
@@ -18317,6 +19707,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1,
+            1,
+            1
         ]
     },
     "108070": {
@@ -18335,8 +19730,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "108070",
         "painting": "yingwuluo",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ノーチラス",
         "en_name": "Nautilus",
         "cn_name": "鹦鹉螺",
@@ -18356,6 +19749,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.2,
+            0.9
         ]
     },
     "108060": {
@@ -18374,8 +19772,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "108060",
         "painting": "sheshuiyu",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "アーチャーフィッシュ",
         "en_name": "Archerfish",
         "cn_name": "射水鱼",
@@ -18394,6 +19790,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.3,
+            0.85
         ]
     },
     "108050": {
@@ -18412,8 +19813,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "108050",
         "painting": "daqinghuayu_idol",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "アルバコア(μ兵装)",
         "en_name": "Albacore μ",
         "cn_name": "大青花鱼(μ兵装)",
@@ -18432,6 +19831,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.2,
+            0.9
         ]
     },
     "108040": {
@@ -18450,8 +19854,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "108040",
         "painting": "lansaiyu",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ブルーギル",
         "en_name": "Bluegill",
         "cn_name": "蓝鳃鱼",
@@ -18470,6 +19872,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.2,
+            0.9
         ]
     },
     "108030": {
@@ -18488,8 +19895,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "108030",
         "painting": "jiqi",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "カヴァラ",
         "en_name": "Cavalla",
         "cn_name": "棘鳍",
@@ -18508,6 +19913,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.25,
+            0.85
         ]
     },
     "108020": {
@@ -18526,8 +19936,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "108020",
         "painting": "daqinghuayu",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "アルバコア",
         "en_name": "Albacore",
         "cn_name": "大青花鱼",
@@ -18546,6 +19954,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.2,
+            0.9
         ]
     },
     "108010": {
@@ -18564,8 +19977,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "108010",
         "painting": "tiaoyu",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "デイス",
         "en_name": "Dace",
         "cn_name": "鲦鱼",
@@ -18584,6 +19995,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.2,
+            0.9
         ]
     },
     "107990": {
@@ -18602,8 +20018,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "107990",
         "painting": "qiye_younv",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "リトル・エンタープライズ",
         "en_name": "Little Enterprise",
         "cn_name": "小企业",
@@ -18622,6 +20036,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.25,
+            1.25
         ]
     },
     "107380": {
@@ -18640,8 +20059,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "107380",
         "painting": "xianggelila",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "シャングリラ",
         "en_name": "Shangri-La",
         "cn_name": "香格里拉",
@@ -18660,6 +20077,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.4,
+            1.3,
+            1.15
         ]
     },
     "107170": {
@@ -18678,8 +20100,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "107170",
         "painting": "bangkeshan",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "バンカー・ヒル",
         "en_name": "Bunker Hill",
         "cn_name": "邦克山",
@@ -18698,6 +20118,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.4,
+            1.3,
+            1.15
         ]
     },
     "107140": {
@@ -18716,8 +20141,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "107140",
         "painting": "tikangdeluojia",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "タイコンデロガ",
         "en_name": "Ticonderoga",
         "cn_name": "提康德罗加",
@@ -18736,6 +20159,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.4,
+            1.3,
+            1.2
         ]
     },
     "107110": {
@@ -18754,8 +20182,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "107110",
         "painting": "wuwei",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "イントレピッド",
         "en_name": "Intrepid",
         "cn_name": "无畏",
@@ -18774,6 +20200,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.4,
+            1.3,
+            1.2
         ]
     },
     "107090": {
@@ -18792,8 +20223,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "107090",
         "painting": "aisaikesi",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "エセックス",
         "en_name": "Essex",
         "cn_name": "埃塞克斯",
@@ -18812,6 +20241,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.4,
+            1.3,
+            1.2
         ]
     },
     "107080": {
@@ -18830,8 +20264,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "107080",
         "painting": "hufeng",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "ワスプ",
         "en_name": "Wasp",
         "cn_name": "胡蜂",
@@ -18850,6 +20282,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.25,
+            1.25
         ]
     },
     "107070": {
@@ -18868,8 +20305,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "107070",
         "painting": "dahuangfeng",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ホーネット",
         "en_name": "Hornet",
         "cn_name": "大黄蜂",
@@ -18888,6 +20323,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.25,
+            1.25
         ]
     },
     "107060": {
@@ -18906,8 +20346,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "107060",
         "painting": "qiye",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "エンタープライズ",
         "en_name": "Enterprise",
         "cn_name": "企业",
@@ -18926,6 +20364,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.25,
+            1.25
         ]
     },
     "107050": {
@@ -18944,8 +20387,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "107050",
         "painting": "yuekecheng",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ヨークタウン",
         "en_name": "Yorktown",
         "cn_name": "约克城",
@@ -18964,6 +20405,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.25,
+            1.25
         ]
     },
     "107039": {
@@ -18982,8 +20428,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "107039",
         "painting": "salatuojia_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "サラトガ改",
         "en_name": "Saratoga (Retrofit)",
         "cn_name": "萨拉托加改",
@@ -19002,6 +20446,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            1.4,
+            1.4
         ]
     },
     "107030": {
@@ -19020,8 +20469,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "107030",
         "painting": "salatuojia",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "サラトガ",
         "en_name": "Saratoga",
         "cn_name": "萨拉托加",
@@ -19040,6 +20487,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.2,
+            1.3,
+            1.3
         ]
     },
     "107020": {
@@ -19058,8 +20510,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "107020",
         "painting": "liekexingdun",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "レキシントン",
         "en_name": "Lexington",
         "cn_name": "列克星敦",
@@ -19078,6 +20528,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.2,
+            1.3,
+            1.3
         ]
     },
     "107290": {
@@ -19096,8 +20551,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "107290",
         "painting": "badan",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "バターン",
         "en_name": "Bataan",
         "cn_name": "巴丹",
@@ -19118,6 +20571,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1.25,
+            1.55,
+            0.8
         ]
     },
     "107230": {
@@ -19136,8 +20594,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "107230",
         "painting": "pulinsidun",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "プリンストン",
         "en_name": "Princeton",
         "cn_name": "普林斯顿",
@@ -19158,6 +20614,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1.25,
+            1.55,
+            0.8
         ]
     },
     "107229": {
@@ -19176,8 +20637,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "107229",
         "painting": "duli_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "インディペンデンス改",
         "en_name": "Independence (Retrofit)",
         "cn_name": "独立改",
@@ -19198,6 +20657,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1.45,
+            1.5,
+            0.8
         ]
     },
     "107220": {
@@ -19216,8 +20680,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "107220",
         "painting": "duli",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "インディペンデンス",
         "en_name": "Independence",
         "cn_name": "独立",
@@ -19238,6 +20700,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1.3,
+            1.45,
+            0.8
         ]
     },
     "107049": {
@@ -19256,8 +20723,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "107049",
         "painting": "tujizhe_g",
-        "star_string": "★★★★",
-        "rarity_string": "R",
         "jp_name": "レンジャー改",
         "en_name": "Ranger (Retrofit)",
         "cn_name": "突击者改",
@@ -19278,6 +20743,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1.05,
+            1.45,
+            1.45
         ]
     },
     "107040": {
@@ -19296,8 +20766,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "107040",
         "painting": "tujizhe",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "レンジャー",
         "en_name": "Ranger",
         "cn_name": "突击者",
@@ -19318,6 +20786,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1,
+            1.3,
+            1.3
         ]
     },
     "107019": {
@@ -19336,8 +20809,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "107019",
         "painting": "lanli_g",
-        "star_string": "★★★★",
-        "rarity_string": "R",
         "jp_name": "ラングレー改",
         "en_name": "Langley (Retrofit)",
         "cn_name": "兰利改",
@@ -19358,6 +20829,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1.45,
+            1.45,
+            0.85
         ]
     },
     "107010": {
@@ -19376,8 +20852,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "107010",
         "painting": "lanli",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "ラングレー",
         "en_name": "Langley",
         "cn_name": "兰利",
@@ -19398,6 +20872,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1.3,
+            1.3,
+            0.8
         ]
     },
     "106550": {
@@ -19416,8 +20895,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "106550",
         "painting": "kasabulanka",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "カサブランカ",
         "en_name": "Casablanca",
         "cn_name": "卡萨布兰卡",
@@ -19438,6 +20915,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1.35,
+            1.35,
+            1
         ]
     },
     "106029": {
@@ -19456,8 +20938,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "106029",
         "painting": "boge_g",
-        "star_string": "★★★★",
-        "rarity_string": "R",
         "jp_name": "ボーグ改",
         "en_name": "Bogue (Retrofit)",
         "cn_name": "博格改",
@@ -19478,6 +20958,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1.3,
+            1.45,
+            0.85
         ]
     },
     "106020": {
@@ -19496,8 +20981,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "106020",
         "painting": "boge",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "ボーグ",
         "en_name": "Bogue",
         "cn_name": "博格",
@@ -19518,6 +21001,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1.3,
+            1.3,
+            0.8
         ]
     },
     "106019": {
@@ -19536,8 +21024,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "106019",
         "painting": "changdao_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ロング・アイランド改",
         "en_name": "Long Island (Retrofit)",
         "cn_name": "长岛改",
@@ -19558,6 +21044,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1.45,
+            1.3,
+            0.85
         ]
     },
     "106010": {
@@ -19576,8 +21067,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "106010",
         "painting": "changdao",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "ロング・アイランド",
         "en_name": "Long Island",
         "cn_name": "长岛",
@@ -19598,6 +21087,11 @@ const ship_data = {
         "equip_5": [
             10,
             15
+        ],
+        "eq_p": [
+            1.3,
+            1.3,
+            0.8
         ]
     },
     "199020": {
@@ -19616,8 +21110,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "199020",
         "painting": "zuozhiya",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ジョージア",
         "en_name": "Georgia",
         "cn_name": "佐治亚",
@@ -19636,6 +21128,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.65,
+            2,
+            1.1
         ]
     },
     "105200": {
@@ -19654,8 +21151,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "105200",
         "painting": "alabama",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "アラバマ",
         "en_name": "Alabama",
         "cn_name": "阿拉巴马",
@@ -19674,6 +21169,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
         ]
     },
     "105190": {
@@ -19692,8 +21192,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "105190",
         "painting": "masazhusai",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "マサチューセッツ",
         "en_name": "Massachusetts",
         "cn_name": "马萨诸塞",
@@ -19712,6 +21210,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
         ]
     },
     "105170": {
@@ -19730,8 +21233,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "105170",
         "painting": "xinzexi",
-        "star_string": "★★★★★★",
-        "rarity_string": "UR",
         "jp_name": "ニュージャージー",
         "en_name": "New Jersey",
         "cn_name": "新泽西",
@@ -19750,6 +21251,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.5,
+            2.1,
+            1.3
         ]
     },
     "105140": {
@@ -19768,8 +21274,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "105140",
         "painting": "nandaketa",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "サウスダコタ",
         "en_name": "South Dakota",
         "cn_name": "南达科他",
@@ -19788,6 +21292,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
         ]
     },
     "105130": {
@@ -19806,8 +21315,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "105130",
         "painting": "huashengdun",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ワシントン",
         "en_name": "Washington",
         "cn_name": "华盛顿",
@@ -19826,6 +21333,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
         ]
     },
     "105120": {
@@ -19844,8 +21356,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "105120",
         "painting": "beikaluolaina",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ノースカロライナ",
         "en_name": "North Carolina",
         "cn_name": "北卡罗来纳",
@@ -19864,6 +21374,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
         ]
     },
     "105110": {
@@ -19882,8 +21397,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "105110",
         "painting": "xifujiniya",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ウェストバージニア",
         "en_name": "West Virginia",
         "cn_name": "西弗吉尼亚",
@@ -19902,6 +21415,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
         ]
     },
     "105100": {
@@ -19920,8 +21438,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "105100",
         "painting": "malilan",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "メリーランド",
         "en_name": "Maryland",
         "cn_name": "马里兰",
@@ -19940,6 +21456,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            2,
+            1
         ]
     },
     "105090": {
@@ -19958,8 +21479,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "105090",
         "painting": "keluoladuo",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "コロラド",
         "en_name": "Colorado",
         "cn_name": "科罗拉多",
@@ -19978,6 +21497,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
         ]
     },
     "105080": {
@@ -19996,8 +21520,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "105080",
         "painting": "jialifuniya",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "カリフォルニア",
         "en_name": "California",
         "cn_name": "加利福尼亚",
@@ -20016,6 +21538,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
         ]
     },
     "105070": {
@@ -20034,8 +21561,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "105070",
         "painting": "tiannaxi",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "テネシー",
         "en_name": "Tennessee",
         "cn_name": "田纳西",
@@ -20054,6 +21579,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
         ]
     },
     "105040": {
@@ -20072,8 +21602,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "105040",
         "painting": "yalisangna",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "アリゾナ",
         "en_name": "Arizona",
         "cn_name": "亚利桑那",
@@ -20092,6 +21620,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
         ]
     },
     "105030": {
@@ -20110,8 +21643,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "105030",
         "painting": "binxifaniya",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "ペンシルベニア",
         "en_name": "Pennsylvania",
         "cn_name": "宾夕法尼亚",
@@ -20130,6 +21661,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
         ]
     },
     "105029": {
@@ -20148,8 +21684,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "105029",
         "painting": "ekelahema_g",
-        "star_string": "★★★★",
-        "rarity_string": "R",
         "jp_name": "オクラホマ改",
         "en_name": "Oklahoma (Retrofit)",
         "cn_name": "俄克拉荷马改",
@@ -20168,6 +21702,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            2.15,
+            1
         ]
     },
     "105020": {
@@ -20186,8 +21725,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "105020",
         "painting": "ekelahema",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "オクラホマ",
         "en_name": "Oklahoma",
         "cn_name": "俄克拉荷马",
@@ -20206,6 +21743,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
         ]
     },
     "105019": {
@@ -20224,8 +21766,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "105019",
         "painting": "neihuada_g",
-        "star_string": "★★★★",
-        "rarity_string": "R",
         "jp_name": "ネバダ改",
         "en_name": "Nevada (Retrofit)",
         "cn_name": "内华达改",
@@ -20244,6 +21784,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.35,
+            2.15,
+            1
         ]
     },
     "105010": {
@@ -20262,8 +21807,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "105010",
         "painting": "neihuada",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "ネバダ",
         "en_name": "Nevada",
         "cn_name": "内华达",
@@ -20282,6 +21825,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
         ]
     },
     "199030": {
@@ -20300,8 +21848,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "199030",
         "painting": "ankeleiqi",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "アンカレッジ",
         "en_name": "Anchorage",
         "cn_name": "安克雷奇",
@@ -20320,6 +21866,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            1.15,
+            1.15
         ]
     },
     "103250": {
@@ -20338,8 +21889,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "103250",
         "painting": "baerdimo_idol",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ボルチモア(μ兵装)",
         "en_name": "Baltimore μ",
         "cn_name": "巴尔的摩(μ兵装)",
@@ -20358,6 +21907,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            0.55,
+            1.35
         ]
     },
     "103240": {
@@ -20376,8 +21930,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "103240",
         "painting": "bulaimodun",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ブレマートン",
         "en_name": "Bremerton",
         "cn_name": "布莱默顿",
@@ -20396,6 +21948,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            0.7,
+            1.4
         ]
     },
     "103160": {
@@ -20414,8 +21971,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "103160",
         "painting": "baerdimo",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ボルチモア",
         "en_name": "Baltimore",
         "cn_name": "巴尔的摩",
@@ -20434,6 +21989,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            0.75,
+            1.35
         ]
     },
     "103140": {
@@ -20452,8 +22012,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "103140",
         "painting": "jiujinshan",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "サンフランシスコ",
         "en_name": "San Francisco",
         "cn_name": "旧金山",
@@ -20472,6 +22030,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            0.75,
+            1.25
         ]
     },
     "103130": {
@@ -20490,8 +22053,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "103130",
         "painting": "mingniabolisi",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ミネアポリス",
         "en_name": "Minneapolis",
         "cn_name": "明尼阿波利斯",
@@ -20510,6 +22071,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            0.7,
+            1.25
         ]
     },
     "103120": {
@@ -20528,8 +22094,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "103120",
         "painting": "xinaoerliang",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ニューオリンズ",
         "en_name": "New Orleans",
         "cn_name": "新奥尔良",
@@ -20548,6 +22112,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.25,
+            0.7,
+            1.25
         ]
     },
     "103110": {
@@ -20566,8 +22135,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "103110",
         "painting": "weiqita",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ウィチタ",
         "en_name": "Wichita",
         "cn_name": "威奇塔",
@@ -20586,6 +22153,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.3,
+            0.55,
+            1.05
         ]
     },
     "103100": {
@@ -20604,8 +22176,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "103100",
         "painting": "wensensi",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ヴィンセンス",
         "en_name": "Vincennes",
         "cn_name": "文森斯",
@@ -20624,6 +22194,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.15,
+            0.65,
+            1.3
         ]
     },
     "103090": {
@@ -20642,8 +22217,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "103090",
         "painting": "kunxi",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "クインシー",
         "en_name": "Quincy",
         "cn_name": "昆西",
@@ -20662,6 +22235,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.15,
+            0.65,
+            1.3
         ]
     },
     "103080": {
@@ -20680,8 +22258,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "103080",
         "painting": "asituoliya",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "アストリア",
         "en_name": "Astoria",
         "cn_name": "阿斯托利亚",
@@ -20700,6 +22276,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.15,
+            0.6,
+            1.3
         ]
     },
     "103070": {
@@ -20718,8 +22299,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "103070",
         "painting": "bolisi",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "インディアナポリス",
         "en_name": "Indianapolis",
         "cn_name": "印第安纳波利斯",
@@ -20738,6 +22317,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.1,
+            0.6,
+            1.3
         ]
     },
     "103069": {
@@ -20756,8 +22340,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "103069",
         "painting": "botelan_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ポートランド改",
         "en_name": "Portland (Retrofit)",
         "cn_name": "波特兰改",
@@ -20776,6 +22358,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.15,
+            0.65,
+            1.35
         ]
     },
     "103060": {
@@ -20794,8 +22381,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "103060",
         "painting": "botelan",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "ポートランド",
         "en_name": "Portland",
         "cn_name": "波特兰",
@@ -20814,6 +22399,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.1,
+            0.6,
+            1.3
         ]
     },
     "103050": {
@@ -20832,8 +22422,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "103050",
         "painting": "xiusidun",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ヒューストン",
         "en_name": "Houston",
         "cn_name": "休斯敦",
@@ -20852,6 +22440,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.2,
+            0.55,
+            1.05
         ]
     },
     "103040": {
@@ -20870,8 +22463,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "103040",
         "painting": "zhijiage",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "シカゴ",
         "en_name": "Chicago",
         "cn_name": "芝加哥",
@@ -20890,6 +22481,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.2,
+            0.55,
+            1.05
         ]
     },
     "103030": {
@@ -20908,8 +22504,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "103030",
         "painting": "beianpudun",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "ノーザンプトン",
         "en_name": "Northampton",
         "cn_name": "北安普敦",
@@ -20928,6 +22522,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.2,
+            0.55,
+            1.05
         ]
     },
     "103020": {
@@ -20946,8 +22545,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "103020",
         "painting": "yanhucheng",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "ソルトレイクシティ",
         "en_name": "Salt Lake City",
         "cn_name": "盐湖城",
@@ -20966,6 +22563,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.2,
+            0.45,
+            1.05
         ]
     },
     "103010": {
@@ -20984,8 +22586,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "103010",
         "painting": "pengsakela",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "ペンサコーラ",
         "en_name": "Pensacola",
         "cn_name": "彭萨科拉",
@@ -21004,6 +22604,11 @@ const ship_data = {
         ],
         "equip_5": [
             10
+        ],
+        "eq_p": [
+            1.2,
+            0.45,
+            1.05
         ]
     },
     "199010": {
@@ -21022,8 +22627,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "199010",
         "painting": "xiyatu",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "シアトル",
         "en_name": "Seattle",
         "cn_name": "西雅图",
@@ -21045,6 +22648,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.45,
+            0.65,
+            1.3
         ]
     },
     "102290": {
@@ -21063,8 +22671,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "102290",
         "painting": "boyixi",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ボイシ",
         "en_name": "Boise",
         "cn_name": "博伊西",
@@ -21085,6 +22691,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.3,
+            0.65,
+            1
         ]
     },
     "102270": {
@@ -21103,8 +22714,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "102270",
         "painting": "mabuerheide",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "マーブルヘッド",
         "en_name": "Marblehead",
         "cn_name": "马布尔黑德",
@@ -21125,6 +22734,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.5,
+            1.3
         ]
     },
     "102260": {
@@ -21143,8 +22757,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "102260",
         "painting": "linuo",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "リノ",
         "en_name": "Reno",
         "cn_name": "里诺",
@@ -21166,6 +22778,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.3,
+            1.4,
+            1.7
         ]
     },
     "102250": {
@@ -21184,8 +22801,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "102250",
         "painting": "biluokexi",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ビロクシ",
         "en_name": "Biloxi",
         "cn_name": "比洛克西",
@@ -21206,6 +22821,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.3,
+            0.7,
+            1.2
         ]
     },
     "102240": {
@@ -21224,8 +22844,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "102240",
         "painting": "kelifulan_idol",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "クリーブランド(μ兵装)",
         "en_name": "Cleveland μ",
         "cn_name": "克利夫兰(μ兵装)",
@@ -21246,6 +22864,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.3,
+            0.7,
+            1.2
         ]
     },
     "102230": {
@@ -21264,8 +22887,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "102230",
         "painting": "bominghan",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "バーミンガム",
         "en_name": "Birmingham",
         "cn_name": "伯明翰",
@@ -21286,6 +22907,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.3,
+            0.65,
+            1.3
         ]
     },
     "102220": {
@@ -21304,8 +22930,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "102220",
         "painting": "shenghuan",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "サンフアン",
         "en_name": "San Juan",
         "cn_name": "圣胡安",
@@ -21327,6 +22951,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.05,
+            1.35,
+            1.6
         ]
     },
     "102210": {
@@ -21345,8 +22974,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "102210",
         "painting": "shengdiyage_younv",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "リトル・サンディエゴ",
         "en_name": "Li'l Sandy",
         "cn_name": "小圣地亚哥",
@@ -21368,6 +22995,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1,
+            1.15,
+            1.65
         ]
     },
     "102200": {
@@ -21386,8 +23018,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "102200",
         "painting": "kelifulan_younv",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "リトル・クリーブランド",
         "en_name": "Clevelad",
         "cn_name": "小克利夫兰",
@@ -21408,6 +23038,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            0.65,
+            1.2
         ]
     },
     "102190": {
@@ -21426,8 +23061,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "102190",
         "painting": "hailunna_younv",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "リトル・ヘレナ",
         "en_name": "Lena",
         "cn_name": "小海伦娜",
@@ -21448,6 +23081,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.35,
+            0.65,
+            1
         ]
     },
     "102180": {
@@ -21466,8 +23104,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "102180",
         "painting": "kangkede",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "コンコード",
         "en_name": "Concord",
         "cn_name": "康克德",
@@ -21488,6 +23124,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.5,
+            1.3
         ]
     },
     "102160": {
@@ -21506,8 +23147,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "102160",
         "painting": "mengfeisi",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "メンフィス",
         "en_name": "Memphis",
         "cn_name": "孟菲斯",
@@ -21528,6 +23167,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.55,
+            1.25
         ]
     },
     "102150": {
@@ -21546,8 +23190,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "102150",
         "painting": "danfo",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "デンバー",
         "en_name": "Denver",
         "cn_name": "丹佛",
@@ -21568,6 +23210,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            0.7,
+            1.2
         ]
     },
     "102140": {
@@ -21586,8 +23233,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "102140",
         "painting": "mengbiliai",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "モントピリア",
         "en_name": "Montpelier",
         "cn_name": "蒙彼利埃",
@@ -21608,6 +23253,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.3,
+            0.75,
+            1.2
         ]
     },
     "102130": {
@@ -21626,8 +23276,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "102130",
         "painting": "shengluyisi",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "セントルイス",
         "en_name": "St. Louis",
         "cn_name": "圣路易斯",
@@ -21648,6 +23296,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.35,
+            0.65,
+            1
         ]
     },
     "102120": {
@@ -21666,8 +23319,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "102120",
         "painting": "huonululu",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "ホノルル",
         "en_name": "Honolulu",
         "cn_name": "火奴鲁鲁",
@@ -21688,6 +23339,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.35,
+            0.65,
+            1
         ]
     },
     "102110": {
@@ -21706,8 +23362,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "102110",
         "painting": "lishiman",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "リッチモンド",
         "en_name": "Richmond",
         "cn_name": "里士满",
@@ -21728,6 +23382,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.55,
+            1.3
         ]
     },
     "102100": {
@@ -21746,8 +23405,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "102100",
         "painting": "gelunbiya",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "コロンビア",
         "en_name": "Columbia",
         "cn_name": "哥伦比亚",
@@ -21768,6 +23425,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.3,
+            0.7,
+            1.2
         ]
     },
     "102090": {
@@ -21786,8 +23448,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "102090",
         "painting": "kelifulan",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "クリーブランド",
         "en_name": "Cleveland",
         "cn_name": "克利夫兰",
@@ -21808,6 +23468,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.3,
+            0.7,
+            1.2
         ]
     },
     "102089": {
@@ -21826,8 +23491,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "102089",
         "painting": "shengdiyage_g",
-        "star_string": "★★★★★★",
-        "rarity_string": "UR",
         "jp_name": "サンディエゴ改",
         "en_name": "San Diego (Retrofit)",
         "cn_name": "圣地亚哥改",
@@ -21849,6 +23512,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.15,
+            1.35,
+            1.85
         ]
     },
     "102080": {
@@ -21867,8 +23535,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "102080",
         "painting": "shengdiyage",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "サンディエゴ",
         "en_name": "San Diego",
         "cn_name": "圣地亚哥",
@@ -21890,6 +23556,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.05,
+            1.35,
+            1.7
         ]
     },
     "102070": {
@@ -21908,8 +23579,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "102070",
         "painting": "zhunuo",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "ジュノー",
         "en_name": "Juneau",
         "cn_name": "朱诺",
@@ -21931,6 +23600,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.05,
+            1.35,
+            1.6
         ]
     },
     "102060": {
@@ -21949,8 +23623,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "102060",
         "painting": "yatelanda",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "アトランタ",
         "en_name": "Atlanta",
         "cn_name": "亚特兰大",
@@ -21972,6 +23644,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.05,
+            1.35,
+            1.6
         ]
     },
     "102059": {
@@ -21990,8 +23667,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "102059",
         "painting": "hailunna_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ヘレナ改",
         "en_name": "Helena (Retrofit)",
         "cn_name": "海伦娜改",
@@ -22012,6 +23687,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.4,
+            0.65,
+            1.15
         ]
     },
     "102050": {
@@ -22030,8 +23710,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "102050",
         "painting": "hailunna",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ヘレナ",
         "en_name": "Helena",
         "cn_name": "海伦娜",
@@ -22052,6 +23730,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.35,
+            0.65,
+            1
         ]
     },
     "102040": {
@@ -22070,8 +23753,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "102040",
         "painting": "feinikesi",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "フェニックス",
         "en_name": "Phoenix",
         "cn_name": "菲尼克斯",
@@ -22092,6 +23773,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.35,
+            0.65,
+            1
         ]
     },
     "102030": {
@@ -22110,8 +23796,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "102030",
         "painting": "bulukelin",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "ブルックリン",
         "en_name": "Brooklyn",
         "cn_name": "布鲁克林",
@@ -22132,6 +23816,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.35,
+            0.65,
+            1
         ]
     },
     "102020": {
@@ -22150,8 +23839,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "102020",
         "painting": "luoli",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "ローリー",
         "en_name": "Raleigh",
         "cn_name": "罗利",
@@ -22172,6 +23859,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.55,
+            1.3
         ]
     },
     "102010": {
@@ -22190,8 +23882,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "102010",
         "painting": "aomaha",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "オマハ",
         "en_name": "Omaha",
         "cn_name": "奥马哈",
@@ -22212,6 +23902,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.55,
+            1.3
         ]
     },
     "101480": {
@@ -22230,8 +23925,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101480",
         "painting": "yinggelahan",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "イングラハム",
         "en_name": "Ingraham",
         "cn_name": "英格拉罕",
@@ -22252,6 +23945,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.35,
+            1.35,
+            1.8
         ]
     },
     "101470": {
@@ -22270,8 +23968,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101470",
         "painting": "molisen",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "モリソン",
         "en_name": "Morrison",
         "cn_name": "莫里森",
@@ -22292,6 +23988,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.3,
+            1.3
         ]
     },
     "101460": {
@@ -22310,8 +24011,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101460",
         "painting": "shidifenbote",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ステフェン・ポッター",
         "en_name": "Stephen Potter",
         "cn_name": "史蒂芬·波特",
@@ -22332,6 +24031,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.3,
+            1.3
         ]
     },
     "101450": {
@@ -22350,8 +24054,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101450",
         "painting": "ailunsamuna",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "アレン・M・サムナー",
         "en_name": "Allen M. Sumner",
         "cn_name": "艾伦·萨姆纳",
@@ -22372,6 +24074,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.35,
+            1.35,
+            1.6
         ]
     },
     "101440": {
@@ -22390,8 +24097,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101440",
         "painting": "kubo",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "クーパー",
         "en_name": "Cooper",
         "cn_name": "库珀",
@@ -22412,6 +24117,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.35,
+            1.3
         ]
     },
     "101430": {
@@ -22430,8 +24140,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101430",
         "painting": "haerxibaoweier",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "ハルゼー・パウエル",
         "en_name": "Halsey Powell",
         "cn_name": "哈尔西·鲍威尔",
@@ -22452,6 +24160,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.3,
+            1.35
         ]
     },
     "101420": {
@@ -22470,8 +24183,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101420",
         "painting": "simoli",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "スモーリー",
         "en_name": "Smalley",
         "cn_name": "斯莫利",
@@ -22492,6 +24203,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.3,
+            1.35
         ]
     },
     "101410": {
@@ -22510,8 +24226,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101410",
         "painting": "sitanli",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "スタンリー",
         "en_name": "Stanly",
         "cn_name": "斯坦利",
@@ -22532,6 +24246,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.3,
+            1.35
         ]
     },
     "101400": {
@@ -22550,8 +24269,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101400",
         "painting": "aierwen",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "エールウィン",
         "en_name": "Aylwin",
         "cn_name": "艾尔温",
@@ -22572,6 +24289,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.3,
+            1.3
         ]
     },
     "101390": {
@@ -22590,8 +24312,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101390",
         "painting": "malani",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "マラニー",
         "en_name": "Mullany",
         "cn_name": "马拉尼",
@@ -22612,6 +24332,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.3,
+            1.3
         ]
     },
     "101380": {
@@ -22630,8 +24355,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101380",
         "painting": "jinboli",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "キンバリー",
         "en_name": "Kimberly",
         "cn_name": "金伯利",
@@ -22652,6 +24375,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.3,
+            1.3
         ]
     },
     "101370": {
@@ -22670,8 +24398,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101370",
         "painting": "keerke",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "カーク",
         "en_name": "Kalk",
         "cn_name": "科尔克",
@@ -22692,6 +24418,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.3,
+            1.3,
+            1.25
         ]
     },
     "101360": {
@@ -22710,8 +24441,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101360",
         "painting": "huobi",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "ホビー",
         "en_name": "Hobby",
         "cn_name": "霍比",
@@ -22732,6 +24461,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.3,
+            1.3,
+            1.25
         ]
     },
     "101350": {
@@ -22750,8 +24484,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101350",
         "painting": "beiqi",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "バッチ",
         "en_name": "Bache",
         "cn_name": "贝奇",
@@ -22772,6 +24504,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.3,
+            1.3
         ]
     },
     "101340": {
@@ -22790,8 +24527,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101340",
         "painting": "heizewude",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "ヘイゼルウッド",
         "en_name": "Hazelwood",
         "cn_name": "黑泽伍德",
@@ -22812,6 +24547,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.3,
+            1.3
         ]
     },
     "101330": {
@@ -22830,8 +24570,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101330",
         "painting": "bushi",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "ブッシュ",
         "en_name": "Bush",
         "cn_name": "布什",
@@ -22852,6 +24590,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.3,
+            1.35
         ]
     },
     "101319": {
@@ -22870,8 +24613,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101319",
         "painting": "nigulasi_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ニコラス改",
         "en_name": "Nicholas (Retrofit)",
         "cn_name": "尼古拉斯改",
@@ -22892,6 +24633,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.4,
+            1.4,
+            1.3
         ]
     },
     "101310": {
@@ -22910,8 +24656,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "101310",
         "painting": "nigulasi",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ニコラス",
         "en_name": "Nicholas",
         "cn_name": "尼古拉斯",
@@ -22932,6 +24676,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.3,
+            1.3
         ]
     },
     "101300": {
@@ -22950,8 +24699,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101300",
         "painting": "jiejinsi",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "ジェンキンス",
         "en_name": "Jenkins",
         "cn_name": "杰金斯",
@@ -22972,6 +24719,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.3,
+            1.3
         ]
     },
     "101290": {
@@ -22990,8 +24742,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101290",
         "painting": "ladefute",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "ラドフォード",
         "en_name": "Radford",
         "cn_name": "拉德福特",
@@ -23012,6 +24762,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.3,
+            1.3
         ]
     },
     "101279": {
@@ -23030,8 +24785,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101279",
         "painting": "beili_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ベイリー改",
         "en_name": "Bailey (Retrofit)",
         "cn_name": "贝利改",
@@ -23052,6 +24805,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.35,
+            1.35,
+            1.25
         ]
     },
     "101270": {
@@ -23070,8 +24828,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "101270",
         "painting": "beili",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "ベイリー",
         "en_name": "Bailey",
         "cn_name": "贝利",
@@ -23092,6 +24848,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.3,
+            1.3,
+            1.25
         ]
     },
     "101260": {
@@ -23110,8 +24871,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101260",
         "painting": "aierdeliqi",
-        "star_string": "★★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "エルドリッジ",
         "en_name": "Eldridge",
         "cn_name": "埃尔德里奇",
@@ -23132,6 +24891,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.15,
+            1.3,
+            1.25
         ]
     },
     "101259": {
@@ -23150,8 +24914,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101259",
         "painting": "haman_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ハムマン改",
         "en_name": "Hammann (Retrofit)",
         "cn_name": "哈曼改",
@@ -23172,6 +24934,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.3,
+            1.35
         ]
     },
     "101250": {
@@ -23190,8 +24957,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "101250",
         "painting": "haman",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "ハムマン",
         "en_name": "Hammann",
         "cn_name": "哈曼",
@@ -23212,6 +24977,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.3,
+            1.3
         ]
     },
     "101249": {
@@ -23230,8 +25000,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101249",
         "painting": "ximusi_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "シムス改",
         "en_name": "Sims (Retrofit)",
         "cn_name": "西姆斯改",
@@ -23252,6 +25020,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.3,
+            1.35
         ]
     },
     "101240": {
@@ -23270,8 +25043,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "101240",
         "painting": "ximusi",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "シムス",
         "en_name": "Sims",
         "cn_name": "西姆斯",
@@ -23292,6 +25063,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.3,
+            1.3
         ]
     },
     "101179": {
@@ -23310,8 +25086,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101179",
         "painting": "lafei_g",
-        "star_string": "★★★★★",
-        "rarity_string": "SSR",
         "jp_name": "ラフィー改",
         "en_name": "Laffey (Retrofit)",
         "cn_name": "拉菲改",
@@ -23332,6 +25106,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.65,
+            1.25,
+            1.25
         ]
     },
     "101170": {
@@ -23350,8 +25129,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "101170",
         "painting": "lafei",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "ラフィー",
         "en_name": "Laffey",
         "cn_name": "拉菲",
@@ -23372,6 +25149,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.4,
+            1.25,
+            1.25
         ]
     },
     "101160": {
@@ -23390,8 +25172,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101160",
         "painting": "bensen",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "ベンソン",
         "en_name": "Benson",
         "cn_name": "本森",
@@ -23412,6 +25192,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.3,
+            1.3,
+            1.25
         ]
     },
     "101150": {
@@ -23430,8 +25215,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101150",
         "painting": "sipengsi",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "スペンス",
         "en_name": "Spence",
         "cn_name": "斯彭斯",
@@ -23452,6 +25235,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.3,
+            1.3
         ]
     },
     "101140": {
@@ -23470,8 +25258,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101140",
         "painting": "fute",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "フート",
         "en_name": "Foote",
         "cn_name": "富特",
@@ -23492,6 +25278,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.3,
+            1.3
         ]
     },
     "101130": {
@@ -23510,8 +25301,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101130",
         "painting": "aolike",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "オーリック",
         "en_name": "Aulick",
         "cn_name": "奥利克",
@@ -23532,6 +25321,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.3,
+            1.3
         ]
     },
     "101120": {
@@ -23550,8 +25344,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101120",
         "painting": "saqieer",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "サッチャー",
         "en_name": "Thatcher",
         "cn_name": "撒切尔",
@@ -23572,6 +25364,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.3,
+            1.3
         ]
     },
     "101110": {
@@ -23590,8 +25387,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101110",
         "painting": "aosiben",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "チャールズ・オースバーン",
         "en_name": "Charles Ausburne",
         "cn_name": "查尔斯·奥斯本",
@@ -23612,6 +25407,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.3,
+            1.3
         ]
     },
     "101090": {
@@ -23630,8 +25430,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101090",
         "painting": "fulaiche",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "フレッチャー",
         "en_name": "Fletcher",
         "cn_name": "弗莱彻",
@@ -23652,6 +25450,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.3,
+            1.3
         ]
     },
     "101080": {
@@ -23670,8 +25473,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101080",
         "painting": "moli",
-        "star_string": "★★★★★",
-        "rarity_string": "SR",
         "jp_name": "モーリー",
         "en_name": "Maury",
         "cn_name": "莫里",
@@ -23692,6 +25493,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.15,
+            1.4,
+            1.25
         ]
     },
     "101070": {
@@ -23710,8 +25516,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101070",
         "painting": "maikaoer",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "マッコール",
         "en_name": "McCall",
         "cn_name": "麦考尔",
@@ -23732,6 +25536,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.15,
+            1.35,
+            1.25
         ]
     },
     "101060": {
@@ -23750,8 +25559,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101060",
         "painting": "keleiwen",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "クレイヴン",
         "en_name": "Craven",
         "cn_name": "克雷文",
@@ -23772,6 +25579,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.15,
+            1.35,
+            1.25
         ]
     },
     "101050": {
@@ -23790,8 +25602,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101050",
         "painting": "gelideli",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "グリッドレイ",
         "en_name": "Gridley",
         "cn_name": "格里德利",
@@ -23812,6 +25622,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.15,
+            1.35,
+            1.25
         ]
     },
     "101049": {
@@ -23830,8 +25645,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101049",
         "painting": "tangsi_g",
-        "star_string": "★★★★",
-        "rarity_string": "R",
         "jp_name": "ダウンズ改",
         "en_name": "Downes (Retrofit)",
         "cn_name": "唐斯改",
@@ -23852,6 +25665,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.35,
+            1.3
         ]
     },
     "101040": {
@@ -23870,8 +25688,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "101040",
         "painting": "tangsi",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "ダウンズ",
         "en_name": "Downes",
         "cn_name": "唐斯",
@@ -23892,6 +25708,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.3,
+            1.3
         ]
     },
     "101039": {
@@ -23910,8 +25731,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101039",
         "painting": "kaxin_g",
-        "star_string": "★★★★",
-        "rarity_string": "R",
         "jp_name": "カッシン改",
         "en_name": "Cassin (Retrofit)",
         "cn_name": "卡辛改",
@@ -23932,6 +25751,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.25,
+            1.35,
+            1.3
         ]
     },
     "101030": {
@@ -23950,8 +25774,6 @@ const ship_data = {
         "retro": 1,
         "uni_id": "101030",
         "painting": "kaxin",
-        "star_string": "★★★★",
-        "rarity_string": "N",
         "jp_name": "カッシン",
         "en_name": "Cassin",
         "cn_name": "卡辛",
@@ -23972,6 +25794,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.3,
+            1.3
         ]
     },
     "101020": {
@@ -23990,8 +25817,6 @@ const ship_data = {
         "retro": 0,
         "uni_id": "101020",
         "painting": "duwei",
-        "star_string": "★★★★★",
-        "rarity_string": "R",
         "jp_name": "デューイ",
         "en_name": "Dewey",
         "cn_name": "杜威",
@@ -24012,6 +25837,11 @@ const ship_data = {
         "equip_5": [
             10,
             14
+        ],
+        "eq_p": [
+            1.2,
+            1.3,
+            1.3
         ]
     }
 };
