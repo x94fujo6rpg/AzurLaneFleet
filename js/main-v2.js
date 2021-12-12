@@ -852,6 +852,7 @@ const
                             quantity: "",
                             ship_level: app._level_default.ship,
                             nationality: "",
+                            eq_p: "",
                         };
                         item = ship;
                     } else {
@@ -2897,33 +2898,55 @@ const
             }
 
             async function copyShip() {
-                let a, b;
-                a = fleetData[sw.a[0]][sideTable[sw.a[1]]][sw.a[2]].item;
-                b = fleetData[sw.b[0]][sideTable[sw.b[1]]][sw.b[2]].item;
+                let
+                    a = fleetData[sw.a[0]][sideTable[sw.a[1]]][sw.a[2]].item,
+                    b = fleetData[sw.b[0]][sideTable[sw.b[1]]][sw.b[2]].item,
+                    skill_a = a[0].property.slot_skill;
+
                 a.forEach((item, item_index) => {
                     Object.keys(item.property).forEach(key => {
-                        if (key != "ship_pos") {
+                        if (key != "ship_pos" && key != "slot_skill") {
                             b[item_index].property[key] = a[item_index].property[key];
                         }
                     });
                 });
+                if (skill_a) b[0].property.slot_skill = Object.assign({}, skill_a);
                 msg.normal.ship_copied(a);
                 return true;
             }
 
             async function swapShip() {
-                let a, b, temp;
-                a = fleetData[sw.a[0]][sideTable[sw.a[1]]][sw.a[2]].item;
-                b = fleetData[sw.b[0]][sideTable[sw.b[1]]][sw.b[2]].item;
+                let temp,
+                    a = fleetData[sw.a[0]][sideTable[sw.a[1]]][sw.a[2]].item,
+                    b = fleetData[sw.b[0]][sideTable[sw.b[1]]][sw.b[2]].item,
+                    skill_a = a[0].property.slot_skill,
+                    skill_b = b[0].property.slot_skill;
+
                 a.forEach((item, item_index) => {
                     Object.keys(item.property).forEach(key => {
-                        if (key != "ship_pos") {
+                        if (key != "ship_pos" && key != "slot_skill") {
                             temp = a[item_index].property[key];
                             a[item_index].property[key] = b[item_index].property[key];
                             b[item_index].property[key] = temp;
                         }
                     });
                 });
+
+                if (skill_a && skill_b) {
+                    // swap skill
+                    temp = Object.assign({}, skill_a);
+                    a[0].property.slot_skill = Object.assign({}, skill_b);
+                    b[0].property.slot_skill = temp;
+                } else {
+                    // remove residual skill
+                    if (skill_a) {
+                        b[0].property.slot_skill = Object.assign({}, skill_a);
+                        delete a[0].property.slot_skill;
+                    } else if (skill_b) {
+                        a[0].property.slot_skill = Object.assign({}, skill_b);
+                        delete b[0].property.slot_skill;
+                    }
+                }
                 return true;
             }
 
