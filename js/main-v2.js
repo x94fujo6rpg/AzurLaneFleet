@@ -1969,8 +1969,8 @@ const
                     shipInApp.item[2].property,
                     shipInApp.item[3].property
                 ],
-                name = shipInApp.item[0].property.tw,
-                altered_style = "color: orangered;";
+                name = shipInApp.item[0].property.tw;
+
 
             // reset all slot's proficiency & style
             slot_list.forEach((_s, i) => {
@@ -1998,13 +1998,13 @@ const
                     if (list.some(e => e == target[check])) {
                         if (!is_arr) {
                             target.proficiency += p_diff;
-                            target.style = altered_style;
+                            target.style = getColor(p_diff);
                             is_change = true;
                             //console.log(`pos[${[f, s, p, i]}] ${name} type1 single altered [${oringnal}][${index - 1}] + ${p_diff}`);
                         } else {
                             slot_list.forEach((_s, i) => {
                                 _s.proficiency += p_diff[i];
-                                if (p_diff[i] != 0) _s.style = altered_style;
+                                _s.style = getColor(p_diff[i]);
                             });
                             is_change = true;
                             //console.log(`pos[${[f, s, p, i]}] ${name} type1 multi altered [${oringnal}] + [${p_diff}]`);
@@ -2025,7 +2025,7 @@ const
                 if (list.some(e => e == target[check])) {
                     slot_list.forEach((_s, i) => {
                         _s.proficiency += p_diff[i];
-                        if (p_diff[i] != 0) _s.style = altered_style;
+                        _s.style = getColor(p_diff[i]);
                     });
                     //console.log(`pos[${[f, s, p, i]}]${name}, target[${[f, _side, _pos, 0]}]${target_name}, type2 altered [${oringnal}] + [${p_diff}]`);
                     return true;
@@ -2042,6 +2042,12 @@ const
                 }
                 //console.log(`pos[${[f, s, p, i]}] ${name} type3 altered:${is_change}`);
                 return is_change;
+            }
+
+            function getColor(diff) {
+                if (diff > 0) return "color: lime;";
+                if (diff < 0) return "color: orangered;";
+                if (diff == 0) return "";
             }
 
             function getShipPos(side, pos) {

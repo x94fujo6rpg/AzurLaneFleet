@@ -22,7 +22,7 @@ now shoud load data from CN Wiki version **(irreversible)**
 ## Update  
 **2021-12-13**
 - the efficiency of the slot is now effect by ship's skill  
-  - if it is altered, it will turn red  
+  - if it is altered, set color to: `increase: green` / `decrease: red`
   - effect ships:  
     | TW                    | JP                               | EN                      |
     | --------------------- | -------------------------------- | ----------------------- |
