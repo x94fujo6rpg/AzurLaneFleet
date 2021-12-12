@@ -868,7 +868,7 @@ const
                             equip_level: app._level_default.equip,
                             tech: "",
                             proficiency: "",
-                            nationality: "", eq_type: "", style:"",
+                            nationality: "", eq_type: "", style: "",
                         };
                         item = eq;
                     }
@@ -1370,6 +1370,8 @@ const
                             }
                         });
                     });
+                    // check skill
+                    app.checkFleetShipSkill(fleet_index);
                 });
                 if (!noDump) LS.userSetting.set(settingKey.fleetData, app.util.dumpID());
                 return true;
