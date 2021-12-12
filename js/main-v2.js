@@ -1919,11 +1919,7 @@ const
                 itemInApp.style = itemInApp.eq_type = "";
 
                 // if ship have slot skill
-                let skill = shipInApp.item[0].property.slot_skill;
-                if (skill) {
-                    // if is slot 1 2 3
-                    if (c_pos > 0 && c_pos < 4) app.setProficiencyBySkill({ c_data: [c_fleet, side, c_pos, c_item] });
-                }
+                if (shipInApp.item[0].property.slot_skill) app.setProficiencyBySkill({ c_data: [c_fleet, side, c_pos, c_item] });
             } else {
                 // copy data
                 let itemInList = sortedEquip.find((ele) => { if (ele.id === id) return Object.assign({}, ele); });
@@ -1940,11 +1936,7 @@ const
                 itemInApp.eq_type = itemInList.type;
 
                 // if ship have slot skill
-                let skill = shipInApp.item[0].property.slot_skill;
-                if (skill) {
-                    // if this slot is skill target
-                    if (skill.slot.some(s => s == c_item)) app.setProficiencyBySkill({ c_data: [c_fleet, side, c_pos, c_item] });
-                }
+                if (shipInApp.item[0].property.slot_skill) app.setProficiencyBySkill({ c_data: [c_fleet, side, c_pos, c_item] });
             }
             if (save) LS.userSetting.set(settingKey.fleetData, app.util.dumpID());
             return true;
@@ -1972,10 +1964,11 @@ const
                 shipInApp = fleetData[f][s][p],
                 oringnal = shipInApp.item[0].property.equip_p,
                 skill = condition ? condition : shipInApp.item[0].property.slot_skill, // use input condition
-                slot1 = shipInApp.item[1].property,
-                slot2 = shipInApp.item[2].property,
-                slot3 = shipInApp.item[3].property,
-                slot_list = [slot1, slot2, slot3],
+                slot_list = [
+                    shipInApp.item[1].property,
+                    shipInApp.item[2].property,
+                    shipInApp.item[3].property
+                ],
                 name = shipInApp.item[0].property.tw,
                 altered_style = "color: orangered;";
 
