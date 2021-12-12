@@ -868,7 +868,7 @@ const
                             equip_level: app._level_default.equip,
                             tech: "",
                             proficiency: "",
-                            nationality: "", eq_type: ""
+                            nationality: "", eq_type: "", style:"",
                         };
                         item = eq;
                     }
@@ -1747,7 +1747,7 @@ const
                         Object.keys(app_item).filter(key => key != "equip_level").forEach(key => app_item[key] = "");
                         app_item.icon = ui_table.empty_disable;
                         app_item.fb = app_item.type = [];
-                        app_item.eq_type = "";
+                        app_item.style = app_item.eq_type = "";
                     }
                 } else {
                     //copy ship data & equip setting
@@ -1914,7 +1914,7 @@ const
                 itemInApp.en = itemInApp.type_en;
                 itemInApp.jp = itemInApp.type_jp;
                 itemInApp.icon = ui_table.empty_item;
-                itemInApp.eq_type = "";
+                itemInApp.style = itemInApp.eq_type = "";
 
                 // if ship have slot skill
                 let skill = shipInApp.item[0].property.slot_skill;
