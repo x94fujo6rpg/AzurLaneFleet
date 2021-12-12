@@ -1,4 +1,4 @@
-var cn_wiki_to_alf_id = {
+const cn_wiki_to_alf_id = {
     "100": 201200,
     "101": 201219,
     "102": 201220,

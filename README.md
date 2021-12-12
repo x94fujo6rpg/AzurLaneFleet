@@ -20,6 +20,36 @@ for CN WIKI
 now shoud load data from CN Wiki version **(irreversible)**  
 
 ## Update  
+**2021-12-13**
+- the efficiency of the slot is now effect by ship's skill  
+  - if it is altered, it will turn red  
+  - effect ships:  
+    | TW                    | JP                               | EN                      |
+    | --------------------- | -------------------------------- | ----------------------- |
+    | 雷諾                  | リノ                             | Reno                    |
+    | 獨立                  | インディペンデンス               | Independence            |
+    | 獨立改                | インディペンデンス改             | Independence (Retrofit) |
+    | 巴丹                  | バターン                         | Bataan                  |
+    | 西雅圖                | シアトル                         | Seattle                 |
+    | 鷹                    | イーグル                         | Eagle                   |
+    | 可畏                  | フォーミダブル                   | Formidable              |
+    | 五十鈴改              | 五十鈴改                         | Isuzu (Retrofit)        |
+    | 北風                  | 北風                             | Kitakaze                |
+    | 吾妻                  | 吾妻                             | Azuma                   |
+    | 齊柏林伯爵            | グラーフ・ツェッペリン           | Graf Zeppelin           |
+    | 埃吉爾*               | エーギル                         | Ägir                    |
+    | 奧古斯特·馮·帕塞瓦爾* | アウグスト・フォン・パーセヴァル | August von Parseval     |
+    | 馬可波羅*             | マルコ・ポーロ                   | Marco Polo              |
+    | 塔什干                | タシュケント                     | Tashkent                |
+    | 甘古特                | ガングート                       | Gangut                  |
+    | 凱旋                  | ル・トリオンファン               | Le Triomphant           |
+    | 貝亞恩                | ベアルン                         | Béarn                   |
+
+  - fleet data for test:
+    ```
+    No4ZgTggGNoGgUxKBEB2AHAQ171AuvOFLAmAIzQAsyd8GOe2hxAbNFbSvQo8ywJEQtdJ3rVM0AEz1+zVsFHieqvlgGK2pKmtXy8hIhWEgxXXvo0Lh5mgkwBWe3vVNDwqVV2W3mocTA2jA+rgzWHsRizqGWBvi20DEOjtSyYYzoNsam4DJJEPAU0rK+4e4JxHCyjoVl8YJV+c5FJdD1EQmmVOglhRToYNwUmG16DYo9ffDSg+nSmLRxnY3AU+kDYFIZK0ZFuVQlHDMUHB0Vq4fSx8WlOxeKkDDc0pTt9-6mUnaqt+-IE080B+yAoEFOcl2wlkII+2X2gRIz3Ib3O-mI1FILWoOP+4yhGKxCFexTR8JEpGOCExLkhD2EmJgVJQknyVnphKZCE2x0gEJmizxfnhJkRYJCyGubG4dPRax0oLayw58olYWFHlMMKS9AWQ1lNmI2paxMw+vxKuNkqkxwWFBlaChOQIAEJoAA6aBsF1gABGYGwWGgQA
+    ```
+
 **2021-12-11**
 - add & display ship's equip efficiency
 - remove some unused data

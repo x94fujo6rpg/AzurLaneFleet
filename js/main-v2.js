@@ -851,6 +851,7 @@ const
                             base: [], equip_p: [],
                             quantity: "",
                             ship_level: app._level_default.ship,
+                            nationality: "",
                         };
                         item = ship;
                     } else {
@@ -866,6 +867,7 @@ const
                             equip_level: app._level_default.equip,
                             tech: "",
                             proficiency: "",
+                            nationality: "", eq_type: ""
                         };
                         item = eq;
                     }
@@ -1712,7 +1714,6 @@ const
                 shipInList = sortedShip.find(ele => {
                     if (ele.id === `${item.id}` || ele.id === item.id) return Object.assign({}, ele);
                 }),
-                app_item = shipInApp.item,
                 pos = `fleet:${c_fleet}, ${side}, pos:${c_pos}, item:${c_item}`;
             // try cn wiki id
             if (!shipInList) {
@@ -1730,8 +1731,8 @@ const
                 console.log(`%cship id[${item.id}] at [${pos}] not found, abort`, "color:red;");
                 return false;
             }
-            for (let index in app_item) {
-                app_item = shipInApp.item[index].property;
+            for (let index in shipInApp.item) {
+                let app_item = shipInApp.item[index].property;
                 if (item.id === "000000") {
                     // empty ship/equip
                     if (index === "0") {
@@ -1739,20 +1740,29 @@ const
                         ui_table.copy_ship.forEach(key => app_item[key] = "");
                         app_item.icon = shipInList.icon;
                         app_item.equip_p = app_item.base = [];
+                        delete app_item.slot_skill; // remove skill data
                     } else {
                         //equip
                         Object.keys(app_item).filter(key => key != "equip_level").forEach(key => app_item[key] = "");
                         app_item.icon = ui_table.empty_disable;
                         app_item.fb = app_item.type = [];
+                        app_item.eq_type = "";
                     }
                 } else {
                     //copy ship data & equip setting
-                    let equip_p = Object.assign([], shipInList.equip_p); // copy proficiency
+                    let equip_p = shipInList.equip_p.map(n => Math.round(n * 100)); // copy & convert to int 1.25 => 125
                     if (index === "0") {
                         //ship
                         ui_table.copy_ship.forEach(key => app_item[key] = shipInList[key]);
+
+                        // use converted data
+                        app_item.equip_p = equip_p;
+
                         // set level
                         app.setLevel("ship", skip_level, false);
+
+                        // if ship have slot skill, copy skill data
+                        if (skill_ship_slot[item.id]) app_item.slot_skill = Object.assign({}, skill_ship_slot[item.id]);
                     } else {
                         //equip
                         let typelist = shipInList[`e${index}`],
@@ -1761,9 +1771,10 @@ const
                         Object.keys(app_item).filter(key => key != "equip_level").forEach(key => app_item[key] = "");
                         app_item.type = typelist;
                         app_item.icon = ui_table.empty_item;
+                        app_item.eq_type = "";
 
-                        // add proficiency int 1.25 => 125
-                        if (index <= 3) app_item.proficiency = Math.round(equip_p[index - 1] * 100);
+                        // add proficiency
+                        if (index <= 3) app_item.proficiency = equip_p[index - 1];
 
                         // add quantity if that equip type need it
                         if (quantity != undefined && typelist.some(eqtype => addQuantityList.has(eqtype))) app_item.quantity = `x${quantity}`;
@@ -1782,6 +1793,7 @@ const
                     }
                 }
             }
+            app.checkFleetShipSkill(c_fleet);
             if (save) LS.userSetting.set(settingKey.fleetData, app.util.dumpID());
             return true;
         },
@@ -1885,7 +1897,8 @@ const
         },
         setEquip(item, save = false, skip_level = false) {
             let side = sideTable[c_side],
-                itemInApp = fleetData[c_fleet][side][c_pos].item[c_item].property,
+                shipInApp = fleetData[c_fleet][side][c_pos],
+                itemInApp = shipInApp.item[c_item].property,
                 id = parseInt(item.id, 10),
                 pos = `fleet:${c_fleet}, ${side}, pos:${c_pos}, item:${c_item}`;
             if (!id) {
@@ -1894,12 +1907,20 @@ const
             }
             if (id === 666666) {
                 // reset
+                ui_table.copy_equip.forEach(key => itemInApp[key] = "");
                 itemInApp.tw = itemInApp.type_tw;
                 itemInApp.cn = itemInApp.type_cn;
                 itemInApp.en = itemInApp.type_en;
                 itemInApp.jp = itemInApp.type_jp;
-                itemInApp.rarity = itemInApp.tech = itemInApp.limit = itemInApp.id = itemInApp.frame = itemInApp.bg = "";
                 itemInApp.icon = ui_table.empty_item;
+                itemInApp.eq_type = "";
+
+                // if ship have slot skill
+                let skill = shipInApp.item[0].property.slot_skill;
+                if (skill) {
+                    // if is slot 1 2 3
+                    if (c_pos > 0 && c_pos < 4) app.setProficiencyBySkill({ c_data: [c_fleet, side, c_pos, c_item] });
+                }
             } else {
                 // copy data
                 let itemInList = sortedEquip.find((ele) => { if (ele.id === id) return Object.assign({}, ele); });
@@ -1911,9 +1932,129 @@ const
                 ui_table.copy_equip.forEach(key => itemInApp[key] = itemInList[key]);
                 // set level
                 app.setLevel("equip", skip_level, false);
+
+                // set equip type for slot skill
+                itemInApp.eq_type = itemInList.type;
+
+                // if ship have slot skill
+                let skill = shipInApp.item[0].property.slot_skill;
+                if (skill) {
+                    // if this slot is skill target
+                    if (skill.slot.some(s => s == c_item)) app.setProficiencyBySkill({ c_data: [c_fleet, side, c_pos, c_item] });
+                }
             }
             if (save) LS.userSetting.set(settingKey.fleetData, app.util.dumpID());
             return true;
+        },
+        checkFleetShipSkill(fleet_id) {
+            // if any ship in current fleet have skill type 2, run it
+            let target = [],
+                fleet = fleetData[fleet_id];
+            Object.keys(fleet).forEach(side_key => {
+                if (side_key == "id") return; //skip
+                fleet[side_key].forEach((ship, ship_index) => {
+                    let skill = ship.item[0].property.slot_skill;
+                    if (skill) {
+                        if (skill.type == 2) {
+                            target.push({ c_data: [fleet_id, side_key, ship_index, 0] });
+                        }
+                    }
+                });
+            });
+            if (target.length > 0) target.forEach(data => app.setProficiencyBySkill(data));
+        },
+        setProficiencyBySkill({ c_data = [], condition = false }) {
+            let
+                [f, s, p, i] = c_data,
+                shipInApp = fleetData[f][s][p],
+                oringnal = shipInApp.item[0].property.equip_p,
+                skill = condition ? condition : shipInApp.item[0].property.slot_skill, // use input condition
+                slot1 = shipInApp.item[1].property,
+                slot2 = shipInApp.item[2].property,
+                slot3 = shipInApp.item[3].property,
+                slot_list = [slot1, slot2, slot3],
+                name = shipInApp.item[0].property.tw,
+                altered_style = "color: orangered;";
+
+            // reset all slot's proficiency & style
+            slot_list.forEach((_s, i) => {
+                _s.proficiency = oringnal[i];
+                _s.style = "";
+            });
+
+            switch (skill.type) {
+                case 1:
+                    return type1(); // single/multi slot
+                case 2:
+                    return type2(); // check target pos ship
+                case 3:
+                    return type3(); // multi condition
+                default:
+                    return;
+            }
+
+            function type1() {
+                let { type, slot, check, list, p_diff } = skill,
+                    is_arr = (p_diff instanceof Array),
+                    is_change = false;
+                for (let index of slot) {
+                    let target = slot_list[index - 1];
+                    if (list.some(e => e == target[check])) {
+                        if (!is_arr) {
+                            target.proficiency += p_diff;
+                            target.style = altered_style;
+                            is_change = true;
+                            //console.log(`pos[${[f, s, p, i]}] ${name} type1 single altered [${oringnal}][${index - 1}] + ${p_diff}`);
+                        } else {
+                            slot_list.forEach((_s, i) => {
+                                _s.proficiency += p_diff[i];
+                                if (p_diff[i] != 0) _s.style = altered_style;
+                            });
+                            is_change = true;
+                            //console.log(`pos[${[f, s, p, i]}] ${name} type1 multi altered [${oringnal}] + [${p_diff}]`);
+                            break;// apply once only
+                        }
+                    }
+                }
+                return is_change;
+            }
+
+            function type2() {
+                let { type, slot, check, list, p_diff } = skill,
+                    [_side, _pos] = slot[0].split("_"),
+                    target, target_name;
+                _pos = getShipPos(_side, _pos); // get real array pos (1,2,3) => (0,1,2)
+                target = fleetData[f][_side][_pos].item[0].property;
+                target_name = target.tw;
+                if (list.some(e => e == target[check])) {
+                    slot_list.forEach((_s, i) => {
+                        _s.proficiency += p_diff[i];
+                        if (p_diff[i] != 0) _s.style = altered_style;
+                    });
+                    //console.log(`pos[${[f, s, p, i]}]${name}, target[${[f, _side, _pos, 0]}]${target_name}, type2 altered [${oringnal}] + [${p_diff}]`);
+                    return true;
+                } else {
+                    return false; // no change
+                }
+            }
+
+            function type3() {
+                let is_change = false;
+                for (let con of skill.cons) {
+                    is_change = app.setProficiencyBySkill({ c_data, condition: con });
+                    if (is_change) break;
+                }
+                //console.log(`pos[${[f, s, p, i]}] ${name} type3 altered:${is_change}`);
+                return is_change;
+            }
+
+            function getShipPos(side, pos) {
+                if (side == "front") {
+                    return posTable_r.F[pos];
+                } else {
+                    return posTable_r.BS[pos];
+                }
+            }
         },
         async initialize() {
             console.time(app.initialize.name);
@@ -2732,6 +2873,10 @@ const
 
                 // save data
                 LS.userSetting.set(settingKey.fleetData, app.util.dumpID());
+
+                // check skill again
+                app.checkFleetShipSkill(sw.a[0]);
+                app.checkFleetShipSkill(sw.b[0]);
             } catch (e) {
                 console.log(e);
             } finally {
@@ -2861,8 +3006,8 @@ const
         empty_item: "ui/empty.png",
         empty_disable: "ui/icon_back.png",
         langs: ["tw", "cn", "en", "jp"],
-        copy_ship: ["tw", "cn", "en", "jp", "icon", "frame", "bg", "id", "type", "rarity", "star", "base", "equip_p"],
-        copy_equip: ["tw", "cn", "en", "jp", "icon", "frame", "bg", "id", "limit", "rarity", "tech"],
+        copy_ship: ["tw", "cn", "en", "jp", "icon", "frame", "bg", "id", "type", "rarity", "star", "base", "equip_p", "nationality"],
+        copy_equip: ["tw", "cn", "en", "jp", "icon", "frame", "bg", "id", "limit", "rarity", "tech", "nationality"],
     },
     AFL_storage = window.localStorage,
     filter_setting = {
@@ -2891,6 +3036,7 @@ const
         missing_cache: {},
     },
     posTable = { BS: { 0: "2", 1: "1", 2: "3" }, F: { 0: "3", 1: "2", 2: "1" }, },
+    posTable_r = { BS: { 2: "0", 1: "1", 3: "2" }, F: { 3: "0", 2: "1", 1: "2" }, },
     // ship
     type_front = new Set([1, 2, 3, 18, 19]),
     type_back = new Set([4, 5, 6, 7, 10, 12, 13]),
@@ -2943,7 +3089,7 @@ Vue.component("item-container", {
                 <span class="ship_pos2" v-text="item.property.ship_pos" v-if="item.property.ship_pos"></span>
                 <span class="ship_level" v-text="item.property.ship_level" v-if="item.property.bg && item.property.ship_level > 0"></span>
                 <span class="equip_level" v-text="'+'+item.property.equip_level" v-if="item.property.bg && item.property.equip_level > 0"></span>
-                <span class="equip_proficiency text_shadow" v-text="item.property.proficiency+'%'" v-if="item.property.quantity && item.property.proficiency"></span>
+                <span class="equip_proficiency text_shadow" v-text="item.property.proficiency+'%'" v-if="item.property.quantity && item.property.proficiency" v-bind:style="item.property.style"></span>
               </div>
               <span class="item_name" v-text="item.property[lang]"></span>
             </div>
