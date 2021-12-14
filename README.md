@@ -11,9 +11,12 @@ This site was developed and tested on `Chrome`/`Firefox`
 Compatibility with other browsers is unknown  
 
 ## Related userscripts  
-for CN WIKI
+for [CN WIKI](https://wiki.biligame.com/blhx/%E9%A6%96%E9%A1%B5)
 - 碧航艦隊科技工具 [github](https://github.com/x94fujo6rpg/SomeTampermonkeyScripts/blob/master/az_cn_wiki_fleet_tech_tool.user.js) / [greasyfork](https://greasyfork.org/scripts/435568)
 - 還原艦船名稱 [greasyfork](https://greasyfork.org/scripts/405281)
+
+for [AzurLaneSD](https://github.com/Pelom777/AzurLaneSD)
+- 附加可讀名稱 [github](https://github.com/x94fujo6rpg/SomeTampermonkeyScripts/blob/master/azurlanesd_renamer.user.js) / [greasyfork](https://greasyfork.org/scripts/437018)
 
 ## [CN Wiki version](https://wiki.biligame.com/blhx/%E8%88%B0%E9%98%9F%E6%A8%A1%E6%8B%9F%E5%99%A8)  
 ***Caution! Data stored in two versions are not compatible!***  
