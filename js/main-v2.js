@@ -2501,7 +2501,7 @@ const
                         progress.update();
                     });
                 });
-                console.log(`set ${promise_list.length} src to image cache`);
+                //console.log(`set ${promise_list.length} src to image cache`);
                 console.timeEnd(name);
                 return no_cache_obj;
             }
