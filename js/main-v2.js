@@ -2328,7 +2328,7 @@ const
 
                 function iconObserver(entries, observer) {
                     entries.forEach(e => {
-                        if (e.intersectionRatio > 0.25) {
+                        if (e.intersectionRatio > 0) {
                             loadIcon(e.target);
                             observer.unobserve(e.target);
                         }
@@ -2336,34 +2336,28 @@ const
                 }
 
                 function loadIcon(e) {
-                    setTimeout(() => {
-                        let [type, index] = e.getAttribute("img_data").split("_");
-                        e.src = (type == "ship" ? sortedShip : sortedEquip)[index].icon;
-                    });
+                    let [type, index] = e.getAttribute("img_data").split("_");
+                    e.src = (type == "ship" ? sortedShip : sortedEquip)[index].icon;
                 }
             }
 
             function createNewItem(data, progress) {
-                return new Promise(resolve => {
-                    setTimeout(() => {
-                        let html = `
-                            <button class="p-1 item_container" data-dismiss="modal" displayed="true" style="opacity: 1;" id="${data.id}">
-                                <div class="container-fluid p-0 box">
-                                    <div class="container-fluid icon_box">
-                                        <img class="img-fluid bg" src="${data.bg}">
-                                        <img class="img-fluid frame" src="${data.frame}">
-                                        <img class="img-fluid icon" loading="lazy" src="">
-                                    </div>
-                                    <span class="item_name" name="name" tw="${data.tw}" cn="${data.cn}" en="${data.en}" jp="${data.jp}">
-                                        ${data[language]}
-                                    </span>
-                                </div>
-                            </button>
-                        `;
-                        progress.update();
-                        resolve(html);
-                    });
-                });
+                let html = `
+                    <button class="p-1 item_container" data-dismiss="modal" displayed="true" style="opacity: 1;" id="${data.id}">
+                        <div class="container-fluid p-0 box">
+                            <div class="container-fluid icon_box">
+                                <img class="img-fluid bg" src="${data.bg}">
+                                <img class="img-fluid frame" src="${data.frame}">
+                                <img class="img-fluid icon" loading="lazy" src="${ui_table.empty_disable}">
+                            </div>
+                            <span class="item_name" name="name" tw="${data.tw}" cn="${data.cn}" en="${data.en}" jp="${data.jp}">
+                                ${data[language]}
+                            </span>
+                        </div>
+                    </button>
+                `;
+                progress.update();
+                return html;
             }
 
             async function createAllShip() {
@@ -2371,8 +2365,7 @@ const
                 await addProgressBar("create_ship", "Generate Ships", sortedShip.length, _loading_.ship);
                 let pos = document.querySelector("#shiplist"),
                     html = sortedShip.map(item => createNewItem(item, _loading_.ship));
-                html = await Promise.all(html);
-                pos.innerHTML = html.join("");
+                setTimeout(() => pos.innerHTML = html.join(""));
                 console.timeEnd("createAllShip");
                 return true;
             }
@@ -2382,8 +2375,7 @@ const
                 await addProgressBar("create_equip", "Generate Equips", sortedEquip.length, _loading_.equip);
                 let pos = document.querySelector("#equiplist"),
                     html = sortedEquip.map(item => createNewItem(item, _loading_.equip));
-                html = await Promise.all(html);
-                pos.innerHTML = html.join("");
+                setTimeout(() => pos.innerHTML = html.join(""));
                 console.timeEnd("createAllEquip");
                 return true;
             }
@@ -2479,7 +2471,8 @@ const
                         { type: "ship", list: sortedShip, },
                         { type: "equip", list: sortedEquip, },
                     ],
-                    all_cache = await AFDB.getAllCache(); // get all cache at once
+                    all_cache = await AFDB.getAllCache(), // get all cache at once
+                    count = 0;
                 all_cache = all_cache.reduce((obj, cache_data) => (obj[cache_data.src] = cache_data.data_url, obj), {}); // convert to obj
                 await addProgressBar("load_cache", "Loading Cache", max, progress);
                 data.forEach(item => {
@@ -2489,6 +2482,7 @@ const
                         if (cache) {
                             obj.icon_cache = true;
                             obj.icon = cache;
+                            count++;
                         } else {
                             obj.icon_cache = false;
                             console.log("cache not found", obj);
@@ -2501,7 +2495,7 @@ const
                         progress.update();
                     });
                 });
-                //console.log(`set ${promise_list.length} src to image cache`);
+                console.log(`set ${count} src to image cache`);
                 console.timeEnd(name);
                 return no_cache_obj;
             }
