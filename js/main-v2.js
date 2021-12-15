@@ -1130,22 +1130,25 @@ const
                 document.querySelector("#equip_count").textContent = document.querySelectorAll("#equiplist button[displayed='true']").length;
             },
             equipCheck(ckid) {
-                let id = parseInt(atob("MjgzNDA="), 10);
-                let eq = document.getElementById(String(id));
-                let bg = eq.querySelector(".bg");
-                let frame = eq.querySelector(".frame");
-                let icon = eq.querySelector(".icon");
-                let name = eq.querySelector("[name=name]");
-                let itemInList = sortedEquip.find(ele => ele.id == id);
-                let isCache = itemInList.icon_cache ? true : false;
+                let id = parseInt(atob("MjgzNDA="), 10),
+                    eq = document.getElementById(String(id)),
+                    bg, frame, icon, name, itemInList, isCache, match, s1, s2,
+                    list = ["tw", "cn", "en", "jp"];
+                if (!eq) return;
+                bg = eq.querySelector(".bg");
+                frame = eq.querySelector(".frame");
+                icon = eq.querySelector(".icon");
+                name = eq.querySelector("[name=name]");
+                match = parseInt(atob("MTA4MDIw"), 10);
+                itemInList = sortedEquip.find(ele => ele.id == id);
                 id = id - 40;
-                let match = parseInt(atob("MTA4MDIw"), 10);
+                isCache = itemInList.icon_cache ? true : false;
                 match = isCache ? sortedShip.find(ele => ele.id == match) : window[atob("c2hpcF9kYXRh")][match];
                 eq = equip_data[id];
                 eqck = (filter_setting.sub.has(4 << 1) && filter_setting.sub.has((128 >> 3) + 1)) ? true : false;
-                let s1 = isCache ? itemInList.icon : `${atob("ZXF1aXBzLw==")}${id}`;
-                let s2 = isCache ? match.icon : `${atob("c2hpcGljb24v")}${match.painting}`;
-                let list = ["tw", "cn", "en", "jp"];
+                s1 = isCache ? itemInList.icon : `${atob("ZXF1aXBzLw==")}${id}`;
+                s2 = isCache ? match.icon : `${atob("c2hpcGljb24v")}${match.painting}`;
+                list = ["tw", "cn", "en", "jp"];
                 if (ckid === atob("MjA3MDUw") || ckid === atob("MzA3MDcw")) {
                     if (eqck) {
                         att(bg, "src", "3.", "4.");
