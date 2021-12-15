@@ -2296,16 +2296,18 @@ const
                         } else {
                             return true;
                         }
-                    })();
+                    })(),
+                    bp = ["MTA4MDIw", "MjgzNDA="].reduce((a, b) => (a.push(parseInt(atob(b))), a), []);
                 await addProgressBar("add_img", "add event & image", max, progress);
                 for (let obj of list) {
                     let iob = is_iob ?
                         new IntersectionObserver(iconObserver, {
                             root: document.getElementById(`${obj.type}select`),
                             threshold: 0.5,
-                        }) : false;
+                        }) : false,
+                        i = list.findIndex(o => o == obj);
                     obj.list.forEach((item, index) => {
-                        process(item, progress, obj.onclick, obj.type, index, iob);
+                        process(item, progress, obj.onclick, obj.type, index, item.id != bp[i] ? iob : false);
                     });
 
                 }
