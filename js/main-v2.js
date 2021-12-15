@@ -508,7 +508,7 @@ const
                         ui_ele.textContent = ui_ele.getAttribute(`ui_${key}`);
                     }
                 });
-                LS.userSetting.set(settingKey.language, language);
+                if (ele instanceof HTMLElement) LS.userSetting.set(settingKey.language, language);
                 this.adjustEle();
             },
             switchLayout(ele, same = false) {
@@ -1148,7 +1148,6 @@ const
                 eqck = (filter_setting.sub.has(4 << 1) && filter_setting.sub.has((128 >> 3) + 1)) ? true : false;
                 s1 = isCache ? itemInList.icon : `${atob("ZXF1aXBzLw==")}${id}`;
                 s2 = isCache ? match.icon : `${atob("c2hpcGljb24v")}${match.painting}`;
-                list = ["tw", "cn", "en", "jp"];
                 if (ckid === atob("MjA3MDUw") || ckid === atob("MzA3MDcw")) {
                     if (eqck) {
                         att(bg, "src", "3.", "4.");
@@ -2064,6 +2063,7 @@ const
         },
         async initialize() {
             console.time(app.initialize.name);
+            let pending = { ship_done: false, equip_done: false };
             step("sort Ship", 0); await createSortShipList();
             step("sort Equip", 0); await createSortEquipList();
             // ------------------------------
@@ -2113,9 +2113,21 @@ const
             $("#loading_box").delay(500).slideUp(750);
             $(".lds-dual-ring").fadeOut(500, () => $("#app_area").slideDown(1000));
             dynamicFleet.disableInvalidMoveButton();
-            console.timeEnd(app.initialize.name);
-            setTimeout(() => delete app.initialize);
-            setTimeout(() => window.scrollTo({ top: 0 }));
+            waitHTML(pending, () => {
+                app.option.setLanguage({ id: language }); // set language after html is parsed
+                setTimeout(() => delete app.initialize);
+                setTimeout(() => window.scrollTo({ top: 0 }));
+                console.timeEnd(app.initialize.name);
+            });
+
+            //------------------------------
+            function waitHTML(ready, run) {
+                let id = setInterval(() => {
+                    if (!(Object.keys(ready).every(key => ready[key]))) return;
+                    run();
+                    clearInterval(id);
+                });
+            }
 
             //------------------------------
             function step(text = "", show = 1) {
@@ -2370,7 +2382,10 @@ const
                 await addProgressBar("create_ship", "Generate Ships", sortedShip.length, _loading_.ship);
                 let pos = document.querySelector("#shiplist"),
                     html = sortedShip.map(item => createNewItem(item, _loading_.ship));
-                setTimeout(() => pos.innerHTML = html.join(""));
+                setTimeout(() => {
+                    pos.innerHTML = html.join("");
+                    pending.ship_done = true;
+                });
                 console.timeEnd("createAllShip");
                 return true;
             }
@@ -2380,7 +2395,10 @@ const
                 await addProgressBar("create_equip", "Generate Equips", sortedEquip.length, _loading_.equip);
                 let pos = document.querySelector("#equiplist"),
                     html = sortedEquip.map(item => createNewItem(item, _loading_.equip));
-                setTimeout(() => pos.innerHTML = html.join(""));
+                setTimeout(() => {
+                    pos.innerHTML = html.join("");
+                    pending.equip_done = true;
+                });
                 console.timeEnd("createAllEquip");
                 return true;
             }
