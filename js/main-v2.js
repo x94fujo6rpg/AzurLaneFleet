@@ -3598,7 +3598,7 @@ Vue.component("fleet-container", {
 //----------------------------------------------------------
 const
     filter_btn_class = "btn btn-outline-secondary line-5-item py-2 ml-0 font-weight-bold text-truncate filter-btn",
-    filter_btn_template = `<button type="button" onclick="app.util.updateSetting(this)" class="${filter_btn_class}"></button>`,
+    filter_btn_template = `<button type="button" onclick="app.util.updateFilterSetting(this)" class="${filter_btn_class}"></button>`,
     filter_btn_template_4item = filter_btn_template.replace("line-5-item", "line-4-item"),
     filter_btn_template_6item = filter_btn_template.replace("line-5-item", "line-6-item");
 
