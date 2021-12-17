@@ -8,11 +8,11 @@
     <meta name="google-site-verification" content="S5x2K1hv1hI8UD5KVUhN7CidFneOpC4Y2xTAa44CC9c" />
 
     <title>Azur Lane Fleet Tool</title>
-    <meta name="description" content="A tool for easily sharing/managing/simulating your AzurLane fleet setups. Generate shareable text codes or links">
+    <meta name="description" content="A tool for easily share/manage/simulate/build/make your AzurLane fleet. Generate shareable text codes or links.">
     <meta name="og:title" content="Azur Lane Fleet Tool">
     <meta name="og:url" content="https://x94fujo6rpg.github.io/AzurLaneFleet/" />
     <meta name="og:image" content="https://github.com/x94fujo6rpg/AzurLaneFleet/raw/master/ui/screenshots.jpg" />
-    <meta name="og:description" content="A tool for easily sharing/managing/simulating your AzurLane fleet setups. Generate shareable text codes or links" />
+    <meta name="og:description" content="A tool for easily share/manage/simulate/build/make your AzurLane fleet. Generate shareable text codes or links." />
 
     <link rel="stylesheet" href="lib/normalize.css" as="style">
     <link rel="stylesheet" href="lib/bootstrap.min.css" as="style">
@@ -25,9 +25,9 @@
     <link rel="prefetch" href="lib/index-min.js" as="script">
     <link rel="prefetch" href="js/cnwiki2alf.min.js?v=72de46d883fc" as="script">
     <link rel="prefetch" href="js/skill_ship_slot.min.js?v=c7f9973c7927" as="script">
-    <link rel="prefetch" href="js/ship_data.min.js?v=73be20b4d705" as="script">
-    <link rel="prefetch" href="js/equip_data.min.js?v=485e58d4e5ad" as="script">
-    <link rel="prefetch" href="js/main-v2.min.js?v=209911fdecc7" as="script">
+    <link rel="prefetch" href="js/ship_data.min.js?v=8b791613bbcf" as="script">
+    <link rel="prefetch" href="js/equip_data.min.js?v=1d88cb51d58d" as="script">
+    <link rel="prefetch" href="js/main-v2.min.js?v=398d0e6559a1" as="script">
     <style>
         body {
             color: white;
@@ -148,7 +148,7 @@
             top: 1rem;
             right: 0.4rem;
             z-index: 103;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: bold;
             opacity: 0.85;
         }
@@ -158,7 +158,7 @@
             top: 0rem;
             right: 0.4rem;
             z-index: 103;
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-weight: bold;
             opacity: 0.85;
         }
@@ -181,35 +181,55 @@
         
         .ship_level {
             position: absolute;
-            bottom: 0.2rem;
+            top: 0.25rem;
             left: 0.1rem;
             z-index: 103;
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             font-weight: bold;
             opacity: 0.85;
-            line-height: 1.2rem;
+            line-height: 1.1rem;
             background: rgba(0, 0, 0, 0.8);
-            text-indent: -0.5rem;
-            width: 3.1rem;
-            padding: 0.05rem;
+            text-indent: -0.4rem;
+            width: 2.5rem;
+            padding: 0.1rem 0;
             clip-path: polygon(75% 0, 100% 50%, 75% 100%, 0 100%, 0 0);
         }
         
         .equip_level {
             position: absolute;
-            bottom: 0.2rem;
+            top: 0.25rem;
             left: 0.1rem;
             z-index: 103;
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             font-weight: bold;
             opacity: 0.85;
-            line-height: 1.2rem;
+            line-height: 1rem;
             background: rgba(0, 0, 0, 0.8);
             text-align: left;
             text-indent: 0.1rem;
-            width: 3.1rem;
-            padding: 0.05rem;
+            width: 2.5rem;
+            padding-bottom: 0.1rem;
             clip-path: polygon(75% 0, 100% 50%, 75% 100%, 0 100%, 0 0);
+        }
+        
+        .equip_cd {
+            position: absolute;
+            bottom: 0rem;
+            right: 0.3rem;
+            z-index: 103;
+            font-size: 1rem;
+            font-weight: bold;
+            opacity: 0.85;
+        }
+        
+        .ship_affinity {
+            position: absolute;
+            bottom: 0rem;
+            left: 0.3rem;
+            z-index: 103;
+            font-size: 1rem;
+            font-weight: bold;
+            opacity: 0.85;
         }
         
         .databox {
@@ -452,7 +472,7 @@
                     <button class="btn btn-outline-secondary w-50 border-left" type="button" id="display_fleet_border" onclick="app.option.displayBorder(this)">Fleet Border</button>
                 </div>
                 <div class="d-grid mx-auto my-1 w-25 data_container" id="owned_data_area">
-                    <button id="owned_data_title" class="btn btn-outline-info d-flex m-auto justify-content-center" type="button" data-toggle="collapse" data-target="#owned_data_area_expand" aria-expanded="false" aria-controls="owned_data_area_expand">
+                    <button id="owned_data_title" class="btn btn-outline-info d-flex mx-auto my-2 justify-content-center" type="button" data-toggle="collapse" data-target="#owned_data_area_expand" aria-expanded="false" aria-controls="owned_data_area_expand">
                         ⮟ Owned Ship/Equip Data
                     </button>
                     <div id="owned_data_area_expand" class="collapse">
@@ -470,6 +490,10 @@
                             <button type="button" class="btn mx-1 w-100 btn-success text-truncate" ui_id="loadOwnedSetting" onclick="app.action.loadOwnedSetting(true)">Reload Setting</button>
                         </div>
                     </div>
+                    <button id="tech_data_title" onclick="app.util.dumpTechData()" class="btn btn-outline-info d-flex mx-auto my-2 justify-content-center" type="button" data-toggle="collapse" data-target="#tech_data_area_expand" aria-expanded="false" aria-controls="tech_data_area_expand">
+                        ⮟ Tech Reload Data
+                    </button>
+                    <div id="tech_data_area_expand" class="collapse text-center"></div>
                 </div>
             </div>
             <div class="dropdown mt-3 container d-flex w-50" id="fleet_storage">
@@ -563,12 +587,32 @@
                         <button class="btn btn-danger mx-4 text-nowrap" type="button" ui_id="saveOwned" onclick="app.util.saveOwned()">Save</button>
                         <button class="btn btn-outline-light w-25 mx-2" type="button" id="owned_ship_only" onclick="app.util.setOwned(this, 'ship')">Only Show Owned</button>
                     </div>
-                    <div class="d-flex w-50 my-3 mx-auto font-weight-bold justify-content-center">
+                    <div class="btn-group btn-group-toggle d-flex w-100 my-2 mx-auto flex-wrap" data-toggle="buttons" id="affinity_area">
+                        <label class="btn btn-outline-secondary font-weight-bold line-3-item" value="1">
+                            <input type="radio" name="Stranger" id="affinity_1">Stranger
+                        </label>
+                        <label class="btn btn-outline-secondary font-weight-bold line-3-item" value="2">
+                            <input type="radio" name="Friendly" id="affinity_2">Friendly
+                        </label>
+                        <label class="btn btn-outline-secondary font-weight-bold line-3-item" value="3">
+                            <input type="radio" name="Crush" id="affinity_3">Crush
+                        </label>
+                        <label class="btn btn-outline-secondary font-weight-bold line-3-item active" value="4">
+                            <input type="radio" name="Love" id="affinity_4">Love
+                        </label>
+                        <label class="btn btn-outline-secondary font-weight-bold line-3-item" value="5">
+                            <input type="radio" name="Oath" id="affinity_5">Oath
+                        </label>
+                        <label class="btn btn-outline-secondary font-weight-bold line-3-item" value="6">
+                            <input type="radio" name="Oath(200)" id="affinity_6">Oath(200)
+                        </label>
+                    </div>
+                    <div class="d-flex w-100 my-3 mx-auto font-weight-bold justify-content-center">
                         <div class="my-auto mr-1 ml-auto w-25 text-right text-nowrap" ui_id="item_level_ship">Level</div>
                         <div class="d-inline-flex my-1">
                             <input type="text" class="mx-1 text-center rounded" id="ship_level_input" value="120">
                         </div>
-                        <button class="btn btn-primary my-1 ml-1 mr-auto w-25 text-nowrap" id="ship_level_set" _onclick="app.setLevel('ship')" data-dismiss="modal">Set Level</button>
+                        <button class="btn btn-primary my-1 ml-1 mr-auto w-25 text-nowrap" id="ship_level_set" _onclick="app.setLevel('ship')" data-dismiss="modal">Set Level / Affinity</button>
                     </div>
                     <div class="af_slider_box d-flex w-50 my-2 mx-auto justify-content-center">
                         <div id="ship_level_min" class="mx-2 my-auto text-monospace">1</div>
@@ -708,9 +752,9 @@
     <script src="lib/index-min.js"></script>
     <script src='js/cnwiki2alf.min.js?v=72de46d883fc'></script>
     <script src='js/skill_ship_slot.min.js?v=c7f9973c7927'></script>
-    <script src='js/ship_data.min.js?v=73be20b4d705'></script>
-    <script src='js/equip_data.min.js?v=485e58d4e5ad'></script>
-    <script src="js/main-v2.min.js?v=209911fdecc7"></script>
+    <script src='js/ship_data.min.js?v=8b791613bbcf'></script>
+    <script src='js/equip_data.min.js?v=1d88cb51d58d'></script>
+    <script src="js/main-v2.min.js?v=398d0e6559a1"></script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 ﻿# [Azur Lane Fleet Tool](https://x94fujo6rpg.github.io/AzurLaneFleet/)  
-A tool for easily sharing/managing/simulating your AzurLane fleet setups.  
+A tool for easily share/manage/simulate/build/make your AzurLane fleet.  
 Generate shareable text codes or links.  
 [![](https://x94fujo6rpg.github.io/AzurLaneFleet/ui/screenshots.jpg?)](https://x94fujo6rpg.github.io/AzurLaneFleet/)  
 
@@ -23,6 +23,26 @@ for [AzurLaneSD](https://github.com/Pelom777/AzurLaneSD)
 now shoud load data from CN Wiki version **(irreversible)**  
 
 ## Update  
+**2021-12-18**
+- calculate and display weapon/airstrike CD
+  - know issue:
+    - if there is empty slot that can equip airplane, it will cause the CD to be calculated incorrectly
+      (since no one knows how to calculate it, it will not be fixed)
+  - affected by `Fleet Technology` reload bonus (default: 0)
+    - edit it in `Settings` > `Tech Reload Data`
+    - and then `Save` it
+    ![](https://i.imgur.com/b9RmoEH.jpg)
+  - affected by ship affinity (default: love (x1.06))
+    - set it in `ship select`
+    - this will save to fleet data
+    - this will display on ship icon (if > 1)
+  - reload value of equip has not been implemented
+- fleet data now includes ship's affinity level
+  - old data should be loaded without problems
+    (use default if no affinity data)
+- some data is still wrong, I will probably fix it if I have time
+- if no one reports it, then there is no bug 🙃
+
 **2021-12-13**
 - the efficiency of the slot is now effect by ship's skill  
   - if it is altered, set color to: `increase: green` / `decrease: red`

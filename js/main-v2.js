@@ -54,6 +54,13 @@ const
         { id: "ship_level_set", en: "Set Level", jp: "レベル設定", tw: "設定等級", },
         { id: "equip_level_set", en: "Set Level", jp: "強化レベル設定", tw: "設定強化等級", },
 
+        { id: "affinity_1", en: "Stranger", jp: "知り合い", tw: "陌生", },
+        { id: "affinity_2", en: "Friendly", jp: "友好", tw: "友好", },
+        { id: "affinity_3", en: "Crush", jp: "好き", tw: "喜歡", },
+        { id: "affinity_4", en: "Love", jp: "愛", tw: "愛", },
+        { id: "affinity_5", en: "Oath", jp: "ケッコン", tw: "誓約", },
+        { id: "affinity_6", en: "Oath(200)", jp: "ケッコン(200)", tw: "誓約(200)", },
+
         { id: "select_ship", en: "Select Ship", jp: "艦船を選択", tw: "選擇艦船", },
         { id: "select_equip", en: "Select Equip", jp: "装備を選択", tw: "選擇裝備", },
         { id: "filter_nation", en: "Nation", jp: "陣営", tw: "國家", },
@@ -199,6 +206,7 @@ const
         fleetEdit: "fleetEdit",
         fleetBorder: "fleetBorder",
         ownedItem: "ownedItem",
+        techData: "techData",
     },
     util = {
         sleep(ms = 0) {
@@ -502,10 +510,14 @@ const
                 language = ALF.lang = shipSelect.lang = equipSelect.lang = key;
                 document.querySelectorAll("[name=name]").forEach(name => name.textContent = name.getAttribute(key));
                 document.querySelectorAll("[ui_text='true']").forEach(ui_ele => {
-                    if (ui_ele.tagName == "INPUT") {
-                        ui_ele.placeholder = ui_ele.getAttribute(`ui_${key}`);
+                    if (ui_ele.id.includes("affinity_")) {
+                        ui_ele.parentElement.childNodes[1].textContent = ui_ele.getAttribute(`ui_${key}`);
                     } else {
-                        ui_ele.textContent = ui_ele.getAttribute(`ui_${key}`);
+                        if (ui_ele.tagName == "INPUT") {
+                            ui_ele.placeholder = ui_ele.getAttribute(`ui_${key}`);
+                        } else {
+                            ui_ele.textContent = ui_ele.getAttribute(`ui_${key}`);
+                        }
                     }
                 });
                 if (ele instanceof HTMLElement) LS.userSetting.set(settingKey.language, language);
@@ -837,44 +849,51 @@ const
                     ALF.fleets = fleetData = newfleet;
                 }
             },
+            emptyEquip() {
+                let equip = {
+                    id: "", type: [], star: "", rarity: "",
+                    tw: "", en: "", cn: "", jp: "",
+                    icon: ui_table.empty_disable, bg: "", frame: "",
+                    target: "",
+                    fb: [],
+                    type_tw: "", type_cn: "", type_en: "", type_jp: "",
+                    limit: "",
+                    quantity: "",
+                    equip_level: app._level_default.equip,
+                    tech: "",
+                    proficiency: "",
+                    nationality: "", eq_type: "", style: "",
+                    cd: [],
+                };
+                return equip;
+            },
+            emptyShip() {
+                let ship = {
+                    id: "", type: "", star: "", rarity: "",
+                    tw: "", en: "", cn: "", jp: "",
+                    icon: ui_table.empty_item, bg: "", frame: "",
+                    target: "#shipselect",
+                    base: [], equip_p: [],
+                    quantity: "",
+                    ship_level: app._level_default.ship,
+                    nationality: "",
+                    eq_p: "",
+                    reload: [],
+                };
+                return ship;
+            },
             creatEmptyShip() {
                 // creat empty obj faster than use JSON to deep copy
                 // Object.assign only deep copy 1st layer
                 let new_empty_ship = [];
                 for (let i = 0; i < 6; i++) {
-                    let item = [];
-                    if (i === 0) {
-                        let ship = {
-                            id: "", type: "", star: "", rarity: "",
-                            tw: "", en: "", cn: "", jp: "",
-                            icon: ui_table.empty_item, bg: "", frame: "",
-                            target: "#shipselect",
-                            base: [], equip_p: [],
-                            quantity: "",
-                            ship_level: app._level_default.ship,
-                            nationality: "",
-                            eq_p: "",
-                        };
-                        item = ship;
+                    let item;
+                    if (i != 0) {
+                        item = this.emptyEquip();
                     } else {
-                        let eq = {
-                            id: "", type: [], star: "", rarity: "",
-                            tw: "", en: "", cn: "", jp: "",
-                            icon: ui_table.empty_disable, bg: "", frame: "",
-                            target: "",
-                            fb: [],
-                            type_tw: "", type_cn: "", type_en: "", type_jp: "",
-                            limit: "",
-                            quantity: "",
-                            equip_level: app._level_default.equip,
-                            tech: "",
-                            proficiency: "",
-                            nationality: "", eq_type: "", style: "",
-                        };
-                        item = eq;
+                        item = this.emptyShip();
                     }
-                    new_empty_ship.push({ id: i, property: [], });
-                    new_empty_ship[i].property = Object.assign({}, item);
+                    new_empty_ship.push({ id: i, property: item, });
                 }
                 return new_empty_ship;
             },
@@ -1074,7 +1093,7 @@ const
                 }
                 return true;
             },
-            async updateSetting(item) {
+            async updateFilterSetting(item) {
                 $(item).button("toggle");
                 let strlist = item.name.split("_"),
                     type = strlist[0], // ship, equip
@@ -1220,7 +1239,7 @@ const
                             // empty ship, set all 0
                             side_data.push([0]);
                         } else {
-                            let ship_data = [], lv_data = [];
+                            let ship_data = [], lv_data = [], affinity;
                             ship.item.forEach((item, i) => {
                                 let id = parseInt(item.property.id),
                                     lv = (i == 0 ? item.property.ship_level : item.property.equip_level);
@@ -1232,6 +1251,7 @@ const
                                     ship_data.push(id);
                                     // level ship:125=>7d / equip:13=>d
                                     if (i == 0) {
+                                        if (item.property.affinity) affinity = item.property.affinity;
                                         lv_data.push(app.shipLevelLimit(lv).toString(16).padStart(2, 0));
                                     } else {
                                         lv_data.push(app.equipLevelLimit(item.property.rarity, lv, item.property.tech).toString(16));
@@ -1239,6 +1259,7 @@ const
                                 }
                             });
                             ship_data.push(lv_data.join(""));
+                            if (affinity) ship_data.push(affinity);
                             side_data.push(ship_data);
                         }
                     });
@@ -1313,9 +1334,15 @@ const
                         if (!(side instanceof Array)) return;
                         side.forEach((ship, ship_index) => {
                             if (ver > 0.05) {
-                                let is_empty = ship[0] ? false : true,
-                                    level_data = ship.pop();
+                                let data_length = ship.length,
+                                    is_empty = (data_length == 1),
+                                    level_data, affinity_data;
                                 if (is_empty) return; // skip empty ship
+                                if (data_length == 7) level_data = ship.pop();
+                                if (data_length == 8) {
+                                    affinity_data = ship.pop();
+                                    level_data = ship.pop();
+                                }
                                 if (level_data) level_data = level_data.match(/(.{2})(.{5})/).filter((e, i) => i > 0).map((e, i) => (i == 0 ? e : e.split(""))).flat();
                                 if (!(level_data instanceof Array)) level_data = default_level;
                                 ship.forEach((id, item_index) => {
@@ -1330,6 +1357,8 @@ const
                                         app_item = fleetData[f][s][p].item[i].property;
                                     if (item_index == 0) {
                                         if (!app.setShipAndEquip(ship_item, false, true)) is_empty = true; // set ship failed, skip rest
+                                        app_item.affinity = affinity_data || 4; // set affinity
+                                        app_item.affinity_value = this._affinity_bonus[app_item.affinity];
                                         app_item.ship_level = app.shipLevelLimit(level); // set level
                                     } else {
                                         app.setEquip(ship_item, false, true);  // set equip first so the rarity is set
@@ -1431,6 +1460,209 @@ const
                     app.equipDisplay();
                 }
                 return [c_fleet, sideTable[c_side], c_pos, c_item];
+            },
+            dumpTechData() {
+                document.querySelectorAll("#tech_data_area_expand input")
+                    .forEach(e => {
+                        let type = parseInt(e.getAttribute("ship_type")),
+                            value = this._tech_reload[type] || 0;
+                        e.value = value;
+                    });
+            },
+            saveTechData() {
+                let data = {};
+                document.querySelectorAll("#tech_data_area_expand input")
+                    .forEach(e => {
+                        let type = parseInt(e.getAttribute("ship_type")),
+                            value = parseInt(e.value, 10) || 0;
+                        if (isNaN(value)) value = 0;
+                        this._tech_reload[type] = data[type] = value;
+                    });
+                console.log(data);
+                LS.userSetting.set(settingKey.techData, JSON.stringify(data));
+                app.util.updateAllCD();
+            },
+            loadTechData() {
+                let data = LS.userSetting.get(settingKey.techData);
+                if (!data) return;
+                data = JSON.parse(data);
+                if (!data) return;
+                for (let [key, value] of Object.entries(data)) {
+                    this._tech_reload[key] = value;
+                }
+            },
+            _tech_reload: {
+                1: 0, // DD
+                2: 0, // CL
+                3: 0, // CA
+                4: 0, // BC
+                5: 0, // BB
+                6: 0, // CVL
+                7: 0, // CV
+                10: 0, // BBV
+                13: 0, // BM
+                18: 0, // CB
+                //12: 0, // AR
+                //8: 0, // SS
+                //17: 0, // SSV
+            },
+            _affinity_bonus: {
+                1: 1, // 60~0
+                2: 1.01, // 61+
+                3: 1.03, // 90
+                4: 1.06, // 100 no ring
+                5: 1.09, // 100+ ring
+                6: 1.12, // 200
+            },
+            getShipReload(
+                {
+                    reload: [base, grow, extra, strengthen, retrofit],
+                    ship_level = 125,
+                    affinity = 4,
+                    nationality = 0,
+                    type,
+                    tw,
+                }
+            ) {
+                let bonus = this._affinity_bonus[affinity] || 1,
+                    tech_reload = this._tech_reload[type] || 0,
+                    reload;
+                if (nationality != 97) strengthen = Math.floor(strengthen * (Math.min(ship_level, 100) / 100 * 0.7 + 0.3));
+                reload = Math.floor((base + grow * (ship_level - 1) / 1e3 + extra * (Math.max(ship_level, 100) - 100) / 1e3 + strengthen) * bonus + retrofit + tech_reload);
+                //if (affinity != 4) console.log(`getShipReload: ${tw} affinity:${affinity} reload:${reload}`);
+                return reload;
+            },
+            _airstrike: new Set([7, 8, 9, 12]),
+            getEquipCD({
+                equip_data = {},
+                ship_reload = 100,
+                pos: [f, s, p, i],
+            }) {
+                let
+                    { equip_level = 1, cd = [], eq_type, type } = equip_data,
+                    cd_f,
+                    air = this._airstrike.has(eq_type),
+                    type_air = type.some(t => this._airstrike.has(t));
+                if (!cd.length) return 0;
+                cd_f = cd[equip_level] || cd[cd.length - 1] || false;
+                if (!cd_f) return 0;
+                if (!air && !type_air) {
+                    return round(calcCD(cd_f, ship_reload));
+                } else {
+                    // calc airstrike
+                    calcAirstrike(this._airstrike);
+                    return round(calcCD(cd_f, ship_reload));
+                }
+
+                function calcAirstrike(_set) {
+                    let ship_item = fleetData[f][s][p].item,
+                        airstrike_cd = 0,
+                        aircraft_count = 0,
+                        set_to = [],
+                        check = [];
+                    ship_item.forEach((item, index) => {
+                        if (index > 0) {
+                            let equip = item.property,
+                                {
+                                    equip_level: _lv,
+                                    cd: _cd,
+                                    quantity: q,
+                                    eq_type: _eq_type,
+                                    type: _slot_type,
+                                    id: _id,
+                                } = equip,
+                                is_type = _set.has(_eq_type);
+                            if (!_cd.length) return;
+                            cd_f = _cd[_lv] || _cd[_cd.length - 1] || 0;
+                            if (!cd_f) return;
+                            q = parseInt(`0${q}`);
+                            if (is_type) {
+                                aircraft_count += q;
+                                cd_f = calcCD(cd_f, ship_reload);
+                                airstrike_cd += cd_f * q;
+                                set_to.push(equip);
+                                check.push({
+                                    name: equip.tw,
+                                    cd: cd_f,
+                                    q: q,
+                                    sum: cd_f * q,
+                                });
+                            }
+                        }
+                    });
+                    airstrike_cd = round(2.2 * airstrike_cd / aircraft_count);
+                    //console.log(`air_strike_cd ${airstrike_cd}`, check);
+                    set_to.forEach(equip => {
+                        let temp = equip.equip_level; // force vue update
+                        equip.cd_cache = airstrike_cd;
+                        equip.equip_level = "";
+                        equip.equip_level = temp;
+                    });
+                }
+
+                function round(_cd) {
+                    return Math.round(_cd * 100) / 100;
+                }
+
+                function calcCD(_cd, _ship_reload) {
+                    return _cd / bc[k1].c1 / Math.sqrt((100 + _ship_reload) * (parseInt(bc[k2].c2, 16) / 100));
+                }
+            },
+            updateAllCD() {
+                fleetData.forEach((fleet, fleet_index) => {
+                    Object.keys(fleet).forEach((side_key, side_index) => {
+                        let side_data;
+                        if (side_key == "id") return;
+                        side_data = fleet[side_key];
+                        side_data.forEach((ship, ship_index) => {
+                            let is_empty = !(ship.item[0].property.id);
+                            if (is_empty) return;
+                            this.updateCD({
+                                type: "ship",
+                                data: [fleet_index, side_key, ship_index, 0],
+                            });
+                        });
+                    });
+                });
+            },
+            updateCD({ type = "", data: [f, s, p, i] }) {
+                let ship_item = fleetData[f][s][p].item,
+                    ship = ship_item[0].property,
+                    ship_reload;
+                if (!ship.id) return; //empty ship
+                ship.reload_cache = this.getShipReload(ship);
+                ship_reload = ship.reload_cache;
+                if (type == "ship") {
+                    // update ship reload & all equip cd
+                    //console.log(type, ship.tw, ship.ship_level, ship_reload);
+                    ship_item.forEach((item, index) => {
+                        if (index > 0) {
+                            setTimeout(async () => {
+                                let equip = item.property,
+                                    temp;
+                                if (this._airstrike.has(equip.eq_type)) {
+                                    this.getEquipCD({ equip_data: equip, ship_reload, pos: [f, s, p, i] });
+                                } else {
+                                    await Vue.nextTick();
+                                    equip.cd_cache = this.getEquipCD({ equip_data: equip, ship_reload, pos: [f, s, p, i] });
+                                    temp = equip.equip_level; // force vue update
+                                    equip.equip_level = "";
+                                    equip.equip_level = temp;
+                                    //console.log(type, equip.tw, equip.cd_cache, ship_reload);
+                                }
+                            });
+                        }
+                    });
+                } else {
+                    // update equip cd
+                    let equip = fleetData[f][s][p].item[i].property;
+                    if (this._airstrike.has(equip.eq_type)) {
+                        this.getEquipCD({ equip_data: equip, ship_reload, pos: [f, s, p, i] });
+                    } else {
+                        equip.cd_cache = this.getEquipCD({ equip_data: equip, ship_reload, pos: [f, s, p, i] });
+                        //console.log(type, equip.tw, equip.cd_cache, ship_reload);
+                    }
+                }
             },
         },
         action: {
@@ -1690,6 +1922,41 @@ const
             if (level > max) return max;
             return level;
         },
+        getUiAffinity() {
+            return parseInt(document.querySelector("#affinity_area .active").getAttribute("value"));
+        },
+        updateAffinity({
+            value = false,
+            ship_pos: [f, s, p, i],
+            setShip = false,
+            setUI = false
+        }) {
+            if (setShip) {
+                let ship = fleetData[f][s][p].item[0].property;
+                if (ship) {
+                    let temp = ship.ship_level;
+                    if (!value) {
+                        // use ui value
+                        ship.affinity = this.getUiAffinity();
+                        ship.affinity_value = app.util._affinity_bonus[ship.affinity];
+                    } else {
+                        // use input value
+                        ship.affinity = value;
+                        ship.affinity_value = app.util._affinity_bonus[value];
+                    }
+                    // force vue update
+                    ship.ship_level = "";
+                    ship.ship_level = temp;
+                } else {
+                    throw Error("updateAffinity: ship not found");
+                }
+            }
+            if (setUI && value) {
+                // set ui to input value
+                let ele = document.querySelector(`#affinity_area [value='${value}']`);
+                if (ele) ele.click();
+            }
+        },
         getLevel(type = "", skip = false) {
             if (!skip) {
                 let side = sideTable[c_side],
@@ -1697,7 +1964,17 @@ const
                     level_app = item_in_app[`${type}_level`],
                     level_input = document.getElementById(`${type}_level_input`),
                     level_slider = document.getElementById(`${type}_level_slider`);
-                if (type == "ship") item_in_app[`${type}_level`] = this.shipLevelLimit(level_app);
+                if (type == "ship") {
+                    item_in_app[`${type}_level`] = this.shipLevelLimit(level_app);
+                    let affinity = item_in_app.affinity;
+                    if (!affinity) affinity = 4;
+                    this.updateAffinity({
+                        setShip: true,
+                        setUI: true,
+                        ship_pos: [c_fleet, side, c_pos, c_item],
+                        value: affinity,
+                    });
+                }
                 if (type == "equip") item_in_app[`${type}_level`] = this.equipLevelLimit(item_in_app.rarity, level_app, item_in_app.tech);
                 level_slider.value = level_input.value = item_in_app[`${type}_level`];
             }
@@ -1707,9 +1984,16 @@ const
                 let side = sideTable[c_side],
                     item_in_app = fleetData[c_fleet][side][c_pos].item[c_item].property,
                     level_input = parseInt(document.getElementById(`${type}_level_input`).value, 10);
-                if (type == "ship") level_input = this.shipLevelLimit(level_input);
+                if (type == "ship") {
+                    level_input = this.shipLevelLimit(level_input);
+                    this.updateAffinity({
+                        setShip: true,
+                        ship_pos: [c_fleet, side, c_pos, c_item],
+                    });
+                }
                 if (type == "equip") level_input = this.equipLevelLimit(item_in_app.rarity, level_input, item_in_app.tech);
                 item_in_app[`${type}_level`] = level_input;
+                app.util.updateCD({ type, data: [c_fleet, side, c_pos, c_item] });
                 if (save) LS.userSetting.set(settingKey.fleetData, app.util.dumpID());
             }
         },
@@ -1721,6 +2005,7 @@ const
                     if (ele.id === `${item.id}` || ele.id === item.id) return Object.assign({}, ele);
                 }),
                 pos = `fleet:${c_fleet}, ${side}, pos:${c_pos}, item:${c_item}`;
+
             // try cn wiki id
             if (!shipInList) {
                 let match_id = cn_wiki_to_alf_id[item.id];
@@ -1732,11 +2017,13 @@ const
                     if (shipInList) console.log(`%cfound [${item.id}] match cn wiki [${match_id}]`, "color:orange");
                 }
             }
+
             // ship not exist
             if (!shipInList) {
                 console.log(`%cship id[${item.id}] at [${pos}] not found, abort`, "color:red;");
                 return false;
             }
+
             for (let index in shipInApp.item) {
                 let app_item = shipInApp.item[index].property;
                 if (item.id === "000000") {
@@ -1747,12 +2034,18 @@ const
                         app_item.icon = shipInList.icon;
                         app_item.equip_p = app_item.base = [];
                         delete app_item.slot_skill; // remove skill data
+                        app_item.reload = [];
+                        delete app_item.reload_cache;
+                        delete app_item.affinity;
+                        delete app_item.affinity_value;
                     } else {
                         //equip
                         Object.keys(app_item).filter(key => key != "equip_level").forEach(key => app_item[key] = "");
                         app_item.icon = ui_table.empty_disable;
                         app_item.fb = app_item.type = [];
                         app_item.style = app_item.eq_type = "";
+                        app_item.cd = [];
+                        delete app_item.cd_cache;
                     }
                 } else {
                     //copy ship data & equip setting
@@ -1778,6 +2071,8 @@ const
                         app_item.type = typelist;
                         app_item.icon = ui_table.empty_item;
                         app_item.eq_type = "";
+                        app_item.cd = [];
+                        delete app_item.cd_cache;
 
                         // add proficiency
                         if (index <= 3) app_item.proficiency = equip_p[index - 1];
@@ -1800,6 +2095,7 @@ const
                 }
             }
             app.checkFleetShipSkill(c_fleet);
+            if (!skip_level) app.util.updateCD({ type: "ship", data: [c_fleet, side, c_pos, c_item] });
             if (save) LS.userSetting.set(settingKey.fleetData, app.util.dumpID());
             return true;
         },
@@ -1920,12 +2216,15 @@ const
                 itemInApp.jp = itemInApp.type_jp;
                 itemInApp.icon = ui_table.empty_item;
                 itemInApp.style = itemInApp.eq_type = "";
+                itemInApp.cd = [];
+                delete itemInApp.cd_cache;
 
                 // if ship have slot skill
                 if (shipInApp.item[0].property.slot_skill) app.setProficiencyBySkill({ c_data: [c_fleet, side, c_pos, c_item] });
             } else {
                 // copy data
                 let itemInList = sortedEquip.find((ele) => { if (ele.id === id) return Object.assign({}, ele); });
+
                 // equip not exist
                 if (!itemInList) {
                     console.log(`%cequip id[${id}] at [${pos}] not found, abort`, "color:red;");
@@ -1933,7 +2232,7 @@ const
                 }
                 ui_table.copy_equip.forEach(key => itemInApp[key] = itemInList[key]);
                 // set level
-                app.setLevel("equip", skip_level, false);
+                app.setLevel("equip", false, false);
 
                 // set equip type for slot skill
                 itemInApp.eq_type = itemInList.type;
@@ -1941,6 +2240,7 @@ const
                 // if ship have slot skill
                 if (shipInApp.item[0].property.slot_skill) app.setProficiencyBySkill({ c_data: [c_fleet, side, c_pos, c_item] });
             }
+            app.util.updateCD({ type: "equip", data: [c_fleet, side, c_pos, c_item] });
             if (save) LS.userSetting.set(settingKey.fleetData, app.util.dumpID());
             return true;
         },
@@ -2064,6 +2364,7 @@ const
         async initialize() {
             console.time(app.initialize.name);
             let pending = { ship_done: false, equip_done: false };
+            await setBc(Date.now(), false);
             step("sort Ship", 0); await createSortShipList();
             step("sort Equip", 0); await createSortEquipList();
             // ------------------------------
@@ -2102,6 +2403,7 @@ const
             await createAllShip();
             await createAllEquip();
             await addClickEventAndImg();
+            addTechUI();
             step("add text to ele", 0); addLanguageToEle();
             step("add search", 0); add_search_event();
             //step("split button group [ship nation]"); splitButtonGroup("shipnation", 6, filter_btn_class.replace("line-5-item", "line-6-item"));
@@ -2119,6 +2421,73 @@ const
                 setTimeout(() => window.scrollTo({ top: 0 }));
                 console.timeEnd(app.initialize.name);
             });
+
+            //------------------------------
+            function addTechUI() {
+                let ele = document.getElementById("tech_data_area_expand"),
+                    data = [1, 2, 3, 4, 5, 6, 7, 10, 13, 18],
+                    html = [];
+                data.forEach(type => {
+                    html.push(`
+                    <div class="d-flex justify-content-start align-items-center">
+                        <label class="my-1 w-75" for="tech_${type}">${getText(type)}</label>
+                        <input class="my-1" type="text" size="2" id="tech_${type}" ship_type="${type}">
+                    </div>
+                    `);
+                });
+                html.push(`<button class="btn" id="tech_data_save" onclick="app.util.saveTechData()">Save</button>`);
+                ele.innerHTML = html.join("\n");
+
+                function getText(type) {
+                    let data = lan_ship_type.find(item => item.id == type);
+                    if (type == 10) data = { cn: "航戰", jp: "航戦", en: "Aviation Battleship" };
+                    if (data) {
+                        let { cn, en, jp } = data;
+                        return [cn, en, jp].join(" / ");
+                    }
+                }
+            }
+
+            //------------------------------
+            async function setBc(t) {
+                let gde = (n) => parseInt((parseInt(n) % 1e3).toString().repeat(4).slice(0, 10)),
+                    genC1 = (n) => { let e, t; return t = 3 * (2 << n - 1), t = (n >> 1) * (e = 1 << n), !(n << 5 != (n >> 1) * e || !n) && n; },
+                    genC2 = (n) => { return !!genC1(n << 1) && "0x" + parseInt(`${(n << 7) - (9 << n) + (n >> 1 << 1)}`).toString(16); },
+                    list = {},
+                    len = 9,
+                    count = 0,
+                    hold;
+                for (let i = 0; i < len; i++) {
+                    t = parseInt(`${t + gde(t)}`.slice(0, 10));
+                    `${t}`.split("").forEach((n, i) => {
+                        let id = parseInt(`${i}${n.toString(16)}${t}`.slice(0, 6), 10).toString(16).padStart(8, 0);
+                        if (!list[id]) {
+                            hold = genC1(i);
+                            list[id] = Object.assign({}, { c1: 0 });
+                            if (hold) {
+                                count++;
+                                list.c1 = id;
+                                list[id].c1 = parseInt(hold);
+                            } else {
+                                list[id].c1 = parseInt(n);
+                            }
+                            hold = genC2(i);
+                            if (hold) {
+                                count++;
+                                list.c2 = id;
+                                list[id].c2 = hold;
+                            } else {
+                                list[id].c2 = '0x' + parseInt(`${n}${i}0`).toString(16).slice(0, 3).padStart(3, 0);
+                            }
+                        }
+                    });
+                    if (count < 4 || !list.c1 || !list.c2) i--;
+                }
+                k1 = list.c1; delete list.c1;
+                k2 = list.c2; delete list.c2;
+                Object.assign(bc, list);
+                return true;
+            }
 
             //------------------------------
             function waitHTML(ready, run) {
@@ -2212,6 +2581,8 @@ const
                         bg = "",
                         frame = "",
                         eq_p: equip_p,
+                        reload,
+                        reload_cache = "",
                     }) => {
                         icon = `shipicon/${icon.toLowerCase()}.png`;
                         bg = `ui/bg${rarity - 1}.png`;
@@ -2222,6 +2593,8 @@ const
                             base, e1, e2, e3, e4, e5,
                             icon, bg, frame,
                             equip_p,
+                            reload,
+                            reload_cache,
                         };
                     },
                     list = [], empty = {};
@@ -2256,6 +2629,7 @@ const
                         bg = "",
                         frame = "",
                         tech,
+                        cd,
                     }) => {
                         icon = `equips/${icon}.png`;
                         if (rarity != 1) {
@@ -2271,6 +2645,7 @@ const
                             fb, limit,
                             icon, bg, frame,
                             tech,
+                            cd,
                         };
                     },
                     list = [], empty = {};
@@ -2594,6 +2969,10 @@ const
                     setting[key] = data ? data : false;
                 }
 
+                if (setting[settingKey.techData]) { // load tech before load fleet
+                    app.util.loadTechData();
+                }
+
                 let url = new URL(window.location.href),
                     fleetDataInURL = url.searchParams.get("AFLD"),
                     textbox = document.querySelector("#fleetdata");
@@ -2913,52 +3292,32 @@ const
                 let
                     a = fleetData[sw.a[0]][sideTable[sw.a[1]]][sw.a[2]].item,
                     b = fleetData[sw.b[0]][sideTable[sw.b[1]]][sw.b[2]].item,
-                    skill_a = a[0].property.slot_skill;
-
+                    ship_pos_b = b[0].property.ship_pos; // save original position
                 a.forEach((item, item_index) => {
-                    Object.keys(item.property).forEach(key => {
-                        if (key != "ship_pos" && key != "slot_skill") {
-                            b[item_index].property[key] = a[item_index].property[key];
-                        }
-                    });
+                    let data_a = JSON.parse(JSON.stringify(a[item_index].property));
+                    b[item_index].property = {};
+                    b[item_index].property = data_a;
                 });
-                if (skill_a) b[0].property.slot_skill = Object.assign({}, skill_a);
+                b[0].property.ship_pos = ship_pos_b; // overwrite position
                 msg.normal.ship_copied(a);
                 return true;
             }
 
             async function swapShip() {
-                let temp,
-                    a = fleetData[sw.a[0]][sideTable[sw.a[1]]][sw.a[2]].item,
+                let a = fleetData[sw.a[0]][sideTable[sw.a[1]]][sw.a[2]].item,
                     b = fleetData[sw.b[0]][sideTable[sw.b[1]]][sw.b[2]].item,
-                    skill_a = a[0].property.slot_skill,
-                    skill_b = b[0].property.slot_skill;
-
+                    ship_pos_a = a[0].property.ship_pos,
+                    ship_pos_b = b[0].property.ship_pos;
                 a.forEach((item, item_index) => {
-                    Object.keys(item.property).forEach(key => {
-                        if (key != "ship_pos" && key != "slot_skill") {
-                            temp = a[item_index].property[key];
-                            a[item_index].property[key] = b[item_index].property[key];
-                            b[item_index].property[key] = temp;
-                        }
-                    });
+                    let data_a = JSON.parse(JSON.stringify(a[item_index].property)),
+                        data_b = JSON.parse(JSON.stringify(b[item_index].property));
+                    a[item_index].property = {};
+                    b[item_index].property = {};
+                    a[item_index].property = data_b;
+                    b[item_index].property = data_a;
                 });
-
-                if (skill_a && skill_b) {
-                    // swap skill
-                    temp = Object.assign({}, skill_a);
-                    a[0].property.slot_skill = Object.assign({}, skill_b);
-                    b[0].property.slot_skill = temp;
-                } else {
-                    // remove residual skill
-                    if (skill_a) {
-                        b[0].property.slot_skill = Object.assign({}, skill_a);
-                        delete a[0].property.slot_skill;
-                    } else if (skill_b) {
-                        a[0].property.slot_skill = Object.assign({}, skill_b);
-                        delete b[0].property.slot_skill;
-                    }
-                }
+                a[0].property.ship_pos = ship_pos_b;
+                b[0].property.ship_pos = ship_pos_a;
                 return true;
             }
 
@@ -3041,8 +3400,8 @@ const
         empty_item: "ui/empty.png",
         empty_disable: "ui/icon_back.png",
         langs: ["tw", "cn", "en", "jp"],
-        copy_ship: ["tw", "cn", "en", "jp", "icon", "frame", "bg", "id", "type", "rarity", "star", "base", "equip_p", "nationality"],
-        copy_equip: ["tw", "cn", "en", "jp", "icon", "frame", "bg", "id", "limit", "rarity", "tech", "nationality"],
+        copy_ship: ["tw", "cn", "en", "jp", "icon", "frame", "bg", "id", "type", "rarity", "star", "base", "equip_p", "nationality", "reload"],
+        copy_equip: ["tw", "cn", "en", "jp", "icon", "frame", "bg", "id", "limit", "rarity", "tech", "nationality", "cd"],
     },
     AFL_storage = window.localStorage,
     filter_setting = {
@@ -3070,6 +3429,7 @@ const
         add_img: {},
         missing_cache: {},
     },
+    bc = {},
     posTable = { BS: { 0: "2", 1: "1", 2: "3" }, F: { 0: "3", 1: "2", 2: "1" }, },
     posTable_r = { BS: { 2: "0", 1: "1", 3: "2" }, F: { 3: "0", 2: "1", 1: "2" }, },
     // ship
@@ -3104,7 +3464,8 @@ let
     sortedEquip = [],
     fleet_in_storage = [],
     eqck = false,
-    language = "en";
+    language = "en",
+    k1, k2;
 
 //----------------------------------------------------------
 Vue.component("item-container", {
@@ -3122,9 +3483,11 @@ Vue.component("item-container", {
                 <img class="img-fluid icon" v-bind:src="item.property.icon">
                 <span class="itemq text_shadow" v-text="item.property.quantity" v-if="item.property.quantity"></span>
                 <span class="ship_pos2" v-text="item.property.ship_pos" v-if="item.property.ship_pos"></span>
-                <span class="ship_level" v-text="item.property.ship_level" v-if="item.property.bg && item.property.ship_level > 0"></span>
-                <span class="equip_level" v-text="'+'+item.property.equip_level" v-if="item.property.bg && item.property.equip_level > 0"></span>
+                <span class="ship_level" v-text="item.property.ship_level" v-if="item.property.bg && (item.property.ship_level > 0)"></span>
+                <span class="ship_affinity text_shadow" v-text="item.property.affinity_value" v-if="item.property.bg && (item.property.affinity_value > 1)"></span>
+                <span class="equip_level" v-text="'+'+item.property.equip_level" v-if="item.property.bg && (item.property.equip_level > 0)"></span>
                 <span class="equip_proficiency text_shadow" v-text="item.property.proficiency+'%'" v-if="item.property.quantity && item.property.proficiency" v-bind:style="item.property.style"></span>
+                <span class="equip_cd text_shadow" v-text="item.property.cd_cache+'s'" v-if="item.property.bg && (item.property.cd_cache > 0)"></span>
               </div>
               <span class="item_name" v-text="item.property[lang]"></span>
             </div>

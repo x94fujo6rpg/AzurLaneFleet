@@ -27,7 +27,8 @@ const equip_data = {
         "cn_name": "“九四式40厘米炮”部件",
         "tw_name": "“九四式40厘米炮”部件",
         "en_name": "40cm Type 94 Naval Gun Parts (Cargo)",
-        "equip_limit": 3400
+        "equip_limit": 3400,
+        "cd": []
     },
     "3540": {
         "nationality": 0,
@@ -57,7 +58,8 @@ const equip_data = {
         "cn_name": "兵装补给(鱼雷)",
         "tw_name": "兵裝補給(魚雷)",
         "en_name": "Torpedo Materials (Cargo)",
-        "equip_limit": 3400
+        "equip_limit": 3400,
+        "cd": []
     },
     "3500": {
         "nationality": 0,
@@ -87,7 +89,8 @@ const equip_data = {
         "cn_name": "兵装补给(航空)",
         "tw_name": "兵裝補給(航空)",
         "en_name": "Aviation Materials (Cargo)",
-        "equip_limit": 3400
+        "equip_limit": 3400,
+        "cd": []
     },
     "3520": {
         "nationality": 0,
@@ -117,7 +120,8 @@ const equip_data = {
         "cn_name": "兵装补给(中小口径武器)",
         "tw_name": "兵裝補給(中小口徑武器)",
         "en_name": "Small-Caliber Naval Gun Parts (Cargo)",
-        "equip_limit": 3400
+        "equip_limit": 3400,
+        "cd": []
     },
     "740": {
         "nationality": 4,
@@ -147,7 +151,8 @@ const equip_data = {
         "cn_name": "Fl-282直升机",
         "tw_name": "Fl-282直升機",
         "en_name": "Fl 282 Kolibri",
-        "equip_limit": 740
+        "equip_limit": 740,
+        "cd": []
     },
     "4240": {
         "nationality": 2,
@@ -176,7 +181,21 @@ const equip_data = {
         "cn_name": "剑鱼Mark II-ASV(反潜)",
         "tw_name": "劍魚Mark II-ASV(反潛)",
         "en_name": "Swordfish Mk II-ASV (ASW)",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            620,
+            604,
+            588,
+            572,
+            556,
+            540,
+            524,
+            508,
+            492,
+            476,
+            460,
+            460
+        ]
     },
     "4220": {
         "nationality": 2,
@@ -205,7 +224,16 @@ const equip_data = {
         "cn_name": "剑鱼Mark II-ASV(反潜)",
         "tw_name": "劍魚Mark II-ASV(反潛)",
         "en_name": "Swordfish Mk II-ASV (ASW)",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            650,
+            636,
+            622,
+            608,
+            594,
+            580,
+            566
+        ]
     },
     "4200": {
         "nationality": 2,
@@ -234,7 +262,13 @@ const equip_data = {
         "cn_name": "剑鱼Mark II-ASV(反潜)",
         "tw_name": "劍魚Mark II-ASV(反潛)",
         "en_name": "Swordfish Mk II-ASV (ASW)",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            680,
+            668,
+            656,
+            644
+        ]
     },
     "4340": {
         "nationality": 1,
@@ -263,7 +297,21 @@ const equip_data = {
         "cn_name": "TBM-3复仇者(反潜)",
         "tw_name": "TBM-3復仇者(反潛)",
         "en_name": "TBM-3 Avenger (ASW)",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            580,
+            565,
+            550,
+            535,
+            520,
+            505,
+            490,
+            475,
+            460,
+            445,
+            430,
+            430
+        ]
     },
     "4320": {
         "nationality": 1,
@@ -292,7 +340,16 @@ const equip_data = {
         "cn_name": "TBM-3复仇者(反潜)",
         "tw_name": "TBM-3復仇者(反潛)",
         "en_name": "TBM-3 Avenger (ASW)",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            600,
+            588,
+            576,
+            564,
+            552,
+            540,
+            528
+        ]
     },
     "4300": {
         "nationality": 1,
@@ -321,7 +378,13 @@ const equip_data = {
         "cn_name": "TBM-3复仇者(反潜)",
         "tw_name": "TBM-3復仇者(反潛)",
         "en_name": "TBM-3 Avenger (ASW)",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            620,
+            610,
+            600,
+            590
+        ]
     },
     "4040": {
         "nationality": 2,
@@ -350,7 +413,17 @@ const equip_data = {
         "cn_name": "基础深弹投射器",
         "tw_name": "基礎深彈投射器",
         "en_name": "Basic Depth Charge Projector",
-        "equip_limit": 4000
+        "equip_limit": 4000,
+        "cd": [
+            640,
+            628,
+            616,
+            604,
+            592,
+            580,
+            568,
+            568
+        ]
     },
     "4020": {
         "nationality": 2,
@@ -379,7 +452,13 @@ const equip_data = {
         "cn_name": "基础深弹投射器",
         "tw_name": "基礎深彈投射器",
         "en_name": "Basic Depth Charge Projector",
-        "equip_limit": 4000
+        "equip_limit": 4000,
+        "cd": [
+            660,
+            650,
+            640,
+            630
+        ]
     },
     "4000": {
         "nationality": 2,
@@ -408,7 +487,13 @@ const equip_data = {
         "cn_name": "基础深弹投射器",
         "tw_name": "基礎深彈投射器",
         "en_name": "Basic Depth Charge Projector",
-        "equip_limit": 4000
+        "equip_limit": 4000,
+        "cd": [
+            680,
+            672,
+            664,
+            656
+        ]
     },
     "25800": {
         "nationality": 2,
@@ -437,7 +522,23 @@ const equip_data = {
         "cn_name": "刺猬弹",
         "tw_name": "刺蝟彈",
         "en_name": "\"Hedgehog\" Anti-Submarine Mortar",
-        "equip_limit": 25800
+        "equip_limit": 25800,
+        "cd": [
+            650,
+            635,
+            620,
+            605,
+            590,
+            575,
+            560,
+            545,
+            530,
+            515,
+            500,
+            500,
+            500,
+            500
+        ]
     },
     "4140": {
         "nationality": 1,
@@ -466,7 +567,21 @@ const equip_data = {
         "cn_name": "改良深弹投射器",
         "tw_name": "改良深彈投射器",
         "en_name": "Improved Depth Charge Projector",
-        "equip_limit": 4000
+        "equip_limit": 4000,
+        "cd": [
+            600,
+            585,
+            570,
+            555,
+            540,
+            525,
+            510,
+            495,
+            480,
+            465,
+            450,
+            450
+        ]
     },
     "4120": {
         "nationality": 1,
@@ -495,7 +610,16 @@ const equip_data = {
         "cn_name": "改良深弹投射器",
         "tw_name": "改良深彈投射器",
         "en_name": "Improved Depth Charge Projector",
-        "equip_limit": 4000
+        "equip_limit": 4000,
+        "cd": [
+            625,
+            613,
+            601,
+            589,
+            577,
+            565,
+            553
+        ]
     },
     "4100": {
         "nationality": 1,
@@ -524,7 +648,13 @@ const equip_data = {
         "cn_name": "改良深弹投射器",
         "tw_name": "改良深彈投射器",
         "en_name": "Improved Depth Charge Projector",
-        "equip_limit": 4000
+        "equip_limit": 4000,
+        "cd": [
+            650,
+            640,
+            630,
+            620
+        ]
     },
     "5540": {
         "nationality": 8,
@@ -538,7 +668,21 @@ const equip_data = {
         "cn_name": "潜艇用550mm24V鱼雷",
         "tw_name": "潛艇用550mm24V魚雷",
         "en_name": "550mm 24V Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3100,
+            3020,
+            2940,
+            2860,
+            2780,
+            2700,
+            2620,
+            2540,
+            2460,
+            2380,
+            2300,
+            2300
+        ]
     },
     "5520": {
         "nationality": 8,
@@ -552,7 +696,16 @@ const equip_data = {
         "cn_name": "潜艇用550mm24V鱼雷",
         "tw_name": "潛艇用550mm24V魚雷",
         "en_name": "550mm 24V Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3250,
+            3175,
+            3100,
+            3025,
+            2950,
+            2875,
+            2800
+        ]
     },
     "5500": {
         "nationality": 8,
@@ -566,7 +719,13 @@ const equip_data = {
         "cn_name": "潜艇用550mm24V鱼雷",
         "tw_name": "潛艇用550mm24V魚雷",
         "en_name": "550mm 24V Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3400,
+            3330,
+            3260,
+            3190
+        ]
     },
     "95700": {
         "nationality": 6,
@@ -580,7 +739,16 @@ const equip_data = {
         "cn_name": "潜艇用533mm鱼雷Si 270",
         "tw_name": "潛艇用533mm魚雷Si 270*",
         "en_name": "533mm Si 270 Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2826,
+            2756,
+            2686,
+            2616,
+            2546,
+            2476,
+            2406
+        ]
     },
     "45440": {
         "nationality": 4,
@@ -594,7 +762,23 @@ const equip_data = {
         "cn_name": "潜艇用G7e声导鱼雷",
         "tw_name": "潛艇用G7e聲導魚雷",
         "en_name": "G7e Acoustic Homing Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2750,
+            2675,
+            2600,
+            2525,
+            2450,
+            2375,
+            2300,
+            2225,
+            2150,
+            2075,
+            2000,
+            2000,
+            2000,
+            2000
+        ]
     },
     "45420": {
         "nationality": 4,
@@ -608,7 +792,20 @@ const equip_data = {
         "cn_name": "潜艇用G7e声导鱼雷",
         "tw_name": "潛艇用G7e聲導魚雷",
         "en_name": "G7e Acoustic Homing Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2900,
+            2830,
+            2760,
+            2690,
+            2620,
+            2550,
+            2480,
+            2410,
+            2340,
+            2270,
+            2200
+        ]
     },
     "45400": {
         "nationality": 4,
@@ -622,7 +819,16 @@ const equip_data = {
         "cn_name": "潜艇用G7e声导鱼雷",
         "tw_name": "潛艇用G7e聲導魚雷",
         "en_name": "G7e Acoustic Homing Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3050,
+            2985,
+            2920,
+            2855,
+            2790,
+            2725,
+            2660
+        ]
     },
     "45340": {
         "nationality": 4,
@@ -636,7 +842,21 @@ const equip_data = {
         "cn_name": "潜艇用G7a鱼雷",
         "tw_name": "潛艇用G7a魚雷",
         "en_name": "G7a Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3000,
+            2920,
+            2840,
+            2760,
+            2680,
+            2600,
+            2520,
+            2440,
+            2360,
+            2280,
+            2200,
+            2200
+        ]
     },
     "45320": {
         "nationality": 4,
@@ -650,7 +870,16 @@ const equip_data = {
         "cn_name": "潜艇用G7a鱼雷",
         "tw_name": "潛艇用G7a魚雷",
         "en_name": "G7a Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3150,
+            3075,
+            3000,
+            2925,
+            2850,
+            2775,
+            2700
+        ]
     },
     "45300": {
         "nationality": 4,
@@ -664,7 +893,13 @@ const equip_data = {
         "cn_name": "潜艇用G7a鱼雷",
         "tw_name": "潛艇用G7a魚雷",
         "en_name": "G7a Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3300,
+            3230,
+            3160,
+            3090
+        ]
     },
     "35560": {
         "nationality": 3,
@@ -678,7 +913,23 @@ const equip_data = {
         "cn_name": "潜艇用96式纯氧鱼雷",
         "tw_name": "潛艇用96式純氧魚雷",
         "en_name": "Type 96 Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3042,
+            2962,
+            2882,
+            2802,
+            2722,
+            2642,
+            2562,
+            2482,
+            2402,
+            2322,
+            2242,
+            2242,
+            2242,
+            2242
+        ]
     },
     "35580": {
         "nationality": 3,
@@ -692,7 +943,23 @@ const equip_data = {
         "cn_name": "潜艇用95式纯氧鱼雷改",
         "tw_name": "潛艇用95式純氧魚雷改*",
         "en_name": "Type 95 Kai Pure Oxygen Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3076,
+            2996,
+            2916,
+            2836,
+            2756,
+            2676,
+            2596,
+            2516,
+            2436,
+            2356,
+            2276,
+            2276,
+            2276,
+            2276
+        ]
     },
     "35540": {
         "nationality": 3,
@@ -706,7 +973,23 @@ const equip_data = {
         "cn_name": "潜艇用95式纯氧鱼雷",
         "tw_name": "潛艇用95式純氧魚雷",
         "en_name": "Type 95 Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3000,
+            2920,
+            2840,
+            2760,
+            2680,
+            2600,
+            2520,
+            2440,
+            2360,
+            2280,
+            2200,
+            2200,
+            2200,
+            2200
+        ]
     },
     "35520": {
         "nationality": 3,
@@ -720,7 +1003,20 @@ const equip_data = {
         "cn_name": "潜艇用95式纯氧鱼雷",
         "tw_name": "潛艇用95式純氧魚雷",
         "en_name": "Type 95 Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3150,
+            3075,
+            3000,
+            2925,
+            2850,
+            2775,
+            2700,
+            2625,
+            2550,
+            2475,
+            2400
+        ]
     },
     "35500": {
         "nationality": 3,
@@ -734,7 +1030,16 @@ const equip_data = {
         "cn_name": "潜艇用95式纯氧鱼雷",
         "tw_name": "潛艇用95式純氧魚雷",
         "en_name": "Type 95 Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3300,
+            3230,
+            3160,
+            3090,
+            3020,
+            2950,
+            2880
+        ]
     },
     "35460": {
         "nationality": 3,
@@ -748,7 +1053,21 @@ const equip_data = {
         "cn_name": "潜艇用92式潜射鱼雷改",
         "tw_name": "潛艇用92式潛射魚雷改",
         "en_name": "Type 92 Kai Electric Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3460,
+            3368,
+            3276,
+            3184,
+            3092,
+            3000,
+            2908,
+            2816,
+            2724,
+            2632,
+            2540,
+            2540
+        ]
     },
     "35440": {
         "nationality": 3,
@@ -762,7 +1081,21 @@ const equip_data = {
         "cn_name": "潜艇用92式潜射鱼雷",
         "tw_name": "潛艇用92式潛射魚雷",
         "en_name": "Type 92 Electric Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3200,
+            3120,
+            3040,
+            2960,
+            2880,
+            2800,
+            2720,
+            2640,
+            2560,
+            2480,
+            2400,
+            2400
+        ]
     },
     "35420": {
         "nationality": 3,
@@ -776,7 +1109,16 @@ const equip_data = {
         "cn_name": "潜艇用92式潜射鱼雷",
         "tw_name": "潛艇用92式潛射魚雷",
         "en_name": "Type 92 Electric Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3350,
+            3275,
+            3200,
+            3125,
+            3050,
+            2975,
+            2900
+        ]
     },
     "35400": {
         "nationality": 3,
@@ -790,7 +1132,13 @@ const equip_data = {
         "cn_name": "潜艇用92式潜射鱼雷",
         "tw_name": "潛艇用92式潛射魚雷",
         "en_name": "Type 92 Electric Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3500,
+            3430,
+            3360,
+            3290
+        ]
     },
     "25140": {
         "nationality": 2,
@@ -804,7 +1152,21 @@ const equip_data = {
         "cn_name": "潜艇用Mark VIII鱼雷",
         "tw_name": "潛艇用Mark VIII魚雷",
         "en_name": "Mark VIII Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            5455,
+            5309,
+            5164,
+            5018,
+            4873,
+            4727,
+            4582,
+            4436,
+            4291,
+            4145,
+            4000,
+            4000
+        ]
     },
     "25120": {
         "nationality": 2,
@@ -818,7 +1180,16 @@ const equip_data = {
         "cn_name": "潜艇用Mark VIII鱼雷",
         "tw_name": "潛艇用Mark VIII魚雷",
         "en_name": "Mark VIII Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            5727,
+            5591,
+            5455,
+            5318,
+            5182,
+            5045,
+            4909
+        ]
     },
     "25100": {
         "nationality": 2,
@@ -832,7 +1203,13 @@ const equip_data = {
         "cn_name": "潜艇用Mark VIII鱼雷",
         "tw_name": "潛艇用Mark VIII魚雷",
         "en_name": "Mark VIII Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            6000,
+            5873,
+            5745,
+            5618
+        ]
     },
     "25300": {
         "nationality": 2,
@@ -846,7 +1223,23 @@ const equip_data = {
         "cn_name": "潜艇用Mark 20 S鱼雷-彼得",
         "tw_name": "潛艇用Mark 20 S魚雷-彼得",
         "en_name": "Mark 20 \"Bidder\" Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4510,
+            4387,
+            4264,
+            4141,
+            4018,
+            3895,
+            3772,
+            3649,
+            3526,
+            3403,
+            3280,
+            3280,
+            3280,
+            3280
+        ]
     },
     "25200": {
         "nationality": 2,
@@ -860,7 +1253,23 @@ const equip_data = {
         "cn_name": "潜艇用Mark 12鱼雷-菲里",
         "tw_name": "潛艇用Mark 12魚雷-菲里",
         "en_name": "Mark 12 \"Ferry\" Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3800,
+            3699,
+            3597,
+            3496,
+            3395,
+            3293,
+            3192,
+            3091,
+            2989,
+            2888,
+            2787,
+            2787,
+            2787,
+            2787
+        ]
     },
     "15160": {
         "nationality": 1,
@@ -874,7 +1283,23 @@ const equip_data = {
         "cn_name": "潜艇用Mark 28鱼雷",
         "tw_name": "潛艇用Mark 28魚雷",
         "en_name": "Mark 28 Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2592,
+            2521,
+            2450,
+            2379,
+            2308,
+            2237,
+            2166,
+            2095,
+            2024,
+            1953,
+            1882,
+            1882,
+            1882,
+            1882
+        ]
     },
     "15060": {
         "nationality": 1,
@@ -888,7 +1313,21 @@ const equip_data = {
         "cn_name": "潜艇用Mark 18鱼雷",
         "tw_name": "潛艇用Mark 18魚雷",
         "en_name": "Mark 18 Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2791,
+            2716,
+            2641,
+            2566,
+            2491,
+            2416,
+            2341,
+            2266,
+            2191,
+            2116,
+            2041,
+            2041
+        ]
     },
     "15140": {
         "nationality": 1,
@@ -902,7 +1341,23 @@ const equip_data = {
         "cn_name": "潜艇用Mark 16鱼雷",
         "tw_name": "潛艇用Mark16魚雷",
         "en_name": "Mark 16 Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4600,
+            4510,
+            4420,
+            4330,
+            4240,
+            4150,
+            4060,
+            3970,
+            3880,
+            3790,
+            3700,
+            3700,
+            3700,
+            3700
+        ]
     },
     "15120": {
         "nationality": 1,
@@ -916,7 +1371,20 @@ const equip_data = {
         "cn_name": "潜艇用Mark 16鱼雷",
         "tw_name": "潛艇用Mark16魚雷",
         "en_name": "Mark 16 Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4800,
+            4715,
+            4630,
+            4545,
+            4460,
+            4375,
+            4290,
+            4205,
+            4120,
+            4035,
+            3950
+        ]
     },
     "15100": {
         "nationality": 1,
@@ -930,7 +1398,16 @@ const equip_data = {
         "cn_name": "潜艇用Mark 16鱼雷",
         "tw_name": "潛艇用Mark16魚雷",
         "en_name": "Mark 16 Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            5000,
+            4920,
+            4840,
+            4760,
+            4680,
+            4600,
+            4520
+        ]
     },
     "15040": {
         "nationality": 1,
@@ -944,7 +1421,21 @@ const equip_data = {
         "cn_name": "潜艇用Mark 14鱼雷",
         "tw_name": "潛艇用Mark14魚雷",
         "en_name": "Mark 14 Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4800,
+            4710,
+            4620,
+            4530,
+            4440,
+            4350,
+            4260,
+            4170,
+            4080,
+            3990,
+            3900,
+            3900
+        ]
     },
     "15020": {
         "nationality": 1,
@@ -958,7 +1449,16 @@ const equip_data = {
         "cn_name": "潜艇用Mark 14鱼雷",
         "tw_name": "潛艇用Mark14魚雷",
         "en_name": "Mark 14 Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4950,
+            4875,
+            4800,
+            4725,
+            4650,
+            4575,
+            4500
+        ]
     },
     "15000": {
         "nationality": 1,
@@ -972,7 +1472,13 @@ const equip_data = {
         "cn_name": "潜艇用Mark 14鱼雷",
         "tw_name": "潛艇用Mark14魚雷",
         "en_name": "Mark 14 Submarine Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            5100,
+            5020,
+            4940,
+            4860
+        ]
     },
     "39240": {
         "nationality": 3,
@@ -986,7 +1492,21 @@ const equip_data = {
         "cn_name": "瑞云",
         "tw_name": "瑞雲",
         "en_name": "Aichi E16A Zuiun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2550,
+            2505,
+            2460,
+            2415,
+            2370,
+            2325,
+            2280,
+            2235,
+            2190,
+            2145,
+            2100,
+            2100
+        ]
     },
     "39220": {
         "nationality": 3,
@@ -1000,7 +1520,16 @@ const equip_data = {
         "cn_name": "瑞云",
         "tw_name": "瑞雲",
         "en_name": "Aichi E16A Zuiun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2650,
+            2605,
+            2560,
+            2515,
+            2470,
+            2425,
+            2380
+        ]
     },
     "39200": {
         "nationality": 3,
@@ -1014,7 +1543,13 @@ const equip_data = {
         "cn_name": "瑞云",
         "tw_name": "瑞雲",
         "en_name": "Aichi E16A Zuiun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2750,
+            2705,
+            2660,
+            2615
+        ]
     },
     "39300": {
         "nationality": 3,
@@ -1028,7 +1563,21 @@ const equip_data = {
         "cn_name": "晴岚",
         "tw_name": "晴嵐",
         "en_name": "Seiran",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2600,
+            2555,
+            2510,
+            2465,
+            2420,
+            2375,
+            2330,
+            2285,
+            2240,
+            2195,
+            2150,
+            2150
+        ]
     },
     "37440": {
         "nationality": 3,
@@ -1042,7 +1591,21 @@ const equip_data = {
         "cn_name": "强风",
         "tw_name": "強風",
         "en_name": "N1K1 Kyoufuu",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2162,
+            2127,
+            2092,
+            2057,
+            2022,
+            1987,
+            1952,
+            1917,
+            1882,
+            1847,
+            1812,
+            1812
+        ]
     },
     "37420": {
         "nationality": 3,
@@ -1056,7 +1619,21 @@ const equip_data = {
         "cn_name": "二式水上战斗机",
         "tw_name": "二式水上戰鬥機",
         "en_name": "Type 2 Seaplane Fighter",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2510,
+            2473,
+            2436,
+            2399,
+            2362,
+            2325,
+            2288,
+            2251,
+            2214,
+            2177,
+            2140,
+            2140
+        ]
     },
     "44400": {
         "nationality": 4,
@@ -1072,7 +1649,23 @@ const equip_data = {
         "cn_name": "试作型三联装305mmSKC39主炮(超巡用)",
         "tw_name": "試作型三聯裝305mmSKC39主炮(超巡用)*",
         "en_name": "Prototype Triple 305mm SK C/39 Main Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1700,
+            1665,
+            1630,
+            1595,
+            1560,
+            1525,
+            1490,
+            1455,
+            1420,
+            1385,
+            1350,
+            1350,
+            1350,
+            1350
+        ]
     },
     "43140": {
         "nationality": 4,
@@ -1086,7 +1679,21 @@ const equip_data = {
         "cn_name": "三联283mmSKC28主炮",
         "tw_name": "三聯283mmSKC28主炮",
         "en_name": "Triple 283mm SK C/28 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1700,
+            1665,
+            1630,
+            1595,
+            1560,
+            1525,
+            1490,
+            1455,
+            1420,
+            1385,
+            1350,
+            1350
+        ]
     },
     "43120": {
         "nationality": 4,
@@ -1100,7 +1707,16 @@ const equip_data = {
         "cn_name": "三联283mmSKC28主炮",
         "tw_name": "三聯283mmSKC28主炮",
         "en_name": "Triple 283mm SK C/28 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1720,
+            1685,
+            1650,
+            1615,
+            1580,
+            1545,
+            1510
+        ]
     },
     "43100": {
         "nationality": 4,
@@ -1114,7 +1730,13 @@ const equip_data = {
         "cn_name": "三联283mmSKC28主炮",
         "tw_name": "三聯283mmSKC28主炮",
         "en_name": "Triple 283mm SK C/28 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1750,
+            1715,
+            1680,
+            1645
+        ]
     },
     "33100": {
         "nationality": 3,
@@ -1130,7 +1752,23 @@ const equip_data = {
         "cn_name": "试作型三联装310mm主炮",
         "tw_name": "試作型三聯裝310mm主炮",
         "en_name": "Prototype Triple 310mm Type 0 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1963,
+            1928,
+            1892,
+            1857,
+            1822,
+            1786,
+            1751,
+            1716,
+            1680,
+            1645,
+            1610,
+            1610,
+            1610,
+            1610
+        ]
     },
     "89300": {
         "nationality": 108,
@@ -1144,7 +1782,8 @@ const equip_data = {
         "cn_name": "征战巨坦",
         "tw_name": "征戰巨坦",
         "en_name": "Battle Tracto Max",
-        "equip_limit": 89300
+        "equip_limit": 89300,
+        "cd": []
     },
     "89340": {
         "nationality": 108,
@@ -1158,7 +1797,8 @@ const equip_data = {
         "cn_name": "爆裂钻孔机",
         "tw_name": "爆裂鑽孔機",
         "en_name": "Buster Borr",
-        "equip_limit": 89340
+        "equip_limit": 89340,
+        "cd": []
     },
     "89380": {
         "nationality": 108,
@@ -1181,7 +1821,8 @@ const equip_data = {
         "cn_name": "戴拿爆能加农",
         "tw_name": "戴拿爆能加農",
         "en_name": "Dynamic Cannon",
-        "equip_limit": 89380
+        "equip_limit": 89380,
+        "cd": []
     },
     "89360": {
         "nationality": 108,
@@ -1195,7 +1836,8 @@ const equip_data = {
         "cn_name": "苍穹喷射机",
         "tw_name": "蒼穹噴射機",
         "en_name": "Sky Vitter",
-        "equip_limit": 89360
+        "equip_limit": 89360,
+        "cd": []
     },
     "89400": {
         "nationality": 108,
@@ -1209,7 +1851,8 @@ const equip_data = {
         "cn_name": "煌翼炎龙",
         "tw_name": "煌翼炎龍",
         "en_name": "Goldburn",
-        "equip_limit": 89400
+        "equip_limit": 89400,
+        "cd": []
     },
     "89320": {
         "nationality": 108,
@@ -1223,7 +1866,8 @@ const equip_data = {
         "cn_name": "古立特圣剑",
         "tw_name": "古利特聖劍",
         "en_name": "Gridman Calibur",
-        "equip_limit": 89320
+        "equip_limit": 89320,
+        "cd": []
     },
     "89280": {
         "nationality": 107,
@@ -1237,7 +1881,8 @@ const equip_data = {
         "cn_name": "偶像手环",
         "tw_name": "偶像手環",
         "en_name": "Shining Bracelet",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "89240": {
         "nationality": 106,
@@ -1251,7 +1896,8 @@ const equip_data = {
         "cn_name": "觉醒宝珠",
         "tw_name": "覺醒寶珠",
         "en_name": "Awakening Pearl",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "89260": {
         "nationality": 106,
@@ -1265,7 +1911,8 @@ const equip_data = {
         "cn_name": "心之钥匙",
         "tw_name": "心之鑰匙",
         "en_name": "Heart Key",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "89100": {
         "nationality": 105,
@@ -1279,7 +1926,8 @@ const equip_data = {
         "cn_name": "玉米灯笼",
         "tw_name": "玉米燈籠*",
         "en_name": "Corn Lantern",
-        "equip_limit": 89060
+        "equip_limit": 89060,
+        "cd": []
     },
     "89060": {
         "nationality": 105,
@@ -1293,7 +1941,8 @@ const equip_data = {
         "cn_name": "组徽",
         "tw_name": "組徽*",
         "en_name": "Team Emblem",
-        "equip_limit": 89060
+        "equip_limit": 89060,
+        "cd": []
     },
     "89080": {
         "nationality": 105,
@@ -1307,7 +1956,8 @@ const equip_data = {
         "cn_name": "Gamers的证明",
         "tw_name": "Gamers的證明*",
         "en_name": "Gamers Mark",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "89120": {
         "nationality": 105,
@@ -1321,7 +1971,8 @@ const equip_data = {
         "cn_name": "鮟鱇肝",
         "tw_name": "鮟鱇肝*",
         "en_name": "Ankimo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "89000": {
         "nationality": 104,
@@ -1335,7 +1986,8 @@ const equip_data = {
         "cn_name": "随机单词生成器",
         "tw_name": "隨機單詞生成器*",
         "en_name": "Random Word Generator",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "89040": {
         "nationality": 104,
@@ -1349,7 +2001,8 @@ const equip_data = {
         "cn_name": "智慧模块",
         "tw_name": "智慧模塊*",
         "en_name": "Intelligence Chip",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "89020": {
         "nationality": 104,
@@ -1363,7 +2016,8 @@ const equip_data = {
         "cn_name": "晃悠悠",
         "tw_name": "晃悠悠*",
         "en_name": "Pyoko-Pyoko",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "1960": {
         "nationality": 7,
@@ -1377,7 +2031,8 @@ const equip_data = {
         "cn_name": "海魂迷彩",
         "tw_name": "海魂迷彩",
         "en_name": "Ocean Soul Camouflage",
-        "equip_limit": 1900
+        "equip_limit": 1900,
+        "cd": []
     },
     "3300": {
         "nationality": 5,
@@ -1407,7 +2062,8 @@ const equip_data = {
         "cn_name": "四神之印",
         "tw_name": "四神之印*",
         "en_name": "Seal of the Four Gods",
-        "equip_limit": 3300
+        "equip_limit": 3300,
+        "cd": []
     },
     "720": {
         "nationality": 4,
@@ -1434,7 +2090,8 @@ const equip_data = {
         "cn_name": "约定的证明",
         "tw_name": "約定的證明",
         "en_name": "Certificate of Sponsorship",
-        "equip_limit": 720
+        "equip_limit": 720,
+        "cd": []
     },
     "3140": {
         "nationality": 4,
@@ -1463,7 +2120,8 @@ const equip_data = {
         "cn_name": "改良蓄电池阵列",
         "tw_name": "改良蓄電池陣列",
         "en_name": "Improved Storage Battery",
-        "equip_limit": 3140
+        "equip_limit": 3140,
+        "cd": []
     },
     "3120": {
         "nationality": 4,
@@ -1492,7 +2150,8 @@ const equip_data = {
         "cn_name": "改良型水下进气管",
         "tw_name": "改良型水下進氣管",
         "en_name": "Improved Snorkel",
-        "equip_limit": 3100
+        "equip_limit": 3100,
+        "cd": []
     },
     "800": {
         "nationality": 4,
@@ -1521,7 +2180,8 @@ const equip_data = {
         "cn_name": "艇壳改良设计案",
         "tw_name": "艇殼改良設計案*",
         "en_name": "Pressure-Resistant Hull Design",
-        "equip_limit": 800
+        "equip_limit": 800,
+        "cd": []
     },
     "960": {
         "nationality": 4,
@@ -1544,7 +2204,8 @@ const equip_data = {
         "cn_name": "FuMO 25",
         "tw_name": "FuMO 25*",
         "en_name": "FuMO 25",
-        "equip_limit": 960
+        "equip_limit": 960,
+        "cd": []
     },
     "2740": {
         "nationality": 4,
@@ -1569,7 +2230,8 @@ const equip_data = {
         "cn_name": "533mm磁性鱼雷(水面舰艇用)",
         "tw_name": "533mm磁性魚雷",
         "en_name": "533mm Magnetic Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "540": {
         "nationality": 3,
@@ -1583,7 +2245,8 @@ const equip_data = {
         "cn_name": "治愈系猫爪",
         "tw_name": "治癒系貓爪",
         "en_name": "Healing Cat's Paw",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "700": {
         "nationality": 3,
@@ -1610,7 +2273,8 @@ const equip_data = {
         "cn_name": "九八式射击延迟装置",
         "tw_name": "九八式射擊延遲裝置",
         "en_name": "Type 98 Delayed Firing Device",
-        "equip_limit": 700
+        "equip_limit": 700,
+        "cd": []
     },
     "2640": {
         "nationality": 3,
@@ -1633,7 +2297,8 @@ const equip_data = {
         "cn_name": "九三式纯氧鱼雷",
         "tw_name": "九三式純氧魚雷",
         "en_name": "Type 93 Pure Oxygen Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "580": {
         "nationality": 3,
@@ -1660,7 +2325,8 @@ const equip_data = {
         "cn_name": "九一式穿甲弹",
         "tw_name": "九一式穿甲彈",
         "en_name": "Type 91 AP Shell",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "600": {
         "nationality": 3,
@@ -1687,7 +2353,8 @@ const equip_data = {
         "cn_name": "一式穿甲弹",
         "tw_name": "一式穿甲彈",
         "en_name": "Type 1 AP Shell",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "640": {
         "nationality": 3,
@@ -1714,7 +2381,8 @@ const equip_data = {
         "cn_name": "Z旗",
         "tw_name": "Z旗",
         "en_name": "Z Flag",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "3200": {
         "nationality": 3,
@@ -1740,7 +2408,8 @@ const equip_data = {
         "cn_name": "VH装甲钢板",
         "tw_name": "VH裝甲鋼板",
         "en_name": "VH Armor Plating",
-        "equip_limit": 3200
+        "equip_limit": 3200,
+        "cd": []
     },
     "3220": {
         "nationality": 3,
@@ -1766,7 +2435,8 @@ const equip_data = {
         "cn_name": "VC装甲钢板",
         "tw_name": "VC裝甲鋼板",
         "en_name": "VC Armor Plating",
-        "equip_limit": 3200
+        "equip_limit": 3200,
+        "cd": []
     },
     "2800": {
         "nationality": 3,
@@ -1780,7 +2450,8 @@ const equip_data = {
         "cn_name": "94式高射装置",
         "tw_name": "94式高射裝置",
         "en_name": "Type 94 Anti-Air Fire Control System",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "1160": {
         "nationality": 2,
@@ -1794,7 +2465,8 @@ const equip_data = {
         "cn_name": "高性能对空雷达",
         "tw_name": "高性能對空雷達",
         "en_name": "High Performance Air Radar",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "680": {
         "nationality": 2,
@@ -1821,7 +2493,8 @@ const equip_data = {
         "cn_name": "归航信标",
         "tw_name": "歸航信標",
         "en_name": "Homing Beacon",
-        "equip_limit": 680
+        "equip_limit": 680,
+        "cd": []
     },
     "880": {
         "nationality": 2,
@@ -1849,7 +2522,8 @@ const equip_data = {
         "cn_name": "纳尔逊的旗语",
         "tw_name": "納爾遜的旗語",
         "en_name": "Nelson's Pennant of Victory",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "1260": {
         "nationality": 1,
@@ -1876,7 +2550,8 @@ const equip_data = {
         "cn_name": "高性能火控雷达",
         "tw_name": "高性能火控雷達",
         "en_name": "High Standard Fire-Control Radar",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "840": {
         "nationality": 1,
@@ -1890,7 +2565,8 @@ const equip_data = {
         "cn_name": "白鹰精英损管",
         "tw_name": "白鷹精英損管",
         "en_name": "Eagle Union Elite Damage Control",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "520": {
         "nationality": 1,
@@ -1904,7 +2580,8 @@ const equip_data = {
         "cn_name": "珍珠之泪",
         "tw_name": "珍珠之淚",
         "en_name": "Pearl's Tears",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "1240": {
         "nationality": 1,
@@ -1927,7 +2604,8 @@ const equip_data = {
         "cn_name": "火控雷达",
         "tw_name": "火控雷達",
         "en_name": "Fire Control Radar",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "1220": {
         "nationality": 1,
@@ -1950,7 +2628,8 @@ const equip_data = {
         "cn_name": "火控雷达",
         "tw_name": "火控雷達",
         "en_name": "Fire Control Radar",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "1200": {
         "nationality": 1,
@@ -1973,7 +2652,8 @@ const equip_data = {
         "cn_name": "火控雷达",
         "tw_name": "火控雷達",
         "en_name": "Fire Control Radar",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "1760": {
         "nationality": 1,
@@ -1987,7 +2667,8 @@ const equip_data = {
         "cn_name": "高性能舵机",
         "tw_name": "高性能舵機",
         "en_name": "High Performance Hydraulic Steering Gear",
-        "equip_limit": 1760
+        "equip_limit": 1760,
+        "cd": []
     },
     "1140": {
         "nationality": 1,
@@ -2001,7 +2682,8 @@ const equip_data = {
         "cn_name": "对空雷达",
         "tw_name": "對空雷達",
         "en_name": "Air Radar",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "1120": {
         "nationality": 1,
@@ -2015,7 +2697,8 @@ const equip_data = {
         "cn_name": "对空雷达",
         "tw_name": "對空雷達",
         "en_name": "Air Radar",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "1100": {
         "nationality": 1,
@@ -2029,7 +2712,8 @@ const equip_data = {
         "cn_name": "对空雷达",
         "tw_name": "對空雷達",
         "en_name": "Air Radar",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "940": {
         "nationality": 1,
@@ -2043,7 +2727,8 @@ const equip_data = {
         "cn_name": "作战报告：AF",
         "tw_name": "作戰報告：AF*",
         "en_name": "Action Report: Operation AF",
-        "equip_limit": 940
+        "equip_limit": 940,
+        "cd": []
     },
     "500": {
         "nationality": 1,
@@ -2057,7 +2742,8 @@ const equip_data = {
         "cn_name": "小海狸中队队徽",
         "tw_name": "小海狸中隊隊徽",
         "en_name": "Beaver Squad Tag",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "620": {
         "nationality": 1,
@@ -2084,7 +2770,8 @@ const equip_data = {
         "cn_name": "超重弹",
         "tw_name": "超重彈",
         "en_name": "Super Heavy Shell",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "1540": {
         "nationality": 1,
@@ -2101,7 +2788,8 @@ const equip_data = {
         "cn_name": "SG雷达",
         "tw_name": "SG雷達",
         "en_name": "SG Radar",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "1520": {
         "nationality": 1,
@@ -2118,7 +2806,8 @@ const equip_data = {
         "cn_name": "SG雷达",
         "tw_name": "SG雷達",
         "en_name": "SG Radar",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "1500": {
         "nationality": 1,
@@ -2135,7 +2824,8 @@ const equip_data = {
         "cn_name": "SG雷达",
         "tw_name": "SG雷達",
         "en_name": "SG Radar",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "15500": {
         "nationality": 1,
@@ -2160,7 +2850,8 @@ const equip_data = {
         "cn_name": "PBY-5A卡特琳娜水上机",
         "tw_name": "PBY-5A卡特琳娜水上機",
         "en_name": "PBY-5A Catalina",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "660": {
         "nationality": 1,
@@ -2187,7 +2878,8 @@ const equip_data = {
         "cn_name": "100/150号航空燃油",
         "tw_name": "100/150號航空燃油",
         "en_name": "100/150 Aviation Fuel",
-        "equip_limit": 660
+        "equip_limit": 660,
+        "cd": []
     },
     "1640": {
         "nationality": 0,
@@ -2204,7 +2896,8 @@ const equip_data = {
         "cn_name": "电动扬弹机",
         "tw_name": "電動揚彈機",
         "en_name": "Rammer",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "1620": {
         "nationality": 0,
@@ -2221,7 +2914,8 @@ const equip_data = {
         "cn_name": "电动扬弹机",
         "tw_name": "電動揚彈機",
         "en_name": "Rammer",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "1600": {
         "nationality": 0,
@@ -2238,7 +2932,8 @@ const equip_data = {
         "cn_name": "电动扬弹机",
         "tw_name": "電動揚彈機",
         "en_name": "Rammer",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "1940": {
         "nationality": 0,
@@ -2252,7 +2947,8 @@ const equip_data = {
         "cn_name": "海军迷彩",
         "tw_name": "海軍迷彩",
         "en_name": "Naval Camouflage",
-        "equip_limit": 1900
+        "equip_limit": 1900,
+        "cd": []
     },
     "1920": {
         "nationality": 0,
@@ -2266,7 +2962,8 @@ const equip_data = {
         "cn_name": "海军迷彩",
         "tw_name": "海軍迷彩",
         "en_name": "Naval Camouflage",
-        "equip_limit": 1900
+        "equip_limit": 1900,
+        "cd": []
     },
     "1900": {
         "nationality": 0,
@@ -2280,7 +2977,8 @@ const equip_data = {
         "cn_name": "海军迷彩",
         "tw_name": "海軍迷彩",
         "en_name": "Naval Camouflage",
-        "equip_limit": 1900
+        "equip_limit": 1900,
+        "cd": []
     },
     "89180": {
         "nationality": 0,
@@ -2294,7 +2992,8 @@ const equip_data = {
         "cn_name": "闪耀之歌",
         "tw_name": "閃耀之歌*",
         "en_name": "Resplendent Astrum",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "1040": {
         "nationality": 0,
@@ -2324,7 +3023,8 @@ const equip_data = {
         "cn_name": "舰艇维修设备",
         "tw_name": "艦艇維修設備",
         "en_name": "Ship Maintenance Facility",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "1020": {
         "nationality": 0,
@@ -2354,7 +3054,8 @@ const equip_data = {
         "cn_name": "舰艇维修设备",
         "tw_name": "艦艇維修設備",
         "en_name": "Ship Maintenance Facility",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "1000": {
         "nationality": 0,
@@ -2384,7 +3085,18 @@ const equip_data = {
         "cn_name": "舰艇维修设备",
         "tw_name": "艦艇維修設備",
         "en_name": "Ship Maintenance Facility",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2000,
+            2000,
+            1800,
+            9999,
+            500,
+            6000,
+            48,
+            6000,
+            6000
+        ]
     },
     "2240": {
         "nationality": 0,
@@ -2401,7 +3113,8 @@ const equip_data = {
         "cn_name": "链式装弹机",
         "tw_name": "鍊式裝彈機",
         "en_name": "Autoloader",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "2220": {
         "nationality": 0,
@@ -2418,7 +3131,8 @@ const equip_data = {
         "cn_name": "链式装弹机",
         "tw_name": "鍊式裝彈機",
         "en_name": "Autoloader",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "2200": {
         "nationality": 0,
@@ -2435,7 +3149,8 @@ const equip_data = {
         "cn_name": "链式装弹机",
         "tw_name": "鍊式裝彈機",
         "en_name": "Autoloader",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "2140": {
         "nationality": 0,
@@ -2462,7 +3177,8 @@ const equip_data = {
         "cn_name": "航空副油箱",
         "tw_name": "航空副油箱",
         "en_name": "Aviation Oil Tank",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "2120": {
         "nationality": 0,
@@ -2489,7 +3205,8 @@ const equip_data = {
         "cn_name": "航空副油箱",
         "tw_name": "航空副油箱",
         "en_name": "Aviation Oil Tank",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "2100": {
         "nationality": 0,
@@ -2516,7 +3233,8 @@ const equip_data = {
         "cn_name": "航空副油箱",
         "tw_name": "航空副油箱",
         "en_name": "Aviation Oil Tank",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "89160": {
         "nationality": 0,
@@ -2530,7 +3248,8 @@ const equip_data = {
         "cn_name": "活力之歌",
         "tw_name": "活力之歌*",
         "en_name": "Sacred Lumière",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "2040": {
         "nationality": 0,
@@ -2544,7 +3263,8 @@ const equip_data = {
         "cn_name": "燃油滤清器",
         "tw_name": "燃油濾清器",
         "en_name": "Fuel Filter",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "2020": {
         "nationality": 0,
@@ -2558,7 +3278,8 @@ const equip_data = {
         "cn_name": "燃油滤清器",
         "tw_name": "燃油濾清器",
         "en_name": "Fuel Filter",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "2000": {
         "nationality": 0,
@@ -2572,7 +3293,8 @@ const equip_data = {
         "cn_name": "燃油滤清器",
         "tw_name": "燃油濾清器",
         "en_name": "Fuel Filter",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "89140": {
         "nationality": 0,
@@ -2586,7 +3308,8 @@ const equip_data = {
         "cn_name": "炽烈之歌",
         "tw_name": "熾烈之歌*",
         "en_name": "White-Hot Verheerender",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "2540": {
         "nationality": 0,
@@ -2600,7 +3323,8 @@ const equip_data = {
         "cn_name": "灭火器",
         "tw_name": "滅火器",
         "en_name": "Fire Suppressor",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "2520": {
         "nationality": 0,
@@ -2614,7 +3338,8 @@ const equip_data = {
         "cn_name": "灭火器",
         "tw_name": "滅火器",
         "en_name": "Fire Suppressor",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "2500": {
         "nationality": 0,
@@ -2628,7 +3353,8 @@ const equip_data = {
         "cn_name": "灭火器",
         "tw_name": "滅火器",
         "en_name": "Fire Suppressor",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "860": {
         "nationality": 0,
@@ -2642,7 +3368,8 @@ const equip_data = {
         "cn_name": "华盛顿海军条约",
         "tw_name": "華盛頓海軍條約",
         "en_name": "Washington Naval Treaty",
-        "equip_limit": 820
+        "equip_limit": 820,
+        "cd": []
     },
     "1740": {
         "nationality": 0,
@@ -2656,7 +3383,8 @@ const equip_data = {
         "cn_name": "液压舵机",
         "tw_name": "液壓舵機",
         "en_name": "Hydraulic Steering Gear",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "1720": {
         "nationality": 0,
@@ -2670,7 +3398,8 @@ const equip_data = {
         "cn_name": "液压舵机",
         "tw_name": "液壓舵機",
         "en_name": "Hydraulic Steering Gear",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "1700": {
         "nationality": 0,
@@ -2684,7 +3413,8 @@ const equip_data = {
         "cn_name": "液压舵机",
         "tw_name": "液壓舵機",
         "en_name": "Hydraulic Steering Gear",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "1440": {
         "nationality": 0,
@@ -2711,7 +3441,8 @@ const equip_data = {
         "cn_name": "液压弹射装置",
         "tw_name": "液壓彈射裝置",
         "en_name": "Steam Catapult",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "1420": {
         "nationality": 0,
@@ -2738,7 +3469,8 @@ const equip_data = {
         "cn_name": "液压弹射装置",
         "tw_name": "液壓彈射裝置",
         "en_name": "Steam Catapult",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "1400": {
         "nationality": 0,
@@ -2765,7 +3497,8 @@ const equip_data = {
         "cn_name": "液压弹射装置",
         "tw_name": "液壓彈射裝置",
         "en_name": "Steam Catapult",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "1840": {
         "nationality": 0,
@@ -2779,7 +3512,8 @@ const equip_data = {
         "cn_name": "改良锅炉",
         "tw_name": "改良鍋爐",
         "en_name": "Advanced Boiler",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "1820": {
         "nationality": 0,
@@ -2793,7 +3527,8 @@ const equip_data = {
         "cn_name": "改良锅炉",
         "tw_name": "改良鍋爐",
         "en_name": "Advanced Boiler",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "1800": {
         "nationality": 0,
@@ -2807,7 +3542,8 @@ const equip_data = {
         "cn_name": "改良锅炉",
         "tw_name": "改良鍋爐",
         "en_name": "Advanced Boiler",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "3040": {
         "nationality": 0,
@@ -2836,7 +3572,8 @@ const equip_data = {
         "cn_name": "改良声呐",
         "tw_name": "改良聲納",
         "en_name": "Advanced Sonar",
-        "equip_limit": 2900
+        "equip_limit": 2900,
+        "cd": []
     },
     "3020": {
         "nationality": 0,
@@ -2865,7 +3602,8 @@ const equip_data = {
         "cn_name": "改良声呐",
         "tw_name": "改良聲納",
         "en_name": "Advanced Sonar",
-        "equip_limit": 2900
+        "equip_limit": 2900,
+        "cd": []
     },
     "3000": {
         "nationality": 0,
@@ -2894,7 +3632,8 @@ const equip_data = {
         "cn_name": "改良声呐",
         "tw_name": "改良聲納",
         "en_name": "Advanced Sonar",
-        "equip_limit": 2900
+        "equip_limit": 2900,
+        "cd": []
     },
     "780": {
         "nationality": 0,
@@ -2908,7 +3647,8 @@ const equip_data = {
         "cn_name": "机密文件·极地海峡",
         "tw_name": "機密文件·極地海峽",
         "en_name": "Intel Report - Arctic Stronghold",
-        "equip_limit": 760
+        "equip_limit": 760,
+        "cd": []
     },
     "2440": {
         "nationality": 0,
@@ -2922,7 +3662,8 @@ const equip_data = {
         "cn_name": "维修工具",
         "tw_name": "維修工具",
         "en_name": "Repair Toolkit",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "2420": {
         "nationality": 0,
@@ -2936,7 +3677,8 @@ const equip_data = {
         "cn_name": "维修工具",
         "tw_name": "維修工具",
         "en_name": "Repair Toolkit",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "2400": {
         "nationality": 0,
@@ -2950,7 +3692,8 @@ const equip_data = {
         "cn_name": "维修工具",
         "tw_name": "維修工具",
         "en_name": "Repair Toolkit",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "2940": {
         "nationality": 0,
@@ -2979,7 +3722,8 @@ const equip_data = {
         "cn_name": "基础声呐",
         "tw_name": "基礎聲納",
         "en_name": "Basic Sonar",
-        "equip_limit": 2900
+        "equip_limit": 2900,
+        "cd": []
     },
     "2920": {
         "nationality": 0,
@@ -3008,7 +3752,8 @@ const equip_data = {
         "cn_name": "基础声呐",
         "tw_name": "基礎聲納",
         "en_name": "Basic Sonar",
-        "equip_limit": 2900
+        "equip_limit": 2900,
+        "cd": []
     },
     "2900": {
         "nationality": 0,
@@ -3037,7 +3782,8 @@ const equip_data = {
         "cn_name": "基础声呐",
         "tw_name": "基礎聲納",
         "en_name": "Basic Sonar",
-        "equip_limit": 2900
+        "equip_limit": 2900,
+        "cd": []
     },
     "3100": {
         "nationality": 0,
@@ -3066,7 +3812,8 @@ const equip_data = {
         "cn_name": "高压氧气瓶",
         "tw_name": "高壓氧氣瓶",
         "en_name": "Compressed Oxygen Cylinder",
-        "equip_limit": 3100
+        "equip_limit": 3100,
+        "cd": []
     },
     "760": {
         "nationality": 0,
@@ -3080,7 +3827,8 @@ const equip_data = {
         "cn_name": "侦察报告·纽约近海",
         "tw_name": "偵察報告·紐約近海",
         "en_name": "NY City Coast Recon Report",
-        "equip_limit": 760
+        "equip_limit": 760,
+        "cd": []
     },
     "820": {
         "nationality": 0,
@@ -3109,7 +3857,8 @@ const equip_data = {
         "cn_name": "开拓者奖章",
         "tw_name": "開拓者獎章",
         "en_name": "Frontier Medal",
-        "equip_limit": 820
+        "equip_limit": 820,
+        "cd": []
     },
     "1340": {
         "nationality": 0,
@@ -3127,7 +3876,8 @@ const equip_data = {
         "cn_name": "防鱼雷隔舱",
         "tw_name": "防魚雷隔艙",
         "en_name": "Anti-Torpedo Bulge",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "1320": {
         "nationality": 0,
@@ -3145,7 +3895,8 @@ const equip_data = {
         "cn_name": "防鱼雷隔舱",
         "tw_name": "防魚雷隔艙",
         "en_name": "Anti-Torpedo Bulge",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "1300": {
         "nationality": 0,
@@ -3163,7 +3914,8 @@ const equip_data = {
         "cn_name": "防鱼雷隔舱",
         "tw_name": "防魚雷隔艙",
         "en_name": "Anti-Torpedo Bulge",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "89220": {
         "nationality": 0,
@@ -3177,7 +3929,8 @@ const equip_data = {
         "cn_name": "星云舞裙",
         "tw_name": "星雲舞裙*",
         "en_name": "Celestial Body",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "2340": {
         "nationality": 0,
@@ -3194,7 +3947,8 @@ const equip_data = {
         "cn_name": "陀螺仪",
         "tw_name": "陀螺儀",
         "en_name": "Gyroscope",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "2320": {
         "nationality": 0,
@@ -3211,7 +3965,8 @@ const equip_data = {
         "cn_name": "陀螺仪",
         "tw_name": "陀螺儀",
         "en_name": "Gyroscope",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "2300": {
         "nationality": 0,
@@ -3228,7 +3983,8 @@ const equip_data = {
         "cn_name": "陀螺仪",
         "tw_name": "陀螺儀",
         "en_name": "Gyroscope",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "89200": {
         "nationality": 0,
@@ -3242,7 +3998,8 @@ const equip_data = {
         "cn_name": "引力舞鞋",
         "tw_name": "引力舞鞋*",
         "en_name": "Cosmic Kicks",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "49040": {
         "nationality": 4,
@@ -3258,7 +4015,21 @@ const equip_data = {
         "cn_name": "Ju-87C俯冲轰炸机",
         "tw_name": "Ju-87C俯衝轟炸機",
         "en_name": "Ju-87C Dive Bomber",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2040,
+            2010,
+            1980,
+            1950,
+            1920,
+            1890,
+            1860,
+            1830,
+            1800,
+            1770,
+            1740,
+            1740
+        ]
     },
     "49020": {
         "nationality": 4,
@@ -3274,7 +4045,16 @@ const equip_data = {
         "cn_name": "Ju-87C俯冲轰炸机",
         "tw_name": "Ju-87C俯衝轟炸機",
         "en_name": "Ju-87C Dive Bomber",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2080,
+            2050,
+            2020,
+            1990,
+            1960,
+            1930,
+            1900
+        ]
     },
     "49000": {
         "nationality": 4,
@@ -3290,7 +4070,13 @@ const equip_data = {
         "cn_name": "Ju-87C俯冲轰炸机",
         "tw_name": "Ju-87C俯衝轟炸機",
         "en_name": "Ju-87C Dive Bomber",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2130,
+            2100,
+            2070,
+            2040
+        ]
     },
     "49060": {
         "nationality": 4,
@@ -3306,7 +4092,17 @@ const equip_data = {
         "cn_name": "He-50b舰载轰炸机",
         "tw_name": "He-50b艦載轟炸機",
         "en_name": "He-50b",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1970,
+            1940,
+            1910,
+            1880,
+            1850,
+            1820,
+            1790,
+            1790
+        ]
     },
     "39340": {
         "nationality": 3,
@@ -3322,7 +4118,23 @@ const equip_data = {
         "cn_name": "试作舰载型天雷",
         "tw_name": "試作艦載型天雷*",
         "en_name": "Prototype Tenrai",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2164,
+            2128,
+            2092,
+            2056,
+            2020,
+            1984,
+            1948,
+            1912,
+            1876,
+            1840,
+            1804,
+            1804,
+            1804,
+            1804
+        ]
     },
     "39320": {
         "nationality": 3,
@@ -3355,7 +4167,23 @@ const equip_data = {
         "cn_name": "彗星二一型",
         "tw_name": "彗星二一型",
         "en_name": "Suisei Model 21",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2310,
+            2274,
+            2238,
+            2202,
+            2166,
+            2130,
+            2094,
+            2058,
+            2022,
+            1986,
+            1950,
+            1950,
+            1950,
+            1950
+        ]
     },
     "39160": {
         "nationality": 3,
@@ -3371,7 +4199,23 @@ const equip_data = {
         "cn_name": "彗星一二型甲",
         "tw_name": "彗星一二型甲",
         "en_name": "Suisei Model 12A",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1820,
+            1788,
+            1756,
+            1724,
+            1692,
+            1660,
+            1628,
+            1596,
+            1564,
+            1532,
+            1500,
+            1500,
+            1500,
+            1500
+        ]
     },
     "39140": {
         "nationality": 3,
@@ -3387,7 +4231,23 @@ const equip_data = {
         "cn_name": "彗星",
         "tw_name": "彗星",
         "en_name": "Suisei",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1890,
+            1858,
+            1826,
+            1794,
+            1762,
+            1730,
+            1698,
+            1666,
+            1634,
+            1602,
+            1570,
+            1570,
+            1570,
+            1570
+        ]
     },
     "39120": {
         "nationality": 3,
@@ -3403,7 +4263,20 @@ const equip_data = {
         "cn_name": "彗星",
         "tw_name": "彗星",
         "en_name": "Suisei",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1930,
+            1898,
+            1866,
+            1834,
+            1802,
+            1770,
+            1738,
+            1706,
+            1674,
+            1642,
+            1610
+        ]
     },
     "39100": {
         "nationality": 3,
@@ -3419,7 +4292,16 @@ const equip_data = {
         "cn_name": "彗星",
         "tw_name": "彗星",
         "en_name": "Suisei",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1970,
+            1938,
+            1906,
+            1874,
+            1842,
+            1810,
+            1778
+        ]
     },
     "39060": {
         "nationality": 3,
@@ -3435,7 +4317,21 @@ const equip_data = {
         "cn_name": "九九式舰爆改",
         "tw_name": "九九式艦爆改",
         "en_name": "Type 99 Dive Bomber Kai",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1870,
+            1841,
+            1812,
+            1783,
+            1754,
+            1725,
+            1696,
+            1667,
+            1638,
+            1609,
+            1580,
+            1580
+        ]
     },
     "39040": {
         "nationality": 3,
@@ -3451,7 +4347,21 @@ const equip_data = {
         "cn_name": "九九式舰爆",
         "tw_name": "九九式艦爆",
         "en_name": "Type 99 Dive Bomber",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1940,
+            1910,
+            1880,
+            1850,
+            1820,
+            1790,
+            1760,
+            1730,
+            1700,
+            1670,
+            1640,
+            1640
+        ]
     },
     "39020": {
         "nationality": 3,
@@ -3467,7 +4377,16 @@ const equip_data = {
         "cn_name": "九九式舰爆",
         "tw_name": "九九式艦爆",
         "en_name": "Type 99 Dive Bomber",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1970,
+            1940,
+            1910,
+            1880,
+            1850,
+            1820,
+            1790
+        ]
     },
     "39000": {
         "nationality": 3,
@@ -3483,7 +4402,13 @@ const equip_data = {
         "cn_name": "九九式舰爆",
         "tw_name": "九九式艦爆",
         "en_name": "Type 99 Dive Bomber",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2000,
+            1970,
+            1940,
+            1910
+        ]
     },
     "29140": {
         "nationality": 2,
@@ -3499,7 +4424,21 @@ const equip_data = {
         "cn_name": "海燕",
         "tw_name": "海燕",
         "en_name": "Fulmar",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1680,
+            1650,
+            1620,
+            1590,
+            1560,
+            1530,
+            1500,
+            1470,
+            1440,
+            1410,
+            1380,
+            1380
+        ]
     },
     "29120": {
         "nationality": 2,
@@ -3515,7 +4454,16 @@ const equip_data = {
         "cn_name": "海燕",
         "tw_name": "海燕",
         "en_name": "Fulmar",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1720,
+            1690,
+            1660,
+            1630,
+            1600,
+            1570,
+            1540
+        ]
     },
     "29100": {
         "nationality": 2,
@@ -3531,7 +4479,13 @@ const equip_data = {
         "cn_name": "海燕",
         "tw_name": "海燕",
         "en_name": "Fulmar",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1760,
+            1730,
+            1700,
+            1670
+        ]
     },
     "29200": {
         "nationality": 2,
@@ -3547,7 +4501,23 @@ const equip_data = {
         "cn_name": "萤火虫",
         "tw_name": "螢火蟲",
         "en_name": "Firefly",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2070,
+            2030,
+            1990,
+            1950,
+            1910,
+            1870,
+            1830,
+            1790,
+            1750,
+            1710,
+            1670,
+            1670,
+            1670,
+            1670
+        ]
     },
     "29300": {
         "nationality": 2,
@@ -3563,7 +4533,23 @@ const equip_data = {
         "cn_name": "梭鱼(831中队)",
         "tw_name": "梭魚(831中隊)",
         "en_name": "Barracuda (831 Squadron)",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1910,
+            1875,
+            1840,
+            1805,
+            1770,
+            1735,
+            1700,
+            1665,
+            1630,
+            1595,
+            1560,
+            1560,
+            1560,
+            1560
+        ]
     },
     "29040": {
         "nationality": 2,
@@ -3579,7 +4565,17 @@ const equip_data = {
         "cn_name": "贼鸥",
         "tw_name": "賊鷗",
         "en_name": "Blackburn Skua",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1950,
+            1920,
+            1890,
+            1860,
+            1830,
+            1800,
+            1770,
+            1770
+        ]
     },
     "29020": {
         "nationality": 2,
@@ -3595,7 +4591,13 @@ const equip_data = {
         "cn_name": "贼鸥",
         "tw_name": "賊鷗",
         "en_name": "Blackburn Skua",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1980,
+            1950,
+            1920,
+            1890
+        ]
     },
     "29000": {
         "nationality": 2,
@@ -3611,7 +4613,13 @@ const equip_data = {
         "cn_name": "贼鸥",
         "tw_name": "賊鷗",
         "en_name": "Blackburn Skua",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2010,
+            1980,
+            1950,
+            1920
+        ]
     },
     "19160": {
         "nationality": 1,
@@ -3627,7 +4635,23 @@ const equip_data = {
         "cn_name": "实验型XSB3C-1",
         "tw_name": "實驗型XSB3C-1",
         "en_name": "Experimental XSB3C-1",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2170,
+            2132,
+            2094,
+            2056,
+            2018,
+            1980,
+            1942,
+            1904,
+            1866,
+            1828,
+            1790,
+            1790,
+            1790,
+            1790
+        ]
     },
     "19060": {
         "nationality": 1,
@@ -3643,7 +4667,23 @@ const equip_data = {
         "cn_name": "SBD无畏(麦克拉斯基队)",
         "tw_name": "SBD無畏(麥克拉斯基隊)",
         "en_name": "SBD Dauntless (McClusky Division)",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2060,
+            2030,
+            2000,
+            1970,
+            1940,
+            1910,
+            1880,
+            1850,
+            1820,
+            1790,
+            1760,
+            1760,
+            1760,
+            1760
+        ]
     },
     "19040": {
         "nationality": 1,
@@ -3659,7 +4699,17 @@ const equip_data = {
         "cn_name": "SBD无畏",
         "tw_name": "SBD無畏",
         "en_name": "SBD Dauntless",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2071,
+            2043,
+            2014,
+            1986,
+            1957,
+            1929,
+            1900,
+            1900
+        ]
     },
     "19020": {
         "nationality": 1,
@@ -3675,7 +4725,13 @@ const equip_data = {
         "cn_name": "SBD无畏",
         "tw_name": "SBD無畏",
         "en_name": "SBD Dauntless",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2157,
+            2128,
+            2100,
+            2071
+        ]
     },
     "19000": {
         "nationality": 1,
@@ -3691,7 +4747,13 @@ const equip_data = {
         "cn_name": "SBD无畏",
         "tw_name": "SBD無畏",
         "en_name": "SBD Dauntless",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2195,
+            2166,
+            2138,
+            2109
+        ]
     },
     "19140": {
         "nationality": 1,
@@ -3707,7 +4769,21 @@ const equip_data = {
         "cn_name": "SB2C地狱俯冲者",
         "tw_name": "SB2C地獄俯衝者",
         "en_name": "SB2C Helldiver",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2071,
+            2043,
+            2014,
+            1986,
+            1957,
+            1929,
+            1900,
+            1872,
+            1843,
+            1815,
+            1786,
+            1786
+        ]
     },
     "19120": {
         "nationality": 1,
@@ -3723,7 +4799,16 @@ const equip_data = {
         "cn_name": "SB2C地狱俯冲者",
         "tw_name": "SB2C地獄俯衝者",
         "en_name": "SB2C Helldiver",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2109,
+            2081,
+            2052,
+            2024,
+            1995,
+            1967,
+            1938
+        ]
     },
     "19100": {
         "nationality": 1,
@@ -3739,7 +4824,13 @@ const equip_data = {
         "cn_name": "SB2C地狱俯冲者",
         "tw_name": "SB2C地獄俯衝者",
         "en_name": "SB2C Helldiver",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2147,
+            2119,
+            2090,
+            2062
+        ]
     },
     "19240": {
         "nationality": 1,
@@ -3755,7 +4846,23 @@ const equip_data = {
         "cn_name": "BTD-1毁灭者",
         "tw_name": "BTD-1毀滅者",
         "en_name": "BTD-1 Destroyer",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2140,
+            2102,
+            2064,
+            2026,
+            1988,
+            1950,
+            1912,
+            1874,
+            1836,
+            1798,
+            1760,
+            1760,
+            1760,
+            1760
+        ]
     },
     "19220": {
         "nationality": 1,
@@ -3771,7 +4878,20 @@ const equip_data = {
         "cn_name": "BTD-1毁灭者",
         "tw_name": "BTD-1毀滅者",
         "en_name": "BTD-1 Destroyer",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2188,
+            2150,
+            2112,
+            2074,
+            2036,
+            1998,
+            1960,
+            1922,
+            1884,
+            1846,
+            1808
+        ]
     },
     "19200": {
         "nationality": 1,
@@ -3787,7 +4907,16 @@ const equip_data = {
         "cn_name": "BTD-1毁灭者",
         "tw_name": "BTD-1毀滅者",
         "en_name": "BTD-1 Destroyer",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2315,
+            2297,
+            2279,
+            2261,
+            2243,
+            2225,
+            2207
+        ]
     },
     "90840": {
         "nationality": 8,
@@ -3803,7 +4932,17 @@ const equip_data = {
         "cn_name": "PL.7舰载鱼雷机",
         "tw_name": "PL.7艦載魚雷機",
         "en_name": "Pierre Levasseur PL.7 Torpedo Bomber",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2390,
+            2360,
+            2330,
+            2300,
+            2270,
+            2240,
+            2210,
+            2210
+        ]
     },
     "48040": {
         "nationality": 4,
@@ -3819,7 +4958,23 @@ const equip_data = {
         "cn_name": "Ju-87 D-4",
         "tw_name": "Ju-87 D-4",
         "en_name": "Ju-87 D-4",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2040,
+            2005,
+            1970,
+            1935,
+            1900,
+            1865,
+            1830,
+            1795,
+            1760,
+            1725,
+            1680,
+            1680,
+            1680,
+            1680
+        ]
     },
     "48020": {
         "nationality": 4,
@@ -3835,7 +4990,21 @@ const equip_data = {
         "cn_name": "Fi-167舰载鱼雷机",
         "tw_name": "Fi-167艦載魚雷機",
         "en_name": "Fi 167",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2020,
+            1990,
+            1960,
+            1930,
+            1900,
+            1870,
+            1840,
+            1810,
+            1780,
+            1750,
+            1720,
+            1720
+        ]
     },
     "48000": {
         "nationality": 4,
@@ -3851,7 +5020,17 @@ const equip_data = {
         "cn_name": "Ar-195舰载鱼雷机",
         "tw_name": "Ar-195艦載魚雷機",
         "en_name": "Ar 195",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2362,
+            2325,
+            2288,
+            2251,
+            2214,
+            2177,
+            2140,
+            2140
+        ]
     },
     "38300": {
         "nationality": 3,
@@ -3867,7 +5046,23 @@ const equip_data = {
         "cn_name": "试作型彩云(舰攻型)",
         "tw_name": "試作型彩雲(艦攻型)*",
         "en_name": "Prototype Saiun Kai",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1894,
+            1864,
+            1834,
+            1804,
+            1774,
+            1744,
+            1714,
+            1684,
+            1654,
+            1624,
+            1594,
+            1594,
+            1594,
+            1594
+        ]
     },
     "38240": {
         "nationality": 3,
@@ -3883,7 +5078,23 @@ const equip_data = {
         "cn_name": "流星",
         "tw_name": "流星",
         "en_name": "Aichi B7A Ryusei",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2070,
+            2035,
+            2000,
+            1965,
+            1930,
+            1895,
+            1860,
+            1825,
+            1790,
+            1755,
+            1710,
+            1710,
+            1710,
+            1710
+        ]
     },
     "38220": {
         "nationality": 3,
@@ -3899,7 +5110,20 @@ const equip_data = {
         "cn_name": "流星",
         "tw_name": "流星",
         "en_name": "Aichi B7A Ryusei",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2120,
+            2085,
+            2050,
+            2015,
+            1980,
+            1945,
+            1910,
+            1875,
+            1840,
+            1805,
+            1770
+        ]
     },
     "38200": {
         "nationality": 3,
@@ -3915,7 +5139,16 @@ const equip_data = {
         "cn_name": "流星",
         "tw_name": "流星",
         "en_name": "Aichi B7A Ryusei",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2170,
+            2135,
+            2100,
+            2065,
+            2030,
+            1995,
+            1960
+        ]
     },
     "38160": {
         "nationality": 3,
@@ -3931,7 +5164,21 @@ const equip_data = {
         "cn_name": "天山改",
         "tw_name": "天山改",
         "en_name": "Tenzan Kai",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1999,
+            1971,
+            1942,
+            1914,
+            1885,
+            1857,
+            1828,
+            1800,
+            1771,
+            1743,
+            1714,
+            1714
+        ]
     },
     "38140": {
         "nationality": 3,
@@ -3947,7 +5194,21 @@ const equip_data = {
         "cn_name": "天山",
         "tw_name": "天山",
         "en_name": "Tenzan",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2033,
+            2005,
+            1976,
+            1948,
+            1919,
+            1891,
+            1862,
+            1834,
+            1805,
+            1777,
+            1748,
+            1748
+        ]
     },
     "38120": {
         "nationality": 3,
@@ -3963,7 +5224,16 @@ const equip_data = {
         "cn_name": "天山",
         "tw_name": "天山",
         "en_name": "Tenzan",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2128,
+            2100,
+            2071,
+            2043,
+            2014,
+            1986,
+            1957
+        ]
     },
     "38100": {
         "nationality": 3,
@@ -3979,7 +5249,13 @@ const equip_data = {
         "cn_name": "天山",
         "tw_name": "天山",
         "en_name": "Tenzan",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2166,
+            2138,
+            2109,
+            2081
+        ]
     },
     "38060": {
         "nationality": 3,
@@ -3995,7 +5271,17 @@ const equip_data = {
         "cn_name": "九七式舰攻改",
         "tw_name": "九七式艦攻改",
         "en_name": "Type 97 Torpedo Bomber Kai",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2033,
+            2005,
+            1976,
+            1948,
+            1919,
+            1891,
+            1862,
+            1862
+        ]
     },
     "38040": {
         "nationality": 3,
@@ -4011,7 +5297,17 @@ const equip_data = {
         "cn_name": "九七式舰攻",
         "tw_name": "九七式艦攻",
         "en_name": "Type 97 Torpedo Bomber",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2176,
+            2147,
+            2119,
+            2090,
+            2062,
+            2033,
+            2005,
+            2005
+        ]
     },
     "38020": {
         "nationality": 3,
@@ -4027,7 +5323,13 @@ const equip_data = {
         "cn_name": "九七式舰攻",
         "tw_name": "九七式艦攻",
         "en_name": "Type 97 Torpedo Bomber",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2204,
+            2176,
+            2147,
+            2119
+        ]
     },
     "38000": {
         "nationality": 3,
@@ -4043,7 +5345,13 @@ const equip_data = {
         "cn_name": "九七式舰攻",
         "tw_name": "九七式艦攻",
         "en_name": "Type 97 Torpedo Bomber",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2242,
+            2214,
+            2185,
+            2157
+        ]
     },
     "28400": {
         "nationality": 2,
@@ -4059,7 +5367,23 @@ const equip_data = {
         "cn_name": "飞龙",
         "tw_name": "飛龍",
         "en_name": "Wyvern",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2300,
+            2245,
+            2190,
+            2135,
+            2080,
+            2025,
+            1970,
+            1915,
+            1860,
+            1805,
+            1750,
+            1750,
+            1750,
+            1750
+        ]
     },
     "28340": {
         "nationality": 2,
@@ -4075,7 +5399,21 @@ const equip_data = {
         "cn_name": "青花鱼",
         "tw_name": "青花魚",
         "en_name": "Albacore",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1850,
+            1815,
+            1780,
+            1745,
+            1710,
+            1675,
+            1640,
+            1605,
+            1570,
+            1535,
+            1500,
+            1500
+        ]
     },
     "28320": {
         "nationality": 2,
@@ -4091,7 +5429,16 @@ const equip_data = {
         "cn_name": "青花鱼",
         "tw_name": "青花魚",
         "en_name": "Albacore",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1900,
+            1865,
+            1830,
+            1795,
+            1760,
+            1725,
+            1690
+        ]
     },
     "28300": {
         "nationality": 2,
@@ -4107,7 +5454,13 @@ const equip_data = {
         "cn_name": "青花鱼",
         "tw_name": "青花魚",
         "en_name": "Albacore",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1900,
+            1870,
+            1840,
+            1810
+        ]
     },
     "28200": {
         "nationality": 2,
@@ -4123,7 +5476,23 @@ const equip_data = {
         "cn_name": "火把",
         "tw_name": "火把",
         "en_name": "Blackburn Firebrand",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2300,
+            2245,
+            2190,
+            2135,
+            2080,
+            2025,
+            1970,
+            1915,
+            1860,
+            1805,
+            1750,
+            1750,
+            1750,
+            1750
+        ]
     },
     "28220": {
         "nationality": 2,
@@ -4139,7 +5508,23 @@ const equip_data = {
         "cn_name": "火冠",
         "tw_name": "火冠",
         "en_name": "Firecrest",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2130,
+            2075,
+            2020,
+            1965,
+            1910,
+            1855,
+            1800,
+            1745,
+            1690,
+            1635,
+            1580,
+            1580,
+            1580,
+            1580
+        ]
     },
     "28140": {
         "nationality": 2,
@@ -4155,7 +5540,23 @@ const equip_data = {
         "cn_name": "梭鱼",
         "tw_name": "梭魚",
         "en_name": "Barracuda",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1900,
+            1865,
+            1830,
+            1795,
+            1760,
+            1725,
+            1690,
+            1655,
+            1620,
+            1585,
+            1550,
+            1550,
+            1550,
+            1550
+        ]
     },
     "28120": {
         "nationality": 2,
@@ -4171,7 +5572,20 @@ const equip_data = {
         "cn_name": "梭鱼",
         "tw_name": "梭魚",
         "en_name": "Barracuda",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1950,
+            1915,
+            1880,
+            1845,
+            1810,
+            1775,
+            1740,
+            1705,
+            1670,
+            1635,
+            1600
+        ]
     },
     "28100": {
         "nationality": 2,
@@ -4187,7 +5601,16 @@ const equip_data = {
         "cn_name": "梭鱼",
         "tw_name": "梭魚",
         "en_name": "Barracuda",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2000,
+            1965,
+            1930,
+            1895,
+            1860,
+            1825,
+            1790
+        ]
     },
     "28060": {
         "nationality": 2,
@@ -4203,7 +5626,23 @@ const equip_data = {
         "cn_name": "剑鱼(818中队)",
         "tw_name": "劍魚(818中隊)",
         "en_name": "Swordfish (818 Squad)",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2000,
+            1965,
+            1930,
+            1895,
+            1860,
+            1825,
+            1790,
+            1755,
+            1720,
+            1685,
+            1650,
+            1650,
+            1650,
+            1650
+        ]
     },
     "28040": {
         "nationality": 2,
@@ -4219,7 +5658,21 @@ const equip_data = {
         "cn_name": "剑鱼",
         "tw_name": "劍魚",
         "en_name": "Swordfish",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2100,
+            2070,
+            2040,
+            2010,
+            1980,
+            1950,
+            1920,
+            1890,
+            1860,
+            1830,
+            1800,
+            1800
+        ]
     },
     "28020": {
         "nationality": 2,
@@ -4235,7 +5688,16 @@ const equip_data = {
         "cn_name": "剑鱼",
         "tw_name": "劍魚",
         "en_name": "Swordfish",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2150,
+            2120,
+            2090,
+            2060,
+            2030,
+            2000,
+            1970
+        ]
     },
     "28000": {
         "nationality": 2,
@@ -4251,7 +5713,13 @@ const equip_data = {
         "cn_name": "剑鱼",
         "tw_name": "劍魚",
         "en_name": "Swordfish",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2200,
+            2170,
+            2140,
+            2110
+        ]
     },
     "18220": {
         "nationality": 1,
@@ -4267,7 +5735,23 @@ const equip_data = {
         "cn_name": "XTB2D-1天空海盗",
         "tw_name": "XTB2D-1天空海盜",
         "en_name": "XTB2D-1 Skypirate",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2130,
+            2100,
+            2070,
+            2040,
+            2010,
+            1980,
+            1950,
+            1920,
+            1890,
+            1860,
+            1830,
+            1830,
+            1830,
+            1830
+        ]
     },
     "18180": {
         "nationality": 1,
@@ -4283,7 +5767,23 @@ const equip_data = {
         "cn_name": "TBM复仇者(VT-18中队)",
         "tw_name": "TBM復仇者(VT-18中隊)",
         "en_name": "TBM Avenger (VT-18 Squadron)",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2110,
+            2080,
+            2050,
+            2020,
+            1990,
+            1960,
+            1930,
+            1900,
+            1870,
+            1840,
+            1810,
+            1810,
+            1810,
+            1810
+        ]
     },
     "18140": {
         "nationality": 1,
@@ -4299,7 +5799,21 @@ const equip_data = {
         "cn_name": "TBF复仇者",
         "tw_name": "TBF復仇者",
         "en_name": "TBF Avenger",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2490,
+            2460,
+            2430,
+            2400,
+            2370,
+            2340,
+            2310,
+            2280,
+            2250,
+            2220,
+            2190,
+            2190
+        ]
     },
     "18120": {
         "nationality": 1,
@@ -4315,7 +5829,16 @@ const equip_data = {
         "cn_name": "TBF复仇者",
         "tw_name": "TBF復仇者",
         "en_name": "TBF Avenger",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2520,
+            2490,
+            2460,
+            2430,
+            2400,
+            2370,
+            2340
+        ]
     },
     "18100": {
         "nationality": 1,
@@ -4331,7 +5854,13 @@ const equip_data = {
         "cn_name": "TBF复仇者",
         "tw_name": "TBF復仇者",
         "en_name": "TBF Avenger",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2560,
+            2530,
+            2500,
+            2470
+        ]
     },
     "18060": {
         "nationality": 1,
@@ -4347,7 +5876,23 @@ const equip_data = {
         "cn_name": "TBD蹂躏者(VT-8中队)",
         "tw_name": "TBD蹂躪者(VT-8中隊)",
         "en_name": "TBD Devastator (VT-8 Squadron)",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2110,
+            2080,
+            2050,
+            2020,
+            1990,
+            1960,
+            1930,
+            1900,
+            1870,
+            1840,
+            1810,
+            1810,
+            1810,
+            1810
+        ]
     },
     "18040": {
         "nationality": 1,
@@ -4363,7 +5908,17 @@ const equip_data = {
         "cn_name": "TBD蹂躏者",
         "tw_name": "TBD蹂躪者",
         "en_name": "TBD Devastator",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2300,
+            2270,
+            2240,
+            2210,
+            2180,
+            2150,
+            2120,
+            2120
+        ]
     },
     "18020": {
         "nationality": 1,
@@ -4379,7 +5934,13 @@ const equip_data = {
         "cn_name": "TBD蹂躏者",
         "tw_name": "TBD蹂躪者",
         "en_name": "TBD Devastator",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2350,
+            2320,
+            2290,
+            2260
+        ]
     },
     "18000": {
         "nationality": 1,
@@ -4395,7 +5956,13 @@ const equip_data = {
         "cn_name": "TBD蹂躏者",
         "tw_name": "TBD蹂躪者",
         "en_name": "TBD Devastator",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2400,
+            2370,
+            2340,
+            2310
+        ]
     },
     "90820": {
         "nationality": 8,
@@ -4411,7 +5978,17 @@ const equip_data = {
         "cn_name": "GL.2舰载战斗机",
         "tw_name": "GL.2艦載戰鬥機",
         "en_name": "Gourdou-Leseurre GL.2 Fighter",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1852,
+            1830,
+            1808,
+            1786,
+            1764,
+            1742,
+            1720,
+            1720
+        ]
     },
     "95840": {
         "nationality": 6,
@@ -4427,7 +6004,21 @@ const equip_data = {
         "cn_name": "Re.2001公羊",
         "tw_name": "Re.2001公羊*",
         "en_name": "Re.2001 Ariete Fighter",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1880,
+            1857,
+            1834,
+            1811,
+            1788,
+            1765,
+            1742,
+            1719,
+            1696,
+            1673,
+            1650,
+            1650
+        ]
     },
     "95820": {
         "nationality": 6,
@@ -4443,7 +6034,16 @@ const equip_data = {
         "cn_name": "Re.2001公羊",
         "tw_name": "Re.2001公羊*",
         "en_name": "Re.2001 Ariete Fighter",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1922,
+            1899,
+            1876,
+            1853,
+            1830,
+            1807,
+            1784
+        ]
     },
     "95800": {
         "nationality": 6,
@@ -4459,7 +6059,13 @@ const equip_data = {
         "cn_name": "Re.2001公羊",
         "tw_name": "Re.2001公羊*",
         "en_name": "Re.2001 Ariete Fighter",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1954,
+            1931,
+            1908,
+            1885
+        ]
     },
     "95760": {
         "nationality": 6,
@@ -4475,7 +6081,21 @@ const equip_data = {
         "cn_name": "G.50箭式战斗机",
         "tw_name": "G.50箭式戰鬥機*",
         "en_name": "G.50 Freccia Fighter",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1760,
+            1738,
+            1716,
+            1694,
+            1672,
+            1650,
+            1628,
+            1606,
+            1584,
+            1562,
+            1540,
+            1540
+        ]
     },
     "95740": {
         "nationality": 6,
@@ -4491,7 +6111,16 @@ const equip_data = {
         "cn_name": "G.50箭式战斗机",
         "tw_name": "G.50箭式戰鬥機*",
         "en_name": "G.50 Freccia Fighter",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1778,
+            1756,
+            1734,
+            1712,
+            1690,
+            1668,
+            1646
+        ]
     },
     "95720": {
         "nationality": 6,
@@ -4507,7 +6136,13 @@ const equip_data = {
         "cn_name": "G.50箭式战斗机",
         "tw_name": "G.50箭式戰鬥機*",
         "en_name": "G.50 Freccia Fighter",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1814,
+            1792,
+            1770,
+            1748
+        ]
     },
     "47080": {
         "nationality": 4,
@@ -4523,7 +6158,21 @@ const equip_data = {
         "cn_name": "试作型舰载FW-190 A-5",
         "tw_name": "試作型艦載FW-190 A-5",
         "en_name": "Prototype Fw 190 A-5 (Carrier-based)",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2020,
+            1989,
+            1958,
+            1927,
+            1896,
+            1865,
+            1834,
+            1803,
+            1772,
+            1741,
+            1710,
+            1710
+        ]
     },
     "47160": {
         "nationality": 4,
@@ -4539,7 +6188,23 @@ const equip_data = {
         "cn_name": "试作舰载型BF-109G",
         "tw_name": "試作艦載型BF-109G*",
         "en_name": "Prototype BF-109G",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1841,
+            1816,
+            1791,
+            1766,
+            1741,
+            1716,
+            1691,
+            1666,
+            1641,
+            1616,
+            1591,
+            1591,
+            1591,
+            1591
+        ]
     },
     "47140": {
         "nationality": 4,
@@ -4555,7 +6220,23 @@ const equip_data = {
         "cn_name": "Me-155A舰载战斗机",
         "tw_name": "Me-155A艦載戰鬥機",
         "en_name": "Messerschmitt Me-155A",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1640,
+            1615,
+            1590,
+            1565,
+            1540,
+            1515,
+            1490,
+            1465,
+            1440,
+            1415,
+            1390,
+            1390,
+            1390,
+            1390
+        ]
     },
     "47120": {
         "nationality": 4,
@@ -4571,7 +6252,20 @@ const equip_data = {
         "cn_name": "Me-155A舰载战斗机",
         "tw_name": "Me-155A艦載戰鬥機",
         "en_name": "Messerschmitt Me-155A",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1680,
+            1655,
+            1630,
+            1605,
+            1580,
+            1555,
+            1530,
+            1505,
+            1480,
+            1455,
+            1430
+        ]
     },
     "47100": {
         "nationality": 4,
@@ -4587,7 +6281,16 @@ const equip_data = {
         "cn_name": "Me-155A舰载战斗机",
         "tw_name": "Me-155A艦載戰鬥機",
         "en_name": "Messerschmitt Me-155A",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1720,
+            1695,
+            1670,
+            1645,
+            1620,
+            1595,
+            1570
+        ]
     },
     "47040": {
         "nationality": 4,
@@ -4603,7 +6306,21 @@ const equip_data = {
         "cn_name": "BF-109T舰载战斗机",
         "tw_name": "BF-109T艦載戰鬥機",
         "en_name": "BF-109T Fighter",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1720,
+            1695,
+            1670,
+            1645,
+            1620,
+            1595,
+            1570,
+            1545,
+            1520,
+            1495,
+            1470,
+            1470
+        ]
     },
     "47020": {
         "nationality": 4,
@@ -4619,7 +6336,16 @@ const equip_data = {
         "cn_name": "BF-109T舰载战斗机",
         "tw_name": "BF-109T艦載戰鬥機",
         "en_name": "BF-109T Fighter",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1760,
+            1733,
+            1706,
+            1679,
+            1652,
+            1625,
+            1598
+        ]
     },
     "47000": {
         "nationality": 4,
@@ -4635,7 +6361,13 @@ const equip_data = {
         "cn_name": "BF-109T舰载战斗机",
         "tw_name": "BF-109T艦載戰鬥機",
         "en_name": "BF-109T Fighter",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1800,
+            1773,
+            1746,
+            1719
+        ]
     },
     "47060": {
         "nationality": 4,
@@ -4651,7 +6383,17 @@ const equip_data = {
         "cn_name": "Ar-197舰载战斗机",
         "tw_name": "Ar-197艦載戰鬥機",
         "en_name": "Ar 197",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2208,
+            2142,
+            2076,
+            2010,
+            1944,
+            1878,
+            1812,
+            1812
+        ]
     },
     "37240": {
         "nationality": 3,
@@ -4667,7 +6409,23 @@ const equip_data = {
         "cn_name": "零战五二型",
         "tw_name": "零戰五二型",
         "en_name": "Type 0 Fighter Model 52",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1652,
+            1630,
+            1608,
+            1586,
+            1564,
+            1542,
+            1520,
+            1498,
+            1476,
+            1454,
+            1432,
+            1432,
+            1432,
+            1432
+        ]
     },
     "37220": {
         "nationality": 3,
@@ -4683,7 +6441,20 @@ const equip_data = {
         "cn_name": "零战五二型",
         "tw_name": "零戰五二型",
         "en_name": "Type 0 Fighter Model 52",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1688,
+            1666,
+            1644,
+            1622,
+            1600,
+            1578,
+            1556,
+            1534,
+            1512,
+            1490,
+            1468
+        ]
     },
     "37200": {
         "nationality": 3,
@@ -4699,7 +6470,16 @@ const equip_data = {
         "cn_name": "零战五二型",
         "tw_name": "零戰五二型",
         "en_name": "Type 0 Fighter Model 52",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1724,
+            1702,
+            1680,
+            1658,
+            1636,
+            1614,
+            1592
+        ]
     },
     "37140": {
         "nationality": 3,
@@ -4715,7 +6495,21 @@ const equip_data = {
         "cn_name": "零战二一型",
         "tw_name": "零戰二一型",
         "en_name": "Type 0 Fighter Model 21",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1760,
+            1738,
+            1716,
+            1694,
+            1672,
+            1650,
+            1628,
+            1606,
+            1584,
+            1562,
+            1540,
+            1540
+        ]
     },
     "37120": {
         "nationality": 3,
@@ -4731,7 +6525,16 @@ const equip_data = {
         "cn_name": "零战二一型",
         "tw_name": "零戰二一型",
         "en_name": "Type 0 Fighter Model 21",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1778,
+            1756,
+            1734,
+            1712,
+            1690,
+            1668,
+            1646
+        ]
     },
     "37100": {
         "nationality": 3,
@@ -4747,7 +6550,13 @@ const equip_data = {
         "cn_name": "零战二一型",
         "tw_name": "零戰二一型",
         "en_name": "Type 0 Fighter Model 21",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1814,
+            1792,
+            1770,
+            1748
+        ]
     },
     "37160": {
         "nationality": 3,
@@ -4763,7 +6572,21 @@ const equip_data = {
         "cn_name": "零战三二型",
         "tw_name": "零戰三二型",
         "en_name": "Type 0 Fighter Model 32",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1724,
+            1702,
+            1680,
+            1658,
+            1636,
+            1614,
+            1592,
+            1570,
+            1548,
+            1526,
+            1504,
+            1504
+        ]
     },
     "37400": {
         "nationality": 3,
@@ -4779,7 +6602,23 @@ const equip_data = {
         "cn_name": "紫电改二",
         "tw_name": "紫電改二",
         "en_name": "Kawanishi N1K3-A Shiden Kai 2",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1900,
+            1871,
+            1842,
+            1813,
+            1784,
+            1755,
+            1726,
+            1697,
+            1668,
+            1639,
+            1610,
+            1610,
+            1610,
+            1610
+        ]
     },
     "37340": {
         "nationality": 3,
@@ -4795,7 +6634,23 @@ const equip_data = {
         "cn_name": "烈风",
         "tw_name": "烈風",
         "en_name": "A7M Reppuu",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1860,
+            1831,
+            1802,
+            1773,
+            1744,
+            1715,
+            1686,
+            1657,
+            1628,
+            1599,
+            1570,
+            1570,
+            1570,
+            1570
+        ]
     },
     "37320": {
         "nationality": 3,
@@ -4811,7 +6666,20 @@ const equip_data = {
         "cn_name": "烈风",
         "tw_name": "烈風",
         "en_name": "A7M Reppuu",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1898,
+            1870,
+            1842,
+            1814,
+            1786,
+            1758,
+            1730,
+            1702,
+            1674,
+            1646,
+            1618
+        ]
     },
     "37300": {
         "nationality": 3,
@@ -4827,7 +6695,16 @@ const equip_data = {
         "cn_name": "烈风",
         "tw_name": "烈風",
         "en_name": "A7M Reppuu",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1937,
+            1910,
+            1883,
+            1856,
+            1829,
+            1802,
+            1775
+        ]
     },
     "37040": {
         "nationality": 3,
@@ -4843,7 +6720,17 @@ const equip_data = {
         "cn_name": "九六式舰战",
         "tw_name": "九六式艦戰",
         "en_name": "A5M Claude",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1750,
+            1728,
+            1706,
+            1684,
+            1662,
+            1640,
+            1618,
+            1618
+        ]
     },
     "37020": {
         "nationality": 3,
@@ -4859,7 +6746,13 @@ const equip_data = {
         "cn_name": "九六式舰战",
         "tw_name": "九六式艦戰",
         "en_name": "A5M Claude",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1777,
+            1725,
+            1673,
+            1621
+        ]
     },
     "37000": {
         "nationality": 3,
@@ -4875,7 +6768,13 @@ const equip_data = {
         "cn_name": "九六式舰战",
         "tw_name": "九六式艦戰",
         "en_name": "A5M Claude",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1804,
+            1782,
+            1760,
+            1738
+        ]
     },
     "27320": {
         "nationality": 2,
@@ -4891,7 +6790,23 @@ const equip_data = {
         "cn_name": "海大黄蜂",
         "tw_name": "海大黃蜂",
         "en_name": "Sea Hornet",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1981,
+            1943,
+            1905,
+            1867,
+            1829,
+            1791,
+            1753,
+            1715,
+            1677,
+            1639,
+            1596,
+            1596,
+            1596,
+            1596
+        ]
     },
     "27300": {
         "nationality": 2,
@@ -4907,7 +6822,23 @@ const equip_data = {
         "cn_name": "海怒",
         "tw_name": "海怒",
         "en_name": "Sea Fury",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1981,
+            1943,
+            1905,
+            1867,
+            1829,
+            1791,
+            1753,
+            1715,
+            1677,
+            1639,
+            1596,
+            1596,
+            1596,
+            1596
+        ]
     },
     "27140": {
         "nationality": 2,
@@ -4923,7 +6854,23 @@ const equip_data = {
         "cn_name": "海毒牙",
         "tw_name": "海毒牙",
         "en_name": "Seafang",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1874,
+            1846,
+            1818,
+            1790,
+            1762,
+            1734,
+            1706,
+            1678,
+            1650,
+            1622,
+            1594,
+            1594,
+            1594,
+            1594
+        ]
     },
     "27120": {
         "nationality": 2,
@@ -4939,7 +6886,20 @@ const equip_data = {
         "cn_name": "海毒牙",
         "tw_name": "海毒牙",
         "en_name": "Seafang",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1911,
+            1884,
+            1857,
+            1830,
+            1803,
+            1776,
+            1749,
+            1722,
+            1695,
+            1668,
+            1641
+        ]
     },
     "27100": {
         "nationality": 2,
@@ -4955,7 +6915,16 @@ const equip_data = {
         "cn_name": "海毒牙",
         "tw_name": "海毒牙",
         "en_name": "Seafang",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1949,
+            1921,
+            1893,
+            1865,
+            1837,
+            1809,
+            1781
+        ]
     },
     "27060": {
         "nationality": 2,
@@ -4971,7 +6940,23 @@ const equip_data = {
         "cn_name": "海喷火FR.47",
         "tw_name": "海噴火FR.47",
         "en_name": "Seafire FR.47",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1981,
+            1943,
+            1905,
+            1867,
+            1829,
+            1791,
+            1753,
+            1715,
+            1677,
+            1639,
+            1596,
+            1596,
+            1596,
+            1596
+        ]
     },
     "27040": {
         "nationality": 2,
@@ -4987,7 +6972,21 @@ const equip_data = {
         "cn_name": "海喷火",
         "tw_name": "海噴火",
         "en_name": "Spitfire",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1880,
+            1857,
+            1834,
+            1811,
+            1788,
+            1765,
+            1742,
+            1719,
+            1696,
+            1673,
+            1650,
+            1650
+        ]
     },
     "27020": {
         "nationality": 2,
@@ -5003,7 +7002,16 @@ const equip_data = {
         "cn_name": "海喷火",
         "tw_name": "海噴火",
         "en_name": "Spitfire",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1922,
+            1899,
+            1876,
+            1853,
+            1830,
+            1807,
+            1784
+        ]
     },
     "27000": {
         "nationality": 2,
@@ -5019,7 +7027,13 @@ const equip_data = {
         "cn_name": "海喷火",
         "tw_name": "海噴火",
         "en_name": "Spitfire",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1954,
+            1931,
+            1908,
+            1885
+        ]
     },
     "27260": {
         "nationality": 2,
@@ -5035,7 +7049,17 @@ const equip_data = {
         "cn_name": "海飓风",
         "tw_name": "海颶風",
         "en_name": "Sea Hurricane",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1718,
+            1695,
+            1672,
+            1649,
+            1626,
+            1603,
+            1580,
+            1580
+        ]
     },
     "27240": {
         "nationality": 2,
@@ -5051,7 +7075,17 @@ const equip_data = {
         "cn_name": "海斗士",
         "tw_name": "海鬥士",
         "en_name": "Sea Gladiator",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1738,
+            1715,
+            1692,
+            1669,
+            1646,
+            1623,
+            1600,
+            1600
+        ]
     },
     "27220": {
         "nationality": 2,
@@ -5067,7 +7101,13 @@ const equip_data = {
         "cn_name": "海斗士",
         "tw_name": "海鬥士",
         "en_name": "Sea Gladiator",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1780,
+            1757,
+            1734,
+            1711
+        ]
     },
     "27200": {
         "nationality": 2,
@@ -5083,7 +7123,13 @@ const equip_data = {
         "cn_name": "海斗士",
         "tw_name": "海鬥士",
         "en_name": "Sea Gladiator",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1812,
+            1789,
+            1766,
+            1743
+        ]
     },
     "17080": {
         "nationality": 1,
@@ -5099,7 +7145,21 @@ const equip_data = {
         "cn_name": "试作型XF2A-4水牛",
         "tw_name": "試作型XF2A-4水牛",
         "en_name": "Prototype XF2A-4 Buffalo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            2005,
+            1981,
+            1958,
+            1934,
+            1910,
+            1886,
+            1863,
+            1839,
+            1815,
+            1791,
+            1768,
+            1768
+        ]
     },
     "17400": {
         "nationality": 1,
@@ -5115,7 +7175,21 @@ const equip_data = {
         "cn_name": "XF5F天箭",
         "tw_name": "XF5F天箭",
         "en_name": "XF5F Skyrocket",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1700,
+            1665,
+            1630,
+            1595,
+            1560,
+            1525,
+            1490,
+            1455,
+            1420,
+            1385,
+            1350,
+            1350
+        ]
     },
     "17380": {
         "nationality": 1,
@@ -5131,7 +7205,23 @@ const equip_data = {
         "cn_name": "F8F熊猫",
         "tw_name": "F8F熊貓",
         "en_name": "F8F Bearcat",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1800,
+            1765,
+            1730,
+            1695,
+            1660,
+            1625,
+            1590,
+            1555,
+            1520,
+            1485,
+            1450,
+            1450,
+            1450,
+            1450
+        ]
     },
     "17360": {
         "nationality": 1,
@@ -5147,7 +7237,23 @@ const equip_data = {
         "cn_name": "F7F虎猫",
         "tw_name": "F7F虎貓",
         "en_name": "F7F Tigercat",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1926,
+            1896,
+            1866,
+            1836,
+            1806,
+            1776,
+            1746,
+            1716,
+            1686,
+            1656,
+            1626,
+            1626,
+            1626,
+            1626
+        ]
     },
     "17340": {
         "nationality": 1,
@@ -5163,7 +7269,23 @@ const equip_data = {
         "cn_name": "F6F地狱猫",
         "tw_name": "F6F地獄貓",
         "en_name": "F6F Hellcat",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1879,
+            1855,
+            1831,
+            1807,
+            1783,
+            1759,
+            1735,
+            1711,
+            1687,
+            1663,
+            1639,
+            1639,
+            1639,
+            1639
+        ]
     },
     "17320": {
         "nationality": 1,
@@ -5179,7 +7301,20 @@ const equip_data = {
         "cn_name": "F6F地狱猫",
         "tw_name": "F6F地獄貓",
         "en_name": "F6F Hellcat",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1917,
+            1893,
+            1869,
+            1845,
+            1821,
+            1797,
+            1773,
+            1749,
+            1725,
+            1701,
+            1677
+        ]
     },
     "17300": {
         "nationality": 1,
@@ -5195,7 +7330,16 @@ const equip_data = {
         "cn_name": "F6F地狱猫",
         "tw_name": "F6F地獄貓",
         "en_name": "F6F Hellcat",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1955,
+            1931,
+            1907,
+            1883,
+            1859,
+            1835,
+            1811
+        ]
     },
     "17260": {
         "nationality": 1,
@@ -5211,7 +7355,23 @@ const equip_data = {
         "cn_name": "F4U(VF-17“海盗”中队)",
         "tw_name": "F4U(VF-17“海盜”中隊)",
         "en_name": "F4U (VF-17 \"Pirate\" Squad)",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1824,
+            1795,
+            1766,
+            1737,
+            1708,
+            1679,
+            1650,
+            1621,
+            1592,
+            1563,
+            1534,
+            1534,
+            1534,
+            1534
+        ]
     },
     "17240": {
         "nationality": 1,
@@ -5227,7 +7387,21 @@ const equip_data = {
         "cn_name": "F4U海盗",
         "tw_name": "F4U海盜",
         "en_name": "F4U Corsair",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1896,
+            1872,
+            1848,
+            1824,
+            1801,
+            1777,
+            1753,
+            1729,
+            1706,
+            1682,
+            1658,
+            1658
+        ]
     },
     "17220": {
         "nationality": 1,
@@ -5243,7 +7417,16 @@ const equip_data = {
         "cn_name": "F4U海盗",
         "tw_name": "F4U海盜",
         "en_name": "F4U Corsair",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1924,
+            1900,
+            1877,
+            1853,
+            1829,
+            1805,
+            1782
+        ]
     },
     "17200": {
         "nationality": 1,
@@ -5259,7 +7442,13 @@ const equip_data = {
         "cn_name": "F4U海盗",
         "tw_name": "F4U海盜",
         "en_name": "F4U Corsair",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1962,
+            1938,
+            1915,
+            1891
+        ]
     },
     "17140": {
         "nationality": 1,
@@ -5275,7 +7464,21 @@ const equip_data = {
         "cn_name": "F4F野猫",
         "tw_name": "F4F野貓",
         "en_name": "F4F Wildcat",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1824,
+            1800,
+            1777,
+            1753,
+            1729,
+            1705,
+            1682,
+            1658,
+            1634,
+            1610,
+            1587,
+            1587
+        ]
     },
     "17120": {
         "nationality": 1,
@@ -5291,7 +7494,16 @@ const equip_data = {
         "cn_name": "F4F野猫",
         "tw_name": "F4F野貓",
         "en_name": "F4F Wildcat",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1862,
+            1838,
+            1815,
+            1791,
+            1767,
+            1743,
+            1720
+        ]
     },
     "17100": {
         "nationality": 1,
@@ -5307,7 +7519,13 @@ const equip_data = {
         "cn_name": "F4F野猫",
         "tw_name": "F4F野貓",
         "en_name": "F4F Wildcat",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1900,
+            1876,
+            1853,
+            1829
+        ]
     },
     "17060": {
         "nationality": 1,
@@ -5323,7 +7541,23 @@ const equip_data = {
         "cn_name": "F2A水牛(萨奇队)",
         "tw_name": "F2A水牛(薩奇隊)*",
         "en_name": "F2A Buffalo (Thach Squadron)",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1670,
+            1645,
+            1620,
+            1595,
+            1570,
+            1545,
+            1520,
+            1495,
+            1470,
+            1445,
+            1420,
+            1420,
+            1420,
+            1420
+        ]
     },
     "17040": {
         "nationality": 1,
@@ -5339,7 +7573,17 @@ const equip_data = {
         "cn_name": "F2A水牛",
         "tw_name": "F2A水牛",
         "en_name": "F2A Buffalo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1900,
+            1876,
+            1853,
+            1829,
+            1805,
+            1781,
+            1758,
+            1758
+        ]
     },
     "17020": {
         "nationality": 1,
@@ -5355,7 +7599,13 @@ const equip_data = {
         "cn_name": "F2A水牛",
         "tw_name": "F2A水牛",
         "en_name": "F2A Buffalo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1948,
+            1924,
+            1900,
+            1876
+        ]
     },
     "17000": {
         "nationality": 1,
@@ -5371,7 +7621,13 @@ const equip_data = {
         "cn_name": "F2A水牛",
         "tw_name": "F2A水牛",
         "en_name": "F2A Buffalo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1995,
+            1971,
+            1948,
+            1924
+        ]
     },
     "90600": {
         "nationality": 8,
@@ -5385,7 +7641,23 @@ const equip_data = {
         "cn_name": "双联37mm高射炮Mle1936",
         "tw_name": "雙聯37mm高射炮Mle1936",
         "en_name": "Twin 37mm Mle 1936 AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            141,
+            138,
+            136,
+            131,
+            129,
+            125,
+            123,
+            120,
+            117,
+            112,
+            110,
+            110,
+            110,
+            110
+        ]
     },
     "6140": {
         "nationality": 8,
@@ -5399,7 +7671,17 @@ const equip_data = {
         "cn_name": "双联装100mm高炮",
         "tw_name": "雙聯裝100mm高炮",
         "en_name": "Twin 100mm Mle 1931 AA Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            222,
+            217,
+            213,
+            209,
+            204,
+            200,
+            196,
+            196
+        ]
     },
     "6120": {
         "nationality": 8,
@@ -5413,7 +7695,13 @@ const equip_data = {
         "cn_name": "双联装100mm高炮",
         "tw_name": "雙聯裝100mm高炮",
         "en_name": "Twin 100mm Mle 1931 AA Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            232,
+            228,
+            223,
+            219
+        ]
     },
     "6100": {
         "nationality": 8,
@@ -5427,7 +7715,13 @@ const equip_data = {
         "cn_name": "双联装100mm高炮",
         "tw_name": "雙聯裝100mm高炮",
         "en_name": "Twin 100mm Mle 1931 AA Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            242,
+            238,
+            234,
+            230
+        ]
     },
     "85220": {
         "nationality": 7,
@@ -5441,7 +7735,21 @@ const equip_data = {
         "cn_name": "37mm防空炮70-K",
         "tw_name": "37mm防空炮70-K",
         "en_name": "Single 37mm 70-K AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            145,
+            142,
+            139,
+            135,
+            133,
+            129,
+            127,
+            124,
+            121,
+            117,
+            114,
+            114
+        ]
     },
     "85200": {
         "nationality": 7,
@@ -5455,7 +7763,16 @@ const equip_data = {
         "cn_name": "37mm防空炮70-K",
         "tw_name": "37mm防空炮70-K",
         "en_name": "Single 37mm 70-K AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            153,
+            149,
+            146,
+            143,
+            140,
+            136,
+            134
+        ]
     },
     "85180": {
         "nationality": 7,
@@ -5469,7 +7786,13 @@ const equip_data = {
         "cn_name": "37mm防空炮70-K",
         "tw_name": "37mm防空炮70-K",
         "en_name": "Single 37mm 70-K AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            161,
+            156,
+            153,
+            151
+        ]
     },
     "85280": {
         "nationality": 7,
@@ -5483,7 +7806,21 @@ const equip_data = {
         "cn_name": "B-54 100mm双联装防空炮",
         "tw_name": "B-54 100mm雙聯裝防空炮",
         "en_name": "Twin 100mm B-54 AA Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            272,
+            264,
+            260,
+            255,
+            249,
+            244,
+            237,
+            232,
+            226,
+            222,
+            216,
+            216
+        ]
     },
     "85260": {
         "nationality": 7,
@@ -5497,7 +7834,16 @@ const equip_data = {
         "cn_name": "B-54 100mm双联装防空炮",
         "tw_name": "B-54 100mm雙聯裝防空炮",
         "en_name": "Twin 100mm B-54 AA Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            286,
+            279,
+            274,
+            268,
+            261,
+            256,
+            251
+        ]
     },
     "85060": {
         "nationality": 7,
@@ -5511,7 +7857,16 @@ const equip_data = {
         "cn_name": "100mm双联装防空炮SM-5-1s",
         "tw_name": "100mm雙聯裝防空炮SM-5-1s",
         "en_name": "Twin 100mm SM-5-1s AA Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            265,
+            259,
+            253,
+            249,
+            243,
+            238,
+            234
+        ]
     },
     "85400": {
         "nationality": 7,
@@ -5525,7 +7880,21 @@ const equip_data = {
         "cn_name": "B-34 100mm双联装防空炮MZ-14",
         "tw_name": "B-34 100mm雙聯裝防空炮MZ-14",
         "en_name": "Twin 100mm B-34 MZ-14 Dual-Purpose AA Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            202,
+            196,
+            193,
+            189,
+            185,
+            181,
+            176,
+            172,
+            168,
+            165,
+            160,
+            160
+        ]
     },
     "85380": {
         "nationality": 7,
@@ -5539,7 +7908,16 @@ const equip_data = {
         "cn_name": "B-34 100mm双联装防空炮MZ-14",
         "tw_name": "B-34 100mm雙聯裝防空炮MZ-14",
         "en_name": "Twin 100mm B-34 MZ-14 Dual-Purpose AA Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            212,
+            207,
+            203,
+            199,
+            194,
+            190,
+            186
+        ]
     },
     "85360": {
         "nationality": 7,
@@ -5553,7 +7931,13 @@ const equip_data = {
         "cn_name": "B-34 100mm双联装防空炮MZ-14",
         "tw_name": "B-34 100mm雙聯裝防空炮MZ-14",
         "en_name": "Twin 100mm B-34 MZ-14 Dual-Purpose AA Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            222,
+            218,
+            213,
+            209
+        ]
     },
     "95160": {
         "nationality": 6,
@@ -5567,7 +7951,23 @@ const equip_data = {
         "cn_name": "试作型双联90mm高角炮Model1939",
         "tw_name": "試作型雙聯90mm高角炮Model1939*",
         "en_name": "Prototype Twin 90mm Model 1939 High Angle Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            186,
+            185,
+            183,
+            181,
+            179,
+            176,
+            173,
+            169,
+            165,
+            160,
+            155,
+            155,
+            155,
+            155
+        ]
     },
     "95140": {
         "nationality": 6,
@@ -5581,7 +7981,23 @@ const equip_data = {
         "cn_name": "90mm单装高角炮Model1939",
         "tw_name": "90mm單裝高角炮Model1939",
         "en_name": "Single 90mm Model 1939 AA Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            166,
+            165,
+            163,
+            161,
+            159,
+            156,
+            153,
+            149,
+            145,
+            140,
+            135,
+            135,
+            135,
+            135
+        ]
     },
     "95120": {
         "nationality": 6,
@@ -5595,7 +8011,20 @@ const equip_data = {
         "cn_name": "90mm单装高角炮Model1939",
         "tw_name": "90mm單裝高角炮Model1939",
         "en_name": "Single 90mm Model 1939 AA Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            174,
+            172,
+            170,
+            167,
+            164,
+            161,
+            158,
+            154,
+            150,
+            146,
+            142
+        ]
     },
     "95100": {
         "nationality": 6,
@@ -5609,7 +8038,16 @@ const equip_data = {
         "cn_name": "90mm单装高角炮Model1939",
         "tw_name": "90mm單裝高角炮Model1939",
         "en_name": "Single 90mm Model 1939 AA Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            187,
+            184,
+            181,
+            177,
+            173,
+            168,
+            163
+        ]
     },
     "95540": {
         "nationality": 6,
@@ -5623,7 +8061,21 @@ const equip_data = {
         "cn_name": "双联37mm机枪Model1932",
         "tw_name": "雙聯37mm機槍Model1932",
         "en_name": "Twin 37mm Model 1932 AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            151,
+            148,
+            145,
+            141,
+            139,
+            135,
+            133,
+            130,
+            127,
+            123,
+            120,
+            120
+        ]
     },
     "95520": {
         "nationality": 6,
@@ -5637,7 +8089,16 @@ const equip_data = {
         "cn_name": "双联37mm机枪Model1932",
         "tw_name": "雙聯37mm機槍Model1932",
         "en_name": "Twin 37mm Model 1932 AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            159,
+            155,
+            152,
+            149,
+            146,
+            142,
+            140
+        ]
     },
     "95500": {
         "nationality": 6,
@@ -5651,7 +8112,13 @@ const equip_data = {
         "cn_name": "双联37mm机枪Model1932",
         "tw_name": "雙聯37mm機槍Model1932",
         "en_name": "Twin 37mm Model 1932 AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            167,
+            162,
+            159,
+            157
+        ]
     },
     "46060": {
         "nationality": 4,
@@ -5665,7 +8132,21 @@ const equip_data = {
         "cn_name": "双联装88mmSKC32高炮",
         "tw_name": "雙聯裝88mmSKC32高炮",
         "en_name": "Twin 88mm SK C/32 AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            209,
+            204,
+            200,
+            194,
+            190,
+            185,
+            182,
+            177,
+            172,
+            167,
+            163,
+            163
+        ]
     },
     "46240": {
         "nationality": 4,
@@ -5679,7 +8160,21 @@ const equip_data = {
         "cn_name": "双联37mm手拉机枪",
         "tw_name": "雙聯37mm手拉機槍",
         "en_name": "Twin 37mm AA 70K",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            150,
+            147,
+            144,
+            140,
+            138,
+            134,
+            132,
+            129,
+            126,
+            122,
+            119,
+            119
+        ]
     },
     "46220": {
         "nationality": 4,
@@ -5693,7 +8188,16 @@ const equip_data = {
         "cn_name": "双联37mm手拉机枪",
         "tw_name": "雙聯37mm手拉機槍",
         "en_name": "Twin 37mm AA 70K",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            158,
+            154,
+            151,
+            148,
+            145,
+            141,
+            139
+        ]
     },
     "46200": {
         "nationality": 4,
@@ -5707,7 +8211,13 @@ const equip_data = {
         "cn_name": "双联37mm手拉机枪",
         "tw_name": "雙聯37mm手拉機槍",
         "en_name": "Twin 37mm AA 70K",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            166,
+            161,
+            158,
+            156
+        ]
     },
     "46140": {
         "nationality": 4,
@@ -5721,7 +8231,17 @@ const equip_data = {
         "cn_name": "37mm机枪",
         "tw_name": "37mm機槍",
         "en_name": "Single 37mm Flak AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            108,
+            105,
+            102,
+            100,
+            99,
+            96,
+            94,
+            94
+        ]
     },
     "46120": {
         "nationality": 4,
@@ -5735,7 +8255,13 @@ const equip_data = {
         "cn_name": "37mm机枪",
         "tw_name": "37mm機槍",
         "en_name": "Single 37mm Flak AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            113,
+            110,
+            108,
+            106
+        ]
     },
     "46100": {
         "nationality": 4,
@@ -5749,7 +8275,13 @@ const equip_data = {
         "cn_name": "37mm机枪",
         "tw_name": "37mm機槍",
         "en_name": "Single 37mm Flak AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            118,
+            116,
+            114,
+            112
+        ]
     },
     "46260": {
         "nationality": 4,
@@ -5763,7 +8295,21 @@ const equip_data = {
         "cn_name": "双联37mm Flak M43机枪",
         "tw_name": "雙聯37mm Flak M43機槍",
         "en_name": "Twin 37mm Flak M43 Machine Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            132,
+            129,
+            126,
+            122,
+            120,
+            116,
+            114,
+            111,
+            108,
+            104,
+            101,
+            101
+        ]
     },
     "46040": {
         "nationality": 4,
@@ -5777,7 +8323,17 @@ const equip_data = {
         "cn_name": "四联装20mm MG机枪",
         "tw_name": "四聯裝20mm MG機槍",
         "en_name": "Quadruple 20mm Flakvierling Machine Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            135,
+            132,
+            130,
+            128,
+            125,
+            121,
+            119,
+            119
+        ]
     },
     "46020": {
         "nationality": 4,
@@ -5791,7 +8347,13 @@ const equip_data = {
         "cn_name": "四联装20mm MG机枪",
         "tw_name": "四聯裝20mm MG機槍",
         "en_name": "Quadruple 20mm Flakvierling Machine Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            142,
+            139,
+            137,
+            134
+        ]
     },
     "46000": {
         "nationality": 4,
@@ -5805,7 +8367,13 @@ const equip_data = {
         "cn_name": "四联装20mm MG机枪",
         "tw_name": "四聯裝20mm MG機槍",
         "en_name": "Quadruple 20mm Flakvierling Machine Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            149,
+            146,
+            144,
+            140
+        ]
     },
     "46360": {
         "nationality": 4,
@@ -5819,7 +8387,23 @@ const equip_data = {
         "cn_name": "双联105mmSKC高炮改进型",
         "tw_name": "雙聯105mmSKC高炮改進型",
         "en_name": "Twin 105mm SK C/33 na AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            226,
+            221,
+            217,
+            211,
+            207,
+            202,
+            199,
+            194,
+            189,
+            184,
+            180,
+            180,
+            180,
+            180
+        ]
     },
     "46340": {
         "nationality": 4,
@@ -5833,7 +8417,23 @@ const equip_data = {
         "cn_name": "双联105mmSKC高炮",
         "tw_name": "雙聯105mmSKC高炮",
         "en_name": "Twin 105mm SK C/33 AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            232,
+            227,
+            223,
+            217,
+            213,
+            208,
+            205,
+            200,
+            195,
+            190,
+            186,
+            186,
+            186,
+            186
+        ]
     },
     "46320": {
         "nationality": 4,
@@ -5847,7 +8447,20 @@ const equip_data = {
         "cn_name": "双联105mmSKC高炮",
         "tw_name": "雙聯105mmSKC高炮",
         "en_name": "Twin 105mm SK C/33 AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            244,
+            239,
+            234,
+            229,
+            224,
+            219,
+            215,
+            210,
+            205,
+            200,
+            195
+        ]
     },
     "46300": {
         "nationality": 4,
@@ -5861,7 +8474,16 @@ const equip_data = {
         "cn_name": "双联105mmSKC高炮",
         "tw_name": "雙聯105mmSKC高炮",
         "en_name": "Twin 105mm SK C/33 AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            256,
+            251,
+            245,
+            241,
+            235,
+            230,
+            226
+        ]
     },
     "36700": {
         "nationality": 3,
@@ -5875,7 +8497,23 @@ const equip_data = {
         "cn_name": "试作型五式40mm高射机关炮",
         "tw_name": "試作型五式40mm高射機關炮",
         "en_name": "Twin 40mm Bofors Type 5 AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            138,
+            135,
+            133,
+            128,
+            126,
+            122,
+            120,
+            117,
+            114,
+            109,
+            107,
+            107,
+            107,
+            107
+        ]
     },
     "36440": {
         "nationality": 3,
@@ -5889,7 +8527,21 @@ const equip_data = {
         "cn_name": "毘式40mm连装机枪",
         "tw_name": "毘式40mm連裝機槍",
         "en_name": "Twin 40mm V-Type AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            150,
+            147,
+            144,
+            140,
+            138,
+            134,
+            132,
+            129,
+            126,
+            122,
+            119,
+            119
+        ]
     },
     "36420": {
         "nationality": 3,
@@ -5903,7 +8555,16 @@ const equip_data = {
         "cn_name": "毘式40mm连装机枪",
         "tw_name": "毘式40mm連裝機槍",
         "en_name": "Twin 40mm V-Type AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            158,
+            154,
+            151,
+            148,
+            145,
+            141,
+            139
+        ]
     },
     "36400": {
         "nationality": 3,
@@ -5917,7 +8578,13 @@ const equip_data = {
         "cn_name": "毘式40mm连装机枪",
         "tw_name": "毘式40mm連裝機槍",
         "en_name": "Twin 40mm V-Type AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            166,
+            161,
+            158,
+            156
+        ]
     },
     "36580": {
         "nationality": 3,
@@ -5931,7 +8598,21 @@ const equip_data = {
         "cn_name": "80mm高射炮",
         "tw_name": "80mm高射炮",
         "en_name": "Single 80mm AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            185,
+            182,
+            177,
+            175,
+            171,
+            168,
+            165,
+            162,
+            157,
+            155,
+            151,
+            151
+        ]
     },
     "36540": {
         "nationality": 3,
@@ -5945,7 +8626,21 @@ const equip_data = {
         "cn_name": "76mm高射炮",
         "tw_name": "76mm高射炮",
         "en_name": "76mm AA Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            167,
+            164,
+            159,
+            157,
+            153,
+            150,
+            147,
+            144,
+            139,
+            137,
+            133,
+            133
+        ]
     },
     "36520": {
         "nationality": 3,
@@ -5959,7 +8654,16 @@ const equip_data = {
         "cn_name": "76mm高射炮",
         "tw_name": "76mm高射炮",
         "en_name": "76mm AA Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            175,
+            172,
+            168,
+            165,
+            161,
+            158,
+            154
+        ]
     },
     "36500": {
         "nationality": 3,
@@ -5973,7 +8677,13 @@ const equip_data = {
         "cn_name": "76mm高射炮",
         "tw_name": "76mm高射炮",
         "en_name": "76mm AA Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            184,
+            180,
+            177,
+            174
+        ]
     },
     "36240": {
         "nationality": 3,
@@ -5987,7 +8697,21 @@ const equip_data = {
         "cn_name": "25mm连装高射机枪",
         "tw_name": "25mm連裝高射機槍",
         "en_name": "Twin 25mm AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            115,
+            111,
+            110,
+            108,
+            105,
+            102,
+            100,
+            98,
+            95,
+            94,
+            91,
+            91
+        ]
     },
     "36220": {
         "nationality": 3,
@@ -6001,7 +8725,16 @@ const equip_data = {
         "cn_name": "25mm连装高射机枪",
         "tw_name": "25mm連裝高射機槍",
         "en_name": "Twin 25mm AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            121,
+            117,
+            115,
+            113,
+            110,
+            108,
+            106
+        ]
     },
     "36200": {
         "nationality": 3,
@@ -6015,7 +8748,13 @@ const equip_data = {
         "cn_name": "25mm连装高射机枪",
         "tw_name": "25mm連裝高射機槍",
         "en_name": "Twin 25mm AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            127,
+            123,
+            121,
+            118
+        ]
     },
     "36140": {
         "nationality": 3,
@@ -6029,7 +8768,17 @@ const equip_data = {
         "cn_name": "25mm高射机枪",
         "tw_name": "25mm高射機槍",
         "en_name": "Single 25mm AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            91,
+            89,
+            88,
+            84,
+            82,
+            81,
+            80,
+            80
+        ]
     },
     "36120": {
         "nationality": 3,
@@ -6043,7 +8792,13 @@ const equip_data = {
         "cn_name": "25mm高射机枪",
         "tw_name": "25mm高射機槍",
         "en_name": "Single 25mm AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            95,
+            93,
+            92,
+            89
+        ]
     },
     "36100": {
         "nationality": 3,
@@ -6057,7 +8812,13 @@ const equip_data = {
         "cn_name": "25mm高射机枪",
         "tw_name": "25mm高射機槍",
         "en_name": "Single 25mm AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            100,
+            97,
+            96,
+            94
+        ]
     },
     "36360": {
         "nationality": 3,
@@ -6071,7 +8832,23 @@ const equip_data = {
         "cn_name": "九六式25mm三连装暴风避盾机炮",
         "tw_name": "九六式25mm三連裝暴風避盾機炮",
         "en_name": "Triple 25mm Type 96 AT/AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            107,
+            105,
+            103,
+            100,
+            98,
+            97,
+            93,
+            90,
+            88,
+            86,
+            84,
+            84,
+            84,
+            84
+        ]
     },
     "36340": {
         "nationality": 3,
@@ -6085,7 +8862,21 @@ const equip_data = {
         "cn_name": "25mm三连装高射机枪",
         "tw_name": "25mm三連裝高射機槍",
         "en_name": "Triple 25mm AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            119,
+            117,
+            115,
+            112,
+            110,
+            109,
+            105,
+            102,
+            100,
+            98,
+            96,
+            96
+        ]
     },
     "36320": {
         "nationality": 3,
@@ -6099,7 +8890,16 @@ const equip_data = {
         "cn_name": "25mm三连装高射机枪",
         "tw_name": "25mm三連裝高射機槍",
         "en_name": "Triple 25mm AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            126,
+            123,
+            121,
+            118,
+            116,
+            114,
+            110
+        ]
     },
     "36300": {
         "nationality": 3,
@@ -6113,7 +8913,13 @@ const equip_data = {
         "cn_name": "25mm三连装高射机枪",
         "tw_name": "25mm三連裝高射機槍",
         "en_name": "Triple 25mm AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            133,
+            129,
+            127,
+            124
+        ]
     },
     "36660": {
         "nationality": 3,
@@ -6127,7 +8933,23 @@ const equip_data = {
         "cn_name": "127mm连装高角炮改",
         "tw_name": "127mm連裝高角炮改",
         "en_name": "Twin 127mm Type 89 AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            283,
+            278,
+            271,
+            266,
+            260,
+            255,
+            249,
+            243,
+            238,
+            231,
+            226,
+            226,
+            226,
+            226
+        ]
     },
     "36640": {
         "nationality": 3,
@@ -6141,7 +8963,21 @@ const equip_data = {
         "cn_name": "127mm连装高射炮",
         "tw_name": "127mm連裝高射炮",
         "en_name": "Twin 127mm AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            285,
+            280,
+            273,
+            268,
+            262,
+            257,
+            251,
+            245,
+            240,
+            233,
+            228,
+            228
+        ]
     },
     "36620": {
         "nationality": 3,
@@ -6155,7 +8991,16 @@ const equip_data = {
         "cn_name": "127mm连装高射炮",
         "tw_name": "127mm連裝高射炮",
         "en_name": "Twin 127mm AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            300,
+            294,
+            288,
+            282,
+            276,
+            270,
+            264
+        ]
     },
     "36600": {
         "nationality": 3,
@@ -6169,7 +9014,13 @@ const equip_data = {
         "cn_name": "127mm连装高射炮",
         "tw_name": "127mm連裝高射炮",
         "en_name": "Twin 127mm AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            315,
+            308,
+            303,
+            296
+        ]
     },
     "36560": {
         "nationality": 3,
@@ -6183,7 +9034,23 @@ const equip_data = {
         "cn_name": "100mm连装高炮",
         "tw_name": "100mm連裝高炮",
         "en_name": "Twin 100mm Type 98 AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            240,
+            236,
+            232,
+            227,
+            222,
+            217,
+            212,
+            207,
+            202,
+            197,
+            192,
+            192,
+            192,
+            192
+        ]
     },
     "26620": {
         "nationality": 2,
@@ -6197,7 +9064,23 @@ const equip_data = {
         "cn_name": "双联装40mm博福斯海兹梅耶",
         "tw_name": "雙聯裝40mm波佛斯海茲梅耶",
         "en_name": "Twin 40mm Bofors \"Hazemeyer\" AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            165,
+            161,
+            158,
+            154,
+            151,
+            148,
+            144,
+            141,
+            138,
+            134,
+            131,
+            131,
+            131,
+            131
+        ]
     },
     "26600": {
         "nationality": 2,
@@ -6211,7 +9094,23 @@ const equip_data = {
         "cn_name": "双联装40mm博福斯STAAG",
         "tw_name": "雙聯裝40mm波佛斯STAAG",
         "en_name": "Twin 40mm Bofors STAAG",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            150,
+            147,
+            144,
+            141,
+            138,
+            135,
+            132,
+            129,
+            126,
+            123,
+            120,
+            120,
+            120,
+            120
+        ]
     },
     "26660": {
         "nationality": 2,
@@ -6225,7 +9124,23 @@ const equip_data = {
         "cn_name": "六联装40mm博福斯对空机炮",
         "tw_name": "六聯裝40mm博福斯對空機炮",
         "en_name": "Sextuple 40mm Bofors AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            215,
+            211,
+            207,
+            205,
+            199,
+            196,
+            192,
+            188,
+            184,
+            180,
+            177,
+            177,
+            177,
+            177
+        ]
     },
     "26140": {
         "nationality": 2,
@@ -6239,7 +9154,21 @@ const equip_data = {
         "cn_name": "四联装40mm“砰砰”炮",
         "tw_name": "四聯裝40mm“砰砰”炮",
         "en_name": "Quadruple 40mm Pom-Pom AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            194,
+            190,
+            186,
+            184,
+            178,
+            175,
+            171,
+            167,
+            163,
+            159,
+            156,
+            156
+        ]
     },
     "26120": {
         "nationality": 2,
@@ -6253,7 +9182,16 @@ const equip_data = {
         "cn_name": "四联装40mm“砰砰”炮",
         "tw_name": "四聯裝40mm“砰砰”炮",
         "en_name": "Quadruple 40mm Pom-Pom AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            204,
+            200,
+            196,
+            193,
+            188,
+            184,
+            180
+        ]
     },
     "26100": {
         "nationality": 2,
@@ -6267,7 +9205,13 @@ const equip_data = {
         "cn_name": "四联装40mm“砰砰”炮",
         "tw_name": "四聯裝40mm“砰砰”炮",
         "en_name": "Quadruple 40mm Pom-Pom AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            214,
+            210,
+            206,
+            202
+        ]
     },
     "26240": {
         "nationality": 2,
@@ -6281,7 +9225,23 @@ const equip_data = {
         "cn_name": "八联装40mm“砰砰”炮",
         "tw_name": "八聯裝40mm“砰砰”炮",
         "en_name": "Octuple 40mm Pom-Pom Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            220,
+            214,
+            210,
+            205,
+            203,
+            197,
+            193,
+            188,
+            184,
+            179,
+            176,
+            176,
+            176,
+            176
+        ]
     },
     "26220": {
         "nationality": 2,
@@ -6295,7 +9255,20 @@ const equip_data = {
         "cn_name": "八联装40mm“砰砰”炮",
         "tw_name": "八聯裝40mm“砰砰”炮",
         "en_name": "Octuple 40mm Pom-Pom Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            231,
+            226,
+            221,
+            216,
+            213,
+            208,
+            203,
+            198,
+            193,
+            189,
+            185
+        ]
     },
     "26200": {
         "nationality": 2,
@@ -6309,7 +9282,16 @@ const equip_data = {
         "cn_name": "八联装40mm“砰砰”炮",
         "tw_name": "八聯裝40mm“砰砰”炮",
         "en_name": "Octuple 40mm Pom-Pom Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            242,
+            238,
+            232,
+            227,
+            223,
+            219,
+            213
+        ]
     },
     "26040": {
         "nationality": 2,
@@ -6323,7 +9305,17 @@ const equip_data = {
         "cn_name": "双联装40mm“砰砰”炮",
         "tw_name": "雙聯裝40mm“砰砰”炮",
         "en_name": "Twin 40mm Pom-Pom AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            150,
+            147,
+            145,
+            140,
+            138,
+            134,
+            132,
+            132
+        ]
     },
     "26020": {
         "nationality": 2,
@@ -6337,7 +9329,13 @@ const equip_data = {
         "cn_name": "双联装40mm“砰砰”炮",
         "tw_name": "雙聯裝40mm“砰砰”炮",
         "en_name": "Twin 40mm Pom-Pom AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            158,
+            154,
+            152,
+            148
+        ]
     },
     "26000": {
         "nationality": 2,
@@ -6351,7 +9349,13 @@ const equip_data = {
         "cn_name": "双联装40mm“砰砰”炮",
         "tw_name": "雙聯裝40mm“砰砰”炮",
         "en_name": "Twin 40mm Pom-Pom AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            166,
+            161,
+            159,
+            156
+        ]
     },
     "26060": {
         "nationality": 2,
@@ -6365,7 +9369,21 @@ const equip_data = {
         "cn_name": "双联装40mm博福斯对空机炮Mark I",
         "tw_name": "雙聯裝40mm博福斯對空機炮Mark I",
         "en_name": "Twin 40mm Bofors RP Mark I AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            157,
+            153,
+            149,
+            147,
+            141,
+            138,
+            134,
+            130,
+            126,
+            122,
+            119,
+            119
+        ]
     },
     "26360": {
         "nationality": 2,
@@ -6379,7 +9397,21 @@ const equip_data = {
         "cn_name": "20mm厄利孔高射炮MkII",
         "tw_name": "20mm厄利孔高射炮MkII",
         "en_name": "Single 20mm Mk II Oerlikon AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            80,
+            76,
+            72,
+            69,
+            66,
+            63,
+            60,
+            57,
+            54,
+            51,
+            48,
+            48
+        ]
     },
     "26640": {
         "nationality": 2,
@@ -6393,7 +9425,23 @@ const equip_data = {
         "cn_name": "双联装134mm高炮",
         "tw_name": "雙聯裝134mm高炮",
         "en_name": "Twin 134mm AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            317,
+            312,
+            306,
+            302,
+            295,
+            291,
+            286,
+            282,
+            274,
+            270,
+            265,
+            265,
+            265,
+            265
+        ]
     },
     "26460": {
         "nationality": 2,
@@ -6407,7 +9455,21 @@ const equip_data = {
         "cn_name": "120mm高射炮Mark VIII",
         "tw_name": "120mm高射炮Mark VIII",
         "en_name": "120mm High-Angle Gun MkVIII",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            222,
+            216,
+            213,
+            209,
+            205,
+            201,
+            196,
+            192,
+            188,
+            185,
+            180,
+            180
+        ]
     },
     "26540": {
         "nationality": 2,
@@ -6421,7 +9483,23 @@ const equip_data = {
         "cn_name": "双联装113mm高射炮",
         "tw_name": "雙聯裝113mm高射炮",
         "en_name": "Twin 113mm AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            257,
+            252,
+            246,
+            242,
+            235,
+            231,
+            226,
+            222,
+            214,
+            210,
+            205,
+            205,
+            205,
+            205
+        ]
     },
     "26520": {
         "nationality": 2,
@@ -6435,7 +9513,20 @@ const equip_data = {
         "cn_name": "双联装113mm高射炮",
         "tw_name": "雙聯裝113mm高射炮",
         "en_name": "Twin 113mm AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            270,
+            265,
+            259,
+            254,
+            248,
+            243,
+            238,
+            233,
+            226,
+            221,
+            216
+        ]
     },
     "26500": {
         "nationality": 2,
@@ -6449,7 +9540,16 @@ const equip_data = {
         "cn_name": "双联装113mm高射炮",
         "tw_name": "雙聯裝113mm高射炮",
         "en_name": "Twin 113mm AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            284,
+            279,
+            272,
+            266,
+            261,
+            255,
+            250
+        ]
     },
     "26440": {
         "nationality": 2,
@@ -6463,7 +9563,21 @@ const equip_data = {
         "cn_name": "102mm高射炮",
         "tw_name": "102mm高射炮",
         "en_name": "Single 102mm AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            202,
+            196,
+            193,
+            189,
+            185,
+            181,
+            176,
+            172,
+            168,
+            165,
+            160,
+            160
+        ]
     },
     "26420": {
         "nationality": 2,
@@ -6477,7 +9591,16 @@ const equip_data = {
         "cn_name": "102mm高射炮",
         "tw_name": "102mm高射炮",
         "en_name": "Single 102mm AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            212,
+            207,
+            203,
+            199,
+            194,
+            190,
+            186
+        ]
     },
     "26400": {
         "nationality": 2,
@@ -6491,7 +9614,13 @@ const equip_data = {
         "cn_name": "102mm高射炮",
         "tw_name": "102mm高射炮",
         "en_name": "Single 102mm AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            222,
+            218,
+            213,
+            209
+        ]
     },
     "16440": {
         "nationality": 1,
@@ -6505,7 +9634,23 @@ const equip_data = {
         "cn_name": "四联40mm博福斯对空机炮",
         "tw_name": "四聯40mm波佛斯對空機炮",
         "en_name": "Quadruple 40mm Bofors AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            194,
+            190,
+            186,
+            184,
+            178,
+            175,
+            171,
+            167,
+            163,
+            159,
+            156,
+            156,
+            156,
+            156
+        ]
     },
     "16420": {
         "nationality": 1,
@@ -6519,7 +9664,20 @@ const equip_data = {
         "cn_name": "四联40mm博福斯对空机炮",
         "tw_name": "四聯40mm波佛斯對空機炮",
         "en_name": "Quadruple 40mm Bofors AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            204,
+            200,
+            196,
+            193,
+            188,
+            184,
+            180,
+            176,
+            171,
+            168,
+            164
+        ]
     },
     "16400": {
         "nationality": 1,
@@ -6533,7 +9691,16 @@ const equip_data = {
         "cn_name": "四联40mm博福斯对空机炮",
         "tw_name": "四聯40mm波佛斯對空機炮",
         "en_name": "Quadruple 40mm Bofors AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            214,
+            210,
+            206,
+            202,
+            198,
+            193,
+            189
+        ]
     },
     "16240": {
         "nationality": 1,
@@ -6547,7 +9714,21 @@ const equip_data = {
         "cn_name": "四联装28mm“芝加哥钢琴”",
         "tw_name": "四聯裝28mm“芝加哥鋼琴”",
         "en_name": "Quadruple 28mm \"Chicago Piano\" AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            165,
+            162,
+            157,
+            155,
+            151,
+            148,
+            145,
+            141,
+            138,
+            135,
+            131,
+            131
+        ]
     },
     "16220": {
         "nationality": 1,
@@ -6561,7 +9742,16 @@ const equip_data = {
         "cn_name": "四联装28mm“芝加哥钢琴”",
         "tw_name": "四聯裝28mm“芝加哥鋼琴”",
         "en_name": "Quadruple 28mm \"Chicago Piano\" AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            173,
+            170,
+            166,
+            163,
+            159,
+            156,
+            152
+        ]
     },
     "16200": {
         "nationality": 1,
@@ -6575,7 +9765,13 @@ const equip_data = {
         "cn_name": "四联装28mm“芝加哥钢琴”",
         "tw_name": "四聯裝28mm“芝加哥鋼琴”",
         "en_name": "Quadruple 28mm \"Chicago Piano\" AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            181,
+            179,
+            175,
+            171
+        ]
     },
     "16340": {
         "nationality": 1,
@@ -6589,7 +9785,21 @@ const equip_data = {
         "cn_name": "双联40mm博福斯对空机炮",
         "tw_name": "雙聯40mm波佛斯對空機炮",
         "en_name": "Twin 40mm Bofors AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            150,
+            147,
+            145,
+            140,
+            138,
+            134,
+            132,
+            129,
+            126,
+            121,
+            119,
+            119
+        ]
     },
     "16320": {
         "nationality": 1,
@@ -6603,7 +9813,16 @@ const equip_data = {
         "cn_name": "双联40mm博福斯对空机炮",
         "tw_name": "雙聯40mm波佛斯對空機炮",
         "en_name": "Twin 40mm Bofors AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            158,
+            154,
+            152,
+            148,
+            145,
+            141,
+            139
+        ]
     },
     "16300": {
         "nationality": 1,
@@ -6617,7 +9836,13 @@ const equip_data = {
         "cn_name": "双联40mm博福斯对空机炮",
         "tw_name": "雙聯40mm波佛斯對空機炮",
         "en_name": "Twin 40mm Bofors AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            166,
+            161,
+            159,
+            156
+        ]
     },
     "16060": {
         "nationality": 1,
@@ -6631,7 +9856,21 @@ const equip_data = {
         "cn_name": "76mm高射炮改进型",
         "tw_name": "76mm高射炮改進型",
         "en_name": "Single 76mm Mk 26 AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            164,
+            161,
+            156,
+            154,
+            150,
+            147,
+            144,
+            141,
+            136,
+            134,
+            130,
+            130
+        ]
     },
     "26340": {
         "nationality": 1,
@@ -6645,7 +9884,21 @@ const equip_data = {
         "cn_name": "76mm高射炮",
         "tw_name": "76mm高射炮",
         "en_name": "76mm AA Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            167,
+            164,
+            159,
+            157,
+            153,
+            150,
+            147,
+            144,
+            139,
+            137,
+            133,
+            133
+        ]
     },
     "26320": {
         "nationality": 1,
@@ -6659,7 +9912,16 @@ const equip_data = {
         "cn_name": "76mm高射炮",
         "tw_name": "76mm高射炮",
         "en_name": "76mm AA Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            175,
+            172,
+            168,
+            165,
+            161,
+            158,
+            154
+        ]
     },
     "26300": {
         "nationality": 1,
@@ -6673,7 +9935,13 @@ const equip_data = {
         "cn_name": "76mm高射炮",
         "tw_name": "76mm高射炮",
         "en_name": "76mm AA Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            184,
+            180,
+            177,
+            174
+        ]
     },
     "16080": {
         "nationality": 1,
@@ -6687,7 +9955,23 @@ const equip_data = {
         "cn_name": "双联装76mmRF火炮Mk27",
         "tw_name": "雙聯裝76mmRF火炮Mk27",
         "en_name": "Twin 76mm Mk 27 RF AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            142,
+            139,
+            134,
+            132,
+            128,
+            125,
+            122,
+            119,
+            114,
+            112,
+            108,
+            108,
+            108,
+            108
+        ]
     },
     "16160": {
         "nationality": 1,
@@ -6701,7 +9985,21 @@ const equip_data = {
         "cn_name": "四联装20mm厄利孔高射炮Mk15",
         "tw_name": "四聯裝20mm厄利孔高射炮Mk15",
         "en_name": "Quadruple 20mm Mk 15 Oerlikon AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            95,
+            92,
+            91,
+            89,
+            88,
+            85,
+            84,
+            80,
+            79,
+            77,
+            76,
+            76
+        ]
     },
     "16140": {
         "nationality": 1,
@@ -6715,7 +10013,21 @@ const equip_data = {
         "cn_name": "双管20mm厄利孔高射炮",
         "tw_name": "雙管20mm厄利孔高射炮",
         "en_name": "Twin 20mm AA Oerlikon Design",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            97,
+            94,
+            93,
+            91,
+            90,
+            87,
+            86,
+            82,
+            81,
+            79,
+            78,
+            78
+        ]
     },
     "16120": {
         "nationality": 1,
@@ -6729,7 +10041,16 @@ const equip_data = {
         "cn_name": "双管20mm厄利孔高射炮",
         "tw_name": "雙管20mm厄利孔高射炮",
         "en_name": "Twin 20mm AA Oerlikon Design",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            102,
+            99,
+            98,
+            95,
+            94,
+            91,
+            90
+        ]
     },
     "16100": {
         "nationality": 1,
@@ -6743,7 +10064,13 @@ const equip_data = {
         "cn_name": "双管20mm厄利孔高射炮",
         "tw_name": "雙管20mm厄利孔高射炮",
         "en_name": "Twin 20mm AA Oerlikon Design",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            107,
+            104,
+            103,
+            100
+        ]
     },
     "16040": {
         "nationality": 1,
@@ -6757,7 +10084,17 @@ const equip_data = {
         "cn_name": "20mm厄利孔高射炮",
         "tw_name": "20mm厄利孔高射炮",
         "en_name": "Single 20mm Oerlikon AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            81,
+            79,
+            77,
+            75,
+            74,
+            72,
+            71,
+            71
+        ]
     },
     "16020": {
         "nationality": 1,
@@ -6771,7 +10108,13 @@ const equip_data = {
         "cn_name": "20mm厄利孔高射炮",
         "tw_name": "20mm厄利孔高射炮",
         "en_name": "Single 20mm Oerlikon AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            85,
+            83,
+            81,
+            79
+        ]
     },
     "16000": {
         "nationality": 1,
@@ -6785,7 +10128,13 @@ const equip_data = {
         "cn_name": "20mm厄利孔高射炮",
         "tw_name": "20mm厄利孔高射炮",
         "en_name": "Single 20mm Oerlikon AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            90,
+            87,
+            85,
+            83
+        ]
     },
     "6040": {
         "nationality": 0,
@@ -6799,7 +10148,17 @@ const equip_data = {
         "cn_name": "12.7mm防空机枪",
         "tw_name": "12.7mm防空機槍",
         "en_name": "Single 12.7mm AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            57,
+            55,
+            54,
+            53,
+            53,
+            52,
+            50,
+            50
+        ]
     },
     "6020": {
         "nationality": 0,
@@ -6813,7 +10172,13 @@ const equip_data = {
         "cn_name": "12.7mm防空机枪",
         "tw_name": "12.7mm防空機槍",
         "en_name": "Single 12.7mm AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            60,
+            58,
+            57,
+            56
+        ]
     },
     "6000": {
         "nationality": 0,
@@ -6827,7 +10192,13 @@ const equip_data = {
         "cn_name": "12.7mm防空机枪",
         "tw_name": "12.7mm防空機槍",
         "en_name": "Single 12.7mm AA Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            63,
+            61,
+            60,
+            59
+        ]
     },
     "5340": {
         "nationality": 8,
@@ -6841,7 +10212,17 @@ const equip_data = {
         "cn_name": "双联装550mm鱼雷",
         "tw_name": "雙聯裝550mm魚雷",
         "en_name": "550mm Twin Torpedo Launcher",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3400,
+            3320,
+            3240,
+            3160,
+            3080,
+            3000,
+            2920,
+            2920
+        ]
     },
     "5320": {
         "nationality": 8,
@@ -6855,7 +10236,13 @@ const equip_data = {
         "cn_name": "双联装550mm鱼雷",
         "tw_name": "雙聯裝550mm魚雷",
         "en_name": "550mm Twin Torpedo Launcher",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3500,
+            3430,
+            3360,
+            3290
+        ]
     },
     "5300": {
         "nationality": 8,
@@ -6869,7 +10256,13 @@ const equip_data = {
         "cn_name": "双联装550mm鱼雷",
         "tw_name": "雙聯裝550mm魚雷",
         "en_name": "550mm Twin Torpedo Launcher",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3600,
+            3540,
+            3480,
+            3420
+        ]
     },
     "5440": {
         "nationality": 8,
@@ -6883,7 +10276,21 @@ const equip_data = {
         "cn_name": "三联装550mm鱼雷",
         "tw_name": "三聯裝550mm魚雷",
         "en_name": "550mm Triple Torpedo Launcher",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4030,
+            3938,
+            3846,
+            3754,
+            3662,
+            3570,
+            3478,
+            3386,
+            3294,
+            3202,
+            3110,
+            3110
+        ]
     },
     "5420": {
         "nationality": 8,
@@ -6897,7 +10304,16 @@ const equip_data = {
         "cn_name": "三联装550mm鱼雷",
         "tw_name": "三聯裝550mm魚雷",
         "en_name": "550mm Triple Torpedo Launcher",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4240,
+            4150,
+            4060,
+            3970,
+            3880,
+            3790,
+            3700
+        ]
     },
     "5400": {
         "nationality": 8,
@@ -6911,7 +10327,13 @@ const equip_data = {
         "cn_name": "三联装550mm鱼雷",
         "tw_name": "三聯裝550mm魚雷",
         "en_name": "550mm Triple Torpedo Launcher",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4450,
+            4362,
+            4274,
+            4186
+        ]
     },
     "45140": {
         "nationality": 4,
@@ -6925,7 +10347,23 @@ const equip_data = {
         "cn_name": "四联装533mm磁性鱼雷",
         "tw_name": "四聯裝533mm磁性魚雷",
         "en_name": "533mm Quadruple Magnetic Torpedo Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4830,
+            4730,
+            4630,
+            4530,
+            4430,
+            4330,
+            4230,
+            4130,
+            4030,
+            3930,
+            3830,
+            3830,
+            3830,
+            3830
+        ]
     },
     "45120": {
         "nationality": 4,
@@ -6939,7 +10377,20 @@ const equip_data = {
         "cn_name": "四联装533mm磁性鱼雷",
         "tw_name": "四聯裝533mm磁性魚雷",
         "en_name": "533mm Quadruple Magnetic Torpedo Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            5080,
+            4975,
+            4870,
+            4765,
+            4660,
+            4555,
+            4450,
+            4345,
+            4240,
+            4135,
+            4030
+        ]
     },
     "45100": {
         "nationality": 4,
@@ -6953,7 +10404,16 @@ const equip_data = {
         "cn_name": "四联装533mm磁性鱼雷",
         "tw_name": "四聯裝533mm磁性魚雷",
         "en_name": "533mm Quadruple Magnetic Torpedo Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            5340,
+            5230,
+            5120,
+            5010,
+            4900,
+            4790,
+            4680
+        ]
     },
     "45240": {
         "nationality": 4,
@@ -6967,7 +10427,23 @@ const equip_data = {
         "cn_name": "五联装533mm磁性鱼雷",
         "tw_name": "五聯裝533mm磁性魚雷",
         "en_name": "533mm Quintuple Magnetic Torpedo Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            5520,
+            5410,
+            5300,
+            5190,
+            5080,
+            4970,
+            4860,
+            4750,
+            4640,
+            4530,
+            4420,
+            4420,
+            4420,
+            4420
+        ]
     },
     "45220": {
         "nationality": 4,
@@ -6981,7 +10457,20 @@ const equip_data = {
         "cn_name": "五联装533mm磁性鱼雷",
         "tw_name": "五聯裝533mm磁性魚雷",
         "en_name": "533mm Quintuple Magnetic Torpedo Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            5810,
+            5694,
+            5578,
+            5462,
+            5346,
+            5230,
+            5114,
+            4998,
+            4882,
+            4766,
+            4650
+        ]
     },
     "45200": {
         "nationality": 4,
@@ -6995,7 +10484,20 @@ const equip_data = {
         "cn_name": "五联装533mm磁性鱼雷",
         "tw_name": "五聯裝533mm磁性魚雷",
         "en_name": "533mm Quintuple Magnetic Torpedo Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            6100,
+            5978,
+            5856,
+            5734,
+            5612,
+            5490,
+            5368,
+            5246,
+            5124,
+            5002,
+            4880
+        ]
     },
     "45040": {
         "nationality": 4,
@@ -7009,7 +10511,21 @@ const equip_data = {
         "cn_name": "三联装533mm磁性鱼雷",
         "tw_name": "三聯裝533mm磁性魚雷",
         "en_name": "533mm Triple Magnetic Torpedo Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4140,
+            4060,
+            3980,
+            3900,
+            3820,
+            3740,
+            3660,
+            3580,
+            3500,
+            3420,
+            3340,
+            3340
+        ]
     },
     "45020": {
         "nationality": 4,
@@ -7023,7 +10539,16 @@ const equip_data = {
         "cn_name": "三联装533mm磁性鱼雷",
         "tw_name": "三聯裝533mm磁性魚雷",
         "en_name": "533mm Triple Magnetic Torpedo Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4360,
+            4275,
+            4190,
+            4105,
+            4020,
+            3935,
+            3850
+        ]
     },
     "45000": {
         "nationality": 4,
@@ -7037,7 +10562,13 @@ const equip_data = {
         "cn_name": "三联装533mm磁性鱼雷",
         "tw_name": "三聯裝533mm磁性魚雷",
         "en_name": "533mm Triple Magnetic Torpedo Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4580,
+            4500,
+            4420,
+            4340
+        ]
     },
     "35040": {
         "nationality": 3,
@@ -7051,7 +10582,17 @@ const equip_data = {
         "cn_name": "双联装610mm鱼雷",
         "tw_name": "雙聯裝610mm魚雷",
         "en_name": "610mm Twin Torpedo Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3600,
+            3520,
+            3440,
+            3360,
+            3280,
+            3200,
+            3120,
+            3120
+        ]
     },
     "35020": {
         "nationality": 3,
@@ -7065,7 +10606,13 @@ const equip_data = {
         "cn_name": "双联装610mm鱼雷",
         "tw_name": "雙聯裝610mm魚雷",
         "en_name": "610mm Twin Torpedo Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3700,
+            3630,
+            3560,
+            3490
+        ]
     },
     "35000": {
         "nationality": 3,
@@ -7079,7 +10626,13 @@ const equip_data = {
         "cn_name": "双联装610mm鱼雷",
         "tw_name": "雙聯裝610mm魚雷",
         "en_name": "610mm Twin Torpedo Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3800,
+            3740,
+            3680,
+            3620
+        ]
     },
     "35260": {
         "nationality": 3,
@@ -7093,7 +10646,23 @@ const equip_data = {
         "cn_name": "四联装610mm鱼雷改",
         "tw_name": "四聯裝610mm魚雷改",
         "en_name": "610mm Quadruple Torpedo Mount Kai",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            5332,
+            5224,
+            5118,
+            5010,
+            4904,
+            4797,
+            4689,
+            4581,
+            4475,
+            4367,
+            4260,
+            4260,
+            4260,
+            4260
+        ]
     },
     "35240": {
         "nationality": 3,
@@ -7107,7 +10676,23 @@ const equip_data = {
         "cn_name": "四联装610mm鱼雷",
         "tw_name": "四聯裝610mm魚雷",
         "en_name": "610mm Quadruple Torpedo Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            5363,
+            5255,
+            5149,
+            5041,
+            4935,
+            4828,
+            4720,
+            4612,
+            4506,
+            4398,
+            4291,
+            4291,
+            4291,
+            4291
+        ]
     },
     "35220": {
         "nationality": 3,
@@ -7121,7 +10706,20 @@ const equip_data = {
         "cn_name": "四联装610mm鱼雷",
         "tw_name": "四聯裝610mm魚雷",
         "en_name": "610mm Quadruple Torpedo Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            5646,
+            5533,
+            5420,
+            5307,
+            5194,
+            5082,
+            4967,
+            4856,
+            4742,
+            4629,
+            4517
+        ]
     },
     "35200": {
         "nationality": 3,
@@ -7135,7 +10733,16 @@ const equip_data = {
         "cn_name": "四联装610mm鱼雷",
         "tw_name": "四聯裝610mm魚雷",
         "en_name": "610mm Quadruple Torpedo Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            5929,
+            5809,
+            5691,
+            5573,
+            5454,
+            5336,
+            5216
+        ]
     },
     "35340": {
         "nationality": 3,
@@ -7149,7 +10756,23 @@ const equip_data = {
         "cn_name": "五联装610mm鱼雷",
         "tw_name": "五聯裝610mm魚雷",
         "en_name": "Quintuple 610mm Torpedo",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            5372,
+            5264,
+            5158,
+            5050,
+            4944,
+            4837,
+            4729,
+            4621,
+            4515,
+            4407,
+            4300,
+            4300,
+            4300,
+            4300
+        ]
     },
     "35160": {
         "nationality": 3,
@@ -7163,7 +10786,21 @@ const equip_data = {
         "cn_name": "三联装610mm鱼雷改",
         "tw_name": "三聯裝610mm魚雷改",
         "en_name": "610mm Triple Torpedo Mount Kai",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4439,
+            4348,
+            4255,
+            4164,
+            4071,
+            3980,
+            3888,
+            3796,
+            3705,
+            3612,
+            3520,
+            3520
+        ]
     },
     "35140": {
         "nationality": 3,
@@ -7177,7 +10814,21 @@ const equip_data = {
         "cn_name": "三联装610mm鱼雷",
         "tw_name": "三聯裝610mm魚雷",
         "en_name": "610mm Triple Torpedo Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4597,
+            4506,
+            4413,
+            4322,
+            4229,
+            4138,
+            4046,
+            3954,
+            3863,
+            3770,
+            3678,
+            3678
+        ]
     },
     "35120": {
         "nationality": 3,
@@ -7191,7 +10842,16 @@ const equip_data = {
         "cn_name": "三联装610mm鱼雷",
         "tw_name": "三聯裝610mm魚雷",
         "en_name": "610mm Triple Torpedo Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4839,
+            4742,
+            4645,
+            4549,
+            4452,
+            4355,
+            4258
+        ]
     },
     "35100": {
         "nationality": 3,
@@ -7205,7 +10865,13 @@ const equip_data = {
         "cn_name": "三联装610mm鱼雷",
         "tw_name": "三聯裝610mm魚雷",
         "en_name": "610mm Triple Torpedo Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            5082,
+            4980,
+            4878,
+            4776
+        ]
     },
     "25020": {
         "nationality": 2,
@@ -7219,7 +10885,21 @@ const equip_data = {
         "cn_name": "四联装533mm鱼雷Mark IX",
         "tw_name": "四聯裝533mm魚雷Mark IX",
         "en_name": "533mm Quadruple Torpedo Mount Mk IX",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4583,
+            4496,
+            4409,
+            4322,
+            4236,
+            4149,
+            4062,
+            3974,
+            3888,
+            3801,
+            3714,
+            3714
+        ]
     },
     "25040": {
         "nationality": 2,
@@ -7233,7 +10913,23 @@ const equip_data = {
         "cn_name": "五联装533mm鱼雷Mark IX",
         "tw_name": "五聯裝533mm魚雷Mark IX",
         "en_name": "533mm Quintuple Torpedo Mount Mk IX",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            5205,
+            5106,
+            5006,
+            4907,
+            4807,
+            4707,
+            4608,
+            4509,
+            4409,
+            4310,
+            4210,
+            4210,
+            4210,
+            4210
+        ]
     },
     "25000": {
         "nationality": 2,
@@ -7247,7 +10943,17 @@ const equip_data = {
         "cn_name": "三联装533mm鱼雷Mark IX",
         "tw_name": "三聯裝533mm魚雷Mark IX",
         "en_name": "533mm Triple Torpedo Mount Mk IX",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3963,
+            3888,
+            3813,
+            3738,
+            3664,
+            3589,
+            3515,
+            3515
+        ]
     },
     "15220": {
         "nationality": 1,
@@ -7261,7 +10967,21 @@ const equip_data = {
         "cn_name": "四联装533mm鱼雷Mk17",
         "tw_name": "四聯裝533mm魚雷Mk17",
         "en_name": "533mm Quadruple Torpedo Mount Mk 17",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4319,
+            4232,
+            4145,
+            4058,
+            3972,
+            3885,
+            3798,
+            3710,
+            3624,
+            3537,
+            3450,
+            3450
+        ]
     },
     "15240": {
         "nationality": 1,
@@ -7275,7 +10995,23 @@ const equip_data = {
         "cn_name": "五联装533mm鱼雷Mk17",
         "tw_name": "五聯裝533mm魚雷Mk17",
         "en_name": "533mm Quintuple Torpedo Mount Mk 17",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4965,
+            4866,
+            4766,
+            4667,
+            4567,
+            4467,
+            4368,
+            4269,
+            4169,
+            4070,
+            3970,
+            3970,
+            3970,
+            3970
+        ]
     },
     "15200": {
         "nationality": 1,
@@ -7289,7 +11025,17 @@ const equip_data = {
         "cn_name": "三联装533mm鱼雷Mk17",
         "tw_name": "三聯裝533mm魚雷Mk17",
         "en_name": "533mm Triple Torpedo Mount Mk 17",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3672,
+            3597,
+            3522,
+            3447,
+            3373,
+            3298,
+            3224,
+            3224
+        ]
     },
     "5140": {
         "nationality": 0,
@@ -7303,7 +11049,21 @@ const equip_data = {
         "cn_name": "四联装533mm鱼雷",
         "tw_name": "四聯裝533mm魚雷",
         "en_name": "533mm Quadruple Torpedo Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4348,
+            4261,
+            4174,
+            4087,
+            4001,
+            3914,
+            3827,
+            3739,
+            3653,
+            3566,
+            3479,
+            3479
+        ]
     },
     "5120": {
         "nationality": 0,
@@ -7317,7 +11077,16 @@ const equip_data = {
         "cn_name": "四联装533mm鱼雷",
         "tw_name": "四聯裝533mm魚雷",
         "en_name": "533mm Quadruple Torpedo Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4577,
+            4486,
+            4394,
+            4303,
+            4211,
+            4120,
+            4028
+        ]
     },
     "5100": {
         "nationality": 0,
@@ -7331,7 +11100,13 @@ const equip_data = {
         "cn_name": "四联装533mm鱼雷",
         "tw_name": "四聯裝533mm魚雷",
         "en_name": "533mm Quadruple Torpedo Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4806,
+            4710,
+            4614,
+            4519
+        ]
     },
     "5240": {
         "nationality": 0,
@@ -7345,7 +11120,23 @@ const equip_data = {
         "cn_name": "五联装533mm鱼雷",
         "tw_name": "五聯裝533mm魚雷",
         "en_name": "533mm Quintuple Torpedo Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4970,
+            4871,
+            4771,
+            4672,
+            4572,
+            4472,
+            4373,
+            4274,
+            4174,
+            4075,
+            3975,
+            3975,
+            3975,
+            3975
+        ]
     },
     "5220": {
         "nationality": 0,
@@ -7359,7 +11150,20 @@ const equip_data = {
         "cn_name": "五联装533mm鱼雷",
         "tw_name": "五聯裝533mm魚雷",
         "en_name": "533mm Quintuple Torpedo Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            5231,
+            5127,
+            5022,
+            4918,
+            4813,
+            4708,
+            4603,
+            4499,
+            4394,
+            4290,
+            4185
+        ]
     },
     "5200": {
         "nationality": 0,
@@ -7373,7 +11177,16 @@ const equip_data = {
         "cn_name": "五联装533mm鱼雷",
         "tw_name": "五聯裝533mm魚雷",
         "en_name": "533mm Quintuple Torpedo Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            5492,
+            5383,
+            5272,
+            5164,
+            5053,
+            4944,
+            4834
+        ]
     },
     "5040": {
         "nationality": 0,
@@ -7387,7 +11200,17 @@ const equip_data = {
         "cn_name": "三联装533mm鱼雷",
         "tw_name": "三聯裝533mm魚雷",
         "en_name": "533mm Triple Torpedo Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3728,
+            3653,
+            3578,
+            3503,
+            3429,
+            3354,
+            3280,
+            3280
+        ]
     },
     "5020": {
         "nationality": 0,
@@ -7401,7 +11224,13 @@ const equip_data = {
         "cn_name": "三联装533mm鱼雷",
         "tw_name": "三聯裝533mm魚雷",
         "en_name": "533mm Triple Torpedo Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3924,
+            3845,
+            3766,
+            3688
+        ]
     },
     "5000": {
         "nationality": 0,
@@ -7415,7 +11244,13 @@ const equip_data = {
         "cn_name": "三联装533mm鱼雷",
         "tw_name": "三聯裝533mm魚雷",
         "en_name": "533mm Triple Torpedo Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4120,
+            4037,
+            3954,
+            3872
+        ]
     },
     "91000": {
         "nationality": 8,
@@ -7429,7 +11264,23 @@ const equip_data = {
         "cn_name": "试作型三联装406mm/50主炮",
         "tw_name": "試作型三聯裝406mm/50主炮",
         "en_name": "Prototype Triple 406mm /50 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4511,
+            4421,
+            4331,
+            4241,
+            4151,
+            4061,
+            3971,
+            3881,
+            3791,
+            3701,
+            3611,
+            3611,
+            3611,
+            3611
+        ]
     },
     "90440": {
         "nationality": 8,
@@ -7443,7 +11294,23 @@ const equip_data = {
         "cn_name": "四联装380mm主炮Mle1935",
         "tw_name": "四聯裝380mm主炮Mle1935",
         "en_name": "Quadruple 380mm Mle 1935 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4850,
+            4753,
+            4656,
+            4559,
+            4462,
+            4365,
+            4268,
+            4171,
+            4074,
+            3977,
+            3880,
+            3880,
+            3880,
+            3880
+        ]
     },
     "90420": {
         "nationality": 8,
@@ -7457,7 +11324,20 @@ const equip_data = {
         "cn_name": "四联装380mm主炮Mle1935",
         "tw_name": "四聯裝380mm主炮Mle1935",
         "en_name": "Quadruple 380mm Mle 1935 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            5050,
+            4949,
+            4848,
+            4747,
+            4646,
+            4545,
+            4444,
+            4343,
+            4242,
+            4141,
+            4040
+        ]
     },
     "90400": {
         "nationality": 8,
@@ -7471,7 +11351,16 @@ const equip_data = {
         "cn_name": "四联装380mm主炮Mle1935",
         "tw_name": "四聯裝380mm主炮Mle1935",
         "en_name": "Quadruple 380mm Mle 1935 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            5250,
+            5145,
+            5040,
+            4935,
+            4830,
+            4725,
+            4620
+        ]
     },
     "90340": {
         "nationality": 8,
@@ -7485,7 +11374,21 @@ const equip_data = {
         "cn_name": "四联装330mm主炮Mle1931",
         "tw_name": "四聯裝330mm主炮Mle1931",
         "en_name": "Quadruple 330mm Mle 1931 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4950,
+            4851,
+            4752,
+            4653,
+            4554,
+            4455,
+            4356,
+            4257,
+            4158,
+            4059,
+            3960,
+            3960
+        ]
     },
     "90320": {
         "nationality": 8,
@@ -7499,7 +11402,16 @@ const equip_data = {
         "cn_name": "四联装330mm主炮Mle1931",
         "tw_name": "四聯裝330mm主炮Mle1931",
         "en_name": "Quadruple 330mm Mle 1931 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            5150,
+            5047,
+            4944,
+            4841,
+            4738,
+            4635,
+            4532
+        ]
     },
     "90300": {
         "nationality": 8,
@@ -7513,7 +11425,13 @@ const equip_data = {
         "cn_name": "四联装330mm主炮Mle1931",
         "tw_name": "四聯裝330mm主炮Mle1931",
         "en_name": "Quadruple 330mm Mle 1931 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            5350,
+            5243,
+            5136,
+            5029
+        ]
     },
     "85320": {
         "nationality": 7,
@@ -7527,7 +11445,20 @@ const equip_data = {
         "cn_name": "B-37 三联装406mm主炮Mk-1",
         "tw_name": "B-37 三聯裝406mm主炮MK-1",
         "en_name": "Triple 406mm MK-1 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4764,
+            4668,
+            4573,
+            4477,
+            4382,
+            4288,
+            4191,
+            4097,
+            4001,
+            3906,
+            3812
+        ]
     },
     "85300": {
         "nationality": 7,
@@ -7541,7 +11472,16 @@ const equip_data = {
         "cn_name": "B-37 三联装406mm主炮Mk-1",
         "tw_name": "B-37 三聯裝406mm主炮MK-1",
         "en_name": "Triple 406mm MK-1 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            5003,
+            4900,
+            4803,
+            4701,
+            4601,
+            4502,
+            4401
+        ]
     },
     "85420": {
         "nationality": 7,
@@ -7555,7 +11495,17 @@ const equip_data = {
         "cn_name": "三联装305mm主炮Model1907",
         "tw_name": "三聯裝305mm主炮Model1907",
         "en_name": "Triple 305mm M1907 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4600,
+            4520,
+            4440,
+            4360,
+            4280,
+            4200,
+            4120,
+            4120
+        ]
     },
     "95900": {
         "nationality": 6,
@@ -7582,7 +11532,23 @@ const equip_data = {
         "cn_name": "试作型三联装406mm主炮Model1940",
         "tw_name": "試作型三聯裝406mm主炮Model1940*",
         "en_name": "Prototype Triple 406mm Model 1940 Main Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4503,
+            4413,
+            4322,
+            4232,
+            4143,
+            4051,
+            3961,
+            3872,
+            3780,
+            3691,
+            3600,
+            3600,
+            3600,
+            3600
+        ]
     },
     "95040": {
         "nationality": 6,
@@ -7596,7 +11562,23 @@ const equip_data = {
         "cn_name": "三联装381mm主炮Model1934",
         "tw_name": "三聯裝381mm主炮Model1934",
         "en_name": "Triple 381mm M1934 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4514,
+            4424,
+            4333,
+            4243,
+            4154,
+            4062,
+            3972,
+            3883,
+            3791,
+            3702,
+            3611,
+            3611,
+            3611,
+            3611
+        ]
     },
     "95020": {
         "nationality": 6,
@@ -7610,7 +11592,20 @@ const equip_data = {
         "cn_name": "三联装381mm主炮Model1934",
         "tw_name": "三聯裝381mm主炮Model1934",
         "en_name": "Triple 381mm M1934 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4752,
+            4656,
+            4562,
+            4466,
+            4371,
+            4277,
+            4181,
+            4087,
+            3991,
+            3896,
+            3802
+        ]
     },
     "95000": {
         "nationality": 6,
@@ -7624,7 +11619,16 @@ const equip_data = {
         "cn_name": "三联装381mm主炮Model1934",
         "tw_name": "三聯裝381mm主炮Model1934",
         "en_name": "Triple 381mm M1934 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4990,
+            4888,
+            4791,
+            4689,
+            4589,
+            4491,
+            4390
+        ]
     },
     "95480": {
         "nationality": 6,
@@ -7638,7 +11642,17 @@ const equip_data = {
         "cn_name": "三联装320mm主炮Model1934",
         "tw_name": "三聯裝320mm主炮Model1934",
         "en_name": "Triple 320mm M1934 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4100,
+            4020,
+            3940,
+            3860,
+            3780,
+            3700,
+            3620,
+            3620
+        ]
     },
     "44200": {
         "nationality": 4,
@@ -7652,7 +11666,23 @@ const equip_data = {
         "cn_name": "试作型双联装406mmSKC主炮",
         "tw_name": "試作型雙聯裝406mmSKC主炮",
         "en_name": "Prototype 406mm SK C/34 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3670,
+            3595,
+            3520,
+            3445,
+            3370,
+            3295,
+            3220,
+            3145,
+            3070,
+            2995,
+            2920,
+            2920,
+            2920,
+            2920
+        ]
     },
     "44300": {
         "nationality": 4,
@@ -7666,7 +11696,23 @@ const equip_data = {
         "cn_name": "试作型三联装305mmSKC39主炮",
         "tw_name": "試作型三聯裝305mmSKC39主炮",
         "en_name": "Prototype Triple 305mm SK C/39 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3636,
+            3546,
+            3456,
+            3366,
+            3276,
+            3186,
+            3096,
+            3006,
+            2916,
+            2826,
+            2736,
+            2736,
+            2736,
+            2736
+        ]
     },
     "44140": {
         "nationality": 4,
@@ -7680,7 +11726,23 @@ const equip_data = {
         "cn_name": "双联380mmSKC主炮",
         "tw_name": "雙聯380mmSKC主炮",
         "en_name": "Twin 380mm SK C/34 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3467,
+            3396,
+            3327,
+            3257,
+            3185,
+            3115,
+            3045,
+            2975,
+            2904,
+            2834,
+            2764,
+            2764,
+            2764,
+            2764
+        ]
     },
     "44120": {
         "nationality": 4,
@@ -7694,7 +11756,20 @@ const equip_data = {
         "cn_name": "双联380mmSKC主炮",
         "tw_name": "雙聯380mmSKC主炮",
         "en_name": "Twin 380mm SK C/34 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3653,
+            3578,
+            3504,
+            3430,
+            3356,
+            3282,
+            3208,
+            3133,
+            3060,
+            2986,
+            2911
+        ]
     },
     "44100": {
         "nationality": 4,
@@ -7708,7 +11783,16 @@ const equip_data = {
         "cn_name": "双联380mmSKC主炮",
         "tw_name": "雙聯380mmSKC主炮",
         "en_name": "Twin 380mm SK C/34 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3839,
+            3759,
+            3681,
+            3604,
+            3526,
+            3449,
+            3371
+        ]
     },
     "44040": {
         "nationality": 4,
@@ -7722,7 +11806,21 @@ const equip_data = {
         "cn_name": "三联283mmSKC34主炮",
         "tw_name": "三聯283mmSKC34主炮",
         "en_name": "Triple 283mm SK C/34 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3300,
+            3220,
+            3140,
+            3060,
+            2980,
+            2900,
+            2820,
+            2740,
+            2660,
+            2580,
+            2500,
+            2500
+        ]
     },
     "44020": {
         "nationality": 4,
@@ -7736,7 +11834,16 @@ const equip_data = {
         "cn_name": "三联283mmSKC34主炮",
         "tw_name": "三聯283mmSKC34主炮",
         "en_name": "Triple 283mm SK C/34 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3500,
+            3415,
+            3330,
+            3245,
+            3160,
+            3075,
+            2990
+        ]
     },
     "44000": {
         "nationality": 4,
@@ -7750,7 +11857,13 @@ const equip_data = {
         "cn_name": "三联283mmSKC34主炮",
         "tw_name": "三聯283mmSKC34主炮",
         "en_name": "Triple 283mm SK C/34 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3700,
+            3610,
+            3520,
+            3430
+        ]
     },
     "34180": {
         "nationality": 3,
@@ -7764,7 +11877,23 @@ const equip_data = {
         "cn_name": "试作型410mm三连装炮",
         "tw_name": "試作型410mm三連裝炮",
         "en_name": "Prototype Triple 410mm Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4530,
+            4440,
+            4350,
+            4260,
+            4170,
+            4080,
+            3990,
+            3900,
+            3810,
+            3720,
+            3630,
+            3630,
+            3630,
+            3630
+        ]
     },
     "34060": {
         "nationality": 3,
@@ -7778,7 +11907,17 @@ const equip_data = {
         "cn_name": "356mm毘式连装炮",
         "tw_name": "356mm毘式連裝炮",
         "en_name": "Twin 356mm 41st Year Type Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3315,
+            3216,
+            3117,
+            3018,
+            2919,
+            2820,
+            2721,
+            2721
+        ]
     },
     "34300": {
         "nationality": 3,
@@ -7792,7 +11931,21 @@ const equip_data = {
         "cn_name": "410mm连装炮改",
         "tw_name": "410mm連裝炮改",
         "en_name": "Twin 410mm Kai Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3754,
+            3678,
+            3603,
+            3529,
+            3454,
+            3378,
+            3302,
+            3227,
+            3152,
+            3078,
+            3002,
+            3002
+        ]
     },
     "34160": {
         "nationality": 3,
@@ -7806,7 +11959,23 @@ const equip_data = {
         "cn_name": "410mm连装炮(三式弹)",
         "tw_name": "410mm連裝炮(三式彈)",
         "en_name": "Twin 410mm (Type 3 Shell) Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3650,
+            3575,
+            3500,
+            3425,
+            3350,
+            3275,
+            3200,
+            3125,
+            3050,
+            2975,
+            2900,
+            2900,
+            2900,
+            2900
+        ]
     },
     "34140": {
         "nationality": 3,
@@ -7820,7 +11989,21 @@ const equip_data = {
         "cn_name": "410mm连装炮",
         "tw_name": "410mm連裝炮",
         "en_name": "Twin 410mm Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3762,
+            3686,
+            3611,
+            3537,
+            3462,
+            3386,
+            3310,
+            3235,
+            3160,
+            3086,
+            3010,
+            3010
+        ]
     },
     "34120": {
         "nationality": 3,
@@ -7834,7 +12017,16 @@ const equip_data = {
         "cn_name": "410mm连装炮",
         "tw_name": "410mm連裝炮",
         "en_name": "Twin 410mm Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3960,
+            3881,
+            3802,
+            3722,
+            3643,
+            3564,
+            3485
+        ]
     },
     "34100": {
         "nationality": 3,
@@ -7848,7 +12040,13 @@ const equip_data = {
         "cn_name": "410mm连装炮",
         "tw_name": "410mm連裝炮",
         "en_name": "Twin 410mm Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4158,
+            4076,
+            3992,
+            3908
+        ]
     },
     "34040": {
         "nationality": 3,
@@ -7862,7 +12060,17 @@ const equip_data = {
         "cn_name": "356mm连装炮",
         "tw_name": "356mm連裝炮",
         "en_name": "Twin 356mm Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3292,
+            3225,
+            3160,
+            3094,
+            3028,
+            2963,
+            2897,
+            2897
+        ]
     },
     "34020": {
         "nationality": 3,
@@ -7876,7 +12084,13 @@ const equip_data = {
         "cn_name": "356mm连装炮",
         "tw_name": "356mm連裝炮",
         "en_name": "Twin 356mm Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3465,
+            3396,
+            3326,
+            3257
+        ]
     },
     "34000": {
         "nationality": 3,
@@ -7890,7 +12104,13 @@ const equip_data = {
         "cn_name": "356mm连装炮",
         "tw_name": "356mm連裝炮",
         "en_name": "Twin 356mm Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3639,
+            3566,
+            3493,
+            3420
+        ]
     },
     "30000": {
         "nationality": 3,
@@ -7904,7 +12124,17 @@ const equip_data = {
         "cn_name": "305mm连装炮",
         "tw_name": "305mm連裝炮",
         "en_name": "Twin 356mm 41st Year Type Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3100,
+            3020,
+            2940,
+            2860,
+            2780,
+            2700,
+            2620,
+            2620
+        ]
     },
     "24160": {
         "nationality": 2,
@@ -7918,7 +12148,23 @@ const equip_data = {
         "cn_name": "试作型三联装381mm主炮",
         "tw_name": "試作型三聯裝381mm主炮",
         "en_name": "Prototype Triple 381mm AA Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4320,
+            4236,
+            4152,
+            4068,
+            3984,
+            3900,
+            3816,
+            3732,
+            3648,
+            3564,
+            3480,
+            3480,
+            3480,
+            3480
+        ]
     },
     "24240": {
         "nationality": 2,
@@ -7932,7 +12178,23 @@ const equip_data = {
         "cn_name": "三联装406mm主炮",
         "tw_name": "三聯裝406mm主炮",
         "en_name": "Triple 406mm Main Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4514,
+            4424,
+            4333,
+            4243,
+            4154,
+            4062,
+            3972,
+            3883,
+            3791,
+            3702,
+            3611,
+            3611,
+            3611,
+            3611
+        ]
     },
     "24220": {
         "nationality": 2,
@@ -7946,7 +12208,20 @@ const equip_data = {
         "cn_name": "三联装406mm主炮",
         "tw_name": "三聯裝406mm主炮",
         "en_name": "Triple 406mm Main Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4752,
+            4656,
+            4562,
+            4466,
+            4371,
+            4277,
+            4181,
+            4087,
+            3991,
+            3896,
+            3802
+        ]
     },
     "24200": {
         "nationality": 2,
@@ -7960,7 +12235,16 @@ const equip_data = {
         "cn_name": "三联装406mm主炮",
         "tw_name": "三聯裝406mm主炮",
         "en_name": "Triple 406mm Main Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4990,
+            4888,
+            4791,
+            4689,
+            4589,
+            4491,
+            4390
+        ]
     },
     "24320": {
         "nationality": 2,
@@ -7974,7 +12258,20 @@ const equip_data = {
         "cn_name": "双联装381mm主炮改",
         "tw_name": "雙聯裝381mm主炮.改",
         "en_name": "Twin 381mm Advanced Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3650,
+            3580,
+            3510,
+            3440,
+            3370,
+            3300,
+            3230,
+            3160,
+            3090,
+            3020,
+            2950
+        ]
     },
     "24300": {
         "nationality": 2,
@@ -7988,7 +12285,16 @@ const equip_data = {
         "cn_name": "双联装381mm主炮改",
         "tw_name": "雙聯裝381mm主炮.改",
         "en_name": "Twin 381mm Advanced Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3950,
+            3875,
+            3800,
+            3725,
+            3650,
+            3575,
+            3500
+        ]
     },
     "24340": {
         "nationality": 2,
@@ -8002,7 +12308,23 @@ const equip_data = {
         "cn_name": "双联装381mm主炮改",
         "tw_name": "雙聯裝381mm主炮.改",
         "en_name": "Twin 381mm Advanced Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3350,
+            3285,
+            3220,
+            3155,
+            3090,
+            3025,
+            2960,
+            2895,
+            2830,
+            2765,
+            2700,
+            2700,
+            2700,
+            2700
+        ]
     },
     "24140": {
         "nationality": 2,
@@ -8016,7 +12338,21 @@ const equip_data = {
         "cn_name": "双联装381mm主炮",
         "tw_name": "雙聯裝381mm主炮",
         "en_name": "Twin 381mm Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3517,
+            3446,
+            3377,
+            3307,
+            3235,
+            3165,
+            3095,
+            3025,
+            2954,
+            2884,
+            2814,
+            2814
+        ]
     },
     "24120": {
         "nationality": 2,
@@ -8030,7 +12366,16 @@ const equip_data = {
         "cn_name": "双联装381mm主炮",
         "tw_name": "雙聯裝381mm主炮",
         "en_name": "Twin 381mm Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3703,
+            3628,
+            3554,
+            3480,
+            3406,
+            3332,
+            3258
+        ]
     },
     "24100": {
         "nationality": 2,
@@ -8044,7 +12389,13 @@ const equip_data = {
         "cn_name": "双联装381mm主炮",
         "tw_name": "雙聯裝381mm主炮",
         "en_name": "Twin 381mm Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3889,
+            3809,
+            3731,
+            3654
+        ]
     },
     "24060": {
         "nationality": 2,
@@ -8058,7 +12409,21 @@ const equip_data = {
         "cn_name": "双联装356mm主炮",
         "tw_name": "雙聯裝356mm主炮",
         "en_name": "Twin 356mm Mk VII Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3300,
+            3233,
+            3168,
+            3103,
+            3035,
+            2969,
+            2904,
+            2838,
+            2771,
+            2706,
+            2640,
+            2640
+        ]
     },
     "24040": {
         "nationality": 2,
@@ -8072,7 +12437,23 @@ const equip_data = {
         "cn_name": "四联装356mm主炮",
         "tw_name": "四聯裝356mm主炮",
         "en_name": "Quadruple 356mm Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            5016,
+            4953,
+            4891,
+            4828,
+            4765,
+            4703,
+            4640,
+            4577,
+            4514,
+            4452,
+            4389,
+            4389,
+            4389,
+            4389
+        ]
     },
     "24020": {
         "nationality": 2,
@@ -8086,7 +12467,20 @@ const equip_data = {
         "cn_name": "四联装356mm主炮",
         "tw_name": "四聯裝356mm主炮",
         "en_name": "Quadruple 356mm Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            5280,
+            5214,
+            5148,
+            5082,
+            5016,
+            4950,
+            4884,
+            4818,
+            4752,
+            4686,
+            4620
+        ]
     },
     "24000": {
         "nationality": 2,
@@ -8100,7 +12494,16 @@ const equip_data = {
         "cn_name": "四联装356mm主炮",
         "tw_name": "四聯裝356mm主炮",
         "en_name": "Quadruple 356mm Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            5544,
+            5475,
+            5405,
+            5336,
+            5267,
+            5198,
+            5128
+        ]
     },
     "14500": {
         "nationality": 1,
@@ -8114,7 +12517,23 @@ const equip_data = {
         "cn_name": "试作型双联装457mm主炮Mk A",
         "tw_name": "試作型雙聯裝457mm主炮MKA",
         "en_name": "Prototype Twin 457mm Mk A Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3857,
+            3781,
+            3706,
+            3632,
+            3557,
+            3481,
+            3405,
+            3330,
+            3255,
+            3181,
+            3105,
+            3105,
+            3105,
+            3105
+        ]
     },
     "14520": {
         "nationality": 1,
@@ -8128,7 +12547,23 @@ const equip_data = {
         "cn_name": "试作型双联装406mm主炮Mk4",
         "tw_name": "試作型雙聯裝406mm主炮Mk4*",
         "en_name": "Prototype Twin 406mm Mk4 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3565,
+            3495,
+            3426,
+            3357,
+            3288,
+            3218,
+            3147,
+            3078,
+            3009,
+            2940,
+            2850,
+            2850,
+            2850,
+            2850
+        ]
     },
     "14360": {
         "nationality": 1,
@@ -8142,7 +12577,23 @@ const equip_data = {
         "cn_name": "试作型三联装406mm主炮MkD",
         "tw_name": "試作型三聯裝406mm主炮MkD",
         "en_name": "Prototype 406mm Mk D Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4540,
+            4450,
+            4360,
+            4270,
+            4180,
+            4090,
+            4000,
+            3910,
+            3820,
+            3730,
+            3640,
+            3640,
+            3640,
+            3640
+        ]
     },
     "14160": {
         "nationality": 1,
@@ -8156,7 +12607,21 @@ const equip_data = {
         "cn_name": "试作型四联装356mm主炮MkB",
         "tw_name": "試作型四聯裝356mm主炮MkB",
         "en_name": "Prototype Quadruple 356mm Mk B Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            5480,
+            5393,
+            5306,
+            5219,
+            5132,
+            5045,
+            4958,
+            4871,
+            4784,
+            4697,
+            4610,
+            4610
+        ]
     },
     "14260": {
         "nationality": 1,
@@ -8170,7 +12635,21 @@ const equip_data = {
         "cn_name": "双联装406mm主炮Mk8",
         "tw_name": "雙聯裝406mm主炮Mk8",
         "en_name": "Twin 406mm Mk 8 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3597,
+            3537,
+            3477,
+            3417,
+            3357,
+            3297,
+            3237,
+            3177,
+            3117,
+            3057,
+            2997,
+            2997
+        ]
     },
     "14180": {
         "nationality": 1,
@@ -8184,7 +12663,17 @@ const equip_data = {
         "cn_name": "双联装406mm主炮Mk1",
         "tw_name": "雙聯裝406mm主炮Mk1",
         "en_name": "Twin 406mm Mk 1 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3800,
+            3740,
+            3680,
+            3620,
+            3560,
+            3500,
+            3440,
+            3440
+        ]
     },
     "14240": {
         "nationality": 1,
@@ -8198,7 +12687,21 @@ const equip_data = {
         "cn_name": "双联装406mm主炮Mk5",
         "tw_name": "雙聯裝406mm主炮MK5",
         "en_name": "Twin 406mm Mk 5 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3780,
+            3720,
+            3660,
+            3600,
+            3540,
+            3480,
+            3420,
+            3360,
+            3300,
+            3240,
+            3180,
+            3180
+        ]
     },
     "14220": {
         "nationality": 1,
@@ -8212,7 +12715,16 @@ const equip_data = {
         "cn_name": "双联装406mm主炮Mk5",
         "tw_name": "雙聯裝406mm主炮MK5",
         "en_name": "Twin 406mm Mk 5 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3820,
+            3760,
+            3700,
+            3640,
+            3580,
+            3520,
+            3460
+        ]
     },
     "14200": {
         "nationality": 1,
@@ -8226,7 +12738,13 @@ const equip_data = {
         "cn_name": "双联装406mm主炮Mk5",
         "tw_name": "雙聯裝406mm主炮MK5",
         "en_name": "Twin 406mm Mk 5 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            3900,
+            3840,
+            3780,
+            3720
+        ]
     },
     "14380": {
         "nationality": 1,
@@ -8240,7 +12758,21 @@ const equip_data = {
         "cn_name": "三联装406mm主炮Mk2",
         "tw_name": "三聯裝406mm主炮Mk2",
         "en_name": "Triple 406mm Mk 2 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            5140,
+            5058,
+            4976,
+            4894,
+            4812,
+            4730,
+            4648,
+            4566,
+            4484,
+            4402,
+            4320,
+            4320
+        ]
     },
     "14400": {
         "nationality": 1,
@@ -8254,7 +12786,8 @@ const equip_data = {
         "cn_name": "三联装406mm主炮Mk7",
         "tw_name": "三聯裝406mm主炮Mk7*",
         "en_name": "Triple 406mm MK7 Main Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": []
     },
     "14460": {
         "nationality": 1,
@@ -8268,7 +12801,23 @@ const equip_data = {
         "cn_name": "三联装406mm主炮Mk7",
         "tw_name": "三聯裝406mm主炮Mk7*",
         "en_name": "Triple 406mm MK7 Main Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4544,
+            4454,
+            4363,
+            4273,
+            4184,
+            4092,
+            4002,
+            3913,
+            3821,
+            3732,
+            3641,
+            3641,
+            3641,
+            3641
+        ]
     },
     "14340": {
         "nationality": 1,
@@ -8282,7 +12831,21 @@ const equip_data = {
         "cn_name": "三联装406mm主炮Mk6",
         "tw_name": "三聯裝406mm主炮MK6",
         "en_name": "Triple 406mm Mk 6 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4514,
+            4424,
+            4333,
+            4243,
+            4154,
+            4062,
+            3972,
+            3883,
+            3791,
+            3702,
+            3611,
+            3611
+        ]
     },
     "14320": {
         "nationality": 1,
@@ -8296,7 +12859,16 @@ const equip_data = {
         "cn_name": "三联装406mm主炮Mk6",
         "tw_name": "三聯裝406mm主炮MK6",
         "en_name": "Triple 406mm Mk 6 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4752,
+            4656,
+            4562,
+            4466,
+            4371,
+            4277,
+            4181
+        ]
     },
     "14300": {
         "nationality": 1,
@@ -8310,7 +12882,13 @@ const equip_data = {
         "cn_name": "三联装406mm主炮Mk6",
         "tw_name": "三聯裝406mm主炮MK6",
         "en_name": "Triple 406mm Mk 6 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4990,
+            4888,
+            4791,
+            4689
+        ]
     },
     "14140": {
         "nationality": 1,
@@ -8324,7 +12902,17 @@ const equip_data = {
         "cn_name": "三联装356mm主炮",
         "tw_name": "三聯裝356mm主炮",
         "en_name": "Triple 356mm Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4452,
+            4389,
+            4326,
+            4264,
+            4201,
+            4138,
+            4076,
+            4076
+        ]
     },
     "14120": {
         "nationality": 1,
@@ -8338,7 +12926,13 @@ const equip_data = {
         "cn_name": "三联装356mm主炮",
         "tw_name": "三聯裝356mm主炮",
         "en_name": "Triple 356mm Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4686,
+            4620,
+            4554,
+            4488
+        ]
     },
     "14100": {
         "nationality": 1,
@@ -8352,7 +12946,13 @@ const equip_data = {
         "cn_name": "三联装356mm主炮",
         "tw_name": "三聯裝356mm主炮",
         "en_name": "Triple 356mm Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            4920,
+            4851,
+            4782,
+            4712
+        ]
     },
     "7300": {
         "nationality": 8,
@@ -8369,7 +12969,23 @@ const equip_data = {
         "cn_name": "试作型三联装203mm舰炮",
         "tw_name": "試作型三聯裝203mm艦炮",
         "en_name": "Prototype Triple 203mm AA Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1210,
+            1170,
+            1130,
+            1090,
+            1050,
+            1010,
+            970,
+            930,
+            890,
+            850,
+            810,
+            810,
+            810,
+            810
+        ]
     },
     "7340": {
         "nationality": 8,
@@ -8398,7 +13014,17 @@ const equip_data = {
         "cn_name": "双联装203mm主炮Mle1924(潜艇用)",
         "tw_name": "雙聯裝203mm主炮Mle1924(潛艇用)",
         "en_name": "Twin 203mm Mle 1924 Submarine Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            520,
+            510,
+            500,
+            490,
+            480,
+            470,
+            460,
+            460
+        ]
     },
     "90900": {
         "nationality": 8,
@@ -8415,7 +13041,23 @@ const equip_data = {
         "cn_name": "双联装203mm主炮Mle1931",
         "tw_name": "雙聯裝203mm主炮Mle1931",
         "en_name": "Twin 203mm Mle 1931 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1322,
+            1282,
+            1242,
+            1202,
+            1162,
+            1122,
+            1082,
+            1042,
+            1002,
+            962,
+            922,
+            922,
+            922,
+            922
+        ]
     },
     "90880": {
         "nationality": 8,
@@ -8432,7 +13074,20 @@ const equip_data = {
         "cn_name": "双联装203mm主炮Mle1931",
         "tw_name": "雙聯裝203mm主炮Mle1931",
         "en_name": "Twin 203mm Mle 1931 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1392,
+            1352,
+            1312,
+            1272,
+            1232,
+            1192,
+            1152,
+            1112,
+            1072,
+            1032,
+            992
+        ]
     },
     "90860": {
         "nationality": 8,
@@ -8449,7 +13104,16 @@ const equip_data = {
         "cn_name": "双联装203mm主炮Mle1931",
         "tw_name": "雙聯裝203mm主炮Mle1931",
         "en_name": "Twin 203mm Mle 1931 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1452,
+            1412,
+            1372,
+            1332,
+            1292,
+            1252,
+            1212
+        ]
     },
     "91100": {
         "nationality": 8,
@@ -8466,7 +13130,13 @@ const equip_data = {
         "cn_name": "双联装203mm主炮Mle1924",
         "tw_name": "雙聯裝203mm主炮Mle1924*",
         "en_name": "Twin 203mm Mle 1924 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1470,
+            1439,
+            1407,
+            1376
+        ]
     },
     "95240": {
         "nationality": 6,
@@ -8483,7 +13153,23 @@ const equip_data = {
         "cn_name": "双联203mm主炮Model1927",
         "tw_name": "雙聯203mm主炮Model1927",
         "en_name": "Twin 203mm Model 1927 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1640,
+            1605,
+            1570,
+            1535,
+            1500,
+            1465,
+            1430,
+            1395,
+            1360,
+            1325,
+            1290,
+            1290,
+            1290,
+            1290
+        ]
     },
     "95220": {
         "nationality": 6,
@@ -8500,7 +13186,20 @@ const equip_data = {
         "cn_name": "双联203mm主炮Model1927",
         "tw_name": "雙聯203mm主炮Model1927",
         "en_name": "Twin 203mm Model 1927 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1660,
+            1625,
+            1590,
+            1555,
+            1520,
+            1485,
+            1450,
+            1415,
+            1380,
+            1345,
+            1310
+        ]
     },
     "95200": {
         "nationality": 6,
@@ -8517,7 +13216,16 @@ const equip_data = {
         "cn_name": "双联203mm主炮Model1927",
         "tw_name": "雙聯203mm主炮Model1927",
         "en_name": "Twin 203mm Model 1927 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1690,
+            1655,
+            1620,
+            1585,
+            1550,
+            1515,
+            1480
+        ]
     },
     "95340": {
         "nationality": 6,
@@ -8534,7 +13242,21 @@ const equip_data = {
         "cn_name": "双联203mm主炮Model1924",
         "tw_name": "雙聯203mm主炮Model1924",
         "en_name": "Twin 203mm Model 1924 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1520,
+            1485,
+            1450,
+            1415,
+            1380,
+            1345,
+            1310,
+            1275,
+            1240,
+            1205,
+            1170,
+            1170
+        ]
     },
     "95320": {
         "nationality": 6,
@@ -8551,7 +13273,16 @@ const equip_data = {
         "cn_name": "双联203mm主炮Model1924",
         "tw_name": "雙聯203mm主炮Model1924",
         "en_name": "Twin 203mm Model 1924 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1550,
+            1515,
+            1480,
+            1445,
+            1410,
+            1375,
+            1340
+        ]
     },
     "95300": {
         "nationality": 6,
@@ -8568,7 +13299,13 @@ const equip_data = {
         "cn_name": "双联203mm主炮Model1924",
         "tw_name": "雙聯203mm主炮Model1924",
         "en_name": "Twin 203mm Model 1924 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1590,
+            1555,
+            1520,
+            1485
+        ]
     },
     "43060": {
         "nationality": 4,
@@ -8585,7 +13322,23 @@ const equip_data = {
         "cn_name": "试作型三联装203mmSKC主炮",
         "tw_name": "試作型三聯裝203mmSKC主炮",
         "en_name": "Prototype Triple 203mm SK C/34 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1450,
+            1415,
+            1380,
+            1345,
+            1310,
+            1275,
+            1240,
+            1205,
+            1170,
+            1135,
+            1100,
+            1100,
+            1100,
+            1100
+        ]
     },
     "43040": {
         "nationality": 4,
@@ -8602,7 +13355,23 @@ const equip_data = {
         "cn_name": "双联装203mmSKC主炮",
         "tw_name": "雙聯裝203mmSKC主炮",
         "en_name": "Twin 203mm (SK C/34)",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1500,
+            1465,
+            1430,
+            1395,
+            1360,
+            1325,
+            1290,
+            1255,
+            1220,
+            1185,
+            1150,
+            1150,
+            1150,
+            1150
+        ]
     },
     "43020": {
         "nationality": 4,
@@ -8619,7 +13388,20 @@ const equip_data = {
         "cn_name": "双联装203mmSKC主炮",
         "tw_name": "雙聯裝203mmSKC主炮",
         "en_name": "Twin 203mm (SK C/34)",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1520,
+            1485,
+            1450,
+            1415,
+            1380,
+            1345,
+            1310,
+            1275,
+            1240,
+            1205,
+            1170
+        ]
     },
     "43000": {
         "nationality": 4,
@@ -8636,7 +13418,16 @@ const equip_data = {
         "cn_name": "双联装203mmSKC主炮",
         "tw_name": "雙聯裝203mmSKC主炮",
         "en_name": "Twin 203mm (SK C/34)",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1550,
+            1515,
+            1480,
+            1445,
+            1410,
+            1375,
+            1340
+        ]
     },
     "33060": {
         "nationality": 3,
@@ -8653,7 +13444,23 @@ const equip_data = {
         "cn_name": "试作型203mm(3号)连装炮",
         "tw_name": "試作型203mm(3號)連裝炮",
         "en_name": "Prototype 203mm No. 3 Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1290,
+            1250,
+            1210,
+            1170,
+            1130,
+            1090,
+            1050,
+            1010,
+            970,
+            930,
+            890,
+            890,
+            890,
+            890
+        ]
     },
     "33080": {
         "nationality": 3,
@@ -8670,7 +13477,21 @@ const equip_data = {
         "cn_name": "203mm连装炮改",
         "tw_name": "203mm連裝炮改",
         "en_name": "Twin 203mm No. 2 Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1316,
+            1275,
+            1235,
+            1195,
+            1154,
+            1114,
+            1074,
+            1033,
+            993,
+            953,
+            912,
+            912
+        ]
     },
     "33040": {
         "nationality": 3,
@@ -8687,7 +13508,21 @@ const equip_data = {
         "cn_name": "203mm连装炮",
         "tw_name": "203mm連裝炮",
         "en_name": "Twin 203mm Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1331,
+            1290,
+            1250,
+            1210,
+            1169,
+            1129,
+            1089,
+            1048,
+            1008,
+            968,
+            927,
+            927
+        ]
     },
     "33020": {
         "nationality": 3,
@@ -8704,7 +13539,16 @@ const equip_data = {
         "cn_name": "203mm连装炮",
         "tw_name": "203mm連裝炮",
         "en_name": "Twin 203mm Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1351,
+            1320,
+            1290,
+            1260,
+            1230,
+            1200,
+            1169
+        ]
     },
     "33000": {
         "nationality": 3,
@@ -8721,7 +13565,13 @@ const equip_data = {
         "cn_name": "203mm连装炮",
         "tw_name": "203mm連裝炮",
         "en_name": "Twin 203mm Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1411,
+            1381,
+            1351,
+            1320
+        ]
     },
     "23100": {
         "nationality": 2,
@@ -8738,7 +13588,23 @@ const equip_data = {
         "cn_name": "试作型双联装234mm主炮",
         "tw_name": "試作型雙聯裝234mm主炮",
         "en_name": "Prototype Twin 234mm Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1328,
+            1288,
+            1248,
+            1208,
+            1168,
+            1128,
+            1088,
+            1048,
+            1008,
+            968,
+            928,
+            928,
+            928,
+            928
+        ]
     },
     "23120": {
         "nationality": 2,
@@ -8755,7 +13621,23 @@ const equip_data = {
         "cn_name": "试作型三联装234mm主炮",
         "tw_name": "試作型三聯裝234mm主炮",
         "en_name": "Prototype Triple 234mm Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1580,
+            1540,
+            1500,
+            1460,
+            1420,
+            1380,
+            1340,
+            1300,
+            1260,
+            1220,
+            1180,
+            1180,
+            1180,
+            1180
+        ]
     },
     "23200": {
         "nationality": 2,
@@ -8772,7 +13654,23 @@ const equip_data = {
         "cn_name": "试作型三联装203mm主炮Mark IX",
         "tw_name": "試作型三聯裝203mm主炮Mark IX",
         "en_name": "Prototype Triple 203mm Mk IX Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1780,
+            1721,
+            1662,
+            1603,
+            1544,
+            1485,
+            1426,
+            1367,
+            1308,
+            1249,
+            1190,
+            1190,
+            1190,
+            1190
+        ]
     },
     "23040": {
         "nationality": 2,
@@ -8789,7 +13687,21 @@ const equip_data = {
         "cn_name": "双联装203mm主炮",
         "tw_name": "雙聯裝203mm主炮",
         "en_name": "Twin 203mm Mk VIII Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1386,
+            1344,
+            1302,
+            1260,
+            1218,
+            1176,
+            1134,
+            1092,
+            1050,
+            1008,
+            966,
+            966
+        ]
     },
     "23020": {
         "nationality": 2,
@@ -8806,7 +13718,16 @@ const equip_data = {
         "cn_name": "双联装203mm主炮",
         "tw_name": "雙聯裝203mm主炮",
         "en_name": "Twin 203mm Mk VIII Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1407,
+            1376,
+            1344,
+            1313,
+            1281,
+            1250,
+            1218
+        ]
     },
     "23000": {
         "nationality": 2,
@@ -8823,7 +13744,13 @@ const equip_data = {
         "cn_name": "双联装203mm主炮",
         "tw_name": "雙聯裝203mm主炮",
         "en_name": "Twin 203mm Mk VIII Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1470,
+            1439,
+            1407,
+            1376
+        ]
     },
     "13140": {
         "nationality": 1,
@@ -8840,7 +13767,21 @@ const equip_data = {
         "cn_name": "三联装203mm主炮改进型",
         "tw_name": "三聯裝203mm主炮改良型",
         "en_name": "Triple 203mm Improved Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1053,
+            1032,
+            1011,
+            989,
+            969,
+            946,
+            926,
+            905,
+            883,
+            863,
+            841,
+            841
+        ]
     },
     "13120": {
         "nationality": 1,
@@ -8857,7 +13798,16 @@ const equip_data = {
         "cn_name": "三联装203mm主炮改进型",
         "tw_name": "三聯裝203mm主炮改良型",
         "en_name": "Triple 203mm Improved Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1108,
+            1086,
+            1064,
+            1041,
+            1019,
+            997,
+            975
+        ]
     },
     "13100": {
         "nationality": 1,
@@ -8874,7 +13824,13 @@ const equip_data = {
         "cn_name": "三联装203mm主炮改进型",
         "tw_name": "三聯裝203mm主炮改良型",
         "en_name": "Triple 203mm Improved Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1164,
+            1141,
+            1117,
+            1094
+        ]
     },
     "13160": {
         "nationality": 1,
@@ -8891,7 +13847,23 @@ const equip_data = {
         "cn_name": "三联装203mm主炮Mk15",
         "tw_name": "三聯裝203mm主炮Mk15",
         "en_name": "Triple 203mm Mk 15 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1495,
+            1460,
+            1425,
+            1390,
+            1355,
+            1320,
+            1285,
+            1250,
+            1215,
+            1180,
+            1145,
+            1145,
+            1145,
+            1145
+        ]
     },
     "13060": {
         "nationality": 1,
@@ -8908,7 +13880,17 @@ const equip_data = {
         "cn_name": "三联装203mm主炮Mk13",
         "tw_name": "三聯裝203mm主炮Mk13",
         "en_name": "Triple 203mm Mk 13 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1085,
+            1063,
+            1041,
+            1018,
+            997,
+            973,
+            952,
+            952
+        ]
     },
     "13040": {
         "nationality": 1,
@@ -8925,7 +13907,17 @@ const equip_data = {
         "cn_name": "三联装203mm主炮",
         "tw_name": "三聯裝203mm主炮",
         "en_name": "Triple 203mm Main Gun Mount (Improved)",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1108,
+            1086,
+            1064,
+            1041,
+            1020,
+            996,
+            975,
+            975
+        ]
     },
     "13020": {
         "nationality": 1,
@@ -8942,7 +13934,13 @@ const equip_data = {
         "cn_name": "三联装203mm主炮",
         "tw_name": "三聯裝203mm主炮",
         "en_name": "Triple 203mm Main Gun Mount (Improved)",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1166,
+            1143,
+            1120,
+            1096
+        ]
     },
     "13000": {
         "nationality": 1,
@@ -8959,7 +13957,13 @@ const equip_data = {
         "cn_name": "三联装203mm主炮",
         "tw_name": "三聯裝203mm主炮",
         "en_name": "Triple 203mm Main Gun Mount (Improved)",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            1225,
+            1201,
+            1175,
+            1151
+        ]
     },
     "90780": {
         "nationality": 8,
@@ -8973,7 +13977,17 @@ const equip_data = {
         "cn_name": "双联装155mm主炮Mle1920",
         "tw_name": "雙聯裝155mm主砲Mle1920",
         "en_name": "Twin 155mm Mle 1920 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            560,
+            550,
+            540,
+            530,
+            520,
+            510,
+            500,
+            500
+        ]
     },
     "90800": {
         "nationality": 8,
@@ -8987,7 +14001,17 @@ const equip_data = {
         "cn_name": "单装155mm副炮Mle1920",
         "tw_name": "單裝155mm副砲Mle1920",
         "en_name": "Single 155mm Mle 1920 Secondary Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            560,
+            550,
+            540,
+            530,
+            520,
+            510,
+            500,
+            500
+        ]
     },
     "90240": {
         "nationality": 8,
@@ -9001,7 +14025,17 @@ const equip_data = {
         "cn_name": "三联装152mm主炮Mle1930",
         "tw_name": "三聯裝152mm主炮Mle1930",
         "en_name": "Triple 152mm Mle 1930 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            578,
+            570,
+            565,
+            560,
+            552,
+            547,
+            542,
+            542
+        ]
     },
     "90220": {
         "nationality": 8,
@@ -9015,7 +14049,13 @@ const equip_data = {
         "cn_name": "三联装152mm主炮Mle1930",
         "tw_name": "三聯裝152mm主炮Mle1930",
         "en_name": "Triple 152mm Mle 1930 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            607,
+            601,
+            595,
+            589
+        ]
     },
     "90200": {
         "nationality": 8,
@@ -9029,7 +14069,13 @@ const equip_data = {
         "cn_name": "三联装152mm主炮Mle1930",
         "tw_name": "三聯裝152mm主炮Mle1930",
         "en_name": "Triple 152mm Mle 1930 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            638,
+            630,
+            624,
+            618
+        ]
     },
     "85460": {
         "nationality": 7,
@@ -9043,7 +14089,16 @@ const equip_data = {
         "cn_name": "B-1-P 三联装180mm主炮Model1932",
         "tw_name": "B-1-P 三聯裝180mm主炮Model1932*",
         "en_name": "Triple 180mm B-1-P Pattern 1932 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            629,
+            623,
+            617,
+            611,
+            605,
+            599,
+            593
+        ]
     },
     "85440": {
         "nationality": 7,
@@ -9057,7 +14112,17 @@ const equip_data = {
         "cn_name": "双联装152mm主炮Model1892",
         "tw_name": "雙聯裝152mm主炮Model1892",
         "en_name": "Twin 152mm Pattern 1892 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            486,
+            476,
+            466,
+            456,
+            446,
+            436,
+            426,
+            426
+        ]
     },
     "7040": {
         "nationality": 7,
@@ -9071,7 +14136,17 @@ const equip_data = {
         "cn_name": "单装152mm主炮",
         "tw_name": "單裝152mm主炮",
         "en_name": "Single 152mm Mk XII Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            423,
+            414,
+            404,
+            395,
+            385,
+            376,
+            366,
+            366
+        ]
     },
     "7020": {
         "nationality": 7,
@@ -9085,7 +14160,13 @@ const equip_data = {
         "cn_name": "单装152mm主炮",
         "tw_name": "單裝152mm主炮",
         "en_name": "Single 152mm Mk XII Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            446,
+            436,
+            426,
+            416
+        ]
     },
     "7000": {
         "nationality": 7,
@@ -9099,7 +14180,13 @@ const equip_data = {
         "cn_name": "单装152mm主炮",
         "tw_name": "單裝152mm主炮",
         "en_name": "Single 152mm Mk XII Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            469,
+            458,
+            448,
+            437
+        ]
     },
     "85160": {
         "nationality": 7,
@@ -9113,7 +14200,23 @@ const equip_data = {
         "cn_name": "B-38 三联装152mm主炮Mk5",
         "tw_name": "B-38 三聯裝152mm主炮Mk5",
         "en_name": "Triple 152mm B-38 MK 5 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            630,
+            614,
+            608,
+            602,
+            596,
+            590,
+            584,
+            578,
+            565,
+            552,
+            535,
+            535,
+            535,
+            535
+        ]
     },
     "85140": {
         "nationality": 7,
@@ -9127,7 +14230,20 @@ const equip_data = {
         "cn_name": "B-38 三联装152mm主炮Mk5",
         "tw_name": "B-38 三聯裝152mm主炮Mk5",
         "en_name": "Triple 152mm B-38 MK 5 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            640,
+            624,
+            618,
+            602,
+            596,
+            580,
+            574,
+            568,
+            562,
+            556,
+            550
+        ]
     },
     "85120": {
         "nationality": 7,
@@ -9141,7 +14257,16 @@ const equip_data = {
         "cn_name": "B-38 三联装152mm主炮Mk5",
         "tw_name": "B-38 三聯裝152mm主炮Mk5",
         "en_name": "Triple 152mm B-38 MK 5 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            652,
+            646,
+            640,
+            634,
+            628,
+            622,
+            616
+        ]
     },
     "95640": {
         "nationality": 6,
@@ -9155,7 +14280,23 @@ const equip_data = {
         "cn_name": "三联装152mm主炮Model1934",
         "tw_name": "三聯裝152mm主炮Model1934*",
         "en_name": "Triple 152mm Model 1934 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            617,
+            601,
+            595,
+            579,
+            573,
+            557,
+            551,
+            545,
+            539,
+            533,
+            526,
+            526,
+            526,
+            526
+        ]
     },
     "95600": {
         "nationality": 6,
@@ -9169,7 +14310,16 @@ const equip_data = {
         "cn_name": "三联装152mm主炮Model1934",
         "tw_name": "三聯裝152mm主炮Model1934*",
         "en_name": "Triple 152mm Model 1934 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            641,
+            625,
+            619,
+            603,
+            597,
+            581,
+            575
+        ]
     },
     "7140": {
         "nationality": 5,
@@ -9183,7 +14333,17 @@ const equip_data = {
         "cn_name": "单装150mm主炮",
         "tw_name": "單裝150mm主炮",
         "en_name": "Single 150mm Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            404,
+            394,
+            384,
+            374,
+            364,
+            354,
+            344,
+            344
+        ]
     },
     "7120": {
         "nationality": 5,
@@ -9197,7 +14357,13 @@ const equip_data = {
         "cn_name": "单装150mm主炮",
         "tw_name": "單裝150mm主炮",
         "en_name": "Single 150mm Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            426,
+            416,
+            406,
+            396
+        ]
     },
     "7100": {
         "nationality": 5,
@@ -9211,7 +14377,13 @@ const equip_data = {
         "cn_name": "单装150mm主炮",
         "tw_name": "單裝150mm主炮",
         "en_name": "Single 150mm Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            449,
+            438,
+            428,
+            417
+        ]
     },
     "42080": {
         "nationality": 4,
@@ -9225,7 +14397,23 @@ const equip_data = {
         "cn_name": "试作型双联装SKC28式150mm主炮改",
         "tw_name": "試作型雙聯裝SKC28式150mm主炮改*",
         "en_name": "Prototype Twin 150mm SK C/28 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            801,
+            792,
+            783,
+            774,
+            765,
+            756,
+            747,
+            738,
+            729,
+            720,
+            710,
+            710,
+            710,
+            710
+        ]
     },
     "42340": {
         "nationality": 4,
@@ -9239,7 +14427,21 @@ const equip_data = {
         "cn_name": "单装TbtsKC36式150mm主炮",
         "tw_name": "單裝TbtsKC36式150mm主炮",
         "en_name": "Single 150mm TbtsK C/36 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            364,
+            361,
+            358,
+            355,
+            352,
+            349,
+            345,
+            341,
+            337,
+            333,
+            329,
+            329
+        ]
     },
     "42300": {
         "nationality": 4,
@@ -9253,7 +14455,13 @@ const equip_data = {
         "cn_name": "单装TbtsKC36式150mm主炮",
         "tw_name": "單裝TbtsKC36式150mm主炮",
         "en_name": "Single 150mm TbtsK C/36 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            390,
+            386,
+            381,
+            376
+        ]
     },
     "42240": {
         "nationality": 4,
@@ -9267,7 +14475,21 @@ const equip_data = {
         "cn_name": "双联装TbtsKC36式150mm主炮",
         "tw_name": "雙聯裝TbtsKC36式150mm主炮",
         "en_name": "Twin 150mm TbtsK C/36 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            503,
+            496,
+            491,
+            487,
+            480,
+            476,
+            471,
+            466,
+            461,
+            455,
+            451,
+            451
+        ]
     },
     "42220": {
         "nationality": 4,
@@ -9281,7 +14503,16 @@ const equip_data = {
         "cn_name": "双联装TbtsKC36式150mm主炮",
         "tw_name": "雙聯裝TbtsKC36式150mm主炮",
         "en_name": "Twin 150mm TbtsK C/36 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            528,
+            523,
+            517,
+            512,
+            506,
+            501,
+            495
+        ]
     },
     "42200": {
         "nationality": 4,
@@ -9295,7 +14526,13 @@ const equip_data = {
         "cn_name": "双联装TbtsKC36式150mm主炮",
         "tw_name": "雙聯裝TbtsKC36式150mm主炮",
         "en_name": "Twin 150mm TbtsK C/36 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            555,
+            548,
+            543,
+            537
+        ]
     },
     "42060": {
         "nationality": 4,
@@ -9309,7 +14546,21 @@ const equip_data = {
         "cn_name": "双联装SKC28式150mm副炮",
         "tw_name": "雙聯裝SKC28式150mm副炮",
         "en_name": "Twin 150mm SK C/28 Secondary Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            520,
+            513,
+            508,
+            504,
+            497,
+            493,
+            488,
+            483,
+            478,
+            472,
+            468,
+            468
+        ]
     },
     "42040": {
         "nationality": 4,
@@ -9323,7 +14574,21 @@ const equip_data = {
         "cn_name": "单装SKC28式150mm主炮",
         "tw_name": "單裝SKC28式150mm主炮",
         "en_name": "Single 150mm SK C/28 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            299,
+            290,
+            280,
+            271,
+            263,
+            253,
+            245,
+            234,
+            226,
+            217,
+            208,
+            208
+        ]
     },
     "42020": {
         "nationality": 4,
@@ -9337,7 +14602,16 @@ const equip_data = {
         "cn_name": "单装SKC28式150mm主炮",
         "tw_name": "單裝SKC28式150mm主炮",
         "en_name": "Single 150mm SK C/28 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            314,
+            305,
+            295,
+            286,
+            276,
+            266,
+            257
+        ]
     },
     "42000": {
         "nationality": 4,
@@ -9351,7 +14625,13 @@ const equip_data = {
         "cn_name": "单装SKC28式150mm主炮",
         "tw_name": "單裝SKC28式150mm主炮",
         "en_name": "Single 150mm SK C/28 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            330,
+            319,
+            311,
+            300
+        ]
     },
     "42140": {
         "nationality": 4,
@@ -9365,7 +14645,21 @@ const equip_data = {
         "cn_name": "三联装SKC25式150mm主炮",
         "tw_name": "三聯裝SKC25式150mm主炮",
         "en_name": "Triple 150mm SK C/25 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            895,
+            886,
+            876,
+            868,
+            859,
+            850,
+            840,
+            830,
+            822,
+            814,
+            804,
+            804
+        ]
     },
     "42120": {
         "nationality": 4,
@@ -9379,7 +14673,16 @@ const equip_data = {
         "cn_name": "三联装SKC25式150mm主炮",
         "tw_name": "三聯裝SKC25式150mm主炮",
         "en_name": "Triple 150mm SK C/25 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            942,
+            932,
+            923,
+            913,
+            904,
+            894,
+            884
+        ]
     },
     "42100": {
         "nationality": 4,
@@ -9393,7 +14696,13 @@ const equip_data = {
         "cn_name": "三联装SKC25式150mm主炮",
         "tw_name": "三聯裝SKC25式150mm主炮",
         "en_name": "Triple 150mm SK C/25 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            990,
+            979,
+            970,
+            959
+        ]
     },
     "32260": {
         "nationality": 3,
@@ -9407,7 +14716,23 @@ const equip_data = {
         "cn_name": "试作型155mm三连装炮改",
         "tw_name": "試作型155mm三連裝炮改*",
         "en_name": "Prototype Triple 155mm Kai Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            803,
+            787,
+            771,
+            755,
+            739,
+            723,
+            707,
+            691,
+            675,
+            659,
+            643,
+            643,
+            643,
+            643
+        ]
     },
     "32240": {
         "nationality": 3,
@@ -9421,7 +14746,23 @@ const equip_data = {
         "cn_name": "155mm三连装炮",
         "tw_name": "155mm三連裝炮",
         "en_name": "Triple 155mm Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            780,
+            764,
+            748,
+            732,
+            716,
+            700,
+            684,
+            668,
+            652,
+            636,
+            620,
+            620,
+            620,
+            620
+        ]
     },
     "32220": {
         "nationality": 3,
@@ -9435,7 +14776,20 @@ const equip_data = {
         "cn_name": "155mm三连装炮",
         "tw_name": "155mm三連裝炮",
         "en_name": "Triple 155mm Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            800,
+            784,
+            768,
+            752,
+            736,
+            720,
+            704,
+            688,
+            672,
+            656,
+            640
+        ]
     },
     "32200": {
         "nationality": 3,
@@ -9449,7 +14803,16 @@ const equip_data = {
         "cn_name": "155mm三连装炮",
         "tw_name": "155mm三連裝炮",
         "en_name": "Triple 155mm Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            832,
+            816,
+            800,
+            784,
+            768,
+            752,
+            736
+        ]
     },
     "32340": {
         "nationality": 3,
@@ -9463,7 +14826,21 @@ const equip_data = {
         "cn_name": "152mm连装炮",
         "tw_name": "152mm連裝炮",
         "en_name": "Twin 152mm Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            610,
+            596,
+            582,
+            568,
+            554,
+            540,
+            526,
+            512,
+            498,
+            484,
+            470,
+            470
+        ]
     },
     "32320": {
         "nationality": 3,
@@ -9477,7 +14854,16 @@ const equip_data = {
         "cn_name": "152mm连装炮",
         "tw_name": "152mm連裝炮",
         "en_name": "Twin 152mm Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            645,
+            630,
+            615,
+            600,
+            585,
+            570,
+            555
+        ]
     },
     "32300": {
         "nationality": 3,
@@ -9491,7 +14877,13 @@ const equip_data = {
         "cn_name": "152mm连装炮",
         "tw_name": "152mm連裝炮",
         "en_name": "Twin 152mm Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            680,
+            664,
+            648,
+            632
+        ]
     },
     "32060": {
         "nationality": 3,
@@ -9505,7 +14897,17 @@ const equip_data = {
         "cn_name": "152mm单装炮",
         "tw_name": "152mm單裝炮",
         "en_name": "Single 152mm Pattern 1892 Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            485,
+            471,
+            457,
+            444,
+            430,
+            416,
+            403,
+            403
+        ]
     },
     "32140": {
         "nationality": 3,
@@ -9519,7 +14921,21 @@ const equip_data = {
         "cn_name": "140mm连装炮",
         "tw_name": "140mm連裝炮",
         "en_name": "Twin 140mm Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            599,
+            586,
+            572,
+            558,
+            544,
+            530,
+            516,
+            503,
+            489,
+            475,
+            462,
+            462
+        ]
     },
     "32120": {
         "nationality": 3,
@@ -9533,7 +14949,16 @@ const equip_data = {
         "cn_name": "140mm连装炮",
         "tw_name": "140mm連裝炮",
         "en_name": "Twin 140mm Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            635,
+            621,
+            607,
+            592,
+            577,
+            563,
+            548
+        ]
     },
     "32100": {
         "nationality": 3,
@@ -9547,7 +14972,13 @@ const equip_data = {
         "cn_name": "140mm连装炮",
         "tw_name": "140mm連裝炮",
         "en_name": "Twin 140mm Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            672,
+            657,
+            641,
+            626
+        ]
     },
     "32040": {
         "nationality": 3,
@@ -9561,7 +14992,17 @@ const equip_data = {
         "cn_name": "140mm单装炮",
         "tw_name": "140mm單裝炮",
         "en_name": "Single 140mm Naval Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            758,
+            750,
+            742,
+            734,
+            725,
+            717,
+            709,
+            709
+        ]
     },
     "32020": {
         "nationality": 3,
@@ -9575,7 +15016,13 @@ const equip_data = {
         "cn_name": "140mm单装炮",
         "tw_name": "140mm單裝炮",
         "en_name": "Single 140mm Naval Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            788,
+            780,
+            773,
+            766
+        ]
     },
     "32000": {
         "nationality": 3,
@@ -9589,7 +15036,13 @@ const equip_data = {
         "cn_name": "140mm单装炮",
         "tw_name": "140mm單裝炮",
         "en_name": "Single 140mm Naval Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            832,
+            824,
+            816,
+            808
+        ]
     },
     "22260": {
         "nationality": 2,
@@ -9603,7 +15056,23 @@ const equip_data = {
         "cn_name": "试作型三联装152mm主炮",
         "tw_name": "試作型三聯裝152mm主炮",
         "en_name": "Prototype Triple 152mm Mk XXV Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            480,
+            475,
+            470,
+            465,
+            460,
+            455,
+            450,
+            445,
+            440,
+            435,
+            430,
+            430,
+            430,
+            430
+        ]
     },
     "22140": {
         "nationality": 2,
@@ -9617,7 +15086,21 @@ const equip_data = {
         "cn_name": "双联装152mm主炮",
         "tw_name": "雙聯裝152mm主炮",
         "en_name": "Twin 152mm Main Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            586,
+            578,
+            570,
+            563,
+            554,
+            547,
+            540,
+            532,
+            525,
+            517,
+            509,
+            509
+        ]
     },
     "22120": {
         "nationality": 2,
@@ -9631,7 +15114,16 @@ const equip_data = {
         "cn_name": "双联装152mm主炮",
         "tw_name": "雙聯裝152mm主炮",
         "en_name": "Twin 152mm Main Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            617,
+            608,
+            600,
+            592,
+            584,
+            576,
+            568
+        ]
     },
     "22100": {
         "nationality": 2,
@@ -9645,7 +15137,13 @@ const equip_data = {
         "cn_name": "双联装152mm主炮",
         "tw_name": "雙聯裝152mm主炮",
         "en_name": "Twin 152mm Main Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            639,
+            626,
+            614,
+            601
+        ]
     },
     "22060": {
         "nationality": 2,
@@ -9659,7 +15157,17 @@ const equip_data = {
         "cn_name": "双联装152mm副炮",
         "tw_name": "雙聯裝152mm副炮",
         "en_name": "Twin 152mm Secondary Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            586,
+            572,
+            558,
+            544,
+            530,
+            516,
+            502,
+            502
+        ]
     },
     "22040": {
         "nationality": 2,
@@ -9673,7 +15181,17 @@ const equip_data = {
         "cn_name": "单装152mm副炮",
         "tw_name": "單裝152mm副炮",
         "en_name": "Single 152mm Secondary Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            586,
+            572,
+            558,
+            544,
+            530,
+            516,
+            502,
+            502
+        ]
     },
     "22020": {
         "nationality": 2,
@@ -9687,7 +15205,13 @@ const equip_data = {
         "cn_name": "单装152mm副炮",
         "tw_name": "單裝152mm副炮",
         "en_name": "Single 152mm Secondary Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            591,
+            577,
+            563,
+            549
+        ]
     },
     "22000": {
         "nationality": 2,
@@ -9701,7 +15225,13 @@ const equip_data = {
         "cn_name": "单装152mm副炮",
         "tw_name": "單裝152mm副炮",
         "en_name": "Single 152mm Secondary Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            625,
+            611,
+            596,
+            582
+        ]
     },
     "22240": {
         "nationality": 2,
@@ -9715,7 +15245,21 @@ const equip_data = {
         "cn_name": "三联装152mm主炮",
         "tw_name": "三聯裝152mm主炮",
         "en_name": "Triple 152mm Main Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            777,
+            761,
+            746,
+            730,
+            714,
+            698,
+            682,
+            667,
+            652,
+            636,
+            621,
+            621
+        ]
     },
     "22220": {
         "nationality": 2,
@@ -9729,7 +15273,16 @@ const equip_data = {
         "cn_name": "三联装152mm主炮",
         "tw_name": "三聯裝152mm主炮",
         "en_name": "Triple 152mm Main Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            817,
+            800,
+            784,
+            768,
+            752,
+            735,
+            719
+        ]
     },
     "22200": {
         "nationality": 2,
@@ -9743,7 +15296,13 @@ const equip_data = {
         "cn_name": "三联装152mm主炮",
         "tw_name": "三聯裝152mm主炮",
         "en_name": "Triple 152mm Main Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            858,
+            840,
+            823,
+            806
+        ]
     },
     "12200": {
         "nationality": 1,
@@ -9757,7 +15316,23 @@ const equip_data = {
         "cn_name": "试作型三联装152mm高平两用炮Mk17",
         "tw_name": "試作型三聯裝152mm高平兩用炮Mk17",
         "en_name": "Prototype Triple 152mm DP Mk 17 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            552,
+            546,
+            540,
+            534,
+            528,
+            522,
+            516,
+            510,
+            504,
+            498,
+            492,
+            492,
+            492,
+            492
+        ]
     },
     "12060": {
         "nationality": 1,
@@ -9771,7 +15346,17 @@ const equip_data = {
         "cn_name": "双联152mm主炮Mk15",
         "tw_name": "雙聯152mm主炮Mk15",
         "en_name": "Twin 152mm Mk 15 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            478,
+            468,
+            458,
+            448,
+            438,
+            428,
+            418,
+            418
+        ]
     },
     "12040": {
         "nationality": 1,
@@ -9785,7 +15370,17 @@ const equip_data = {
         "cn_name": "双联152mm主炮",
         "tw_name": "雙聯152mm主炮",
         "en_name": "Twin 152mm Main Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            480,
+            470,
+            460,
+            450,
+            440,
+            430,
+            420,
+            420
+        ]
     },
     "12020": {
         "nationality": 1,
@@ -9799,7 +15394,13 @@ const equip_data = {
         "cn_name": "双联152mm主炮",
         "tw_name": "雙聯152mm主炮",
         "en_name": "Twin 152mm Main Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            490,
+            480,
+            470,
+            460
+        ]
     },
     "12000": {
         "nationality": 1,
@@ -9813,7 +15414,13 @@ const equip_data = {
         "cn_name": "双联152mm主炮",
         "tw_name": "雙聯152mm主炮",
         "en_name": "Twin 152mm Main Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            500,
+            490,
+            480,
+            470
+        ]
     },
     "12160": {
         "nationality": 1,
@@ -9827,7 +15434,23 @@ const equip_data = {
         "cn_name": "三联装152mm主炮Mk16",
         "tw_name": "三聯裝152mm主炮Mk16",
         "en_name": "Triple 152mm Mk 16 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            819,
+            806,
+            793,
+            780,
+            767,
+            754,
+            741,
+            728,
+            715,
+            702,
+            689,
+            689,
+            689,
+            689
+        ]
     },
     "12140": {
         "nationality": 1,
@@ -9841,7 +15464,21 @@ const equip_data = {
         "cn_name": "三联装152mm主炮",
         "tw_name": "三聯裝152mm主炮",
         "en_name": "Triple 152mm Main Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            820,
+            807,
+            794,
+            781,
+            768,
+            755,
+            742,
+            729,
+            716,
+            703,
+            690,
+            690
+        ]
     },
     "12120": {
         "nationality": 1,
@@ -9855,7 +15492,16 @@ const equip_data = {
         "cn_name": "三联装152mm主炮",
         "tw_name": "三聯裝152mm主炮",
         "en_name": "Triple 152mm Main Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            840,
+            828,
+            816,
+            804,
+            792,
+            780,
+            768
+        ]
     },
     "12100": {
         "nationality": 1,
@@ -9869,7 +15515,13 @@ const equip_data = {
         "cn_name": "三联装152mm主炮",
         "tw_name": "三聯裝152mm主炮",
         "en_name": "Triple 152mm Main Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            850,
+            838,
+            826,
+            814
+        ]
     },
     "90140": {
         "nationality": 8,
@@ -9883,7 +15535,23 @@ const equip_data = {
         "cn_name": "138.6mm单装炮Mle1929",
         "tw_name": "138.6mm單裝炮Mle1929",
         "en_name": "Single 138.6mm Mle 1929 Naval Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            300,
+            294,
+            288,
+            282,
+            276,
+            270,
+            264,
+            258,
+            252,
+            246,
+            240,
+            240,
+            240,
+            240
+        ]
     },
     "90120": {
         "nationality": 8,
@@ -9897,7 +15565,20 @@ const equip_data = {
         "cn_name": "138.6mm单装炮Mle1929",
         "tw_name": "138.6mm單裝炮Mle1929",
         "en_name": "Single 138.6mm Mle 1929 Naval Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            320,
+            314,
+            308,
+            302,
+            296,
+            290,
+            284,
+            278,
+            272,
+            266,
+            260
+        ]
     },
     "90100": {
         "nationality": 8,
@@ -9911,7 +15592,16 @@ const equip_data = {
         "cn_name": "138.6mm单装炮Mle1929",
         "tw_name": "138.6mm單裝炮Mle1929",
         "en_name": "Single 138.6mm Mle 1929 Naval Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            340,
+            334,
+            328,
+            322,
+            316,
+            310,
+            304
+        ]
     },
     "90740": {
         "nationality": 8,
@@ -9925,7 +15615,21 @@ const equip_data = {
         "cn_name": "138.6mm单装炮Mle1927",
         "tw_name": "138.6mm單裝炮Mle1927",
         "en_name": "Single 138.6mm Mle 1927 Naval Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            288,
+            282,
+            276,
+            270,
+            264,
+            258,
+            252,
+            246,
+            240,
+            234,
+            228,
+            228
+        ]
     },
     "90720": {
         "nationality": 8,
@@ -9939,7 +15643,16 @@ const equip_data = {
         "cn_name": "138.6mm单装炮Mle1927",
         "tw_name": "138.6mm單裝炮Mle1927",
         "en_name": "Single 138.6mm Mle 1927 Naval Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            311,
+            305,
+            299,
+            293,
+            287,
+            281,
+            275
+        ]
     },
     "90700": {
         "nationality": 8,
@@ -9953,7 +15666,13 @@ const equip_data = {
         "cn_name": "138.6mm单装炮Mle1927",
         "tw_name": "138.6mm單裝炮Mle1927",
         "en_name": "Single 138.6mm Mle 1927 Naval Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            340,
+            334,
+            328,
+            322
+        ]
     },
     "90500": {
         "nationality": 8,
@@ -9967,7 +15686,13 @@ const equip_data = {
         "cn_name": "双联装130mm主炮Mle1935",
         "tw_name": "雙聯裝130mm主炮Mle1935",
         "en_name": "Twin 130mm Mle 1935 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            234,
+            230,
+            225,
+            220
+        ]
     },
     "90040": {
         "nationality": 8,
@@ -9981,7 +15706,17 @@ const equip_data = {
         "cn_name": "130mm单装炮Mle1924",
         "tw_name": "130mm單裝炮Mle1924",
         "en_name": "Single 130mm Mle 1924 Naval Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            290,
+            285,
+            280,
+            274,
+            268,
+            262,
+            256,
+            256
+        ]
     },
     "90020": {
         "nationality": 8,
@@ -9995,7 +15730,13 @@ const equip_data = {
         "cn_name": "130mm单装炮Mle1924",
         "tw_name": "130mm單裝炮Mle1924",
         "en_name": "Single 130mm Mle 1924 Naval Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            300,
+            294,
+            288,
+            282
+        ]
     },
     "90000": {
         "nationality": 8,
@@ -10009,7 +15750,13 @@ const equip_data = {
         "cn_name": "130mm单装炮Mle1924",
         "tw_name": "130mm單裝炮Mle1924",
         "en_name": "Single 130mm Mle 1924 Naval Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            310,
+            304,
+            298,
+            292
+        ]
     },
     "7320": {
         "nationality": 8,
@@ -10023,7 +15770,17 @@ const equip_data = {
         "cn_name": "四联装130mm副炮Mle1932",
         "tw_name": "四聯裝130mm副炮Mle1932",
         "en_name": "Quadruple 130mm Mle 1932 Secondary Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            216,
+            212,
+            208,
+            204,
+            200,
+            196,
+            192,
+            192
+        ]
     },
     "85040": {
         "nationality": 7,
@@ -10037,7 +15794,23 @@ const equip_data = {
         "cn_name": "B-13 双联装130mm主炮B-2LM",
         "tw_name": "B-13 雙聯裝130mm主炮B-2LM",
         "en_name": "Twin 130mm B-2LM Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            322,
+            316,
+            310,
+            303,
+            298,
+            292,
+            285,
+            279,
+            273,
+            267,
+            260,
+            260,
+            260,
+            260
+        ]
     },
     "85000": {
         "nationality": 7,
@@ -10051,7 +15824,16 @@ const equip_data = {
         "cn_name": "B-13 双联装130mm主炮B-2LM",
         "tw_name": "B-13 雙聯裝130mm主炮B-2LM",
         "en_name": "Twin 130mm B-2LM Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            358,
+            352,
+            345,
+            339,
+            332,
+            326,
+            319
+        ]
     },
     "7240": {
         "nationality": 7,
@@ -10065,7 +15847,21 @@ const equip_data = {
         "cn_name": "130mm单装炮",
         "tw_name": "130mm單裝炮",
         "en_name": "Single 130mm Naval Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            240,
+            234,
+            228,
+            222,
+            216,
+            210,
+            204,
+            198,
+            192,
+            186,
+            180,
+            180
+        ]
     },
     "7220": {
         "nationality": 7,
@@ -10079,7 +15875,16 @@ const equip_data = {
         "cn_name": "130mm单装炮",
         "tw_name": "130mm單裝炮",
         "en_name": "Single 130mm Naval Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            250,
+            244,
+            238,
+            232,
+            226,
+            220,
+            214
+        ]
     },
     "7200": {
         "nationality": 7,
@@ -10093,7 +15898,13 @@ const equip_data = {
         "cn_name": "130mm单装炮",
         "tw_name": "130mm單裝炮",
         "en_name": "Single 130mm Naval Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            260,
+            254,
+            248,
+            242
+        ]
     },
     "95440": {
         "nationality": 6,
@@ -10107,7 +15918,21 @@ const equip_data = {
         "cn_name": "双联装120mm炮Model1936",
         "tw_name": "雙聯裝120mm炮Model1936",
         "en_name": "Twin 120mm M1936 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            316,
+            309,
+            302,
+            295,
+            287,
+            279,
+            271,
+            263,
+            255,
+            247,
+            239,
+            239
+        ]
     },
     "95420": {
         "nationality": 6,
@@ -10121,7 +15946,16 @@ const equip_data = {
         "cn_name": "双联装120mm炮Model1936",
         "tw_name": "雙聯裝120mm炮Model1936",
         "en_name": "Twin 120mm M1936 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            341,
+            334,
+            327,
+            319,
+            311,
+            303,
+            295
+        ]
     },
     "95400": {
         "nationality": 6,
@@ -10135,7 +15969,13 @@ const equip_data = {
         "cn_name": "双联装120mm炮Model1936",
         "tw_name": "雙聯裝120mm炮Model1936",
         "en_name": "Twin 120mm M1936 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            368,
+            361,
+            353,
+            345
+        ]
     },
     "95460": {
         "nationality": 6,
@@ -10149,7 +15989,17 @@ const equip_data = {
         "cn_name": "双联装120mm炮Model1933",
         "tw_name": "雙聯裝120mm炮Model1933",
         "en_name": "Twin 120mm M1933 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            266,
+            262,
+            258,
+            254,
+            250,
+            246,
+            242,
+            242
+        ]
     },
     "95560": {
         "nationality": 6,
@@ -10163,7 +16013,13 @@ const equip_data = {
         "cn_name": "双联装120mm主炮",
         "tw_name": "雙聯裝120mm主炮",
         "en_name": "Twin 120mm Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            378,
+            371,
+            363,
+            355
+        ]
     },
     "41160": {
         "nationality": 4,
@@ -10177,7 +16033,23 @@ const equip_data = {
         "cn_name": "双联装128mmSKC41高平两用炮改",
         "tw_name": "雙聯裝128mmSKC41高平兩用炮改",
         "en_name": "Twin 128mm/45 SK C/41 Dual-Purpose Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            303,
+            296,
+            289,
+            282,
+            274,
+            266,
+            258,
+            250,
+            242,
+            234,
+            226,
+            226,
+            226,
+            226
+        ]
     },
     "41140": {
         "nationality": 4,
@@ -10191,7 +16063,21 @@ const equip_data = {
         "cn_name": "双联装128mmSKC41高平两用炮",
         "tw_name": "雙聯裝128mmSKC41高平兩用炮",
         "en_name": "Twin 128mm SK C/41 Dual-Purpose Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            303,
+            296,
+            289,
+            282,
+            274,
+            266,
+            258,
+            250,
+            242,
+            234,
+            226,
+            226
+        ]
     },
     "41120": {
         "nationality": 4,
@@ -10205,7 +16091,16 @@ const equip_data = {
         "cn_name": "双联装128mmSKC41高平两用炮",
         "tw_name": "雙聯裝128mmSKC41高平兩用炮",
         "en_name": "Twin 128mm SK C/41 Dual-Purpose Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            328,
+            321,
+            314,
+            306,
+            298,
+            290,
+            282
+        ]
     },
     "41100": {
         "nationality": 4,
@@ -10219,7 +16114,13 @@ const equip_data = {
         "cn_name": "双联装128mmSKC41高平两用炮",
         "tw_name": "雙聯裝128mmSKC41高平兩用炮",
         "en_name": "Twin 128mm SK C/41 Dual-Purpose Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            355,
+            348,
+            340,
+            332
+        ]
     },
     "41040": {
         "nationality": 4,
@@ -10233,7 +16134,17 @@ const equip_data = {
         "cn_name": "单装127mm主炮",
         "tw_name": "單裝127mm主炮",
         "en_name": "Single 127mm Main Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            186,
+            183,
+            178,
+            175,
+            171,
+            167,
+            164,
+            164
+        ]
     },
     "41020": {
         "nationality": 4,
@@ -10247,7 +16158,13 @@ const equip_data = {
         "cn_name": "单装127mm主炮",
         "tw_name": "單裝127mm主炮",
         "en_name": "Single 127mm Main Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            196,
+            192,
+            188,
+            184
+        ]
     },
     "41000": {
         "nationality": 4,
@@ -10261,7 +16178,13 @@ const equip_data = {
         "cn_name": "单装127mm主炮",
         "tw_name": "單裝127mm主炮",
         "en_name": "Single 127mm Main Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            206,
+            201,
+            198,
+            193
+        ]
     },
     "41060": {
         "nationality": 4,
@@ -10275,7 +16198,21 @@ const equip_data = {
         "cn_name": "双联装127mmKM40主炮",
         "tw_name": "雙聯裝127mmKM40主炮",
         "en_name": "Twin 127mm KM40 Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            341,
+            332,
+            323,
+            314,
+            305,
+            296,
+            287,
+            278,
+            269,
+            260,
+            251,
+            251
+        ]
     },
     "31280": {
         "nationality": 3,
@@ -10289,7 +16226,21 @@ const equip_data = {
         "cn_name": "127mm连装炮改",
         "tw_name": "127mm連裝炮改",
         "en_name": "Twin 127mm Type 3 Kai Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            267,
+            262,
+            257,
+            252,
+            247,
+            243,
+            238,
+            232,
+            227,
+            223,
+            218,
+            218
+        ]
     },
     "31240": {
         "nationality": 3,
@@ -10303,7 +16254,21 @@ const equip_data = {
         "cn_name": "127mm连装炮",
         "tw_name": "127mm連裝炮",
         "en_name": "Twin 127mm Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            277,
+            272,
+            267,
+            262,
+            257,
+            253,
+            248,
+            242,
+            237,
+            233,
+            228,
+            228
+        ]
     },
     "31220": {
         "nationality": 3,
@@ -10317,7 +16282,16 @@ const equip_data = {
         "cn_name": "127mm连装炮",
         "tw_name": "127mm連裝炮",
         "en_name": "Twin 127mm Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            291,
+            286,
+            281,
+            276,
+            270,
+            265,
+            260
+        ]
     },
     "31200": {
         "nationality": 3,
@@ -10331,7 +16305,13 @@ const equip_data = {
         "cn_name": "127mm连装炮",
         "tw_name": "127mm連裝炮",
         "en_name": "Twin 127mm Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            306,
+            301,
+            295,
+            290
+        ]
     },
     "31260": {
         "nationality": 3,
@@ -10345,7 +16325,17 @@ const equip_data = {
         "cn_name": "127mm单装两用炮",
         "tw_name": "127mm單裝兩用炮",
         "en_name": "Single 127mm Dual-Purpose Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            256,
+            252,
+            248,
+            244,
+            240,
+            236,
+            232,
+            232
+        ]
     },
     "31180": {
         "nationality": 3,
@@ -10359,7 +16349,21 @@ const equip_data = {
         "cn_name": "120mm单装高角炮",
         "tw_name": "120mm單裝高角炮",
         "en_name": "Single 120mm High-Angle Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            188,
+            184,
+            181,
+            177,
+            173,
+            170,
+            166,
+            163,
+            160,
+            154,
+            152,
+            152
+        ]
     },
     "31140": {
         "nationality": 3,
@@ -10373,7 +16377,17 @@ const equip_data = {
         "cn_name": "120mm单装炮",
         "tw_name": "120mm單裝炮",
         "en_name": "Single 120mm Type 3 Naval Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            177,
+            174,
+            170,
+            165,
+            162,
+            158,
+            154,
+            154
+        ]
     },
     "31120": {
         "nationality": 3,
@@ -10387,7 +16401,13 @@ const equip_data = {
         "cn_name": "120mm单装炮",
         "tw_name": "120mm單裝炮",
         "en_name": "Single 120mm Type 3 Naval Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            187,
+            183,
+            179,
+            174
+        ]
     },
     "31100": {
         "nationality": 3,
@@ -10401,7 +16421,13 @@ const equip_data = {
         "cn_name": "120mm单装炮",
         "tw_name": "120mm單裝炮",
         "en_name": "Single 120mm Type 3 Naval Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            196,
+            191,
+            188,
+            184
+        ]
     },
     "31160": {
         "nationality": 3,
@@ -10415,7 +16441,17 @@ const equip_data = {
         "cn_name": "十一年式120mm单装炮",
         "tw_name": "十一年式120mm單裝炮",
         "en_name": "Single 120mm 11th Year Type Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            250,
+            246,
+            242,
+            238,
+            234,
+            230,
+            226,
+            226
+        ]
     },
     "31060": {
         "nationality": 3,
@@ -10429,7 +16465,21 @@ const equip_data = {
         "cn_name": "100mm88式火炮",
         "tw_name": "100mm88式火炮",
         "en_name": "Single 100mm Type 88 Naval Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            247,
+            240,
+            236,
+            231,
+            227,
+            221,
+            217,
+            212,
+            208,
+            202,
+            198,
+            198
+        ]
     },
     "31040": {
         "nationality": 3,
@@ -10443,7 +16493,23 @@ const equip_data = {
         "cn_name": "双联100mm98式高射炮",
         "tw_name": "雙聯100mm98式高射炮",
         "en_name": "Twin 100mm Type 98 High-Angle Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            181,
+            177,
+            174,
+            170,
+            166,
+            163,
+            159,
+            156,
+            153,
+            147,
+            145,
+            145,
+            145,
+            145
+        ]
     },
     "31020": {
         "nationality": 3,
@@ -10457,7 +16523,20 @@ const equip_data = {
         "cn_name": "双联100mm98式高射炮",
         "tw_name": "雙聯100mm98式高射炮",
         "en_name": "Twin 100mm Type 98 High-Angle Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            191,
+            187,
+            182,
+            179,
+            175,
+            172,
+            167,
+            163,
+            160,
+            156,
+            153
+        ]
     },
     "31000": {
         "nationality": 3,
@@ -10471,7 +16550,16 @@ const equip_data = {
         "cn_name": "双联100mm98式高射炮",
         "tw_name": "雙聯100mm98式高射炮",
         "en_name": "Twin 100mm Type 98 High-Angle Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            200,
+            196,
+            191,
+            189,
+            184,
+            180,
+            176
+        ]
     },
     "21540": {
         "nationality": 2,
@@ -10485,7 +16573,21 @@ const equip_data = {
         "cn_name": "双联装134mm高炮",
         "tw_name": "雙聯裝134mm高炮",
         "en_name": "Twin 134mm High-Angle Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            240,
+            233,
+            229,
+            224,
+            220,
+            214,
+            210,
+            205,
+            201,
+            195,
+            191,
+            191
+        ]
     },
     "21520": {
         "nationality": 2,
@@ -10499,7 +16601,16 @@ const equip_data = {
         "cn_name": "双联装134mm高炮",
         "tw_name": "雙聯裝134mm高炮",
         "en_name": "Twin 134mm High-Angle Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            252,
+            246,
+            241,
+            236,
+            231,
+            226,
+            221
+        ]
     },
     "21500": {
         "nationality": 2,
@@ -10513,7 +16624,13 @@ const equip_data = {
         "cn_name": "双联装134mm高炮",
         "tw_name": "雙聯裝134mm高炮",
         "en_name": "Twin 134mm High-Angle Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            264,
+            259,
+            253,
+            248
+        ]
     },
     "21440": {
         "nationality": 2,
@@ -10527,7 +16644,21 @@ const equip_data = {
         "cn_name": "双联装120mm主炮",
         "tw_name": "雙聯裝120mm主炮",
         "en_name": "Twin 120mm Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            256,
+            252,
+            248,
+            244,
+            240,
+            236,
+            232,
+            228,
+            224,
+            220,
+            216,
+            216
+        ]
     },
     "21420": {
         "nationality": 2,
@@ -10541,7 +16672,16 @@ const equip_data = {
         "cn_name": "双联装120mm主炮",
         "tw_name": "雙聯裝120mm主炮",
         "en_name": "Twin 120mm Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            276,
+            272,
+            268,
+            264,
+            260,
+            256,
+            252
+        ]
     },
     "21400": {
         "nationality": 2,
@@ -10555,7 +16695,13 @@ const equip_data = {
         "cn_name": "双联装120mm主炮",
         "tw_name": "雙聯裝120mm主炮",
         "en_name": "Twin 120mm Main Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            290,
+            286,
+            282,
+            278
+        ]
     },
     "21460": {
         "nationality": 2,
@@ -10569,7 +16715,23 @@ const equip_data = {
         "cn_name": "双联装120mm高平两用炮Mark XI",
         "tw_name": "雙聯裝120mm高平兩用炮Mark XI",
         "en_name": "Twin 120mm Mk XI Dual-Purpose Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            260,
+            256,
+            252,
+            248,
+            244,
+            240,
+            236,
+            232,
+            228,
+            224,
+            220,
+            220,
+            220,
+            220
+        ]
     },
     "21340": {
         "nationality": 2,
@@ -10583,7 +16745,17 @@ const equip_data = {
         "cn_name": "120mm单装炮",
         "tw_name": "120mm單裝炮",
         "en_name": "Single 120mm QF Mark IX Naval Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            131,
+            129,
+            126,
+            122,
+            119,
+            118,
+            115,
+            115
+        ]
     },
     "21320": {
         "nationality": 2,
@@ -10597,7 +16769,13 @@ const equip_data = {
         "cn_name": "120mm单装炮",
         "tw_name": "120mm單裝炮",
         "en_name": "Single 120mm QF Mark IX Naval Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            138,
+            135,
+            132,
+            129
+        ]
     },
     "21300": {
         "nationality": 2,
@@ -10611,7 +16789,13 @@ const equip_data = {
         "cn_name": "120mm单装炮",
         "tw_name": "120mm單裝炮",
         "en_name": "Single 120mm QF Mark IX Naval Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            145,
+            142,
+            138,
+            136
+        ]
     },
     "21600": {
         "nationality": 2,
@@ -10625,7 +16809,23 @@ const equip_data = {
         "cn_name": "双联装114mm高平两用炮Mark IV",
         "tw_name": "雙聯裝114mm高平兩用炮Mark IV",
         "en_name": "Twin 114mm Mk IV Dual-Purpose Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            188,
+            184,
+            181,
+            177,
+            174,
+            170,
+            166,
+            162,
+            158,
+            155,
+            152,
+            152,
+            152,
+            152
+        ]
     },
     "21140": {
         "nationality": 2,
@@ -10639,7 +16839,17 @@ const equip_data = {
         "cn_name": "双联装102mm副炮",
         "tw_name": "雙聯裝102mm副炮",
         "en_name": "Twin 102mm Secondary Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            252,
+            248,
+            244,
+            240,
+            236,
+            232,
+            228,
+            228
+        ]
     },
     "21120": {
         "nationality": 2,
@@ -10653,7 +16863,13 @@ const equip_data = {
         "cn_name": "双联装102mm副炮",
         "tw_name": "雙聯裝102mm副炮",
         "en_name": "Twin 102mm Secondary Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            268,
+            264,
+            260,
+            256
+        ]
     },
     "21100": {
         "nationality": 2,
@@ -10667,7 +16883,13 @@ const equip_data = {
         "cn_name": "双联装102mm副炮",
         "tw_name": "雙聯裝102mm副炮",
         "en_name": "Twin 102mm Secondary Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            280,
+            276,
+            272,
+            268
+        ]
     },
     "21160": {
         "nationality": 2,
@@ -10681,7 +16903,21 @@ const equip_data = {
         "cn_name": "双联装102mm副炮Mark XVI",
         "tw_name": "雙聯裝102mm副炮Mark XVI",
         "en_name": "Twin 102mm Mk XVI Secondary Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            242,
+            239,
+            236,
+            233,
+            230,
+            227,
+            224,
+            220,
+            216,
+            212,
+            208,
+            208
+        ]
     },
     "21040": {
         "nationality": 2,
@@ -10695,7 +16931,17 @@ const equip_data = {
         "cn_name": "单装102mm副炮",
         "tw_name": "單裝102mm副炮",
         "en_name": "Single 102mm Secondary Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            138,
+            134,
+            130,
+            126,
+            122,
+            118,
+            114,
+            114
+        ]
     },
     "21020": {
         "nationality": 2,
@@ -10709,7 +16955,13 @@ const equip_data = {
         "cn_name": "单装102mm副炮",
         "tw_name": "單裝102mm副炮",
         "en_name": "Single 102mm Secondary Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            142,
+            138,
+            134,
+            130
+        ]
     },
     "21000": {
         "nationality": 2,
@@ -10723,7 +16975,13 @@ const equip_data = {
         "cn_name": "单装102mm副炮",
         "tw_name": "單裝102mm副炮",
         "en_name": "Single 102mm Secondary Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            146,
+            142,
+            138,
+            134
+        ]
     },
     "21240": {
         "nationality": 2,
@@ -10737,7 +16995,21 @@ const equip_data = {
         "cn_name": "三联装102mm副炮",
         "tw_name": "三聯裝102mm副炮",
         "en_name": "Triple 102mm Secondary Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            480,
+            475,
+            470,
+            465,
+            460,
+            455,
+            450,
+            445,
+            440,
+            435,
+            430,
+            430
+        ]
     },
     "21220": {
         "nationality": 2,
@@ -10751,7 +17023,16 @@ const equip_data = {
         "cn_name": "三联装102mm副炮",
         "tw_name": "三聯裝102mm副炮",
         "en_name": "Triple 102mm Secondary Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            500,
+            495,
+            490,
+            485,
+            480,
+            475,
+            470
+        ]
     },
     "21200": {
         "nationality": 2,
@@ -10765,7 +17046,13 @@ const equip_data = {
         "cn_name": "三联装102mm副炮",
         "tw_name": "三聯裝102mm副炮",
         "en_name": "Triple 102mm Secondary Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            520,
+            515,
+            510,
+            505
+        ]
     },
     "11040": {
         "nationality": 1,
@@ -10779,7 +17066,17 @@ const equip_data = {
         "cn_name": "76mm火炮",
         "tw_name": "76mm火炮",
         "en_name": "76mm AA Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            114,
+            111,
+            110,
+            107,
+            105,
+            102,
+            100,
+            100
+        ]
     },
     "11020": {
         "nationality": 1,
@@ -10793,7 +17090,13 @@ const equip_data = {
         "cn_name": "76mm火炮",
         "tw_name": "76mm火炮",
         "en_name": "76mm AA Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            120,
+            117,
+            115,
+            112
+        ]
     },
     "11000": {
         "nationality": 1,
@@ -10807,7 +17110,13 @@ const equip_data = {
         "cn_name": "76mm火炮",
         "tw_name": "76mm火炮",
         "en_name": "76mm AA Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            126,
+            123,
+            121,
+            117
+        ]
     },
     "11160": {
         "nationality": 1,
@@ -10821,7 +17130,21 @@ const equip_data = {
         "cn_name": "双联装127mm副炮",
         "tw_name": "雙聯裝127mm副炮",
         "en_name": "Twin 127mm Secondary Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            350,
+            341,
+            332,
+            323,
+            314,
+            305,
+            296,
+            287,
+            278,
+            269,
+            260,
+            260
+        ]
     },
     "11240": {
         "nationality": 1,
@@ -10835,7 +17158,23 @@ const equip_data = {
         "cn_name": "双联装127mm高平两用炮Mk12",
         "tw_name": "雙聯裝127mm高平兩用炮MK12",
         "en_name": "Twin 127mm Mk 12 Dual-Purpose Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            280,
+            275,
+            270,
+            265,
+            260,
+            255,
+            250,
+            245,
+            240,
+            235,
+            230,
+            230,
+            230,
+            230
+        ]
     },
     "11220": {
         "nationality": 1,
@@ -10849,7 +17188,20 @@ const equip_data = {
         "cn_name": "双联装127mm高平两用炮Mk12",
         "tw_name": "雙聯裝127mm高平兩用炮MK12",
         "en_name": "Twin 127mm Mk 12 Dual-Purpose Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            295,
+            290,
+            285,
+            280,
+            275,
+            270,
+            265,
+            260,
+            255,
+            250,
+            245
+        ]
     },
     "11200": {
         "nationality": 1,
@@ -10863,7 +17215,16 @@ const equip_data = {
         "cn_name": "双联装127mm高平两用炮Mk12",
         "tw_name": "雙聯裝127mm高平兩用炮MK12",
         "en_name": "Twin 127mm Mk 12 Dual-Purpose Gun Mount",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            320,
+            315,
+            310,
+            305,
+            300,
+            295,
+            290
+        ]
     },
     "11060": {
         "nationality": 1,
@@ -10877,7 +17238,17 @@ const equip_data = {
         "cn_name": "127mm单装炮早期型",
         "tw_name": "127mm單裝炮早期型",
         "en_name": "Early Model Single 127mm Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            240,
+            234,
+            228,
+            222,
+            216,
+            210,
+            204,
+            204
+        ]
     },
     "11140": {
         "nationality": 1,
@@ -10891,7 +17262,21 @@ const equip_data = {
         "cn_name": "127mm单装炮",
         "tw_name": "127mm單裝炮",
         "en_name": "Single 127mm Main Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            220,
+            214,
+            208,
+            202,
+            196,
+            190,
+            184,
+            178,
+            172,
+            166,
+            160,
+            160
+        ]
     },
     "11120": {
         "nationality": 1,
@@ -10905,7 +17290,16 @@ const equip_data = {
         "cn_name": "127mm单装炮",
         "tw_name": "127mm單裝炮",
         "en_name": "Single 127mm Main Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            230,
+            224,
+            218,
+            212,
+            206,
+            200,
+            194
+        ]
     },
     "11100": {
         "nationality": 1,
@@ -10919,7 +17313,12 @@ const equip_data = {
         "cn_name": "127mm单装炮",
         "tw_name": "127mm單裝炮",
         "en_name": "Single 127mm Main Gun",
-        "equip_limit": 0
+        "equip_limit": 0,
+        "cd": [
+            240,
+            234,
+            228,
+            222
+        ]
     }
 };
-
