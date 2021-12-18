@@ -3328,8 +3328,8 @@ const
                     a[item_index].property = data_b;
                     b[item_index].property = data_a;
                 });
-                a[0].property.ship_pos = ship_pos_b;
-                b[0].property.ship_pos = ship_pos_a;
+                a[0].property.ship_pos = ship_pos_a;
+                b[0].property.ship_pos = ship_pos_b;
                 return true;
             }
 
