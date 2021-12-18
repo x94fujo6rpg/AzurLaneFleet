@@ -32,13 +32,15 @@ const
         { id: "emptyData", en: "Clear", jp: "クリア", tw: "清空", },
         { id: "loadDataByID", en: "Load", jp: "ロード", tw: "載入", },
 
-        { id: "owned_data_title", en: "⮟ Owned Ship/Equip Data", jp: "⮟ 所持して艦船/装備データ", tw: "⮟ 已有的船/裝備資料", },
+        { id: "owned_data_title", en: "⮟ Owned [Ship/Equip] Data", jp: "⮟ 所持して[艦船/装備]データ", tw: "⮟ 已有的[船/裝備]資料", },
         { id: "dumpOwned", en: "Dump", jp: "ダンプ", tw: "匯出", },
         { id: "copyOwned", en: "Copy", jp: "コピー", tw: "複製", },
         { id: "emptyOwned", en: "Clear", jp: "クリア", tw: "清空", },
         { id: "loadOwned", en: "Load", jp: "ロード", tw: "載入", },
         { id: "saveOwned", en: "Save", jp: "セーブ", tw: "儲存", },
         { id: "loadOwnedSetting", en: "Reload Setting", jp: "設定再読み込み", tw: "重新讀取設定", },
+
+        { id: "tech_data_title", en: "⮟ Fleet Tech (Reload)", jp: "⮟ 艦船技術(装填)", tw: "⮟ 艦隊科技(裝填)", },
 
         { id: "rebuild_cache_btn", en: "Rebuild Cache", jp: "キャッシュをクリア&再構築", tw: "重建快取", },
 
@@ -98,12 +100,12 @@ const
         5: { cn: "魚雷", en: "Torpedoe", jp: "魚雷" },
         6: { cn: "防空砲", en: "Anti-Air Gun", jp: "対空砲" },
         7: { cn: "戰鬥機", en: "Fighter", jp: "戦闘機" },
-        8: { cn: "攻擊機", en: "Torpedo Bomber", jp: "攻撃機" },
-        9: { cn: "爆擊機", en: "Dive Bomber", jp: "爆撃機" },
+        8: { cn: "魚雷機", en: "Torpedo Bomber", jp: "攻撃機" },
+        9: { cn: "轟炸機", en: "Dive Bomber", jp: "爆撃機" },
         10: { cn: "設備", en: "Auxiliary", jp: "設備" },
         11: { cn: "超巡砲", en: "CB Gun", jp: "超巡砲" },
         12: { cn: "水上機", en: "Seaplane", jp: "水上機" },
-        13: { cn: "潛艇魚雷", en: "Submarine Torpedoe", jp: "潜水艦魚雷" },
+        13: { cn: "潛艇用魚雷", en: "Submarine Torpedoe", jp: "潜水艦魚雷" },
         14: { cn: "爆雷", en: "Depth Charge", jp: "爆雷" }, //Sonar is not a unique type
         15: { cn: "反潛機", en: "ASW Bomber", jp: "対潜機" },
         17: { cn: "直升機", en: "ASW Helicopter", jp: "ヘリ" },
@@ -2428,10 +2430,16 @@ const
                     data = [1, 2, 3, 4, 5, 6, 7, 10, 13, 18],
                     html = [];
                 data.forEach(type => {
+                    let ship_type = getText(type),
+                        ui_text = Object.keys(ship_type).map(key => `ui_${key}="${ship_type[key]}"`).join(" ");
+                    console.log(ship_type, language);
+                    ui_text += ` ui_text="true"`;
                     html.push(`
-                    <div class="d-flex justify-content-start align-items-center">
-                        <label class="my-1 w-75" for="tech_${type}">${getText(type)}</label>
-                        <input class="my-1" type="text" size="2" id="tech_${type}" ship_type="${type}">
+                    <div class="d-flex my-3 justify-content-center">
+                        <label class="my-auto w-50 border-left border-bottom" for="tech_${type}" ${ui_text}>${ship_type[language]}</label>
+                        <div class="ml-0">
+                            <input class="m-auto text-center" type="text" size="2" id="tech_${type}" ship_type="${type}">
+                        </div>
                     </div>
                     `);
                 });
@@ -2439,11 +2447,15 @@ const
                 ele.innerHTML = html.join("\n");
 
                 function getText(type) {
-                    let data = lan_ship_type.find(item => item.id == type);
-                    if (type == 10) data = { cn: "航戰", jp: "航戦", en: "Aviation Battleship" };
+                    let data;
+                    if (type != 10) {
+                        data = lan_ship_type.find(item => item.id == type);
+                    } else {
+                        data = { tw: "航戰", cn: "航戰", jp: "航戦", en: "Aviation Battleship" };
+                    }
                     if (data) {
-                        let { cn, en, jp } = data;
-                        return [cn, en, jp].join(" / ");
+                        let { tw, cn, en, jp } = data;
+                        return { tw, cn, en, jp };
                     }
                 }
             }
@@ -2820,7 +2832,7 @@ const
                 let url_data = [],
                     promise_list = [],
                     progress = _loading_.cache_image;
-                await addProgressBar("fetch_img", "Fetch Icons", count, progress);
+                await addProgressBar("fetch_img", "Downloading images... This will take a while.", count, progress);
                 for (let key in all_data) {
                     let obj = all_data[key];
                     promise_list.push(

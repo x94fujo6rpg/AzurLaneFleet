@@ -29,7 +29,7 @@ now shoud load data from CN Wiki version **(irreversible)**
     - if there is empty slot that can equip airplane, it will cause the CD to be calculated incorrectly  
       (since no one knows how to calculate it, it will not be fixed)
   - affected by `Fleet Technology` reload bonus (default: 0)
-    - edit it in `Settings` > `Tech Reload Data`
+    - edit it in `Settings` > `Fleet Tech (Reload)`
     - and then `Save` it  
       ![](https://i.imgur.com/b9RmoEH.jpg)
   - affected by ship affinity (default: love (x1.06))
