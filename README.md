@@ -40,7 +40,7 @@ now shoud load data from CN Wiki version **(irreversible)**
 - fleet data now includes ship's affinity level
   - old data should be loaded without problems  
     (use default if no affinity data)
-- some data is still wrong, I will probably fix it if I have time
+- ~~some data is still wrong, I will probably fix it if I have time~~(fixed)
 - if no one reports it, then there is no bug 🙃
 
 **2021-12-13**
