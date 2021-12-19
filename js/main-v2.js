@@ -79,8 +79,9 @@ const
         { id: "sort_en", en: "Name(EN)", jp: "名前(EN)", tw: "名稱(EN)", },
         { id: "sort_tw", en: "Name(TW)", jp: "名前(TW)", tw: "名稱(TW)", },
         { id: "sort_cn", en: "Name(CN)", jp: "名前(CN)", tw: "名稱(CN)", },
+        { id: "sort_cd", en: "Reload Speed", jp: "攻速", tw: "射速", },
 
-        { id: "search_input", en: "Search", jp: "検索", tw: "搜尋", },
+        { id: "search_input", en: "Search by name", jp: "検索(艦船名)", tw: "搜尋船名", },
         { id: "filter_search_result", en: "Result", jp: "結果", tw: "結果", },
         { id: "filter_retro", en: "Retrofitted Only", jp: "改造された艦船だけ", tw: "只顯示改造後的", },
     ],
@@ -800,7 +801,14 @@ const
                         descend = this.isDescend();
                     console.log(`sort by:${key}, descend:${descend}`);
                     if (!reset) {
-                        list = util.sorting(list, key, descend);
+                        if (key != "cd") {
+                            list = util.sorting(list, key, descend);
+                        } else {
+                            if (!list.some(equip => equip.max_cd)) {
+                                list.forEach(equip => equip.max_cd = equip.cd.pop());
+                            }
+                            list = util.sorting(list, "max_cd", descend);
+                        }
                         list.unshift(top);
                     } else {
                         list = descend ? sortedEquip : sortedEquip.slice().reverse();
@@ -2432,7 +2440,6 @@ const
                 data.forEach(type => {
                     let ship_type = getText(type),
                         ui_text = Object.keys(ship_type).map(key => `ui_${key}="${ship_type[key]}"`).join(" ");
-                    console.log(ship_type, language);
                     ui_text += ` ui_text="true"`;
                     html.push(`
                     <div class="d-flex my-3 justify-content-center">

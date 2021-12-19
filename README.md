@@ -23,6 +23,12 @@ for [AzurLaneSD](https://github.com/Pelom777/AzurLaneSD)
 now shoud load data from CN Wiki version **(irreversible)**  
 
 ## Update  
+**2021-12-20**
+- now you can sort equips by `reload speed` (max enhanced stats)  
+  ![](https://i.imgur.com/cMglcpL.jpg)
+  - recommend to use the `set owned equip`>`only show owned` first to filter out unwanted equips.
+    otherwise it will be quite messy.
+
 **2021-12-18**
 - calculate and display weapon/airstrike CD
   - known issue:
