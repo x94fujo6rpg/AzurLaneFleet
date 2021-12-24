@@ -210,6 +210,7 @@ const
         fleetBorder: "fleetBorder",
         ownedItem: "ownedItem",
         techData: "techData",
+        resetDB: "resetDB",
     },
     util = {
         sleep(ms = 0) {
@@ -424,9 +425,13 @@ const
         return [db, AFDB];
     },
     emptyCache = async () => {
-        const [db, AFDB] = await initialDB(db_name, db_ver);
+        const [db, AFDB] = await initialDB(db_name, db_ver),
+            t = Date.now(),
+            l = LS.userSetting.get(settingKey.resetDB);
+        if (l) if (t - l < 0x5265c00) return;
         await AFDB.clear();
         window.location.reload();
+        LS.userSetting.set(settingKey.resetDB, t);
     },
     msg = {
         error: {
@@ -2759,7 +2764,7 @@ const
                             <div class="container-fluid icon_box">
                                 <img class="img-fluid bg" src="${data.bg}">
                                 <img class="img-fluid frame" src="${data.frame}">
-                                <img class="img-fluid icon" loading="lazy" src="${ui_table.empty_disable}">
+                                <img class="img-fluid icon" src="${ui_table.empty_disable}">
                             </div>
                             <span class="item_name" name="name" tw="${data.tw}" cn="${data.cn}" en="${data.en}" jp="${data.jp}">
                                 ${data[language]}
@@ -2842,6 +2847,10 @@ const
                 await addProgressBar("fetch_img", "Downloading images... This will take a while.", count, progress);
                 for (let key in all_data) {
                     let obj = all_data[key];
+                    if (promise_list.length >= 5) {
+                        await Promise.all(promise_list);
+                        promise_list = [];
+                    }
                     promise_list.push(
                         fetchImageToDataURI(obj.src).then(data_url => {
                             obj.data_url = data_url;
