@@ -2338,6 +2338,7 @@ const
                     [_side, _pos] = slot[0].split("_"),
                     target, target_name;
                 _pos = getShipPos(_side, _pos); // get real array pos (1,2,3) => (0,1,2)
+                if (check == "id" && _pos != p) return false; // target pos is not self
                 target = fleetData[f][_side][_pos].item[0].property;
                 target_name = target.tw;
                 if (list.some(e => e == target[check])) {
@@ -3322,9 +3323,8 @@ const
                     b = fleetData[sw.b[0]][sideTable[sw.b[1]]][sw.b[2]].item,
                     ship_pos_b = b[0].property.ship_pos; // save original position
                 a.forEach((item, item_index) => {
-                    let data_a = JSON.parse(JSON.stringify(a[item_index].property));
                     b[item_index].property = {};
-                    b[item_index].property = data_a;
+                    b[item_index].property = JSON.parse(JSON.stringify(a[item_index].property));
                 });
                 b[0].property.ship_pos = ship_pos_b; // overwrite position
                 msg.normal.ship_copied(a);
@@ -3337,12 +3337,7 @@ const
                     ship_pos_a = a[0].property.ship_pos,
                     ship_pos_b = b[0].property.ship_pos;
                 a.forEach((item, item_index) => {
-                    let data_a = JSON.parse(JSON.stringify(a[item_index].property)),
-                        data_b = JSON.parse(JSON.stringify(b[item_index].property));
-                    a[item_index].property = {};
-                    b[item_index].property = {};
-                    a[item_index].property = data_b;
-                    b[item_index].property = data_a;
+                    [a[item_index].property, b[item_index].property] = [b[item_index].property, a[item_index].property];
                 });
                 a[0].property.ship_pos = ship_pos_a;
                 b[0].property.ship_pos = ship_pos_b;
