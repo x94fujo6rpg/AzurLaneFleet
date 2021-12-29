@@ -6361,6 +6361,54 @@ const ship_data = {
             0
         ]
     },
+    "408120": {
+        "nationality": 4,
+        "type": 8,
+        "base_list": [
+            2,
+            2,
+            1
+        ],
+        "id": 408124,
+        "skin_id": 408120,
+        "english_name": "KMS U-1206 !ENnoData !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "408120",
+        "painting": "u1206",
+        "jp_name": "U-1206",
+        "en_name": "KMS U-1206*",
+        "cn_name": "U-1206",
+        "tw_name": "U-1206*",
+        "equip_1": [
+            13
+        ],
+        "equip_2": [
+            13
+        ],
+        "equip_3": [
+            1
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.25,
+            1.2,
+            0.85
+        ],
+        "reload": [
+            31,
+            214,
+            0,
+            24,
+            0
+        ]
+    },
     "408110": {
         "nationality": 4,
         "type": 8,
@@ -7083,6 +7131,56 @@ const ship_data = {
             0
         ]
     },
+    "406020": {
+        "nationality": 4,
+        "type": 6,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 406024,
+        "skin_id": 406020,
+        "english_name": "KMS Elbe !ENnoData !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "406020",
+        "painting": "yibei",
+        "jp_name": "エルベ",
+        "en_name": "KMS Elbe*",
+        "cn_name": "易北",
+        "tw_name": "易北*",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            9
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            15
+        ],
+        "equip_5": [
+            10,
+            15
+        ],
+        "eq_p": [
+            1.45,
+            1.35,
+            0.8
+        ],
+        "reload": [
+            68,
+            475,
+            0,
+            51,
+            0
+        ]
+    },
     "406010": {
         "nationality": 4,
         "type": 6,
@@ -7179,6 +7277,55 @@ const ship_data = {
             402,
             0,
             43,
+            0
+        ]
+    },
+    "405030": {
+        "nationality": 4,
+        "type": 5,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 405034,
+        "skin_id": 405030,
+        "english_name": "KMS Ulrich von Hutten !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 6,
+        "retro": 0,
+        "uni_id": "405030",
+        "painting": "wuerlixi",
+        "jp_name": "ウルリッヒ・フォン・フッテン",
+        "en_name": "KMS Ulrich von Hutten*",
+        "cn_name": "乌尔里希·冯·胡滕",
+        "tw_name": "烏爾里希·馮·胡滕*",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.55,
+            2.1,
+            0.9
+        ],
+        "reload": [
+            65,
+            454,
+            0,
+            49,
             0
         ]
     },
@@ -7471,6 +7618,55 @@ const ship_data = {
             439,
             0,
             47,
+            0
+        ]
+    },
+    "403100": {
+        "nationality": 4,
+        "type": 3,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 403104,
+        "skin_id": 403100,
+        "english_name": "KMS Prinz Adalbert !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "403100",
+        "painting": "adaerbote",
+        "jp_name": "プリンツ・アーダルベルト",
+        "en_name": "KMS Prinz Adalbert*",
+        "cn_name": "阿达尔伯特亲王",
+        "tw_name": "阿達爾伯特親王*",
+        "equip_1": [
+            3,
+            11
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.5,
+            1.4,
+            1
+        ],
+        "reload": [
+            67,
+            467,
+            0,
+            50,
             0
         ]
     },
@@ -7860,6 +8056,56 @@ const ship_data = {
             467,
             0,
             50,
+            0
+        ]
+    },
+    "402060": {
+        "nationality": 4,
+        "type": 2,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 402064,
+        "skin_id": 402060,
+        "english_name": "KMS Magdeburg !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "402060",
+        "painting": "magedebao",
+        "jp_name": "マクデブルク",
+        "en_name": "KMS Magdeburg*",
+        "cn_name": "马格德堡",
+        "tw_name": "馬格德堡*",
+        "equip_1": [
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.45,
+            1.35,
+            1.2
+        ],
+        "reload": [
+            75,
+            523,
+            0,
+            56,
             0
         ]
     },
@@ -21331,7 +21577,7 @@ const ship_data = {
         ],
         "id": 201324,
         "skin_id": 201320,
-        "english_name": "HMS Eskimo !TWnoData",
+        "english_name": "HMS Eskimo",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -21340,7 +21586,7 @@ const ship_data = {
         "jp_name": "エスキモー",
         "en_name": "Eskimo",
         "cn_name": "爱斯基摩人",
-        "tw_name": "愛斯基摩人*",
+        "tw_name": "愛斯基摩",
         "equip_1": [
             1
         ],
