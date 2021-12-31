@@ -23,6 +23,9 @@ for [AzurLaneSD](https://github.com/Pelom777/AzurLaneSD)
 now shoud load data from CN Wiki version **(irreversible)**  
 
 ## Update  
+**2021-12-31**
+- Prevent multiple download of same icon (causing idb error: key already exists)
+
 **2021-12-20**
 - now you can sort equips by `reload speed` (max enhanced stats)  
   ![](https://i.imgur.com/cMglcpL.jpg)

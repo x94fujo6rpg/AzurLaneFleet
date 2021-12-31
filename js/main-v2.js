@@ -1092,9 +1092,7 @@ const
                     add_value = (_key, _value) => filter_setting[_key].add(_value),
                     delete_value = (_key, _value) => filter_setting[_key].delete(_value),
                     normal_value = (_key, _value) => (hasvalue ? delete_value : add_value)(_key, _value);
-                if (value != 0) {
-                    normal_value(key, value);
-                } else if (value == 0) {
+                if (value == 0) {
                     if (type == "type") {
                         let list = ["front", "back", "sub"];
                         if (hasvalue) {
@@ -1105,6 +1103,8 @@ const
                     } else {
                         normal_value(key, 0);
                     }
+                } else {
+                    normal_value(key, value);
                 }
                 return true;
             },
@@ -1115,25 +1115,29 @@ const
                     filter_type = strlist[1],
                     value = parseInt(strlist[2], 10); //type int
                 if (type == "ship") {
-                    if (filter_type === "nation") {
-                        await this.updateFilter("nation", value, filter_type);
-                    } else if (filter_type === "type") {
-                        switch (c_side) {
-                            case "0":
-                                await this.updateFilter("front", value, filter_type);
-                                break;
-                            case "1":
-                                await this.updateFilter("back", value, filter_type);
-                                break;
-                            case "2":
-                                await this.updateFilter("sub", value, filter_type);
-                                break;
-                            default:
-                                throw Error(`unknown ship type ${filter_type}`);
-                        }
-                    } else if (filter_type === "rarity") {
-                        await this.updateFilter("rarity", value, filter_type);
-                        item.style.color = item.style.color.length > 0 ? "" : "gold";
+                    switch (filter_type) {
+                        case "nation":
+                            await this.updateFilter("nation", value, filter_type);
+                            break;
+                        case "type":
+                            switch (c_side) {
+                                case "0":
+                                    await this.updateFilter("front", value, filter_type);
+                                    break;
+                                case "1":
+                                    await this.updateFilter("back", value, filter_type);
+                                    break;
+                                case "2":
+                                    await this.updateFilter("sub", value, filter_type);
+                                    break;
+                                default:
+                                    throw Error(`unknown ship type ${filter_type}`);
+                            }
+                            break;
+                        case "rarity":
+                            await this.updateFilter("rarity", value, filter_type);
+                            item.style.color = item.style.color.length > 0 ? "" : "gold";
+                            break;
                     }
                     app.shipDisplay();
                 } else if (type == "equip") {
@@ -1529,16 +1533,14 @@ const
                 5: 1.09, // 100+ ring
                 6: 1.12, // 200
             },
-            getShipReload(
-                {
-                    reload: [base, grow, extra, strengthen, retrofit],
-                    ship_level = 125,
-                    affinity = 4,
-                    nationality = 0,
-                    type,
-                    tw,
-                }
-            ) {
+            getShipReload({
+                reload: [base, grow, extra, strengthen, retrofit],
+                ship_level = 125,
+                affinity = 4,
+                nationality = 0,
+                type,
+                tw,
+            }) {
                 let bonus = this._affinity_bonus[affinity] || 1,
                     tech_reload = this._tech_reload[type] || 0,
                     reload;
@@ -2380,6 +2382,7 @@ const
         async initialize() {
             console.time(app.initialize.name);
             let pending = { ship_done: false, equip_done: false };
+            const max_con = 5;
             await setBc(Date.now(), false);
             step("sort Ship", 0); await createSortShipList();
             step("sort Equip", 0); await createSortEquipList();
@@ -2814,7 +2817,11 @@ const
                     progress = _loading_.missing_cache;
                 console.time(name);
                 await addProgressBar("fetch_missing", "Found some icons have no cache, download it now...", no_cache_list.length, progress);
-                no_cache_list.forEach(obj => {
+                for (let obj of no_cache_list) {
+                    if (promise_list.length >= max_con) {
+                        await Promise.all(promise_list);
+                        promise_list = [];
+                    }
                     promise_list.push(
                         fetchImageToDataURI(obj.src)
                             .then(data_url => {
@@ -2822,7 +2829,7 @@ const
                                 progress.update();
                             })
                     );
-                });
+                }
                 await Promise.all(promise_list);
                 console.timeEnd(name);
                 return no_cache_list;
@@ -2848,7 +2855,7 @@ const
                 await addProgressBar("fetch_img", "Downloading images... This will take a while.", count, progress);
                 for (let key in all_data) {
                     let obj = all_data[key];
-                    if (promise_list.length >= 5) {
+                    if (promise_list.length >= max_con) {
                         await Promise.all(promise_list);
                         promise_list = [];
                     }
@@ -2903,6 +2910,7 @@ const
                 all_cache = all_cache.reduce((obj, cache_data) => (obj[cache_data.src] = cache_data.data_url, obj), {}); // convert to obj
                 await addProgressBar("load_cache", "Loading Cache", max, progress);
                 data.forEach(item => {
+                    let no_cache_src_list = new Set([]);
                     item.list.forEach((obj, i) => {
                         if (i == 0) return; // skip empty
                         let cache = all_cache[obj.icon];
@@ -2912,12 +2920,16 @@ const
                             count++;
                         } else {
                             obj.icon_cache = false;
-                            console.log("cache not found", obj);
-                            no_cache_obj.push({
-                                src: obj.icon,
-                                id: srcToCacheID(obj.icon, item.type, reg),
-                                data_url: "",
-                            });
+                            // no repeat
+                            if (!(no_cache_src_list.has(obj.icon))) {
+                                console.log("cache not found", obj);
+                                no_cache_src_list.add(obj.icon);
+                                no_cache_obj.push({
+                                    src: obj.icon,
+                                    id: srcToCacheID(obj.icon, item.type, reg),
+                                    data_url: "",
+                                });
+                            }
                         }
                         progress.update();
                     });
