@@ -1638,7 +1638,7 @@ const
                     });
                 });
             },
-            _eq_with_reload: new Set([1600, 1620, 1640, 2200, 2220, 2240, 2640]),
+            _eq_with_reload: new Set(Object.keys(equip_data).filter(id => equip_data[id].eq_reload).map(id => parseInt(id))),
             updateCD({ type = "", data: [f, s, p, i] }) {
                 let ship_item = fleetData[f][s][p].item,
                     ship = ship_item[0].property,
