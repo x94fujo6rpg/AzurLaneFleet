@@ -23,6 +23,10 @@ for [AzurLaneSD](https://github.com/Pelom777/AzurLaneSD)
 now shoud load data from CN Wiki version **(irreversible)**  
 
 ## Update  
+**2022-01-04**
+- CD calculation now includes reload values from equip  
+  *in order to keep the values exactly as shown in the game. I won't implement other calculations.*  
+
 **2021-12-31**
 - Prevent multiple download of same icon (causing idb error: key already exists)
 

@@ -2298,7 +2298,23 @@ const equip_data = {
         "tw_name": "九三式純氧魚雷",
         "en_name": "Type 93 Pure Oxygen Torpedo",
         "equip_limit": 0,
-        "cd": []
+        "cd": [],
+        "eq_reload": [
+            3,
+            3,
+            4,
+            5,
+            6,
+            6,
+            7,
+            8,
+            9,
+            9,
+            10,
+            11,
+            12,
+            13
+        ]
     },
     "580": {
         "nationality": 3,
@@ -2897,7 +2913,17 @@ const equip_data = {
         "tw_name": "電動揚彈機",
         "en_name": "Rammer",
         "equip_limit": 0,
-        "cd": []
+        "cd": [],
+        "eq_reload": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            15,
+            17,
+            19
+        ]
     },
     "1620": {
         "nationality": 0,
@@ -2915,7 +2941,13 @@ const equip_data = {
         "tw_name": "電動揚彈機",
         "en_name": "Rammer",
         "equip_limit": 0,
-        "cd": []
+        "cd": [],
+        "eq_reload": [
+            5,
+            5,
+            6,
+            7
+        ]
     },
     "1600": {
         "nationality": 0,
@@ -2933,7 +2965,13 @@ const equip_data = {
         "tw_name": "電動揚彈機",
         "en_name": "Rammer",
         "equip_limit": 0,
-        "cd": []
+        "cd": [],
+        "eq_reload": [
+            2,
+            2,
+            3,
+            3
+        ]
     },
     "1940": {
         "nationality": 0,
@@ -3114,7 +3152,21 @@ const equip_data = {
         "tw_name": "鍊式裝彈機",
         "en_name": "Autoloader",
         "equip_limit": 0,
-        "cd": []
+        "cd": [],
+        "eq_reload": [
+            14,
+            16,
+            18,
+            20,
+            22,
+            24,
+            26,
+            28,
+            30,
+            32,
+            35,
+            38
+        ]
     },
     "2220": {
         "nationality": 0,
@@ -3132,7 +3184,16 @@ const equip_data = {
         "tw_name": "鍊式裝彈機",
         "en_name": "Autoloader",
         "equip_limit": 0,
-        "cd": []
+        "cd": [],
+        "eq_reload": [
+            9,
+            10,
+            11,
+            13,
+            14,
+            15,
+            17
+        ]
     },
     "2200": {
         "nationality": 0,
@@ -3150,7 +3211,13 @@ const equip_data = {
         "tw_name": "鍊式裝彈機",
         "en_name": "Autoloader",
         "equip_limit": 0,
-        "cd": []
+        "cd": [],
+        "eq_reload": [
+            5,
+            5,
+            6,
+            7
+        ]
     },
     "2140": {
         "nationality": 0,

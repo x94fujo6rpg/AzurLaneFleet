@@ -1111,7 +1111,7 @@ const
             async updateFilterSetting(item) {
                 $(item).button("toggle");
                 let strlist = item.name.split("_"),
-                    type = strlist[0], // ship, equip
+                    type = strlist[0], // ship/equip
                     filter_type = strlist[1],
                     value = parseInt(strlist[2], 10); //type int
                 if (type == "ship") {
@@ -1120,19 +1120,9 @@ const
                             await this.updateFilter("nation", value, filter_type);
                             break;
                         case "type":
-                            switch (c_side) {
-                                case "0":
-                                    await this.updateFilter("front", value, filter_type);
-                                    break;
-                                case "1":
-                                    await this.updateFilter("back", value, filter_type);
-                                    break;
-                                case "2":
-                                    await this.updateFilter("sub", value, filter_type);
-                                    break;
-                                default:
-                                    throw Error(`unknown ship type ${filter_type}`);
-                            }
+                            let side = sideTable[c_side];
+                            if (!side) throw Error(`unknown ship type ${filter_type}`);
+                            await this.updateFilter(side, value, filter_type);
                             break;
                         case "rarity":
                             await this.updateFilter("rarity", value, filter_type);
@@ -1140,24 +1130,9 @@ const
                             break;
                     }
                     app.shipDisplay();
-                } else if (type == "equip") {
-                    switch (filter_type) {
-                        case "nation":
-                            await this.updateFilter("eq_nation", value, filter_type);
-                            break;
-                        case "type":
-                            await this.updateFilter("eq_type", value, filter_type);
-                            break;
-                        case "rarity":
-                            await this.updateFilter("eq_rarity", value, filter_type);
-                            item.style.color = item.style.color.length > 0 ? "" : "gold";
-                            break;
-                        case "tier":
-                            await this.updateFilter("eq_tier", value, filter_type);
-                            break;
-                        default:
-                            throw Error(`unknown equip type ${filter_type}`);
-                    }
+                } else {
+                    await this.updateFilter(`eq_${filter_type}`, value, filter_type);
+                    if (filter_type == "rarity") item.style.color = item.style.color.length > 0 ? "" : "gold";
                     app.equipDisplay();
                 }
             },
@@ -1334,6 +1309,7 @@ const
                 textbox.value = "";
                 await this.parseID(data, noDump, ver);
                 dynamicFleet.disableInvalidMoveButton();
+                app.util.updateAllCD();
                 if (event) msg.normal.fleet_loaded();
 
                 function loadError(_ck_ = "") {
@@ -1539,15 +1515,35 @@ const
                 affinity = 4,
                 nationality = 0,
                 type,
-                tw,
+                //tw,
+                ship_item,
             }) {
                 let bonus = this._affinity_bonus[affinity] || 1,
                     tech_reload = this._tech_reload[type] || 0,
+                    equip_reload = getEquipReload(),
                     reload;
                 if (nationality != 97) strengthen = Math.floor(strengthen * (Math.min(ship_level, 100) / 100 * 0.7 + 0.3));
-                reload = Math.floor((base + grow * (ship_level - 1) / 1e3 + extra * (Math.max(ship_level, 100) - 100) / 1e3 + strengthen) * bonus + retrofit + tech_reload);
+
+                reload = Math.floor((base + grow * (ship_level - 1) / 1e3 + extra * (Math.max(ship_level, 100) - 100) / 1e3 + strengthen) * bonus + retrofit + tech_reload + equip_reload);
                 //if (affinity != 4) console.log(`getShipReload: ${tw} affinity:${affinity} reload:${reload}`);
                 return reload;
+
+                function getEquipReload() {
+                    let eq_reload = 0;
+                    for (let i = 1; i < 6; i++) {
+                        let eq = ship_item[i].property,
+                            id = eq.id,
+                            lv = eq.equip_level;
+                        if (id != '') {
+                            let eq_data = equip_data[id];
+                            if (eq_data.eq_reload) {
+                                //console.log(`${eq.tw} level:${lv} reload:${eq_data.eq_reload[lv]}`);
+                                eq_reload += eq_data.eq_reload[lv];
+                            }
+                        }
+                    }
+                    return eq_reload;
+                }
             },
             _airstrike: new Set([7, 8, 9, 12]),
             getEquipCD({
@@ -1627,7 +1623,7 @@ const
             },
             updateAllCD() {
                 fleetData.forEach((fleet, fleet_index) => {
-                    Object.keys(fleet).forEach((side_key, side_index) => {
+                    Object.keys(fleet).forEach((side_key) => {
                         let side_data;
                         if (side_key == "id") return;
                         side_data = fleet[side_key];
@@ -1642,14 +1638,15 @@ const
                     });
                 });
             },
+            _eq_with_reload: new Set([1600, 1620, 1640, 2200, 2220, 2240, 2640]),
             updateCD({ type = "", data: [f, s, p, i] }) {
                 let ship_item = fleetData[f][s][p].item,
                     ship = ship_item[0].property,
                     ship_reload;
                 if (!ship.id) return; //empty ship
-                ship.reload_cache = this.getShipReload(ship);
-                ship_reload = ship.reload_cache;
                 if (type == "ship") {
+                    ship.reload_cache = this.getShipReload({ ...ship, ship_item });
+                    ship_reload = ship.reload_cache;
                     // update ship reload & all equip cd
                     //console.log(type, ship.tw, ship.ship_level, ship_reload);
                     ship_item.forEach((item, index) => {
@@ -1673,6 +1670,13 @@ const
                 } else {
                     // update equip cd
                     let equip = fleetData[f][s][p].item[i].property;
+                    if (this._eq_with_reload.has(equip.id) || equip.id == "") {
+                        this.updateCD({ type: "ship", data: [f, s, p, i] });
+                        //console.log("update ship reload & equip cd");
+                        return;  // skip
+                    }
+                    ship.reload_cache = this.getShipReload({ ...ship, ship_item });
+                    ship_reload = ship.reload_cache;
                     if (this._airstrike.has(equip.eq_type)) {
                         this.getEquipCD({ equip_data: equip, ship_reload, pos: [f, s, p, i] });
                     } else {
@@ -2249,7 +2253,7 @@ const
                 }
                 ui_table.copy_equip.forEach(key => itemInApp[key] = itemInList[key]);
                 // set level
-                app.setLevel("equip", false, false);
+                app.setLevel("equip", skip_level, false);
 
                 // set equip type for slot skill
                 itemInApp.eq_type = itemInList.type;
@@ -2716,7 +2720,7 @@ const
                         }
                     })(),
                     bp = ["MTA4MDIw", "MjgzNDA="].reduce((a, b) => (a.push(parseInt(atob(b))), a), []);
-                await addProgressBar("add_img", "add event & image", max, progress);
+                await addProgressBar("add_img", "Setup Events & Icons", max, progress);
                 for (let obj of list) {
                     let iob = is_iob ?
                         new IntersectionObserver(iconObserver, {
