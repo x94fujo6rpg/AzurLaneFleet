@@ -3482,8 +3482,8 @@ const
     type_sub = new Set([8, 17]),
     other_nation = new Set([97, 98]), // 97:META, 98:Bulin, 100+:collab
     collab_nation = new Set([101, 103, 104, 105, 106, 107, 108, 109, 110]),
-    other_front = new Set([19]),
-    other_back = new Set([10]),
+    other_front = new Set([19, 20]),
+    other_back = new Set([10, 20]),
     other_sub = new Set([0]),
     // equip
     addQuantityList = new Set([1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 20]),
