@@ -1691,9 +1691,11 @@ const
         },
         action: {
             emptyfleet() {
-                let data = 'No4BgGk6qhdC5Y2gpLlze5nEZTQMwQEYsg';
+                //old No4BgGk6qhdC5Y2gpLlze5nEZTQMwQEYsg
+                let data = 'No4BgXQGnbb2NJItAjKghGAdGAbJgGYDsARgBwEVA';
                 data = LZString.decompressFromEncodedURIComponent(data);
-                app.util.updateFleetDataBox(data);
+                //app.util.updateFleetDataBox(data);
+                document.getElementById("fleetdata").value = data;
                 app.util.loadDataByID();
                 dynamicFleet.disableInvalidMoveButton();
             },
