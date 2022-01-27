@@ -106,11 +106,13 @@ const
         10: { cn: "設備", en: "Auxiliary", jp: "設備" },
         11: { cn: "超巡砲", en: "CB Gun", jp: "超巡砲" },
         12: { cn: "水上機", en: "Seaplane", jp: "水上機" },
+
         13: { cn: "潛艇用魚雷", en: "Submarine Torpedoe", jp: "潜水艦魚雷" },
         14: { cn: "爆雷", en: "Depth Charge", jp: "爆雷" }, //Sonar is not a unique type
         15: { cn: "反潛機", en: "ASW Bomber", jp: "対潜機" },
         17: { cn: "直升機", en: "ASW Helicopter", jp: "ヘリ" },
-        18: { cn: "貨物", en: "Cargo", jp: "積載" }
+        18: { cn: "貨物", en: "Cargo", jp: "積載" },
+        20: { cn: "導彈", en: "Missile", jp: "ミサイル" },
     };
 Object.keys(parsetype).forEach(key => parsetype[key].tw = parsetype[key].cn);
 
@@ -1522,6 +1524,7 @@ const
                     tech_reload = this._tech_reload[type] || 0,
                     equip_reload = getEquipReload(),
                     reload;
+                if (type == 20) tech_reload = this._tech_reload[1] || 0;
                 if (nationality != 97) strengthen = Math.floor(strengthen * (Math.min(ship_level, 100) / 100 * 0.7 + 0.3));
 
                 reload = Math.floor((base + grow * (ship_level - 1) / 1e3 + extra * (Math.max(ship_level, 100) - 100) / 1e3 + strengthen) * bonus + retrofit + tech_reload + equip_reload);
@@ -2711,9 +2714,11 @@ const
                     max = sortedShip.length + sortedEquip.length,
                     progress = _loading_.add_img,
                     is_iob = (() => {
-                        if (!('IntersectionObserver' in window) ||
+                        if (
+                            !('IntersectionObserver' in window) ||
                             !('IntersectionObserverEntry' in window) ||
-                            !('intersectionRatio' in window.IntersectionObserverEntry.prototype)) {
+                            !('intersectionRatio' in window.IntersectionObserverEntry.prototype)
+                        ) {
                             return false;
                         } else {
                             return true;
@@ -3143,8 +3148,8 @@ const
         },
         insertFleet(ele) {
             if (fleetData.length >= maximumFleet) msg.error.maximum_fleet();
-            let data = ele.getAttribute("data").split(",").map(t => parseInt(t, 10));
-            let formation = data[0],
+            let data = ele.getAttribute("data").split(",").map(t => parseInt(t, 10)),
+                formation = data[0],
                 insert_position = this.getPos(ele),
                 direction = data[1];
             if (insert_position < 0) msg.error.negative_position();
@@ -3472,8 +3477,8 @@ const
     posTable = { BS: { 0: "2", 1: "1", 2: "3" }, F: { 0: "3", 1: "2", 2: "1" }, },
     posTable_r = { BS: { 2: "0", 1: "1", 3: "2" }, F: { 3: "0", 2: "1", 1: "2" }, },
     // ship
-    type_front = new Set([1, 2, 3, 18, 19]),
-    type_back = new Set([4, 5, 6, 7, 10, 12, 13]),
+    type_front = new Set([1, 2, 3, 18, 19, 20,]),
+    type_back = new Set([4, 5, 6, 7, 10, 12, 13, 20,]),
     type_sub = new Set([8, 17]),
     other_nation = new Set([97, 98]), // 97:META, 98:Bulin, 100+:collab
     collab_nation = new Set([101, 103, 104, 105, 106, 107, 108, 109, 110]),
@@ -3481,7 +3486,7 @@ const
     other_back = new Set([10]),
     other_sub = new Set([0]),
     // equip
-    addQuantityList = new Set([1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13,]),
+    addQuantityList = new Set([1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 20]),
     eq_other_nation = other_nation,
     eq_collab_nation = collab_nation,
     eq_nation = new Set(lan_eq_nation.map(o => parseInt(o.id, 10))),

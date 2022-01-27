@@ -2548,6 +2548,56 @@ const ship_data = {
             0
         ]
     },
+    "9706020": {
+        "nationality": 97,
+        "type": 6,
+        "base_list": [
+            2,
+            2,
+            3
+        ],
+        "id": 9706024,
+        "skin_id": 9706020,
+        "english_name": "Jun'yo.META !ENnoData !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "9706020",
+        "painting": "sunying_alter",
+        "jp_name": "隼鷹(META)",
+        "en_name": "Jun'yō.META*",
+        "cn_name": "隼鹰·META",
+        "tw_name": "隼鷹·META*",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            9
+        ],
+        "equip_3": [
+            8
+        ],
+        "equip_4": [
+            10,
+            15
+        ],
+        "equip_5": [
+            10,
+            15
+        ],
+        "eq_p": [
+            1,
+            1.1,
+            1.2
+        ],
+        "reload": [
+            71,
+            491,
+            0,
+            53,
+            0
+        ]
+    },
     "9706010": {
         "nationality": 97,
         "type": 6,
@@ -2608,7 +2658,7 @@ const ship_data = {
         ],
         "id": 9705014,
         "skin_id": 9705010,
-        "english_name": "Fuso.META !TWnoData",
+        "english_name": "Fuso.META",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -2617,7 +2667,7 @@ const ship_data = {
         "jp_name": "扶桑(META)",
         "en_name": "Fusou META",
         "cn_name": "扶桑·META",
-        "tw_name": "扶桑·META*",
+        "tw_name": "扶桑·META",
         "equip_1": [
             4
         ],
@@ -4738,7 +4788,7 @@ const ship_data = {
         ],
         "id": 701064,
         "skin_id": 701060,
-        "english_name": "SN Stremitelny !TWnoData",
+        "english_name": "SN Stremitelny",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -4747,7 +4797,7 @@ const ship_data = {
         "jp_name": "ストレミテルヌイ",
         "en_name": "Stremitelny",
         "cn_name": "神速",
-        "tw_name": "神速*",
+        "tw_name": "神速",
         "equip_1": [
             1
         ],
@@ -5762,6 +5812,157 @@ const ship_data = {
             0
         ]
     },
+    "506010": {
+        "nationality": 5,
+        "type": 6,
+        "base_list": [
+            1,
+            1,
+            1
+        ],
+        "id": 506014,
+        "skin_id": 506010,
+        "english_name": "Chen Hai !ENnoData !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "506010",
+        "painting": "zhenhai",
+        "jp_name": "鎮海",
+        "en_name": "Chen Hai*",
+        "cn_name": "镇海",
+        "tw_name": "鎮海*",
+        "equip_1": [
+            12
+        ],
+        "equip_2": [
+            1,
+            12
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.5,
+            1.5,
+            0.8
+        ],
+        "reload": [
+            68,
+            475,
+            0,
+            51,
+            0
+        ]
+    },
+    "502080": {
+        "nationality": 5,
+        "type": 2,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 502084,
+        "skin_id": 502080,
+        "english_name": "Hai Chi !ENnoData !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "502080",
+        "painting": "haiqi",
+        "jp_name": "海圻",
+        "en_name": "Hai Chi*",
+        "cn_name": "海圻",
+        "tw_name": "海圻*",
+        "equip_1": [
+            3
+        ],
+        "equip_2": [
+            1
+        ],
+        "equip_3": [
+            5
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            0.3,
+            1.2,
+            0.8
+        ],
+        "reload": [
+            55,
+            385,
+            0,
+            41,
+            0
+        ]
+    },
+    "502070": {
+        "nationality": 5,
+        "type": 2,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 502074,
+        "skin_id": 502070,
+        "english_name": "Hai Tien !ENnoData !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "502070",
+        "painting": "haitian",
+        "jp_name": "海天",
+        "en_name": "Hai Tien*",
+        "cn_name": "海天",
+        "tw_name": "海天*",
+        "equip_1": [
+            3
+        ],
+        "equip_2": [
+            1
+        ],
+        "equip_3": [
+            5
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            0.3,
+            1.2,
+            0.8
+        ],
+        "reload": [
+            55,
+            385,
+            0,
+            41,
+            0
+        ]
+    },
     "502050": {
         "nationality": 5,
         "type": 2,
@@ -5772,7 +5973,7 @@ const ship_data = {
         ],
         "id": 502054,
         "skin_id": 502050,
-        "english_name": "ROC Chao Ho !TWnoData",
+        "english_name": "ROC Chao Ho",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -5781,7 +5982,7 @@ const ship_data = {
         "jp_name": "肇和",
         "en_name": "Chao Ho",
         "cn_name": "肇和",
-        "tw_name": "肇和*",
+        "tw_name": "肇和",
         "equip_1": [
             2
         ],
@@ -5822,7 +6023,7 @@ const ship_data = {
         ],
         "id": 502044,
         "skin_id": 502040,
-        "english_name": "ROC Ying Swei !TWnoData",
+        "english_name": "ROC Ying Swei",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -5831,7 +6032,7 @@ const ship_data = {
         "jp_name": "応瑞",
         "en_name": "Ying Swei",
         "cn_name": "应瑞",
-        "tw_name": "應瑞*",
+        "tw_name": "應瑞",
         "equip_1": [
             2
         ],
@@ -6162,6 +6363,56 @@ const ship_data = {
             0
         ]
     },
+    "501039": {
+        "nationality": 5,
+        "type": 20,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 520034,
+        "skin_id": 501039,
+        "english_name": "PRAN Chang Chun",
+        "star": 5,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "501039",
+        "painting": "changchun_g",
+        "jp_name": "長春改",
+        "en_name": "Chang Chun (Retrofit)",
+        "cn_name": "长春改",
+        "tw_name": "長春改",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            20
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.0,
+            1.5,
+            1.05
+        ],
+        "reload": [
+            73,
+            510,
+            0,
+            55,
+            0
+        ]
+    },
     "501030": {
         "nationality": 5,
         "type": 1,
@@ -6175,7 +6426,7 @@ const ship_data = {
         "english_name": "PRAN Chang Chun",
         "star": 5,
         "rarity": 4,
-        "retro": 0,
+        "retro": 1,
         "uni_id": "501030",
         "painting": "changchun",
         "jp_name": "長春",
@@ -6262,6 +6513,56 @@ const ship_data = {
             0
         ]
     },
+    "501019": {
+        "nationality": 5,
+        "type": 20,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 520014,
+        "skin_id": 501019,
+        "english_name": "PRAN An shan",
+        "star": 5,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "501019",
+        "painting": "anshan_g",
+        "jp_name": "鞍山改",
+        "en_name": "An Shan (Retrofit)",
+        "cn_name": "鞍山改",
+        "tw_name": "鞍山改",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            20
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.0,
+            1.5,
+            1.05
+        ],
+        "reload": [
+            74,
+            515,
+            0,
+            55,
+            0
+        ]
+    },
     "501010": {
         "nationality": 5,
         "type": 1,
@@ -6275,7 +6576,7 @@ const ship_data = {
         "english_name": "PRAN An shan",
         "star": 5,
         "rarity": 4,
-        "retro": 0,
+        "retro": 1,
         "uni_id": "501010",
         "painting": "anshan",
         "jp_name": "鞍山",
@@ -6419,7 +6720,7 @@ const ship_data = {
         ],
         "id": 408114,
         "skin_id": 408110,
-        "english_name": "KMS U-410 !TWnoData",
+        "english_name": "KMS U-410",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -6428,7 +6729,7 @@ const ship_data = {
         "jp_name": "U-410",
         "en_name": "U-410",
         "cn_name": "U-410",
-        "tw_name": "U-410*",
+        "tw_name": "U-410",
         "equip_1": [
             13
         ],
@@ -6467,7 +6768,7 @@ const ship_data = {
         ],
         "id": 408104,
         "skin_id": 408100,
-        "english_name": "KMS U-37 !TWnoData",
+        "english_name": "KMS U-37",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -6476,7 +6777,7 @@ const ship_data = {
         "jp_name": "U-37",
         "en_name": "U-37",
         "cn_name": "U-37",
-        "tw_name": "U-37*",
+        "tw_name": "U-37",
         "equip_1": [
             13
         ],
@@ -6995,7 +7296,7 @@ const ship_data = {
         ],
         "id": 407034,
         "skin_id": 407030,
-        "english_name": "KMS Peter Strasser !TWnoData",
+        "english_name": "KMS Peter Strasser",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -7004,7 +7305,7 @@ const ship_data = {
         "jp_name": "ペーター・シュトラッサー",
         "en_name": "Peter Strasser",
         "cn_name": "彼得·史特拉塞",
-        "tw_name": "彼得·史特拉塞*",
+        "tw_name": "彼得·史特拉塞",
         "equip_1": [
             7
         ],
@@ -7191,7 +7492,7 @@ const ship_data = {
         ],
         "id": 406014,
         "skin_id": 406010,
-        "english_name": "KMS Weser !TWnoData",
+        "english_name": "KMS Weser",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -7200,7 +7501,7 @@ const ship_data = {
         "jp_name": "ヴェーザー",
         "en_name": "Weser",
         "cn_name": "威悉",
-        "tw_name": "威悉*",
+        "tw_name": "威悉",
         "equip_1": [
             7
         ],
@@ -7680,7 +7981,7 @@ const ship_data = {
         ],
         "id": 403094,
         "skin_id": 403090,
-        "english_name": "KMS Prinz Heinrich !TWnoData",
+        "english_name": "KMS Prinz Heinrich",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -7689,7 +7990,7 @@ const ship_data = {
         "jp_name": "プリンツ・ハインリヒ",
         "en_name": "Prinz Heinrich",
         "cn_name": "海因里希亲王",
-        "tw_name": "海因里希親王*",
+        "tw_name": "海因里希親王",
         "equip_1": [
             3,
             11
@@ -8119,7 +8420,7 @@ const ship_data = {
         ],
         "id": 402054,
         "skin_id": 402050,
-        "english_name": "KMS Nurnberg !TWnoData",
+        "english_name": "KMS Nurnberg",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -8128,7 +8429,7 @@ const ship_data = {
         "jp_name": "ニュルンベルク",
         "en_name": "Nürnberg",
         "cn_name": "纽伦堡",
-        "tw_name": "紐倫堡*",
+        "tw_name": "紐倫堡",
         "equip_1": [
             2
         ],
@@ -8670,7 +8971,7 @@ const ship_data = {
         ],
         "id": 401284,
         "skin_id": 401280,
-        "english_name": "KMS Z28 !TWnoData",
+        "english_name": "KMS Z28",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -8679,7 +8980,7 @@ const ship_data = {
         "jp_name": "Z28",
         "en_name": "Z28",
         "cn_name": "Z28",
-        "tw_name": "Z28*",
+        "tw_name": "Z28",
         "equip_1": [
             1,
             2
@@ -8823,7 +9124,7 @@ const ship_data = {
         ],
         "id": 401244,
         "skin_id": 401240,
-        "english_name": "KMS Z24 !TWnoData",
+        "english_name": "KMS Z24",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -8832,7 +9133,7 @@ const ship_data = {
         "jp_name": "Z24",
         "en_name": "Z24",
         "cn_name": "Z24",
-        "tw_name": "Z24*",
+        "tw_name": "Z24",
         "equip_1": [
             1,
             2
@@ -19908,6 +20209,57 @@ const ship_data = {
             0
         ]
     },
+    "202300": {
+        "nationality": 2,
+        "type": 2,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 202304,
+        "skin_id": 202300,
+        "english_name": "HMS Charybdis !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "202300",
+        "painting": "kalvbudisi",
+        "jp_name": "カリブディス",
+        "en_name": "HMS Charybdis*",
+        "cn_name": "卡律布狄斯",
+        "tw_name": "卡律布狄斯*",
+        "equip_1": [
+            1,
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.35,
+            1.3,
+            1.4
+        ],
+        "reload": [
+            71,
+            492,
+            0,
+            53,
+            0
+        ]
+    },
     "202290": {
         "nationality": 2,
         "type": 2,
@@ -19918,7 +20270,7 @@ const ship_data = {
         ],
         "id": 202294,
         "skin_id": 202290,
-        "english_name": "HMS Penelope !TWnoData",
+        "english_name": "HMS Penelope",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -19927,7 +20279,7 @@ const ship_data = {
         "jp_name": "ペネロピ",
         "en_name": "Penelope",
         "cn_name": "佩内洛珀",
-        "tw_name": "佩內洛珀*",
+        "tw_name": "佩內洛珀",
         "equip_1": [
             2
         ],
@@ -28107,6 +28459,56 @@ const ship_data = {
             465,
             0,
             50,
+            0
+        ]
+    },
+    "101490": {
+        "nationality": 1,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 101494,
+        "skin_id": 101490,
+        "english_name": "USS Bristol !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "101490",
+        "painting": "bulisituoer",
+        "jp_name": "ブリストル",
+        "en_name": "USS Bristol*",
+        "cn_name": "布里斯托尔",
+        "tw_name": "布裡斯托爾*",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.35,
+            1.35,
+            1.6
+        ],
+        "reload": [
+            84,
+            585,
+            0,
+            63,
             0
         ]
     },
