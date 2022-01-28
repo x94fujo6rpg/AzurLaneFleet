@@ -3,29 +3,20 @@ A tool for easily share/manage/simulate/build/make your AzurLane fleet.
 Generate shareable text codes or links.  
 [![](https://x94fujo6rpg.github.io/AzurLaneFleet/ui/screenshots.jpg?)](https://x94fujo6rpg.github.io/AzurLaneFleet/)  
 
-## Browser support  
-If it feel slow, try turn on the hardware acceleration in your browser  
-Recommend using `Chrome` for the best experience  
-This site was developed and tested on `Chrome`/`Firefox`  
-`IE` `Edge(Old)` is unsupported  
-Compatibility with other browsers is unknown  
-
-## Related userscripts  
-for [CN WIKI](https://wiki.biligame.com/blhx/%E9%A6%96%E9%A1%B5)
-- 碧航艦隊科技工具 [github](https://github.com/x94fujo6rpg/SomeTampermonkeyScripts/blob/master/az_cn_wiki_fleet_tech_tool.user.js) / [greasyfork](https://greasyfork.org/scripts/435568)
-- 還原艦船名稱 [greasyfork](https://greasyfork.org/scripts/405281)
-
-for [AzurLaneSD](https://github.com/Pelom777/AzurLaneSD)
-- 附加可讀名稱 [github](https://github.com/x94fujo6rpg/SomeTampermonkeyScripts/blob/master/azurlanesd_renamer.user.js) / [greasyfork](https://greasyfork.org/scripts/437018)
-
-## [CN Wiki version](https://wiki.biligame.com/blhx/%E8%88%B0%E9%98%9F%E6%A8%A1%E6%8B%9F%E5%99%A8)  
-***Caution! Data stored in two versions are not compatible!***  
-now shoud load data from CN Wiki version **(irreversible)**  
+- [Azur Lane Fleet Tool](#azur-lane-fleet-tool)
+  - [Update](#update)
+  - [Browser support](#browser-support)
+  - [About CD calculation](#about-cd-calculation)
+  - [Related userscripts](#related-userscripts)
+  - [CN Wiki version](#cn-wiki-version)
+  - [Data source](#data-source)
+  - [CD calculator](#cd-calculator)
+  - [Hull codes](#hull-codes)
 
 ## Update  
 **2022-01-04**
 - CD calculation now includes reload values from equip  
-  *in order to keep the values exactly as shown in the game. I won't implement other calculations.*  
+  *In order to keep the values exactly as shown in the game. I won't implement other calculations.*  
 
 **2021-12-31**
 - Prevent multiple download of same icon (causing idb error: key already exists)
@@ -33,14 +24,17 @@ now shoud load data from CN Wiki version **(irreversible)**
 **2021-12-20**
 - now you can sort equips by `reload speed` (max enhanced stats)  
   ![](https://i.imgur.com/cMglcpL.jpg)
-  - recommend to use the `set owned equip`>`only show owned` first to filter out unwanted equips.
+  - recommend to use the `set owned equip`>`only show owned` first to filter out unwanted equips.  
     otherwise it will be quite messy.
 
 **2021-12-18**
 - calculate and display weapon/airstrike CD
   - known issue:
     - if there is empty slot that can equip airplane, it will cause the CD to be calculated incorrectly  
-      (since no one knows how to calculate it, it will not be fixed)
+      ~~(since no one knows how to calculate it, it will not be fixed)~~  
+    - ↑ need additional data that won't be needed 99% of the time.  
+      and no one is using empty slots to adjust the CD.  
+      this is still not going to be implemented.  
   - affected by `Fleet Technology` reload bonus (default: 0)
     - edit it in `Settings` > `Fleet Tech (Reload)`
     - and then `Save` it  
@@ -49,7 +43,7 @@ now shoud load data from CN Wiki version **(irreversible)**
     - set it in `ship select`
     - this will save to `fleet data`
     - this will display on ship icon (if > 1)
-  - reload value of equip has not been implemented
+  - ~~reload value of equip has not been implemented~~ (done)
 - fleet data now includes ship's affinity level
   - old data should be loaded without problems  
     (use default if no affinity data)
@@ -200,8 +194,8 @@ now shoud load data from CN Wiki version **(irreversible)**
 - add sorting
 
 **2021-10-07**
-- due to some change, old tools are no longer suitable  
-  for various reasons, no tool will be release in the future  
+- due to some change, old dev tools are no longer suitable  
+  and for various reasons, no dev tool for this repo will be release in the future  
 
 **2021-08-05**
 - add new feature: swap ship position  
@@ -339,7 +333,50 @@ now shoud load data from CN Wiki version **(irreversible)**
 - check duplicate ship/equip  
 - add import/export setting  
 
-## Code  
+## Browser support  
+If it feel slow, try turn on the hardware acceleration in your browser.  
+Recommend using `Chrome` for the best experience.  
+This site was developed and tested on `Chrome`/`Firefox`.  
+`IE` `Edge(Old)` is unsupported.  
+Compatibility with other browsers is unknown.  
+
+## About CD calculation
+The CD calculation of this tool is designed to perfectly match the values displayed in the game.  
+If you need a more detailed/real CD.
+Please check [other CD calculator(Chinese only).](#cd-calculator)
+
+## Related userscripts  
+for [CN WIKI](https://wiki.biligame.com/blhx/%E9%A6%96%E9%A1%B5)
+- 碧航艦隊科技工具 [github](https://github.com/x94fujo6rpg/SomeTampermonkeyScripts/blob/master/az_cn_wiki_fleet_tech_tool.user.js) / [greasyfork](https://greasyfork.org/scripts/435568)
+- 還原艦船名稱 [greasyfork](https://greasyfork.org/scripts/405281)
+
+for [AzurLaneSD](https://github.com/Pelom777/AzurLaneSD)
+- 附加可讀名稱 [github](https://github.com/x94fujo6rpg/SomeTampermonkeyScripts/blob/master/azurlanesd_renamer.user.js) / [greasyfork](https://greasyfork.org/scripts/437018)
+
+## CN Wiki version
+[CN Wiki version](https://wiki.biligame.com/blhx/%E8%88%B0%E9%98%9F%E6%A8%A1%E6%8B%9F%E5%99%A8)  
+***Caution! Data stored in two versions are not compatible!***  
+now shoud load data from CN Wiki version **(irreversible)**  
+
+## Data source  
+- [AzurLaneTools](https://github.com/AzurLaneTools)  
+- [AzurLaneSourceJson(Inactive)](https://github.com/nobbyfix/AzurLaneSourceJson)  
+- [AzurLaneData(Inactive)](https://github.com/Dimbreath/AzurLaneData)  
+
+## CD calculator
+- [碧蓝航线CD计算工具(Chinese only)](https://pages.autumn21.top/#/)  
+  Visualization.  
+  Can use customized time axis to match any enemy.  
+  Does not support some of more specific skills effect.  
+
+- [航母调速对轴表(Chinese only)](https://wiki.biligame.com/blhx/%E8%88%AA%E6%AF%8D%E8%B0%83%E9%80%9F%E5%AF%B9%E8%BD%B4%E8%A1%A8)  
+  Excel spreadsheet  
+
+There are some values that need to be very accurate.  
+It's a giant rabbit hole.  
+If you can. The most accurate way is to simulate the entire game.  
+
+## Hull codes  
 [Hull classification symbol](https://en.wikipedia.org/wiki/Hull_classification_symbol)  
 
 | TW&CN 	| JP       	| EN                	| CODE  	|
@@ -370,8 +407,3 @@ now shoud load data from CN Wiki version **(irreversible)**
 | 自由鳶尾 	| アイリス 	| Iris Libre          	| FFNF     	|
 | 維希教廷 	| ヴィシア 	| Vichya Dominion     	| MNF      	|
 | 其他     	| その他   	| Other               	| Other    	|
-
-## Data source  
-- [AzurLaneSourceJson](https://github.com/nobbyfix/AzurLaneSourceJson)  
-- [AzurLaneData](https://github.com/Dimbreath/AzurLaneData)  
-- [AzurLaneTools](https://github.com/AzurLaneTools)  
