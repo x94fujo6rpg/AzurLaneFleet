@@ -25,7 +25,7 @@ const equip_data = {
         "jp_name": "SY-1ミサイル",
         "cn_name": "上游-1",
         "tw_name": "上游-1*",
-        "en_name": "(no DATA)",
+        "en_name": "SY-1 Missile",
         "equip_limit": 0,
         "cd": [
             4850,
@@ -1558,7 +1558,7 @@ const equip_data = {
         "jp_name": "FBA 19",
         "cn_name": "FBA 19",
         "tw_name": "FBA 19*",
-        "en_name": "(no DATA)",
+        "en_name": "FBA 19",
         "equip_limit": 0,
         "cd": [
             2470,
@@ -1586,7 +1586,7 @@ const equip_data = {
         "jp_name": "FBA 19",
         "cn_name": "FBA 19",
         "tw_name": "FBA 19*",
-        "en_name": "(no DATA)",
+        "en_name": "FBA 19",
         "equip_limit": 0,
         "cd": [
             2570,
