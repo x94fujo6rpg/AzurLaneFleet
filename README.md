@@ -14,6 +14,10 @@ Generate shareable text codes or links.
   - [Hull codes](#hull-codes)
 
 ## Update  
+**2022-02-04**
+- auto focus back to search input when it's empty
+- result count shouldn't include [remove]
+
 **2022-01-04**
 - CD calculation now includes reload values from equip  
   *In order to keep the values exactly as shown in the game. I won't implement other calculations.*  

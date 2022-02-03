@@ -1139,10 +1139,10 @@ const
                 }
             },
             countShipDisplayed() {
-                document.querySelector("#ship_count").textContent = document.querySelectorAll("#shiplist button[displayed='true']").length;
+                document.querySelector("#ship_count").textContent = document.querySelectorAll("#shiplist button[displayed='true']").length - 1;
             },
             countEquipDisplayed() {
-                document.querySelector("#equip_count").textContent = document.querySelectorAll("#equiplist button[displayed='true']").length;
+                document.querySelector("#equip_count").textContent = document.querySelectorAll("#equiplist button[displayed='true']").length - 1;
             },
             equipCheck(ckid) {
                 let id = parseInt(atob("MjgzNDA="), 10),
@@ -1701,8 +1701,12 @@ const
             },
             ship_name_search(ele) {
                 let search_input = ele.target.value.toLowerCase(); // ship name search
-                if (!search_input) return app.shipDisplay();
-                console.log("search:", search_input);
+                if (!search_input) {
+                    app.shipDisplay();
+                    setTimeout(() => ele.target.focus());
+                    return;
+                }
+                //console.log("search:", search_input);
                 let shiplist = document.querySelectorAll("#shiplist button");
                 shiplist.forEach(item => {
                     if (item.id == "000000") return;
