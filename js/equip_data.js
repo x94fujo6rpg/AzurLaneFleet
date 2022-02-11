@@ -2180,7 +2180,7 @@ const equip_data = {
         ],
         "jp_name": "四神の印",
         "cn_name": "四神之印",
-        "tw_name": "四神之印*",
+        "tw_name": "四神之印",
         "en_name": "Seal of the Four Gods",
         "equip_limit": 3300,
         "cd": []

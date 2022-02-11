@@ -2462,7 +2462,7 @@ const ship_data = {
         ],
         "id": 9707024,
         "skin_id": 9707020,
-        "english_name": "Ark Royal.META !TWnoData",
+        "english_name": "Ark Royal.META",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -2471,7 +2471,7 @@ const ship_data = {
         "jp_name": "アーク・ロイヤル(META)",
         "en_name": "Ark Royal META",
         "cn_name": "皇家方舟·META",
-        "tw_name": "皇家方舟·META*",
+        "tw_name": "皇家方舟·META",
         "equip_1": [
             8
         ],
