@@ -271,6 +271,13 @@ const
                 ele.setAttribute("aria-pressed", false);
             }
         },
+        numberFormatter: {
+            dec2: new Intl.NumberFormat("en-US", {
+                style: "decimal",
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2,
+            }),
+        },
     },
     //localStorage
     LS = {
@@ -1562,13 +1569,8 @@ const
                 if (!cd.length) return 0;
                 cd_f = cd[equip_level] || cd[cd.length - 1] || false;
                 if (!cd_f) return 0;
-                if (!air && !type_air) {
-                    return round(calcCD(cd_f, ship_reload));
-                } else {
-                    // calc airstrike
-                    calcAirstrike(this._airstrike);
-                    return round(calcCD(cd_f, ship_reload));
-                }
+                if (air && type_air) calcAirstrike(this._airstrike);
+                return util.numberFormatter.dec2.format(round(calcCD(cd_f, ship_reload)));
 
                 function calcAirstrike(_set) {
                     let ship_item = fleetData[f][s][p].item,
@@ -1610,7 +1612,7 @@ const
                     //console.log(`air_strike_cd ${airstrike_cd}`, check);
                     set_to.forEach(equip => {
                         let temp = equip.equip_level; // force vue update
-                        equip.cd_cache = airstrike_cd;
+                        equip.cd_cache = util.numberFormatter.dec2.format(airstrike_cd);
                         equip.equip_level = "";
                         equip.equip_level = temp;
                     });
