@@ -14,6 +14,9 @@ Generate shareable text codes or links.
   - [Hull codes](#hull-codes)
 
 ## Update  
+**2022-02-22**
+- improved loading speed on first visit
+
 **2022-02-04**
 - auto focus back to search input when it's empty
 - result count shouldn't include [remove]

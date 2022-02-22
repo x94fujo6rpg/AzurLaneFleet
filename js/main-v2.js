@@ -2914,11 +2914,11 @@ const
                 }
                 async function getPack() {
                     let local = window.location.protocol == "file:",
-                        test = LS.userSetting.get("dev_test"),
                         n = 5;
-                    if (!local && test) {
+                    if (!local) {
                         let pack = [],
                             progress = _loading_.img_pack;
+                        console.log("start downloading img packs...");
                         await addProgressBar("img_pack", "Downloading image packs", n, progress);
                         for (let i = 1; i <= n; i++) {
                             let part = await fetch(`ui/img_pack_${i}`);
