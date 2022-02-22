@@ -2139,6 +2139,21 @@ const equip_data = {
         "equip_limit": 0,
         "cd": []
     },
+    "980": {
+        "nationality": 7,
+        "type": 10,
+        "rarity": 4,
+        "tech": 0,
+        "id": 980,
+        "icon": "980",
+        "ship_type_forbidden": [],
+        "jp_name": "情報レポート・調査日誌",
+        "cn_name": "机密文件·日志残卷",
+        "tw_name": "機密文件·日誌殘卷*",
+        "en_name": "Intel Report - Expedition Log",
+        "equip_limit": 760,
+        "cd": []
+    },
     "1960": {
         "nationality": 7,
         "type": 10,
