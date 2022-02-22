@@ -2857,12 +2857,13 @@ const
                 console.time(name);
                 let reg = /.*(?:equips|shipicon)\/([^\.]+).*/,
                     count = 0,
-                    all_data = {};
+                    all_data = {},
+                    img_pack = await loadImgPack();
                 [sortedShip, sortedEquip].forEach((list, index) => {
                     list.forEach(obj => {
                         let id = srcToCacheID(obj.icon, index == 0 ? "ship" : "equip", reg);
                         if (all_data[id]) return;
-                        all_data[id] = { src: obj.icon, id: id, data_url: "", };
+                        all_data[id] = { src: obj.icon, id: id, data_url: false, };
                         count++;
                     });
                 });
@@ -2876,12 +2877,22 @@ const
                         await Promise.all(promise_list);
                         promise_list = [];
                     }
-                    promise_list.push(
-                        fetchImageToDataURI(obj.src).then(data_url => {
+                    if (img_pack) {
+                        // try get from pack
+                        let data_url = img_pack[obj.src];
+                        if (data_url) {
                             obj.data_url = data_url;
                             progress.update();
-                        })
-                    );
+                        }
+                    }
+                    if (!obj.data_url) {
+                        promise_list.push(
+                            fetchImageToDataURI(obj.src).then(data_url => {
+                                obj.data_url = data_url;
+                                progress.update();
+                            })
+                        );
+                    }
                     url_data.push(obj);
                 }
                 await Promise.all(promise_list);
@@ -2890,8 +2901,42 @@ const
                 return url_data;
             }
 
+            async function loadImgPack() {
+                let data = await getPack();
+                return data ? unpack(data) : false;
+                function unpack(pack_data) {
+                    let unpacked = {};
+                    pack_data.split("!").forEach(line => {
+                        let [src, data_url] = line.split("@");
+                        unpacked[src] = data_url;
+                    });
+                    return unpacked;
+                }
+                async function getPack() {
+                    let local = window.location.protocol == "file:",
+                        test = LS.userSetting.get("dev_test"),
+                        n = 5;
+                    if (!local && test) {
+                        let pack = [],
+                            progress = _loading_.img_pack;
+                        await addProgressBar("img_pack", "Downloading image packs", n, progress);
+                        for (let i = 1; i <= n; i++) {
+                            let part = await fetch(`ui/img_pack_${i}`);
+                            if (part.status != 200) return false;
+                            part = await part.text();
+                            pack.push(part);
+                            progress.update();
+                        }
+                        return pack.join("");
+                    } else {
+                        console.log("img pack unavailable");
+                        return false;
+                    }
+                }
+            }
+
             async function fetchImageToDataURI(url = "", test = false) {
-                let local = window.location.protocol == "file:" ? true : false;
+                let local = window.location.protocol == "file:";
                 if (test || local) {
                     return url; // can't fetch in local file
                 } else {
@@ -3480,6 +3525,7 @@ const
         load_cache: {},
         add_img: {},
         missing_cache: {},
+        img_pack: {},
     },
     bc = {},
     posTable = { BS: { 0: "2", 1: "1", 2: "3" }, F: { 0: "3", 1: "2", 2: "1" }, },
