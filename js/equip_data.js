@@ -1766,7 +1766,7 @@ const equip_data = {
         "jp_name": "B-50 305mm三連装砲Mk-15",
         "cn_name": "B-50 三联装305mm主炮Mk-15",
         "tw_name": "B-50 三聯裝305mm主炮Mk-15*",
-        "en_name": "(no DATA)",
+        "en_name": "B-50 Triple 305mm Mk-15 Main Gun Mount",
         "equip_limit": 0,
         "cd": [
             1733,
