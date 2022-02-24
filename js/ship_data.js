@@ -4180,6 +4180,152 @@ const ship_data = {
             0
         ]
     },
+    "718010": {
+        "nationality": 7,
+        "type": 18,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 718014,
+        "skin_id": 718010,
+        "english_name": "SN Kronshtadt !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 6,
+        "retro": 0,
+        "uni_id": "718010",
+        "painting": "kalangshitade",
+        "jp_name": "クロンシュタット",
+        "en_name": "SN Kronshtadt*",
+        "cn_name": "喀琅施塔得",
+        "tw_name": "喀琅施塔得*",
+        "equip_1": [
+            3,
+            11
+        ],
+        "equip_2": [
+            2
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.1,
+            0.55,
+            1
+        ],
+        "reload": [
+            62,
+            434,
+            0,
+            47,
+            0
+        ]
+    },
+    "707010": {
+        "nationality": 7,
+        "type": 7,
+        "base_list": [
+            3,
+            2,
+            3
+        ],
+        "id": 707014,
+        "skin_id": 707010,
+        "english_name": "SN Volga !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "707010",
+        "painting": "fuerjia",
+        "jp_name": "ヴォルガ",
+        "en_name": "SN Volga*",
+        "cn_name": "伏尔加",
+        "tw_name": "伏爾加*",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            9
+        ],
+        "equip_3": [
+            8
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.4,
+            1.2,
+            1.3
+        ],
+        "reload": [
+            45,
+            314,
+            0,
+            34,
+            0
+        ]
+    },
+    "705060": {
+        "nationality": 7,
+        "type": 5,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 705064,
+        "skin_id": 705060,
+        "english_name": "SN Arkhangelsk !ENnoData !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "705060",
+        "painting": "aerhangeersike",
+        "jp_name": "アルハンゲリスク",
+        "en_name": "SN Arkhangelsk*",
+        "cn_name": "阿尔汉格尔斯克",
+        "tw_name": "阿爾漢格爾斯克*",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
+        ],
+        "reload": [
+            55,
+            385,
+            0,
+            41,
+            0
+        ]
+    },
     "705050": {
         "nationality": 7,
         "type": 5,
@@ -4239,7 +4385,7 @@ const ship_data = {
         ],
         "id": 705044,
         "skin_id": 705040,
-        "english_name": "SN Sovetskaya Belorussiya !TWnoData",
+        "english_name": "SN Sovetskaya Belorussiya",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -4248,7 +4394,7 @@ const ship_data = {
         "jp_name": "ソビエツカヤ・ベラルーシア",
         "en_name": "Sovetskaya Belorussiya",
         "cn_name": "苏维埃贝拉罗斯",
-        "tw_name": "蘇維埃貝拉羅斯*",
+        "tw_name": "蘇維埃白俄羅斯",
         "equip_1": [
             4
         ],
@@ -4337,7 +4483,7 @@ const ship_data = {
         ],
         "id": 703014,
         "skin_id": 703010,
-        "english_name": "SN Tallinn !TWnoData",
+        "english_name": "SN Tallinn",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -4346,7 +4492,7 @@ const ship_data = {
         "jp_name": "タリン",
         "en_name": "Tallinn",
         "cn_name": "塔林",
-        "tw_name": "塔林*",
+        "tw_name": "塔林",
         "equip_1": [
             2,
             3
@@ -4388,7 +4534,7 @@ const ship_data = {
         ],
         "id": 702064,
         "skin_id": 702060,
-        "english_name": "SN Murmansk !TWnoData",
+        "english_name": "SN Murmansk",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -4397,7 +4543,7 @@ const ship_data = {
         "jp_name": "ムルマンスク",
         "en_name": "Murmansk",
         "cn_name": "摩尔曼斯克",
-        "tw_name": "摩爾曼斯克*",
+        "tw_name": "摩爾曼斯克",
         "equip_1": [
             2
         ],
@@ -4438,7 +4584,7 @@ const ship_data = {
         ],
         "id": 702044,
         "skin_id": 702040,
-        "english_name": "SN Kirov !TWnoData",
+        "english_name": "SN Kirov",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -4447,7 +4593,7 @@ const ship_data = {
         "jp_name": "キーロフ",
         "en_name": "Kirov",
         "cn_name": "基洛夫",
-        "tw_name": "基洛夫*",
+        "tw_name": "基洛夫",
         "equip_1": [
             2
         ],
@@ -4678,6 +4824,106 @@ const ship_data = {
             0
         ]
     },
+    "701100": {
+        "nationality": 7,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 701104,
+        "skin_id": 701100,
+        "english_name": "SN Kiev !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "701100",
+        "painting": "jifu",
+        "jp_name": "キエフ",
+        "en_name": "SN Kiev*",
+        "cn_name": "基辅",
+        "tw_name": "基輔*",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.65,
+            1.2,
+            1.05
+        ],
+        "reload": [
+            76,
+            529,
+            0,
+            57,
+            0
+        ]
+    },
+    "701090": {
+        "nationality": 7,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 701094,
+        "skin_id": 701090,
+        "english_name": "SN Soobrazitelny !ENnoData !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "701090",
+        "painting": "lingmin",
+        "jp_name": "ソオブラジーテリヌイ",
+        "en_name": "SN Soobrazitelny*",
+        "cn_name": "灵敏",
+        "tw_name": "靈敏*",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.6,
+            1.15,
+            1.1
+        ],
+        "reload": [
+            73,
+            510,
+            0,
+            55,
+            0
+        ]
+    },
     "701080": {
         "nationality": 7,
         "type": 1,
@@ -4688,7 +4934,7 @@ const ship_data = {
         ],
         "id": 701084,
         "skin_id": 701080,
-        "english_name": "SN Gromky !TWnoData",
+        "english_name": "SN Gromky",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -4697,7 +4943,7 @@ const ship_data = {
         "jp_name": "グロームキィ",
         "en_name": "Gromky",
         "cn_name": "洪亮",
-        "tw_name": "洪亮*",
+        "tw_name": "洪亮",
         "equip_1": [
             1
         ],
@@ -4738,7 +4984,7 @@ const ship_data = {
         ],
         "id": 701074,
         "skin_id": 701070,
-        "english_name": "SN Gremyashchy !TWnoData",
+        "english_name": "SN Gremyashchy",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -4747,7 +4993,7 @@ const ship_data = {
         "jp_name": "グレミャーシュチ",
         "en_name": "Gremyashchy",
         "cn_name": "雷鸣",
-        "tw_name": "雷鳴*",
+        "tw_name": "雷鳴",
         "equip_1": [
             1
         ],

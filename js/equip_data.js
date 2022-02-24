@@ -1753,6 +1753,38 @@ const equip_data = {
             2140
         ]
     },
+    "85520": {
+        "nationality": 7,
+        "type": 11,
+        "rarity": 5,
+        "tech": 0,
+        "id": 85520,
+        "icon": "85520",
+        "ship_type_forbidden": [
+            3
+        ],
+        "jp_name": "B-50 305mm三連装砲Mk-15",
+        "cn_name": "B-50 三联装305mm主炮Mk-15",
+        "tw_name": "B-50 三聯裝305mm主炮Mk-15*",
+        "en_name": "(no DATA)",
+        "equip_limit": 0,
+        "cd": [
+            1733,
+            1698,
+            1663,
+            1628,
+            1593,
+            1558,
+            1523,
+            1488,
+            1453,
+            1418,
+            1383,
+            1383,
+            1383,
+            1383
+        ]
+    },
     "44400": {
         "nationality": 4,
         "type": 11,
@@ -14361,7 +14393,7 @@ const equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "180mm三連装砲B-1-P Model1932",
         "cn_name": "B-1-P 三联装180mm主炮Model1932",
-        "tw_name": "B-1-P 三聯裝180mm主炮Model1932*",
+        "tw_name": "B-1-P 三聯裝180mm主炮Model1932",
         "en_name": "Triple 180mm B-1-P Pattern 1932 Main Gun Mount",
         "equip_limit": 0,
         "cd": [
