@@ -2921,13 +2921,16 @@ const
                         console.log("start downloading img packs...");
                         await addProgressBar("img_pack", "Downloading image packs", n, progress);
                         for (let i = 1; i <= n; i++) {
-                            let part = await fetch(`ui/img_pack_${i}`);
-                            if (part.status != 200) return false;
-                            part = await part.text();
-                            pack.push(part);
-                            progress.update();
+                            pack.push((async () => {
+                                let part = await fetch(`ui/img_pack_${i}`);
+                                if (part.status != 200) return false;
+                                part = await part.text();
+                                progress.update();
+                                return part;
+                            })());
                         }
-                        return pack.join("");
+                        pack = await Promise.all(pack);
+                        return pack.some(data => !data) ? false : pack.join("");
                     } else {
                         console.log("img pack unavailable");
                         return false;
