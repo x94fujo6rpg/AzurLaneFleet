@@ -2302,7 +2302,9 @@ const
                 slot_list = [
                     shipInApp.item[1].property,
                     shipInApp.item[2].property,
-                    shipInApp.item[3].property
+                    shipInApp.item[3].property,
+                    shipInApp.item[4].property,
+                    shipInApp.item[5].property,
                 ],
                 name = shipInApp.item[0].property.tw;
 
