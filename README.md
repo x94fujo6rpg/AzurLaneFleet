@@ -15,7 +15,7 @@ Generate shareable text codes or links.
 
 ## Update  
 **2022-02-22**
-- improved loading speed on first visit
+- ~~improved loading speed on first visit~~(seems like github doesn't like big files...)
 
 **2022-02-04**
 - auto focus back to search input when it's empty

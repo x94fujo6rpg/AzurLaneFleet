@@ -2399,7 +2399,7 @@ const
         async initialize() {
             console.time(app.initialize.name);
             let pending = { ship_done: false, equip_done: false };
-            const max_con = 5;
+            const max_con = 10;
             await setBc(Date.now(), false);
             step("sort Ship", 0); await createSortShipList();
             step("sort Equip", 0); await createSortEquipList();
@@ -2860,7 +2860,8 @@ const
                 let reg = /.*(?:equips|shipicon)\/([^\.]+).*/,
                     count = 0,
                     all_data = {},
-                    img_pack = await loadImgPack();
+                    //img_pack = await loadImgPack();
+                    img_pack = false;
                 [sortedShip, sortedEquip].forEach((list, index) => {
                     list.forEach(obj => {
                         let id = srcToCacheID(obj.icon, index == 0 ? "ship" : "equip", reg);
