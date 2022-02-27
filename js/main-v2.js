@@ -80,6 +80,7 @@ const
         { id: "sort_tw", en: "Name(TW)", jp: "名前(TW)", tw: "名稱(TW)", },
         { id: "sort_cn", en: "Name(CN)", jp: "名前(CN)", tw: "名稱(CN)", },
         { id: "sort_cd", en: "Reload Speed", jp: "攻速", tw: "射速", },
+        { id: "sort_date", en: "Release Date", jp: "実装日", tw: "實裝日", },
 
         { id: "search_input", en: "Search by name", jp: "検索(艦船名)", tw: "搜尋船名", },
         { id: "filter_search_result", en: "Result", jp: "結果", tw: "結果", },
@@ -2628,6 +2629,7 @@ const
                         eq_p: equip_p,
                         reload,
                         reload_cache = "",
+                        date,
                     }) => {
                         icon = `shipicon/${icon.toLowerCase()}.png`;
                         bg = `ui/bg${rarity - 1}.png`;
@@ -2640,6 +2642,7 @@ const
                             equip_p,
                             reload,
                             reload_cache,
+                            date,
                         };
                     },
                     list = [], empty = {};

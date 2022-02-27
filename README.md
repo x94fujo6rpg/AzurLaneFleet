@@ -14,8 +14,12 @@ Generate shareable text codes or links.
   - [Hull codes](#hull-codes)
 
 ## Update  
+**2022-02-28**
+- add new sort for ship: `release date`
+  - data source: `CN wiki` [实装日期](https://wiki.biligame.com/blhx/%E5%AE%9E%E8%A3%85%E6%97%A5%E6%9C%9F)、[改造](https://wiki.biligame.com/blhx/%E6%94%B9%E9%80%A0)
+
 **2022-02-22**
-- ~~improved loading speed on first visit~~(seems like github doesn't like big files...)
+- ~~improved loading speed on first visit~~ (seems like github doesn't like big files...)
 
 **2022-02-04**
 - auto focus back to search input when it's empty
