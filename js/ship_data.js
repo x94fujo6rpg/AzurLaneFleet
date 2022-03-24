@@ -2661,7 +2661,7 @@ const ship_data = {
         ],
         "id": 9706014,
         "skin_id": 9706010,
-        "english_name": "Hiyo.META !TWnoData",
+        "english_name": "Hiyo.META",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -2670,7 +2670,7 @@ const ship_data = {
         "jp_name": "飛鷹(META)",
         "en_name": "Hiyou META",
         "cn_name": "飞鹰·META",
-        "tw_name": "飛鷹·META*",
+        "tw_name": "飛鷹·META",
         "equip_1": [
             7
         ],
@@ -2701,6 +2701,56 @@ const ship_data = {
             0
         ],
         "date": "2021年12月01日"
+    },
+    "9705020": {
+        "nationality": 97,
+        "type": 5,
+        "base_list": [
+            2,
+            3,
+            1
+        ],
+        "id": 9705024,
+        "skin_id": 9705020,
+        "english_name": "Yamashiro.META !ENnoData !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "9705020",
+        "painting": "shancheng_alter",
+        "jp_name": "山城(META)",
+        "en_name": "Yamashiro.META*",
+        "cn_name": "山城·META",
+        "tw_name": "山城·META*",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            0.8
+        ],
+        "reload": [
+            54,
+            375,
+            0,
+            40,
+            0
+        ],
+        "date": "2022年04月01日"
     },
     "9705010": {
         "nationality": 97,
@@ -2751,6 +2801,55 @@ const ship_data = {
             0
         ],
         "date": "2021年10月01日"
+    },
+    "9704020": {
+        "nationality": 97,
+        "type": 4,
+        "base_list": [
+            3,
+            1,
+            1
+        ],
+        "id": 9704024,
+        "skin_id": 9704020,
+        "english_name": "Scharnhorst.META !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "9704020",
+        "painting": "shaenhuosite_alter",
+        "jp_name": "シャルンホルスト(META)",
+        "en_name": "Scharnhorst META",
+        "cn_name": "沙恩霍斯特·META",
+        "tw_name": "沙恩霍斯特·META*",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.3,
+            1.5,
+            1.2
+        ],
+        "reload": [
+            60,
+            418,
+            0,
+            45,
+            0
+        ],
+        "date": "2022年03月10日"
     },
     "9704010": {
         "nationality": 97,
@@ -5391,7 +5490,7 @@ const ship_data = {
         ],
         "id": 608014,
         "skin_id": 608010,
-        "english_name": "RN Torricelli !TWnoData",
+        "english_name": "RN Torricelli",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -5400,7 +5499,7 @@ const ship_data = {
         "jp_name": "トリチェリ",
         "en_name": "Torricelli",
         "cn_name": "托里拆利",
-        "tw_name": "托里拆利*",
+        "tw_name": "托里切利",
         "equip_1": [
             13
         ],
@@ -5430,6 +5529,56 @@ const ship_data = {
         ],
         "date": "2021年04月22日"
     },
+    "607020": {
+        "nationality": 6,
+        "type": 7,
+        "base_list": [
+            2,
+            3,
+            3
+        ],
+        "id": 607024,
+        "skin_id": 607020,
+        "english_name": "RN Impero !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "607020",
+        "painting": "diguo",
+        "jp_name": "インペロ",
+        "en_name": "RN Impero*",
+        "cn_name": "帝国",
+        "tw_name": "帝國*",
+        "equip_1": [
+            7,
+            9
+        ],
+        "equip_2": [
+            9
+        ],
+        "equip_3": [
+            8
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.1,
+            1.3,
+            1.3
+        ],
+        "reload": [
+            45,
+            310,
+            0,
+            33,
+            0
+        ],
+        "date": "2022年03月24日"
+    },
     "607010": {
         "nationality": 6,
         "type": 7,
@@ -5440,7 +5589,7 @@ const ship_data = {
         ],
         "id": 607014,
         "skin_id": 607010,
-        "english_name": "RN Aquila !TWnoData",
+        "english_name": "RN Aquila",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -5449,7 +5598,7 @@ const ship_data = {
         "jp_name": "アクィラ",
         "en_name": "Aquila",
         "cn_name": "天鹰",
-        "tw_name": "天鷹*",
+        "tw_name": "天鷹",
         "equip_1": [
             7
         ],
@@ -5688,7 +5837,7 @@ const ship_data = {
         ],
         "id": 605014,
         "skin_id": 605010,
-        "english_name": "RN Vittorio Veneto !TWnoData",
+        "english_name": "RN Vittorio Veneto",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -5697,7 +5846,7 @@ const ship_data = {
         "jp_name": "ヴィットリオ・ヴェネト",
         "en_name": "Vittorio Veneto",
         "cn_name": "维托里奥·维内托",
-        "tw_name": "維托里奧·維內托*",
+        "tw_name": "維托里奧·維內托",
         "equip_1": [
             4
         ],
@@ -5727,6 +5876,55 @@ const ship_data = {
             0
         ],
         "date": "2021年04月22日"
+    },
+    "603040": {
+        "nationality": 6,
+        "type": 3,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 603044,
+        "skin_id": 603040,
+        "english_name": "RN Trieste !ENnoData !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "603040",
+        "painting": "diliyasite",
+        "jp_name": "トリエステ",
+        "en_name": "RN Trieste*",
+        "cn_name": "的里雅斯特",
+        "tw_name": "的里雅斯特*",
+        "equip_1": [
+            3
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.35,
+            1.7,
+            1
+        ],
+        "reload": [
+            61,
+            422,
+            0,
+            45,
+            0
+        ],
+        "date": "2022年03月24日"
     },
     "603030": {
         "nationality": 6,
@@ -5885,7 +6083,7 @@ const ship_data = {
         ],
         "id": 602014,
         "skin_id": 602010,
-        "english_name": "RN Duca degli Abruzzi !TWnoData",
+        "english_name": "RN Duca degli Abruzzi",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -5894,7 +6092,7 @@ const ship_data = {
         "jp_name": "ドゥーカ・デッリ・アブルッツィ",
         "en_name": "Duca degli Abruzzi",
         "cn_name": "阿布鲁齐公爵",
-        "tw_name": "阿布魯齊公爵*",
+        "tw_name": "阿布魯齊公爵",
         "equip_1": [
             2
         ],
@@ -5926,6 +6124,57 @@ const ship_data = {
         ],
         "date": "2021年04月22日"
     },
+    "601070": {
+        "nationality": 6,
+        "type": 1,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 601074,
+        "skin_id": 601070,
+        "english_name": "RN Pompeo Magno !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "601070",
+        "painting": "pangpeimagenuo",
+        "jp_name": "ポンペオ・マーニョ",
+        "en_name": "RN Pompeo Magno*",
+        "cn_name": "庞培·马格诺",
+        "tw_name": "龐培·馬格諾*",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.2,
+            1.35,
+            1.35
+        ],
+        "reload": [
+            76,
+            531,
+            0,
+            57,
+            0
+        ],
+        "date": "2022年03月24日"
+    },
     "601060": {
         "nationality": 6,
         "type": 1,
@@ -5936,7 +6185,7 @@ const ship_data = {
         ],
         "id": 601064,
         "skin_id": 601060,
-        "english_name": "RN Nicoloso da Recco !TWnoData",
+        "english_name": "RN Nicoloso da Recco",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -5945,7 +6194,7 @@ const ship_data = {
         "jp_name": "ニコロソ・ダ・レッコ",
         "en_name": "Nicoloso da Recco",
         "cn_name": "尼科洛索·达雷科",
-        "tw_name": "尼科洛索·達雷科*",
+        "tw_name": "尼科洛索·達·雷科",
         "equip_1": [
             1
         ],
@@ -5987,7 +6236,7 @@ const ship_data = {
         ],
         "id": 601054,
         "skin_id": 601050,
-        "english_name": "RN Libeccio !TWnoData",
+        "english_name": "RN Libeccio",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -5996,7 +6245,7 @@ const ship_data = {
         "jp_name": "リベッチオ",
         "en_name": "Libeccio",
         "cn_name": "西南风",
-        "tw_name": "西南風*",
+        "tw_name": "西南風",
         "equip_1": [
             1
         ],
@@ -6038,7 +6287,7 @@ const ship_data = {
         ],
         "id": 601044,
         "skin_id": 601040,
-        "english_name": "RN Maestrale !TWnoData",
+        "english_name": "RN Maestrale",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -6047,7 +6296,7 @@ const ship_data = {
         "jp_name": "マエストラーレ",
         "en_name": "Maestrale",
         "cn_name": "西北风",
-        "tw_name": "西北風*",
+        "tw_name": "西北風",
         "equip_1": [
             1
         ],
@@ -12573,7 +12822,7 @@ const ship_data = {
         ],
         "id": 304074,
         "skin_id": 304070,
-        "english_name": "IJN Amagi !TWnoData",
+        "english_name": "IJN Amagi",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -12582,7 +12831,7 @@ const ship_data = {
         "jp_name": "天城ちゃん",
         "en_name": "Amagi-chan",
         "cn_name": "小天城",
-        "tw_name": "小天城*",
+        "tw_name": "小天城",
         "equip_1": [
             4
         ],
@@ -14880,7 +15129,7 @@ const ship_data = {
         ],
         "id": 301854,
         "skin_id": 301850,
-        "english_name": "IJN Oite !TWnoData",
+        "english_name": "IJN Oite",
         "star": 5,
         "rarity": 3,
         "retro": 0,
@@ -14889,7 +15138,7 @@ const ship_data = {
         "jp_name": "追風",
         "en_name": "Oite",
         "cn_name": "追风",
-        "tw_name": "追風*",
+        "tw_name": "追風",
         "equip_1": [
             1
         ],

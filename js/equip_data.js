@@ -804,7 +804,7 @@ const equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "潜水艦用533mm魚雷Si 270",
         "cn_name": "潜艇用533mm鱼雷Si 270",
-        "tw_name": "潛艇用533mm魚雷Si 270*",
+        "tw_name": "潛艇用533mm魚雷Si 270",
         "en_name": "533mm Si 270 Submarine Torpedo",
         "equip_limit": 0,
         "cd": [
@@ -6304,7 +6304,7 @@ const equip_data = {
         ],
         "jp_name": "Re.2001戦闘機「アリエテ」",
         "cn_name": "Re.2001公羊",
-        "tw_name": "Re.2001公羊*",
+        "tw_name": "Re.2001公羊",
         "en_name": "Re.2001 Ariete Fighter",
         "equip_limit": 0,
         "cd": [
@@ -6334,7 +6334,7 @@ const equip_data = {
         ],
         "jp_name": "Re.2001戦闘機「アリエテ」",
         "cn_name": "Re.2001公羊",
-        "tw_name": "Re.2001公羊*",
+        "tw_name": "Re.2001公羊",
         "en_name": "Re.2001 Ariete Fighter",
         "equip_limit": 0,
         "cd": [
@@ -6359,7 +6359,7 @@ const equip_data = {
         ],
         "jp_name": "Re.2001戦闘機「アリエテ」",
         "cn_name": "Re.2001公羊",
-        "tw_name": "Re.2001公羊*",
+        "tw_name": "Re.2001公羊",
         "en_name": "Re.2001 Ariete Fighter",
         "equip_limit": 0,
         "cd": [
@@ -6381,7 +6381,7 @@ const equip_data = {
         ],
         "jp_name": "Fiat G.50戦闘機「アロー」",
         "cn_name": "G.50箭式战斗机",
-        "tw_name": "G.50箭式戰鬥機*",
+        "tw_name": "G.50箭式戰鬥機",
         "en_name": "G.50 Freccia Fighter",
         "equip_limit": 0,
         "cd": [
@@ -6411,7 +6411,7 @@ const equip_data = {
         ],
         "jp_name": "Fiat G.50戦闘機「アロー」",
         "cn_name": "G.50箭式战斗机",
-        "tw_name": "G.50箭式戰鬥機*",
+        "tw_name": "G.50箭式戰鬥機",
         "en_name": "G.50 Freccia Fighter",
         "equip_limit": 0,
         "cd": [
@@ -6436,7 +6436,7 @@ const equip_data = {
         ],
         "jp_name": "Fiat G.50戦闘機「アロー」",
         "cn_name": "G.50箭式战斗机",
-        "tw_name": "G.50箭式戰鬥機*",
+        "tw_name": "G.50箭式戰鬥機",
         "en_name": "G.50 Freccia Fighter",
         "equip_limit": 0,
         "cd": [
@@ -14584,7 +14584,7 @@ const equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "152mm三連装砲Model1934",
         "cn_name": "三联装152mm主炮Model1934",
-        "tw_name": "三聯裝152mm主炮Model1934*",
+        "tw_name": "三聯裝152mm主炮Model1934",
         "en_name": "Triple 152mm Model 1934 Main Gun Mount",
         "equip_limit": 0,
         "cd": [
@@ -14614,7 +14614,7 @@ const equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "152mm三連装砲Model1934",
         "cn_name": "三联装152mm主炮Model1934",
-        "tw_name": "三聯裝152mm主炮Model1934*",
+        "tw_name": "三聯裝152mm主炮Model1934",
         "en_name": "Triple 152mm Model 1934 Main Gun Mount",
         "equip_limit": 0,
         "cd": [
@@ -16210,6 +16210,86 @@ const equip_data = {
             254,
             248,
             242
+        ]
+    },
+    "95960": {
+        "nationality": 6,
+        "type": 1,
+        "rarity": 5,
+        "tech": 3,
+        "id": 95960,
+        "icon": "55920",
+        "ship_type_forbidden": [],
+        "jp_name": "135mm連装砲Model1938",
+        "cn_name": "双联装135mm主炮Model1938",
+        "tw_name": "雙聯裝135mm主炮Model1938*",
+        "en_name": "(no DATA)",
+        "equip_limit": 0,
+        "cd": [
+            290,
+            285,
+            280,
+            275,
+            270,
+            265,
+            260,
+            255,
+            250,
+            245,
+            240,
+            240,
+            240,
+            240
+        ]
+    },
+    "95940": {
+        "nationality": 6,
+        "type": 1,
+        "rarity": 4,
+        "tech": 2,
+        "id": 95940,
+        "icon": "55920",
+        "ship_type_forbidden": [],
+        "jp_name": "135mm連装砲Model1938",
+        "cn_name": "双联装135mm主炮Model1938",
+        "tw_name": "雙聯裝135mm主炮Model1938*",
+        "en_name": "(no DATA)",
+        "equip_limit": 0,
+        "cd": [
+            310,
+            305,
+            300,
+            295,
+            290,
+            285,
+            280,
+            275,
+            270,
+            265,
+            260
+        ]
+    },
+    "95920": {
+        "nationality": 6,
+        "type": 1,
+        "rarity": 3,
+        "tech": 1,
+        "id": 95920,
+        "icon": "55920",
+        "ship_type_forbidden": [],
+        "jp_name": "135mm連装砲Model1938",
+        "cn_name": "双联装135mm主炮Model1938",
+        "tw_name": "雙聯裝135mm主炮Model1938*",
+        "en_name": "(no DATA)",
+        "equip_limit": 0,
+        "cd": [
+            330,
+            325,
+            320,
+            315,
+            310,
+            305,
+            300
         ]
     },
     "95440": {
