@@ -16223,7 +16223,7 @@ const equip_data = {
         "jp_name": "135mm連装砲Model1938",
         "cn_name": "双联装135mm主炮Model1938",
         "tw_name": "雙聯裝135mm主炮Model1938*",
-        "en_name": "(no DATA)",
+        "en_name": "135mm Twin Main Gun Mount Model 1938",
         "equip_limit": 0,
         "cd": [
             290,
@@ -16253,7 +16253,7 @@ const equip_data = {
         "jp_name": "135mm連装砲Model1938",
         "cn_name": "双联装135mm主炮Model1938",
         "tw_name": "雙聯裝135mm主炮Model1938*",
-        "en_name": "(no DATA)",
+        "en_name": "135mm Twin Main Gun Mount Model 1938",
         "equip_limit": 0,
         "cd": [
             310,
@@ -16280,7 +16280,7 @@ const equip_data = {
         "jp_name": "135mm連装砲Model1938",
         "cn_name": "双联装135mm主炮Model1938",
         "tw_name": "雙聯裝135mm主炮Model1938*",
-        "en_name": "(no DATA)",
+        "en_name": "135mm Twin Main Gun Mount Model 1938",
         "equip_limit": 0,
         "cd": [
             330,
