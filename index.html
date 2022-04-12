@@ -79,6 +79,33 @@
             image-rendering: -webkit-optimize-contrast;
         }
         
+        @media not all and (min-resolution:.001dpcm) {
+            @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+                /* Safari 11+ */
+                .icon {
+                    image-rendering: unset !important;
+                }
+            }
+        }
+        
+        @media not all and (min-resolution:.001dpcm) {
+            @supports (-webkit-appearance: none) and (not (stroke-color: transparent)) {
+                /* Safari 10.1 */
+                .icon {
+                    image-rendering: unset !important;
+                }
+            }
+        }
+        
+        @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
+            @media {
+                /* Safari 6.1-10.0 (but not 10.1) */
+                .icon {
+                    image-rendering: unset !important;
+                }
+            }
+        }
+        
         .frame {
             position: absolute;
             top: 0px;
