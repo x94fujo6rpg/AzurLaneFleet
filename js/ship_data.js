@@ -4170,7 +4170,7 @@ const ship_data = {
         ],
         "id": 801034,
         "skin_id": 801030,
-        "english_name": "FFNF Le Temeraire !TWnoData",
+        "english_name": "FFNF Le Temeraire",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -4179,7 +4179,7 @@ const ship_data = {
         "jp_name": "ル・テメレール",
         "en_name": "Le Téméraire",
         "cn_name": "鲁莽",
-        "tw_name": "魯莽*",
+        "tw_name": "魯莽",
         "equip_1": [
             1
         ],
@@ -8235,6 +8235,57 @@ const ship_data = {
         ],
         "date": "2019年04月18日"
     },
+    "405040": {
+        "nationality": 4,
+        "type": 5,
+        "base_list": [
+            3,
+            2,
+            1
+        ],
+        "id": 405044,
+        "skin_id": 405040,
+        "english_name": "SMS Thuringen !ENnoData !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "405040",
+        "painting": "tulingen",
+        "jp_name": "テューリンゲン",
+        "en_name": "SMS Thüringen*",
+        "cn_name": "图林根",
+        "tw_name": "圖林根*",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            1,
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.25,
+            2,
+            0.7
+        ],
+        "reload": [
+            51,
+            356,
+            0,
+            38,
+            0
+        ],
+        "date": "2022年04月28日"
+    },
     "405030": {
         "nationality": 4,
         "type": 5,
@@ -8434,6 +8485,108 @@ const ship_data = {
         ],
         "date": "2020年07月09日"
     },
+    "404040": {
+        "nationality": 4,
+        "type": 4,
+        "base_list": [
+            3,
+            2,
+            1
+        ],
+        "id": 404044,
+        "skin_id": 404040,
+        "english_name": "SMS Lutzow !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "404040",
+        "painting": "lvzuofu",
+        "jp_name": "リュッツォウ",
+        "en_name": "SMS Lützow*",
+        "cn_name": "吕佐夫",
+        "tw_name": "呂佐夫*",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            1,
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.25,
+            1.7,
+            0.9
+        ],
+        "reload": [
+            60,
+            419,
+            0,
+            45,
+            0
+        ],
+        "date": "2022年04月28日"
+    },
+    "404030": {
+        "nationality": 4,
+        "type": 4,
+        "base_list": [
+            3,
+            2,
+            1
+        ],
+        "id": 404034,
+        "skin_id": 404030,
+        "english_name": "SMS Seydlitz !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "404030",
+        "painting": "saidelici",
+        "jp_name": "ザイドリッツ",
+        "en_name": "SMS Seydlitz*",
+        "cn_name": "塞德利茨",
+        "tw_name": "塞德利茨*",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            1,
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.4,
+            1.7,
+            0.7
+        ],
+        "reload": [
+            55,
+            381,
+            0,
+            41,
+            0
+        ],
+        "date": "2022年04月28日"
+    },
     "404020": {
         "nationality": 4,
         "type": 4,
@@ -8582,6 +8735,105 @@ const ship_data = {
             0
         ],
         "date": "2018年04月26日"
+    },
+    "403120": {
+        "nationality": 4,
+        "type": 3,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 403124,
+        "skin_id": 403120,
+        "english_name": "KMS Prinz Eugen !ENnoData !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "403120",
+        "painting": "ougen_younv",
+        "jp_name": "プリンツ・オイゲンちゃん",
+        "en_name": "KMS Prinz Eugen*",
+        "cn_name": "小欧根",
+        "tw_name": "小歐根*",
+        "equip_1": [
+            3
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.25,
+            1.6,
+            1.2
+        ],
+        "reload": [
+            65,
+            450,
+            0,
+            48,
+            0
+        ],
+        "date": "2022年04月28日"
+    },
+    "403110": {
+        "nationality": 4,
+        "type": 3,
+        "base_list": [
+            1,
+            1,
+            2
+        ],
+        "id": 403114,
+        "skin_id": 403110,
+        "english_name": "SMS Yorck !ENnoData !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "403110",
+        "painting": "yueke_ger",
+        "jp_name": "ヨルク",
+        "en_name": "SMS Yorck*",
+        "cn_name": "约克",
+        "tw_name": "約克*",
+        "equip_1": [
+            3
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            5
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.2,
+            0.6,
+            1.1
+        ],
+        "reload": [
+            64,
+            445,
+            0,
+            48,
+            0
+        ],
+        "date": "2022年04月28日"
     },
     "403100": {
         "nationality": 4,
@@ -9029,6 +9281,110 @@ const ship_data = {
             0
         ],
         "date": "2020年07月09日"
+    },
+    "402080": {
+        "nationality": 4,
+        "type": 2,
+        "base_list": [
+            1,
+            1,
+            1
+        ],
+        "id": 402084,
+        "skin_id": 402080,
+        "english_name": "SMS Elbing !ENnoData !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "402080",
+        "painting": "aierbin",
+        "jp_name": "エルビング",
+        "en_name": "SMS Elbing*",
+        "cn_name": "埃尔宾",
+        "tw_name": "埃爾賓*",
+        "equip_1": [
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            1,
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.2,
+            1.35,
+            0.55
+        ],
+        "reload": [
+            73,
+            510,
+            0,
+            55,
+            0
+        ],
+        "date": "2022年04月28日"
+    },
+    "402070": {
+        "nationality": 4,
+        "type": 2,
+        "base_list": [
+            1,
+            1,
+            2
+        ],
+        "id": 402074,
+        "skin_id": 402070,
+        "english_name": "SMS Emden !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "402070",
+        "painting": "aimudeng",
+        "jp_name": "エムデン",
+        "en_name": "SMS Emden*",
+        "cn_name": "埃姆登",
+        "tw_name": "埃姆登*",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            5
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.2,
+            0.75,
+            1
+        ],
+        "reload": [
+            74,
+            515,
+            0,
+            55,
+            0
+        ],
+        "date": "2022年04月28日"
     },
     "402060": {
         "nationality": 4,
@@ -12214,7 +12570,7 @@ const ship_data = {
         ],
         "id": 305084,
         "skin_id": 305080,
-        "english_name": "IJN Tosa !TWnoData",
+        "english_name": "IJN Tosa",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -12223,7 +12579,7 @@ const ship_data = {
         "jp_name": "土佐",
         "en_name": "Tosa",
         "cn_name": "土佐",
-        "tw_name": "土佐*",
+        "tw_name": "土佐",
         "equip_1": [
             4
         ],
@@ -15231,7 +15587,7 @@ const ship_data = {
         ],
         "id": 301834,
         "skin_id": 301830,
-        "english_name": "IJN Naganami !TWnoData",
+        "english_name": "IJN Naganami",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -15240,7 +15596,7 @@ const ship_data = {
         "jp_name": "長波",
         "en_name": "Naganami",
         "cn_name": "长波",
-        "tw_name": "長波*",
+        "tw_name": "長波",
         "equip_1": [
             1
         ],
@@ -15282,7 +15638,7 @@ const ship_data = {
         ],
         "id": 301824,
         "skin_id": 301820,
-        "english_name": "IJN Hanazuki !TWnoData",
+        "english_name": "IJN Hanazuki",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -15291,7 +15647,7 @@ const ship_data = {
         "jp_name": "花月",
         "en_name": "Hanazuki",
         "cn_name": "花月",
-        "tw_name": "花月*",
+        "tw_name": "花月",
         "equip_1": [
             1
         ],
@@ -20146,7 +20502,7 @@ const ship_data = {
         ],
         "id": 204044,
         "skin_id": 204040,
-        "english_name": "HMS Renown !TWnoData",
+        "english_name": "HMS Renown",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -20155,7 +20511,7 @@ const ship_data = {
         "jp_name": "リトル・レナウン",
         "en_name": "Little Renown",
         "cn_name": "小声望",
-        "tw_name": "小聲望*",
+        "tw_name": "小聲望",
         "equip_1": [
             4
         ],
@@ -21336,7 +21692,7 @@ const ship_data = {
         ],
         "id": 202264,
         "skin_id": 202260,
-        "english_name": "HMS Glasgow !TWnoData",
+        "english_name": "HMS Glasgow",
         "star": 5,
         "rarity": 3,
         "retro": 0,
@@ -21345,7 +21701,7 @@ const ship_data = {
         "jp_name": "グラスゴー",
         "en_name": "Glasgow",
         "cn_name": "格拉斯哥",
-        "tw_name": "格拉斯哥*",
+        "tw_name": "格拉斯哥",
         "equip_1": [
             2
         ],

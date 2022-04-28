@@ -2495,6 +2495,80 @@ const equip_data = {
             13
         ]
     },
+    "2620": {
+        "nationality": 3,
+        "type": 10,
+        "rarity": 5,
+        "tech": 2,
+        "id": 2620,
+        "icon": "2600",
+        "ship_type_forbidden": [
+            4,
+            5,
+            6,
+            7,
+            10,
+            12,
+            13,
+            19
+        ],
+        "jp_name": "九三式酸素魚雷",
+        "cn_name": "九三式纯氧鱼雷",
+        "tw_name": "九三式純氧魚雷",
+        "en_name": "Type 93 Pure Oxygen Torpedo",
+        "equip_limit": 0,
+        "cd": [],
+        "eq_reload": [
+            3,
+            3,
+            4,
+            5,
+            6,
+            6,
+            7,
+            8,
+            9,
+            9,
+            10
+        ]
+    },
+    "2600": {
+        "nationality": 3,
+        "type": 10,
+        "rarity": 4,
+        "tech": 1,
+        "id": 2600,
+        "icon": "2600",
+        "ship_type_forbidden": [
+            4,
+            5,
+            6,
+            7,
+            10,
+            12,
+            13,
+            19
+        ],
+        "jp_name": "九三式酸素魚雷",
+        "cn_name": "九三式纯氧鱼雷",
+        "tw_name": "九三式純氧魚雷",
+        "en_name": "Type 93 Pure Oxygen Torpedo",
+        "equip_limit": 0,
+        "cd": [],
+        "eq_reload": [
+            3,
+            3,
+            4,
+            5,
+            6,
+            6,
+            7,
+            8,
+            9,
+            9,
+            10
+        ]
+    },
     "580": {
         "nationality": 3,
         "type": 10,
