@@ -27,7 +27,7 @@
     <link rel="prefetch" href="js/skill_ship_slot.min.js?v=7beb00c27a88" as="script">
     <link rel="prefetch" href="js/ship_data.min.js?v=627a6e03dc29" as="script">
     <link rel="prefetch" href="js/equip_data.min.js?v=363d2243adc9" as="script">
-    <link rel="prefetch" href="js/main-v2.min.js?v=7664a7b7be0f" as="script">
+    <link rel="prefetch" href="js/main-v2.min.js?v=cf32bb25ba4a" as="script">
     <style>
         body {
             color: white;
@@ -522,6 +522,19 @@
                         ⮟ Tech Reload Data
                     </button>
                     <div id="tech_data_area_expand" class="collapse text-center"></div>
+                    <button id="user_data_title" class="btn btn-outline-info d-flex mx-auto my-2 justify-content-center" type="button" data-toggle="collapse" data-target="#user_data_area_expand" aria-expanded="false" aria-controls="user_data_area_expand">
+                        ⮟ User Data
+                    </button>
+                    <div id="user_data_area_expand" class="collapse text-center">
+                        <input type="file" id="user_data_file" accept=".alft" style="display:none"></input>
+                        <div class="d-flex mx-auto my-3 w-100">
+                            <button type="button" class="btn mx-1 w-100 btn-primary text-truncate" ui_id="exportUserData" onclick="LS.exportUserData()">Export</button>
+                        </div>
+                        <div class="d-flex mx-auto my-3 w-100">
+                            <button type="button" class="btn mx-1 line-2-item btn-success text-truncate" ui_id="importUserDataA" onclick="LS.importUserData(true)">Import (Append)</button>
+                            <button type="button" class="btn mx-1 line-2-item btn-danger text-truncate" ui_id="importUserDataO" onclick="LS.importUserData(false)">Import (Overwrite)</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="dropdown mt-3 container d-flex w-50" id="fleet_storage">
@@ -784,7 +797,7 @@
     <script src='js/skill_ship_slot.min.js?v=7beb00c27a88'></script>
     <script src='js/ship_data.min.js?v=627a6e03dc29'></script>
     <script src='js/equip_data.min.js?v=363d2243adc9'></script>
-    <script src="js/main-v2.min.js?v=7664a7b7be0f"></script>
+    <script src="js/main-v2.min.js?v=cf32bb25ba4a"></script>
 </body>
 
 </html>

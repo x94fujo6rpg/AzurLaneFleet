@@ -42,6 +42,10 @@ const
 
         { id: "tech_data_title", en: "⮟ Fleet Tech (Reload)", jp: "⮟ 艦船技術(装填)", tw: "⮟ 艦隊科技(裝填)", },
 
+        { id: "exportUserData", en: "Export", jp: "エクスポート", tw: "匯出", },
+        { id: "importUserDataA", en: "Import (Append)", jp: "インポート (追加)", tw: "匯入 (附加)", },
+        { id: "importUserDataO", en: "Import (Overwrite)", jp: "インポート (上書き)", tw: "匯入 (覆蓋)", },
+
         { id: "rebuild_cache_btn", en: "Rebuild Cache", jp: "キャッシュをクリア&再構築", tw: "重建快取", },
 
         { id: "show_ship_filter", en: "⮟ Show Filter", jp: "⮟ フィルター", tw: "⮟ 顯示過濾器", },
@@ -297,6 +301,7 @@ const
             }
         },
         fleetManager: {
+            prefix: "fleet_index_",
             fleetLength() {
                 let num = this.getData("num_of_fleet");
                 return num ? num : 0;
@@ -304,18 +309,30 @@ const
             storageFleetData(fleet_data = []) {
                 let length = fleet_data.length;
                 if (!(fleet_data instanceof Array)) throw Error("fleet data is not Array");
-                if (!length) throw Error("no fleet data");
+                if (!length) return console.log("no fleet data");
                 for (let i = 1; i <= length; i++) {
-                    this.setData(`fleet_index_${i}`, fleet_data[i - 1]);
+                    this.setData(`${this.prefix}${i}`, fleet_data[i - 1]);
                 }
                 this.setData("num_of_fleet", length);
                 console.log(`storage ${length} fleet data`);
                 return true;
             },
+            addFleetData(fleet_data = []) {
+                let length_old = this.fleetLength(),
+                    length_new = fleet_data.length;
+                if (!(fleet_data instanceof Array)) throw Error("fleet data is not Array");
+                if (!length_new) return console.log("no fleet data");
+                for (let i = 1; i <= length_new; i++) {
+                    this.setData(`${this.prefix}${length_old + i}`, fleet_data[i - 1]);
+                }
+                this.setData("num_of_fleet", length_old + length_new);
+                console.log(`add ${length_new} fleet data`);
+                return true;
+            },
             clearFleetData() {
                 let eof_fleet = this.fleetLength();
                 for (let i = 1; i <= eof_fleet; i++) {
-                    this.remove(`fleet_index_${i}`);
+                    this.remove(`${this.prefix}${i}`);
                 }
                 this.remove("num_of_fleet");
                 console.log(`remove ${eof_fleet} old fleet data`);
@@ -331,7 +348,20 @@ const
             },
             remove(key) {
                 return AFL_storage.removeItem(key);
-            }
+            },
+            async getAllFleet() {
+                let num = this.fleetLength(),
+                    fleets = [];
+                if (num <= 0) return fleets;
+                for (let i = 1; i <= num; i++) {
+                    let data = this.getData(`${this.prefix}${i}`);
+                    if (!data) continue;
+                    if (!data.name || !data.fleet) continue;
+                    fleets.push({ name: data.name, fleet: data.fleet, });
+                }
+                console.log(fleets);
+                return fleets;
+            },
         },
         updateStorageList() {
             let pos = fleet_info.list();
@@ -355,8 +385,6 @@ const
             });
         },
         saveStorage() {
-            let num = fleet_in_storage.length;
-            if (!num) return;
             LS.fleetManager.clearFleetData();
             LS.fleetManager.storageFleetData(fleet_in_storage);
         },
@@ -403,7 +431,107 @@ const
             LS.clear_select();
             fleet_in_storage.splice(fleet_id, 1);
             LS.saveStorage();
-        }
+        },
+        async exportUserData() {
+            let data_ls = {},
+                data_json,
+                ck,
+                data_export;
+            Object.keys(settingKey).forEach(key => {
+                let data = LS.userSetting.get(key);
+                if (data) {
+                    data_ls[key] = data;
+                }
+            });
+            data_ls._fleets_ = await LS.fleetManager.getAllFleet();
+            data_json = JSON.stringify(data_ls);
+            ck = CryptoJS.MD5(data_json).toString();
+            data_export = `${data_json}!${ck}`;
+            console.log(data_ls);
+            download(`AzurLane_Fleet_Tool_${new Date().toISOString()}.alft`, data_export);
+
+            function download(filename, data) {
+                let blob = new Blob([data], { type: 'text/plain', endings: 'native' });
+                if (window.navigator.msSaveOrOpenBlob) {
+                    window.navigator.msSaveBlob(blob, filename);
+                } else {
+                    let ele = window.document.createElement('a');
+                    ele.href = window.URL.createObjectURL(blob);
+                    ele.download = filename;
+                    document.body.appendChild(ele);
+                    ele.click();
+                    document.body.removeChild(ele);
+                }
+            }
+        },
+        async importUserData(addMode) {
+            let data_import = await getFile(),
+                data_json,
+                data_ls,
+                ck;
+            if (!data_import) throw Error("Invalid File");
+            [data_json, ck] = data_import.split("!");
+            if (ck != CryptoJS.MD5(data_json).toString()) throw Error("Corrupted File");
+            data_ls = JSON.parse(data_json);
+            console.log(data_ls);
+            await loadData();
+            reload();
+
+            async function loadData() {
+                for (let key of Object.keys(data_ls)) {
+                    if (key != "_fleets_") {
+                        if (!addMode) LS.userSetting.set(key, data_ls[key]);
+                    } else {
+                        if (!addMode) {
+                            LS.fleetManager.clearFleetData();
+                            if (data_ls[key].length > 0) LS.fleetManager.storageFleetData(data_ls[key]);
+                        } else {
+                            if (data_ls[key].length > 0) LS.fleetManager.addFleetData(data_ls[key]);
+                        }
+                    }
+                }
+                return true;
+            }
+
+            async function getFile() {
+                let loader = document.querySelector("#user_data_file"),
+                    wait_file = () => {
+                        return new Promise(resolve => {
+                            let rs = (e) => {
+                                console.log(e);
+                                window.removeEventListener("focus", rs);
+                                setTimeout(() => {
+                                    console.log(loader.files);
+                                    resolve(true);
+                                }, 500);
+                            };
+                            loader.click();
+                            window.addEventListener("focus", rs);
+                        });
+                    },
+                    read_file = (file) => {
+                        return new Promise(resolve => {
+                            let rd = new FileReader();
+                            rd.onload = (e) => {
+                                loader.value = null;
+                                resolve(e.target.result);
+                            };
+                            rd.readAsText(file);
+                        });
+                    };
+                if (loader.files.length <= 0) {
+                    await wait_file();
+                }
+                if (loader.files.length <= 0) return false;
+                return read_file(loader.files[0]);
+            }
+
+            function reload() {
+                setTimeout(() => {
+                    document.location.reload();
+                });
+            }
+        },
     },
     // indexedDB
     initialDB = async (db_name, db_ver) => {
@@ -3138,16 +3266,8 @@ const
             }
 
             async function loadStorage() {
-                let num = LS.fleetManager.fleetLength();
-                if (num <= 0) return;
                 fleet_in_storage = []; // empty storage
-                for (let i = 1; i <= num; i++) {
-                    let data = LS.fleetManager.getData(`fleet_index_${i}`);
-                    if (!data) continue;
-                    if (!data.name || !data.fleet) continue;
-                    fleet_in_storage.push({ name: data.name, fleet: data.fleet, });
-                    //console.log(data);
-                }
+                fleet_in_storage = await LS.fleetManager.getAllFleet();
                 msg.normal.storage_found_fleets(fleet_in_storage.length);
                 return true;
             }
