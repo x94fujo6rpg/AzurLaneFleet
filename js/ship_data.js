@@ -2610,7 +2610,7 @@ const ship_data = {
         ],
         "id": 9706024,
         "skin_id": 9706020,
-        "english_name": "Jun'yo.META !TWnoData",
+        "english_name": "Jun'yo.META",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -2619,7 +2619,7 @@ const ship_data = {
         "jp_name": "隼鷹(META)",
         "en_name": "Junyou META",
         "cn_name": "隼鹰·META",
-        "tw_name": "隼鷹·META*",
+        "tw_name": "隼鷹·META",
         "equip_1": [
             7
         ],
@@ -2901,6 +2901,57 @@ const ship_data = {
         ],
         "date": "2021年12月09日"
     },
+    "9702020": {
+        "nationality": 97,
+        "type": 2,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 9702024,
+        "skin_id": 9702020,
+        "english_name": "Memphis.META !ENnoData !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "9702020",
+        "painting": "mengfeisi_alter",
+        "jp_name": "メンフィス(META)",
+        "en_name": "Memphis.META*",
+        "cn_name": "孟菲斯·META",
+        "tw_name": "孟菲斯·META*",
+        "equip_1": [
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.25,
+            1.55,
+            1.25
+        ],
+        "reload": [
+            70,
+            486,
+            0,
+            52,
+            0
+        ],
+        "date": "2022年05月26日"
+    },
     "9702010": {
         "nationality": 97,
         "type": 2,
@@ -2911,7 +2962,7 @@ const ship_data = {
         ],
         "id": 9702014,
         "skin_id": 9702010,
-        "english_name": "Helena.META !TWnoData",
+        "english_name": "Helena.META",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -2920,7 +2971,7 @@ const ship_data = {
         "jp_name": "ヘレナ(META)",
         "en_name": "Helena META",
         "cn_name": "海伦娜·META",
-        "tw_name": "海倫娜·META*",
+        "tw_name": "海倫娜·META",
         "equip_1": [
             2
         ],
@@ -19192,6 +19243,55 @@ const ship_data = {
         ],
         "date": "2017年05月25日"
     },
+    "207120": {
+        "nationality": 2,
+        "type": 7,
+        "base_list": [
+            3,
+            3,
+            2
+        ],
+        "id": 207124,
+        "skin_id": 207120,
+        "english_name": "HMS Indomitable !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "207120",
+        "painting": "bunao",
+        "jp_name": "インドミタブル",
+        "en_name": "HMS Indomitable*",
+        "cn_name": "不挠",
+        "tw_name": "不撓*",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            7
+        ],
+        "equip_3": [
+            8
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.4,
+            1.4,
+            1.2
+        ],
+        "reload": [
+            44,
+            307,
+            0,
+            33,
+            0
+        ],
+        "date": "2022年05月26日"
+    },
     "207110": {
         "nationality": 2,
         "type": 7,
@@ -19788,6 +19888,57 @@ const ship_data = {
         ],
         "date": "2018年08月20日"
     },
+    "206039": {
+        "nationality": 2,
+        "type": 6,
+        "base_list": [
+            4,
+            3,
+            1
+        ],
+        "id": 206134,
+        "skin_id": 206039,
+        "english_name": "HMS Unicorn",
+        "star": 5,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "206039",
+        "painting": "dujiaoshou_g",
+        "jp_name": "ユニコーン改",
+        "en_name": "Unicorn (Retrofit)",
+        "cn_name": "独角兽改",
+        "tw_name": "獨角獸改",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            8
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            15
+        ],
+        "equip_5": [
+            10,
+            15
+        ],
+        "eq_p": [
+            1.45,
+            1.35,
+            0.8
+        ],
+        "reload": [
+            66,
+            462,
+            0,
+            50,
+            5
+        ],
+        "date": "2022年05月26日"
+    },
     "206030": {
         "nationality": 2,
         "type": 6,
@@ -19801,7 +19952,7 @@ const ship_data = {
         "english_name": "HMS Unicorn",
         "star": 5,
         "rarity": 4,
-        "retro": 0,
+        "retro": 1,
         "uni_id": "206030",
         "painting": "dujiaoshou",
         "jp_name": "ユニコーン",
@@ -19990,6 +20141,106 @@ const ship_data = {
             0
         ],
         "date": "2018年04月26日"
+    },
+    "205130": {
+        "nationality": 2,
+        "type": 5,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 205134,
+        "skin_id": 205130,
+        "english_name": "HMS Vanguard !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 6,
+        "retro": 0,
+        "uni_id": "205130",
+        "painting": "qianwei",
+        "jp_name": "ヴァンガード",
+        "en_name": "HMS Vanguard*",
+        "cn_name": "前卫",
+        "tw_name": "前衛*",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.45,
+            1.8,
+            1.3
+        ],
+        "reload": [
+            65,
+            450,
+            0,
+            48,
+            0
+        ],
+        "date": "2022年05月26日"
+    },
+    "205110": {
+        "nationality": 2,
+        "type": 5,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 205114,
+        "skin_id": 205110,
+        "english_name": "HMS Revenge !ENnoData !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "205110",
+        "painting": "fuchou",
+        "jp_name": "リヴェンジ",
+        "en_name": "HMS Revenge*",
+        "cn_name": "复仇",
+        "tw_name": "復仇*",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
+        ],
+        "reload": [
+            55,
+            385,
+            0,
+            41,
+            0
+        ],
+        "date": "2022年05月26日"
     },
     "205100": {
         "nationality": 2,
@@ -20786,6 +21037,55 @@ const ship_data = {
         ],
         "date": "2020年07月09日"
     },
+    "203100": {
+        "nationality": 2,
+        "type": 3,
+        "base_list": [
+            1,
+            1,
+            2
+        ],
+        "id": 203104,
+        "skin_id": 203100,
+        "english_name": "HMS Cheshire !ENnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "203100",
+        "painting": "chaijun_younv",
+        "jp_name": "リトル・チェシャー",
+        "en_name": "HMS Cheshire*",
+        "cn_name": "小柴郡",
+        "tw_name": "小柴郡",
+        "equip_1": [
+            3
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.4,
+            1.5,
+            1.55
+        ],
+        "reload": [
+            52,
+            363,
+            0,
+            39,
+            0
+        ],
+        "date": "2022年05月26日"
+    },
     "203090": {
         "nationality": 2,
         "type": 3,
@@ -21474,6 +21774,58 @@ const ship_data = {
             0
         ],
         "date": "2018年04月26日"
+    },
+    "202310": {
+        "nationality": 2,
+        "type": 2,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 202314,
+        "skin_id": 202310,
+        "english_name": "HMS Bellona !ENnoData !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "202310",
+        "painting": "sizhannvshen",
+        "jp_name": "ベローナ",
+        "en_name": "HMS Bellona*",
+        "cn_name": "司战女神",
+        "tw_name": "司戰女神*",
+        "equip_1": [
+            1,
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.35,
+            1.25,
+            1.5
+        ],
+        "reload": [
+            66,
+            459,
+            0,
+            49,
+            0
+        ],
+        "date": "2022年05月26日"
     },
     "202300": {
         "nationality": 2,
@@ -23167,6 +23519,57 @@ const ship_data = {
             0
         ],
         "date": "2017年05月25日"
+    },
+    "201340": {
+        "nationality": 2,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 201344,
+        "skin_id": 201340,
+        "english_name": "HMS Jervis !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "201340",
+        "painting": "jiaweisi",
+        "jp_name": "ジャーヴィス",
+        "en_name": "HMS Jervis*",
+        "cn_name": "贾维斯",
+        "tw_name": "賈維斯*",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.25,
+            1.55,
+            1.05
+        ],
+        "reload": [
+            84,
+            585,
+            0,
+            63,
+            0
+        ],
+        "date": "2022年05月26日"
     },
     "201330": {
         "nationality": 2,
@@ -24960,7 +25363,7 @@ const ship_data = {
         ],
         "id": 108064,
         "skin_id": 108060,
-        "english_name": "USS Archerfish !TWnoData",
+        "english_name": "USS Archerfish",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -24969,7 +25372,7 @@ const ship_data = {
         "jp_name": "アーチャーフィッシュ",
         "en_name": "Archerfish",
         "cn_name": "射水鱼",
-        "tw_name": "射水魚*",
+        "tw_name": "射水魚",
         "equip_1": [
             13
         ],
@@ -25401,7 +25804,7 @@ const ship_data = {
         ],
         "id": 107144,
         "skin_id": 107140,
-        "english_name": "USS Ticonderoga !TWnoData",
+        "english_name": "USS Ticonderoga",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -25410,7 +25813,7 @@ const ship_data = {
         "jp_name": "タイコンデロガ",
         "en_name": "Ticonderoga",
         "cn_name": "提康德罗加",
-        "tw_name": "提康德羅加*",
+        "tw_name": "提康德羅加",
         "equip_1": [
             7
         ],
@@ -26701,7 +27104,7 @@ const ship_data = {
         ],
         "id": 105174,
         "skin_id": 105170,
-        "english_name": "USS New Jersey !TWnoData",
+        "english_name": "USS New Jersey",
         "star": 6,
         "rarity": 6,
         "retro": 0,
@@ -26710,7 +27113,7 @@ const ship_data = {
         "jp_name": "ニュージャージー",
         "en_name": "New Jersey",
         "cn_name": "新泽西",
-        "tw_name": "新澤西*",
+        "tw_name": "紐澤西",
         "equip_1": [
             4
         ],
@@ -27632,7 +28035,7 @@ const ship_data = {
         ],
         "id": 103144,
         "skin_id": 103140,
-        "english_name": "USS San Francisco !TWnoData",
+        "english_name": "USS San Francisco",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -27641,7 +28044,7 @@ const ship_data = {
         "jp_name": "サンフランシスコ",
         "en_name": "San Francisco",
         "cn_name": "旧金山",
-        "tw_name": "舊金山*",
+        "tw_name": "舊金山",
         "equip_1": [
             3
         ],
@@ -28419,7 +28822,7 @@ const ship_data = {
         ],
         "id": 102294,
         "skin_id": 102290,
-        "english_name": "USS Boise !TWnoData",
+        "english_name": "USS Boise",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -28428,7 +28831,7 @@ const ship_data = {
         "jp_name": "ボイシ",
         "en_name": "Boise",
         "cn_name": "博伊西",
-        "tw_name": "博伊西*",
+        "tw_name": "波夕",
         "equip_1": [
             2
         ],
@@ -28830,7 +29233,7 @@ const ship_data = {
         ],
         "id": 102204,
         "skin_id": 102200,
-        "english_name": "USS Cleveland !TWnoData",
+        "english_name": "USS Cleveland",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -28839,7 +29242,7 @@ const ship_data = {
         "jp_name": "リトル・クリーブランド",
         "en_name": "Clevelad",
         "cn_name": "小克利夫兰",
-        "tw_name": "小克利夫蘭*",
+        "tw_name": "小克里夫蘭",
         "equip_1": [
             2
         ],
@@ -28881,7 +29284,7 @@ const ship_data = {
         ],
         "id": 102194,
         "skin_id": 102190,
-        "english_name": "USS Helena !TWnoData",
+        "english_name": "USS Helena",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -28890,7 +29293,7 @@ const ship_data = {
         "jp_name": "リトル・ヘレナ",
         "en_name": "Lena",
         "cn_name": "小海伦娜",
-        "tw_name": "小海倫娜*",
+        "tw_name": "小海倫娜",
         "equip_1": [
             2
         ],
@@ -30007,7 +30410,7 @@ const ship_data = {
         ],
         "id": 101474,
         "skin_id": 101470,
-        "english_name": "USS Morrison !TWnoData",
+        "english_name": "USS Morrison",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -30016,7 +30419,7 @@ const ship_data = {
         "jp_name": "モリソン",
         "en_name": "Morrison",
         "cn_name": "莫里森",
-        "tw_name": "莫里森*",
+        "tw_name": "莫里森",
         "equip_1": [
             1
         ],

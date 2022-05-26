@@ -2353,7 +2353,7 @@ const equip_data = {
         ],
         "jp_name": "強化耐圧殻設計案",
         "cn_name": "艇壳改良设计案",
-        "tw_name": "艇殼改良設計案*",
+        "tw_name": "艇殼改良設計案",
         "en_name": "Pressure-Resistant Hull Design",
         "equip_limit": 800,
         "cd": []
@@ -2747,6 +2747,21 @@ const equip_data = {
         "equip_limit": 0,
         "cd": []
     },
+    "3560": {
+        "nationality": 2,
+        "type": 10,
+        "rarity": 4,
+        "tech": 0,
+        "id": 3560,
+        "icon": "3560",
+        "ship_type_forbidden": [],
+        "jp_name": "破損した演説原稿",
+        "cn_name": "破损的演讲稿",
+        "tw_name": "破損的演講稿*",
+        "en_name": "Damaged Speech Manuscript",
+        "equip_limit": 3560,
+        "cd": []
+    },
     "680": {
         "nationality": 2,
         "type": 10,
@@ -2808,6 +2823,36 @@ const equip_data = {
         "equip_limit": 0,
         "cd": []
     },
+    "3580": {
+        "nationality": 2,
+        "type": 10,
+        "rarity": 6,
+        "tech": 0,
+        "id": 3580,
+        "icon": "3580",
+        "ship_type_forbidden": [
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            17,
+            18,
+            19,
+            20,
+            21
+        ],
+        "jp_name": "アドミラルティ射撃統制システム",
+        "cn_name": "海军部火控台",
+        "tw_name": "海軍部火控臺*",
+        "en_name": "(no DATA)",
+        "equip_limit": 1260,
+        "cd": []
+    },
     "1260": {
         "nationality": 1,
         "type": 10,
@@ -2835,7 +2880,7 @@ const equip_data = {
         "cn_name": "高性能火控雷达",
         "tw_name": "高性能火控雷達",
         "en_name": "High Standard Fire-Control Radar",
-        "equip_limit": 0,
+        "equip_limit": 1260,
         "cd": []
     },
     "840": {
@@ -3016,7 +3061,7 @@ const equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "作戦記録：AF",
         "cn_name": "作战报告：AF",
-        "tw_name": "作戰報告：AF*",
+        "tw_name": "作戰報告：AF",
         "en_name": "Action Report: Operation AF",
         "equip_limit": 940,
         "cd": []
@@ -13177,7 +13222,7 @@ const equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "406mm三連装砲MK7",
         "cn_name": "三联装406mm主炮Mk7",
-        "tw_name": "三聯裝406mm主炮Mk7*",
+        "tw_name": "三聯裝406mm主炮Mk7",
         "en_name": "Triple 406mm MK7 Main Gun",
         "equip_limit": 0,
         "cd": [
