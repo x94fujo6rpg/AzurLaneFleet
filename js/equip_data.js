@@ -2849,7 +2849,7 @@ const equip_data = {
         "jp_name": "アドミラルティ射撃統制システム",
         "cn_name": "海军部火控台",
         "tw_name": "海軍部火控臺*",
-        "en_name": "(no DATA)",
+        "en_name": "Admiralty Fire Control Table",
         "equip_limit": 1260,
         "cd": []
     },
