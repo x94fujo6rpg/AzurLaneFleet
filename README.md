@@ -15,14 +15,14 @@ Generate shareable text codes or links.
 
 ## Update  
 **2022-06-25**
-- support sp weapon now
+- support augment now
 - support old fleetdata (0.05+)
-- some sp weapon that have reload can effect CD
+- some augment that have reload can effect CD
 - new fleetdata can only work in new version
 - the "random" value
   - all use max value
   - i thought about making it adjustable, but that require more ui work and change save format
-  - currently only CL's sp weapon have reload, not very useful
+  - currently only few augment have reload, not very useful
   - still can adjust it a little bit by the level
 - more unknown bugs
 

@@ -119,7 +119,7 @@ const
         18: { cn: "貨物", en: "Cargo", jp: "積載" },
         20: { cn: "導彈", en: "Missile", jp: "ミサイル" },
 
-        9999: { cn: "特殊兵裝", en: "SP Weapon", jp: "特殊装備" },
+        9999: { cn: "特殊兵裝", en: "Augment", jp: "特殊装備" },
     };
 Object.keys(parsetype).forEach(key => parsetype[key].tw = parsetype[key].cn);
 
@@ -3134,7 +3134,6 @@ const
                     bp = ["MTA4MDIw", "MjgzNDA="].reduce((a, b) => (a.push(parseInt(atob(b))), a), []);
                 await addProgressBar("add_img", "Setup Events & Icons", max, progress);
                 for (let obj of list) {
-                    //if (obj.type != "spweapon") {
                     let iob = is_iob ?
                         new IntersectionObserver(iconObserver, {
                             root: document.getElementById(`${obj.type}select`),
@@ -3144,13 +3143,6 @@ const
                     obj.list.forEach((item, index) => {
                         process(item, progress, obj.onclick, obj.type, index, item.id != bp[i] ? iob : false);
                     });
-                    /*
-                    } else {
-                        obj.list.forEach((item, index) => {
-                            process(item, progress, obj.onclick, obj.type, index, false);
-                        });
-                    }
-                    */
                 }
                 console.timeEnd("addClickEventAndImg");
 
@@ -3295,16 +3287,6 @@ const
                         count++;
                     });
                 });
-                /*
-                [sortedShip, sortedEquip].forEach((list, index) => {
-                    list.forEach(obj => {
-                        let id = srcToCacheID(obj.icon, index == 0 ? "ship" : "equip", reg);
-                        if (all_data[id]) return;
-                        all_data[id] = { src: obj.icon, id: id, data_url: false, };
-                        count++;
-                    });
-                });
-                */
                 let url_data = [],
                     promise_list = [],
                     progress = _loading_.cache_image;
