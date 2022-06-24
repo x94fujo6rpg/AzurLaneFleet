@@ -1549,7 +1549,6 @@ const
                                 let data_length = ship.length,
                                     is_empty = (data_length == 1),
                                     level_data, affinity_data;
-                                console.log(ship);
                                 if (is_empty) return; // skip empty ship
                                 if (data_length == 7) level_data = ship.pop();
                                 if (data_length == 8) {
@@ -1794,7 +1793,6 @@ const
                         aircraft_count = 0,
                         set_to = [],
                         check = [];
-                    console.log("ship_item", ship_item);
                     ship_item.forEach((item, index) => {
                         if (index > 0 && index < 6) {
                             let equip = item.property,
