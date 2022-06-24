@@ -25,9 +25,10 @@
     <link rel="prefetch" href="lib/index-min.js" as="script">
     <link rel="prefetch" href="js/cnwiki2alf.min.js?v=4d7a76c04380" as="script">
     <link rel="prefetch" href="js/skill_ship_slot.min.js?v=2e2cbf03cf9f" as="script">
-    <link rel="prefetch" href="js/ship_data.min.js?v=4160e728616e" as="script">
+    <link rel="prefetch" href="js/ship_data.min.js?v=8939038c07a2" as="script">
     <link rel="prefetch" href="js/equip_data.min.js?v=250a1001b856" as="script">
-    <link rel="prefetch" href="js/main-v2.min.js?v=cf32bb25ba4a" as="script">
+    <link rel="prefetch" href="js/sp_weapon_data.min.js?v=afdbc7eee9b5" as="script">
+    <link rel="prefetch" href="js/main-v2.min.js?v=c5414bbefa25" as="script">
     <style>
         body {
             color: white;
@@ -223,7 +224,7 @@
             clip-path: polygon(75% 0, 100% 50%, 75% 100%, 0 100%, 0 0);
         }
         
-        .equip_level {
+        .equip_level, .spweapon_level {
             position: absolute;
             top: 0.25rem;
             left: 0.1rem;
@@ -786,6 +787,38 @@
             </div>
         </div>
     </div>
+    <div class="modal" id="spweaponselect">
+        <div class="modal-dialog mt-1" id="dialog_select_spweapon">
+            <div class="modal-content text-light bg-dark">
+                <div class="modal-header p-2">
+                    <h4 class="modal-title m-auto text-center line-3-item" ui_id="select_spweapon">Select SP Weapon</h4>
+                    <button id="show_spweapon_filter" class="btn btn-outline-info mx-2 line-3-item" type="button" data-toggle="collapse" data-target="#spweapon_filter" aria-expanded="false" aria-controls="spweapon_filter">⮟ Show Filter</button>
+                    <button type="button" class="btn btn-danger text-light p-0 line-3-item" data-dismiss="modal" style="font-size: x-large;">Exit</button>
+                </div>
+                <div class="modal-body p-2">
+                    <div class="d-flex w-50 my-3 mx-auto font-weight-bold justify-content-center">
+                        <div class="my-auto mr-1 ml-auto w-25 text-right text-nowrap" ui_id="item_level_spweapon">Enhance Level</div>
+                        <div class="d-inline-flex my-1">
+                            <input type="text" class="mx-1 text-center rounded" id="spweapon_level_input" value="10">
+                        </div>
+                        <button class="btn btn-primary my-1 ml-1 mr-auto w-25 text-nowrap" id="spweapon_level_set" _onclick="app.setLevel('spweapon')" data-dismiss="modal">Set Level</button>
+                    </div>
+                    <div class="af_slider_box d-flex w-50 my-2 mx-auto justify-content-center">
+                        <div id="spweapon_level_min" class="mx-2 my-auto text-monospace">0</div>
+                        <input type="range" min="0" max="10" step="1" value="10" id="spweapon_level_slider" class="af_slider w-100">
+                        <div id="spweapon_level_max" class="mx-2 my-auto text-monospace">10</div>
+                    </div>
+                    <div class="d-inline-flex w-100 font-weight-bold">
+                        <div class="d-flex m-auto line-5-item">
+                            <div class="my-auto ml-auto mr-1" ui_id="filter_search_result">Result</div>
+                            <div class="my-auto mr-auto ml-1" id="spweapon_count"></div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center m-auto" id="spweaponlist"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="lib/jquery-3.6.0.min.js"></script>
     <script src="lib/popper.min.js"></script>
     <script src="lib/bootstrap.min.js"></script>
@@ -795,9 +828,10 @@
     <script src="lib/index-min.js"></script>
     <script src='js/cnwiki2alf.min.js?v=4d7a76c04380'></script>
     <script src='js/skill_ship_slot.min.js?v=2e2cbf03cf9f'></script>
-    <script src='js/ship_data.min.js?v=4160e728616e'></script>
+    <script src='js/ship_data.min.js?v=8939038c07a2'></script>
     <script src='js/equip_data.min.js?v=250a1001b856'></script>
-    <script src="js/main-v2.min.js?v=cf32bb25ba4a"></script>
+    <script src='js/sp_weapon_data.min.js?v=afdbc7eee9b5'></script>
+    <script src="js/main-v2.min.js?v=c5414bbefa25"></script>
 </body>
 
 </html>

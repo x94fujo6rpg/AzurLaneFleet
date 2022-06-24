@@ -14,6 +14,18 @@ Generate shareable text codes or links.
   - [Hull codes](#hull-codes)
 
 ## Update  
+**2022-06-25**
+- support sp weapon now
+- support old fleetdata (0.05+)
+- some sp weapon that have reload can effect CD
+- new fleetdata can only work in new version
+- the "random" value
+  - all use max value
+  - i thought about making it adjustable, but that require more ui work and change save format
+  - currently only CL's sp weapon have reload, not very useful
+  - still can adjust it a little bit by the level
+- more unknown bugs
+
 **2022-05-05**
 - add export/import user data in `settings > user data`
   - `append` ignore all settings, only append fleet data

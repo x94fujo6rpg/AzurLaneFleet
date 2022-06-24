@@ -2802,6 +2802,55 @@ const ship_data = {
         ],
         "date": "2021年10月01日"
     },
+    "9704030": {
+        "nationality": 97,
+        "type": 4,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 9704034,
+        "skin_id": 9704030,
+        "english_name": "Repulse.META !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "9704030",
+        "painting": "fanji_alter",
+        "jp_name": "レパルス(META)",
+        "en_name": "Repulse META",
+        "cn_name": "反击·META",
+        "tw_name": "反擊·META*",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.35,
+            1.5,
+            0.7
+        ],
+        "reload": [
+            53,
+            367,
+            0,
+            38,
+            0
+        ],
+        "date": "2022年06月09日"
+    },
     "9704020": {
         "nationality": 97,
         "type": 4,
@@ -7505,7 +7554,7 @@ const ship_data = {
         ],
         "id": 408094,
         "skin_id": 408090,
-        "english_name": "KMS U-96 !TWnoData",
+        "english_name": "KMS U-96",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -7514,7 +7563,7 @@ const ship_data = {
         "jp_name": "U-96",
         "en_name": "U-96",
         "cn_name": "U-96",
-        "tw_name": "U-96*",
+        "tw_name": "U-96",
         "equip_1": [
             13
         ],
@@ -10112,7 +10161,7 @@ const ship_data = {
         ],
         "id": 401264,
         "skin_id": 401260,
-        "english_name": "KMS Z26 !TWnoData",
+        "english_name": "KMS Z26",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -10121,7 +10170,7 @@ const ship_data = {
         "jp_name": "Z26",
         "en_name": "Z26",
         "cn_name": "Z26",
-        "tw_name": "Z26*",
+        "tw_name": "Z26",
         "equip_1": [
             1,
             2
