@@ -3916,7 +3916,7 @@ const
         langs: ["tw", "cn", "en", "jp"],
         copy_ship: ["tw", "cn", "en", "jp", "icon", "frame", "bg", "id", "type", "rarity", "star", "base", "equip_p", "nationality", "reload"],
         copy_equip: ["tw", "cn", "en", "jp", "icon", "frame", "bg", "id", "limit", "rarity", "tech", "nationality", "cd"],
-        copy_sp: ["id", "icon", "frame", "bg", "name", "rarity", "tech", "limit"],
+        copy_sp: ["tw", "cn", "en", "jp", "id", "icon", "frame", "bg", "name", "rarity", "tech", "limit"],
     },
     AFL_storage = window.localStorage,
     filter_setting = {
