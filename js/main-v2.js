@@ -69,6 +69,7 @@ const
 
         { id: "select_ship", en: "Select Ship", jp: "艦船を選択", tw: "選擇艦船", },
         { id: "select_equip", en: "Select Equip", jp: "装備を選択", tw: "選擇裝備", },
+        { id: "select_spweapon", en: "Select Augment", jp: "特殊装備を選択", tw: "選擇特殊兵裝", },
         { id: "filter_nation", en: "Nation", jp: "陣営", tw: "國家", },
         { id: "filter_type", en: "Type", jp: "種類", tw: "種類", },
         { id: "filter_rarity", en: "Rarity", jp: "レア度", tw: "稀有度", },
