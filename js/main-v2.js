@@ -1554,16 +1554,14 @@ const
                 function parse007({ fleet_index, side_index, ship_index, ship, formation_data }) {
                     let data_length = ship.length,
                         is_empty_ship = (data_length == 1),
-                        level_data, affinity_data,
-                        reg;
+                        level_data, affinity_data;
                     if (is_empty_ship) return; // skip empty ship
                     if (data_length == 8) level_data = ship.pop();
                     if (data_length == 9) {
                         affinity_data = ship.pop();
                         level_data = ship.pop();
                     }
-                    reg = (level_data.length == 8) ? /(.{2})(.{6})/ : /(.{2})(.{5})/;
-                    level_data = level_data.match(reg).filter((e, i) => i > 0).map((e, i) => (i == 0 ? e : e.split(""))).flat();
+                    level_data = level_data.match(/(.{2})(.*)/).filter((e, i) => i > 0).map((e, i) => (i == 0 ? e : e.split(""))).flat();
                     if (!(level_data instanceof Array)) level_data = default_level.concat[10];
                     for (let [item_index, id] of ship.entries()) {
                         let name, ship_item, level, f, s, p, i, app_item;
@@ -1595,7 +1593,7 @@ const
                         affinity_data = ship.pop();
                         level_data = ship.pop();
                     }
-                    if (level_data) level_data = level_data.match(/(.{2})(.{5})/).filter((e, i) => i > 0).map((e, i) => (i == 0 ? e : e.split(""))).flat();
+                    if (level_data) level_data = level_data.match(/(.{2})(.*)/).filter((e, i) => i > 0).map((e, i) => (i == 0 ? e : e.split(""))).flat();
                     if (!(level_data instanceof Array)) level_data = default_level;
                     for (let [item_index, id] of ship.entries()) {
                         let name, ship_item, level, f, s, p, i, app_item;
