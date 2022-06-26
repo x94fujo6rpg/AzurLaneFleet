@@ -2222,7 +2222,7 @@ const
                         ship.affinity = value;
                         ship.affinity_value = app.util._affinity_bonus[value];
                     }
-                    app.util.force_vue_update(item_in_app, "ship_level");
+                    app.util.force_vue_update(ship, "ship_level");
                 } else {
                     throw Error("updateAffinity: ship not found");
                 }
