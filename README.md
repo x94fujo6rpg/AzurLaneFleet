@@ -12,6 +12,7 @@ Generate shareable text codes or links.
   - [Data source](#data-source)
   - [CD calculator](#cd-calculator)
   - [Hull codes](#hull-codes)
+  - [fleetdata version](#fleetdata-version)
 
 ## Update  
 **2022-06-25**
@@ -435,3 +436,9 @@ If you can. The most accurate way is to simulate the entire game.
 | 自由鳶尾 	| アイリス 	| Iris Libre          	| FFNF     	|
 | 維希教廷 	| ヴィシア 	| Vichya Dominion     	| MNF      	|
 | 其他     	| その他   	| Other               	| Other    	|
+
+## fleetdata version
+- 0.07: argument slot / argument level
+- 0.06: affinity
+- 0.05: ship & equip level / formation_data
+- 0.04: only ship & equip id
