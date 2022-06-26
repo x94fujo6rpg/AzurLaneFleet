@@ -1530,6 +1530,7 @@ const
 
                 function set_ship({ ship_item, app_item, affinity_data = false, level }) {
                     let result = app.setShipAndEquip(ship_item, false, true);
+                    if (!level) level = app._level_default.ship;
                     app_item.ship_level = app.shipLevelLimit(level); // set level
                     if (affinity_data) {
                         app_item.affinity = affinity_data || 4; // set affinity
@@ -1539,11 +1540,13 @@ const
                 }
 
                 function set_equip({ ship_item, app_item, level }) {
+                    if (!level) level = app._level_default.equip;
                     app.setEquip(ship_item, false, true);  // set equip first so the rarity is set
                     app_item.equip_level = app.equipLevelLimit(app_item.rarity, level, app_item.tech);
                 }
 
                 function set_sp_weapon({ ship_item, app_item, level }) {
+                    if (!level) level = app._level_default.spweapon;
                     app.setSpWeapon(ship_item, false, true);
                     app_item.spweapon_level = app.spweaponLevelLimit(level);
                 }
@@ -1614,7 +1617,7 @@ const
                     // ver <= 0.05
                     let is_empty_ship = false;
                     for (let [item_index, id] of ship.entries()) {
-                        let name, ship_item, level, f, s, p, i, app_item;
+                        let name, ship_item, f, s, p, i, app_item;
                         if (id === "" || id == 0) id = (item_index == 0) ? "000000" : "666666";
                         if (id === "000000") return; // skip empty ship
                         if (is_empty_ship) return;
@@ -1622,14 +1625,9 @@ const
                         ship_item = { name, id };
                         [f, s, p, i] = app.util.setCurrent(ship_item, true);
                         app_item = fleetData[f][s][p].item[i].property;
-                        if (item_index > 0) {
-                            level = app._level_default.equip;
-                            set_equip({ ship_item, app_item, level });
-                            continue;
-                        }
+                        if (item_index > 0) { set_equip({ ship_item, app_item }); continue; }
                         if (item_index == 0) {
-                            level = app._level_default.ship;
-                            if (!set_ship({ ship_item, app_item, level })) is_empty_ship = true; // if set ship failed, skip rest
+                            if (!set_ship({ ship_item, app_item })) is_empty_ship = true; // if set ship failed, skip rest
                         }
                     }
                 }
@@ -1929,10 +1927,9 @@ const
                     ship_reload = ship.reload_cache;
                 }
             },
-            async force_vue_update(target, key) {
+            force_vue_update(target, key) {
                 let temp = target[key];
                 target[key] = "";
-                await Vue.nextTick();
                 target[key] = temp;
             },
         },
@@ -2172,6 +2169,7 @@ const
         _level_default: {
             ship: 120,
             equip: 10,
+            spweapon: 10,
         },
         shipLevelLimit(level = 1) {
             level = parseInt(level, 10);
