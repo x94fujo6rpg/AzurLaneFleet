@@ -1540,13 +1540,13 @@ const
                 }
 
                 function set_equip({ ship_item, app_item, level }) {
-                    if (!level) level = app._level_default.equip;
+                    if (!level && isNaN(level)) level = app._level_default.equip;
                     app.setEquip(ship_item, false, true);  // set equip first so the rarity is set
                     app_item.equip_level = app.equipLevelLimit(app_item.rarity, level, app_item.tech);
                 }
 
                 function set_sp_weapon({ ship_item, app_item, level }) {
-                    if (!level) level = app._level_default.spweapon;
+                    if (!level && isNaN(level)) level = app._level_default.spweapon;
                     app.setSpWeapon(ship_item, false, true);
                     app_item.spweapon_level = app.spweaponLevelLimit(level);
                 }
