@@ -15,6 +15,10 @@ Generate shareable text codes or links.
   - [fleetdata version](#fleetdata-version)
 
 ## Update  
+**2022-07-01**
+- if you don't need `augment slot`, now can hide it in `settings > Show Augment` (default: on)
+- it still exist, just invisible
+
 **2022-06-25**
 - support augment now
 - support old fleetdata (0.05+)

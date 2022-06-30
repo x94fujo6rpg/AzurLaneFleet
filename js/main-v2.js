@@ -15,8 +15,9 @@ const
         { id: "show_setting", en: "⮟ Settings", jp: "⮟ 設定", tw: "⮟ 設定", },
         { id: "allow_dup_btn", en: "Allow Duplicate", jp: "重複を許可する", tw: "允許重複的船", },
         { id: "display_fleet_border", en: "Fleet Border", jp: "フレーム表示", tw: "顯示外框" },
-        { id: "display_fleet_op", en: "Fleet ID / Edit Button", jp: "編集ボタン表示", tw: "顯示編輯" },
+        { id: "display_fleet_op", en: "Edit Button/ID", jp: "編集ボタン表示", tw: "顯示編輯" },
         { id: "frame_setting", en: "Thick frame", jp: "厚いフレーム", tw: "粗框" },
+        { id: "display_sp_weapon", en: "Show Augment", jp: "特殊装備表示", tw: "顯示特殊兵裝" },
 
         { id: "add_fleet", en: "Save Current", jp: "現在の艦隊をセーブ", tw: "儲存目前艦隊", },
         { id: "select_fleet", en: "Select Fleet", jp: "艦隊を選択", tw: "選擇艦隊", },
@@ -221,6 +222,7 @@ const
         ownedItem: "ownedItem",
         techData: "techData",
         resetDB: "resetDB",
+        showSP: "showSP",
     },
     util = {
         sleep(ms = 0) {
@@ -787,6 +789,12 @@ const
                     }
                 }
                 LS.userSetting.set(settingKey.fleetBorder, display ? 1 : 0);
+            },
+            displaySpWeapon(ele) {
+                $(ele).button("toggle");
+                let display = ele.classList.contains("active");
+                ALF.show_sp = display;
+                LS.userSetting.set(settingKey.showSP, display ? 1 : 0);
             },
             adjustEle() {
                 const
@@ -3527,6 +3535,10 @@ const
                     document.querySelector("#display_fleet_border").click();
                 }
 
+                if (setting[settingKey.showSP] == 1 || !setting[settingKey.showSP]) {
+                    document.querySelector("#display_sp_weapon").click();
+                }
+
                 if (setting[settingKey.ownedItem]) {
                     app.action.loadOwnedSetting();
                 }
@@ -3984,12 +3996,13 @@ let
 
 //----------------------------------------------------------
 Vue.component("item-container", {
-    props: ["item", "lang"],
+    props: ["item", "lang", "show_sp"],
     template: `
         <button class="p-1 item_container" onclick="app.util.setCurrent(this)" data-toggle="modal"
           v-bind:name="item.id"
           v-bind:pos="item.property.pos"
           v-bind:data-target="item.property.target"
+          v-if="item.id.slice(-1)<6 || show_sp"
           >
             <div class="container-fluid p-0 box">
               <div class="icon_box">
@@ -4013,7 +4026,7 @@ Vue.component("item-container", {
 
 //col
 Vue.component("ship-container", {
-    props: ["ship", "lang"],
+    props: ["ship", "lang", "show_sp"],
     template: `
         <div class="ship_container">
             <item-container
@@ -4021,6 +4034,7 @@ Vue.component("ship-container", {
                 v-bind:key="item.id"
                 v-bind:item="item"
                 v-bind:lang="lang"
+                v-bind:show_sp="show_sp"
             ></item-container>
         </div>
     `
@@ -4044,7 +4058,7 @@ const
         swap_copy: path(dynamicFleet.swapPos.name),
     };
 Vue.component("fleet-container", {
-    props: ["fleet", "lang", "show_op", "class_data", "ui_text"],
+    props: ["fleet", "lang", "show_op", "show_sp", "class_data", "ui_text"],
     template: `
         <div v-bind:class="class_data.fleet_box_o">
             <div class="fleet_op_box" v-if="show_op">
@@ -4086,6 +4100,7 @@ Vue.component("fleet-container", {
                         v-bind:ship="back"
                         v-bind:name="back.id"
                         v-bind:lang="lang"
+                        v-bind:show_sp="show_sp"
                     ></ship-container>
                 </div>
                 <div class="flex-col fleet_side_box" v-if="fleet.front">
@@ -4095,6 +4110,7 @@ Vue.component("fleet-container", {
                         v-bind:ship="front"
                         v-bind:name="front.id"
                         v-bind:lang="lang"
+                        v-bind:show_sp="show_sp"
                     ></ship-container>
                 </div>
                 <div class="flex-col fleet_side_box" v-if="fleet.sub">
@@ -4104,6 +4120,7 @@ Vue.component("fleet-container", {
                         v-bind:ship="sub"
                         v-bind:name="sub.id"
                         v-bind:lang="lang"
+                        v-bind:show_sp="show_sp"
                     ></ship-container>
                 </div>
             </div>
@@ -4140,6 +4157,7 @@ const
             fleets: fleetData,
             lang: language,
             show_op: false,
+            show_sp: false,
             class_data: {
                 app_box: appClassData.app_box.h,
                 fleet_box_o: appClassData.fleet_box_o.h,
