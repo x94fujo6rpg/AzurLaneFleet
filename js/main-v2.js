@@ -2588,20 +2588,12 @@ const
                 sp_weapons = [...document.querySelectorAll("#spweaponlist button")],
                 shiptype = ship.type,
                 shipid = ship.id,
-                limit_id = shipid.slice(0, -1),
-                display_list = new Set([]);
-            Object.keys(sp_weapon_data).forEach(id => {
-                let spw = sp_weapon_data[id],
-                    type_list = sp_weapon_type[spw.type];
-                if (type_list.includes(shiptype)) {
-                    if (spw.limit == 0 || spw.limit == limit_id) {
-                        display_list.add(id);
-                    }
-                }
-            });
+                limit_id = shipid.slice(0, -1);
             sp_weapons.shift(); // skip remove
             sp_weapons.forEach(item => {
-                if (display_list.has(item.id)) {
+                let spw = sp_weapon_data[item.id],
+                    type_list = sp_weapon_type[spw.type]; // which ship type can use it
+                if (type_list.includes(shiptype) && (spw.limit == 0 || spw.limit == limit_id)) {
                     item.style.display = "";
                 } else {
                     item.style.display = "none";
@@ -3521,11 +3513,6 @@ const
                     app.option.ship.allow_dup(document.getElementById("allow_dup_btn"));
                 }
 
-                if (setting[settingKey.thickFrame] == 1) {
-                    let ele = document.getElementById("frame_setting");
-                    setTimeout(() => app.option.frameSize(ele), 500);
-                }
-
                 if (setting[settingKey.layout]) {
                     let layoutSwitch = document.querySelector("#layout_setting");
                     layoutSwitch.textContent = layout_list[setting[settingKey.layout]];
@@ -3542,6 +3529,11 @@ const
 
                 if (setting[settingKey.ownedItem]) {
                     app.action.loadOwnedSetting();
+                }
+
+                if (setting[settingKey.thickFrame] == 1) {
+                    let ele = document.getElementById("frame_setting");
+                    setTimeout(() => app.option.frameSize(ele), 3000);
                 }
 
                 return true;
