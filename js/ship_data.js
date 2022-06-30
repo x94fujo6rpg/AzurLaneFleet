@@ -3052,6 +3052,55 @@ const ship_data = {
         ],
         "date": "2021年06月10日"
     },
+    "907010": {
+        "nationality": 9,
+        "type": 7,
+        "base_list": [
+            3,
+            3,
+            2
+        ],
+        "id": 907014,
+        "skin_id": 907010,
+        "english_name": "MNF Joffre !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "907010",
+        "painting": "xiafei",
+        "jp_name": "ジョッフル",
+        "en_name": "MNF Joffre*",
+        "cn_name": "霞飞",
+        "tw_name": "霞飛*",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            8
+        ],
+        "equip_3": [
+            9
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.35,
+            1.35,
+            1.3
+        ],
+        "reload": [
+            47,
+            325,
+            0,
+            35,
+            0
+        ],
+        "date": "2022年06月30日"
+    },
     "999010": {
         "nationality": 9,
         "type": 5,
@@ -3399,6 +3448,57 @@ const ship_data = {
             0
         ],
         "date": "2020年05月21日"
+    },
+    "901130": {
+        "nationality": 9,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 901134,
+        "skin_id": 901130,
+        "english_name": "MNF L'Indomptable !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "901130",
+        "painting": "buqu",
+        "jp_name": "ランドンターブル",
+        "en_name": "MNF L'Indomptable*",
+        "cn_name": "不屈",
+        "tw_name": "不屈*",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.5,
+            1.25,
+            1.2
+        ],
+        "reload": [
+            76,
+            529,
+            0,
+            57,
+            0
+        ],
+        "date": "2022年06月30日"
     },
     "901120": {
         "nationality": 9,
@@ -5739,7 +5839,7 @@ const ship_data = {
         ],
         "id": 699014,
         "skin_id": 699010,
-        "english_name": "RN Marco Polo !TWnoData",
+        "english_name": "RN Marco Polo",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -5748,7 +5848,7 @@ const ship_data = {
         "jp_name": "マルコ・ポーロ",
         "en_name": "Marco Polo",
         "cn_name": "马可波罗",
-        "tw_name": "馬可波羅*",
+        "tw_name": "馬可波羅",
         "equip_1": [
             4
         ],
@@ -7357,7 +7457,7 @@ const ship_data = {
         ],
         "id": 499054,
         "skin_id": 499050,
-        "english_name": "KMS Agir !TWnoData",
+        "english_name": "KMS Agir",
         "star": 6,
         "rarity": 6,
         "retro": 0,
@@ -7366,7 +7466,7 @@ const ship_data = {
         "jp_name": "エーギル",
         "en_name": "Ägir",
         "cn_name": "埃吉尔",
-        "tw_name": "埃吉爾*",
+        "tw_name": "埃吉爾",
         "equip_1": [
             3,
             11
@@ -7995,7 +8095,7 @@ const ship_data = {
         ],
         "id": 499064,
         "skin_id": 499060,
-        "english_name": "KMS August von Parseval !TWnoData",
+        "english_name": "KMS August von Parseval",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -8004,7 +8104,7 @@ const ship_data = {
         "jp_name": "アウグスト・フォン・パーセヴァル",
         "en_name": "August von Parseval",
         "cn_name": "奥古斯特·冯·帕塞瓦尔",
-        "tw_name": "奧古斯特·馮·帕塞瓦爾*",
+        "tw_name": "奧古斯特·馮·帕塞瓦爾",
         "equip_1": [
             7
         ],
@@ -11272,7 +11372,7 @@ const ship_data = {
         ],
         "id": 399054,
         "skin_id": 399050,
-        "english_name": "IJN Hakuryu !TWnoData",
+        "english_name": "IJN Hakuryu",
         "star": 6,
         "rarity": 6,
         "retro": 0,
@@ -11281,7 +11381,7 @@ const ship_data = {
         "jp_name": "白龍",
         "en_name": "Hakuryuu",
         "cn_name": "白龙",
-        "tw_name": "白龍*",
+        "tw_name": "白龍",
         "equip_1": [
             7,
             8
@@ -21824,6 +21924,57 @@ const ship_data = {
         ],
         "date": "2018年04月26日"
     },
+    "202320": {
+        "nationality": 2,
+        "type": 2,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 202324,
+        "skin_id": 202320,
+        "english_name": "HMS Enterprise !ENnoData !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "202320",
+        "painting": "jinqu",
+        "jp_name": "エンタープライズ",
+        "en_name": "HMS Enterprise*",
+        "cn_name": "进取",
+        "tw_name": "進取*",
+        "equip_1": [
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.35,
+            1.55,
+            1
+        ],
+        "reload": [
+            68,
+            475,
+            0,
+            51,
+            0
+        ],
+        "date": "2022年06月30日"
+    },
     "202310": {
         "nationality": 2,
         "type": 2,
@@ -27888,7 +28039,7 @@ const ship_data = {
         ],
         "id": 199034,
         "skin_id": 199030,
-        "english_name": "USS Anchorage !TWnoData",
+        "english_name": "USS Anchorage",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -27897,7 +28048,7 @@ const ship_data = {
         "jp_name": "アンカレッジ",
         "en_name": "Anchorage",
         "cn_name": "安克雷奇",
-        "tw_name": "安克雷奇*",
+        "tw_name": "安克拉治",
         "equip_1": [
             3
         ],

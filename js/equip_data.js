@@ -1797,7 +1797,7 @@ const equip_data = {
         ],
         "jp_name": "試作型三連装305mmSKC39主砲(超巡)",
         "cn_name": "试作型三联装305mmSKC39主炮(超巡用)",
-        "tw_name": "試作型三聯裝305mmSKC39主炮(超巡用)*",
+        "tw_name": "試作型三聯裝305mmSKC39主炮(超巡用)",
         "en_name": "Prototype Triple 305mm SK C/39 Main Gun",
         "equip_limit": 0,
         "cd": [
@@ -2168,6 +2168,36 @@ const equip_data = {
         "cn_name": "晃悠悠",
         "tw_name": "晃悠悠*",
         "en_name": "Pyoko-Pyoko",
+        "equip_limit": 0,
+        "cd": []
+    },
+    "91260": {
+        "nationality": 10,
+        "type": 10,
+        "rarity": 5,
+        "tech": 0,
+        "id": 91260,
+        "icon": "51260",
+        "ship_type_forbidden": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            8,
+            11,
+            12,
+            13,
+            17,
+            18,
+            19,
+            20,
+            21
+        ],
+        "jp_name": "アイリス天使の羽根",
+        "cn_name": "天使之羽",
+        "tw_name": "天使之羽*",
+        "en_name": "(no DATA)",
         "equip_limit": 0,
         "cd": []
     },
@@ -2851,6 +2881,35 @@ const equip_data = {
         "tw_name": "海軍部火控臺*",
         "en_name": "Admiralty Fire Control Table",
         "equip_limit": 1260,
+        "cd": []
+    },
+    "1060": {
+        "nationality": 2,
+        "type": 10,
+        "rarity": 5,
+        "tech": 0,
+        "id": 1060,
+        "icon": "1060",
+        "ship_type_forbidden": [
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            11,
+            12,
+            17,
+            18,
+            19,
+            20,
+            21
+        ],
+        "jp_name": "6CRH徹甲弾",
+        "cn_name": "6CRH穿甲弹",
+        "tw_name": "6CRH穿甲彈*",
+        "en_name": "(no DATA)",
+        "equip_limit": 1060,
         "cd": []
     },
     "1260": {
@@ -4535,7 +4594,7 @@ const equip_data = {
         ],
         "jp_name": "試作型天雷(特別計画艦仕様)",
         "cn_name": "试作舰载型天雷",
-        "tw_name": "試作艦載型天雷*",
+        "tw_name": "試作艦載型天雷",
         "en_name": "Prototype Tenrai",
         "equip_limit": 0,
         "cd": [
@@ -5339,6 +5398,38 @@ const equip_data = {
             2207
         ]
     },
+    "91240": {
+        "nationality": 8,
+        "type": 8,
+        "rarity": 5,
+        "tech": 0,
+        "id": 91240,
+        "icon": "51240",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "ブレゲー BR.810攻撃機",
+        "cn_name": "BR.810",
+        "tw_name": "BR.810*",
+        "en_name": "(no DATA)",
+        "equip_limit": 0,
+        "cd": [
+            1854,
+            1819,
+            1784,
+            1749,
+            1714,
+            1679,
+            1644,
+            1609,
+            1574,
+            1539,
+            1504,
+            1504,
+            1504,
+            1504
+        ]
+    },
     "90840": {
         "nationality": 8,
         "type": 8,
@@ -5465,7 +5556,7 @@ const equip_data = {
         ],
         "jp_name": "試作型彩雲(艦攻型・特別計画艦仕様)",
         "cn_name": "试作型彩云(舰攻型)",
-        "tw_name": "試作型彩雲(艦攻型)*",
+        "tw_name": "試作型彩雲(艦攻型)",
         "en_name": "Prototype Saiun Kai",
         "equip_limit": 0,
         "cd": [
@@ -6385,6 +6476,36 @@ const equip_data = {
             2310
         ]
     },
+    "91220": {
+        "nationality": 8,
+        "type": 7,
+        "rarity": 4,
+        "tech": 0,
+        "id": 91220,
+        "icon": "51220",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "ドボワチン D.790戦闘機",
+        "cn_name": "D.790",
+        "tw_name": "D.790*",
+        "en_name": "(no DATA)",
+        "equip_limit": 0,
+        "cd": [
+            1585,
+            1562,
+            1539,
+            1516,
+            1493,
+            1470,
+            1447,
+            1424,
+            1401,
+            1378,
+            1355,
+            1355
+        ]
+    },
     "90820": {
         "nationality": 8,
         "type": 7,
@@ -6607,7 +6728,7 @@ const equip_data = {
         ],
         "jp_name": "試作型BF-109G(特別計画艦仕様)",
         "cn_name": "试作舰载型BF-109G",
-        "tw_name": "試作艦載型BF-109G*",
+        "tw_name": "試作艦載型BF-109G",
         "en_name": "Prototype BF-109G",
         "equip_limit": 0,
         "cd": [
@@ -8370,7 +8491,7 @@ const equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "試作型90mm連装高角砲Model1939",
         "cn_name": "试作型双联90mm高角炮Model1939",
-        "tw_name": "試作型雙聯90mm高角炮Model1939*",
+        "tw_name": "試作型雙聯90mm高角炮Model1939",
         "en_name": "Prototype Twin 90mm Model 1939 High Angle Gun",
         "equip_limit": 0,
         "cd": [
@@ -11953,7 +12074,7 @@ const equip_data = {
         ],
         "jp_name": "試作型三連装406mm主砲Model1940",
         "cn_name": "试作型三联装406mm主炮Model1940",
-        "tw_name": "試作型三聯裝406mm主炮Model1940*",
+        "tw_name": "試作型三聯裝406mm主炮Model1940",
         "en_name": "Prototype Triple 406mm Model 1940 Main Gun",
         "equip_limit": 0,
         "cd": [
