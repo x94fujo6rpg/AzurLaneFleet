@@ -2197,7 +2197,7 @@ const equip_data = {
         "jp_name": "アイリス天使の羽根",
         "cn_name": "天使之羽",
         "tw_name": "天使之羽*",
-        "en_name": "(no DATA)",
+        "en_name": "Angel's Feather",
         "equip_limit": 0,
         "cd": []
     },
@@ -2908,7 +2908,7 @@ const equip_data = {
         "jp_name": "6CRH徹甲弾",
         "cn_name": "6CRH穿甲弹",
         "tw_name": "6CRH穿甲彈*",
-        "en_name": "(no DATA)",
+        "en_name": "6CRH AP Shell",
         "equip_limit": 1060,
         "cd": []
     },
@@ -5411,7 +5411,7 @@ const equip_data = {
         "jp_name": "ブレゲー BR.810攻撃機",
         "cn_name": "BR.810",
         "tw_name": "BR.810*",
-        "en_name": "(no DATA)",
+        "en_name": "Bréguet BR.810",
         "equip_limit": 0,
         "cd": [
             1854,
@@ -6489,7 +6489,7 @@ const equip_data = {
         "jp_name": "ドボワチン D.790戦闘機",
         "cn_name": "D.790",
         "tw_name": "D.790*",
-        "en_name": "(no DATA)",
+        "en_name": "Dewoitine D.790",
         "equip_limit": 0,
         "cd": [
             1585,
