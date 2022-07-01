@@ -18,6 +18,8 @@ const
         { id: "display_fleet_op", en: "Edit Button/ID", jp: "編集ボタン表示", tw: "顯示編輯" },
         { id: "frame_setting", en: "Thick frame", jp: "厚いフレーム", tw: "粗框" },
         { id: "display_sp_weapon", en: "Show Augment", jp: "特殊装備表示", tw: "顯示特殊兵裝" },
+        { id: "info_clean", en: "Clean", jp: "簡易", tw: "簡易" },
+        { id: "info_detail", en: "Detail", jp: "詳細", tw: "詳細" },
 
         { id: "add_fleet", en: "Save Current", jp: "現在の艦隊をセーブ", tw: "儲存目前艦隊", },
         { id: "select_fleet", en: "Select Fleet", jp: "艦隊を選択", tw: "選擇艦隊", },
@@ -223,6 +225,7 @@ const
         techData: "techData",
         resetDB: "resetDB",
         showSP: "showSP",
+        showDetail: "showDetail",
     },
     util = {
         sleep(ms = 0) {
@@ -663,6 +666,8 @@ const
                 document.querySelectorAll("[ui_text='true']").forEach(ui_ele => {
                     if (ui_ele.id.includes("affinity_")) {
                         ui_ele.parentElement.childNodes[1].textContent = ui_ele.getAttribute(`ui_${key}`);
+                    } else if (ui_ele.type == "radio") {
+                        ui_ele.parentElement.childNodes[2].textContent = ui_ele.getAttribute(`ui_${key}`);
                     } else {
                         if (ui_ele.tagName == "INPUT") {
                             ui_ele.placeholder = ui_ele.getAttribute(`ui_${key}`);
@@ -673,6 +678,17 @@ const
                 });
                 if (ele instanceof HTMLElement) LS.userSetting.set(settingKey.language, language);
                 this.adjustEle();
+            },
+            setDetailInfo(ele) {
+                let key = ele.id,
+                    sw = {
+                        ui_clean: false,
+                        ui_detail: true,
+                    },
+                    key_not_found = sw[key] == undefined;
+                if (key_not_found) throw Error("unknown key");
+                ALF.ui_settings.show_detail = sw[key];
+                if (ele instanceof HTMLElement) LS.userSetting.set(settingKey.showDetail, sw[key] ? 1 : 0);
             },
             switchLayout(ele, same = false) {
                 switch (ele.textContent) {
@@ -709,7 +725,7 @@ const
             frameSize(ele) {
                 $(ele).button("toggle");
                 // firefox doesn't support ".ariaPressed" https://caniuse.com/?search=ariaPressed
-                let thicc = ele.getAttribute("aria-pressed") == "true" ? true : false,
+                let thicc = ele.getAttribute("aria-pressed") == "true",
                     location = window.location.href,
                     reg = /b+\.png/, done = 0, fail = 0;
 
@@ -745,8 +761,8 @@ const
             },
             displayOP(ele) {
                 $(ele).button("toggle");
-                let display = ele.classList.contains("active") ? true : false;
-                ALF.show_op = display;
+                let display = ele.classList.contains("active");
+                ALF.ui_settings.show_op = display;
                 LS.userSetting.set(settingKey.fleetEdit, display ? 1 : 0);
             },
             displayBorder(ele) {
@@ -793,7 +809,7 @@ const
             displaySpWeapon(ele) {
                 $(ele).button("toggle");
                 let display = ele.classList.contains("active");
-                ALF.show_sp = display;
+                ALF.ui_settings.show_sp = display;
                 LS.userSetting.set(settingKey.showSP, display ? 1 : 0);
             },
             adjustEle() {
@@ -3527,17 +3543,10 @@ const
                     app.option.switchLayout(layoutSwitch, true);
                 }
 
-                if (setting[settingKey.fleetEdit] == 1 || !setting[settingKey.fleetEdit]) {
-                    document.querySelector("#display_fleet_op").click();
-                }
-
-                if (setting[settingKey.fleetBorder] == 1 || !setting[settingKey.fleetEdit]) {
-                    document.querySelector("#display_fleet_border").click();
-                }
-
-                if (setting[settingKey.showSP] == 1 || !setting[settingKey.showSP]) {
-                    document.querySelector("#display_sp_weapon").click();
-                }
+                setValue(settingKey.fleetEdit, "display_fleet_op");
+                setValue(settingKey.fleetBorder, "display_fleet_border");
+                setValue(settingKey.showSP, "display_sp_weapon");
+                setValue(settingKey.showDetail, "ui_detail", () => document.getElementById("ui_clean").click());
 
                 if (setting[settingKey.ownedItem]) {
                     app.action.loadOwnedSetting();
@@ -3549,6 +3558,16 @@ const
                 }
 
                 return true;
+
+                function setValue(key, ui_id, default_behavior) {
+                    if (setting[key] == 1 || !setting[key]) {
+                        document.getElementById(ui_id).click();
+                    } else {
+                        if (default_behavior) {
+                            default_behavior();
+                        }
+                    }
+                }
             }
 
             async function loadStorage() {
@@ -3996,27 +4015,52 @@ let
 
 //----------------------------------------------------------
 Vue.component("item-container", {
-    props: ["item", "lang", "show_sp"],
+    props: ["item", "lang", "ui_settings"],
     template: `
         <button class="p-1 item_container" onclick="app.util.setCurrent(this)" data-toggle="modal"
           v-bind:name="item.id"
           v-bind:pos="item.property.pos"
           v-bind:data-target="item.property.target"
-          v-if="item.id.slice(-1)<6 || show_sp"
+          v-if="item.id.slice(-1)<6 || ui_settings.show_sp"
           >
             <div class="container-fluid p-0 box">
               <div class="icon_box">
                 <img class="img-fluid bg" v-bind:src="item.property.bg">
                 <img class="img-fluid frame" v-bind:src="item.property.frame">
                 <img class="img-fluid icon" v-bind:src="item.property.icon">
-                <span class="itemq text_shadow" v-text="item.property.quantity" v-if="item.property.quantity"></span>
-                <span class="ship_pos2" v-text="item.property.ship_pos" v-if="item.property.ship_pos"></span>
-                <span class="ship_level" v-text="item.property.ship_level" v-if="item.property.bg && (item.property.ship_level > 0)"></span>
-                <span class="ship_affinity text_shadow" v-text="item.property.affinity_value" v-if="item.property.bg && (item.property.affinity_value > 1)"></span>
-                <span class="equip_level" v-text="'+'+item.property.equip_level" v-if="item.property.bg && (item.property.equip_level > 0)"></span>
-                <span class="equip_proficiency text_shadow" v-text="item.property.proficiency+'%'" v-if="item.property.quantity && item.property.proficiency" v-bind:style="item.property.style"></span>
-                <span class="equip_cd text_shadow" v-text="item.property.cd_cache+'s'" v-if="item.property.bg && (item.property.cd_cache > 0)"></span>
-                <span class="spweapon_level" v-text="'+'+item.property.spweapon_level" v-if="item.property.bg && (item.property.spweapon_level > 0)"></span>
+                <span class="itemq text_shadow"
+                    v-text="item.property.quantity"
+                    v-if="item.property.quantity && ui_settings.show_detail">
+                </span>
+                <span class="ship_pos2"
+                    v-text="item.property.ship_pos"
+                    v-if="item.property.ship_pos">
+                </span>
+                <span class="ship_level"
+                    v-text="item.property.ship_level"
+                    v-if="item.property.bg && (item.property.ship_level > 0) && ui_settings.show_detail">
+                </span>
+                <span class="ship_affinity text_shadow"
+                    v-text="item.property.affinity_value"
+                    v-if="item.property.bg && (item.property.affinity_value > 1) && ui_settings.show_detail">
+                </span>
+                <span class="equip_level"
+                    v-text="'+'+item.property.equip_level"
+                    v-if="item.property.bg && (item.property.equip_level > 0) && ui_settings.show_detail">
+                </span>
+                <span class="equip_proficiency text_shadow"
+                    v-text="item.property.proficiency+'%'"
+                    v-bind:style="item.property.style"
+                    v-if="item.property.quantity && item.property.proficiency && ui_settings.show_detail">
+                </span>
+                <span class="equip_cd text_shadow"
+                    v-text="item.property.cd_cache+'s'"
+                    v-if="item.property.bg && (item.property.cd_cache > 0) && ui_settings.show_detail">
+                </span>
+                <span class="spweapon_level"
+                    v-text="'+'+item.property.spweapon_level"
+                    v-if="item.property.bg && (item.property.spweapon_level > 0) && ui_settings.show_detail">
+                </span>
               </div>
               <span class="item_name" v-text="item.property[lang]"></span>
             </div>
@@ -4026,7 +4070,7 @@ Vue.component("item-container", {
 
 //col
 Vue.component("ship-container", {
-    props: ["ship", "lang", "show_sp"],
+    props: ["ship", "lang", "ui_settings"],
     template: `
         <div class="ship_container">
             <item-container
@@ -4034,7 +4078,7 @@ Vue.component("ship-container", {
                 v-bind:key="item.id"
                 v-bind:item="item"
                 v-bind:lang="lang"
-                v-bind:show_sp="show_sp"
+                v-bind:ui_settings="ui_settings"
             ></item-container>
         </div>
     `
@@ -4058,10 +4102,10 @@ const
         swap_copy: path(dynamicFleet.swapPos.name),
     };
 Vue.component("fleet-container", {
-    props: ["fleet", "lang", "show_op", "show_sp", "class_data", "ui_text"],
+    props: ["fleet", "lang", "ui_settings", "class_data", "ui_text"],
     template: `
         <div v-bind:class="class_data.fleet_box_o">
-            <div class="fleet_op_box" v-if="show_op">
+            <div class="fleet_op_box" v-if="ui_settings.show_op">
                 <div class="d-flex line-5-item">
                     <div class="w-25 text-monospace text-center m-auto fleet_name" v-text="fleet.id">Fleet_ID</div>
                     <button class="${fleet_btn_style.copy}" v-bind:pos="fleet.id" onclick="${action.copy}" v-text="ui_text.copy_fleet[lang]">CopyFleet</button>
@@ -4100,7 +4144,7 @@ Vue.component("fleet-container", {
                         v-bind:ship="back"
                         v-bind:name="back.id"
                         v-bind:lang="lang"
-                        v-bind:show_sp="show_sp"
+                        v-bind:ui_settings="ui_settings"
                     ></ship-container>
                 </div>
                 <div class="flex-col fleet_side_box" v-if="fleet.front">
@@ -4110,7 +4154,7 @@ Vue.component("fleet-container", {
                         v-bind:ship="front"
                         v-bind:name="front.id"
                         v-bind:lang="lang"
-                        v-bind:show_sp="show_sp"
+                        v-bind:ui_settings="ui_settings"
                     ></ship-container>
                 </div>
                 <div class="flex-col fleet_side_box" v-if="fleet.sub">
@@ -4120,7 +4164,7 @@ Vue.component("fleet-container", {
                         v-bind:ship="sub"
                         v-bind:name="sub.id"
                         v-bind:lang="lang"
-                        v-bind:show_sp="show_sp"
+                        v-bind:ui_settings="ui_settings"
                     ></ship-container>
                 </div>
             </div>
@@ -4156,8 +4200,11 @@ const
         data: {
             fleets: fleetData,
             lang: language,
-            show_op: false,
-            show_sp: false,
+            ui_settings: {
+                show_op: false,
+                show_sp: false,
+                show_detail: false,
+            },
             class_data: {
                 app_box: appClassData.app_box.h,
                 fleet_box_o: appClassData.fleet_box_o.h,

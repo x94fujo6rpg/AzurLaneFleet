@@ -16,8 +16,11 @@ Generate shareable text codes or links.
 
 ## Update  
 **2022-07-01**
-- if you don't need `augment slot`, now can hide it in `settings > Show Augment` (default: on)
-- it still exist, just invisible
+- switch for `augment slot` (default: on)
+  - hide it in `settings > Show Augment`
+- switch for `detail info` (default: on)
+  - `settings > Clean / Detail`
+  - ![](https://i.imgur.com/lIBI8BN.png)
 
 **2022-06-25**
 - support augment now

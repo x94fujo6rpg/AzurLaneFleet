@@ -28,7 +28,7 @@
     <link rel="prefetch" href="js/ship_data.min.js?v=7bc441ebdf1b" as="script">
     <link rel="prefetch" href="js/equip_data.min.js?v=c92015757f11" as="script">
     <link rel="prefetch" href="js/sp_weapon_data.min.js?v=afdbc7eee9b5" as="script">
-    <link rel="prefetch" href="js/main-v2.min.js?v=9c3e633c6f2d" as="script">
+    <link rel="prefetch" href="js/main-v2.min.js?v=b302d461bd45" as="script">
     <style>
         body {
             color: white;
@@ -497,10 +497,18 @@
                     <button class="btn btn-secondary line-3-item border-left border-right" type="button" id="layout_setting" onclick="app.option.switchLayout(this)">Horizontal</button>
                     <button class="btn btn-outline-secondary line-3-item border-left" type="button" id="frame_setting" onclick="app.option.frameSize(this)">Thick frame</button>
                 </div>
-                <div class="btn-group d-flex my-3 mx-auto w-25" id="option_box_2">
+                <div class="btn-group d-flex mt-3 mx-auto w-25" id="option_box_2">
                     <button class="btn btn-outline-secondary line-3-item border-right" type="button" id="display_fleet_op" onclick="app.option.displayOP(this)">Fleet ID / Edit Button</button>
                     <button class="btn btn-outline-secondary line-3-item border-left border-right" type="button" id="display_fleet_border" onclick="app.option.displayBorder(this)">Fleet Border</button>
                     <button class="btn btn-outline-secondary line-3-item border-left" type="button" id="display_sp_weapon" onclick="app.option.displaySpWeapon(this)">Show Augment</button>
+                </div>
+                <div class="btn-group btn-group-toggle d-flex w-25 my-3 mx-auto" data-toggle="buttons" id="ui_detail_setting">
+                    <label class="btn btn-outline-secondary font-weight-bold w-100 active" id="ui_clean" onclick="app.option.setDetailInfo(this)">
+                        <input type="radio" name="detail_info" ui_id="info_clean" checked>Clean
+                    </label>
+                    <label class="btn btn-outline-secondary font-weight-bold w-100" id="ui_detail" onclick="app.option.setDetailInfo(this)">
+                        <input type="radio" name="detail_info" ui_id="info_detail">Detail
+                    </label>
                 </div>
                 <div class="d-grid mx-auto my-1 w-25 data_container" id="owned_data_area">
                     <button id="owned_data_title" class="btn btn-outline-info d-flex mx-auto my-2 justify-content-center" type="button" data-toggle="collapse" data-target="#owned_data_area_expand" aria-expanded="false" aria-controls="owned_data_area_expand">
@@ -555,7 +563,7 @@
             </div>
         </div>
         <div id="AzurLaneFleetApp" class="d-flex flex-column w-75 m-auto app_box">
-            <fleet-container v-for="fleet in fleets" v-bind:key="fleet.id" v-bind:show_op="show_op" v-bind:show_sp="show_sp" v-bind:fleet="fleet" v-bind:name="fleet.id" v-bind:lang="lang" v-bind:class_data="class_data" v-bind:ui_text="ui_text">
+            <fleet-container v-for="fleet in fleets" v-bind:key="fleet.id" v-bind:ui_settings="ui_settings" v-bind:fleet="fleet" v-bind:name="fleet.id" v-bind:lang="lang" v-bind:class_data="class_data" v-bind:ui_text="ui_text">
             </fleet-container>
         </div>
         <div class="d-flex mx-auto my-5" id="empty_fleet">
@@ -833,7 +841,7 @@
     <script src='js/ship_data.min.js?v=7bc441ebdf1b'></script>
     <script src='js/equip_data.min.js?v=c92015757f11'></script>
     <script src='js/sp_weapon_data.min.js?v=afdbc7eee9b5'></script>
-    <script src="js/main-v2.min.js?v=9c3e633c6f2d"></script>
+    <script src="js/main-v2.min.js?v=b302d461bd45"></script>
 </body>
 
 </html>
