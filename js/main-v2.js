@@ -26,6 +26,7 @@ const
         { id: "display_info_efficiency", en: "Efficiency", jp: "補正", tw: "效率" },
         { id: "display_info_base", en: "Base", jp: "武器数", tw: "底座數" },
         { id: "display_info_cd", en: "CD", jp: "攻速", tw: "射速" },
+        { id: "compact_mode", en: "Compact Mode", jp: "コンパクトモード", tw: "緊湊模式" },
 
         { id: "add_fleet", en: "Save Current", jp: "現在の艦隊をセーブ", tw: "儲存目前艦隊", },
         { id: "select_fleet", en: "Select Fleet", jp: "艦隊を選択", tw: "選擇艦隊", },
@@ -238,6 +239,7 @@ const
         show_pf: "show_pf",
         show_cd: "show_cd",
         show_quantity: "show_quantity",
+        compactMode: "compactMode",
     },
     util = {
         sleep(ms = 0) {
@@ -710,6 +712,47 @@ const
                 ALF.ui_settings[key] = is_active;
                 if (ele instanceof HTMLElement) LS.userSetting.set(settingKey[key], is_active);
             },
+            compactMode(ele) {
+                let is_active,
+                    list = {
+                        item_container: "compact_item_container",
+                        fleet_side_box: "compact_side_box",
+                        item_name: "compact_item_name",
+                    };
+                $(ele).button("toggle");
+                is_active = ele.classList.contains("active") ? 1 : 0;
+                if (is_active) {
+                    updateClass(list, addClass);
+                } else {
+                    updateClass(list, subClass);
+                }
+                if (ele instanceof HTMLElement) LS.userSetting.set(settingKey.compactMode, is_active);
+
+                function updateClass(list, method) {
+                    let current_layout = ALF.class_data.current;
+                    Object.keys(list).forEach(key => {
+                        method(appClassData[key], list[key], current_layout, key);
+                    });
+                }
+
+                function addClass(class_data, class_str, set_layout, target_key) {
+                    Object.keys(class_data).forEach(layout => {
+                        class_data[layout] = `${class_data[layout]} ${class_str}`;
+                        if (layout == set_layout) {
+                            ALF.class_data[target_key] = class_data[layout];
+                        }
+                    });
+                }
+
+                function subClass(class_data, class_str, set_layout, target_key) {
+                    Object.keys(class_data).forEach(layout => {
+                        class_data[layout] = class_data[layout].replace(` ${class_str}`, "");
+                        if (layout == set_layout) {
+                            ALF.class_data[target_key] = class_data[layout];
+                        }
+                    });
+                }
+            },
             switchLayout(ele, same = false) {
                 switch (ele.textContent) {
                     case layout_list.h:
@@ -729,6 +772,7 @@ const
                 function setLayout(current, next) {
                     changeClass(same ? current : next);
                     ele.textContent = layout_list[same ? current : next];
+                    ALF.class_data.current = current;
                 }
 
                 function changeClass(classKey = "") {
@@ -3162,6 +3206,7 @@ const
                             return true;
                         }
                     })(),
+                    count = 0,
                     bp = ["MTA4MDIw", "MjgzNDA="].reduce((a, b) => (a.push(parseInt(atob(b))), a), []);
                 await addProgressBar("add_img", "Setup Events & Icons", max, progress);
                 for (let obj of list) {
@@ -3171,13 +3216,14 @@ const
                             threshold: 0.5,
                         }) : false,
                         i = list.findIndex(o => o == obj);
+
                     obj.list.forEach((item, index) => {
-                        process(item, progress, obj.onclick, obj.type, index, item.id != bp[i] ? iob : false);
+                        process(item, progress, obj.onclick, obj.type, index, item.id != bp[i] ? iob : false, count++);
                     });
                 }
                 console.timeEnd("addClickEventAndImg");
 
-                function process(item, progress, onclick, type, index, iob) {
+                function process(item, progress, onclick, type, index, iob, count) {
                     return setTimeout(() => {
                         let btn = document.getElementById(item.id),
                             icon = btn.querySelector(".icon"); // 1-layer: querySelector 12% slower / 3-layer: children 25% slower
@@ -3189,7 +3235,7 @@ const
                         }
                         btn.onclick = function () { onclick(this); };
                         progress.update();
-                    });
+                    }, count);
                 }
 
                 function iconObserver(entries, observer) {
@@ -3581,6 +3627,10 @@ const
                     app.action.loadOwnedSetting();
                 }
 
+                if (setting[settingKey.compactMode] == 1) {
+                    setTimeout(() => document.getElementById("compact_mode").click());
+                }
+
                 if (setting[settingKey.thickFrame] == 1) {
                     let ele = document.getElementById("frame_setting");
                     setTimeout(() => app.option.frameSize(ele), 3000);
@@ -3930,7 +3980,7 @@ const
     appClassData = {
         app_box: {
             h: "app_box d-flex flex-column w-100 m-auto", // container mw-100 / d-flex flex-column w-100 m-auto
-            v: "app_box row justify-content-center py-1 px-5 m-0",
+            v: "app_box row justify-content-center py-1 px-5 m-auto d-grid grid-2item", // app_box row justify-content-center py-1 px-5 m-0
             v2: "app_box d-table justify-content-center m-auto"
         },
         fleet_box_o: {
@@ -3942,6 +3992,21 @@ const
             h: "fleet_box_i row m-2",
             v: "fleet_box_i col p-0", // m-2
             v2: "fleet_box_i col p-0" // m-2
+        },
+        item_container: {
+            h: "p-1 item_container",
+            v: "p-1 item_container",
+            v2: "p-1 item_container",
+        },
+        fleet_side_box: {
+            h: "flex-col fleet_side_box",
+            v: "flex-col fleet_side_box",
+            v2: "flex-col fleet_side_box",
+        },
+        item_name: {
+            h: "item_name",
+            v: "item_name",
+            v2: "item_name",
         }
     },
     layout_list = {
@@ -4049,14 +4114,15 @@ let
 
 //----------------------------------------------------------
 Vue.component("item-container", {
-    props: ["item", "lang", "ui_settings"],
+    props: ["item", "lang", "ui_settings", "class_data"],
     template: `
-        <button class="p-1 item_container" onclick="app.util.setCurrent(this)" data-toggle="modal"
-          v-bind:name="item.id"
-          v-bind:pos="item.property.pos"
-          v-bind:data-target="item.property.target"
-          v-if="item.id.slice(-1)<6 || ui_settings.show_sp"
-          >
+        <button onclick="app.util.setCurrent(this)" data-toggle="modal"
+            v-bind:class="class_data.item_container"
+            v-bind:name="item.id"
+            v-bind:pos="item.property.pos"
+            v-bind:data-target="item.property.target"
+            v-if="item.id.slice(-1)<6 || ui_settings.show_sp"
+        >
             <div class="container-fluid p-0 box">
               <div class="icon_box">
                 <img class="img-fluid bg" v-bind:src="item.property.bg">
@@ -4096,7 +4162,7 @@ Vue.component("item-container", {
                     v-if="item.property.bg && (item.property.spweapon_level > 0) && ui_settings.show_level">
                 </span>
               </div>
-              <span class="item_name" v-text="item.property[lang]"></span>
+              <span v-bind:class="class_data.item_name" v-text="item.property[lang]"></span>
             </div>
         </button>
     `
@@ -4104,7 +4170,7 @@ Vue.component("item-container", {
 
 //col
 Vue.component("ship-container", {
-    props: ["ship", "lang", "ui_settings"],
+    props: ["ship", "lang", "ui_settings", "class_data"],
     template: `
         <div class="ship_container">
             <item-container
@@ -4113,6 +4179,7 @@ Vue.component("ship-container", {
                 v-bind:item="item"
                 v-bind:lang="lang"
                 v-bind:ui_settings="ui_settings"
+                v-bind:class_data="class_data"
             ></item-container>
         </div>
     `
@@ -4171,7 +4238,7 @@ Vue.component("fleet-container", {
                 </div>
             </div>
             <div v-bind:class="class_data.fleet_box_i">
-                <div class="flex-col fleet_side_box" v-if="fleet.back">
+                <div v-bind:class="class_data.fleet_side_box" v-if="fleet.back">
                     <ship-container
                         v-for="back in fleet.back"
                         v-bind:key="back.id"
@@ -4179,9 +4246,10 @@ Vue.component("fleet-container", {
                         v-bind:name="back.id"
                         v-bind:lang="lang"
                         v-bind:ui_settings="ui_settings"
+                        v-bind:class_data="class_data"
                     ></ship-container>
                 </div>
-                <div class="flex-col fleet_side_box" v-if="fleet.front">
+                <div v-bind:class="class_data.fleet_side_box" v-if="fleet.front">
                     <ship-container
                         v-for="front in fleet.front"
                         v-bind:key="front.id"
@@ -4189,9 +4257,10 @@ Vue.component("fleet-container", {
                         v-bind:name="front.id"
                         v-bind:lang="lang"
                         v-bind:ui_settings="ui_settings"
+                        v-bind:class_data="class_data"
                     ></ship-container>
                 </div>
-                <div class="flex-col fleet_side_box" v-if="fleet.sub">
+                <div v-bind:class="class_data.fleet_side_box" v-if="fleet.sub">
                     <ship-container
                         v-for="sub in fleet.sub"
                         v-bind:key="sub.id"
@@ -4199,6 +4268,7 @@ Vue.component("fleet-container", {
                         v-bind:name="sub.id"
                         v-bind:lang="lang"
                         v-bind:ui_settings="ui_settings"
+                        v-bind:class_data="class_data"
                     ></ship-container>
                 </div>
             </div>
@@ -4245,9 +4315,13 @@ const
                 show_quantity: 0,
             },
             class_data: {
+                current: "h",
                 app_box: appClassData.app_box.h,
                 fleet_box_o: appClassData.fleet_box_o.h,
                 fleet_box_i: appClassData.fleet_box_i.h,
+                item_container: appClassData.item_container.h,
+                fleet_side_box: appClassData.fleet_side_box.h,
+                item_name: appClassData.item_name.h,
             },
             ui_text: vue_ui_text
         },

@@ -15,6 +15,12 @@ Generate shareable text codes or links.
   - [fleetdata version](#fleetdata-version)
 
 ## Update  
+**2022-07-03**
+- compact mode
+  - `Settings > Detail Info > Compact Mode`
+  - ![](https://i.imgur.com/7ozjKPd.png)
+- fix/change layout `Vertical 1`
+
 **2022-07-02**
 - switch for `Level` `Affinity` `Position` `Efficiency` `Base` `CD` info
 
