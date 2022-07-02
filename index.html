@@ -28,7 +28,7 @@
     <link rel="prefetch" href="js/ship_data.min.js?v=7bc441ebdf1b" as="script">
     <link rel="prefetch" href="js/equip_data.min.js?v=c92015757f11" as="script">
     <link rel="prefetch" href="js/sp_weapon_data.min.js?v=afdbc7eee9b5" as="script">
-    <link rel="prefetch" href="js/main-v2.min.js?v=b302d461bd45" as="script">
+    <link rel="prefetch" href="js/main-v2.min.js?v=6203092cd1a5" as="script">
     <style>
         body {
             color: white;
@@ -502,15 +502,26 @@
                     <button class="btn btn-outline-secondary line-3-item border-left border-right" type="button" id="display_fleet_border" onclick="app.option.displayBorder(this)">Fleet Border</button>
                     <button class="btn btn-outline-secondary line-3-item border-left" type="button" id="display_sp_weapon" onclick="app.option.displaySpWeapon(this)">Show Augment</button>
                 </div>
-                <div class="btn-group btn-group-toggle d-flex w-25 my-3 mx-auto" data-toggle="buttons" id="ui_detail_setting">
-                    <label class="btn btn-outline-secondary font-weight-bold w-100 active" id="ui_clean" onclick="app.option.setDetailInfo(this)">
-                        <input type="radio" name="detail_info" ui_id="info_clean" checked>Clean
-                    </label>
-                    <label class="btn btn-outline-secondary font-weight-bold w-100" id="ui_detail" onclick="app.option.setDetailInfo(this)">
-                        <input type="radio" name="detail_info" ui_id="info_detail">Detail
-                    </label>
-                </div>
-                <div class="d-grid mx-auto my-1 w-25 data_container" id="owned_data_area">
+                <div class="d-grid mx-auto my-3 w-25 data_container" id="owned_data_area">
+                    <button id="display_info_title" class="btn btn-outline-info d-flex mx-auto my-2 justify-content-center" type="button" data-toggle="collapse" data-target="#display_info_expand" aria-expanded="false" aria-controls="display_info_expand">
+                        ⮟ Detail Info
+                    </button>
+                    <div id="display_info_expand" class="collapse">
+                        <div class="btn-group d-flex my-3 mx-auto w-100" id="option_box_3">
+                            <button class="btn btn-outline-secondary line-3-item border-right" type="button" id="display_info_level" onclick="app.option.setInfo(this)">Level</button>
+                            <button class="btn btn-outline-secondary line-3-item border-left border-right" type="button" id="display_info_affinity" onclick="app.option.setInfo(this)">Affinity</button>
+                            <button class="btn btn-outline-secondary line-3-item border-left" type="button" id="display_info_position" onclick="app.option.setInfo(this)">Position</button>
+                        </div>
+                        <div class="btn-group d-flex my-3 mx-auto w-100" id="option_box_4">
+                            <button class="btn btn-outline-secondary line-3-item border-right" type="button" id="display_info_efficiency" onclick="app.option.setInfo(this)">Efficiency</button>
+                            <button class="btn btn-outline-secondary line-3-item border-left border-right" type="button" id="display_info_base" onclick="app.option.setInfo(this)">Base</button>
+                            <button class="btn btn-outline-secondary line-3-item border-left" type="button" id="display_info_cd" onclick="app.option.setInfo(this)">CD</button>
+                        </div>
+                    </div>
+                    <button id="tech_data_title" onclick="app.util.dumpTechData()" class="btn btn-outline-info d-flex mx-auto my-2 justify-content-center" type="button" data-toggle="collapse" data-target="#tech_data_area_expand" aria-expanded="false" aria-controls="tech_data_area_expand">
+                        ⮟ Tech Reload Data
+                    </button>
+                    <div id="tech_data_area_expand" class="collapse text-center"></div>
                     <button id="owned_data_title" class="btn btn-outline-info d-flex mx-auto my-2 justify-content-center" type="button" data-toggle="collapse" data-target="#owned_data_area_expand" aria-expanded="false" aria-controls="owned_data_area_expand">
                         ⮟ Owned Ship/Equip Data
                     </button>
@@ -529,10 +540,6 @@
                             <button type="button" class="btn mx-1 w-100 btn-success text-truncate" ui_id="loadOwnedSetting" onclick="app.action.loadOwnedSetting(true)">Reload Setting</button>
                         </div>
                     </div>
-                    <button id="tech_data_title" onclick="app.util.dumpTechData()" class="btn btn-outline-info d-flex mx-auto my-2 justify-content-center" type="button" data-toggle="collapse" data-target="#tech_data_area_expand" aria-expanded="false" aria-controls="tech_data_area_expand">
-                        ⮟ Tech Reload Data
-                    </button>
-                    <div id="tech_data_area_expand" class="collapse text-center"></div>
                     <button id="user_data_title" class="btn btn-outline-info d-flex mx-auto my-2 justify-content-center" type="button" data-toggle="collapse" data-target="#user_data_area_expand" aria-expanded="false" aria-controls="user_data_area_expand">
                         ⮟ User Data
                     </button>
@@ -841,7 +848,7 @@
     <script src='js/ship_data.min.js?v=7bc441ebdf1b'></script>
     <script src='js/equip_data.min.js?v=c92015757f11'></script>
     <script src='js/sp_weapon_data.min.js?v=afdbc7eee9b5'></script>
-    <script src="js/main-v2.min.js?v=b302d461bd45"></script>
+    <script src="js/main-v2.min.js?v=6203092cd1a5"></script>
 </body>
 
 </html>

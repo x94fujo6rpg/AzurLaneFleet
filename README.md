@@ -15,12 +15,14 @@ Generate shareable text codes or links.
   - [fleetdata version](#fleetdata-version)
 
 ## Update  
+**2022-07-02**
+- switch for `Level` `Affinity` `Position` `Efficiency` `Base` `CD` info
+
 **2022-07-01**
 - switch for `augment slot` (default: on)
   - hide it in `settings > Show Augment`
-- switch for `detail info` (default: on)
-  - `settings > Clean / Detail`
-  - ![](https://i.imgur.com/lIBI8BN.png)
+- ~~~switch for `detail info` (default: on)~~~
+  - ~~~`settings > Clean / Detail`~~~
 
 **2022-06-25**
 - support augment now

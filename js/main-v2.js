@@ -18,8 +18,14 @@ const
         { id: "display_fleet_op", en: "Edit Button/ID", jp: "編集ボタン表示", tw: "顯示編輯" },
         { id: "frame_setting", en: "Thick frame", jp: "厚いフレーム", tw: "粗框" },
         { id: "display_sp_weapon", en: "Show Augment", jp: "特殊装備表示", tw: "顯示特殊兵裝" },
-        { id: "info_clean", en: "Clean", jp: "簡易", tw: "簡易" },
-        { id: "info_detail", en: "Detail", jp: "詳細", tw: "詳細" },
+
+        { id: "display_info_title", en: "⮟ Detail Info", jp: "⮟ 詳細データ", tw: "⮟ 詳細資料" },
+        { id: "display_info_level", en: "Level", jp: "レベル", tw: "等級" },
+        { id: "display_info_affinity", en: "Affinity", jp: "好感度", tw: "好感度" },
+        { id: "display_info_position", en: "Position", jp: "編成位置", tw: "編成位置" },
+        { id: "display_info_efficiency", en: "Efficiency", jp: "補正", tw: "效率" },
+        { id: "display_info_base", en: "Base", jp: "武器数", tw: "底座數" },
+        { id: "display_info_cd", en: "CD", jp: "攻速", tw: "射速" },
 
         { id: "add_fleet", en: "Save Current", jp: "現在の艦隊をセーブ", tw: "儲存目前艦隊", },
         { id: "select_fleet", en: "Select Fleet", jp: "艦隊を選択", tw: "選擇艦隊", },
@@ -150,7 +156,7 @@ const
         { id: 1, cn: "驅逐", en: "Destroyer", jp: "駆逐", code: "DD", pos: "front" },
         { id: 2, cn: "輕巡", en: "Light Cruiser", jp: "軽巡", code: "CL", pos: "front" },
         { id: 3, cn: "重巡", en: "Heavy Cruiser", jp: "重巡", code: "CA", pos: "front" },
-        { id: 18, cn: "超巡", en: "Large Cruiser", jp: "超甲巡", code: "CB", pos: "front" },
+        { id: 18, cn: "超巡", en: "Large Cruiser", jp: "超巡", code: "CB", pos: "front" },
 
         { id: 4, cn: "戰巡", en: "Battle Cruiser", jp: "巡洋戦艦", code: "BC", pos: "back" },
         { id: 5, cn: "戰列", en: "Battle Ship", jp: "戦艦", code: "BB", pos: "back" },
@@ -226,6 +232,12 @@ const
         resetDB: "resetDB",
         showSP: "showSP",
         showDetail: "showDetail",
+        show_pos: "show_pos",
+        show_level: "show_level",
+        show_affinity: "show_affinity",
+        show_pf: "show_pf",
+        show_cd: "show_cd",
+        show_quantity: "show_quantity",
     },
     util = {
         sleep(ms = 0) {
@@ -679,16 +691,24 @@ const
                 if (ele instanceof HTMLElement) LS.userSetting.set(settingKey.language, language);
                 this.adjustEle();
             },
-            setDetailInfo(ele) {
-                let key = ele.id,
+            setInfo(ele) {
+                let key = ele.id.replace("display_info_", ""),
                     sw = {
-                        ui_clean: false,
-                        ui_detail: true,
+                        level: settingKey.show_level,
+                        affinity: settingKey.show_affinity,
+                        position: settingKey.show_pos,
+                        efficiency: settingKey.show_pf,
+                        base: settingKey.show_quantity,
+                        cd: settingKey.show_cd,
                     },
-                    key_not_found = sw[key] == undefined;
-                if (key_not_found) throw Error("unknown key");
-                ALF.ui_settings.show_detail = sw[key];
-                if (ele instanceof HTMLElement) LS.userSetting.set(settingKey.showDetail, sw[key] ? 1 : 0);
+                    key_not_found = sw[key] == undefined,
+                    is_active;
+                $(ele).button("toggle");
+                is_active = ele.classList.contains("active") ? 1 : 0;
+                if (key_not_found) throw Error(`unknown key: ${key}`);
+                key = sw[key];
+                ALF.ui_settings[key] = is_active;
+                if (ele instanceof HTMLElement) LS.userSetting.set(settingKey[key], is_active);
             },
             switchLayout(ele, same = false) {
                 switch (ele.textContent) {
@@ -3543,10 +3563,19 @@ const
                     app.option.switchLayout(layoutSwitch, true);
                 }
 
-                setValue(settingKey.fleetEdit, "display_fleet_op");
-                setValue(settingKey.fleetBorder, "display_fleet_border");
-                setValue(settingKey.showSP, "display_sp_weapon");
-                setValue(settingKey.showDetail, "ui_detail", () => document.getElementById("ui_clean").click());
+                [
+                    { key: settingKey.fleetEdit, id: "display_fleet_op" },
+                    { key: settingKey.fleetBorder, id: "display_fleet_border" },
+                    { key: settingKey.showSP, id: "display_sp_weapon" },
+                    { key: settingKey.show_level, id: "display_info_level" },
+                    { key: settingKey.show_affinity, id: "display_info_affinity" },
+                    { key: settingKey.show_pos, id: "display_info_position" },
+                    { key: settingKey.show_pf, id: "display_info_efficiency" },
+                    { key: settingKey.show_quantity, id: "display_info_base" },
+                    { key: settingKey.show_cd, id: "display_info_cd" },
+                ].forEach(target => {
+                    setTimeout(() => setValue(target.key, target.id));
+                });
 
                 if (setting[settingKey.ownedItem]) {
                     app.action.loadOwnedSetting();
@@ -3555,6 +3584,11 @@ const
                 if (setting[settingKey.thickFrame] == 1) {
                     let ele = document.getElementById("frame_setting");
                     setTimeout(() => app.option.frameSize(ele), 3000);
+                }
+
+                if (setting[settingKey.showDetail]) {
+                    LS.userSetting.del(settingKey.showDetail);
+                    console.log("remove old setting");
                 }
 
                 return true;
@@ -4030,36 +4064,36 @@ Vue.component("item-container", {
                 <img class="img-fluid icon" v-bind:src="item.property.icon">
                 <span class="itemq text_shadow"
                     v-text="item.property.quantity"
-                    v-if="item.property.quantity && ui_settings.show_detail">
+                    v-if="item.property.quantity && ui_settings.show_quantity">
                 </span>
                 <span class="ship_pos2"
                     v-text="item.property.ship_pos"
-                    v-if="item.property.ship_pos">
+                    v-if="item.property.ship_pos && ui_settings.show_pos">
                 </span>
                 <span class="ship_level"
                     v-text="item.property.ship_level"
-                    v-if="item.property.bg && (item.property.ship_level > 0) && ui_settings.show_detail">
+                    v-if="item.property.bg && (item.property.ship_level > 0) && ui_settings.show_level">
                 </span>
                 <span class="ship_affinity text_shadow"
                     v-text="item.property.affinity_value"
-                    v-if="item.property.bg && (item.property.affinity_value > 1) && ui_settings.show_detail">
+                    v-if="item.property.bg && (item.property.affinity_value > 1) && ui_settings.show_affinity">
                 </span>
                 <span class="equip_level"
                     v-text="'+'+item.property.equip_level"
-                    v-if="item.property.bg && (item.property.equip_level > 0) && ui_settings.show_detail">
+                    v-if="item.property.bg && (item.property.equip_level > 0) && ui_settings.show_level">
                 </span>
                 <span class="equip_proficiency text_shadow"
                     v-text="item.property.proficiency+'%'"
                     v-bind:style="item.property.style"
-                    v-if="item.property.quantity && item.property.proficiency && ui_settings.show_detail">
+                    v-if="item.property.quantity && item.property.proficiency && ui_settings.show_pf">
                 </span>
                 <span class="equip_cd text_shadow"
                     v-text="item.property.cd_cache+'s'"
-                    v-if="item.property.bg && (item.property.cd_cache > 0) && ui_settings.show_detail">
+                    v-if="item.property.bg && (item.property.cd_cache > 0) && ui_settings.show_cd">
                 </span>
                 <span class="spweapon_level"
                     v-text="'+'+item.property.spweapon_level"
-                    v-if="item.property.bg && (item.property.spweapon_level > 0) && ui_settings.show_detail">
+                    v-if="item.property.bg && (item.property.spweapon_level > 0) && ui_settings.show_level">
                 </span>
               </div>
               <span class="item_name" v-text="item.property[lang]"></span>
@@ -4203,7 +4237,12 @@ const
             ui_settings: {
                 show_op: false,
                 show_sp: false,
-                show_detail: false,
+                show_pos: 0,
+                show_level: 0,
+                show_affinity: 0,
+                show_pf: 0,
+                show_cd: 0,
+                show_quantity: 0,
             },
             class_data: {
                 app_box: appClassData.app_box.h,
