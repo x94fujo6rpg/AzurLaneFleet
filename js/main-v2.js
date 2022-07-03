@@ -26,7 +26,7 @@ const
         { id: "display_info_efficiency", en: "Efficiency", jp: "補正", tw: "效率" },
         { id: "display_info_base", en: "Base", jp: "武器数", tw: "底座數" },
         { id: "display_info_cd", en: "CD", jp: "攻速", tw: "射速" },
-        { id: "compact_mode", en: "Compact Mode", jp: "コンパクトモード", tw: "緊湊模式" },
+        { id: "compact_mode", en: "⮟ Compact Mode", jp: "⮟ コンパクトモード", tw: "⮟ 緊湊模式" },
 
         { id: "add_fleet", en: "Save Current", jp: "現在の艦隊をセーブ", tw: "儲存目前艦隊", },
         { id: "select_fleet", en: "Select Fleet", jp: "艦隊を選択", tw: "選擇艦隊", },
@@ -712,21 +712,53 @@ const
                 ALF.ui_settings[key] = is_active;
                 if (ele instanceof HTMLElement) LS.userSetting.set(settingKey[key], is_active);
             },
-            compactMode(ele) {
+            _last_compact_mode: undefined,
+            compactMode(ele, index) {
                 let is_active,
-                    list = {
-                        item_container: "compact_item_container",
-                        fleet_side_box: "compact_side_box",
-                        item_name: "compact_item_name",
-                    };
+                    list = [
+                        { // default
+                            fleet_box_i: "compact_m01",
+                            item_container: "compact_item_container",
+                            fleet_side_box: "compact_side_box",
+                            item_name: "compact_item_name",
+                        },
+                        { // smaller gap
+                            fleet_box_i: "compact_m0",
+                            item_container: "compact_item_container",
+                            fleet_side_box: "compact_m01",
+                            item_name: "compact_item_name",
+                        },
+                        { // only outer gap
+                            fleet_box_i: "compact_m01",
+                            item_container: "compact_item_container",
+                            fleet_side_box: "compact_m0",
+                            item_name: "compact_item_name",
+                        },
+                        { // no gap
+                            fleet_box_i: "compact_m0",
+                            item_container: "compact_item_container",
+                            fleet_side_box: "compact_m0",
+                            item_name: "compact_item_name",
+                        },
+                    ],
+                    eles = document.querySelectorAll("#compact_mode_expand button");
                 $(ele).button("toggle");
                 is_active = ele.classList.contains("active") ? 1 : 0;
                 if (is_active) {
-                    updateClass(list, addClass);
+                    console.log(`compact_mode ${index}`);
+                    if (this._last_compact_mode != undefined) updateClass(list[this._last_compact_mode], subClass);
+                    updateClass(list[index], addClass);
+                    this._last_compact_mode = index;
                 } else {
-                    updateClass(list, subClass);
+                    updateClass(list[this._last_compact_mode], subClass);
                 }
-                if (ele instanceof HTMLElement) LS.userSetting.set(settingKey.compactMode, is_active);
+                if (ele instanceof HTMLElement) LS.userSetting.set(settingKey.compactMode, is_active ? ++index : 0);
+                eles.forEach(_ele => {
+                    if (_ele.id != ele.id) {
+                        _ele.classList.remove("active");
+                        _ele.setAttribute("aria-pressed", false);
+                    }
+                });
 
                 function updateClass(list, method) {
                     let current_layout = ALF.class_data.current;
@@ -770,18 +802,19 @@ const
                 LS.userSetting.set(settingKey.layout, layout_list[ele.textContent]);
 
                 function setLayout(current, next) {
-                    changeClass(same ? current : next);
-                    ele.textContent = layout_list[same ? current : next];
-                    ALF.class_data.current = current;
+                    let layout = same ? current : next;
+                    changeClass(layout);
+                    ele.textContent = layout_list[layout];
+                    ALF.class_data.current = layout;
                 }
 
-                function changeClass(classKey = "") {
-                    for (let key in appClassData) {
-                        if (key == "app_box") {
+                function changeClass(layout = "") {
+                    for (let target in appClassData) {
+                        if (target == "app_box") {
                             // non vue
-                            document.querySelector(".app_box").className = `${appClassData.app_box[classKey]} app_box`;
+                            document.querySelector(".app_box").className = `${appClassData.app_box[layout]} app_box`;
                         } else {
-                            ALF.class_data[key] = appClassData[key][classKey];
+                            ALF.class_data[target] = appClassData[target][layout];
                         }
                     }
                 }
@@ -832,40 +865,37 @@ const
             displayBorder(ele) {
                 $(ele).button("toggle");
                 let layoutKey = layout_list[document.querySelector("#layout_setting").textContent],
-                    display = ele.classList.contains("active");
-                if (display) {
-                    const border = {
-                        fleet_box_o: {
-                            h: "fleet_box_o d-grid justify-content-center",
-                            v: "fleet_box_o d-grid border border-secondary",
-                            v2: "fleet_box_o flex-row"
-                        },
-                        fleet_box_i: {
-                            h: "fleet_box_i row m-2 border border-secondary", // p-1 py-2
-                            v: "fleet_box_i col p-0", // m-2
-                            v2: "fleet_box_i col p-0 border border-secondary" // m-2
-                        }
+                    display = ele.classList.contains("active"),
+                    border_class = ["border", "border-secondary"],
+                    list = {
+                        fleet_box_o: ["v"],
+                        fleet_box_i: ["h", "v2"],
                     };
-                    for (let key in border) {
-                        appClassData[key] = border[key];
-                        ALF.class_data[key] = appClassData[key][layoutKey];
+                if (display) {
+                    for (let target in list) {
+                        let layout_list = list[target],
+                            class_data = appClassData[target];
+                        layout_list.forEach(layout => {
+                            appClassData[target][layout] =
+                                class_data[layout]
+                                    .split(" ")
+                                    .concat(border_class)
+                                    .join(" ");
+                            if (layout == ALF.class_data.current) ALF.class_data[target] = appClassData[target][layout];
+                        });
                     }
                 } else {
-                    const noborder = {
-                        fleet_box_o: {
-                            h: "fleet_box_o d-grid justify-content-center",
-                            v: "fleet_box_o d-grid",
-                            v2: "fleet_box_o flex-row"
-                        },
-                        fleet_box_i: {
-                            h: "fleet_box_i row m-2",
-                            v: "fleet_box_i col p-0", // m-2
-                            v2: "fleet_box_i col p-0" // m-2
-                        }
-                    };
-                    for (let key in noborder) {
-                        appClassData[key] = noborder[key];
-                        ALF.class_data[key] = appClassData[key][layoutKey];
+                    for (let target in list) {
+                        let layout_list = list[target],
+                            class_data = appClassData[target];
+                        layout_list.forEach(layout => {
+                            appClassData[target][layout] =
+                                class_data[layout]
+                                    .split(" ")
+                                    .filter(_class => !(border_class.includes(_class)))
+                                    .join(" ");
+                            if (layout == ALF.class_data.current) ALF.class_data[target] = appClassData[target][layout];
+                        });
                     }
                 }
                 LS.userSetting.set(settingKey.fleetBorder, display ? 1 : 0);
@@ -2861,7 +2891,7 @@ const
             step("add search", 0); add_search_event();
             //step("split button group [ship nation]"); splitButtonGroup("shipnation", 6, filter_btn_class.replace("line-5-item", "line-6-item"));
             //step("split button group [equip nation]"); splitButtonGroup("eq_nation", 6, filter_btn_class.replace("line-5-item", "line-6-item"));
-            step("add resize event", 0); addWindowSizeEvent();
+            //step("add resize event", 0); addWindowSizeEvent();
             step("load user setting", 0); await loadUserSetting();
             step("load fleet storage", 0); await loadStorage();
             step("set slider", 0); setSlider();
@@ -3627,8 +3657,8 @@ const
                     app.action.loadOwnedSetting();
                 }
 
-                if (setting[settingKey.compactMode] == 1) {
-                    setTimeout(() => document.getElementById("compact_mode").click());
+                if (setting[settingKey.compactMode] >= 1) {
+                    setTimeout(() => document.getElementById(`compact_mode${setting[settingKey.compactMode]}`).click());
                 }
 
                 if (setting[settingKey.thickFrame] == 1) {
@@ -3980,7 +4010,7 @@ const
     appClassData = {
         app_box: {
             h: "app_box d-flex flex-column w-100 m-auto", // container mw-100 / d-flex flex-column w-100 m-auto
-            v: "app_box row justify-content-center py-1 px-5 m-auto d-grid grid-2item", // app_box row justify-content-center py-1 px-5 m-0
+            v: "app_box d-grid grid-2item m-auto", // app_box row justify-content-center py-1 px-5 m-0
             v2: "app_box d-table justify-content-center m-auto"
         },
         fleet_box_o: {

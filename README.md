@@ -15,6 +15,14 @@ Generate shareable text codes or links.
   - [fleetdata version](#fleetdata-version)
 
 ## Update  
+**2022-07-04**
+- more compact mode
+  - 0: default
+  - 1: smaller gap
+  - 2: outer gap only
+  - 3: 0 gap
+- fix some ui issue
+
 **2022-07-03**
 - compact mode
   - `Settings > Detail Info > Compact Mode`
