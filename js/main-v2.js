@@ -104,7 +104,7 @@ const
     vue_ui_text = {
         sub_fleet: { en: "Sub", jp: "潜水", tw: "潛艇", cn: "潛艇" },
         normal_fleet: { en: "Normal", jp: "通常", tw: "一般", cn: "一般" },
-        copy_fleet: { en: "Copy Fleet", jp: "艦隊コピー", tw: "艦隊複製", cn: "艦隊複製", },
+        copy_fleet: { en: "Copy Fleet", jp: "艦隊コピー", tw: "複製艦隊", cn: "複製艦隊", },
         copy_ship: { en: "Copy Ship", jp: "艦船コピー", tw: "複製船", cn: "複製船", },
         swap_ship: { en: "Swap", jp: "交換", tw: "交換", cn: "交換", },
     },
@@ -4239,7 +4239,7 @@ Vue.component("fleet-container", {
             <div class="fleet_op_box" v-if="ui_settings.show_op">
                 <div class="d-flex line-5-item">
                     <div class="w-25 text-monospace text-center m-auto fleet_name" v-text="fleet.id">Fleet_ID</div>
-                    <button class="${fleet_btn_style.copy}" v-bind:pos="fleet.id" onclick="${action.copy}" v-text="ui_text.copy_fleet[lang]">CopyFleet</button>
+                    <button class="${fleet_btn_style.copy}" v-bind:pos="fleet.id" onclick="${action.swap_copy.replace("this", "this, true")}" v-text="ui_text.copy_ship[lang]">CopyShip</button>
                 </div>
                 <div class="d-flex line-5-item">
                     <div class="d-flex btn-group w-100 m-auto">
@@ -4263,7 +4263,7 @@ Vue.component("fleet-container", {
                     </div>
                 </div>
                 <div class="d-flex line-5-item">
-                    <button class="${fleet_btn_style.copy}" v-bind:pos="fleet.id" onclick="${action.swap_copy.replace("this", "this, true")}" v-text="ui_text.copy_ship[lang]">CopyShip</button>
+                    <button class="${fleet_btn_style.copy}" v-bind:pos="fleet.id" onclick="${action.copy}" v-text="ui_text.copy_fleet[lang]">CopyFleet</button>
                     <button class="${fleet_btn_style.del}" v-bind:pos="fleet.id" onclick="${action.delete}">✖</button>
                 </div>
             </div>
