@@ -67,8 +67,8 @@ const
 
         { id: "item_level_ship", en: "Level", jp: "レベル", tw: "等級", },
         { id: "item_level_equip", en: "Enhance Level", jp: "強化レベル", tw: "強化等級", },
-        { id: "ship_level_set", en: "Set Level", jp: "レベル設定", tw: "設定等級", },
-        { id: "equip_level_set", en: "Set Level", jp: "強化レベル設定", tw: "設定強化等級", },
+        { id: "ship_level_set", en: "Set Level", jp: "確定", tw: "確定", },
+        { id: "equip_level_set", en: "Set Level", jp: "確定", tw: "確定", },
 
         { id: "affinity_1", en: "Stranger", jp: "知り合い", tw: "陌生", },
         { id: "affinity_2", en: "Friendly", jp: "友好", tw: "友好", },
