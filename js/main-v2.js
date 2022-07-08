@@ -28,7 +28,7 @@ const
         { id: "display_info_cd", en: "CD", jp: "攻速", tw: "射速" },
         { id: "compact_mode", en: "⮟ Compact Mode", jp: "⮟ コンパクトモード", tw: "⮟ 緊湊模式" },
 
-        { id: "add_fleet", en: "Save Current", jp: "現在の艦隊をセーブ", tw: "儲存目前艦隊", },
+        { id: "add_fleet", en: "Save Current", jp: "セーブ", tw: "儲存目前艦隊", },
         { id: "select_fleet", en: "Select Fleet", jp: "艦隊を選択", tw: "選擇艦隊", },
         { id: "load_fleet", en: "Load Fleet", jp: "ロード", tw: "載入艦隊", },
         { id: "remove_fleet", en: "Delete", jp: "削除", tw: "刪除", },
@@ -104,8 +104,8 @@ const
     vue_ui_text = {
         sub_fleet: { en: "Sub", jp: "潜水", tw: "潛艇", cn: "潛艇" },
         normal_fleet: { en: "Normal", jp: "通常", tw: "一般", cn: "一般" },
-        copy_fleet: { en: "FleetCopy", jp: "艦隊コピー", tw: "艦隊複製", cn: "艦隊複製", },
-        copy_ship: { en: "ShipCopy", jp: "艦船コピー", tw: "艦船複製", cn: "艦船複製", },
+        copy_fleet: { en: "Copy Fleet", jp: "艦隊コピー", tw: "艦隊複製", cn: "艦隊複製", },
+        copy_ship: { en: "Copy Ship", jp: "艦船コピー", tw: "複製船", cn: "複製船", },
         swap_ship: { en: "Swap", jp: "交換", tw: "交換", cn: "交換", },
     },
     // equip type
@@ -4221,7 +4221,7 @@ const
         yellow: `btn btn-outline-warning btn-sm fleet_op_btn p-0 w-50`,
         text: `text-monospace text-center w-100 d-flex align-items-center justify-content-center border`,
         copy: `btn btn-outline-success btn-sm w-75 mx-1 my-auto text-truncate text-monospace p-1 text-nowrap`,
-        del: `btn btn-outline-danger btn-sm mr-0 ml-auto my-auto fleet_op_btn px-2 py-0`,
+        del: `btn btn-outline-danger btn-sm line-5-item fleet_op_btn`,
     },
     path = (target = "") => { return `dynamicFleet.${target}(this)`; },
     action = {
