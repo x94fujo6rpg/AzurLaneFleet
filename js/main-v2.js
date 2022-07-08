@@ -2923,7 +2923,7 @@ const
                     </div>
                     `);
                 });
-                html.push(`<button class="btn" id="tech_data_save" onclick="app.util.saveTechData()">Save</button>`);
+                html.push(`<button class="btn mx-auto mb-4 line-6-item" id="tech_data_save" onclick="app.util.saveTechData()">Save</button>`);
                 ele.innerHTML = html.join("\n");
 
                 function getText(type) {
