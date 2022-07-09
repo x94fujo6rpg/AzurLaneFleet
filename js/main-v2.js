@@ -67,8 +67,10 @@ const
 
         { id: "item_level_ship", en: "Level", jp: "レベル", tw: "等級", },
         { id: "item_level_equip", en: "Enhance Level", jp: "強化レベル", tw: "強化等級", },
+        { id: "item_level_spweapon", en: "Enhance Level", jp: "強化レベル", tw: "強化等級", },
         { id: "ship_level_set", en: "Set Level", jp: "確定", tw: "確定", },
         { id: "equip_level_set", en: "Set Level", jp: "確定", tw: "確定", },
+        { id: "spweapon_level_set", en: "Set Level", jp: "確定", tw: "確定", },
 
         { id: "affinity_1", en: "Stranger", jp: "知り合い", tw: "陌生", },
         { id: "affinity_2", en: "Friendly", jp: "友好", tw: "友好", },
@@ -99,7 +101,7 @@ const
 
         { id: "search_input", en: "Search by name", jp: "検索(艦船名)", tw: "搜尋船名", },
         { id: "filter_search_result", en: "Result", jp: "結果", tw: "結果", },
-        { id: "filter_retro", en: "Retrofitted Only", jp: "改造された艦船だけ", tw: "只顯示改造後的", },
+        { id: "filter_retro", en: "Retrofitted Only", jp: "改造された艦船だけ", tw: "只顯示改造後", },
     ],
     vue_ui_text = {
         sub_fleet: { en: "Sub", jp: "潜水", tw: "潛艇", cn: "潛艇" },
@@ -2897,8 +2899,8 @@ const
             step("set slider", 0); setSlider();
             $("#loading_box").delay(500).slideUp(750);
             $(".lds-dual-ring").fadeOut(500, () => $("#app_area").slideDown(1000));
-            dynamicFleet.disableInvalidMoveButton();
             waitHTML(pending, () => {
+                dynamicFleet.disableInvalidMoveButton();
                 app.option.setLanguage({ id: language }); // set language after html is parsed
                 setTimeout(() => delete app.initialize);
                 setTimeout(() => window.scrollTo({ top: 0 }));
@@ -4217,11 +4219,11 @@ Vue.component("ship-container", {
 
 const
     fleet_btn_style = { // fleet_op_hide
-        normal: `btn btn-outline-secondary btn-sm fleet_op_btn p-0`,
-        yellow: `btn btn-outline-warning btn-sm fleet_op_btn p-0 w-50`,
+        normal: `btn btn-outline-secondary fleet_op_btn p-0`,
+        yellow: `btn btn-outline-warning fleet_op_btn p-0 w-50`,
         text: `text-monospace text-center w-100 d-flex align-items-center justify-content-center border`,
-        copy: `btn btn-outline-success btn-sm w-75 mx-1 my-auto text-truncate text-monospace p-1 text-nowrap`,
-        del: `btn btn-outline-danger btn-sm line-5-item fleet_op_btn`,
+        copy: `btn btn-outline-success w-75 mx-1 my-auto text-truncate text-monospace p-1 text-nowrap`,
+        del: `btn btn-outline-danger line-5-item fleet_op_btn`,
     },
     path = (target = "") => { return `dynamicFleet.${target}(this)`; },
     action = {

@@ -28,11 +28,11 @@
     <link rel="prefetch" href="js/ship_data.min.js?v=7bc441ebdf1b" as="script">
     <link rel="prefetch" href="js/equip_data.min.js?v=c92015757f11" as="script">
     <link rel="prefetch" href="js/sp_weapon_data.min.js?v=afdbc7eee9b5" as="script">
-    <link rel="prefetch" href="js/main-v2.min.js?v=bef47be80b91" as="script">
+    <link rel="prefetch" href="js/main-v2.min.js?v=13f15c101888" as="script">
     <style>
         body {
             color: white;
-            background-color: rgb(50, 50, 50);
+            background-color: rgb(40, 40, 40);
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
@@ -57,6 +57,7 @@
             width: 5.8rem;
             height: 6.8rem;
             position: initial;
+            outline: none !important;
         }
         
         .modal-dialog {
@@ -306,7 +307,14 @@
         .filter-btn {
             font-size: large;
             height: 3rem !important;
-            border-radius: 0;
+            border-radius: 0.25rem !important;
+            border-color: transparent;
+            box-shadow: 0 0 0 0.1rem #6c757d inset;
+        }
+        
+        .affinity-btn {
+            font-size: large;
+            height: 3rem !important;
         }
         
         .line-2-item {
@@ -340,7 +348,7 @@
         }
         
         .fleet_op_btn {
-            /*font-weight: bold;*/
+            font-weight: bold;
             font-family: monospace;
             font-size: larger;
         }
@@ -480,6 +488,17 @@
         .compact_item_name {
             display: none !important;
         }
+        
+        .bg-black {
+            background-color: rgba(25, 25, 25);
+        }
+        
+        .bg-modal {
+            --v: 20;
+            background-color: rgba(var(--v), var(--v), var(--v), 0.875);
+            border-style: solid;
+            border-color: rgba(255, 255, 255, 0.25);
+        }
     </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKESRCZC4Z"></script>
     <script>
@@ -602,7 +621,7 @@
             </div>
             <div class="dropdown mt-3 container d-flex w-50" id="fleet_storage">
                 <button class="btn btn-primary w-25 mx-1" type="button" id="add_fleet" onclick="LS.add_fleet()">Save Current</button>
-                <button class="btn btn-info w-25 mx-1 dropdown-toggle text-truncate" type="button" id="select_fleet" onclick="LS.updateStorageList()" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button class="btn btn-info w-25 mx-1 p-1 dropdown-toggle text-truncate" type="button" id="select_fleet" onclick="LS.updateStorageList()" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Select Fleet
                 </button>
                 <div class="dropdown-menu bg-info" id="fleet_list" aria-labelledby="select_fleet"></div>
@@ -659,8 +678,8 @@
     </footer>
     <div class="modal" id="shipselect">
         <div class="modal-dialog mt-1" id="dialog_shipselect">
-            <div class="modal-content text-light bg-dark">
-                <div class="modal-header p-2">
+            <div class="modal-content text-light bg-modal">
+                <div class="modal-header p-2 bg-black">
                     <h4 class="modal-title m-auto text-center line-3-item" ui_id="select_ship">Select Ship</h4>
                     <button id="show_ship_filter" class="btn btn-outline-info mx-2 line-3-item" type="button" data-toggle="collapse" data-target="#ship_filter" aria-expanded="false" aria-controls="ship_filter">⮟ Show Filter</button>
                     <button type="button" class="btn btn-danger text-light p-0 line-3-item" data-dismiss="modal" style="font-size: x-large;">Exit</button>
@@ -691,32 +710,32 @@
                         <button class="btn btn-danger mx-2 line-6-item text-nowrap" type="button" ui_id="saveOwned" onclick="app.util.saveOwned()">Save</button>
                         <button class="btn btn-outline-light w-25 mx-2" type="button" id="owned_ship_only" onclick="app.util.setOwned(this, 'ship')">Only Show Owned</button>
                     </div>
-                    <div class="btn-group btn-group-toggle d-flex w-100 my-2 mx-auto flex-wrap" data-toggle="buttons" id="affinity_area">
-                        <label class="btn btn-outline-secondary font-weight-bold line-3-item" value="1">
+                    <div class="btn-group btn-group-toggle d-flex my-2 flex-wrap justify-content-center" data-toggle="buttons" id="affinity_area">
+                        <label class="btn btn-outline-secondary affinity-btn font-weight-bold line-3-item rounded-0" value="1">
                             <input type="radio" name="Stranger" id="affinity_1">Stranger
                         </label>
-                        <label class="btn btn-outline-secondary font-weight-bold line-3-item" value="2">
+                        <label class="btn btn-outline-secondary affinity-btn font-weight-bold line-3-item" value="2">
                             <input type="radio" name="Friendly" id="affinity_2">Friendly
                         </label>
-                        <label class="btn btn-outline-secondary font-weight-bold line-3-item" value="3">
+                        <label class="btn btn-outline-secondary affinity-btn font-weight-bold line-3-item" value="3">
                             <input type="radio" name="Crush" id="affinity_3">Crush
                         </label>
-                        <label class="btn btn-outline-secondary font-weight-bold line-3-item active" value="4">
+                        <label class="btn btn-outline-secondary affinity-btn font-weight-bold line-3-item active" value="4">
                             <input type="radio" name="Love" id="affinity_4">Love
                         </label>
-                        <label class="btn btn-outline-secondary font-weight-bold line-3-item" value="5">
+                        <label class="btn btn-outline-secondary affinity-btn font-weight-bold line-3-item" value="5">
                             <input type="radio" name="Oath" id="affinity_5">Oath
                         </label>
-                        <label class="btn btn-outline-secondary font-weight-bold line-3-item" value="6">
+                        <label class="btn btn-outline-secondary affinity-btn font-weight-bold line-3-item rounded-0" value="6">
                             <input type="radio" name="Oath(200)" id="affinity_6">Oath(200)
                         </label>
                     </div>
-                    <div class="d-flex w-100 my-3 mx-auto font-weight-bold justify-content-center">
-                        <div class="my-auto mr-1 ml-auto w-25 text-right text-nowrap" ui_id="item_level_ship">Level</div>
-                        <div class="d-inline-flex my-1">
-                            <input type="text" class="mx-1 text-center rounded" id="ship_level_input" value="120">
+                    <div class="d-flex my-3 mx-auto font-weight-bold justify-content-center">
+                        <div class="my-auto mr-1 ml-auto line-6-item text-right" ui_id="item_level_ship">Level</div>
+                        <div class="d-inline-flex my-1 justify-content-center">
+                            <input type="text" class="text-center rounded" id="ship_level_input" value="120">
                         </div>
-                        <button class="btn btn-primary my-1 ml-1 mr-auto w-25 text-nowrap" id="ship_level_set" _onclick="app.setLevel('ship')" data-dismiss="modal">Set Level / Affinity</button>
+                        <button class="btn btn-primary my-1 ml-1 mr-auto line-6-item text-nowrap" id="ship_level_set" _onclick="app.setLevel('ship')" data-dismiss="modal">Set Level / Affinity</button>
                     </div>
                     <div class="af_slider_box d-flex w-50 my-2 mx-auto justify-content-center">
                         <div id="ship_level_min" class="mx-2 my-auto text-monospace">1</div>
@@ -726,7 +745,7 @@
                     <div class="d-inline-flex w-100 font-weight-bold">
                         <div class="d-flex my-2 line-40" id="search_box">
                             <input class="w-50 mx-1 rounded" type="text" class="mx-1 w-100" id="search_input" autocomplete="on" name="shipname">
-                            <button id='filter_retro' name="retro_ship_only" type="button" class="w-50 mx-1 btn btn-outline-light font-weight-bold d-flex justify-content-center active" aria-pressed="true" onclick="app.option.ship.setRetro(this)">Retrofitted Only</button>
+                            <button id='filter_retro' name="retro_ship_only" type="button" class="w-50 mx-1 btn btn-outline-light font-weight-bold justify-content-center active" aria-pressed="true" onclick="app.option.ship.setRetro(this)">Retrofitted Only</button>
                         </div>
                         <div class="d-flex m-auto line-5-item">
                             <label class="my-auto ml-auto mr-1" ui_id="filter_search_result">Result</label>
@@ -735,7 +754,7 @@
                         <div class="d-flex m-auto line-40">
                             <div class="dropdown w-50 mx-1 btn-group">
                                 <button id="ship_sort_order" name="ship_sort_order" type="button" class="btn btn-outline-light font-weight-bold d-flex justify-content-center align-items-center" aria-pressed="false" onclick="app.option.ship.sort_order(this)" value="1">⮟</button>
-                                <button ui_id="sort" class="btn btn-outline-light w-75 dropdown-toggle" type="button" id="sort_menu" data-toggle="dropdown" aria-expanded="false">
+                                <button ui_id="sort" class="btn btn-outline-light w-75 text-truncate dropdown-toggle" type="button" id="sort_menu" data-toggle="dropdown" aria-expanded="false">
                                     Sort
                                 </button>
                                 <div class="dropdown-menu bg-secondary" aria-labelledby="sort_menu">
@@ -762,8 +781,8 @@
     </div>
     <div class="modal" id="equipselect">
         <div class="modal-dialog mt-1" id="dialog_select_equip">
-            <div class="modal-content text-light bg-dark">
-                <div class="modal-header p-2">
+            <div class="modal-content text-light bg-modal">
+                <div class="modal-header p-2 bg-black">
                     <h4 class="modal-title m-auto text-center line-3-item" ui_id="select_equip">Select Equip</h4>
                     <button id="show_equip_filter" class="btn btn-outline-info mx-2 line-3-item" type="button" data-toggle="collapse" data-target="#equip_filter" aria-expanded="false" aria-controls="equip_filter">⮟ Show Filter</button>
                     <button type="button" class="btn btn-danger text-light p-0 line-3-item" data-dismiss="modal" style="font-size: x-large;">Exit</button>
@@ -800,12 +819,12 @@
                         <button class="btn btn-danger mx-2 line-6-item text-nowrap" type="button" ui_id="saveOwned" onclick="app.util.saveOwned()">Save</button>
                         <button class="btn btn-outline-light w-25 mx-2" type="button" id="owned_equip_only" onclick="app.util.setOwned(this, 'equip')">Only Show Owned</button>
                     </div>
-                    <div class="d-flex w-50 my-3 mx-auto font-weight-bold justify-content-center">
-                        <div class="my-auto mr-1 ml-auto w-25 text-right text-nowrap" ui_id="item_level_equip">Enhance Level</div>
-                        <div class="d-inline-flex my-1">
-                            <input type="text" class="mx-1 text-center rounded" id="equip_level_input" value="10">
+                    <div class="d-flex my-3 mx-auto font-weight-bold justify-content-center">
+                        <div class="my-auto mr-1 ml-auto line-6-item text-right" ui_id="item_level_equip">Enhance Level</div>
+                        <div class="d-inline-flex my-1 justify-content-center">
+                            <input type="text" class="text-center rounded" id="equip_level_input" value="10">
                         </div>
-                        <button class="btn btn-primary my-1 ml-1 mr-auto w-25 text-nowrap" id="equip_level_set" _onclick="app.setLevel('equip')" data-dismiss="modal">Set Level</button>
+                        <button class="btn btn-primary my-1 ml-1 mr-auto line-6-item text-nowrap" id="equip_level_set" _onclick="app.setLevel('equip')" data-dismiss="modal">Set Level</button>
                     </div>
                     <div class="af_slider_box d-flex w-50 my-2 mx-auto justify-content-center">
                         <div id="equip_level_min" class="mx-2 my-auto text-monospace">0</div>
@@ -825,7 +844,7 @@
                         <div class="d-flex m-auto line-40">
                             <div class="dropdown w-50 btn-group mx-1">
                                 <button id="equip_sort_order" name="equip_sort_order" type="button" class="btn btn-outline-light font-weight-bold d-flex justify-content-center align-items-center" aria-pressed="false" onclick="app.option.equip.sort_order(this)" value="1">⮟</button>
-                                <button ui_id="sort" class="btn btn-outline-light w-75 dropdown-toggle" type="button" id="sort_menu" data-toggle="dropdown" aria-expanded="false">
+                                <button ui_id="sort" class="btn btn-outline-light w-75 text-truncate dropdown-toggle" type="button" id="sort_menu" data-toggle="dropdown" aria-expanded="false">
                                     Sort
                                 </button>
                                 <div class="dropdown-menu bg-secondary" aria-labelledby="sort_menu">
@@ -851,19 +870,19 @@
     </div>
     <div class="modal" id="spweaponselect">
         <div class="modal-dialog mt-1" id="dialog_select_spweapon">
-            <div class="modal-content text-light bg-dark">
-                <div class="modal-header p-2">
+            <div class="modal-content text-light bg-modal">
+                <div class="modal-header p-2 bg-black">
                     <h4 class="modal-title m-auto text-center line-3-item" ui_id="select_spweapon">Select Augment</h4>
                     <button id="show_spweapon_filter" class="btn btn-outline-info mx-2 line-3-item" type="button" data-toggle="collapse" data-target="#spweapon_filter" aria-expanded="false" aria-controls="spweapon_filter" style="opacity: 0;pointer-events: none;">⮟ Show Filter</button>
                     <button type="button" class="btn btn-danger text-light p-0 line-3-item" data-dismiss="modal" style="font-size: x-large;">Exit</button>
                 </div>
                 <div class="modal-body p-2">
-                    <div class="d-flex w-50 my-3 mx-auto font-weight-bold justify-content-center">
-                        <div class="my-auto mr-1 ml-auto w-25 text-right text-nowrap" ui_id="item_level_spweapon">Enhance Level</div>
-                        <div class="d-inline-flex my-1">
-                            <input type="text" class="mx-1 text-center rounded" id="spweapon_level_input" value="10">
+                    <div class="d-flex my-3 mx-auto font-weight-bold justify-content-center">
+                        <div class="my-auto mr-1 ml-auto line-6-item text-right" ui_id="item_level_spweapon">Enhance Level</div>
+                        <div class="d-inline-flex my-1 justify-content-center">
+                            <input type="text" class="text-center rounded" id="spweapon_level_input" value="10">
                         </div>
-                        <button class="btn btn-primary my-1 ml-1 mr-auto w-25 text-nowrap" id="spweapon_level_set" _onclick="app.setLevel('spweapon')" data-dismiss="modal">Set Level</button>
+                        <button class="btn btn-primary my-1 ml-1 mr-auto line-6-item text-nowrap" id="spweapon_level_set" _onclick="app.setLevel('spweapon')" data-dismiss="modal">Set Level</button>
                     </div>
                     <div class="af_slider_box d-flex w-50 my-2 mx-auto justify-content-center">
                         <div id="spweapon_level_min" class="mx-2 my-auto text-monospace">0</div>
@@ -893,7 +912,7 @@
     <script src='js/ship_data.min.js?v=7bc441ebdf1b'></script>
     <script src='js/equip_data.min.js?v=c92015757f11'></script>
     <script src='js/sp_weapon_data.min.js?v=afdbc7eee9b5'></script>
-    <script src="js/main-v2.min.js?v=bef47be80b91"></script>
+    <script src="js/main-v2.min.js?v=13f15c101888"></script>
 </body>
 
 </html>
