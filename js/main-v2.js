@@ -3287,6 +3287,17 @@ const
                 }
             }
 
+            function htmlesc(str = "") {
+                let esclist = {
+                    '"': "&quot;",
+                    "'": "&#39;",
+                    "<": "&lt;",
+                    ">": "&gt;",
+                    "&": "&amp;",
+                };
+                return str.replace(/["'<>&]/g, (m) => esclist[m]);
+            }
+
             function createNewItem(data, progress) {
                 let html = `
                     <button class="p-1 item_container" data-dismiss="modal" displayed="true" style="opacity: 1;" id="${data.id}">
@@ -3296,8 +3307,8 @@ const
                                 <img class="img-fluid frame" src="${data.frame}">
                                 <img class="img-fluid icon" src="${ui_table.empty_disable}">
                             </div>
-                            <span class="item_name" name="name" tw="${data.tw}" cn="${data.cn}" en="${data.en}" jp="${data.jp}">
-                                ${data[language]}
+                            <span class="item_name" name="name" tw="${htmlesc(data.tw)}" cn="${htmlesc(data.cn)}" en="${htmlesc(data.en)}" jp="${htmlesc(data.jp)}">
+                                ${htmlesc(data[language])}
                             </span>
                         </div>
                     </button>
