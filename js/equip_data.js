@@ -1753,6 +1753,38 @@ const equip_data = {
             2140
         ]
     },
+    "90360": {
+        "nationality": 8,
+        "type": 11,
+        "rarity": 5,
+        "tech": 0,
+        "id": 90360,
+        "icon": "50360",
+        "ship_type_forbidden": [
+            3
+        ],
+        "jp_name": "試作型四連装330mm砲設計図Mle1931(超巡用)",
+        "cn_name": "试作型四联装330mm主炮Mle1931(超巡用)",
+        "tw_name": "試作型四聯裝330mm主炮Mle1931(超巡用)*",
+        "en_name": "(no DATA)",
+        "equip_limit": 0,
+        "cd": [
+            2155,
+            2120,
+            2085,
+            2050,
+            2015,
+            1980,
+            1945,
+            1910,
+            1875,
+            1840,
+            1805,
+            1805,
+            1805,
+            1805
+        ]
+    },
     "85520": {
         "nationality": 7,
         "type": 11,
@@ -3411,7 +3443,7 @@ const equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "輝けるアストラム",
         "cn_name": "闪耀之歌",
-        "tw_name": "閃耀之歌*",
+        "tw_name": "閃耀之歌",
         "en_name": "Resplendent Astrum",
         "equip_limit": 0,
         "cd": []
@@ -3708,7 +3740,7 @@ const equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "神聖なるリュミエール",
         "cn_name": "活力之歌",
-        "tw_name": "活力之歌*",
+        "tw_name": "活力之歌",
         "en_name": "Sacred Lumière",
         "equip_limit": 0,
         "cd": []
@@ -3768,7 +3800,7 @@ const equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "熱愛のフィリンエッター",
         "cn_name": "炽烈之歌",
-        "tw_name": "熾烈之歌*",
+        "tw_name": "熾烈之歌",
         "en_name": "White-Hot Verheerender",
         "equip_limit": 0,
         "cd": []
@@ -4405,7 +4437,7 @@ const equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "ネビュラドレス",
         "cn_name": "星云舞裙",
-        "tw_name": "星雲舞裙*",
+        "tw_name": "星雲舞裙",
         "en_name": "Celestial Body",
         "equip_limit": 0,
         "cd": []
@@ -4474,10 +4506,42 @@ const equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "グラヴィティシューズ",
         "cn_name": "引力舞鞋",
-        "tw_name": "引力舞鞋*",
+        "tw_name": "引力舞鞋",
         "en_name": "Cosmic Kicks",
         "equip_limit": 0,
         "cd": []
+    },
+    "85540": {
+        "nationality": 7,
+        "type": 9,
+        "rarity": 5,
+        "tech": 0,
+        "id": 85540,
+        "icon": "85540",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "試作型艦上式Su-2",
+        "cn_name": "试作舰载型Su-2",
+        "tw_name": "試作艦載型Su-2*",
+        "en_name": "(no DATA)",
+        "equip_limit": 0,
+        "cd": [
+            2185,
+            2147,
+            2109,
+            2071,
+            2033,
+            1995,
+            1957,
+            1919,
+            1881,
+            1843,
+            1805,
+            1805,
+            1805,
+            1805
+        ]
     },
     "49040": {
         "nationality": 4,
@@ -5454,6 +5518,38 @@ const equip_data = {
             2240,
             2210,
             2210
+        ]
+    },
+    "85560": {
+        "nationality": 7,
+        "type": 8,
+        "rarity": 5,
+        "tech": 0,
+        "id": 85560,
+        "icon": "85560",
+        "ship_type_forbidden": [
+            10
+        ],
+        "jp_name": "試作型VIT-2(VK107)",
+        "cn_name": "试作型VIT-2 (VK-107)",
+        "tw_name": "試作型VIT-2 (VK-107)*",
+        "en_name": "(no DATA)",
+        "equip_limit": 0,
+        "cd": [
+            2230,
+            2195,
+            2160,
+            2125,
+            2090,
+            2055,
+            2020,
+            1985,
+            1950,
+            1915,
+            1880,
+            1880,
+            1880,
+            1880
         ]
     },
     "48040": {
@@ -8660,6 +8756,36 @@ const equip_data = {
             162,
             159,
             157
+        ]
+    },
+    "46400": {
+        "nationality": 4,
+        "type": 6,
+        "rarity": 5,
+        "tech": 0,
+        "id": 46400,
+        "icon": "46400",
+        "ship_type_forbidden": [],
+        "jp_name": "試作型四連装30mm機関砲",
+        "cn_name": "试作型四联装30mm机炮",
+        "tw_name": "試作型四聯裝30mm機炮*",
+        "en_name": "(no DATA)",
+        "equip_limit": 0,
+        "cd": [
+            166,
+            165,
+            163,
+            161,
+            159,
+            156,
+            153,
+            149,
+            145,
+            140,
+            135,
+            135,
+            135,
+            135
         ]
     },
     "46060": {
@@ -15620,6 +15746,36 @@ const equip_data = {
             430
         ]
     },
+    "22280": {
+        "nationality": 2,
+        "type": 2,
+        "rarity": 6,
+        "tech": 0,
+        "id": 22280,
+        "icon": "22280",
+        "ship_type_forbidden": [],
+        "jp_name": "試作型四連装152mm砲",
+        "cn_name": "试作型四联装152mm主炮",
+        "tw_name": "試作型四聯裝152mm主炮*",
+        "en_name": "(no DATA)",
+        "equip_limit": 0,
+        "cd": [
+            516,
+            511,
+            506,
+            501,
+            496,
+            491,
+            486,
+            481,
+            476,
+            471,
+            466,
+            466,
+            466,
+            466
+        ]
+    },
     "22140": {
         "nationality": 2,
         "type": 2,
@@ -16645,6 +16801,36 @@ const equip_data = {
             371,
             363,
             355
+        ]
+    },
+    "96100": {
+        "nationality": 5,
+        "type": 1,
+        "rarity": 5,
+        "tech": 0,
+        "id": 96100,
+        "icon": "56100",
+        "ship_type_forbidden": [],
+        "jp_name": "試作型130mm連装砲Model 1936",
+        "cn_name": "试作型双联装130mm主炮Model1936",
+        "tw_name": "試作型雙聯裝130mm主炮Model1936*",
+        "en_name": "(no DATA)",
+        "equip_limit": 0,
+        "cd": [
+            322,
+            316,
+            310,
+            303,
+            298,
+            292,
+            285,
+            279,
+            273,
+            267,
+            260,
+            260,
+            260,
+            260
         ]
     },
     "41160": {

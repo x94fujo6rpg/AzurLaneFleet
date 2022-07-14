@@ -3510,7 +3510,7 @@ const ship_data = {
         ],
         "id": 901124,
         "skin_id": 901120,
-        "english_name": "MNF Le Malin !TWnoData",
+        "english_name": "MNF Le Malin",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -3519,7 +3519,7 @@ const ship_data = {
         "jp_name": "ル・マラン(μ兵装)",
         "en_name": "Le Malin μ",
         "cn_name": "恶毒(μ兵装)",
-        "tw_name": "惡毒(μ兵裝)*",
+        "tw_name": "惡毒(μ兵裝)",
         "equip_1": [
             1
         ],
@@ -3805,6 +3805,56 @@ const ship_data = {
             0
         ],
         "date": "2018年07月26日"
+    },
+    "899030": {
+        "nationality": 8,
+        "type": 18,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 899034,
+        "skin_id": 899030,
+        "english_name": "FFNF Brest !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 6,
+        "retro": 0,
+        "uni_id": "899030",
+        "painting": "buleisite",
+        "jp_name": "ブレスト",
+        "en_name": "FFNF Brest*",
+        "cn_name": "布雷斯特",
+        "tw_name": "佈雷斯特*",
+        "equip_1": [
+            3,
+            11
+        ],
+        "equip_2": [
+            1
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.1,
+            1.1,
+            1.2
+        ],
+        "reload": [
+            70,
+            486,
+            0,
+            0,
+            0
+        ],
+        "date": "2022年07月14日"
     },
     "808010": {
         "nationality": 8,
@@ -4613,6 +4663,55 @@ const ship_data = {
             0
         ],
         "date": "2022年02月24日"
+    },
+    "799010": {
+        "nationality": 7,
+        "type": 7,
+        "base_list": [
+            2,
+            2,
+            4
+        ],
+        "id": 799014,
+        "skin_id": 799010,
+        "english_name": "SN Chkalov !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "799010",
+        "painting": "qikaluofu",
+        "jp_name": "チカロフ",
+        "en_name": "SN Chkalov*",
+        "cn_name": "契卡洛夫",
+        "tw_name": "契卡洛夫*",
+        "equip_1": [
+            9
+        ],
+        "equip_2": [
+            9
+        ],
+        "equip_3": [
+            8
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.2,
+            1.2,
+            1.55
+        ],
+        "reload": [
+            44,
+            307,
+            0,
+            0,
+            0
+        ],
+        "date": "2022年07月14日"
     },
     "707010": {
         "nationality": 7,
@@ -5486,7 +5585,7 @@ const ship_data = {
         ],
         "id": 701054,
         "skin_id": 701050,
-        "english_name": "SN Tashkent !TWnoData",
+        "english_name": "SN Tashkent",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -5495,7 +5594,7 @@ const ship_data = {
         "jp_name": "タシュケント(μ兵装)",
         "en_name": "Tashkent μ",
         "cn_name": "塔什干(μ兵装)",
-        "tw_name": "塔什干(μ兵裝)*",
+        "tw_name": "塔什干(μ兵裝)",
         "equip_1": [
             1
         ],
@@ -6681,6 +6780,57 @@ const ship_data = {
             0
         ],
         "date": "2022年01月27日"
+    },
+    "599010": {
+        "nationality": 5,
+        "type": 2,
+        "base_list": [
+            2,
+            2,
+            1
+        ],
+        "id": 599014,
+        "skin_id": 599010,
+        "english_name": "PRAN Harbin !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "599010",
+        "painting": "haerbin",
+        "jp_name": "ハルビン",
+        "en_name": "PRAN Harbin*",
+        "cn_name": "哈尔滨",
+        "tw_name": "哈爾濱*",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.3,
+            1.5,
+            1.35
+        ],
+        "reload": [
+            71,
+            495,
+            0,
+            0,
+            0
+        ],
+        "date": "2022年07月14日"
     },
     "502080": {
         "nationality": 5,
@@ -8636,6 +8786,56 @@ const ship_data = {
         ],
         "date": "2019年05月23日"
     },
+    "499070": {
+        "nationality": 4,
+        "type": 4,
+        "base_list": [
+            3,
+            2,
+            1
+        ],
+        "id": 499074,
+        "skin_id": 499070,
+        "english_name": "KMS Prinz Rupprecht !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "499070",
+        "painting": "lupuleixite",
+        "jp_name": "プリンツ・ループレヒト",
+        "en_name": "KMS Prinz Rupprecht*",
+        "cn_name": "鲁普雷希特亲王",
+        "tw_name": "魯普雷希特親王*",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.45,
+            1.8,
+            1.1
+        ],
+        "reload": [
+            55,
+            380,
+            0,
+            0,
+            0
+        ],
+        "date": "2022年07月14日"
+    },
     "499040": {
         "nationality": 4,
         "type": 4,
@@ -9145,7 +9345,7 @@ const ship_data = {
         ],
         "id": 403084,
         "skin_id": 403080,
-        "english_name": "KMS Roon !TWnoData",
+        "english_name": "KMS Roon",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -9154,7 +9354,7 @@ const ship_data = {
         "jp_name": "ローン(μ兵装)",
         "en_name": "Roon μ",
         "cn_name": "罗恩(μ兵装)",
-        "tw_name": "羅恩(μ兵裝)*",
+        "tw_name": "羅恩(μ兵裝)",
         "equip_1": [
             3
         ],
@@ -11472,7 +11672,7 @@ const ship_data = {
         ],
         "id": 307114,
         "skin_id": 307110,
-        "english_name": "IJN Taiho !TWnoData",
+        "english_name": "IJN Taiho",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -11481,7 +11681,7 @@ const ship_data = {
         "jp_name": "大鳳(μ兵装)",
         "en_name": "Taihou μ",
         "cn_name": "大凤(μ兵装)",
-        "tw_name": "大鳳(μ兵裝)*",
+        "tw_name": "大鳳(μ兵裝)",
         "equip_1": [
             7
         ],
@@ -19451,7 +19651,7 @@ const ship_data = {
         ],
         "id": 207114,
         "skin_id": 207110,
-        "english_name": "HMS Illustrious !TWnoData",
+        "english_name": "HMS Illustrious",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -19460,7 +19660,7 @@ const ship_data = {
         "jp_name": "イラストリアス(μ兵装)",
         "en_name": "Illustrious μ",
         "cn_name": "光辉(μ兵装)",
-        "tw_name": "光輝(μ兵裝)*",
+        "tw_name": "光輝(μ兵裝)",
         "equip_1": [
             7
         ],
@@ -21873,6 +22073,57 @@ const ship_data = {
         ],
         "date": "2017年05月25日"
     },
+    "299050": {
+        "nationality": 2,
+        "type": 2,
+        "base_list": [
+            3,
+            1,
+            1
+        ],
+        "id": 299054,
+        "skin_id": 299050,
+        "english_name": "HMS Plymouth !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 6,
+        "retro": 0,
+        "uni_id": "299050",
+        "painting": "pulimaosi",
+        "jp_name": "プリマス",
+        "en_name": "HMS Plymouth*",
+        "cn_name": "普利茅斯",
+        "tw_name": "普利茅斯*",
+        "equip_1": [
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.2,
+            1.65,
+            1.3
+        ],
+        "reload": [
+            66,
+            457,
+            0,
+            0,
+            0
+        ],
+        "date": "2022年07月14日"
+    },
     "299010": {
         "nationality": 2,
         "type": 2,
@@ -22140,7 +22391,7 @@ const ship_data = {
         ],
         "id": 202284,
         "skin_id": 202280,
-        "english_name": "HMS Dido !TWnoData",
+        "english_name": "HMS Dido",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -22149,7 +22400,7 @@ const ship_data = {
         "jp_name": "ダイドー(μ兵装)",
         "en_name": "Dido μ",
         "cn_name": "黛朵(μ兵装)",
-        "tw_name": "黛朵(μ兵裝)*",
+        "tw_name": "黛朵(μ兵裝)",
         "equip_1": [
             1,
             2
@@ -25612,7 +25863,7 @@ const ship_data = {
         ],
         "id": 108054,
         "skin_id": 108050,
-        "english_name": "USS Albacore !TWnoData",
+        "english_name": "USS Albacore",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -25621,7 +25872,7 @@ const ship_data = {
         "jp_name": "アルバコア(μ兵装)",
         "en_name": "Albacore μ",
         "cn_name": "大青花鱼(μ兵装)",
-        "tw_name": "大青花魚(μ兵裝)*",
+        "tw_name": "大青花魚(μ兵裝)",
         "equip_1": [
             13
         ],
@@ -28088,7 +28339,7 @@ const ship_data = {
         ],
         "id": 103254,
         "skin_id": 103250,
-        "english_name": "USS Baltimore !TWnoData",
+        "english_name": "USS Baltimore",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -28097,7 +28348,7 @@ const ship_data = {
         "jp_name": "ボルチモア(μ兵装)",
         "en_name": "Baltimore μ",
         "cn_name": "巴尔的摩(μ兵装)",
-        "tw_name": "巴爾的摩(μ兵裝)*",
+        "tw_name": "巴爾的摩(μ兵裝)",
         "equip_1": [
             3
         ],

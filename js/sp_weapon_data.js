@@ -100,6 +100,32 @@ const sp_weapon_data = {
         "cn_name": "探测平衡装置",
         "tw_name": "探測平衡裝置*"
     },
+    "10100": {
+        "id": 10100,
+        "icon": "10100",
+        "eq_reload": [],
+        "rarity": 4,
+        "tech": 0,
+        "limit": 90501,
+        "type": 6,
+        "jp_name": "護教騎士戦旗",
+        "en_name": "(no DATA)",
+        "cn_name": "护教骑士战旗",
+        "tw_name": "護教騎士戰旗*"
+    },
+    "10120": {
+        "id": 10120,
+        "icon": "10120",
+        "eq_reload": [],
+        "rarity": 4,
+        "tech": 0,
+        "limit": 20706,
+        "type": 7,
+        "jp_name": "グローリー・オン・タイム",
+        "en_name": "(no DATA)",
+        "cn_name": "准时的怀表",
+        "tw_name": "準時的懷錶*"
+    },
     "1010100": {
         "id": 1010100,
         "icon": "1010100",
