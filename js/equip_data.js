@@ -13457,7 +13457,15 @@ const equip_data = {
         "tw_name": "三聯裝406mm主炮Mk7*",
         "en_name": "Triple 406mm MK7 Main Gun",
         "equip_limit": 0,
-        "cd": []
+        "cd": [
+            4990,
+            4888,
+            4791,
+            4689,
+            4589,
+            4491,
+            4390
+        ]
     },
     "14460": {
         "nationality": 1,
