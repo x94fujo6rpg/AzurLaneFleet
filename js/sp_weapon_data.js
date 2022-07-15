@@ -109,7 +109,7 @@ const sp_weapon_data = {
         "limit": 90501,
         "type": 6,
         "jp_name": "護教騎士戦旗",
-        "en_name": "(no DATA)",
+        "en_name": "Templar Knight's Battle Standard",
         "cn_name": "护教骑士战旗",
         "tw_name": "護教騎士戰旗*"
     },
@@ -122,7 +122,7 @@ const sp_weapon_data = {
         "limit": 20706,
         "type": 7,
         "jp_name": "グローリー・オン・タイム",
-        "en_name": "(no DATA)",
+        "en_name": "Punctual Glory",
         "cn_name": "准时的怀表",
         "tw_name": "準時的懷錶*"
     },

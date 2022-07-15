@@ -1763,10 +1763,10 @@ const equip_data = {
         "ship_type_forbidden": [
             3
         ],
-        "jp_name": "試作型四連装330mm砲設計図Mle1931(超巡用)",
+        "jp_name": "試作型四連装330mm砲Mle1931(超巡用)",
         "cn_name": "试作型四联装330mm主炮Mle1931(超巡用)",
         "tw_name": "試作型四聯裝330mm主炮Mle1931(超巡用)*",
-        "en_name": "(no DATA)",
+        "en_name": "Prototype Quadruple 330mm Mle 1931 (CB Only) Main Gun Mount",
         "equip_limit": 0,
         "cd": [
             2155,
@@ -4524,7 +4524,7 @@ const equip_data = {
         "jp_name": "試作型艦上式Su-2",
         "cn_name": "试作舰载型Su-2",
         "tw_name": "試作艦載型Su-2*",
-        "en_name": "(no DATA)",
+        "en_name": "Prototype Su-2",
         "equip_limit": 0,
         "cd": [
             2185,
@@ -5533,7 +5533,7 @@ const equip_data = {
         "jp_name": "試作型VIT-2(VK107)",
         "cn_name": "试作型VIT-2 (VK-107)",
         "tw_name": "試作型VIT-2 (VK-107)*",
-        "en_name": "(no DATA)",
+        "en_name": "Prototype VIT-2 (VK-107)",
         "equip_limit": 0,
         "cd": [
             2230,
@@ -8769,7 +8769,7 @@ const equip_data = {
         "jp_name": "試作型四連装30mm機関砲",
         "cn_name": "试作型四联装30mm机炮",
         "tw_name": "試作型四聯裝30mm機炮*",
-        "en_name": "(no DATA)",
+        "en_name": "Prototype Quadruple 30mm AA Gun Mount",
         "equip_limit": 0,
         "cd": [
             166,
@@ -15757,7 +15757,7 @@ const equip_data = {
         "jp_name": "試作型四連装152mm砲",
         "cn_name": "试作型四联装152mm主炮",
         "tw_name": "試作型四聯裝152mm主炮*",
-        "en_name": "(no DATA)",
+        "en_name": "Prototype Quadruple 152mm Main Gun Mount",
         "equip_limit": 0,
         "cd": [
             516,
@@ -16814,7 +16814,7 @@ const equip_data = {
         "jp_name": "試作型130mm連装砲Model 1936",
         "cn_name": "试作型双联装130mm主炮Model1936",
         "tw_name": "試作型雙聯裝130mm主炮Model1936*",
-        "en_name": "(no DATA)",
+        "en_name": "Prototype Twin 130mm Model 1936 Main Gun Mount",
         "equip_limit": 0,
         "cd": [
             322,
