@@ -28,7 +28,7 @@
     <link rel="prefetch" href="js/ship_data.min.js?v=7d67125519f4" as="script">
     <link rel="prefetch" href="js/equip_data.min.js?v=15447d7fdf69" as="script">
     <link rel="prefetch" href="js/sp_weapon_data.min.js?v=88efbf55573f" as="script">
-    <link rel="prefetch" href="js/main-v2.min.js?v=ad00ed4e2245" as="script">
+    <link rel="prefetch" href="js/main-v2.min.js?v=e83f4ca23c15" as="script">
     <style>
         body {
             color: white;
@@ -542,7 +542,7 @@
                 </label>
             </div>
             <button id="show_setting" class="btn btn-outline-info d-flex mt-3 mx-auto w-25 justify-content-center" type="button" data-toggle="collapse" data-target="#setting_area" aria-expanded="false" aria-controls="setting_area">
-                ⮟ Settings
+                ▼ Settings
             </button>
             <div id="setting_area" class="collapse">
                 <div class="btn-group d-flex mt-3 mx-auto w-25" id="option_box_1">
@@ -557,7 +557,7 @@
                 </div>
                 <div class="d-grid mx-auto my-3 w-25 data_container" id="owned_data_area">
                     <button id="display_info_title" class="btn btn-outline-info d-flex mx-auto my-2 justify-content-center" type="button" data-toggle="collapse" data-target="#display_info_expand" aria-expanded="false" aria-controls="display_info_expand">
-                        ⮟ Detail Info
+                        ▼ Detail Info
                     </button>
                     <div id="display_info_expand" class="collapse">
                         <div class="btn-group d-flex my-3 mx-auto w-100" id="option_box_3">
@@ -572,7 +572,7 @@
                         </div>
                     </div>
                     <button id="compact_mode" class="btn btn-outline-info d-flex mx-auto my-2 justify-content-center" type="button" data-toggle="collapse" data-target="#compact_mode_expand" aria-expanded="false" aria-controls="compact_mode_expand">
-                        ⮟ Compact Mode
+                        ▼ Compact Mode
                     </button>
                     <div id="compact_mode_expand" class="collapse">
                         <div class="btn-group d-flex my-3 mx-auto w-100" id="option_box_5">
@@ -583,11 +583,11 @@
                         </div>
                     </div>
                     <button id="tech_data_title" onclick="app.util.dumpTechData()" class="btn btn-outline-info d-flex mx-auto my-2 justify-content-center" type="button" data-toggle="collapse" data-target="#tech_data_area_expand" aria-expanded="false" aria-controls="tech_data_area_expand">
-                        ⮟ Tech Reload Data
+                        ▼ Tech Reload Data
                     </button>
                     <div id="tech_data_area_expand" class="collapse text-center"></div>
                     <button id="owned_data_title" class="btn btn-outline-info d-flex mx-auto my-2 justify-content-center" type="button" data-toggle="collapse" data-target="#owned_data_area_expand" aria-expanded="false" aria-controls="owned_data_area_expand">
-                        ⮟ Owned Ship/Equip Data
+                        ▼ Owned Ship/Equip Data
                     </button>
                     <div id="owned_data_area_expand" class="collapse">
                         <textarea class="d-flex databox text-light mx-auto my-1 w-100" id="owned_data_dump"></textarea>
@@ -605,7 +605,7 @@
                         </div>
                     </div>
                     <button id="user_data_title" class="btn btn-outline-info d-flex mx-auto my-2 justify-content-center" type="button" data-toggle="collapse" data-target="#user_data_area_expand" aria-expanded="false" aria-controls="user_data_area_expand">
-                        ⮟ User Data
+                        ▼ User Data
                     </button>
                     <div id="user_data_area_expand" class="collapse text-center">
                         <input type="file" id="user_data_file" accept=".alft" style="display:none"></input>
@@ -681,7 +681,7 @@
             <div class="modal-content text-light bg-modal">
                 <div class="modal-header p-2 bg-black">
                     <h4 class="modal-title m-auto text-center line-3-item" ui_id="select_ship">Select Ship</h4>
-                    <button id="show_ship_filter" class="btn btn-outline-info mx-2 line-3-item" type="button" data-toggle="collapse" data-target="#ship_filter" aria-expanded="false" aria-controls="ship_filter">⮟ Show Filter</button>
+                    <button id="show_ship_filter" class="btn btn-outline-info mx-2 line-3-item" type="button" data-toggle="collapse" data-target="#ship_filter" aria-expanded="false" aria-controls="ship_filter">▼ Show Filter</button>
                     <button type="button" class="btn btn-danger text-light p-0 line-3-item" data-dismiss="modal" style="font-size: x-large;">Exit</button>
                 </div>
                 <div class="modal-body p-2">
@@ -753,7 +753,7 @@
                         </div>
                         <div class="d-flex m-auto line-40">
                             <div class="dropdown w-50 mx-1 btn-group">
-                                <button id="ship_sort_order" name="ship_sort_order" type="button" class="btn btn-outline-light font-weight-bold d-flex justify-content-center align-items-center" aria-pressed="false" onclick="app.option.ship.sort_order(this)" value="1">⮟</button>
+                                <button id="ship_sort_order" name="ship_sort_order" type="button" class="btn btn-outline-light font-weight-bold d-flex justify-content-center align-items-center" aria-pressed="false" onclick="app.option.ship.sort_order(this)" value="1">▼</button>
                                 <button ui_id="sort" class="btn btn-outline-light w-75 text-truncate dropdown-toggle" type="button" id="sort_menu" data-toggle="dropdown" aria-expanded="false">
                                     Sort
                                 </button>
@@ -784,7 +784,7 @@
             <div class="modal-content text-light bg-modal">
                 <div class="modal-header p-2 bg-black">
                     <h4 class="modal-title m-auto text-center line-3-item" ui_id="select_equip">Select Equip</h4>
-                    <button id="show_equip_filter" class="btn btn-outline-info mx-2 line-3-item" type="button" data-toggle="collapse" data-target="#equip_filter" aria-expanded="false" aria-controls="equip_filter">⮟ Show Filter</button>
+                    <button id="show_equip_filter" class="btn btn-outline-info mx-2 line-3-item" type="button" data-toggle="collapse" data-target="#equip_filter" aria-expanded="false" aria-controls="equip_filter">▼ Show Filter</button>
                     <button type="button" class="btn btn-danger text-light p-0 line-3-item" data-dismiss="modal" style="font-size: x-large;">Exit</button>
                 </div>
                 <div class="modal-body p-2">
@@ -843,7 +843,7 @@
                         </div>
                         <div class="d-flex m-auto line-40">
                             <div class="dropdown w-50 btn-group mx-1">
-                                <button id="equip_sort_order" name="equip_sort_order" type="button" class="btn btn-outline-light font-weight-bold d-flex justify-content-center align-items-center" aria-pressed="false" onclick="app.option.equip.sort_order(this)" value="1">⮟</button>
+                                <button id="equip_sort_order" name="equip_sort_order" type="button" class="btn btn-outline-light font-weight-bold d-flex justify-content-center align-items-center" aria-pressed="false" onclick="app.option.equip.sort_order(this)" value="1">▼</button>
                                 <button ui_id="sort" class="btn btn-outline-light w-75 text-truncate dropdown-toggle" type="button" id="sort_menu" data-toggle="dropdown" aria-expanded="false">
                                     Sort
                                 </button>
@@ -873,7 +873,7 @@
             <div class="modal-content text-light bg-modal">
                 <div class="modal-header p-2 bg-black">
                     <h4 class="modal-title m-auto text-center line-3-item" ui_id="select_spweapon">Select Augment</h4>
-                    <button id="show_spweapon_filter" class="btn btn-outline-info mx-2 line-3-item" type="button" data-toggle="collapse" data-target="#spweapon_filter" aria-expanded="false" aria-controls="spweapon_filter" style="opacity: 0;pointer-events: none;">⮟ Show Filter</button>
+                    <button id="show_spweapon_filter" class="btn btn-outline-info mx-2 line-3-item" type="button" data-toggle="collapse" data-target="#spweapon_filter" aria-expanded="false" aria-controls="spweapon_filter" style="opacity: 0;pointer-events: none;">▼ Show Filter</button>
                     <button type="button" class="btn btn-danger text-light p-0 line-3-item" data-dismiss="modal" style="font-size: x-large;">Exit</button>
                 </div>
                 <div class="modal-body p-2">
@@ -912,7 +912,7 @@
     <script src='js/ship_data.min.js?v=7d67125519f4'></script>
     <script src='js/equip_data.min.js?v=15447d7fdf69'></script>
     <script src='js/sp_weapon_data.min.js?v=88efbf55573f'></script>
-    <script src="js/main-v2.min.js?v=ad00ed4e2245"></script>
+    <script src="js/main-v2.min.js?v=e83f4ca23c15"></script>
 </body>
 
 </html>

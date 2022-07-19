@@ -12,21 +12,21 @@ const
     lan_target_list = [
         // for ui element that have no language.
         // do not change id, unless you know what you are doing.
-        { id: "show_setting", en: "⮟ Settings", jp: "⮟ 設定", tw: "⮟ 設定", },
+        { id: "show_setting", en: "▼ Settings", jp: "▼ 設定", tw: "▼ 設定", },
         { id: "allow_dup_btn", en: "Allow Duplicate", jp: "重複を許可する", tw: "允許重複的船", },
         { id: "display_fleet_border", en: "Fleet Border", jp: "フレーム表示", tw: "顯示外框" },
         { id: "display_fleet_op", en: "Edit Button/ID", jp: "編集ボタン表示", tw: "顯示編輯" },
         { id: "frame_setting", en: "Thick frame", jp: "厚いフレーム", tw: "粗框" },
         { id: "display_sp_weapon", en: "Show Augment", jp: "特殊装備表示", tw: "顯示特殊兵裝" },
 
-        { id: "display_info_title", en: "⮟ Detail Info", jp: "⮟ 詳細データ", tw: "⮟ 詳細資料" },
+        { id: "display_info_title", en: "▼ Detail Info", jp: "▼ 詳細データ", tw: "▼ 詳細資料" },
         { id: "display_info_level", en: "Level", jp: "レベル", tw: "等級" },
         { id: "display_info_affinity", en: "Affinity", jp: "好感度", tw: "好感度" },
         { id: "display_info_position", en: "Position", jp: "編成位置", tw: "編成位置" },
         { id: "display_info_efficiency", en: "Efficiency", jp: "補正", tw: "效率" },
         { id: "display_info_base", en: "Base", jp: "武器数", tw: "底座數" },
         { id: "display_info_cd", en: "CD", jp: "攻速", tw: "射速" },
-        { id: "compact_mode", en: "⮟ Compact Mode", jp: "⮟ コンパクトモード", tw: "⮟ 緊湊模式" },
+        { id: "compact_mode", en: "▼ Compact Mode", jp: "▼ コンパクトモード", tw: "▼ 緊湊模式" },
 
         { id: "add_fleet", en: "Save Current", jp: "セーブ", tw: "儲存目前艦隊", },
         { id: "select_fleet", en: "Select Fleet", jp: "艦隊を選択", tw: "選擇艦隊", },
@@ -42,7 +42,7 @@ const
         { id: "emptyData", en: "Clear", jp: "クリア", tw: "清空", },
         { id: "loadDataByID", en: "Load", jp: "ロード", tw: "載入", },
 
-        { id: "owned_data_title", en: "⮟ Owned [Ship/Equip] Data", jp: "⮟ 所持して[艦船/装備]データ", tw: "⮟ 已有的[船/裝備]資料", },
+        { id: "owned_data_title", en: "▼ Owned [Ship/Equip] Data", jp: "▼ 所持して[艦船/装備]データ", tw: "▼ 已有的[船/裝備]資料", },
         { id: "dumpOwned", en: "Dump", jp: "ダンプ", tw: "匯出", },
         { id: "copyOwned", en: "Copy", jp: "コピー", tw: "複製", },
         { id: "emptyOwned", en: "Clear", jp: "クリア", tw: "清空", },
@@ -50,7 +50,7 @@ const
         { id: "saveOwned", en: "Save", jp: "セーブ", tw: "儲存", },
         { id: "loadOwnedSetting", en: "Reload Setting", jp: "設定再読み込み", tw: "重新讀取設定", },
 
-        { id: "tech_data_title", en: "⮟ Fleet Tech (Reload)", jp: "⮟ 艦船技術(装填)", tw: "⮟ 艦隊科技(裝填)", },
+        { id: "tech_data_title", en: "▼ Fleet Tech (Reload)", jp: "▼ 艦船技術(装填)", tw: "▼ 艦隊科技(裝填)", },
 
         { id: "exportUserData", en: "Export", jp: "エクスポート", tw: "匯出", },
         { id: "importUserDataA", en: "Import (Append)", jp: "インポート (追加)", tw: "匯入 (附加)", },
@@ -58,8 +58,8 @@ const
 
         { id: "rebuild_cache_btn", en: "Rebuild Cache", jp: "キャッシュをクリア&再構築", tw: "重建快取", },
 
-        { id: "show_ship_filter", en: "⮟ Show Filter", jp: "⮟ フィルター", tw: "⮟ 顯示過濾器", },
-        { id: "show_equip_filter", en: "⮟ Show Filter", jp: "⮟ フィルター", tw: "⮟ 顯示過濾器", },
+        { id: "show_ship_filter", en: "▼ Show Filter", jp: "▼ フィルター", tw: "▼ 顯示過濾器", },
+        { id: "show_equip_filter", en: "▼ Show Filter", jp: "▼ フィルター", tw: "▼ 顯示過濾器", },
         { id: "owned_ship_set", en: "Set Owned Ship", jp: "所持している艦船を設定", tw: "設定已有的船", },
         { id: "owned_ship_only", en: "Only Show Owned", jp: "所持しているだけを表示", tw: "只顯示已有的船", },
         { id: "owned_equip_set", en: "Set Owned Equip", jp: "所持している装備を設定", tw: "設定已有的裝備", },
@@ -978,7 +978,7 @@ const
                 },
                 sort_order(ele) {
                     ele.value = ele.value == 1 ? 0 : 1;
-                    ele.textContent = ele.value == 1 ? "⮟" : "⮝";
+                    ele.textContent = ele.value == 1 ? "▼" : "▲";
                     // trigger sort
                     document.querySelector(`[onclick*="app.option.ship.sort"]`) //ship
                         .parentElement.querySelector(`[aria-labelledby="sort_menu"]>.active`).click();
@@ -1047,7 +1047,7 @@ const
                 },
                 sort_order(ele) {
                     ele.value = ele.value == 1 ? 0 : 1;
-                    ele.textContent = ele.value == 1 ? "⮟" : "⮝";
+                    ele.textContent = ele.value == 1 ? "▼" : "▲";
                     // trigger sort
                     document.querySelector(`[onclick*="app.option.equip.sort"]`) //equip
                         .parentElement.querySelector(`[aria-labelledby="sort_menu"]>.active`).click();
@@ -4256,23 +4256,23 @@ Vue.component("fleet-container", {
                 </div>
                 <div class="d-flex line-5-item">
                     <div class="d-flex btn-group w-100 m-auto">
-                        <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="1,0" onclick="${action.insert}">⮝</button>
+                        <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="1,0" onclick="${action.insert}">▲</button>
                         <div class="${fleet_btn_style.text} border-warning" v-text="ui_text.normal_fleet[lang]">Normal</div>
-                        <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="1,1" onclick="${action.insert}">⮟</button>
+                        <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="1,1" onclick="${action.insert}">▼</button>
                     </div>
                 </div>
                 <div class="d-flex line-5-item">
                     <div class="d-flex btn-group w-100 mx-1 my-auto">
-                        <button class="${fleet_btn_style.normal} w-50 w-border-right" v-bind:pos="fleet.id" onclick="${action.move}" data="-1">⮝</button>
+                        <button class="${fleet_btn_style.normal} w-50 w-border-right" v-bind:pos="fleet.id" onclick="${action.move}" data="-1">▲</button>
                         <div class="${fleet_btn_style.normal} w-75" onclick="${action.swap}" v-text="ui_text.swap_ship[lang]">Swap</div>
-                        <button class="${fleet_btn_style.normal} w-50 border-left" v-bind:pos="fleet.id" onclick="${action.move}" data="1">⮟</button>
+                        <button class="${fleet_btn_style.normal} w-50 border-left" v-bind:pos="fleet.id" onclick="${action.move}" data="1">▼</button>
                     </div>
                 </div>
                 <div class="d-flex line-5-item">
                     <div class="d-flex btn-group w-100 m-auto">
-                        <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="2,0" onclick="${action.insert}">⮝</button>
+                        <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="2,0" onclick="${action.insert}">▲</button>
                         <div class="${fleet_btn_style.text} border-warning" v-text="ui_text.sub_fleet[lang]">Sub</div>
-                        <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="2,1" onclick="${action.insert}">⮟</button>
+                        <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="2,1" onclick="${action.insert}">▼</button>
                     </div>
                 </div>
                 <div class="d-flex line-5-item">
