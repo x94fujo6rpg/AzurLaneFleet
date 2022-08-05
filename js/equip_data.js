@@ -2263,6 +2263,21 @@ const equip_data = {
         "equip_limit": 1900,
         "cd": []
     },
+    "3600": {
+        "nationality": 6,
+        "type": 10,
+        "rarity": 4,
+        "tech": 0,
+        "id": 3600,
+        "icon": "3600",
+        "ship_type_forbidden": [],
+        "jp_name": "世界博覧会の招待状",
+        "cn_name": "撒丁的邀请函",
+        "tw_name": "撒丁的邀請函*",
+        "en_name": "World Expo Invitation",
+        "equip_limit": 3600,
+        "cd": []
+    },
     "3300": {
         "nationality": 5,
         "type": 10,
@@ -3155,7 +3170,9 @@ const equip_data = {
         "tw_name": "作戰報告：AF",
         "en_name": "Action Report: Operation AF",
         "equip_limit": 940,
-        "cd": []
+        "cd": [
+            null
+        ]
     },
     "500": {
         "nationality": 1,
