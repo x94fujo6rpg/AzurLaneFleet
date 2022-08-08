@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=980, initial-scale=0.5">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
     <meta name="google-site-verification" content="S5x2K1hv1hI8UD5KVUhN7CidFneOpC4Y2xTAa44CC9c" />
 
     <title>Azur Lane Fleet Tool</title>
@@ -28,7 +28,7 @@
     <link rel="prefetch" href="js/ship_data.min.js?v=a33d89bb8a2f" as="script">
     <link rel="prefetch" href="js/equip_data.min.js?v=e6eb89be4700" as="script">
     <link rel="prefetch" href="js/sp_weapon_data.min.js?v=88efbf55573f" as="script">
-    <link rel="prefetch" href="js/main-v2.min.js?v=e83f4ca23c15" as="script">
+    <link rel="prefetch" href="js/main-v2.min.js?v=e88ac3b6ddb6" as="script">
     <style>
         body {
             color: white;
@@ -137,20 +137,48 @@
         .box:hover {
             overflow: visible;
             z-index: 105;
-            background-color: black;
+            opacity: 1;
         }
         
         .box:hover>.icon_box {
-            opacity: 0.5;
+            box-shadow: 0 -0.25rem 0.75rem 1.5rem rgba(0, 0, 0, 0.85);
+            background-color: black;
+            opacity: 1 !important;
         }
         
-        .box:hover>span {
-            color: Tomato;
+        .box:hover>.icon_box>img[src="ui/empty.png"],
+        .box:hover>.icon_box>.bg {
             background-color: black;
-            border-width: 0.2rem;
-            border-color: black;
+        }
+        
+        .box:hover>.icon_box[style="opacity: 0.2;"]>.icon {
+            opacity: 0.6;
+        }
+        
+        .box:hover>.icon_box>img {
+            margin-top: -1rem;
+            transform: scale(1.2);
+        }
+        
+        .box:hover>.icon_box>span {
+            margin: -1.4rem -0.4rem -0.5rem;
+            transform: scale(1.1);
+        }
+        
+        .box:hover>.item_name {
+            background-color: rgba(0, 0, 0, 1);
+            border-width: 0.1rem;
+            border-color: rgba(200, 200, 200, 0.25);
             border-style: solid;
-            top: 0.01rem;
+            border-radius: 0.25rem;
+            padding: 0.3rem;
+            top: 1.25rem;
+            margin-left: -100%;
+            margin-right: -100%;
+            text-align: center;
+            font-size: large;
+            z-index: 104;
+            box-shadow: 0 0 0.15rem 0.15rem rgba(0, 200, 255, 0.9), 0 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.75);
         }
         
         .text_shadow {
@@ -212,7 +240,7 @@
         .ship_level {
             position: absolute;
             top: 0.25rem;
-            left: 0.1rem;
+            left: 0.125rem;
             z-index: 103;
             font-size: 1.1rem;
             font-weight: bold;
@@ -495,9 +523,15 @@
         
         .bg-modal {
             --v: 20;
-            background-color: rgba(var(--v), var(--v), var(--v), 0.875);
+            background-color: rgba(var(--v), var(--v), var(--v), 0.95);
             border-style: solid;
             border-color: rgba(255, 255, 255, 0.25);
+        }
+        
+        .collapsing {
+            -webkit-transition: none;
+            transition: none;
+            display: none;
         }
     </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKESRCZC4Z"></script>
@@ -711,22 +745,22 @@
                         <button class="btn btn-outline-light w-25 mx-2" type="button" id="owned_ship_only" onclick="app.util.setOwned(this, 'ship')">Only Show Owned</button>
                     </div>
                     <div class="btn-group btn-group-toggle d-flex my-2 flex-wrap justify-content-center" data-toggle="buttons" id="affinity_area">
-                        <label class="btn btn-outline-secondary affinity-btn font-weight-bold line-3-item rounded-0" value="1">
+                        <label class="btn btn-outline-secondary line-3-item ml-0 font-weight-bold text-truncate filter-btn" value="1">
                             <input type="radio" name="Stranger" id="affinity_1">Stranger
                         </label>
-                        <label class="btn btn-outline-secondary affinity-btn font-weight-bold line-3-item" value="2">
+                        <label class="btn btn-outline-secondary line-3-item ml-0 font-weight-bold text-truncate filter-btn" value="2">
                             <input type="radio" name="Friendly" id="affinity_2">Friendly
                         </label>
-                        <label class="btn btn-outline-secondary affinity-btn font-weight-bold line-3-item" value="3">
+                        <label class="btn btn-outline-secondary line-3-item ml-0 font-weight-bold text-truncate filter-btn" value="3">
                             <input type="radio" name="Crush" id="affinity_3">Crush
                         </label>
-                        <label class="btn btn-outline-secondary affinity-btn font-weight-bold line-3-item active" value="4">
+                        <label class="btn btn-outline-secondary line-3-item ml-0 font-weight-bold text-truncate filter-btn active" value="4">
                             <input type="radio" name="Love" id="affinity_4">Love
                         </label>
-                        <label class="btn btn-outline-secondary affinity-btn font-weight-bold line-3-item" value="5">
+                        <label class="btn btn-outline-secondary line-3-item ml-0 font-weight-bold text-truncate filter-btn" value="5">
                             <input type="radio" name="Oath" id="affinity_5">Oath
                         </label>
-                        <label class="btn btn-outline-secondary affinity-btn font-weight-bold line-3-item rounded-0" value="6">
+                        <label class="btn btn-outline-secondary line-3-item ml-0 font-weight-bold text-truncate filter-btn" value="6">
                             <input type="radio" name="Oath(200)" id="affinity_6">Oath(200)
                         </label>
                     </div>
@@ -912,7 +946,7 @@
     <script src='js/ship_data.min.js?v=a33d89bb8a2f'></script>
     <script src='js/equip_data.min.js?v=e6eb89be4700'></script>
     <script src='js/sp_weapon_data.min.js?v=88efbf55573f'></script>
-    <script src="js/main-v2.min.js?v=e83f4ca23c15"></script>
+    <script src="js/main-v2.min.js?v=e88ac3b6ddb6"></script>
 </body>
 
 </html>

@@ -1273,7 +1273,8 @@ const
                     func = {
                         ship: function () { app.setShipAndEquip(this); },
                         equip: function () { app.setEquip(this); },
-                    };
+                    },
+                    trans_ele = ".icon_box";
                 if (!(btn.classList.contains("active"))) {
                     btn.classList.add("active");
                     // disable owned filter
@@ -1313,8 +1314,18 @@ const
                     }
 
                     function updateList(target) {
-                        if (!target) all_btn.forEach(btn => btn.style.opacity = list.has(parseInt(btn.id, 10)) ? 1 : 0.2);
-                        if (target) target.style.opacity = list.has(parseInt(target.id, 10)) ? 1 : 0.2;
+                        if (!target) {
+                            all_btn.forEach(btn => {
+                                btn.querySelector(trans_ele).style.opacity = setOpacity(btn.id);
+                            });
+                        }
+                        if (target) {
+                            target.querySelector(trans_ele).style.opacity = setOpacity(target.id);
+                        }
+
+                        function setOpacity(id) {
+                            return list.has(parseInt(id, 10)) ? 1 : 0.2;
+                        }
                     }
                 }
 
@@ -1324,7 +1335,7 @@ const
                     all_btn.forEach(btn => {
                         btn.setAttribute("data-dismiss", "modal");
                         btn.onclick = func[type];
-                        btn.style.opacity = 1;
+                        btn.querySelector(trans_ele).style.opacity = 1;
                     });
                     enable_btn.disabled = false;
 
