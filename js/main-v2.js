@@ -1169,6 +1169,7 @@ const
                     tech: "",
                     eq_type: 9999,
                     reload: [],
+                    is_sp: true,
                 };
                 return SpWeapon;
             },
@@ -1680,6 +1681,7 @@ const
                     if (!level && isNaN(level)) level = app._level_default.spweapon;
                     app.setSpWeapon(ship_item, false, true);
                     app_item.spweapon_level = app.spweaponLevelLimit(level);
+                    app_item.is_sp = true;
                 }
 
                 function parse007({ fleet_index, side_index, ship_index, ship, formation_data }) {
@@ -4179,9 +4181,14 @@ Vue.component("item-container", {
         >
             <div class="container-fluid p-0 box">
               <div class="icon_box">
-                <img class="img-fluid bg" v-bind:src="item.property.bg">
-                <img class="img-fluid frame" v-bind:src="item.property.frame">
-                <img class="img-fluid icon" v-bind:src="item.property.icon">
+                <img v-if="!item.property.is_sp" class="img-fluid bg" v-bind:src="item.property.bg">
+                <img v-if="!item.property.is_sp" class="img-fluid frame" v-bind:src="item.property.frame">
+                <img v-if="!item.property.is_sp" class="img-fluid icon" v-bind:src="item.property.icon">
+
+                <img v-if="item.property.is_sp" class="img-fluid bg spbg" v-bind:src="item.property.bg">
+                <div v-if="item.property.is_sp" class="img-fluid frame spframe" v-bind:is_icon="item.property.icon"></div>
+                <img v-if="item.property.is_sp" class="img-fluid icon spicon" v-bind:src="item.property.icon">
+
                 <span class="itemq text_shadow"
                     v-text="item.property.quantity"
                     v-if="item.property.quantity && ui_settings.show_quantity">

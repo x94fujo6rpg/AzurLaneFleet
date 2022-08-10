@@ -28,7 +28,7 @@
     <link rel="prefetch" href="js/ship_data.min.js?v=a33d89bb8a2f" as="script">
     <link rel="prefetch" href="js/equip_data.min.js?v=e6eb89be4700" as="script">
     <link rel="prefetch" href="js/sp_weapon_data.min.js?v=88efbf55573f" as="script">
-    <link rel="prefetch" href="js/main-v2.min.js?v=e88ac3b6ddb6" as="script">
+    <link rel="prefetch" href="js/main-v2.min.js?v=07d1cba73c9c" as="script">
     <style>
         body {
             color: white;
@@ -72,6 +72,19 @@
             width: 100%;
         }
         
+        .spbg {
+            height: 100%;
+            border-radius: 50%;
+            border: solid 0.25rem rgba(0, 0, 0, 0);
+        }
+        
+        .bg[src=""],
+        .frame[src=""],
+        .spbg[src=""],
+        .spframe[src=""] {
+            display: none;
+        }
+        
         .icon {
             position: relative;
             height: 5.3rem;
@@ -79,6 +92,10 @@
             z-index: 101;
             object-fit: scale-down;
             image-rendering: -webkit-optimize-contrast;
+        }
+        
+        .spicon {
+            clip-path: circle(45% at 50% 50%);
         }
         
         @media not all and (min-resolution:.001dpcm) {
@@ -114,6 +131,19 @@
             left: 0px;
             z-index: 102;
             width: 100%;
+        }
+        
+        .spframe {
+            height: 100%;
+            border: solid;
+            border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-color: rgba(200, 200, 200, 0.95);
+        }
+        
+        .spframe[is_icon="ui/icon_back.png"] {
+            border-color: rgba(200, 200, 200, 0.2);
         }
         
         .icon_box {
@@ -155,9 +185,15 @@
             opacity: 0.6;
         }
         
-        .box:hover>.icon_box>img {
+        .box:hover>.icon_box>img,
+        .box:hover>.icon_box>.spframe {
             margin-top: -1rem;
             transform: scale(1.2);
+        }
+        
+        .box:hover>.icon_box>.spbg,
+        .box:hover>.icon_box>.spframe {
+            height: 120%;
         }
         
         .box:hover>.icon_box>span {
@@ -946,7 +982,7 @@
     <script src='js/ship_data.min.js?v=a33d89bb8a2f'></script>
     <script src='js/equip_data.min.js?v=e6eb89be4700'></script>
     <script src='js/sp_weapon_data.min.js?v=88efbf55573f'></script>
-    <script src="js/main-v2.min.js?v=e88ac3b6ddb6"></script>
+    <script src="js/main-v2.min.js?v=07d1cba73c9c"></script>
 </body>
 
 </html>
