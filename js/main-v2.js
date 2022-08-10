@@ -2466,6 +2466,10 @@ const
                         app_item.style = app_item.eq_type = "";
                         app_item.cd = [];
                         delete app_item.cd_cache;
+
+                        if (index == 6) {
+                            app_item.is_sp = true;
+                        }
                     }
                 } else {
                     //copy ship data & equip setting
@@ -2520,6 +2524,7 @@ const
                             app_item.type = [9999];
                             app_item.icon = ui_table.empty_item;
                             app_item.typelist = typelist;
+                            app_item.is_sp = true;
 
                             ui_table.langs.forEach((lan_str) => {
                                 app_item[lan_str] = app_item[`type_${lan_str}`] = parsetype[9999][lan_str];
@@ -4218,10 +4223,9 @@ Vue.component("item-container", {
                     v-text="item.property.cd_cache+'s'"
                     v-if="item.property.bg && (item.property.cd_cache > 0) && ui_settings.show_cd">
                 </span>
-                <span class="spweapon_level"
-                    v-text="'+'+item.property.spweapon_level"
-                    v-if="item.property.bg && (item.property.spweapon_level > 0) && ui_settings.show_level">
-                </span>
+                <div class="spweapon_level_box" v-if="item.property.bg && (item.property.spweapon_level > 0) && ui_settings.show_level">
+                    <span class="spweapon_level" v-text="'+'+item.property.spweapon_level">
+                </div>
               </div>
               <span v-bind:class="class_data.item_name" v-text="item.property[lang]"></span>
             </div>

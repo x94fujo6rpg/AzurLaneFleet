@@ -28,7 +28,7 @@
     <link rel="prefetch" href="js/ship_data.min.js?v=a33d89bb8a2f" as="script">
     <link rel="prefetch" href="js/equip_data.min.js?v=e6eb89be4700" as="script">
     <link rel="prefetch" href="js/sp_weapon_data.min.js?v=88efbf55573f" as="script">
-    <link rel="prefetch" href="js/main-v2.min.js?v=07d1cba73c9c" as="script">
+    <link rel="prefetch" href="js/main-v2.min.js?v=45f56b53e4d9" as="script">
     <style>
         body {
             color: white;
@@ -96,6 +96,7 @@
         
         .spicon {
             clip-path: circle(45% at 50% 50%);
+            padding: 0.75rem;
         }
         
         @media not all and (min-resolution:.001dpcm) {
@@ -186,7 +187,7 @@
         }
         
         .box:hover>.icon_box>img,
-        .box:hover>.icon_box>.spframe {
+        .box:hover>.icon_box>div {
             margin-top: -1rem;
             transform: scale(1.2);
         }
@@ -289,8 +290,7 @@
             clip-path: polygon(75% 0, 100% 50%, 75% 100%, 0 100%, 0 0);
         }
         
-        .equip_level,
-        .spweapon_level {
+        .equip_level {
             position: absolute;
             top: 0.25rem;
             left: 0.1rem;
@@ -305,6 +305,31 @@
             width: 2.5rem;
             padding-bottom: 0.1rem;
             clip-path: polygon(75% 0, 100% 50%, 75% 100%, 0 100%, 0 0);
+        }
+        
+        .spweapon_level {
+            position: relative;
+            z-index: 103;
+            font-size: 1rem;
+            font-weight: bold;
+            opacity: 0.85;
+            text-align: left;
+            width: 2.5rem;
+            margin-left: -100%;
+            margin-right: -100%;
+            vertical-align: middle;
+        }
+        
+        .spweapon_level_box {
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 102;
+            width: 2rem;
+            height: 2rem;
+            position: absolute;
+            top: 0rem;
+            left: 0rem;
+            border: solid 0.125rem rgba(200, 200, 200, 0.5);
+            border-radius: 50%;
         }
         
         .equip_cd {
@@ -982,7 +1007,7 @@
     <script src='js/ship_data.min.js?v=a33d89bb8a2f'></script>
     <script src='js/equip_data.min.js?v=e6eb89be4700'></script>
     <script src='js/sp_weapon_data.min.js?v=88efbf55573f'></script>
-    <script src="js/main-v2.min.js?v=07d1cba73c9c"></script>
+    <script src="js/main-v2.min.js?v=45f56b53e4d9"></script>
 </body>
 
 </html>
