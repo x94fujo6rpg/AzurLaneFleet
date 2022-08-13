@@ -4224,7 +4224,7 @@ Vue.component("item-container", {
                     v-if="item.property.bg && (item.property.cd_cache > 0) && ui_settings.show_cd">
                 </span>
                 <div class="spweapon_level_box" v-if="item.property.bg && (item.property.spweapon_level > 0) && ui_settings.show_level">
-                    <span class="spweapon_level" v-text="'+'+item.property.spweapon_level">
+                    <span class="spweapon_level" v-text="'+'+item.property.spweapon_level"></span>
                 </div>
               </div>
               <span v-bind:class="class_data.item_name" v-text="item.property[lang]"></span>
