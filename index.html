@@ -28,7 +28,7 @@
     <link rel="prefetch" href="js/ship_data.min.js?v=a33d89bb8a2f" as="script">
     <link rel="prefetch" href="js/equip_data.min.js?v=e6eb89be4700" as="script">
     <link rel="prefetch" href="js/sp_weapon_data.min.js?v=88efbf55573f" as="script">
-    <link rel="prefetch" href="js/main-v2.min.js?v=be6645ed4f4d" as="script">
+    <link rel="prefetch" href="js/main-v2.min.js?v=d5cf30bdfdb9" as="script">
     <style>
         body {
             color: white;
@@ -534,7 +534,7 @@
             justify-content: center;
         }
         
-        @media only screen and (max-width: 1300px) {
+        @media only screen and (max-width: 1400px) {
             .w-25 {
                 width: 50% !important;
             }
@@ -610,6 +610,11 @@
             }
             .item_name {
                 font-size: 1.2rem;
+            }
+            @supports (-moz-animation: auto) {
+                .item_name {
+                    top: -0.25rem;
+                }
             }
         }
     </style>
@@ -1025,7 +1030,7 @@
     <script src='js/ship_data.min.js?v=a33d89bb8a2f'></script>
     <script src='js/equip_data.min.js?v=e6eb89be4700'></script>
     <script src='js/sp_weapon_data.min.js?v=88efbf55573f'></script>
-    <script src="js/main-v2.min.js?v=be6645ed4f4d"></script>
+    <script src="js/main-v2.min.js?v=d5cf30bdfdb9"></script>
 </body>
 
 </html>

@@ -242,6 +242,7 @@ const
         show_cd: "show_cd",
         show_quantity: "show_quantity",
         compactMode: "compactMode",
+        auto_set_layout: "auto_set_layout",
     },
     util = {
         sleep(ms = 0) {
@@ -630,6 +631,7 @@ const
             owned_load_setting(s_count, e_count) { return this._t(`Owned data loaded (setting) [Ship:${s_count}, Equip:${e_count}]`); },
             owned_save(s_count, e_count) { return this._t(`Owned data saved [Ship:${s_count}, Equip:${e_count}]`); },
             ship_copied(ship) { return this._t(`[${ship[0].property[language]}] copied`); },
+            device_width() { return this._t(`Layout is set to [ ${layout_list.v2} ] due to undersized screen.`); },
         },
     },
     fleet_info = {
@@ -3665,8 +3667,18 @@ const
                 }
 
                 if (setting[settingKey.layout]) {
-                    let layoutSwitch = document.querySelector("#layout_setting");
-                    layoutSwitch.textContent = layout_list[setting[settingKey.layout]];
+                    let layoutSwitch = document.querySelector("#layout_setting"),
+                        width = $(window).width(),
+                        safe_size = 1400;
+                    if (width >= safe_size || setting[settingKey.auto_set_layout]) {
+                        layoutSwitch.textContent = layout_list[setting[settingKey.layout]];
+                    } else {
+                        layoutSwitch.textContent = layout_list.v2;
+                        LS.userSetting.set(settingKey.auto_set_layout, 1);
+                        setTimeout(() => {
+                            msg.normal.device_width();
+                        }, 2000);
+                    }
                     app.option.switchLayout(layoutSwitch, true);
                 }
 
