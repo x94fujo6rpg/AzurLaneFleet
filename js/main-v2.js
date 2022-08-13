@@ -1776,6 +1776,9 @@ const
                 [c_fleet, c_side, c_pos, c_item] = item.name.split("_");
                 let sw = dynamicFleet._swap;
                 if (sw.on) {
+                    // prevent copy bug
+                    item.classList.add("disable_ele");
+
                     // set swap data
                     if (sw.state == 1) {
                         sw.a = [c_fleet, c_side, c_pos, c_item];
