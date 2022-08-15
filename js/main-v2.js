@@ -721,27 +721,27 @@ const
                 let is_active,
                     list = [
                         { // default
-                            fleet_box_i: "compact_m01",
+                            fleet_box_i: "p-1",
                             item_container: "compact_item_container",
-                            fleet_side_box: "compact_side_box",
+                            fleet_side_box: "m-2",
                             item_name: "compact_item_name",
                         },
                         { // smaller gap
-                            fleet_box_i: "compact_m0",
+                            fleet_box_i: "p-1",
                             item_container: "compact_item_container",
-                            fleet_side_box: "compact_m01",
+                            fleet_side_box: "m-1",
                             item_name: "compact_item_name",
                         },
                         { // only outer gap
-                            fleet_box_i: "compact_m01",
+                            fleet_box_i: "p-1",
                             item_container: "compact_item_container",
-                            fleet_side_box: "compact_m0",
+                            fleet_side_box: "m-0",
                             item_name: "compact_item_name",
                         },
                         { // no gap
-                            fleet_box_i: "compact_m0",
+                            fleet_box_i: "p-0",
                             item_container: "compact_item_container",
-                            fleet_side_box: "compact_m0",
+                            fleet_side_box: "m-0",
                             item_name: "compact_item_name",
                         },
                     ],
@@ -865,6 +865,15 @@ const
                 let display = ele.classList.contains("active");
                 ALF.ui_settings.show_op = display;
                 LS.userSetting.set(settingKey.fleetEdit, display ? 1 : 0);
+
+                // force re-calc ele pos when use compact mode
+                if (!display) {
+                    let target = document.querySelector("#compact_mode_expand .active");
+                    if (target) {
+                        target.click();
+                        setTimeout(() => target.click());
+                    }
+                }
             },
             displayBorder(ele) {
                 $(ele).button("toggle");
@@ -4063,9 +4072,9 @@ const
             v2: "fleet_box_o flex-row"
         },
         fleet_box_i: {
-            h: "fleet_box_i row m-2",
-            v: "fleet_box_i col p-0", // m-2
-            v2: "fleet_box_i col p-0" // m-2
+            h: "fleet_box_i row",
+            v: "fleet_box_i col", // m-2
+            v2: "fleet_box_i col" // m-2
         },
         item_container: {
             h: "p-1 item_container",
@@ -4265,11 +4274,10 @@ Vue.component("ship-container", {
 
 const
     fleet_btn_style = { // fleet_op_hide
-        normal: `btn btn-outline-secondary fleet_op_btn p-0`,
-        yellow: `btn btn-outline-warning fleet_op_btn p-0 w-50`,
-        text: `text-monospace text-center w-100 d-flex align-items-center justify-content-center border btn`,
-        copy: `btn btn-outline-success w-75 mx-1 my-auto text-truncate text-monospace p-1 text-nowrap`,
-        del: `btn btn-outline-danger line-5-item fleet_op_btn`,
+        normal: `btn btn-outline-secondary fleet_op_btn p-0 text-monospace`,
+        yellow: `btn btn-outline-warning p-0 w-100 text-monospace`,
+        copy: `btn btn-outline-success w-75 mx-1 my-auto text-truncate p-1 text-nowrap text-monospace`,
+        del: `btn btn-outline-danger w-25 fleet_op_btn m-auto text-monospace`,
     },
     path = (target = "") => { return `dynamicFleet.${target}(this)`; },
     action = {
@@ -4285,32 +4293,28 @@ Vue.component("fleet-container", {
     template: `
         <div v-bind:class="class_data.fleet_box_o">
             <div class="fleet_op_box" v-if="ui_settings.show_op">
-                <div class="d-flex line-5-item">
-                    <div class="w-25 text-monospace text-center m-auto fleet_name" v-text="fleet.id">Fleet_ID</div>
+                <div class="d-flex line-4-item">
+                    <div class="btn w-25 text-monospace text-center m-auto fleet_name" v-text="fleet.id">Fleet_ID</div>
                     <button class="${fleet_btn_style.copy}" v-bind:pos="fleet.id" onclick="${action.swap_copy.replace("this", "this, true")}" v-text="ui_text.copy_ship[lang]">CopyShip</button>
                 </div>
-                <div class="d-flex line-5-item">
+                <div class="d-flex line-6-item">
                     <div class="d-flex btn-group w-100 m-auto">
-                        <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="1,0" onclick="${action.insert}">▲</button>
-                        <div class="${fleet_btn_style.text} border-warning" v-text="ui_text.normal_fleet[lang]">Normal</div>
-                        <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="1,1" onclick="${action.insert}">▼</button>
+                        <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="1,1" onclick="${action.insert}" v-text="'+'+ui_text.normal_fleet[lang]">Normal</button>
                     </div>
                 </div>
-                <div class="d-flex line-5-item">
+                <div class="d-flex line-3-item">
                     <div class="d-flex btn-group w-100 mx-1 my-auto">
-                        <button class="${fleet_btn_style.normal} w-50 w-border-right" v-bind:pos="fleet.id" onclick="${action.move}" data="-1">▲</button>
-                        <div class="${fleet_btn_style.normal} w-75" onclick="${action.swap}" v-text="ui_text.swap_ship[lang]">Swap</div>
-                        <button class="${fleet_btn_style.normal} w-50 border-left" v-bind:pos="fleet.id" onclick="${action.move}" data="1">▼</button>
+                        <button class="${fleet_btn_style.normal} line-3-item w-border-right" v-bind:pos="fleet.id" onclick="${action.move}" data="-1">▲</button>
+                        <div class="${fleet_btn_style.normal} line-3-item" onclick="${action.swap}" v-text="ui_text.swap_ship[lang]">Swap</div>
+                        <button class="${fleet_btn_style.normal} line-3-item border-left" v-bind:pos="fleet.id" onclick="${action.move}" data="1">▼</button>
                     </div>
                 </div>
-                <div class="d-flex line-5-item">
+                <div class="d-flex line-6-item">
                     <div class="d-flex btn-group w-100 m-auto">
-                        <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="2,0" onclick="${action.insert}">▲</button>
-                        <div class="${fleet_btn_style.text} border-warning" v-text="ui_text.sub_fleet[lang]">Sub</div>
-                        <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="2,1" onclick="${action.insert}">▼</button>
+                        <button class="${fleet_btn_style.yellow}" v-bind:pos="fleet.id" data="2,1" onclick="${action.insert}" v-text="'+'+ui_text.sub_fleet[lang]">Sub</button>
                     </div>
                 </div>
-                <div class="d-flex line-5-item">
+                <div class="d-flex line-4-item">
                     <button class="${fleet_btn_style.copy}" v-bind:pos="fleet.id" onclick="${action.copy}" v-text="ui_text.copy_fleet[lang]">CopyFleet</button>
                     <button class="${fleet_btn_style.del}" v-bind:pos="fleet.id" onclick="${action.delete}">✖</button>
                 </div>

@@ -28,7 +28,7 @@
     <link rel="prefetch" href="js/ship_data.min.js?v=a33d89bb8a2f" as="script">
     <link rel="prefetch" href="js/equip_data.min.js?v=e6eb89be4700" as="script">
     <link rel="prefetch" href="js/sp_weapon_data.min.js?v=88efbf55573f" as="script">
-    <link rel="prefetch" href="js/main-v2.min.js?v=c0d03f1883f9" as="script">
+    <link rel="prefetch" href="js/main-v2.min.js?v=755afd2a899a" as="script">
     <style>
         body {
             color: white;
@@ -49,6 +49,7 @@
             display: flex;
             width: 100%;
             padding: 0.2rem;
+            justify-content: center;
         }
         
         .item_container {
@@ -454,6 +455,13 @@
             opacity: 1;
         }*/
         
+        .fleet_box_i {
+            justify-content: center;
+            width: fit-content;
+            margin: auto;
+            padding: 0;
+        }
+        
         .ship_container {
             display: flex;
             justify-content: center;
@@ -527,7 +535,8 @@
         
         .btn {
             white-space: normal !important;
-            height: 2.5rem;
+            height: 3rem;
+            min-width: 2.5rem;
             line-height: 1rem;
             display: flex;
             align-items: center;
@@ -538,9 +547,13 @@
             .w-25 {
                 width: 50% !important;
             }
+            .w-50 {
+                width: 75% !important;
+            }
             .w-75 {
                 width: 100% !important;
             }
+            /*
             .line-5-item {
                 max-width: 100%;
                 width: calc(100% / 4);
@@ -549,6 +562,7 @@
                 max-width: 100%;
                 width: calc(100% / 4);
             }
+            */
             .af_slider {
                 height: 4rem;
             }
@@ -557,21 +571,9 @@
             }
         }
         
-        .compact_m0 {
-            margin: 0 !important;
-        }
-        
-        .compact_m01 {
-            margin: 0.1rem !important;
-        }
-        
         .compact_item_container {
             height: unset !important;
             margin: -3px -3px !important;
-        }
-        
-        .compact_side_box {
-            margin: 0.25rem !important;
         }
         
         .compact_item_name {
@@ -593,11 +595,6 @@
             -webkit-transition: none;
             transition: none;
             display: none;
-        }
-        
-        .btn {
-            height: 3rem;
-            min-width: 2.5rem;
         }
         
         @media screen and (max-width: 1100px) {
@@ -1030,7 +1027,7 @@
     <script src='js/ship_data.min.js?v=a33d89bb8a2f'></script>
     <script src='js/equip_data.min.js?v=e6eb89be4700'></script>
     <script src='js/sp_weapon_data.min.js?v=88efbf55573f'></script>
-    <script src="js/main-v2.min.js?v=c0d03f1883f9"></script>
+    <script src="js/main-v2.min.js?v=755afd2a899a"></script>
 </body>
 
 </html>
