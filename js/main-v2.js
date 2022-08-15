@@ -860,6 +860,17 @@ const
                     }
                 }
             },
+            _edit_op_css(add) {
+                let _id = "fleet_box_i_add",
+                    _css;
+                document.querySelectorAll(`#${_id}`).forEach(e => e.remove());
+                if (add) {
+                    _css = document.createElement("style");
+                    _css.id = _id;
+                    _css.innerText = `.fleet_box_i { margin: auto; }`;
+                    document.head.appendChild(_css);
+                }
+            },
             displayOP(ele) {
                 $(ele).button("toggle");
                 let display = ele.classList.contains("active");
@@ -873,6 +884,9 @@ const
                         target.click();
                         setTimeout(() => target.click());
                     }
+                    this._edit_op_css(1);
+                } else {
+                    this._edit_op_css(0);
                 }
             },
             displayBorder(ele) {
@@ -3703,7 +3717,11 @@ const
                     { key: settingKey.show_quantity, id: "display_info_base" },
                     { key: settingKey.show_cd, id: "display_info_cd" },
                 ].forEach(target => {
-                    setTimeout(() => setValue(target.key, target.id));
+                    if (target.id != "display_fleet_op") {
+                        setTimeout(() => setValue(target.key, target.id));
+                    } else {
+                        setTimeout(() => setValue(target.key, target.id, () => app.option._edit_op_css(1)));
+                    }
                 });
 
                 if (setting[settingKey.ownedItem]) {
