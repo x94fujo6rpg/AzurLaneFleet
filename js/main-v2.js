@@ -1662,14 +1662,12 @@ const
                     }
                 }
 
-                function set_ship({ ship_item, app_item, affinity_data = false, level }) {
+                function set_ship({ ship_item, app_item, affinity_data = 4, level = 120 }) {
                     let result = app.setShipAndEquip(ship_item, false, true);
                     if (!level) level = app._level_default.ship;
                     app_item.ship_level = app.shipLevelLimit(level); // set level
-                    if (affinity_data) {
-                        app_item.affinity = affinity_data || 4; // set affinity
-                        app_item.affinity_value = app.util._affinity_bonus[app_item.affinity];
-                    }
+                    app_item.affinity = affinity_data; // set affinity
+                    app_item.affinity_value = app.util._affinity_bonus[app_item.affinity];
                     return result;
                 }
 
@@ -4269,7 +4267,7 @@ const
     fleet_btn_style = { // fleet_op_hide
         normal: `btn btn-outline-secondary fleet_op_btn p-0`,
         yellow: `btn btn-outline-warning fleet_op_btn p-0 w-50`,
-        text: `text-monospace text-center w-100 d-flex align-items-center justify-content-center border`,
+        text: `text-monospace text-center w-100 d-flex align-items-center justify-content-center border btn`,
         copy: `btn btn-outline-success w-75 mx-1 my-auto text-truncate text-monospace p-1 text-nowrap`,
         del: `btn btn-outline-danger line-5-item fleet_op_btn`,
     },
