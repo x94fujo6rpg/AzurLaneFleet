@@ -4323,7 +4323,7 @@ Vue.component("fleet-container", {
                 <div class="d-flex line-3-item">
                     <div class="d-flex btn-group w-100 mx-1 my-auto">
                         <button class="${fleet_btn_style.normal} line-3-item w-border-right" v-bind:pos="fleet.id" onclick="${action.move}" data="-1">▲</button>
-                        <div class="${fleet_btn_style.normal} line-3-item" onclick="${action.swap}" v-text="ui_text.swap_ship[lang]">Swap</div>
+                        <div class="${fleet_btn_style.normal} line-40" onclick="${action.swap}" v-text="ui_text.swap_ship[lang]">Swap</div>
                         <button class="${fleet_btn_style.normal} line-3-item border-left" v-bind:pos="fleet.id" onclick="${action.move}" data="1">▼</button>
                     </div>
                 </div>
