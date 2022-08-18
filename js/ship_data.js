@@ -5936,7 +5936,7 @@ const ship_data = {
         ],
         "id": 607024,
         "skin_id": 607020,
-        "english_name": "RN Impero !TWnoData",
+        "english_name": "RN Impero",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -5945,7 +5945,7 @@ const ship_data = {
         "jp_name": "インペロ",
         "en_name": "Impero",
         "cn_name": "帝国",
-        "tw_name": "帝國*",
+        "tw_name": "帝國",
         "equip_1": [
             7,
             9
@@ -6383,7 +6383,7 @@ const ship_data = {
         ],
         "id": 603044,
         "skin_id": 603040,
-        "english_name": "RN Trieste !TWnoData",
+        "english_name": "RN Trieste",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -6392,7 +6392,7 @@ const ship_data = {
         "jp_name": "トリエステ",
         "en_name": "Trieste",
         "cn_name": "的里雅斯特",
-        "tw_name": "的里雅斯特*",
+        "tw_name": "的里雅斯德",
         "equip_1": [
             3
         ],
@@ -6783,7 +6783,7 @@ const ship_data = {
         ],
         "id": 601074,
         "skin_id": 601070,
-        "english_name": "RN Pompeo Magno !TWnoData",
+        "english_name": "RN Pompeo Magno",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -6792,7 +6792,7 @@ const ship_data = {
         "jp_name": "ポンペオ・マーニョ",
         "en_name": "Pompeo Magno",
         "cn_name": "庞培·马格诺",
-        "tw_name": "龐培·馬格諾*",
+        "tw_name": "龐培·馬格諾",
         "equip_1": [
             1
         ],
@@ -9235,6 +9235,56 @@ const ship_data = {
         ],
         "date": "2020年07月09日"
     },
+    "404050": {
+        "nationality": 4,
+        "type": 4,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 404054,
+        "skin_id": 404050,
+        "english_name": "KMS Brunhilde !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "404050",
+        "painting": "bulunxierde",
+        "jp_name": "ブリュンヒルデ",
+        "en_name": "KMS Brünhilde*",
+        "cn_name": "布伦希尔德",
+        "tw_name": "布倫希爾德*",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.4,
+            2,
+            1
+        ],
+        "reload": [
+            60,
+            419,
+            0,
+            45,
+            0
+        ],
+        "date": "2022年08月18日"
+    },
     "404040": {
         "nationality": 4,
         "type": 4,
@@ -9931,6 +9981,55 @@ const ship_data = {
             0
         ],
         "date": "2017年05月25日"
+    },
+    "403020": {
+        "nationality": 4,
+        "type": 3,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 403024,
+        "skin_id": 403020,
+        "english_name": "KMS Blucher !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "403020",
+        "painting": "bulvxieer",
+        "jp_name": "ブリュッヒャー",
+        "en_name": "KMS Blücher*",
+        "cn_name": "布吕歇尔",
+        "tw_name": "布呂歇爾*",
+        "equip_1": [
+            3
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.5,
+            1.6,
+            1
+        ],
+        "reload": [
+            67,
+            467,
+            0,
+            50,
+            0
+        ],
+        "date": "2022年08月18日"
     },
     "403010": {
         "nationality": 4,
@@ -11264,6 +11363,57 @@ const ship_data = {
             0
         ],
         "date": "2018年07月21日"
+    },
+    "401160": {
+        "nationality": 4,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 401164,
+        "skin_id": 401160,
+        "english_name": "KMS Friedrich Eckoldt !ENnoData !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "401160",
+        "painting": "z16",
+        "jp_name": "Z16",
+        "en_name": "KMS Friedrich Eckoldt*",
+        "cn_name": "Z16",
+        "tw_name": "Z16*",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.25,
+            1.4,
+            0.75
+        ],
+        "reload": [
+            78,
+            541,
+            0,
+            58,
+            0
+        ],
+        "date": "2022年08月18日"
     },
     "401020": {
         "nationality": 4,
@@ -32884,6 +33034,57 @@ const ship_data = {
         ],
         "date": "2017年05月25日"
     },
+    "101119": {
+        "nationality": 1,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 101114,
+        "skin_id": 101119,
+        "english_name": "USS Charles Ausburne",
+        "star": 5,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "101119",
+        "painting": "aosiben_g",
+        "jp_name": "チャールズ・オースバーン改",
+        "en_name": "Charles Ausburne (Retrofit)",
+        "cn_name": "查尔斯·奥斯本改",
+        "tw_name": "查爾斯·奧斯本改",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.4,
+            1.4,
+            1.3
+        ],
+        "reload": [
+            79,
+            548,
+            0,
+            59,
+            0
+        ],
+        "date": "2022年08月18日"
+    },
     "101110": {
         "nationality": 1,
         "type": 1,
@@ -32897,7 +33098,7 @@ const ship_data = {
         "english_name": "USS Charles Ausburne",
         "star": 5,
         "rarity": 4,
-        "retro": 0,
+        "retro": 1,
         "uni_id": "101110",
         "painting": "aosiben",
         "jp_name": "チャールズ・オースバーン",

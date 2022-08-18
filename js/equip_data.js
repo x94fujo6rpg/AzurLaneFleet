@@ -14037,6 +14037,39 @@ const equip_data = {
             1100
         ]
     },
+    "43080": {
+        "nationality": 4,
+        "type": 3,
+        "rarity": 5,
+        "tech": 0,
+        "id": 43080,
+        "icon": "43080",
+        "ship_type_forbidden": [
+            8,
+            17
+        ],
+        "jp_name": "203mmSKC連装砲改",
+        "cn_name": "双联装203mmSKC主炮改",
+        "tw_name": "雙聯裝203mmSKC主炮改*",
+        "en_name": "(no DATA)",
+        "equip_limit": 0,
+        "cd": [
+            1500,
+            1465,
+            1430,
+            1395,
+            1360,
+            1325,
+            1290,
+            1255,
+            1220,
+            1185,
+            1150,
+            1150,
+            1150,
+            1150
+        ]
+    },
     "43040": {
         "nationality": 4,
         "type": 3,
@@ -16643,7 +16676,7 @@ const equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "135mm連装砲Model1938",
         "cn_name": "双联装135mm主炮Model1938",
-        "tw_name": "雙聯裝135mm主炮Model1938*",
+        "tw_name": "雙聯裝135mm主炮Model1938",
         "en_name": "135mm Twin Main Gun Mount Model 1938",
         "equip_limit": 0,
         "cd": [
@@ -16673,7 +16706,7 @@ const equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "135mm連装砲Model1938",
         "cn_name": "双联装135mm主炮Model1938",
-        "tw_name": "雙聯裝135mm主炮Model1938*",
+        "tw_name": "雙聯裝135mm主炮Model1938",
         "en_name": "135mm Twin Main Gun Mount Model 1938",
         "equip_limit": 0,
         "cd": [
@@ -16700,7 +16733,7 @@ const equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "135mm連装砲Model1938",
         "cn_name": "双联装135mm主炮Model1938",
-        "tw_name": "雙聯裝135mm主炮Model1938*",
+        "tw_name": "雙聯裝135mm主炮Model1938",
         "en_name": "135mm Twin Main Gun Mount Model 1938",
         "equip_limit": 0,
         "cd": [
