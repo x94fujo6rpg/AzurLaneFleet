@@ -2768,7 +2768,7 @@ const
             app.getLevel("spweapon");
         },
         checkFleetShipSkill(fleet_id) {
-            // if any ship in current fleet have skill type 2, run it
+            // if any ship in current fleet have skill type 2/3, run it
             let target = [],
                 fleet = fleetData[fleet_id];
             Object.keys(fleet).forEach(side_key => {
@@ -2776,7 +2776,7 @@ const
                 fleet[side_key].forEach((ship, ship_index) => {
                     let skill = ship.item[0].property.slot_skill;
                     if (skill) {
-                        if (skill.type == 2) {
+                        if (skill.type != 1) {
                             target.push({ c_data: [fleet_id, side_key, ship_index, 0] });
                         }
                     }
@@ -2798,7 +2798,6 @@ const
                     shipInApp.item[5].property,
                 ],
                 name = shipInApp.item[0].property.tw;
-
 
             // reset all slot's proficiency & style
             slot_list.forEach((_s, i) => {
@@ -2844,14 +2843,21 @@ const
             }
 
             function type2() {
-                let { type, slot, check, list, p_diff } = skill,
+                let { type, slot, check, list, p_diff, NOT_self = false } = skill,
                     [_side, _pos] = slot[0].split("_"),
-                    target, target_name;
+                    target, target_name,
+                    check_target = (_list, _target, _check, _NOT_self) => {
+                        if (!_NOT_self) {
+                            return _list.some(e => e == _target[_check]);
+                        } else {
+                            return _list.every(e => e != _target[_check]);
+                        }
+                    };
                 _pos = getShipPos(_side, _pos); // get real array pos (1,2,3) => (0,1,2)
-                if (check == "id" && _pos != p) return false; // target pos is not self
+                if (check == "id" && _pos != p && !NOT_self) return false; // abort when target pos != self
                 target = fleetData[f][_side][_pos].item[0].property;
                 target_name = target.tw;
-                if (list.some(e => e == target[check])) {
+                if (check_target(list, target, check, NOT_self)) {
                     slot_list.forEach((_s, i) => {
                         _s.proficiency += p_diff[i];
                         _s.style = getColor(p_diff[i]);
