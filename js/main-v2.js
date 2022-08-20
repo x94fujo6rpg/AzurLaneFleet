@@ -2450,6 +2450,28 @@ const
                 shipInList = sortedShip.find(ele => {
                     if (ele.id === `${item.id}` || ele.id === item.id) return Object.assign({}, ele);
                 }),
+                reset_ship = (_app_item) => {
+                    ui_table.copy_ship.forEach(key => _app_item[key] = "");
+                    _app_item.icon = shipInList.icon;
+                    _app_item.equip_p = _app_item.base = [];
+                    delete _app_item.slot_skill; // remove skill data
+                    _app_item.reload = [];
+                    delete _app_item.reload_cache;
+                    delete _app_item.affinity;
+                    delete _app_item.affinity_value;
+                },
+                reset_equip = (_app_item, _index) => {
+                    Object.keys(_app_item).filter(key => key != "equip_level").forEach(key => _app_item[key] = "");
+                    _app_item.icon = ui_table.empty_disable;
+                    _app_item.fb = _app_item.type = [];
+                    _app_item.style = _app_item.eq_type = "";
+                    _app_item.cd = [];
+                    delete _app_item.cd_cache;
+
+                    if (_index == 6) {
+                        _app_item.is_sp = true;
+                    }
+                },
                 pos = `fleet:${c_fleet}, ${side}, pos:${c_pos}, item:${c_item}`;
 
             // try cn wiki id
@@ -2476,31 +2498,17 @@ const
                     // empty ship/equip
                     if (index === "0") {
                         //ship
-                        ui_table.copy_ship.forEach(key => app_item[key] = "");
-                        app_item.icon = shipInList.icon;
-                        app_item.equip_p = app_item.base = [];
-                        delete app_item.slot_skill; // remove skill data
-                        app_item.reload = [];
-                        delete app_item.reload_cache;
-                        delete app_item.affinity;
-                        delete app_item.affinity_value;
+                        reset_ship(app_item);
                     } else {
                         //equip
-                        Object.keys(app_item).filter(key => key != "equip_level").forEach(key => app_item[key] = "");
-                        app_item.icon = ui_table.empty_disable;
-                        app_item.fb = app_item.type = [];
-                        app_item.style = app_item.eq_type = "";
-                        app_item.cd = [];
-                        delete app_item.cd_cache;
-
-                        if (index == 6) {
-                            app_item.is_sp = true;
-                        }
+                        reset_equip(app_item, index);
                     }
                 } else {
                     //copy ship data & equip setting
                     let equip_p = shipInList.equip_p.map(n => Math.round(n * 100)); // copy & convert to int 1.25 => 125
                     if (index === "0") {
+                        reset_ship(app_item);
+
                         //ship
                         ui_table.copy_ship.forEach(key => app_item[key] = shipInList[key]);
 
@@ -2513,6 +2521,7 @@ const
                         // if ship have slot skill, copy skill data
                         if (skill_ship_slot[item.id]) app_item.slot_skill = Object.assign({}, skill_ship_slot[item.id]);
                     } else {
+                        reset_equip(app_item, index);
                         if (index != 6) {
                             //equip
                             let typelist = shipInList[`e${index}`],
