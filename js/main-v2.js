@@ -2497,10 +2497,8 @@ const
                 if (item.id === "000000") {
                     // empty ship/equip
                     if (index === "0") {
-                        //ship
                         reset_ship(app_item);
                     } else {
-                        //equip
                         reset_equip(app_item, index);
                     }
                 } else {
@@ -2682,21 +2680,19 @@ const
                 console.log(`%cinvalid equip id[${item.id}] at [${pos}], abort`, "color:red;");
                 return false;
             }
-            if (id === 666666) {
-                // reset
-                ui_table.copy_equip.forEach(key => itemInApp[key] = "");
-                itemInApp.tw = itemInApp.type_tw;
-                itemInApp.cn = itemInApp.type_cn;
-                itemInApp.en = itemInApp.type_en;
-                itemInApp.jp = itemInApp.type_jp;
-                itemInApp.icon = ui_table.empty_item;
-                itemInApp.style = itemInApp.eq_type = "";
-                itemInApp.cd = [];
-                delete itemInApp.cd_cache;
 
-                // if ship have slot skill
-                if (shipInApp.item[0].property.slot_skill) app.setProficiencyBySkill({ c_data: [c_fleet, side, c_pos, c_item] });
-            } else {
+            // reset
+            ui_table.copy_equip.forEach(key => itemInApp[key] = "");
+            itemInApp.tw = itemInApp.type_tw;
+            itemInApp.cn = itemInApp.type_cn;
+            itemInApp.en = itemInApp.type_en;
+            itemInApp.jp = itemInApp.type_jp;
+            itemInApp.icon = ui_table.empty_item;
+            itemInApp.style = itemInApp.eq_type = "";
+            itemInApp.cd = [];
+            delete itemInApp.cd_cache;
+
+            if (id != 666666) {
                 // copy data
                 let itemInList = sortedEquip.find((ele) => { if (ele.id === id) return Object.assign({}, ele); });
 
@@ -2711,10 +2707,11 @@ const
 
                 // set equip type for slot skill
                 itemInApp.eq_type = itemInList.type;
-
-                // if ship have slot skill
-                if (shipInApp.item[0].property.slot_skill) app.setProficiencyBySkill({ c_data: [c_fleet, side, c_pos, c_item] });
             }
+
+            // if ship have slot skill
+            if (shipInApp.item[0].property.slot_skill) app.setProficiencyBySkill({ c_data: [c_fleet, side, c_pos, c_item] });
+
             app.util.updateCD({ type: "equip", data: [c_fleet, side, c_pos, c_item] });
             if (save) LS.userSetting.set(settingKey.fleetData, app.util.dumpID());
             return true;
