@@ -15,6 +15,10 @@ Generate shareable text codes or links.
   - [fleetdata version](#fleetdata-version)
 
 ## Update  
+**2022-09-07**
+- short url
+  - github account required
+
 **2022-07-04**
 - more compact mode
   - 0: default
