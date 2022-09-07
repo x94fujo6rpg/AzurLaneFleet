@@ -147,7 +147,7 @@ const sp_weapon_data = {
         "limit": 40701,
         "type": 7,
         "jp_name": "重照空投射攻性艤装NT",
-        "en_name": "(no DATA)",
+        "en_name": "Concentrated Beam-Type Assault Rigging NT",
         "cn_name": "强探照投射攻性舰装NT",
         "tw_name": "強探照投射攻性艦裝NT*"
     },
@@ -160,7 +160,7 @@ const sp_weapon_data = {
         "limit": 60102,
         "type": 1,
         "jp_name": "近衛兵士の誇りとほっこり",
-        "en_name": "(no DATA)",
+        "en_name": "Carabinier's Honored Hallmark",
         "cn_name": "近卫兵的骄傲与安心",
         "tw_name": "近衛兵的驕傲與安心*"
     },

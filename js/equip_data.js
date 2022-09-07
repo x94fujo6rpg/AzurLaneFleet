@@ -14051,7 +14051,7 @@ const equip_data = {
         "jp_name": "203mmSKC連装砲改",
         "cn_name": "双联装203mmSKC主炮改",
         "tw_name": "雙聯裝203mmSKC主炮改*",
-        "en_name": "(no DATA)",
+        "en_name": "Twin 203mm SKC (Improved)",
         "equip_limit": 0,
         "cd": [
             1500,

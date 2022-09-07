@@ -2802,6 +2802,55 @@ const ship_data = {
         ],
         "date": "2021年10月01日"
     },
+    "9704040": {
+        "nationality": 97,
+        "type": 4,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 9704044,
+        "skin_id": 9704040,
+        "english_name": "Renown.META !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "9704040",
+        "painting": "shengwang_alter",
+        "jp_name": "レナウン(META)",
+        "en_name": "Renown META",
+        "cn_name": "声望·META",
+        "tw_name": "聲望·META*",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.35,
+            1.5,
+            0.7
+        ],
+        "reload": [
+            57,
+            399,
+            0,
+            43,
+            0
+        ],
+        "date": "2022年09月01日"
+    },
     "9704030": {
         "nationality": 97,
         "type": 4,
@@ -9245,14 +9294,14 @@ const ship_data = {
         ],
         "id": 404054,
         "skin_id": 404050,
-        "english_name": "KMS Brunhilde !ENnoData !TWnoData",
+        "english_name": "KMS Brunhilde !TWnoData",
         "star": 6,
         "rarity": 5,
         "retro": 0,
         "uni_id": "404050",
         "painting": "bulunxierde",
         "jp_name": "ブリュンヒルデ",
-        "en_name": "KMS Brünhilde*",
+        "en_name": "Brünhilde",
         "cn_name": "布伦希尔德",
         "tw_name": "布倫希爾德*",
         "equip_1": [
@@ -9992,14 +10041,14 @@ const ship_data = {
         ],
         "id": 403024,
         "skin_id": 403020,
-        "english_name": "KMS Blucher !ENnoData !TWnoData",
+        "english_name": "KMS Blucher !TWnoData",
         "star": 6,
         "rarity": 5,
         "retro": 0,
         "uni_id": "403020",
         "painting": "bulvxieer",
         "jp_name": "ブリュッヒャー",
-        "en_name": "KMS Blücher*",
+        "en_name": "Blücher",
         "cn_name": "布吕歇尔",
         "tw_name": "布呂歇爾*",
         "equip_1": [
@@ -11374,14 +11423,14 @@ const ship_data = {
         ],
         "id": 401164,
         "skin_id": 401160,
-        "english_name": "KMS Friedrich Eckoldt !ENnoData !TWnoData",
+        "english_name": "KMS Friedrich Eckoldt !TWnoData",
         "star": 5,
         "rarity": 4,
         "retro": 0,
         "uni_id": "401160",
         "painting": "z16",
         "jp_name": "Z16",
-        "en_name": "KMS Friedrich Eckoldt*",
+        "en_name": "Z16",
         "cn_name": "Z16",
         "tw_name": "Z16*",
         "equip_1": [
