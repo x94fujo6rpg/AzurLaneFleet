@@ -64,7 +64,7 @@ const url_shortener = async (original_url = "", token = false) => {
 
 	async function post_url(token, url) {
 		const target_repo_name = "su-db",
-			api_url = `https://api.github.com/repos/${user_name}/${target_repo_name}/issues`;
+			api_url = `https://api.github.com/repos/x94fujo6rpg/${target_repo_name}/issues`;
 		let headers = new Headers({
 			"Accept": "application/vnd.github.v3+json",
 			"Authorization": `Bearer ${token}`,
