@@ -2153,7 +2153,8 @@ const
                 }
             },
             async shortURL(ele) {
-                let dis_class = "disable_ele";
+                let dis_class = "disable_ele",
+                    textbox = document.getElementById("url_box");
                 ele.classList.add(dis_class);
                 if (url_shortener && window.location.protocol != "file:") {
                     let link = this.getURL();
@@ -2178,7 +2179,7 @@ const
                             textbox.value = link;
                             LS.userSetting.del(settingKey.g_token); // remove invalid token
                         }
-                        
+
                         this.copyURL();
                     }
                 }

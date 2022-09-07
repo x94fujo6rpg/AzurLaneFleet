@@ -86,6 +86,7 @@ const url_shortener = async (original_url = "", token = false) => {
 		try {
 			let result = await fetch(api_url, config);
 			result = await result.json();
+			console.log(result);
 			return {
 				num: result.number,
 				user: result.user.login,
