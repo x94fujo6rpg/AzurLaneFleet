@@ -465,7 +465,7 @@
             width: fit-content;
             padding: 0;
         }
-
+        
         .fleet_box_i.row {
             margin: auto;
         }
@@ -770,6 +770,9 @@
                 <button type="button" class="btn mx-1 line-2-item text-truncate" onclick="app.action.generateURL()">Generate URL</button>
                 <button type="button" class="btn mx-1 line-2-item text-truncate" onclick="app.action.copyURL()">Copy</button>
             </div>
+            <div class="d-flex mx-auto my-1 w-25 w-100">
+                <button type="button" class="btn mx-1 w-100 text-truncate" onclick="app.action.shortURL(this)" id="subtn" style="display: none;">Short URL (Github User)</button>
+            </div>
         </div>
         <div class="d-grid mx-auto my-5 w-25" id="data_area">
             <h4 class="d-flex text-light mx-auto my-1" id="fleetdata_text">Fleet data</h4>
@@ -1035,7 +1038,22 @@
     <script src='js/ship_data.min.js?v=16f6335e374e'></script>
     <script src='js/equip_data.min.js?v=b09f38c6d727'></script>
     <script src='js/sp_weapon_data.min.js?v=fb914ce7483b'></script>
-    <script src="js/main-v2.min.js?v=a1ca0904eae1"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDW8RQcC6kjicXm1otJ4vbtyzZXovy7OM8",
+            authDomain: "azur-lane-fleet-tool.firebaseapp.com",
+            projectId: "azur-lane-fleet-tool",
+            storageBucket: "azur-lane-fleet-tool.appspot.com",
+            messagingSenderId: "83250372184",
+            appId: "1:83250372184:web:d91e16ad0e55900b3f342d",
+            measurementId: "G-EWKSWT1DBM"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src='js/oa.min.js?v=bdcc667174ae'></script>
+    <script src="js/main-v2.min.js?v=ca20a149c0ef"></script>
 </body>
 
 </html>

@@ -243,6 +243,7 @@ const
         show_quantity: "show_quantity",
         compactMode: "compactMode",
         auto_set_layout: "auto_set_layout",
+        g_token: "g_token",
     },
     util = {
         sleep(ms = 0) {
@@ -2132,13 +2133,17 @@ const
                 });
                 app.util.countShipDisplayed();
             },
-            generateURL() {
-                let data = app.util.dumpID();
-                let link = LZString.decompressFromEncodedURIComponent("BYFxAcGcC4HpYB4E4AsAzArgKwPYDYAncAcwDpiBLEYDAI1Ip1gEEAvDAgGQEMA7AUwBiAG378QsIA");
+            getURL() {
+                let data = app.util.dumpID(),
+                    link = LZString.decompressFromEncodedURIComponent("BYFxAcGcC4HpYB4E4AsAzArgKwPYDYAncAcwDpiBLEYDAI1Ip1gEEAvDAgGQEMA7AUwBiAG378QsIA");
                 link = new URL(link);
-                let textbox = document.getElementById("url_box");
                 link.searchParams.append("AFLD", data);
                 link = link.href;
+                return link;
+            },
+            generateURL() {
+                let textbox = document.getElementById("url_box"),
+                    link = this.getURL();
                 if (link.length >= 2000) {
                     textbox.value = "URL too long. You still can share it by use fleetdata below";
                     msg.error.long_url();
@@ -2146,6 +2151,38 @@ const
                     textbox.value = link;
                     this.copyURL();
                 }
+            },
+            async shortURL(ele) {
+                let dis_class = "disable_ele";
+                ele.classList.add(dis_class);
+                if (url_shortener && window.location.protocol != "file:") {
+                    let link = this.getURL();
+                    if (link.length >= 2000) {
+                        textbox.value = "URL too long. You still can share it by use fleetdata below";
+                        ele.classList.remove(dis_class);
+                        msg.error.long_url();
+                    } else {
+                        let old_token = LS.userSetting.get(settingKey.g_token),
+                            result;
+
+                        if (old_token) {
+                            result = await url_shortener(link, old_token);
+                        } else {
+                            result = await url_shortener(link);
+                        }
+
+                        if (result) {
+                            textbox.value = result.url;
+                            LS.userSetting.set(settingKey.g_token, result.token);
+                        } else {
+                            textbox.value = link;
+                            LS.userSetting.del(settingKey.g_token); // remove invalid token
+                        }
+                        
+                        this.copyURL();
+                    }
+                }
+                ele.classList.remove(dis_class);
             },
             copyURL() {
                 let text = document.getElementById("url_box");
@@ -3752,6 +3789,10 @@ const
                 if (setting[settingKey.showDetail]) {
                     LS.userSetting.del(settingKey.showDetail);
                     console.log("remove old setting");
+                }
+
+                if (window.location.protocol == "file:") {
+                    document.getElementById("subtn").remove();
                 }
 
                 return true;
