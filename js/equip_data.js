@@ -2487,6 +2487,21 @@ const equip_data = {
         "equip_limit": 0,
         "cd": []
     },
+    "3620": {
+        "nationality": 3,
+        "type": 10,
+        "rarity": 4,
+        "tech": 0,
+        "id": 3620,
+        "icon": "3620",
+        "ship_type_forbidden": [],
+        "jp_name": "結界通行手形",
+        "cn_name": "结界通行凭证",
+        "tw_name": "結界通行憑證*",
+        "en_name": "Boundary-Crossing Permit",
+        "equip_limit": 3620,
+        "cd": []
+    },
     "540": {
         "nationality": 3,
         "type": 10,
@@ -12606,6 +12621,36 @@ const equip_data = {
             2721
         ]
     },
+    "34240": {
+        "nationality": 3,
+        "type": 4,
+        "rarity": 6,
+        "tech": 0,
+        "id": 34240,
+        "icon": "34200",
+        "ship_type_forbidden": [],
+        "jp_name": "460mm三連装砲",
+        "cn_name": "460mm三连装炮",
+        "tw_name": "460mm三連裝炮*",
+        "en_name": "Triple 460mm Mounted Gun",
+        "equip_limit": 0,
+        "cd": [
+            5436,
+            5352,
+            5269,
+            5185,
+            5101,
+            5018,
+            4934,
+            4851,
+            4767,
+            4683,
+            4600,
+            4600,
+            4600,
+            4600
+        ]
+    },
     "34300": {
         "nationality": 3,
         "type": 4,
@@ -12810,7 +12855,7 @@ const equip_data = {
         "jp_name": "305mm連装砲",
         "cn_name": "305mm连装炮",
         "tw_name": "305mm連裝炮",
-        "en_name": "Twin 356mm 41st Year Type Naval Gun Mount",
+        "en_name": "Twin 305mm Naval Gun Mount",
         "equip_limit": 0,
         "cd": [
             3100,

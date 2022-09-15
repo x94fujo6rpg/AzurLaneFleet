@@ -12172,7 +12172,7 @@ const ship_data = {
         ],
         "id": 307124,
         "skin_id": 307120,
-        "english_name": "IJN Katsuragi !TWnoData",
+        "english_name": "IJN Katsuragi",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -12181,7 +12181,7 @@ const ship_data = {
         "jp_name": "葛城",
         "en_name": "Katsuragi",
         "cn_name": "葛城",
-        "tw_name": "葛城*",
+        "tw_name": "葛城",
         "equip_1": [
             7
         ],
@@ -13509,6 +13509,56 @@ const ship_data = {
         ],
         "date": "2017年12月01日"
     },
+    "305100": {
+        "nationality": 3,
+        "type": 5,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 305104,
+        "skin_id": 305100,
+        "english_name": "IJN Musashi !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 6,
+        "retro": 0,
+        "uni_id": "305100",
+        "painting": "wuzang",
+        "jp_name": "武蔵",
+        "en_name": "IJN Musashi*",
+        "cn_name": "武藏",
+        "tw_name": "武藏*",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.55,
+            2.2,
+            1
+        ],
+        "reload": [
+            57,
+            394,
+            0,
+            42,
+            0
+        ],
+        "date": "2022年09月15日"
+    },
     "305080": {
         "nationality": 3,
         "type": 5,
@@ -14812,6 +14862,55 @@ const ship_data = {
         ],
         "date": "2017年05月25日"
     },
+    "303100": {
+        "nationality": 3,
+        "type": 3,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 303104,
+        "skin_id": 303100,
+        "english_name": "IJN Haguro !ENnoData !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "303100",
+        "painting": "yuhei",
+        "jp_name": "羽黒",
+        "en_name": "IJN Haguro*",
+        "cn_name": "羽黑",
+        "tw_name": "羽黑*",
+        "equip_1": [
+            3
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.3,
+            1.65,
+            1
+        ],
+        "reload": [
+            60,
+            417,
+            0,
+            45,
+            0
+        ],
+        "date": "2022年09月15日"
+    },
     "303090": {
         "nationality": 3,
         "type": 3,
@@ -14969,7 +15068,7 @@ const ship_data = {
         ],
         "id": 303064,
         "skin_id": 303060,
-        "english_name": "IJN Chikuma !TWnoData",
+        "english_name": "IJN Chikuma",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -14978,7 +15077,7 @@ const ship_data = {
         "jp_name": "筑摩",
         "en_name": "Chikuma",
         "cn_name": "筑摩",
-        "tw_name": "築摩*",
+        "tw_name": "築摩",
         "equip_1": [
             3
         ],
@@ -15301,6 +15400,57 @@ const ship_data = {
             0
         ],
         "date": "2017年05月25日"
+    },
+    "302230": {
+        "nationality": 3,
+        "type": 2,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 302234,
+        "skin_id": 302230,
+        "english_name": "IJN Sakawa !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "302230",
+        "painting": "jiuyun",
+        "jp_name": "酒匂",
+        "en_name": "IJN Sakawa*",
+        "cn_name": "酒匂",
+        "tw_name": "酒匂*",
+        "equip_1": [
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.25,
+            1.75,
+            1.1
+        ],
+        "reload": [
+            66,
+            459,
+            0,
+            49,
+            0
+        ],
+        "date": "2022年09月15日"
     },
     "302210": {
         "nationality": 3,
@@ -16024,7 +16174,7 @@ const ship_data = {
         ],
         "id": 302074,
         "skin_id": 302070,
-        "english_name": "IJN Yura !TWnoData",
+        "english_name": "IJN Yura",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -16033,7 +16183,7 @@ const ship_data = {
         "jp_name": "由良",
         "en_name": "Yura",
         "cn_name": "由良",
-        "tw_name": "由良*",
+        "tw_name": "由良",
         "equip_1": [
             2
         ],
@@ -16372,6 +16522,57 @@ const ship_data = {
             0
         ],
         "date": "2019年04月18日"
+    },
+    "301880": {
+        "nationality": 3,
+        "type": 1,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 301884,
+        "skin_id": 301880,
+        "english_name": "IJN Wakatsuki !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "301880",
+        "painting": "ruoyue",
+        "jp_name": "若月",
+        "en_name": "IJN Wakatsuki*",
+        "cn_name": "若月",
+        "tw_name": "若月*",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.1,
+            1.35,
+            1.45
+        ],
+        "reload": [
+            80,
+            557,
+            0,
+            60,
+            0
+        ],
+        "date": "2022年09月15日"
     },
     "301860": {
         "nationality": 3,
@@ -17658,7 +17859,7 @@ const ship_data = {
         ],
         "id": 301484,
         "skin_id": 301480,
-        "english_name": "IJN Yamakaze !TWnoData",
+        "english_name": "IJN Yamakaze",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -17667,7 +17868,7 @@ const ship_data = {
         "jp_name": "山風",
         "en_name": "Yamakaze",
         "cn_name": "山风",
-        "tw_name": "山風*",
+        "tw_name": "山風",
         "equip_1": [
             1
         ],
@@ -17709,7 +17910,7 @@ const ship_data = {
         ],
         "id": 301474,
         "skin_id": 301470,
-        "english_name": "IJN Umikaze !TWnoData",
+        "english_name": "IJN Umikaze",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -17718,7 +17919,7 @@ const ship_data = {
         "jp_name": "海風",
         "en_name": "Umikaze",
         "cn_name": "海风",
-        "tw_name": "海風*",
+        "tw_name": "海風",
         "equip_1": [
             1
         ],
@@ -18423,7 +18624,7 @@ const ship_data = {
         ],
         "id": 301294,
         "skin_id": 301290,
-        "english_name": "IJN Shimakaze !TWnoData",
+        "english_name": "IJN Shimakaze",
         "star": 6,
         "rarity": 6,
         "retro": 0,
@@ -18432,7 +18633,7 @@ const ship_data = {
         "jp_name": "島風",
         "en_name": "Shimakaze",
         "cn_name": "岛风",
-        "tw_name": "島風*",
+        "tw_name": "島風",
         "equip_1": [
             1
         ],
@@ -19891,6 +20092,57 @@ const ship_data = {
             0
         ],
         "date": "2017年08月28日"
+    },
+    "301040": {
+        "nationality": 3,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 301044,
+        "skin_id": 301040,
+        "english_name": "IJN Miyuki !ENnoData !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "301040",
+        "painting": "shenxue",
+        "jp_name": "深雪",
+        "en_name": "IJN Miyuki*",
+        "cn_name": "深雪",
+        "tw_name": "深雪*",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            0.75,
+            1.6,
+            0.75
+        ],
+        "reload": [
+            78,
+            546,
+            0,
+            59,
+            0
+        ],
+        "date": "2022年09月15日"
     },
     "301020": {
         "nationality": 3,
@@ -22474,6 +22726,56 @@ const ship_data = {
         ],
         "date": "2017年05月25日"
     },
+    "203029": {
+        "nationality": 2,
+        "type": 3,
+        "base_list": [
+            1,
+            1,
+            1
+        ],
+        "id": 203124,
+        "skin_id": 203029,
+        "english_name": "HMS Shropshire",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "203029",
+        "painting": "shiluopujun_g",
+        "jp_name": "シュロップシャー改",
+        "en_name": "Shropshire (Retrofit)",
+        "cn_name": "什罗普郡改",
+        "tw_name": "什羅普郡改",
+        "equip_1": [
+            3
+        ],
+        "equip_2": [
+            1,
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.6,
+            1.65,
+            1
+        ],
+        "reload": [
+            59,
+            409,
+            0,
+            44,
+            5
+        ],
+        "date": "2022年09月15日"
+    },
     "203020": {
         "nationality": 2,
         "type": 3,
@@ -22487,7 +22789,7 @@ const ship_data = {
         "english_name": "HMS Shropshire",
         "star": 5,
         "rarity": 3,
-        "retro": 0,
+        "retro": 1,
         "uni_id": "203020",
         "painting": "shiluopujun",
         "jp_name": "シュロップシャー",
@@ -30888,6 +31190,58 @@ const ship_data = {
         ],
         "date": "2017年05月25日"
     },
+    "102079": {
+        "nationality": 1,
+        "type": 2,
+        "base_list": [
+            2,
+            2,
+            1
+        ],
+        "id": 102304,
+        "skin_id": 102079,
+        "english_name": "USS Juneau",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "102079",
+        "painting": "zhunuo_g",
+        "jp_name": "ジュノー改",
+        "en_name": "Juneau (Retrofit)",
+        "cn_name": "朱诺改",
+        "tw_name": "朱諾改",
+        "equip_1": [
+            1,
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.05,
+            1.4,
+            1.75
+        ],
+        "reload": [
+            66,
+            457,
+            0,
+            49,
+            5
+        ],
+        "date": "2022年09月15日"
+    },
     "102070": {
         "nationality": 1,
         "type": 2,
@@ -30901,7 +31255,7 @@ const ship_data = {
         "english_name": "USS Juneau",
         "star": 5,
         "rarity": 3,
-        "retro": 0,
+        "retro": 1,
         "uni_id": "102070",
         "painting": "zhunuo",
         "jp_name": "ジュノー",

@@ -1,7 +1,11 @@
 ﻿# [Azur Lane Fleet Tool](https://x94fujo6rpg.github.io/AzurLaneFleet/)  
 A tool for easily share/manage/simulate/build/make your AzurLane fleet.  
 Generate shareable text codes or links.  
-[![](https://x94fujo6rpg.github.io/AzurLaneFleet/ui/screenshots.jpg)](https://x94fujo6rpg.github.io/AzurLaneFleet/)  
+[![](https://x94fujo6rpg.github.io/AzurLaneFleet/ui/screenshots.jpg)](https://x94fujo6rpg.github.io/AzurLaneFleet/ui/screenshots.jpg)  
+2022-09-15  
+```
+No4ZgBgJiyBoIKYlcBEB2AHAQz-tOAFgF05wIBGLLVO5dbfA4siyiI+7x3ZnQqTYUArB0RgiULg3qY+zQW0hiIiSkSIA2Hqnn8BrcivFwAnON1J9-JWUrCKYU1cQ3FR4BygQMZ2QHuLKTk3r6u1ky2rMIQbHHkcfaOPpBQ-hFBeErkqdARblEeIcBJ5KXxlckkAIQQAHS+NelEAGaUAKZEQA
+```
 
 - [Azur Lane Fleet Tool](#azur-lane-fleet-tool)
   - [Update](#update)
