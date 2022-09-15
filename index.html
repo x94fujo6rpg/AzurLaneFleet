@@ -28,7 +28,7 @@
     <link rel="prefetch" href="js/ship_data.min.js?v=f392639dc7d8" as="script">
     <link rel="prefetch" href="js/equip_data.min.js?v=ad936688b6f2" as="script">
     <link rel="prefetch" href="js/sp_weapon_data.min.js?v=57e0003a7664" as="script">
-    <link rel="prefetch" href="js/main-v2.min.js?v=f19b28647534" as="script">
+    <link rel="prefetch" href="js/main-v2.min.js?v=f4b1e3a02fba" as="script">
     <style>
         body {
             color: white;
@@ -678,6 +678,9 @@
                     <button class="btn btn-outline-secondary line-3-item border-left border-right" type="button" id="display_fleet_border" onclick="app.option.displayBorder(this)">Fleet Border</button>
                     <button class="btn btn-outline-secondary line-3-item border-left" type="button" id="display_sp_weapon" onclick="app.option.displaySpWeapon(this)">Show Augment</button>
                 </div>
+                <div class="btn-group d-flex mt-3 mx-auto w-25" id="option_box_3">
+                    <button class="btn btn-outline-secondary line-3-item" type="button" id="display_equip" onclick="app.option.displayEquip(this)">Show Equip</button>
+                </div>
                 <div class="d-grid mx-auto my-3 w-25 data_container" id="owned_data_area">
                     <button id="display_info_title" class="btn btn-outline-info d-flex mx-auto my-2 justify-content-center" type="button" data-toggle="collapse" data-target="#display_info_expand" aria-expanded="false" aria-controls="display_info_expand">
                         ▼ Detail Info
@@ -1053,7 +1056,7 @@
         firebase.initializeApp(firebaseConfig);
     </script>
     <script src='js/oa.min.js?v=fcc9a69df082'></script>
-    <script src="js/main-v2.min.js?v=f19b28647534"></script>
+    <script src="js/main-v2.min.js?v=f4b1e3a02fba"></script>
 </body>
 
 </html>

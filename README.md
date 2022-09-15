@@ -15,6 +15,11 @@ Generate shareable text codes or links.
   - [fleetdata version](#fleetdata-version)
 
 ## Update  
+**2022-09-15**
+- now can hide equip (experiment)
+- if no one suggested anything in the issue, it is virtually impossible for me to know it.
+  you have to pray that someone will see it and let me know.
+
 **2022-09-07**
 - short url
   - github account required

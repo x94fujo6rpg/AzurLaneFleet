@@ -18,6 +18,7 @@ const
         { id: "display_fleet_op", en: "Edit Button/ID", jp: "編集ボタン表示", tw: "顯示編輯" },
         { id: "frame_setting", en: "Thick frame", jp: "厚いフレーム", tw: "粗框" },
         { id: "display_sp_weapon", en: "Show Augment", jp: "特殊装備表示", tw: "顯示特殊兵裝" },
+        { id: "display_equip", en: "Show Equip", jp: "装備表示", tw: "顯示裝備" },
 
         { id: "display_info_title", en: "▼ Detail Info", jp: "▼ 詳細データ", tw: "▼ 詳細資料" },
         { id: "display_info_level", en: "Level", jp: "レベル", tw: "等級" },
@@ -234,6 +235,7 @@ const
         techData: "techData",
         resetDB: "resetDB",
         showSP: "showSP",
+        showEQ: "showEQ",
         showDetail: "showDetail",
         show_pos: "show_pos",
         show_level: "show_level",
@@ -933,6 +935,12 @@ const
                 let display = ele.classList.contains("active");
                 ALF.ui_settings.show_sp = display;
                 LS.userSetting.set(settingKey.showSP, display ? 1 : 0);
+            },
+            displayEquip(ele){
+                $(ele).button("toggle");
+                let display = ele.classList.contains("active");
+                ALF.ui_settings.show_eq = display;
+                LS.userSetting.set(settingKey.showEQ, display ? 1 : 0);
             },
             adjustEle() {
                 const
@@ -3760,6 +3768,7 @@ const
                     { key: settingKey.fleetEdit, id: "display_fleet_op" },
                     { key: settingKey.fleetBorder, id: "display_fleet_border" },
                     { key: settingKey.showSP, id: "display_sp_weapon" },
+                    { key: settingKey.showEQ, id: "display_equip" },
                     { key: settingKey.show_level, id: "display_info_level" },
                     { key: settingKey.show_affinity, id: "display_info_affinity" },
                     { key: settingKey.show_pos, id: "display_info_position" },
@@ -4276,7 +4285,7 @@ Vue.component("item-container", {
             v-bind:name="item.id"
             v-bind:pos="item.property.pos"
             v-bind:data-target="item.property.target"
-            v-if="item.id.slice(-1)<6 || ui_settings.show_sp"
+            v-if="(item.id.slice(-1)<6 || ui_settings.show_sp) && (item.id.slice(-1)<1 || ui_settings.show_eq)"
         >
             <div class="container-fluid p-0 box">
               <div class="icon_box">
@@ -4461,6 +4470,7 @@ const
             ui_settings: {
                 show_op: false,
                 show_sp: false,
+                show_eq: false,
                 show_pos: 0,
                 show_level: 0,
                 show_affinity: 0,
