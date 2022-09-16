@@ -173,7 +173,7 @@ const sp_weapon_data = {
         "limit": 30105,
         "type": 1,
         "jp_name": "三五式「綾波」対艦強撃艤装",
-        "en_name": "(no DATA)",
+        "en_name": "Type-35 \"Ayanami\" Anti-Ship Armament",
         "cn_name": "三五式“柚”对舰强击械装",
         "tw_name": "三五式“柚”對艦強擊械裝*"
     },
@@ -186,7 +186,7 @@ const sp_weapon_data = {
         "limit": 20703,
         "type": 7,
         "jp_name": "愛と平和を海に",
-        "en_name": "(no DATA)",
+        "en_name": "For Love and Peace",
         "cn_name": "爱与和平之海",
         "tw_name": "愛與和平之海*"
     },
@@ -199,7 +199,7 @@ const sp_weapon_data = {
         "limit": 20123,
         "type": 1,
         "jp_name": "夜姫のワガママセット",
-        "en_name": "(no DATA)",
+        "en_name": "Night Princess's Caprice",
         "cn_name": "夜姬的任性组合",
         "tw_name": "夜姬的任性組合*"
     },
@@ -212,7 +212,7 @@ const sp_weapon_data = {
         "limit": 40202,
         "type": 2,
         "jp_name": "嵐除けの拳？",
-        "en_name": "(no DATA)",
+        "en_name": "Storm-Breaking Fist?",
         "cn_name": "破风神拳？",
         "tw_name": "破風神拳？*"
     },
@@ -225,7 +225,7 @@ const sp_weapon_data = {
         "limit": 10214,
         "type": 2,
         "jp_name": "姉貴とお揃い",
-        "en_name": "(no DATA)",
+        "en_name": "Just Like Cleve",
         "cn_name": "大姐头的披风",
         "tw_name": "大姐頭的披風*"
     },

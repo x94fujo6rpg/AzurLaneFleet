@@ -12632,7 +12632,7 @@ const equip_data = {
         "jp_name": "460mm三連装砲",
         "cn_name": "460mm三连装炮",
         "tw_name": "460mm三連裝炮*",
-        "en_name": "Triple 460mm Mounted Gun",
+        "en_name": "Triple 460mm Main Gun Mount",
         "equip_limit": 0,
         "cd": [
             5436,
