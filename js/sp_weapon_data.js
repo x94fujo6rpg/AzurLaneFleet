@@ -229,6 +229,44 @@ const sp_weapon_data = {
         "cn_name": "大姐头的披风",
         "tw_name": "大姐頭的披風*"
     },
+    "10280": {
+        "id": 10280,
+        "icon": "10280",
+        "eq_reload": [
+            7,
+            8,
+            8,
+            9,
+            9,
+            10,
+            10,
+            11,
+            11,
+            12,
+            12
+        ],
+        "rarity": 4,
+        "tech": 0,
+        "limit": 40803,
+        "type": 8,
+        "jp_name": "1セントコイン",
+        "en_name": "1-Cent Coins",
+        "cn_name": "一分钱硬币（大量）",
+        "tw_name": "一分錢硬幣（大量）*"
+    },
+    "10300": {
+        "id": 10300,
+        "icon": "10300",
+        "eq_reload": [],
+        "rarity": 4,
+        "tech": 0,
+        "limit": 70201,
+        "type": 2,
+        "jp_name": "ピロシキ",
+        "en_name": "Pirozhki",
+        "cn_name": "皮罗什基",
+        "tw_name": "皮羅什基*"
+    },
     "1010100": {
         "id": 1010100,
         "icon": "1010100",

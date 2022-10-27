@@ -2959,7 +2959,7 @@ const ship_data = {
         ],
         "id": 9704014,
         "skin_id": 9704010,
-        "english_name": "Gneisenau.META !TWnoData",
+        "english_name": "Gneisenau.META",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -2968,7 +2968,7 @@ const ship_data = {
         "jp_name": "グナイゼナウ(META)",
         "en_name": "Gneisenau META",
         "cn_name": "格奈森瑙·META",
-        "tw_name": "格奈森瑙·META*",
+        "tw_name": "格奈森瑙·META",
         "equip_1": [
             4
         ],
@@ -3058,7 +3058,7 @@ const ship_data = {
         ],
         "id": 9702024,
         "skin_id": 9702020,
-        "english_name": "Memphis.META !TWnoData",
+        "english_name": "Memphis.META",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -3067,7 +3067,7 @@ const ship_data = {
         "jp_name": "メンフィス(META)",
         "en_name": "Memphis META",
         "cn_name": "孟菲斯·META",
-        "tw_name": "孟菲斯·META*",
+        "tw_name": "曼非斯·META",
         "equip_1": [
             2
         ],
@@ -3149,6 +3149,106 @@ const ship_data = {
             0
         ],
         "date": "2021年06月10日"
+    },
+    "9701010": {
+        "nationality": 97,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 9701014,
+        "skin_id": 9701010,
+        "english_name": "Hunter.META !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "9701010",
+        "painting": "lieren_alter",
+        "jp_name": "ハンター(META)",
+        "en_name": "Hunter META",
+        "cn_name": "猎人·META",
+        "tw_name": "獵人·META*",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.25,
+            1.3,
+            1.2
+        ],
+        "reload": [
+            77,
+            534,
+            0,
+            57,
+            0
+        ],
+        "date": "2022年10月01日"
+    },
+    "9600010": {
+        "nationality": 96,
+        "type": 22,
+        "base_list": [
+            2,
+            2,
+            1
+        ],
+        "id": 9600014,
+        "skin_id": 9600010,
+        "english_name": "MOT Royal Fortune",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "9600010",
+        "painting": "huangjiacaifu",
+        "jp_name": "ロイヤル・フォーチュン",
+        "en_name": "Royal Fortune",
+        "cn_name": "皇家财富号",
+        "tw_name": "皇家幸運號",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            1
+        ],
+        "equip_3": [
+            10
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.25,
+            1.25,
+            1
+        ],
+        "reload": [
+            66,
+            462,
+            0,
+            50,
+            0
+        ],
+        "date": "2022年10月27日"
     },
     "907010": {
         "nationality": 9,
@@ -6481,7 +6581,7 @@ const ship_data = {
         ],
         "id": 603034,
         "skin_id": 603030,
-        "english_name": "RN Pola !TWnoData",
+        "english_name": "RN Pola",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -6490,7 +6590,7 @@ const ship_data = {
         "jp_name": "ポーラ",
         "en_name": "Pola",
         "cn_name": "波拉",
-        "tw_name": "波拉*",
+        "tw_name": "波拉",
         "equip_1": [
             3
         ],
@@ -7036,7 +7136,7 @@ const ship_data = {
         ],
         "id": 601034,
         "skin_id": 601030,
-        "english_name": "RN Vincenzo Gioberti !TWnoData",
+        "english_name": "RN Vincenzo Gioberti",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -7045,7 +7145,7 @@ const ship_data = {
         "jp_name": "ヴィンチェンツォ・ジョベルティ",
         "en_name": "Vincenzo Gioberti",
         "cn_name": "文琴佐·焦贝蒂",
-        "tw_name": "文琴佐·焦貝蒂*",
+        "tw_name": "文琴佐·焦貝蒂",
         "equip_1": [
             1
         ],
@@ -9584,6 +9684,56 @@ const ship_data = {
             0
         ],
         "date": "2018年04月26日"
+    },
+    "403130": {
+        "nationality": 4,
+        "type": 3,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 403134,
+        "skin_id": 403130,
+        "english_name": "KMS Admiral Graf Spee !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "403130",
+        "painting": "sipeibojue_younv",
+        "jp_name": "シュペーちゃん",
+        "en_name": "Little Spee",
+        "cn_name": "小斯佩",
+        "tw_name": "小斯佩*",
+        "equip_1": [
+            3,
+            11
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.4,
+            1.3,
+            1
+        ],
+        "reload": [
+            64,
+            445,
+            0,
+            48,
+            0
+        ],
+        "date": "2022年10月13日"
     },
     "403120": {
         "nationality": 4,
@@ -20885,6 +21035,58 @@ const ship_data = {
         ],
         "date": "2020年07月23日"
     },
+    "206070": {
+        "nationality": 2,
+        "type": 6,
+        "base_list": [
+            2,
+            2,
+            4
+        ],
+        "id": 206074,
+        "skin_id": 206070,
+        "english_name": "HMS Albion !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "206070",
+        "painting": "aerbien",
+        "jp_name": "アルビオン",
+        "en_name": "Albion",
+        "cn_name": "阿尔比恩",
+        "tw_name": "阿爾比恩*",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            7
+        ],
+        "equip_3": [
+            8,
+            9
+        ],
+        "equip_4": [
+            10,
+            15
+        ],
+        "equip_5": [
+            10,
+            15
+        ],
+        "eq_p": [
+            1.25,
+            1.2,
+            1.4
+        ],
+        "reload": [
+            60,
+            417,
+            0,
+            45,
+            0
+        ],
+        "date": "2022年10月27日"
+    },
     "206060": {
         "nationality": 2,
         "type": 6,
@@ -24362,6 +24564,57 @@ const ship_data = {
         ],
         "date": "2020年01月21日"
     },
+    "202090": {
+        "nationality": 2,
+        "type": 2,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 202094,
+        "skin_id": 202090,
+        "english_name": "HMS Manchester !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "202090",
+        "painting": "manchesite",
+        "jp_name": "マンチェスター",
+        "en_name": "Manchester",
+        "cn_name": "曼彻斯特",
+        "tw_name": "曼徹斯特*",
+        "equip_1": [
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.5,
+            1.5,
+            1.1
+        ],
+        "reload": [
+            64,
+            445,
+            0,
+            48,
+            0
+        ],
+        "date": "2022年10月27日"
+    },
     "202080": {
         "nationality": 2,
         "type": 2,
@@ -24821,6 +25074,57 @@ const ship_data = {
             0
         ],
         "date": "2017年05月25日"
+    },
+    "201350": {
+        "nationality": 2,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 201354,
+        "skin_id": 201350,
+        "english_name": "HMS Janus !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "201350",
+        "painting": "yanusi",
+        "jp_name": "ジェーナス",
+        "en_name": "Janus",
+        "cn_name": "雅努斯",
+        "tw_name": "雅努斯*",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.25,
+            1.55,
+            1.05
+        ],
+        "reload": [
+            86,
+            597,
+            0,
+            64,
+            0
+        ],
+        "date": "2022年10月27日"
     },
     "201340": {
         "nationality": 2,

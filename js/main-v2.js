@@ -4232,8 +4232,8 @@ const
     // ship
     type_front = new Set([1, 2, 3, 18, 19, 20,]),
     type_back = new Set([4, 5, 6, 7, 10, 12, 13, 20,]),
-    type_sub = new Set([8, 17]),
-    other_nation = new Set([97, 98]), // 97:META, 98:Bulin, 100+:collab
+    type_sub = new Set([8, 17, 22]),
+    other_nation = new Set([96, 97, 98]), // 97:META, 98:Bulin, 100+:eq_collab_nation
     collab_nation = new Set([101, 103, 104, 105, 106, 107, 108, 109, 110]),
     other_front = new Set([19, 20]),
     other_back = new Set([10, 20]),
