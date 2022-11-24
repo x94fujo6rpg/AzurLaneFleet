@@ -1,4 +1,306 @@
 const ship_data = {
+    "10900060": {
+        "nationality": 109,
+        "type": 18,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 10900064,
+        "skin_id": 10900060,
+        "english_name": "Kala Ideas !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "10900060",
+        "painting": "kala",
+        "jp_name": "カラ・イデアス",
+        "en_name": "Kala Ideas",
+        "cn_name": "卡菈·伊迪亚斯",
+        "tw_name": "卡菈·伊迪亞斯*",
+        "equip_1": [
+            3,
+            11
+        ],
+        "equip_2": [
+            2
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.1,
+            0.45,
+            1
+        ],
+        "reload": [
+            60,
+            412,
+            0,
+            45,
+            0
+        ],
+        "date": "2022年11月25日"
+    },
+    "10900050": {
+        "nationality": 109,
+        "type": 7,
+        "base_list": [
+            2,
+            3,
+            3
+        ],
+        "id": 10900054,
+        "skin_id": 10900050,
+        "english_name": "Serri Glaus !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "10900050",
+        "painting": "saili",
+        "jp_name": "セリ・グロース",
+        "en_name": "Serri Glaus",
+        "cn_name": "赛莉·古劳斯",
+        "tw_name": "賽莉·古勞斯*",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            9
+        ],
+        "equip_3": [
+            8
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.2,
+            1.25,
+            1.35
+        ],
+        "reload": [
+            51,
+            353,
+            0,
+            38,
+            0
+        ],
+        "date": "2022年11月25日"
+    },
+    "10900020": {
+        "nationality": 109,
+        "type": 6,
+        "base_list": [
+            3,
+            2,
+            2
+        ],
+        "id": 10900024,
+        "skin_id": 10900020,
+        "english_name": "Klaudia Valentz !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "10900020",
+        "painting": "keluodiya",
+        "jp_name": "クラウディア・バレンツ",
+        "en_name": "Klaudia Valentz",
+        "cn_name": "科洛蒂娅·巴兰茨",
+        "tw_name": "科洛蒂婭·巴蘭茨*",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            8
+        ],
+        "equip_3": [
+            8
+        ],
+        "equip_4": [
+            10,
+            15
+        ],
+        "equip_5": [
+            10,
+            15
+        ],
+        "eq_p": [
+            1.35,
+            1.3,
+            1.3
+        ],
+        "reload": [
+            71,
+            488,
+            0,
+            53,
+            0
+        ],
+        "date": "2022年11月25日"
+    },
+    "10900030": {
+        "nationality": 109,
+        "type": 5,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 10900034,
+        "skin_id": 10900030,
+        "english_name": "Patricia Abelheim !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "10900030",
+        "painting": "patelixia",
+        "jp_name": "パトリツィア・アーベルハイム",
+        "en_name": "Patricia Abelheim",
+        "cn_name": "帕特莉夏·阿贝尔海姆",
+        "tw_name": "帕特莉夏·阿貝爾海姆*",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.35,
+            2,
+            1
+        ],
+        "reload": [
+            57,
+            395,
+            0,
+            43,
+            0
+        ],
+        "date": "2022年11月25日"
+    },
+    "10900040": {
+        "nationality": 109,
+        "type": 3,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 10900044,
+        "skin_id": 10900040,
+        "english_name": "Lila Decyrus !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "10900040",
+        "painting": "lila",
+        "jp_name": "リラ・ディザイアス",
+        "en_name": "Lila Decyrus",
+        "cn_name": "莉拉·德西亚斯",
+        "tw_name": "莉拉·德西亞斯*",
+        "equip_1": [
+            3
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.35,
+            1.6,
+            1
+        ],
+        "reload": [
+            66,
+            454,
+            0,
+            49,
+            0
+        ],
+        "date": "2022年11月25日"
+    },
+    "10900010": {
+        "nationality": 109,
+        "type": 2,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 10900014,
+        "skin_id": 10900010,
+        "english_name": "Reisalin Stout !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "10900010",
+        "painting": "laisha",
+        "jp_name": "ライザリン・シュタウト",
+        "en_name": "Reisalin Stout",
+        "cn_name": "莱莎琳·斯托特",
+        "tw_name": "萊莎琳·斯托特*",
+        "equip_1": [
+            2
+        ],
+        "equip_2": [
+            5,
+            10
+        ],
+        "equip_3": [
+            6,
+            10
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.3,
+            1.6,
+            1
+        ],
+        "reload": [
+            73,
+            505,
+            0,
+            55,
+            0
+        ],
+        "date": "2022年11月25日"
+    },
     "10800060": {
         "nationality": 108,
         "type": 7,
@@ -3009,7 +3311,7 @@ const ship_data = {
         ],
         "id": 9703014,
         "skin_id": 9703010,
-        "english_name": "Terento.META !TWnoData",
+        "english_name": "Terento.META",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -3018,7 +3320,7 @@ const ship_data = {
         "jp_name": "トレント(META)",
         "en_name": "Trento META",
         "cn_name": "特伦托·META",
-        "tw_name": "特倫托·META*",
+        "tw_name": "特倫托·META",
         "equip_1": [
             3
         ],
@@ -3149,6 +3451,57 @@ const ship_data = {
             0
         ],
         "date": "2021年06月10日"
+    },
+    "9701020": {
+        "nationality": 97,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 9701024,
+        "skin_id": 9701020,
+        "english_name": "Fortune.META !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "9701020",
+        "painting": "mingyunnvshen_alter",
+        "jp_name": "フォーチュン(META)",
+        "en_name": "Fortune META",
+        "cn_name": "命运女神·META",
+        "tw_name": "命運女神·META*",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.3,
+            1.35,
+            1.05
+        ],
+        "reload": [
+            77,
+            534,
+            0,
+            57,
+            0
+        ],
+        "date": "2022年11月25日"
     },
     "9701010": {
         "nationality": 97,
@@ -3557,7 +3910,7 @@ const ship_data = {
         ],
         "id": 903014,
         "skin_id": 903010,
-        "english_name": "MNF Foch !TWnoData",
+        "english_name": "MNF Foch",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -3566,7 +3919,7 @@ const ship_data = {
         "jp_name": "フォッシュ",
         "en_name": "Foch",
         "cn_name": "福煦",
-        "tw_name": "福煦*",
+        "tw_name": "福煦",
         "equip_1": [
             3
         ],
@@ -9695,7 +10048,7 @@ const ship_data = {
         ],
         "id": 403134,
         "skin_id": 403130,
-        "english_name": "KMS Admiral Graf Spee !TWnoData",
+        "english_name": "KMS Admiral Graf Spee",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -9704,7 +10057,7 @@ const ship_data = {
         "jp_name": "シュペーちゃん",
         "en_name": "Little Spee",
         "cn_name": "小斯佩",
-        "tw_name": "小斯佩*",
+        "tw_name": "小施佩",
         "equip_1": [
             3,
             11
@@ -32119,7 +32472,7 @@ const ship_data = {
         ],
         "id": 101464,
         "skin_id": 101460,
-        "english_name": "USS Stephen Potter !TWnoData",
+        "english_name": "USS Stephen Potter",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -32128,7 +32481,7 @@ const ship_data = {
         "jp_name": "ステフェン・ポッター",
         "en_name": "Stephen Potter",
         "cn_name": "史蒂芬·波特",
-        "tw_name": "史蒂芬·波特*",
+        "tw_name": "史蒂芬·波特",
         "equip_1": [
             1
         ],
@@ -32170,7 +32523,7 @@ const ship_data = {
         ],
         "id": 101454,
         "skin_id": 101450,
-        "english_name": "USS Allen M. Sumner !TWnoData",
+        "english_name": "USS Allen M. Sumner",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -32179,7 +32532,7 @@ const ship_data = {
         "jp_name": "アレン・M・サムナー",
         "en_name": "Allen M. Sumner",
         "cn_name": "艾伦·萨姆纳",
-        "tw_name": "艾倫·薩姆納*",
+        "tw_name": "艾倫·M·桑拿",
         "equip_1": [
             1
         ],
