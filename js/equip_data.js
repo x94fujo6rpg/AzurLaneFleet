@@ -3878,6 +3878,21 @@ const equip_data = {
         "equip_limit": 0,
         "cd": []
     },
+    "3780": {
+        "nationality": 1,
+        "type": 10,
+        "rarity": 4,
+        "tech": 0,
+        "id": 3780,
+        "icon": "3780",
+        "ship_type_forbidden": [],
+        "jp_name": "夢雪の幻界",
+        "cn_name": "雪顶之梦",
+        "tw_name": "雪頂之夢*",
+        "en_name": "(no DATA)",
+        "equip_limit": 3780,
+        "cd": []
+    },
     "940": {
         "nationality": 1,
         "type": 10,

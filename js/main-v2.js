@@ -937,7 +937,7 @@ const
                 ALF.ui_settings.show_sp = display;
                 LS.userSetting.set(settingKey.showSP, display ? 1 : 0);
             },
-            displayEquip(ele){
+            displayEquip(ele) {
                 $(ele).button("toggle");
                 let display = ele.classList.contains("active");
                 ALF.ui_settings.show_eq = display;
@@ -2795,6 +2795,10 @@ const
                 // set level
                 app.setLevel("spweapon", skip_level, false);
             }
+
+            // if ship have slot skill
+            if (shipInApp.item[0].property.slot_skill) app.setProficiencyBySkill({ c_data: [c_fleet, side, c_pos, c_item] });
+
             app.util.updateCD({ type: "spweapon", data: [c_fleet, side, c_pos, c_item] });
             if (save) LS.userSetting.set(settingKey.fleetData, app.util.dumpID());
             return true;
@@ -2849,6 +2853,7 @@ const
                     shipInApp.item[3].property,
                     shipInApp.item[4].property,
                     shipInApp.item[5].property,
+                    shipInApp.item[6].property,
                 ],
                 name = shipInApp.item[0].property.tw;
 
