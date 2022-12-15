@@ -1,4 +1,204 @@
 const equip_data = {
+    "46380": {
+        "nationality": 4,
+        "type": 21,
+        "rarity": 5,
+        "tech": 0,
+        "id": 46380,
+        "icon": "46380",
+        "ship_type_forbidden": [
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+        ],
+        "jp_name": "105mmSKC高角連装砲改修型(時限信管)",
+        "cn_name": "双联105mmSKC高炮改进型(定时引信)",
+        "tw_name": "雙聯105mmSKC高炮改進型(定時引信)*",
+        "en_name": "Twin 105mm SK C/33 AA na Gun Mount (Time Fuze)",
+        "equip_limit": 0,
+        "cd": [
+            282,
+            276,
+            271,
+            263,
+            258,
+            252,
+            248,
+            242,
+            236,
+            229,
+            224,
+            224,
+            224,
+            224
+        ]
+    },
+    "36720": {
+        "nationality": 3,
+        "type": 21,
+        "rarity": 5,
+        "tech": 0,
+        "id": 36720,
+        "icon": "36720",
+        "ship_type_forbidden": [
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+        ],
+        "jp_name": "127mm連装高角砲改(時限信管)",
+        "cn_name": "127mm连装高角炮改(定时引信)",
+        "tw_name": "127mm連裝高角炮改(定時引信)*",
+        "en_name": "Improved Twin 127mm AA Gun Mount (Time Fuze)",
+        "equip_limit": 0,
+        "cd": [
+            302,
+            295,
+            290,
+            282,
+            276,
+            270,
+            266,
+            259,
+            252,
+            246,
+            240,
+            240,
+            240,
+            240
+        ]
+    },
+    "26680": {
+        "nationality": 2,
+        "type": 21,
+        "rarity": 5,
+        "tech": 0,
+        "id": 26680,
+        "icon": "26680",
+        "ship_type_forbidden": [
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+        ],
+        "jp_name": "134mm連装高角砲(時限信管)",
+        "cn_name": "双联装134mm高炮(定时引信)",
+        "tw_name": "雙聯裝134mm高炮(定時引信)*",
+        "en_name": "Twin 134mm AA Gun Mount (Time Fuze)",
+        "equip_limit": 0,
+        "cd": [
+            372,
+            364,
+            357,
+            347,
+            341,
+            333,
+            328,
+            320,
+            311,
+            303,
+            296,
+            296,
+            296,
+            296
+        ]
+    },
+    "16460": {
+        "nationality": 1,
+        "type": 21,
+        "rarity": 5,
+        "tech": 0,
+        "id": 16460,
+        "icon": "16460",
+        "ship_type_forbidden": [
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+        ],
+        "jp_name": "127mm連装両用砲Mk12(時限信管)",
+        "cn_name": "双联装127mm高平两用炮Mk12(定时引信)",
+        "tw_name": "雙聯裝127mm高平兩用炮Mk12(定時引信)*",
+        "en_name": "Twin 127mm Mk 12 Dual-Purpose Gun Mount (Time Fuze)",
+        "equip_limit": 0,
+        "cd": [
+            309,
+            303,
+            297,
+            289,
+            283,
+            277,
+            272,
+            266,
+            259,
+            252,
+            246,
+            246,
+            246,
+            246
+        ]
+    },
     "96000": {
         "nationality": 5,
         "type": 20,
@@ -1898,7 +2098,7 @@ const equip_data = {
         ],
         "jp_name": "B-50 305mm三連装砲Mk-15",
         "cn_name": "B-50 三联装305mm主炮Mk-15",
-        "tw_name": "B-50 三聯裝305mm主炮Mk-15*",
+        "tw_name": "B-50 三联装305mm主炮Mk-15",
         "en_name": "B-50 Triple 305mm Mk-15 Main Gun Mount",
         "equip_limit": 0,
         "cd": [
@@ -2087,7 +2287,7 @@ const equip_data = {
         ],
         "jp_name": "Ｎ／Ａ",
         "cn_name": "Ｎ／Ａ",
-        "tw_name": "Ｎ／Ａ*",
+        "tw_name": "Ｎ／Ａ",
         "en_name": "N/A",
         "equip_limit": 89560,
         "cd": []
@@ -2118,7 +2318,7 @@ const equip_data = {
         ],
         "jp_name": "神秘の羽衣",
         "cn_name": "神秘的羽衣",
-        "tw_name": "神祕的羽衣*",
+        "tw_name": "神秘的羽衣",
         "en_name": "Mystic Robe",
         "equip_limit": 89520,
         "cd": []
@@ -2133,7 +2333,7 @@ const equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "泡雲の弾丸",
         "cn_name": "泡云弹车",
-        "tw_name": "泡雲彈車*",
+        "tw_name": "泡雲彈車",
         "en_name": "Bubble Bullet",
         "equip_limit": 89600,
         "cd": []
@@ -2148,7 +2348,7 @@ const equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "創世の槌",
         "cn_name": "创世之槌",
-        "tw_name": "創世之槌*",
+        "tw_name": "創世之槌",
         "en_name": "Genesis Hammer",
         "equip_limit": 89580,
         "cd": []
@@ -2163,7 +2363,7 @@ const equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "ヴィアベールルフト",
         "cn_name": "涡旋风精",
-        "tw_name": "渦旋風精*",
+        "tw_name": "渦旋風精",
         "en_name": "Wirbel Luft",
         "equip_limit": 89480,
         "cd": []
@@ -2178,7 +2378,7 @@ const equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "ラウトプラジグ",
         "cn_name": "震耳雷球",
-        "tw_name": "震耳雷球*",
+        "tw_name": "震耳雷球",
         "en_name": "Laute Plajig",
         "equip_limit": 89460,
         "cd": []
@@ -2193,7 +2393,7 @@ const equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "グランフラム",
         "cn_name": "炙烈炎烧",
-        "tw_name": "炙烈炎燒*",
+        "tw_name": "炙烈炎燒",
         "en_name": "Grand Bomb",
         "equip_limit": 89420,
         "cd": []
@@ -2208,7 +2408,7 @@ const equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "クライスタルレヘルン",
         "cn_name": "结晶冰精",
-        "tw_name": "結晶冰精*",
+        "tw_name": "結晶冰精",
         "en_name": "Crystal Ice Bomb",
         "equip_limit": 89440,
         "cd": []
@@ -2239,7 +2439,7 @@ const equip_data = {
         ],
         "jp_name": "エリキシル剤",
         "cn_name": "万灵药剂",
-        "tw_name": "萬靈藥劑*",
+        "tw_name": "萬靈藥劑",
         "en_name": "Elixir",
         "equip_limit": 89500,
         "cd": []
@@ -2254,7 +2454,7 @@ const equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "エネルジアニカ",
         "cn_name": "形意口琴",
-        "tw_name": "形意口琴*",
+        "tw_name": "形意口琴",
         "en_name": "Energianica",
         "equip_limit": 89620,
         "cd": []
@@ -2285,7 +2485,7 @@ const equip_data = {
         ],
         "jp_name": "アポカリプス",
         "cn_name": "默示录",
-        "tw_name": "默示錄*",
+        "tw_name": "默示錄",
         "en_name": "Apocalypse",
         "equip_limit": 89540,
         "cd": []
@@ -8478,6 +8678,39 @@ const equip_data = {
             1743
         ]
     },
+    "17420": {
+        "nationality": 1,
+        "type": 7,
+        "rarity": 5,
+        "tech": 0,
+        "id": 17420,
+        "icon": "17420",
+        "ship_type_forbidden": [
+            10,
+            22
+        ],
+        "jp_name": "試作型XF5U「フライングパンケーキ」",
+        "cn_name": "试作型XF5U飞碟",
+        "tw_name": "試作型XF5U飛碟*",
+        "en_name": "Prototype XF5U \"Flying Flapjack\"",
+        "equip_limit": 0,
+        "cd": [
+            1954,
+            1924,
+            1894,
+            1864,
+            1834,
+            1804,
+            1774,
+            1744,
+            1714,
+            1684,
+            1654,
+            1654,
+            1654,
+            1654
+        ]
+    },
     "17080": {
         "nationality": 1,
         "type": 7,
@@ -8994,6 +9227,38 @@ const equip_data = {
             1924
         ]
     },
+    "90620": {
+        "nationality": 8,
+        "type": 6,
+        "rarity": 6,
+        "tech": 0,
+        "id": 90620,
+        "icon": "50620",
+        "ship_type_forbidden": [
+            22
+        ],
+        "jp_name": "二連装57mm/L60ボフォース対空機関砲Mle1951",
+        "cn_name": "双联装57mm/L60博福斯对空机炮Mle1951",
+        "tw_name": "雙聯裝57mm/L60博福斯對空機炮Mle1951*",
+        "en_name": "Twin 57mm/L60 Bofors Mle 1951 AA Gun Mount",
+        "equip_limit": 0,
+        "cd": [
+            149,
+            145,
+            143,
+            139,
+            136,
+            133,
+            131,
+            128,
+            124,
+            121,
+            118,
+            118,
+            118,
+            118
+        ]
+    },
     "90600": {
         "nationality": 8,
         "type": 6,
@@ -9024,6 +9289,61 @@ const equip_data = {
             110,
             110,
             110
+        ]
+    },
+    "90580": {
+        "nationality": 8,
+        "type": 6,
+        "rarity": 4,
+        "tech": 3,
+        "id": 90580,
+        "icon": "90580",
+        "ship_type_forbidden": [
+            22
+        ],
+        "jp_name": "二連装37mm高射砲Mle1933",
+        "cn_name": "双联37mm高射炮Mle1933",
+        "tw_name": "雙聯37mm高射炮Mle1933*",
+        "en_name": "Twin 37mm Mle 1933 AA Gun Mount",
+        "equip_limit": 0,
+        "cd": [
+            190,
+            186,
+            182,
+            178,
+            174,
+            170,
+            166,
+            162,
+            158,
+            154,
+            150,
+            146
+        ]
+    },
+    "90560": {
+        "nationality": 8,
+        "type": 6,
+        "rarity": 3,
+        "tech": 3,
+        "id": 90560,
+        "icon": "90560",
+        "ship_type_forbidden": [
+            22
+        ],
+        "jp_name": "37mm高射砲Mle1925",
+        "cn_name": "37mm高射炮Mle1925",
+        "tw_name": "37mm高射炮Mle1925*",
+        "en_name": "37mm Mle 1925 AA Gun Mount",
+        "equip_limit": 0,
+        "cd": [
+            200,
+            196,
+            192,
+            188,
+            184,
+            180,
+            174
         ]
     },
     "6140": {
@@ -13059,6 +13379,32 @@ const equip_data = {
             4620
         ]
     },
+    "90460": {
+        "nationality": 8,
+        "type": 4,
+        "rarity": 3,
+        "tech": 3,
+        "id": 90460,
+        "icon": "90460",
+        "ship_type_forbidden": [
+            22
+        ],
+        "jp_name": "340mm四連装砲Mle1912",
+        "cn_name": "四联装340mm主炮Mle1912",
+        "tw_name": "四聯裝340mm主炮Mle1912*",
+        "en_name": "Quadruple 340mm Mle 1912 Main Gun Mount",
+        "equip_limit": 0,
+        "cd": [
+            5227,
+            5122,
+            5018,
+            4913,
+            4809,
+            4704,
+            4599,
+            4495
+        ]
+    },
     "90340": {
         "nationality": 8,
         "type": 4,
@@ -14980,6 +15326,38 @@ const equip_data = {
             1212
         ]
     },
+    "91140": {
+        "nationality": 8,
+        "type": 3,
+        "rarity": 4,
+        "tech": 3,
+        "id": 91140,
+        "icon": "51100",
+        "ship_type_forbidden": [
+            8,
+            17,
+            22
+        ],
+        "jp_name": "203mm連装砲Mle1924",
+        "cn_name": "双联装203mm主炮Mle1924",
+        "tw_name": "雙聯裝203mm主炮Mle1924*",
+        "en_name": "Twin 203mm Mle 1924 Main Gun Mount",
+        "equip_limit": 0,
+        "cd": [
+            1386,
+            1344,
+            1302,
+            1260,
+            1218,
+            1176,
+            1134,
+            1092,
+            1050,
+            1008,
+            966,
+            966
+        ]
+    },
     "91100": {
         "nationality": 8,
         "type": 3,
@@ -15588,6 +15966,40 @@ const equip_data = {
             1190,
             1190,
             1190
+        ]
+    },
+    "23220": {
+        "nationality": 2,
+        "type": 3,
+        "rarity": 5,
+        "tech": 0,
+        "id": 23220,
+        "icon": "23220",
+        "ship_type_forbidden": [
+            8,
+            17,
+            22
+        ],
+        "jp_name": "試作型203mm三連装砲Mark X",
+        "cn_name": "试作型三联装203mm主炮Mark X",
+        "tw_name": "試作型三聯裝203mm主炮Mark X*",
+        "en_name": "Prototype Triple 203mm Mk IX Main Gun Mount",
+        "equip_limit": 0,
+        "cd": [
+            1677,
+            1618,
+            1559,
+            1500,
+            1441,
+            1382,
+            1323,
+            1264,
+            1205,
+            1146,
+            1087,
+            1087,
+            1087,
+            1087
         ]
     },
     "23040": {
@@ -17914,6 +18326,62 @@ const equip_data = {
             322
         ]
     },
+    "90760": {
+        "nationality": 8,
+        "type": 1,
+        "rarity": 3,
+        "tech": 3,
+        "id": 90760,
+        "icon": "90760",
+        "ship_type_forbidden": [
+            22
+        ],
+        "jp_name": "138.6mm単装砲Mle1923",
+        "cn_name": "138.6mm单装炮Mle1923",
+        "tw_name": "138.6mm單裝炮Mle1923*",
+        "en_name": "Single 138.6mm Mle 1923 Main Gun Mount",
+        "equip_limit": 0,
+        "cd": [
+            346,
+            340,
+            334,
+            328,
+            322,
+            316,
+            310,
+            303
+        ]
+    },
+    "90540": {
+        "nationality": 8,
+        "type": 1,
+        "rarity": 4,
+        "tech": 3,
+        "id": 90540,
+        "icon": "50500",
+        "ship_type_forbidden": [
+            22
+        ],
+        "jp_name": "130mm連装砲Mle1935",
+        "cn_name": "双联装130mm主炮Mle1935",
+        "tw_name": "雙聯裝130mm主炮Mle1935*",
+        "en_name": "Twin 130mm Mle 1935 Main Gun Mount",
+        "equip_limit": 0,
+        "cd": [
+            248,
+            242,
+            238,
+            234,
+            230,
+            225,
+            221,
+            217,
+            213,
+            208,
+            205,
+            205
+        ]
+    },
     "90500": {
         "nationality": 8,
         "type": 1,
@@ -19526,6 +19994,52 @@ const equip_data = {
             515,
             510,
             505
+        ]
+    },
+    "11260": {
+        "nationality": 1,
+        "type": 1,
+        "rarity": 5,
+        "tech": 0,
+        "id": 11260,
+        "icon": "11260",
+        "ship_type_forbidden": [
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+        ],
+        "jp_name": "試作型137mm連装両用砲Mk1",
+        "cn_name": "试作型双联装137mm高平两用炮Mk1",
+        "tw_name": "試作型雙聯裝137mm高平兩用炮Mk1*",
+        "en_name": "Prototype Twin 137mm Mk 1 Dual-Purpose Gun Mount",
+        "equip_limit": 0,
+        "cd": [
+            631,
+            616,
+            601,
+            586,
+            571,
+            556,
+            541,
+            526,
+            511,
+            496,
+            481,
+            481,
+            481,
+            481
         ]
     },
     "11040": {

@@ -132,6 +132,7 @@ const
         17: { cn: "直升機", en: "ASW Helicopter", jp: "ヘリ" },
         18: { cn: "貨物", en: "Cargo", jp: "積載" },
         20: { cn: "導彈", en: "Missile", jp: "ミサイル" },
+        21: { cn: "防空砲(定時引信)", en: "Anti-Air Gun(Time Fuze)", jp: "対空砲(時限信管)" },
 
         9999: { cn: "特殊兵裝", en: "Augment", jp: "特殊装備" },
     };

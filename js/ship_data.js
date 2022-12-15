@@ -9,7 +9,7 @@ const ship_data = {
         ],
         "id": 10900064,
         "skin_id": 10900060,
-        "english_name": "Kala Ideas !TWnoData",
+        "english_name": "Kala Ideas",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -18,7 +18,7 @@ const ship_data = {
         "jp_name": "カラ・イデアス",
         "en_name": "Kala Ideas",
         "cn_name": "卡菈·伊迪亚斯",
-        "tw_name": "卡菈·伊迪亞斯*",
+        "tw_name": "卡菈·伊迪亞斯",
         "equip_1": [
             3,
             11
@@ -59,7 +59,7 @@ const ship_data = {
         ],
         "id": 10900054,
         "skin_id": 10900050,
-        "english_name": "Serri Glaus !TWnoData",
+        "english_name": "Serri Glaus",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -68,7 +68,7 @@ const ship_data = {
         "jp_name": "セリ・グロース",
         "en_name": "Serri Glaus",
         "cn_name": "赛莉·古劳斯",
-        "tw_name": "賽莉·古勞斯*",
+        "tw_name": "賽莉‧古勞斯",
         "equip_1": [
             7
         ],
@@ -108,7 +108,7 @@ const ship_data = {
         ],
         "id": 10900024,
         "skin_id": 10900020,
-        "english_name": "Klaudia Valentz !TWnoData",
+        "english_name": "Klaudia Valentz",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -117,7 +117,7 @@ const ship_data = {
         "jp_name": "クラウディア・バレンツ",
         "en_name": "Klaudia Valentz",
         "cn_name": "科洛蒂娅·巴兰茨",
-        "tw_name": "科洛蒂婭·巴蘭茨*",
+        "tw_name": "科洛蒂婭·巴蘭茨",
         "equip_1": [
             7
         ],
@@ -159,7 +159,7 @@ const ship_data = {
         ],
         "id": 10900034,
         "skin_id": 10900030,
-        "english_name": "Patricia Abelheim !TWnoData",
+        "english_name": "Patricia Abelheim",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -168,7 +168,7 @@ const ship_data = {
         "jp_name": "パトリツィア・アーベルハイム",
         "en_name": "Patricia Abelheim",
         "cn_name": "帕特莉夏·阿贝尔海姆",
-        "tw_name": "帕特莉夏·阿貝爾海姆*",
+        "tw_name": "派翠夏‧阿貝爾海姆",
         "equip_1": [
             4
         ],
@@ -177,7 +177,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -209,7 +210,7 @@ const ship_data = {
         ],
         "id": 10900044,
         "skin_id": 10900040,
-        "english_name": "Lila Decyrus !TWnoData",
+        "english_name": "Lila Decyrus",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -218,7 +219,7 @@ const ship_data = {
         "jp_name": "リラ・ディザイアス",
         "en_name": "Lila Decyrus",
         "cn_name": "莉拉·德西亚斯",
-        "tw_name": "莉拉·德西亞斯*",
+        "tw_name": "莉拉·德西亞斯",
         "equip_1": [
             3
         ],
@@ -258,16 +259,16 @@ const ship_data = {
         ],
         "id": 10900014,
         "skin_id": 10900010,
-        "english_name": "Reisalin Stout !TWnoData",
+        "english_name": "Reisalin Stout",
         "star": 6,
         "rarity": 5,
         "retro": 0,
         "uni_id": "10900010",
         "painting": "laisha",
         "jp_name": "ライザリン・シュタウト",
-        "en_name": "Reisalin Stout",
+        "en_name": "Reisalin Stout",
         "cn_name": "莱莎琳·斯托特",
-        "tw_name": "萊莎琳·斯托特*",
+        "tw_name": "萊莎琳·斯托特",
         "equip_1": [
             2
         ],
@@ -378,7 +379,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -428,7 +430,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -879,7 +882,8 @@ const ship_data = {
             1
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -1078,7 +1082,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -1128,7 +1133,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -1778,7 +1784,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -3004,6 +3011,56 @@ const ship_data = {
         ],
         "date": "2021年12月01日"
     },
+    "9705030": {
+        "nationality": 97,
+        "type": 5,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 9705034,
+        "skin_id": 9705030,
+        "english_name": "Arizona.META !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "9705030",
+        "painting": "yalisangna_alter",
+        "jp_name": "アリゾナ(META)",
+        "en_name": "Arizona META",
+        "cn_name": "亚利桑那·META",
+        "tw_name": "亞利桑那·META*",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1
+        ],
+        "equip_3": [
+            6,
+            21
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
+        ],
+        "reload": [
+            55,
+            379,
+            0,
+            41,
+            0
+        ],
+        "date": "2022年12月08日"
+    },
     "9705020": {
         "nationality": 97,
         "type": 5,
@@ -3032,7 +3089,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -3082,7 +3140,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -3131,7 +3190,8 @@ const ship_data = {
             1
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -3180,7 +3240,8 @@ const ship_data = {
             1
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -3229,7 +3290,8 @@ const ship_data = {
             5
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -3279,7 +3341,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -3680,7 +3743,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -3730,7 +3794,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -3780,7 +3845,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -3829,7 +3895,8 @@ const ship_data = {
             1
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -4534,7 +4601,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -4584,7 +4652,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -5341,7 +5410,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -5391,7 +5461,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -5441,7 +5512,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -5491,7 +5563,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -6556,7 +6629,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -6605,7 +6679,8 @@ const ship_data = {
             1
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -6654,7 +6729,8 @@ const ship_data = {
             1
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -6704,7 +6780,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -6754,7 +6831,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -6804,7 +6882,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -9415,7 +9494,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -9466,7 +9546,8 @@ const ship_data = {
         ],
         "equip_3": [
             1,
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -9516,7 +9597,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -9566,7 +9648,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -9616,7 +9699,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -9666,7 +9750,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -9715,7 +9800,8 @@ const ship_data = {
             5
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -9765,7 +9851,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -9816,7 +9903,8 @@ const ship_data = {
         ],
         "equip_3": [
             1,
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -9867,7 +9955,8 @@ const ship_data = {
         ],
         "equip_3": [
             1,
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -9917,7 +10006,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -9967,7 +10057,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -13840,7 +13931,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -13890,7 +13982,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -13940,7 +14033,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -14040,7 +14134,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -14090,7 +14185,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -14140,7 +14236,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -14190,7 +14287,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -14240,7 +14338,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -14292,7 +14391,8 @@ const ship_data = {
             12
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -14342,7 +14442,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -14394,7 +14495,8 @@ const ship_data = {
             12
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -14444,7 +14546,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -14496,7 +14599,8 @@ const ship_data = {
             12
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -14546,7 +14650,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -14598,7 +14703,8 @@ const ship_data = {
             12
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -14648,7 +14754,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -14698,7 +14805,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -14748,7 +14856,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -14798,7 +14907,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -14848,7 +14958,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -14898,7 +15009,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -14948,7 +15060,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -14998,7 +15111,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -21825,7 +21939,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -21875,7 +21990,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -21925,7 +22041,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -21975,7 +22092,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -22025,7 +22143,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -22075,7 +22194,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -22125,7 +22245,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -22175,7 +22296,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -22225,7 +22347,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -22275,7 +22398,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -22325,7 +22449,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10,
@@ -22376,7 +22501,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -22426,7 +22552,8 @@ const ship_data = {
             2
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -22475,7 +22602,8 @@ const ship_data = {
             1
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -22524,7 +22652,8 @@ const ship_data = {
             1
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -22573,7 +22702,8 @@ const ship_data = {
             1
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -22622,7 +22752,8 @@ const ship_data = {
             1
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -28933,7 +29064,8 @@ const ship_data = {
             1
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -28982,7 +29114,8 @@ const ship_data = {
             1
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -29031,7 +29164,8 @@ const ship_data = {
             1
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -29080,7 +29214,8 @@ const ship_data = {
             1
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -29129,7 +29264,8 @@ const ship_data = {
             1
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -29178,7 +29314,8 @@ const ship_data = {
             1
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -29227,7 +29364,8 @@ const ship_data = {
             1
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -29276,7 +29414,8 @@ const ship_data = {
             1
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -29325,7 +29464,8 @@ const ship_data = {
             1
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -29374,7 +29514,8 @@ const ship_data = {
             1
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -29423,7 +29564,8 @@ const ship_data = {
             1
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -29472,7 +29614,8 @@ const ship_data = {
             1
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -29521,7 +29664,8 @@ const ship_data = {
             1
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -29570,7 +29714,8 @@ const ship_data = {
             1
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -29619,7 +29764,8 @@ const ship_data = {
             1
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -29668,7 +29814,8 @@ const ship_data = {
             1
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -29717,7 +29864,8 @@ const ship_data = {
             1
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
@@ -29766,7 +29914,8 @@ const ship_data = {
             1
         ],
         "equip_3": [
-            6
+            6,
+            21
         ],
         "equip_4": [
             10
