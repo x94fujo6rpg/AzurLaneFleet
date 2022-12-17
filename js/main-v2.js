@@ -4243,7 +4243,7 @@ const
     collab_nation = new Set([101, 103, 104, 105, 106, 107, 108, 109, 110]),
     other_front = new Set([19, 20]),
     other_back = new Set([10, 20]),
-    other_sub = new Set([0]),
+    other_sub = new Set([0, 22]),
     // equip
     addQuantityList = new Set([1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 20]),
     eq_other_nation = other_nation,
