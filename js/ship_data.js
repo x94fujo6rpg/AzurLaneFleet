@@ -1020,7 +1020,7 @@ const ship_data = {
         "rarity": 4,
         "retro": 0,
         "uni_id": "10600060",
-        "painting": "nvtiangou_DOA",
+        "painting": "nvtiangou_doa",
         "jp_name": "女天狗",
         "en_name": "Nyotengu",
         "cn_name": "女天狗",
@@ -1069,7 +1069,7 @@ const ship_data = {
         "rarity": 4,
         "retro": 0,
         "uni_id": "10600050",
-        "painting": "zhixiao_DOA",
+        "painting": "zhixiao_doa",
         "jp_name": "なぎさ",
         "en_name": "Nagisa",
         "cn_name": "凪咲",
@@ -1171,7 +1171,7 @@ const ship_data = {
         "rarity": 5,
         "retro": 0,
         "uni_id": "10600030",
-        "painting": "xia_DOA",
+        "painting": "xia_doa",
         "jp_name": "かすみ",
         "en_name": "Kasumi",
         "cn_name": "霞",
@@ -1220,7 +1220,7 @@ const ship_data = {
         "rarity": 4,
         "retro": 0,
         "uni_id": "10600070",
-        "painting": "monika_DOA",
+        "painting": "monika_doa",
         "jp_name": "モニカ",
         "en_name": "Monica",
         "cn_name": "莫妮卡",
@@ -1271,7 +1271,7 @@ const ship_data = {
         "rarity": 5,
         "retro": 0,
         "uni_id": "10600040",
-        "painting": "haixiao_DOA",
+        "painting": "haixiao_doa",
         "jp_name": "みさき",
         "en_name": "Misaki",
         "cn_name": "海咲",
@@ -1722,7 +1722,7 @@ const ship_data = {
         "rarity": 5,
         "retro": 0,
         "uni_id": "10400030",
-        "painting": "aijiangCV",
+        "painting": "aijiangcv",
         "jp_name": "キズナアイ・アニバーサリー",
         "en_name": "Anniversary Kizuna AI",
         "cn_name": "绊爱·Anniversary",
@@ -1771,7 +1771,7 @@ const ship_data = {
         "rarity": 5,
         "retro": 0,
         "uni_id": "10400040",
-        "painting": "aijiangBB",
+        "painting": "aijiangbb",
         "jp_name": "キズナアイ・スーパーゲーマー",
         "en_name": "Super Gamer Kizuna AI",
         "cn_name": "绊爱·SuperGamer",
@@ -1822,7 +1822,7 @@ const ship_data = {
         "rarity": 5,
         "retro": 0,
         "uni_id": "10400020",
-        "painting": "aijiangCL",
+        "painting": "aijiangcl",
         "jp_name": "キズナアイ・エレガント",
         "en_name": "Elegant Kizuna AI",
         "cn_name": "绊爱·Elegant",
@@ -1871,7 +1871,7 @@ const ship_data = {
         "rarity": 4,
         "retro": 0,
         "uni_id": "10400010",
-        "painting": "aijiangDD",
+        "painting": "aijiangdd",
         "jp_name": "キズナアイ",
         "en_name": "Kizuna AI",
         "cn_name": "绊爱",
@@ -2224,7 +2224,7 @@ const ship_data = {
         "rarity": 5,
         "retro": 0,
         "uni_id": "10100080",
-        "painting": "HDN402_1",
+        "painting": "hdn402_1",
         "jp_name": "グリーンハート",
         "en_name": "Green Heart",
         "cn_name": "翡绿之心",
@@ -2273,7 +2273,7 @@ const ship_data = {
         "rarity": 4,
         "retro": 0,
         "uni_id": "10100040",
-        "painting": "HDN401",
+        "painting": "hdn401",
         "jp_name": "ベール",
         "en_name": "Vert",
         "cn_name": "贝露",
@@ -2322,7 +2322,7 @@ const ship_data = {
         "rarity": 5,
         "retro": 0,
         "uni_id": "10100060",
-        "painting": "HDN202_1",
+        "painting": "hdn202_1",
         "jp_name": "ブラックハート",
         "en_name": "Black Heart",
         "cn_name": "圣黑之心",
@@ -2371,7 +2371,7 @@ const ship_data = {
         "rarity": 4,
         "retro": 0,
         "uni_id": "10100020",
-        "painting": "HDN201",
+        "painting": "hdn201",
         "jp_name": "ノワール",
         "en_name": "Noire",
         "cn_name": "诺瓦露",
@@ -2420,7 +2420,7 @@ const ship_data = {
         "rarity": 5,
         "retro": 0,
         "uni_id": "10100050",
-        "painting": "HDN102_1",
+        "painting": "hdn102_1",
         "jp_name": "パープルハート",
         "en_name": "Purple Heart",
         "cn_name": "绀紫之心",
@@ -2471,7 +2471,7 @@ const ship_data = {
         "rarity": 4,
         "retro": 0,
         "uni_id": "10100010",
-        "painting": "HDN101",
+        "painting": "hdn101",
         "jp_name": "ネプテューヌ",
         "en_name": "Neptune",
         "cn_name": "涅普顿",
@@ -2522,7 +2522,7 @@ const ship_data = {
         "rarity": 5,
         "retro": 0,
         "uni_id": "10100070",
-        "painting": "HDN302_1",
+        "painting": "hdn302_1",
         "jp_name": "ホワイトハート",
         "en_name": "White Heart",
         "cn_name": "群白之心",
@@ -2573,7 +2573,7 @@ const ship_data = {
         "rarity": 4,
         "retro": 0,
         "uni_id": "10100030",
-        "painting": "HDN301",
+        "painting": "hdn301",
         "jp_name": "ブラン",
         "en_name": "Blanc",
         "cn_name": "布兰",
@@ -8588,7 +8588,7 @@ const ship_data = {
         ],
         "id": 408124,
         "skin_id": 408120,
-        "english_name": "KMS U-1206 !TWnoData",
+        "english_name": "KMS U-1206",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -8597,7 +8597,7 @@ const ship_data = {
         "jp_name": "U-1206",
         "en_name": "U-1206",
         "cn_name": "U-1206",
-        "tw_name": "U-1206*",
+        "tw_name": "U-1206",
         "equip_1": [
             13
         ],
@@ -8642,7 +8642,7 @@ const ship_data = {
         "rarity": 4,
         "retro": 0,
         "uni_id": "408110",
-        "painting": "U410",
+        "painting": "u410",
         "jp_name": "U-410",
         "en_name": "U-410",
         "cn_name": "U-410",
@@ -8691,7 +8691,7 @@ const ship_data = {
         "rarity": 5,
         "retro": 0,
         "uni_id": "408100",
-        "painting": "U37",
+        "painting": "u37",
         "jp_name": "U-37",
         "en_name": "U-37",
         "cn_name": "U-37",
@@ -8740,7 +8740,7 @@ const ship_data = {
         "rarity": 5,
         "retro": 0,
         "uni_id": "408090",
-        "painting": "U96",
+        "painting": "u96",
         "jp_name": "U-96",
         "en_name": "U-96",
         "cn_name": "U-96",
@@ -8789,7 +8789,7 @@ const ship_data = {
         "rarity": 4,
         "retro": 0,
         "uni_id": "408080",
-        "painting": "U110",
+        "painting": "u110",
         "jp_name": "U-110",
         "en_name": "U-110",
         "cn_name": "U-110",
@@ -8838,7 +8838,7 @@ const ship_data = {
         "rarity": 4,
         "retro": 0,
         "uni_id": "408070",
-        "painting": "U522",
+        "painting": "u522",
         "jp_name": "U-522",
         "en_name": "U-522",
         "cn_name": "U-522",
@@ -8887,7 +8887,7 @@ const ship_data = {
         "rarity": 5,
         "retro": 0,
         "uni_id": "408060",
-        "painting": "U101",
+        "painting": "u101",
         "jp_name": "U-101",
         "en_name": "U-101",
         "cn_name": "U-101",
@@ -8936,7 +8936,7 @@ const ship_data = {
         "rarity": 4,
         "retro": 0,
         "uni_id": "408050",
-        "painting": "U73",
+        "painting": "u73",
         "jp_name": "U-73",
         "en_name": "U-73",
         "cn_name": "U-73",
@@ -8985,7 +8985,7 @@ const ship_data = {
         "rarity": 4,
         "retro": 0,
         "uni_id": "408040",
-        "painting": "U556",
+        "painting": "u556",
         "jp_name": "U-556",
         "en_name": "U-556",
         "cn_name": "U-556",
@@ -9034,7 +9034,7 @@ const ship_data = {
         "rarity": 4,
         "retro": 0,
         "uni_id": "408030",
-        "painting": "U557",
+        "painting": "u557",
         "jp_name": "U557",
         "en_name": "U-557",
         "cn_name": "U-557",
@@ -9083,7 +9083,7 @@ const ship_data = {
         "rarity": 5,
         "retro": 0,
         "uni_id": "408020",
-        "painting": "U47",
+        "painting": "u47",
         "jp_name": "U-47",
         "en_name": "U-47",
         "cn_name": "U-47",
@@ -9132,7 +9132,7 @@ const ship_data = {
         "rarity": 5,
         "retro": 0,
         "uni_id": "408010",
-        "painting": "U81",
+        "painting": "u81",
         "jp_name": "U-81",
         "en_name": "U-81",
         "cn_name": "U-81",
@@ -9374,7 +9374,7 @@ const ship_data = {
         ],
         "id": 406024,
         "skin_id": 406020,
-        "english_name": "KMS Elbe !TWnoData",
+        "english_name": "KMS Elbe",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -9383,7 +9383,7 @@ const ship_data = {
         "jp_name": "エルベ",
         "en_name": "Elbe",
         "cn_name": "易北",
-        "tw_name": "易北*",
+        "tw_name": "易北",
         "equip_1": [
             7
         ],
@@ -9579,7 +9579,7 @@ const ship_data = {
         ],
         "id": 405034,
         "skin_id": 405030,
-        "english_name": "KMS Ulrich von Hutten !TWnoData",
+        "english_name": "KMS Ulrich von Hutten",
         "star": 6,
         "rarity": 6,
         "retro": 0,
@@ -9588,7 +9588,7 @@ const ship_data = {
         "jp_name": "ウルリッヒ・フォン・フッテン",
         "en_name": "Ulrich von Hutten",
         "cn_name": "乌尔里希·冯·胡滕",
-        "tw_name": "烏爾里希·馮·胡滕*",
+        "tw_name": "烏爾里希·馮·胡滕",
         "equip_1": [
             4
         ],
@@ -10288,7 +10288,7 @@ const ship_data = {
         ],
         "id": 403104,
         "skin_id": 403100,
-        "english_name": "KMS Prinz Adalbert !TWnoData",
+        "english_name": "KMS Prinz Adalbert",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -10297,7 +10297,7 @@ const ship_data = {
         "jp_name": "プリンツ・アーダルベルト",
         "en_name": "Prinz Adalbert",
         "cn_name": "阿达尔伯特亲王",
-        "tw_name": "阿達爾伯特親王*",
+        "tw_name": "阿達爾貝特親王",
         "equip_1": [
             3,
             11
@@ -10888,7 +10888,7 @@ const ship_data = {
         ],
         "id": 402064,
         "skin_id": 402060,
-        "english_name": "KMS Magdeburg !TWnoData",
+        "english_name": "KMS Magdeburg",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -10897,7 +10897,7 @@ const ship_data = {
         "jp_name": "マクデブルク",
         "en_name": "Magdeburg",
         "cn_name": "马格德堡",
-        "tw_name": "馬格德堡*",
+        "tw_name": "馬德堡",
         "equip_1": [
             2
         ],
@@ -11353,7 +11353,7 @@ const ship_data = {
         "rarity": 5,
         "retro": 0,
         "uni_id": "401460",
-        "painting": "Z46",
+        "painting": "z46",
         "jp_name": "Z46",
         "en_name": "Z46",
         "cn_name": "Z46",
@@ -11404,7 +11404,7 @@ const ship_data = {
         "rarity": 4,
         "retro": 0,
         "uni_id": "401360",
-        "painting": "Z36",
+        "painting": "z36",
         "jp_name": "Z36",
         "en_name": "Z36",
         "cn_name": "Z36",
@@ -11455,7 +11455,7 @@ const ship_data = {
         "rarity": 4,
         "retro": 0,
         "uni_id": "401350",
-        "painting": "Z35",
+        "painting": "z35",
         "jp_name": "Z35",
         "en_name": "Z35",
         "cn_name": "Z35",
@@ -11506,7 +11506,7 @@ const ship_data = {
         "rarity": 4,
         "retro": 0,
         "uni_id": "401280",
-        "painting": "Z28",
+        "painting": "z28",
         "jp_name": "Z28",
         "en_name": "Z28",
         "cn_name": "Z28",
@@ -11558,7 +11558,7 @@ const ship_data = {
         "rarity": 4,
         "retro": 0,
         "uni_id": "401260",
-        "painting": "Z26",
+        "painting": "z26",
         "jp_name": "Z26",
         "en_name": "Z26",
         "cn_name": "Z26",
@@ -11610,7 +11610,7 @@ const ship_data = {
         "rarity": 4,
         "retro": 0,
         "uni_id": "401250",
-        "painting": "Z25",
+        "painting": "z25",
         "jp_name": "Z25",
         "en_name": "Z25",
         "cn_name": "Z25",
@@ -11662,7 +11662,7 @@ const ship_data = {
         "rarity": 4,
         "retro": 0,
         "uni_id": "401240",
-        "painting": "Z24",
+        "painting": "z24",
         "jp_name": "Z24",
         "en_name": "Z24",
         "cn_name": "Z24",
@@ -12124,7 +12124,7 @@ const ship_data = {
         "rarity": 5,
         "retro": 0,
         "uni_id": "401019",
-        "painting": "Z1_g",
+        "painting": "z1_g",
         "jp_name": "Z1改",
         "en_name": "Z1 (Retrofit)",
         "cn_name": "Z1改",
@@ -12328,7 +12328,7 @@ const ship_data = {
         "rarity": 5,
         "retro": 0,
         "uni_id": "317010",
-        "painting": "I13",
+        "painting": "i13",
         "jp_name": "伊13",
         "en_name": "I-13",
         "cn_name": "伊13",
@@ -12426,7 +12426,7 @@ const ship_data = {
         "rarity": 5,
         "retro": 0,
         "uni_id": "308060",
-        "painting": "I168",
+        "painting": "i168",
         "jp_name": "伊168",
         "en_name": "I-168",
         "cn_name": "伊168",
@@ -12475,7 +12475,7 @@ const ship_data = {
         "rarity": 4,
         "retro": 0,
         "uni_id": "308050",
-        "painting": "I56",
+        "painting": "i56",
         "jp_name": "伊56",
         "en_name": "I-56",
         "cn_name": "伊56",
@@ -12524,7 +12524,7 @@ const ship_data = {
         "rarity": 4,
         "retro": 0,
         "uni_id": "308040",
-        "painting": "I25",
+        "painting": "i25",
         "jp_name": "伊25",
         "en_name": "I-25",
         "cn_name": "伊25",
@@ -12573,7 +12573,7 @@ const ship_data = {
         "rarity": 4,
         "retro": 0,
         "uni_id": "308030",
-        "painting": "I58",
+        "painting": "i58",
         "jp_name": "伊58",
         "en_name": "I-58",
         "cn_name": "伊58",
@@ -12622,7 +12622,7 @@ const ship_data = {
         "rarity": 4,
         "retro": 0,
         "uni_id": "308020",
-        "painting": "I26",
+        "painting": "i26",
         "jp_name": "伊26",
         "en_name": "I-26",
         "cn_name": "伊26",
@@ -12671,7 +12671,7 @@ const ship_data = {
         "rarity": 5,
         "retro": 0,
         "uni_id": "308010",
-        "painting": "I19",
+        "painting": "i19",
         "jp_name": "伊19",
         "en_name": "I-19",
         "cn_name": "伊19",
@@ -27933,6 +27933,55 @@ const ship_data = {
         ],
         "date": "2021年05月27日"
     },
+    "107120": {
+        "nationality": 1,
+        "type": 7,
+        "base_list": [
+            3,
+            3,
+            2
+        ],
+        "id": 107124,
+        "skin_id": 107120,
+        "english_name": "USS Hornet II !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "107120",
+        "painting": "dahuangfengii",
+        "jp_name": "ホーネットⅡ",
+        "en_name": "USS Hornet II*",
+        "cn_name": "大黄蜂II",
+        "tw_name": "大黃蜂II*",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            9
+        ],
+        "equip_3": [
+            8
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.4,
+            1.3,
+            1.2
+        ],
+        "reload": [
+            48,
+            333,
+            0,
+            36,
+            0
+        ],
+        "date": "2022年12月22日"
+    },
     "107110": {
         "nationality": 1,
         "type": 7,
@@ -27981,6 +28030,57 @@ const ship_data = {
             0
         ],
         "date": "2020年03月26日"
+    },
+    "107100": {
+        "nationality": 1,
+        "type": 7,
+        "base_list": [
+            2,
+            4,
+            3
+        ],
+        "id": 107104,
+        "skin_id": 107100,
+        "english_name": "USS Yorktown II !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 6,
+        "retro": 0,
+        "uni_id": "107100",
+        "painting": "yuekechengii",
+        "jp_name": "ヨークタウンⅡ",
+        "en_name": "USS Yorktown II*",
+        "cn_name": "约克城II",
+        "tw_name": "約克城II*",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            9
+        ],
+        "equip_3": [
+            7,
+            8,
+            9
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.2,
+            1.35,
+            1.35
+        ],
+        "reload": [
+            50,
+            347,
+            0,
+            37,
+            0
+        ],
+        "date": "2022年12月22日"
     },
     "107090": {
         "nationality": 1,
@@ -28424,6 +28524,57 @@ const ship_data = {
             0
         ],
         "date": "2019年07月31日"
+    },
+    "107270": {
+        "nationality": 1,
+        "type": 6,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 107274,
+        "skin_id": 107270,
+        "english_name": "USS Langley II !ENnoData !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "107270",
+        "painting": "lanliii",
+        "jp_name": "ラングレーⅡ",
+        "en_name": "USS Langley II*",
+        "cn_name": "兰利II",
+        "tw_name": "蘭利II*",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            8
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            15
+        ],
+        "equip_5": [
+            10,
+            15
+        ],
+        "eq_p": [
+            1.25,
+            1.55,
+            0.8
+        ],
+        "reload": [
+            70,
+            490,
+            0,
+            53,
+            0
+        ],
+        "date": "2022年12月22日"
     },
     "107230": {
         "nationality": 1,
@@ -29985,6 +30136,55 @@ const ship_data = {
             0
         ],
         "date": "2021年07月08日"
+    },
+    "103260": {
+        "nationality": 1,
+        "type": 3,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 103264,
+        "skin_id": 103260,
+        "english_name": "USS Northampton II !ENnoData !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "103260",
+        "painting": "beianpudunii",
+        "jp_name": "ノーザンプトンⅡ",
+        "en_name": "USS Northampton II*",
+        "cn_name": "北安普敦II",
+        "tw_name": "北安普敦II*",
+        "equip_1": [
+            3
+        ],
+        "equip_2": [
+            1
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.3,
+            0.7,
+            1.4
+        ],
+        "reload": [
+            69,
+            478,
+            0,
+            51,
+            0
+        ],
+        "date": "2022年12月22日"
     },
     "103250": {
         "nationality": 1,
@@ -32457,6 +32657,57 @@ const ship_data = {
             0
         ],
         "date": "2017年05月25日"
+    },
+    "101500": {
+        "nationality": 1,
+        "type": 1,
+        "base_list": [
+            1,
+            1,
+            2
+        ],
+        "id": 101504,
+        "skin_id": 101500,
+        "english_name": "USS Hammann II !ENnoData !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "101500",
+        "painting": "hamanii",
+        "jp_name": "ハムマンⅡ",
+        "en_name": "USS Hammann II*",
+        "cn_name": "哈曼II",
+        "tw_name": "哈曼II*",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.15,
+            1.2,
+            1.35
+        ],
+        "reload": [
+            82,
+            571,
+            0,
+            61,
+            0
+        ],
+        "date": "2022年12月22日"
     },
     "101490": {
         "nationality": 1,

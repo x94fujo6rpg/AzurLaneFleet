@@ -404,7 +404,7 @@ const sp_weapon_data = {
         "limit": 40123,
         "type": 1,
         "jp_name": "謹製特殊艤装ラウティア",
-        "en_name": "(no DATA)",
+        "en_name": "Custom-made Companion Rigging - Raubtier",
         "cn_name": "特制舰装铁血兽Raubtier",
         "tw_name": "特製艦裝鐵血獸Raubtier*"
     },
@@ -417,7 +417,7 @@ const sp_weapon_data = {
         "limit": 30204,
         "type": 2,
         "jp_name": "あてちゃんずの今日のごはん",
-        "en_name": "(no DATA)",
+        "en_name": "Delicious Nagara-class Nabemono",
         "cn_name": "美味的便当 ",
         "tw_name": "美味的便當*"
     },
@@ -430,7 +430,7 @@ const sp_weapon_data = {
         "limit": 20403,
         "type": 6,
         "jp_name": "優雅なりし淑女の勲章",
-        "en_name": "(no DATA)",
+        "en_name": "Dame's Medal of Grace",
         "cn_name": "优雅与沉稳的勋章",
         "tw_name": "優雅與沉穩的勳章*"
     },
@@ -443,7 +443,7 @@ const sp_weapon_data = {
         "limit": 10311,
         "type": 4,
         "jp_name": "ジェネラル・バトルコート",
-        "en_name": "(no DATA)",
+        "en_name": "The General's Battlecoat",
         "cn_name": "将军的战袍",
         "tw_name": "將軍的戰袍*"
     },
@@ -456,7 +456,7 @@ const sp_weapon_data = {
         "limit": 10802,
         "type": 8,
         "jp_name": "デイリーさぷらいず！",
-        "en_name": "(no DATA)",
+        "en_name": "Prank-of-the-Day!",
         "cn_name": "本日的惊喜！",
         "tw_name": "本日的驚喜！*"
     },
