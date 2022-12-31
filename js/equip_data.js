@@ -6316,7 +6316,7 @@ const equip_data = {
         "jp_name": "AD-1スカイレーダー",
         "cn_name": "AD-1天袭者",
         "tw_name": "AD-1天襲者*",
-        "en_name": "(no DATA)",
+        "en_name": "AD-1 Skyraider",
         "equip_limit": 0,
         "cd": [
             2344,
@@ -8901,7 +8901,7 @@ const equip_data = {
         "jp_name": "F6Fヘルキャット(HVAR搭載型)",
         "cn_name": "F6F地狱猫(HVAR搭载型)",
         "tw_name": "F6F地獄貓(HVAR搭載型)*",
-        "en_name": "(no DATA)",
+        "en_name": "F6F Hellcat (HVAR-Mounted)",
         "equip_limit": 0,
         "cd": [
             1841,
