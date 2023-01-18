@@ -460,6 +460,32 @@ const sp_weapon_data = {
         "cn_name": "本日的惊喜！",
         "tw_name": "本日的驚喜！*"
     },
+    "10580": {
+        "id": 10580,
+        "icon": "10580",
+        "eq_reload": [],
+        "rarity": 4,
+        "tech": 0,
+        "limit": 20605,
+        "type": 7,
+        "jp_name": "ビザール・ティータイム",
+        "en_name": "Bizarre Teatime",
+        "cn_name": " 奇妙的午茶时间",
+        "tw_name": "奇妙的午茶時間*"
+    },
+    "10600": {
+        "id": 10600,
+        "icon": "10600",
+        "eq_reload": [],
+        "rarity": 4,
+        "tech": 0,
+        "limit": 80101,
+        "type": 1,
+        "jp_name": "騎士姫のガントレット",
+        "en_name": "Knight-Princess's Gauntlets",
+        "cn_name": "凯旋的护腕",
+        "tw_name": "凱旋的護腕*"
+    },
     "1010100": {
         "id": 1010100,
         "icon": "1010100",

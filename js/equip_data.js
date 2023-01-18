@@ -225,7 +225,7 @@ const equip_data = {
         ],
         "jp_name": "SY-1ミサイル",
         "cn_name": "上游-1",
-        "tw_name": "上游-1*",
+        "tw_name": "上游-1",
         "en_name": "SY-1 Missile",
         "equip_limit": 0,
         "cd": [
@@ -244,6 +244,40 @@ const equip_data = {
             3950,
             3950
         ]
+    },
+    "3820": {
+        "nationality": 5,
+        "type": 18,
+        "rarity": 4,
+        "tech": 0,
+        "id": 3820,
+        "icon": "3820",
+        "ship_type_forbidden": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            17,
+            18,
+            20,
+            21,
+            22
+        ],
+        "jp_name": "戊型水上機",
+        "cn_name": "戊型水上机",
+        "tw_name": "戊型水上機*",
+        "en_name": "(no DATA)",
+        "equip_limit": 3400,
+        "cd": []
     },
     "3400": {
         "nationality": 3,
@@ -1842,7 +1876,7 @@ const equip_data = {
         ],
         "jp_name": "FBA 19",
         "cn_name": "FBA 19",
-        "tw_name": "FBA 19*",
+        "tw_name": "FBA 19",
         "en_name": "FBA 19",
         "equip_limit": 0,
         "cd": [
@@ -1872,7 +1906,7 @@ const equip_data = {
         ],
         "jp_name": "FBA 19",
         "cn_name": "FBA 19",
-        "tw_name": "FBA 19*",
+        "tw_name": "FBA 19",
         "en_name": "FBA 19",
         "equip_limit": 0,
         "cd": [
@@ -2854,6 +2888,21 @@ const equip_data = {
         "equip_limit": 0,
         "cd": []
     },
+    "3840": {
+        "nationality": 7,
+        "type": 10,
+        "rarity": 5,
+        "tech": 0,
+        "id": 3840,
+        "icon": "3840",
+        "ship_type_forbidden": [],
+        "jp_name": "謎のポスター？",
+        "cn_name": "“妖精魔法”海报",
+        "tw_name": "“妖精魔法”海報*",
+        "en_name": "(no DATA)",
+        "equip_limit": 3840,
+        "cd": []
+    },
     "980": {
         "nationality": 7,
         "type": 10,
@@ -2897,6 +2946,21 @@ const equip_data = {
         "tw_name": "撒丁的邀請函*",
         "en_name": "World Expo Invitation",
         "equip_limit": 3600,
+        "cd": []
+    },
+    "3800": {
+        "nationality": 5,
+        "type": 10,
+        "rarity": 5,
+        "tech": 0,
+        "id": 3800,
+        "icon": "3800",
+        "ship_type_forbidden": [],
+        "jp_name": "梅の語り",
+        "cn_name": "梅之语",
+        "tw_name": "梅之語*",
+        "en_name": "(no DATA)",
+        "equip_limit": 3800,
         "cd": []
     },
     "3300": {
