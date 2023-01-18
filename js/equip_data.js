@@ -275,7 +275,7 @@ const equip_data = {
         "jp_name": "戊型水上機",
         "cn_name": "戊型水上机",
         "tw_name": "戊型水上機*",
-        "en_name": "(no DATA)",
+        "en_name": "Type-Wu Seaplane",
         "equip_limit": 3400,
         "cd": []
     },
@@ -2899,7 +2899,7 @@ const equip_data = {
         "jp_name": "謎のポスター？",
         "cn_name": "“妖精魔法”海报",
         "tw_name": "“妖精魔法”海報*",
-        "en_name": "(no DATA)",
+        "en_name": "\"Fairy Magic\" Poster",
         "equip_limit": 3840,
         "cd": []
     },
@@ -2959,7 +2959,7 @@ const equip_data = {
         "jp_name": "梅の語り",
         "cn_name": "梅之语",
         "tw_name": "梅之語*",
-        "en_name": "(no DATA)",
+        "en_name": "Plum-Petal Poetry",
         "equip_limit": 3800,
         "cd": []
     },
