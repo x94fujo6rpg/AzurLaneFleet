@@ -5295,7 +5295,7 @@ const ship_data = {
         ],
         "id": 718014,
         "skin_id": 718010,
-        "english_name": "SN Kronshtadt !TWnoData",
+        "english_name": "SN Kronshtadt",
         "star": 6,
         "rarity": 6,
         "retro": 0,
@@ -5304,7 +5304,7 @@ const ship_data = {
         "jp_name": "クロンシュタット",
         "en_name": "Kronshtadt",
         "cn_name": "喀琅施塔得",
-        "tw_name": "喀琅施塔得*",
+        "tw_name": "喀琅施塔得",
         "equip_1": [
             3,
             11
@@ -5394,7 +5394,7 @@ const ship_data = {
         ],
         "id": 707014,
         "skin_id": 707010,
-        "english_name": "SN Volga !TWnoData",
+        "english_name": "SN Volga",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -5403,7 +5403,7 @@ const ship_data = {
         "jp_name": "ヴォルガ",
         "en_name": "Volga",
         "cn_name": "伏尔加",
-        "tw_name": "伏爾加*",
+        "tw_name": "窩瓦",
         "equip_1": [
             7
         ],
@@ -5443,7 +5443,7 @@ const ship_data = {
         ],
         "id": 705064,
         "skin_id": 705060,
-        "english_name": "SN Arkhangelsk !TWnoData",
+        "english_name": "SN Arkhangelsk",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -5452,7 +5452,7 @@ const ship_data = {
         "jp_name": "アルハンゲリスク",
         "en_name": "Arkhangelsk",
         "cn_name": "阿尔汉格尔斯克",
-        "tw_name": "阿爾漢格爾斯克*",
+        "tw_name": "阿爾漢格爾斯克",
         "equip_1": [
             4
         ],
@@ -6056,7 +6056,7 @@ const ship_data = {
         ],
         "id": 701104,
         "skin_id": 701100,
-        "english_name": "SN Kiev !TWnoData",
+        "english_name": "SN Kiev",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -6065,7 +6065,7 @@ const ship_data = {
         "jp_name": "キエフ",
         "en_name": "Kiev",
         "cn_name": "基辅",
-        "tw_name": "基輔*",
+        "tw_name": "基輔",
         "equip_1": [
             1
         ],
@@ -6107,7 +6107,7 @@ const ship_data = {
         ],
         "id": 701094,
         "skin_id": 701090,
-        "english_name": "SN Soobrazitelny !TWnoData",
+        "english_name": "SN Soobrazitelny",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -6116,7 +6116,7 @@ const ship_data = {
         "jp_name": "ソオブラジーテリヌイ",
         "en_name": "Soobrazitelny",
         "cn_name": "灵敏",
-        "tw_name": "靈敏*",
+        "tw_name": "靈敏",
         "equip_1": [
             1
         ],
@@ -21414,6 +21414,57 @@ const ship_data = {
         ],
         "date": "2020年05月28日"
     },
+    "207070": {
+        "nationality": 2,
+        "type": 7,
+        "base_list": [
+            3,
+            3,
+            3
+        ],
+        "id": 207074,
+        "skin_id": 207070,
+        "english_name": "HMS Implacable !TWnoData",
+        "star": 6,
+        "rarity": 6,
+        "retro": 0,
+        "uni_id": "207070",
+        "painting": "yuanchou",
+        "jp_name": "インプラカブル",
+        "en_name": "Implacable",
+        "cn_name": "怨仇",
+        "tw_name": "怨仇*",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            7,
+            8,
+            9
+        ],
+        "equip_3": [
+            8
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.4,
+            1.3,
+            1.3
+        ],
+        "reload": [
+            46,
+            322,
+            0,
+            35,
+            0
+        ],
+        "date": "2023年02月23日"
+    },
     "207060": {
         "nationality": 2,
         "type": 7,
@@ -22117,6 +22168,57 @@ const ship_data = {
         ],
         "date": "2017年05月25日"
     },
+    "206020": {
+        "nationality": 2,
+        "type": 6,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 206024,
+        "skin_id": 206020,
+        "english_name": "HMS Argus !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "206020",
+        "painting": "baiyanjuren",
+        "jp_name": "アーガス",
+        "en_name": "Argus",
+        "cn_name": "百眼巨人",
+        "tw_name": "百眼巨人*",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            8
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            15
+        ],
+        "equip_5": [
+            10,
+            15
+        ],
+        "eq_p": [
+            1.3,
+            1.3,
+            0.8
+        ],
+        "reload": [
+            65,
+            450,
+            0,
+            48,
+            0
+        ],
+        "date": "2023年02月23日"
+    },
     "206019": {
         "nationality": 2,
         "type": 6,
@@ -22269,6 +22371,57 @@ const ship_data = {
             0
         ],
         "date": "2018年04月26日"
+    },
+    "205140": {
+        "nationality": 2,
+        "type": 5,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 205144,
+        "skin_id": 205140,
+        "english_name": "HMS Royal Oak !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "205140",
+        "painting": "huangjiaxiangshu",
+        "jp_name": "ロイヤル・オーク",
+        "en_name": "Royal Oak",
+        "cn_name": "皇家橡树",
+        "tw_name": "皇家橡樹*",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            6,
+            21
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
+        ],
+        "reload": [
+            57,
+            400,
+            0,
+            43,
+            0
+        ],
+        "date": "2023年02月23日"
     },
     "205130": {
         "nationality": 2,
@@ -24019,6 +24172,58 @@ const ship_data = {
             0
         ],
         "date": "2018年04月26日"
+    },
+    "202330": {
+        "nationality": 2,
+        "type": 2,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 202334,
+        "skin_id": 202330,
+        "english_name": "HMS Scylla !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "202330",
+        "painting": "sikula",
+        "jp_name": "シラ",
+        "en_name": "Scylla",
+        "cn_name": "斯库拉",
+        "tw_name": "斯庫拉*",
+        "equip_1": [
+            1,
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.35,
+            1.3,
+            1.5
+        ],
+        "reload": [
+            71,
+            492,
+            0,
+            53,
+            0
+        ],
+        "date": "2023年02月23日"
     },
     "202320": {
         "nationality": 2,
@@ -25866,6 +26071,57 @@ const ship_data = {
             0
         ],
         "date": "2017年05月25日"
+    },
+    "201360": {
+        "nationality": 2,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 201364,
+        "skin_id": 201360,
+        "english_name": "HMS Hero !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "201360",
+        "painting": "yingxiong",
+        "jp_name": "ヒーロー",
+        "en_name": "Hero",
+        "cn_name": "英雄",
+        "tw_name": "英雄*",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.3,
+            1.35,
+            1.05
+        ],
+        "reload": [
+            72,
+            503,
+            0,
+            54,
+            0
+        ],
+        "date": "2023年02月23日"
     },
     "201350": {
         "nationality": 2,

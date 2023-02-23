@@ -486,6 +486,32 @@ const sp_weapon_data = {
         "cn_name": "凯旋的护腕",
         "tw_name": "凱旋的護腕*"
     },
+    "10620": {
+        "id": 10620,
+        "icon": "10620",
+        "eq_reload": [],
+        "rarity": 4,
+        "tech": 0,
+        "limit": 10124,
+        "type": 1,
+        "jp_name": "ハッピータイム・シムス",
+        "en_name": "Sims' Playtime",
+        "cn_name": "西姆斯的快乐时间",
+        "tw_name": "西姆斯的快樂時間*"
+    },
+    "10640": {
+        "id": 10640,
+        "icon": "10640",
+        "eq_reload": [],
+        "rarity": 4,
+        "tech": 0,
+        "limit": 30313,
+        "type": 4,
+        "jp_name": "忉利天月白襟巻き",
+        "en_name": "Trayastrimsa-Heaven White Scarf",
+        "cn_name": "三十三天月白长巾",
+        "tw_name": "三十三天月白長巾*"
+    },
     "1010100": {
         "id": 1010100,
         "icon": "1010100",

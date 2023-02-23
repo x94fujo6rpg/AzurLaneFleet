@@ -2132,7 +2132,7 @@ const equip_data = {
         ],
         "jp_name": "B-50 305mm三連装砲Mk-15",
         "cn_name": "B-50 三联装305mm主炮Mk-15",
-        "tw_name": "B-50 三联装305mm主炮Mk-15",
+        "tw_name": "B-50 三聯裝305mm主炮Mk-15",
         "en_name": "B-50 Triple 305mm Mk-15 Main Gun Mount",
         "equip_limit": 0,
         "cd": [
@@ -2913,7 +2913,7 @@ const equip_data = {
         "ship_type_forbidden": [],
         "jp_name": "情報レポート・調査日誌",
         "cn_name": "机密文件·日志残卷",
-        "tw_name": "機密文件·日誌殘卷*",
+        "tw_name": "機密文件·日誌殘卷",
         "en_name": "Intel Report - Expedition Log",
         "equip_limit": 760,
         "cd": []
@@ -3557,6 +3557,21 @@ const equip_data = {
         "tw_name": "破損的演講稿*",
         "en_name": "Damaged Speech Manuscript",
         "equip_limit": 3560,
+        "cd": []
+    },
+    "3860": {
+        "nationality": 2,
+        "type": 10,
+        "rarity": 4,
+        "tech": 0,
+        "id": 3860,
+        "icon": "3860",
+        "ship_type_forbidden": [],
+        "jp_name": "女王陛下の仕事帳(極秘)",
+        "cn_name": "女王的日程表(绝密)",
+        "tw_name": "女王的日程表(絕密)*",
+        "en_name": "Her Majesty's Top-Secret Itinerary",
+        "equip_limit": 3860,
         "cd": []
     },
     "680": {
@@ -5917,6 +5932,39 @@ const equip_data = {
             1730,
             1700,
             1670
+        ]
+    },
+    "29220": {
+        "nationality": 2,
+        "type": 9,
+        "rarity": 5,
+        "tech": 0,
+        "id": 29220,
+        "icon": "29220",
+        "ship_type_forbidden": [
+            10,
+            22
+        ],
+        "jp_name": "ファイアフライ(1771中隊)",
+        "cn_name": "萤火虫(1771中队)",
+        "tw_name": "螢火蟲(1771中隊)*",
+        "en_name": "Fairey Firefly (1771 NAS)",
+        "equip_limit": 0,
+        "cd": [
+            2024,
+            1984,
+            1944,
+            1904,
+            1864,
+            1824,
+            1784,
+            1744,
+            1704,
+            1664,
+            1624,
+            1624,
+            1624,
+            1624
         ]
     },
     "29200": {
@@ -16129,7 +16177,7 @@ const equip_data = {
         "jp_name": "試作型203mm三連装砲Mark X",
         "cn_name": "试作型三联装203mm主炮Mark X",
         "tw_name": "試作型三聯裝203mm主炮Mark X*",
-        "en_name": "Prototype Triple 203mm Mk IX Main Gun Mount",
+        "en_name": "Prototype Triple 203mm Mk X Main Gun Mount",
         "equip_limit": 0,
         "cd": [
             1677,
