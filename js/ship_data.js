@@ -3011,6 +3011,57 @@ const ship_data = {
         ],
         "date": "2021年12月01日"
     },
+    "9705040": {
+        "nationality": 97,
+        "type": 5,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 9705044,
+        "skin_id": 9705040,
+        "english_name": "Queen Elizabeth.META !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "9705040",
+        "painting": "yilishabai_alter",
+        "jp_name": "クイーン・エリザベス(META)",
+        "en_name": "Queen Elizabeth META",
+        "cn_name": "伊丽莎白女王·META",
+        "tw_name": "伊麗莎白女王·META*",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            6,
+            21
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
+        ],
+        "reload": [
+            56,
+            386,
+            0,
+            41,
+            0
+        ],
+        "date": "2023年03月09日"
+    },
     "9705030": {
         "nationality": 97,
         "type": 5,
@@ -3413,6 +3464,57 @@ const ship_data = {
         ],
         "date": "2022年07月28日"
     },
+    "9702040": {
+        "nationality": 97,
+        "type": 2,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 9702044,
+        "skin_id": 9702040,
+        "english_name": "La Galissonniere.META !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "9702040",
+        "painting": "jialisuoniye_alter",
+        "jp_name": "ラ・ガリソニエール(META)",
+        "en_name": "La Galissonnière META",
+        "cn_name": "拉·加利索尼埃·META",
+        "tw_name": "拉·加利索尼埃·META*",
+        "equip_1": [
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.35,
+            1.5,
+            1.1
+        ],
+        "reload": [
+            65,
+            450,
+            0,
+            48,
+            0
+        ],
+        "date": "2023年03月23日"
+    },
     "9702030": {
         "nationality": 97,
         "type": 2,
@@ -3576,7 +3678,7 @@ const ship_data = {
         ],
         "id": 9701024,
         "skin_id": 9701020,
-        "english_name": "Fortune.META !TWnoData",
+        "english_name": "Fortune.META",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -3585,7 +3687,7 @@ const ship_data = {
         "jp_name": "フォーチュン(META)",
         "en_name": "Fortune META",
         "cn_name": "命运女神·META",
-        "tw_name": "命運女神·META*",
+        "tw_name": "命運女神·META",
         "equip_1": [
             1
         ],
@@ -3727,7 +3829,7 @@ const ship_data = {
         ],
         "id": 907014,
         "skin_id": 907010,
-        "english_name": "MNF Joffre !TWnoData",
+        "english_name": "MNF Joffre",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -3736,7 +3838,7 @@ const ship_data = {
         "jp_name": "ジョッフル",
         "en_name": "Joffre",
         "cn_name": "霞飞",
-        "tw_name": "霞飛*",
+        "tw_name": "霞飛",
         "equip_1": [
             7
         ],
@@ -4128,7 +4230,7 @@ const ship_data = {
         ],
         "id": 901134,
         "skin_id": 901130,
-        "english_name": "MNF L'Indomptable !TWnoData",
+        "english_name": "MNF L'Indomptable",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -4137,7 +4239,7 @@ const ship_data = {
         "jp_name": "ランドンターブル",
         "en_name": "L'Indomptable",
         "cn_name": "不屈",
-        "tw_name": "不屈*",
+        "tw_name": "不屈",
         "equip_1": [
             1
         ],
@@ -5433,6 +5535,57 @@ const ship_data = {
         ],
         "date": "2022年02月24日"
     },
+    "705070": {
+        "nationality": 7,
+        "type": 5,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 705074,
+        "skin_id": 705070,
+        "english_name": "SN Sevastopol !TWnoData",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "705070",
+        "painting": "saiwasituoboer",
+        "jp_name": "セヴァストポリ",
+        "en_name": "Sevastopol",
+        "cn_name": "塞瓦斯托波尔",
+        "tw_name": "塞瓦斯托波爾*",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            6,
+            21
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.3,
+            2,
+            1
+        ],
+        "reload": [
+            55,
+            381,
+            0,
+            41,
+            0
+        ],
+        "date": "2023年03月23日"
+    },
     "705060": {
         "nationality": 7,
         "type": 5,
@@ -5637,6 +5790,57 @@ const ship_data = {
         ],
         "date": "2020年02月27日"
     },
+    "703020": {
+        "nationality": 7,
+        "type": 3,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 703024,
+        "skin_id": 703020,
+        "english_name": "SN Kursk !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "703020",
+        "painting": "kuersike",
+        "jp_name": "クルスク",
+        "en_name": "Kursk",
+        "cn_name": "库尔斯克",
+        "tw_name": "庫爾斯克*",
+        "equip_1": [
+            3
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.2,
+            1.2,
+            1
+        ],
+        "reload": [
+            69,
+            478,
+            0,
+            51,
+            0
+        ],
+        "date": "2023年03月23日"
+    },
     "703010": {
         "nationality": 7,
         "type": 3,
@@ -5688,6 +5892,57 @@ const ship_data = {
             0
         ],
         "date": "2021年02月25日"
+    },
+    "702070": {
+        "nationality": 7,
+        "type": 2,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 702074,
+        "skin_id": 702070,
+        "english_name": "SN Voroshilov !TWnoData",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "702070",
+        "painting": "fuluoxiluofu",
+        "jp_name": "ヴォロシーロフ",
+        "en_name": "Voroshilov",
+        "cn_name": "伏罗希洛夫",
+        "tw_name": "伏羅希洛夫*",
+        "equip_1": [
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.5,
+            1.35,
+            1.1
+        ],
+        "reload": [
+            69,
+            478,
+            0,
+            51,
+            0
+        ],
+        "date": "2023年03月23日"
     },
     "702060": {
         "nationality": 7,
@@ -17458,7 +17713,7 @@ const ship_data = {
         ],
         "id": 301864,
         "skin_id": 301860,
-        "english_name": "IJN Kazagumo !TWnoData",
+        "english_name": "IJN Kazagumo",
         "star": 6,
         "rarity": 5,
         "retro": 0,
@@ -17467,7 +17722,7 @@ const ship_data = {
         "jp_name": "風雲",
         "en_name": "Kazagumo",
         "cn_name": "风云",
-        "tw_name": "風雲*",
+        "tw_name": "風雲",
         "equip_1": [
             1
         ],
@@ -21028,7 +21283,7 @@ const ship_data = {
         ],
         "id": 301024,
         "skin_id": 301020,
-        "english_name": "IJN Shirayuki !TWnoData",
+        "english_name": "IJN Shirayuki",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -21037,7 +21292,7 @@ const ship_data = {
         "jp_name": "白雪",
         "en_name": "Shirayuki",
         "cn_name": "白雪",
-        "tw_name": "白雪*",
+        "tw_name": "白雪",
         "equip_1": [
             1
         ],
@@ -24235,7 +24490,7 @@ const ship_data = {
         ],
         "id": 202324,
         "skin_id": 202320,
-        "english_name": "HMS Enterprise !TWnoData",
+        "english_name": "HMS Enterprise",
         "star": 5,
         "rarity": 4,
         "retro": 0,
@@ -24244,7 +24499,7 @@ const ship_data = {
         "jp_name": "エンタープライズ",
         "en_name": "Enterprise",
         "cn_name": "进取",
-        "tw_name": "進取*",
+        "tw_name": "企業",
         "equip_1": [
             2
         ],

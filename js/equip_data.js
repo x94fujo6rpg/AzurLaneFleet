@@ -2883,7 +2883,7 @@ const equip_data = {
         ],
         "jp_name": "アイリス天使の羽根",
         "cn_name": "天使之羽",
-        "tw_name": "天使之羽*",
+        "tw_name": "天使之羽",
         "en_name": "Angel's Feather",
         "equip_limit": 0,
         "cd": []
@@ -2916,6 +2916,21 @@ const equip_data = {
         "tw_name": "機密文件·日誌殘卷",
         "en_name": "Intel Report - Expedition Log",
         "equip_limit": 760,
+        "cd": []
+    },
+    "3880": {
+        "nationality": 7,
+        "type": 10,
+        "rarity": 4,
+        "tech": 0,
+        "id": 3880,
+        "icon": "3880",
+        "ship_type_forbidden": [],
+        "jp_name": "作戦レポート・極海の嵐",
+        "cn_name": "作战报告·极地风暴",
+        "tw_name": "作戰報告·極地風暴*",
+        "en_name": "Action Report - Frostfall",
+        "equip_limit": 3880,
         "cd": []
     },
     "1960": {
@@ -3147,7 +3162,7 @@ const equip_data = {
         ],
         "jp_name": "FuMO 25",
         "cn_name": "FuMO 25",
-        "tw_name": "FuMO 25*",
+        "tw_name": "FuMO 25",
         "en_name": "FuMO 25",
         "equip_limit": 960,
         "cd": []
@@ -3742,7 +3757,7 @@ const equip_data = {
         ],
         "jp_name": "6CRH徹甲弾",
         "cn_name": "6CRH穿甲弹",
-        "tw_name": "6CRH穿甲彈*",
+        "tw_name": "6CRH穿甲彈",
         "en_name": "6CRH AP Shell",
         "equip_limit": 1060,
         "cd": []
@@ -6460,7 +6475,7 @@ const equip_data = {
         ],
         "jp_name": "ブレゲー BR.810攻撃機",
         "cn_name": "BR.810",
-        "tw_name": "BR.810*",
+        "tw_name": "BR.810",
         "en_name": "Bréguet BR.810",
         "equip_limit": 0,
         "cd": [
@@ -7610,7 +7625,7 @@ const equip_data = {
         ],
         "jp_name": "ドボワチン D.790戦闘機",
         "cn_name": "D.790",
-        "tw_name": "D.790*",
+        "tw_name": "D.790",
         "en_name": "Dewoitine D.790",
         "equip_limit": 0,
         "cd": [
@@ -15576,6 +15591,40 @@ const equip_data = {
             1376
         ]
     },
+    "85580": {
+        "nationality": 7,
+        "type": 3,
+        "rarity": 5,
+        "tech": 0,
+        "id": 85580,
+        "icon": "85580",
+        "ship_type_forbidden": [
+            8,
+            17,
+            22
+        ],
+        "jp_name": "試作型240mm三連装砲",
+        "cn_name": "试作型三联装240mm主炮",
+        "tw_name": "試作型三聯裝240mm主炮*",
+        "en_name": "Prototype Triple 240mm Main Gun Mount",
+        "equip_limit": 0,
+        "cd": [
+            1583,
+            1548,
+            1513,
+            1478,
+            1443,
+            1408,
+            1373,
+            1338,
+            1303,
+            1268,
+            1233,
+            1233,
+            1233,
+            1233
+        ]
+    },
     "95240": {
         "nationality": 6,
         "type": 3,
@@ -16620,6 +16669,35 @@ const equip_data = {
             630,
             624,
             618
+        ]
+    },
+    "85480": {
+        "nationality": 7,
+        "type": 2,
+        "rarity": 4,
+        "tech": 2,
+        "id": 85480,
+        "icon": "85460",
+        "ship_type_forbidden": [
+            22
+        ],
+        "jp_name": "180mm三連装砲B-1-P Model1932",
+        "cn_name": "B-1-P 三联装180mm主炮Model1932",
+        "tw_name": "B-1-P 三聯裝180mm主炮Model1932*",
+        "en_name": "Triple 180mm B-1-P Pattern 1932 Main Gun Mount",
+        "equip_limit": 0,
+        "cd": [
+            617,
+            601,
+            595,
+            579,
+            573,
+            557,
+            551,
+            545,
+            539,
+            533,
+            527
         ]
     },
     "85460": {
@@ -18704,10 +18782,10 @@ const equip_data = {
         "ship_type_forbidden": [
             22
         ],
-        "jp_name": "130mm連装砲B-2LM",
+        "jp_name": "B-13 130mm連装砲B-2LM",
         "cn_name": "B-13 双联装130mm主炮B-2LM",
         "tw_name": "B-13 雙聯裝130mm主炮B-2LM",
-        "en_name": "Twin 130mm B-2LM Main Gun Mount",
+        "en_name": "B-13 Twin 130mm B-2LM Main Gun",
         "equip_limit": 0,
         "cd": [
             322,
@@ -18736,10 +18814,10 @@ const equip_data = {
         "ship_type_forbidden": [
             22
         ],
-        "jp_name": "130mm連装砲B-2LM",
+        "jp_name": "B-13 130mm連装砲B-2LM",
         "cn_name": "B-13 双联装130mm主炮B-2LM",
         "tw_name": "B-13 雙聯裝130mm主炮B-2LM",
-        "en_name": "Twin 130mm B-2LM Main Gun Mount",
+        "en_name": "B-13 Twin 130mm B-2LM Main Gun",
         "equip_limit": 0,
         "cd": [
             358,
