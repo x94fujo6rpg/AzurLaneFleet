@@ -117,7 +117,7 @@ const
         2: { cn: "輕巡砲", en: "CL Gun", jp: "軽巡砲" },
         3: { cn: "重巡砲", en: "CA Gun", jp: "重巡砲" },
         4: { cn: "戰艦砲", en: "BB Gun", jp: "戦艦砲" },
-        5: { cn: "魚雷", en: "Torpedoe", jp: "魚雷" },
+        5: { cn: "魚雷", en: "Torpedo", jp: "魚雷" },
         6: { cn: "防空砲", en: "Anti-Air Gun", jp: "対空砲" },
         7: { cn: "戰鬥機", en: "Fighter", jp: "戦闘機" },
         8: { cn: "魚雷機", en: "Torpedo Bomber", jp: "攻撃機" },
@@ -126,7 +126,7 @@ const
         11: { cn: "超巡砲", en: "CB Gun", jp: "超巡砲" },
         12: { cn: "水上機", en: "Seaplane", jp: "水上機" },
 
-        13: { cn: "潛艇用魚雷", en: "Submarine Torpedoe", jp: "潜水艦魚雷" },
+        13: { cn: "潛艇用魚雷", en: "Submarine Torpedo", jp: "潜水艦魚雷" },
         14: { cn: "爆雷", en: "Depth Charge", jp: "爆雷" }, //Sonar is not a unique type
         15: { cn: "反潛機", en: "ASW Bomber", jp: "対潜機" },
         17: { cn: "直升機", en: "ASW Helicopter", jp: "ヘリ" },

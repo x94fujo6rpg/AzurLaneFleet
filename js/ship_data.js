@@ -1,4 +1,105 @@
 const ship_data = {
+    "10800090": {
+        "nationality": 108,
+        "type": 19,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 10800094,
+        "skin_id": 10800090,
+        "english_name": "Princess Hime",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "10800090",
+        "painting": "10800090",
+        "jp_name": "ひめ",
+        "en_name": "Princess Hime",
+        "cn_name": "公主",
+        "tw_name": "Princess Hime",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            6
+        ],
+        "equip_3": [
+            10,
+            18
+        ],
+        "equip_4": [
+            10,
+            18
+        ],
+        "equip_5": [
+            10,
+            18
+        ],
+        "eq_p": [
+            1.15,
+            1,
+            1
+        ],
+        "reload": [
+            80,
+            547,
+            0,
+            59,
+            0
+        ],
+        "date": "2023年7月13日"
+    },
+    "10800080": {
+        "nationality": 108,
+        "type": 10,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 10800084,
+        "skin_id": 10800080,
+        "english_name": "Nidaime",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "10800080",
+        "painting": "10800080",
+        "jp_name": "2代目",
+        "en_name": "The 2nd",
+        "cn_name": "第二代",
+        "tw_name": "The 2nd",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            7
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.35,
+            2,
+            1
+        ],
+        "reload": [
+            48,
+            328,
+            0,
+            36,
+            0
+        ],
+        "date": "2023年7月13日"
+    },
     "10900060": {
         "nationality": 109,
         "type": 18,
@@ -1004,6 +1105,106 @@ const ship_data = {
             0
         ],
         "date": "2021年07月22日"
+    },
+    "10600090": {
+        "nationality": 106,
+        "type": 4,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 10600094,
+        "skin_id": 10600090,
+        "english_name": "Tamaki",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "10600090",
+        "painting": "huan_doa",
+        "jp_name": "たまき",
+        "en_name": "Tamaki",
+        "cn_name": "环",
+        "tw_name": "Tamaki",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.35,
+            2.0,
+            1
+        ],
+        "reload": [
+            63,
+            437,
+            0,
+            47,
+            0
+        ],
+        "date": "2023年4月27日"
+    },
+    "10600080": {
+        "nationality": 106,
+        "type": 6,
+        "base_list": [
+            2,
+            4,
+            1
+        ],
+        "id": 10600084,
+        "skin_id": 10600080,
+        "english_name": "Luna",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "10600080",
+        "painting": "luna_doa",
+        "jp_name": "ルナ",
+        "en_name": "Luna",
+        "cn_name": "露娜",
+        "tw_name": "Luna",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            8
+        ],
+        "equip_3": [
+            6,
+            15
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.4,
+            1.4,
+            1
+        ],
+        "reload": [
+            64,
+            446,
+            0,
+            48,
+            0
+        ],
+        "date": "2023年4月27日"
     },
     "10600060": {
         "nationality": 106,
@@ -2762,6 +2963,104 @@ const ship_data = {
         ],
         "date": "2017年05月25日"
     },
+    "9703020": {
+        "nationality": 97,
+        "type": 3,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 9703024,
+        "skin_id": 9703020,
+        "english_name": "Algérie.META",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "9703020",
+        "painting": "9703020",
+        "jp_name": "アルジェリー(META)",
+        "en_name": "Algerie META",
+        "cn_name": "阿尔及利亚·META",
+        "tw_name": "Algerie META",
+        "equip_1": [
+            3
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.25,
+            1.75,
+            1
+        ],
+        "reload": [
+            73,
+            507,
+            0,
+            55,
+            0
+        ],
+        "date": "2023年6月8日"
+    },
+    "9708010": {
+        "nationality": 97,
+        "type": 8,
+        "base_list": [
+            2,
+            2,
+            1
+        ],
+        "id": 9708014,
+        "skin_id": 9708010,
+        "english_name": "U-556.META",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "9708010",
+        "painting": "u556_alter",
+        "jp_name": "U-556(META)",
+        "en_name": "U-556 META",
+        "cn_name": "U-556·META",
+        "tw_name": "U-556 META",
+        "equip_1": [
+            13
+        ],
+        "equip_2": [
+            13
+        ],
+        "equip_3": [
+            1
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.3,
+            1.3,
+            0.85
+        ],
+        "reload": [
+            41,
+            283,
+            0,
+            34,
+            0
+        ],
+        "date": "2023年5月25日"
+    },
     "9707030": {
         "nationality": 97,
         "type": 7,
@@ -3668,6 +3967,57 @@ const ship_data = {
         ],
         "date": "2021年06月10日"
     },
+    "9701030": {
+        "nationality": 97,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 9701034,
+        "skin_id": 9701030,
+        "english_name": "Hatakaze.META",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "9701030",
+        "painting": "9701030",
+        "jp_name": "旗風(META)",
+        "en_name": "Hatakaze META",
+        "cn_name": "旗风·META",
+        "tw_name": "Hatakaze META",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.3,
+            1.35,
+            1.05
+        ],
+        "reload": [
+            77,
+            534,
+            0,
+            57,
+            0
+        ],
+        "date": "2023年7月20日"
+    },
     "9701020": {
         "nationality": 97,
         "type": 1,
@@ -3867,6 +4217,57 @@ const ship_data = {
             0
         ],
         "date": "2022年06月30日"
+    },
+    "999020": {
+        "nationality": 9,
+        "type": 5,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 999024,
+        "skin_id": 999020,
+        "english_name": "MNF Flandre",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "999020",
+        "painting": "999020",
+        "jp_name": "フランドル",
+        "en_name": "Flandre",
+        "cn_name": "弗兰德尔",
+        "tw_name": "Flandre",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            6,
+            21
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.45,
+            2,
+            1.1
+        ],
+        "reload": [
+            61,
+            426,
+            0,
+            46,
+            0
+        ],
+        "date": "2023年7月13日"
     },
     "999010": {
         "nationality": 9,
@@ -4168,6 +4569,57 @@ const ship_data = {
             0
         ],
         "date": "2021年11月11日"
+    },
+    "902020": {
+        "nationality": 9,
+        "type": 2,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 902024,
+        "skin_id": 902020,
+        "english_name": "MNF Marseillaise",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "902020",
+        "painting": "902020",
+        "jp_name": "マルセイエーズ",
+        "en_name": "Marseillaise",
+        "cn_name": "马赛曲",
+        "tw_name": "Marseillaise",
+        "equip_1": [
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.55,
+            1.5,
+            1
+        ],
+        "reload": [
+            71,
+            492,
+            0,
+            53,
+            0
+        ],
+        "date": "2023年7月20日"
     },
     "902010": {
         "nationality": 9,
@@ -7009,6 +7461,57 @@ const ship_data = {
         ],
         "date": "2021年07月08日"
     },
+    "605070": {
+        "nationality": 6,
+        "type": 5,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 605074,
+        "skin_id": 605070,
+        "english_name": "RN Andrea Doria",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "605070",
+        "painting": "605070",
+        "jp_name": "アンドレア・ドーリア",
+        "en_name": "Andrea Doria",
+        "cn_name": "安德烈亚·多利亚",
+        "tw_name": "Andrea Doria",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            6,
+            21
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.25,
+            1.5,
+            0.8
+        ],
+        "reload": [
+            55,
+            385,
+            0,
+            41,
+            0
+        ],
+        "date": "2023年6月29日"
+    },
     "605060": {
         "nationality": 6,
         "type": 5,
@@ -7261,6 +7764,55 @@ const ship_data = {
             0
         ],
         "date": "2021年04月22日"
+    },
+    "603060": {
+        "nationality": 6,
+        "type": 3,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 603064,
+        "skin_id": 603060,
+        "english_name": "RN Gorizia",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "603060",
+        "painting": "603060",
+        "jp_name": "ゴリツィア",
+        "en_name": "Gorizia",
+        "cn_name": "戈里齐亚",
+        "tw_name": "Gorizia*",
+        "equip_1": [
+            3
+        ],
+        "equip_2": [
+            1
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.30,
+            0.55,
+            1
+        ],
+        "reload": [
+            64,
+            447,
+            0,
+            48,
+            0
+        ],
+        "date": "2023年6月29日"
     },
     "603050": {
         "nationality": 6,
@@ -7608,6 +8160,57 @@ const ship_data = {
             0
         ],
         "date": "2021年04月22日"
+    },
+    "601100": {
+        "nationality": 6,
+        "type": 1,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 601104,
+        "skin_id": 601100,
+        "english_name": "RN Attilio Regolo",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "601100",
+        "painting": "601100",
+        "jp_name": "アッティリオ・レゴロ",
+        "en_name": "Attilio Regolo",
+        "cn_name": "阿蒂利奥·雷戈洛",
+        "tw_name": "Attilio Regolo",
+        "equip_1": [
+            1
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.3,
+            1.25,
+            1.35
+        ],
+        "reload": [
+            76,
+            531,
+            0,
+            57,
+            0
+        ],
+        "date": "2023年6月29日"
     },
     "601090": {
         "nationality": 6,
@@ -9040,6 +9643,108 @@ const ship_data = {
         ],
         "date": "2018年02月12日"
     },
+    "499080": {
+        "nationality": 4,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 499084,
+        "skin_id": 499080,
+        "english_name": "KMS Felix Schultz",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "499080",
+        "painting": "499080",
+        "jp_name": "フィリックス・シュルツ",
+        "en_name": "Felix Schultz",
+        "cn_name": "菲利克斯·舒尔茨",
+        "tw_name": "Felix Schultz",
+        "equip_1": [
+            1,
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.7,
+            1.2,
+            0.85
+        ],
+        "reload": [
+            80,
+            554,
+            0,
+            59,
+            0
+        ],
+        "date": "2023年7月13日"
+    },
+    "499090": {
+        "nationality": 4,
+        "type": 3,
+        "base_list": [
+            2,
+            1,
+            1
+        ],
+        "id": 499094,
+        "skin_id": 499090,
+        "english_name": "KMS Hindenburg",
+        "star": 6,
+        "rarity": 6,
+        "retro": 0,
+        "uni_id": "499090",
+        "painting": "499090",
+        "jp_name": "ヒンデンブルク",
+        "en_name": "Hindenburg",
+        "cn_name": "兴登堡",
+        "tw_name": "Hindenburg",
+        "equip_1": [
+            3
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            3,
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.3,
+            1.1,
+            1.3
+        ],
+        "reload": [
+            64,
+            445,
+            0,
+            48,
+            0
+        ],
+        "date": "2023年7月13日"
+    },
     "499050": {
         "nationality": 4,
         "type": 18,
@@ -9876,6 +10581,57 @@ const ship_data = {
         ],
         "date": "2017年08月02日"
     },
+    "406030": {
+        "nationality": 4,
+        "type": 6,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 406034,
+        "skin_id": 406030,
+        "english_name": "KMS Jade",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "406030",
+        "painting": "yade",
+        "jp_name": "ヤーデ",
+        "en_name": "Jade",
+        "cn_name": "亚德",
+        "tw_name": "Jade",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            9
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            15
+        ],
+        "equip_5": [
+            10,
+            15
+        ],
+        "eq_p": [
+            1.45,
+            1.35,
+            0.8
+        ],
+        "reload": [
+            68,
+            475,
+            0,
+            51,
+            0
+        ],
+        "date": "2023年5月25日"
+    },
     "406020": {
         "nationality": 4,
         "type": 6,
@@ -10028,6 +10784,56 @@ const ship_data = {
             0
         ],
         "date": "2019年04月18日"
+    },
+    "405050": {
+        "nationality": 4,
+        "type": 5,
+        "base_list": [
+            3,
+            3,
+            1
+        ],
+        "id": 405054,
+        "skin_id": 405050,
+        "english_name": "KMS Bismarck Zwei",
+        "star": 6,
+        "rarity": 6,
+        "retro": 0,
+        "uni_id": "405050",
+        "painting": "bisimaiz",
+        "jp_name": "ビスマルクZwei",
+        "en_name": "Bismarck Zwei",
+        "cn_name": "俾斯麦Zwei",
+        "tw_name": "Bismarck Zwei",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            1,
+            2
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.55,
+            2,
+            1.1
+        ],
+        "reload": [
+            62,
+            429,
+            0,
+            46,
+            0
+        ],
+        "date": "2023年5月25日"
     },
     "405040": {
         "nationality": 4,
@@ -11286,6 +12092,57 @@ const ship_data = {
         ],
         "date": "2020年07月09日"
     },
+    "402100": {
+        "nationality": 4,
+        "type": 2,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 402104,
+        "skin_id": 402100,
+        "english_name": "KMS Regensburg",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "402100",
+        "painting": "leigensibao",
+        "jp_name": "レーゲンスブルク",
+        "en_name": "Regensburg",
+        "cn_name": "雷根斯堡",
+        "tw_name": "Regensburg",
+        "equip_1": [
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.45,
+            1.35,
+            1.20
+        ],
+        "reload": [
+            75,
+            523,
+            0,
+            56,
+            0
+        ],
+        "date": "2023年5月25日"
+    },
     "402080": {
         "nationality": 4,
         "type": 2,
@@ -11849,6 +12706,58 @@ const ship_data = {
             0
         ],
         "date": "2017年05月25日"
+    },
+    "401990": {
+        "nationality": 4,
+        "type": 1,
+        "base_list": [
+            1,
+            2,
+            1
+        ],
+        "id": 401994,
+        "skin_id": 401990,
+        "english_name": "KMS Otto von Alvensleben",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "401990",
+        "painting": "aotuo",
+        "jp_name": "オットー・フォン・アルフェンスレーベン",
+        "en_name": "Otto von Alvensleben",
+        "cn_name": "奥托·冯·阿尔文斯莱本",
+        "tw_name": "Otto von Alvensleben",
+        "equip_1": [
+            1,
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10,
+            14
+        ],
+        "equip_5": [
+            10,
+            14
+        ],
+        "eq_p": [
+            1.7,
+            1.2,
+            0.75
+        ],
+        "reload": [
+            80,
+            554,
+            0,
+            59,
+            0
+        ],
+        "date": "2023年5月25日"
     },
     "401460": {
         "nationality": 4,
@@ -12775,6 +13684,55 @@ const ship_data = {
         ],
         "date": "2020年09月17日"
     },
+    "399060": {
+        "nationality": 3,
+        "type": 2,
+        "base_list": [
+            2,
+            2,
+            1
+        ],
+        "id": 399064,
+        "skin_id": 399060,
+        "english_name": "IJN Shimanto",
+        "star": 6,
+        "rarity": 5,
+        "retro": 0,
+        "uni_id": "399060",
+        "painting": "399060",
+        "jp_name": "四万十",
+        "en_name": "Shimanto",
+        "cn_name": "四万十",
+        "tw_name": "Shimanto",
+        "equip_1": [
+            2
+        ],
+        "equip_2": [
+            5
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.25,
+            1.5,
+            1.75
+        ],
+        "reload": [
+            57,
+            399,
+            0,
+            43,
+            0
+        ],
+        "date": "2023年7月13日"
+    },
     "399040": {
         "nationality": 3,
         "type": 18,
@@ -13267,6 +14225,55 @@ const ship_data = {
             0
         ],
         "date": "2021年07月08日"
+    },
+    "307130": {
+        "nationality": 3,
+        "type": 7,
+        "base_list": [
+            2,
+            3,
+            3
+        ],
+        "id": 307134,
+        "skin_id": 307130,
+        "english_name": "IJN Taihou",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "307130",
+        "painting": "dafeng_younv",
+        "jp_name": "大鳳ちゃん",
+        "en_name": "Taihou-chan",
+        "cn_name": "小大凤",
+        "tw_name": "Taihou-chan",
+        "equip_1": [
+            7
+        ],
+        "equip_2": [
+            9
+        ],
+        "equip_3": [
+            8
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.20,
+            1.30,
+            1.40
+        ],
+        "reload": [
+            43,
+            297,
+            0,
+            32,
+            0
+        ],
+        "date": "2023年6月1日"
     },
     "307120": {
         "nationality": 3,
@@ -14897,9 +15904,6 @@ const ship_data = {
             4
         ],
         "equip_2": [
-            7,
-            8,
-            9,
             12
         ],
         "equip_3": [
@@ -15001,9 +16005,6 @@ const ship_data = {
             4
         ],
         "equip_2": [
-            7,
-            8,
-            9,
             12
         ],
         "equip_3": [
@@ -15105,9 +16106,6 @@ const ship_data = {
             4
         ],
         "equip_2": [
-            7,
-            8,
-            9,
             12
         ],
         "equip_3": [
@@ -15209,9 +16207,6 @@ const ship_data = {
             4
         ],
         "equip_2": [
-            7,
-            8,
-            9,
             12
         ],
         "equip_3": [
@@ -21570,6 +22565,56 @@ const ship_data = {
             0
         ],
         "date": "2022年05月26日"
+    },
+    "207130": {
+        "nationality": 2,
+        "type": 7,
+        "base_list": [
+            2,
+            3,
+            3
+        ],
+        "id": 207134,
+        "skin_id": 207130,
+        "english_name": "Little Formidable",
+        "star": 5,
+        "rarity": 4,
+        "retro": 0,
+        "uni_id": "207130",
+        "painting": "kewei_younv",
+        "jp_name": "リトル・フォーミダブル",
+        "en_name": "Little Formidable",
+        "cn_name": "小可畏",
+        "tw_name": "Little Formidable",
+        "equip_1": [
+            7,
+            9
+        ],
+        "equip_2": [
+            8
+        ],
+        "equip_3": [
+            8
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.2,
+            1.35,
+            1.25
+        ],
+        "reload": [
+            42,
+            291,
+            0,
+            31,
+            0
+        ],
+        "date": "2023年4月27日"
     },
     "207110": {
         "nationality": 2,
@@ -30006,6 +31051,55 @@ const ship_data = {
             0
         ],
         "date": "2017年05月25日"
+    },
+    "199040": {
+        "nationality": 1,
+        "type": 10,
+        "base_list": [
+            2,
+            3,
+            1
+        ],
+        "id": 199044,
+        "skin_id": 199040,
+        "english_name": "USS Kearsarge",
+        "star": 6,
+        "rarity": 6,
+        "retro": 0,
+        "uni_id": "199040",
+        "painting": "199040",
+        "jp_name": "キアサージ",
+        "en_name": "Kearsarge",
+        "cn_name": "奇尔沙治",
+        "tw_name": "Kearsarge",
+        "equip_1": [
+            4
+        ],
+        "equip_2": [
+            7
+        ],
+        "equip_3": [
+            6
+        ],
+        "equip_4": [
+            10
+        ],
+        "equip_5": [
+            10
+        ],
+        "eq_p": [
+            1.4,
+            2,
+            1.
+        ],
+        "reload": [
+            56,
+            391,
+            0,
+            42,
+            0
+        ],
+        "date": "2023年7月13日"
     },
     "199020": {
         "nationality": 1,

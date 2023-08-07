@@ -2933,6 +2933,21 @@ const equip_data = {
         "equip_limit": 3880,
         "cd": []
     },
+    "3920": {
+        "nationality": 6,
+        "type": 10,
+        "rarity": 4,
+        "tech": 0,
+        "id": 3920,
+        "icon": "3920",
+        "ship_type_forbidden": [],
+        "jp_name": "オアシス気圧計",
+        "cn_name": "绿洲无液气压计",
+        "tw_name": "Oasis Barometer*",
+        "en_name": "Oasis Barometer",
+        "equip_limit": 3920,
+        "cd": []
+    },
     "1960": {
         "nationality": 7,
         "type": 10,
@@ -5419,7 +5434,6 @@ const equip_data = {
         "id": 85540,
         "icon": "85540",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "試作型艦上式Su-2",
@@ -5452,7 +5466,6 @@ const equip_data = {
         "id": 49040,
         "icon": "49000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "Ju-87C急降下爆撃機",
@@ -5483,7 +5496,6 @@ const equip_data = {
         "id": 49020,
         "icon": "49000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "Ju-87C急降下爆撃機",
@@ -5509,7 +5521,6 @@ const equip_data = {
         "id": 49000,
         "icon": "49000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "Ju-87C急降下爆撃機",
@@ -5532,7 +5543,6 @@ const equip_data = {
         "id": 49060,
         "icon": "49060",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "He-50b",
@@ -5559,7 +5569,6 @@ const equip_data = {
         "id": 39340,
         "icon": "39340",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "試作型天雷(特別計画艦仕様)",
@@ -5644,7 +5653,6 @@ const equip_data = {
         "id": 39160,
         "icon": "39160",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "彗星一二型甲",
@@ -5677,7 +5685,6 @@ const equip_data = {
         "id": 39140,
         "icon": "39100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "彗星",
@@ -5710,7 +5717,6 @@ const equip_data = {
         "id": 39120,
         "icon": "39100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "彗星",
@@ -5740,7 +5746,6 @@ const equip_data = {
         "id": 39100,
         "icon": "39100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "彗星",
@@ -5766,7 +5771,6 @@ const equip_data = {
         "id": 39060,
         "icon": "39060",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "九九式艦爆改",
@@ -5797,7 +5801,6 @@ const equip_data = {
         "id": 39040,
         "icon": "39000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "九九式艦爆",
@@ -5828,7 +5831,6 @@ const equip_data = {
         "id": 39020,
         "icon": "39000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "九九式艦爆",
@@ -5854,7 +5856,6 @@ const equip_data = {
         "id": 39000,
         "icon": "39000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "九九式艦爆",
@@ -5877,7 +5878,6 @@ const equip_data = {
         "id": 29140,
         "icon": "29100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "フルマー",
@@ -5908,7 +5908,6 @@ const equip_data = {
         "id": 29120,
         "icon": "29100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "フルマー",
@@ -5934,7 +5933,6 @@ const equip_data = {
         "id": 29100,
         "icon": "29100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "フルマー",
@@ -5957,7 +5955,6 @@ const equip_data = {
         "id": 29220,
         "icon": "29220",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "ファイアフライ(1771中隊)",
@@ -5990,7 +5987,6 @@ const equip_data = {
         "id": 29200,
         "icon": "29200",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "ファイアフライ",
@@ -6023,7 +6019,6 @@ const equip_data = {
         "id": 29300,
         "icon": "29300",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "バラクーダ(831中隊)",
@@ -6056,7 +6051,6 @@ const equip_data = {
         "id": 29040,
         "icon": "29000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "スクア",
@@ -6083,7 +6077,6 @@ const equip_data = {
         "id": 29020,
         "icon": "29000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "スクア",
@@ -6106,7 +6099,6 @@ const equip_data = {
         "id": 29000,
         "icon": "29000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "スクア",
@@ -6129,7 +6121,6 @@ const equip_data = {
         "id": 19160,
         "icon": "19160",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "実験型XSB3C-1",
@@ -6162,7 +6153,6 @@ const equip_data = {
         "id": 19060,
         "icon": "19060",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "SBD(マクラスキー隊)",
@@ -6195,7 +6185,6 @@ const equip_data = {
         "id": 19040,
         "icon": "19000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "SBDドーントレス",
@@ -6222,7 +6211,6 @@ const equip_data = {
         "id": 19020,
         "icon": "19000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "SBDドーントレス",
@@ -6245,7 +6233,6 @@ const equip_data = {
         "id": 19000,
         "icon": "19000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "SBDドーントレス",
@@ -6268,7 +6255,6 @@ const equip_data = {
         "id": 19140,
         "icon": "19100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "SB2Cヘルダイバー",
@@ -6299,7 +6285,6 @@ const equip_data = {
         "id": 19120,
         "icon": "19100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "SB2Cヘルダイバー",
@@ -6325,7 +6310,6 @@ const equip_data = {
         "id": 19100,
         "icon": "19100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "SB2Cヘルダイバー",
@@ -6348,7 +6332,6 @@ const equip_data = {
         "id": 19240,
         "icon": "19200",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "BTD-1デストロイヤー",
@@ -6381,7 +6364,6 @@ const equip_data = {
         "id": 19220,
         "icon": "19200",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "BTD-1デストロイヤー",
@@ -6411,7 +6393,6 @@ const equip_data = {
         "id": 19200,
         "icon": "19200",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "BTD-1デストロイヤー",
@@ -6437,7 +6418,6 @@ const equip_data = {
         "id": 19300,
         "icon": "19300",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "AD-1スカイレーダー",
@@ -6470,7 +6450,6 @@ const equip_data = {
         "id": 91240,
         "icon": "51240",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "ブレゲー BR.810攻撃機",
@@ -6503,7 +6482,6 @@ const equip_data = {
         "id": 90840,
         "icon": "50840",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "ピエール・ルヴァッスールPL.7攻撃機",
@@ -6530,7 +6508,6 @@ const equip_data = {
         "id": 85560,
         "icon": "85560",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "試作型VIT-2(VK107)",
@@ -6563,7 +6540,6 @@ const equip_data = {
         "id": 48040,
         "icon": "48040",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "Ju-87 D-4",
@@ -6596,7 +6572,6 @@ const equip_data = {
         "id": 48020,
         "icon": "48020",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "Fi-167",
@@ -6627,7 +6602,6 @@ const equip_data = {
         "id": 48000,
         "icon": "48000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "Ar-195",
@@ -6654,7 +6628,6 @@ const equip_data = {
         "id": 38300,
         "icon": "38300",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "試作型彩雲(艦攻型・特別計画艦仕様)",
@@ -6687,7 +6660,6 @@ const equip_data = {
         "id": 38240,
         "icon": "38200",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "流星",
@@ -6720,7 +6692,6 @@ const equip_data = {
         "id": 38220,
         "icon": "38200",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "流星",
@@ -6750,7 +6721,6 @@ const equip_data = {
         "id": 38200,
         "icon": "38200",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "流星",
@@ -6776,7 +6746,6 @@ const equip_data = {
         "id": 38160,
         "icon": "38160",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "天山改",
@@ -6807,7 +6776,6 @@ const equip_data = {
         "id": 38140,
         "icon": "38100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "天山",
@@ -6838,7 +6806,6 @@ const equip_data = {
         "id": 38120,
         "icon": "38100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "天山",
@@ -6864,7 +6831,6 @@ const equip_data = {
         "id": 38100,
         "icon": "38100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "天山",
@@ -6887,7 +6853,6 @@ const equip_data = {
         "id": 38060,
         "icon": "38060",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "九七式艦攻改",
@@ -6914,7 +6879,6 @@ const equip_data = {
         "id": 38040,
         "icon": "38000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "九七式艦攻",
@@ -6941,7 +6905,6 @@ const equip_data = {
         "id": 38020,
         "icon": "38000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "九七式艦攻",
@@ -6964,7 +6927,6 @@ const equip_data = {
         "id": 38000,
         "icon": "38000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "九七式艦攻",
@@ -6987,7 +6949,6 @@ const equip_data = {
         "id": 28400,
         "icon": "28400",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "ワイヴァーン",
@@ -7020,7 +6981,6 @@ const equip_data = {
         "id": 28340,
         "icon": "28300",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "フェアリーアルバコア",
@@ -7051,7 +7011,6 @@ const equip_data = {
         "id": 28320,
         "icon": "28300",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "フェアリーアルバコア",
@@ -7077,7 +7036,6 @@ const equip_data = {
         "id": 28300,
         "icon": "28300",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "フェアリーアルバコア",
@@ -7100,7 +7058,6 @@ const equip_data = {
         "id": 28200,
         "icon": "28200",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "ファイアブランド",
@@ -7133,7 +7090,6 @@ const equip_data = {
         "id": 28220,
         "icon": "28220",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "ファイアクレスト",
@@ -7166,7 +7122,6 @@ const equip_data = {
         "id": 28140,
         "icon": "28100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "バラクーダ",
@@ -7199,7 +7154,6 @@ const equip_data = {
         "id": 28120,
         "icon": "28100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "バラクーダ",
@@ -7229,7 +7183,6 @@ const equip_data = {
         "id": 28100,
         "icon": "28100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "バラクーダ",
@@ -7255,7 +7208,6 @@ const equip_data = {
         "id": 28060,
         "icon": "28060",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "ソードフィッシュ(818中隊)",
@@ -7288,7 +7240,6 @@ const equip_data = {
         "id": 28040,
         "icon": "28000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "ソードフィッシュ",
@@ -7319,7 +7270,6 @@ const equip_data = {
         "id": 28020,
         "icon": "28000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "ソードフィッシュ",
@@ -7345,7 +7295,6 @@ const equip_data = {
         "id": 28000,
         "icon": "28000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "ソードフィッシュ",
@@ -7368,7 +7317,6 @@ const equip_data = {
         "id": 18220,
         "icon": "18220",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "XTB2D-1スカイパイレート",
@@ -7401,7 +7349,6 @@ const equip_data = {
         "id": 18180,
         "icon": "18180",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "TBMアベンジャー(VT-18中隊)",
@@ -7434,7 +7381,6 @@ const equip_data = {
         "id": 18140,
         "icon": "18100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "TBFアベンジャー",
@@ -7465,7 +7411,6 @@ const equip_data = {
         "id": 18120,
         "icon": "18100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "TBFアベンジャー",
@@ -7491,7 +7436,6 @@ const equip_data = {
         "id": 18100,
         "icon": "18100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "TBFアベンジャー",
@@ -7514,7 +7458,6 @@ const equip_data = {
         "id": 18060,
         "icon": "18060",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "TBDデバステイター(VT-8中隊)",
@@ -7547,7 +7490,6 @@ const equip_data = {
         "id": 18040,
         "icon": "18000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "TBDデバステイター",
@@ -7574,7 +7516,6 @@ const equip_data = {
         "id": 18020,
         "icon": "18000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "TBDデバステイター",
@@ -7597,7 +7538,6 @@ const equip_data = {
         "id": 18000,
         "icon": "18000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "TBDデバステイター",
@@ -7620,7 +7560,6 @@ const equip_data = {
         "id": 91220,
         "icon": "51220",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "ドボワチン D.790戦闘機",
@@ -7651,7 +7590,6 @@ const equip_data = {
         "id": 90820,
         "icon": "50820",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "グールドゥ・ルスールGL.2戦闘機",
@@ -7678,7 +7616,6 @@ const equip_data = {
         "id": 95840,
         "icon": "55800",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "Re.2001戦闘機「アリエテ」",
@@ -7709,7 +7646,6 @@ const equip_data = {
         "id": 95820,
         "icon": "55800",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "Re.2001戦闘機「アリエテ」",
@@ -7735,7 +7671,6 @@ const equip_data = {
         "id": 95800,
         "icon": "55800",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "Re.2001戦闘機「アリエテ」",
@@ -7758,7 +7693,6 @@ const equip_data = {
         "id": 95760,
         "icon": "55720",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "Fiat G.50戦闘機「アロー」",
@@ -7789,7 +7723,6 @@ const equip_data = {
         "id": 95740,
         "icon": "55720",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "Fiat G.50戦闘機「アロー」",
@@ -7815,7 +7748,6 @@ const equip_data = {
         "id": 95720,
         "icon": "55720",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "Fiat G.50戦闘機「アロー」",
@@ -7838,7 +7770,6 @@ const equip_data = {
         "id": 47080,
         "icon": "47080",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "試作型FW-190 A-5(艦載機型)",
@@ -7869,7 +7800,6 @@ const equip_data = {
         "id": 47160,
         "icon": "47160",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "試作型BF-109G(特別計画艦仕様)",
@@ -7902,7 +7832,6 @@ const equip_data = {
         "id": 47140,
         "icon": "47100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "Me-155A艦上戦闘機",
@@ -7935,7 +7864,6 @@ const equip_data = {
         "id": 47120,
         "icon": "47100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "Me-155A艦上戦闘機",
@@ -7965,7 +7893,6 @@ const equip_data = {
         "id": 47100,
         "icon": "47100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "Me-155A艦上戦闘機",
@@ -7991,7 +7918,6 @@ const equip_data = {
         "id": 47040,
         "icon": "47000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "BF-109T艦上戦闘機",
@@ -8022,7 +7948,6 @@ const equip_data = {
         "id": 47020,
         "icon": "47000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "BF-109T艦上戦闘機",
@@ -8048,7 +7973,6 @@ const equip_data = {
         "id": 47000,
         "icon": "47000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "BF-109T艦上戦闘機",
@@ -8071,7 +7995,6 @@ const equip_data = {
         "id": 47060,
         "icon": "47060",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "Ar-197",
@@ -8098,7 +8021,6 @@ const equip_data = {
         "id": 37240,
         "icon": "37200",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "零戦五二型",
@@ -8131,7 +8053,6 @@ const equip_data = {
         "id": 37220,
         "icon": "37200",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "零戦五二型",
@@ -8161,7 +8082,6 @@ const equip_data = {
         "id": 37200,
         "icon": "37200",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "零戦五二型",
@@ -8187,7 +8107,6 @@ const equip_data = {
         "id": 37140,
         "icon": "37100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "零戦二一型",
@@ -8218,7 +8137,6 @@ const equip_data = {
         "id": 37120,
         "icon": "37100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "零戦二一型",
@@ -8244,7 +8162,6 @@ const equip_data = {
         "id": 37100,
         "icon": "37100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "零戦二一型",
@@ -8267,7 +8184,6 @@ const equip_data = {
         "id": 37160,
         "icon": "37160",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "零戦三二型",
@@ -8298,7 +8214,6 @@ const equip_data = {
         "id": 37400,
         "icon": "37400",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "紫電改二",
@@ -8331,7 +8246,6 @@ const equip_data = {
         "id": 37340,
         "icon": "37300",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "烈風",
@@ -8364,7 +8278,6 @@ const equip_data = {
         "id": 37320,
         "icon": "37300",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "烈風",
@@ -8394,7 +8307,6 @@ const equip_data = {
         "id": 37300,
         "icon": "37300",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "烈風",
@@ -8420,7 +8332,6 @@ const equip_data = {
         "id": 37040,
         "icon": "37000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "九六式艦戦",
@@ -8447,7 +8358,6 @@ const equip_data = {
         "id": 37020,
         "icon": "37000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "九六式艦戦",
@@ -8470,7 +8380,6 @@ const equip_data = {
         "id": 37000,
         "icon": "37000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "九六式艦戦",
@@ -8493,7 +8402,6 @@ const equip_data = {
         "id": 27320,
         "icon": "27320",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "シーホーネット",
@@ -8526,7 +8434,6 @@ const equip_data = {
         "id": 27300,
         "icon": "27300",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "シーフューリー",
@@ -8559,7 +8466,6 @@ const equip_data = {
         "id": 27140,
         "icon": "27100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "シーファング",
@@ -8592,7 +8498,6 @@ const equip_data = {
         "id": 27120,
         "icon": "27100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "シーファング",
@@ -8622,7 +8527,6 @@ const equip_data = {
         "id": 27100,
         "icon": "27100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "シーファング",
@@ -8648,7 +8552,6 @@ const equip_data = {
         "id": 27060,
         "icon": "27060",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "シーファイアFR.47",
@@ -8681,7 +8584,6 @@ const equip_data = {
         "id": 27040,
         "icon": "27000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "シーファイア",
@@ -8712,7 +8614,6 @@ const equip_data = {
         "id": 27020,
         "icon": "27000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "シーファイア",
@@ -8738,7 +8639,6 @@ const equip_data = {
         "id": 27000,
         "icon": "27000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "シーファイア",
@@ -8761,7 +8661,6 @@ const equip_data = {
         "id": 27260,
         "icon": "27260",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "シーハリケーン",
@@ -8788,7 +8687,6 @@ const equip_data = {
         "id": 27240,
         "icon": "27200",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "シーグラディエーター",
@@ -8815,7 +8713,6 @@ const equip_data = {
         "id": 27220,
         "icon": "27200",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "シーグラディエーター",
@@ -8838,7 +8735,6 @@ const equip_data = {
         "id": 27200,
         "icon": "27200",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "シーグラディエーター",
@@ -8861,7 +8757,6 @@ const equip_data = {
         "id": 17420,
         "icon": "17420",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "試作型XF5U「フライングパンケーキ」",
@@ -8894,7 +8789,6 @@ const equip_data = {
         "id": 17080,
         "icon": "17080",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "試作型XF2A-4バッファロー",
@@ -8925,7 +8819,6 @@ const equip_data = {
         "id": 17400,
         "icon": "17400",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "スカイロケット",
@@ -8956,7 +8849,6 @@ const equip_data = {
         "id": 17380,
         "icon": "17380",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "F8Fベアキャット",
@@ -8989,7 +8881,6 @@ const equip_data = {
         "id": 17360,
         "icon": "17360",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "F7Fタイガーキャット",
@@ -9022,7 +8913,6 @@ const equip_data = {
         "id": 17440,
         "icon": "17440",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "F6Fヘルキャット(HVAR搭載型)",
@@ -9055,7 +8945,6 @@ const equip_data = {
         "id": 17340,
         "icon": "17300",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "F6Fヘルキャット",
@@ -9088,7 +8977,6 @@ const equip_data = {
         "id": 17320,
         "icon": "17300",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "F6Fヘルキャット",
@@ -9118,7 +9006,6 @@ const equip_data = {
         "id": 17300,
         "icon": "17300",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "F6Fヘルキャット",
@@ -9144,7 +9031,6 @@ const equip_data = {
         "id": 17260,
         "icon": "17260",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "F4U(VF-17中隊)",
@@ -9177,7 +9063,6 @@ const equip_data = {
         "id": 17240,
         "icon": "17200",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "F4Uコルセア",
@@ -9208,7 +9093,6 @@ const equip_data = {
         "id": 17220,
         "icon": "17200",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "F4Uコルセア",
@@ -9234,7 +9118,6 @@ const equip_data = {
         "id": 17200,
         "icon": "17200",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "F4Uコルセア",
@@ -9257,7 +9140,6 @@ const equip_data = {
         "id": 17140,
         "icon": "17100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "F4Fワイルドキャット",
@@ -9288,7 +9170,6 @@ const equip_data = {
         "id": 17120,
         "icon": "17100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "F4Fワイルドキャット",
@@ -9314,7 +9195,6 @@ const equip_data = {
         "id": 17100,
         "icon": "17100",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "F4Fワイルドキャット",
@@ -9337,7 +9217,6 @@ const equip_data = {
         "id": 17060,
         "icon": "17060",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "F2Aバッファロー(サッチ隊)",
@@ -9370,7 +9249,6 @@ const equip_data = {
         "id": 17040,
         "icon": "17000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "F2Aバッファロー",
@@ -9397,7 +9275,6 @@ const equip_data = {
         "id": 17020,
         "icon": "17000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "F2Aバッファロー",
@@ -9420,7 +9297,6 @@ const equip_data = {
         "id": 17000,
         "icon": "17000",
         "ship_type_forbidden": [
-            10,
             22
         ],
         "jp_name": "F2Aバッファロー",
@@ -20602,5 +20478,438 @@ const equip_data = {
             228,
             222
         ]
+    },
+    "31080": {
+        "nationality": 3,
+        "type": 1,
+        "rarity": 6,
+        "tech": 0,
+        "id": 31080,
+        "icon": "31080",
+        "ship_type_forbidden": [
+            22
+        ],
+        "jp_name": "100mm二連装九八式高角砲改",
+        "cn_name": "127m双联100mm98式高射炮改m单装炮",
+        "tw_name": "Twin 100mm Type 98 Kai High-Angle Gun Mount",
+        "en_name": "Twin 100mm Type 98 Kai High-Angle Gun Mount",
+        "equip_limit": 0,
+        "cd": [
+            171,
+            167,
+            164,
+            160,
+            156,
+            153,
+            149,
+            146,
+            143,
+            137,
+            135,
+            135,
+            135,
+            135
+
+        ]
+    },
+    "47180": {
+        "nationality": 4,
+        "type": 7,
+        "rarity": 5,
+        "tech": 0,
+        "id": 47180,
+        "icon": "47180",
+        "ship_type_forbidden": [
+            22
+        ],
+        "jp_name": "試作型FW-190 A-6/R6 (艦載機型)",
+        "cn_name": "试作舰载型FW-190 A-6/R6",
+        "tw_name": "Prototype FW-190 A-6/R6 (Carrier-Based)",
+        "en_name": "Prototype FW-190 A-6/R6 (Carrier-Based)",
+        "equip_limit": 0,
+        "cd": [
+            1919,
+            1894,
+            1869,
+            1844,
+            1819,
+            1794,
+            1769,
+            1744,
+            1719,
+            1694,
+            1669,
+            1669,
+            1669,
+            1669
+
+        ]
+    },
+    "15300": {
+        "nationality": 1,
+        "type": 5,
+        "rarity": 5,
+        "tech": 0,
+        "id": 15300,
+        "icon": "15300",
+        "ship_type_forbidden": [
+            22
+        ],
+        "jp_name": "533mm魚雷Mark35（四連射）",
+        "cn_name": "533mm鱼雷Mark35（4连发射）",
+        "tw_name": "533mm Mark 35 Torpedo Mount (Quad Consecutive Launch)",
+        "en_name": "533mm Mark 35 Torpedo Mount (Quad Consecutive Launch)",
+        "equip_limit": 0,
+        "cd": [
+            4905,
+            4806,
+            4706,
+            4607,
+            4507,
+            4407,
+            4308,
+            4209,
+            4109,
+            4010,
+            3910,
+            3910,
+            3910,
+            3910
+
+        ]
+    },
+    "13080": {
+        "nationality": 1,
+        "type": 3,
+        "rarity": 4,
+        "tech": 0,
+        "id": 13080,
+        "icon": "13080",
+        "ship_type_forbidden": [
+            8,
+            17,
+            22
+        ],
+        "jp_name": "203mm三連装砲Mk14",
+        "cn_name": "三联装203mm主炮Mk14",
+        "tw_name": "Triple 203mm Mk 14 Main Gun Mount",
+        "en_name": "Triple 203mm Mk 14 Main Gun Mount",
+        "equip_limit": 0,
+        "cd": [
+            1400,
+            1379,
+            1358,
+            1336,
+            1316,
+            1293,
+            1273,
+            1252,
+            1230,
+            1210,
+            1188,
+            1188
+
+        ]
+    },
+    "26380": {
+        "nationality": 2,
+        "type": 6,
+        "rarity": 4,
+        "tech": 0,
+        "id": 26380,
+        "icon": "26380",
+        "ship_type_forbidden": [
+            22
+        ],
+        "jp_name": "20mmエリコン連装高角砲Mk.V",
+        "cn_name": "双管20mm厄利孔高射炮Mk.V",
+        "tw_name": "Twin 20mm Oerlikon Mk.V High-Angle Gun Mount",
+        "en_name": "Twin 20mm Oerlikon Mk.V High-Angle Gun Mount",
+        "equip_limit": 0,
+        "cd": [
+            80,
+            76,
+            72,
+            69,
+            66,
+            63,
+            60,
+            57,
+            54,
+            51,
+            48,
+            48
+
+        ]
+    },
+    "43160": {
+        "nationality": 4,
+        "type": 3,
+        "rarity": 6,
+        "tech": 0,
+        "id": 43160,
+        "icon": "43160",
+        "ship_type_forbidden": [
+            8,
+            17,
+            22
+        ],
+        "jp_name": "試作型203mmSKC三連装砲改",
+        "cn_name": "试作型三联装203mmSKC主炮改",
+        "tw_name": "Prototype Triple 203mm SKC Main Gun Mount",
+        "en_name": "Prototype Triple 203mm SKC Main Gun Mount",
+        "equip_limit": 0,
+        "cd": [
+            1450,
+            1415,
+            1380,
+            1345,
+            1310,
+            1275,
+            1240,
+            1205,
+            1170,
+            1135,
+            1100,
+            1100,
+            1100,
+            1100
+
+        ]
+    },
+    "14540": {
+        "nationality": 1,
+        "type": 4,
+        "rarity": 5,
+        "tech": 0,
+        "id": 14540,
+        "icon": "14540",
+        "ship_type_forbidden": [
+            22
+        ],
+        "jp_name": "試作型406mm三連装砲Mk6改",
+        "cn_name": "试作型三联装406mm主炮Mk6改",
+        "tw_name": "Prototype Triple 406mm Mk6 Main Gun Mount",
+        "en_name": "Prototype Triple 406mm Mk6 Main Gun Mount",
+        "equip_limit": 0,
+        "cd": [
+            5390,
+            5303,
+            5216,
+            5129,
+            5042,
+            4955,
+            4868,
+            4781,
+            4694,
+            4607,
+            4520,
+            4520,
+            4520,
+            4520
+
+        ]
+    },
+    "32360": {
+        "nationality": 3,
+        "type": 2,
+        "rarity": 5,
+        "tech": 0,
+        "id": 32360,
+        "icon": "32360",
+        "ship_type_forbidden": [
+            22
+        ],
+        "jp_name": "試作型150mm三連装五式高角砲",
+        "cn_name": "试作型三联装150mm五式高平两用炮",
+        "tw_name": "Prototype Triple 150mm Type 5 High-Angle Gun Mount",
+        "en_name": "Prototype Triple 150mm Type 5 High-Angle Gun Mount",
+        "equip_limit": 0,
+        "cd": [
+            849,
+            833,
+            817,
+            801,
+            785,
+            769,
+            753,
+            737,
+            721,
+            705,
+            689,
+            689,
+            689,
+            689
+
+        ]
+    },
+    "42360": {
+        "nationality": 4,
+        "type": 2,
+        "rarity": 5,
+        "tech": 0,
+        "id": 42360,
+        "icon": "42360",
+        "ship_type_forbidden": [
+            22
+        ],
+        "jp_name": "試作型150mmTbtsKC42T式連装砲",
+        "cn_name": "试作型双联装TbtsKC42T式150mm主炮",
+        "tw_name": "Prototype Twin 150mm TbtsK C42T Main Gun Mount",
+        "en_name": "Prototype Twin 150mm TbtsK C42T Main Gun Mount",
+        "equip_limit": 0,
+        "cd": [
+            557,
+            548,
+            539,
+            530,
+            521,
+            512,
+            503,
+            494,
+            485,
+            476,
+            466,
+            466,
+            466,
+            466
+
+        ]
+    },
+    "90480": {
+        "nationality": 8,
+        "type": 4,
+        "rarity": 5,
+        "tech": 0,
+        "id": 90480,
+        "icon": "50480",
+        "ship_type_forbidden": [
+            22
+        ],
+        "jp_name": "試作型380mm三連装砲Mle1935",
+        "cn_name": "试作型三联装380mm主炮Mle1935",
+        "tw_name": "Prototype Triple 380mm Mle 1935 Main Gun Mount",
+        "en_name": "Prototype Triple 380mm Mle 1935 Main Gun Mount",
+        "equip_limit": 0,
+        "cd": [
+            4440,
+            4350,
+            4260,
+            4170,
+            4080,
+            3990,
+            3900,
+            3810,
+            3720,
+            3630,
+            3540,
+            3540,
+            3540,
+            3540
+
+        ]
+    },
+    "46420": {
+        "nationality": 4,
+        "type": 6,
+        "rarity": 5,
+        "tech": 0,
+        "id": 46420,
+        "icon": "46420",
+        "ship_type_forbidden": [
+            8,
+            17,
+            22
+        ],
+        "jp_name": "試作型55mm Gerät 58対空砲",
+        "cn_name": "试作型55mm Gerät 58防空炮",
+        "tw_name": "Prototype 55mm Gerät 58 AA Gun Mount",
+        "en_name": "Prototype 55mm Gerät 58 AA Gun Mount",
+        "equip_limit": 0,
+        "cd": [
+            91,
+            89,
+            87,
+            84,
+            82,
+            81,
+            77,
+            74,
+            72,
+            70,
+            68,
+            68,
+            68,
+            68
+
+        ]
+    },
+    "89640": {
+        "nationality": 108,
+        "type": 18,
+        "rarity": 5,
+        "tech": 0,
+        "id": 89640,
+        "icon": "89640",
+        "ship_type_forbidden": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            17,
+            18,
+            20,
+            21,
+            22
+        ],
+        "jp_name": "かに（レシート付き）",
+        "cn_name": "帝王蟹(附带小票)",
+        "tw_name": "Crab (With Receipt)",
+        "en_name": "Crab (With Receipt)",
+        "equip_limit": 89640,
+        "cd": []
+    },
+    "89660": {
+        "nationality": 108,
+        "type": 18,
+        "rarity": 5,
+        "tech": 0,
+        "id": 89660,
+        "icon": "89660",
+        "ship_type_forbidden": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            17,
+            18,
+            20,
+            21,
+            22
+        ],
+        "jp_name": "竜の置物",
+        "cn_name": "木龙雕塑",
+        "tw_name": "Dragon Figurine",
+        "en_name": "Dragon Figurine",
+        "equip_limit": 89640,
+        "cd": []
     }
 };
