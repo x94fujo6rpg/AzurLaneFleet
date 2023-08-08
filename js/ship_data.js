@@ -31056,7 +31056,7 @@ const ship_data = {
         "nationality": 1,
         "type": 10,
         "base_list": [
-            2,
+            3,
             4,
             1
         ],
