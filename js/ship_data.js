@@ -31057,7 +31057,7 @@ const ship_data = {
         "type": 10,
         "base_list": [
             2,
-            3,
+            4,
             1
         ],
         "id": 199044,
